@@ -53,29 +53,29 @@ def get_upcoming_movies():
             wait.until(EC.presence_of_element_located((By.CLASS_NAME, "content-detail-container")))
 
             try:
-                trailer_btn = driver.find_element(By.CLASS_NAME, "video-open-btn")
+                trailer_btn = wait.until(EC.presence_of_element_located((By.CLASS_NAME, "video-open-btn")))
                 movie["trailer"] = trailer_btn.get_attribute("data-trailer-url")
-            except:
+            except Exception:
                 movie["trailer"] = "Fragman bağlantısı yok"
 
             try:
-                genre = driver.find_element(By.CSS_SELECTOR, ".item-info.movie-genre small").text.strip()
-                movie["genre"] = genre
-            except:
+                genre_el = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, ".item-info.movie-genre small")))
+                movie["genre"] = genre_el.text.strip()
+            except Exception:
                 movie["genre"] = "Tür belirtilmemiş"
 
             try:
-                summary_block = driver.find_element(By.CLASS_NAME, "movie-summary-tablet")
+                summary_block = wait.until(EC.presence_of_element_located((By.CLASS_NAME, "movie-summary-tablet")))
                 paragraphs = summary_block.find_elements(By.TAG_NAME, "p")
                 if paragraphs:
                     movie["summary"] = "\n".join([p.text.strip() for p in paragraphs if p.text.strip()])
                 else:
                     movie["summary"] = "Özet bulunamadı"
-            except:
+            except Exception:
                 movie["summary"] = "Özet bulunamadı"
 
         except Exception as e:
-            print(f"Hata: {e}")
+            print(f"HATA - Sayfa açılamadı: {movie['link']} -> {e}")
             continue
 
     driver.quit()
