@@ -2,8 +2,6 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 from datetime import datetime
 from tqdm import tqdm
 import time
@@ -40,43 +38,16 @@ def get_upcoming_movies():
             movie_data.append({
                 "title": title,
                 "date": iso_date,
-                "link": link
+                "link": link,
+                "trailer": "",
+                "genre": "",
+                "summary": ""
             })
         except Exception:
             continue
 
-    wait = WebDriverWait(driver, 20)
-
-    for movie in tqdm(movie_data, desc="Film detayları alınıyor"):
-        try:
-            driver.get(movie["link"])
-            wait.until(EC.presence_of_element_located((By.CLASS_NAME, "content-detail-container")))
-
-            try:
-                trailer_btn = wait.until(EC.presence_of_element_located((By.CLASS_NAME, "video-open-btn")))
-                movie["trailer"] = trailer_btn.get_attribute("data-trailer-url")
-            except Exception:
-                movie["trailer"] = "Fragman bağlantısı yok"
-
-            try:
-                genre_el = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, ".item-info.movie-genre small")))
-                movie["genre"] = genre_el.text.strip()
-            except Exception:
-                movie["genre"] = "Tür belirtilmemiş"
-
-            try:
-                summary_block = wait.until(EC.presence_of_element_located((By.CLASS_NAME, "movie-summary-tablet")))
-                paragraphs = summary_block.find_elements(By.TAG_NAME, "p")
-                if paragraphs:
-                    movie["summary"] = "\n".join([p.text.strip() for p in paragraphs if p.text.strip()])
-                else:
-                    movie["summary"] = "Özet bulunamadı"
-            except Exception:
-                movie["summary"] = "Özet bulunamadı"
-
-        except Exception as e:
-            print(f"HATA - Sayfa açılamadı: {movie['link']} -> {e}")
-            continue
+    # Render'da detay sayfaları sorunlu olduğu için bu adım atlandı
+    print("Render ortamında detay bilgileri atlandı.")
 
     driver.quit()
     return movie_data
