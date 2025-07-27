@@ -2,6 +2,8 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 from datetime import datetime
 from tqdm import tqdm
 import time
@@ -14,6 +16,7 @@ def get_upcoming_movies():
     options.add_argument('--no-sandbox')
     options.add_argument('--disable-dev-shm-usage')
     options.add_argument('--log-level=3')
+    options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36")
 
     service = Service()
     driver = webdriver.Chrome(service=service, options=options)
@@ -42,10 +45,12 @@ def get_upcoming_movies():
         except Exception:
             continue
 
+    wait = WebDriverWait(driver, 20)
+
     for movie in tqdm(movie_data, desc="Film detayları alınıyor"):
         try:
             driver.get(movie["link"])
-            time.sleep(2)
+            wait.until(EC.presence_of_element_located((By.CLASS_NAME, "content-detail-container")))
 
             try:
                 trailer_btn = driver.find_element(By.CLASS_NAME, "video-open-btn")
@@ -69,7 +74,8 @@ def get_upcoming_movies():
             except:
                 movie["summary"] = "Özet bulunamadı"
 
-        except Exception:
+        except Exception as e:
+            print(f"Hata: {e}")
             continue
 
     driver.quit()
