@@ -9,25 +9,28 @@ app = Flask(__name__)
 @app.route("/")
 def index():
     return render_template_string("""
-        <h1>🎬 Film Takvimi</h1>
+        <h1>🎮 Film Takvimi</h1>
         <p><a href='/ics'>🎯 Takvimi indir</a></p>
     """)
 
 @app.route("/ics")
 def serve_ics():
     path = os.path.join("output", "film_takvimi.ics")
-    if os.path.exists(path):
+    if os.path.exists(path) and os.path.getsize(path) > 0:
         return send_file(path, mimetype="text/calendar")
-    return "ICS dosyası bulunamadı", 404
+    return "ICS dosyasi bulunamadi veya bos.", 404
 
 def update_ics_periodically():
     while True:
         try:
-            print("🔄 ICS verisi güncelleniyor...")
-            subprocess.run(["python", "main.py"], check=True)
+            print("\U0001f501 ICS verisi guncelleniyor...")
+            result = subprocess.run(["python", "main.py"], capture_output=True, text=True)
+            print(result.stdout)
+            if result.stderr:
+                print("stderr:", result.stderr)
         except Exception as e:
-            print("Hata oluştu:", e)
-        time.sleep(3600 * 6)  # 6 saatte bir güncelle
+            print("Hata olustu:", e)
+        time.sleep(3600 * 6)  # 6 saatte bir guncelle
 
 if __name__ == "__main__":
     Thread(target=update_ics_periodically, daemon=True).start()
