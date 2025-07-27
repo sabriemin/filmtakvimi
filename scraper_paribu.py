@@ -2,6 +2,8 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 from datetime import datetime
 from tqdm import tqdm
 import time
@@ -38,16 +40,49 @@ def get_upcoming_movies():
             movie_data.append({
                 "title": title,
                 "date": iso_date,
-                "link": link,
-                "trailer": "",
-                "genre": "",
-                "summary": ""
+                "link": link
             })
         except Exception:
             continue
 
-    # Render'da detay sayfaları sorunlu olduğu için bu adım atlandı
-    print("Render ortamında detay bilgileri atlandı.")
+    for movie in tqdm(movie_data, desc="Film detayları alınıyor"):
+        try:
+            driver.get(movie["link"])
+            wait = WebDriverWait(driver, 10)
+            try:
+                wait.until(EC.presence_of_element_located((By.CLASS_NAME, "movie-summary-tablet")))
+            except:
+                print(f"Bekleme zaman aşımı: {movie['link']}")
+                continue
+
+            try:
+                trailer_btn = driver.find_element(By.CLASS_NAME, "video-open-btn")
+                movie["trailer"] = trailer_btn.get_attribute("data-trailer-url")
+            except:
+                movie["trailer"] = "Fragman bağlantısı yok"
+
+            try:
+                genre = driver.find_element(By.CSS_SELECTOR, ".item-info.movie-genre small").text.strip()
+                movie["genre"] = genre
+            except:
+                movie["genre"] = "Tür belirtilmemiş"
+
+            try:
+                summary_block = driver.find_element(By.CLASS_NAME, "movie-summary-tablet")
+                paragraphs = summary_block.find_elements(By.TAG_NAME, "p")
+                if paragraphs:
+                    movie["summary"] = "\n".join([p.text.strip() for p in paragraphs if p.text.strip()])
+                else:
+                    movie["summary"] = "Özet bulunamadı"
+            except:
+                movie["summary"] = "Özet bulunamadı"
+
+        except Exception as e:
+            print(f"Detay alma hatası: {movie['link']} - {e}")
+            movie["trailer"] = ""
+            movie["genre"] = ""
+            movie["summary"] = ""
+            continue
 
     driver.quit()
     return movie_data
