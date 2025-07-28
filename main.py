@@ -15,7 +15,7 @@ def create_ics_from_movies(movies):
             event.make_all_day()  # Tüm gün etkinlik olarak ayarla
 
             description = (
-                f"🎨 Tür: {film.get('genre', 'Tür belirtilmemiş')}\n"
+                f"🎬 Tür: {film.get('genre', 'Tür belirtilmemiş')}\n"
                 f"📄 Özet: {film.get('summary', 'Ozet bulunamadi')}\n"
                 f"▶️ Fragman: {film.get('trailer', 'Yok')}\n"
                 f"🔗 Detaylar: {film.get('link', '')}"
