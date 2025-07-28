@@ -20,7 +20,8 @@ def get_upcoming_movies():
     options.add_argument('--log-level=3')
     options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36")
 
-    service = Service()
+    # 🔧 GitHub Actions ortamı için ChromeDriver yolu belirtiliyor
+    service = Service("/usr/local/bin/chromedriver")
     driver = webdriver.Chrome(service=service, options=options)
 
     base_url = "https://www.paribucineverse.com/gelecek-filmler"
