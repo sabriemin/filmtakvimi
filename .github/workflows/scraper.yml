@@ -2,8 +2,8 @@ name: Generate ICS File
 
 on:
   schedule:
-    - cron: "0 */6 * * *"  # Her 6 saatte bir çalışır
-  workflow_dispatch:       # Manuel tetikleme imkanı
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
 
 jobs:
   build:
@@ -26,11 +26,17 @@ jobs:
         sudo dpkg -i google-chrome-stable_current_amd64.deb || true
         sudo apt-get install -f -y
 
-    - name: ChromeDriver yükle (sabit 138.0.7247.0 sürümü)
+    - name: ChromeDriver yükle (otomatik eşleşme)
       run: |
-        wget https://chromedriver.storage.googleapis.com/138.0.7247.0/chromedriver_linux64.zip
-        unzip chromedriver_linux64.zip
-        sudo mv chromedriver /usr/local/bin/
+        sudo apt-get install -y jq
+        CHROME_VERSION=$(google-chrome --version | grep -oP '\d+\.\d+\.\d+')
+        echo "🔍 Chrome sürümü: $CHROME_VERSION"
+        DRIVER_URL=$(curl -s https://googlechromelabs.github.io/chrome-for-testing/last-known-good-versions-with-downloads.json \
+          | jq -r --arg ver "$CHROME_VERSION" '.channels.Stable.downloads.chromedriver[] | select(.platform=="linux64") | .url')
+        echo "⬇️ Driver indiriliyor: $DRIVER_URL"
+        wget "$DRIVER_URL" -O chromedriver.zip
+        unzip chromedriver.zip
+        sudo mv chromedriver-linux64/chromedriver /usr/local/bin/
         sudo chmod +x /usr/local/bin/chromedriver
 
     - name: Bağımlılıkları yükle
@@ -47,5 +53,5 @@ jobs:
         git config user.name "github-actions[bot]"
         git config user.email "github-actions[bot]@users.noreply.github.com"
         git add output/film_takvimi.ics output/meta.json output/movies.json
-        git commit -m "🎨 ICS ve JSON dosyaları güncellendi"
+        git commit -m "🎬 ICS ve JSON dosyaları güncellendi"
         git push
