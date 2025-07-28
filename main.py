@@ -12,9 +12,8 @@ def create_ics_from_movies(movies):
             event.begin = datetime.strptime(film["date"], "%Y%m%d").date()
             event.make_all_day()  # Tüm gün etkinlik olarak ayarla
 
-            # 🎮 yerine 🎬 ve açıklama alanı
             description = (
-                f"🎬 Tür: {film.get('genre', 'Tür belirtilmemiş')}\n"
+                f"🎨 Tür: {film.get('genre', 'Tür belirtilmemiş')}\n"
                 f"📄 Özet: {film.get('summary', 'Ozet bulunamadi')}\n"
                 f"▶️ Fragman: {film.get('trailer', 'Yok')}\n"
                 f"🔗 Detaylar: {film.get('link', '')}"
@@ -26,7 +25,7 @@ def create_ics_from_movies(movies):
             print(f"Etkinlik oluşturulamadı: {film['title']}, {e}")
     return calendar
 
-def main():
+def run():
     movies = get_upcoming_movies()
     calendar = create_ics_from_movies(movies)
 
@@ -40,4 +39,4 @@ def main():
     print(f"✅ ICS dosyası oluşturuldu: {output_path}")
 
 if __name__ == "__main__":
-    main()
+    run()
