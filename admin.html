@@ -38,7 +38,7 @@
   <script>
     function checkLogin() {
       const pass = document.getElementById("admin-pass").value;
-      if (pass === "film123") {
+      if (pass === "") {
         document.getElementById("login-box").classList.add("hidden");
         document.getElementById("panel").classList.remove("hidden");
       } else {
@@ -55,7 +55,7 @@
         method: "POST",
         headers: {
           Accept: "application/vnd.github+json",
-          Authorization: "11AGKMCPQ0fHq3036VrJm0_cPsOX3gGviYuhCIRWl7lcjgNYvikM1jK7NgKf1j4MveCSIWHUFGVbqoUF04",
+          Authorization: "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",
           "Content-Type": "application/json"
         },
         body: JSON.stringify({ ref: "main" })
