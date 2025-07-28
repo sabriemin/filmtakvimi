@@ -3,22 +3,47 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>🎬 Film Takvimi</title>
+  <title>🎮 Film Takvimi</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-900 text-white font-sans">
-
   <div class="max-w-5xl mx-auto p-6">
-    <h1 class="text-4xl font-bold text-yellow-400 mb-2">🎬 Film Takvimi</h1>
+    <h1 class="text-4xl font-bold text-yellow-400 mb-2">🎮 Film Takvimi</h1>
     <p class="text-gray-300 mb-6">Vizyona girecek filmleri kaçırma! Aşağıdan takvimi indir ya da abone ol.</p>
 
     <div class="flex flex-wrap gap-4 mb-8">
       <a href="output/film_takvimi.ics" download class="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold py-2 px-4 rounded">
-        📥 Takvimi İndir (.ics)
+        📅 Takvimi İndir (.ics)
       </a>
-      <a href="https://sabriemin.github.io/filmtakvimi/output/film_takvimi.ics" target="_blank" class="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded">
-        🗓 Google Takvime Ekle
-      </a>
+    </div>
+
+    <!-- Abone Ol kutusu -->
+    <div class="bg-gray-800 p-4 rounded mb-6">
+      <button onclick="toggleSubscribe()" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded">
+        📅 Takvime Abone Ol
+      </button>
+
+      <div id="subscribe-box" class="mt-4 hidden text-sm text-gray-300 space-y-4">
+        <div>
+          <strong>📌 Takvim Abonelik Linki:</strong><br />
+          <code class="break-all text-yellow-300">https://filmtakvimi.com/output/film_takvimi.ics</code>
+        </div>
+
+        <div>
+          <strong>📱 Android:</strong><br />
+          Google Takvim uygulamasından → Menü → Ayarlar → Takvim ekle → "URL ile" seçin → Yukarıdaki adresi yapıştırın.
+        </div>
+
+        <div>
+          <strong>🍏 iOS:</strong><br />
+          Ayarlar → Takvim → Hesaplar → "Hesap Ekle" → "Diğer" → "Abone Olunan Takvim" → URL girin.
+        </div>
+
+        <div>
+          <strong>💻 Masaüstü Google Takvim:</strong><br />
+          https://calendar.google.com → “+ Diğer Takvimler” → “URL ile” → yapıştır → Takvimi ekle.
+        </div>
+      </div>
     </div>
 
     <p id="update-time" class="text-sm text-gray-400 mb-4">🕒 Son güncelleme: yükleniyor...</p>
@@ -33,20 +58,23 @@
   </div>
 
   <script>
-    // Son güncelleme
+    function toggleSubscribe() {
+      const box = document.getElementById("subscribe-box");
+      box.classList.toggle("hidden");
+    }
+
     fetch("output/meta.json")
-      .then(res => res.json())
-      .then(data => {
+      .then((res) => res.json())
+      .then((data) => {
         document.getElementById("update-time").textContent = "🕒 Son güncelleme: " + data.last_updated;
       });
 
-    // Film listesi
     fetch("output/movies.json")
-      .then(res => res.json())
-      .then(movies => {
+      .then((res) => res.json())
+      .then((movies) => {
         const container = document.getElementById("movie-list");
         container.innerHTML = "";
-        movies.forEach(movie => {
+        movies.forEach((movie) => {
           const card = document.createElement("div");
           card.className = "bg-gray-800 rounded shadow p-4 hover:bg-gray-700 transition";
 
