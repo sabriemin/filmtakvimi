@@ -8,6 +8,7 @@
 </head>
 <body class="bg-gray-900 text-white font-sans">
   <div class="min-h-screen flex items-center justify-center">
+    <!-- Giriş kutusu -->
     <div id="login-box" class="bg-gray-800 p-6 rounded w-full max-w-sm">
       <h2 class="text-2xl font-bold text-yellow-400 mb-4 text-center">🔐 Admin Girişi</h2>
       <input id="admin-pass" type="password" placeholder="Şifre" class="w-full p-2 mb-4 rounded bg-gray-700">
@@ -15,15 +16,22 @@
       <p id="error-msg" class="text-red-400 text-sm mt-2 hidden text-center">❌ Hatalı şifre</p>
     </div>
 
+    <!-- Admin paneli -->
     <div id="panel" class="hidden bg-gray-800 p-6 rounded shadow-md w-full max-w-md text-center">
       <h2 class="text-xl font-bold text-green-400 mb-4">🌐 Manuel Yenileme</h2>
       <p class="text-sm text-gray-300 mb-4">Film takvimi verisini yeniden oluşturmak için aşağıya tıkla.</p>
-      <button onclick="triggerGeneration()" class="bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded font-semibold">
+      <button id="run-button" onclick="triggerGeneration()" class="bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded font-semibold">
         ↻ Yenile ve ICS Oluştur
       </button>
       <p id="success-msg" class="text-green-400 text-sm mt-4 hidden">
         ✅ ICS dosyası başarıyla tetiklendi.
       </p>
+      <p id="fail-msg" class="text-red-400 text-sm mt-4 hidden">
+        ❌ Tetikleme başarısız. Token veya repo hatası olabilir.
+      </p>
+      <div id="spinner" class="text-gray-400 mt-4 hidden animate-pulse">
+        ⌛ İşlem sürüyor...
+      </div>
     </div>
   </div>
 
@@ -39,6 +47,10 @@
     }
 
     function triggerGeneration() {
+      document.getElementById("spinner").classList.remove("hidden");
+      document.getElementById("success-msg").classList.add("hidden");
+      document.getElementById("fail-msg").classList.add("hidden");
+
       fetch("https://api.github.com/repos/sabriemin/filmtakvimi/actions/workflows/scraper.yml/dispatches", {
         method: "POST",
         headers: {
@@ -49,11 +61,16 @@
         body: JSON.stringify({ ref: "main" })
       })
       .then(res => {
+        document.getElementById("spinner").classList.add("hidden");
         if (res.status === 204) {
           document.getElementById("success-msg").classList.remove("hidden");
         } else {
-          alert("❌ Tetikleme başarısız. Token yetkisi eksik olabilir.");
+          document.getElementById("fail-msg").classList.remove("hidden");
         }
+      })
+      .catch(err => {
+        document.getElementById("spinner").classList.add("hidden");
+        document.getElementById("fail-msg").classList.remove("hidden");
       });
     }
   </script>
