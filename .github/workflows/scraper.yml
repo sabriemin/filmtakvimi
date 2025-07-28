@@ -21,9 +21,10 @@ jobs:
     - name: Chrome yükle
       run: |
         sudo apt-get update
-        sudo apt-get install -y wget unzip xvfb libxi6 libgconf-2-4 libnss3
+        sudo apt-get install -y wget unzip xvfb libxi6 libgconf-2-4 libnss3 fonts-liberation libappindicator3-1 libasound2
         wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-        sudo apt install -y ./google-chrome-stable_current_amd64.deb
+        sudo dpkg -i google-chrome-stable_current_amd64.deb || true
+        sudo apt-get install -f -y
 
     - name: ChromeDriver yükle
       run: |
