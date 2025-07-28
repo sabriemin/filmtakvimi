@@ -25,13 +25,15 @@ def serve_ics():
 def manual_trigger():
     def run_scraper():
         try:
-            print("🛠 Manuel çalıştırma başlatıldı.")
+            print("\n🛠 Manuel çalıştırma başlatıldı.")
             result = subprocess.run(["python", "main.py"], capture_output=True, text=True)
+            print("📤 stdout:")
             print(result.stdout)
             if result.stderr:
-                print("stderr:", result.stderr)
+                print("⚠️ stderr:")
+                print(result.stderr)
         except Exception as e:
-            print("Manuel çalıştırma hatası:", e)
+            print("🚨 Manuel çalıştırma hatası:", e)
 
     Thread(target=run_scraper).start()
     return "Arka planda güncelleme başlatıldı. Lütfen bir süre sonra tekrar deneyin.", 200
@@ -39,13 +41,15 @@ def manual_trigger():
 def update_ics_periodically():
     while True:
         try:
-            print("🔁 ICS verisi otomatik güncelleniyor...")
+            print("\n🔁 ICS verisi otomatik güncelleniyor...")
             result = subprocess.run(["python", "main.py"], capture_output=True, text=True)
+            print("📤 stdout:")
             print(result.stdout)
             if result.stderr:
-                print("stderr:", result.stderr)
+                print("⚠️ stderr:")
+                print(result.stderr)
         except Exception as e:
-            print("Zamanlı güncelleme hatası:", e)
+            print("🚨 Zamanlı güncelleme hatası:", e)
         time.sleep(3600 * 6)
 
 if __name__ == "__main__":

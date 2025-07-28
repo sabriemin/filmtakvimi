@@ -11,6 +11,8 @@ import uuid
 import os
 
 def get_upcoming_movies():
+    print("🚀 Başlıyoruz: Gelecek filmler çekilecek...")
+
     options = Options()
     options.add_argument('--headless')
     options.add_argument('--no-sandbox')
@@ -26,9 +28,10 @@ def get_upcoming_movies():
     time.sleep(5)
 
     movie_elements = driver.find_elements(By.CLASS_NAME, "movie-list-banner-item")
+    print(f"🎞 {len(movie_elements)} film bulundu")
     movie_data = []
 
-    for element in tqdm(movie_elements, desc="Film kartları alınıyor"):
+    for element in tqdm(movie_elements, desc="🎬 Film kartları alınıyor"):
         try:
             title = element.find_element(By.CLASS_NAME, "movie-title").text.strip()
             date = element.find_element(By.CLASS_NAME, "movie-date").text.strip()
@@ -42,10 +45,12 @@ def get_upcoming_movies():
                 "date": iso_date,
                 "link": link
             })
-        except Exception:
+            print(f"✅ Kart alındı: {title}")
+        except Exception as e:
+            print(f"⚠️ Kart alınamadı: {e}")
             continue
 
-    for movie in tqdm(movie_data, desc="Film detayları alınıyor"):
+    for movie in tqdm(movie_data, desc="📂 Film detayları alınıyor"):
         try:
             driver.get(movie["link"])
             wait = WebDriverWait(driver, 40)
@@ -57,7 +62,7 @@ def get_upcoming_movies():
                     )
                 )
             except:
-                print(f"Bekleme zaman aşımı: {movie['link']}")
+                print(f"⏱ Bekleme zaman aşımı: {movie['title']}")
                 continue
 
             try:
@@ -82,12 +87,15 @@ def get_upcoming_movies():
             except:
                 movie["summary"] = "Özet bulunamadı"
 
+            print(f"📌 Detay eklendi: {movie['title']}")
+
         except Exception as e:
-            print(f"Detay alma hatası: {movie['link']} - {e}")
+            print(f"❌ Detay alma hatası: {movie['title']} - {e}")
             movie["trailer"] = ""
             movie["genre"] = ""
             movie["summary"] = ""
             continue
 
     driver.quit()
+    print(f"🏁 İşlem tamamlandı: {len(movie_data)} film döndürüldü")
     return movie_data
