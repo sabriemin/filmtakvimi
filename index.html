@@ -7,38 +7,23 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-900 text-white font-sans">
-  <div id="login-screen" class="min-h-screen flex items-center justify-center">
-    <div class="bg-gray-800 p-8 rounded shadow-md w-full max-w-sm">
-      <h2 class="text-2xl font-semibold mb-4 text-yellow-400 text-center">🎬 Admin Girişi</h2>
-      <input id="admin-password" type="password" placeholder="Şifre" class="w-full p-2 mb-4 rounded bg-gray-700 text-white focus:outline-none">
-      <button onclick="checkLogin()" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded">
-        Giriş Yap
-      </button>
-      <p id="login-error" class="text-red-400 mt-2 hidden">❌ Hatalı şifre</p>
-    </div>
-  </div>
+  <div class="max-w-5xl mx-auto p-6 text-center">
+    <h1 class="text-4xl font-bold text-yellow-400 mb-4">🎬 Film Takvimi</h1>
+    <p class="text-gray-300 mb-6">Vizyona girecek filmleri kaçırma! Aşağıdan takvimi indir ya da abone ol.</p>
 
-  <div id="main-content" class="hidden max-w-5xl mx-auto p-6">
-    <h1 class="text-4xl font-bold text-yellow-400 mb-2">🎬 Film Takvimi</h1>
-    <p class="text-gray-300 mb-6">Vizyona girecek filmleri kaçırma! Aşağıdan takvimi indir, abone ol veya güncelle.</p>
-
-    <div class="flex flex-wrap gap-4 mb-6">
+    <div class="flex justify-center gap-4 mb-8">
       <a href="output/film_takvimi.ics" download class="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold py-2 px-4 rounded">
         📅 Takvimi İndir (.ics)
       </a>
-      <button onclick="triggerGeneration()" class="bg-red-500 hover:bg-red-600 text-white font-semibold py-2 px-4 rounded">
-        ↻ Manuel Olarak Yenile
-      </button>
+      <a href="admin.html" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded">
+        🔐 Admin Girişi
+      </a>
     </div>
 
-    <div id="generation-status" class="text-green-400 text-sm mb-4 hidden">🌟 ICS dosyası başarıyla oluşturuldu.</div>
-
-    <!-- Abone Ol kutusu -->
     <div class="bg-gray-800 p-4 rounded mb-6">
       <button onclick="toggleSubscribe()" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded">
         📅 Takvime Abone Ol
       </button>
-
       <div id="subscribe-box" class="mt-4 hidden text-sm text-gray-300 space-y-4">
         <div>
           <strong>📌 Takvim Abonelik Linki:</strong><br />
@@ -68,41 +53,8 @@
   </div>
 
   <script>
-    function checkLogin() {
-      const password = document.getElementById("admin-password").value;
-      const loginError = document.getElementById("login-error");
-      if (password === "film123") {
-        document.getElementById("login-screen").classList.add("hidden");
-        document.getElementById("main-content").classList.remove("hidden");
-      } else {
-        loginError.classList.remove("hidden");
-      }
-    }
-
     function toggleSubscribe() {
       document.getElementById("subscribe-box").classList.toggle("hidden");
-    }
-
-    function triggerGeneration() {
-      fetch("https://api.github.com/repos/sabriemin/filmtakvimi/actions/workflows/scraper.yml/dispatches", {
-        method: "POST",
-        headers: {
-          Accept: "application/vnd.github+json",
-          Authorization: "Bearer YOUR_GITHUB_PAT",
-          "X-GitHub-Api-Version": "2022-11-28",
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-          ref: "main"
-        })
-      })
-      .then(res => {
-        if (res.status === 204) {
-          document.getElementById("generation-status").classList.remove("hidden");
-        } else {
-          alert("⚠️ Tetikleme başarısız. Yetkinizi kontrol edin.");
-        }
-      });
     }
 
     fetch("output/meta.json")
