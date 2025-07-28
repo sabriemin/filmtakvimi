@@ -80,19 +80,19 @@ def get_upcoming_movies():
                 summary_block = driver.find_element(By.CLASS_NAME, "movie-summary-tablet")
                 paragraphs = summary_block.find_elements(By.TAG_NAME, "p")
                 if paragraphs:
-                    movie["summary"] = "
+                    movie["summary"] = "Özet bulunamadı"
 ".join([p.text.strip() for p in paragraphs if p.text.strip()])
                 else:
-                    movie["summary"] = "Özet bulunamadı"
+                    movie["summary"] = "Özet bulunamadı"Özet bulunamadı"
             except:
-                movie["summary"] = "Özet bulunamadı"
+                movie["summary"] = "Özet bulunamadı"Özet bulunamadı"
 
             print(f"📌 Detay eklendi: {movie['title']}")
         except Exception as e:
             print(f"❌ Detay alma hatası: {movie['title']} - {e}")
             movie["trailer"] = ""
             movie["genre"] = ""
-            movie["summary"] = ""
+            movie["summary"] = "Özet bulunamadı""
             continue
 
     driver.quit()
@@ -166,19 +166,19 @@ def get_now_playing_movies():
                 summary_block = driver.find_element(By.CLASS_NAME, "movie-summary-tablet")
                 paragraphs = summary_block.find_elements(By.TAG_NAME, "p")
                 if paragraphs:
-                    movie["summary"] = "
+                    movie["summary"] = "Özet bulunamadı"
 ".join([p.text.strip() for p in paragraphs if p.text.strip()])
                 else:
-                    movie["summary"] = "Özet bulunamadı"
+                    movie["summary"] = "Özet bulunamadı"Özet bulunamadı"
             except:
-                movie["summary"] = "Özet bulunamadı"
+                movie["summary"] = "Özet bulunamadı"Özet bulunamadı"
 
             print(f"📌 Vizyon detay eklendi: {movie['title']}")
         except Exception as e:
             print(f"❌ Detay alma hatası: {movie['title']} - {e}")
             movie["trailer"] = ""
             movie["genre"] = ""
-            movie["summary"] = ""
+            movie["summary"] = "Özet bulunamadı""
             continue
 
     driver.quit()
