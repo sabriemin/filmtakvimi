@@ -2,12 +2,6 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20250808
-DESCRIPTION:🎬test Tür: Dram\n📄 Özet: Fatih Akın’ın Berlin Film Festivali’nden Altın Ayı ödülüyle dönen filmi Duvara Karşı’da\, Cahit ve Sibel hayatlarının en mutsuz dönemlerinden geçerlerken bir hastane odasında tanışırlar. Geçmişin üzerine temiz birer sayfa çekmek isteyen ikili\, birbirlerini hiçbir şeye zorlamayacakları bir mantık evliliğine imza atarlar. Ancak birlikte vakit geçirmeye başladıkça Cahit’in Sibel’e olan duyguları bir aşka dönüşecektir.\n▶️ Fragman: https://cdn.marsgate.com.tr/11228\n🔗 Detaylar: https://www.paribucineverse.com/dram-filmleri/duvara-karsi-filmi-izle
-SUMMARY:Duvara Karşı
-UID:a03b6003-570c-4e36-8f0b-eaed47a5d236@a03b.org
-END:VEVENT
-BEGIN:VEVENT
 DTSTART;VALUE=DATE:20251017
 DESCRIPTION:🎬 Tür: Macera\n📄 Özet: “Hobbit: Samug’un Çorak Toprakları”nda hikayenin baş kahramanı Bilbo Baggins\, Büyücü Gandalf’le ve Thorin Meşekalkan’ın başını çektiği 13 cüceyle birlikte\, Yalnız Dağ’ı ve kayıp Erebor Cüce Krallığı’nın bulmak için koyulduğu maceralı serüvene kaldığı yerden devam ediyor. Apar topar çıktıkları yolculuğun başlangıcını atlatmış olan Grup\, doğuya doğru ilerlemeye devam ederken\, yoldaki Kuyutorman’da deri değiştiren Beorn’la ve bir dev Örümcek sürüsüyle karşılaşırlar. Tehlikeli Orman-elflerinin elinden kaçan Cüceler önce Göl kasabasına\, oradan da nihayet Yalnız Dağ’a giderler. Burası en büyük tehlikeyle yüzleşecekleri yerdir: Tüm yaratıklar içinde en korkutucu olanıyla\; gruptakilerin yalnızca cesaretlerinin boyutunu değil\, aynı zamanda dostluklarının sınırlarını ve yaptıkları yolculuğun ne ölçüde akıllıca olduğunu da sınayacak bir yaratıkla\; Ejderha Smaug’la.\n▶️ Fragman: https://www.youtube.com/watch?v=tTTIODEsvl8&feature=youtu.be\n🔗 Detaylar: https://www.paribucineverse.com/macera-filmleri/hobbit-smaug-un-corak-topraklari-filmi-izle
 SUMMARY:Hobbit: Smaug' un Çorak Toprakları
