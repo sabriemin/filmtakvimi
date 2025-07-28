@@ -63,8 +63,7 @@ def get_upcoming_movies():
             try:
                 summary_block = driver.find_element(By.CLASS_NAME, "movie-summary-tablet")
                 paragraphs = summary_block.find_elements(By.TAG_NAME, "p")
-                movie["summary"] = "
-".join([p.text.strip() for p in paragraphs if p.text.strip()]) or "Özet bulunamadı"
+                movie["summary"] = "\n".join([p.text.strip() for p in paragraphs if p.text.strip()]) or "Özet bulunamadı"
             except:
                 movie["summary"] = "Özet bulunamadı"
 
@@ -129,8 +128,7 @@ def get_now_playing_movies():
             try:
                 summary_block = driver.find_element(By.CLASS_NAME, "movie-summary-tablet")
                 paragraphs = summary_block.find_elements(By.TAG_NAME, "p")
-                movie["summary"] = "
-".join([p.text.strip() for p in paragraphs if p.text.strip()]) or "Özet bulunamadı"
+                movie["summary"] = "\n".join([p.text.strip() for p in paragraphs if p.text.strip()]) or "Özet bulunamadı"
             except:
                 movie["summary"] = "Özet bulunamadı"
 
