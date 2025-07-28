@@ -9,7 +9,7 @@ UID:6d4fc69b-d979-417e-b9a9-2876af05519c@6d4f.org
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20250801
-DESCRIPTION:🎬 Tür: Biyografi\n📄 Özet: Pop süperstarı Robbie Williams'ın meteorik yükselişini\, dramatik düşüşünü ve dikkat çekici yeniden dirilişini anlatan tekil bir profil.\n▶️ Fragman: https://cdn.marsgate.com.tr/13048\n🔗 Detaylar: https://www.paribucineverse.com/biyografi-filmleri/better-man-robbie-williamsin-hikayesi-filmi-izle
+DESCRIPTION:🎬test test Tür: Biyografi\n📄 Özet: Pop süperstarı Robbie Williams'ın meteorik yükselişini\, dramatik düşüşünü ve dikkat çekici yeniden dirilişini anlatan tekil bir profil.\n▶️ Fragman: https://cdn.marsgate.com.tr/13048\n🔗 Detaylar: https://www.paribucineverse.com/biyografi-filmleri/better-man-robbie-williamsin-hikayesi-filmi-izle
 SUMMARY:Better Man: Robbie Williams'ın Hikayesi
 UID:4c79701f-f814-4ad0-ba81-bd184dde0777@4c79.org
 END:VEVENT
@@ -18,12 +18,6 @@ DTSTART;VALUE=DATE:20250815
 DESCRIPTION:🎬 Tür: Aksiyon\n📄 Özet: Ailesinin ölümüne tanık olan Bruce tüm hayatını adaleti yerine getirmeye adar.\n▶️ Fragman: https://cdn.marsgate.com.tr/13009\n🔗 Detaylar: https://www.paribucineverse.com/aksiyon-filmleri/batman-basliyor-filmi-izle
 SUMMARY:Batman Başlıyor
 UID:2cc0d0f4-84e0-4977-932e-7a9f858efa8c@2cc0.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20250801
-DESCRIPTION:🎬 Tür: Animasyon\n📄 Özet: Film\, suçu bırakıp iyi bireyler olmaya çalışırken toplumda kabul görmekte zorlanan suçlu hayvanlar çetesi üyelerinin\, tümüyle kadınlardan oluşan bir suçlu çetesi tarafından "son bir iş" yapmaya zorlanarak emekliliklerinden çıkmalarını konu ediniyor.\n▶️ Fragman: https://cdn.marsgate.com.tr/13007\n🔗 Detaylar: https://www.paribucineverse.com/animasyon-filmleri/kim-demis-kotuyuz-diye-2-filmi-izle
-SUMMARY:Kim Demiş Kötüyüz Diye? 2
-UID:012df39b-3f30-4204-a223-787068cd5a1c@012d.org
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20250801
