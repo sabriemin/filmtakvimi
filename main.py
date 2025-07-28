@@ -2,6 +2,7 @@ from scraper_paribu import get_upcoming_movies
 from ics import Calendar, Event
 from datetime import datetime
 import os
+import json  # JSON dosyası için eklendi
 
 def create_ics_from_movies(movies):
     calendar = Calendar()
@@ -36,12 +37,27 @@ def run():
 
     output_dir = "output"
     os.makedirs(output_dir, exist_ok=True)
-    output_path = os.path.join(output_dir, "film_takvimi.ics")
 
+    # ICS dosyası
+    output_path = os.path.join(output_dir, "film_takvimi.ics")
     with open(output_path, "w", encoding="utf-8") as f:
         f.writelines(calendar)
-
     print(f"\n✅ ICS dosyası oluşturuldu: {output_path}")
+
+    # meta.json (son güncelleme tarihi)
+    meta_path = os.path.join(output_dir, "meta.json")
+    meta = {
+        "last_updated": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    }
+    with open(meta_path, "w", encoding="utf-8") as f:
+        json.dump(meta, f, ensure_ascii=False, indent=2)
+    print(f"📁 meta.json kaydedildi.")
+
+    # movies.json (film listesi)
+    movies_path = os.path.join(output_dir, "movies.json")
+    with open(movies_path, "w", encoding="utf-8") as f:
+        json.dump(movies, f, ensure_ascii=False, indent=2)
+    print(f"📁 movies.json kaydedildi.")
 
 if __name__ == "__main__":
     run()
