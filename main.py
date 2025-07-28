@@ -1,8 +1,64 @@
-from scraper_paribu import get_upcoming_movies, get_now_playing_movies
+from playwright.sync_api import sync_playwright
 from ics import Calendar, Event
 from datetime import datetime
 import os
 import json
+
+BASE_URL = "https://www.paribucineverse.com"
+
+
+def get_movies_from_paribu(category_url: str):
+    movies = []
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=True)
+        page = browser.new_page()
+        page.goto(category_url)
+        page.wait_for_timeout(3000)
+        movie_links = page.locator(".card.movie-card a.text-link")
+        count = movie_links.count()
+
+        for i in range(count):
+            link = movie_links.nth(i).get_attribute("href")
+            if not link:
+                continue
+            detail_url = f"{BASE_URL}{link}"
+            try:
+                page.goto(detail_url)
+                page.wait_for_timeout(1000)
+                title = page.locator("h1.text-h3.text-lg-h2.font-bold").inner_text().strip()
+                date_text = page.locator(".mb-2 span.text-subtitle-2.font-bold").inner_text().strip()
+                genre = page.locator(".movie-tags .text-subtitle-2 span").all_inner_texts()
+                summary = page.locator(".text-body-1.text-sm.text-justify").inner_text().strip()
+                trailer_elem = page.locator("iframe")
+                trailer = trailer_elem.get_attribute("src") if trailer_elem.count() > 0 else None
+                
+                try:
+                    date_obj = datetime.strptime(date_text, "%d.%m.%Y")
+                    formatted_date = date_obj.strftime("%Y%m%d")
+                except:
+                    formatted_date = datetime.now().strftime("%Y%m%d")
+
+                movie = {
+                    "title": title,
+                    "date": formatted_date,
+                    "genre": ", ".join(genre),
+                    "summary": summary,
+                    "trailer": trailer,
+                    "link": detail_url
+                }
+                movies.append(movie)
+            except Exception as e:
+                print(f"❌ Film detayları alınamadı: {detail_url}, Hata: {e}")
+
+        browser.close()
+    return movies
+
+
+def get_upcoming_movies():
+    return get_movies_from_paribu("https://www.paribucineverse.com/gelecek-filmler")
+
+def get_now_playing_movies():
+    return get_movies_from_paribu("https://www.paribucineverse.com/vizyondaki-filmler")
 
 def create_ics_from_movies(movies):
     calendar = Calendar()
@@ -15,7 +71,7 @@ def create_ics_from_movies(movies):
             event.make_all_day()
             description = (
                 f"🎬 Tür: {film.get('genre', 'Tür belirtilmemiş')}\n"
-                f"📄 Özet: {film.get('summary', 'Ozet bulunamadi')}\n"
+                f"📄 Özet: {film.get('summary', 'Özet bulunamadı')}\n"
                 f"▶️ Fragman: {film.get('trailer', 'Yok')}\n"
                 f"🔗 Detaylar: {film.get('link', '')}"
             )
