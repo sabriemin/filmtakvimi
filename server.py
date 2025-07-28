@@ -11,6 +11,7 @@ def index():
     return render_template_string("""
         <h1>🎮 Film Takvimi</h1>
         <p><a href='/ics'>🎯 Takvimi indir</a></p>
+        <p><a href='/run'>🔁 Takvimi manuel güncelle</a></p>
     """)
 
 @app.route("/ics")
@@ -22,25 +23,30 @@ def serve_ics():
 
 @app.route("/run")
 def manual_trigger():
-    try:
-        print("🛠 Manuel çalıştırma tetiklendi.")
-        result = subprocess.run(["python", "main.py"], capture_output=True, text=True)
-        print(result.stdout)
-        return "ICS güncellendi.", 200
-    except Exception as e:
-        return f"Hata oluştu: {e}", 500
-
-def update_ics_periodically():
-    while True:
+    def run_scraper():
         try:
-            print("🔄 ICS verisi guncelleniyor...")
+            print("🛠 Manuel çalıştırma başlatıldı.")
             result = subprocess.run(["python", "main.py"], capture_output=True, text=True)
             print(result.stdout)
             if result.stderr:
                 print("stderr:", result.stderr)
         except Exception as e:
-            print("Hata olustu:", e)
-        time.sleep(3600 * 6)  # 6 saatte bir guncelle
+            print("Manuel çalıştırma hatası:", e)
+
+    Thread(target=run_scraper).start()
+    return "Arka planda güncelleme başlatıldı. Lütfen bir süre sonra tekrar deneyin.", 200
+
+def update_ics_periodically():
+    while True:
+        try:
+            print("🔁 ICS verisi otomatik güncelleniyor...")
+            result = subprocess.run(["python", "main.py"], capture_output=True, text=True)
+            print(result.stdout)
+            if result.stderr:
+                print("stderr:", result.stderr)
+        except Exception as e:
+            print("Zamanlı güncelleme hatası:", e)
+        time.sleep(3600 * 6)
 
 if __name__ == "__main__":
     Thread(target=update_ics_periodically, daemon=True).start()
