@@ -89,7 +89,7 @@ def get_now_playing_movies():
     service = Service("/usr/local/bin/chromedriver")
     driver = webdriver.Chrome(service=service, options=options)
 
-    driver.get("https://www.paribucineverse.com/vizyondakiler")
+    driver.get("https://www.paribucineverse.com/vizyondakiler")  # Vizyondakiler sayfası
     time.sleep(5)
 
     movie_elements = driver.find_elements(By.CLASS_NAME, "movie-list-banner-item")
@@ -99,9 +99,9 @@ def get_now_playing_movies():
     for element in tqdm(movie_elements, desc="🎞 Vizyon film kartları"):
         try:
             title = element.find_element(By.CLASS_NAME, "movie-title").text.strip()
-            date = datetime.today().strftime("%Y%m%d")
+            date = None  # Tarih detay sayfasından alınacak
             link = element.find_element(By.TAG_NAME, "a").get_attribute("href")
-            movie_data.append({"title": title, "date": date, "link": link})
+            movie_data.append({"title": title, "link": link})
         except:
             continue
 
