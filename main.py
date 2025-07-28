@@ -1,4 +1,3 @@
-
 from scraper_paribu import get_upcoming_movies, get_now_playing_movies
 from ics import Calendar, Event
 from datetime import datetime
@@ -9,7 +8,7 @@ def create_ics_from_movies(movies):
     calendar = Calendar()
     for film in movies:
         try:
-            print(f"\n🎞 Etkinlik oluşturuluyor: {film['title']}")
+            print(f"\n🎬 Etkinlik oluşturuluyor: {film['title']}")
             event = Event()
             event.name = film["title"]
             event.begin = datetime.strptime(film["date"], "%Y%m%d").date()
@@ -32,7 +31,7 @@ def run():
     upcoming = get_upcoming_movies()
     now_playing = get_now_playing_movies()
     movies = upcoming + now_playing
-    print(f"🎬 Toplam film bulundu: {len(movies)}")
+    print(🎬 Toplam film bulundu: {len(movies)}")
 
     calendar = create_ics_from_movies(movies)
     output_dir = "output"
