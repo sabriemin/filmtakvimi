@@ -48,9 +48,14 @@ def get_upcoming_movies():
     for movie in tqdm(movie_data, desc="Film detayları alınıyor"):
         try:
             driver.get(movie["link"])
-            wait = WebDriverWait(driver, 10)
+            wait = WebDriverWait(driver, 40)
             try:
-                wait.until(EC.presence_of_element_located((By.CLASS_NAME, "movie-summary-tablet")))
+                wait.until(
+                    EC.any_of(
+                        EC.presence_of_element_located((By.CLASS_NAME, "movie-summary-tablet")),
+                        EC.presence_of_element_located((By.CLASS_NAME, "movie-details"))
+                    )
+                )
             except:
                 print(f"Bekleme zaman aşımı: {movie['link']}")
                 continue
