@@ -4,62 +4,80 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>🎬 Film Takvimi</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
   <style>
     body {
-      font-family: 'Roboto', sans-serif;
-      background: linear-gradient(to right, #141e30, #243b55);
+      font-family: Arial, sans-serif;
+      background: #111;
       color: #fff;
-      text-align: center;
-      padding: 60px 20px;
+      margin: 0;
+      padding: 20px;
     }
     h1 {
-      font-size: 3rem;
-      margin-bottom: 20px;
+      color: #f39c12;
     }
-    p {
-      font-size: 1.2rem;
-      margin-bottom: 20px;
-    }
-    a.button {
+    .button {
       display: inline-block;
-      padding: 12px 24px;
-      font-size: 1rem;
       background: #f39c12;
       color: #fff;
+      padding: 12px 20px;
       border-radius: 8px;
       text-decoration: none;
-      transition: background 0.3s;
+      margin: 10px 0;
     }
-    a.button:hover {
-      background: #e67e22;
+    ul {
+      list-style: none;
+      padding-left: 0;
     }
-    code {
-      background: rgba(255,255,255,0.1);
+    li {
+      margin: 6px 0;
       padding: 6px 12px;
+      background: #222;
       border-radius: 6px;
-      display: inline-block;
-      margin-top: 10px;
     }
     footer {
-      margin-top: 50px;
+      margin-top: 30px;
       font-size: 0.9rem;
       color: #bbb;
     }
   </style>
 </head>
 <body>
-  <h1>📅 Film Takvimi</h1>
-  <p>Vizyona girecek filmleri kaçırmamak için aşağıdaki takvimi indir veya takvimine abone ol.</p>
+  <h1>📅 Vizyona Girecek Filmler</h1>
+  <p id="update-time">⏳ Güncelleme tarihi yükleniyor...</p>
 
   <a class="button" href="output/film_takvimi.ics" download>🎯 Takvimi İndir (.ics)</a>
-
-  <p>Google Takvimi kullanıyorsan şu bağlantıyla abone olabilirsin:</p>
+  <p>🔗 Google Takvime eklemek için bu bağlantıyı kullan:</p>
   <code>https://sabriemin.github.io/filmtakvimi/output/film_takvimi.ics</code>
 
+  <h2>🎥 Film Listesi</h2>
+  <ul id="movie-list">
+    <li>Yükleniyor...</li>
+  </ul>
+
   <footer>
-    Son güncelleme: GitHub Actions ile otomatik olarak yapılır<br />
-    © 2025 sabriemin
+    Otomatik olarak güncellenir. © sabriemin
   </footer>
+
+  <script>
+    // Son güncelleme zamanını çek
+    fetch("output/meta.json")
+      .then(res => res.json())
+      .then(data => {
+        document.getElementById("update-time").textContent = "🕒 Son Güncelleme: " + data.last_updated;
+      });
+
+    // Film başlıklarını çek
+    fetch("output/movies.json")
+      .then(res => res.json())
+      .then(movies => {
+        const list = document.getElementById("movie-list");
+        list.innerHTML = "";
+        movies.forEach(movie => {
+          const li = document.createElement("li");
+          li.textContent = movie.title + " (" + movie.date + ")";
+          list.appendChild(li);
+        });
+      });
+  </script>
 </body>
 </html>
