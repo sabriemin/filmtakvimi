@@ -4,78 +4,60 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>🎬 Film Takvimi</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #111;
-      color: #fff;
-      margin: 0;
-      padding: 20px;
-    }
-    h1 {
-      color: #f39c12;
-    }
-    .button {
-      display: inline-block;
-      background: #f39c12;
-      color: #fff;
-      padding: 12px 20px;
-      border-radius: 8px;
-      text-decoration: none;
-      margin: 10px 0;
-    }
-    ul {
-      list-style: none;
-      padding-left: 0;
-    }
-    li {
-      margin: 6px 0;
-      padding: 6px 12px;
-      background: #222;
-      border-radius: 6px;
-    }
-    footer {
-      margin-top: 30px;
-      font-size: 0.9rem;
-      color: #bbb;
-    }
-  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <h1>📅 Vizyona Girecek Filmler</h1>
-  <p id="update-time">⏳ Güncelleme tarihi yükleniyor...</p>
+<body class="bg-gray-900 text-white font-sans">
 
-  <a class="button" href="output/film_takvimi.ics" download>🎯 Takvimi İndir (.ics)</a>
-  <p>🔗 Google Takvime eklemek için bu bağlantıyı kullan:</p>
-  <code>https://sabriemin.github.io/filmtakvimi/output/film_takvimi.ics</code>
+  <div class="max-w-5xl mx-auto p-6">
+    <h1 class="text-4xl font-bold text-yellow-400 mb-2">🎬 Film Takvimi</h1>
+    <p class="text-gray-300 mb-6">Vizyona girecek filmleri kaçırma! Aşağıdan takvimi indir ya da abone ol.</p>
 
-  <h2>🎥 Film Listesi</h2>
-  <ul id="movie-list">
-    <li>Yükleniyor...</li>
-  </ul>
+    <div class="flex flex-wrap gap-4 mb-8">
+      <a href="output/film_takvimi.ics" download class="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold py-2 px-4 rounded">
+        📥 Takvimi İndir (.ics)
+      </a>
+      <a href="https://sabriemin.github.io/filmtakvimi/output/film_takvimi.ics" target="_blank" class="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded">
+        🗓 Google Takvime Ekle
+      </a>
+    </div>
 
-  <footer>
-    Otomatik olarak güncellenir. © sabriemin
-  </footer>
+    <p id="update-time" class="text-sm text-gray-400 mb-4">🕒 Son güncelleme: yükleniyor...</p>
+
+    <div id="movie-list" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <!-- Film kartları buraya eklenecek -->
+    </div>
+
+    <footer class="mt-12 text-sm text-gray-500 text-center">
+      Otomatik güncellenir • © sabriemin
+    </footer>
+  </div>
 
   <script>
-    // Son güncelleme zamanını çek
+    // Son güncelleme
     fetch("output/meta.json")
       .then(res => res.json())
       .then(data => {
-        document.getElementById("update-time").textContent = "🕒 Son Güncelleme: " + data.last_updated;
+        document.getElementById("update-time").textContent = "🕒 Son güncelleme: " + data.last_updated;
       });
 
-    // Film başlıklarını çek
+    // Film listesi
     fetch("output/movies.json")
       .then(res => res.json())
       .then(movies => {
-        const list = document.getElementById("movie-list");
-        list.innerHTML = "";
+        const container = document.getElementById("movie-list");
+        container.innerHTML = "";
         movies.forEach(movie => {
-          const li = document.createElement("li");
-          li.textContent = movie.title + " (" + movie.date + ")";
-          list.appendChild(li);
+          const card = document.createElement("div");
+          card.className = "bg-gray-800 rounded shadow p-4 hover:bg-gray-700 transition";
+
+          card.innerHTML = `
+            <h3 class="text-lg font-semibold text-yellow-300 mb-1">${movie.title}</h3>
+            <p class="text-sm text-gray-400 mb-2">📅 ${movie.date}</p>
+            <p class="text-sm text-gray-300 mb-2">${movie.genre || "Tür belirtilmemiş"}</p>
+            <p class="text-sm text-gray-400 mb-2">${movie.summary?.slice(0, 100) || "Özet bulunamadı"}...</p>
+            ${movie.trailer && movie.trailer.startsWith("http") ? `<a href="${movie.trailer}" target="_blank" class="text-blue-400 text-sm underline">▶️ Fragmanı İzle</a>` : ""}
+          `;
+          container.appendChild(card);
         });
       });
   </script>
