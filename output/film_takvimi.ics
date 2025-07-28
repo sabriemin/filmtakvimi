@@ -3,7 +3,7 @@ VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20250801
-DESCRIPTION:🎬 Tür: Biyografi\n📄 Özet: Pop süperstarı Robbie Williams'ın meteorik yükselişini\, dramatik düşüşünü ve dikkat çekici yeniden dirilişini anlatan tekil bir profil.\n▶️ Fragman: https://cdn.marsgate.com.tr/13048\n🔗 Detaylar: https://www.paribucineverse.com/biyografi-filmleri/better-man-robbie-williamsin-hikayesi-filmi-izle
+DESCRIPTION:🎬 Tür: TEST Biyografi\n📄 Özet: Pop süperstarı Robbie Williams'ın meteorik yükselişini\, dramatik düşüşünü ve dikkat çekici yeniden dirilişini anlatan tekil bir profil.\n▶️ Fragman: https://cdn.marsgate.com.tr/13048\n🔗 Detaylar: https://www.paribucineverse.com/biyografi-filmleri/better-man-robbie-williamsin-hikayesi-filmi-izle
 SUMMARY:Better Man: Robbie Williams'ın Hikayesi
 UID:cdd2017b-cb08-457a-a1fd-27f51957bb70@cdd2.org
 END:VEVENT
