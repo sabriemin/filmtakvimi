@@ -18,7 +18,7 @@
 
     <!-- Admin paneli -->
     <div id="panel" class="hidden bg-gray-800 p-6 rounded shadow-md w-full max-w-md text-center">
-      <h2 class="text-xl font-bold text-green-400 mb-4">🌐 Manuel Yenileme</h2>
+      <h2 class="text-xl font-bold text-green-400 mb-4">🎬 Manuel Yenileme</h2>
       <p class="text-sm text-gray-300 mb-4">Film takvimi verisini yeniden oluşturmak için aşağıya tıkla.</p>
       <button id="run-button" onclick="triggerGeneration()" class="bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded font-semibold">
         ↻ Yenile ve ICS Oluştur
@@ -55,7 +55,7 @@
         method: "POST",
         headers: {
           Accept: "application/vnd.github+json",
-          Authorization: "Bearer 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",
+          Authorization: "Bearer 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", // Buraya gerçek token'ı ekleyin
           "Content-Type": "application/json"
         },
         body: JSON.stringify({ ref: "main" })
