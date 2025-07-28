@@ -1,1 +1,61 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🔐 Admin Paneli</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+  <div class="min-h-screen flex items-center justify-center">
+    <div id="login-box" class="bg-gray-800 p-6 rounded w-full max-w-sm">
+      <h2 class="text-2xl font-bold text-yellow-400 mb-4 text-center">🔐 Admin Girişi</h2>
+      <input id="admin-pass" type="password" placeholder="Şifre" class="w-full p-2 mb-4 rounded bg-gray-700">
+      <button onclick="checkLogin()" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded">Giriş Yap</button>
+      <p id="error-msg" class="text-red-400 text-sm mt-2 hidden text-center">❌ Hatalı şifre</p>
+    </div>
 
+    <div id="panel" class="hidden bg-gray-800 p-6 rounded shadow-md w-full max-w-md text-center">
+      <h2 class="text-xl font-bold text-green-400 mb-4">🌐 Manuel Yenileme</h2>
+      <p class="text-sm text-gray-300 mb-4">Film takvimi verisini yeniden oluşturmak için aşağıya tıkla.</p>
+      <button onclick="triggerGeneration()" class="bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded font-semibold">
+        ↻ Yenile ve ICS Oluştur
+      </button>
+      <p id="success-msg" class="text-green-400 text-sm mt-4 hidden">
+        ✅ ICS dosyası başarıyla tetiklendi.
+      </p>
+    </div>
+  </div>
+
+  <script>
+    function checkLogin() {
+      const pass = document.getElementById("admin-pass").value;
+      if (pass === "film123") {
+        document.getElementById("login-box").classList.add("hidden");
+        document.getElementById("panel").classList.remove("hidden");
+      } else {
+        document.getElementById("error-msg").classList.remove("hidden");
+      }
+    }
+
+    function triggerGeneration() {
+      fetch("https://api.github.com/repos/sabriemin/filmtakvimi/actions/workflows/scraper.yml/dispatches", {
+        method: "POST",
+        headers: {
+          Accept: "application/vnd.github+json",
+          Authorization: "Bearer YOUR_GITHUB_PAT",
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ ref: "main" })
+      })
+      .then(res => {
+        if (res.status === 204) {
+          document.getElementById("success-msg").classList.remove("hidden");
+        } else {
+          alert("❌ Tetikleme başarısız. Token yetkisi eksik olabilir.");
+        }
+      });
+    }
+  </script>
+</body>
+</html>
