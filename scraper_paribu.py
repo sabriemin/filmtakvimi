@@ -7,10 +7,9 @@ from selenium.webdriver.support import expected_conditions as EC
 from datetime import datetime
 from tqdm import tqdm
 import time
-import uuid
 import os
 
-# 📅 Takvim uygulamalarında görünecek ad
+# 📅 Takvim adı
 CALENDAR_NAME = "Paribu Cineverse Film Takvimi"
 
 def get_movies_from_url(url):
@@ -27,13 +26,20 @@ def get_movies_from_url(url):
     driver = webdriver.Chrome(service=service, options=options)
 
     driver.get(url)
-    time.sleep(5)
+    time.sleep(10)  # Sayfa tamamen yüklenene kadar bekle
 
-    movie_elements = driver.find_elements(By.CLASS_NAME, "movie-list-banner-item")
-    print(f"🎞 {len(movie_elements)} film bulundu")
+    # 🎯 Class adını içeriğe göre seç
+    try:
+        elements = driver.find_elements(By.CLASS_NAME, "movie-list-banner-item")
+        if not elements:
+            elements = driver.find_elements(By.CLASS_NAME, "movie-list-now-item")  # alternatif
+    except:
+        elements = []
+
+    print(f"🎞 Bulunan film kartı sayısı: {len(elements)}")
     movie_data = []
 
-    for element in tqdm(movie_elements, desc="🎬 Film kartları alınıyor"):
+    for element in tqdm(elements, desc="🎬 Film kartları alınıyor"):
         try:
             title = element.find_element(By.CLASS_NAME, "movie-title").text.strip()
             date = element.find_element(By.CLASS_NAME, "movie-date").text.strip()
