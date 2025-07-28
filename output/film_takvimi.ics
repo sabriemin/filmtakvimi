@@ -3,7 +3,7 @@ VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20250808
-DESCRIPTION:🎬 Tür: Dram\n📄 Özet: Fatih Akın’ın Berlin Film Festivali’nden Altın Ayı ödülüyle dönen filmi Duvara Karşı’da\, Cahit ve Sibel hayatlarının en mutsuz dönemlerinden geçerlerken bir hastane odasında tanışırlar. Geçmişin üzerine temiz birer sayfa çekmek isteyen ikili\, birbirlerini hiçbir şeye zorlamayacakları bir mantık evliliğine imza atarlar. Ancak birlikte vakit geçirmeye başladıkça Cahit’in Sibel’e olan duyguları bir aşka dönüşecektir.\n▶️ Fragman: https://cdn.marsgate.com.tr/11228\n🔗 Detaylar: https://www.paribucineverse.com/dram-filmleri/duvara-karsi-filmi-izle
+DESCRIPTION:🎬test Tür: Dram\n📄 Özet: Fatih Akın’ın Berlin Film Festivali’nden Altın Ayı ödülüyle dönen filmi Duvara Karşı’da\, Cahit ve Sibel hayatlarının en mutsuz dönemlerinden geçerlerken bir hastane odasında tanışırlar. Geçmişin üzerine temiz birer sayfa çekmek isteyen ikili\, birbirlerini hiçbir şeye zorlamayacakları bir mantık evliliğine imza atarlar. Ancak birlikte vakit geçirmeye başladıkça Cahit’in Sibel’e olan duyguları bir aşka dönüşecektir.\n▶️ Fragman: https://cdn.marsgate.com.tr/11228\n🔗 Detaylar: https://www.paribucineverse.com/dram-filmleri/duvara-karsi-filmi-izle
 SUMMARY:Duvara Karşı
 UID:a03b6003-570c-4e36-8f0b-eaed47a5d236@a03b.org
 END:VEVENT
