@@ -1,4 +1,5 @@
-from scraper_paribu import get_upcoming_movies, get_now_showing_movies
+# main.py
+from scraper_paribu import get_upcoming_movies  # Şimdilik sadece bu fonksiyon var
 from ics import Calendar, Event
 from datetime import datetime
 import os
@@ -8,7 +9,7 @@ def create_ics_from_movies(movies):
     calendar = Calendar()
     for film in movies:
         try:
-            print(f"\n🎞 Etkinlik oluşturuluyor: {film['title']}")
+            print(f"\n🎮 Etkinlik oluşturuluyor: {film['title']}")
             event = Event()
             event.name = film["title"]
             event.begin = datetime.strptime(film["date"], "%Y%m%d").date()
@@ -30,17 +31,15 @@ def create_ics_from_movies(movies):
 
 def run():
     print("\n📅 Film verileri alınıyor...")
-    upcoming = get_upcoming_movies()
-    now_showing = get_now_showing_movies()
-    all_movies = upcoming + now_showing
-    print(f"🎬 Toplam film bulundu: {len(all_movies)}")
+    movies = get_upcoming_movies()
+    print(f"🎬 Toplam film bulundu: {len(movies)}")
 
-    calendar = create_ics_from_movies(all_movies)
+    calendar = create_ics_from_movies(movies)
 
     output_dir = "output"
     os.makedirs(output_dir, exist_ok=True)
 
-    output_path = os.path.join(output_dir, "Paribu_Cineverse_Film_Takvimi.ics")
+    output_path = os.path.join(output_dir, "film_takvimi.ics")
     with open(output_path, "w", encoding="utf-8") as f:
         f.writelines(calendar)
     print(f"\n✅ ICS dosyası oluşturuldu: {output_path}")
@@ -55,7 +54,7 @@ def run():
 
     movies_path = os.path.join(output_dir, "movies.json")
     with open(movies_path, "w", encoding="utf-8") as f:
-        json.dump(all_movies, f, ensure_ascii=False, indent=2)
+        json.dump(movies, f, ensure_ascii=False, indent=2)
     print(f"📁 movies.json kaydedildi.")
 
 if __name__ == "__main__":
