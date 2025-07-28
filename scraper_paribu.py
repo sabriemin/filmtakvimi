@@ -9,11 +9,9 @@ from tqdm import tqdm
 import time
 import uuid
 import os
-from ics import Calendar, Event
-
 
 def get_upcoming_movies():
-    print("\U0001F680 Başlıyoruz: Gelecek filmler çekilecek...")
+    print("🚀 Başlıyoruz: Gelecek filmler çekilecek...")
 
     options = Options()
     options.add_argument('--headless')
@@ -22,6 +20,7 @@ def get_upcoming_movies():
     options.add_argument('--log-level=3')
     options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36")
 
+    # 🔧 GitHub Actions ortamı için ChromeDriver yolu belirtiliyor
     service = Service("/usr/local/bin/chromedriver")
     driver = webdriver.Chrome(service=service, options=options)
 
@@ -30,17 +29,17 @@ def get_upcoming_movies():
     time.sleep(5)
 
     movie_elements = driver.find_elements(By.CLASS_NAME, "movie-list-banner-item")
-    print(f"\U0001F39E {len(movie_elements)} film bulundu")
+    print(f"🎞 {len(movie_elements)} film bulundu")
     movie_data = []
 
-    for element in tqdm(movie_elements, desc="\U0001F3AC Film kartları alınıyor"):
+    for element in tqdm(movie_elements, desc="🎬 Film kartları alınıyor"):
         try:
             title = element.find_element(By.CLASS_NAME, "movie-title").text.strip()
             date = element.find_element(By.CLASS_NAME, "movie-date").text.strip()
             link = element.find_element(By.TAG_NAME, "a").get_attribute("href")
 
             day, month, year = date.split(".")
-            iso_date = f"{year}-{month}-{day}"
+            iso_date = f"{year}{month}{day}"
 
             movie_data.append({
                 "title": title,
@@ -101,28 +100,3 @@ def get_upcoming_movies():
     driver.quit()
     print(f"🏁 İşlem tamamlandı: {len(movie_data)} film döndürüldü")
     return movie_data
-
-
-def create_ics_file(movies, filename="Paribu_Cineverse_Film_Takvimi.ics"):
-    calendar = Calendar()
-    for movie in movies:
-        try:
-            e = Event()
-            e.name = movie["title"]
-            e.begin = movie["date"]
-            e.description = f"Tür: {movie['genre']}\n\nÖzet: {movie['summary']}\n\nFragman: {movie['trailer']}\n\nDetay: {movie['link']}"
-            e.uid = str(uuid.uuid4())
-            calendar.events.add(e)
-        except Exception as ex:
-            print(f"Etkinlik oluşturulamadı: {movie['title']} - {ex}")
-            continue
-
-    with open(filename, "w", encoding="utf-8") as f:
-        f.writelines(calendar)
-    print(f"✅ ICS dosyası oluşturuldu: {filename}")
-
-
-if __name__ == "__main__":
-    movies = get_upcoming_movies()
-    if movies:
-        create_ics_file(movies)
