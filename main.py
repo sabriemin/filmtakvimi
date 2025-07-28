@@ -31,7 +31,7 @@ def run():
     upcoming = get_upcoming_movies()
     now_playing = get_now_playing_movies()
     movies = upcoming + now_playing
-    print(🎬 Toplam film bulundu: {len(movies)}")
+    print(f"🎬 Toplam film bulundu: {len(movies)}")
 
     calendar = create_ics_from_movies(movies)
     output_dir = "output"
