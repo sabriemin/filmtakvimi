@@ -10,8 +10,11 @@ import time
 import uuid
 import os
 
-def get_upcoming_movies():
-    print("🚀 Başlıyoruz: Gelecek filmler çekilecek...")
+# 📅 Takvim uygulamalarında görünecek ad
+CALENDAR_NAME = "Paribu Cineverse Film Takvimi"
+
+def get_movies_from_url(url):
+    print(f"🚀 Başlıyoruz: {url} adresinden filmler çekilecek...")
 
     options = Options()
     options.add_argument('--headless')
@@ -20,12 +23,10 @@ def get_upcoming_movies():
     options.add_argument('--log-level=3')
     options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36")
 
-    # 🔧 GitHub Actions ortamı için ChromeDriver yolu belirtiliyor
     service = Service("/usr/local/bin/chromedriver")
     driver = webdriver.Chrome(service=service, options=options)
 
-    base_url = "https://www.paribucineverse.com/gelecek-filmler"
-    driver.get(base_url)
+    driver.get(url)
     time.sleep(5)
 
     movie_elements = driver.find_elements(By.CLASS_NAME, "movie-list-banner-item")
@@ -100,3 +101,8 @@ def get_upcoming_movies():
     driver.quit()
     print(f"🏁 İşlem tamamlandı: {len(movie_data)} film döndürüldü")
     return movie_data
+
+def get_all_movies():
+    upcoming = get_movies_from_url("https://www.paribucineverse.com/gelecek-filmler")
+    now_playing = get_movies_from_url("https://www.paribucineverse.com/vizyondakiler")
+    return upcoming + now_playing
