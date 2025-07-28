@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🎬 Film Takvimi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to right, #141e30, #243b55);
+      color: #fff;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+    a.button {
+      display: inline-block;
+      padding: 12px 24px;
+      font-size: 1rem;
+      background: #f39c12;
+      color: #fff;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    a.button:hover {
+      background: #e67e22;
+    }
+    code {
+      background: rgba(255,255,255,0.1);
+      padding: 6px 12px;
+      border-radius: 6px;
+      display: inline-block;
+      margin-top: 10px;
+    }
+    footer {
+      margin-top: 50px;
+      font-size: 0.9rem;
+      color: #bbb;
+    }
+  </style>
+</head>
+<body>
+  <h1>📅 Film Takvimi</h1>
+  <p>Vizyona girecek filmleri kaçırmamak için aşağıdaki takvimi indir veya takvimine abone ol.</p>
+
+  <a class="button" href="output/film_takvimi.ics" download>🎯 Takvimi İndir (.ics)</a>
+
+  <p>Google Takvimi kullanıyorsan şu bağlantıyla abone olabilirsin:</p>
+  <code>https://sabriemin.github.io/filmtakvimi/output/film_takvimi.ics</code>
+
+  <footer>
+    Son güncelleme: GitHub Actions ile otomatik olarak yapılır<br />
+    © 2025 sabriemin
+  </footer>
+</body>
+</html>
