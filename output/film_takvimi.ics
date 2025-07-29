@@ -3,14 +3,14 @@ VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20250729
-DESCRIPTION:🎬 Tür: Bilim Kurgu\n📄 Özet: Özet bulunamadı\n▶️ Fragman: https://cdn.marsgate.com.tr/12989\n🔗 Detaylar: https://www.paribucineverse.comhttps://www.paribucineverse.com/bilim-kurgu-filmleri/fantastik-dortlu-ilk-adimlar-filmi-izle\n🎟 Hemen Bilet Al: https://www.paribucineverse.com/biletleme/~step~session~film~96f29719-05e0-4de6-8348-7aacaa6f8d9e
-SUMMARY:Fantastik Dörtlü: İlk Adımlar
-UID:90e89873-84f4-46e9-930b-8a6a309ebd51@90e8.org
+DESCRIPTION:🎬 Tür: Korku\n📄 Özet: Özet bulunamadı\n▶️ Fragman: https://cdn.marsgate.com.tr/13014\n🔗 Detaylar: https://www.paribucineverse.comhttps://www.paribucineverse.com/korku-filmleri/birlikte-filmi-izle\n🎟 Hemen Bilet Al: https://www.paribucineverse.com/biletleme/~step~session~film~c1e28313-4426-4256-876f-667125ef5027
+SUMMARY:Birlikte
+UID:f8a6c2c1-195f-4af7-adbc-a384d0196892@f8a6.org
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20250729
-DESCRIPTION:🎬 Tür: Korku\n📄 Özet: Özet bulunamadı\n▶️ Fragman: https://cdn.marsgate.com.tr/13014\n🔗 Detaylar: https://www.paribucineverse.comhttps://www.paribucineverse.com/korku-filmleri/birlikte-filmi-izle\n🎟 Hemen Bilet Al: https://www.paribucineverse.com/biletleme/~step~session~film~c1e28313-4426-4256-876f-667125ef5027
-SUMMARY:Birlikte
-UID:92137677-9bc2-4dcf-8414-76421793efca@9213.org
+DESCRIPTION:🎬 Tür: Bilim Kurgu\n📄 Özet: Özet bulunamadı\n▶️ Fragman: https://cdn.marsgate.com.tr/12989\n🔗 Detaylar: https://www.paribucineverse.comhttps://www.paribucineverse.com/bilim-kurgu-filmleri/fantastik-dortlu-ilk-adimlar-filmi-izle\n🎟 Hemen Bilet Al: https://www.paribucineverse.com/biletleme/~step~session~film~96f29719-05e0-4de6-8348-7aacaa6f8d9e
+SUMMARY:Fantastik Dörtlü: İlk Adımlar
+UID:b058e86f-bd2a-47ff-9563-42f9fda9f865@b058.org
 END:VEVENT
 END:VCALENDAR
