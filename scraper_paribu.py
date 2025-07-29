@@ -115,7 +115,18 @@ def get_upcoming_movies():
             except:
                 movie["summary"] = "Özet bulunamadı"
 
-            print(f"📌 Detay eklendi: {movie['title']}")
+            
+try:
+    date_element = driver.find_element(By.CSS_SELECTOR, ".movie-details .item-info small")
+    date_text = date_element.text.strip()
+    if date_text and "." in date_text:
+        day, month, year = date_text.split(".")
+        iso_date = f"{year}{month}{day}"
+        movie["date"] = iso_date
+except:
+    print(f"📅 Vizyon tarihi bulunamadı: {movie['title']}")
+
+print(f"📌 Detay eklendi: {movie['title']}")
 
         except Exception as e:
             print(f"❌ Detay alma hatası: {movie['title']} - {e}")
@@ -237,7 +248,18 @@ def get_now_playing_movies():
             except:
                 movie["summary"] = "Özet bulunamadı"
 
-            print(f"📌 Detay eklendi: {movie['title']}")
+            
+try:
+    date_element = driver.find_element(By.CSS_SELECTOR, ".movie-details .item-info small")
+    date_text = date_element.text.strip()
+    if date_text and "." in date_text:
+        day, month, year = date_text.split(".")
+        iso_date = f"{year}{month}{day}"
+        movie["date"] = iso_date
+except:
+    print(f"📅 Vizyon tarihi bulunamadı: {movie['title']}")
+
+print(f"📌 Detay eklendi: {movie['title']}")
 
         except Exception as e:
             print(f"❌ Detay alma hatası: {movie['title']} - {e}")
