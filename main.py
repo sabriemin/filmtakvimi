@@ -1,4 +1,4 @@
-from scraper_paribu import get_upcoming_movies
+from scraper_paribu import get_upcoming_movies, get_now_playing_movies  # ✅ Yeni fonksiyon dahil edildi
 from ics import Calendar, Event
 from datetime import datetime
 import os
@@ -33,7 +33,9 @@ def create_ics_from_movies(movies):
 
 def run():
     print("\n🗓 Film verileri alınıyor...")
-    movies = get_upcoming_movies()
+    upcoming = get_upcoming_movies()
+    now_playing = get_now_playing_movies()
+    movies = upcoming + now_playing
     print(f"🎬 Toplam film bulundu: {len(movies)}")
 
     calendar = create_ics_from_movies(movies)
