@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Film Bilgi Yarışması</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+  <div class="max-w-xl mx-auto p-6 text-center">
+    <h1 class="text-2xl font-bold text-yellow-400 mb-4">🎬 Film Bilgi Yarışması</h1>
+
+    <div id="quiz-box" class="bg-gray-800 p-6 rounded shadow">
+      <p id="question" class="text-lg font-semibold mb-4">Soru yükleniyor...</p>
+      <div id="choices" class="grid gap-2"></div>
+    </div>
+
+    <div id="result-box" class="hidden mt-6">
+      <p id="score" class="text-xl font-bold text-green-400"></p>
+      <button onclick="startQuiz()" class="mt-4 bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded">↺ Baştan Başla</button>
+    </div>
+  </div>
+
+  <script>
+    let questions = [];
+    let current = 0;
+    let score = 0;
+
+    async function loadQuestions() {
+      const res = await fetch("./output/quiz_questions.json");
+      questions = await res.json();
+      startQuiz();
+    }
+
+    function startQuiz() {
+      current = 0;
+      score = 0;
+      document.getElementById("result-box").classList.add("hidden");
+      document.getElementById("quiz-box").classList.remove("hidden");
+      showQuestion();
+    }
+
+    function showQuestion() {
+      if (current >= questions.length) {
+        endQuiz();
+        return;
+      }
+
+      const q = questions[current];
+      document.getElementById("question").textContent = q.question;
+      const choicesBox = document.getElementById("choices");
+      choicesBox.innerHTML = "";
+      q.choices.forEach(choice => {
+        const btn = document.createElement("button");
+        btn.textContent = choice;
+        btn.className = "bg-gray-700 hover:bg-gray-600 w-full py-2 rounded";
+        btn.onclick = () => {
+          if (choice === q.answer) score++;
+          current++;
+          showQuestion();
+        };
+        choicesBox.appendChild(btn);
+      });
+    }
+
+    function endQuiz() {
+      document.getElementById("quiz-box").classList.add("hidden");
+      const resultBox = document.getElementById("result-box");
+      document.getElementById("score").textContent = `Skorunuz: ${score} / ${questions.length}`;
+      resultBox.classList.remove("hidden");
+    }
+
+    loadQuestions();
+  </script>
+</body>
+</html>
