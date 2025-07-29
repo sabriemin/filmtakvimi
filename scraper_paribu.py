@@ -78,6 +78,73 @@ def get_upcoming_movies():
             continue
 
     for movie in tqdm(movie_data, desc="📂 Film detayları alınıyor"):
+
+        # Detay sayfasına girince:
+        try:
+            driver.get(movie["link"])
+            wait = WebDriverWait(driver, 60)
+            try:
+                wait.until(
+                    EC.any_of(
+                        EC.presence_of_element_located((By.CLASS_NAME, "movie-summary-tablet")),
+                        EC.presence_of_element_located((By.CLASS_NAME, "movie-details")),
+                        EC.presence_of_element_located((By.TAG_NAME, "body"))
+                    )
+                )
+            except:
+                print(f"⏱ Bekleme zaman aşımı: {movie['title']} — Sayfa yüklenmedi.")
+                continue
+
+            try:
+                trailer_btn = driver.find_element(By.CLASS_NAME, "video-open-btn")
+                movie["trailer"] = trailer_btn.get_attribute("data-trailer-url")
+            except:
+                movie["trailer"] = "Fragman bağlantısı yok"
+
+            try:
+                genre = driver.find_element(By.CSS_SELECTOR, ".item-info.movie-genre small").text.strip()
+                movie["genre"] = genre
+            except:
+                movie["genre"] = "Tür belirtilmemiş"
+
+            try:
+                summary_block = driver.find_element(By.CLASS_NAME, "movie-summary-tablet")
+                paragraphs = summary_block.find_elements(By.TAG_NAME, "p")
+                if paragraphs:
+                    movie["summary"] = "\n".join([p.text.strip() for p in paragraphs if p.text.strip()])
+                else:
+                    movie["summary"] = "Özet bulunamadı"
+            except:
+                movie["summary"] = "Özet bulunamadı"
+
+            
+try:
+    info_blocks = driver.find_elements(By.CLASS_NAME, "item-info")
+    for block in info_blocks:
+        try:
+            label = block.find_element(By.TAG_NAME, "b").text.strip()
+            if "Vizyon Tarihi" in label:
+                date_text = block.find_element(By.TAG_NAME, "small").text.strip()
+                if date_text and "." in date_text:
+                    day, month, year = date_text.split(".")
+                    iso_date = f"{year}{month}{day}"
+                    movie["date"] = iso_date
+                    print(f"📅 Vizyon tarihi bulundu: {movie['title']} → {iso_date}")
+                    break
+        except:
+            continue
+except:
+    print(f"📅 Vizyon tarihi alınamadı: {movie['title']}")
+
+
+            print(f"📌 Detay eklendi: {movie['title']}")
+
+        except Exception as e:
+            print(f"❌ Detay alma hatası: {movie['title']} - {e}")
+            movie["trailer"] = ""
+            movie["genre"] = ""
+            movie["summary"] = ""
+            continue
         try:
             driver.get(movie["link"])
             wait = WebDriverWait(driver, 60)
@@ -118,16 +185,23 @@ def get_upcoming_movies():
             
 
 try:
-    date_element = driver.find_element(By.CSS_SELECTOR, ".movie-details .item-info small")
-    date_text = date_element.text.strip()
-    if date_text and "." in date_text:
-        day, month, year = date_text.split(".")
-        iso_date = f"{year}{month}{day}"
-        movie["date"] = iso_date
+    info_blocks = driver.find_elements(By.CLASS_NAME, "item-info")
+    for block in info_blocks:
+        try:
+            label = block.find_element(By.TAG_NAME, "b").text.strip()
+            if "Vizyon Tarihi" in label:
+                date_text = block.find_element(By.TAG_NAME, "small").text.strip()
+                if date_text and "." in date_text:
+                    day, month, year = date_text.split(".")
+                    iso_date = f"{year}{month}{day}"
+                    movie["date"] = iso_date
+                    print(f"📅 Vizyon tarihi bulundu: {movie['title']} → {iso_date}")
+                    break
+        except:
+            continue
 except:
-    print(f"📅 Vizyon tarihi bulunamadı: {movie['title']}")
-except:
-    print(f"📅 Vizyon tarihi bulunamadı: {movie['title']}")
+    print(f"📅 Vizyon tarihi alınamadı: {movie['title']}")
+
 
 print(f"📌 Detay eklendi: {movie['title']}")
 
@@ -214,6 +288,73 @@ def get_now_playing_movies():
             continue
 
     for movie in tqdm(movie_data, desc="📂 Film detayları alınıyor"):
+
+        # Detay sayfasına girince:
+        try:
+            driver.get(movie["link"])
+            wait = WebDriverWait(driver, 60)
+            try:
+                wait.until(
+                    EC.any_of(
+                        EC.presence_of_element_located((By.CLASS_NAME, "movie-summary-tablet")),
+                        EC.presence_of_element_located((By.CLASS_NAME, "movie-details")),
+                        EC.presence_of_element_located((By.TAG_NAME, "body"))
+                    )
+                )
+            except:
+                print(f"⏱ Bekleme zaman aşımı: {movie['title']} — Sayfa yüklenmedi.")
+                continue
+
+            try:
+                trailer_btn = driver.find_element(By.CLASS_NAME, "video-open-btn")
+                movie["trailer"] = trailer_btn.get_attribute("data-trailer-url")
+            except:
+                movie["trailer"] = "Fragman bağlantısı yok"
+
+            try:
+                genre = driver.find_element(By.CSS_SELECTOR, ".item-info.movie-genre small").text.strip()
+                movie["genre"] = genre
+            except:
+                movie["genre"] = "Tür belirtilmemiş"
+
+            try:
+                summary_block = driver.find_element(By.CLASS_NAME, "movie-summary-tablet")
+                paragraphs = summary_block.find_elements(By.TAG_NAME, "p")
+                if paragraphs:
+                    movie["summary"] = "\n".join([p.text.strip() for p in paragraphs if p.text.strip()])
+                else:
+                    movie["summary"] = "Özet bulunamadı"
+            except:
+                movie["summary"] = "Özet bulunamadı"
+
+            
+try:
+    info_blocks = driver.find_elements(By.CLASS_NAME, "item-info")
+    for block in info_blocks:
+        try:
+            label = block.find_element(By.TAG_NAME, "b").text.strip()
+            if "Vizyon Tarihi" in label:
+                date_text = block.find_element(By.TAG_NAME, "small").text.strip()
+                if date_text and "." in date_text:
+                    day, month, year = date_text.split(".")
+                    iso_date = f"{year}{month}{day}"
+                    movie["date"] = iso_date
+                    print(f"📅 Vizyon tarihi bulundu: {movie['title']} → {iso_date}")
+                    break
+        except:
+            continue
+except:
+    print(f"📅 Vizyon tarihi alınamadı: {movie['title']}")
+
+
+            print(f"📌 Detay eklendi: {movie['title']}")
+
+        except Exception as e:
+            print(f"❌ Detay alma hatası: {movie['title']} - {e}")
+            movie["trailer"] = ""
+            movie["genre"] = ""
+            movie["summary"] = ""
+            continue
         try:
             driver.get(movie["link"])
             wait = WebDriverWait(driver, 60)
@@ -254,16 +395,23 @@ def get_now_playing_movies():
             
 
 try:
-    date_element = driver.find_element(By.CSS_SELECTOR, ".movie-details .item-info small")
-    date_text = date_element.text.strip()
-    if date_text and "." in date_text:
-        day, month, year = date_text.split(".")
-        iso_date = f"{year}{month}{day}"
-        movie["date"] = iso_date
+    info_blocks = driver.find_elements(By.CLASS_NAME, "item-info")
+    for block in info_blocks:
+        try:
+            label = block.find_element(By.TAG_NAME, "b").text.strip()
+            if "Vizyon Tarihi" in label:
+                date_text = block.find_element(By.TAG_NAME, "small").text.strip()
+                if date_text and "." in date_text:
+                    day, month, year = date_text.split(".")
+                    iso_date = f"{year}{month}{day}"
+                    movie["date"] = iso_date
+                    print(f"📅 Vizyon tarihi bulundu: {movie['title']} → {iso_date}")
+                    break
+        except:
+            continue
 except:
-    print(f"📅 Vizyon tarihi bulunamadı: {movie['title']}")
-except:
-    print(f"📅 Vizyon tarihi bulunamadı: {movie['title']}")
+    print(f"📅 Vizyon tarihi alınamadı: {movie['title']}")
+
 
 print(f"📌 Detay eklendi: {movie['title']}")
 
