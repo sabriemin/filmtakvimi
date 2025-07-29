@@ -37,18 +37,18 @@ def get_upcoming_movies():
             title = element.find_element(By.CLASS_NAME, "movie-title").text.strip()
             date = element.find_element(By.CLASS_NAME, "movie-date").text.strip()
 
-            # 🎯 Butonları kontrol et → "İncele" öncelikli
-            link_elements = element.find_elements(By.TAG_NAME, "a")
-            link = ""
-            for a in link_elements:
-                try:
-                    if "incele" in a.text.lower():
-                        link = a.get_attribute("href")
-                        break
-                except:
-                    continue
-            if not link and link_elements:
-                link = link_elements[0].get_attribute("href")
+            # 🎯 "İncele" butonunun class'ı: movie-banner-incept-btn
+            try:
+                incele_link = element.find_element(By.CLASS_NAME, "movie-banner-incept-btn").get_attribute("href")
+            except:
+                incele_link = None
+
+            if not incele_link:
+                link_elements = element.find_elements(By.TAG_NAME, "a")
+                if link_elements:
+                    incele_link = link_elements[0].get_attribute("href")
+
+            link = incele_link
 
             day, month, year = date.split(".")
             iso_date = f"{year}{month}{day}"
