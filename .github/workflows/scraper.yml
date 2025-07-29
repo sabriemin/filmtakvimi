@@ -2,7 +2,7 @@ name: Generate ICS File
 
 on:
   schedule:
-    - cron: "0 */6 * * *"  # Her 6 saatte bir çalışır
+    - cron: "0 */3 * * *"  # Her 6 saatte bir çalışır
   workflow_dispatch:       # Manuel tetikleme imkanı
 
 jobs:
@@ -54,6 +54,6 @@ jobs:
         git config user.name "github-actions[bot]"
         git config user.email "github-actions[bot]@users.noreply.github.com"
         git remote set-url origin https://x-access-token:${TOKEN}@github.com/${{ github.repository }}
-        git add output/film_takvimi.ics output/meta.json output/movies.json
+        git add output/film_takvimi.ics output/meta.json output/movies_birlesik.json
         git commit -m "🎬 ICS ve JSON dosyaları güncellendi" || echo "🔄 Değişiklik yok"
         git push || echo "✅ Push zaten yapılmış veya gerekmedi"
