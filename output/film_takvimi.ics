@@ -2,339 +2,339 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20250808
-DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/komedi-filmleri/daha-cilgin-cuma-filmi-izle
-SUMMARY:Daha Çılgın Cuma
-UID:ef990473-8679-43f6-af87-5a7e2f9a6546@ef99.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20250729
-DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/biletleme/~step~session~film~6a6a0f70-f0ea-4b20-8c1f-4b110c049903\n🎟 Hemen Bilet Al: https://www.paribucineverse.com/biletleme/~step~session~film~6a6a0f70-f0ea-4b20-8c1f-4b110c049903
-SUMMARY:Herkes Ölecek
-UID:b17b1e77-da63-4c20-81a3-feeec8be6d68@b17b.org
-END:VEVENT
-BEGIN:VEVENT
 DTSTART;VALUE=DATE:20250801
 DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/animasyon-filmleri/kim-demis-kotuyuz-diye-2-filmi-izle
 SUMMARY:Kim Demiş Kötüyüz Diye? 2
-UID:a639c8ce-38f4-41b4-83f8-8f8a6787a24d@a639.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20251003
-DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/macera-filmleri/hobbit-beklenmedik-yolculuk-filmi-izle
-SUMMARY:Hobbit: Beklenmedik Yolculuk
-UID:f9b808e0-3fb5-4114-bb8d-b3a6de77ca49@f9b8.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20250729
-DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/biletleme/~step~session~film~612a09c7-a73e-408e-bdc6-e78717d4e262\n🎟 Hemen Bilet Al: https://www.paribucineverse.com/biletleme/~step~session~film~612a09c7-a73e-408e-bdc6-e78717d4e262
-SUMMARY:Geçen Yaz Ne Yaptığını Biliyorum
-UID:a3812ce1-1139-4043-9655-8a8c4f98e9c6@a381.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20250801
-DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/biyografi-filmleri/better-man-robbie-williamsin-hikayesi-filmi-izle
-SUMMARY:Better Man: Robbie Williams'ın Hikayesi
-UID:4092a44c-5d68-4b83-ac55-aac4c045bc31@4092.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20251017
-DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/macera-filmleri/hobbit-smaug-un-corak-topraklari-filmi-izle
-SUMMARY:Hobbit: Smaug' un Çorak Toprakları
-UID:cf564d42-d3ba-4ab1-b361-4510ef87ac41@cf56.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20250729
-DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/biletleme/~step~session~film~5ab7f892-2761-45d2-a796-60d92c61bfe0\n🎟 Hemen Bilet Al: https://www.paribucineverse.com/biletleme/~step~session~film~5ab7f892-2761-45d2-a796-60d92c61bfe0
-SUMMARY:The Final Party
-UID:cbdd8b1c-fef5-4a3f-a175-0014094b9e7c@cbdd.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20250729
-DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/biletleme/~step~session~film~d590c16c-e87a-43c3-a3a1-ef8112cf447d\n🎟 Hemen Bilet Al: https://www.paribucineverse.com/biletleme/~step~session~film~d590c16c-e87a-43c3-a3a1-ef8112cf447d
-SUMMARY:Ejderhanı Nasıl Eğitirsin
-UID:ee35c20b-872f-4b30-a2bd-293e4c9a16d4@ee35.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20250926
-DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/gerilim-filmleri/savas-ustune-savas-filmi-izle
-SUMMARY:Savaş Üstüne Savaş
-UID:72401b5b-92a8-4579-8e20-af6a359ef632@7240.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20250729
-DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/biletleme/~step~session~film~b31e7a68-6da6-47cf-a68f-d52c1adb3c46\n🎟 Hemen Bilet Al: https://www.paribucineverse.com/biletleme/~step~session~film~b31e7a68-6da6-47cf-a68f-d52c1adb3c46
-SUMMARY:Mission: Impossible - Son Hesaplaşma
-UID:22f7ec10-e80f-4e20-b610-8b917a29545b@22f7.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20250822
-DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/animasyon-filmleri/heidi-filmi-izle
-SUMMARY:Heidi
-UID:526eba11-ea99-4b79-9407-6a375b05af1c@526e.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20250801
-DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/komedi-filmleri/aile-arasinda-filmi-izle
-SUMMARY:Aile Arasında
-UID:9953789f-a8f6-4577-be13-bc11a1ad4bd8@9953.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20250729
-DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/biletleme/~step~session~film~39cbc577-51fa-420c-88d1-27316f8ac1b1\n🎟 Hemen Bilet Al: https://www.paribucineverse.com/biletleme/~step~session~film~39cbc577-51fa-420c-88d1-27316f8ac1b1
-SUMMARY:Şeytanla Bakışma
-UID:880f2ab3-9200-40ce-8889-dd2cb36269da@880f.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20250729
-DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/biletleme/~step~session~film~35bb1e79-2bcf-4dea-b2dd-bd72e82ef359\n🎟 Hemen Bilet Al: https://www.paribucineverse.com/biletleme/~step~session~film~35bb1e79-2bcf-4dea-b2dd-bd72e82ef359
-SUMMARY:Mihrez 4
-UID:d9d60784-a6da-4ebe-a26a-8a6000fc4c35@d9d6.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20250808
-DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/komedi-filmleri/dugun-dernek-filmi-izle
-SUMMARY:Düğün Dernek
-UID:952598b1-d761-4bad-9cb7-4bee6582b9bd@9525.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20250815
-DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/aksiyon-filmleri/batman-basliyor-filmi-izle
-SUMMARY:Batman Başlıyor
-UID:d84efd82-392d-4223-961f-1c644318466a@d84e.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20250919
-DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/aksiyon-filmleri/kara-sovalye-yukseliyor-filmi-izle
-SUMMARY:Kara Şövalye Yükseliyor
-UID:04560b65-9eae-4ddc-ba74-87c467f74187@0456.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20250729
-DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/biletleme/~step~session~film~6db17a68-57d6-4fca-96f8-a2b2f436a936\n🎟 Hemen Bilet Al: https://www.paribucineverse.com/biletleme/~step~session~film~6db17a68-57d6-4fca-96f8-a2b2f436a936
-SUMMARY:Şirinler Filmi
-UID:1268ea0c-545e-4496-8fbe-9b01a6161ffc@1268.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20250815
-DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/dram-filmleri/baba-2-filmi-izle
-SUMMARY:Baba 2
-UID:c9af507b-eb93-4ffd-bf13-1d7456226e2d@c9af.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20250801
-DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/aksiyon-filmleri/ciplak-silah-filmi-izle
-SUMMARY:Çıplak Silah
-UID:34f66863-3c68-49f9-a755-a0bfc7fa64f0@34f6.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20250729
-DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/biletleme/~step~session~film~f2121932-2a24-4cb4-94b9-b935fad9298a\n🎟 Hemen Bilet Al: https://www.paribucineverse.com/biletleme/~step~session~film~f2121932-2a24-4cb4-94b9-b935fad9298a
-SUMMARY:Jurassic World: Yeniden Doğuş
-UID:8e41a161-8add-43ce-803a-2f69d0d2fd8e@8e41.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20250729
-DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/biletleme/~step~session~film~060173e1-3b70-4497-9ec8-05f13947a399\n🎟 Hemen Bilet Al: https://www.paribucineverse.com/biletleme/~step~session~film~060173e1-3b70-4497-9ec8-05f13947a399
-SUMMARY:Sil Baştan
-UID:cfc8f5b5-6c9b-4e3e-b5e2-3f8cce9af0d3@cfc8.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20250815
-DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/aksiyon-filmleri/onemsiz-biri-2-filmi-izle
-SUMMARY:Önemsiz Biri 2
-UID:66004ac8-2d8b-434c-bcfc-4ce84cb2de20@6600.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20250808
-DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/dram-filmleri/duvara-karsi-filmi-izle
-SUMMARY:Duvara Karşı
-UID:2b66af26-6e58-4f06-8faf-f86c9958113e@2b66.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20250808
-DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/korku-filmleri/goze-goz-filmi-izle
-SUMMARY:Göze Göz
-UID:fe94a284-2803-49cd-bb4b-d9fc929c32cb@fe94.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20250808
-DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/dram-filmleri/dort-kadin-bir-yalan-filmi-izle
-SUMMARY:Dört Kadın Bir Yalan
-UID:3e0e07dc-2607-4279-b779-23ed0163b96c@3e0e.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20250729
-DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/biletleme/~step~session~film~c1800810-1929-4183-9ad6-30f0098bda91\n🎟 Hemen Bilet Al: https://www.paribucineverse.com/biletleme/~step~session~film~c1800810-1929-4183-9ad6-30f0098bda91
-SUMMARY:Sihirli Annem: Hepimiz Biriz
-UID:e29f6d8d-2206-48a8-8936-f034a8c2c320@e29f.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20250808
-DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/biyografi-filmleri/muslum-filmi-izle
-SUMMARY:Müslüm
-UID:057fce69-9cc7-4433-bc81-72a03c4969bd@057f.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20250801
-DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/dram-filmleri/hemmenin-oldugu-gunlerden-biri-filmi-izle
-SUMMARY:Hemme'nin Öldüğü Günlerden Biri
-UID:12d34831-80ae-432b-8c71-ee09b76e0378@12d3.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20250729
-DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/biletleme/~step~session~film~bf65633a-919c-43ec-9ca3-e6aa98bfce2e\n🎟 Hemen Bilet Al: https://www.paribucineverse.com/biletleme/~step~session~film~bf65633a-919c-43ec-9ca3-e6aa98bfce2e
-SUMMARY:Aşıklar Şehri
-UID:83723dae-de86-43b5-bf23-acdf53cd10a2@8372.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20250808
-DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/animasyon-filmleri/kaptan-pengu-ve-arkadaslari-5-filmi-izle
-SUMMARY:Kaptan Pengu ve Arkadaşları 5
-UID:bebc24f8-69ac-4d88-9adc-bb082feab18c@bebc.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20250822
-DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/dram-filmleri/gulizar-yol-ayrimi-filmi-izle
-SUMMARY:Gülizar Yol Ayrımı
-UID:2e6dd5b7-70ba-4ac3-afb3-86ce16ac57ef@2e6d.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20250729
-DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/biletleme/~step~session~film~96f29719-05e0-4de6-8348-7aacaa6f8d9e\n🎟 Hemen Bilet Al: https://www.paribucineverse.com/biletleme/~step~session~film~96f29719-05e0-4de6-8348-7aacaa6f8d9e
-SUMMARY:Fantastik Dörtlü: İlk Adımlar
-UID:d818cd5b-c6d9-48dd-ab66-3c270a66954b@d818.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20250815
-DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/komedi-filmleri/genis-aile-5-filmi-izle
-SUMMARY:Geniş Aile 5
-UID:a6588c93-f437-4465-b29d-cc04ab7c7846@a658.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20250822
-DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/gerilim-filmleri/sorfcu-filmi-izle
-SUMMARY:Sörfçü
-UID:0b453101-4504-4a12-912d-bea2faa764a6@0b45.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20250829
-DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/dram-filmleri/guller-filmi-izle
-SUMMARY:Güller
-UID:ae2ab279-8d04-4c22-87a5-6e7b71479f90@ae2a.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20251031
-DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/macera-filmleri/hobbit-bes-ordunun-savasi-filmi-izle
-SUMMARY:Hobbit: Beş Ordunun Savaşı
-UID:ae13aeac-3287-4caa-a836-4c121419bf7e@ae13.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20250801
-DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/korku-filmleri/other-filmi-izle
-SUMMARY:Other
-UID:6042f863-4de4-47eb-aa7c-05102a50e96e@6042.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20250815
-DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/komedi-filmleri/dugun-dernek-2-sunnet-filmi-izle
-SUMMARY:Düğün Dernek 2: Sünnet
-UID:559a2260-7996-4c8b-929a-d90f2b48f676@559a.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20250729
-DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/biletleme/~step~session~film~bd0c5a5b-b2bd-4c22-b6b8-06afeb04f3f7\n🎟 Hemen Bilet Al: https://www.paribucineverse.com/biletleme/~step~session~film~bd0c5a5b-b2bd-4c22-b6b8-06afeb04f3f7
-SUMMARY:Ne Halt Ettiğinizi Biliyorum!
-UID:0cc6f3a7-aa23-4c22-97c7-b4e9d6fc85c6@0cc6.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20250729
-DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/biletleme/~step~session~film~00998032-7f5f-4e61-88f7-aa4982ff34d0\n🎟 Hemen Bilet Al: https://www.paribucineverse.com/biletleme/~step~session~film~00998032-7f5f-4e61-88f7-aa4982ff34d0
-SUMMARY:Dirsek
-UID:02a3da7d-0cea-4e7c-9653-bfcd8b352348@02a3.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20250801
-DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/dram-filmleri/dag-ii-filmi-izle
-SUMMARY:Dağ II
-UID:54eff913-245e-4222-a97e-aa6b8b992679@54ef.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20250808
-DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/korku-filmleri/silahlar-filmi-izle
-SUMMARY:Silahlar
-UID:02e8698d-b017-481d-930a-f780cbb0ec0c@02e8.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20250729
-DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/biletleme/~step~session~film~ae35093e-1719-40fd-bead-96a91ecb1ef8\n🎟 Hemen Bilet Al: https://www.paribucineverse.com/biletleme/~step~session~film~ae35093e-1719-40fd-bead-96a91ecb1ef8
-SUMMARY:Buz Devri
-UID:6928b0a8-a8a6-481f-8a69-b826b5bf95b1@6928.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20250729
-DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/biletleme/~step~session~film~a5eec427-96d6-42e5-a71e-42ae4c0e2980\n🎟 Hemen Bilet Al: https://www.paribucineverse.com/biletleme/~step~session~film~a5eec427-96d6-42e5-a71e-42ae4c0e2980
-SUMMARY:Siccin 8
-UID:0b303153-fe33-4590-8178-c2b5fd1bc7a9@0b30.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20250729
-DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/biletleme/~step~session~film~0e5af805-3320-4a95-a10d-d27ee1ac6b94\n🎟 Hemen Bilet Al: https://www.paribucineverse.com/biletleme/~step~session~film~0e5af805-3320-4a95-a10d-d27ee1ac6b94
-SUMMARY:Superman
-UID:7a984d25-9395-417c-a39d-a897700a9e26@7a98.org
+UID:5c33a391-51f4-4b8c-894a-ccc3861e4819@5c33.org
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20250729
 DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/biletleme/~step~session~film~a1dabe15-8f50-4b98-853f-01deaacda394\n🎟 Hemen Bilet Al: https://www.paribucineverse.com/biletleme/~step~session~film~a1dabe15-8f50-4b98-853f-01deaacda394
 SUMMARY:İncir Reçeli
-UID:d373271f-d344-48e1-97ca-51b61b5db741@d373.org
+UID:a7c13975-1318-441c-88a6-1a8486e3be3d@a7c1.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250919
+DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/aksiyon-filmleri/kara-sovalye-yukseliyor-filmi-izle
+SUMMARY:Kara Şövalye Yükseliyor
+UID:ccb64992-5ee5-47b5-a29f-0967d13f68da@ccb6.org
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20250729
-DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/biletleme/~step~session~film~ea8cf002-0e58-43a8-a82f-28f072d90f31\n🎟 Hemen Bilet Al: https://www.paribucineverse.com/biletleme/~step~session~film~ea8cf002-0e58-43a8-a82f-28f072d90f31
-SUMMARY:İntikam Operasyonu
-UID:a364a61d-bb61-46ae-93fe-b81f286d9665@a364.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20250729
-DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/biletleme/~step~session~film~cdd6c07e-d6f4-4cb8-b034-8555099ba642\n🎟 Hemen Bilet Al: https://www.paribucineverse.com/biletleme/~step~session~film~cdd6c07e-d6f4-4cb8-b034-8555099ba642
-SUMMARY:F1 Filmi
-UID:af9cdfb8-abbb-4e0d-a9bd-91bdb339507b@af9c.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20250815
-DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/biyografi-filmleri/bergen-filmi-izle
-SUMMARY:Bergen
-UID:5b42a21d-58f8-42b2-a5a8-5e239bd60fc7@5b42.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20250912
-DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/anime-filmleri/demon-slayer-sonsuzluk-kalesi-filmi-izle
-SUMMARY:Demon Slayer: Sonsuzluk Kalesi
-UID:9d3caa6a-992d-44be-8a59-1b652ad6e3e1@9d3c.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20250801
-DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/komedi-filmleri/ahmed-ve-ahmed-filmi-izle
-SUMMARY:Ahmed ve Ahmed
-UID:9379ca0e-29fd-4a6f-8330-67e2ee7c9a1d@9379.org
+DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/biletleme/~step~session~film~a5eec427-96d6-42e5-a71e-42ae4c0e2980\n🎟 Hemen Bilet Al: https://www.paribucineverse.com/biletleme/~step~session~film~a5eec427-96d6-42e5-a71e-42ae4c0e2980
+SUMMARY:Siccin 8
+UID:6a749f6c-a60b-472a-839c-2f938da6ebcc@6a74.org
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20250801
 DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/korku-filmleri/onu-geri-getir-filmi-izle
 SUMMARY:Onu Geri Getir
-UID:5530bc3c-726b-4e5c-b718-0289afb6b7dc@5530.org
+UID:05752306-4666-46d4-95e7-3c4c2c3154cc@0575.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250729
+DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/biletleme/~step~session~film~6a6a0f70-f0ea-4b20-8c1f-4b110c049903\n🎟 Hemen Bilet Al: https://www.paribucineverse.com/biletleme/~step~session~film~6a6a0f70-f0ea-4b20-8c1f-4b110c049903
+SUMMARY:Herkes Ölecek
+UID:092fd06c-c723-4d75-bf56-db9fdf2bc086@092f.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20251031
+DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/macera-filmleri/hobbit-bes-ordunun-savasi-filmi-izle
+SUMMARY:Hobbit: Beş Ordunun Savaşı
+UID:467f3c51-cd28-4581-9eed-b7c13f71ba25@467f.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250729
+DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/biletleme/~step~session~film~f2121932-2a24-4cb4-94b9-b935fad9298a\n🎟 Hemen Bilet Al: https://www.paribucineverse.com/biletleme/~step~session~film~f2121932-2a24-4cb4-94b9-b935fad9298a
+SUMMARY:Jurassic World: Yeniden Doğuş
+UID:982859d0-b26c-4819-b597-b0661d01d4f4@9828.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250815
+DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/aksiyon-filmleri/batman-basliyor-filmi-izle
+SUMMARY:Batman Başlıyor
+UID:88c27bf6-d90e-4886-ab79-b74836be7413@88c2.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250729
+DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/biletleme/~step~session~film~060173e1-3b70-4497-9ec8-05f13947a399\n🎟 Hemen Bilet Al: https://www.paribucineverse.com/biletleme/~step~session~film~060173e1-3b70-4497-9ec8-05f13947a399
+SUMMARY:Sil Baştan
+UID:b666a661-2d08-4ca4-bb05-0c706bb583a6@b666.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20251003
+DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/macera-filmleri/hobbit-beklenmedik-yolculuk-filmi-izle
+SUMMARY:Hobbit: Beklenmedik Yolculuk
+UID:831db8cc-9fa0-4bdf-bdd2-196d1b25de34@831d.org
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20250801
-DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/gerilim-filmleri/olu-kontesin-laneti-filmi-izle
-SUMMARY:Ölü Kontesin Laneti
-UID:bbca6c31-0aea-4f97-a300-d2d867bf9140@bbca.org
+DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/dram-filmleri/dag-ii-filmi-izle
+SUMMARY:Dağ II
+UID:42c8a722-d4c2-43cf-9473-d4dfa561e9eb@42c8.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250729
+DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/biletleme/~step~session~film~00998032-7f5f-4e61-88f7-aa4982ff34d0\n🎟 Hemen Bilet Al: https://www.paribucineverse.com/biletleme/~step~session~film~00998032-7f5f-4e61-88f7-aa4982ff34d0
+SUMMARY:Dirsek
+UID:8b06659e-1377-44b6-ab20-ed7e488f2d9e@8b06.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250815
+DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/komedi-filmleri/dugun-dernek-2-sunnet-filmi-izle
+SUMMARY:Düğün Dernek 2: Sünnet
+UID:15dece64-908d-45a1-a418-5faf411ccf21@15de.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250808
+DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/korku-filmleri/silahlar-filmi-izle
+SUMMARY:Silahlar
+UID:25b1fd80-89ba-4cf6-977c-a37148d96989@25b1.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250729
+DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/biletleme/~step~session~film~39cbc577-51fa-420c-88d1-27316f8ac1b1\n🎟 Hemen Bilet Al: https://www.paribucineverse.com/biletleme/~step~session~film~39cbc577-51fa-420c-88d1-27316f8ac1b1
+SUMMARY:Şeytanla Bakışma
+UID:06a05ee2-550f-43aa-8935-5c7345df912a@06a0.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250729
+DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/biletleme/~step~session~film~0e5af805-3320-4a95-a10d-d27ee1ac6b94\n🎟 Hemen Bilet Al: https://www.paribucineverse.com/biletleme/~step~session~film~0e5af805-3320-4a95-a10d-d27ee1ac6b94
+SUMMARY:Superman
+UID:9112ae7c-3da3-497e-ab79-da0c1ef0b535@9112.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250808
+DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/korku-filmleri/goze-goz-filmi-izle
+SUMMARY:Göze Göz
+UID:5fb73c1d-405f-4496-867a-e36825a53707@5fb7.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250808
+DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/biyografi-filmleri/muslum-filmi-izle
+SUMMARY:Müslüm
+UID:ca2ca572-f416-4c80-b43c-f7950eef75de@ca2c.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250808
+DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/komedi-filmleri/dugun-dernek-filmi-izle
+SUMMARY:Düğün Dernek
+UID:be2cf49b-07f8-4a7c-aa7f-2432b1155521@be2c.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250808
+DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/animasyon-filmleri/kaptan-pengu-ve-arkadaslari-5-filmi-izle
+SUMMARY:Kaptan Pengu ve Arkadaşları 5
+UID:6c4e1b34-37e7-44ea-a8fb-0e39093a139d@6c4e.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250822
+DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/dram-filmleri/gulizar-yol-ayrimi-filmi-izle
+SUMMARY:Gülizar Yol Ayrımı
+UID:689fbe3d-3ffa-46e8-9a6c-fbda2c3604d9@689f.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250815
+DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/aksiyon-filmleri/onemsiz-biri-2-filmi-izle
+SUMMARY:Önemsiz Biri 2
+UID:f94c20e7-dc57-49db-9c56-dfd476ee54bf@f94c.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250729
+DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/biletleme/~step~session~film~cdd6c07e-d6f4-4cb8-b034-8555099ba642\n🎟 Hemen Bilet Al: https://www.paribucineverse.com/biletleme/~step~session~film~cdd6c07e-d6f4-4cb8-b034-8555099ba642
+SUMMARY:F1 Filmi
+UID:ee536d11-8384-4893-bbe6-40fb5a16e645@ee53.org
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20250912
 DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/aksiyon-filmleri/kara-sovalye-filmi-izle
 SUMMARY:Kara Şövalye
-UID:6c42bd19-bd2f-4c19-b9a8-580c09c7989d@6c42.org
+UID:fdce1959-1403-4e76-9ad0-531d3cd43ded@fdce.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250926
+DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/gerilim-filmleri/savas-ustune-savas-filmi-izle
+SUMMARY:Savaş Üstüne Savaş
+UID:c3e1a6fb-6cca-46fc-9c52-22d0f7d7cba0@c3e1.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250815
+DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/biyografi-filmleri/bergen-filmi-izle
+SUMMARY:Bergen
+UID:e6362dfa-e4d4-40c1-8dbd-b52c33572474@e636.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250729
+DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/biletleme/~step~session~film~35bb1e79-2bcf-4dea-b2dd-bd72e82ef359\n🎟 Hemen Bilet Al: https://www.paribucineverse.com/biletleme/~step~session~film~35bb1e79-2bcf-4dea-b2dd-bd72e82ef359
+SUMMARY:Mihrez 4
+UID:7ab7d3cf-d8e6-482c-887a-efdccbee9339@7ab7.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250729
+DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/biletleme/~step~session~film~96f29719-05e0-4de6-8348-7aacaa6f8d9e\n🎟 Hemen Bilet Al: https://www.paribucineverse.com/biletleme/~step~session~film~96f29719-05e0-4de6-8348-7aacaa6f8d9e
+SUMMARY:Fantastik Dörtlü: İlk Adımlar
+UID:f2344ba6-7496-4b48-82ff-0336fdcdbeed@f234.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250822
+DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/animasyon-filmleri/heidi-filmi-izle
+SUMMARY:Heidi
+UID:1a0ab4cb-7f76-46fd-999b-51a8a4e9b921@1a0a.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250808
+DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/komedi-filmleri/daha-cilgin-cuma-filmi-izle
+SUMMARY:Daha Çılgın Cuma
+UID:7ae80017-a2da-449a-b22b-b98d86017edf@7ae8.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250801
+DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/komedi-filmleri/aile-arasinda-filmi-izle
+SUMMARY:Aile Arasında
+UID:918f1100-7bd7-4a2e-8301-cfd96184c7a6@918f.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250729
+DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/biletleme/~step~session~film~bf65633a-919c-43ec-9ca3-e6aa98bfce2e\n🎟 Hemen Bilet Al: https://www.paribucineverse.com/biletleme/~step~session~film~bf65633a-919c-43ec-9ca3-e6aa98bfce2e
+SUMMARY:Aşıklar Şehri
+UID:f089d0e5-d8da-4dde-9da9-0c3804bbde30@f089.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20251017
+DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/macera-filmleri/hobbit-smaug-un-corak-topraklari-filmi-izle
+SUMMARY:Hobbit: Smaug' un Çorak Toprakları
+UID:e9b34fad-618d-4528-a225-5f7985c85b4a@e9b3.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250729
+DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/biletleme/~step~session~film~612a09c7-a73e-408e-bdc6-e78717d4e262\n🎟 Hemen Bilet Al: https://www.paribucineverse.com/biletleme/~step~session~film~612a09c7-a73e-408e-bdc6-e78717d4e262
+SUMMARY:Geçen Yaz Ne Yaptığını Biliyorum
+UID:3f3cf711-fa73-4f71-b955-fe961bd7189c@3f3c.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250829
+DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/dram-filmleri/guller-filmi-izle
+SUMMARY:Güller
+UID:859535eb-8fb9-4a76-9a78-30d1550d5e31@8595.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250801
+DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/aksiyon-filmleri/ciplak-silah-filmi-izle
+SUMMARY:Çıplak Silah
+UID:27ee42ee-b30a-4cbb-bcf1-0f97b95b6150@27ee.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250808
+DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/dram-filmleri/dort-kadin-bir-yalan-filmi-izle
+SUMMARY:Dört Kadın Bir Yalan
+UID:575628ab-457b-4595-a8fb-2531ad5782ca@5756.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250729
+DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/biletleme/~step~session~film~5ab7f892-2761-45d2-a796-60d92c61bfe0\n🎟 Hemen Bilet Al: https://www.paribucineverse.com/biletleme/~step~session~film~5ab7f892-2761-45d2-a796-60d92c61bfe0
+SUMMARY:The Final Party
+UID:2b699d5d-3128-4da4-a165-003c6603f3dd@2b69.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250729
+DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/biletleme/~step~session~film~ea8cf002-0e58-43a8-a82f-28f072d90f31\n🎟 Hemen Bilet Al: https://www.paribucineverse.com/biletleme/~step~session~film~ea8cf002-0e58-43a8-a82f-28f072d90f31
+SUMMARY:İntikam Operasyonu
+UID:fcec39fc-c6c5-4865-925c-14394167c273@fcec.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250729
+DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/biletleme/~step~session~film~6db17a68-57d6-4fca-96f8-a2b2f436a936\n🎟 Hemen Bilet Al: https://www.paribucineverse.com/biletleme/~step~session~film~6db17a68-57d6-4fca-96f8-a2b2f436a936
+SUMMARY:Şirinler Filmi
+UID:7aeb3e30-54b9-491e-bc29-1c06dde3f0b4@7aeb.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250801
+DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/dram-filmleri/hemmenin-oldugu-gunlerden-biri-filmi-izle
+SUMMARY:Hemme'nin Öldüğü Günlerden Biri
+UID:499d41b8-5e89-478a-98b4-27d3cf1b019b@499d.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250801
+DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/biyografi-filmleri/better-man-robbie-williamsin-hikayesi-filmi-izle
+SUMMARY:Better Man: Robbie Williams'ın Hikayesi
+UID:8156004e-2be2-49a9-8567-fa2c9dd3c215@8156.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250808
+DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/dram-filmleri/duvara-karsi-filmi-izle
+SUMMARY:Duvara Karşı
+UID:fe9e0e54-adf5-4b7b-8afb-72f86cd5bf6c@fe9e.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250729
+DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/biletleme/~step~session~film~d590c16c-e87a-43c3-a3a1-ef8112cf447d\n🎟 Hemen Bilet Al: https://www.paribucineverse.com/biletleme/~step~session~film~d590c16c-e87a-43c3-a3a1-ef8112cf447d
+SUMMARY:Ejderhanı Nasıl Eğitirsin
+UID:9fe8cd87-722c-4c3d-9c64-ea8f20964d0a@9fe8.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250729
+DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/biletleme/~step~session~film~ae35093e-1719-40fd-bead-96a91ecb1ef8\n🎟 Hemen Bilet Al: https://www.paribucineverse.com/biletleme/~step~session~film~ae35093e-1719-40fd-bead-96a91ecb1ef8
+SUMMARY:Buz Devri
+UID:d193dda6-2b94-4bd1-9f4c-a1e812a6f472@d193.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250729
+DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/biletleme/~step~session~film~b31e7a68-6da6-47cf-a68f-d52c1adb3c46\n🎟 Hemen Bilet Al: https://www.paribucineverse.com/biletleme/~step~session~film~b31e7a68-6da6-47cf-a68f-d52c1adb3c46
+SUMMARY:Mission: Impossible - Son Hesaplaşma
+UID:2cb545ca-3ec4-401b-8a49-5cae1d518863@2cb5.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250801
+DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/gerilim-filmleri/olu-kontesin-laneti-filmi-izle
+SUMMARY:Ölü Kontesin Laneti
+UID:12b3b4d5-cc7a-4156-83b0-f0c88366af92@12b3.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250912
+DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/anime-filmleri/demon-slayer-sonsuzluk-kalesi-filmi-izle
+SUMMARY:Demon Slayer: Sonsuzluk Kalesi
+UID:082a3dae-3e38-438a-bd3e-3fd996eb1b45@082a.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250815
+DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/komedi-filmleri/genis-aile-5-filmi-izle
+SUMMARY:Geniş Aile 5
+UID:3c352892-57eb-43a9-a3bc-ed2867fc9ac8@3c35.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250729
+DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/biletleme/~step~session~film~bd0c5a5b-b2bd-4c22-b6b8-06afeb04f3f7\n🎟 Hemen Bilet Al: https://www.paribucineverse.com/biletleme/~step~session~film~bd0c5a5b-b2bd-4c22-b6b8-06afeb04f3f7
+SUMMARY:Ne Halt Ettiğinizi Biliyorum!
+UID:007756fb-2939-4579-b300-e13fb68ffc27@0077.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250801
+DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/korku-filmleri/other-filmi-izle
+SUMMARY:Other
+UID:f0268129-fc2a-402e-9541-b42d23e60985@f026.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250822
+DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/gerilim-filmleri/sorfcu-filmi-izle
+SUMMARY:Sörfçü
+UID:28da12ec-aa8a-4552-b166-df63801ebef9@28da.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250815
+DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/dram-filmleri/baba-2-filmi-izle
+SUMMARY:Baba 2
+UID:667d9bd0-01b9-498c-b03a-85ae29325051@667d.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250801
+DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/komedi-filmleri/ahmed-ve-ahmed-filmi-izle
+SUMMARY:Ahmed ve Ahmed
+UID:8a128ac8-3a5e-4cdd-aade-4be2c224e125@8a12.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250729
+DESCRIPTION:🎬 Tür: Tür belirtilmemiş\n📄 Özet: Özet bulunamadı\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detaylar: https://www.paribucineverse.com/biletleme/~step~session~film~c1800810-1929-4183-9ad6-30f0098bda91\n🎟 Hemen Bilet Al: https://www.paribucineverse.com/biletleme/~step~session~film~c1800810-1929-4183-9ad6-30f0098bda91
+SUMMARY:Sihirli Annem: Hepimiz Biriz
+UID:0b2d5573-4b79-4c0d-bf89-1e132a0424de@0b2d.org
 END:VEVENT
 END:VCALENDAR
