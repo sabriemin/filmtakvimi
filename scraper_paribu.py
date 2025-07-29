@@ -1,3 +1,4 @@
+
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
@@ -34,7 +35,10 @@ def get_now_playing_movies():
     for element in tqdm(movie_elements, desc="🎥 Vizyondaki film kartları alınıyor"):
         try:
             title = element.find_element(By.CLASS_NAME, "movie-title").text.strip()
-            date = datetime.today().strftime("%Y%m%d")  # vizyondaki filmler için bugünün tarihi atanıyor
+            if not title:
+                continue  # başlıksız film varsa atla
+
+            date = datetime.today().strftime("%Y%m%d")
 
             try:
                 incele_link = element.find_element(By.CLASS_NAME, "movie-banner-incept-btn").get_attribute("href")
@@ -46,8 +50,8 @@ def get_now_playing_movies():
                 if link_elements:
                     incele_link = link_elements[0].get_attribute("href")
 
-            if not incele_link.startswith("http"):
-                link = "https://www.paribucineverse.com" + incele_link
+            if not incele_link or not incele_link.startswith("http"):
+                link = "https://www.paribucineverse.com" + incele_link if incele_link else ""
             else:
                 link = incele_link
 
@@ -74,7 +78,6 @@ def get_now_playing_movies():
             print(f"⚠️ Kart alınamadı (vizyon): {e}")
             continue
 
-    # Detaylar aynı şekilde alınacak
     for movie in tqdm(movie_data, desc="📂 Vizyondaki film detayları alınıyor"):
         try:
             driver.get(movie["link"])
@@ -107,7 +110,8 @@ def get_now_playing_movies():
                 summary_block = driver.find_element(By.CLASS_NAME, "movie-summary-tablet")
                 paragraphs = summary_block.find_elements(By.TAG_NAME, "p")
                 if paragraphs:
-                    movie["summary"] = "\n".join([p.text.strip() for p in paragraphs if p.text.strip()])
+                    movie["summary"] = "
+".join([p.text.strip() for p in paragraphs if p.text.strip()])
                 else:
                     movie["summary"] = "Özet bulunamadı"
             except:
@@ -122,7 +126,9 @@ def get_now_playing_movies():
             movie["summary"] = ""
             continue
 
-
+    driver.quit()
+    print(f"🏁 İşlem tamamlandı (vizyon): {len(movie_data)} film döndürüldü")
+    return movie_data if movie_data else []
 
 def get_upcoming_movies():
     print("\U0001F680 Başlıyoruz: Gelecek filmler çekilecek...")
