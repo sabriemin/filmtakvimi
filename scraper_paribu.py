@@ -34,6 +34,12 @@ def get_upcoming_movies():
 
     for element in tqdm(movie_elements, desc="🎬 Film kartları alınıyor"):
         try:
+            # 🎟️ "Hemen Bilet Al" linkini bul
+            try:
+                bilet_btn = element.find_element(By.CLASS_NAME, "movie-banner-ticket-btn")
+                bilet_link = bilet_btn.get_attribute("href")
+            except:
+                bilet_link = None
             title = element.find_element(By.CLASS_NAME, "movie-title").text.strip()
             date = element.find_element(By.CLASS_NAME, "movie-date").text.strip()
 
@@ -59,7 +65,8 @@ def get_upcoming_movies():
             movie_data.append({
                 "title": title,
                 "date": iso_date,
-                "link": link
+                "link": link,
+                "bilet_link": bilet_link if "bilet_link" in locals() else None
             })
             print(f"✅ Kart alındı: {title}")
         except Exception as e:
