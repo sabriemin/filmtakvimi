@@ -52,12 +52,13 @@ def get_upcoming_movies():
                 link = incele_link
 
             try:
-                bilet_btn = element.find_element(By.CLASS_NAME, "movie-banner-ticket-btn")
-                bilet_href = bilet_btn.get_attribute("href")
-                if not bilet_href.startswith("http"):
-                    bilet_link = "https://www.paribucineverse.com" + bilet_href
-                else:
-                    bilet_link = bilet_href
+                bilet_btns = element.find_elements(By.CLASS_NAME, "movie-quick-buy-ticket-btn")
+                bilet_link = None
+                for btn in bilet_btns:
+                    href = btn.get_attribute("href")
+                    if href:
+                        bilet_link = "https://www.paribucineverse.com" + href if not href.startswith("http") else href
+                        break
             except:
                 bilet_link = None
 
