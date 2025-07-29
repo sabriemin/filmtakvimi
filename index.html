@@ -26,7 +26,7 @@
           icon.addEventListener("click", () => {
             iconClickCount++;
             if (iconClickCount === 5) {
-              window.location.href = "admin.html";
+              showEasterEgg();
             }
           });
         }
@@ -149,5 +149,51 @@
       Otomatik güncellenir • © sabriemin
     </footer>
   </div>
+
+<script>
+function showEasterEgg() {
+  // 3️⃣ Tema değişikliği
+  document.body.classList.toggle("bg-black");
+  document.body.classList.toggle("text-green-400");
+  document.body.classList.toggle("bg-gradient-to-b");
+  document.body.classList.toggle("from-gray-900");
+  document.body.classList.toggle("to-black");
+
+  // 1️⃣ Terminal efekti mesajları
+  const message = [
+    "🎬 Film Ekranı Gizli Modu",
+    "👨‍💻 Bu bir easter egg!",
+    "🎁 Bugünün film önerisi yükleniyor..."
+  ];
+  let i = 0;
+  const container = document.createElement("div");
+  container.style = `
+    position:fixed; top:20%; left:50%; transform:translateX(-50%);
+    background:black; color:lime; font-family:monospace;
+    padding:1rem; border-radius:10px; z-index:9999;
+    max-width: 90%; box-shadow: 0 0 10px lime;
+  `;
+  document.body.appendChild(container);
+  const interval = setInterval(() => {
+    if (i < message.length) {
+      container.innerHTML += message[i++] + "<br/>";
+    } else {
+      clearInterval(interval);
+      // 4️⃣ Rastgele film önerisi (movies_birlesik.json üzerinden)
+      fetch('./output/movies_birlesik.json')
+        .then(r => r.json())
+        .then(data => {
+          const random = data[Math.floor(Math.random() * data.length)];
+          container.innerHTML += "<br/>🎥 " + random.title + " — " + (random.genre || "Tür bilinmiyor");
+        })
+        .catch(() => {
+          container.innerHTML += "<br/>❌ Film önerisi alınamadı.";
+        });
+    }
+  }, 1000);
+}
+</script>
+
+
 </body>
 </html>
