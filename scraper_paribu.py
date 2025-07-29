@@ -1,128 +1,61 @@
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.common.by import By
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
+import requests
+from bs4 import BeautifulSoup
 from datetime import datetime
-from tqdm import tqdm
-import time
-import uuid
-import os
+import re
 
 def get_upcoming_movies():
-    print("\U0001F680 Başlıyoruz: Gelecek filmler çekilecek...")
+    url = "https://www.paribucineverse.com/gelecek-filmler"
+    response = requests.get(url)
+    soup = BeautifulSoup(response.text, "html.parser")
 
-    options = Options()
-    options.add_argument('--headless')
-    options.add_argument('--no-sandbox')
-    options.add_argument('--disable-dev-shm-usage')
-    options.add_argument('--log-level=3')
-    options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36")
+    movies = []
+    movie_blocks = soup.find_all("div", class_="movie-box")
 
-    service = Service("/usr/local/bin/chromedriver")
-    driver = webdriver.Chrome(service=service, options=options)
-
-    base_url = "https://www.paribucineverse.com/gelecek-filmler"
-    driver.get(base_url)
-    time.sleep(5)
-
-    movie_elements = driver.find_elements(By.CLASS_NAME, "movie-list-banner-item")
-    print(f"\U0001F3A2 {len(movie_elements)} film bulundu")
-    movie_data = []
-
-    for element in tqdm(movie_elements, desc="\U0001F3AC Film kartları alınıyor"):
+    for block in movie_blocks:
         try:
-            title = element.find_element(By.CLASS_NAME, "movie-title").text.strip()
-            date = element.find_element(By.CLASS_NAME, "movie-date").text.strip()
+            title = block.find("div", class_="movie-title").get_text(strip=True)
+            link = "https://www.paribucineverse.com" + block.find("a")["href"]
 
-            # \U0001F3AF İncele butonu
-            try:
-                incele_link = element.find_element(By.CLASS_NAME, "movie-banner-incept-btn").get_attribute("href")
-            except:
-                incele_link = None
-
-            if not incele_link:
-                link_elements = element.find_elements(By.TAG_NAME, "a")
-                if link_elements:
-                    incele_link = link_elements[0].get_attribute("href")
-
-            if not incele_link.startswith("http"):
-                link = "https://www.paribucineverse.com" + incele_link
+            date_text = block.find("div", class_="date").get_text(strip=True)
+            match = re.search(r"(\d{2})\.(\d{2})\.(\d{4})", date_text)
+            if match:
+                day, month, year = match.groups()
+                date = f"{year}{month}{day}"
             else:
-                link = incele_link
+                date = datetime.now().strftime("%Y%m%d")
 
-            # \U0001F39F️ Hemen Bilet Al butonu
-            try:
-                bilet_raw = element.find_element(By.CLASS_NAME, "movie-banner-ticket-btn").get_attribute("href")
-                if not bilet_raw.startswith("http"):
-                    bilet_link = "https://www.paribucineverse.com" + bilet_raw
-                else:
-                    bilet_link = bilet_raw
-            except:
-                bilet_link = None
+            detail_response = requests.get(link)
+            detail_soup = BeautifulSoup(detail_response.text, "html.parser")
 
-            day, month, year = date.split(".")
-            iso_date = f"{year}{month}{day}"
+            # Tür ve özet bilgisi
+            genre = detail_soup.find("div", class_="type")
+            summary = detail_soup.find("div", class_="text")
+            genre = genre.get_text(strip=True) if genre else "Tür belirtilmemiş"
+            summary = summary.get_text(strip=True) if summary else "Özet bulunamadı"
 
-            movie_data.append({
+            # Fragman linki (varsa)
+            trailer_tag = detail_soup.find("a", string="Fragmanı İzle")
+            trailer = trailer_tag["href"] if trailer_tag else None
+
+            # "Hemen Bilet Al" linki (varsa)
+            bilet_button = detail_soup.find("a", class_="btn", string=lambda t: t and "Hemen Bilet Al" in t)
+            bilet_link = bilet_button["href"] if bilet_button else None
+
+            if bilet_link:
+                print(f"🎬 '{title}' filmi için 🎟 Hemen Bilet Al bağlantısı bulundu.")
+            else:
+                print(f"🎬 '{title}' filmi için 🎟 bilet bağlantısı YOK.")
+
+            movies.append({
                 "title": title,
-                "date": iso_date,
+                "date": date,
+                "genre": genre,
+                "summary": summary,
+                "trailer": trailer,
                 "link": link,
                 "bilet_link": bilet_link
             })
-            print(f"✅ Kart alındı: {title}")
         except Exception as e:
-            print(f"⚠️ Kart alınamadı: {e}")
-            continue
+            print(f"❌ Film bilgisi alınamadı: {e}")
 
-    for movie in tqdm(movie_data, desc="📂 Film detayları alınıyor"):
-        try:
-            driver.get(movie["link"])
-            wait = WebDriverWait(driver, 60)
-            try:
-                wait.until(
-                    EC.any_of(
-                        EC.presence_of_element_located((By.CLASS_NAME, "movie-summary-tablet")),
-                        EC.presence_of_element_located((By.CLASS_NAME, "movie-details")),
-                        EC.presence_of_element_located((By.TAG_NAME, "body"))
-                    )
-                )
-            except:
-                print(f"⏱ Bekleme zaman aşımı: {movie['title']} — Sayfa yüklenmedi.")
-                continue
-
-            try:
-                trailer_btn = driver.find_element(By.CLASS_NAME, "video-open-btn")
-                movie["trailer"] = trailer_btn.get_attribute("data-trailer-url")
-            except:
-                movie["trailer"] = "Fragman bağlantısı yok"
-
-            try:
-                genre = driver.find_element(By.CSS_SELECTOR, ".item-info.movie-genre small").text.strip()
-                movie["genre"] = genre
-            except:
-                movie["genre"] = "Tür belirtilmemiş"
-
-            try:
-                summary_block = driver.find_element(By.CLASS_NAME, "movie-summary-tablet")
-                paragraphs = summary_block.find_elements(By.TAG_NAME, "p")
-                if paragraphs:
-                    movie["summary"] = "\n".join([p.text.strip() for p in paragraphs if p.text.strip()])
-                else:
-                    movie["summary"] = "Özet bulunamadı"
-            except:
-                movie["summary"] = "Özet bulunamadı"
-
-            print(f"📌 Detay eklendi: {movie['title']}")
-
-        except Exception as e:
-            print(f"❌ Detay alma hatası: {movie['title']} - {e}")
-            movie["trailer"] = ""
-            movie["genre"] = ""
-            movie["summary"] = ""
-            continue
-
-    driver.quit()
-    print(f"🏁 İşlem tamamlandı: {len(movie_data)} film döndürüldü")
-    return movie_data
+    return movies
