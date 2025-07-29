@@ -4,11 +4,11 @@ PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20250729
 DESCRIPTION:🎬 Tür: \n📄 Özet: \n▶️ Fragman: https://cdn.marsgate.com.tr/12989\n🔗 Detaylar: https://www.paribucineverse.com/bilim-kurgu-filmleri/fantastik-dortlu-ilk-adimlar-filmi-izle\n🎟 Hemen Bilet Al: /biletleme/~step~session~film~96f29719-05e0-4de6-8348-7aacaa6f8d9e
-UID:9675ada8-afb8-4628-96dc-400c607de104@9675.org
+UID:13afa21d-19e1-463f-9997-7094b7cf205f@13af.org
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20250729
 DESCRIPTION:🎬 Tür: \n📄 Özet: \n▶️ Fragman: https://cdn.marsgate.com.tr/13014\n🔗 Detaylar: https://www.paribucineverse.com/korku-filmleri/birlikte-filmi-izle\n🎟 Hemen Bilet Al: /biletleme/~step~session~film~c1e28313-4426-4256-876f-667125ef5027
-UID:f97e5d7a-0446-41a5-b581-19b8b5341ee8@f97e.org
+UID:3a2b7030-0730-46d3-8011-bf3b2900c894@3a2b.org
 END:VEVENT
 END:VCALENDAR
