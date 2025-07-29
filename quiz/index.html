@@ -26,7 +26,7 @@
     let score = 0;
 
     async function loadQuestions() {
-      const res = await fetch("./output/quiz_questions.json");
+      const res = await fetch("./quiz_questions.json");
       questions = await res.json();
       startQuiz();
     }
