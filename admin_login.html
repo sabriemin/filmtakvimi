@@ -1,41 +1,27 @@
 <!DOCTYPE html>
-
 <html lang="tr">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>🔐 Admin Giriş</title>
-<script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8" />
+  <title>🔐 Admin Giriş</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-900 text-white flex items-center justify-center min-h-screen font-sans">
-<div class="bg-gray-800 p-6 rounded shadow-md w-full max-w-sm space-y-4">
-<h2 class="text-2xl font-bold text-yellow-400 text-center">🔐 Admin Panel Girişi</h2>
-<input class="w-full p-2 rounded bg-gray-700 text-white border border-gray-600" id="username" placeholder="👤 Kullanıcı Adı" type="text"/>
-<input class="w-full p-2 rounded bg-gray-700 text-white border border-gray-600" id="password" placeholder="🔑 Şifre" type="password"/>
-<button class="w-full bg-blue-600 hover:bg-blue-700 py-2 rounded font-semibold" onclick="login()">Giriş Yap</button>
-<p class="text-red-400 text-sm text-center hidden" id="error-msg">❌ Hatalı kullanıcı adı veya şifre</p>
-</div>
-<script>
-    function login() {
-      const username = document.getElementById("username").value.trim();
-      const password = document.getElementById("password").value.trim();
+<body class="bg-gray-900 text-white min-h-screen flex items-center justify-center">
+  <div class="bg-gray-800 p-6 rounded shadow max-w-sm w-full space-y-4">
+    <h1 class="text-yellow-400 text-2xl font-bold text-center">🔐 Admin Girişi</h1>
+    <input type="password" id="password" placeholder="🔑 Şifre" class="w-full p-2 rounded bg-gray-700 border border-gray-600" />
+    <button onclick="login()" class="w-full bg-blue-600 hover:bg-blue-700 py-2 rounded font-semibold">Giriş Yap</button>
+    <p id="error-msg" class="text-red-400 text-sm text-center hidden">❌ Şifre yanlış</p>
+  </div>
 
-      fetch("/admin-auth", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ username, password })
-      })
-      .then(res => {
-        if (res.status === 200) {
-          sessionStorage.setItem("admin_logged_in", "true");
-          window.location.href = "admin.html";
-        } else {
-          document.getElementById("error-msg").classList.remove("hidden");
-        }
-      })
-      .catch(() => {
+  <script>
+    function login() {
+      const pw = document.getElementById("password").value;
+      if (pw === "Mars2025") {
+        sessionStorage.setItem("admin_logged_in", "true");
+        window.location.href = "admin.html";
+      } else {
         document.getElementById("error-msg").classList.remove("hidden");
-      });
+      }
     }
   </script>
 </body>
