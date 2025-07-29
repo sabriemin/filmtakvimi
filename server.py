@@ -3,6 +3,7 @@ from threading import Thread
 import subprocess
 import time
 import os
+import json
 
 app = Flask(__name__)
 
@@ -18,6 +19,21 @@ def index():
 def serve_ics():
     path = os.path.join("output", "film_takvimi.ics")
     if os.path.exists(path) and os.path.getsize(path) > 0:
+        stats_path = os.path.join("output", "stats.json")
+        try:
+            from datetime import datetime
+            today = datetime.today().strftime("%Y-%m-%d")
+            if os.path.exists(stats_path):
+                with open(stats_path, "r", encoding="utf-8") as f:
+                    stats = json.load(f)
+            else:
+                stats = {"daily": {}, "total": 0}
+            stats["daily"][today] = stats["daily"].get(today, 0) + 1
+            stats["total"] = stats.get("total", 0) + 1
+            with open(stats_path, "w", encoding="utf-8") as f:
+                json.dump(stats, f, indent=2, ensure_ascii=False)
+        except Exception as e:
+            print("⚠️ Sayaç güncellenemedi:", e)
         return send_file(path, mimetype="text/calendar")
     return "ICS dosyasi bulunamadi veya bos.", 404
 

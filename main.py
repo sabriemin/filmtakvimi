@@ -1,66 +1,91 @@
-from scraper_paribu import get_upcoming_movies
-from ics import Calendar, Event
-from datetime import datetime
 import os
-import json  # JSON dosyası için eklendi
+import json
+from datetime import datetime
+from scraper_paribu import get_now_playing_movies, get_upcoming_movies
+from ics import Calendar, Event
+from ics.grammar.parse import ContentLine
+
 
 def create_ics_from_movies(movies):
+    from ics import Calendar, Event
+    from datetime import datetime
+
     calendar = Calendar()
+    calendar.name = "Paribu Cineverse Film Takvimi"
+    calendar.extra.append(
+    ContentLine(name="X-WR-CALNAME", value="Paribu Cineverse Film Takvimi")
+    )
+
+    
     for film in movies:
         try:
-            print(f"\n🎬 Etkinlik oluşturuluyor: {film['title']}")
+            raw_date = film.get("date", "")
+            if not raw_date or len(raw_date) != 8:
+                continue
+
             event = Event()
-            event.name = film["title"]
-            event.begin = datetime.strptime(film["date"], "%Y%m%d").date()
-            event.make_all_day()  # Tüm gün etkinlik olarak ayarla
+            event.name = film.get("title", "İsimsiz Film")
+            event.begin = datetime.strptime(raw_date, "%Y%m%d")
+            event.make_all_day()
 
-            description = (
-                f"🎬 Tür: {film.get('genre', 'Tür belirtilmemiş')}\n"
-                f"📄 Özet: {film.get('summary', 'Ozet bulunamadi')}\n"
-                f"▶️ Fragman: {film.get('trailer', 'Yok')}\n"
-                f"🔗 Detaylar: {film.get('link', '')}"
-            )
+            # 🎯 Açıklamaya kaynak eklemiyoruz
+            lines = []
+            if film.get("genre"):
+                lines.append(f"🎬 Tür: {film['genre']}")
+            if film.get("summary"):
+                lines.append(f"📄 Özet: {film['summary']}")
+            if film.get("trailer"):
+                lines.append(f"▶️ Fragman: {film['trailer']}")
+            if film.get("link"):
+                lines.append(f"🔗 Detay: {film['link']}")
             if film.get("bilet_link"):
-                description += f"\n🎟 Hemen Bilet Al: {film['bilet_link']}"
-                print("   ✅ Bilet linki eklendi.")
+                lines.append(f"🎟 Bilet: {film['bilet_link']}")
 
-            event.description = description
+            event.description = "\n".join(lines)
+
+            # 🎨 Kategoriye göre takvim rengi
+            if film.get("kaynak") == "Vizyondaki Film":
+                event.categories = ["Vizyondaki Film"]
+            elif film.get("kaynak") == "Gelecek Film":
+                event.categories = ["Gelecek Film"]
+
             calendar.events.add(event)
-            print("✅ Etkinlik eklendi.")
+
         except Exception as e:
-            print(f"❌ Etkinlik oluşturulamadı: {film['title']}, Hata: {e}")
+            print(f"❌ HATA: {film.get('title', '?')} | {e}")
+
     return calendar
 
+
 def run():
-    print("\n🗓 Film verileri alınıyor...")
-    movies = get_upcoming_movies()
-    print(f"🎬 Toplam film bulundu: {len(movies)}")
+    print("🎬 Vizyondaki filmler çekiliyor...")
+    now_playing = get_now_playing_movies()
+    for film in now_playing:
+        film["kaynak"] = "Vizyondaki Film"
 
-    calendar = create_ics_from_movies(movies)
+    print("🎬 Gelecek filmler çekiliyor...")
+    upcoming = get_upcoming_movies()
+    for film in upcoming:
+        film["kaynak"] = "Gelecek Film"
 
-    output_dir = "output"
-    os.makedirs(output_dir, exist_ok=True)
+    all_movies = now_playing + upcoming
+    print(f"🎞 Toplam film: {len(all_movies)}")
 
-    # ICS dosyası
-    output_path = os.path.join(output_dir, "film_takvimi.ics")
-    with open(output_path, "w", encoding="utf-8") as f:
-        f.writelines(calendar)
-    print(f"\n✅ ICS dosyası oluşturuldu: {output_path}")
+    calendar = create_ics_from_movies(all_movies)
 
-    # meta.json (son güncelleme tarihi)
-    meta_path = os.path.join(output_dir, "meta.json")
-    meta = {
-        "last_updated": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    }
-    with open(meta_path, "w", encoding="utf-8") as f:
-        json.dump(meta, f, ensure_ascii=False, indent=2)
-    print(f"📁 meta.json kaydedildi.")
+    os.makedirs("output", exist_ok=True)
 
-    # movies.json (film listesi)
-    movies_path = os.path.join(output_dir, "movies.json")
-    with open(movies_path, "w", encoding="utf-8") as f:
-        json.dump(movies, f, ensure_ascii=False, indent=2)
-    print(f"📁 movies.json kaydedildi.")
+    with open("output/film_takvimi.ics", "w", encoding="utf-8") as f:
+        f.write(calendar.serialize())
+    print("✅ ICS dosyası oluşturuldu: film_takvimi.ics")
+
+    with open("output/movies_birlesik.json", "w", encoding="utf-8") as f:
+        json.dump(all_movies, f, ensure_ascii=False, indent=2)
+
+    with open("output/meta.json", "w", encoding="utf-8") as f:
+        json.dump({
+            "last_updated": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        }, f, ensure_ascii=False, indent=2)
 
 if __name__ == "__main__":
     run()
