@@ -8,8 +8,6 @@ from dotenv import load_dotenv
 
 app = Flask(__name__)
 
-REPO = "sabriemin/filmtakvimi"  # kendi repo adını yaz
-
 @app.route("/run", methods=["POST"])
 def run_workflow():
     data = request.get_json()
@@ -19,13 +17,13 @@ def run_workflow():
         return "❌ Token gerekli", 400
 
     headers = {
-        "Accept": "application/vnd.github+json",
         "Authorization": f"Bearer {token}",
-        "X-GitHub-Api-Version": "2022-11-28",
+        "Accept": "application/vnd.github+json",
+        "X-GitHub-Api-Version": "2022-11-28"
     }
 
     response = requests.post(
-        f"https://api.github.com/repos/{REPO}/actions/workflows/manual_update.yml/dispatches",
+        "https://api.github.com/repos/kullaniciadi/filmtakvimi/actions/workflows/manual_update.yml/dispatches",
         json={"ref": "main"},
         headers=headers
     )
