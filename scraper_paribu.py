@@ -5,7 +5,9 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
 from tqdm import tqdm
 from datetime import datetime
+from bs4 import BeautifulSoup
 import time
+import uuid
 
 def setup_driver():
     options = Options()
@@ -26,76 +28,50 @@ def get_summary(driver, detail_url):
     except:
         return "Özet bulunamadı"
 
-def build_movie_dict_from_attributes(driver, element, base_url):
+def parse_movie_element_html(driver, html, base_url):
     try:
-        # karttaki tüm bilgiler önceden alınır (stale error koruması)
-        data = {
-            "title": element.get_attribute("data-movie-title") or "",
-            "genre": element.get_attribute("data-movie-genre") or "",
-            "categories": element.get_attribute("data-category2") or "",
-            "rating_raw": element.get_attribute("data-rate") or "",
-            "slug_url": element.get_attribute("data-slug-url") or "",
-        }
+        soup = BeautifulSoup(html, "html.parser")
 
-        data["rating"] = str(float(data["rating_raw"]) / 10000) if data["rating_raw"] else ""
+        title = soup.get("data-movie-title", "").strip()
+        genre = soup.get("data-movie-genre", "").strip()
+        categories = soup.get("data-category2", "").strip()
+        rating_raw = soup.get("data-rate", "")
+        rating = str(float(rating_raw) / 10000) if rating_raw else ""
+        slug_url = soup.get("data-slug-url", "")
+        poster = soup.select_one(".movie-list-banner-img")
+        poster_url = poster["src"] if poster and poster.has_attr("src") else ""
 
-        try:
-            bilet_btn = element.find_element(By.CLASS_NAME, "movie-quick-buy-ticket-btn")
-            data["bilet_link"] = bilet_btn.get_attribute("href")
-        except:
-            data["bilet_link"] = ""
+        duration_tag = soup.select_one(".movie-time")
+        duration = duration_tag.text.strip() if duration_tag else ""
 
-        try:
-            incele_btn = element.find_element(By.CLASS_NAME, "movie-banner-incept-btn")
-            relative_detail = incele_btn.get_attribute("href")
-            data["detail_link"] = base_url + relative_detail
-        except:
-            data["detail_link"] = ""
+        bilet_btn = soup.select_one(".movie-quick-buy-ticket-btn")
+        bilet_link = bilet_btn["href"] if bilet_btn and bilet_btn.has_attr("href") else ""
 
-        try:
-            trailer_area = element.find_element(By.CLASS_NAME, "movie-trailer-area")
-            data["trailer"] = trailer_area.get_attribute("data-trailer-url")
-        except:
-            data["trailer"] = ""
+        detail_btn = soup.select_one(".movie-banner-incept-btn")
+        relative_detail = detail_btn["href"] if detail_btn and detail_btn.has_attr("href") else ""
+        detail_link = base_url + relative_detail if relative_detail else ""
 
-        try:
-            img_tag = element.find_element(By.CLASS_NAME, "movie-list-banner-img")
-            data["poster"] = img_tag.get_attribute("src")
-        except:
-            data["poster"] = ""
+        trailer_area = soup.select_one(".movie-trailer-area")
+        trailer = trailer_area["data-trailer-url"] if trailer_area and trailer_area.has_attr("data-trailer-url") else ""
 
-        try:
-            duration_tag = element.find_element(By.CLASS_NAME, "movie-time")
-            data["duration"] = duration_tag.text.strip()
-        except:
-            data["duration"] = ""
-
-        return data
-
-    except Exception as e:
-        print(f"❌ Hata (attribute okuma): {e}")
-        return None
-
-def parse_movie_element(driver, data):
-    try:
-        summary = get_summary(driver, data["detail_link"]) if data["detail_link"] else "Özet bulunamadı"
+        summary = get_summary(driver, detail_link) if detail_link else "Özet bulunamadı"
         today = datetime.today().strftime("%Y%m%d")
 
         return {
-            "title": data["title"],
+            "title": title,
             "date": today,
-            "link": data["detail_link"],
-            "bilet_link": data["bilet_link"],
-            "genre": data["genre"],
-            "categories": data["categories"],
-            "rating": data["rating"],
-            "poster": data["poster"],
-            "duration": data["duration"],
-            "trailer": data["trailer"],
+            "link": detail_link,
+            "bilet_link": bilet_link,
+            "genre": genre,
+            "categories": categories,
+            "rating": rating,
+            "poster": poster_url,
+            "duration": duration,
+            "trailer": trailer,
             "summary": summary
         }
     except Exception as e:
-        print(f"❌ Hata (parse): {e}")
+        print(f"❌ Hata (parse html): {e}")
         return None
 
 def get_movies_from_page(url_path):
@@ -108,15 +84,17 @@ def get_movies_from_page(url_path):
         driver.get(base_url + url_path)
         time.sleep(5)
 
-        movie_elements = driver.find_elements(By.CLASS_NAME, "movie-list-banner-item")
-        print(f"🎞️ {len(movie_elements)} film bulundu")
+        elements = driver.find_elements(By.CLASS_NAME, "movie-list-banner-item")
+        print(f"🎞️ {len(elements)} film bulundu")
 
-        for element in tqdm(movie_elements, desc="🎬 Kartlar işleniyor"):
-            attr_data = build_movie_dict_from_attributes(driver, element, base_url)
-            if attr_data:
-                movie = parse_movie_element(driver, attr_data)
+        for element in tqdm(elements, desc="🎬 Kartlar işleniyor"):
+            try:
+                outer_html = element.get_attribute("outerHTML")
+                movie = parse_movie_element_html(driver, outer_html, base_url)
                 if movie:
                     movie_data.append(movie)
+            except Exception as e:
+                print(f"❌ Hata (kart): {e}")
 
         return movie_data
     finally:
