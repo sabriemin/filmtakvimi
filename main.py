@@ -1,4 +1,4 @@
-from scraper_paribu import get_all_movies  # Artık hem vizyondakiler hem gelecek filmler
+from scraper_paribu import get_all_movies
 from ics import Calendar, Event
 from datetime import datetime
 import os
@@ -7,12 +7,15 @@ import json
 def create_ics_from_movies(movies):
     calendar = Calendar()
     for film in movies:
+        if not isinstance(film, dict):
+            print(f"⚠️ Hatalı veri atlandı: {film}")
+            continue
         try:
             print(f"\n🎬 Etkinlik oluşturuluyor: {film['title']}")
             event = Event()
             event.name = film["title"]
             event.begin = datetime.strptime(film["date"], "%Y%m%d").date()
-            event.make_all_day()  # Tüm gün etkinlik olarak ayarla
+            event.make_all_day()
 
             description = (
                 f"🎬 Tür: {film.get('genre', 'Tür belirtilmemiş')}\n"
@@ -28,7 +31,7 @@ def create_ics_from_movies(movies):
             calendar.events.add(event)
             print("✅ Etkinlik eklendi.")
         except Exception as e:
-            print(f"❌ Etkinlik oluşturulamadı: {film['title']}, Hata: {e}")
+            print(f"❌ Etkinlik oluşturulamadı, Hata: {e}")
     return calendar
 
 def run():
@@ -41,13 +44,11 @@ def run():
     output_dir = "output"
     os.makedirs(output_dir, exist_ok=True)
 
-    # ICS dosyası
     output_path = os.path.join(output_dir, "film_takvimi.ics")
     with open(output_path, "w", encoding="utf-8") as f:
         f.writelines(calendar)
     print(f"\n✅ ICS dosyası oluşturuldu: {output_path}")
 
-    # meta.json (son güncelleme tarihi)
     meta_path = os.path.join(output_dir, "meta.json")
     meta = {
         "last_updated": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -56,7 +57,6 @@ def run():
         json.dump(meta, f, ensure_ascii=False, indent=2)
     print(f"📁 meta.json kaydedildi.")
 
-    # movies.json (film listesi)
     movies_path = os.path.join(output_dir, "movies.json")
     with open(movies_path, "w", encoding="utf-8") as f:
         json.dump(movies, f, ensure_ascii=False, indent=2)
