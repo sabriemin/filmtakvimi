@@ -26,110 +26,105 @@ def get_summary(driver, detail_url):
     except:
         return "Özet bulunamadı"
 
-def parse_movie_element(driver, element, base_url):
+def build_movie_dict_from_attributes(driver, element, base_url):
     try:
-        title = element.get_attribute("data-movie-title")
-        genre = element.get_attribute("data-movie-genre")
-        categories = element.get_attribute("data-category2")
-        rating_raw = element.get_attribute("data-rate")
-        rating = str(float(rating_raw) / 10000) if rating_raw else ""
-        slug_url = element.get_attribute("data-slug-url")
+        # karttaki tüm bilgiler önceden alınır (stale error koruması)
+        data = {
+            "title": element.get_attribute("data-movie-title") or "",
+            "genre": element.get_attribute("data-movie-genre") or "",
+            "categories": element.get_attribute("data-category2") or "",
+            "rating_raw": element.get_attribute("data-rate") or "",
+            "slug_url": element.get_attribute("data-slug-url") or "",
+        }
+
+        data["rating"] = str(float(data["rating_raw"]) / 10000) if data["rating_raw"] else ""
 
         try:
             bilet_btn = element.find_element(By.CLASS_NAME, "movie-quick-buy-ticket-btn")
-            bilet_link = bilet_btn.get_attribute("href")
+            data["bilet_link"] = bilet_btn.get_attribute("href")
         except:
-            bilet_link = ""
+            data["bilet_link"] = ""
 
         try:
             incele_btn = element.find_element(By.CLASS_NAME, "movie-banner-incept-btn")
             relative_detail = incele_btn.get_attribute("href")
-            detail_link = base_url + relative_detail
+            data["detail_link"] = base_url + relative_detail
         except:
-            detail_link = ""
+            data["detail_link"] = ""
 
         try:
             trailer_area = element.find_element(By.CLASS_NAME, "movie-trailer-area")
-            trailer = trailer_area.get_attribute("data-trailer-url")
+            data["trailer"] = trailer_area.get_attribute("data-trailer-url")
         except:
-            trailer = ""
+            data["trailer"] = ""
 
         try:
             img_tag = element.find_element(By.CLASS_NAME, "movie-list-banner-img")
-            poster = img_tag.get_attribute("src")
+            data["poster"] = img_tag.get_attribute("src")
         except:
-            poster = ""
+            data["poster"] = ""
 
         try:
             duration_tag = element.find_element(By.CLASS_NAME, "movie-time")
-            duration = duration_tag.text.strip()
+            data["duration"] = duration_tag.text.strip()
         except:
-            duration = ""
+            data["duration"] = ""
 
-        today = datetime.today().strftime("%Y%m%d")
-
-        summary = get_summary(driver, detail_link) if detail_link else "Özet bulunamadı"
-
-        return {
-            "title": title or "",
-            "date": today,
-            "link": detail_link or "",
-            "bilet_link": bilet_link or "",
-            "genre": genre or "",
-            "categories": categories or "",
-            "rating": rating,
-            "poster": poster,
-            "duration": duration,
-            "trailer": trailer,
-            "summary": summary
-        }
+        return data
 
     except Exception as e:
-        print(f"❌ Hata: {e}")
+        print(f"❌ Hata (attribute okuma): {e}")
         return None
 
-def get_now_playing_movies():
-    print("🎬 Vizyondaki filmler çekiliyor...")
+def parse_movie_element(driver, data):
+    try:
+        summary = get_summary(driver, data["detail_link"]) if data["detail_link"] else "Özet bulunamadı"
+        today = datetime.today().strftime("%Y%m%d")
+
+        return {
+            "title": data["title"],
+            "date": today,
+            "link": data["detail_link"],
+            "bilet_link": data["bilet_link"],
+            "genre": data["genre"],
+            "categories": data["categories"],
+            "rating": data["rating"],
+            "poster": data["poster"],
+            "duration": data["duration"],
+            "trailer": data["trailer"],
+            "summary": summary
+        }
+    except Exception as e:
+        print(f"❌ Hata (parse): {e}")
+        return None
+
+def get_movies_from_page(url_path):
+    print(f"🎬 Sayfa çekiliyor: {url_path}")
     base_url = "https://www.paribucineverse.com"
     driver = setup_driver()
+    movie_data = []
 
     try:
-        driver.get(base_url + "/vizyondakiler")
+        driver.get(base_url + url_path)
         time.sleep(5)
 
         movie_elements = driver.find_elements(By.CLASS_NAME, "movie-list-banner-item")
         print(f"🎞️ {len(movie_elements)} film bulundu")
 
-        movie_data = []
-        for element in tqdm(movie_elements, desc="🎞️ Kartlar alınıyor"):
-            movie = parse_movie_element(driver, element, base_url)
-            if movie:
-                movie_data.append(movie)
+        for element in tqdm(movie_elements, desc="🎬 Kartlar işleniyor"):
+            attr_data = build_movie_dict_from_attributes(driver, element, base_url)
+            if attr_data:
+                movie = parse_movie_element(driver, attr_data)
+                if movie:
+                    movie_data.append(movie)
 
         return movie_data
     finally:
         driver.quit()
         print("🏁 İşlem tamamlandı.")
+
+def get_now_playing_movies():
+    return get_movies_from_page("/vizyondakiler")
 
 def get_upcoming_movies():
-    print("🚀 Gelecek filmler çekiliyor...")
-    base_url = "https://www.paribucineverse.com"
-    driver = setup_driver()
-
-    try:
-        driver.get(base_url + "/gelecek-filmler")
-        time.sleep(5)
-
-        movie_elements = driver.find_elements(By.CLASS_NAME, "movie-list-banner-item")
-        print(f"🎬 {len(movie_elements)} gelecek film bulundu")
-
-        movie_data = []
-        for element in tqdm(movie_elements, desc="🎬 Kartlar alınıyor"):
-            movie = parse_movie_element(driver, element, base_url)
-            if movie:
-                movie_data.append(movie)
-
-        return movie_data
-    finally:
-        driver.quit()
-        print("🏁 İşlem tamamlandı.")
+    return get_movies_from_page("/gelecek-filmler")
