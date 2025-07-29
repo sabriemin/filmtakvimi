@@ -1,3 +1,4 @@
+
 from scraper_paribu import get_upcoming_movies
 from ics import Calendar, Event
 from datetime import datetime
@@ -18,10 +19,15 @@ def create_ics_from_movies(movies):
                 f"🎬 Tür: {film.get('genre', 'Tür belirtilmemiş')}\n"
                 f"📄 Özet: {film.get('summary', 'Ozet bulunamadi')}\n"
                 f"▶️ Fragman: {film.get('trailer', 'Yok')}\n"
-                f"🔗 Detaylar: {film.get('link', '')}"
             )
-            event.description = description
+            # Hemen Bilet Al varsa ekle
+            if film.get("bilet_link"):
+                description += f"🎟️ Hemen Bilet Al: {film['bilet_link']}\n"
 
+            # Detay linki her zaman en sonda
+            description += f"🔗 Detaylar: {film.get('link', '')}"
+
+            event.description = description
             calendar.events.add(event)
             print("✅ Etkinlik eklendi.")
         except Exception as e:
