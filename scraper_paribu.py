@@ -33,7 +33,6 @@ def get_upcoming_movies():
 
     for element in tqdm(movie_elements, desc="\U0001F3AC Film kartları alınıyor"):
 
-            except:
                 incele_link = None
 
             if not incele_link:
@@ -51,7 +50,6 @@ def get_upcoming_movies():
                     if href:
                         bilet_link = "https://www.paribucineverse.com" + href if not href.startswith("http") else href
                         break
-            except:
                 bilet_link = None
 
             day, month, year = date.split(".")
@@ -65,28 +63,23 @@ def get_upcoming_movies():
             })
             print(f"✅ Kart alındı: {title} | 🎬 Bilet: {'VAR' if bilet_link else 'YOK'}")
 
-        except Exception as e:
             print(f"⚠️ Kart alınamadı: {e}")
             continue
 
     for movie in tqdm(movie_data, desc="📂 Film detayları alınıyor"):
 
         # Detay sayfasına girince:
-            except:
                 print(f"⏱ Bekleme zaman aşımı: {movie['title']} — Sayfa yüklenmedi.")
                 continue
 
-            except:
                 movie["trailer"] = "Fragman bağlantısı yok"
 
-            except:
                 movie["genre"] = "Tür belirtilmemiş"
 
                 if paragraphs:
                     movie["summary"] = "\n".join([p.text.strip() for p in paragraphs if p.text.strip()])
                 else:
                     movie["summary"] = "Özet bulunamadı"
-            except:
                 movie["summary"] = "Özet bulunamadı"
 
             
@@ -99,9 +92,7 @@ def get_upcoming_movies():
                     movie["date"] = iso_date
                     print(f"📅 Vizyon tarihi bulundu: {movie['title']} → {iso_date}")
                     break
-        except:
             continue
-except:
     print(f"📅 Vizyon tarihi alınamadı: {movie['title']}")
 
 
@@ -119,34 +110,27 @@ except:
                                 movie["date"] = iso_date
                                 print(f"📅 Vizyon tarihi bulundu: {movie['title']} → {iso_date}")
                                 break
-                    except:
                         continue
-            except Exception as e:
                 print(f"📅 Vizyon tarihi alınamadı: {movie['title']} – Hata: {e}")
 
             print(f"📌 Detay eklendi: {movie['title']}")
 
-        except Exception as e:
             print(f"❌ Detay alma hatası: {movie['title']} - {e}")
             movie["trailer"] = ""
             movie["genre"] = ""
             movie["summary"] = ""
             continue
-            except:
                 print(f"⏱ Bekleme zaman aşımı: {movie['title']} — Sayfa yüklenmedi.")
                 continue
 
-            except:
                 movie["trailer"] = "Fragman bağlantısı yok"
 
-            except:
                 movie["genre"] = "Tür belirtilmemiş"
 
                 if paragraphs:
                     movie["summary"] = "\n".join([p.text.strip() for p in paragraphs if p.text.strip()])
                 else:
                     movie["summary"] = "Özet bulunamadı"
-            except:
                 movie["summary"] = "Özet bulunamadı"
 
             
@@ -160,9 +144,7 @@ except:
                     movie["date"] = iso_date
                     print(f"📅 Vizyon tarihi bulundu: {movie['title']} → {iso_date}")
                     break
-        except:
             continue
-except:
     print(f"📅 Vizyon tarihi alınamadı: {movie['title']}")
 
 
@@ -180,14 +162,11 @@ except:
                                 movie["date"] = iso_date
                                 print(f"📅 Vizyon tarihi bulundu: {movie['title']} → {iso_date}")
                                 break
-                    except:
                         continue
-            except Exception as e:
                 print(f"📅 Vizyon tarihi alınamadı: {movie['title']} – Hata: {e}")
 
             print(f"📌 Detay eklendi: {movie['title']}")
 
-        except Exception as e:
             print(f"❌ Detay alma hatası: {movie['title']} - {e}")
             movie["trailer"] = ""
             movie["genre"] = ""
@@ -221,10 +200,8 @@ def get_now_playing_movies():
 
     for element in tqdm(movie_elements, desc="🎞️ Film kartları alınıyor"):
 
-            except:
                 date = datetime.today().strftime("%d.%m.%Y")
 
-            except:
                 incele_link = None
 
             if not incele_link:
@@ -242,7 +219,6 @@ def get_now_playing_movies():
                     if href:
                         bilet_link = "https://www.paribucineverse.com" + href if not href.startswith("http") else href
                         break
-            except:
                 bilet_link = None
 
             day, month, year = date.split(".")
@@ -256,28 +232,23 @@ def get_now_playing_movies():
             })
             print(f"✅ Kart alındı: {title} | 🎬 Bilet: {'VAR' if bilet_link else 'YOK'}")
 
-        except Exception as e:
             print(f"⚠️ Kart alınamadı: {e}")
             continue
 
     for movie in tqdm(movie_data, desc="📂 Film detayları alınıyor"):
 
         # Detay sayfasına girince:
-            except:
                 print(f"⏱ Bekleme zaman aşımı: {movie['title']} — Sayfa yüklenmedi.")
                 continue
 
-            except:
                 movie["trailer"] = "Fragman bağlantısı yok"
 
-            except:
                 movie["genre"] = "Tür belirtilmemiş"
 
                 if paragraphs:
                     movie["summary"] = "\n".join([p.text.strip() for p in paragraphs if p.text.strip()])
                 else:
                     movie["summary"] = "Özet bulunamadı"
-            except:
                 movie["summary"] = "Özet bulunamadı"
 
             
@@ -290,9 +261,7 @@ def get_now_playing_movies():
                     movie["date"] = iso_date
                     print(f"📅 Vizyon tarihi bulundu: {movie['title']} → {iso_date}")
                     break
-        except:
             continue
-except:
     print(f"📅 Vizyon tarihi alınamadı: {movie['title']}")
 
 
@@ -310,34 +279,27 @@ except:
                                 movie["date"] = iso_date
                                 print(f"📅 Vizyon tarihi bulundu: {movie['title']} → {iso_date}")
                                 break
-                    except:
                         continue
-            except Exception as e:
                 print(f"📅 Vizyon tarihi alınamadı: {movie['title']} – Hata: {e}")
 
             print(f"📌 Detay eklendi: {movie['title']}")
 
-        except Exception as e:
             print(f"❌ Detay alma hatası: {movie['title']} - {e}")
             movie["trailer"] = ""
             movie["genre"] = ""
             movie["summary"] = ""
             continue
-            except:
                 print(f"⏱ Bekleme zaman aşımı: {movie['title']} — Sayfa yüklenmedi.")
                 continue
 
-            except:
                 movie["trailer"] = "Fragman bağlantısı yok"
 
-            except:
                 movie["genre"] = "Tür belirtilmemiş"
 
                 if paragraphs:
                     movie["summary"] = "\n".join([p.text.strip() for p in paragraphs if p.text.strip()])
                 else:
                     movie["summary"] = "Özet bulunamadı"
-            except:
                 movie["summary"] = "Özet bulunamadı"
 
             
@@ -351,9 +313,7 @@ except:
                     movie["date"] = iso_date
                     print(f"📅 Vizyon tarihi bulundu: {movie['title']} → {iso_date}")
                     break
-        except:
             continue
-except:
     print(f"📅 Vizyon tarihi alınamadı: {movie['title']}")
 
 
@@ -371,14 +331,11 @@ except:
                                 movie["date"] = iso_date
                                 print(f"📅 Vizyon tarihi bulundu: {movie['title']} → {iso_date}")
                                 break
-                    except:
                         continue
-            except Exception as e:
                 print(f"📅 Vizyon tarihi alınamadı: {movie['title']} – Hata: {e}")
 
             print(f"📌 Detay eklendi: {movie['title']}")
 
-        except Exception as e:
             print(f"❌ Detay alma hatası: {movie['title']} - {e}")
             movie["trailer"] = ""
             movie["genre"] = ""
