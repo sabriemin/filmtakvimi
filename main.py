@@ -31,43 +31,45 @@ def create_ics_from_movies(movies):
             print(f"❌ Etkinlik oluşturulamadı: {film['title']}, Hata: {e}")
     return calendar
 
-def run():
-    print("\n🎥 Film türünü seçin:")
-    print("1. Gelecek filmler")
-    print("2. Vizyondaki filmler")
-    choice = input("Seçiminiz (1/2): ").strip()
-
-    if choice == "2":
-        movies = get_now_playing_movies()
-        filename = "vizyondakiler"
-    else:
-        movies = get_upcoming_movies()
-        filename = "gelecek_filmler"
-
-    print(f"\n🎬 Toplam film bulundu: {len(movies)}")
+def save_outputs(movies, label):
+    print(f"\n💾 Çıktılar kaydediliyor: {label} ({len(movies)} film)")
     calendar = create_ics_from_movies(movies)
-
     output_dir = "output"
     os.makedirs(output_dir, exist_ok=True)
 
-    output_path = os.path.join(output_dir, f"{filename}.ics")
-    with open(output_path, "w", encoding="utf-8") as f:
+    # ICS dosyası
+    ics_path = os.path.join(output_dir, f"{label}.ics")
+    with open(ics_path, "w", encoding="utf-8") as f:
         f.writelines(calendar)
-    print(f"\n✅ ICS dosyası oluşturuldu: {output_path}")
+    print(f"✅ ICS dosyası: {ics_path}")
 
-    meta_path = os.path.join(output_dir, "meta.json")
+    # JSON: movies
+    movies_path = os.path.join(output_dir, f"{label}.json")
+    with open(movies_path, "w", encoding="utf-8") as f:
+        json.dump(movies, f, ensure_ascii=False, indent=2)
+    print(f"📁 JSON dosyası: {movies_path}")
+
+def run():
+    print("\n🚀 Gelecek filmler alınıyor...")
+    upcoming = get_upcoming_movies()
+    save_outputs(upcoming, "gelecek_filmler")
+
+    print("\n🚀 Vizyondaki filmler alınıyor...")
+    now_playing = get_now_playing_movies()
+    save_outputs(now_playing, "vizyondakiler")
+
+    # meta.json
+    meta_path = os.path.join("output", "meta.json")
     meta = {
         "last_updated": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-        "type": "vizyondaki" if choice == "2" else "gelecek"
+        "counts": {
+            "gelecek_filmler": len(upcoming),
+            "vizyondakiler": len(now_playing)
+        }
     }
     with open(meta_path, "w", encoding="utf-8") as f:
         json.dump(meta, f, ensure_ascii=False, indent=2)
-    print(f"📁 meta.json kaydedildi.")
-
-    movies_path = os.path.join(output_dir, f"{filename}.json")
-    with open(movies_path, "w", encoding="utf-8") as f:
-        json.dump(movies, f, ensure_ascii=False, indent=2)
-    print(f"📁 {filename}.json kaydedildi.")
+    print(f"🗂 meta.json oluşturuldu.")
 
 if __name__ == "__main__":
     run()
