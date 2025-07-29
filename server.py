@@ -1,11 +1,41 @@
 from flask import Flask, send_file, render_template_string, request, jsonify
 from threading import Thread
-import subprocess
-import time
-import os
-import json
-from datetime import datetime
+import subprocess, time, os, json, requests
+from datetime import datetime, timedelta
 from collections import Counter
+from dotenv import load_dotenv
+
+
+app = Flask(__name__)
+
+REPO = "sabriemin/filmtakvimi"  # kendi repo adını yaz
+
+@app.route("/run", methods=["POST"])
+def run_workflow():
+    data = request.get_json()
+    token = data.get("token")
+
+    if not token:
+        return "❌ Token gerekli", 400
+
+    headers = {
+        "Accept": "application/vnd.github+json",
+        "Authorization": f"Bearer {token}",
+        "X-GitHub-Api-Version": "2022-11-28",
+    }
+
+    response = requests.post(
+        f"https://api.github.com/repos/{REPO}/actions/workflows/manual_update.yml/dispatches",
+        json={"ref": "main"},
+        headers=headers
+    )
+
+    if response.status_code == 204:
+        return "✅ Güncelleme GitHub Actions ile başlatıldı."
+    else:
+        return f"❌ Hata: {response.text}", 500
+
+
 
 app = Flask(__name__)
 
