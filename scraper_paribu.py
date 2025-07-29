@@ -95,6 +95,7 @@ def get_movies_from_page(url_path):
                     movie_data.append(movie)
             except Exception as e:
                 print(f"❌ Hata (kart): {e}")
+                continue
 
         return movie_data
     finally:
