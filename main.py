@@ -8,6 +8,10 @@ def create_ics_from_movies(movies):
     calendar = Calendar()
     for film in movies:
         try:
+            if not film.get("title") or not film.get("date"):
+                print(f"⚠️ Atlandı (eksik veri): {film}")
+                continue
+
             print(f"\n🎬 Etkinlik oluşturuluyor: {film['title']}")
             event = Event()
             event.name = film["title"]
@@ -28,7 +32,7 @@ def create_ics_from_movies(movies):
             calendar.events.add(event)
             print("✅ Etkinlik eklendi.")
         except Exception as e:
-            print(f"❌ Etkinlik oluşturulamadı: {film['title']}, Hata: {e}")
+            print(f"❌ Etkinlik oluşturulamadı: {film.get('title', 'Bilinmiyor')}, Hata: {e}")
     return calendar
 
 def run():
