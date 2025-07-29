@@ -1,70 +1,21 @@
+
 <!DOCTYPE html>
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
-  <title>Film Bilgi Yarışması</title>
-  <script src="https://cdn.tailwindcss.com">// Yüksek skoru kaydet ve göster
-function updateHighScore(currentScore) {
-  const highScoreKey = "filmQuizHighScore";
-  const previous = localStorage.getItem(highScoreKey);
-  if (!previous || currentScore > parseInt(previous)) {
-    localStorage.setItem(highScoreKey, currentScore);
-    return { updated: true, score: currentScore };
-  }
-  return { updated: false, score: parseInt(previous) };
-}
-
-// Quiz bittiğinde çağrılacak örnek kullanım:
-function endQuizUI(score, total) {
-  const scoreText = document.getElementById("score");
-  const highScoreText = document.getElementById("high-score");
-  scoreText.textContent = `Skorunuz: ${score} / ${total}`;
-
-  const result = updateHighScore(score);
-  highScoreText.textContent = result.updated
-    ? "🆕 Yeni yüksek skor!"
-    : `🔝 En yüksek skor: ${result.score}`;
-}
-</script>
+  <title>Film Quiz</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gray-900 text-white font-sans">
-  <div class="max-w-xl mx-auto p-6 text-center">
-    <h1 class="text-2xl font-bold text-yellow-400 mb-2">🎨 Film Bilgi Yarışması</h1>
-
-    <div class="w-full bg-gray-700 rounded-full h-2.5 mb-4">
-      <div id="progress-bar" class="bg-green-500 h-2.5 rounded-full transition-all duration-500" style="width: 0%"></div>
+<body>
+  <div id="quiz-app">
+    <h1>Film Bilgi Yarışması</h1>
+    <div id="question-container">
+      <div id="question"></div>
+      <div id="choices"></div>
     </div>
-
-    <div id="quiz-box" class="bg-gray-800 p-6 rounded shadow transition-all duration-300">
-      <p id="timer" class="text-right text-sm text-red-400 mb-2">⏱️ 10</p>
-      <div class="p-4 bg-gray-900 rounded shadow mb-4">
-        <p id="question" class="text-lg font-semibold">Soru yükleniyor...</p>
-      </div>
-      <div id="choices" class="grid gap-2"></div>
-      <div class="mt-4 space-x-2">
-        <button onclick="skipQuestion()" class="bg-yellow-600 hover:bg-yellow-700 px-4 py-2 rounded">⏭️ Pas Geç</button>
-        <button onclick="showHint()" class="bg-purple-600 hover:bg-purple-700 px-4 py-2 rounded">💡 İpucu</button>
-      </div>
-    </div>
-
-    <div id="result-box" class="hidden mt-6">
-      <p id="score" class="text-xl font-bold text-green-400"></p>
-      <p id="feedback" class="text-md mt-2"></p>
-      <p id="high-score" class="text-sm text-yellow-300 mt-2"></p>
-      <div id="summary" class="text-left text-sm mt-4 space-y-2"></div>
-      <button onclick="startQuiz()" class="mt-4 bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded">↺ Baştan Başla</button>
-      <button onclick="shareScore()" class="mt-2 bg-pink-600 hover:bg-pink-700 px-4 py-2 rounded">📤 Skorunu Paylaş</button>
-    </div>
-
-    <a href="/" class="inline-block mt-6 text-sm text-blue-400 hover:underline">🏠 Ana Sayfaya Dön</a>
+    <div id="result"></div>
+    <div id="score"></div>
   </div>
-
-<script>
-  // Yeni: animasyonlu ilerleme çubuğu
-  function updateProgressBar() {
-    const progress = ((current) / questions.length) * 100;
-    document.getElementById("progress-bar").style.width = `${progress}%`;
-  }
-</script>
-
-<!-- geri kalan script kodları korunur ve bu fonksiyon showQuestion içinde çağrılır -->
+  <script src="script.js"></script>
+</body>
+</html>
