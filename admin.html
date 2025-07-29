@@ -1,70 +1,107 @@
-
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>🎬 Admin Dashboard</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script>
-    window.addEventListener("DOMContentLoaded", function () {
-      const loggedIn = sessionStorage.getItem("admin_logged_in");
-      if (loggedIn !== "true") {
-        window.location.href = "admin_login.html";
-      } else {
-        logAdminAccess();
-      }
-    });
-
-    function logAdminAccess() {
-      fetch("/admin-log", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          time: new Date().toISOString(),
-          userAgent: navigator.userAgent
-        })
-      }).then(() => {
-        console.log("✅ Admin erişimi loglandı.");
-      }).catch(() => {
-        console.warn("⚠️ Admin log gönderilemedi.");
-      });
-    }
-
-    function logout() {
-      sessionStorage.removeItem("admin_logged_in");
-      window.location.href = "admin_login.html";
-    }
-  </script>
 </head>
 <body class="bg-gray-900 text-white font-sans">
   <nav class="bg-gray-800 p-4 flex justify-between items-center shadow-md">
     <h1 class="text-xl font-bold text-yellow-400">🎬 Film Takvimi | Admin Panel</h1>
-    <button class="bg-red-500 hover:bg-red-600 px-4 py-2 rounded font-semibold text-white" onclick="logout()">Çıkış Yap</button>
+    <button class="bg-red-500 hover:bg-red-600 px-4 py-2 rounded font-semibold" onclick="logout()">Çıkış Yap</button>
   </nav>
   <div class="max-w-6xl mx-auto p-6 space-y-6">
+
     <section class="bg-gray-800 p-4 rounded shadow">
       <h2 class="text-lg font-bold mb-2 text-blue-400">📊 Genel İstatistikler</h2>
       <div class="text-sm text-gray-300" id="stats-box">⏳ Yükleniyor...</div>
     </section>
+
     <section class="bg-gray-800 p-4 rounded shadow">
-      <div class="flex justify-between items-center mb-2">
-        <h2 class="text-lg font-bold text-purple-400">📈 Günlük İndirme Grafiği</h2>
-        <div class="space-x-2 text-sm">
-          <input class="bg-gray-700 rounded px-2 py-1 text-white" id="start-date" type="date"/>
-          <input class="bg-gray-700 rounded px-2 py-1 text-white" id="end-date" type="date"/>
-          <button class="bg-blue-600 hover:bg-blue-700 px-3 py-1 rounded">Filtrele</button>
-        </div>
-      </div>
-      <canvas height="120" id="downloadChart"></canvas>
+      <h2 class="text-lg font-bold text-purple-400 mb-2">📈 Günlük İndirme Grafiği</h2>
+      <canvas id="downloadChart" height="100"></canvas>
     </section>
+
     <section class="bg-gray-800 p-4 rounded shadow text-center">
       <h2 class="text-lg font-bold text-green-400 mb-2">🔁 Manuel Güncelle</h2>
       <p class="text-sm text-gray-400 mb-4">Film takvimi verilerini yeniden oluştur.</p>
-      <button class="bg-green-600 hover:bg-green-700 px-6 py-2 rounded font-semibold">↻ Takvimi Güncelle</button>
+      <button class="bg-green-600 hover:bg-green-700 px-6 py-2 rounded font-semibold" onclick="manualUpdate()">↻ Takvimi Güncelle</button>
       <p class="mt-2 text-sm text-gray-400" id="update-msg"></p>
     </section>
   </div>
+
+  <script>
+    function logout() {
+      sessionStorage.removeItem("admin_logged_in");
+      window.location.href = "admin_login.html";
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      if (sessionStorage.getItem("admin_logged_in") !== "true") {
+        window.location.href = "admin_login.html";
+        return;
+      }
+      fetchStats();
+      drawChart();
+    });
+
+    function fetchStats() {
+      fetch("/api/stats")
+        .then(res => res.json())
+        .then(data => {
+          const box = document.getElementById("stats-box");
+          box.innerHTML = `
+            📈 Toplam İndirme: <strong>${data.total}</strong><br/>
+            📅 Bugün: <strong>${data.today}</strong><br/>
+            🗓️ Son 7 Gün: <strong>${data.last_7_days}</strong>
+          `;
+        })
+        .catch(() => {
+          document.getElementById("stats-box").innerText = "❌ Veri alınamadı.";
+        });
+    }
+
+    function drawChart() {
+      fetch("/api/stats/daily")
+        .then(res => res.json())
+        .then(data => {
+          const ctx = document.getElementById("downloadChart").getContext("2d");
+          new Chart(ctx, {
+            type: "line",
+            data: {
+              labels: data.labels,
+              datasets: [{
+                label: "Günlük İndirme",
+                data: data.counts,
+                borderColor: "#60a5fa",
+                backgroundColor: "#3b82f680",
+                tension: 0.3,
+                fill: true
+              }]
+            },
+            options: {
+              responsive: true,
+              scales: {
+                y: { beginAtZero: true }
+              }
+            }
+          });
+        })
+        .catch(console.error);
+    }
+
+    function manualUpdate() {
+      fetch("/run")
+        .then(res => res.text())
+        .then(msg => {
+          document.getElementById("update-msg").innerText = msg;
+        })
+        .catch(err => {
+          document.getElementById("update-msg").innerText = "❌ Güncelleme başlatılamadı.";
+        });
+    }
+  </script>
 </body>
 </html>
