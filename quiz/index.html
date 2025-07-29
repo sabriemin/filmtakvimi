@@ -13,13 +13,17 @@
       <p id="timer" class="text-right text-sm text-red-400 mb-2">⏱️ 10</p>
       <p id="question" class="text-lg font-semibold mb-4">Soru yükleniyor...</p>
       <div id="choices" class="grid gap-2"></div>
+      <button onclick="skipQuestion()" class="mt-3 bg-yellow-600 hover:bg-yellow-700 px-4 py-2 rounded">⏭️ Pas Geç</button>
+      <button onclick="showHint()" class="mt-3 bg-purple-600 hover:bg-purple-700 px-4 py-2 rounded">💡 İpucu</button>
     </div>
 
     <div id="result-box" class="hidden mt-6">
       <p id="score" class="text-xl font-bold text-green-400"></p>
       <p id="feedback" class="text-md mt-2"></p>
       <p id="high-score" class="text-sm text-yellow-300 mt-2"></p>
+      <div id="summary" class="text-left text-sm mt-4 space-y-2"></div>
       <button onclick="startQuiz()" class="mt-4 bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded">↺ Baştan Başla</button>
+      <button onclick="shareScore()" class="mt-2 bg-pink-600 hover:bg-pink-700 px-4 py-2 rounded">📤 Skorunu Paylaş</button>
     </div>
 
     <a href="/" class="inline-block mt-6 text-sm text-blue-400 hover:underline">🏠 Ana Sayfaya Dön</a>
@@ -31,12 +35,16 @@
     let score = 0;
     let timer;
     let timeLeft = 10;
+    let totalSeconds = 0;
+    let answerLog = [];
+    let hintUsed = false;
 
     async function loadQuestions() {
       try {
         const res = await fetch("./quiz_questions.json");
         if (!res.ok) throw new Error("Soru dosyası yüklenemedi");
         questions = await res.json();
+        questions = questions.sort(() => Math.random() - 0.5);
         startQuiz();
       } catch (error) {
         document.getElementById("question").textContent = "Soru verisi yüklenemedi.";
@@ -47,24 +55,25 @@
     function startQuiz() {
       current = 0;
       score = 0;
+      totalSeconds = 0;
+      answerLog = [];
       document.getElementById("result-box").classList.add("hidden");
       document.getElementById("quiz-box").classList.remove("hidden");
       showQuestion();
     }
 
     function showQuestion() {
-      if (current >= questions.length) {
-        endQuiz();
-        return;
-      }
-
+      if (current >= questions.length) return endQuiz();
       timeLeft = 10;
+      hintUsed = false;
       updateTimer();
       timer = setInterval(() => {
         timeLeft--;
+        totalSeconds++;
         updateTimer();
         if (timeLeft <= 0) {
           clearInterval(timer);
+          answerLog.push({ question: questions[current].question, answer: "", correct: false });
           current++;
           showQuestion();
         }
@@ -80,7 +89,7 @@
         const btn = document.createElement("button");
         btn.textContent = choice;
         btn.className = "bg-gray-700 hover:bg-gray-600 w-full py-2 rounded";
-        btn.onclick = () => handleAnswer(btn, choice === q.answer);
+        btn.onclick = () => handleAnswer(btn, choice);
         choicesBox.appendChild(btn);
       });
     }
@@ -89,8 +98,10 @@
       document.getElementById("timer").textContent = `⏱️ ${timeLeft}`;
     }
 
-    function handleAnswer(button, isCorrect) {
+    function handleAnswer(button, choice) {
       clearInterval(timer);
+      const q = questions[current];
+      const isCorrect = choice === q.answer;
       const buttons = document.querySelectorAll("#choices button");
       buttons.forEach(btn => btn.disabled = true);
 
@@ -103,16 +114,38 @@
         playSound(false);
       }
 
+      answerLog.push({ question: q.question, answer: choice, correct: isCorrect });
       setTimeout(() => {
         current++;
         showQuestion();
       }, 1200);
     }
 
+    function skipQuestion() {
+      clearInterval(timer);
+      answerLog.push({ question: questions[current].question, answer: "(Pas geçildi)", correct: false });
+      current++;
+      showQuestion();
+    }
+
+    function showHint() {
+      if (hintUsed) return;
+      hintUsed = true;
+      const q = questions[current];
+      const buttons = document.querySelectorAll("#choices button");
+      let hidden = 0;
+      buttons.forEach(btn => {
+        if (btn.textContent !== q.answer && hidden < 2) {
+          btn.style.visibility = "hidden";
+          hidden++;
+        }
+      });
+    }
+
     function endQuiz() {
       document.getElementById("quiz-box").classList.add("hidden");
       const resultBox = document.getElementById("result-box");
-      document.getElementById("score").textContent = `Skorunuz: ${score} / ${questions.length}`;
+      document.getElementById("score").textContent = `Skorunuz: ${score} / ${questions.length} | Süre: ${totalSeconds} sn`;
 
       let msg = "";
       if (score === questions.length) msg = "🎉 Mükemmel! Tümünü bildiniz.";
@@ -129,6 +162,14 @@
         document.getElementById("high-score").textContent = `🔝 En yüksek skor: ${high}`;
       }
 
+      const summary = document.getElementById("summary");
+      summary.innerHTML = "<hr class='my-2'>";
+      answerLog.forEach((log, i) => {
+        const item = document.createElement("p");
+        item.innerHTML = `👉 Soru ${i + 1}: ${log.question}<br/> Cevap: ${log.answer} ${log.correct ? "✅" : "❌"}`;
+        summary.appendChild(item);
+      });
+
       resultBox.classList.remove("hidden");
     }
 
@@ -136,6 +177,18 @@
       const audio = new Audio(correct ? "https://cdn.pixabay.com/download/audio/2022/03/15/audio_3a4c51c5b7.mp3" : "https://cdn.pixabay.com/download/audio/2021/10/28/audio_6235f9d3ff.mp3");
       audio.volume = 0.2;
       audio.play();
+    }
+
+    function shareScore() {
+      if (navigator.share) {
+        navigator.share({
+          title: "Film Quiz Skorum",
+          text: `Skorum: ${score}/${questions.length}`,
+          url: location.href
+        });
+      } else {
+        alert("Tarayıcınız paylaşım desteklemiyor.");
+      }
     }
 
     loadQuestions();
