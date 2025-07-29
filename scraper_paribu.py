@@ -39,6 +39,9 @@ def get_upcoming_movies():
                 link_elements = element.find_elements(By.TAG_NAME, "a")
                 if link_elements:
                     incele_link = link_elements[0].get_attribute("href")
+                link_elements = element.find_elements(By.TAG_NAME, "a")
+                if link_elements:
+                    incele_link = link_elements[0].get_attribute("href")
 
             if not incele_link.startswith("http"):
                 link = "https://www.paribucineverse.com" + incele_link
@@ -205,6 +208,9 @@ def get_now_playing_movies():
                 incele_link = None
 
             if not incele_link:
+                link_elements = element.find_elements(By.TAG_NAME, "a")
+                if link_elements:
+                    incele_link = link_elements[0].get_attribute("href")
                 link_elements = element.find_elements(By.TAG_NAME, "a")
                 if link_elements:
                     incele_link = link_elements[0].get_attribute("href")
