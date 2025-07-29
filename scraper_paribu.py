@@ -7,8 +7,6 @@ from selenium.webdriver.support import expected_conditions as EC
 from datetime import datetime
 from tqdm import tqdm
 import time
-import uuid
-import os
 
 def setup_driver():
     options = Options()
@@ -59,19 +57,20 @@ def extract_movie_details(driver, movie):
 
     return movie
 
-def scrape_movies(section):
+def scrape_movies(section_slug):
     driver = setup_driver()
-    base_url = f"https://www.paribucineverse.com/{section}"
-    driver.get(base_url)
+    url = f"https://www.paribucineverse.com/{section_slug}"
+    driver.get(url)
     time.sleep(5)
 
     movie_elements = driver.find_elements(By.CLASS_NAME, "movie-list-banner-item")
-    print(f"🎬 {section.upper()} için {len(movie_elements)} film bulundu")
+    print(f"🎬 {section_slug.upper()} için {len(movie_elements)} film bulundu")
     movies = []
 
-    for element in tqdm(movie_elements, desc=f"📦 {section} filmler alınıyor"):
+    for element in tqdm(movie_elements, desc=f"📦 {section_slug} filmler alınıyor"):
         try:
             title = element.find_element(By.CLASS_NAME, "movie-title").text.strip()
+
             try:
                 date = element.find_element(By.CLASS_NAME, "movie-date").text.strip()
                 day, month, year = date.split(".")
@@ -89,7 +88,7 @@ def scrape_movies(section):
                 link = "https://www.paribucineverse.com" + link
 
             try:
-                bilet_btn = element.find_element(By.CLASS_NAME, "movie-banner-ticket-btn")
+                bilet_btn = element.find_element(By.CLASS_NAME, "movie-quick-buy-ticket-btn")
                 bilet_link = bilet_btn.get_attribute("href")
                 if not bilet_link.startswith("http"):
                     bilet_link = "https://www.paribucineverse.com" + bilet_link
@@ -107,7 +106,7 @@ def scrape_movies(section):
             print(f"⚠️ Kart alınamadı: {e}")
             continue
 
-    for i in tqdm(range(len(movies)), desc=f"🔍 {section} detaylar"):
+    for i in tqdm(range(len(movies)), desc=f"🔍 {section_slug} detaylar"):
         movies[i] = extract_movie_details(driver, movies[i])
 
     driver.quit()
@@ -116,14 +115,14 @@ def scrape_movies(section):
 def get_all_movies():
     print("🚀 Tüm filmler çekiliyor (gelecek + vizyondaki)...")
     future_movies = scrape_movies("gelecek-filmler")
-    now_movies = scrape_movies("vizyondakiler")
+    now_playing_movies = scrape_movies("vizyondakiler")
     return {
         "future": future_movies,
-        "now_playing": now_movies
+        "now_playing": now_playing_movies
     }
 
-# Örnek çağrı
+# Doğrudan çalıştırma için
 if __name__ == "__main__":
-    all_movies = get_all_movies()
-    print(f"Toplam gelecek film: {len(all_movies['future'])}")
-    print(f"Toplam vizyondaki film: {len(all_movies['now_playing'])}")
+    movies = get_all_movies()
+    print(f"📅 Gelecek film sayısı: {len(movies['future'])}")
+    print(f"🎬 Vizyondaki film sayısı: {len(movies['now_playing'])}")
