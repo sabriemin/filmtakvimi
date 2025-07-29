@@ -26,7 +26,7 @@
           icon.addEventListener("click", () => {
             iconClickCount++;
             if (iconClickCount === 5) {
-              showEasterEgg();
+              window.location.href = "/quiz";
             }
           });
         }
@@ -149,68 +149,6 @@
       Otomatik güncellenir • © sabriemin
     </footer>
   </div>
-
-<script>
-let easterModeIndex = 0;
-
-function showEasterEgg() {
-  const body = document.body;
-  const container = document.createElement("div");
-  container.id = "easter-box";
-  container.style = `
-    position:fixed; top:20%; left:50%; transform:translateX(-50%);
-    background:black; color:lime; font-family:monospace;
-    padding:1rem; border-radius:10px; z-index:9999;
-    max-width: 90%; box-shadow: 0 0 10px lime;
-  `;
-  body.appendChild(container);
-
-  // Tema değişikliği
-  body.classList.add("bg-black", "text-green-400");
-  body.classList.remove("bg-gradient-to-b", "from-gray-900", "to-black");
-
-  // Efekt setleri
-  const messages = [
-    ["🕵️‍♂️ Gizli görev modu", "🔐 Kodlar çözülüyor..."],
-    ["🎬 Film Ekranı Gizli Modu", "👨‍💻 Bu bir easter egg!", "🎁 Film önerisi yükleniyor..."],
-    ["💾 Sistem taranıyor...", "📟 Lütfen bekleyin..."]
-  ];
-
-  const msg = messages[easterModeIndex % messages.length];
-  easterModeIndex++;
-
-  // Mesajları yazdır
-  let i = 0;
-  const interval = setInterval(() => {
-    if (i < msg.length) {
-      container.innerHTML += msg[i++] + "<br/>";
-    } else {
-      clearInterval(interval);
-      // Film önerisi (sadece 2. efektte)
-      if ((easterModeIndex - 1) % messages.length === 1) {
-        fetch('./output/movies_birlesik.json')
-          .then(r => r.json())
-          .then(data => {
-            const random = data[Math.floor(Math.random() * data.length)];
-            container.innerHTML += "<br/>🎥 " + random.title + " — " + (random.genre || "Tür bilinmiyor");
-          })
-          .catch(() => {
-            container.innerHTML += "<br/>❌ Film verisi alınamadı.";
-          });
-      }
-    }
-  }, 800);
-
-  // ⏳ 10 saniye sonra eski hale dön
-  setTimeout(() => {
-    body.classList.remove("bg-black", "text-green-400");
-    body.classList.add("bg-gradient-to-b", "from-gray-900", "to-black");
-    container.remove();
-  }, 10000);
-}
-</script>
-
-
 
 </body>
 </html>
