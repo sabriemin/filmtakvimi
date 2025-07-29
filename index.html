@@ -1,1 +1,133 @@
-<...uzun içerik az önce güncellendiği için tekrar kopyalanmadı...>
+<!-- Düzenlenmiş index.html + Dinamik Film Kartları + Gerçek zamanlı güncelleme saati -->
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🎬 Film Takvimi</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    let iconClickCount = 0;
+    document.addEventListener("DOMContentLoaded", function () {
+      const heading = document.querySelector("h1");
+      if (heading) {
+        const icon = heading.querySelector("span.icon-trigger");
+        if (icon) {
+          icon.addEventListener("click", () => {
+            iconClickCount++;
+            if (iconClickCount === 5) {
+              window.location.href = "admin.html";
+            }
+          });
+        }
+      }
+
+      loadMovies();
+      updateTime();
+    });
+
+    function toggleSubscribe() {
+      document.getElementById("subscribe-box").classList.toggle("hidden");
+    }
+
+    function copyURL() {
+      const url = document.getElementById("calendar-url").textContent;
+      navigator.clipboard.writeText(url).then(() => {
+        alert("📋 Link kopyalandı!");
+      });
+    }
+
+    function updateTime() {
+      const now = new Date();
+      const formatted = now.toLocaleString('tr-TR', { day: '2-digit', month: 'long', year: 'numeric', hour: '2-digit', minute: '2-digit' });
+      document.getElementById("update-time").textContent = `🕒 Son güncelleme: ${formatted}`;
+    }
+
+    function loadMovies() {
+      const movies = [
+        {
+          title: "Yıldız Savaşları: Geri Dönüş",
+          genre: "Bilim Kurgu",
+          date: "2025-08-02",
+          poster: "https://via.placeholder.com/300x180.png?text=Y%C4%B1ld%C4%B1z+Sava%C5%9Flar%C4%B1"
+        },
+        {
+          title: "Aşkın Renkleri",
+          genre: "Romantik",
+          date: "2025-08-09",
+          poster: "https://via.placeholder.com/300x180.png?text=A%C5%9Fk%C4%B1n+Renkleri"
+        },
+        {
+          title: "Zamanda Yolculuk",
+          genre: "Macera",
+          date: "2025-08-16",
+          poster: "https://via.placeholder.com/300x180.png?text=Zamanda+Yolculuk"
+        }
+      ];
+
+      const container = document.getElementById("movie-list");
+      container.innerHTML = "";
+
+      movies.forEach(movie => {
+        const card = document.createElement("div");
+        card.className = "bg-gray-800 rounded shadow p-4 text-left space-y-2";
+        card.innerHTML = `
+          <img src="${movie.poster}" alt="${movie.title}" class="w-full h-48 object-cover rounded" />
+          <h3 class="text-lg font-bold text-yellow-300">${movie.title}</h3>
+          <p class="text-sm text-gray-300">🎬 Tür: ${movie.genre}</p>
+          <p class="text-sm text-gray-300">🗓 Vizyon: ${formatDate(movie.date)}</p>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    function formatDate(dateStr) {
+      const options = { day: '2-digit', month: 'long', year: 'numeric' };
+      return new Date(dateStr).toLocaleDateString('tr-TR', options);
+    }
+  </script>
+</head>
+<body class="bg-gradient-to-b from-gray-900 to-black text-white font-sans">
+  <div class="max-w-5xl mx-auto p-6 text-center">
+    <h1 class="text-4xl sm:text-5xl font-extrabold text-yellow-400 mb-6 drop-shadow-lg">
+      <span class="icon-trigger cursor-pointer">🎬</span> Film Takvimi
+    </h1>
+    <p class="text-gray-300 mb-6">Vizyona girecek filmleri kaçırma! Aşağıdan takvimi indir ya da abone ol.</p>
+
+    <div class="flex justify-center gap-4 mb-8">
+      <button class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded" onclick="toggleSubscribe()">
+        📅 Takvime Abone Ol
+      </button>
+    </div>
+
+    <div class="mt-4 hidden text-sm text-gray-300 space-y-4" id="subscribe-box">
+      <div class="bg-gray-700 p-3 rounded">
+        <strong class="block mb-1 text-yellow-300">📌 Takvim Abonelik Linki:</strong>
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-2">
+          <code class="break-all text-yellow-300 text-xs" id="calendar-url">https://filmtakvimi.com/output/film_takvimi.ics</code>
+          <button class="text-sm bg-yellow-500 text-black px-2 py-1 rounded hover:bg-yellow-600" onclick="copyURL()">📋 Kopyala</button>
+        </div>
+      </div>
+    </div>
+
+    <section class="bg-gray-800 p-4 rounded shadow mb-6 mt-10">
+      <h2 class="text-lg font-bold text-blue-400 mb-2">🎯 Yaklaşan Vizyon Tarihleri</h2>
+      <ul class="list-disc list-inside text-sm text-gray-300 space-y-1">
+        <li><strong>02.08.2025</strong> — Yıldız Savaşları: Geri Dönüş</li>
+        <li><strong>09.08.2025</strong> — Aşkın Renkleri</li>
+        <li><strong>16.08.2025</strong> — Zamanda Yolculuk</li>
+      </ul>
+    </section>
+
+    <p class="text-sm text-gray-400 mb-4" id="update-time">🕒 Son güncelleme: yükleniyor...</p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6" id="movie-list">
+      <!-- Dinamik film kartları buraya yüklenecek -->
+    </div>
+
+    <footer class="mt-12 text-sm text-gray-500 text-center">
+      Otomatik güncellenir • © sabriemin
+    </footer>
+  </div>
+</body>
+</html>
