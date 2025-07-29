@@ -1,3 +1,4 @@
+
 from scraper_paribu import get_upcoming_movies, get_now_playing_movies
 from ics import Calendar, Event
 from datetime import datetime
@@ -31,40 +32,37 @@ def create_ics_from_movies(movies):
             print(f"❌ Etkinlik oluşturulamadı: {film['title']}, Hata: {e}")
     return calendar
 
-def save_outputs(movies, label):
-    print(f"\n💾 Çıktılar kaydediliyor: {label} ({len(movies)} film)")
-    calendar = create_ics_from_movies(movies)
+def run():
+    print("\n🚀 Gelecek filmler alınıyor...")
+    upcoming = get_upcoming_movies()
+
+    print("\n🚀 Vizyondaki filmler alınıyor...")
+    now_playing = get_now_playing_movies()
+
+    all_movies = upcoming + now_playing
+    print(f"\n🎞 Toplam film sayısı: {len(all_movies)}")
+
+    calendar = create_ics_from_movies(all_movies)
     output_dir = "output"
     os.makedirs(output_dir, exist_ok=True)
 
-    # ICS dosyası
-    ics_path = os.path.join(output_dir, f"{label}.ics")
+    ics_path = os.path.join(output_dir, "film_takvimi.ics")
     with open(ics_path, "w", encoding="utf-8") as f:
         f.writelines(calendar)
     print(f"✅ ICS dosyası: {ics_path}")
 
-    # JSON: movies
-    movies_path = os.path.join(output_dir, f"{label}.json")
+    movies_path = os.path.join(output_dir, "film_takvimi.json")
     with open(movies_path, "w", encoding="utf-8") as f:
-        json.dump(movies, f, ensure_ascii=False, indent=2)
+        json.dump(all_movies, f, ensure_ascii=False, indent=2)
     print(f"📁 JSON dosyası: {movies_path}")
 
-def run():
-    print("\n🚀 Gelecek filmler alınıyor...")
-    upcoming = get_upcoming_movies()
-    save_outputs(upcoming, "gelecek_filmler")
-
-    print("\n🚀 Vizyondaki filmler alınıyor...")
-    now_playing = get_now_playing_movies()
-    save_outputs(now_playing, "vizyondakiler")
-
-    # meta.json
     meta_path = os.path.join("output", "meta.json")
     meta = {
         "last_updated": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
         "counts": {
             "gelecek_filmler": len(upcoming),
-            "vizyondakiler": len(now_playing)
+            "vizyondakiler": len(now_playing),
+            "toplam": len(all_movies)
         }
     }
     with open(meta_path, "w", encoding="utf-8") as f:
