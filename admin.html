@@ -3,32 +3,21 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>🎬 Admin Dashboard</title>
+  <title>🎬 Admin Panel</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body class="bg-gray-900 text-white font-sans">
   <nav class="bg-gray-800 p-4 flex justify-between items-center shadow-md">
     <h1 class="text-xl font-bold text-yellow-400">🎬 Film Takvimi | Admin Panel</h1>
     <button class="bg-red-500 hover:bg-red-600 px-4 py-2 rounded font-semibold" onclick="logout()">Çıkış Yap</button>
   </nav>
-  <div class="max-w-6xl mx-auto p-6 space-y-6">
 
-    <section class="bg-gray-800 p-4 rounded shadow">
-      <h2 class="text-lg font-bold mb-2 text-blue-400">📊 Genel İstatistikler</h2>
-      <div class="text-sm text-gray-300" id="stats-box">⏳ Yükleniyor...</div>
-    </section>
-
-    <section class="bg-gray-800 p-4 rounded shadow">
-      <h2 class="text-lg font-bold text-purple-400 mb-2">📈 Günlük İndirme Grafiği</h2>
-      <canvas id="downloadChart" height="100"></canvas>
-    </section>
-
-    <section class="bg-gray-800 p-4 rounded shadow text-center">
+  <div class="max-w-2xl mx-auto p-6">
+    <section class="bg-gray-800 p-6 rounded shadow text-center">
       <h2 class="text-lg font-bold text-green-400 mb-2">🔁 Manuel Güncelle</h2>
       <p class="text-sm text-gray-400 mb-4">Film takvimi verilerini yeniden oluştur.</p>
       <button class="bg-green-600 hover:bg-green-700 px-6 py-2 rounded font-semibold" onclick="manualUpdate()">↻ Takvimi Güncelle</button>
-      <p class="mt-2 text-sm text-gray-400" id="update-msg"></p>
+      <p class="mt-3 text-sm text-gray-300" id="update-msg"></p>
     </section>
   </div>
 
@@ -38,68 +27,17 @@
       window.location.href = "admin_login.html";
     }
 
-    document.addEventListener("DOMContentLoaded", () => {
-      if (sessionStorage.getItem("admin_logged_in") !== "true") {
-        window.location.href = "admin_login.html";
-        return;
-      }
-      fetchStats();
-      drawChart();
-    });
-
-    function fetchStats() {
-      fetch("/api/stats")
-        .then(res => res.json())
-        .then(data => {
-          const box = document.getElementById("stats-box");
-          box.innerHTML = `
-            📈 Toplam İndirme: <strong>${data.total}</strong><br/>
-            📅 Bugün: <strong>${data.today}</strong><br/>
-            🗓️ Son 7 Gün: <strong>${data.last_7_days}</strong>
-          `;
-        })
-        .catch(() => {
-          document.getElementById("stats-box").innerText = "❌ Veri alınamadı.";
-        });
-    }
-
-    function drawChart() {
-      fetch("/api/stats/daily")
-        .then(res => res.json())
-        .then(data => {
-          const ctx = document.getElementById("downloadChart").getContext("2d");
-          new Chart(ctx, {
-            type: "line",
-            data: {
-              labels: data.labels,
-              datasets: [{
-                label: "Günlük İndirme",
-                data: data.counts,
-                borderColor: "#60a5fa",
-                backgroundColor: "#3b82f680",
-                tension: 0.3,
-                fill: true
-              }]
-            },
-            options: {
-              responsive: true,
-              scales: {
-                y: { beginAtZero: true }
-              }
-            }
-          });
-        })
-        .catch(console.error);
-    }
-
     function manualUpdate() {
       fetch("/run")
-        .then(res => res.text())
+        .then(res => {
+          if (!res.ok) throw new Error("Sunucu cevap vermedi");
+          return res.text();
+        })
         .then(msg => {
           document.getElementById("update-msg").innerText = msg;
         })
-        .catch(err => {
-          document.getElementById("update-msg").innerText = "❌ Güncelleme başlatılamadı.";
+        .catch(() => {
+          document.getElementById("update-msg").innerText = "⚠️ Bu özellik statik sistemde çalışmaz. Sunucu desteklemiyor.";
         });
     }
   </script>
