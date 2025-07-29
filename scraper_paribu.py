@@ -33,7 +33,7 @@ def get_upcoming_movies():
 
     for element in tqdm(movie_elements, desc="\U0001F3AC Film kartları alınıyor"):
 
-                incele_link = None
+            incele_link = None
 
             if not incele_link:
                 link_elements = element.find_elements(By.TAG_NAME, "a")
