@@ -34,15 +34,10 @@ def get_upcoming_movies():
 
     for element in tqdm(movie_elements, desc="🎬 Film kartları alınıyor"):
         try:
-            # 🎟️ "Hemen Bilet Al" linkini bul
-            try:
-                bilet_btn = element.find_element(By.CLASS_NAME, "movie-banner-ticket-btn")
-                bilet_link = bilet_btn.get_attribute("href")
-            except:
-                bilet_link = None
             title = element.find_element(By.CLASS_NAME, "movie-title").text.strip()
             date = element.find_element(By.CLASS_NAME, "movie-date").text.strip()
 
+            # 🎯 İncele butonu
             try:
                 incele_link = element.find_element(By.CLASS_NAME, "movie-banner-incept-btn").get_attribute("href")
             except:
@@ -53,11 +48,20 @@ def get_upcoming_movies():
                 if link_elements:
                     incele_link = link_elements[0].get_attribute("href")
 
-            # 🔗 Tam URL oluştur
             if not incele_link.startswith("http"):
                 link = "https://www.paribucineverse.com" + incele_link
             else:
                 link = incele_link
+
+            # 🎟️ Hemen Bilet Al butonu
+            try:
+                bilet_raw = element.find_element(By.CLASS_NAME, "movie-banner-ticket-btn").get_attribute("href")
+                if not bilet_raw.startswith("http"):
+                    bilet_link = "https://www.paribucineverse.com" + bilet_raw
+                else:
+                    bilet_link = bilet_raw
+            except:
+                bilet_link = None
 
             day, month, year = date.split(".")
             iso_date = f"{year}{month}{day}"
@@ -66,7 +70,7 @@ def get_upcoming_movies():
                 "title": title,
                 "date": iso_date,
                 "link": link,
-                "bilet_link": bilet_link if "bilet_link" in locals() else None
+                "bilet_link": bilet_link
             })
             print(f"✅ Kart alındı: {title}")
         except Exception as e:
