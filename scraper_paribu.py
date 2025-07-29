@@ -21,9 +21,8 @@ def get_summary(driver, detail_url):
     try:
         driver.get(detail_url)
         time.sleep(2)
-        paragraphs = driver.find_elements(By.CLASS_NAME, "movie-paragraph")
-        summary = "\n".join(p.text.strip() for p in paragraphs if p.text.strip())
-        return summary if summary else "Özet bulunamadı"
+        summary_tag = driver.find_element(By.CSS_SELECTOR, ".film-summary > p")
+        return summary_tag.text.strip() if summary_tag else "Özet bulunamadı"
     except:
         return "Özet bulunamadı"
 
@@ -35,23 +34,37 @@ def parse_movie_element(driver, element, base_url):
         rating_raw = element.get_attribute("data-rate")
         rating = str(float(rating_raw) / 10000) if rating_raw else ""
         slug_url = element.get_attribute("data-slug-url")
-        showtime = element.get_attribute("data-showtime")
 
-        bilet_btn = element.find_element(By.CLASS_NAME, "movie-quick-buy-ticket-btn")
-        bilet_link = bilet_btn.get_attribute("href") if bilet_btn else None
+        try:
+            bilet_btn = element.find_element(By.CLASS_NAME, "movie-quick-buy-ticket-btn")
+            bilet_link = bilet_btn.get_attribute("href")
+        except:
+            bilet_link = ""
 
-        incele_btn = element.find_element(By.CLASS_NAME, "movie-banner-incept-btn")
-        relative_detail = incele_btn.get_attribute("href") if incele_btn else None
-        detail_link = base_url + relative_detail if relative_detail else ""
+        try:
+            incele_btn = element.find_element(By.CLASS_NAME, "movie-banner-incept-btn")
+            relative_detail = incele_btn.get_attribute("href")
+            detail_link = base_url + relative_detail
+        except:
+            detail_link = ""
 
-        trailer_area = element.find_element(By.CLASS_NAME, "movie-trailer-area")
-        trailer = trailer_area.get_attribute("data-trailer-url") if trailer_area else ""
+        try:
+            trailer_area = element.find_element(By.CLASS_NAME, "movie-trailer-area")
+            trailer = trailer_area.get_attribute("data-trailer-url")
+        except:
+            trailer = ""
 
-        img_tag = element.find_element(By.CLASS_NAME, "movie-list-banner-img")
-        poster = img_tag.get_attribute("src") if img_tag else ""
+        try:
+            img_tag = element.find_element(By.CLASS_NAME, "movie-list-banner-img")
+            poster = img_tag.get_attribute("src")
+        except:
+            poster = ""
 
-        duration_tag = element.find_element(By.CLASS_NAME, "movie-time")
-        duration = duration_tag.text.strip() if duration_tag else ""
+        try:
+            duration_tag = element.find_element(By.CLASS_NAME, "movie-time")
+            duration = duration_tag.text.strip()
+        except:
+            duration = ""
 
         today = datetime.today().strftime("%Y%m%d")
 
