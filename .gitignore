@@ -1,0 +1,6 @@
+# Her şeyi ignore et
+*
+
+# public klasörü ve içindeki index.html hariç
+!public/
+!public/index.html
