@@ -19,21 +19,6 @@ def index():
 def serve_ics():
     path = os.path.join("output", "film_takvimi.ics")
     if os.path.exists(path) and os.path.getsize(path) > 0:
-        stats_path = os.path.join("output", "stats.json")
-        try:
-            from datetime import datetime
-            today = datetime.today().strftime("%Y-%m-%d")
-            if os.path.exists(stats_path):
-                with open(stats_path, "r", encoding="utf-8") as f:
-                    stats = json.load(f)
-            else:
-                stats = {"daily": {}, "total": 0}
-            stats["daily"][today] = stats["daily"].get(today, 0) + 1
-            stats["total"] = stats.get("total", 0) + 1
-            with open(stats_path, "w", encoding="utf-8") as f:
-                json.dump(stats, f, indent=2, ensure_ascii=False)
-        except Exception as e:
-            print("⚠️ Sayaç güncellenemedi:", e)
         return send_file(path, mimetype="text/calendar")
     return "ICS dosyasi bulunamadi veya bos.", 404
 
@@ -72,3 +57,38 @@ if __name__ == "__main__":
     Thread(target=update_ics_periodically, daemon=True).start()
     port = int(os.environ.get("PORT", 10000))
     app.run(host="0.0.0.0", port=port)
+
+
+@app.route("/admin-log", methods=["POST"])
+def admin_log():
+    from flask import request
+    log_path = os.path.join("output", "admin_logs.json")
+    try:
+        log_entry = request.get_json()
+        if not log_entry:
+            return "Invalid data", 400
+        if os.path.exists(log_path):
+            with open(log_path, "r", encoding="utf-8") as f:
+                logs = json.load(f)
+        else:
+            logs = []
+        logs.append(log_entry)
+        with open(log_path, "w", encoding="utf-8") as f:
+            json.dump(logs, f, indent=2, ensure_ascii=False)
+        return "OK", 200
+    except Exception as e:
+        print("⚠️ Log kaydedilemedi:", e)
+        return "Error", 500
+
+@app.route("/admin-auth", methods=["POST"])
+def admin_auth():
+    from flask import request
+    data = request.get_json()
+    username = data.get("username", "")
+    password = data.get("password", "")
+
+    # Sabit kullanıcı adı ve şifre
+    if username == "admin" and password == "Mars2025":
+        return "OK", 200
+    else:
+        return "Unauthorized", 401

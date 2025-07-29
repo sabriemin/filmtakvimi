@@ -1,78 +1,82 @@
 <!DOCTYPE html>
+
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>🔐 Admin Paneli</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>🎬 Admin Dashboard</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script><script>
+// Sayfa giriş kontrolü
+window.addEventListener("DOMContentLoaded", function () {
+  const token = localStorage.getItem("admin_token");
+  if (token !== "gizli-sifrem") {
+    window.location.href = "index.html";
+  } else {
+    logAdminAccess();
+  }
+});
+
+// Loglama işlemi
+function logAdminAccess() {
+  fetch("/admin-log", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      time: new Date().toISOString(),
+      userAgent: navigator.userAgent
+    })
+  }).then(() => {
+    console.log("✅ Admin erişimi loglandı.");
+  }).catch(() => {
+    console.warn("⚠️ Admin log gönderilemedi.");
+  });
+}
+</script><script>
+// admin.html erişim kontrolü
+window.addEventListener("DOMContentLoaded", function () {
+  const loggedIn = sessionStorage.getItem("admin_logged_in");
+  if (loggedIn !== "true") {
+    window.location.href = "admin_login.html";
+  }
+});
+</script>
 </head>
 <body class="bg-gray-900 text-white font-sans">
-  <div class="min-h-screen flex items-center justify-center">
-    <!-- Giriş kutusu -->
-    <div id="login-box" class="bg-gray-800 p-6 rounded w-full max-w-sm">
-      <h2 class="text-2xl font-bold text-yellow-400 mb-4 text-center">🔐 Admin Girişi</h2>
-      <input id="admin-pass" type="password" placeholder="Şifre" class="w-full p-2 mb-4 rounded bg-gray-700">
-      <button onclick="checkLogin()" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded">Giriş Yap</button>
-      <p id="error-msg" class="text-red-400 text-sm mt-2 hidden text-center">❌ Hatalı şifre</p>
-    </div>
-
-    <!-- Admin paneli -->
-    <div id="panel" class="hidden bg-gray-800 p-6 rounded shadow-md w-full max-w-md text-center">
-      <h2 class="text-xl font-bold text-green-400 mb-4">🎬 Manuel Yenileme</h2>
-      <p class="text-sm text-gray-300 mb-4">Film takvimi verisini yeniden oluşturmak için aşağıya tıkla.</p>
-      <button id="run-button" onclick="triggerGeneration()" class="bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded font-semibold">
-        ↻ Yenile ve ICS Oluştur
-      </button>
-      <p id="success-msg" class="text-green-400 text-sm mt-4 hidden">
-        ✅ ICS dosyası başarıyla tetiklendi.
-      </p>
-      <p id="fail-msg" class="text-red-400 text-sm mt-4 hidden">
-        ❌ Tetikleme başarısız. Token veya repo hatası olabilir.
-      </p>
-      <div id="spinner" class="text-gray-400 mt-4 hidden animate-pulse">
-        ⌛ İşlem sürüyor...
+<!-- Navbar -->
+<nav class="bg-gray-800 p-4 flex justify-between items-center shadow-md">
+<h1 class="text-xl font-bold text-yellow-400">🎬 Film Takvimi | Admin Panel</h1>
+<button class="bg-red-500 hover:bg-red-600 px-4 py-2 rounded font-semibold text-white" onclick="logout()">Çıkış Yap</button>
+</nav>
+<!-- Dashboard Container -->
+<div class="max-w-6xl mx-auto p-6 space-y-6">
+<!-- Stats -->
+<section class="bg-gray-800 p-4 rounded shadow">
+<h2 class="text-lg font-bold mb-2 text-blue-400">📊 Genel İstatistikler</h2>
+<div class="text-sm text-gray-300" id="stats-box">
+        ⏳ Yükleniyor...
       </div>
-    </div>
-  </div>
-
-  <script>
-    function checkLogin() {
-      const pass = document.getElementById("admin-pass").value;
-      if (pass === "") {
-        document.getElementById("login-box").classList.add("hidden");
-        document.getElementById("panel").classList.remove("hidden");
-      } else {
-        document.getElementById("error-msg").classList.remove("hidden");
-      }
-    }
-
-    function triggerGeneration() {
-      document.getElementById("spinner").classList.remove("hidden");
-      document.getElementById("success-msg").classList.add("hidden");
-      document.getElementById("fail-msg").classList.add("hidden");
-
-      fetch("https://api.github.com/repos/sabriemin/filmtakvimi/actions/workflows/scraper.yml/dispatches", {
-        method: "POST",
-        headers: {
-          Accept: "application/vnd.github+json",
-          Authorization: "Bearer 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", // Buraya gerçek token'ı ekleyin
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify({ ref: "main" })
-      })
-      .then(res => {
-        document.getElementById("spinner").classList.add("hidden");
-        if (res.status === 204) {
-          document.getElementById("success-msg").classList.remove("hidden");
-        } else {
-          document.getElementById("fail-msg").classList.remove("hidden");
-        }
-      })
-      .catch(err => {
-        document.getElementById("spinner").classList.add("hidden");
-        document.getElementById("fail-msg").classList.remove("hidden");
-      });
-    }
-  </script>
+</section>
+<!-- Chart -->
+<section class="bg-gray-800 p-4 rounded shadow">
+<div class="flex justify-between items-center mb-2">
+<h2 class="text-lg font-bold text-purple-400">📈 Günlük İndirme Grafiği</h2>
+<div class="space-x-2 text-sm">
+<input class="bg-gray-700 rounded px-2 py-1 text-white" id="start-date" type="date"/>
+<input class="bg-gray-700 rounded px-2 py-1 text-white" id="end-date" type="date"/>
+<button class="bg-blue-600 hover:bg-blue-700 px-3 py-1 rounded" onclick="filterChart()">Filtrele</button>
+</div>
+</div>
+<canvas height="120" id="downloadChart"></canvas>
+</section>
+<!-- Preview -->
+<!-- Manuel Tetikleme -->
+<section class="bg-gray-800 p-4 rounded shadow text-center">
+<h2 class="text-lg font-bold text-green-400 mb-2">🔁 Manuel Güncelle</h2>
+<p class="text-sm text-gray-400 mb-4">Film takvimi verilerini yeniden oluştur.</p>
+<button class="bg-green-600 hover:bg-green-700 px-6 py-2 rounded font-semibold" onclick="triggerUpdate()">↻ Takvimi Güncelle</button>
+<p class="mt-2 text-sm text-gray-400" id="update-msg"></p>
+</section>
+</div>
 </body>
 </html>
