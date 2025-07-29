@@ -3,142 +3,120 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
-from datetime import datetime
 from tqdm import tqdm
+from datetime import datetime
 import time
 
-def extract_movie_details(driver, movie):
-    try:
-        driver.get(movie["link"])
-        time.sleep(3)
-
-        try:
-            trailer_btn = driver.find_element(By.CLASS_NAME, "video-button")
-            movie["trailer"] = trailer_btn.get_attribute("data-bs-video-src") or "Fragman bağlantısı yok"
-        except:
-            movie["trailer"] = "Fragman bağlantısı yok"
-
-        try:
-            info_blocks = driver.find_elements(By.CLASS_NAME, "item-info")
-            for block in info_blocks:
-                label = block.find_element(By.TAG_NAME, "b").text.strip()
-                content = block.find_element(By.TAG_NAME, "small").text.strip()
-                if "Tür" in label:
-                    movie["genre"] = content
-                if "Vizyon Tarihi" in label:
-                    if "." in content:
-                        day, month, year = content.split(".")
-                        movie["date"] = f"{year}{month}{day}"
-        except:
-            movie["genre"] = "Tür belirtilmemiş"
-
-        try:
-            paragraphs = driver.find_elements(By.CLASS_NAME, "movie-paragraph")
-            if paragraphs:
-                movie["summary"] = "\n".join(p.text.strip() for p in paragraphs if p.text.strip())
-            else:
-                movie["summary"] = "Özet bulunamadı"
-        except:
-            movie["summary"] = "Özet bulunamadı"
-
-        print(f"📌 Detay eklendi: {movie['title']}")
-    except Exception as e:
-        print(f"❌ Detay alma hatası: {movie['title']} - {e}")
-        movie["trailer"] = ""
-        movie["genre"] = ""
-        movie["summary"] = ""
-
-def get_now_playing_movies():
-    print("🎬 Vizyondaki filmler çekiliyor...")
-
+def setup_driver():
     options = Options()
     options.add_argument('--headless')
     options.add_argument('--no-sandbox')
     options.add_argument('--disable-dev-shm-usage')
     options.add_argument('--log-level=3')
     options.add_argument("user-agent=Mozilla/5.0")
-
     service = Service("/usr/local/bin/chromedriver")
-    driver = webdriver.Chrome(service=service, options=options)
+    return webdriver.Chrome(service=service, options=options)
+
+def get_summary(driver, detail_url):
+    try:
+        driver.get(detail_url)
+        time.sleep(2)
+        paragraphs = driver.find_elements(By.CLASS_NAME, "movie-paragraph")
+        summary = "\n".join(p.text.strip() for p in paragraphs if p.text.strip())
+        return summary if summary else "Özet bulunamadı"
+    except:
+        return "Özet bulunamadı"
+
+def parse_movie_element(driver, element, base_url):
+    try:
+        title = element.get_attribute("data-movie-title")
+        genre = element.get_attribute("data-movie-genre")
+        categories = element.get_attribute("data-category2")
+        rating_raw = element.get_attribute("data-rate")
+        rating = str(float(rating_raw) / 10000) if rating_raw else ""
+        slug_url = element.get_attribute("data-slug-url")
+        showtime = element.get_attribute("data-showtime")
+
+        bilet_btn = element.find_element(By.CLASS_NAME, "movie-quick-buy-ticket-btn")
+        bilet_link = bilet_btn.get_attribute("href") if bilet_btn else None
+
+        incele_btn = element.find_element(By.CLASS_NAME, "movie-banner-incept-btn")
+        relative_detail = incele_btn.get_attribute("href") if incele_btn else None
+        detail_link = base_url + relative_detail if relative_detail else ""
+
+        trailer_area = element.find_element(By.CLASS_NAME, "movie-trailer-area")
+        trailer = trailer_area.get_attribute("data-trailer-url") if trailer_area else ""
+
+        img_tag = element.find_element(By.CLASS_NAME, "movie-list-banner-img")
+        poster = img_tag.get_attribute("src") if img_tag else ""
+
+        duration_tag = element.find_element(By.CLASS_NAME, "movie-time")
+        duration = duration_tag.text.strip() if duration_tag else ""
+
+        today = datetime.today().strftime("%Y%m%d")
+
+        summary = get_summary(driver, detail_link) if detail_link else "Özet bulunamadı"
+
+        return {
+            "title": title or "",
+            "date": today,
+            "link": detail_link or "",
+            "bilet_link": bilet_link or "",
+            "genre": genre or "",
+            "categories": categories or "",
+            "rating": rating,
+            "poster": poster,
+            "duration": duration,
+            "trailer": trailer,
+            "summary": summary
+        }
+
+    except Exception as e:
+        print(f"❌ Hata: {e}")
+        return None
+
+def get_now_playing_movies():
+    print("🎬 Vizyondaki filmler çekiliyor...")
+    base_url = "https://www.paribucineverse.com"
+    driver = setup_driver()
 
     try:
-        driver.get("https://www.paribucineverse.com/vizyondakiler")
+        driver.get(base_url + "/vizyondakiler")
         time.sleep(5)
 
         movie_elements = driver.find_elements(By.CLASS_NAME, "movie-list-banner-item")
         print(f"🎞️ {len(movie_elements)} film bulundu")
 
         movie_data = []
-
         for element in tqdm(movie_elements, desc="🎞️ Kartlar alınıyor"):
-            try:
-                title = element.find_element(By.CLASS_NAME, "movie-title").text.strip()
-                link = element.find_element(By.TAG_NAME, "a").get_attribute("href")
-
-                date = datetime.today().strftime("%d.%m.%Y")
-                iso_date = datetime.today().strftime("%Y%m%d")
-
-                movie = {
-                    "title": title,
-                    "date": iso_date,
-                    "link": link,
-                    "bilet_link": link
-                }
+            movie = parse_movie_element(driver, element, base_url)
+            if movie:
                 movie_data.append(movie)
-            except Exception as e:
-                print(f"❌ Kart hatası: {e}")
-
-        for movie in tqdm(movie_data, desc="📂 Detaylar alınıyor"):
-            extract_movie_details(driver, movie)
 
         return movie_data
-
     finally:
         driver.quit()
         print("🏁 İşlem tamamlandı.")
 
 def get_upcoming_movies():
     print("🚀 Gelecek filmler çekiliyor...")
-
-    options = Options()
-    options.add_argument('--headless')
-    options.add_argument('--no-sandbox')
-    options.add_argument('--disable-dev-shm-usage')
-    options.add_argument('--log-level=3')
-    options.add_argument("user-agent=Mozilla/5.0")
-
-    service = Service("/usr/local/bin/chromedriver")
-    driver = webdriver.Chrome(service=service, options=options)
+    base_url = "https://www.paribucineverse.com"
+    driver = setup_driver()
 
     try:
-        driver.get("https://www.paribucineverse.com/gelecek-filmler")
+        driver.get(base_url + "/gelecek-filmler")
         time.sleep(5)
 
         movie_elements = driver.find_elements(By.CLASS_NAME, "movie-list-banner-item")
         print(f"🎬 {len(movie_elements)} gelecek film bulundu")
 
         movie_data = []
-
         for element in tqdm(movie_elements, desc="🎬 Kartlar alınıyor"):
-            try:
-                title = element.find_element(By.CLASS_NAME, "movie-title").text.strip()
-                link = element.find_element(By.TAG_NAME, "a").get_attribute("href")
-
-                movie = {
-                    "title": title,
-                    "date": "00000000",
-                    "link": link,
-                    "bilet_link": None
-                }
+            movie = parse_movie_element(driver, element, base_url)
+            if movie:
                 movie_data.append(movie)
-            except Exception as e:
-                print(f"❌ Kart hatası: {e}")
-
-        for movie in tqdm(movie_data, desc="📂 Detaylar alınıyor"):
-            extract_movie_details(driver, movie)
 
         return movie_data
-
     finally:
         driver.quit()
         print("🏁 İşlem tamamlandı.")
