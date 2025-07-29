@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Film Takvimi Güncelle</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white flex flex-col items-center justify-center h-screen gap-4">
+  <h1 class="text-2xl font-bold text-green-400">🎬 Güncelleme</h1>
+
+  <input 
+    type="password" 
+    id="token-input" 
+    placeholder="GitHub Token (GITHUB_PAT)" 
+    class="p-2 rounded text-black w-80"
+  />
+
+  <button 
+    onclick="triggerUpdate()" 
+    class="bg-green-600 hover:bg-green-700 px-6 py-2 rounded font-semibold"
+  >
+    ↻ Güncellemeyi Başlat
+  </button>
+
+  <p id="result-msg" class="text-sm text-gray-300 mt-4"></p>
+
+  <script>
+    function triggerUpdate() {
+      const token = document.getElementById("token-input").value;
+      const result = document.getElementById("result-msg");
+      result.innerText = "⏳ Gönderiliyor...";
+
+      fetch("/run", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ token }),
+      })
+        .then(res => res.text())
+        .then(msg => result.innerText = msg)
+        .catch(() => result.innerText = "⚠️ Güncelleme başarısız.");
+    }
+  </script>
+</body>
+</html>
