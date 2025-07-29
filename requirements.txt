@@ -2,7 +2,6 @@ fastapi
 ics
 uvicorn
 selenium
-beautifulsoup4
 Flask
 selenium==4.21.0
 tqdm==4.66.4

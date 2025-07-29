@@ -1,9 +1,8 @@
-
-from scraper_paribu import get_upcoming_movies, get_now_playing_movies
+from scraper_paribu import get_upcoming_movies
 from ics import Calendar, Event
 from datetime import datetime
 import os
-import json
+import json  # JSON dosyası için eklendi
 
 def create_ics_from_movies(movies):
     calendar = Calendar()
@@ -13,7 +12,7 @@ def create_ics_from_movies(movies):
             event = Event()
             event.name = film["title"]
             event.begin = datetime.strptime(film["date"], "%Y%m%d").date()
-            event.make_all_day()
+            event.make_all_day()  # Tüm gün etkinlik olarak ayarla
 
             description = (
                 f"🎬 Tür: {film.get('genre', 'Tür belirtilmemiş')}\n"
@@ -33,41 +32,35 @@ def create_ics_from_movies(movies):
     return calendar
 
 def run():
-    print("\n🚀 Gelecek filmler alınıyor...")
-    upcoming = get_upcoming_movies()
+    print("\n🗓 Film verileri alınıyor...")
+    movies = get_upcoming_movies()
+    print(f"🎬 Toplam film bulundu: {len(movies)}")
 
-    print("\n🚀 Vizyondaki filmler alınıyor...")
-    now_playing = get_now_playing_movies()
+    calendar = create_ics_from_movies(movies)
 
-    all_movies = upcoming + now_playing
-    print(f"\n🎞 Toplam film sayısı: {len(all_movies)}")
-
-    calendar = create_ics_from_movies(all_movies)
     output_dir = "output"
     os.makedirs(output_dir, exist_ok=True)
 
-    ics_path = os.path.join(output_dir, "film_takvimi.ics")
-    with open(ics_path, "w", encoding="utf-8") as f:
+    # ICS dosyası
+    output_path = os.path.join(output_dir, "film_takvimi.ics")
+    with open(output_path, "w", encoding="utf-8") as f:
         f.writelines(calendar)
-    print(f"✅ ICS dosyası: {ics_path}")
+    print(f"\n✅ ICS dosyası oluşturuldu: {output_path}")
 
-    movies_path = os.path.join(output_dir, "film_takvimi.json")
-    with open(movies_path, "w", encoding="utf-8") as f:
-        json.dump(all_movies, f, ensure_ascii=False, indent=2)
-    print(f"📁 JSON dosyası: {movies_path}")
-
-    meta_path = os.path.join("output", "meta.json")
+    # meta.json (son güncelleme tarihi)
+    meta_path = os.path.join(output_dir, "meta.json")
     meta = {
-        "last_updated": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-        "counts": {
-            "gelecek_filmler": len(upcoming),
-            "vizyondakiler": len(now_playing),
-            "toplam": len(all_movies)
-        }
+        "last_updated": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     }
     with open(meta_path, "w", encoding="utf-8") as f:
         json.dump(meta, f, ensure_ascii=False, indent=2)
-    print(f"🗂 meta.json oluşturuldu.")
+    print(f"📁 meta.json kaydedildi.")
+
+    # movies.json (film listesi)
+    movies_path = os.path.join(output_dir, "movies.json")
+    with open(movies_path, "w", encoding="utf-8") as f:
+        json.dump(movies, f, ensure_ascii=False, indent=2)
+    print(f"📁 movies.json kaydedildi.")
 
 if __name__ == "__main__":
     run()
