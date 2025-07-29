@@ -37,7 +37,6 @@ def get_upcoming_movies():
             title = element.find_element(By.CLASS_NAME, "movie-title").text.strip()
             date = element.find_element(By.CLASS_NAME, "movie-date").text.strip()
 
-            # 🎯 "İncele" butonunun class'ı: movie-banner-incept-btn
             try:
                 incele_link = element.find_element(By.CLASS_NAME, "movie-banner-incept-btn").get_attribute("href")
             except:
@@ -48,7 +47,11 @@ def get_upcoming_movies():
                 if link_elements:
                     incele_link = link_elements[0].get_attribute("href")
 
-            link = incele_link
+            # 🔗 Tam URL oluştur
+            if not incele_link.startswith("http"):
+                link = "https://www.paribucineverse.com" + incele_link
+            else:
+                link = incele_link
 
             day, month, year = date.split(".")
             iso_date = f"{year}{month}{day}"
@@ -66,16 +69,17 @@ def get_upcoming_movies():
     for movie in tqdm(movie_data, desc="📂 Film detayları alınıyor"):
         try:
             driver.get(movie["link"])
-            wait = WebDriverWait(driver, 40)
+            wait = WebDriverWait(driver, 60)
             try:
                 wait.until(
                     EC.any_of(
                         EC.presence_of_element_located((By.CLASS_NAME, "movie-summary-tablet")),
-                        EC.presence_of_element_located((By.CLASS_NAME, "movie-details"))
+                        EC.presence_of_element_located((By.CLASS_NAME, "movie-details")),
+                        EC.presence_of_element_located((By.TAG_NAME, "body"))
                     )
                 )
             except:
-                print(f"⏱ Bekleme zaman aşımı: {movie['title']}")
+                print(f"⏱ Bekleme zaman aşımı: {movie['title']} — Sayfa yüklenmedi.")
                 continue
 
             try:
