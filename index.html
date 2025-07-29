@@ -50,7 +50,7 @@
 
     async function fetchMovies() {
       try {
-        const response = await fetch("output/movies_birlesik.json");
+        const response = await fetch("./output/movies_birlesik.json");
         const movies = await response.json();
         renderMovies(movies);
       } catch (error) {
@@ -112,17 +112,34 @@
       </button>
     </div>
 
-    $1
-<div class="bg-gray-700 p-3 rounded text-center">
-  <strong class="block mb-1 text-pink-400">🔗 Diğer Seçenekler</strong>
-  <div class="flex flex-col sm:flex-row justify-center items-center gap-3">
-    <img src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https://filmtakvimi.com/output/film_takvimi.ics" alt="Takvim QR Kodu" class="w-28 h-28 bg-white p-1 rounded"/>
-    <button onclick="navigator.share ? navigator.share({ title: 'Film Takvimi', url: document.getElementById('calendar-url').textContent }) : alert('Tarayıcı paylaşımı desteklemiyor.')" class="text-sm bg-pink-600 text-white px-3 py-2 rounded hover:bg-pink-700">
-      📤 Paylaş
-    </button>
+    <div class="mt-4 hidden text-sm text-gray-300 space-y-4" id="subscribe-box">
+  <div class="bg-gray-700 p-3 rounded text-center">
+    <strong class="block mb-1 text-yellow-300">📌 Takvim Abonelik Linki:</strong>
+    <div class="flex flex-col sm:flex-row justify-center items-center gap-2">
+      <code class="break-all text-yellow-300 text-xs" id="calendar-url">https://filmtakvimi.com/output/film_takvimi.ics</code>
+      <button class="text-sm bg-yellow-500 text-black px-2 py-1 rounded hover:bg-yellow-600" onclick="copyURL()">📋 Kopyala</button>
+    </div>
+  </div>
+  <div class="bg-gray-700 p-3 rounded">
+    <strong class="text-blue-400 block mb-1">📱 Android (OneCalendar)</strong>
+    <p>OneCalendar uygulamasını aç → Hesaplar → Hesap ekle → WebCal seç → takvim linkini yapıştır → Tamamlandı → tekrar Tamamlandı.</p>
+    <a class="inline-block mt-2 bg-blue-500 hover:bg-blue-600 text-white text-xs px-3 py-1 rounded" href="https://play.google.com/store/apps/details?id=biz.codespark.xcalendarapp" target="_blank">📥 OneCalendar Uygulamasını İndir</a>
+  </div>
+  <div class="bg-gray-700 p-3 rounded">
+    <strong class="text-green-400 block mb-1">🍏 iOS</strong>
+    <p>Takvim &gt; Takvimler &gt; Takvim Ekle &gt; Abonelik Takvimi Ekle → web adresini yapıştır → Abone Ol → İsim ve renk seç.</p>
+  </div>
+  <div class="bg-gray-700 p-3 rounded text-center">
+    <strong class="block mb-1 text-pink-400">🔗 Diğer Seçenekler</strong>
+    <div class="flex flex-col sm:flex-row justify-center items-center gap-3">
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https://filmtakvimi.com/output/film_takvimi.ics" alt="Takvim QR Kodu" class="w-28 h-28 bg-white p-1 rounded"/>
+      <button onclick="navigator.share ? navigator.share({ title: 'Film Takvimi', url: document.getElementById('calendar-url').textContent }) : alert('Tarayıcı paylaşımı desteklemiyor.')" class="text-sm bg-pink-600 text-white px-3 py-2 rounded hover:bg-pink-700">
+        📤 Paylaş
+      </button>
+    </div>
   </div>
 </div>
-$2🕒 Son güncelleme: yükleniyor...</p>
+<p class="text-sm text-gray-400 mb-4" id="update-time">🕒 Son güncelleme: yükleniyor...</p>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6" id="movie-list">
       <!-- Dinamik film kartları buraya yüklenecek -->
