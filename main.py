@@ -8,7 +8,7 @@ def create_ics_from_movies(movies):
     calendar = Calendar()
     for film in movies:
         try:
-            print(f"\n🎮 Etkinlik oluşturuluyor: {film['title']}")
+            print(f"\n🎬 Etkinlik oluşturuluyor: {film['title']}")
             event = Event()
             event.name = film["title"]
             event.begin = datetime.strptime(film["date"], "%Y%m%d").date()
@@ -32,7 +32,7 @@ def create_ics_from_movies(movies):
     return calendar
 
 def run():
-    print("\n📅 Film verileri alınıyor...")
+    print("\n🗓 Film verileri alınıyor...")
     movies = get_upcoming_movies()
     print(f"🎬 Toplam film bulundu: {len(movies)}")
 
