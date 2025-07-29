@@ -1,8 +1,8 @@
-from scraper_paribu import get_upcoming_movies
+from scraper_paribu import get_all_movies  # Artık hem vizyondakiler hem gelecek filmler
 from ics import Calendar, Event
 from datetime import datetime
 import os
-import json  # JSON dosyası için eklendi
+import json
 
 def create_ics_from_movies(movies):
     calendar = Calendar()
@@ -33,7 +33,7 @@ def create_ics_from_movies(movies):
 
 def run():
     print("\n🗓 Film verileri alınıyor...")
-    movies = get_upcoming_movies()
+    movies = get_all_movies()
     print(f"🎬 Toplam film bulundu: {len(movies)}")
 
     calendar = create_ics_from_movies(movies)
