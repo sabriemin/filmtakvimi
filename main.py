@@ -20,9 +20,10 @@ def create_ics_from_movies(movies):
                 f"📄 Özet: {film.get('summary', 'Ozet bulunamadi')}\n"
                 f"▶️ Fragman: {film.get('trailer', 'Yok')}\n"
             )
-            # Hemen Bilet Al varsa ekle
+            # Hemen Bilet Al varsa ekle ve logla
             if film.get("bilet_link"):
                 description += f"🎟️ Hemen Bilet Al: {film['bilet_link']}\n"
+                print(f"➕ Bilet bağlantısı eklendi: {film['bilet_link']}")
 
             # Detay linki her zaman en sonda
             description += f"🔗 Detaylar: {film.get('link', '')}"
