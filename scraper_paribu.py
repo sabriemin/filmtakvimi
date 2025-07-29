@@ -1,4 +1,3 @@
-
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
@@ -12,7 +11,7 @@ import uuid
 import os
 
 def get_upcoming_movies():
-    print("🚀 Başlıyoruz: Gelecek filmler çekilecek...")
+    print("\U0001F680 Başlıyoruz: Gelecek filmler çekilecek...")
 
     options = Options()
     options.add_argument('--headless')
@@ -29,15 +28,15 @@ def get_upcoming_movies():
     time.sleep(5)
 
     movie_elements = driver.find_elements(By.CLASS_NAME, "movie-list-banner-item")
-    print(f"🎞 {len(movie_elements)} film bulundu")
+    print(f"\U0001F3A2 {len(movie_elements)} film bulundu")
     movie_data = []
 
-    for element in tqdm(movie_elements, desc="🎬 Film kartları alınıyor"):
+    for element in tqdm(movie_elements, desc="\U0001F3AC Film kartları alınıyor"):
         try:
             title = element.find_element(By.CLASS_NAME, "movie-title").text.strip()
             date = element.find_element(By.CLASS_NAME, "movie-date").text.strip()
 
-            # 🎯 İncele butonu
+            # \U0001F3AF İncele butonu
             try:
                 incele_link = element.find_element(By.CLASS_NAME, "movie-banner-incept-btn").get_attribute("href")
             except:
@@ -53,7 +52,7 @@ def get_upcoming_movies():
             else:
                 link = incele_link
 
-            # 🎟️ Hemen Bilet Al butonu
+            # \U0001F39F️ Hemen Bilet Al butonu
             try:
                 bilet_raw = element.find_element(By.CLASS_NAME, "movie-banner-ticket-btn").get_attribute("href")
                 if not bilet_raw.startswith("http"):
