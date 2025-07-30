@@ -23,7 +23,7 @@
       margin: 0;
       font-size: 20px;
     }
-   .selector {
+ .selector {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -87,7 +87,8 @@
       border-radius: 50%;
       float: right;
     }
-    .film {
+   /* Modal'daki etkinlik kartlarını daha belirgin ayırmak için */
+.film {
   background: #f0f0f0;
   padding: 12px;
   margin-bottom: 15px;
@@ -102,7 +103,57 @@
   font-size: 13px;
   margin: 5px 0;
 }
+.button {
+  background: #007bff;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 13px;
+  display: inline-block;
+  margin: 6px 6px 0 0;
+  transition: background 0.2s ease;
+}
+.button:hover {
+  background: #0056b3;
+}
+/* Takvimde gün kutusunda sığmayan etkinlik sayısını belirt */
+.extra-count {
+  font-size: 11px;
+  color: #777;
+  margin-top: 2px;
+}
 
+/* Liste sayfasında tarih başlıkları */
+.list-card h3 {
+  font-size: 16px;
+  margin-top: 0;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 4px;
+  margin-bottom: 8px;
+}
+
+/* Modal kapatma butonu modern stil */
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #444;
+  background: #eee;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  line-height: 28px;
+  text-align: center;
+  transition: background 0.2s ease;
+}
+.modal-close:hover {
+  background: #ddd;
+}
     .film-title {
       font-size: 11px;
       white-space: nowrap;
@@ -162,21 +213,7 @@
       margin: 4px 0;
       font-size: 13px;
     }
-    .button {
-  background: #007bff;
-  color: white;
-  padding: 6px 10px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-size: 13px;
-  display: inline-block;
-  margin: 6px 6px 0 0;
-  transition: background 0.2s ease;
-}
-   .button:hover {
-  background: #0056b3;
-}
-    @media (max-width: 600px) {
+@media (max-width: 600px) {
   .selector {
     flex-wrap: nowrap;
     flex-direction: row;
