@@ -120,6 +120,7 @@ nextBtn.addEventListener("click", () => {
 
 const checkAnswer = () => {
   clearInterval(timer);
+
   const selectedAnswer = document.querySelector(".answer.selected");
   if (selectedAnswer) {
     const answer = selectedAnswer.querySelector(".text").innerHTML;
@@ -152,9 +153,16 @@ const checkAnswer = () => {
     answer.classList.add("checked");
   });
 
+  // Submit ve next gizleniyor (ya da hiç gösterilmeyebilir)
   submitBtn.style.display = "none";
-  nextBtn.style.display = "block";
+  nextBtn.style.display = "none";
+
+  // Otomatik sonraki soruya geç
+  setTimeout(() => {
+    nextQuestion();
+  }, 2000); // 2 saniye bekle
 };
+
 
 const nextQuestion = () => {
   if (currentQuestion < questions.length) {
