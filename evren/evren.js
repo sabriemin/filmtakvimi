@@ -1,12 +1,20 @@
+console.log("JS başlatıldı");
+
 async function loadEvents() {
   const today = new Date();
   const monthDay = ("0" + (today.getMonth() + 1)).slice(-2) + "-" + ("0" + today.getDate()).slice(-2);
+  console.log("Bugünün tarihi:", monthDay);
 
   try {
     const response = await fetch("evren_veri.json");
+    console.log("Fetch tamamlandı");
+
     const data = await response.json();
+    console.log("Veri parse edildi:", data);
 
     const matches = data.filter(e => e.date === monthDay);
+    console.log("Eşleşen olaylar:", matches);
+
     const container = document.getElementById("today-events");
     container.innerHTML = "";
 
@@ -20,7 +28,7 @@ async function loadEvents() {
       });
     }
   } catch (err) {
-    console.error("Veri yüklenemedi:", err);
+    console.error("HATA:", err);
     document.getElementById("today-events").innerHTML = "<p>Veri alınamadı.</p>";
   }
 }
