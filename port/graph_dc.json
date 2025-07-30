@@ -1,0 +1,58 @@
+{
+  "nodes": [
+    {
+      "id": "ManOfSteel",
+      "label": "Man of Steel",
+      "title": "Man of Steel (2013)",
+      "image": "https://upload.wikimedia.org/wikipedia/en/8/85/Man_of_Steel_poster.jpg",
+      "shape": "image",
+      "description": "Superman'in köken hikayesi, Krypton'dan Dünya'ya gelişi.",
+      "release_date": "2013-06-14",
+      "refers_to": null
+    },
+    {
+      "id": "BvS",
+      "label": "Batman v Superman",
+      "title": "Batman v Superman: Dawn of Justice (2016)",
+      "image": "https://upload.wikimedia.org/wikipedia/en/2/20/Batman_v_Superman_poster.jpg",
+      "shape": "image",
+      "description": "Batman, Superman'in gücünü tehdit olarak görür. Wonder Woman ilk kez görünür.",
+      "release_date": "2016-03-25",
+      "refers_to": "ManOfSteel"
+    },
+    {
+      "id": "JusticeLeague",
+      "label": "Justice League",
+      "title": "Justice League (2017)",
+      "image": "https://upload.wikimedia.org/wikipedia/en/3/31/Justice_League_film_poster.jpg",
+      "shape": "image",
+      "description": "Superman'in ölümü sonrası tehdit büyür. Kahramanlar birleşir.",
+      "release_date": "2017-11-17",
+      "refers_to": "BvS"
+    },
+    {
+      "id": "ZackCut",
+      "label": "Zack Snyder's JL",
+      "title": "Zack Snyder's Justice League (2021)",
+      "image": "https://upload.wikimedia.org/wikipedia/en/3/3c/Zack_Snyder%27s_Justice_League.png",
+      "shape": "image",
+      "description": "Orijinal vizyona alternatif, daha karanlık ve uzun versiyon.",
+      "release_date": "2021-03-18",
+      "refers_to": "JusticeLeague"
+    }
+  ],
+  "edges": [
+    {
+      "from": "ManOfSteel",
+      "to": "BvS"
+    },
+    {
+      "from": "BvS",
+      "to": "JusticeLeague"
+    },
+    {
+      "from": "JusticeLeague",
+      "to": "ZackCut"
+    }
+  ]
+}

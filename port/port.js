@@ -2,7 +2,19 @@ console.log("🎬 port.js çalışıyor");
 
 const container = document.getElementById("graph-area");
 const selector = document.getElementById("evrenSec");
-const aciklamaAlani = document.getElementById("film-aciklama");
+const bilgiKutusu = document.getElementById("film-aciklama");
+
+function formatFilmInfo(film) {
+  return `
+    <div class="film-karti">
+      <img src="\${film.image}" alt="\${film.title}" class="film-afis" />
+      <h3>\${film.title}</h3>
+      <p><strong>📅 Vizyon Tarihi:</strong> \${film.release_date}</p>
+      <p><strong>🧠 Açıklama:</strong> \${film.description}</p>
+      \${film.refers_to ? `<p><strong>🔁 Gönderme:</strong> <em>\${film.refers_to}</em></p>` : ""}
+    </div>
+  `;
+}
 
 function yukleEvren(evren) {
   const dosya = `graph_${evren}.json`;
@@ -14,17 +26,38 @@ function yukleEvren(evren) {
 
       const agVerisi = { nodes, edges };
       const ayarlar = {
+        layout: {
+          hierarchical: {
+            direction: "LR",
+            sortMethod: "directed"
+          }
+        },
         nodes: {
-          shape: "dot",
-          size: 16,
-          font: { size: 14 }
+          shape: "image",
+          size: 40,
+          borderWidth: 2,
+          shadow: true,
+          font: { size: 12 },
+          color: {
+            border: "#333",
+            background: "#fff",
+            highlight: {
+              border: "#0077cc",
+              background: "#e3f2fd"
+            }
+          }
         },
         edges: {
           arrows: "to",
           color: "#888"
         },
         physics: {
-          stabilization: true
+          enabled: false
+        },
+        interaction: {
+          hover: true,
+          zoomView: true,
+          dragView: true
         }
       };
 
@@ -33,8 +66,8 @@ function yukleEvren(evren) {
       ag.on("click", function (params) {
         if (params.nodes.length > 0) {
           const nodeId = params.nodes[0];
-          const nodeData = nodes.get(nodeId);
-          aciklamaAlani.textContent = nodeData.description || "Açıklama yok.";
+          const film = nodes.get(nodeId);
+          bilgiKutusu.innerHTML = formatFilmInfo(film);
         }
       });
     })
@@ -44,10 +77,8 @@ function yukleEvren(evren) {
     });
 }
 
-// Sayfa yüklendiğinde Marvel'ı getir
 yukleEvren("marvel");
 
-// Kullanıcı seçim yaptığında tekrar yükle
 selector.addEventListener("change", () => {
   yukleEvren(selector.value);
 });

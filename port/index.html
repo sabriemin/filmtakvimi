@@ -3,32 +3,43 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Film Serisi Ağı</title>
+  <title>Film Serisi Ağaçları</title>
   <link rel="stylesheet" href="style.css" />
   <script src="https://unpkg.com/vis-network@9.1.2/dist/vis-network.min.js"></script>
 </head>
 <body>
   <header>
-    <h1>🎞️ Film Serisi Bağlantı Haritası</h1>
-    <p class="subtitle">Bir evren seç, film ağacını keşfet.</p>
+    <div class="logo">
+      <h1>🎬 Film Ağaçları</h1>
+      <p class="subtitle">Sinema evrenleri arasında gezin, bağları keşfet!</p>
+    </div>
   </header>
 
   <main>
-    <div class="controls">
-      <label for="evrenSec">Evren:</label>
+    <aside class="sidebar">
+      <h2>🌌 Evren Seç</h2>
       <select id="evrenSec">
         <option value="marvel">Marvel</option>
-        <!-- Gelecekte diğer evrenler buraya eklenecek -->
+        <option value="dc">DC</option>
       </select>
-    </div>
+      <div class="info-box">
+        <h3>ℹ️ Açıklama</h3>
+        <p>Evrenlerden birini seçin. Film ağı sağda görüntülenecek. Her film için afiş, tarih ve açıklama gösterilir.</p>
+      </div>
+    </aside>
 
-    <div id="graph-area"></div>
-
-    <div id="film-bilgi">
-      <h2>📌 Film Bilgisi</h2>
-      <p id="film-aciklama">Bir filme tıkladığında detay burada görünecek.</p>
-    </div>
+    <section class="graph-section">
+      <div id="graph-area"></div>
+      <div id="film-bilgi">
+        <h2>📌 Film Bilgisi</h2>
+        <p id="film-aciklama">Bir filme tıkladığınızda detaylar burada görünecek.</p>
+      </div>
+    </section>
   </main>
+
+  <footer>
+    <p>© 2025 Film Ağaçları • <a href="#">İletişim</a></p>
+  </footer>
 
   <script src="port.js"></script>
 </body>

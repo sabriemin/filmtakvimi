@@ -2,41 +2,53 @@
   "nodes": [
     {
       "id": "IronMan1",
-      "label": "Iron Man (2008)",
-      "description": "Tony Stark'ın süper kahraman olarak başlangıcı.",
+      "label": "Iron Man",
+      "title": "Iron Man (2008)",
+      "image": "https://upload.wikimedia.org/wikipedia/en/7/70/Ironmanposter.jpeg",
       "shape": "image",
-      "image": "https://upload.wikimedia.org/wikipedia/en/7/70/Ironmanposter.jpeg"
+      "description": "Tony Stark'ın süper kahraman yolculuğunun başlangıcı.",
+      "release_date": "2008-05-02",
+      "refers_to": null
     },
     {
       "id": "IronMan2",
-      "label": "Iron Man 2 (2010)",
-      "description": "Tony’nin babasıyla geçmişi ve SHIELD ile tanışması.",
+      "label": "Iron Man 2",
+      "title": "Iron Man 2 (2010)",
+      "image": "https://upload.wikimedia.org/wikipedia/en/e/ed/Iron_Man_2_poster.jpg",
       "shape": "image",
-      "image": "https://upload.wikimedia.org/wikipedia/en/e/ed/Iron_Man_2_poster.jpg"
+      "description": "Tony Stark babasının geçmişiyle yüzleşir, SHIELD ile bağ kurar.",
+      "release_date": "2010-05-07",
+      "refers_to": "IronMan1"
     },
     {
       "id": "Avengers1",
-      "label": "The Avengers (2012)",
-      "description": "Iron Man, Hulk, Thor ve Captain America ilk kez birleşiyor.",
-      "refers_to": "IronMan1",
+      "label": "The Avengers",
+      "title": "The Avengers (2012)",
+      "image": "https://upload.wikimedia.org/wikipedia/en/f/f9/TheAvengers2012Poster.jpg",
       "shape": "image",
-      "image": "https://upload.wikimedia.org/wikipedia/en/f/f9/TheAvengers2012Poster.jpg"
+      "description": "Iron Man, Thor, Hulk ve Cap ilk kez birleşiyor. Loki düşman.",
+      "release_date": "2012-05-04",
+      "refers_to": "IronMan2"
     },
     {
       "id": "CivilWar",
-      "label": "Captain America: Civil War (2016)",
-      "description": "Iron Man ve Cap'in fikir ayrılığı, Avengers bölünür.",
-      "refers_to": "Avengers1",
+      "label": "Civil War",
+      "title": "Captain America: Civil War (2016)",
+      "image": "https://upload.wikimedia.org/wikipedia/en/5/53/Captain_America_Civil_War_poster.jpg",
       "shape": "image",
-      "image": "https://upload.wikimedia.org/wikipedia/en/5/53/Captain_America_Civil_War_poster.jpg"
+      "description": "Iron Man ve Captain America ayrışıyor. Avengers ikiye bölünüyor.",
+      "release_date": "2016-05-06",
+      "refers_to": "Avengers1"
     },
     {
       "id": "Endgame",
-      "label": "Avengers: Endgame (2019)",
-      "description": "Iron Man geçmişe gider; Iron Man 1'e açık gönderme vardır.",
-      "refers_to": "IronMan1",
+      "label": "Endgame",
+      "title": "Avengers: Endgame (2019)",
+      "image": "https://upload.wikimedia.org/wikipedia/en/0/0d/Avengers_Endgame_poster.jpg",
       "shape": "image",
-      "image": "https://upload.wikimedia.org/wikipedia/en/0/0d/Avengers_Endgame_poster.jpg"
+      "description": "Zaman yolculuğu, geçmişe dönüş. Iron Man 1’e gönderme içerir.",
+      "release_date": "2019-04-26",
+      "refers_to": "IronMan1"
     }
   ],
   "edges": [
