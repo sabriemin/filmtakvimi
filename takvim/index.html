@@ -16,18 +16,22 @@
     header {
       background: #1e1e2f;
       color: white;
-      padding: 20px;
+      padding: 10px 20px;
       text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 22px;
     }
     .selector {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 10px;
-      margin-top: 10px;
+      gap: 8px;
+      margin-top: 8px;
     }
     .selector select, .selector button {
-      padding: 8px;
+      padding: 6px;
       font-size: 14px;
       border-radius: 5px;
       border: 1px solid #ccc;
@@ -92,7 +96,7 @@
       text-align: center;
       font-size: 13px;
       color: #555;
-      margin-top: 10px;
+      margin-top: 8px;
     }
     .modal {
       display: none;
@@ -106,19 +110,18 @@
     }
     .modal-content {
       background: white;
-      padding: 20px;
-      max-width: 600px;
-      width: 90%;
+      padding: 15px;
+      max-width: 95%;
       max-height: 90vh;
       overflow-y: auto;
-      border-radius: 8px;
+      border-radius: 12px;
       position: relative;
     }
     .modal-close {
       position: absolute;
       top: 10px;
       right: 15px;
-      font-size: 20px;
+      font-size: 22px;
       font-weight: bold;
       cursor: pointer;
       color: #333;
@@ -126,11 +129,21 @@
     .modal-close:hover {
       color: red;
     }
-    .film {
-      margin-bottom: 10px;
-    }
     .film h3 {
       margin: 0 0 5px;
+    }
+    .button {
+      background: #1e90ff;
+      color: white;
+      padding: 6px 10px;
+      margin: 4px 6px 4px 0;
+      border-radius: 6px;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 13px;
+    }
+    .button:hover {
+      background: #0d74d1;
     }
     .list-card {
       background: white;
@@ -140,8 +153,8 @@
       box-shadow: 0 1px 3px rgba(0,0,0,0.1);
     }
     @media (max-width: 600px) {
-      .calendar-grid {
-        gap: 2px;
+      header h1 {
+        font-size: 18px;
       }
       .selector {
         flex-direction: column;
@@ -221,10 +234,12 @@ function populateSelectors() {
   yearSelect.onchange = () => {
     currentDate.setFullYear(parseInt(yearSelect.value));
     renderCalendar();
+    renderListView();
   };
   monthSelect.onchange = () => {
     currentDate.setMonth(parseInt(monthSelect.value));
     renderCalendar();
+    renderListView();
   };
 }
 
@@ -306,13 +321,13 @@ function showModal(dateKey) {
     const div = document.createElement('div');
     div.className = 'film';
     div.innerHTML = `
-      <h3>🎬 ${film.title}</h3>
+      <h3>${film.title}</h3>
       <p><strong>Tür:</strong> ${film.genre}</p>
       <p>${film.summary}</p>
       <p>
-        <a href="${film.link}" target="_blank">📎 Detay</a> |
-        <a href="${film.bilet_link || '#'}" target="_blank">🎟️ Bilet</a> |
-        <a href="${film.trailer}" target="_blank">🎬 Fragman</a>
+        <a href="${film.link}" target="_blank" class="button">📎 Detay</a>
+        <a href="${film.bilet_link || '#'}" target="_blank" class="button">🎟️ Bilet</a>
+        <a href="${film.trailer}" target="_blank" class="button">🎬 Fragman</a>
       </p>
     `;
     body.appendChild(div);
@@ -329,6 +344,14 @@ function switchView(view) {
   document.getElementById('list-view').style.display = view === 'list' ? 'block' : 'none';
   document.getElementById('tab-calendar').classList.toggle('active', view === 'calendar');
   document.getElementById('tab-list').classList.toggle('active', view === 'list');
+}
+
+function changeMonth(offset) {
+  currentDate.setMonth(currentDate.getMonth() + offset);
+  document.getElementById('year-select').value = currentDate.getFullYear();
+  document.getElementById('month-select').value = currentDate.getMonth();
+  renderCalendar();
+  renderListView();
 }
 
 document.addEventListener('DOMContentLoaded', () => {
