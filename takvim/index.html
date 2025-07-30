@@ -181,7 +181,145 @@
 </div>
 
 <script>
-// ... Tüm JavaScript kodları önceki örnekle birebir burada yer alacaktır ...
+  let filmData = {};
+  let currentDate = new Date();
+
+  const genreIcons = {
+    "Dram": "🎭",
+    "Korku": "👻",
+    "Bilim Kurgu": "🤖",
+    "Fantastik": "🧙",
+    "Macera": "🗺️",
+    "Müzik": "🎤",
+    "Müzikal": "🎼",
+    "Aksiyon": "💥",
+    "Komedi": "😂",
+    "Animasyon": "🧒",
+    "Biyografi": "🧬",
+    "Gerilim": "😱",
+    "Anime": "🎌",
+    "Aile": "👨‍👩‍👧‍👦"
+  };
+
+  async function loadJSON() {
+    const res = await fetch('/output/movies_birlesik.json');
+    const rawData = await res.json();
+    rawData.forEach(film => {
+      const date = film.date;
+      if (!filmData[date]) filmData[date] = [];
+      filmData[date].push(film);
+    });
+    renderCalendar();
+    renderListView();
+  }
+
+  function renderCalendar() {
+    const grid = document.getElementById('calendar-grid');
+    const summary = document.getElementById('summary');
+    grid.innerHTML = '';
+
+    const year = currentDate.getFullYear();
+    const month = currentDate.getMonth();
+    const firstDay = new Date(year, month, 1).getDay();
+    const daysInMonth = new Date(year, month + 1, 0).getDate();
+
+    document.getElementById('month-year').textContent =
+      currentDate.toLocaleDateString('tr-TR', { year: 'numeric', month: 'long' });
+
+    let totalFilms = 0;
+    let activeDays = 0;
+
+    const weekdays = ['Pzt', 'Sal', 'Çar', 'Per', 'Cum', 'Cmt', 'Paz'];
+    weekdays.forEach(day => {
+      const div = document.createElement('div');
+      div.className = 'weekday';
+      div.textContent = day;
+      grid.appendChild(div);
+    });
+
+    let blankDays = (firstDay + 6) % 7;
+    for (let i = 0; i < blankDays; i++) {
+      grid.appendChild(document.createElement('div'));
+    }
+
+    for (let day = 1; day <= daysInMonth; day++) {
+      const dateKey = `${year}${(month + 1).toString().padStart(2, '0')}${day.toString().padStart(2, '0')}`;
+      const cell = document.createElement('div');
+      cell.className = 'day';
+      cell.innerHTML = `<strong>${day}</strong>`;
+      if (filmData[dateKey]) {
+        cell.innerHTML += `<div class="dot"></div>`;
+        cell.onclick = () => showModal(dateKey);
+        totalFilms += filmData[dateKey].length;
+        activeDays++;
+      }
+      grid.appendChild(cell);
+    }
+
+    summary.innerHTML = `📊 Bu ay <b>${activeDays}</b> gün gösterim var, toplam <b>${totalFilms}</b> film.`;
+  }
+
+  function renderListView() {
+    const list = document.getElementById('list-view');
+    list.innerHTML = '';
+    const dates = Object.keys(filmData).sort();
+    dates.forEach(date => {
+      const d = new Date(
+        date.slice(0,4), parseInt(date.slice(4,6)) -1, date.slice(6)
+      );
+      const label = d.toLocaleDateString('tr-TR', { weekday: 'long', day: 'numeric', month: 'long' });
+
+      const card = document.createElement('div');
+      card.className = 'list-card';
+      card.innerHTML = `<h3>📅 ${label}</h3>`;
+      filmData[date].forEach(film => {
+        const icon = genreIcons[film.genre] || '🎬';
+        card.innerHTML += `<p>${icon} <b>${film.title}</b> – <i>${film.genre}</i></p>`;
+      });
+      list.appendChild(card);
+    });
+  }
+
+  function changeMonth(offset) {
+    currentDate.setMonth(currentDate.getMonth() + offset);
+    renderCalendar();
+  }
+
+  function showModal(dateKey) {
+    const modal = document.getElementById('modal');
+    const body = document.getElementById('modal-body');
+    body.innerHTML = '';
+    filmData[dateKey].forEach(film => {
+      const icon = genreIcons[film.genre] || '🎬';
+      const div = document.createElement('div');
+      div.className = 'film';
+      div.innerHTML = `
+        <h3>${icon} ${film.title}</h3>
+        <p><strong>Tür:</strong> ${film.genre}</p>
+        <p>${film.summary}</p>
+        <p>
+          <a href="${film.link}" target="_blank">📎 Detay</a> |
+          <a href="${film.bilet_link || '#'}" target="_blank">🎟️ Bilet</a> |
+          <a href="${film.trailer}" target="_blank">🎬 Fragman</a>
+        </p>
+      `;
+      body.appendChild(div);
+    });
+    modal.style.display = 'flex';
+  }
+
+  function closeModal() {
+    document.getElementById('modal').style.display = 'none';
+  }
+
+  function switchView(view) {
+    document.getElementById('calendar').style.display = view === 'calendar' ? 'block' : 'none';
+    document.getElementById('list-view').style.display = view === 'list' ? 'block' : 'none';
+    document.getElementById('tab-calendar').classList.toggle('active', view === 'calendar');
+    document.getElementById('tab-list').classList.toggle('active', view === 'list');
+  }
+
+  loadJSON();
 </script>
 
 </body>
