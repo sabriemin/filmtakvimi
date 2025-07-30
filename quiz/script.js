@@ -22,15 +22,20 @@ let questions = [],
   timer;
 
 const startQuiz = () => {
-  const num = numQuestions.value,
-    cat = category.value,
-    diff = difficulty.value;
+  const num = parseInt(numQuestions.value);
   loadingAnimation();
-  const url = `https://opentdb.com/api.php?amount=${num}&category=${cat}&difficulty=${diff}&type=multiple`;
-  fetch(url)
+
+  fetch("quiz_questions.json")
     .then((res) => res.json())
     .then((data) => {
-      questions = data.results;
+      // Soruları karıştır ve seçilen kadar al
+      const shuffled = data.sort(() => 0.5 - Math.random());
+      questions = shuffled.slice(0, num).map(q => ({
+        question: q.question,
+        correct_answer: q.answer,
+        incorrect_answers: q.choices.filter(choice => choice !== q.answer),
+      }));
+
       setTimeout(() => {
         startScreen.classList.add("hide");
         quiz.classList.remove("hide");
@@ -39,6 +44,7 @@ const startQuiz = () => {
       }, 1000);
     });
 };
+
 
 startBtn.addEventListener("click", startQuiz);
 
