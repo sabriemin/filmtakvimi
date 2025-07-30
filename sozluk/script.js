@@ -4,6 +4,7 @@ fetch('data/sozluk.json')
   .then(res => res.json())
   .then(data => {
     tumTerimler = data.sort((a, b) => a.title.localeCompare(b.title, 'tr'));
+    harfButonlariniOlustur();
     terimleriGoster(tumTerimler);
   });
 
@@ -28,7 +29,7 @@ function terimleriGoster(veri) {
     );
 
     const benzerHTML = benzerler.length
-      ? `<strong>🗂️ Benzer Terimler:</strong><ul>` +
+      ? `<strong>🧩 Benzer Terimler:</strong><ul>` +
         benzerler.map(b => `<li>${b.title}</li>`).join("") +
         `</ul>`
       : "";
@@ -57,3 +58,25 @@ document.getElementById("arama").addEventListener("input", function () {
 
   terimleriGoster(filtreli);
 });
+
+function harfButonlariniOlustur() {
+  const harfler = [..."ABCÇDEFGĞHIİJKLMNOÖPRSŞTUÜVYZ"];
+  const container = document.getElementById("harf-filtre");
+
+  const tumu = document.createElement("button");
+  tumu.textContent = "Tümü";
+  tumu.addEventListener("click", () => terimleriGoster(tumTerimler));
+  container.appendChild(tumu);
+
+  harfler.forEach(harf => {
+    const btn = document.createElement("button");
+    btn.textContent = harf;
+    btn.addEventListener("click", () => {
+      const filtreli = tumTerimler.filter(t =>
+        t.title.toUpperCase().startsWith(harf)
+      );
+      terimleriGoster(filtreli);
+    });
+    container.appendChild(btn);
+  });
+}

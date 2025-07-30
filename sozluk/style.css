@@ -1,96 +1,123 @@
+
 body {
-  background-color: #0e0e0e;
-  color: #eee;
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  background-color: #111827;
+  color: #e5e7eb;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
 }
 
 .container {
-  max-width: 720px;
+  max-width: 768px;
   margin: 0 auto;
   padding: 20px;
 }
 
 h1 {
   text-align: center;
-  font-size: 1.8em;
-  font-weight: 600;
-  color: #fff;
-  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #facc15;
+  margin-bottom: 20px;
 }
 
 #arama {
   width: 100%;
-  padding: 10px 14px;
-  margin-bottom: 30px;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 8px;
   border: none;
-  border-radius: 6px;
-  font-size: 1em;
-  background-color: #1c1c1c;
-  color: #eee;
-  outline: none;
+  font-size: 1rem;
+  background-color: #1f2937;
+  color: #f3f4f6;
+}
+
+#arama:focus {
+  outline: 2px solid #4f46e5;
+}
+
+.harf-filtre {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.harf-filtre button {
+  background-color: #374151;
+  color: #d1d5db;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 0.9em;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.harf-filtre button:hover {
+  background-color: #4b5563;
 }
 
 .terim-karti {
-  background-color: #181818;
-  border-left: 4px solid #ffa726;
-  padding: 16px 20px;
-  margin-bottom: 30px;
-  border-radius: 4px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  background-color: #1f2937;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease;
+}
+
+.terim-karti:hover {
+  transform: scale(1.01);
 }
 
 .terim-karti h2 {
-  font-size: 1.2em;
-  font-weight: 600;
-  margin: 0 0 10px;
-  color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #93c5fd;
 }
 
 .terim-karti p {
-  color: #ccc;
-  line-height: 1.6em;
+  font-size: 0.95rem;
+  line-height: 1.5;
   margin-bottom: 10px;
+  color: #e5e7eb;
 }
 
 .etiketler {
-  font-size: 0.9em;
-  color: #aaa;
   margin-bottom: 10px;
 }
 
-.etiketler .etiket::before {
-  content: "#";
-  color: #666;
-}
-
 .etiket {
-  margin-right: 10px;
-}
-
-.diger-bilgiler {
-  font-size: 0.9em;
+  display: inline-block;
+  background-color: #4b5563;
+  color: #d1d5db;
+  padding: 4px 8px;
+  font-size: 0.8rem;
+  border-radius: 4px;
+  margin-right: 6px;
+  margin-bottom: 4px;
 }
 
 .diger-bilgiler strong {
   display: block;
   margin-top: 10px;
-  color: #f0a000;
+  color: #fbbf24;
+  font-size: 0.9rem;
 }
 
 .diger-bilgiler ul {
   list-style: none;
   padding-left: 0;
-  margin-top: 6px;
+  margin: 6px 0 0;
 }
 
 .diger-bilgiler ul li {
-  margin-bottom: 5px;
+  margin-bottom: 4px;
 }
 
 .diger-bilgiler ul li a {
-  color: #42a5f5;
+  color: #60a5fa;
   text-decoration: none;
 }
 
