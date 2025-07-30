@@ -1,3 +1,4 @@
+
 const progressBar = document.querySelector(".progress-bar"),
   progressText = document.querySelector(".progress-text");
 
@@ -18,17 +19,15 @@ let questions = [],
   timer;
 
 const startQuiz = () => {
-  const num = 10;          // Sabit soru sayısı
-  const timeLimit = 15;    // Sabit süre (saniye)
-  time = timeLimit;        // Timer'a aktar
+  const timeLimit = 15;
+  time = timeLimit;
 
-  loadingAnimation();
-
+  startBtn.innerHTML = "Yükleniyor...";
   fetch("quiz_questions_unique.json")
     .then((res) => res.json())
-    .then((data) => { 
+    .then((data) => {
       const shuffled = data.sort(() => 0.5 - Math.random());
-      questions = shuffled.slice(0, num).map(q => ({
+      questions = shuffled.map(q => ({
         question: q.question,
         correct_answer: q.answer,
         incorrect_answers: q.choices.filter(choice => choice !== q.answer),
@@ -43,13 +42,12 @@ const startQuiz = () => {
     });
 };
 
-
 startBtn.addEventListener("click", startQuiz);
 
 const showQuestion = (question) => {
   const questionText = document.querySelector(".question"),
-    answersWrapper = document.querySelector(".answer-wrapper");
-  questionNumber = document.querySelector(".number");
+    answersWrapper = document.querySelector(".answer-wrapper"),
+    questionNumber = document.querySelector(".number");
 
   questionText.innerHTML = question.question;
 
@@ -65,9 +63,7 @@ const showQuestion = (question) => {
     `;
   });
 
-  questionNumber.innerHTML = `Question <span class="current">${
-    questions.indexOf(question) + 1
-  }</span><span class="total">/${questions.length}</span>`;
+  questionNumber.innerHTML = `Soru <span class="current">${questions.indexOf(question) + 1}</span><span class="total">/${questions.length}</span>`;
 
   const answersDiv = document.querySelectorAll(".answer");
   answersDiv.forEach((answer) => {
@@ -75,7 +71,6 @@ const showQuestion = (question) => {
       if (!answer.classList.contains("checked")) {
         answersDiv.forEach((a) => a.classList.remove("selected"));
         answer.classList.add("selected");
-        submitBtn.disabled = false;
       }
     });
   });
@@ -95,74 +90,46 @@ const startTimer = (time) => {
   }, 1000);
 };
 
-const loadingAnimation = () => {
-  startBtn.innerHTML = "Loading";
-  const loadingInterval = setInterval(() => {
-    if (startBtn.innerHTML.length === 10) startBtn.innerHTML = "Loading";
-    else startBtn.innerHTML += ".";
-  }, 500);
-};
-
 function playAudio(src) {
   const audio = new Audio(src);
   audio.play();
 }
 
-const submitBtn = document.querySelector(".submit"),
-  nextBtn = document.querySelector(".next");
-
-submitBtn.addEventListener("click", () => checkAnswer());
-nextBtn.addEventListener("click", () => {
-  nextQuestion();
-  submitBtn.style.display = "block";
-  nextBtn.style.display = "none";
-});
-
 const checkAnswer = () => {
   clearInterval(timer);
 
   const selectedAnswer = document.querySelector(".answer.selected");
+  let isCorrect = false;
+
   if (selectedAnswer) {
     const answer = selectedAnswer.querySelector(".text").innerHTML;
     if (answer === questions[currentQuestion - 1].correct_answer) {
       score++;
       selectedAnswer.classList.add("correct");
+      isCorrect = true;
     } else {
       selectedAnswer.classList.add("wrong");
-      document.querySelectorAll(".answer").forEach((answer) => {
-        if (
-          answer.querySelector(".text").innerHTML ===
-          questions[currentQuestion - 1].correct_answer
-        ) {
-          answer.classList.add("correct");
-        }
-      });
     }
-  } else {
-    document.querySelectorAll(".answer").forEach((answer) => {
-      if (
-        answer.querySelector(".text").innerHTML ===
-        questions[currentQuestion - 1].correct_answer
-      ) {
-        answer.classList.add("correct");
-      }
-    });
   }
 
   document.querySelectorAll(".answer").forEach((answer) => {
+    if (
+      answer.querySelector(".text").innerHTML ===
+      questions[currentQuestion - 1].correct_answer
+    ) {
+      answer.classList.add("correct");
+    }
     answer.classList.add("checked");
   });
 
-  // Submit ve next gizleniyor (ya da hiç gösterilmeyebilir)
-  submitBtn.style.display = "none";
-  nextBtn.style.display = "none";
-
-  // Otomatik sonraki soruya geç
   setTimeout(() => {
-    nextQuestion();
-  }, 2000); // 2 saniye bekle
+    if (isCorrect) {
+      nextQuestion();
+    } else {
+      showScore();
+    }
+  }, 1500);
 };
-
 
 const nextQuestion = () => {
   if (currentQuestion < questions.length) {
