@@ -389,11 +389,12 @@ function showModal(dateKey) {
       <h3>${film.title}</h3>
       <p><strong>Tür:</strong> ${film.genre}</p>
       <p>${film.summary}</p>
-      <p>
-        <a href="${film.link}" target="_blank" class="button">📎 Detay</a>
-        <a href="${film.bilet_link || '#'}" target="_blank" class="button">🎟️ Bilet</a>
-        <a href="${film.trailer}" target="_blank" class="button">🎬 Fragman</a>
-      </p>
+<p>
+  <a href="${film.link}" target="_blank" class="button">📎 Detay</a>
+  ${film.bilet_link ? `<a href="${film.bilet_link}" target="_blank" class="button">🎟️ Bilet</a>` : ''}
+  <a href="${film.trailer}" target="_blank" class="button">🎬 Fragman</a>
+</p>
+
     `;
     body.appendChild(div);
     shareText += `🎬 ${film.title} (${film.genre})\n`;
