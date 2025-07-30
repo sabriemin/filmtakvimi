@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="tr">
 <head>
@@ -28,8 +27,18 @@
     }
     .selector select, .selector button {
       margin: 4px;
-      padding: 6px 10px;
+      padding: 6px 12px;
       font-size: 14px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    .selector button {
+      background-color: #4caf50;
+      color: white;
+      border: none;
+    }
+    .selector button:hover {
+      background-color: #45a049;
     }
     .nav {
       text-align: center;
@@ -113,12 +122,20 @@
       overflow-y: auto;
       border-radius: 8px;
       position: relative;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
     }
     .modal-close {
       position: absolute;
       top: 10px;
       right: 15px;
-      font-size: 20px;
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+      background: transparent;
+      border: none;
+    }
+    .modal-close:hover {
+      color: red;
       cursor: pointer;
     }
     .film {
