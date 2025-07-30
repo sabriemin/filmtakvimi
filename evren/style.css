@@ -1,0 +1,33 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #1b1b1b;
+  color: #eee;
+}
+
+header {
+  background: #111;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+  border-bottom: 2px solid #444;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+main {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+#today-events {
+  background: #2a2a2a;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #000;
+}
