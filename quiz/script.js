@@ -8,24 +8,25 @@ const progress = (value) => {
 };
 
 const startBtn = document.querySelector(".start"),
-          quiz = document.querySelector(".quiz"),
+  quiz = document.querySelector(".quiz"),
   startScreen = document.querySelector(".start-screen");
 
 let questions = [],
-  time = 30,
+  time = 15,
   score = 0,
   currentQuestion,
   timer;
 
 const startQuiz = () => {
-  const num = numQuestions.value,
-    cat = category.value,
-    diff = difficulty.value;
+  const num = 10; // sabit soru sayısı
+  const timeLimit = 15; // sabit süre
+  time = timeLimit;
+
   loadingAnimation();
+
   fetch("quiz_questions_unique.json")
     .then((res) => res.json())
     .then((data) => {
-      
       const shuffled = data.sort(() => 0.5 - Math.random());
       questions = shuffled.slice(0, num).map(q => ({
         question: q.question,
@@ -51,50 +52,39 @@ const showQuestion = (question) => {
 
   questionText.innerHTML = question.question;
 
-  const answers = [
-    ...question.incorrect_answers,
-    question.correct_answer.toString(),
-  ];
+  const answers = [...question.incorrect_answers, question.correct_answer];
   answersWrapper.innerHTML = "";
   answers.sort(() => Math.random() - 0.5);
   answers.forEach((answer) => {
     answersWrapper.innerHTML += `
-                  <div class="answer ">
-            <span class="text">${answer}</span>
-            <span class="checkbox">
-              <i class="fas fa-check"></i>
-            </span>
-          </div>
-        `;
+      <div class="answer">
+        <span class="text">${answer}</span>
+        <span class="checkbox"><i class="fas fa-check"></i></span>
+      </div>
+    `;
   });
 
-  questionNumber.innerHTML = ` Question <span class="current">${
+  questionNumber.innerHTML = `Question <span class="current">${
     questions.indexOf(question) + 1
-  }</span>
-            <span class="total">/${questions.length}</span>`;
-  //add event listener to each answer
+  }</span><span class="total">/${questions.length}</span>`;
+
   const answersDiv = document.querySelectorAll(".answer");
   answersDiv.forEach((answer) => {
     answer.addEventListener("click", () => {
       if (!answer.classList.contains("checked")) {
-        answersDiv.forEach((answer) => {
-          answer.classList.remove("selected");
-        });
+        answersDiv.forEach((a) => a.classList.remove("selected"));
         answer.classList.add("selected");
         submitBtn.disabled = false;
       }
     });
   });
 
-  time = timePerQuestion.value;
   startTimer(time);
 };
 
 const startTimer = (time) => {
   timer = setInterval(() => {
-    if (time === 3) {
-      playAdudio("countdown.mp3");
-    }
+    if (time === 3) playAudio("countdown.mp3");
     if (time >= 0) {
       progress(time);
       time--;
@@ -107,39 +97,20 @@ const startTimer = (time) => {
 const loadingAnimation = () => {
   startBtn.innerHTML = "Loading";
   const loadingInterval = setInterval(() => {
-    if (startBtn.innerHTML.length === 10) {
-      startBtn.innerHTML = "Loading";
-    } else {
-      startBtn.innerHTML += ".";
-    }
+    if (startBtn.innerHTML.length === 10) startBtn.innerHTML = "Loading";
+    else startBtn.innerHTML += ".";
   }, 500);
 };
-function defineProperty() {
-  var osccred = document.createElement("div");
-  osccred.innerHTML =
-    "A Project By <a href='https://www.youtube.com/@opensourcecoding' target=_blank>Open Source Coding</a>";
-  osccred.style.position = "absolute";
-  osccred.style.bottom = "0";
-  osccred.style.right = "0";
-  osccred.style.fontSize = "10px";
-  osccred.style.color = "#ccc";
-  osccred.style.fontFamily = "sans-serif";
-  osccred.style.padding = "5px";
-  osccred.style.background = "#fff";
-  osccred.style.borderTopLeftRadius = "5px";
-  osccred.style.borderBottomRightRadius = "5px";
-  osccred.style.boxShadow = "0 0 5px #ccc";
-  document.body.appendChild(osccred);
-}
 
-defineProperty();
+function playAudio(src) {
+  const audio = new Audio(src);
+  audio.play();
+}
 
 const submitBtn = document.querySelector(".submit"),
   nextBtn = document.querySelector(".next");
-submitBtn.addEventListener("click", () => {
-  checkAnswer();
-});
 
+submitBtn.addEventListener("click", () => checkAnswer());
 nextBtn.addEventListener("click", () => {
   nextQuestion();
   submitBtn.style.display = "block";
@@ -151,27 +122,12 @@ const checkAnswer = () => {
   const selectedAnswer = document.querySelector(".answer.selected");
   if (selectedAnswer) {
     const answer = selectedAnswer.querySelector(".text").innerHTML;
-    console.log(currentQuestion);
     if (answer === questions[currentQuestion - 1].correct_answer) {
       score++;
       selectedAnswer.classList.add("correct");
     } else {
       selectedAnswer.classList.add("wrong");
-      const correctAnswer = document
-        .querySelectorAll(".answer")
-        .forEach((answer) => {
-          if (
-            answer.querySelector(".text").innerHTML ===
-            questions[currentQuestion - 1].correct_answer
-          ) {
-            answer.classList.add("correct");
-          }
-        });
-    }
-  } else {
-    const correctAnswer = document
-      .querySelectorAll(".answer")
-      .forEach((answer) => {
+      document.querySelectorAll(".answer").forEach((answer) => {
         if (
           answer.querySelector(".text").innerHTML ===
           questions[currentQuestion - 1].correct_answer
@@ -179,9 +135,19 @@ const checkAnswer = () => {
           answer.classList.add("correct");
         }
       });
+    }
+  } else {
+    document.querySelectorAll(".answer").forEach((answer) => {
+      if (
+        answer.querySelector(".text").innerHTML ===
+        questions[currentQuestion - 1].correct_answer
+      ) {
+        answer.classList.add("correct");
+      }
+    });
   }
-  const answersDiv = document.querySelectorAll(".answer");
-  answersDiv.forEach((answer) => {
+
+  document.querySelectorAll(".answer").forEach((answer) => {
     answer.classList.add("checked");
   });
 
@@ -201,6 +167,7 @@ const nextQuestion = () => {
 const endScreen = document.querySelector(".end-screen"),
   finalScore = document.querySelector(".final-score"),
   totalScore = document.querySelector(".total-score");
+
 const showScore = () => {
   endScreen.classList.remove("hide");
   quiz.classList.add("hide");
@@ -208,12 +175,6 @@ const showScore = () => {
   totalScore.innerHTML = `/ ${questions.length}`;
 };
 
-const restartBtn = document.querySelector(".restart");
-restartBtn.addEventListener("click", () => {
+document.querySelector(".restart").addEventListener("click", () => {
   window.location.reload();
 });
-
-const playAdudio = (src) => {
-  const audio = new Audio(src);
-  audio.play();
-};
