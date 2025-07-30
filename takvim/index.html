@@ -143,7 +143,7 @@
     };
 
     async function loadJSON() {
-      const res = await fetch('movies_birlesik.json');
+      const res = await fetch('output/movies_birlesik.json');
       const rawData = await res.json();
       rawData.forEach(film => {
         const date = film.date;
