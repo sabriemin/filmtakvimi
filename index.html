@@ -1,10 +1,79 @@
-<!DOCTYPE html>
+<!DOCTYPE ht
 <html lang="tr">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
   <title>🎬 Film Takvimi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <header class="bg-gray-900 text-white py-6 shadow">
+    <div class="max-w-4xl mx-auto text-center">
+      <h1 class="text-3xl font-semibold">
+        <span class="icon-trigger cursor-pointer">🎬</span> Film Takvimi
+      </h1>
+      <p class="mt-1 text-sm text-gray-200">Vizyondaki ve gelecek filmleri takip et</p>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-4 py-8">
+    <section class="mb-6">
+      <div class="text-center mb-4">
+        <button class="bg-gray-600 hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded" onclick="toggleSubscribe()">
+          📅 Takvime Abone Ol
+        </button>
+      </div>
+
+      <div class="hidden text-sm text-gray-700 space-y-4" id="subscribe-box">
+        <div class="bg-white border rounded p-4 text-center">
+          <strong class="block mb-1 text-gray-600">📌 Takvim Abonelik Linki:</strong>
+          <div class="flex flex-col sm:flex-row justify-center items-center gap-2">
+            <code class="break-all text-gray-700 text-xs" id="calendar-url">https://filmtakvimi.com/output/film_takvimi.ics</code>
+            <button class="text-sm bg-gray-500 text-white px-2 py-1 rounded hover:bg-gray-600" onclick="copyURL()">📋 Kopyala</button>
+          </div>
+        </div>
+
+        <div class="bg-white border rounded p-4">
+          <strong class="text-gray-600 block mb-1">📱 Android (OneCalendar)</strong>
+          <p class="text-sm">OneCalendar uygulamasını aç → Hesaplar → Hesap ekle → WebCal seç → takvim linkini yapıştır → Tamamlandı → tekrar Tamamlandı.</p>
+          <a class="inline-block mt-2 bg-gray-500 hover:bg-gray-600 text-white text-xs px-3 py-1 rounded" href="https://play.google.com/store/apps/details?id=biz.codespark.xcalendarapp" target="_blank">📥 OneCalendar Uygulamasını İndir</a>
+        </div>
+
+        <div class="bg-white border rounded p-4">
+          <strong class="text-green-600 block mb-1">🍏 iOS</strong>
+          <p class="text-sm">Takvim &gt; Takvimler &gt; Takvim Ekle &gt; Abonelik Takvimi Ekle → web adresini yapıştır → Abone Ol → İsim ve renk seç.</p>
+        </div>
+
+        <div class="bg-white border rounded p-4 text-center">
+          <strong class="block mb-1 text-pink-600">🔗 Diğer Seçenekler</strong>
+          <div class="flex flex-col sm:flex-row justify-center items-center gap-3">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https://filmtakvimi.com/output/film_takvimi.ics" alt="Takvim QR Kodu" class="w-28 h-28 bg-white p-1 border rounded"/>
+            <button onclick="navigator.share ? navigator.share({ title: 'Film Takvimi', url: document.getElementById('calendar-url').textContent }) : alert('Tarayıcı paylaşımı desteklemiyor.')" class="text-sm bg-green-600 text-white px-3 py-2 rounded hover:bg-pink-700">
+              📤 Paylaş
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <p class="text-sm text-gray-500 mb-4 text-center" id="update-time">🕒 Son güncelleme: yükleniyor...</p>
+
+    <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6" id="movie-list">
+      <!-- Dinamik film kartları buraya yüklenecek -->
+    </section>
+  </main>
+
+  <footer class="mt-12 text-sm text-gray-400 text-center pb-6">
+    Otomatik güncellenir • © sabriemin
+  </footer>
+
   <script>
     async function toggleSubscribe() {
       document.getElementById("subscribe-box").classList.toggle("hidden");
@@ -74,7 +143,7 @@
           <div class="flex flex-wrap gap-2 pt-2">
             ${movie.trailer ? `<a href="${movie.trailer}" target="_blank" class="text-xs bg-purple-600 hover:bg-purple-700 px-2 py-1 rounded">▶️ Fragman</a>` : ''}
             ${movie.bilet_link ? `<a href="${movie.bilet_link}" target="_blank" class="text-xs bg-green-600 hover:bg-green-700 px-2 py-1 rounded">🎟️ Bilet Al</a>` : ''}
-            ${movie.link ? `<a href="${movie.link}" target="_blank" class="text-xs bg-blue-600 hover:bg-blue-700 px-2 py-1 rounded">ℹ️ Detay</a>` : ''}
+            ${movie.link ? `<a href="${movie.link}" target="_blank" class="text-xs bg-gray-600 hover:bg-gray-700 px-2 py-1 rounded">ℹ️ Detay</a>` : ''}
           </div>
         `;
         container.appendChild(card);
@@ -98,57 +167,6 @@
       return text.length > maxLength ? text.slice(0, maxLength) + "..." : text;
     }
   </script>
-</head>
-<body class="bg-gradient-to-b from-gray-900 to-black text-white font-sans">
-  <div class="max-w-5xl mx-auto p-6 text-center">
-    <h1 class="text-4xl sm:text-5xl font-extrabold text-yellow-400 mb-6 drop-shadow-lg">
-      <span class="icon-trigger cursor-pointer">🎬</span> Film Takvimi
-    </h1>
-    <p class="text-gray-300 mb-6">Vizyona girecek filmleri kaçırma! Aşağıdan takvimi indir ya da abone ol.</p>
-
-    <div class="flex justify-center gap-4 mb-8">
-      <button class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded" onclick="toggleSubscribe()">
-        📅 Takvime Abone Ol
-      </button>
-    </div>
-
-    <div class="mt-4 show text-sm text-gray-300 space-y-4" id="subscribe-box">
-  <div class="bg-gray-700 p-3 rounded text-center">
-    <strong class="block mb-1 text-yellow-300">📌 Takvim Abonelik Linki:</strong>
-    <div class="flex flex-col sm:flex-row justify-center items-center gap-2">
-      <code class="break-all text-yellow-300 text-xs" id="calendar-url">https://filmtakvimi.com/output/film_takvimi.ics</code>
-      <button class="text-sm bg-yellow-500 text-black px-2 py-1 rounded hover:bg-yellow-600" onclick="copyURL()">📋 Kopyala</button>
-    </div>
-  </div>
-  <div class="bg-gray-700 p-3 rounded">
-    <strong class="text-blue-400 block mb-1">📱 Android (OneCalendar)</strong>
-    <p>OneCalendar uygulamasını aç → Hesaplar → Hesap ekle → WebCal seç → takvim linkini yapıştır → Tamamlandı → tekrar Tamamlandı.</p>
-    <a class="inline-block mt-2 bg-blue-500 hover:bg-blue-600 text-white text-xs px-3 py-1 rounded" href="https://play.google.com/store/apps/details?id=biz.codespark.xcalendarapp" target="_blank">📥 OneCalendar Uygulamasını İndir</a>
-  </div>
-  <div class="bg-gray-700 p-3 rounded">
-    <strong class="text-green-400 block mb-1">🍏 iOS</strong>
-    <p>Takvim &gt; Takvimler &gt; Takvim Ekle &gt; Abonelik Takvimi Ekle → web adresini yapıştır → Abone Ol → İsim ve renk seç.</p>
-  </div>
-  <div class="bg-gray-700 p-3 rounded text-center">
-    <strong class="block mb-1 text-pink-400">🔗 Diğer Seçenekler</strong>
-    <div class="flex flex-col sm:flex-row justify-center items-center gap-3">
-      <img src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https://filmtakvimi.com/output/film_takvimi.ics" alt="Takvim QR Kodu" class="w-28 h-28 bg-white p-1 rounded"/>
-      <button onclick="navigator.share ? navigator.share({ title: 'Film Takvimi', url: document.getElementById('calendar-url').textContent }) : alert('Tarayıcı paylaşımı desteklemiyor.')" class="text-sm bg-pink-600 text-white px-3 py-2 rounded hover:bg-pink-700">
-        📤 Paylaş
-      </button>
-    </div>
-  </div>
-</div>
-<p class="text-sm text-gray-400 mb-4" id="update-time">🕒 Son güncelleme: yükleniyor...</p>
-
-   <!--  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6" id="movie-list">
-      <!-- Dinamik film kartları buraya yüklenecek 
-    </div> -->
-
-    <footer class="mt-12 text-sm text-gray-500 text-center">
-      Otomatik güncellenir • © sabriemin
-    </footer>
-  </div>
 
 </body>
 </html>
