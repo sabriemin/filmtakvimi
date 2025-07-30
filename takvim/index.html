@@ -4,56 +4,87 @@
   <meta charset="UTF-8">
   <title>Film Takvimi</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      font-family: Arial, sans-serif;
-      padding: 20px;
-    }
-    header {
-      text-align: center;
-      margin-bottom: 10px;
-    }
-    .summary {
-      text-align: center;
-      margin-bottom: 20px;
-      font-size: 16px;
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
       color: #333;
     }
-    .calendar {
-      display: grid;
-      grid-template-columns: repeat(7, 1fr);
-      gap: 1px;
-      background: #ccc;
-    }
-    .day, .weekday {
-      background: white;
-      padding: 10px;
-      min-height: 80px;
-      position: relative;
-    }
-    .weekday {
-      background: #f4f4f4;
-      font-weight: bold;
+    header {
+      background: #1e1e2f;
+      color: white;
+      padding: 20px;
       text-align: center;
     }
-    .day:hover {
-      background-color: #eef;
-      cursor: pointer;
-    }
-    .has-event {
-      background-color: #d4edda;
+    h1 {
+      margin-bottom: 5px;
     }
     .nav {
       text-align: center;
-      margin-bottom: 10px;
+      padding: 10px;
+      background: #eee;
     }
     .nav button {
-      margin: 0 10px;
-      padding: 5px 15px;
-      font-size: 16px;
+      padding: 8px 14px;
+      margin: 0 5px;
+      font-weight: bold;
+      border: none;
+      background: #ddd;
+      cursor: pointer;
+      border-radius: 5px;
     }
-    /* Modal */
+    .nav button.active {
+      background: #333;
+      color: white;
+    }
+    .calendar, .list-view {
+      display: none;
+      padding: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .calendar-grid {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 10px;
+    }
+    .weekday {
+      text-align: center;
+      font-weight: 600;
+      color: #555;
+    }
+    .day {
+      background: white;
+      border-radius: 10px;
+      min-height: 80px;
+      padding: 8px;
+      text-align: left;
+      font-size: 14px;
+      position: relative;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      transition: transform 0.1s;
+    }
+    .day:hover {
+      transform: scale(1.02);
+      cursor: pointer;
+    }
+    .day .dot {
+      width: 8px;
+      height: 8px;
+      background: green;
+      border-radius: 50%;
+      position: absolute;
+      top: 8px;
+      right: 8px;
+    }
+    .summary {
+      text-align: center;
+      margin-top: 10px;
+      color: #555;
+    }
     .modal {
       display: none;
       position: fixed;
@@ -82,19 +113,24 @@
       cursor: pointer;
     }
     .film {
-      margin-bottom: 15px;
-      text-align: left;
+      margin-bottom: 20px;
     }
     .film h3 {
       margin-bottom: 5px;
-      font-size: 18px;
     }
     .film a {
       text-decoration: none;
-      color: #0077cc;
+      color: #0066cc;
     }
-    @media (max-width: 600px) {
-      .calendar {
+    .list-card {
+      background: white;
+      margin-bottom: 10px;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 0 4px rgba(0,0,0,0.1);
+    }
+    @media (max-width: 768px) {
+      .calendar-grid {
         grid-template-columns: repeat(7, 1fr);
       }
     }
@@ -102,148 +138,170 @@
 </head>
 <body>
 
-  <header>
-    <h1 id="month-year">Film Takvimi</h1>
-    <div class="nav">
-      <button onclick="changeMonth(-1)">◀ Önceki</button>
-      <button onclick="changeMonth(1)">Sonraki ▶</button>
-    </div>
-  </header>
-
+<header>
+  <h1 id="month-year">Film Takvimi</h1>
   <div class="summary" id="summary"></div>
+</header>
 
-  <div class="calendar" id="calendar"></div>
+<div class="nav">
+  <button onclick="switchView('calendar')" id="tab-calendar" class="active">📅 Takvim</button>
+  <button onclick="switchView('list')" id="tab-list">📋 Liste</button>
+</div>
 
-  <div class="modal" id="modal">
-    <div class="modal-content">
-      <span class="modal-close" onclick="closeModal()">&times;</span>
-      <div id="modal-body"></div>
-    </div>
+<div class="calendar" id="calendar">
+  <div class="calendar-grid" id="calendar-grid"></div>
+</div>
+
+<div class="list-view" id="list-view"></div>
+
+<div class="modal" id="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal()">&times;</span>
+    <div id="modal-body"></div>
   </div>
+</div>
 
-  <script>
-    let filmData = {};
-    let currentDate = new Date();
+<script>
+  let filmData = {};
+  let currentDate = new Date();
 
-    const genreIcons = {
-      "Dram": "🎭",
-      "Korku": "👻",
-      "Bilim Kurgu": "🤖",
-      "Fantastik": "🧙",
-      "Macera": "🗺️",
-      "Müzik": "🎤",
-      "Müzikal": "🎼",
-      "Aksiyon": "💥",
-      "Komedi": "😂",
-      "Animasyon": "🧒",
-      "Biyografi": "🧬",
-      "Gerilim": "😱",
-      "Anime": "🎌",
-      "Aile": "👨‍👩‍👧‍👦"
-    };
+  const genreIcons = {
+    "Dram": "🎭",
+    "Korku": "👻",
+    "Bilim Kurgu": "🤖",
+    "Fantastik": "🧙",
+    "Macera": "🗺️",
+    "Müzik": "🎤",
+    "Müzikal": "🎼",
+    "Aksiyon": "💥",
+    "Komedi": "😂",
+    "Animasyon": "🧒",
+    "Biyografi": "🧬",
+    "Gerilim": "😱",
+    "Anime": "🎌",
+    "Aile": "👨‍👩‍👧‍👦"
+  };
 
-    async function loadJSON() {
-      const res = await fetch('output/movies_birlesik.json');
-      const rawData = await res.json();
-      rawData.forEach(film => {
-        const date = film.date;
-        if (!filmData[date]) filmData[date] = [];
-        filmData[date].push(film);
-      });
-      renderCalendar();
+  async function loadJSON() {
+    const res = await fetch('./output/movies_birlesik.json');
+    const rawData = await res.json();
+    rawData.forEach(film => {
+      const date = film.date;
+      if (!filmData[date]) filmData[date] = [];
+      filmData[date].push(film);
+    });
+    renderCalendar();
+    renderListView();
+  }
+
+  function renderCalendar() {
+    const grid = document.getElementById('calendar-grid');
+    const summary = document.getElementById('summary');
+    grid.innerHTML = '';
+
+    const year = currentDate.getFullYear();
+    const month = currentDate.getMonth();
+    const firstDay = new Date(year, month, 1).getDay();
+    const daysInMonth = new Date(year, month + 1, 0).getDate();
+
+    document.getElementById('month-year').textContent =
+      currentDate.toLocaleDateString('tr-TR', { year: 'numeric', month: 'long' });
+
+    let totalFilms = 0;
+    let activeDays = 0;
+
+    const weekdays = ['Pzt', 'Sal', 'Çar', 'Per', 'Cum', 'Cmt', 'Paz'];
+    weekdays.forEach(day => {
+      const div = document.createElement('div');
+      div.className = 'weekday';
+      div.textContent = day;
+      grid.appendChild(div);
+    });
+
+    let blankDays = (firstDay + 6) % 7;
+    for (let i = 0; i < blankDays; i++) {
+      grid.appendChild(document.createElement('div'));
     }
 
-    function renderCalendar() {
-      const calendar = document.getElementById('calendar');
-      const summary = document.getElementById('summary');
-      calendar.innerHTML = '';
-      summary.innerHTML = '';
-
-      const year = currentDate.getFullYear();
-      const month = currentDate.getMonth();
-
-      const firstDay = new Date(year, month, 1).getDay();
-      const daysInMonth = new Date(year, month + 1, 0).getDate();
-
-      document.getElementById('month-year').textContent =
-        currentDate.toLocaleDateString('tr-TR', { year: 'numeric', month: 'long' });
-
-      // Ay özeti:
-      let totalFilms = 0;
-      let uniqueDays = 0;
-      for (let i = 1; i <= daysInMonth; i++) {
-        const key = `${year}${(month + 1).toString().padStart(2, '0')}${i.toString().padStart(2, '0')}`;
-        if (filmData[key]) {
-          uniqueDays++;
-          totalFilms += filmData[key].length;
-        }
+    for (let day = 1; day <= daysInMonth; day++) {
+      const dateKey = `${year}${(month + 1).toString().padStart(2, '0')}${day.toString().padStart(2, '0')}`;
+      const cell = document.createElement('div');
+      cell.className = 'day';
+      cell.innerHTML = `<strong>${day}</strong>`;
+      if (filmData[dateKey]) {
+        cell.innerHTML += `<div class="dot"></div>`;
+        cell.onclick = () => showModal(dateKey);
+        totalFilms += filmData[dateKey].length;
+        activeDays++;
       }
-      summary.textContent = `📆 Bu ay ${uniqueDays} gün film gösterimi var. Toplam ${totalFilms} film.`;
-
-      const weekdays = ['Paz', 'Pzt', 'Sal', 'Çar', 'Per', 'Cum', 'Cmt'];
-      weekdays.forEach(day => {
-        const div = document.createElement('div');
-        div.className = 'weekday';
-        div.textContent = day;
-        calendar.appendChild(div);
-      });
-
-      let blankDays = firstDay === 0 ? 6 : firstDay - 1;
-      for (let i = 0; i < blankDays; i++) {
-        const empty = document.createElement('div');
-        empty.className = 'day';
-        calendar.appendChild(empty);
-      }
-
-      for (let day = 1; day <= daysInMonth; day++) {
-        const dateKey = `${year}${(month + 1).toString().padStart(2, '0')}${day.toString().padStart(2, '0')}`;
-        const div = document.createElement('div');
-        div.className = 'day';
-        div.innerHTML = `<strong>${day}</strong>`;
-        if (filmData[dateKey]) {
-          div.classList.add('has-event');
-          div.onclick = () => showModal(dateKey);
-        }
-        calendar.appendChild(div);
-      }
+      grid.appendChild(cell);
     }
 
-    function changeMonth(offset) {
-      currentDate.setMonth(currentDate.getMonth() + offset);
-      renderCalendar();
-    }
+    summary.innerHTML = `📊 Bu ay <b>${activeDays}</b> gün gösterim var, toplam <b>${totalFilms}</b> film.`;
+  }
 
-    function showModal(dateKey) {
-      const modal = document.getElementById('modal');
-      const body = document.getElementById('modal-body');
-      body.innerHTML = '';
+  function renderListView() {
+    const list = document.getElementById('list-view');
+    list.innerHTML = '';
+    const dates = Object.keys(filmData).sort();
+    dates.forEach(date => {
+      const d = new Date(
+        date.slice(0,4), parseInt(date.slice(4,6)) -1, date.slice(6)
+      );
+      const label = d.toLocaleDateString('tr-TR', { weekday: 'long', day: 'numeric', month: 'long' });
 
-      filmData[dateKey].forEach(film => {
+      const card = document.createElement('div');
+      card.className = 'list-card';
+      card.innerHTML = `<h3>📅 ${label}</h3>`;
+      filmData[date].forEach(film => {
         const icon = genreIcons[film.genre] || '🎬';
-        const div = document.createElement('div');
-        div.className = 'film';
-        div.innerHTML = `
-          <h3>${icon} ${film.title}</h3>
-          <p><strong>Tür:</strong> ${film.genre}</p>
-          <p>${film.summary}</p>
-          <p>
-            <a href="${film.link}" target="_blank">📎 Detay</a> |
-            <a href="${film.bilet_link || '#'}" target="_blank">🎟️ Bilet</a> |
-            <a href="${film.trailer}" target="_blank">🎬 Fragman</a>
-          </p>
-        `;
-        body.appendChild(div);
+        card.innerHTML += `<p>${icon} <b>${film.title}</b> – <i>${film.genre}</i></p>`;
       });
+      list.appendChild(card);
+    });
+  }
 
-      modal.style.display = 'flex';
-    }
+  function changeMonth(offset) {
+    currentDate.setMonth(currentDate.getMonth() + offset);
+    renderCalendar();
+  }
 
-    function closeModal() {
-      document.getElementById('modal').style.display = 'none';
-    }
+  function showModal(dateKey) {
+    const modal = document.getElementById('modal');
+    const body = document.getElementById('modal-body');
+    body.innerHTML = '';
+    filmData[dateKey].forEach(film => {
+      const icon = genreIcons[film.genre] || '🎬';
+      const div = document.createElement('div');
+      div.className = 'film';
+      div.innerHTML = `
+        <h3>${icon} ${film.title}</h3>
+        <p><strong>Tür:</strong> ${film.genre}</p>
+        <p>${film.summary}</p>
+        <p>
+          <a href="${film.link}" target="_blank">📎 Detay</a> |
+          <a href="${film.bilet_link || '#'}" target="_blank">🎟️ Bilet</a> |
+          <a href="${film.trailer}" target="_blank">🎬 Fragman</a>
+        </p>
+      `;
+      body.appendChild(div);
+    });
+    modal.style.display = 'flex';
+  }
 
-    loadJSON();
-  </script>
+  function closeModal() {
+    document.getElementById('modal').style.display = 'none';
+  }
+
+  function switchView(view) {
+    document.getElementById('calendar').style.display = view === 'calendar' ? 'block' : 'none';
+    document.getElementById('list-view').style.display = view === 'list' ? 'block' : 'none';
+    document.getElementById('tab-calendar').classList.toggle('active', view === 'calendar');
+    document.getElementById('tab-list').classList.toggle('active', view === 'list');
+  }
+
+  loadJSON();
+</script>
 
 </body>
 </html>
