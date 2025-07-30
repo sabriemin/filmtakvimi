@@ -1,0 +1,102 @@
+[
+  {
+    "question": "Titanic filminde Jack karakterini kim canlandırmıştır?",
+    "choices": [
+      "Brad Pitt",
+      "Tom Cruise",
+      "Leonardo DiCaprio",
+      "Matt Damon"
+    ],
+    "answer": "Leonardo DiCaprio"
+  },
+  {
+    "question": "The Matrix filmi hangi yıl vizyona girmiştir?",
+    "choices": [
+      "1999",
+      "2001",
+      "1997",
+      "2003"
+    ],
+    "answer": "1999"
+  },
+  {
+    "question": "Interstellar filminin yönetmeni kimdir?",
+    "choices": [
+      "Christopher Nolan",
+      "Steven Spielberg",
+      "Denis Villeneuve",
+      "James Cameron"
+    ],
+    "answer": "Christopher Nolan"
+  },
+  {
+    "question": "La La Land filminde başrolde oynayan kadın oyuncu kimdir?",
+    "choices": [
+      "Emma Stone",
+      "Scarlett Johansson",
+      "Natalie Portman",
+      "Jennifer Lawrence"
+    ],
+    "answer": "Emma Stone"
+  },
+  {
+    "question": "The Dark Knight filminde Joker karakterini kim oynamıştır?",
+    "choices": [
+      "Heath Ledger",
+      "Tom Hardy",
+      "Joaquin Phoenix",
+      "Jared Leto"
+    ],
+    "answer": "Heath Ledger"
+  },
+  {
+    "question": "Inception filminde rüya dünyasına giren karakteri kim oynamıştır?",
+    "choices": [
+      "Joseph Gordon-Levitt",
+      "Tom Hardy",
+      "Leonardo DiCaprio",
+      "Christian Bale"
+    ],
+    "answer": "Leonardo DiCaprio"
+  },
+  {
+    "question": "Parasite filmi hangi ülkeye aittir?",
+    "choices": [
+      "Tayland",
+      "Güney Kore",
+      "Çin",
+      "Japonya"
+    ],
+    "answer": "Güney Kore"
+  },
+  {
+    "question": "Gladyatör filminde Maximus karakterini kim oynamıştır?",
+    "choices": [
+      "Brad Pitt",
+      "Mel Gibson",
+      "Tom Cruise",
+      "Russell Crowe"
+    ],
+    "answer": "Russell Crowe"
+  },
+  {
+    "question": "Barbie filmi hangi yılda vizyona girmiştir?",
+    "choices": [
+      "2023",
+      "2022",
+      "2021",
+      "2020"
+    ],
+    "answer": "2023"
+  },
+  {
+    "question": "Oppenheimer filmini kim yönetmiştir?",
+    "choices": [
+      "Steven Spielberg",
+      "David Fincher",
+      "Christopher Nolan",
+      "Quentin Tarantino"
+    ],
+    "answer": "Christopher Nolan"
+  }
+]
