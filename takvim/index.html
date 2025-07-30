@@ -382,11 +382,9 @@ function showModal(dateKey) {
   body.innerHTML = '';
 
   const readableDate = `${dateKey.slice(6)}.${dateKey.slice(4,6)}.${dateKey.slice(0,4)}`;
-  let shareText = `🖼️ https://www.paribucineverse.com/assets/img/logo/logo.svg?v=240820231250
+  let shareText = `Paribu Cineverse'te sevdikleriniz ile izleyebileceğiniz filmler 🎞️🍿
 
 🎬 Film Takvimi – ${readableDate} 📅
-
-Bugün gösterimdeki filmler:
 
 `;
   filmData[dateKey].forEach(film => {
@@ -407,7 +405,7 @@ Bugün gösterimdeki filmler:
 📖 ${film.summary.slice(0, 100)}...
 🔗 ${film.link}
 ${film.bilet_link ? `🎟️ Bilet: ${film.bilet_link}
-` : ''}------------------------------
+` : ''}🍿🎞️🍿🎞️🍿🎞️🍿🎞️🍿🎞️🍿🎞️🍿🎞️🍿🎞️🍿🎞️🍿
 `;
   });
 
