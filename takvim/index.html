@@ -233,50 +233,64 @@ async function loadJSON() {
 
 
   function renderCalendar() {
-    const grid = document.getElementById('calendar-grid');
-    const summary = document.getElementById('summary');
-    grid.innerHTML = '';
+  const grid = document.getElementById('calendar-grid');
+  const summary = document.getElementById('summary');
+  grid.innerHTML = '';
 
-    const year = currentDate.getFullYear();
-    const month = currentDate.getMonth();
-    const firstDay = new Date(year, month, 1).getDay();
-    const daysInMonth = new Date(year, month + 1, 0).getDate();
+  const year = currentDate.getFullYear();
+  const month = currentDate.getMonth();
+  const firstDay = new Date(year, month, 1).getDay();
+  const daysInMonth = new Date(year, month + 1, 0).getDate();
 
-    document.getElementById('month-year').textContent =
-      currentDate.toLocaleDateString('tr-TR', { year: 'numeric', month: 'long' });
+  document.getElementById('month-year').textContent =
+    currentDate.toLocaleDateString('tr-TR', { year: 'numeric', month: 'long' });
 
-    let totalFilms = 0;
-    let activeDays = 0;
+  let totalFilms = 0;
+  let activeDays = 0;
 
-    const weekdays = ['Pzt', 'Sal', 'Çar', 'Per', 'Cum', 'Cmt', 'Paz'];
-    weekdays.forEach(day => {
-      const div = document.createElement('div');
-      div.className = 'weekday';
-      div.textContent = day;
-      grid.appendChild(div);
-    });
+  const weekdays = ['Pzt', 'Sal', 'Çar', 'Per', 'Cum', 'Cmt', 'Paz'];
+  weekdays.forEach(day => {
+    const div = document.createElement('div');
+    div.className = 'weekday';
+    div.textContent = day;
+    grid.appendChild(div);
+  });
 
-    let blankDays = (firstDay + 6) % 7;
-    for (let i = 0; i < blankDays; i++) {
-      grid.appendChild(document.createElement('div'));
-    }
-
-    for (let day = 1; day <= daysInMonth; day++) {
-      const dateKey = `${year}${(month + 1).toString().padStart(2, '0')}${day.toString().padStart(2, '0')}`;
-      const cell = document.createElement('div');
-      cell.className = 'day';
-      cell.innerHTML = `<strong>${day}</strong>`;
-      if (filmData[dateKey]) {
-        cell.innerHTML += `<div class="dot"></div>`;
-        cell.onclick = () => showModal(dateKey);
-        totalFilms += filmData[dateKey].length;
-        activeDays++;
-      }
-      grid.appendChild(cell);
-    }
-
-    summary.innerHTML = `📊 Bu ay <b>${activeDays}</b> gün gösterim var, toplam <b>${totalFilms}</b> film.`;
+  let blankDays = (firstDay + 6) % 7;
+  for (let i = 0; i < blankDays; i++) {
+    grid.appendChild(document.createElement('div'));
   }
+
+  for (let day = 1; day <= daysInMonth; day++) {
+    const dateKey = `${year}${(month + 1).toString().padStart(2, '0')}${day.toString().padStart(2, '0')}`;
+    const cell = document.createElement('div');
+    cell.className = 'day';
+    cell.innerHTML = `<strong>${day}</strong>`;
+    if (filmData[dateKey]) {
+      cell.innerHTML += `<div class="dot"></div>`;
+      const filmNames = filmData[dateKey].slice(0, 2).map(f => `<div style='font-size: 11px;'>🎬 ${f.title}</div>`).join('');
+      if (filmData[dateKey].length > 2) cell.innerHTML += '<div style="font-size:10px;color:#888">+...</div>';
+      cell.innerHTML += filmNames;
+      cell.onclick = () => showModal(dateKey);
+      totalFilms += filmData[dateKey].length;
+      activeDays++;
+    }
+    grid.appendChild(cell);
+  }
+
+  summary.innerHTML = `📊 Bu ay <b>${activeDays}</b> gün gösterim var, toplam <b>${totalFilms}</b> film.`;
+}
+
+function switchView(view) {
+  document.getElementById('calendar').style.display = view === 'calendar' ? 'block' : 'none';
+  document.getElementById('list-view').style.display = view === 'list' ? 'block' : 'none';
+  document.getElementById('tab-calendar').classList.toggle('active', view === 'calendar');
+  document.getElementById('tab-list').classList.toggle('active', view === 'list');
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  switchView('calendar');
+});
 
   function renderListView() {
     const list = document.getElementById('list-view');
