@@ -20,15 +20,30 @@ header {
 
 main {
   padding: 2rem;
-  max-width: 960px;
+  max-width: 1000px;
   margin: auto;
+}
+
+.controls {
+  margin-bottom: 1rem;
+}
+
+#evrenSec {
+  padding: 0.5rem;
+  font-size: 1rem;
 }
 
 #graph-area {
   background: #fff;
-  border: 2px dashed #ccc;
-  border-radius: 10px;
-  padding: 2rem;
-  min-height: 300px;
-  text-align: center;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  height: 400px;
+  margin-bottom: 2rem;
+}
+
+#film-bilgi {
+  background: #fff;
+  border-left: 5px solid #003366;
+  padding: 1rem;
+  border-radius: 5px;
 }
