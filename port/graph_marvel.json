@@ -3,30 +3,40 @@
     {
       "id": "IronMan1",
       "label": "Iron Man (2008)",
-      "description": "Tony Stark'ın süper kahraman olarak başlangıcı."
+      "description": "Tony Stark'ın süper kahraman olarak başlangıcı.",
+      "shape": "image",
+      "image": "https://upload.wikimedia.org/wikipedia/en/7/70/Ironmanposter.jpeg"
     },
     {
       "id": "IronMan2",
       "label": "Iron Man 2 (2010)",
-      "description": "Tony’nin babasıyla geçmişi ve SHIELD ile tanışması."
+      "description": "Tony’nin babasıyla geçmişi ve SHIELD ile tanışması.",
+      "shape": "image",
+      "image": "https://upload.wikimedia.org/wikipedia/en/e/ed/Iron_Man_2_poster.jpg"
     },
     {
       "id": "Avengers1",
       "label": "The Avengers (2012)",
       "description": "Iron Man, Hulk, Thor ve Captain America ilk kez birleşiyor.",
-      "refers_to": "IronMan1"
+      "refers_to": "IronMan1",
+      "shape": "image",
+      "image": "https://upload.wikimedia.org/wikipedia/en/f/f9/TheAvengers2012Poster.jpg"
     },
     {
       "id": "CivilWar",
       "label": "Captain America: Civil War (2016)",
       "description": "Iron Man ve Cap'in fikir ayrılığı, Avengers bölünür.",
-      "refers_to": "Avengers1"
+      "refers_to": "Avengers1",
+      "shape": "image",
+      "image": "https://upload.wikimedia.org/wikipedia/en/5/53/Captain_America_Civil_War_poster.jpg"
     },
     {
       "id": "Endgame",
       "label": "Avengers: Endgame (2019)",
       "description": "Iron Man geçmişe gider; Iron Man 1'e açık gönderme vardır.",
-      "refers_to": "IronMan1"
+      "refers_to": "IronMan1",
+      "shape": "image",
+      "image": "https://upload.wikimedia.org/wikipedia/en/0/0d/Avengers_Endgame_poster.jpg"
     }
   ],
   "edges": [
