@@ -2,7 +2,7 @@
   "nodes": [
     {
       "id": "IronMan",
-      "label": "Iron Man",
+      "label": "2008\\nIron Man",
       "title": "Iron Man (2008)",
       "image": "\\port\\images\\marvel.jpg",
       "shape": "image",
@@ -14,7 +14,7 @@
     },
     {
       "id": "TheIncredibleHulk",
-      "label": "The Incredible Hulk",
+      "label": "2008\\nThe Incredible Hulk",
       "title": "The Incredible Hulk (2008)",
       "image": "\\port\\images\\marvel.jpg",
       "shape": "image",
@@ -26,7 +26,7 @@
     },
     {
       "id": "IronMan2",
-      "label": "Iron Man 2",
+      "label": "2010\\nIron Man 2",
       "title": "Iron Man 2 (2010)",
       "image": "\\port\\images\\marvel.jpg",
       "shape": "image",
@@ -38,7 +38,7 @@
     },
     {
       "id": "Thor",
-      "label": "Thor",
+      "label": "2011\\nThor",
       "title": "Thor (2011)",
       "image": "\\port\\images\\marvel.jpg",
       "shape": "image",
@@ -50,7 +50,7 @@
     },
     {
       "id": "CaptainAmericaTheFirstAvenger",
-      "label": "Captain America: The First Avenger",
+      "label": "2011\\nCaptain America: The First Avenger",
       "title": "Captain America: The First Avenger (2011)",
       "image": "\\port\\images\\marvel.jpg",
       "shape": "image",
@@ -62,7 +62,7 @@
     },
     {
       "id": "TheAvengers",
-      "label": "The Avengers",
+      "label": "2012\\nThe Avengers",
       "title": "The Avengers (2012)",
       "image": "\\port\\images\\marvel.jpg",
       "shape": "image",
@@ -74,7 +74,7 @@
     },
     {
       "id": "IronMan3",
-      "label": "Iron Man 3",
+      "label": "2013\\nIron Man 3",
       "title": "Iron Man 3 (2013)",
       "image": "\\port\\images\\marvel.jpg",
       "shape": "image",
@@ -86,7 +86,7 @@
     },
     {
       "id": "ThorTheDarkWorld",
-      "label": "Thor: The Dark World",
+      "label": "2013\\nThor: The Dark World",
       "title": "Thor: The Dark World (2013)",
       "image": "\\port\\images\\marvel.jpg",
       "shape": "image",
@@ -98,7 +98,7 @@
     },
     {
       "id": "CaptainAmericaTheWinterSoldier",
-      "label": "Captain America: The Winter Soldier",
+      "label": "2014\\nCaptain America: The Winter Soldier",
       "title": "Captain America: The Winter Soldier (2014)",
       "image": "\\port\\images\\marvel.jpg",
       "shape": "image",
@@ -110,7 +110,7 @@
     },
     {
       "id": "GuardiansoftheGalaxy",
-      "label": "Guardians of the Galaxy",
+      "label": "2014\\nGuardians of the Galaxy",
       "title": "Guardians of the Galaxy (2014)",
       "image": "\\port\\images\\marvel.jpg",
       "shape": "image",
@@ -122,7 +122,7 @@
     },
     {
       "id": "AvengersAgeofUltron",
-      "label": "Avengers: Age of Ultron",
+      "label": "2015\\nAvengers: Age of Ultron",
       "title": "Avengers: Age of Ultron (2015)",
       "image": "\\port\\images\\marvel.jpg",
       "shape": "image",
@@ -134,7 +134,7 @@
     },
     {
       "id": "Ant-Man",
-      "label": "Ant-Man",
+      "label": "2015\\nAnt-Man",
       "title": "Ant-Man (2015)",
       "image": "\\port\\images\\marvel.jpg",
       "shape": "image",
@@ -146,7 +146,7 @@
     },
     {
       "id": "CaptainAmericaCivilWar",
-      "label": "Captain America: Civil War",
+      "label": "2016\\nCaptain America: Civil War",
       "title": "Captain America: Civil War (2016)",
       "image": "\\port\\images\\marvel.jpg",
       "shape": "image",
@@ -158,7 +158,7 @@
     },
     {
       "id": "DoctorStrange",
-      "label": "Doctor Strange",
+      "label": "2016\\nDoctor Strange",
       "title": "Doctor Strange (2016)",
       "image": "\\port\\images\\marvel.jpg",
       "shape": "image",
@@ -170,7 +170,7 @@
     },
     {
       "id": "GuardiansoftheGalaxyVol2",
-      "label": "Guardians of the Galaxy Vol. 2",
+      "label": "2017\\nGuardians of the Galaxy Vol. 2",
       "title": "Guardians of the Galaxy Vol. 2 (2017)",
       "image": "\\port\\images\\marvel.jpg",
       "shape": "image",
@@ -182,7 +182,7 @@
     },
     {
       "id": "Spider-ManHomecoming",
-      "label": "Spider-Man: Homecoming",
+      "label": "2017\\nSpider-Man: Homecoming",
       "title": "Spider-Man: Homecoming (2017)",
       "image": "\\port\\images\\marvel.jpg",
       "shape": "image",
@@ -194,7 +194,7 @@
     },
     {
       "id": "ThorRagnarok",
-      "label": "Thor: Ragnarok",
+      "label": "2017\\nThor: Ragnarok",
       "title": "Thor: Ragnarok (2017)",
       "image": "\\port\\images\\marvel.jpg",
       "shape": "image",
@@ -206,7 +206,7 @@
     },
     {
       "id": "BlackPanther",
-      "label": "Black Panther",
+      "label": "2018\\nBlack Panther",
       "title": "Black Panther (2018)",
       "image": "\\port\\images\\marvel.jpg",
       "shape": "image",
@@ -218,7 +218,7 @@
     },
     {
       "id": "AvengersInfinityWar",
-      "label": "Avengers: Infinity War",
+      "label": "2018\\nAvengers: Infinity War",
       "title": "Avengers: Infinity War (2018)",
       "image": "\\port\\images\\marvel.jpg",
       "shape": "image",
@@ -230,7 +230,7 @@
     },
     {
       "id": "Ant-ManandtheWasp",
-      "label": "Ant-Man and the Wasp",
+      "label": "2018\\nAnt-Man and the Wasp",
       "title": "Ant-Man and the Wasp (2018)",
       "image": "\\port\\images\\marvel.jpg",
       "shape": "image",
@@ -242,7 +242,7 @@
     },
     {
       "id": "CaptainMarvel",
-      "label": "Captain Marvel",
+      "label": "2019\\nCaptain Marvel",
       "title": "Captain Marvel (2019)",
       "image": "\\port\\images\\marvel.jpg",
       "shape": "image",
@@ -254,7 +254,7 @@
     },
     {
       "id": "AvengersEndgame",
-      "label": "Avengers: Endgame",
+      "label": "2019\\nAvengers: Endgame",
       "title": "Avengers: Endgame (2019)",
       "image": "\\port\\images\\marvel.jpg",
       "shape": "image",
@@ -266,7 +266,7 @@
     },
     {
       "id": "Spider-ManFarFromHome",
-      "label": "Spider-Man: Far From Home",
+      "label": "2019\\nSpider-Man: Far From Home",
       "title": "Spider-Man: Far From Home (2019)",
       "image": "\\port\\images\\marvel.jpg",
       "shape": "image",
@@ -278,7 +278,7 @@
     },
     {
       "id": "BlackWidow",
-      "label": "Black Widow",
+      "label": "2021\\nBlack Widow",
       "title": "Black Widow (2021)",
       "image": "\\port\\images\\marvel.jpg",
       "shape": "image",
@@ -290,7 +290,7 @@
     },
     {
       "id": "Shang-ChiandtheLegendoftheTenRings",
-      "label": "Shang-Chi and the Legend of the Ten Rings",
+      "label": "2021\\nShang-Chi and the Legend of the Ten Rings",
       "title": "Shang-Chi and the Legend of the Ten Rings (2021)",
       "image": "\\port\\images\\marvel.jpg",
       "shape": "image",
@@ -302,7 +302,7 @@
     },
     {
       "id": "Eternals",
-      "label": "Eternals",
+      "label": "2021\\nEternals",
       "title": "Eternals (2021)",
       "image": "\\port\\images\\marvel.jpg",
       "shape": "image",
@@ -314,7 +314,7 @@
     },
     {
       "id": "Spider-ManNoWayHome",
-      "label": "Spider-Man: No Way Home",
+      "label": "2021\\nSpider-Man: No Way Home",
       "title": "Spider-Man: No Way Home (2021)",
       "image": "\\port\\images\\marvel.jpg",
       "shape": "image",
@@ -326,7 +326,7 @@
     },
     {
       "id": "DoctorStrangeintheMultiverseofMadness",
-      "label": "Doctor Strange in the Multiverse of Madness",
+      "label": "2022\\nDoctor Strange in the Multiverse of Madness",
       "title": "Doctor Strange in the Multiverse of Madness (2022)",
       "image": "\\port\\images\\marvel.jpg",
       "shape": "image",
@@ -338,7 +338,7 @@
     },
     {
       "id": "ThorLoveandThunder",
-      "label": "Thor: Love and Thunder",
+      "label": "2022\\nThor: Love and Thunder",
       "title": "Thor: Love and Thunder (2022)",
       "image": "\\port\\images\\marvel.jpg",
       "shape": "image",
@@ -350,7 +350,7 @@
     },
     {
       "id": "BlackPantherWakandaForever",
-      "label": "Black Panther: Wakanda Forever",
+      "label": "2022\\nBlack Panther: Wakanda Forever",
       "title": "Black Panther: Wakanda Forever (2022)",
       "image": "\\port\\images\\marvel.jpg",
       "shape": "image",
@@ -362,7 +362,7 @@
     },
     {
       "id": "Ant-ManandtheWaspQuantumania",
-      "label": "Ant-Man and the Wasp: Quantumania",
+      "label": "2023\\nAnt-Man and the Wasp: Quantumania",
       "title": "Ant-Man and the Wasp: Quantumania (2023)",
       "image": "\\port\\images\\marvel.jpg",
       "shape": "image",
@@ -374,7 +374,7 @@
     },
     {
       "id": "GuardiansoftheGalaxyVol3",
-      "label": "Guardians of the Galaxy Vol. 3",
+      "label": "2023\\nGuardians of the Galaxy Vol. 3",
       "title": "Guardians of the Galaxy Vol. 3 (2023)",
       "image": "\\port\\images\\marvel.jpg",
       "shape": "image",
@@ -386,7 +386,7 @@
     },
     {
       "id": "TheMarvels",
-      "label": "The Marvels",
+      "label": "2023\\nThe Marvels",
       "title": "The Marvels (2023)",
       "image": "\\port\\images\\marvel.jpg",
       "shape": "image",
@@ -398,7 +398,7 @@
     },
     {
       "id": "WandaVision",
-      "label": "WandaVision",
+      "label": "2021\\nWandaVision",
       "title": "WandaVision (2021)",
       "image": "\\port\\images\\marvel.jpg",
       "shape": "image",
@@ -410,7 +410,7 @@
     },
     {
       "id": "TheFalconandtheWinterSoldier",
-      "label": "The Falcon and the Winter Soldier",
+      "label": "2021\\nThe Falcon and the Winter Soldier",
       "title": "The Falcon and the Winter Soldier (2021)",
       "image": "\\port\\images\\marvel.jpg",
       "shape": "image",
@@ -422,7 +422,7 @@
     },
     {
       "id": "Loki",
-      "label": "Loki",
+      "label": "2021\\nLoki",
       "title": "Loki (2021)",
       "image": "\\port\\images\\marvel.jpg",
       "shape": "image",
@@ -434,7 +434,7 @@
     },
     {
       "id": "Hawkeye",
-      "label": "Hawkeye",
+      "label": "2021\\nHawkeye",
       "title": "Hawkeye (2021)",
       "image": "\\port\\images\\marvel.jpg",
       "shape": "image",
@@ -446,7 +446,7 @@
     },
     {
       "id": "WhatIf?",
-      "label": "What If...?",
+      "label": "2021\\nWhat If...?",
       "title": "What If...? (2021)",
       "image": "\\port\\images\\marvel.jpg",
       "shape": "image",
@@ -458,7 +458,7 @@
     },
     {
       "id": "MsMarvel",
-      "label": "Ms. Marvel",
+      "label": "2022\\nMs. Marvel",
       "title": "Ms. Marvel (2022)",
       "image": "\\port\\images\\marvel.jpg",
       "shape": "image",
@@ -470,7 +470,7 @@
     },
     {
       "id": "She-Hulk",
-      "label": "She-Hulk",
+      "label": "2022\\nShe-Hulk",
       "title": "She-Hulk (2022)",
       "image": "\\port\\images\\marvel.jpg",
       "shape": "image",
@@ -482,7 +482,7 @@
     },
     {
       "id": "SecretInvasion",
-      "label": "Secret Invasion",
+      "label": "2023\\nSecret Invasion",
       "title": "Secret Invasion (2023)",
       "image": "\\port\\images\\marvel.jpg",
       "shape": "image",

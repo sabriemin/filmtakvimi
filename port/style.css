@@ -140,3 +140,18 @@ html, body {
   color: #000;
   font-weight: bold;
 }
+
+
+
+/* Düğüm etiketleri daha belirgin ve üstte olacak şekilde yeniden stillendiriliyor */
+.vis-network .vis-label {
+  color: #ffdd57 !important;
+  font-weight: bold;
+  font-size: 14px !important;
+  text-shadow: 1px 1px 2px #000;
+}
+
+/* Düğüm etiketi görselin üstüne gelsin */
+.vis-network .vis-label.vis-label-top {
+  transform: translateY(-70px);
+}
