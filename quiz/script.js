@@ -18,15 +18,15 @@ let questions = [],
   timer;
 
 const startQuiz = () => {
-  const num = 10; // sabit soru sayısı
-  const timeLimit = 15; // sabit süre
-  time = timeLimit;
+  const num = 10;          // Sabit soru sayısı
+  const timeLimit = 15;    // Sabit süre (saniye)
+  time = timeLimit;        // Timer'a aktar
 
   loadingAnimation();
 
   fetch("quiz_questions_unique.json")
     .then((res) => res.json())
-    .then((data) => {
+    .then((data) => { 
       const shuffled = data.sort(() => 0.5 - Math.random());
       questions = shuffled.slice(0, num).map(q => ({
         question: q.question,
@@ -42,6 +42,7 @@ const startQuiz = () => {
       }, 1000);
     });
 };
+
 
 startBtn.addEventListener("click", startQuiz);
 
