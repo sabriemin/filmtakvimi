@@ -404,7 +404,8 @@ Bugün gösterimdeki filmler:
     shareText += `🎬 ${film.title} (${film.genre})
 📖 ${film.summary.slice(0, 100)}...
 🔗 ${film.link}
-
+${film.bilet_link ? `🎟️ Bilet: ${film.bilet_link}
+` : ''}
 `;
   });
 
