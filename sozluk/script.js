@@ -1,10 +1,9 @@
 let tumTerimler = [];
 
 fetch('data/sozluk.json')
-  .then(response => response.json())
+  .then(res => res.json())
   .then(data => {
     tumTerimler = data.sort((a, b) => a.title.localeCompare(b.title, 'tr'));
-    harfButonlariniOlustur();
     terimleriGoster(tumTerimler);
   });
 
@@ -14,27 +13,37 @@ function terimleriGoster(veri) {
 
   veri.forEach(terim => {
     const div = document.createElement("div");
-    div.classList.add("terim");
+    div.classList.add("terim-karti");
 
-    const etiketHTML = terim.tags
-      .map(tag => `<span class="etiket" data-tag="${tag}">${tag}</span>`)
-      .join(" ");
+    const etiketHTML = terim.tags.map(tag => `<span class="etiket">${tag}</span>`).join(" ");
+
+    const linkHTML = terim.links?.length
+      ? `<strong>🔗 Dış Kaynaklar:</strong><ul>` +
+        terim.links.map(link => `<li><a href="${link.url}" target="_blank">${link.label}</a></li>`).join("") +
+        `</ul>`
+      : "";
+
+    const benzerler = tumTerimler.filter(t =>
+      t.slug !== terim.slug && t.tags.some(tag => terim.tags.includes(tag))
+    );
+
+    const benzerHTML = benzerler.length
+      ? `<strong>🗂️ Benzer Terimler:</strong><ul>` +
+        benzerler.map(b => `<li>${b.title}</li>`).join("") +
+        `</ul>`
+      : "";
 
     div.innerHTML = `
-      <h2><a href="sozluk.html?slug=${terim.slug}">${terim.title}</a></h2>
+      <h2>${terim.title}</h2>
       <p>${terim.text}</p>
       <div class="etiketler">${etiketHTML}</div>
+      <div class="diger-bilgiler">
+        ${linkHTML}
+        ${benzerHTML}
+      </div>
     `;
 
     container.appendChild(div);
-  });
-
-  document.querySelectorAll(".etiket").forEach(el => {
-    el.addEventListener("click", () => {
-      const seciliTag = el.getAttribute("data-tag");
-      const filtreli = tumTerimler.filter(t => t.tags.includes(seciliTag));
-      terimleriGoster(filtreli);
-    });
   });
 }
 
@@ -48,25 +57,3 @@ document.getElementById("arama").addEventListener("input", function () {
 
   terimleriGoster(filtreli);
 });
-
-function harfButonlariniOlustur() {
-  const harfContainer = document.getElementById("harf-filtre");
-  const harfler = [..."ABCÇDEFGĞHIİJKLMNOÖPRSŞTUÜVYZ"];
-
-  harfler.forEach(harf => {
-    const buton = document.createElement("button");
-    buton.textContent = harf;
-    buton.addEventListener("click", () => {
-      const filtreli = tumTerimler.filter(terim =>
-        terim.title.toUpperCase().startsWith(harf)
-      );
-      terimleriGoster(filtreli);
-    });
-    harfContainer.appendChild(buton);
-  });
-
-  const tumu = document.createElement("button");
-  tumu.textContent = "Tümü";
-  tumu.addEventListener("click", () => terimleriGoster(tumTerimler));
-  harfContainer.prepend(tumu);
-}

@@ -16,5 +16,14 @@
     "links": [
       { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Jump_cut" }
     ]
+  },
+  {
+    "slug": "auteur",
+    "title": "Auteur",
+    "text": "Auteur, filmin yaratıcı kontrolünü elinde tutan yönetmene verilen isimdir.",
+    "tags": ["yönetmen", "kuram"],
+    "links": [
+      { "label": "Vikipedi", "url": "https://tr.wikipedia.org/wiki/Auteur kuramı" }
+    ]
   }
 ]

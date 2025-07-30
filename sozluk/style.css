@@ -1,124 +1,99 @@
 body {
   background-color: #0e0e0e;
   color: #eee;
-  font-family: sans-serif;
-  max-width: 900px;
-  margin: auto;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
   padding: 20px;
 }
 
 h1 {
   text-align: center;
-  color: #ffca28;
   font-size: 1.8em;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 30px;
 }
 
 #arama {
   width: 100%;
-  padding: 10px;
-  margin: 15px 0 20px;
+  padding: 10px 14px;
+  margin-bottom: 30px;
   border: none;
   border-radius: 6px;
   font-size: 1em;
-  background-color: #222;
+  background-color: #1c1c1c;
   color: #eee;
+  outline: none;
 }
 
-#harf-filtre {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
-  margin-bottom: 20px;
-}
-
-#harf-filtre button {
-  background-color: #333;
-  color: #eee;
-  border: none;
-  padding: 8px 10px;
+.terim-karti {
+  background-color: #181818;
+  border-left: 4px solid #ffa726;
+  padding: 16px 20px;
+  margin-bottom: 30px;
   border-radius: 4px;
-  cursor: pointer;
-  transition: 0.2s;
-  font-size: 0.9em;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
 
-#harf-filtre button:hover {
-  background-color: #555;
+.terim-karti h2 {
+  font-size: 1.2em;
+  font-weight: 600;
+  margin: 0 0 10px;
+  color: #fff;
 }
 
-.terim {
-  background: #1c1c1c;
-  padding: 15px;
-  margin-bottom: 20px;
-  border-radius: 8px;
-}
-
-.terim h2 {
-  color: #81d4fa;
-  margin-bottom: 5px;
-}
-
-.terim p {
-  color: #ddd;
-  margin: 0 0 10px 0;
+.terim-karti p {
+  color: #ccc;
+  line-height: 1.6em;
+  margin-bottom: 10px;
 }
 
 .etiketler {
-  margin-top: 5px;
+  font-size: 0.9em;
+  color: #aaa;
+  margin-bottom: 10px;
+}
+
+.etiketler .etiket::before {
+  content: "#";
+  color: #666;
 }
 
 .etiket {
-  display: inline-block;
-  background-color: #444;
-  color: #ccc;
-  font-size: 0.85em;
-  padding: 4px 8px;
-  margin: 2px 4px 0 0;
-  border-radius: 4px;
-  cursor: pointer;
+  margin-right: 10px;
 }
 
-.etiket:hover {
-  background-color: #666;
+.diger-bilgiler {
+  font-size: 0.9em;
 }
 
-#detay ul {
+.diger-bilgiler strong {
+  display: block;
+  margin-top: 10px;
+  color: #f0a000;
+}
+
+.diger-bilgiler ul {
   list-style: none;
   padding-left: 0;
+  margin-top: 6px;
 }
 
-#detay ul li {
-  margin-bottom: 6px;
+.diger-bilgiler ul li {
+  margin-bottom: 5px;
 }
 
-#detay ul li a {
-  color: #4fc3f7;
+.diger-bilgiler ul li a {
+  color: #42a5f5;
   text-decoration: none;
 }
 
-#detay ul li a:hover {
+.diger-bilgiler ul li a:hover {
   text-decoration: underline;
-}
-
-#detay h3 {
-  margin-top: 25px;
-  color: #ffa726;
-}
-
-@media (max-width: 600px) {
-  #harf-filtre {
-    justify-content: center;
-  }
-
-  #arama {
-    font-size: 1em;
-  }
-
-  .terim {
-    font-size: 0.95em;
-  }
-
-  .terim h2 {
-    font-size: 1.1em;
-  }
 }
