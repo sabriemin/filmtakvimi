@@ -1,0 +1,47 @@
+{
+  "nodes": [
+    {
+      "id": "DiCaprio",
+      "label": "Leonardo DiCaprio",
+      "group": "actor"
+    },
+    {
+      "id": "Inception",
+      "label": "Inception",
+      "group": "film"
+    },
+    {
+      "id": "Nolan",
+      "label": "Christopher Nolan",
+      "group": "director"
+    },
+    {
+      "id": "Batman",
+      "label": "Batman Begins",
+      "group": "film"
+    },
+    {
+      "id": "Bale",
+      "label": "Christian Bale",
+      "group": "actor"
+    }
+  ],
+  "edges": [
+    {
+      "from": "DiCaprio",
+      "to": "Inception"
+    },
+    {
+      "from": "Inception",
+      "to": "Nolan"
+    },
+    {
+      "from": "Nolan",
+      "to": "Batman"
+    },
+    {
+      "from": "Batman",
+      "to": "Bale"
+    }
+  ]
+}
