@@ -1,0 +1,124 @@
+body {
+  background-color: #0e0e0e;
+  color: #eee;
+  font-family: sans-serif;
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #ffca28;
+  font-size: 1.8em;
+}
+
+#arama {
+  width: 100%;
+  padding: 10px;
+  margin: 15px 0 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1em;
+  background-color: #222;
+  color: #eee;
+}
+
+#harf-filtre {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+#harf-filtre button {
+  background-color: #333;
+  color: #eee;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 0.9em;
+}
+
+#harf-filtre button:hover {
+  background-color: #555;
+}
+
+.terim {
+  background: #1c1c1c;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.terim h2 {
+  color: #81d4fa;
+  margin-bottom: 5px;
+}
+
+.terim p {
+  color: #ddd;
+  margin: 0 0 10px 0;
+}
+
+.etiketler {
+  margin-top: 5px;
+}
+
+.etiket {
+  display: inline-block;
+  background-color: #444;
+  color: #ccc;
+  font-size: 0.85em;
+  padding: 4px 8px;
+  margin: 2px 4px 0 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.etiket:hover {
+  background-color: #666;
+}
+
+#detay ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#detay ul li {
+  margin-bottom: 6px;
+}
+
+#detay ul li a {
+  color: #4fc3f7;
+  text-decoration: none;
+}
+
+#detay ul li a:hover {
+  text-decoration: underline;
+}
+
+#detay h3 {
+  margin-top: 25px;
+  color: #ffa726;
+}
+
+@media (max-width: 600px) {
+  #harf-filtre {
+    justify-content: center;
+  }
+
+  #arama {
+    font-size: 1em;
+  }
+
+  .terim {
+    font-size: 0.95em;
+  }
+
+  .terim h2 {
+    font-size: 1.1em;
+  }
+}

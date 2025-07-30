@@ -1,0 +1,20 @@
+[
+  {
+    "slug": "kurgu",
+    "title": "Kurgu",
+    "text": "Kurgu, filmin ham görüntülerinin anlamlı bir bütün haline getirilmesi sürecidir.",
+    "tags": ["teknik", "anlatı"],
+    "links": [
+      { "label": "Vikipedi", "url": "https://tr.wikipedia.org/wiki/Kurgu" }
+    ]
+  },
+  {
+    "slug": "jump-cut",
+    "title": "Jump Cut",
+    "text": "Jump Cut, sahneler arasında zaman atlamalarıyla yapılan ani geçişleri ifade eder.",
+    "tags": ["kurgu", "teknik"],
+    "links": [
+      { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Jump_cut" }
+    ]
+  }
+]
