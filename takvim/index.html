@@ -342,6 +342,12 @@ function renderCalendar() {
         title.textContent = `🎬 ${film.title}`;
         cell.appendChild(title);
       });
+      if (filmData[dateKey].length > 2) {
+        const extra = document.createElement('div');
+        extra.className = 'extra-count';
+        extra.textContent = `+${filmData[dateKey].length - 2} diğer`;
+        cell.appendChild(extra);
+      }
       cell.onclick = () => showModal(dateKey);
       totalFilms += filmData[dateKey].length;
       activeDays++;
