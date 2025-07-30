@@ -13,13 +13,13 @@ const startBtn = document.querySelector(".start"),
   startScreen = document.querySelector(".start-screen");
 
 let questions = [],
-  time = 15,
+  time = 8,
   score = 0,
   currentQuestion,
   timer;
 
 const startQuiz = () => {
-  const timeLimit = 15;
+  const timeLimit = 8;
   time = timeLimit;
 
   startBtn.innerHTML = "Yükleniyor...";
