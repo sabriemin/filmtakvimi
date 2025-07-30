@@ -335,6 +335,29 @@
     document.getElementById('tab-calendar').classList.toggle('active', view === 'calendar');
     document.getElementById('tab-list').classList.toggle('active', view === 'list');
   }
+function populateSelectors() {
+  const yearSelect = document.getElementById('year-select');
+  const monthSelect = document.getElementById('month-select');
+  const allDates = Object.keys(filmData);
+  const years = [...new Set(allDates.map(d => d.slice(0,4)))].sort();
+  const months = Array.from({length: 12}, (_, i) => i);
+
+  yearSelect.innerHTML = years.map(y => `<option value="${y}">${y}</option>`).join('');
+  monthSelect.innerHTML = months.map(m => `<option value="${m}">${new Date(0, m).toLocaleString('tr-TR',{month:'long'})}</option>`).join('');
+
+  yearSelect.value = currentDate.getFullYear();
+  monthSelect.value = currentDate.getMonth();
+
+  yearSelect.onchange = () => {
+    currentDate.setFullYear(parseInt(yearSelect.value));
+    renderCalendar();
+  };
+  monthSelect.onchange = () => {
+    currentDate.setMonth(parseInt(monthSelect.value));
+    renderCalendar();
+  };
+}
+
 
   loadJSON();
 </script>
