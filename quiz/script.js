@@ -8,11 +8,7 @@ const progress = (value) => {
 };
 
 const startBtn = document.querySelector(".start"),
-  numQuestions = document.querySelector("#num-questions"),
-  category = document.querySelector("#category"),
-  difficulty = document.querySelector("#difficulty"),
-  timePerQuestion = document.querySelector("#time"),
-  quiz = document.querySelector(".quiz"),
+          quiz = document.querySelector(".quiz"),
   startScreen = document.querySelector(".start-screen");
 
 let questions = [],
@@ -22,15 +18,14 @@ let questions = [],
   timer;
 
 const startQuiz = () => {
-  const num = 10; // sabit soru sayısı
-  const timeLimit = 15; // sabit süre (saniye)
-  time = timeLimit;
-
+  const num = numQuestions.value,
+    cat = category.value,
+    diff = difficulty.value;
   loadingAnimation();
-
   fetch("quiz_questions_unique.json")
     .then((res) => res.json())
     .then((data) => {
+      
       const shuffled = data.sort(() => 0.5 - Math.random());
       questions = shuffled.slice(0, num).map(q => ({
         question: q.question,
@@ -46,7 +41,6 @@ const startQuiz = () => {
       }, 1000);
     });
 };
-
 
 startBtn.addEventListener("click", startQuiz);
 
