@@ -381,7 +381,12 @@ function showModal(dateKey) {
   const body = document.getElementById('modal-body');
   body.innerHTML = '';
 
-  let shareText = `📅 ${dateKey} tarihinde gösterimde:\n`;
+  const readableDate = `${dateKey.slice(6)}.${dateKey.slice(4,6)}.${dateKey.slice(0,4)}`;
+  let shareText = `🎬 Film Takvimi – ${readableDate} 📅
+
+Bugün gösterimdeki filmler:
+
+`;
   filmData[dateKey].forEach(film => {
     const div = document.createElement('div');
     div.className = 'film';
@@ -389,17 +394,21 @@ function showModal(dateKey) {
       <h3>${film.title}</h3>
       <p><strong>Tür:</strong> ${film.genre}</p>
       <p>${film.summary}</p>
-<p>
-  <a href="${film.link}" target="_blank" class="button">📎 Detay</a>
-  ${film.bilet_link ? `<a href="${film.bilet_link}" target="_blank" class="button">🎟️ Bilet</a>` : ''}
-  <a href="${film.trailer}" target="_blank" class="button">🎬 Fragman</a>
-</p>
-
+      <p>
+        <a href="${film.link}" target="_blank" class="button">📎 Detay</a>
+        <a href="${film.bilet_link || '#'}" target="_blank" class="button">🎟️ Bilet</a>
+        <a href="${film.trailer}" target="_blank" class="button">🎬 Fragman</a>
+      </p>
     `;
     body.appendChild(div);
-    shareText += `🎬 ${film.title} (${film.genre})\n`;
+    shareText += `🎬 ${film.title} (${film.genre})
+📖 ${film.summary.slice(0, 100)}...
+🔗 ${film.link}
+
+`;
   });
 
+  shareText += `✨ Takvime abone ol: https://filmtakvimi.com ✨`;
   const encoded = encodeURIComponent(shareText);
   const shareButtons = document.createElement('div');
   shareButtons.className = 'share-buttons';
@@ -410,6 +419,14 @@ function showModal(dateKey) {
   body.appendChild(shareButtons);
 
   modal.style.display = 'flex';
+
+  const footerNote = document.createElement('div');
+  footerNote.style.marginTop = '20px';
+  footerNote.style.textAlign = 'center';
+  footerNote.style.fontSize = '13px';
+  footerNote.style.color = '#555';
+  footerNote.innerHTML = `✨ Takvime abone ol: <a href='https://filmtakvimi.com' target='_blank'>filmtakvimi.com</a> ✨`;
+  body.appendChild(footerNote);
 }
 
 function closeModal() {
