@@ -1,4 +1,4 @@
-console.log("🎬 port.js immersive modda çalışıyor");
+console.log("🎬 port.js soy ağacı modda çalışıyor");
 
 const container = document.getElementById("graph-area");
 const selector = document.getElementById("evrenSec");
@@ -18,13 +18,41 @@ function formatFilmModal(film) {
   `;
 }
 
+function edgeStyle(edge) {
+  const styles = {
+    devam: {
+      dashes: false,
+      color: '#ffffff'
+    },
+    "yan-hikaye": {
+      dashes: true,
+      color: '#44ccff'
+    },
+    "evren-geçişi": {
+      dashes: [5, 5],
+      color: '#cc66ff'
+    }
+  };
+  return styles[edge.type] || { color: '#aaa' };
+}
+
 function yukleEvren(evren) {
-  const dosya = "graph_" + evren + ".json";
+  const dosya = "graph_" + evren + "_yillara_gore.json";
   fetch(dosya)
     .then(res => res.json())
     .then(veri => {
       const nodes = new vis.DataSet(veri.nodes);
-      const edges = new vis.DataSet(veri.edges);
+      const styledEdges = veri.edges.map(edge => {
+        const style = edgeStyle(edge);
+        return {
+          ...edge,
+          arrows: { to: { enabled: true, scaleFactor: 1.1 } },
+          color: style.color,
+          dashes: style.dashes
+        };
+      });
+
+      const edges = new vis.DataSet(styledEdges);
       const agVerisi = { nodes, edges };
 
       const ayarlar = {
@@ -32,9 +60,8 @@ function yukleEvren(evren) {
           hierarchical: {
             direction: "UD",
             sortMethod: "directed",
-            levelSeparation: 150,
-            nodeSpacing: 100,
-            treeSpacing: 200
+            levelSeparation: 180,
+            nodeSpacing: 120
           }
         },
         nodes: {
@@ -50,18 +77,10 @@ function yukleEvren(evren) {
           }
         },
         edges: {
-          arrows: {
-            to: { enabled: true, scaleFactor: 1.2 }
-          },
           smooth: {
             type: 'cubicBezier',
             forceDirection: 'vertical',
             roundness: 0.4
-          },
-          color: {
-            color: "#ffffffaa",
-            highlight: "#ffffff",
-            hover: "#ffffff"
           }
         },
         interaction: {

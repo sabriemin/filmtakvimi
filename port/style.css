@@ -113,3 +113,30 @@ html, body {
   margin: 0.3rem 0;
   text-align: center;
 }
+
+
+
+/* Yıllara göre seviye etiketi için katman (hiyerarşik düzende yıllar gibi çalışacak) */
+.vis-label {
+  font-size: 1rem !important;
+  font-weight: bold !important;
+  color: #fff !important;
+  background-color: #1b263bcc !important;
+  padding: 4px 8px;
+  border-radius: 6px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.5);
+}
+
+/* Ana başlıklar için daha belirgin yazı */
+#evren-panel label,
+#evren-panel select {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* Seçim paneli yazı rengi kontrastı */
+#evrenSec {
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+}
