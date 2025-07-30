@@ -22,13 +22,14 @@ let questions = [],
   timer;
 
 const startQuiz = () => {
-  const num = parseInt(numQuestions.value);
+  const num = numQuestions.value,
+    cat = category.value,
+    diff = difficulty.value;
   loadingAnimation();
-
-  fetch("quiz_questions.json")
+  fetch("quiz_questions_unique.json")
     .then((res) => res.json())
     .then((data) => {
-      // Soruları karıştır ve seçilen kadar al
+      
       const shuffled = data.sort(() => 0.5 - Math.random());
       questions = shuffled.slice(0, num).map(q => ({
         question: q.question,
@@ -44,7 +45,6 @@ const startQuiz = () => {
       }, 1000);
     });
 };
-
 
 startBtn.addEventListener("click", startQuiz);
 
