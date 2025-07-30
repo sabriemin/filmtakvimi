@@ -7,54 +7,70 @@ const modalClose = document.getElementById("modal-close");
 const filmAciklama = document.getElementById("film-aciklama");
 
 function formatFilmModal(film) {
-  let html = "";
-  html += '<div class="modal-content-inner">';
-  html += '<img src="' + film.image + '" alt="' + film.title + '" />';
-  html += "<h3>" + film.title + "</h3>";
-  html += "<p><strong>📅 Vizyon Tarihi:</strong> " + film.release_date + "</p>";
-  html += "<p><strong>🧠 Açıklama:</strong> " + film.description + "</p>";
-  if (film.refers_to) {
-    html += "<p><strong>🔁 Gönderme:</strong> <em>" + film.refers_to + "</em></p>";
-  }
-  html += "</div>";
-  return html;
+  return `
+    <div class="modal-content-inner">
+      <img src="${film.image}" alt="${film.title}" />
+      <h3>${film.title}</h3>
+      <p><strong>📅 Vizyon Tarihi:</strong> ${film.release_date}</p>
+      <p><strong>🧠 Açıklama:</strong> ${film.description}</p>
+      ${film.refers_to ? `<p><strong>🔁 Gönderme:</strong> <em>${film.refers_to}</em></p>` : ""}
+    </div>
+  `;
 }
 
 function yukleEvren(evren) {
   const dosya = "graph_" + evren + ".json";
   fetch(dosya)
-    .then(function (res) {
-      return res.json();
-    })
-    .then(function (veri) {
+    .then(res => res.json())
+    .then(veri => {
       const nodes = new vis.DataSet(veri.nodes);
       const edges = new vis.DataSet(veri.edges);
-      const agVerisi = { nodes: nodes, edges: edges };
+      const agVerisi = { nodes, edges };
 
       const ayarlar = {
         layout: {
           hierarchical: {
-            direction: "LR",
-            sortMethod: "directed"
+            direction: "UD",
+            sortMethod: "directed",
+            levelSeparation: 150,
+            nodeSpacing: 100,
+            treeSpacing: 200
           }
         },
         nodes: {
           shape: "image",
-          size: 40,
+          size: 50,
           borderWidth: 2,
-          shadow: true
+          shadow: {
+            enabled: true,
+            color: 'rgba(0,0,0,0.5)',
+            size: 10,
+            x: 5,
+            y: 5
+          }
         },
         edges: {
-          arrows: "to",
-          color: "#aaa"
-        },
-        physics: {
-          enabled: false
+          arrows: {
+            to: { enabled: true, scaleFactor: 1.2 }
+          },
+          smooth: {
+            type: 'cubicBezier',
+            forceDirection: 'vertical',
+            roundness: 0.4
+          },
+          color: {
+            color: "#ffffffaa",
+            highlight: "#ffffff",
+            hover: "#ffffff"
+          }
         },
         interaction: {
           hover: true,
-          zoomView: true,
-          dragView: true
+          navigationButtons: true,
+          keyboard: true
+        },
+        physics: {
+          enabled: false
         }
       };
 
@@ -69,17 +85,9 @@ function yukleEvren(evren) {
         }
       });
     })
-    .catch(function (err) {
-      console.error("Veri yüklenemedi:", err);
-    });
+    .catch(err => console.error("Veri yüklenemedi:", err));
 }
 
-modalClose.addEventListener("click", function () {
-  modal.classList.add("hidden");
-});
-
-selector.addEventListener("change", function () {
-  yukleEvren(selector.value);
-});
-
+modalClose.addEventListener("click", () => modal.classList.add("hidden"));
+selector.addEventListener("change", () => yukleEvren(selector.value));
 yukleEvren("marvel");
