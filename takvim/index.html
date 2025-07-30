@@ -218,17 +218,19 @@
     "Aile": "👨‍👩‍👧‍👦"
   };
 
-  async function loadJSON() {
-    const res = await fetch('/output/movies_birlesik.json');
-    const rawData = await res.json();
-    rawData.forEach(film => {
-      const date = film.date;
-      if (!filmData[date]) filmData[date] = [];
-      filmData[date].push(film);
-    });
-    renderCalendar();
-    renderListView();
-  }
+async function loadJSON() {
+  const res = await fetch('/output/movies_birlesik.json');
+  const rawData = await res.json();
+  rawData.forEach(film => {
+    const date = film.date;
+    if (!filmData[date]) filmData[date] = [];
+    filmData[date].push(film);
+  });
+  populateSelectors(); // 🟢 BUNU BURAYA EKLE
+  renderCalendar();
+  renderListView();
+}
+
 
   function renderCalendar() {
     const grid = document.getElementById('calendar-grid');
