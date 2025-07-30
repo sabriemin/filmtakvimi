@@ -22,8 +22,7 @@ const startQuiz = () => {
   const timeLimit = 15;
   time = timeLimit;
 
-  loadingAnimation();
-
+  startBtn.innerHTML = "Yükleniyor...";
   fetch("quiz_questions_unique.json")
     .then((res) => res.json())
     .then((data) => {
@@ -42,7 +41,6 @@ const startQuiz = () => {
       }, 1000);
     });
 };
-
 
 startBtn.addEventListener("click", startQuiz);
 
@@ -88,19 +86,6 @@ const startTimer = (time) => {
       time--;
     } else {
       checkAnswer();
-        if (answer === questions[currentQuestion - 1].correct_answer) {
-    score++;
-    // doğruysa otomatik geç
-    setTimeout(() => {
-      nextQuestion();
-    }, 1500);
-  } else {
-    // yanlışsa quiz biter
-    setTimeout(() => {
-      showScore();
-    }, 1500);
-  }
-
     }
   }, 1000);
 };
