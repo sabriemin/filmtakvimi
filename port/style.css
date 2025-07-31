@@ -222,3 +222,29 @@ html, body {
   pointer-events: none;
   text-shadow: 1px 1px 4px #000;
 }
+
+#container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+#sidebar {
+  width: 100px;
+  background: rgba(0,0,0,0.5);
+  overflow-y: auto;
+  padding-top: 80px;
+  position: relative;
+  color: #fffbcc;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}
+
+#graph-area {
+  flex-grow: 1;
+  background: transparent;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
