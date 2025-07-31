@@ -15,24 +15,6 @@
     </select>
   </div>
 
-  <div class="year-label" style="top: 40px; left: 80px;">2008</div>
-<div class="year-label" style="top: 40px; left: 260px;">2009</div>
-<div class="year-label" style="top: 40px; left: 440px;">2010</div>
-<div class="year-label" style="top: 40px; left: 620px;">2011</div>
-<div class="year-label" style="top: 40px; left: 800px;">2012</div>
-<div class="year-label" style="top: 40px; left: 980px;">2013</div>
-<div class="year-label" style="top: 40px; left: 1160px;">2014</div>
-<div class="year-label" style="top: 40px; left: 1340px;">2015</div>
-<div class="year-label" style="top: 40px; left: 1520px;">2016</div>
-<div class="year-label" style="top: 40px; left: 1700px;">2017</div>
-<div class="year-label" style="top: 40px; left: 1880px;">2018</div>
-<div class="year-label" style="top: 40px; left: 2060px;">2019</div>
-<div class="year-label" style="top: 40px; left: 2240px;">2020</div>
-<div class="year-label" style="top: 40px; left: 2420px;">2021</div>
-<div class="year-label" style="top: 40px; left: 2600px;">2022</div>
-<div class="year-label" style="top: 40px; left: 2780px;">2023</div>
-<div class="year-label" style="top: 40px; left: 2960px;">2024</div>
-<div class="year-label" style="top: 40px; left: 3140px;">2025</div>
   <div id="graph-area"></div>
 
   <div id="film-modal" class="hidden">
@@ -43,5 +25,21 @@
   </div>
 
   <script src="port.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const years = [2008, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2021, 2022, 2023];
+  const graphArea = document.getElementById("graph-area");
+  years.forEach((year, idx) => {
+    const div = document.createElement("div");
+    div.className = "year-label";
+    div.style.left = (80 + idx * 180) + "px";
+    div.style.top = "40px";
+    div.innerText = year;
+    document.body.appendChild(div);
+  });
+});
+</script>
+
 </body>
 </html>
