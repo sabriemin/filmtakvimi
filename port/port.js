@@ -21,7 +21,7 @@ function formatFilmModal(film) {
 }
 
 function yukleEvren(evren) {
-  const dosya = "graph_" + evren + ".json";
+  const dosya = "graph_" + evren + "_yillara_gore.json";
   fetch(dosya)
     .then(function (res) {
       return res.json();
