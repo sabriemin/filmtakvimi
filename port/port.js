@@ -1,4 +1,4 @@
-console.log("🎬 port.js soy ağacı modda çalışıyor");
+console.log("🎬 port.js vertical soy ağacı modda çalışıyor");
 
 const container = document.getElementById("graph-area");
 const selector = document.getElementById("evrenSec");
@@ -60,8 +60,9 @@ function yukleEvren(evren) {
           hierarchical: {
             direction: "UD",
             sortMethod: "directed",
-            levelSeparation: 240,
-            nodeSpacing: 180
+            levelSeparation: 180,
+            nodeSpacing: 160,
+            treeSpacing: 300
           }
         },
         nodes: {
@@ -71,9 +72,14 @@ function yukleEvren(evren) {
           shadow: {
             enabled: true,
             color: 'rgba(0,0,0,0.5)',
-            size: 65,
+            size: 10,
             x: 5,
             y: 5
+          },
+          font: {
+            color: "#ffffff",
+            size: 16,
+            strokeWidth: 2
           }
         },
         edges: {
