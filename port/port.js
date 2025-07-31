@@ -1,4 +1,4 @@
-console.log("🎬 port.js vertical soy ağacı modda çalışıyor");
+console.log("🎬 port.js immersive modda çalışıyor");
 
 const container = document.getElementById("graph-area");
 const selector = document.getElementById("evrenSec");
@@ -7,95 +7,54 @@ const modalClose = document.getElementById("modal-close");
 const filmAciklama = document.getElementById("film-aciklama");
 
 function formatFilmModal(film) {
-  return `
-    <div class="modal-content-inner">
-      <img src="${film.image}" alt="${film.title}" />
-      <h3>${film.title}</h3>
-      <p><strong>📅 Vizyon Tarihi:</strong> ${film.release_date}</p>
-      <p><strong>🧠 Açıklama:</strong> ${film.description}</p>
-      ${film.refers_to ? `<p><strong>🔁 Gönderme:</strong> <em>${film.refers_to}</em></p>` : ""}
-    </div>
-  `;
-}
-
-function edgeStyle(edge) {
-  const styles = {
-    devam: {
-      dashes: false,
-      color: '#ffffff'
-    },
-    "yan-hikaye": {
-      dashes: [4, 4],
-      color: '#44ccff'
-    },
-    "evren-geçişi": {
-      dashes: [2, 6],
-      color: '#cc66ff'
-    }
-  };
-  return styles[edge.type] || { color: '#aaa' };
+  let html = "";
+  html += '<div class="modal-content-inner">';
+  html += '<img src="' + film.image + '" alt="' + film.title + '" />';
+  html += "<h3>" + film.title + "</h3>";
+  html += "<p><strong>📅 Vizyon Tarihi:</strong> " + film.release_date + "</p>";
+  html += "<p><strong>🧠 Açıklama:</strong> " + film.description + "</p>";
+  if (film.refers_to) {
+    html += "<p><strong>🔁 Gönderme:</strong> <em>" + film.refers_to + "</em></p>";
+  }
+  html += "</div>";
+  return html;
 }
 
 function yukleEvren(evren) {
-  const dosya = "graph_" + evren + "_yillara_gore.json";
+  const dosya = "graph_" + evren + ".json";
   fetch(dosya)
-    .then(res => res.json())
-    .then(veri => {
+    .then(function (res) {
+      return res.json();
+    })
+    .then(function (veri) {
       const nodes = new vis.DataSet(veri.nodes);
-      const styledEdges = veri.edges.map(edge => {
-        const style = edgeStyle(edge);
-        return {
-          ...edge,
-          arrows: { to: { enabled: true, scaleFactor: 1.1 } },
-          color: style.color,
-          dashes: style.dashes
-        };
-      });
-
-      const edges = new vis.DataSet(styledEdges);
-      const agVerisi = { nodes, edges };
+      const edges = new vis.DataSet(veri.edges);
+      const agVerisi = { nodes: nodes, edges: edges };
 
       const ayarlar = {
         layout: {
           hierarchical: {
-            direction: "UD",
-            sortMethod: "directed",
-            levelSeparation: 480,
-            nodeSpacing: 200,
-            treeSpacing: 300
+            direction: "LR",
+            sortMethod: "directed"
           }
         },
         nodes: {
           shape: "image",
-          size: 65,
+          size: 40,
           borderWidth: 2,
-          shadow: {
-            enabled: true,
-            color: 'rgba(0,0,0,0.5)',
-            size: 10,
-            x: 5,
-            y: 5
-          },
-          font: {
-            color: "#ffffff",
-            size: 16,
-            strokeWidth: 2
-          }
+          shadow: true
         },
         edges: {
-          smooth: {
-            type: 'cubicBezier',
-            forceDirection: 'vertical',
-            roundness: 0.4
-          }
-        },
-        interaction: {
-          hover: true,
-          navigationButtons: true,
-          keyboard: true
+          arrows: "to",
+          color: "#aaa"
         },
         physics: {
           enabled: false
+        },
+        interaction: {
+          hover: true,
+          zoomView: true,
+          dragView: true
         }
       };
 
@@ -110,9 +69,17 @@ function yukleEvren(evren) {
         }
       });
     })
-    .catch(err => console.error("Veri yüklenemedi:", err));
+    .catch(function (err) {
+      console.error("Veri yüklenemedi:", err);
+    });
 }
 
-modalClose.addEventListener("click", () => modal.classList.add("hidden"));
-selector.addEventListener("change", () => yukleEvren(selector.value));
+modalClose.addEventListener("click", function () {
+  modal.classList.add("hidden");
+});
+
+selector.addEventListener("change", function () {
+  yukleEvren(selector.value);
+});
+
 yukleEvren("marvel");
