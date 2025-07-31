@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Film Ağaçları</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/vis-network@9.1.2/dist/vis-network.min.js"></script>
+</head>
+<body>
+  <div id="evren-panel">
+    <select id="evrenSec">
+      <option value="marvel">Marvel</option>
+      <option value="dc">DC</option>
+    </select>
+  </div>
+
+  <div id="graph-area"></div>
+
+  <div id="film-modal" class="hidden">
+    <div class="modal-content">
+      <span id="modal-close">&times;</span>
+      <div id="film-aciklama">Film bilgisi burada gösterilecek.</div>
+    </div>
+  </div>
+
+  <script src="port.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const years = [2008, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2021, 2022, 2023];
+  const graphArea = document.getElementById("graph-area");
+  years.forEach((year, idx) => {
+    const div = document.createElement("div");
+    div.className = "year-label";
+    div.style.left = (80 + idx * 180) + "px";
+    div.style.top = "40px";
+    div.innerText = year;
+    document.body.appendChild(div);
+  });
+});
+</script>
+
+</body>
+</html>

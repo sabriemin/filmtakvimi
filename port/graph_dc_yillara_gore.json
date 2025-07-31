@@ -1,0 +1,148 @@
+{
+  "nodes": [
+    {
+      "id": "ManOfSteel",
+      "label": "Man of Steel",
+      "title": "Man of Steel (2013)",
+      "image": "https://upload.wikimedia.org/wikipedia/en/8/85/Man_of_Steel_poster.jpg",
+      "shape": "image",
+      "description": "Man of Steel, DC Sinematik Evreni’nin başlangıç noktasıdır. Film, Krypton gezegeninin yok oluşuyla başlar ve Kal-El’in dünyaya gönderilmesini konu alır. Dünya’da Clark Kent adıyla büyüyen Kal-El, süper güçlerini keşfederken kendi kimliğini ve insanlıkla olan ilişkisini sorgular. General Zod’un dünyayı istila etmesi, Clark’ı Superman kimliğini benimsemeye zorlar. Film, güç ve sorumluluk, aidiyet ve kurtarıcı figür temalarını işler. Zack Snyder’ın karanlık ve epik anlatımı, Superman’in klasik hikâyesine modern bir yaklaşım sunar. Film, görsel efektleri ve aksiyon sahneleriyle dikkat çekerken karakterin içsel çatışmalarını da derinleştirir.",
+      "release_date": "2013-06-14",
+      "refers_to": "Man of Steel, DCEU’nun temelini atar. Krypton’un yok oluşu, ileride Zod’un dönüşüne ve diğer Kryptonlu tehditlere zemin hazırlar. Clark’ın kimliğini arayışı, onu Batman v Superman filmine taşır. Filmde LexCorp ve Wayne Enterprises’a dair görseller, Batman’in gelecekteki dahil oluşuna göndermedir. Zod’un ölümü, Superman’in etik sınırlarını sorgulamasına neden olur. Ayrıca Lois Lane ile olan ilişkisi, serinin duygusal merkezini oluşturur. Bu film, evrenin inşasına ilk adımı atarak sonraki olayların temelini atar."
+    },
+    {
+      "id": "BvS",
+      "label": "Batman v Superman",
+      "title": "Batman v Superman: Dawn of Justice (2016)",
+      "image": "https://upload.wikimedia.org/wikipedia/en/2/20/Batman_v_Superman_poster.jpg",
+      "shape": "image",
+      "description": "Batman v Superman, Superman’in varlığının dünyadaki etkilerini ve Batman’in bu tehdide verdiği tepkiyi konu alır. Bruce Wayne, Metropolis’in yok oluşuna tanıklık eder ve Superman’i potansiyel bir tehlike olarak görür. İki kahraman karşı karşıya gelirken Lex Luthor, onları birbirine düşürmek için sinsi planlar yapar. Film, güç, adalet ve insanlık temalarını sorgular. Ayrıca Wonder Woman’ın ilk kez ortaya çıkması ve Doomsday tehdidi gibi önemli gelişmeleri barındırır.",
+      "release_date": "2016-03-25",
+      "refers_to": "Man of Steel’de yaşanan Metropolis savaşına doğrudan atıflar yapılır. Bruce Wayne’in bakış açısıyla anlatılan olaylar, karakterin motivasyonunu güçlendirir. Lex Luthor’un komplosu, Justice League’in oluşum sürecini başlatır. Wonder Woman’ın dosyaları incelerken Aquaman, Flash ve Cyborg gibi karakterlere gönderme yapılır. Film, DCEU’nun en karanlık anlatı yapısına sahiptir ve evrenin birleşik kahraman yapısına geçişini hızlandırır."
+    },
+    {
+      "id": "JusticeLeague",
+      "label": "Justice League",
+      "title": "Justice League (2017)",
+      "image": "https://upload.wikimedia.org/wikipedia/en/3/31/Justice_League_film_poster.jpg",
+      "shape": "image",
+      "description": "Justice League, Superman’in ölümünün ardından dünyayı savunacak yeni bir ekip oluşturulmasını konu alır. Batman ve Wonder Woman, yaklaşan Steppenwolf tehdidine karşı Flash, Aquaman ve Cyborg’u bir araya getirir. Superman’in diriltilmesi, takımın moral gücünü artırır. Film, birlik olma, affetme ve kahramanlığın anlamı üzerine inşa edilir. Joss Whedon tarafından tamamlanan bu versiyon, Zack Snyder’ın vizyonundan sapmalar içerir ve karışık eleştiriler almıştır.",
+      "release_date": "2017-11-17",
+      "refers_to": "Batman v Superman’in sonunda ölen Superman’in geri getirilmesi, bu filmde kritik bir dönüm noktasıdır. Mother Box teknolojisi, Cyborg’un kökenini ve gelecekteki teknolojik tehditleri işler. Ayrıca Darkseid’e dair ilk ipuçları burada verilir. Wonder Woman’ın Amazon geçmişi ve Aquaman’in Atlantis bağlantısı, karakterlerin kendi solo filmlerine bağlanır. Flash’ın zaman yolculuğu ise ilerideki multiverse anlatılarına zemin hazırlar."
+    },
+    {
+      "id": "ZackCut",
+      "label": "Zack Snyder's JL",
+      "title": "Zack Snyder's Justice League (2021)",
+      "image": "https://upload.wikimedia.org/wikipedia/en/3/3c/Zack_Snyder%27s_Justice_League.png",
+      "shape": "image",
+      "description": "Zack Snyder’s Justice League, orijinal yönetmenin vizyonuna sadık kalınarak yeniden kurgulanan dört saatlik bir destandır. Film, karakter gelişimine, evren inşasına ve Steppenwolf’un motivasyonlarına daha fazla odaklanır. Superman’in dönüşü daha anlamlı işlenir, Cyborg’un ailesel travmaları derinleştirilir. Film, birlik, umut ve evrensel tehditlere karşı hazırlık temalarını işler. Karanlık tonu, yavaş anlatımı ve mitolojik referanslarıyla DCEU’nun zirvesi olarak kabul edilir.",
+      "release_date": "2021-03-18",
+      "refers_to": "Man of Steel ve Batman v Superman’de atılan tüm yapısal ipuçları bu versiyonda karşılık bulur. Darkseid’in gösterilmesi, Apokolips tehdidinin büyüklüğünü hissettirir. Knightmare sahneleri, olası bir gelecekte yaşanacak distopik olaylara gönderme yapar. Martian Manhunter’ın tanıtımı, DC evreninin genişleyeceğinin göstergesidir. Flash’ın zamanla oynadığı sahneler, multiverse ve kriz temalarını güçlendirir. Bu versiyon, DCEU için hem kapanış hem de potansiyel yeni başlangıç sunar."
+    },
+    {
+      "label": "Batman v Superman: Dawn of Justice",
+      "image": "\\port\\images\\dc.jpg",
+      "description": "",
+      "refers_to": ""
+    },
+    {
+      "label": "Suicide Squad (2016)",
+      "image": "\\port\\images\\dc.jpg",
+      "description": "Amanda Waller, tehlikeli görevler için süper suçlulardan oluşan bir ekip kurar: Suicide Squad. Harley Quinn, Deadshot, Killer Croc gibi karakterlerin yer aldığı ekip, büyülü bir tehdidi durdurmak üzere göreve gönderilir. Film, kaotik mizahı, anti-kahraman anlatımı ve stilize aksiyon sahneleriyle dikkat çeker. Ancak eleştirilere rağmen bazı karakterler izleyicilerce sevildi. Film, kötüler üzerinden kahramanlık kavramını sorgular.",
+      "refers_to": "Batman’in Joker ve Harley ile olan geçmişine dair sahneler içerir. Flash’ın Captain Boomerang’ı yakalaması, evren bağlantısını güçlendirir. Enchantress’ın büyü gücü, DC evrenindeki mistik elementleri tanıtır. Waller’ın hükümet bağlantıları, daha sonra The Suicide Squad ve Peacemaker dizisinde genişletilir. Film, anti-kahramanlar dünyasını ana evrenin parçası hâline getirir."
+    },
+    {
+      "label": "Wonder Woman",
+      "image": "\\port\\images\\dc.jpg",
+      "description": "Wonder Woman, Amazon prensesi Diana’nın 1. Dünya Savaşı sırasında insanların dünyasına gelişini ve savaş tanrısı Ares’e karşı savaşını konu alır. Diana, adalet, sevgi ve barış kavramlarını keşfederken kendi gücünü de tanır. Steve Trevor ile olan ilişkisi, insanlıkla bağ kurmasına yardımcı olur. Film, feminizm, savaşın yıkıcılığı ve kahramanlığın felsefi yönleriyle öne çıkar. Patty Jenkins’in yönetmenliğiyle duygusal ve güçlü bir hikâye sunar.",
+      "refers_to": "Batman v Superman’de görülen eski fotoğrafın hikâyesi burada anlatılır. Diana’nın savaş sonrası izole olması, evrenin diğer yapımlarında vurgulanır. Ares’in tanıtılması, DC’nin tanrılarla olan bağını gösterir. Amazonsların savaşçılığı, Justice League’deki Temiskira savaş sahneleriyle bütünleşir. Film, DC evreninin tarihi boyutunu açığa çıkarır."
+    },
+    {
+      "label": "Aquaman",
+      "image": "\\port\\images\\dc.jpg",
+      "description": "Arthur Curry, insan ve Atlantisli kökenlerinin arasında sıkışmış bir kahramandır. Atlantis tahtını hak eden kişi olduğunu kanıtlamak için hem denizaltı krallıklarıyla hem de geçmişiyle yüzleşir. Film, görsel anlamda zengin sualtı dünyasıyla dikkat çeker. Arthur’un annesiyle olan ilişkisi ve kardeşi Orm’la çatışması, karakterin gelişimini şekillendirir. Film, güç, miras ve barışın bedeli gibi temalarla ilerler.",
+      "refers_to": "Justice League’de tanıtılan Arthur’un karakteri burada derinleşir. Atlantis kültürü ve krallıkları, DC evrenine yeni bir boyut katar. Orm ve Black Manta gibi kötü karakterler, gelecekteki çatışmalar için temel oluşturur. Film sonunda Arthur’un kral oluşu, ikinci filmdeki olayların başlangıç noktasıdır. Ayrıca Wonder Woman ile mitolojik paralellikler taşır."
+    },
+    {
+      "label": "Shazam!",
+      "image": "\\port\\images\\dc.jpg",
+      "description": "Billy Batson, sihirli bir sözle yetişkin bir süper kahramana dönüşen genç bir çocuktur. Film, eğlenceli ve sıcak tonuyla DCEU’dan ayrılır. Aile, aidiyet ve sorumluluk temaları işlenir. Billy’nin evlatlık ailesiyle kurduğu bağ ve kahraman olmayı öğrenme süreci, genç izleyicilere hitap eder. Komedi unsurları, klasik kahraman hikâyesine taze bir soluk getirir.",
+      "refers_to": "Superman ve Batman’e görsel göndermeler içerir. Shazam’ın güçlerinin kökeni, antik büyüler ve sihirli varlıklarla bağlantılıdır. Son sahnede görünen Mister Mind, gelecekteki kötüler için temel oluşturur. Film, DCEU’daki mizah dozunun artmasına öncülük eder. Ayrıca Shazam ailesinin tanıtımı, evrendeki ekip temasını güçlendirir."
+    },
+    {
+      "label": "Birds of Prey",
+      "image": "\\port\\images\\dc.jpg",
+      "description": "Harley Quinn, Joker’den ayrıldıktan sonra Gotham’da kendi başına hayatta kalmaya çalışır. Black Canary, Huntress ve Renee Montoya ile yolları kesişir. Film, Gotham’daki kadın karakterlerin ortak düşman Roman Sionis’e karşı birleşmesini konu alır. Renkli görselleri, anlatıcı yapısı ve Harley’nin çılgın karakteriyle öne çıkar. Film, kadın dayanışması ve bireysel özgürlük temalarını işler.",
+      "refers_to": "Suicide Squad sonrası Harley’nin kişisel yolculuğu anlatılır. Joker’den bahsedilse de doğrudan gösterilmez. Huntress’in geçmişi ve Montoya’nın polis bağlantıları, Gotham evrenini genişletir. Black Mask’in kaybı, Gotham’daki suç dengelerini etkiler. Film, karakter odaklı DC hikâyelerinin nasıl anlatılabileceğine dair örnek sunar."
+    },
+    {
+      "label": "Wonder Woman 1984",
+      "image": "\\port\\images\\dc.jpg",
+      "description": "Diana Prince, bu sefer 1980’lerin renkli ve karmaşık dünyasında ortaya çıkar. Eski aşkı Steve Trevor gizemli bir şekilde geri dönerken, dünya çapında dilekleri gerçekleştiren bir taş tüm düzeni bozar. Maxwell Lord ve Cheetah gibi yeni tehditlerle yüzleşen Diana, gücün bedelini ve fedakârlığın gerekliliğini bir kez daha öğrenir. Film, nostaljik atmosferi ve tematik derinliğiyle dikkat çeker.",
+      "refers_to": "İlk filmdeki Steve Trevor’un kaybı burada merkezde yeniden işlenir. Diana’nın ölümsüzlüğü ve yalnızlığı bu filmde daha belirgin hale gelir. Maxwell Lord’un karakteri, DC evrenindeki güç sapkınlıklarını temsil eder. Cheetah’ın dönüşümü, çizgi romanlara sadık bir kötü karakter yaratır. Film sonunda Diana, insanlıkla olan bağını güçlendirir ve modern çağa geçişi tamamlar."
+    },
+    {
+      "label": "The Suicide Squad (2021)",
+      "image": "\\port\\images\\dc.jpg",
+      "description": "James Gunn’ın yeniden başlattığı bu film, hükümetin ölümcül görevler için oluşturduğu yeni bir anti-kahraman ekibini konu alır. Harley Quinn, Bloodsport, Peacemaker ve King Shark gibi renkli karakterlerin yer aldığı ekip, Corto Maltese adasında gizli bir projeyi yok etmek için gönderilir. Film, sert mizahı, absürt aksiyonu ve duygusal anları başarıyla harmanlar.",
+      "refers_to": "İlk Suicide Squad filminden Harley Quinn ve Rick Flag geri döner. Amanda Waller’ın kontrol mekanizması genişletilir. Project Starfish, DC’nin uzaylı tehditlerine gönderme yapar. Peacemaker karakteri, kendi dizisine temel oluşturur. Film, DCEU’nun anlatı tonunda yeni bir yol açar: ciddiyetle absürtlüğün dengesi."
+    },
+    {
+      "label": "Black Adam",
+      "image": "\\port\\images\\dc.jpg",
+      "description": "Kahndaq'ın antik şampiyonu Black Adam, binlerce yıl hapsedildikten sonra yeniden dünyaya döner. Onun adaleti serttir ve merhametsizdir. Justice Society üyeleri Hawkman, Doctor Fate, Atom Smasher ve Cyclone, Black Adam’ı durdurmak için harekete geçer. Film, güç, adalet ve efsaneler temalarını işler. Dwayne Johnson’ın karizmasıyla karakter yeniden tanıtılır.",
+      "refers_to": "Shazam evrenine bağlı olsa da doğrudan temas kurulmaz. Amanda Waller’ın cameo’su evren bütünlüğünü gösterir. Superman’in sahne sonu cameo’su büyük yankı uyandırır. Justice Society’nin tanıtılması, DC’nin alt ekiplerini sahneye çıkartır. Film, DCEU için alternatif bir kahraman anlayışı sunar: kahraman olmayan kurtarıcı."
+    },
+    {
+      "label": "Shazam! Fury of the Gods",
+      "image": "\\port\\images\\dc.jpg",
+      "description": "Billy Batson ve ailesi, süper kahraman güçleriyle dünyayı korumaya çalışırken tanrıçaların saldırısıyla karşı karşıya kalır. Hespera ve Kalypso’nun gelişi, güçlerin kökenine dair sırları açığa çıkarır. Film, aile bağları, fedakârlık ve kahramanlığın ruhunu işlerken komedi tonunu da korur. Shazam ailesi bir arada mücadele eder.",
+      "refers_to": "İlk filmdeki güç paylaşımı burada daha derinleştirilir. Tanrıçalar, DC mitolojisinde yeni bir kapı aralar. Wonder Woman’ın sürpriz sahnesi, evren bağlantısını güçlendirir. Billy’nin olgunlaşması, karakter gelişiminin doğal uzantısıdır. Ayrıca post-credit sahnesi, Justice Society ve Amanda Waller bağlantısına işaret eder."
+    },
+    {
+      "label": "Zack Snyder's Justice League",
+      "image": "\\port\\images\\dc.jpg",
+      "description": "",
+      "refers_to": ""
+    },
+    {
+      "label": "The Flash",
+      "image": "\\port\\images\\dc.jpg",
+      "description": "Barry Allen, annesinin ölümünü engellemek için geçmişe gider, ancak bu girişim zaman çizgisinde büyük kırılmalara yol açar. Michael Keaton’un Batman’i ve Kara Zor-El (Supergirl) gibi alternatif karakterler hikâyeye dahil olur. Film, zaman yolculuğu, kayıp, aidiyet ve sorumluluk gibi temaları işler. Flashpoint çizgi romanından esinlenilmiştir.",
+      "refers_to": "Zaman yolculuğu, Zack Snyder’s Justice League’de görülen Flash sahnesine atıfta bulunur. Ben Affleck’in Batman’i, filmde kısa süreli yer alır. Keaton’un Batman’i multiverse’ü genişletir. Superman yerine Supergirl’ün olması, alternatif zaman dilimlerinin etkisini gösterir. Film, eski DCEU ile olası yeni DCU geçişleri arasında bir köprü işlevi görür."
+    },
+    {
+      "label": "Blue Beetle",
+      "image": "\\port\\images\\dc.jpg",
+      "description": "Jaime Reyes, uzaylı bir skarabe tarafından seçilerek süper güçler kazanır. Film, ailesine bağlı bir genç olarak Jaime’nin kahramanlığa adım atışını anlatır. Latin kültürü, aile bağları ve gençliğin enerjisi filmde ön plandadır. Blue Beetle, DCEU içinde yeni bir kahramanı tanıtan solo bir başlangıç hikâyesidir.",
+      "refers_to": "Filmde Batman ve Superman gibi kahramanlara göndermeler bulunsa da doğrudan bağlantı kurulmaz. Ancak Blue Beetle karakteri, gelecekte kurulacak yeni DC evreni için potansiyel bir başlangıçtır. Jaime’nin ailesiyle olan ilişkisi, klasik yalnız kahraman anlayışından farklıdır. Skarabe’nin kökeni, uzaylı teknoloji temalı hikâyelere zemin hazırlar."
+    },
+    {
+      "label": "Aquaman and the Lost Kingdom",
+      "image": "\\port\\images\\dc.jpg",
+      "description": "Arthur Curry artık Atlantis’in kralıdır. Ancak yeni bir tehdit, kayıp bir krallığın uyanmasıyla ortaya çıkar. Arthur, kardeşi Orm’la iş birliği yaparak büyük bir savaşın önüne geçmeye çalışır. Film, aile, birlik ve çevresel tehditler temalarını işler. Görsel açıdan güçlü bir denizaltı fantastik dünyası sunar.",
+      "refers_to": "İlk Aquaman filminde bırakılan bazı konular burada tamamlanır. Orm’un değişimi ve kardeşlik teması, DCEU’nun aile odaklı yönünü güçlendirir. Black Manta’nın intikamı sürerken Atlantis’in geçmişi derinleşir. Film, DC evreninin mitolojik yönünü daha da genişletir ve Aquaman’in liderlik sorumluluğunu işler."
+    },
+    {
+      "label": "Peacemaker",
+      "image": "\\port\\images\\dc.jpg",
+      "description": "The Suicide Squad sonrası Peacemaker, hastaneden çıkar ve yeniden görevlendirilir. Bu sefer görev sadece fiziksel değil, psikolojik de bir savaştır. Dizi, onun çocukluk travmaları, aile ilişkileri ve kimliğiyle yüzleşmesini anlatır. Mizah, aksiyon ve karakter gelişimi başarılı bir şekilde harmanlanır. John Cena’nın performansı dikkat çeker.",
+      "refers_to": "Peacemaker, The Suicide Squad filminin doğrudan devamıdır. Amanda Waller ve ARGUS organizasyonu genişletilir. Dizi boyunca diğer DC karakterlerine bolca göndermede bulunulur. Karakterin babası White Dragon, ırkçı temaları işleyerek hikâyeyi daha karanlık hale getirir. Final sahnesinde Justice League üyeleri görülerek evren bağlantısı pekiştirilir."
+    }
+  ],
+  "edges": [
+    {
+      "from": "ManOfSteel",
+      "to": "BvS"
+    },
+    {
+      "from": "BvS",
+      "to": "JusticeLeague"
+    },
+    {
+      "from": "JusticeLeague",
+      "to": "ZackCut"
+    }
+  ]
+}

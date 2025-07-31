@@ -1,0 +1,183 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  background: radial-gradient(circle at center, #0d1b2a, #000000);
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+}
+
+#graph-area {
+  width: 100vw;
+  height: 100vh;
+  background: transparent;
+}
+
+#evren-panel {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 10;
+  background: rgba(0,0,0,0.6);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+#evrenSec {
+  padding: 0.4rem;
+  font-size: 1rem;
+  background: #fff;
+  color: #000;
+  border: none;
+  border-radius: 4px;
+}
+
+#film-modal {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  color: #000;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 300px;
+  max-width: 90vw;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+  z-index: 20;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal-content img {
+  max-width: 100%;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
+
+#modal-close {
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+
+
+#film-modal {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  color: #000;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  z-index: 20;
+  transition: all 0.3s ease-in-out;
+  overflow-y: auto;
+  max-height: 80vh;
+}
+
+@media (max-width: 600px) {
+  #film-modal {
+    width: 95%;
+    bottom: 1rem;
+    padding: 0.8rem;
+    font-size: 0.95rem;
+  }
+
+  .modal-content-inner img {
+    max-height: 200px;
+    object-fit: cover;
+  }
+}
+
+.modal-content-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.modal-content-inner h3 {
+  margin: 0.3rem 0;
+  text-align: center;
+}
+
+
+
+/* Yıllara göre seviye etiketi için katman (hiyerarşik düzende yıllar gibi çalışacak) */
+.vis-label {
+  font-size: 1rem !important;
+  font-weight: bold !important;
+  color: #fff !important;
+  background-color: #1b263bcc !important;
+  padding: 4px 8px;
+  border-radius: 6px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.5);
+}
+
+/* Ana başlıklar için daha belirgin yazı */
+#evren-panel label,
+#evren-panel select {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* Seçim paneli yazı rengi kontrastı */
+#evrenSec {
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+}
+
+
+
+
+
+/* Düğüm etiketi görselin üstüne gelsin */
+.vis-network .vis-label.vis-label-top {
+  transform: translateY(-70px);
+}
+
+
+
+/* Düğüm etiketleri: film adı + yıl */
+.vis-network .vis-label {
+  color: #ffd700 !important;
+  font-weight: 700;
+  font-size: 15px !important;
+  text-shadow: 1px 1px 2px #000000aa;
+}
+
+/* Yıllar için başlık görünümü */
+.year-label {
+  position: absolute;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fffbcc;
+  text-shadow: 2px 2px 4px #000000aa;
+  pointer-events: none;
+  z-index: 5;
+}
+
+
+
+/* Film adları ve yıl etiketlerinin görünürlüğü artırıldı */
+.vis-network .vis-label {
+  fill: #ffd700 !important;
+  color: #ffd700 !important;
+  font-weight: 700 !important;
+  font-size: 15px !important;
+  text-shadow: 1px 1px 2px #000000aa !important;
+}
