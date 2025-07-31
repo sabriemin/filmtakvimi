@@ -15,6 +15,13 @@
     </select>
   </div>
 
+  
+<div id="legend">
+  <span class="devam">⬤ Devam</span>
+  <span class="yan">⬤ Yan Hikâye</span>
+  <span class="evren">⬤ Evren Geçişi</span>
+</div>
+
   <div id="graph-area"></div>
 
   <div id="film-modal" class="hidden">
@@ -35,6 +42,25 @@ document.addEventListener("DOMContentLoaded", () => {
     div.className = "year-label";
     div.style.left = (80 + idx * 180) + "px";
     div.style.top = "40px";
+    div.innerText = year;
+    document.body.appendChild(div);
+  });
+});
+</script>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const years = [...new Set(Array.from(document.querySelectorAll(".vis-label"))
+    .map(lbl => (lbl.innerText || "").split("\n")[0]))]
+    .filter(y => /^\d{4}$/.test(y))
+    .sort();
+
+  years.forEach((year, i) => {
+    const div = document.createElement("div");
+    div.className = "year-label";
+    div.style.top = (100 + i * 200) + "px";
+    div.style.left = "10px";
     div.innerText = year;
     document.body.appendChild(div);
   });
