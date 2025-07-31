@@ -60,8 +60,8 @@ function yukleEvren(evren) {
           hierarchical: {
             direction: "UD",
             sortMethod: "directed",
-            levelSeparation: 180,
-            nodeSpacing: 160,
+            levelSeparation: 480,
+            nodeSpacing: 200,
             treeSpacing: 300
           }
         },
