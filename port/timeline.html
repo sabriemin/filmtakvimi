@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Marvel Timeline</title>
+  <script src="https://unpkg.com/vis-timeline@latest/standalone/umd/vis-timeline-graph2d.min.js"></script>
+  <link href="https://unpkg.com/vis-timeline@latest/styles/vis-timeline-graph2d.min.css" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      background: #0d1b2a;
+      color: #fff;
+      font-family: sans-serif;
+    }
+    #timeline-container {
+      position: relative;
+      height: 100vh;
+    }
+    #timeline {
+      height: 100%;
+    }
+    canvas#link-canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      z-index: 5;
+    }
+    .vis-item .vis-item-content {
+      font-weight: bold;
+      color: #ffd700;
+    }
+  </style>
+</head>
+<body>
+  <div id="timeline-container">
+    <canvas id="link-canvas"></canvas>
+    <div id="timeline"></div>
+  </div>
+  <script src="timeline.js"></script>
+</body>
+</html>
