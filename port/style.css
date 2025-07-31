@@ -201,10 +201,8 @@ html, body {
 #legend .yan { color: #44ccff; }
 #legend .evren { color: #cc66ff; }
 
+
+
 .vis-label {
-  font-size: 15px !important;
-  font-weight: 700 !important;
-  color: #ffdd57 !important;
-  background: transparent !important;
-  text-shadow: 1px 1px 3px #000;
+  display: none !important;
 }
