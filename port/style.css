@@ -138,9 +138,7 @@ html, body {
 
 
 /* Düğüm etiketi görselin üstüne gelsin */
-.vis-network .vis-label.vis-label-top {
-  transform: translateY(-70px);
-}
+.vis-network .vis-label
 
 
 
@@ -203,6 +201,24 @@ html, body {
 
 
 
-.vis-label {
+
+
+.vis-label,
+.vis-y-axis,
+.vis-text,
+.vis-grid {
   display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+.year-label {
+  position: absolute;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fffbcc;
+  left: 20px;
+  z-index: 15;
+  pointer-events: none;
+  text-shadow: 1px 1px 4px #000;
 }

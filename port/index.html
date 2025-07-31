@@ -42,9 +42,13 @@
 
 
 
+
+
+
 <script>
 document.addEventListener("DOMContentLoaded", () => {
-  const years = [...new Set(Array.from(document.querySelectorAll(".vis-label"))
+  const years = [...new Set(Array.from(document.querySelectorAll(".vis-network canvas"))
+    .flatMap(() => Array.from(document.querySelectorAll(".vis-label")))
     .map(lbl => (lbl.innerText || "").split("\n")[0]))]
     .filter(y => /^\d{4}$/.test(y))
     .sort((a, b) => +a - +b);
@@ -52,15 +56,14 @@ document.addEventListener("DOMContentLoaded", () => {
   years.forEach((year, i) => {
     const div = document.createElement("div");
     div.className = "year-label";
-    div.style.left = "20px";
-    div.style.top = (100 + i * 220) + "px";
+    div.style.top = (100 + i * 300) + "px";
     div.innerText = year;
     document.body.appendChild(div);
   });
 
   setTimeout(() => {
-    window.scrollTo({ left: 0, top: 0, behavior: "smooth" });
-  }, 800);
+    window.scrollTo({ left: 0, top: 0 });
+  }, 500);
 });
 </script>
 
