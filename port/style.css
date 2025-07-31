@@ -165,16 +165,7 @@ html, body {
 
 
 
-.year-label {
-  position: absolute;
-  font-size: 28px;
-  font-weight: bold;
-  color: #fff8b5;
-  text-shadow: 2px 2px 6px #000000;
-  left: 20px;
-  pointer-events: none;
-  z-index: 10;
-}
+
 
 #legend {
   position: absolute;
@@ -212,34 +203,11 @@ html, body {
   visibility: hidden !important;
 }
 
-.year-label {
-  position: absolute;
-  font-size: 20px;
-  font-weight: bold;
-  color: #fffbcc;
-  left: 20px;
-  z-index: 15;
-  pointer-events: none;
-  text-shadow: 1px 1px 4px #000;
-}
 
-#container {
-  display: flex;
-  height: 100vh;
-  width: 100vw;
-}
 
-#sidebar {
-  width: 100px;
-  background: rgba(0,0,0,0.5);
-  overflow-y: auto;
-  padding-top: 80px;
-  position: relative;
-  color: #fffbcc;
-  font-weight: bold;
-  font-size: 18px;
-  text-align: center;
-}
+
+
+
 
 #graph-area {
   flex-grow: 1;
@@ -247,4 +215,18 @@ html, body {
   height: 100vh;
   overflow: hidden;
   position: relative;
+}
+
+.year-label {
+  position: absolute;
+  font-size: 26px;
+  font-weight: 800;
+  color: #ffcc33;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 4px 8px;
+  border-radius: 8px;
+  left: 10px;
+  z-index: 20;
+  pointer-events: none;
+  text-shadow: 1px 1px 3px #000;
 }
