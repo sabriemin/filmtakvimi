@@ -161,15 +161,7 @@ html, body {
 }
 
 /* Yıllar için başlık görünümü */
-.year-label {
-  position: absolute;
-  font-size: 24px;
-  font-weight: bold;
-  color: #fffbcc;
-  text-shadow: 2px 2px 4px #000000aa;
-  pointer-events: none;
-  z-index: 5;
-}
+
 
 
 
@@ -184,31 +176,46 @@ html, body {
 
 
 
+
+
+
+
+#legend .devam { color: #ffffff; }
+#legend .yan { color: #44ccff; }
+#legend .evren { color: #cc66ff; }
+
+
+
 .year-label {
   position: absolute;
-  font-size: 20px;
+  font-size: 28px;
   font-weight: bold;
-  color: #fffbcc;
-  text-shadow: 2px 2px 4px #000000aa;
+  color: #fff8b5;
+  text-shadow: 2px 2px 6px #000000;
+  left: 20px;
   pointer-events: none;
-  z-index: 5;
+  z-index: 10;
 }
 
 #legend {
   position: absolute;
   top: 1rem;
   left: 1rem;
-  background: rgba(0,0,0,0.6);
-  padding: 0.6rem 1rem;
-  border-radius: 8px;
-  z-index: 10;
-  font-size: 0.95rem;
+  background: rgba(0,0,0,0.7);
+  padding: 0.8rem 1.2rem;
+  border-radius: 10px;
+  z-index: 15;
+  font-size: 1rem;
   color: #fff;
+  box-shadow: 0 0 10px #000;
 }
+
 #legend span {
   display: block;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.4rem;
+  font-weight: 500;
 }
+
 #legend .devam { color: #ffffff; }
 #legend .yan { color: #44ccff; }
 #legend .evren { color: #cc66ff; }

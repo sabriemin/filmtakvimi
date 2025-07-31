@@ -60,18 +60,18 @@ function yukleEvren(evren) {
           hierarchical: {
             direction: "UD",
             sortMethod: "directed",
-            levelSeparation: 180,
-            nodeSpacing: 120
+            levelSeparation: 240,
+            nodeSpacing: 180
           }
         },
         nodes: {
           shape: "image",
-          size: 50,
+          size: 65,
           borderWidth: 2,
           shadow: {
             enabled: true,
             color: 'rgba(0,0,0,0.5)',
-            size: 10,
+            size: 65,
             x: 5,
             y: 5
           }
