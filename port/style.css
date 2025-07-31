@@ -117,15 +117,7 @@ html, body {
 
 
 /* Yıllara göre seviye etiketi için katman (hiyerarşik düzende yıllar gibi çalışacak) */
-.vis-label {
-  font-size: 1rem !important;
-  font-weight: bold !important;
-  color: #fff !important;
-  background-color: #1b263bcc !important;
-  padding: 4px 8px;
-  border-radius: 6px;
-  box-shadow: 0 0 6px rgba(0,0,0,0.5);
-}
+
 
 /* Ana başlıklar için daha belirgin yazı */
 #evren-panel label,
@@ -153,12 +145,7 @@ html, body {
 
 
 /* Düğüm etiketleri: film adı + yıl */
-.vis-network .vis-label {
-  color: #ffd700 !important;
-  font-weight: 700;
-  font-size: 15px !important;
-  text-shadow: 1px 1px 2px #000000aa;
-}
+.vis-network 
 
 /* Yıllar için başlık görünümü */
 
@@ -166,13 +153,7 @@ html, body {
 
 
 /* Film adları ve yıl etiketlerinin görünürlüğü artırıldı */
-.vis-network .vis-label {
-  fill: #ffd700 !important;
-  color: #ffd700 !important;
-  font-weight: 700 !important;
-  font-size: 15px !important;
-  text-shadow: 1px 1px 2px #000000aa !important;
-}
+.vis-network 
 
 
 
@@ -219,3 +200,11 @@ html, body {
 #legend .devam { color: #ffffff; }
 #legend .yan { color: #44ccff; }
 #legend .evren { color: #cc66ff; }
+
+.vis-label {
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  color: #ffdd57 !important;
+  background: transparent !important;
+  text-shadow: 1px 1px 3px #000;
+}
