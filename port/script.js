@@ -55,7 +55,7 @@ Promise.all([
     combinedNodes.map((n) => ({
       id: n.id,
       label: `${n.label}\n(${n.release_date?.split('-')[0] || ''})`,
-      image: n.image
+      image: n.image,
       shape: "circularImage",
       title: n.title,
       description: n.description,
