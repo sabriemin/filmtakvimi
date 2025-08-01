@@ -148,44 +148,8 @@ Promise.all([
   createSearchBox();
   createLegendBox();
   createUniverseTabs();
-  showUniverseSelectorModal();
+  updateBackground(currentUniverse);
 });
-
-function showUniverseSelectorModal() {
-  const modal = document.createElement("div");
-  modal.style.position = "fixed";
-  modal.style.top = 0;
-  modal.style.left = 0;
-  modal.style.width = "100vw";
-  modal.style.height = "100vh";
-  modal.style.backgroundColor = "rgba(0,0,0,0.85)";
-  modal.style.zIndex = 999;
-  modal.style.display = "flex";
-  modal.style.flexDirection = "column";
-  modal.style.justifyContent = "center";
-  modal.style.alignItems = "center";
-  modal.innerHTML = `
-    <h2 style="color: white; margin-bottom: 20px; font-size: 1.5rem;">Evren Seçin</h2>
-    <div style="display: flex; gap: 20px;">
-      <button style="padding: 12px 24px; background: #cc0000; color: white; border: none; font-size: 16px; border-radius: 6px; cursor: pointer;" onclick="selectUniverse('Marvel')">Marvel</button>
-      <button style="padding: 12px 24px; background: #0044cc; color: white; border: none; font-size: 16px; border-radius: 6px; cursor: pointer;" onclick="selectUniverse('DC')">DC</button>
-      <button style="padding: 12px 24px; background: #444; color: white; border: none; font-size: 16px; border-radius: 6px; cursor: pointer;" onclick="selectUniverse('Hepsi')">Tüm Evrenler</button>
-    </div>`;
-  document.body.appendChild(modal);
-  window.selectUniverse = function (universe) {
-    currentUniverse = universe;
-    updateBackground(universe);
-    allNodes.update(
-      allNodes.get().map((n) => ({
-        ...n,
-        hidden: universe === "Hepsi" ? false : n.universe !== universe,
-        shape: "image",
-        image: n.image
-      }))
-    );
-    modal.remove();
-  };
-}
 
 function createLegendBox() {
   const legend = document.createElement("div");
