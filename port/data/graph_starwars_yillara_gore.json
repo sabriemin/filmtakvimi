@@ -1,0 +1,188 @@
+{
+  "nodes": [
+    {
+      "id": "sw_ep1",
+      "label": "The Phantom Menace (1999)",
+      "title": "Episode I - The Phantom Menace",
+      "image": "images/starwars.jpg",
+      "shape": "image",
+      "description": "Qui-Gon Jinn and Obi-Wan Kenobi discover Anakin Skywalker, a boy strong in the Force, on Tatooine. Meanwhile, Darth Sidious manipulates galactic politics through the Trade Federation's invasion of Naboo.",
+      "refers_to": "Anakin, Darth Maul, Naboo",
+      "type": "film",
+      "release_date": "1999-05-19",
+      "level": 0
+    },
+    {
+      "id": "sw_ep2",
+      "label": "Attack of the Clones (2002)",
+      "title": "Episode II - Attack of the Clones",
+      "image": "images/starwars.jpg",
+      "shape": "image",
+      "description": "Ten years later, the galaxy stands on the brink of civil war. Anakin and Padmé fall in love while Obi-Wan uncovers a secret clone army being created on Kamino.",
+      "refers_to": "Clone Army, Kamino, Padmé",
+      "type": "film",
+      "release_date": "2002-05-16",
+      "level": 1
+    },
+    {
+      "id": "sw_ep3",
+      "label": "Revenge of the Sith (2005)",
+      "title": "Episode III - Revenge of the Sith",
+      "image": "images/starwars.jpg",
+      "shape": "image",
+      "description": "The Clone Wars rage on. Anakin succumbs to the dark side and becomes Darth Vader. The Jedi Order falls, and the Galactic Empire rises.",
+      "refers_to": "Order 66, Mustafar, Emperor",
+      "type": "film",
+      "release_date": "2005-05-19",
+      "level": 2
+    },
+    {
+      "id": "sw_ep4",
+      "label": "A New Hope (1977)",
+      "title": "Episode IV - A New Hope",
+      "image": "images/starwars.jpg",
+      "shape": "image",
+      "description": "Luke Skywalker joins the Rebel Alliance in a daring mission to destroy the Death Star, leading to a new hope for the galaxy.",
+      "refers_to": "Leia, Obi-Wan, Death Star",
+      "type": "film",
+      "release_date": "1977-05-25",
+      "level": 3
+    },
+    {
+      "id": "sw_ep5",
+      "label": "The Empire Strikes Back (1980)",
+      "title": "Episode V - The Empire Strikes Back",
+      "image": "images/starwars.jpg",
+      "shape": "image",
+      "description": "The Rebels suffer a massive defeat on Hoth. Luke trains with Yoda and learns a devastating truth about Darth Vader.",
+      "refers_to": "Hoth, Yoda, Cloud City",
+      "type": "film",
+      "release_date": "1980-05-21",
+      "level": 4
+    },
+    {
+      "id": "sw_ep6",
+      "label": "Return of the Jedi (1983)",
+      "title": "Episode VI - Return of the Jedi",
+      "image": "images/starwars.jpg",
+      "shape": "image",
+      "description": "Luke redeems Vader as the Rebels destroy the second Death Star, ending the Empire's reign.",
+      "refers_to": "Endor, Emperor, Ewoks",
+      "type": "film",
+      "release_date": "1983-05-25",
+      "level": 5
+    },
+    {
+      "id": "sw_ep7",
+      "label": "The Force Awakens (2015)",
+      "title": "Episode VII - The Force Awakens",
+      "image": "images/starwars.jpg",
+      "shape": "image",
+      "description": "A new hero, Rey, emerges as the Resistance battles the First Order in the absence of Luke Skywalker.",
+      "refers_to": "Kylo Ren, Starkiller Base, Han Solo",
+      "type": "film",
+      "release_date": "2015-12-18",
+      "level": 6
+    },
+    {
+      "id": "sw_ep8",
+      "label": "The Last Jedi (2017)",
+      "title": "Episode VIII - The Last Jedi",
+      "image": "images/starwars.jpg",
+      "shape": "image",
+      "description": "Rey trains with a reluctant Luke Skywalker while the Resistance suffers heavy losses at the hands of the First Order.",
+      "refers_to": "Ahch-To, Snoke, Crait",
+      "type": "film",
+      "release_date": "2017-12-15",
+      "level": 7
+    },
+    {
+      "id": "sw_ep9",
+      "label": "The Rise of Skywalker (2019)",
+      "title": "Episode IX - The Rise of Skywalker",
+      "image": "images/starwars.jpg",
+      "shape": "image",
+      "description": "The Resistance mounts a final stand against the resurrected Emperor Palpatine. Rey embraces her destiny.",
+      "refers_to": "Exegol, Rey, Final Order",
+      "type": "film",
+      "release_date": "2019-12-20",
+      "level": 8
+    },
+    {
+      "id": "sw_mando",
+      "label": "The Mandalorian (2019)",
+      "title": "The Mandalorian",
+      "image": "images/starwars.jpg",
+      "shape": "image",
+      "description": "A lone bounty hunter in the outer reaches of the galaxy finds a mysterious Force-sensitive child.",
+      "refers_to": "Grogu, Beskar, Darksaber",
+      "type": "dizi",
+      "release_date": "2019-11-12",
+      "level": 9
+    },
+    {
+      "id": "sw_ahsoka",
+      "label": "Ahsoka (2023)",
+      "title": "Ahsoka",
+      "image": "images/starwars.jpg",
+      "shape": "image",
+      "description": "Former Jedi Ahsoka Tano investigates the rise of an emerging threat after the fall of the Empire.",
+      "refers_to": "Thrawn, Sabine, Ezra",
+      "type": "dizi",
+      "release_date": "2023-08-22",
+      "level": 10
+    }
+  ],
+  "edges": [
+    {
+      "from": "sw_ep1",
+      "to": "sw_ep2",
+      "type": "devam"
+    },
+    {
+      "from": "sw_ep2",
+      "to": "sw_ep3",
+      "type": "devam"
+    },
+    {
+      "from": "sw_ep3",
+      "to": "sw_ep4",
+      "type": "devam"
+    },
+    {
+      "from": "sw_ep4",
+      "to": "sw_ep5",
+      "type": "devam"
+    },
+    {
+      "from": "sw_ep5",
+      "to": "sw_ep6",
+      "type": "devam"
+    },
+    {
+      "from": "sw_ep6",
+      "to": "sw_ep7",
+      "type": "devam"
+    },
+    {
+      "from": "sw_ep7",
+      "to": "sw_ep8",
+      "type": "devam"
+    },
+    {
+      "from": "sw_ep8",
+      "to": "sw_ep9",
+      "type": "devam"
+    },
+    {
+      "from": "sw_ep6",
+      "to": "sw_mando",
+      "type": "yan"
+    },
+    {
+      "from": "sw_mando",
+      "to": "sw_ahsoka",
+      "type": "yan"
+    }
+  ]
+}

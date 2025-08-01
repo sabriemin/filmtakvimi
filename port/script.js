@@ -28,6 +28,8 @@ function updateBackground(universe) {
     backgroundEl.style.backgroundImage = "url('images/marvel.jpg')";
   } else if (universe === "DC") {
     backgroundEl.style.backgroundImage = "url('images/dc.jpg')";
+  } else if (universe === "Star Wars") {
+    backgroundEl.style.backgroundImage = "url('images/starwars.jpg')";
   } else {
     backgroundEl.style.backgroundImage = "none";
   }
@@ -35,15 +37,17 @@ function updateBackground(universe) {
 
 Promise.all([
   fetch("data/graph_marvel_yillara_gore.json").then(res => res.json()),
-  fetch("data/graph_dc_yillara_gore.json").then(res => res.json())
-]).then(([marvelData, dcData]) => {
+  fetch("data/graph_dc_yillara_gore.json").then(res => res.json()),
+  fetch("data/graph_starwars_yillara_gore.json").then(res => res.json())
+]).then(([marvelData, dcData, swData]) => {
   const addUniverseTag = (data, universe) => {
     return data.nodes.map(n => ({ ...n, universe }))
   };
 
   const combinedNodes = [
     ...addUniverseTag(marvelData, "Marvel"),
-    ...addUniverseTag(dcData, "DC")
+    ...addUniverseTag(dcData, "DC"),
+    ...addUniverseTag(swData, "Star Wars")
   ];
 
   const combinedEdges = [
@@ -265,7 +269,7 @@ function createUniverseTabs() {
   select.style.cursor = "pointer";
   select.style.marginTop = "8px";
 
-  const universeList = ["Hepsi", "Marvel", "DC"];
+  const universeList = ["Hepsi", "Marvel", "DC", "Star Wars"];
   universeList.forEach((universe) => {
     const option = document.createElement("option");
     option.value = universe;
