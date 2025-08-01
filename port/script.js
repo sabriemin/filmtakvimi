@@ -55,7 +55,9 @@ Promise.all([
     combinedNodes.map((n) => ({
       id: n.id,
       label: `${n.label}\n(${n.release_date?.split('-')[0] || ''})`,
-      image: n.image ? "images/" + n.image.replace(/^\\+|\\+$/g, '').replace(/.*[\\/]/, '') : 'images/default.jpg',
+      image: n.image
+        ? "images/" + n.image.replace(/^\\+|\\+$/g, '').replace(/.*[\\/]/, '')
+        : "images/default.jpg",
       shape: "circularImage",
       title: n.title,
       description: n.description,
