@@ -55,7 +55,7 @@ Promise.all([
     combinedNodes.map((n) => ({
       id: n.id,
       label: `${n.label}\n(${n.release_date?.split('-')[0] || ''})`,
-      image: n.image ? n.image.replace(/.*[\\/]/, 'images/') : undefined,
+      image: n.image,
       shape: "circularImage",
       title: n.title,
       description: n.description,
@@ -150,3 +150,125 @@ Promise.all([
   createUniverseTabs();
   showUniverseSelectorModal();
 });
+
+function showUniverseSelectorModal() {
+  const modal = document.createElement("div");
+  modal.style.position = "fixed";
+  modal.style.top = 0;
+  modal.style.left = 0;
+  modal.style.width = "100vw";
+  modal.style.height = "100vh";
+  modal.style.backgroundColor = "rgba(0,0,0,0.85)";
+  modal.style.zIndex = 999;
+  modal.style.display = "flex";
+  modal.style.flexDirection = "column";
+  modal.style.justifyContent = "center";
+  modal.style.alignItems = "center";
+  modal.innerHTML = `
+    <h2 style="color: white; margin-bottom: 20px; font-size: 1.5rem;">Evren Seçin</h2>
+    <div style="display: flex; gap: 20px;">
+      <button style="padding: 12px 24px; background: #cc0000; color: white; border: none; font-size: 16px; border-radius: 6px; cursor: pointer;" onclick="selectUniverse('Marvel')">Marvel</button>
+      <button style="padding: 12px 24px; background: #0044cc; color: white; border: none; font-size: 16px; border-radius: 6px; cursor: pointer;" onclick="selectUniverse('DC')">DC</button>
+      <button style="padding: 12px 24px; background: #444; color: white; border: none; font-size: 16px; border-radius: 6px; cursor: pointer;" onclick="selectUniverse('Hepsi')">Tüm Evrenler</button>
+    </div>`;
+  document.body.appendChild(modal);
+  window.selectUniverse = function (universe) {
+    currentUniverse = universe;
+    updateBackground(universe);
+    allNodes.update(
+      allNodes.get().map((n) => ({
+        ...n,
+        hidden: universe === "Hepsi" ? false : n.universe !== universe,
+      }))
+    );
+    modal.remove();
+  };
+}
+
+function createLegendBox() {
+  const legend = document.createElement("div");
+  legend.style.position = "absolute";
+  legend.style.bottom = "10px";
+  legend.style.left = "10px";
+  legend.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
+  legend.style.padding = "10px 16px";
+  legend.style.color = "white";
+  legend.style.fontSize = "13px";
+  legend.style.border = "1px solid #555";
+  legend.style.borderRadius = "6px";
+  legend.style.zIndex = "99";
+  legend.innerHTML = `
+    <div><span style='color:#fff'>⬤</span> Devam</div>
+    <div><span style='color:#00ffff'>⬤</span> Evren Geçişi</div>
+    <div><span style='color:#ff9900'>⬤</span> Yan Hikâye</div>
+  `;
+  document.body.appendChild(legend);
+}
+
+function closeInfoBox() {
+  document.getElementById("info-box").classList.add("hidden");
+}
+
+function createSearchBox() {
+  const input = document.createElement("input");
+  input.type = "text";
+  input.placeholder = "🔎 Film veya dizi ara...";
+  input.style.position = "absolute";
+  input.style.top = "10px";
+  input.style.left = "10px";
+  input.style.zIndex = "100";
+  input.style.padding = "8px 16px";
+  input.style.borderRadius = "25px";
+  input.style.border = "1px solid #ccc";
+  input.style.outline = "none";
+  input.style.background = "#111";
+  input.style.color = "white";
+  input.style.fontSize = "14px";
+  input.style.boxShadow = "0 0 6px rgba(255, 255, 255, 0.2)";
+
+  input.oninput = function () {
+    const value = input.value.toLowerCase();
+    const match = allNodes.get().find(
+      (n) => n.label.toLowerCase().includes(value) &&
+             (currentUniverse === "Hepsi" || n.universe === currentUniverse)
+    );
+    if (match) {
+      network.focus(match.id, { scale: 1.5, animation: true });
+    }
+  };
+  document.body.appendChild(input);
+}
+
+function createUniverseTabs() {
+  const container = document.createElement("div");
+  container.style.position = "absolute";
+  container.style.top = "10px";
+  container.style.right = "10px";
+  container.style.zIndex = "100";
+  container.style.display = "flex";
+  container.style.gap = "6px";
+
+  ["Hepsi", "Marvel", "DC"].forEach((universe) => {
+    const btn = document.createElement("button");
+    btn.textContent = universe;
+    btn.style.padding = "6px 12px";
+    btn.style.backgroundColor = "#222";
+    btn.style.color = "#fff";
+    btn.style.border = "1px solid #555";
+    btn.style.borderRadius = "4px";
+    btn.style.cursor = "pointer";
+    btn.onclick = () => {
+      currentUniverse = universe;
+      updateBackground(universe);
+      allNodes.update(
+        allNodes.get().map((n) => ({
+          ...n,
+          hidden: universe === "Hepsi" ? false : n.universe !== universe,
+        }))
+      );
+    };
+    container.appendChild(btn);
+  });
+
+  document.body.appendChild(container);
+}
