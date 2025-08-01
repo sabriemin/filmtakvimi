@@ -56,7 +56,7 @@ Promise.all([
       id: n.id,
       label: `${n.label}\n(${n.release_date?.split('-')[0] || ''})`,
       image: n.image,
-      shape: "circularImage",
+      shape: "image",
       title: n.title,
       description: n.description,
       refers_to: n.refers_to,
@@ -89,7 +89,7 @@ Promise.all([
 
   const options = {
     nodes: {
-      shape: "circularImage",
+      shape: "image",
       size: 40,
       font: { color: "#fff" },
       borderWidth: 1,
