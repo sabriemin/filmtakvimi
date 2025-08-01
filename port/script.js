@@ -226,14 +226,15 @@ function createUniverseTabs() {
     btn.onclick = () => {
       currentUniverse = universe;
       updateBackground(universe);
-      allNodes.update(
+    allNodes.update(
         allNodes.get().map((n) => ({
-          ...n,
-          hidden: universe === "Hepsi" ? false : n.universe !== universe,
-          shape: "image",
-          image: n.image
-        }))
-      );
+            ...n,
+            hidden: universe === "Hepsi" ? false : n.universe !== universe,
+            shape: n.shape || "image",
+            image: n.image || null
+  }))
+);
+
     };
     container.appendChild(btn);
   });
