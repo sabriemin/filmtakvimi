@@ -31,7 +31,7 @@ function updateBackground(universe) {
   } else if (universe === "Star Wars") {
     backgroundEl.style.backgroundImage = "url('images/starwars.jpg')";
   } else {
-    backgroundEl.style.backgroundImage = "none";
+    backgroundEl.style.backgroundImage = "linear-gradient(to bottom right, #0f2027, #203a43, #2c5364)";
   }
 }
 
@@ -50,12 +50,11 @@ Promise.all([
     ...addUniverseTag(swData, "Star Wars")
   ];
 
-const combinedEdges = [
-  ...marvelData.edges,
-  ...dcData.edges,
-  ...swData.edges
+  const combinedEdges = [
+    ...marvelData.edges,
+    ...dcData.edges,
+    ...swData.edges
 ];
-
 
   allNodes = new vis.DataSet(
     combinedNodes.map((n) => ({
@@ -111,15 +110,18 @@ const combinedEdges = [
         roundness: 0.4
       }
     },
-    layout: {
-      hierarchical: {
-        enabled: true,
-        direction: "UD",
-        sortMethod: "directed",
-        levelSeparation: 150,
-        nodeSpacing: 100
-      }
-    },
+layout: {
+  hierarchical: {
+    enabled: true,
+    direction: "UD",
+    sortMethod: "directed",
+    levelSeparation: 150,
+    nodeSpacing: function (level, node) {
+      return node.group === 'dizi' || node.type === 'dizi' ? 400 : 100;
+    }
+  }
+},
+
     physics: false,
     interaction: {
       hover: true,
