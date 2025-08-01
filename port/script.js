@@ -25,9 +25,9 @@ document.body.appendChild(backgroundEl);
 
 function updateBackground(universe) {
   if (universe === "Marvel") {
-    backgroundEl.style.backgroundImage = "url('port/images/marvel.jpg')";
+    backgroundEl.style.backgroundImage = "url('images/marvel.jpg')";
   } else if (universe === "DC") {
-    backgroundEl.style.backgroundImage = "url('port/images/dc.jpg')";
+    backgroundEl.style.backgroundImage = "url('images/dc.jpg')";
   } else {
     backgroundEl.style.backgroundImage = "none";
   }
@@ -56,7 +56,7 @@ Promise.all([
       id: n.id,
       label: `${n.label}
 (${n.release_date?.split('-')[0] || ''})`,
-      image: n.image,
+      image: n.image.replace('\\port\\images\\', 'images/'),
       shape: "circularImage",
       title: n.title,
       description: n.description,
@@ -129,6 +129,12 @@ Promise.all([
   };
 
   network = new vis.Network(container, dataSet, options);
+  allNodes.forEach(node => {
+    network.body.nodes[node.id].options = {
+      ...network.body.nodes[node.id].options,
+      title: node.description.slice(0, 200) + '...'
+    };
+  });
 
   network.on("click", function (params) {
     if (params.nodes.length > 0) {
@@ -141,6 +147,7 @@ Promise.all([
   });
 
   createSearchBox();
+  createLegendBox();
   createUniverseTabs();
   showUniverseSelectorModal();
 });
@@ -177,6 +184,26 @@ function showUniverseSelectorModal() {
     );
     modal.remove();
   };
+}
+
+function createLegendBox() {
+  const legend = document.createElement("div");
+  legend.style.position = "absolute";
+  legend.style.bottom = "10px";
+  legend.style.left = "10px";
+  legend.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
+  legend.style.padding = "10px 16px";
+  legend.style.color = "white";
+  legend.style.fontSize = "13px";
+  legend.style.border = "1px solid #555";
+  legend.style.borderRadius = "6px";
+  legend.style.zIndex = "99";
+  legend.innerHTML = `
+    <div><span style='color:#fff'>⬤</span> Devam</div>
+    <div><span style='color:#00ffff'>⬤</span> Evren Geçişi</div>
+    <div><span style='color:#ff9900'>⬤</span> Yan Hikâye</div>
+  `;
+  document.body.appendChild(legend);
 }
 
 function closeInfoBox() {
