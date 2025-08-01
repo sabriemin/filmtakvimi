@@ -110,18 +110,15 @@ Promise.all([
         roundness: 0.4
       }
     },
-layout: {
-  hierarchical: {
-    enabled: true,
-    direction: "UD",
-    sortMethod: "directed",
-    levelSeparation: 150,
-    nodeSpacing: function (level, node) {
-      return node.group === 'dizi' || node.type === 'dizi' ? 400 : 100;
-    }
-  }
-},
-
+    layout: {
+      hierarchical: {
+        enabled: true,
+        direction: "UD",
+        sortMethod: "directed",
+        levelSeparation: 150,
+        nodeSpacing: 100
+      }
+    },
     physics: false,
     interaction: {
       hover: true,
