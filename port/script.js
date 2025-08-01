@@ -227,7 +227,7 @@ function createSearchBox() {
   input.oninput = function () {
     const value = input.value.toLowerCase();
     const match = allNodes.get().find(
-      (n) => n.label.toLowerCase() === value &&
+      (n) => n.label.toLowerCase().includes(value) &&
              (currentUniverse === "Hepsi" || n.universe === currentUniverse)
     );
     if (match) {
@@ -265,7 +265,18 @@ function createUniverseTabs() {
   container.style.gap = "6px";
   container.style.marginTop = "4px";
 
-  ["Hepsi", "Marvel", "DC"].forEach((universe) => {
+  const universeList = ["Hepsi", "Marvel", "DC"];
+  const list = document.createElement("ul");
+  list.style.listStyle = "none";
+  list.style.padding = "0";
+  list.style.margin = "0";
+  list.style.display = "flex";
+  list.style.flexDirection = "column";
+  list.style.alignItems = "center";
+  list.style.gap = "6px";
+
+  universeList.forEach((universe) => {
+    const item = document.createElement("li");
     const btn = document.createElement("button");
     btn.textContent = universe;
     btn.style.padding = "6px 12px";
@@ -297,20 +308,16 @@ function createUniverseTabs() {
         canvas.style.opacity = 1;
       }, 300);
     };
+    item.appendChild(btn);
+    list.appendChild(item);
+  });
 
-    window.addEventListener("resize", () => {
-      if (window.innerWidth < 600) {
-        btn.style.padding = "4px 8px";
-        btn.style.fontSize = "12px";
-      } else {
-        btn.style.padding = "6px 12px";
-        btn.style.fontSize = "14px";
-      }
-    });
+  wrapper.appendChild(list);
 
     container.appendChild(btn);
-  });
+  };
 
   wrapper.appendChild(container);
   document.body.appendChild(wrapper);
-}
+
+
