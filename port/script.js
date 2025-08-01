@@ -54,9 +54,8 @@ Promise.all([
   allNodes = new vis.DataSet(
     combinedNodes.map((n) => ({
       id: n.id,
-      label: `${n.label}
-(${n.release_date?.split('-')[0] || ''})`,
-      image: "https://filmtakvimi.com/" + n.image.replace(/^\+|\+$/g, '').replace(/\/g, '/').replace(/port\/images\//g, 'images/'),
+      label: `${n.label}\n(${n.release_date?.split('-')[0] || ''})`,
+      image: n.image ? n.image.replace(/^\\+|\\+$/g, '').replace(/\\/g, '/') : 'images/default.jpg',
       shape: "circularImage",
       title: n.title,
       description: n.description,
