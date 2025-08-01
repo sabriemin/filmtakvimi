@@ -179,6 +179,8 @@ function showUniverseSelectorModal() {
       allNodes.get().map((n) => ({
         ...n,
         hidden: universe === "Hepsi" ? false : n.universe !== universe,
+        shape: "image",
+        image: n.image
       }))
     );
     modal.remove();
@@ -264,6 +266,8 @@ function createUniverseTabs() {
         allNodes.get().map((n) => ({
           ...n,
           hidden: universe === "Hepsi" ? false : n.universe !== universe,
+          shape: "image",
+          image: n.image
         }))
       );
     };
