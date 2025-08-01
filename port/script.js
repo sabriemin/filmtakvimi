@@ -10,6 +10,29 @@ let allEdges = [];
 let network;
 let currentUniverse = "Hepsi";
 
+const backgroundEl = document.createElement("div");
+backgroundEl.style.position = "fixed";
+backgroundEl.style.top = 0;
+backgroundEl.style.left = 0;
+backgroundEl.style.width = "100vw";
+backgroundEl.style.height = "100vh";
+backgroundEl.style.zIndex = "-1";
+backgroundEl.style.backgroundSize = "cover";
+backgroundEl.style.backgroundPosition = "center";
+backgroundEl.style.opacity = "0.1";
+backgroundEl.style.filter = "blur(12px)";
+document.body.appendChild(backgroundEl);
+
+function updateBackground(universe) {
+  if (universe === "Marvel") {
+    backgroundEl.style.backgroundImage = "url('port/images/marvel.jpg')";
+  } else if (universe === "DC") {
+    backgroundEl.style.backgroundImage = "url('port/images/dc.jpg')";
+  } else {
+    backgroundEl.style.backgroundImage = "none";
+  }
+}
+
 Promise.all([
   fetch("data/graph_marvel_yillara_gore.json").then(res => res.json()),
   fetch("data/graph_dc_yillara_gore.json").then(res => res.json())
@@ -110,14 +133,15 @@ Promise.all([
     if (params.nodes.length > 0) {
       const node = allNodes.get(params.nodes[0]);
       titleEl.textContent = node.title;
-      descEl.textContent = node.description;
-      refersEl.textContent = node.refers_to;
+      descEl.innerHTML = `<strong>Film Özeti:</strong><br>${node.description}`;
+      refersEl.innerHTML = `<strong>Göndermeler:</strong><br>${node.refers_to}`;
       infoBox.classList.remove("hidden");
     }
   });
 
   createSearchBox();
   createUniverseTabs();
+  showUniverseSelectorModal();
 });
 
 function closeInfoBox() {
@@ -174,6 +198,7 @@ function createUniverseTabs() {
     btn.style.cursor = "pointer";
     btn.onclick = () => {
       currentUniverse = universe;
+      updateBackground(universe);
       allNodes.update(
         allNodes.get().map((n) => ({
           ...n,
