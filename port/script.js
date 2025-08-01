@@ -207,10 +207,8 @@ function createSearchBox() {
   const input = document.createElement("input");
   input.type = "text";
   input.placeholder = "🔎 Film veya dizi ara...";
-  input.style.position = "absolute";
-  input.style.top = "10px";
-  input.style.left = "50%";
-  input.style.transform = "translateX(-50%)";
+  input.style.position = "static";
+  input.style.transform = "none";
   input.style.zIndex = "100";
   input.style.padding = "8px 16px";
   input.style.borderRadius = "25px";
@@ -222,25 +220,21 @@ function createSearchBox() {
   input.style.boxShadow = "0 0 6px rgba(255, 255, 255, 0.2)";
   input.style.maxWidth = "90vw";
   input.style.boxSizing = "border-box";
-
-  input.oninput = function () {
-    const value = input.value.toLowerCase();
-    const matches = allNodes.get().filter(
-      (n) => n.label.toLowerCase().includes(value) &&
-             (currentUniverse === "Hepsi" || n.universe === currentUniverse)
-    );
-    if (matches.length > 0) {
-      const positions = matches.map(m => ({ id: m.id }));
-      network.fit({ nodes: positions.map(p => p.id), animation: true });
-    }
-  };
-
   window.addEventListener("resize", () => {
     input.style.fontSize = window.innerWidth < 600 ? "12px" : "14px";
     input.style.width = window.innerWidth < 600 ? "80%" : "auto";
   });
-
-  document.body.appendChild(input);
+  input.oninput = function () {
+    const value = input.value.toLowerCase();
+    const match = allNodes.get().find(
+      (n) => n.label.toLowerCase() === value &&
+             (currentUniverse === "Hepsi" || n.universe === currentUniverse)
+    );
+    if (match) {
+      network.focus(match.id, { scale: 1.5, animation: true });
+    }
+  };
+  return input;
 }
 
 
@@ -260,7 +254,7 @@ function createUniverseTabs() {
   wrapper.style.borderRadius = "12px";
   wrapper.style.boxShadow = "0 4px 12px rgba(0, 0, 0, 0.4)";
 
-  const input = document.querySelector("input[type='text']");
+  const input = createSearchBox();
   wrapper.appendChild(input);
 
   const container = document.createElement("div");
@@ -320,4 +314,3 @@ function createUniverseTabs() {
   wrapper.appendChild(container);
   document.body.appendChild(wrapper);
 }
-
