@@ -71,14 +71,9 @@ Promise.all([
       from: e.from,
       to: e.to,
       color: {
-        color:
-          e.type === "devam"
-            ? "#ffffff"
-            : e.type === "evren-geçişi"
-            ? "#00ffff"
-            : "#ff9900",
+        color: e.type === "devam" ? "#ffffff" : e.type === "evren-geçişi" ? "#00ffff" : "#ff9900"
       },
-      arrows: "to",
+      arrows: "to"
     }))
   );
 
@@ -94,7 +89,7 @@ Promise.all([
       font: { color: "#fff" },
       borderWidth: 1,
       chosen: {
-        node: function (values, id, selected, hovering) {
+        node(values, id, selected, hovering) {
           if (hovering) {
             values.size = 50;
             values.borderWidth = 3;
@@ -102,15 +97,13 @@ Promise.all([
         }
       }
     },
-      borderWidth: 1,
-    },
     edges: {
       width: 2,
       smooth: {
         type: "cubicBezier",
         forceDirection: "horizontal",
-        roundness: 0.4,
-      },
+        roundness: 0.4
+      }
     },
     layout: {
       hierarchical: {
@@ -118,23 +111,23 @@ Promise.all([
         direction: "UD",
         sortMethod: "directed",
         levelSeparation: 150,
-        nodeSpacing: 100,
-      },
+        nodeSpacing: 100
+      }
     },
     physics: false,
     interaction: {
       hover: true,
       tooltipDelay: 100,
-      dragNodes: true,
+      dragNodes: true
     },
     groups: {
       film: {
-        color: { background: "#ff4444" },
+        color: { background: "#ff4444" }
       },
       dizi: {
-        color: { background: "#4488ff" },
-      },
-    },
+        color: { background: "#4488ff" }
+      }
+    }
   };
 
   network = new vis.Network(container, dataSet, options);
@@ -152,6 +145,16 @@ Promise.all([
       descEl.innerHTML = `<strong>Film Özeti:</strong><br>${node.description}`;
       refersEl.innerHTML = `<strong>Göndermeler:</strong><br>${node.refers_to}`;
       infoBox.classList.remove("hidden");
+      if (window.innerWidth < 600) {
+        infoBox.style.width = "90vw";
+        infoBox.style.maxHeight = "70vh";
+        infoBox.style.overflowY = "auto";
+        infoBox.style.fontSize = "13px";
+      } else {
+        infoBox.style.width = "auto";
+        infoBox.style.maxHeight = "none";
+        infoBox.style.fontSize = "inherit";
+      }
     }
   });
 
@@ -169,15 +172,24 @@ function createLegendBox() {
   legend.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
   legend.style.padding = "10px 16px";
   legend.style.color = "white";
-  legend.style.fontSize = "13px";
   legend.style.border = "1px solid #555";
   legend.style.borderRadius = "6px";
   legend.style.zIndex = "99";
+  legend.style.maxWidth = "90vw";
+  legend.style.boxSizing = "border-box";
+  legend.style.fontSize = window.innerWidth < 600 ? "12px" : "13px";
+
   legend.innerHTML = `
     <div><span style='color:#fff'>⬤</span> Devam</div>
     <div><span style='color:#00ffff'>⬤</span> Evren Geçişi</div>
     <div><span style='color:#ff9900'>⬤</span> Yan Hikâye</div>
   `;
+
+  window.addEventListener("resize", () => {
+    legend.style.fontSize = window.innerWidth < 600 ? "12px" : "13px";
+    legend.style.maxWidth = window.innerWidth < 600 ? "90vw" : "300px";
+  });
+
   document.body.appendChild(legend);
 }
 
@@ -201,7 +213,6 @@ function createSearchBox() {
   input.style.color = "white";
   input.style.fontSize = "14px";
   input.style.boxShadow = "0 0 6px rgba(255, 255, 255, 0.2)";
-
   input.style.maxWidth = "70vw";
   input.style.boxSizing = "border-box";
 
@@ -228,7 +239,6 @@ function createSearchBox() {
 
   document.body.appendChild(input);
 }
-}
 
 function createUniverseTabs() {
   const container = document.createElement("div");
@@ -237,6 +247,8 @@ function createUniverseTabs() {
   container.style.right = "10px";
   container.style.zIndex = "100";
   container.style.display = "flex";
+  container.style.flexWrap = "wrap";
+  container.style.maxWidth = "100vw";
   container.style.gap = "6px";
 
   ["Hepsi", "Marvel", "DC"].forEach((universe) => {
@@ -249,29 +261,40 @@ function createUniverseTabs() {
     btn.style.borderRadius = "4px";
     btn.style.cursor = "pointer";
     btn.onclick = () => {
-  currentUniverse = universe;
-  const canvas = document.getElementById("network");
-  canvas.style.transition = "opacity 0.3s";
-  canvas.style.opacity = 0;
-  setTimeout(() => {
-    updateBackground(universe);
-    const filtered = allNodes.get().map((n) => ({
-      ...n,
-      hidden: universe === "Hepsi" ? false : n.universe !== universe,
-      shape: "image",
-      image: n.image,
-      title: n.title,
-      description: n.description,
-      refers_to: n.refers_to,
-      group: n.group,
-      level: n.level
-    }));
-    allNodes.clear();
-    allNodes.add(filtered);
-    canvas.style.opacity = 1;
-  }, 300);
-};
-  container.appendChild(btn);
+      currentUniverse = universe;
+      const canvas = document.getElementById("network");
+      canvas.style.transition = "opacity 0.3s";
+      canvas.style.opacity = 0;
+      setTimeout(() => {
+        updateBackground(universe);
+        const filtered = allNodes.get().map((n) => ({
+          ...n,
+          hidden: universe === "Hepsi" ? false : n.universe !== universe,
+          shape: "image",
+          image: n.image,
+          title: n.title,
+          description: n.description,
+          refers_to: n.refers_to,
+          group: n.group,
+          level: n.level
+        }));
+        allNodes.clear();
+        allNodes.add(filtered);
+        canvas.style.opacity = 1;
+      }, 300);
+    };
+
+    window.addEventListener("resize", () => {
+      if (window.innerWidth < 600) {
+        btn.style.padding = "4px 8px";
+        btn.style.fontSize = "12px";
+      } else {
+        btn.style.padding = "6px 12px";
+        btn.style.fontSize = "14px";
+      }
+    });
+
+    container.appendChild(btn);
   });
 
   document.body.appendChild(container);
