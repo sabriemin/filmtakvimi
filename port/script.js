@@ -224,10 +224,9 @@ function createUniverseTabs() {
     btn.style.borderRadius = "4px";
     btn.style.cursor = "pointer";
     btn.onclick = () => {
-      currentUniverse = universe;
-      updateBackground(universe);
-      allNodes.update(
-  allNodes.get().map((n) => ({
+  currentUniverse = universe;
+  updateBackground(universe);
+  const filtered = allNodes.get().map((n) => ({
     ...n,
     hidden: universe === "Hepsi" ? false : n.universe !== universe,
     shape: "image",
@@ -237,10 +236,11 @@ function createUniverseTabs() {
     refers_to: n.refers_to,
     group: n.group,
     level: n.level
-  }))
-);
-    };
-    container.appendChild(btn);
+  }));
+  allNodes.clear();
+  allNodes.add(filtered);
+};
+  container.appendChild(btn);
   });
 
   document.body.appendChild(container);
