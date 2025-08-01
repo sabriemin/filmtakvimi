@@ -56,7 +56,7 @@ Promise.all([
       id: n.id,
       label: `${n.label}
 (${n.release_date?.split('-')[0] || ''})`,
-      image: n.image.replace(/port[\/]+images[\/]+/g, 'images/').replace(/port\/images\//g, 'images/'),
+      image: "https://filmtakvimi.com/" + n.image.replace(/^\+|\+$/g, '').replace(/\/g, '/').replace(/port\/images\//g, 'images/'),
       shape: "circularImage",
       title: n.title,
       description: n.description,
