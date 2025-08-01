@@ -54,7 +54,7 @@ Promise.all([
   allNodes = new vis.DataSet(
     combinedNodes.map((n) => ({
       id: n.id,
-      label: `${n.label}\n(${n.release_date?.split('-')[0] || ''})`,
+      label: `${n.label}`,
       image: n.image,
       shape: "image",
       title: n.title,
@@ -92,6 +92,16 @@ Promise.all([
       shape: "image",
       size: 40,
       font: { color: "#fff" },
+      borderWidth: 1,
+      chosen: {
+        node: function (values, id, selected, hovering) {
+          if (hovering) {
+            values.size = 50;
+            values.borderWidth = 3;
+          }
+        }
+      }
+    },
       borderWidth: 1,
     },
     edges: {
@@ -192,6 +202,9 @@ function createSearchBox() {
   input.style.fontSize = "14px";
   input.style.boxShadow = "0 0 6px rgba(255, 255, 255, 0.2)";
 
+  input.style.maxWidth = "70vw";
+  input.style.boxSizing = "border-box";
+
   input.oninput = function () {
     const value = input.value.toLowerCase();
     const match = allNodes.get().find(
@@ -202,7 +215,19 @@ function createSearchBox() {
       network.focus(match.id, { scale: 1.5, animation: true });
     }
   };
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth < 600) {
+      input.style.width = "80%";
+      input.style.fontSize = "12px";
+    } else {
+      input.style.width = "auto";
+      input.style.fontSize = "14px";
+    }
+  });
+
   document.body.appendChild(input);
+}
 }
 
 function createUniverseTabs() {
@@ -225,20 +250,26 @@ function createUniverseTabs() {
     btn.style.cursor = "pointer";
     btn.onclick = () => {
   currentUniverse = universe;
-  updateBackground(universe);
-  const filtered = allNodes.get().map((n) => ({
-    ...n,
-    hidden: universe === "Hepsi" ? false : n.universe !== universe,
-    shape: "image",
-    image: n.image,
-    title: n.title,
-    description: n.description,
-    refers_to: n.refers_to,
-    group: n.group,
-    level: n.level
-  }));
-  allNodes.clear();
-  allNodes.add(filtered);
+  const canvas = document.getElementById("network");
+  canvas.style.transition = "opacity 0.3s";
+  canvas.style.opacity = 0;
+  setTimeout(() => {
+    updateBackground(universe);
+    const filtered = allNodes.get().map((n) => ({
+      ...n,
+      hidden: universe === "Hepsi" ? false : n.universe !== universe,
+      shape: "image",
+      image: n.image,
+      title: n.title,
+      description: n.description,
+      refers_to: n.refers_to,
+      group: n.group,
+      level: n.level
+    }));
+    allNodes.clear();
+    allNodes.add(filtered);
+    canvas.style.opacity = 1;
+  }, 300);
 };
   container.appendChild(btn);
   });
