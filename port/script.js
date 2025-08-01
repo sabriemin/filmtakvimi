@@ -50,10 +50,12 @@ Promise.all([
     ...addUniverseTag(swData, "Star Wars")
   ];
 
-  const combinedEdges = [
-    ...marvelData.edges,
-    ...dcData.edges
-  ];
+const combinedEdges = [
+  ...marvelData.edges,
+  ...dcData.edges,
+  ...swData.edges
+];
+
 
   allNodes = new vis.DataSet(
     combinedNodes.map((n) => ({
