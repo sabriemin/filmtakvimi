@@ -145,6 +145,12 @@ Promise.all([
       descEl.innerHTML = `<strong>Film Özeti:</strong><br>${node.description}`;
       refersEl.innerHTML = `<strong>Göndermeler:</strong><br>${node.refers_to}`;
       infoBox.classList.remove("hidden");
+      infoBox.style.position = "fixed";
+      infoBox.style.left = "50%";
+      infoBox.style.top = "50%";
+      infoBox.style.transform = "translate(-50%, -50%)";
+      infoBox.style.zIndex = "200";
+
       if (window.innerWidth < 600) {
         infoBox.style.width = "90vw";
         infoBox.style.maxHeight = "70vh";
@@ -203,7 +209,8 @@ function createSearchBox() {
   input.placeholder = "🔎 Film veya dizi ara...";
   input.style.position = "absolute";
   input.style.top = "10px";
-  input.style.left = "10px";
+  input.style.left = "50%";
+  input.style.transform = "translateX(-50%)";
   input.style.zIndex = "100";
   input.style.padding = "8px 16px";
   input.style.borderRadius = "25px";
@@ -213,43 +220,56 @@ function createSearchBox() {
   input.style.color = "white";
   input.style.fontSize = "14px";
   input.style.boxShadow = "0 0 6px rgba(255, 255, 255, 0.2)";
-  input.style.maxWidth = "70vw";
+  input.style.maxWidth = "90vw";
   input.style.boxSizing = "border-box";
 
   input.oninput = function () {
     const value = input.value.toLowerCase();
-    const match = allNodes.get().find(
+    const matches = allNodes.get().filter(
       (n) => n.label.toLowerCase().includes(value) &&
              (currentUniverse === "Hepsi" || n.universe === currentUniverse)
     );
-    if (match) {
-      network.focus(match.id, { scale: 1.5, animation: true });
+    if (matches.length > 0) {
+      const positions = matches.map(m => ({ id: m.id }));
+      network.fit({ nodes: positions.map(p => p.id), animation: true });
     }
   };
 
   window.addEventListener("resize", () => {
-    if (window.innerWidth < 600) {
-      input.style.width = "80%";
-      input.style.fontSize = "12px";
-    } else {
-      input.style.width = "auto";
-      input.style.fontSize = "14px";
-    }
+    input.style.fontSize = window.innerWidth < 600 ? "12px" : "14px";
+    input.style.width = window.innerWidth < 600 ? "80%" : "auto";
   });
 
   document.body.appendChild(input);
 }
 
+
 function createUniverseTabs() {
+  const wrapper = document.createElement("div");
+  wrapper.style.position = "absolute";
+  wrapper.style.top = "10px";
+  wrapper.style.left = "50%";
+  wrapper.style.transform = "translateX(-50%)";
+  wrapper.style.zIndex = "100";
+  wrapper.style.display = "flex";
+  wrapper.style.flexDirection = "column";
+  wrapper.style.alignItems = "center";
+  wrapper.style.gap = "6px";
+  wrapper.style.backgroundColor = "rgba(0, 0, 0, 0.6)";
+  wrapper.style.padding = "12px";
+  wrapper.style.borderRadius = "12px";
+  wrapper.style.boxShadow = "0 4px 12px rgba(0, 0, 0, 0.4)";
+
+  const input = document.querySelector("input[type='text']");
+  wrapper.appendChild(input);
+
   const container = document.createElement("div");
-  container.style.position = "absolute";
-  container.style.top = "10px";
-  container.style.right = "10px";
-  container.style.zIndex = "100";
   container.style.display = "flex";
+  container.style.flexDirection = "row";
   container.style.flexWrap = "wrap";
-  container.style.maxWidth = "100vw";
+  container.style.justifyContent = "center";
   container.style.gap = "6px";
+  container.style.marginTop = "4px";
 
   ["Hepsi", "Marvel", "DC"].forEach((universe) => {
     const btn = document.createElement("button");
@@ -297,5 +317,7 @@ function createUniverseTabs() {
     container.appendChild(btn);
   });
 
-  document.body.appendChild(container);
+  wrapper.appendChild(container);
+  document.body.appendChild(wrapper);
 }
+
