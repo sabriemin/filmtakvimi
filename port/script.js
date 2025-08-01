@@ -237,7 +237,6 @@ function createSearchBox() {
   return input;
 }
 
-
 function createUniverseTabs() {
   const wrapper = document.createElement("div");
   wrapper.style.position = "absolute";
@@ -257,51 +256,53 @@ function createUniverseTabs() {
   const input = createSearchBox();
   wrapper.appendChild(input);
 
-  const container = document.createElement("div");
-  container.style.display = "flex";
-  container.style.flexDirection = "row";
-  container.style.flexWrap = "wrap";
-  container.style.justifyContent = "center";
-  container.style.gap = "6px";
-  container.style.marginTop = "4px";
+  const select = document.createElement("select");
+  select.style.padding = "6px 12px";
+  select.style.borderRadius = "4px";
+  select.style.border = "1px solid #555";
+  select.style.backgroundColor = "#222";
+  select.style.color = "#fff";
+  select.style.cursor = "pointer";
+  select.style.marginTop = "8px";
 
   const universeList = ["Hepsi", "Marvel", "DC"];
   universeList.forEach((universe) => {
-    const btn = document.createElement("button");
-    btn.textContent = universe;
-    btn.style.padding = "6px 12px";
-    btn.style.backgroundColor = "#222";
-    btn.style.color = "#fff";
-    btn.style.border = "1px solid #555";
-    btn.style.borderRadius = "4px";
-    btn.style.cursor = "pointer";
-    btn.onclick = () => {
-      currentUniverse = universe;
-      const canvas = document.getElementById("network");
-      canvas.style.transition = "opacity 0.3s";
-      canvas.style.opacity = 0;
-      setTimeout(() => {
-        updateBackground(universe);
-        const filtered = allNodes.get().map((n) => ({
-          ...n,
-          hidden: universe === "Hepsi" ? false : n.universe !== universe,
-          shape: "image",
-          image: n.image,
-          title: n.title,
-          description: n.description,
-          refers_to: n.refers_to,
-          group: n.group,
-          level: n.level
-        }));
-        allNodes.clear();
-        allNodes.add(filtered);
-        canvas.style.opacity = 1;
-      }, 300);
-    };
-    container.appendChild(btn);
+    const option = document.createElement("option");
+    option.value = universe;
+    option.textContent = universe;
+    select.appendChild(option);
   });
 
-  wrapper.appendChild(container);
+  select.onchange = () => {
+    const universe = select.value;
+    currentUniverse = universe;
+    const canvas = document.getElementById("network");
+    canvas.style.transition = "opacity 0.3s";
+    canvas.style.opacity = 0;
+    setTimeout(() => {
+      updateBackground(universe);
+      const filtered = allNodes.get().map((n) => ({
+        ...n,
+        hidden: universe === "Hepsi" ? false : n.universe !== universe,
+        shape: "image",
+        image: n.image,
+        title: n.title,
+        description: n.description,
+        refers_to: n.refers_to,
+        group: n.group,
+        level: n.level
+      }));
+      allNodes.clear();
+      allNodes.add(filtered);
+
+      const visibleNodes = allNodes.get().filter(n => !n.hidden).map(n => n.id);
+      if (visibleNodes.length > 0) {
+        network.fit({ nodes: visibleNodes, animation: true });
+      }
+      canvas.style.opacity = 1;
+    }, 300);
+  };
+
+  wrapper.appendChild(select);
   document.body.appendChild(wrapper);
 }
-
