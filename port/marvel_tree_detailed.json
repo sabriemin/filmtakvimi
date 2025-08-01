@@ -1,0 +1,40 @@
+{
+  "id": "IronMan",
+  "name": "Iron Man (2008)",
+  "title": "Iron Man",
+  "poster": "\\port\\images\\marvel.jpg",
+  "description": "Zengin sanayi devi ve dahi mühendis Tony Stark, Afganistan'da kaçırıldıktan sonra kendine zırh teknolojisine dayalı bir kaçış planı geliştirir. Bu süreçte, Stark Industries'in silahlarının kötü ellere geçtiğini fark eder ve kendine yeni bir amaç edinir: dünyayı korumak. Iron Man kimliğini yaratarak, hem kendi hatalarının kefaretini ödemeye çalışır hem de dünya genelindeki tehditlere karşı bir kahramana dönüşür. Tony'nin teknolojik zekâsı, güçlü zırh tasarımı ve kişisel dönüşümü, karakterin karmaşıklığını gösterir. Film, MCU’nun temellerini atarak hem karakter gelişimi hem de politik alt metinleriyle ön plana çıkar.",
+  "refers_to": "Iron Man'in sonunda, SHIELD yöneticisi Nick Fury, Tony Stark'a yaklaşarak 'Avengers Girişimi'nden söz eder. Bu sahne, Marvel Sinematik Evreni'nin (MCU) ilk bağlantı noktasıdır. Ayrıca film boyunca Stark'ın kendini ve teknolojisini yeniden değerlendirmesi, ileride gelecek karakter iç çatışmalarının temelini oluşturur. Stark'ın kendiyle ve mirasıyla olan mücadelesi, ilerleyen filmlerde daha da derinleşecek olan karakter arkının başlangıcıdır.",
+  "type": "film",
+  "release_date": "2008-01-01",
+  "level": 0,
+  "children": [
+    {
+      "id": "IronMan2",
+      "name": "Iron Man 2 (2010)",
+      "title": "Iron Man 2",
+      "poster": "\\port\\images\\marvel.jpg",
+      "description": "Iron Man 2, Tony Stark’ın zırh teknolojisinin dünya genelinde yarattığı yankılarla başa çıkmasını konu alır. Stark, kimliğini açıkladıktan sonra hükümetin baskısı, halkın beklentileri ve kendi sağlığıyla baş etmeye çalışır. Aynı zamanda babasının geçmişi ve mirasıyla da yüzleşir. Filmde, Ivan Vanko adlı Rus bir bilim insanı, babasının geçmişte Stark ailesinden gördüğü zararın intikamını almak için Whiplash karakterine dönüşür. Justin Hammer’ın yardımıyla zırh teknolojisini kötüye kullanan Vanko, Stark’ın varlığına ciddi tehdit oluşturur. Öte yandan Natasha Romanoff (Black Widow) karakteri ilk kez tanıtılır ve SHIELD örgütüyle bağlantılar netleşir. Film, Tony’nin bireysel egosunu sorgulaması ve takım çalışmasına yönelmesini sağlayan bir kırılma noktasıdır.",
+      "refers_to": "Film, hem Black Widow’un tanıtılması hem de SHIELD örgütünün Tony’ye yaklaşımı ile Avengers’a doğrudan bağlanır. Coulson’un New Mexico’ya gönderildiği sahne, Thor’un çekicini bulma hikâyesine doğrudan bir geçiştir. Ayrıca Nick Fury’nin Tony ile yaptığı değerlendirme, onu ekip için henüz hazır bulmadığını ama potansiyel taşıdığını belirtmesiyle devam eden karakter gelişimine gönderme yapar. Filmde babası Howard Stark’ın geçmişteki çalışmaları, sonradan keşfedilecek Tesseract araştırmalarıyla örtüşür. Ayrıca Stark Expo’nun kurulması, teknolojinin toplum üzerindeki etkisi ve güç sorumluluğu gibi konular ileriki filmlerde derinleşecektir.",
+      "type": "film",
+      "release_date": "2010-01-01",
+      "level": 1,
+      "children": [
+        {
+          "id": "TheAvengers",
+          "name": "The Avengers (2012)",
+          "title": "The Avengers",
+          "poster": "\\port\\images\\marvel.jpg",
+          "description": "Dünyayı tehdit eden uzaylı istilasına karşı, SHIELD’ın yöneticisi Nick Fury, bir süper kahraman ekibi kurmaya karar verir. Iron Man, Captain America, Thor, Hulk, Black Widow ve Hawkeye bir araya gelir. Ancak her birinin farklı motivasyonları ve egoları olduğu için ilk başta birlikte hareket etmekte zorlanırlar. Loki’nin Tesseract’ı çalarak uzaylı ordusunu dünyaya getirmesi, onları birleştiren kriz olur. New York Savaşı, hem MCU’nun hem de insanlığın kaderini değiştirir. Film, aksiyon, mizah ve karakter dinamiklerini ustaca harmanlayarak, süper kahraman takım filmlerinin standartlarını belirler.",
+          "refers_to": "Film, önceki yapımlarda tanıtılan tüm ana karakterleri bir araya getirir. Loki’nin Thor filminden gelen motivasyonu, Tesseract’ın Captain America filmindeki kökeni ve Iron Man’in teknolojik üstünlüğü burada birleşir. SHIELD’ın operasyonları ve Nick Fury’nin manipülasyonları, sonraki filmlerde eleştirilecektir. Ayrıca, Thanos’un after-credits sahnesinde ilk kez görünmesi, Infinity Saga’nın temel taşını oluşturur. New York Savaşı, daha sonraki filmlerde defalarca referans verilen travmatik bir olay haline gelir. Film, MCU evreninin birlikte çalışabilirliğini ve uzun vadeli hikâye anlatımını kanıtlar niteliktedir.",
+          "type": "film",
+          "release_date": "2012-01-01",
+          "level": 3,
+          "children": [],
+          "connection_type": "devam"
+        }
+      ],
+      "connection_type": "devam"
+    }
+  ]
+}
