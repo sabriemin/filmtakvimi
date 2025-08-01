@@ -116,7 +116,9 @@ Promise.all([
         direction: "UD",
         sortMethod: "directed",
         levelSeparation: 150,
-        nodeSpacing: 100
+        nodeSpacing: function (level, node) {
+          return node.group === 'dizi' || node.type === 'dizi' ? 300 : 100;
+        }
       }
     },
     physics: false,
