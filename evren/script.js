@@ -123,10 +123,10 @@ Promise.all([
       }
     },
     physics: {
-      enabled: false
+      enabled: true
     },
     interaction: {
-      hover: false,
+      hover: true,
       tooltipDelay: 100,
       dragNodes: false,
       dragView: true,
