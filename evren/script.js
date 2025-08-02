@@ -134,6 +134,7 @@ function setupThemeToggle() {
   btn.onclick = () => {
     document.body.classList.toggle("dark");
     applyLabelTheme();
+    updateLegendForUniverse("Hepsi");
   };
   document.body.insertBefore(btn, container);
 }
@@ -143,6 +144,7 @@ function setupUniverseDropdown() {
   select.innerHTML = '<option value="Hepsi">Hepsi</option>' +
     Object.keys(dataFiles).map(u => `<option value="${u}">${u}</option>`).join("");
   select.onchange = () => {
+    updateLegendForUniverse(select.value);
     const selected = select.value;
     allNodes.forEach(n => {
       allNodes.update({ id: n.id, hidden: selected !== "Hepsi" && n.universe !== selected });
@@ -258,6 +260,114 @@ function setupCompareButtonNew() {
   });
 }
 
+function setupTypeFilterCheckboxes() {
+  const checkboxes = document.querySelectorAll(".type-filter");
+  checkboxes.forEach(cb => {
+    cb.addEventListener("change", () => {
+      const selectedTypes = Array.from(checkboxes)
+        .filter(c => c.checked)
+        .map(c => c.dataset.type);
+
+      allEdges.forEach(edge => {
+        const match = selectedTypes.includes(edge.type);
+        allEdges.update({ id: edge.id, hidden: !match });
+      });
+    });
+  });
+}
+
+function updateLegendForUniverse(selected) {
+  const legendBox = document.getElementById("legend-box");
+  const allTypesSet = new Set();
+  allEdges.forEach(edge => {
+    const fromNode = allNodes.get(edge.from);
+    const toNode = allNodes.get(edge.to);
+    const involved = [fromNode?.universe, toNode?.universe];
+    if (selected === "Hepsi" || involved.includes(selected)) {
+      allTypesSet.add(edge.type);
+    }
+  });
+
+  const types = Array.from(allTypesSet);
+  const colorMap = {
+    "devam": "#2980b9",
+    "ön hikaye": "#e67e22",
+    "yan hikaye": "#8e44ad",
+    "evren geçişi": "#c0392b",
+    "görsel gönderme": "#7f8c8d",
+    "karakter göndermesi": "#27ae60",
+    "kurumsal gönderme": "#6e4b25",
+    "zaman çizgisi bağlantısı": "#1abc9c",
+    "karakter geçişi": "#2ecc71",
+    "tematik benzerlik": "#f1c40f",
+    "duygu ve bilinç teması": "#9b59b6",
+    "konseptsel devam": "#34495e",
+    "şehir yaşamı paralelliği": "#d35400",
+    "iç film/karakter kökeni": "#7d3c98",
+    "multiverse birleşmesi": "#e84393",
+    "paralel Kang anlatımı": "#16a085"
+  };
+
+  legendBox.innerHTML = types.map(type => `
+    <div class="legend-item">
+      <label>
+        <input type="checkbox" class="type-filter" data-type="${type}" checked />
+        <span class="legend-color" style="background:${colorMap[type] || '#ccc'};"></span> ${type}
+      </label>
+    </div>
+  `).join("");
+
+  setupTypeFilterCheckboxes();
+}
+
+function init() {
+  loadUniverseData().then(() => {
+    drawNetwork();
+    setupThemeToggle();
+    setupUniverseDropdown();
+    setupSearchBox();
+    setupTimelineToggle();
+    setupCompareButtonNew();
+    applyLabelTheme();
+    updateLegendForUniverse("Hepsi");
+  });
+}
+
+init();
+
+
+
+// Bağlantı türü filtreleme
+const connectionFilters = document.querySelectorAll('#legend-box input[type="checkbox"]');
+connectionFilters.forEach(cb => cb.addEventListener("change", applyConnectionFilters));
+
+function applyConnectionFilters() {
+  const selectedTypes = Array.from(connectionFilters)
+    .filter(cb => cb.checked)
+    .map(cb => cb.nextSibling.textContent.trim());
+
+  const filteredEdges = allEdges.get().filter(edge =>
+    selectedTypes.length === 0 || selectedTypes.includes(edge.label)
+  );
+
+  network.setData({
+    nodes: allNodes,
+    edges: filteredEdges
+  });
+}
+
+// Tümünü Seç / Temizle
+function selectAllConnections(selectAll) {
+  connectionFilters.forEach(cb => {
+    cb.checked = selectAll;
+  });
+  applyConnectionFilters();
+}
+
+
+
+// Bağlantı türü filtreleme (type alanına göre)
+connectionFilters.forEach(cb => cb.addEventListener("change", applyConnectionFilters));
 
 function applyConnectionFilters() {
   const selectedTypes = Array.from(connectionFilters)
@@ -280,38 +390,4 @@ function selectAllConnections(selectAll) {
     cb.checked = selectAll;
   });
   applyConnectionFilters();
-}
-
-
-// Dinamik evren filtreleri (Marvel, DC, Pixar, Star Wars...)
-const universeList = Object.keys(dataFiles);
-const universeFiltersContainer = document.getElementById("universe-filters");
-
-universeList.forEach(universe => {
-  const label = document.createElement("label");
-  label.innerHTML = '<input type="checkbox" value="' + universe + '" checked> ' + universe;
-  universeFiltersContainer.appendChild(label);
-});
-
-const universeCheckboxes = document.querySelectorAll('#universe-filters input[type="checkbox"]');
-universeCheckboxes.forEach(cb => cb.addEventListener("change", applyUniverseFilter));
-
-function applyUniverseFilter() {
-  const selectedUniverses = Array.from(universeCheckboxes)
-    .filter(cb => cb.checked)
-    .map(cb => cb.value);
-
-  const visibleNodes = allNodes.get().filter(node => selectedUniverses.includes(node.universe));
-  const visibleEdges = allEdges.get().filter(edge => {
-    const fromNode = allNodes.get(edge.from);
-    const toNode = allNodes.get(edge.to);
-    return fromNode && toNode &&
-      selectedUniverses.includes(fromNode.universe) &&
-      selectedUniverses.includes(toNode.universe);
-  });
-
-  network.setData({
-    nodes: visibleNodes,
-    edges: visibleEdges
-  });
 }
