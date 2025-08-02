@@ -108,16 +108,10 @@ Promise.all([
         roundness: 0.4
       }
     },
-    layout: {
-      hierarchical: {
-        enabled: true,
-        direction: "UD",
-        sortMethod: "directed",
-        levelSeparation: 150,
-        nodeSpacing: 100
-      }
+    layout: {},
+    physics: {
+      enabled: false
     },
-    physics: false,
     interaction: {
       hover: false,
       tooltipDelay: 100,
@@ -137,17 +131,7 @@ Promise.all([
 
   network = new vis.Network(container, dataSet, options);
 
-  network.setOptions({
-    layout: {
-      hierarchical: {
-        enabled: true,
-        direction: "UD",
-        sortMethod: "directed",
-        levelSeparation: 180,
-        nodeSpacing: 150
-      }
-    }
-  });
+  
 
   network.on("click", function (params) {
     if (params.nodes.length > 0) {
