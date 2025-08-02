@@ -135,22 +135,6 @@ function setupThemeToggle() {
   document.body.insertBefore(btn, container);
 }
 
-function setupUniverseDropdown() {
-  const select = document.createElement("select");
-  select.innerHTML = '<option value="Hepsi">Hepsi</option>' +
-    Object.keys(dataFiles).map(u => `<option value="${u}">${u}</option>`).join("");
-  select.onchange = () => {
-    const selected = select.value;
-    allNodes.forEach(n => {
-      allNodes.update({ id: n.id, hidden: selected !== "Hepsi" && n.universe !== selected });
-    });
-    if (selected !== "Hepsi") {
-      const ids = universeNodesMap[selected];
-      network.fit({ nodes: ids, animation: true });
-    }
-  };
-  document.body.insertBefore(select, container);
-}
 
 function setupSearchBox() {
   const input = document.createElement("input");
@@ -214,7 +198,6 @@ function init() {
   loadUniverseData().then(() => {
     drawNetwork();
     setupThemeToggle();
-    setupUniverseDropdown();
     setupSearchBox();
     setupCompareButtonNew();
     applyLabelTheme();
