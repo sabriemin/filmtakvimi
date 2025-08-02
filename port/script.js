@@ -67,9 +67,7 @@ Promise.all([
       refers_to: n.refers_to,
       group: n.type,
       level: n.level,
-      x: (n.type === 'dizi' ? 900 : 0),
-      y: n.level * 300,
-      fixed: { x: false, y: false },
+      
       universe: n.universe
     }))
   );
@@ -108,7 +106,17 @@ Promise.all([
         roundness: 0.4
       }
     },
-    layout: {},
+    layout: {
+      hierarchical: {
+        enabled: true,
+        direction: "UD",
+        sortMethod: "directed",
+        levelSeparation: 150,
+        nodeSpacing: function (level, node) {
+          return node.group === 'dizi' ? 400 : 120;
+        }
+      }
+    },
     physics: {
       enabled: false
     },
