@@ -338,7 +338,7 @@ init();
 
 
 // Bağlantı türü filtreleme
-const connectionFilters = document.querySelectorAll('#connection-filters input[type="checkbox"]');
+const connectionFilters = document.querySelectorAll('#legend-box input[type="checkbox"]');
 connectionFilters.forEach(cb => cb.addEventListener("change", applyConnectionFilters));
 
 function applyConnectionFilters() {
@@ -390,4 +390,38 @@ function selectAllConnections(selectAll) {
     cb.checked = selectAll;
   });
   applyConnectionFilters();
+}
+
+
+// Dinamik evren filtreleri (Marvel, DC, Pixar, Star Wars...)
+const universeList = Object.keys(dataFiles);
+const universeFiltersContainer = document.getElementById("universe-filters");
+
+universeList.forEach(universe => {
+  const label = document.createElement("label");
+  label.innerHTML = '<input type="checkbox" value="' + universe + '" checked> ' + universe;
+  universeFiltersContainer.appendChild(label);
+});
+
+const universeCheckboxes = document.querySelectorAll('#universe-filters input[type="checkbox"]');
+universeCheckboxes.forEach(cb => cb.addEventListener("change", applyUniverseFilter));
+
+function applyUniverseFilter() {
+  const selectedUniverses = Array.from(universeCheckboxes)
+    .filter(cb => cb.checked)
+    .map(cb => cb.value);
+
+  const visibleNodes = allNodes.get().filter(node => selectedUniverses.includes(node.universe));
+  const visibleEdges = allEdges.get().filter(edge => {
+    const fromNode = allNodes.get(edge.from);
+    const toNode = allNodes.get(edge.to);
+    return fromNode && toNode &&
+      selectedUniverses.includes(fromNode.universe) &&
+      selectedUniverses.includes(toNode.universe);
+  });
+
+  network.setData({
+    nodes: visibleNodes,
+    edges: visibleEdges
+  });
 }
