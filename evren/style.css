@@ -12,22 +12,14 @@ body {
 }
 
 #info-box {
-  max-height: 500px;
+  width: 460px;
+  height: 500px;
   overflow-y: auto;
-
-  position: absolute;
-  top: 50px;
-  left: 50px;
-  max-width: 400px;
-  background-color: rgba(30, 30, 30, 0.95);
-  border: 1px solid #444;
-  border-radius: 8px;
+  background: var(--box-bg);
   padding: 16px;
-  z-index: 10;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  color: var(--text);
 }
 
 #info-box.hidden {
@@ -63,15 +55,15 @@ body {
 /* === Responsive Düzenlemeler === */
 @media (max-width: 768px) {
   #info-box {
-  max-height: 500px;
+  width: 460px;
+  height: 500px;
   overflow-y: auto;
-
-    left: 50%;
-    top: 20px;
-    transform: translateX(-50%);
-    width: 90%;
-    padding: 12px;
-  }
+  background: var(--box-bg);
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  color: var(--text);
+}
 
   #info-box h2 {
     font-size: 1em;
@@ -105,12 +97,14 @@ body {
 }
 
 #info-box {
-  max-height: 500px;
+  width: 460px;
+  height: 500px;
   overflow-y: auto;
-
-  background-color: var(--box-bg);
-  border: 1px solid var(--border-color);
-  box-shadow: 0 0 12px var(--shadow-color);
+  background: var(--box-bg);
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  color: var(--text);
 }
 
 #info-box h2 {
@@ -145,12 +139,14 @@ body {
 }
 
 #info-box {
-  max-height: 500px;
+  width: 460px;
+  height: 500px;
   overflow-y: auto;
-
+  background: var(--box-bg);
+  padding: 16px;
   border-radius: 12px;
-  padding: 20px;
-  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  color: var(--text);
 }
 
 #info-box h2 {
@@ -180,10 +176,14 @@ body {
 /* === Hover ve Geçiş Efektleri === */
 
 #info-box {
-  max-height: 500px;
+  width: 460px;
+  height: 500px;
   overflow-y: auto;
-
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: var(--box-bg);
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  color: var(--text);
 }
 
 #info-box:hover {
