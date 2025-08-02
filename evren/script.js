@@ -19,7 +19,18 @@ function loadUniverseData() {
   const loadPromises = Object.entries(dataFiles).map(([universe, path]) =>
     fetch(path).then(r => r.json()).then(data => {
       data.nodes.forEach(n => {
-        allNodes.add({...n, universe });
+        const groupColors = {
+          "Marvel": "red",
+          "DC": "blue",
+          "Pixar": "orange",
+          "Star Wars": "lightblue"
+        };
+        allNodes.add({
+          ...n,
+          universe,
+          hidden: false,
+          color: groupColors[universe] || "gray"
+        });
       });
       allEdges.add(data.edges);
     })
@@ -35,13 +46,13 @@ function drawNetwork() {
   };
   const options = {
     nodes: {
-      shape: "image",
-      size: 30,
+      shape: "dot",
+      size: 15,
       font: { color: "white" }
     },
     edges: {
       arrows: "to",
-      color: "#999"
+      color: "#888"
     },
     layout: {
       improvedLayout: true
@@ -68,11 +79,15 @@ function init() {
   loadUniverseData().then(() => {
     drawNetwork();
     setupSelector();
+    setupSearchBox();
+    setupThemeToggle();
   });
 }
 
 function setupSelector() {
   const select = document.createElement("select");
+  select.style.margin = "10px";
+
   const optionAll = new Option("Hepsi", "Hepsi");
   select.appendChild(optionAll);
 
@@ -88,6 +103,32 @@ function setupSelector() {
   };
 
   document.body.insertBefore(select, container);
+}
+
+function setupSearchBox() {
+  const input = document.createElement("input");
+  input.placeholder = "Ara...";
+  input.style.margin = "10px";
+  input.style.padding = "4px";
+  input.oninput = () => {
+    const term = input.value.toLowerCase();
+    allNodes.forEach(n => {
+      const match = n.label && n.label.toLowerCase().includes(term);
+      allNodes.update({ id: n.id, hidden: !match && term.length > 0 });
+    });
+  };
+  document.body.insertBefore(input, container);
+}
+
+function setupThemeToggle() {
+  const btn = document.createElement("button");
+  btn.textContent = "🌙 Tema Değiştir";
+  btn.style.margin = "10px";
+  btn.onclick = () => {
+    document.body.classList.toggle("dark");
+    container.classList.toggle("dark");
+  };
+  document.body.insertBefore(btn, container);
 }
 
 function closeInfoBox() {
