@@ -259,6 +259,7 @@ function setupCompareButtonNew() {
     }
 
     box.classList.remove("hidden");
+    enhanceCompareModalStyle();
     overlay.classList.remove("hidden");
   });
 }
@@ -344,4 +345,42 @@ function setupModalInteraction() {
       closeInfoBox();
     }
   });
+}
+
+
+function enhanceCompareModalStyle() {
+  const box = document.getElementById("compare-box");
+  const overlay = document.getElementById("modal-overlay");
+
+  if (box) {
+    box.style.maxWidth = "700px";
+    box.style.margin = "auto";
+    box.style.padding = "20px";
+    box.style.backgroundColor = "#fff";
+    box.style.borderRadius = "12px";
+    box.style.boxShadow = "0 0 20px rgba(0,0,0,0.2)";
+    box.style.position = "relative";
+    box.style.maxHeight = "80vh";
+    box.style.overflowY = "auto";
+    box.style.color = "#000";
+  }
+
+  if (overlay) {
+    overlay.style.display = "flex";
+    overlay.style.alignItems = "center";
+    overlay.style.justifyContent = "center";
+    overlay.style.backdropFilter = "blur(6px)";
+  }
+
+  const closeBtn = document.createElement("span");
+  closeBtn.innerHTML = "&times;";
+  closeBtn.style.position = "absolute";
+  closeBtn.style.top = "10px";
+  closeBtn.style.right = "20px";
+  closeBtn.style.cursor = "pointer";
+  closeBtn.style.fontSize = "24px";
+  closeBtn.style.color = "#aaa";
+  closeBtn.title = "Kapat";
+  closeBtn.onclick = closeInfoBox;
+  box.appendChild(closeBtn);
 }
