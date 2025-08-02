@@ -226,7 +226,65 @@ function init() {
     setupSearchBox();
     setupTimelineToggle();
     setupCompareButton();
+    addCheckboxes();
+    setupCheckboxCompare();
   });
 }
 
 init();
+
+function addCheckboxes() {
+  const canvas = network.canvas.frame.canvas;
+  const parent = canvas.parentElement;
+  const nodeCheckboxes = {};
+
+  allNodes.forEach((node) => {
+    const box = document.createElement("input");
+    box.type = "checkbox";
+    box.className = "node-checkbox";
+    box.style.position = "absolute";
+    box.style.zIndex = 101;
+    box.dataset.nodeId = node.id;
+    box.onclick = e => e.stopPropagation(); // ağ tıklamasını engelle
+
+    parent.appendChild(box);
+    nodeCheckboxes[node.id] = box;
+  });
+
+  network.on("afterDrawing", () => {
+    const positions = network.getPositions();
+    const canvasRect = network.body.container.getBoundingClientRect();
+
+    allNodes.forEach((node) => {
+      const pos = network.canvasToDOM(positions[node.id]);
+      const box = nodeCheckboxes[node.id];
+      if (box) {
+        box.style.left = `${pos.x + canvasRect.left - 10}px`;
+        box.style.top = `${pos.y + canvasRect.top - 10}px`;
+      }
+    });
+  });
+}
+
+// checkbox ile seçilenleri karşılaştır
+function setupCheckboxCompare() {
+  const btn = document.getElementById("compare-btn");
+  btn.addEventListener("click", () => {
+    const checkedBoxes = document.querySelectorAll(".node-checkbox:checked");
+    if (checkedBoxes.length !== 2) {
+      document.getElementById("compare-content").innerHTML = "Lütfen iki film/dizi seçin.";
+    } else {
+      const ids = Array.from(checkedBoxes).map(cb => cb.dataset.nodeId);
+      const [a, b] = ids.map(id => allNodes.get(id));
+      document.getElementById("compare-content").innerHTML = `
+        <h3>${a.label} ↔ ${b.label}</h3>
+        <p><b>Açıklamalar:</b><br>${a.description}<hr>${b.description}</p>
+        <p><b>Referanslar:</b><br>${a.refers_to}<hr>${b.refers_to}</p>
+        <p><b>Yayın Tarihleri:</b> ${a.release_date} ↔ ${b.release_date}</p>
+      `;
+    }
+
+    document.getElementById("compare-box").classList.remove("hidden");
+    document.getElementById("modal-overlay").classList.remove("hidden");
+  });
+}
