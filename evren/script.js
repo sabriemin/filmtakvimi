@@ -1,270 +1,319 @@
-body {
-  margin: 0;
-  background-color: #000;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: white;
-  overflow: hidden;
-}
+// Ağı oluşturmak için
+const container = document.getElementById("network");
+const infoBox = document.getElementById("info-box");
+const titleEl = document.getElementById("info-title");
+const descEl = document.getElementById("info-description");
+const refersEl = document.getElementById("info-refers");
 
-#network {
-  width: 100vw;
-  height: 100vh;
-}
+let allNodes = [];
+let allEdges = [];
+let network;
+let currentUniverse = "Hepsi";
 
-#info-box {
-  position: absolute;
-  top: 50px;
-  left: 50px;
-  max-width: 400px;
-  background-color: rgba(30, 30, 30, 0.95);
-  border: 1px solid #444;
-  border-radius: 8px;
-  padding: 16px;
-  z-index: 10;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
-}
+const backgroundEl = document.createElement("div");
+backgroundEl.style.position = "fixed";
+backgroundEl.style.top = 0;
+backgroundEl.style.left = 0;
+backgroundEl.style.width = "100vw";
+backgroundEl.style.height = "100vh";
+backgroundEl.style.zIndex = "-1";
+backgroundEl.style.backgroundSize = "cover";
+backgroundEl.style.backgroundPosition = "center";
+backgroundEl.style.opacity = "0.1";
+backgroundEl.style.filter = "blur(12px)";
+document.body.appendChild(backgroundEl);
 
-#info-box.hidden {
-  display: none;
-}
-
-#info-box h2 {
-  margin: 0;
-  font-size: 1.2em;
-  color: #ff5555;
-}
-
-#info-box p {
-  font-size: 0.9em;
-  line-height: 1.4;
-}
-
-#info-box button {
-  align-self: flex-end;
-  padding: 6px 12px;
-  background-color: #ff5555;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-#info-box button:hover {
-  background-color: #ff2222;
-}
-
-
-/* === Responsive Düzenlemeler === */
-@media (max-width: 768px) {
-  #info-box {
-    left: 50%;
-    top: 20px;
-    transform: translateX(-50%);
-    width: 90%;
-    padding: 12px;
-  }
-
-  #info-box h2 {
-    font-size: 1em;
-  }
-
-  #info-box p {
-    font-size: 0.85em;
-  }
-
-  #info-box button {
-    padding: 8px 14px;
-    font-size: 0.9em;
+function updateBackground(universe) {
+  if (universe === "Marvel") {
+    backgroundEl.style.backgroundImage = "url('images/marvel.jpg')";
+  } else if (universe === "DC") {
+    backgroundEl.style.backgroundImage = "url('images/dc.jpg')";
+  } else if (universe === "Star Wars") {
+    backgroundEl.style.backgroundImage = "url('images/starwars.jpg')";
+  } else {
+    backgroundEl.style.backgroundImage = "linear-gradient(to bottom right, #0f2027, #203a43, #2c5364)";
   }
 }
 
+Promise.all([
+  fetch("data/marvel.json").then(res => res.json()),
+  fetch("data/dc.json").then(res => res.json()),
+  fetch("data/starwars.json").then(res => res.json())
+]).then(([marvelData, dcData, swData]) => {
+  const addUniverseTag = (data, universe) => {
+    return data.nodes.map(n => ({ ...n, universe }))
+  };
 
-/* === Tema Değişkenleri === */
-:root {
-  --bg-color: #000;
-  --text-color: #fff;
-  --box-bg: rgba(30, 30, 30, 0.95);
-  --accent: #ff5555;
-  --accent-hover: #ff2222;
-  --border-color: #444;
-  --shadow-color: rgba(255, 255, 255, 0.2);
+  const combinedNodes = [
+    ...addUniverseTag(marvelData, "Marvel"),
+    ...addUniverseTag(dcData, "DC"),
+    ...addUniverseTag(swData, "Star Wars")
+  ];
+
+  const combinedEdges = [
+    ...marvelData.edges,
+    ...dcData.edges,
+    ...swData.edges
+  ];
+
+  allNodes = new vis.DataSet(
+    combinedNodes.map((n, idx) => ({
+      id: n.id,
+      label: `${n.title}
+(${new Date(n.release_date).toLocaleDateString('tr-TR')})`,
+      image: n.image,
+      shape: "image",
+      title: n.title,
+      description: n.description,
+      refers_to: n.refers_to,
+      group: n.type,
+      level: n.level,
+      
+      universe: n.universe
+    }))
+  );
+
+  allEdges = new vis.DataSet(
+    combinedEdges.map((e) => ({
+      from: e.from,
+      to: e.to,
+      color: {
+        color: e.type === "devam" ? "#ffffff" : e.type === "evren-geçişi" ? "#00ffff" : "#ff9900"
+      },
+      arrows: {
+        to: { enabled: true, scaleFactor: 1 }
+      },
+      selectionWidth: 2
+    }))
+  );
+
+  const dataSet = {
+    nodes: allNodes,
+    edges: allEdges,
+  };
+
+  const options = {
+    nodes: {
+      shape: "image",
+      size: 40,
+      font: { color: "#fff" },
+      borderWidth: 1
+    },
+    edges: {
+      width: 2,
+      smooth: {
+        type: "cubicBezier",
+        forceDirection: "horizontal",
+        roundness: 0.4
+      }
+    },
+    layout: {
+      hierarchical: {
+        enabled: true,
+        direction: "UD",
+        sortMethod: "directed",
+        sortMethod: "directed",
+        levelSeparation: 150,
+        nodeSpacing: 300
+      }
+    },
+    physics: {
+      enabled: false
+    },
+    interaction: {
+      hover: false,
+      tooltipDelay: 100,
+      dragNodes: true,
+      multiselect: true,
+      selectable: true
+    },
+    groups: {
+      film: {
+        color: { background: "#ff4444" }
+      },
+      dizi: {
+        color: { background: "#4488ff" }
+      }
+    }
+  };
+
+  network = new vis.Network(container, dataSet, options);
+
+  
+
+  network.on("click", function (params) {
+    if (params.nodes.length > 0) {
+      const node = allNodes.get(params.nodes[0]);
+      titleEl.textContent = `${node.title} (${new Date(node.release_date).toLocaleDateString('tr-TR')})`;
+      const parsedDate = new Date(node.release_date);
+      const formattedDate = !isNaN(parsedDate) ? parsedDate.toLocaleDateString("tr-TR") : "Bilinmiyor";
+      descEl.innerHTML = `<strong>${node.type === 'dizi' ? 'Dizi' : 'Film'} Özeti:</strong><br>${node.description}<br><br><strong>Vizyon Tarihi:</strong> ${formattedDate}`;
+      const edgesForNode = allEdges.get().filter(e => e.to === node.id || e.from === node.id);
+      const edgeType = edgesForNode.length > 0 ? edgesForNode[0].type : null;
+      const edgeLabel = edgeType === "devam" ? "Devam Filmi" :
+                         edgeType === "evren-geçişi" ? "Evren Geçişi" :
+                         edgeType === "yan-hikaye" ? "Yan Hikâye" :
+                         "Bağlantı Yok";
+      refersEl.innerHTML = `<strong>Bağlantı Türü:</strong> ${edgeLabel}<br><br><strong>Göndermeler:</strong><br>${node.refers_to}`;
+      infoBox.classList.remove("hidden");
+      infoBox.style.position = "fixed";
+      infoBox.style.left = "50%";
+      infoBox.style.top = "50%";
+      infoBox.style.transform = "translate(-50%, -50%)";
+      infoBox.style.zIndex = "200";
+
+      if (window.innerWidth < 600) {
+        infoBox.style.width = "90vw";
+        infoBox.style.maxHeight = "70vh";
+        infoBox.style.overflowY = "auto";
+        infoBox.style.fontSize = "13px";
+      } else {
+        infoBox.style.width = "auto";
+        infoBox.style.maxHeight = "none";
+        infoBox.style.fontSize = "inherit";
+      }
+    }
+  });
+
+  createSearchBox();
+  createLegendBox();
+  createUniverseTabs();
+  updateBackground(currentUniverse);
+});
+
+function createLegendBox() {
+  const legend = document.createElement("div");
+  legend.style.position = "absolute";
+  legend.style.bottom = "10px";
+  legend.style.left = "10px";
+  legend.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
+  legend.style.padding = "10px 16px";
+  legend.style.color = "white";
+  legend.style.border = "1px solid #555";
+  legend.style.borderRadius = "6px";
+  legend.style.zIndex = "99";
+  legend.style.maxWidth = "90vw";
+  legend.style.boxSizing = "border-box";
+  legend.style.fontSize = window.innerWidth < 600 ? "12px" : "13px";
+
+  legend.innerHTML = `
+    <div><span style='color:#fff'>⬤</span> Devam</div>
+    <div><span style='color:#00ffff'>⬤</span> Evren Geçişi</div>
+    <div><span style='color:#ff9900'>⬤</span> Yan Hikâye</div>
+  `;
+
+  window.addEventListener("resize", () => {
+    legend.style.fontSize = window.innerWidth < 600 ? "12px" : "13px";
+    legend.style.maxWidth = window.innerWidth < 600 ? "90vw" : "300px";
+  });
+
+  document.body.appendChild(legend);
 }
 
-body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
+function closeInfoBox() {
+  document.getElementById("info-box").classList.add("hidden");
 }
 
-#info-box {
-  background-color: var(--box-bg);
-  border: 1px solid var(--border-color);
-  box-shadow: 0 0 12px var(--shadow-color);
+function createSearchBox() {
+  const input = document.createElement("input");
+  input.type = "text";
+  input.placeholder = "🔎 Film veya dizi ara...";
+  input.style.position = "static";
+  input.style.transform = "none";
+  input.style.zIndex = "100";
+  input.style.padding = "8px 16px";
+  input.style.borderRadius = "25px";
+  input.style.border = "1px solid #ccc";
+  input.style.outline = "none";
+  input.style.background = "#111";
+  input.style.color = "white";
+  input.style.fontSize = "14px";
+  input.style.boxShadow = "0 0 6px rgba(255, 255, 255, 0.2)";
+  input.style.maxWidth = "90vw";
+  input.style.boxSizing = "border-box";
+  window.addEventListener("resize", () => {
+    input.style.fontSize = window.innerWidth < 600 ? "12px" : "14px";
+    input.style.width = window.innerWidth < 600 ? "80%" : "auto";
+  });
+  input.oninput = function () {
+    const value = input.value.toLowerCase();
+    const match = allNodes.get().find(
+      (n) => n.label.toLowerCase().includes(value) &&
+             (currentUniverse === "Hepsi" || n.universe === currentUniverse)
+    );
+    if (match) {
+      network.focus(match.id, { scale: 1.5, animation: true });
+    }
+  };
+  return input;
 }
 
-#info-box h2 {
-  color: var(--accent);
-}
+function createUniverseTabs() {
+  const wrapper = document.createElement("div");
+  wrapper.style.position = "absolute";
+  wrapper.style.top = "10px";
+  wrapper.style.left = "50%";
+  wrapper.style.transform = "translateX(-50%)";
+  wrapper.style.zIndex = "100";
+  wrapper.style.display = "flex";
+  wrapper.style.flexDirection = "column";
+  wrapper.style.alignItems = "center";
+  wrapper.style.gap = "6px";
+  wrapper.style.backgroundColor = "rgba(0, 0, 0, 0.6)";
+  wrapper.style.padding = "12px";
+  wrapper.style.borderRadius = "12px";
+  wrapper.style.boxShadow = "0 4px 12px rgba(0, 0, 0, 0.4)";
 
-#info-box button {
-  background-color: var(--accent);
-}
+  const input = createSearchBox();
+  wrapper.appendChild(input);
 
-#info-box button:hover {
-  background-color: var(--accent-hover);
-}
+  const select = document.createElement("select");
+  select.style.padding = "6px 12px";
+  select.style.borderRadius = "4px";
+  select.style.border = "1px solid #555";
+  select.style.backgroundColor = "#222";
+  select.style.color = "#fff";
+  select.style.cursor = "pointer";
+  select.style.marginTop = "8px";
 
-/* === Açık Tema === */
-body.light-mode {
-  --bg-color: #f2f2f2;
-  --text-color: #111;
-  --box-bg: rgba(255, 255, 255, 0.95);
-  --accent: #007bff;
-  --accent-hover: #0056b3;
-  --border-color: #ccc;
-  --shadow-color: rgba(0, 0, 0, 0.15);
-}
+  const universeList = ["Hepsi", "Marvel", "DC", "Star Wars"];
+  universeList.forEach((universe) => {
+    const option = document.createElement("option");
+    option.value = universe;
+    option.textContent = universe;
+    select.appendChild(option);
+  });
 
+  select.onchange = () => {
+    const universe = select.value;
+    currentUniverse = universe;
+    const canvas = document.getElementById("network");
+    canvas.style.transition = "opacity 0.3s";
+    canvas.style.opacity = 0;
+    setTimeout(() => {
+      updateBackground(universe);
+      const filtered = allNodes.get().map((n) => ({
+        ...n,
+        hidden: universe === "Hepsi" ? false : n.universe !== universe,
+        shape: "image",
+        image: n.image,
+        title: n.title,
+        description: n.description,
+        refers_to: n.refers_to,
+        group: n.group,
+        level: n.level
+      }));
+      allNodes.clear();
+      allNodes.add(filtered);
 
-/* === Modern Görünüm Geliştirmeleri === */
+      const visibleNodes = allNodes.get().filter(n => !n.hidden).map(n => n.id);
+      if (visibleNodes.length > 0) {
+        network.fit({ nodes: visibleNodes, animation: true });
+      }
+      canvas.style.opacity = 1;
+    }, 300);
+  };
 
-body {
-  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
-}
-
-#info-box {
-  border-radius: 12px;
-  padding: 20px;
-  transition: all 0.3s ease;
-}
-
-#info-box h2 {
-  font-weight: 600;
-  font-size: 1.4em;
-  margin-bottom: 8px;
-}
-
-#info-box p {
-  font-size: 1em;
-  opacity: 0.95;
-}
-
-#info-box button {
-  border-radius: 6px;
-  font-weight: 500;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-#info-box button:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-}
-
-
-/* === Hover ve Geçiş Efektleri === */
-
-#info-box {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-#info-box:hover {
-  transform: scale(1.01);
-  box-shadow: 0 0 20px var(--accent);
-}
-
-a {
-  color: var(--accent);
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-a:hover {
-  color: var(--accent-hover);
-  text-decoration: underline;
-}
-
-.card, .movie, .tag {
-  transition: all 0.3s ease;
-}
-
-.card:hover, .movie:hover, .tag:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
-}
-
-
-/* === Evren Etiketi (Tag) Stilleri === */
-
-.tag {
-  display: inline-block;
-  padding: 4px 10px;
-  font-size: 0.8em;
-  font-weight: bold;
-  border-radius: 999px;
-  color: white;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  margin-top: 6px;
-  margin-bottom: 6px;
-}
-
-/* Evrene özel renkler */
-.tag-marvel {
-  background-color: #e23636;
-}
-
-.tag-dc {
-  background-color: #0073e6;
-}
-
-.tag-starwars {
-  background-color: #ffd700;
-  color: black;
-}
-
-.tag-pixar {
-  background-color: #9b59b6;
-}
-
-
-/* === Arama ve Filtreleme Arayüzü === */
-
-.search-input {
-  padding: 10px 14px;
-  border: 1px solid var(--border-color);
-  border-radius: 8px;
-  font-size: 1em;
-  width: 100%;
-  max-width: 300px;
-  background-color: var(--box-bg);
-  color: var(--text-color);
-  transition: border 0.3s ease;
-  outline: none;
-  margin-bottom: 16px;
-}
-
-.search-input:focus {
-  border-color: var(--accent);
-}
-
-.filter-button {
-  padding: 8px 14px;
-  margin: 4px;
-  background-color: transparent;
-  border: 2px solid var(--accent);
-  color: var(--accent);
-  border-radius: 6px;
-  font-size: 0.9em;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.filter-button:hover,
-.filter-button.active {
-  background-color: var(--accent);
-  color: white;
+  wrapper.appendChild(select);
+  document.body.appendChild(wrapper);
 }
