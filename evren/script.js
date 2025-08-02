@@ -170,7 +170,7 @@ Promise.all([
 
       if (window.innerWidth < 600) {
         infoBox.style.width = "90vw";
-        infoBox.style.maxHeiQght = "70vh";
+        infoBox.style.maxHeight = "70vh";
         infoBox.style.overflowY = "auto";
         infoBox.style.fontSize = "13px";
       } else if (universe === "Pixar") {
