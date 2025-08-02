@@ -1,522 +1,522 @@
 {
   "nodes": [
-  {
-    "id": "toyStory1995",
-    "label": "Toy Story (1995)",
-    "title": "Toy Story",
-    "image": "images/pixar.jpg",
-    "shape": "image",
-    "description": "Andy'nin oyuncakları, insanlar tarafından görülmediklerinde canlanabilen canlı varlıklardır. Woody, Andy'nin en sevdiği kovboy oyuncağıdır, ancak yeni çıkan uzay kahramanı Buzz Lightyear'ın gelişiyle tahtı sarsılır.",
-    "refers_to": "Pizza Planet kamyonu, Dinoco logosu gibi öğeler diğer Pixar filmlerinde görülür.",
-    "type": "film",
-    "release_date": "1995-11-22",
-    "level": 0
-  },
-  {
-    "id": "aBugsLife1998",
-    "label": "A Bug's Life (1998)",
-    "title": "A Bug's Life",
-    "image": "images/pixar.jpg",
-    "shape": "image",
-    "description": "Karınca Flik, kolonisini korumak için yanlışlıkla sirk böceklerini savaşçı sanıp yardım çağırır. Koloni, bu grup sayesinde çekirge baskısından kurtulmaya çalışır.",
-    "refers_to": "Pizza Planet kamyonu görünür. Flik karakteri Toy Story 2'de arka planda yer alır.",
-    "type": "film",
-    "release_date": "1998-11-25",
-    "level": 1
-  },
-  {
-    "id": "toyStory21999",
-    "label": "Toy Story 2 (1999)",
-    "title": "Toy Story 2",
-    "image": "images/pixar.jpg",
-    "shape": "image",
-    "description": "Woody, nadir bir koleksiyon parçası olduğunu öğrenince bir koleksiyoncu tarafından kaçırılır. Buzz ve diğer oyuncaklar onu kurtarmaya çalışır.",
-    "refers_to": "Flik karakteri arka planda görünür. Al's Toy Barn'da A Bug's Life referansları bulunur.",
-    "type": "film",
-    "release_date": "1999-11-24",
-    "level": 2
-  },
-  {
-    "id": "monstersInc2001",
-    "label": "Monsters, Inc. (2001)",
-    "title": "Monsters, Inc.",
-    "image": "images/pixar.jpg",
-    "shape": "image",
-    "description": "Canavarlar, insan çocuklarının çığlıklarıyla enerji elde eder. Ancak bir çocuk dünyalarına girince her şey karışır.",
-    "refers_to": "Boo'nun odasında Nemo oyuncağı görülür. Pizza Planet kamyonu da yer alır.",
-    "type": "film",
-    "release_date": "2001-11-02",
-    "level": 3
-  },
-  {
-    "id": "findingNemo2003",
-    "label": "Finding Nemo (2003)",
-    "title": "Finding Nemo",
-    "image": "images/pixar.jpg",
-    "shape": "image",
-    "description": "Oğlunu kaybeden balık Marlin, Dory ile birlikte okyanusta büyük bir maceraya atılır.",
-    "refers_to": "Boo’nun odasında Nemo oyuncağı vardı. Ayrıca Pizza Planet kamyonu görülür.",
-    "type": "film",
-    "release_date": "2003-05-30",
-    "level": 4
-  },
-  {
-    "id": "theIncredibles2004",
-    "label": "The Incredibles (2004)",
-    "title": "The Incredibles",
-    "image": "images/pixar.jpg",
-    "shape": "image",
-    "description": "Gizlice yaşayan süper kahraman bir aile, tekrar dünyayı kurtarmaya çalışır.",
-    "refers_to": "Pizza Planet kamyonu görünür. Kariyer planlayıcısı Gilbert Huph, diğer Pixar karakterlerine benzer şekilde tasarlanmıştır.",
-    "type": "film",
-    "release_date": "2004-11-05",
-    "level": 5
-  },
-  {
-    "id": "cars2006",
-    "label": "Cars (2006)",
-    "title": "Cars",
-    "image": "images/pixar.jpg",
-    "shape": "image",
-    "description": "Yarış arabası Lightning McQueen, küçük bir kasabada değerli dersler öğrenir.",
-    "refers_to": "Dinoco markası Toy Story’de de görünmüştür.",
-    "type": "film",
-    "release_date": "2006-06-09",
-    "level": 6
-  },
-  {
-    "id": "ratatouille2007",
-    "label": "Ratatouille (2007)",
-    "title": "Ratatouille",
-    "image": "images/pixar.jpg",
-    "shape": "image",
-    "description": "Paris'te yaşayan bir fare olan Remy, büyük bir şef olma hayalini gerçekleştirmeye çalışır.",
-    "refers_to": "Bomb Voyage posteri The Incredibles evrenine gönderme yapar.",
-    "type": "film",
-    "release_date": "2007-06-29",
-    "level": 7
-  },
-  {
-    "id": "wallE2008",
-    "label": "WALL-E (2008)",
-    "title": "WALL-E",
-    "image": "images/pixar.jpg",
-    "shape": "image",
-    "description": "Dünya'da yalnız kalan çöp robotu WALL-E, uzaydan gelen EVA’ya aşık olur ve bir yolculuğa çıkar.",
-    "refers_to": "Buy n Large şirketi, diğer Pixar filmlerinde de adı geçen kuruluştur.",
-    "type": "film",
-    "release_date": "2008-06-27",
-    "level": 8
-  },
-  {
-    "id": "up2009",
-    "label": "Up (2009)",
-    "title": "Up",
-    "image": "images/pixar.jpg",
-    "shape": "image",
-    "description": "Yaşlı Carl, evini balonlarla uçurarak karısına verdiği sözü tutmak için yola çıkar.",
-    "refers_to": "Buy n Large markası görülür. Lotso karakteri, gelecekteki Toy Story 3 filminde karşımıza çıkar.",
-    "type": "film",
-    "release_date": "2009-05-29",
-    "level": 9
-  },
-  {
-    "id": "toyStory32010",
-    "label": "Toy Story 3 (2010)",
-    "title": "Toy Story 3",
-    "image": "images/pixar.jpg",
-    "shape": "image",
-    "description": "Andy üniversiteye gitmek üzereyken oyuncaklar yanlışlıkla bir kreşe bağışlanır. Orada baskıcı oyuncak Lotso ile karşılaşırlar.",
-    "refers_to": "Up filmindeki Lotso karakteri, bu filmde ana kötü karakter olarak yer alır. Dinoco logosu yine görünür.",
-    "type": "film",
-    "release_date": "2010-06-18",
-    "level": 10
-  },
-  {
-    "id": "cars22011",
-    "label": "Cars 2 (2011)",
-    "title": "Cars 2",
-    "image": "images/pixar.jpg",
-    "shape": "image",
-    "description": "Yarış arabası McQueen ve Mater, uluslararası bir casusluk macerasına karışır.",
-    "refers_to": "Buy n Large logosu görülür. Toy Story'den tanıdık markalar vardır.",
-    "type": "film",
-    "release_date": "2011-06-24",
-    "level": 11
-  },
-  {
-    "id": "brave2012",
-    "label": "Brave (2012)",
-    "title": "Brave",
-    "image": "images/pixar.jpg",
-    "shape": "image",
-    "description": "İskoç prenses Merida, annesini yanlışlıkla bir ayıya dönüştürünce laneti bozmak için mücadele eder.",
-    "refers_to": "Cadının atölyesinde Sulley (Monsters Inc.) oyma figürü vardır.",
-    "type": "film",
-    "release_date": "2012-06-22",
-    "level": 12
-  },
-  {
-    "id": "monstersUniversity2013",
-    "label": "Monsters University (2013)",
-    "title": "Monsters University",
-    "image": "images/pixar.jpg",
-    "shape": "image",
-    "description": "Mike ve Sulley’in üniversite yıllarında tanışmasını ve arkadaşlıklarının başlangıcını anlatır.",
-    "refers_to": "Pizza Planet kamyonu ve A Bug's Life afişi görünür.",
-    "type": "film",
-    "release_date": "2013-06-21",
-    "level": 13
-  },
-  {
-    "id": "insideOut2015",
-    "label": "Inside Out (2015)",
-    "title": "Inside Out",
-    "image": "images/pixar.jpg",
-    "shape": "image",
-    "description": "Küçük bir kız olan Riley’nin zihninde yer alan beş duygunun (Neşe, Üzüntü, Korku, Tiksinti ve Öfke) hikayesi.",
-    "refers_to": "Ratatouille'den yemek sahnesi parodisi yer alır. Bing Bong’un arabasında Pixar logosu var.",
-    "type": "film",
-    "release_date": "2015-06-19",
-    "level": 14
-  },
-  {
-    "id": "theGoodDinosaur2015",
-    "label": "The Good Dinosaur (2015)",
-    "title": "The Good Dinosaur",
-    "image": "images/pixar.jpg",
-    "shape": "image",
-    "description": "Bir dinozor ve küçük bir çocuğun dostluğu, evrim farklı ilerleseydi dünyada neler olabileceğini sorgular.",
-    "refers_to": "Pizza Planet kamyonu kayalara oyulmuş halde görülür. Buy n Large logosu bazı taşlarda gizlidir.",
-    "type": "film",
-    "release_date": "2015-11-25",
-    "level": 14
-  },
-  {
-    "id": "findingDory2016",
-    "label": "Finding Dory (2016)",
-    "title": "Finding Dory",
-    "image": "images/pixar.jpg",
-    "shape": "image",
-    "description": "Dory, ailesini bulmak için hatıralarını takip ederek büyük bir yolculuğa çıkar. Nemo ve Marlin de ona yardım eder.",
-    "refers_to": "Finding Nemo’ya doğrudan devam niteliğindedir. Inside Out karakterleri deniz parkında kısa sahnede görünür.",
-    "type": "film",
-    "release_date": "2016-06-17",
-    "level": 15
-  },
-  {
-    "id": "cars32017",
-    "label": "Cars 3 (2017)",
-    "title": "Cars 3",
-    "image": "images/pixar.jpg",
-    "shape": "image",
-    "description": "McQueen, genç yarışçılarla başa çıkmaya çalışırken kendi mirasını sorgular. Yeni yarışçı Cruz'a mentorluk eder.",
-    "refers_to": "Dinoco, Rust-eze ve Buy n Large logoları yine görünür.",
-    "type": "film",
-    "release_date": "2017-06-16",
-    "level": 16
-  },
-  {
-    "id": "coco2017",
-    "label": "Coco (2017)",
-    "title": "Coco",
-    "image": "images/pixar.jpg",
-    "shape": "image",
-    "description": "Gitar çalmaya tutkulu Miguel, Ölüler Diyarı’na geçerek ailesinin geçmişini keşfeder.",
-    "refers_to": "Inside Out evreninden hayvan karakterleri duvar resimlerinde yer alır. Pizza Planet kamyonu mezarlık sahnesinde gizlidir.",
-    "type": "film",
-    "release_date": "2017-11-22",
-    "level": 16
-  },
-  {
-    "id": "incredibles22018",
-    "label": "Incredibles 2 (2018)",
-    "title": "Incredibles 2",
-    "image": "images/pixar.jpg",
-    "shape": "image",
-    "description": "Elastigirl suçla mücadele ederken Bay Incredible evde çocuklarla ilgilenir. Bu sırada yeni bir tehdit ortaya çıkar.",
-    "refers_to": "İlk filme doğrudan devamdır. Toy Story'den tanıdık bazı nesneler arka planda yer alır.",
-    "type": "film",
-    "release_date": "2018-06-15",
-    "level": 17
-  },
-  {
-    "id": "toyStory42019",
-    "label": "Toy Story 4 (2019)",
-    "title": "Toy Story 4",
-    "image": "images/pixar.jpg",
-    "shape": "image",
-    "description": "Woody, Forky adlı yeni oyuncağı korumaya çalışırken Bo Peep ile yolları yeniden kesişir.",
-    "refers_to": "Geri dönüş sahnelerinde önceki tüm Toy Story filmlerine göndermeler bulunur. Pizza Planet kamyonu klasik olarak yine yer alır.",
-    "type": "film",
-    "release_date": "2019-06-21",
-    "level": 18
-  },
-  {
-    "id": "onward2020",
-    "label": "Onward (2020)",
-    "title": "Onward",
-    "image": "images/pixar.jpg",
-    "shape": "image",
-    "description": "İki elf kardeş, sihirli bir büyü ile kaybettikleri babalarını bir günlüğüne geri getirmeye çalışır.",
-    "refers_to": "Pizza Planet kamyonu sihirli kervan logosu olarak yeniden tasarlanmıştır. A113 kodu araç plakasında yer alır.",
-    "type": "film",
-    "release_date": "2020-03-06",
-    "level": 19
-  },
-  {
-    "id": "soul2020",
-    "label": "Soul (2020)",
-    "title": "Soul",
-    "image": "images/pixar.jpg",
-    "shape": "image",
-    "description": "Bir müzik öğretmeni olan Joe, ruhlar dünyasında kendine yeni bir yaşam amacı arar.",
-    "refers_to": "Inside Out ile ruhsal yapı benzerliği taşır. Monsters Inc.’teki doğaüstü düzenlemelere görsel göndermeler içerir.",
-    "type": "film",
-    "release_date": "2020-12-25",
-    "level": 19
-  },
-  {
-    "id": "luca2021",
-    "label": "Luca (2021)",
-    "title": "Luca",
-    "image": "images/pixar.jpg",
-    "shape": "image",
-    "description": "İnsan dünyasını merak eden deniz yaratığı Luca, arkadaşı Alberto ile birlikte İtalyan kasabasında büyük bir yaz geçirir.",
-    "refers_to": "Pizza Planet kamyonu oyuncak olarak görülür. La Luna kısa filmiyle evren bağlantısı bulunur.",
-    "type": "film",
-    "release_date": "2021-06-18",
-    "level": 20
-  },
-  {
-    "id": "turningRed2022",
-    "label": "Turning Red (2022)",
-    "title": "Turning Red",
-    "image": "images/pixar.jpg",
-    "shape": "image",
-    "description": "Mei adında genç bir kız, duygusal anlarda dev bir kırmızı pandaya dönüşmeye başlar.",
-    "refers_to": "Inside Out’tan ilham alır. Buy n Large logosu gökdelenlerde yer alır. Luca'daki balık karakteri oyuncak olarak görünür.",
-    "type": "film",
-    "release_date": "2022-03-11",
-    "level": 21
-  },
-  {
-    "id": "lightyear2022",
-    "label": "Lightyear (2022)",
-    "title": "Lightyear",
-    "image": "images/pixar.jpg",
-    "shape": "image",
-    "description": "Buzz Lightyear karakterinin, Toy Story evreninde oyuncak olarak üretildiği filmin orijinal kahramanının hikayesi.",
-    "refers_to": "Toy Story evreninin içindeki bir film. Alışveriş merkezinde birçok eski Pixar objesi bulunur.",
-    "type": "film",
-    "release_date": "2022-06-17",
-    "level": 21
-  },
-  {
-    "id": "elemental2023",
-    "label": "Elemental (2023)",
-    "title": "Elemental",
-    "image": "images/pixar.jpg",
-    "shape": "image",
-    "description": "Ateş, su, toprak ve hava halklarının birlikte yaşadığı Element Şehri'nde, Ember adlı ateş halkından bir kız ile Wade adlı su halkından bir oğlanın dostluğu üzerinden önyargı, kültür çatışması ve birliktelik temaları işlenir.",
-    "refers_to": "Inside Out ve Soul gibi soyut kavramların vücut bulduğu Pixar evreni çizgisini sürdürür. Pizza Planet logosu bir tabela şeklinde görünür. Filmde Buy n Large’a referans içeren ticari reklam panoları yer alır.",
-    "type": "film",
-    "release_date": "2023-06-16",
-    "level": 22
-  },
-  {
-    "id": "insideOut22024",
-    "label": "Inside Out 2 (2024)",
-    "title": "Inside Out 2",
-    "image": "images/pixar.jpg",
-    "shape": "image",
-    "description": "Riley artık bir gençtir ve zihnine yeni duygular (Kaygı, Kıskançlık, Sıkıntı, Utanç) katılır. Duygular arası çatışmalar büyürken Riley’nin kimliği şekillenmektedir.",
-    "refers_to": "Inside Out (2015) filminin doğrudan devamıdır. Soul filmindeki Büyük Öncesi Bölgesi'ne göndermeler yapılır. Ember (Elemental) karakterinin oyuncak figürü görünür.",
-    "type": "film",
-    "release_date": "2024-06-14",
-    "level": 23
+    {
+      "id": "toyStory1995",
+      "label": "Toy Story (1995)",
+      "title": "Toy Story",
+      "image": "images/pixar.jpg",
+      "shape": "image",
+      "description": "Andy'nin oyuncakları, insanlar tarafından görülmediklerinde canlanabilen canlı varlıklardır. Woody, Andy'nin en sevdiği kovboy oyuncağıdır, ancak yeni çıkan uzay kahramanı Buzz Lightyear'ın gelişiyle tahtı sarsılır. Andy'nin oyuncakları, insanlar tarafından görülmediklerinde canlanabilen canlı varlıklardır. Woody, Andy'nin en sevdiği kovboy oyuncağıdır, ancak yeni çıkan uzay kahramanı Buzz Lightyear'ın gelişiyle tahtı sarsılır. Andy'nin oyuncakları, insanlar tarafından görülmediklerinde canlanabilen canlı varlıklardır. Woody, Andy'nin en sevdiği kovboy oyuncağıdır, ancak yeni çıkan uzay kahramanı Buzz Lightyear'ın gelişiyle tahtı sarsılır. Andy'nin oyuncakları, insanlar tarafından görülmediklerinde canlanabilen canlı varlıklardır. Woody, Andy'nin en sevdiği kovboy oyuncağıdır, ancak yeni çıkan uzay kahramanı Buzz Lightyear'ın gelişiyle tahtı sarsılır. Andy'nin oyuncakları, insanlar tarafından görülmediklerinde canlanabilen canlı varlıklardır. Woody, Andy'nin en sevdiği kovboy oyuncağıdır, ancak yeni çıkan uzay kahramanı Buzz Lightyear'ın gelişiyle tahtı sarsılır. Andy'nin oyuncakları, insanlar tarafından görülmediklerinde canlanabilen canlı varlıklardır. Woody, Andy'nin en sevdiği kovboy oyuncağıdır, ancak yeni çıkan uzay kahramanı Buzz Lightyear'ın gelişiyle tahtı sarsılır. Andy'nin oyuncakları, insanlar tarafından görülmediklerinde canlanabilen canlı varlıklardır. Woody, Andy'nin en sevdiği kovboy oyuncağıdır, ancak yeni çıkan uzay kahramanı Buzz Lightyear'ın gelişiyle taht",
+      "refers_to": "Pizza Planet kamyonu, Dinoco logosu gibi öğeler diğer Pixar filmlerinde görülür. Pizza Planet kamyonu, Dinoco logosu gibi öğeler diğer Pixar filmlerinde görülür. Pizza Planet kamyonu, Dinoco logosu gibi öğeler diğer Pixar filmlerinde görülür. Pizza Planet kamyonu, Dinoco logosu gibi öğeler diğer Pixar filmlerinde görülür. Pizza Planet kamyonu, Dinoco logosu gibi öğeler diğer Pixar filmlerinde görülür. Pizza Planet kamyonu, Dinoco logosu gibi öğeler diğer Pixar filmlerinde görülür. Pizza Planet kamyonu, Dinoco logosu gibi öğeler diğer Pixar filmlerinde görülür. Pizza Planet kamyonu, Dinoco logosu gibi öğeler diğer Pixar filmlerinde görülür. Pizza Planet kamyonu, Dinoco logosu gibi öğeler diğer Pixar filmlerinde görülür. Pizza Planet kamyonu, Dinoco logosu gibi öğeler diğer Pixar filmlerinde görülür. Pizza Planet kamyonu, Dinoco logosu gibi öğeler diğer Pixar filmlerinde görülür. Pizza Planet kamyonu, Dinoco logosu gibi öğeler diğer Pixar filmlerinde görülür. Pizza Planet kamyonu, Dinoco logosu gibi öğeler diğer Pixar filmlerinde görülür. Pizza Planet kamyonu, Dinoco logosu gibi öğeler diğer Pixar filmlerinde görülür.",
+      "type": "film",
+      "release_date": "1995-11-22",
+      "level": 0
+    },
+    {
+      "id": "aBugsLife1998",
+      "label": "A Bug's Life (1998)",
+      "title": "A Bug's Life",
+      "image": "images/pixar.jpg",
+      "shape": "image",
+      "description": "Karınca Flik, kolonisini korumak için yanlışlıkla sirk böceklerini savaşçı sanıp yardım çağırır. Koloni, bu grup sayesinde çekirge baskısından kurtulmaya çalışır. Karınca Flik, kolonisini korumak için yanlışlıkla sirk böceklerini savaşçı sanıp yardım çağırır. Koloni, bu grup sayesinde çekirge baskısından kurtulmaya çalışır. Karınca Flik, kolonisini korumak için yanlışlıkla sirk böceklerini savaşçı sanıp yardım çağırır. Koloni, bu grup sayesinde çekirge baskısından kurtulmaya çalışır. Karınca Flik, kolonisini korumak için yanlışlıkla sirk böceklerini savaşçı sanıp yardım çağırır. Koloni, bu grup sayesinde çekirge baskısından kurtulmaya çalışır. Karınca Flik, kolonisini korumak için yanlışlıkla sirk böceklerini savaşçı sanıp yardım çağırır. Koloni, bu grup sayesinde çekirge baskısından kurtulmaya çalışır. Karınca Flik, kolonisini korumak için yanlışlıkla sirk böceklerini savaşçı sanıp yardım çağırır. Koloni, bu grup sayesinde çekirge baskısından kurtulmaya çalışır. Karınca Flik, kolonisini korumak için yanlışlıkla sirk böceklerini savaşçı sanıp yardım çağırır. Koloni, bu grup sayesinde çekirge baskısından kurtulmaya çalışır. Karınca Flik, kolonisini korumak için yanlışlıkla sirk böceklerini savaşçı sanıp yardım çağırır. Koloni, bu grup sayesinde çekirge baskısından kurtulmaya çalışır.",
+      "refers_to": "Pizza Planet kamyonu görünür. Flik karakteri Toy Story 2'de arka planda yer alır. Pizza Planet kamyonu görünür. Flik karakteri Toy Story 2'de arka planda yer alır. Pizza Planet kamyonu görünür. Flik karakteri Toy Story 2'de arka planda yer alır. Pizza Planet kamyonu görünür. Flik karakteri Toy Story 2'de arka planda yer alır. Pizza Planet kamyonu görünür. Flik karakteri Toy Story 2'de arka planda yer alır. Pizza Planet kamyonu görünür. Flik karakteri Toy Story 2'de arka planda yer alır. Pizza Planet kamyonu görünür. Flik karakteri Toy Story 2'de arka planda yer alır. Pizza Planet kamyonu görünür. Flik karakteri Toy Story 2'de arka planda yer alır. Pizza Planet kamyonu görünür. Flik karakteri Toy Story 2'de arka planda yer alır. Pizza Planet kamyonu görünür. Flik karakteri Toy Story 2'de arka planda yer alır. Pizza Planet kamyonu görünür. Flik karakteri Toy Story 2'de arka planda yer alır. Pizza Planet kamyonu görünür. Flik karakteri Toy Story 2'de arka planda yer alır.",
+      "type": "film",
+      "release_date": "1998-11-25",
+      "level": 1
+    },
+    {
+      "id": "toyStory21999",
+      "label": "Toy Story 2 (1999)",
+      "title": "Toy Story 2",
+      "image": "images/pixar.jpg",
+      "shape": "image",
+      "description": "Woody, nadir bir koleksiyon parçası olduğunu öğrenince bir koleksiyoncu tarafından kaçırılır. Buzz ve diğer oyuncaklar onu kurtarmaya çalışır. Woody, nadir bir koleksiyon parçası olduğunu öğrenince bir koleksiyoncu tarafından kaçırılır. Buzz ve diğer oyuncaklar onu kurtarmaya çalışır. Woody, nadir bir koleksiyon parçası olduğunu öğrenince bir koleksiyoncu tarafından kaçırılır. Buzz ve diğer oyuncaklar onu kurtarmaya çalışır. Woody, nadir bir koleksiyon parçası olduğunu öğrenince bir koleksiyoncu tarafından kaçırılır. Buzz ve diğer oyuncaklar onu kurtarmaya çalışır. Woody, nadir bir koleksiyon parçası olduğunu öğrenince bir koleksiyoncu tarafından kaçırılır. Buzz ve diğer oyuncaklar onu kurtarmaya çalışır. Woody, nadir bir koleksiyon parçası olduğunu öğrenince bir koleksiyoncu tarafından kaçırılır. Buzz ve diğer oyuncaklar onu kurtarmaya çalışır. Woody, nadir bir koleksiyon parçası olduğunu öğrenince bir koleksiyoncu tarafından kaçırılır. Buzz ve diğer oyuncaklar onu kurtarmaya çalışır. Woody, nadir bir koleksiyon parçası olduğunu öğrenince bir koleksiyoncu tarafından kaçırılır. Buzz ve diğer oyuncaklar onu kurtarmaya çalışır. Woody, nadir bir koleksiyon parçası olduğunu öğrenince bir koleksiyoncu tarafından kaçırılır. Buzz ve diğer oyuncaklar onu kurtarmaya çalışır.",
+      "refers_to": "Flik karakteri arka planda görünür. Al's Toy Barn'da A Bug's Life referansları bulunur. Flik karakteri arka planda görünür. Al's Toy Barn'da A Bug's Life referansları bulunur. Flik karakteri arka planda görünür. Al's Toy Barn'da A Bug's Life referansları bulunur. Flik karakteri arka planda görünür. Al's Toy Barn'da A Bug's Life referansları bulunur. Flik karakteri arka planda görünür. Al's Toy Barn'da A Bug's Life referansları bulunur. Flik karakteri arka planda görünür. Al's Toy Barn'da A Bug's Life referansları bulunur. Flik karakteri arka planda görünür. Al's Toy Barn'da A Bug's Life referansları bulunur. Flik karakteri arka planda görünür. Al's Toy Barn'da A Bug's Life referansları bulunur. Flik karakteri arka planda görünür. Al's Toy Barn'da A Bug's Life referansları bulunur. Flik karakteri arka planda görünür. Al's Toy Barn'da A Bug's Life referansları bulunur. Flik karakteri arka planda görünür. Al's Toy Barn'da A Bug's Life referansları bulunur. Flik karakteri arka planda görünür. Al's Toy Barn'da A Bug's Life referansları bulunur.",
+      "type": "film",
+      "release_date": "1999-11-24",
+      "level": 2
+    },
+    {
+      "id": "monstersInc2001",
+      "label": "Monsters, Inc. (2001)",
+      "title": "Monsters, Inc.",
+      "image": "images/pixar.jpg",
+      "shape": "image",
+      "description": "Canavarlar, insan çocuklarının çığlıklarıyla enerji elde eder. Ancak bir çocuk dünyalarına girince her şey karışır. Canavarlar, insan çocuklarının çığlıklarıyla enerji elde eder. Ancak bir çocuk dünyalarına girince her şey karışır. Canavarlar, insan çocuklarının çığlıklarıyla enerji elde eder. Ancak bir çocuk dünyalarına girince her şey karışır. Canavarlar, insan çocuklarının çığlıklarıyla enerji elde eder. Ancak bir çocuk dünyalarına girince her şey karışır. Canavarlar, insan çocuklarının çığlıklarıyla enerji elde eder. Ancak bir çocuk dünyalarına girince her şey karışır. Canavarlar, insan çocuklarının çığlıklarıyla enerji elde eder. Ancak bir çocuk dünyalarına girince her şey karışır. Canavarlar, insan çocuklarının çığlıklarıyla enerji elde eder. Ancak bir çocuk dünyalarına girince her şey karışır. Canavarlar, insan çocuklarının çığlıklarıyla enerji elde eder. Ancak bir çocuk dünyalarına girince her şey karışır. Canavarlar, insan çocuklarının çığlıklarıyla enerji elde eder. Ancak bir çocuk dünyalarına girince her şey karışır. Canavarlar, insan çocuklarının çığlıklarıyla enerji elde eder. Ancak bir çocuk dünyalarına girince her şey karışır. Canavarlar, insan çocuklarının çığlıklarıyla enerji elde eder. Ancak bir çocuk dünyalarına girince her şey karışır.",
+      "refers_to": "Boo'nun odasında Nemo oyuncağı görülür. Pizza Planet kamyonu da yer alır. Boo'nun odasında Nemo oyuncağı görülür. Pizza Planet kamyonu da yer alır. Boo'nun odasında Nemo oyuncağı görülür. Pizza Planet kamyonu da yer alır. Boo'nun odasında Nemo oyuncağı görülür. Pizza Planet kamyonu da yer alır. Boo'nun odasında Nemo oyuncağı görülür. Pizza Planet kamyonu da yer alır. Boo'nun odasında Nemo oyuncağı görülür. Pizza Planet kamyonu da yer alır. Boo'nun odasında Nemo oyuncağı görülür. Pizza Planet kamyonu da yer alır. Boo'nun odasında Nemo oyuncağı görülür. Pizza Planet kamyonu da yer alır. Boo'nun odasında Nemo oyuncağı görülür. Pizza Planet kamyonu da yer alır. Boo'nun odasında Nemo oyuncağı görülür. Pizza Planet kamyonu da yer alır. Boo'nun odasında Nemo oyuncağı görülür. Pizza Planet kamyonu da yer alır. Boo'nun odasında Nemo oyuncağı görülür. Pizza Planet kamyonu da yer alır. Boo'nun odasında Nemo oyuncağı görülür. Pizza Planet kamyonu da yer alır. Boo'nun odasında Nemo oyuncağı görülür. Pizza Planet kamyonu da yer alır.",
+      "type": "film",
+      "release_date": "2001-11-02",
+      "level": 3
+    },
+    {
+      "id": "findingNemo2003",
+      "label": "Finding Nemo (2003)",
+      "title": "Finding Nemo",
+      "image": "images/pixar.jpg",
+      "shape": "image",
+      "description": "Oğlunu kaybeden balık Marlin, Dory ile birlikte okyanusta büyük bir maceraya atılır. Oğlunu kaybeden balık Marlin, Dory ile birlikte okyanusta büyük bir maceraya atılır. Oğlunu kaybeden balık Marlin, Dory ile birlikte okyanusta büyük bir maceraya atılır. Oğlunu kaybeden balık Marlin, Dory ile birlikte okyanusta büyük bir maceraya atılır. Oğlunu kaybeden balık Marlin, Dory ile birlikte okyanusta büyük bir maceraya atılır. Oğlunu kaybeden balık Marlin, Dory ile birlikte okyanusta büyük bir maceraya atılır. Oğlunu kaybeden balık Marlin, Dory ile birlikte okyanusta büyük bir maceraya atılır. Oğlunu kaybeden balık Marlin, Dory ile birlikte okyanusta büyük bir maceraya atılır. Oğlunu kaybeden balık Marlin, Dory ile birlikte okyanusta büyük bir maceraya atılır. Oğlunu kaybeden balık Marlin, Dory ile birlikte okyanusta büyük bir maceraya atılır. Oğlunu kaybeden balık Marlin, Dory ile birlikte okyanusta büyük bir maceraya atılır. Oğlunu kaybeden balık Marlin, Dory ile birlikte okyanusta büyük bir maceraya atılır. Oğlunu kaybeden balık Marlin, Dory ile birlikte okyanusta büyük bir maceraya atılır.",
+      "refers_to": "Boo’nun odasında Nemo oyuncağı vardı. Ayrıca Pizza Planet kamyonu görülür. Boo’nun odasında Nemo oyuncağı vardı. Ayrıca Pizza Planet kamyonu görülür. Boo’nun odasında Nemo oyuncağı vardı. Ayrıca Pizza Planet kamyonu görülür. Boo’nun odasında Nemo oyuncağı vardı. Ayrıca Pizza Planet kamyonu görülür. Boo’nun odasında Nemo oyuncağı vardı. Ayrıca Pizza Planet kamyonu görülür. Boo’nun odasında Nemo oyuncağı vardı. Ayrıca Pizza Planet kamyonu görülür. Boo’nun odasında Nemo oyuncağı vardı. Ayrıca Pizza Planet kamyonu görülür. Boo’nun odasında Nemo oyuncağı vardı. Ayrıca Pizza Planet kamyonu görülür. Boo’nun odasında Nemo oyuncağı vardı. Ayrıca Pizza Planet kamyonu görülür. Boo’nun odasında Nemo oyuncağı vardı. Ayrıca Pizza Planet kamyonu görülür. Boo’nun odasında Nemo oyuncağı vardı. Ayrıca Pizza Planet kamyonu görülür. Boo’nun odasında Nemo oyuncağı vardı. Ayrıca Pizza Planet kamyonu görülür. Boo’nun odasında Nemo oyuncağı vardı. Ayrıca Pizza Planet kamyonu görülür. Boo’nun odasında Nemo oyuncağı vardı. Ayrıca Pizza Planet kamyonu görülür. Boo’nun odasında Nemo oyuncağı vardı. Ayrıca Pizza Planet kamyonu görülür. Boo’nun odasında Nemo oyuncağı vardı. Ayrıca Pizza Planet kamyonu görülür.",
+      "type": "film",
+      "release_date": "2003-05-30",
+      "level": 4
+    },
+    {
+      "id": "theIncredibles2004",
+      "label": "The Incredibles (2004)",
+      "title": "The Incredibles",
+      "image": "images/pixar.jpg",
+      "shape": "image",
+      "description": "Gizlice yaşayan süper kahraman bir aile, tekrar dünyayı kurtarmaya çalışır. Gizlice yaşayan süper kahraman bir aile, tekrar dünyayı kurtarmaya çalışır. Gizlice yaşayan süper kahraman bir aile, tekrar dünyayı kurtarmaya çalışır. Gizlice yaşayan süper kahraman bir aile, tekrar dünyayı kurtarmaya çalışır. Gizlice yaşayan süper kahraman bir aile, tekrar dünyayı kurtarmaya çalışır. Gizlice yaşayan süper kahraman bir aile, tekrar dünyayı kurtarmaya çalışır. Gizlice yaşayan süper kahraman bir aile, tekrar dünyayı kurtarmaya çalışır. Gizlice yaşayan süper kahraman bir aile, tekrar dünyayı kurtarmaya çalışır. Gizlice yaşayan süper kahraman bir aile, tekrar dünyayı kurtarmaya çalışır. Gizlice yaşayan süper kahraman bir aile, tekrar dünyayı kurtarmaya çalışır. Gizlice yaşayan süper kahraman bir aile, tekrar dünyayı kurtarmaya çalışır. Gizlice yaşayan süper kahraman bir aile, tekrar dünyayı kurtarmaya çalışır. Gizlice yaşayan süper kahraman bir aile, tekrar dünyayı kurtarmaya çalışır. Gizlice yaşayan süper kahraman bir aile, tekrar dünyayı kurtarmaya çalışır. Gizlice yaşayan süper kahraman bir aile, tekrar dünyayı kurtarmaya çalışır. Gizlice yaşayan süper kahraman bir aile, tekrar dünyayı kurtarmaya çalışır.",
+      "refers_to": "Pizza Planet kamyonu görünür. Kariyer planlayıcısı Gilbert Huph, diğer Pixar karakterlerine benzer şekilde tasarlanmıştır. Pizza Planet kamyonu görünür. Kariyer planlayıcısı Gilbert Huph, diğer Pixar karakterlerine benzer şekilde tasarlanmıştır. Pizza Planet kamyonu görünür. Kariyer planlayıcısı Gilbert Huph, diğer Pixar karakterlerine benzer şekilde tasarlanmıştır. Pizza Planet kamyonu görünür. Kariyer planlayıcısı Gilbert Huph, diğer Pixar karakterlerine benzer şekilde tasarlanmıştır. Pizza Planet kamyonu görünür. Kariyer planlayıcısı Gilbert Huph, diğer Pixar karakterlerine benzer şekilde tasarlanmıştır. Pizza Planet kamyonu görünür. Kariyer planlayıcısı Gilbert Huph, diğer Pixar karakterlerine benzer şekilde tasarlanmıştır. Pizza Planet kamyonu görünür. Kariyer planlayıcısı Gilbert Huph, diğer Pixar karakterlerine benzer şekilde tasarlanmıştır. Pizza Planet kamyonu görünür. Kariyer planlayıcısı Gilbert Huph, diğer Pixar karakterlerine benzer şekilde tasarlanmıştır. Pizza Planet kamyonu görünür. Kariyer planlayıcısı Gilbert Huph, diğer Pixar karakterlerine benzer şekilde tasarlanmıştır. Pizza Planet kamyonu görünür. Kariyer planlayıcısı Gilbert Huph, diğer Pixar karakterlerine benzer şekilde tasarlanmıştır. Pizza Planet kamyonu görünür. Kariyer planlayıcısı Gilbert Huph, diğer Pixar karakterlerine benzer şekilde tasarlanmıştır.",
+      "type": "film",
+      "release_date": "2004-11-05",
+      "level": 5
+    },
+    {
+      "id": "cars2006",
+      "label": "Cars (2006)",
+      "title": "Cars",
+      "image": "images/pixar.jpg",
+      "shape": "image",
+      "description": "Yarış arabası Lightning McQueen, küçük bir kasabada değerli dersler öğrenir. Yarış arabası Lightning McQueen, küçük bir kasabada değerli dersler öğrenir. Yarış arabası Lightning McQueen, küçük bir kasabada değerli dersler öğrenir. Yarış arabası Lightning McQueen, küçük bir kasabada değerli dersler öğrenir. Yarış arabası Lightning McQueen, küçük bir kasabada değerli dersler öğrenir. Yarış arabası Lightning McQueen, küçük bir kasabada değerli dersler öğrenir. Yarış arabası Lightning McQueen, küçük bir kasabada değerli dersler öğrenir. Yarış arabası Lightning McQueen, küçük bir kasabada değerli dersler öğrenir. Yarış arabası Lightning McQueen, küçük bir kasabada değerli dersler öğrenir. Yarış arabası Lightning McQueen, küçük bir kasabada değerli dersler öğrenir. Yarış arabası Lightning McQueen, küçük bir kasabada değerli dersler öğrenir. Yarış arabası Lightning McQueen, küçük bir kasabada değerli dersler öğrenir. Yarış arabası Lightning McQueen, küçük bir kasabada değerli dersler öğrenir. Yarış arabası Lightning McQueen, küçük bir kasabada değerli dersler öğrenir. Yarış arabası Lightning McQueen, küçük bir kasabada değerli dersler öğrenir. Yarış arabası Lightning McQueen, küçük bir kasabada değerli dersler öğrenir.",
+      "refers_to": "Dinoco markası Toy Story’de de görünmüştür. Dinoco markası Toy Story’de de görünmüştür. Dinoco markası Toy Story’de de görünmüştür. Dinoco markası Toy Story’de de görünmüştür. Dinoco markası Toy Story’de de görünmüştür. Dinoco markası Toy Story’de de görünmüştür. Dinoco markası Toy Story’de de görünmüştür. Dinoco markası Toy Story’de de görünmüştür. Dinoco markası Toy Story’de de görünmüştür. Dinoco markası Toy Story’de de görünmüştür. Dinoco markası Toy Story’de de görünmüştür. Dinoco markası Toy Story’de de görünmüştür. Dinoco markası Toy Story’de de görünmüştür. Dinoco markası Toy Story’de de görünmüştür. Dinoco markası Toy Story’de de görünmüştür. Dinoco markası Toy Story’de de görünmüştür. Dinoco markası Toy Story’de de görünmüştür. Dinoco markası Toy Story’de de görünmüştür. Dinoco markası Toy Story’de de görünmüştür. Dinoco markası Toy Story’de de görünmüştür. Dinoco markası Toy Story’de de görünmüştür. Dinoco markası Toy Story’de de görünmüştür. Dinoco markası Toy Story’de de görünmüştür. Dinoco markası Toy Story’de de görünmüştür. Dinoco markası Toy Story’de de görünmüştür. Dinoco markası Toy Story’de de görünmüştür.",
+      "type": "film",
+      "release_date": "2006-06-09",
+      "level": 6
+    },
+    {
+      "id": "ratatouille2007",
+      "label": "Ratatouille (2007)",
+      "title": "Ratatouille",
+      "image": "images/pixar.jpg",
+      "shape": "image",
+      "description": "Paris'te yaşayan bir fare olan Remy, büyük bir şef olma hayalini gerçekleştirmeye çalışır. Paris'te yaşayan bir fare olan Remy, büyük bir şef olma hayalini gerçekleştirmeye çalışır. Paris'te yaşayan bir fare olan Remy, büyük bir şef olma hayalini gerçekleştirmeye çalışır. Paris'te yaşayan bir fare olan Remy, büyük bir şef olma hayalini gerçekleştirmeye çalışır. Paris'te yaşayan bir fare olan Remy, büyük bir şef olma hayalini gerçekleştirmeye çalışır. Paris'te yaşayan bir fare olan Remy, büyük bir şef olma hayalini gerçekleştirmeye çalışır. Paris'te yaşayan bir fare olan Remy, büyük bir şef olma hayalini gerçekleştirmeye çalışır. Paris'te yaşayan bir fare olan Remy, büyük bir şef olma hayalini gerçekleştirmeye çalışır. Paris'te yaşayan bir fare olan Remy, büyük bir şef olma hayalini gerçekleştirmeye çalışır. Paris'te yaşayan bir fare olan Remy, büyük bir şef olma hayalini gerçekleştirmeye çalışır. Paris'te yaşayan bir fare olan Remy, büyük bir şef olma hayalini gerçekleştirmeye çalışır. Paris'te yaşayan bir fare olan Remy, büyük bir şef olma hayalini gerçekleştirmeye çalışır.",
+      "refers_to": "Bomb Voyage posteri The Incredibles evrenine gönderme yapar. Bomb Voyage posteri The Incredibles evrenine gönderme yapar. Bomb Voyage posteri The Incredibles evrenine gönderme yapar. Bomb Voyage posteri The Incredibles evrenine gönderme yapar. Bomb Voyage posteri The Incredibles evrenine gönderme yapar. Bomb Voyage posteri The Incredibles evrenine gönderme yapar. Bomb Voyage posteri The Incredibles evrenine gönderme yapar. Bomb Voyage posteri The Incredibles evrenine gönderme yapar. Bomb Voyage posteri The Incredibles evrenine gönderme yapar. Bomb Voyage posteri The Incredibles evrenine gönderme yapar. Bomb Voyage posteri The Incredibles evrenine gönderme yapar. Bomb Voyage posteri The Incredibles evrenine gönderme yapar. Bomb Voyage posteri The Incredibles evrenine gönderme yapar. Bomb Voyage posteri The Incredibles evrenine gönderme yapar. Bomb Voyage posteri The Incredibles evrenine gönderme yapar. Bomb Voyage posteri The Incredibles evrenine gönderme yapar. Bomb Voyage posteri The Incredibles evrenine gönderme yapar. Bomb Voyage posteri The Incredibles evrenine gönderme yapar. Bomb Voyage posteri The Incredibles evrenine gönderme yapar.",
+      "type": "film",
+      "release_date": "2007-06-29",
+      "level": 7
+    },
+    {
+      "id": "wallE2008",
+      "label": "WALL-E (2008)",
+      "title": "WALL-E",
+      "image": "images/pixar.jpg",
+      "shape": "image",
+      "description": "Dünya'da yalnız kalan çöp robotu WALL-E, uzaydan gelen EVA’ya aşık olur ve bir yolculuğa çıkar. Dünya'da yalnız kalan çöp robotu WALL-E, uzaydan gelen EVA’ya aşık olur ve bir yolculuğa çıkar. Dünya'da yalnız kalan çöp robotu WALL-E, uzaydan gelen EVA’ya aşık olur ve bir yolculuğa çıkar. Dünya'da yalnız kalan çöp robotu WALL-E, uzaydan gelen EVA’ya aşık olur ve bir yolculuğa çıkar. Dünya'da yalnız kalan çöp robotu WALL-E, uzaydan gelen EVA’ya aşık olur ve bir yolculuğa çıkar. Dünya'da yalnız kalan çöp robotu WALL-E, uzaydan gelen EVA’ya aşık olur ve bir yolculuğa çıkar. Dünya'da yalnız kalan çöp robotu WALL-E, uzaydan gelen EVA’ya aşık olur ve bir yolculuğa çıkar. Dünya'da yalnız kalan çöp robotu WALL-E, uzaydan gelen EVA’ya aşık olur ve bir yolculuğa çıkar. Dünya'da yalnız kalan çöp robotu WALL-E, uzaydan gelen EVA’ya aşık olur ve bir yolculuğa çıkar. Dünya'da yalnız kalan çöp robotu WALL-E, uzaydan gelen EVA’ya aşık olur ve bir yolculuğa çıkar. Dünya'da yalnız kalan çöp robotu WALL-E, uzaydan gelen EVA’ya aşık olur ve bir yolculuğa çıkar.",
+      "refers_to": "Buy n Large şirketi, diğer Pixar filmlerinde de adı geçen kuruluştur. Buy n Large şirketi, diğer Pixar filmlerinde de adı geçen kuruluştur. Buy n Large şirketi, diğer Pixar filmlerinde de adı geçen kuruluştur. Buy n Large şirketi, diğer Pixar filmlerinde de adı geçen kuruluştur. Buy n Large şirketi, diğer Pixar filmlerinde de adı geçen kuruluştur. Buy n Large şirketi, diğer Pixar filmlerinde de adı geçen kuruluştur. Buy n Large şirketi, diğer Pixar filmlerinde de adı geçen kuruluştur. Buy n Large şirketi, diğer Pixar filmlerinde de adı geçen kuruluştur. Buy n Large şirketi, diğer Pixar filmlerinde de adı geçen kuruluştur. Buy n Large şirketi, diğer Pixar filmlerinde de adı geçen kuruluştur. Buy n Large şirketi, diğer Pixar filmlerinde de adı geçen kuruluştur. Buy n Large şirketi, diğer Pixar filmlerinde de adı geçen kuruluştur. Buy n Large şirketi, diğer Pixar filmlerinde de adı geçen kuruluştur. Buy n Large şirketi, diğer Pixar filmlerinde de adı geçen kuruluştur.",
+      "type": "film",
+      "release_date": "2008-06-27",
+      "level": 8
+    },
+    {
+      "id": "up2009",
+      "label": "Up (2009)",
+      "title": "Up",
+      "image": "images/pixar.jpg",
+      "shape": "image",
+      "description": "Yaşlı Carl, evini balonlarla uçurarak karısına verdiği sözü tutmak için yola çıkar. Yaşlı Carl, evini balonlarla uçurarak karısına verdiği sözü tutmak için yola çıkar. Yaşlı Carl, evini balonlarla uçurarak karısına verdiği sözü tutmak için yola çıkar. Yaşlı Carl, evini balonlarla uçurarak karısına verdiği sözü tutmak için yola çıkar. Yaşlı Carl, evini balonlarla uçurarak karısına verdiği sözü tutmak için yola çıkar. Yaşlı Carl, evini balonlarla uçurarak karısına verdiği sözü tutmak için yola çıkar. Yaşlı Carl, evini balonlarla uçurarak karısına verdiği sözü tutmak için yola çıkar. Yaşlı Carl, evini balonlarla uçurarak karısına verdiği sözü tutmak için yola çıkar. Yaşlı Carl, evini balonlarla uçurarak karısına verdiği sözü tutmak için yola çıkar. Yaşlı Carl, evini balonlarla uçurarak karısına verdiği sözü tutmak için yola çıkar. Yaşlı Carl, evini balonlarla uçurarak karısına verdiği sözü tutmak için yola çıkar. Yaşlı Carl, evini balonlarla uçurarak karısına verdiği sözü tutmak için yola çıkar. Yaşlı Carl, evini balonlarla uçurarak karısına verdiği sözü tutmak için yola çıkar.",
+      "refers_to": "Buy n Large markası görülür. Lotso karakteri, gelecekteki Toy Story 3 filminde karşımıza çıkar. Buy n Large markası görülür. Lotso karakteri, gelecekteki Toy Story 3 filminde karşımıza çıkar. Buy n Large markası görülür. Lotso karakteri, gelecekteki Toy Story 3 filminde karşımıza çıkar. Buy n Large markası görülür. Lotso karakteri, gelecekteki Toy Story 3 filminde karşımıza çıkar. Buy n Large markası görülür. Lotso karakteri, gelecekteki Toy Story 3 filminde karşımıza çıkar. Buy n Large markası görülür. Lotso karakteri, gelecekteki Toy Story 3 filminde karşımıza çıkar. Buy n Large markası görülür. Lotso karakteri, gelecekteki Toy Story 3 filminde karşımıza çıkar. Buy n Large markası görülür. Lotso karakteri, gelecekteki Toy Story 3 filminde karşımıza çıkar. Buy n Large markası görülür. Lotso karakteri, gelecekteki Toy Story 3 filminde karşımıza çıkar. Buy n Large markası görülür. Lotso karakteri, gelecekteki Toy Story 3 filminde karşımıza çıkar. Buy n Large markası görülür. Lotso karakteri, gelecekteki Toy Story 3 filminde karşımıza çıkar.",
+      "type": "film",
+      "release_date": "2009-05-29",
+      "level": 9
+    },
+    {
+      "id": "toyStory32010",
+      "label": "Toy Story 3 (2010)",
+      "title": "Toy Story 3",
+      "image": "images/pixar.jpg",
+      "shape": "image",
+      "description": "Andy üniversiteye gitmek üzereyken oyuncaklar yanlışlıkla bir kreşe bağışlanır. Orada baskıcı oyuncak Lotso ile karşılaşırlar. Andy üniversiteye gitmek üzereyken oyuncaklar yanlışlıkla bir kreşe bağışlanır. Orada baskıcı oyuncak Lotso ile karşılaşırlar. Andy üniversiteye gitmek üzereyken oyuncaklar yanlışlıkla bir kreşe bağışlanır. Orada baskıcı oyuncak Lotso ile karşılaşırlar. Andy üniversiteye gitmek üzereyken oyuncaklar yanlışlıkla bir kreşe bağışlanır. Orada baskıcı oyuncak Lotso ile karşılaşırlar. Andy üniversiteye gitmek üzereyken oyuncaklar yanlışlıkla bir kreşe bağışlanır. Orada baskıcı oyuncak Lotso ile karşılaşırlar. Andy üniversiteye gitmek üzereyken oyuncaklar yanlışlıkla bir kreşe bağışlanır. Orada baskıcı oyuncak Lotso ile karşılaşırlar. Andy üniversiteye gitmek üzereyken oyuncaklar yanlışlıkla bir kreşe bağışlanır. Orada baskıcı oyuncak Lotso ile karşılaşırlar. Andy üniversiteye gitmek üzereyken oyuncaklar yanlışlıkla bir kreşe bağışlanır. Orada baskıcı oyuncak Lotso ile karşılaşırlar. Andy üniversiteye gitmek üzereyken oyuncaklar yanlışlıkla bir kreşe bağışlanır. Orada baskıcı oyuncak Lotso ile karşılaşırlar. Andy üniversiteye gitmek üzereyken oyuncaklar yanlışlıkla bir kreşe bağışlanır. Orada baskıcı oyuncak Lotso ile karşılaşırlar. Andy üniversiteye gitmek üzereyken oyuncaklar yanlışlıkla bir kreşe bağışlanır. Orada baskıcı oyuncak Lotso ile karşılaşırlar.",
+      "refers_to": "Up filmindeki Lotso karakteri, bu filmde ana kötü karakter olarak yer alır. Dinoco logosu yine görünür. Up filmindeki Lotso karakteri, bu filmde ana kötü karakter olarak yer alır. Dinoco logosu yine görünür. Up filmindeki Lotso karakteri, bu filmde ana kötü karakter olarak yer alır. Dinoco logosu yine görünür. Up filmindeki Lotso karakteri, bu filmde ana kötü karakter olarak yer alır. Dinoco logosu yine görünür. Up filmindeki Lotso karakteri, bu filmde ana kötü karakter olarak yer alır. Dinoco logosu yine görünür. Up filmindeki Lotso karakteri, bu filmde ana kötü karakter olarak yer alır. Dinoco logosu yine görünür. Up filmindeki Lotso karakteri, bu filmde ana kötü karakter olarak yer alır. Dinoco logosu yine görünür. Up filmindeki Lotso karakteri, bu filmde ana kötü karakter olarak yer alır. Dinoco logosu yine görünür. Up filmindeki Lotso karakteri, bu filmde ana kötü karakter olarak yer alır. Dinoco logosu yine görünür. Up filmindeki Lotso karakteri, bu filmde ana kötü karakter olarak yer alır. Dinoco logosu yine görünür.",
+      "type": "film",
+      "release_date": "2010-06-18",
+      "level": 10
+    },
+    {
+      "id": "cars22011",
+      "label": "Cars 2 (2011)",
+      "title": "Cars 2",
+      "image": "images/pixar.jpg",
+      "shape": "image",
+      "description": "Yarış arabası McQueen ve Mater, uluslararası bir casusluk macerasına karışır. Yarış arabası McQueen ve Mater, uluslararası bir casusluk macerasına karışır. Yarış arabası McQueen ve Mater, uluslararası bir casusluk macerasına karışır. Yarış arabası McQueen ve Mater, uluslararası bir casusluk macerasına karışır. Yarış arabası McQueen ve Mater, uluslararası bir casusluk macerasına karışır. Yarış arabası McQueen ve Mater, uluslararası bir casusluk macerasına karışır. Yarış arabası McQueen ve Mater, uluslararası bir casusluk macerasına karışır. Yarış arabası McQueen ve Mater, uluslararası bir casusluk macerasına karışır. Yarış arabası McQueen ve Mater, uluslararası bir casusluk macerasına karışır. Yarış arabası McQueen ve Mater, uluslararası bir casusluk macerasına karışır. Yarış arabası McQueen ve Mater, uluslararası bir casusluk macerasına karışır. Yarış arabası McQueen ve Mater, uluslararası bir casusluk macerasına karışır. Yarış arabası McQueen ve Mater, uluslararası bir casusluk macerasına karışır. Yarış arabası McQueen ve Mater, uluslararası bir casusluk macerasına karışır. Yarış arabası McQueen ve Mater, uluslararası bir casusluk macerasına karışır. Yarış arabası McQueen ve Mater, uluslararası bir casusluk macerasına karışır.",
+      "refers_to": "Buy n Large logosu görülür. Toy Story'den tanıdık markalar vardır. Buy n Large logosu görülür. Toy Story'den tanıdık markalar vardır. Buy n Large logosu görülür. Toy Story'den tanıdık markalar vardır. Buy n Large logosu görülür. Toy Story'den tanıdık markalar vardır. Buy n Large logosu görülür. Toy Story'den tanıdık markalar vardır. Buy n Large logosu görülür. Toy Story'den tanıdık markalar vardır. Buy n Large logosu görülür. Toy Story'den tanıdık markalar vardır. Buy n Large logosu görülür. Toy Story'den tanıdık markalar vardır. Buy n Large logosu görülür. Toy Story'den tanıdık markalar vardır. Buy n Large logosu görülür. Toy Story'den tanıdık markalar vardır. Buy n Large logosu görülür. Toy Story'den tanıdık markalar vardır. Buy n Large logosu görülür. Toy Story'den tanıdık markalar vardır. Buy n Large logosu görülür. Toy Story'den tanıdık markalar vardır. Buy n Large logosu görülür. Toy Story'den tanıdık markalar vardır. Buy n Large logosu görülür. Toy Story'den tanıdık markalar vardır. Buy n Large logosu görülür. Toy Story'den tanıdık markalar vardır.",
+      "type": "film",
+      "release_date": "2011-06-24",
+      "level": 11
+    },
+    {
+      "id": "brave2012",
+      "label": "Brave (2012)",
+      "title": "Brave",
+      "image": "images/pixar.jpg",
+      "shape": "image",
+      "description": "İskoç prenses Merida, annesini yanlışlıkla bir ayıya dönüştürünce laneti bozmak için mücadele eder. İskoç prenses Merida, annesini yanlışlıkla bir ayıya dönüştürünce laneti bozmak için mücadele eder. İskoç prenses Merida, annesini yanlışlıkla bir ayıya dönüştürünce laneti bozmak için mücadele eder. İskoç prenses Merida, annesini yanlışlıkla bir ayıya dönüştürünce laneti bozmak için mücadele eder. İskoç prenses Merida, annesini yanlışlıkla bir ayıya dönüştürünce laneti bozmak için mücadele eder. İskoç prenses Merida, annesini yanlışlıkla bir ayıya dönüştürünce laneti bozmak için mücadele eder. İskoç prenses Merida, annesini yanlışlıkla bir ayıya dönüştürünce laneti bozmak için mücadele eder. İskoç prenses Merida, annesini yanlışlıkla bir ayıya dönüştürünce laneti bozmak için mücadele eder. İskoç prenses Merida, annesini yanlışlıkla bir ayıya dönüştürünce laneti bozmak için mücadele eder. İskoç prenses Merida, annesini yanlışlıkla bir ayıya dönüştürünce laneti bozmak için mücadele eder. İskoç prenses Merida, annesini yanlışlıkla bir ayıya dönüştürünce laneti bozmak için mücadele eder. İskoç prenses Merida, annesini yanlışlıkla bir ayıya dönüştürünce laneti bozmak için mücadele eder.",
+      "refers_to": "Cadının atölyesinde Sulley (Monsters Inc.) oyma figürü vardır. Cadının atölyesinde Sulley (Monsters Inc.) oyma figürü vardır. Cadının atölyesinde Sulley (Monsters Inc.) oyma figürü vardır. Cadının atölyesinde Sulley (Monsters Inc.) oyma figürü vardır. Cadının atölyesinde Sulley (Monsters Inc.) oyma figürü vardır. Cadının atölyesinde Sulley (Monsters Inc.) oyma figürü vardır. Cadının atölyesinde Sulley (Monsters Inc.) oyma figürü vardır. Cadının atölyesinde Sulley (Monsters Inc.) oyma figürü vardır. Cadının atölyesinde Sulley (Monsters Inc.) oyma figürü vardır. Cadının atölyesinde Sulley (Monsters Inc.) oyma figürü vardır. Cadının atölyesinde Sulley (Monsters Inc.) oyma figürü vardır. Cadının atölyesinde Sulley (Monsters Inc.) oyma figürü vardır. Cadının atölyesinde Sulley (Monsters Inc.) oyma figürü vardır. Cadının atölyesinde Sulley (Monsters Inc.) oyma figürü vardır. Cadının atölyesinde Sulley (Monsters Inc.) oyma figürü vardır. Cadının atölyesinde Sulley (Monsters Inc.) oyma figürü vardır. Cadının atölyesinde Sulley (Monsters Inc.) oyma figürü vardır. Cadının atölyesinde Sulley (Monsters Inc.) oyma figürü vardır. Cadının atölyesinde Sulley (Monsters Inc.) oyma figürü vardır.",
+      "type": "film",
+      "release_date": "2012-06-22",
+      "level": 12
+    },
+    {
+      "id": "monstersUniversity2013",
+      "label": "Monsters University (2013)",
+      "title": "Monsters University",
+      "image": "images/pixar.jpg",
+      "shape": "image",
+      "description": "Mike ve Sulley’in üniversite yıllarında tanışmasını ve arkadaşlıklarının başlangıcını anlatır. Mike ve Sulley’in üniversite yıllarında tanışmasını ve arkadaşlıklarının başlangıcını anlatır. Mike ve Sulley’in üniversite yıllarında tanışmasını ve arkadaşlıklarının başlangıcını anlatır. Mike ve Sulley’in üniversite yıllarında tanışmasını ve arkadaşlıklarının başlangıcını anlatır. Mike ve Sulley’in üniversite yıllarında tanışmasını ve arkadaşlıklarının başlangıcını anlatır. Mike ve Sulley’in üniversite yıllarında tanışmasını ve arkadaşlıklarının başlangıcını anlatır. Mike ve Sulley’in üniversite yıllarında tanışmasını ve arkadaşlıklarının başlangıcını anlatır. Mike ve Sulley’in üniversite yıllarında tanışmasını ve arkadaşlıklarının başlangıcını anlatır. Mike ve Sulley’in üniversite yıllarında tanışmasını ve arkadaşlıklarının başlangıcını anlatır. Mike ve Sulley’in üniversite yıllarında tanışmasını ve arkadaşlıklarının başlangıcını anlatır. Mike ve Sulley’in üniversite yıllarında tanışmasını ve arkadaşlıklarının başlangıcını anlatır. Mike ve Sulley’in üniversite yıllarında tanışmasını ve arkadaşlıklarının başlangıcını anlatır. Mike ve Sulley’in üniversite yıllarında tanışmasını ve arkadaşlıklarının başlangıcını anlatır. Mike ve Sulley’in üniversite yıllarında tanışmasını ve arkadaşlıklarının başlangıcını anlatır. Mike ve Sulley’in üniversite yıllarında tanışmasını ve arkadaşlıklarının başlangıcını anlatır. Mike ve Sulley’in üniversite yıllarında tanışmasını ve arkadaşlıklarının ba",
+      "refers_to": "Pizza Planet kamyonu ve A Bug's Life afişi görünür. Pizza Planet kamyonu ve A Bug's Life afişi görünür. Pizza Planet kamyonu ve A Bug's Life afişi görünür. Pizza Planet kamyonu ve A Bug's Life afişi görünür. Pizza Planet kamyonu ve A Bug's Life afişi görünür. Pizza Planet kamyonu ve A Bug's Life afişi görünür. Pizza Planet kamyonu ve A Bug's Life afişi görünür. Pizza Planet kamyonu ve A Bug's Life afişi görünür. Pizza Planet kamyonu ve A Bug's Life afişi görünür. Pizza Planet kamyonu ve A Bug's Life afişi görünür. Pizza Planet kamyonu ve A Bug's Life afişi görünür. Pizza Planet kamyonu ve A Bug's Life afişi görünür. Pizza Planet kamyonu ve A Bug's Life afişi görünür. Pizza Planet kamyonu ve A Bug's Life afişi görünür. Pizza Planet kamyonu ve A Bug's Life afişi görünür. Pizza Planet kamyonu ve A Bug's Life afişi görünür. Pizza Planet kamyonu ve A Bug's Life afişi görünür.",
+      "type": "film",
+      "release_date": "2013-06-21",
+      "level": 13
+    },
+    {
+      "id": "insideOut2015",
+      "label": "Inside Out (2015)",
+      "title": "Inside Out",
+      "image": "images/pixar.jpg",
+      "shape": "image",
+      "description": "Küçük bir kız olan Riley’nin zihninde yer alan beş duygunun (Neşe, Üzüntü, Korku, Tiksinti ve Öfke) hikayesi. Küçük bir kız olan Riley’nin zihninde yer alan beş duygunun (Neşe, Üzüntü, Korku, Tiksinti ve Öfke) hikayesi. Küçük bir kız olan Riley’nin zihninde yer alan beş duygunun (Neşe, Üzüntü, Korku, Tiksinti ve Öfke) hikayesi. Küçük bir kız olan Riley’nin zihninde yer alan beş duygunun (Neşe, Üzüntü, Korku, Tiksinti ve Öfke) hikayesi. Küçük bir kız olan Riley’nin zihninde yer alan beş duygunun (Neşe, Üzüntü, Korku, Tiksinti ve Öfke) hikayesi. Küçük bir kız olan Riley’nin zihninde yer alan beş duygunun (Neşe, Üzüntü, Korku, Tiksinti ve Öfke) hikayesi. Küçük bir kız olan Riley’nin zihninde yer alan beş duygunun (Neşe, Üzüntü, Korku, Tiksinti ve Öfke) hikayesi. Küçük bir kız olan Riley’nin zihninde yer alan beş duygunun (Neşe, Üzüntü, Korku, Tiksinti ve Öfke) hikayesi. Küçük bir kız olan Riley’nin zihninde yer alan beş duygunun (Neşe, Üzüntü, Korku, Tiksinti ve Öfke) hikayesi.",
+      "refers_to": "Ratatouille'den yemek sahnesi parodisi yer alır. Bing Bong’un arabasında Pixar logosu var. Ratatouille'den yemek sahnesi parodisi yer alır. Bing Bong’un arabasında Pixar logosu var. Ratatouille'den yemek sahnesi parodisi yer alır. Bing Bong’un arabasında Pixar logosu var. Ratatouille'den yemek sahnesi parodisi yer alır. Bing Bong’un arabasında Pixar logosu var. Ratatouille'den yemek sahnesi parodisi yer alır. Bing Bong’un arabasında Pixar logosu var. Ratatouille'den yemek sahnesi parodisi yer alır. Bing Bong’un arabasında Pixar logosu var. Ratatouille'den yemek sahnesi parodisi yer alır. Bing Bong’un arabasında Pixar logosu var. Ratatouille'den yemek sahnesi parodisi yer alır. Bing Bong’un arabasında Pixar logosu var. Ratatouille'den yemek sahnesi parodisi yer alır. Bing Bong’un arabasında Pixar logosu var. Ratatouille'den yemek sahnesi parodisi yer alır. Bing Bong’un arabasında Pixar logosu var. Ratatouille'den yemek sahnesi parodisi yer alır. Bing Bong’un arabasında Pixar logosu var. Ratatouille'den yemek sahnesi parodisi yer alır. Bing Bong’un arabasında Pixar logosu var. Ratatouille'den yemek sahnesi parodisi yer alır. Bing Bong’un arabasında Pixar logosu var.",
+      "type": "film",
+      "release_date": "2015-06-19",
+      "level": 14
+    },
+    {
+      "id": "theGoodDinosaur2015",
+      "label": "The Good Dinosaur (2015)",
+      "title": "The Good Dinosaur",
+      "image": "images/pixar.jpg",
+      "shape": "image",
+      "description": "Bir dinozor ve küçük bir çocuğun dostluğu, evrim farklı ilerleseydi dünyada neler olabileceğini sorgular. Bir dinozor ve küçük bir çocuğun dostluğu, evrim farklı ilerleseydi dünyada neler olabileceğini sorgular. Bir dinozor ve küçük bir çocuğun dostluğu, evrim farklı ilerleseydi dünyada neler olabileceğini sorgular. Bir dinozor ve küçük bir çocuğun dostluğu, evrim farklı ilerleseydi dünyada neler olabileceğini sorgular. Bir dinozor ve küçük bir çocuğun dostluğu, evrim farklı ilerleseydi dünyada neler olabileceğini sorgular. Bir dinozor ve küçük bir çocuğun dostluğu, evrim farklı ilerleseydi dünyada neler olabileceğini sorgular. Bir dinozor ve küçük bir çocuğun dostluğu, evrim farklı ilerleseydi dünyada neler olabileceğini sorgular. Bir dinozor ve küçük bir çocuğun dostluğu, evrim farklı ilerleseydi dünyada neler olabileceğini sorgular. Bir dinozor ve küçük bir çocuğun dostluğu, evrim farklı ilerleseydi dünyada neler olabileceğini sorgular. Bir dinozor ve küçük bir çocuğun dostluğu, evrim farklı ilerleseydi dünyada neler olabileceğini sorgular. Bir dinozor ve küçük bir çocuğun dostluğu, evrim farklı ilerleseydi dünyada neler olabileceğini sorgular.",
+      "refers_to": "Pizza Planet kamyonu kayalara oyulmuş halde görülür. Buy n Large logosu bazı taşlarda gizlidir. Pizza Planet kamyonu kayalara oyulmuş halde görülür. Buy n Large logosu bazı taşlarda gizlidir. Pizza Planet kamyonu kayalara oyulmuş halde görülür. Buy n Large logosu bazı taşlarda gizlidir. Pizza Planet kamyonu kayalara oyulmuş halde görülür. Buy n Large logosu bazı taşlarda gizlidir. Pizza Planet kamyonu kayalara oyulmuş halde görülür. Buy n Large logosu bazı taşlarda gizlidir. Pizza Planet kamyonu kayalara oyulmuş halde görülür. Buy n Large logosu bazı taşlarda gizlidir. Pizza Planet kamyonu kayalara oyulmuş halde görülür. Buy n Large logosu bazı taşlarda gizlidir. Pizza Planet kamyonu kayalara oyulmuş halde görülür. Buy n Large logosu bazı taşlarda gizlidir. Pizza Planet kamyonu kayalara oyulmuş halde görülür. Buy n Large logosu bazı taşlarda gizlidir. Pizza Planet kamyonu kayalara oyulmuş halde görülür. Buy n Large logosu bazı taşlarda gizlidir. Pizza Planet kamyonu kayalara oyulmuş halde görülür. Buy n Large logosu bazı taşlarda gizlidir.",
+      "type": "film",
+      "release_date": "2015-11-25",
+      "level": 14
+    },
+    {
+      "id": "findingDory2016",
+      "label": "Finding Dory (2016)",
+      "title": "Finding Dory",
+      "image": "images/pixar.jpg",
+      "shape": "image",
+      "description": "Dory, ailesini bulmak için hatıralarını takip ederek büyük bir yolculuğa çıkar. Nemo ve Marlin de ona yardım eder. Dory, ailesini bulmak için hatıralarını takip ederek büyük bir yolculuğa çıkar. Nemo ve Marlin de ona yardım eder. Dory, ailesini bulmak için hatıralarını takip ederek büyük bir yolculuğa çıkar. Nemo ve Marlin de ona yardım eder. Dory, ailesini bulmak için hatıralarını takip ederek büyük bir yolculuğa çıkar. Nemo ve Marlin de ona yardım eder. Dory, ailesini bulmak için hatıralarını takip ederek büyük bir yolculuğa çıkar. Nemo ve Marlin de ona yardım eder. Dory, ailesini bulmak için hatıralarını takip ederek büyük bir yolculuğa çıkar. Nemo ve Marlin de ona yardım eder. Dory, ailesini bulmak için hatıralarını takip ederek büyük bir yolculuğa çıkar. Nemo ve Marlin de ona yardım eder. Dory, ailesini bulmak için hatıralarını takip ederek büyük bir yolculuğa çıkar. Nemo ve Marlin de ona yardım eder. Dory, ailesini bulmak için hatıralarını takip ederek büyük bir yolculuğa çıkar. Nemo ve Marlin de ona yardım eder.",
+      "refers_to": "Finding Nemo’ya doğrudan devam niteliğindedir. Inside Out karakterleri deniz parkında kısa sahnede görünür. Finding Nemo’ya doğrudan devam niteliğindedir. Inside Out karakterleri deniz parkında kısa sahnede görünür. Finding Nemo’ya doğrudan devam niteliğindedir. Inside Out karakterleri deniz parkında kısa sahnede görünür. Finding Nemo’ya doğrudan devam niteliğindedir. Inside Out karakterleri deniz parkında kısa sahnede görünür. Finding Nemo’ya doğrudan devam niteliğindedir. Inside Out karakterleri deniz parkında kısa sahnede görünür. Finding Nemo’ya doğrudan devam niteliğindedir. Inside Out karakterleri deniz parkında kısa sahnede görünür. Finding Nemo’ya doğrudan devam niteliğindedir. Inside Out karakterleri deniz parkında kısa sahnede görünür. Finding Nemo’ya doğrudan devam niteliğindedir. Inside Out karakterleri deniz parkında kısa sahnede görünür. Finding Nemo’ya doğrudan devam niteliğindedir. Inside Out karakterleri deniz parkında kısa sahnede görünür. Finding Nemo’ya doğrudan devam niteliğindedir. Inside Out karakterleri deniz parkında kısa sahnede görünür. Finding Nemo’ya doğrudan devam niteliğindedir. Inside Out karakterleri deniz parkında kısa sahnede görünür. Finding Nemo’ya doğrudan devam niteliğindedir. Inside Out karakterleri deniz parkında kısa sahnede görünür.",
+      "type": "film",
+      "release_date": "2016-06-17",
+      "level": 15
+    },
+    {
+      "id": "cars32017",
+      "label": "Cars 3 (2017)",
+      "title": "Cars 3",
+      "image": "images/pixar.jpg",
+      "shape": "image",
+      "description": "McQueen, genç yarışçılarla başa çıkmaya çalışırken kendi mirasını sorgular. Yeni yarışçı Cruz'a mentorluk eder. McQueen, genç yarışçılarla başa çıkmaya çalışırken kendi mirasını sorgular. Yeni yarışçı Cruz'a mentorluk eder. McQueen, genç yarışçılarla başa çıkmaya çalışırken kendi mirasını sorgular. Yeni yarışçı Cruz'a mentorluk eder. McQueen, genç yarışçılarla başa çıkmaya çalışırken kendi mirasını sorgular. Yeni yarışçı Cruz'a mentorluk eder. McQueen, genç yarışçılarla başa çıkmaya çalışırken kendi mirasını sorgular. Yeni yarışçı Cruz'a mentorluk eder. McQueen, genç yarışçılarla başa çıkmaya çalışırken kendi mirasını sorgular. Yeni yarışçı Cruz'a mentorluk eder. McQueen, genç yarışçılarla başa çıkmaya çalışırken kendi mirasını sorgular. Yeni yarışçı Cruz'a mentorluk eder. McQueen, genç yarışçılarla başa çıkmaya çalışırken kendi mirasını sorgular. Yeni yarışçı Cruz'a mentorluk eder. McQueen, genç yarışçılarla başa çıkmaya çalışırken kendi mirasını sorgular. Yeni yarışçı Cruz'a mentorluk eder. McQueen, genç yarışçılarla başa çıkmaya çalışırken kendi mirasını sorgular. Yeni yarışçı Cruz'a mentorluk eder. McQueen, genç yarışçılarla başa çıkmaya çalışırken kendi mirasını sorgular. Yeni yarışçı Cruz'a mentorluk eder.",
+      "refers_to": "Dinoco, Rust-eze ve Buy n Large logoları yine görünür. Dinoco, Rust-eze ve Buy n Large logoları yine görünür. Dinoco, Rust-eze ve Buy n Large logoları yine görünür. Dinoco, Rust-eze ve Buy n Large logoları yine görünür. Dinoco, Rust-eze ve Buy n Large logoları yine görünür. Dinoco, Rust-eze ve Buy n Large logoları yine görünür. Dinoco, Rust-eze ve Buy n Large logoları yine görünür. Dinoco, Rust-eze ve Buy n Large logoları yine görünür. Dinoco, Rust-eze ve Buy n Large logoları yine görünür. Dinoco, Rust-eze ve Buy n Large logoları yine görünür. Dinoco, Rust-eze ve Buy n Large logoları yine görünür. Dinoco, Rust-eze ve Buy n Large logoları yine görünür. Dinoco, Rust-eze ve Buy n Large logoları yine görünür. Dinoco, Rust-eze ve Buy n Large logoları yine görünür. Dinoco, Rust-eze ve Buy n Large logoları yine görünür. Dinoco, Rust-eze ve Buy n Large logoları yine görünür. Dinoco, Rust-eze ve Buy n Large logoları yine görünür.",
+      "type": "film",
+      "release_date": "2017-06-16",
+      "level": 16
+    },
+    {
+      "id": "coco2017",
+      "label": "Coco (2017)",
+      "title": "Coco",
+      "image": "images/pixar.jpg",
+      "shape": "image",
+      "description": "Gitar çalmaya tutkulu Miguel, Ölüler Diyarı’na geçerek ailesinin geçmişini keşfeder. Gitar çalmaya tutkulu Miguel, Ölüler Diyarı’na geçerek ailesinin geçmişini keşfeder. Gitar çalmaya tutkulu Miguel, Ölüler Diyarı’na geçerek ailesinin geçmişini keşfeder. Gitar çalmaya tutkulu Miguel, Ölüler Diyarı’na geçerek ailesinin geçmişini keşfeder. Gitar çalmaya tutkulu Miguel, Ölüler Diyarı’na geçerek ailesinin geçmişini keşfeder. Gitar çalmaya tutkulu Miguel, Ölüler Diyarı’na geçerek ailesinin geçmişini keşfeder. Gitar çalmaya tutkulu Miguel, Ölüler Diyarı’na geçerek ailesinin geçmişini keşfeder. Gitar çalmaya tutkulu Miguel, Ölüler Diyarı’na geçerek ailesinin geçmişini keşfeder. Gitar çalmaya tutkulu Miguel, Ölüler Diyarı’na geçerek ailesinin geçmişini keşfeder. Gitar çalmaya tutkulu Miguel, Ölüler Diyarı’na geçerek ailesinin geçmişini keşfeder. Gitar çalmaya tutkulu Miguel, Ölüler Diyarı’na geçerek ailesinin geçmişini keşfeder. Gitar çalmaya tutkulu Miguel, Ölüler Diyarı’na geçerek ailesinin geçmişini keşfeder. Gitar çalmaya tutkulu Miguel, Ölüler Diyarı’na geçerek ailesinin geçmişini keşfeder. Gitar çalmaya tutkulu Miguel, Ölüler Diyarı’na geçerek ailesinin geçmişini keşfeder. Gitar çalmaya tutkulu Miguel, Ölüler Diyarı’na geçerek ailesinin geçmişini keşfeder. Gitar çalmaya tutkulu Miguel, Ölüler Diyarı’na geçerek ailesinin geçmişini keşfeder.",
+      "refers_to": "Inside Out evreninden hayvan karakterleri duvar resimlerinde yer alır. Pizza Planet kamyonu mezarlık sahnesinde gizlidir. Inside Out evreninden hayvan karakterleri duvar resimlerinde yer alır. Pizza Planet kamyonu mezarlık sahnesinde gizlidir. Inside Out evreninden hayvan karakterleri duvar resimlerinde yer alır. Pizza Planet kamyonu mezarlık sahnesinde gizlidir. Inside Out evreninden hayvan karakterleri duvar resimlerinde yer alır. Pizza Planet kamyonu mezarlık sahnesinde gizlidir. Inside Out evreninden hayvan karakterleri duvar resimlerinde yer alır. Pizza Planet kamyonu mezarlık sahnesinde gizlidir. Inside Out evreninden hayvan karakterleri duvar resimlerinde yer alır. Pizza Planet kamyonu mezarlık sahnesinde gizlidir. Inside Out evreninden hayvan karakterleri duvar resimlerinde yer alır. Pizza Planet kamyonu mezarlık sahnesinde gizlidir. Inside Out evreninden hayvan karakterleri duvar resimlerinde yer alır. Pizza Planet kamyonu mezarlık sahnesinde gizlidir. Inside Out evreninden hayvan karakterleri duvar resimlerinde yer alır. Pizza Planet kamyonu mezarlık sahnesinde gizlidir. Inside Out evreninden hayvan karakterleri duvar resimlerinde yer alır. Pizza Planet kamyonu mezarlık sahnesinde gizlidir. Inside Out evreninden hayvan karakterleri duvar resimlerinde yer alır. Pizza Planet kamyonu mezarlık sahnesinde gizlidir.",
+      "type": "film",
+      "release_date": "2017-11-22",
+      "level": 16
+    },
+    {
+      "id": "incredibles22018",
+      "label": "Incredibles 2 (2018)",
+      "title": "Incredibles 2",
+      "image": "images/pixar.jpg",
+      "shape": "image",
+      "description": "Elastigirl suçla mücadele ederken Bay Incredible evde çocuklarla ilgilenir. Bu sırada yeni bir tehdit ortaya çıkar. Elastigirl suçla mücadele ederken Bay Incredible evde çocuklarla ilgilenir. Bu sırada yeni bir tehdit ortaya çıkar. Elastigirl suçla mücadele ederken Bay Incredible evde çocuklarla ilgilenir. Bu sırada yeni bir tehdit ortaya çıkar. Elastigirl suçla mücadele ederken Bay Incredible evde çocuklarla ilgilenir. Bu sırada yeni bir tehdit ortaya çıkar. Elastigirl suçla mücadele ederken Bay Incredible evde çocuklarla ilgilenir. Bu sırada yeni bir tehdit ortaya çıkar. Elastigirl suçla mücadele ederken Bay Incredible evde çocuklarla ilgilenir. Bu sırada yeni bir tehdit ortaya çıkar. Elastigirl suçla mücadele ederken Bay Incredible evde çocuklarla ilgilenir. Bu sırada yeni bir tehdit ortaya çıkar. Elastigirl suçla mücadele ederken Bay Incredible evde çocuklarla ilgilenir. Bu sırada yeni bir tehdit ortaya çıkar. Elastigirl suçla mücadele ederken Bay Incredible evde çocuklarla ilgilenir. Bu sırada yeni bir tehdit ortaya çıkar. Elastigirl suçla mücadele ederken Bay Incredible evde çocuklarla ilgilenir. Bu sırada yeni bir tehdit ortaya çıkar.",
+      "refers_to": "İlk filme doğrudan devamdır. Toy Story'den tanıdık bazı nesneler arka planda yer alır. İlk filme doğrudan devamdır. Toy Story'den tanıdık bazı nesneler arka planda yer alır. İlk filme doğrudan devamdır. Toy Story'den tanıdık bazı nesneler arka planda yer alır. İlk filme doğrudan devamdır. Toy Story'den tanıdık bazı nesneler arka planda yer alır. İlk filme doğrudan devamdır. Toy Story'den tanıdık bazı nesneler arka planda yer alır. İlk filme doğrudan devamdır. Toy Story'den tanıdık bazı nesneler arka planda yer alır. İlk filme doğrudan devamdır. Toy Story'den tanıdık bazı nesneler arka planda yer alır. İlk filme doğrudan devamdır. Toy Story'den tanıdık bazı nesneler arka planda yer alır. İlk filme doğrudan devamdır. Toy Story'den tanıdık bazı nesneler arka planda yer alır. İlk filme doğrudan devamdır. Toy Story'den tanıdık bazı nesneler arka planda yer alır. İlk filme doğrudan devamdır. Toy Story'den tanıdık bazı nesneler arka planda yer alır. İlk filme doğrudan devamdır. Toy Story'den tanıdık bazı nesneler arka planda yer alır.",
+      "type": "film",
+      "release_date": "2018-06-15",
+      "level": 17
+    },
+    {
+      "id": "toyStory42019",
+      "label": "Toy Story 4 (2019)",
+      "title": "Toy Story 4",
+      "image": "images/pixar.jpg",
+      "shape": "image",
+      "description": "Woody, Forky adlı yeni oyuncağı korumaya çalışırken Bo Peep ile yolları yeniden kesişir. Woody, Forky adlı yeni oyuncağı korumaya çalışırken Bo Peep ile yolları yeniden kesişir. Woody, Forky adlı yeni oyuncağı korumaya çalışırken Bo Peep ile yolları yeniden kesişir. Woody, Forky adlı yeni oyuncağı korumaya çalışırken Bo Peep ile yolları yeniden kesişir. Woody, Forky adlı yeni oyuncağı korumaya çalışırken Bo Peep ile yolları yeniden kesişir. Woody, Forky adlı yeni oyuncağı korumaya çalışırken Bo Peep ile yolları yeniden kesişir. Woody, Forky adlı yeni oyuncağı korumaya çalışırken Bo Peep ile yolları yeniden kesişir. Woody, Forky adlı yeni oyuncağı korumaya çalışırken Bo Peep ile yolları yeniden kesişir. Woody, Forky adlı yeni oyuncağı korumaya çalışırken Bo Peep ile yolları yeniden kesişir. Woody, Forky adlı yeni oyuncağı korumaya çalışırken Bo Peep ile yolları yeniden kesişir. Woody, Forky adlı yeni oyuncağı korumaya çalışırken Bo Peep ile yolları yeniden kesişir. Woody, Forky adlı yeni oyuncağı korumaya çalışırken Bo Peep ile yolları yeniden kesişir.",
+      "refers_to": "Geri dönüş sahnelerinde önceki tüm Toy Story filmlerine göndermeler bulunur. Pizza Planet kamyonu klasik olarak yine yer alır. Geri dönüş sahnelerinde önceki tüm Toy Story filmlerine göndermeler bulunur. Pizza Planet kamyonu klasik olarak yine yer alır. Geri dönüş sahnelerinde önceki tüm Toy Story filmlerine göndermeler bulunur. Pizza Planet kamyonu klasik olarak yine yer alır. Geri dönüş sahnelerinde önceki tüm Toy Story filmlerine göndermeler bulunur. Pizza Planet kamyonu klasik olarak yine yer alır. Geri dönüş sahnelerinde önceki tüm Toy Story filmlerine göndermeler bulunur. Pizza Planet kamyonu klasik olarak yine yer alır. Geri dönüş sahnelerinde önceki tüm Toy Story filmlerine göndermeler bulunur. Pizza Planet kamyonu klasik olarak yine yer alır. Geri dönüş sahnelerinde önceki tüm Toy Story filmlerine göndermeler bulunur. Pizza Planet kamyonu klasik olarak yine yer alır. Geri dönüş sahnelerinde önceki tüm Toy Story filmlerine göndermeler bulunur. Pizza Planet kamyonu klasik olarak yine yer alır. Geri dönüş sahnelerinde önceki tüm Toy Story filmlerine göndermeler bulunur. Pizza Planet kamyonu klasik olarak yine yer alır.",
+      "type": "film",
+      "release_date": "2019-06-21",
+      "level": 18
+    },
+    {
+      "id": "onward2020",
+      "label": "Onward (2020)",
+      "title": "Onward",
+      "image": "images/pixar.jpg",
+      "shape": "image",
+      "description": "İki elf kardeş, sihirli bir büyü ile kaybettikleri babalarını bir günlüğüne geri getirmeye çalışır. İki elf kardeş, sihirli bir büyü ile kaybettikleri babalarını bir günlüğüne geri getirmeye çalışır. İki elf kardeş, sihirli bir büyü ile kaybettikleri babalarını bir günlüğüne geri getirmeye çalışır. İki elf kardeş, sihirli bir büyü ile kaybettikleri babalarını bir günlüğüne geri getirmeye çalışır. İki elf kardeş, sihirli bir büyü ile kaybettikleri babalarını bir günlüğüne geri getirmeye çalışır. İki elf kardeş, sihirli bir büyü ile kaybettikleri babalarını bir günlüğüne geri getirmeye çalışır. İki elf kardeş, sihirli bir büyü ile kaybettikleri babalarını bir günlüğüne geri getirmeye çalışır. İki elf kardeş, sihirli bir büyü ile kaybettikleri babalarını bir günlüğüne geri getirmeye çalışır. İki elf kardeş, sihirli bir büyü ile kaybettikleri babalarını bir günlüğüne geri getirmeye çalışır. İki elf kardeş, sihirli bir büyü ile kaybettikleri babalarını bir günlüğüne geri getirmeye çalışır. İki elf kardeş, sihirli bir büyü ile kaybettikleri babalarını bir günlüğüne geri getirmeye çalışır.",
+      "refers_to": "Pizza Planet kamyonu sihirli kervan logosu olarak yeniden tasarlanmıştır. A113 kodu araç plakasında yer alır. Pizza Planet kamyonu sihirli kervan logosu olarak yeniden tasarlanmıştır. A113 kodu araç plakasında yer alır. Pizza Planet kamyonu sihirli kervan logosu olarak yeniden tasarlanmıştır. A113 kodu araç plakasında yer alır. Pizza Planet kamyonu sihirli kervan logosu olarak yeniden tasarlanmıştır. A113 kodu araç plakasında yer alır. Pizza Planet kamyonu sihirli kervan logosu olarak yeniden tasarlanmıştır. A113 kodu araç plakasında yer alır. Pizza Planet kamyonu sihirli kervan logosu olarak yeniden tasarlanmıştır. A113 kodu araç plakasında yer alır. Pizza Planet kamyonu sihirli kervan logosu olarak yeniden tasarlanmıştır. A113 kodu araç plakasında yer alır. Pizza Planet kamyonu sihirli kervan logosu olarak yeniden tasarlanmıştır. A113 kodu araç plakasında yer alır. Pizza Planet kamyonu sihirli kervan logosu olarak yeniden tasarlanmıştır. A113 kodu araç plakasında yer alır. Pizza Planet kamyonu sihirli kervan logosu olarak yeniden tasarlanmıştır. A113 kodu araç plakasında yer alır. Pizza Planet kamyonu sihirli kervan logosu olarak yeniden tasarlanmıştır. A113 kodu araç plakasında yer alır.",
+      "type": "film",
+      "release_date": "2020-03-06",
+      "level": 19
+    },
+    {
+      "id": "soul2020",
+      "label": "Soul (2020)",
+      "title": "Soul",
+      "image": "images/pixar.jpg",
+      "shape": "image",
+      "description": "Bir müzik öğretmeni olan Joe, ruhlar dünyasında kendine yeni bir yaşam amacı arar. Bir müzik öğretmeni olan Joe, ruhlar dünyasında kendine yeni bir yaşam amacı arar. Bir müzik öğretmeni olan Joe, ruhlar dünyasında kendine yeni bir yaşam amacı arar. Bir müzik öğretmeni olan Joe, ruhlar dünyasında kendine yeni bir yaşam amacı arar. Bir müzik öğretmeni olan Joe, ruhlar dünyasında kendine yeni bir yaşam amacı arar. Bir müzik öğretmeni olan Joe, ruhlar dünyasında kendine yeni bir yaşam amacı arar. Bir müzik öğretmeni olan Joe, ruhlar dünyasında kendine yeni bir yaşam amacı arar. Bir müzik öğretmeni olan Joe, ruhlar dünyasında kendine yeni bir yaşam amacı arar. Bir müzik öğretmeni olan Joe, ruhlar dünyasında kendine yeni bir yaşam amacı arar. Bir müzik öğretmeni olan Joe, ruhlar dünyasında kendine yeni bir yaşam amacı arar. Bir müzik öğretmeni olan Joe, ruhlar dünyasında kendine yeni bir yaşam amacı arar. Bir müzik öğretmeni olan Joe, ruhlar dünyasında kendine yeni bir yaşam amacı arar.",
+      "refers_to": "Inside Out ile ruhsal yapı benzerliği taşır. Monsters Inc.’teki doğaüstü düzenlemelere görsel göndermeler içerir. Inside Out ile ruhsal yapı benzerliği taşır. Monsters Inc.’teki doğaüstü düzenlemelere görsel göndermeler içerir. Inside Out ile ruhsal yapı benzerliği taşır. Monsters Inc.’teki doğaüstü düzenlemelere görsel göndermeler içerir. Inside Out ile ruhsal yapı benzerliği taşır. Monsters Inc.’teki doğaüstü düzenlemelere görsel göndermeler içerir. Inside Out ile ruhsal yapı benzerliği taşır. Monsters Inc.’teki doğaüstü düzenlemelere görsel göndermeler içerir. Inside Out ile ruhsal yapı benzerliği taşır. Monsters Inc.’teki doğaüstü düzenlemelere görsel göndermeler içerir. Inside Out ile ruhsal yapı benzerliği taşır. Monsters Inc.’teki doğaüstü düzenlemelere görsel göndermeler içerir. Inside Out ile ruhsal yapı benzerliği taşır. Monsters Inc.’teki doğaüstü düzenlemelere görsel göndermeler içerir. Inside Out ile ruhsal yapı benzerliği taşır. Monsters Inc.’teki doğaüstü düzenlemelere görsel göndermeler içerir. Inside Out ile ruhsal yapı benzerliği taşır. Monsters Inc.’teki doğaüstü düzenlemelere görsel göndermeler içerir. Inside Out ile ruhsal yapı benzerliği taşır. Monsters Inc.’teki doğaüstü düzenlemelere görsel göndermeler içerir.",
+      "type": "film",
+      "release_date": "2020-12-25",
+      "level": 19
+    },
+    {
+      "id": "luca2021",
+      "label": "Luca (2021)",
+      "title": "Luca",
+      "image": "images/pixar.jpg",
+      "shape": "image",
+      "description": "İnsan dünyasını merak eden deniz yaratığı Luca, arkadaşı Alberto ile birlikte İtalyan kasabasında büyük bir yaz geçirir. İnsan dünyasını merak eden deniz yaratığı Luca, arkadaşı Alberto ile birlikte İtalyan kasabasında büyük bir yaz geçirir. İnsan dünyasını merak eden deniz yaratığı Luca, arkadaşı Alberto ile birlikte İtalyan kasabasında büyük bir yaz geçirir. İnsan dünyasını merak eden deniz yaratığı Luca, arkadaşı Alberto ile birlikte İtalyan kasabasında büyük bir yaz geçirir. İnsan dünyasını merak eden deniz yaratığı Luca, arkadaşı Alberto ile birlikte İtalyan kasabasında büyük bir yaz geçirir. İnsan dünyasını merak eden deniz yaratığı Luca, arkadaşı Alberto ile birlikte İtalyan kasabasında büyük bir yaz geçirir. İnsan dünyasını merak eden deniz yaratığı Luca, arkadaşı Alberto ile birlikte İtalyan kasabasında büyük bir yaz geçirir. İnsan dünyasını merak eden deniz yaratığı Luca, arkadaşı Alberto ile birlikte İtalyan kasabasında büyük bir yaz geçirir. İnsan dünyasını merak eden deniz yaratığı Luca, arkadaşı Alberto ile birlikte İtalyan kasabasında büyük bir yaz geçirir.",
+      "refers_to": "Pizza Planet kamyonu oyuncak olarak görülür. La Luna kısa filmiyle evren bağlantısı bulunur. Pizza Planet kamyonu oyuncak olarak görülür. La Luna kısa filmiyle evren bağlantısı bulunur. Pizza Planet kamyonu oyuncak olarak görülür. La Luna kısa filmiyle evren bağlantısı bulunur. Pizza Planet kamyonu oyuncak olarak görülür. La Luna kısa filmiyle evren bağlantısı bulunur. Pizza Planet kamyonu oyuncak olarak görülür. La Luna kısa filmiyle evren bağlantısı bulunur. Pizza Planet kamyonu oyuncak olarak görülür. La Luna kısa filmiyle evren bağlantısı bulunur. Pizza Planet kamyonu oyuncak olarak görülür. La Luna kısa filmiyle evren bağlantısı bulunur. Pizza Planet kamyonu oyuncak olarak görülür. La Luna kısa filmiyle evren bağlantısı bulunur. Pizza Planet kamyonu oyuncak olarak görülür. La Luna kısa filmiyle evren bağlantısı bulunur. Pizza Planet kamyonu oyuncak olarak görülür. La Luna kısa filmiyle evren bağlantısı bulunur. Pizza Planet kamyonu oyuncak olarak görülür. La Luna kısa filmiyle evren bağlantısı bulunur. Pizza Planet kamyonu oyuncak olarak görülür. La Luna kısa filmiyle evren bağlantısı bulunur.",
+      "type": "film",
+      "release_date": "2021-06-18",
+      "level": 20
+    },
+    {
+      "id": "turningRed2022",
+      "label": "Turning Red (2022)",
+      "title": "Turning Red",
+      "image": "images/pixar.jpg",
+      "shape": "image",
+      "description": "Mei adında genç bir kız, duygusal anlarda dev bir kırmızı pandaya dönüşmeye başlar. Mei adında genç bir kız, duygusal anlarda dev bir kırmızı pandaya dönüşmeye başlar. Mei adında genç bir kız, duygusal anlarda dev bir kırmızı pandaya dönüşmeye başlar. Mei adında genç bir kız, duygusal anlarda dev bir kırmızı pandaya dönüşmeye başlar. Mei adında genç bir kız, duygusal anlarda dev bir kırmızı pandaya dönüşmeye başlar. Mei adında genç bir kız, duygusal anlarda dev bir kırmızı pandaya dönüşmeye başlar. Mei adında genç bir kız, duygusal anlarda dev bir kırmızı pandaya dönüşmeye başlar. Mei adında genç bir kız, duygusal anlarda dev bir kırmızı pandaya dönüşmeye başlar. Mei adında genç bir kız, duygusal anlarda dev bir kırmızı pandaya dönüşmeye başlar. Mei adında genç bir kız, duygusal anlarda dev bir kırmızı pandaya dönüşmeye başlar. Mei adında genç bir kız, duygusal anlarda dev bir kırmızı pandaya dönüşmeye başlar. Mei adında genç bir kız, duygusal anlarda dev bir kırmızı pandaya dönüşmeye başlar.",
+      "refers_to": "Inside Out’tan ilham alır. Buy n Large logosu gökdelenlerde yer alır. Luca'daki balık karakteri oyuncak olarak görünür. Inside Out’tan ilham alır. Buy n Large logosu gökdelenlerde yer alır. Luca'daki balık karakteri oyuncak olarak görünür. Inside Out’tan ilham alır. Buy n Large logosu gökdelenlerde yer alır. Luca'daki balık karakteri oyuncak olarak görünür. Inside Out’tan ilham alır. Buy n Large logosu gökdelenlerde yer alır. Luca'daki balık karakteri oyuncak olarak görünür. Inside Out’tan ilham alır. Buy n Large logosu gökdelenlerde yer alır. Luca'daki balık karakteri oyuncak olarak görünür. Inside Out’tan ilham alır. Buy n Large logosu gökdelenlerde yer alır. Luca'daki balık karakteri oyuncak olarak görünür. Inside Out’tan ilham alır. Buy n Large logosu gökdelenlerde yer alır. Luca'daki balık karakteri oyuncak olarak görünür. Inside Out’tan ilham alır. Buy n Large logosu gökdelenlerde yer alır. Luca'daki balık karakteri oyuncak olarak görünür. Inside Out’tan ilham alır. Buy n Large logosu gökdelenlerde yer alır. Luca'daki balık karakteri oyuncak olarak görünür.",
+      "type": "film",
+      "release_date": "2022-03-11",
+      "level": 21
+    },
+    {
+      "id": "lightyear2022",
+      "label": "Lightyear (2022)",
+      "title": "Lightyear",
+      "image": "images/pixar.jpg",
+      "shape": "image",
+      "description": "Buzz Lightyear karakterinin, Toy Story evreninde oyuncak olarak üretildiği filmin orijinal kahramanının hikayesi. Buzz Lightyear karakterinin, Toy Story evreninde oyuncak olarak üretildiği filmin orijinal kahramanının hikayesi. Buzz Lightyear karakterinin, Toy Story evreninde oyuncak olarak üretildiği filmin orijinal kahramanının hikayesi. Buzz Lightyear karakterinin, Toy Story evreninde oyuncak olarak üretildiği filmin orijinal kahramanının hikayesi. Buzz Lightyear karakterinin, Toy Story evreninde oyuncak olarak üretildiği filmin orijinal kahramanının hikayesi. Buzz Lightyear karakterinin, Toy Story evreninde oyuncak olarak üretildiği filmin orijinal kahramanının hikayesi. Buzz Lightyear karakterinin, Toy Story evreninde oyuncak olarak üretildiği filmin orijinal kahramanının hikayesi. Buzz Lightyear karakterinin, Toy Story evreninde oyuncak olarak üretildiği filmin orijinal kahramanının hikayesi. Buzz Lightyear karakterinin, Toy Story evreninde oyuncak olarak üretildiği filmin orijinal kahramanının hikayesi. Buzz Lightyear karakterinin, Toy Story evreninde oyuncak olarak üretildiği filmin orijinal kahramanının hikayesi. Buzz Lightyear karakterinin, Toy Story evreninde oyuncak olarak üretildiği filmin orijinal kahramanının hikayesi. Buzz Lightyear karakterinin, Toy Story evreninde oyuncak olarak üretildiği filmin orijinal kahramanının hikayesi.",
+      "refers_to": "Toy Story evreninin içindeki bir film. Alışveriş merkezinde birçok eski Pixar objesi bulunur. Toy Story evreninin içindeki bir film. Alışveriş merkezinde birçok eski Pixar objesi bulunur. Toy Story evreninin içindeki bir film. Alışveriş merkezinde birçok eski Pixar objesi bulunur. Toy Story evreninin içindeki bir film. Alışveriş merkezinde birçok eski Pixar objesi bulunur. Toy Story evreninin içindeki bir film. Alışveriş merkezinde birçok eski Pixar objesi bulunur. Toy Story evreninin içindeki bir film. Alışveriş merkezinde birçok eski Pixar objesi bulunur. Toy Story evreninin içindeki bir film. Alışveriş merkezinde birçok eski Pixar objesi bulunur. Toy Story evreninin içindeki bir film. Alışveriş merkezinde birçok eski Pixar objesi bulunur. Toy Story evreninin içindeki bir film. Alışveriş merkezinde birçok eski Pixar objesi bulunur. Toy Story evreninin içindeki bir film. Alışveriş merkezinde birçok eski Pixar objesi bulunur. Toy Story evreninin içindeki bir film. Alışveriş merkezinde birçok eski Pixar objesi bulunur. Toy Story evreninin içindeki bir film. Alışveriş merkezinde birçok eski Pixar objesi bulunur.",
+      "type": "film",
+      "release_date": "2022-06-17",
+      "level": 21
+    },
+    {
+      "id": "elemental2023",
+      "label": "Elemental (2023)",
+      "title": "Elemental",
+      "image": "images/pixar.jpg",
+      "shape": "image",
+      "description": "Ateş, su, toprak ve hava halklarının birlikte yaşadığı Element Şehri'nde, Ember adlı ateş halkından bir kız ile Wade adlı su halkından bir oğlanın dostluğu üzerinden önyargı, kültür çatışması ve birliktelik temaları işlenir. Ateş, su, toprak ve hava halklarının birlikte yaşadığı Element Şehri'nde, Ember adlı ateş halkından bir kız ile Wade adlı su halkından bir oğlanın dostluğu üzerinden önyargı, kültür çatışması ve birliktelik temaları işlenir. Ateş, su, toprak ve hava halklarının birlikte yaşadığı Element Şehri'nde, Ember adlı ateş halkından bir kız ile Wade adlı su halkından bir oğlanın dostluğu üzerinden önyargı, kültür çatışması ve birliktelik temaları işlenir. Ateş, su, toprak ve hava halklarının birlikte yaşadığı Element Şehri'nde, Ember adlı ateş halkından bir kız ile Wade adlı su halkından bir oğlanın dostluğu üzerinden önyargı, kültür çatışması ve birliktelik temaları işlenir. Ateş, su, toprak ve hava halklarının birlikte yaşadığı Element Şehri'nde, Ember adlı ateş halkından bir kız ile Wade adlı su halkından bir oğlanın dostluğu üzerinden önyargı, kültür çatışması ve birliktelik temaları işlenir.",
+      "refers_to": "Inside Out ve Soul gibi soyut kavramların vücut bulduğu Pixar evreni çizgisini sürdürür. Pizza Planet logosu bir tabela şeklinde görünür. Filmde Buy n Large’a referans içeren ticari reklam panoları yer alır. Inside Out ve Soul gibi soyut kavramların vücut bulduğu Pixar evreni çizgisini sürdürür. Pizza Planet logosu bir tabela şeklinde görünür. Filmde Buy n Large’a referans içeren ticari reklam panoları yer alır. Inside Out ve Soul gibi soyut kavramların vücut bulduğu Pixar evreni çizgisini sürdürür. Pizza Planet logosu bir tabela şeklinde görünür. Filmde Buy n Large’a referans içeren ticari reklam panoları yer alır. Inside Out ve Soul gibi soyut kavramların vücut bulduğu Pixar evreni çizgisini sürdürür. Pizza Planet logosu bir tabela şeklinde görünür. Filmde Buy n Large’a referans içeren ticari reklam panoları yer alır. Inside Out ve Soul gibi soyut kavramların vücut bulduğu Pixar evreni çizgisini sürdürür. Pizza Planet logosu bir tabela şeklinde görünür. Filmde Buy n Large’a referans içeren ticari reklam panoları yer alır.",
+      "type": "film",
+      "release_date": "2023-06-16",
+      "level": 22
+    },
+    {
+      "id": "insideOut22024",
+      "label": "Inside Out 2 (2024)",
+      "title": "Inside Out 2",
+      "image": "images/pixar.jpg",
+      "shape": "image",
+      "description": "Riley artık bir gençtir ve zihnine yeni duygular (Kaygı, Kıskançlık, Sıkıntı, Utanç) katılır. Duygular arası çatışmalar büyürken Riley’nin kimliği şekillenmektedir. Riley artık bir gençtir ve zihnine yeni duygular (Kaygı, Kıskançlık, Sıkıntı, Utanç) katılır. Duygular arası çatışmalar büyürken Riley’nin kimliği şekillenmektedir. Riley artık bir gençtir ve zihnine yeni duygular (Kaygı, Kıskançlık, Sıkıntı, Utanç) katılır. Duygular arası çatışmalar büyürken Riley’nin kimliği şekillenmektedir. Riley artık bir gençtir ve zihnine yeni duygular (Kaygı, Kıskançlık, Sıkıntı, Utanç) katılır. Duygular arası çatışmalar büyürken Riley’nin kimliği şekillenmektedir. Riley artık bir gençtir ve zihnine yeni duygular (Kaygı, Kıskançlık, Sıkıntı, Utanç) katılır. Duygular arası çatışmalar büyürken Riley’nin kimliği şekillenmektedir. Riley artık bir gençtir ve zihnine yeni duygular (Kaygı, Kıskançlık, Sıkıntı, Utanç) katılır. Duygular arası çatışmalar büyürken Riley’nin kimliği şekillenmektedir. Riley artık bir gençtir ve zihnine yeni duygular (Kaygı, Kıskançlık, Sıkıntı, Utanç) katılır. Duygular arası çatışmalar büyürken Riley’nin kimliği şekillenmektedir. Riley artık bir gençtir ve zihnine yeni duygular (Kaygı, Kıskançlık, Sıkıntı, Utanç) katılır. Duygular arası çatışmalar büyürken Riley’nin kimliği şekillenmektedir.",
+      "refers_to": "Inside Out (2015) filminin doğrudan devamıdır. Soul filmindeki Büyük Öncesi Bölgesi'ne göndermeler yapılır. Ember (Elemental) karakterinin oyuncak figürü görünür. Inside Out (2015) filminin doğrudan devamıdır. Soul filmindeki Büyük Öncesi Bölgesi'ne göndermeler yapılır. Ember (Elemental) karakterinin oyuncak figürü görünür. Inside Out (2015) filminin doğrudan devamıdır. Soul filmindeki Büyük Öncesi Bölgesi'ne göndermeler yapılır. Ember (Elemental) karakterinin oyuncak figürü görünür. Inside Out (2015) filminin doğrudan devamıdır. Soul filmindeki Büyük Öncesi Bölgesi'ne göndermeler yapılır. Ember (Elemental) karakterinin oyuncak figürü görünür. Inside Out (2015) filminin doğrudan devamıdır. Soul filmindeki Büyük Öncesi Bölgesi'ne göndermeler yapılır. Ember (Elemental) karakterinin oyuncak figürü görünür. Inside Out (2015) filminin doğrudan devamıdır. Soul filmindeki Büyük Öncesi Bölgesi'ne göndermeler yapılır. Ember (Elemental) karakterinin oyuncak figürü görünür. Inside Out (2015) filminin doğrudan devamıdır. Soul filmindeki Büyük Öncesi Bölgesi'ne göndermeler yapılır. Ember (Elemental) karakterinin oyuncak figürü görünür. Inside Out (2015) filminin doğrudan devamıdır. Soul filmindeki Büyük Öncesi Bölgesi'ne göndermeler yapılır. Ember (Elemental) karakterinin oyuncak figürü görünür.",
+      "type": "film",
+      "release_date": "2024-06-14",
+      "level": 23
     }
   ],
   "edges": [
-  {
-    "from": "toyStory1995",
-    "to": "toyStory21999",
-    "type": "devam"
-  },
-  {
-    "from": "toyStory1995",
-    "to": "aBugsLife1998",
-    "type": "evren geçişi"
-  },
-  {
-    "from": "aBugsLife1998",
-    "to": "toyStory21999",
-    "type": "karakter göndermesi"
-  },
-  {
-    "from": "toyStory21999",
-    "to": "monstersInc2001",
-    "type": "evren geçişi"
-  },
-  {
-    "from": "monstersInc2001",
-    "to": "findingNemo2003",
-    "type": "karakter göndermesi"
-  },
-  {
-    "from": "findingNemo2003",
-    "to": "toyStory21999",
-    "type": "evren geçişi"
-  },
-  {
-    "from": "theIncredibles2004",
-    "to": "ratatouille2007",
-    "type": "karakter göndermesi"
-  },
-  {
-    "from": "cars2006",
-    "to": "toyStory1995",
-    "type": "evren geçişi"
-  },
-  {
-    "from": "ratatouille2007",
-    "to": "up2009",
-    "type": "evren geçişi"
-  },
-  {
-    "from": "wallE2008",
-    "to": "up2009",
-    "type": "kurumsal gönderme"
-  },
-  {
-    "from": "toyStory32010",
-    "to": "toyStory21999",
-    "type": "devam"
-  },
-  {
-    "from": "toyStory32010",
-    "to": "up2009",
-    "type": "karakter göndermesi"
-  },
-  {
-    "from": "cars22011",
-    "to": "cars2006",
-    "type": "devam"
-  },
-  {
-    "from": "cars22011",
-    "to": "toyStory1995",
-    "type": "evren geçişi"
-  },
-  {
-    "from": "brave2012",
-    "to": "monstersInc2001",
-    "type": "karakter göndermesi"
-  },
-  {
-    "from": "monstersUniversity2013",
-    "to": "monstersInc2001",
-    "type": "ön hikaye"
-  },
-  {
-    "from": "monstersUniversity2013",
-    "to": "aBugsLife1998",
-    "type": "görsel gönderme"
-  },
-  {
-    "from": "insideOut2015",
-    "to": "ratatouille2007",
-    "type": "karakter gönderme"
-  },
-  {
-    "from": "insideOut2015",
-    "to": "up2009",
-    "type": "görsel gönderme"
-  },
-  {
-    "from": "theGoodDinosaur2015",
-    "to": "toyStory1995",
-    "type": "görsel gönderme"
-  },
-  {
-    "from": "findingDory2016",
-    "to": "findingNemo2003",
-    "type": "devam"
-  },
-  {
-    "from": "cars32017",
-    "to": "cars22011",
-    "type": "devam"
-  },
-  {
-    "from": "coco2017",
-    "to": "insideOut2015",
-    "type": "görsel gönderme"
-  },
-  {
-    "from": "incredibles22018",
-    "to": "theIncredibles2004",
-    "type": "devam"
-  },
-  {
-    "from": "toyStory42019",
-    "to": "toyStory32010",
-    "type": "devam"
-  },
-  {
-    "from": "onward2020",
-    "to": "ratatouille2007",
-    "type": "karakter göndermesi"
-  },
-  {
-    "from": "soul2020",
-    "to": "insideOut2015",
-    "type": "konseptsel devam"
-  },
-  {
-    "from": "luca2021",
-    "to": "laLunaShort2011",
-    "type": "yan hikaye"
-  },
-  {
-    "from": "turningRed2022",
-    "to": "insideOut2015",
-    "type": "duygusal tema devamı"
-  },
-  {
-    "from": "lightyear2022",
-    "to": "toyStory1995",
-    "type": "iç film/karakter kökeni"
-  },
-  {
-    "from": "elemental2023",
-    "to": "insideOut2015",
-    "type": "tematik benzerlik"
-  },
-  {
-    "from": "elemental2023",
-    "to": "soul2020",
-    "type": "soyut dünya göndermesi"
-  },
-  {
-    "from": "elemental2023",
-    "to": "turningRed2022",
-    "type": "şehir yaşamı paralelliği"
-  },
-  {
-    "from": "insideOut22024",
-    "to": "insideOut2015",
-    "type": "devam"
-  },
-  {
-    "from": "insideOut22024",
-    "to": "soul2020",
-    "type": "duygu ve bilinç teması"
-  },
-  {
-    "from": "insideOut22024",
-    "to": "elemental2023",
-    "type": "görsel gönderme"
-  }
-]
+    {
+      "from": "toyStory1995",
+      "to": "toyStory21999",
+      "type": "devam"
+    },
+    {
+      "from": "toyStory1995",
+      "to": "aBugsLife1998",
+      "type": "evren geçişi"
+    },
+    {
+      "from": "aBugsLife1998",
+      "to": "toyStory21999",
+      "type": "karakter göndermesi"
+    },
+    {
+      "from": "toyStory21999",
+      "to": "monstersInc2001",
+      "type": "evren geçişi"
+    },
+    {
+      "from": "monstersInc2001",
+      "to": "findingNemo2003",
+      "type": "karakter göndermesi"
+    },
+    {
+      "from": "findingNemo2003",
+      "to": "toyStory21999",
+      "type": "evren geçişi"
+    },
+    {
+      "from": "theIncredibles2004",
+      "to": "ratatouille2007",
+      "type": "karakter göndermesi"
+    },
+    {
+      "from": "cars2006",
+      "to": "toyStory1995",
+      "type": "evren geçişi"
+    },
+    {
+      "from": "ratatouille2007",
+      "to": "up2009",
+      "type": "evren geçişi"
+    },
+    {
+      "from": "wallE2008",
+      "to": "up2009",
+      "type": "kurumsal gönderme"
+    },
+    {
+      "from": "toyStory32010",
+      "to": "toyStory21999",
+      "type": "devam"
+    },
+    {
+      "from": "toyStory32010",
+      "to": "up2009",
+      "type": "karakter göndermesi"
+    },
+    {
+      "from": "cars22011",
+      "to": "cars2006",
+      "type": "devam"
+    },
+    {
+      "from": "cars22011",
+      "to": "toyStory1995",
+      "type": "evren geçişi"
+    },
+    {
+      "from": "brave2012",
+      "to": "monstersInc2001",
+      "type": "karakter göndermesi"
+    },
+    {
+      "from": "monstersUniversity2013",
+      "to": "monstersInc2001",
+      "type": "ön hikaye"
+    },
+    {
+      "from": "monstersUniversity2013",
+      "to": "aBugsLife1998",
+      "type": "görsel gönderme"
+    },
+    {
+      "from": "insideOut2015",
+      "to": "ratatouille2007",
+      "type": "karakter gönderme"
+    },
+    {
+      "from": "insideOut2015",
+      "to": "up2009",
+      "type": "görsel gönderme"
+    },
+    {
+      "from": "theGoodDinosaur2015",
+      "to": "toyStory1995",
+      "type": "görsel gönderme"
+    },
+    {
+      "from": "findingDory2016",
+      "to": "findingNemo2003",
+      "type": "devam"
+    },
+    {
+      "from": "cars32017",
+      "to": "cars22011",
+      "type": "devam"
+    },
+    {
+      "from": "coco2017",
+      "to": "insideOut2015",
+      "type": "görsel gönderme"
+    },
+    {
+      "from": "incredibles22018",
+      "to": "theIncredibles2004",
+      "type": "devam"
+    },
+    {
+      "from": "toyStory42019",
+      "to": "toyStory32010",
+      "type": "devam"
+    },
+    {
+      "from": "onward2020",
+      "to": "ratatouille2007",
+      "type": "karakter göndermesi"
+    },
+    {
+      "from": "soul2020",
+      "to": "insideOut2015",
+      "type": "konseptsel devam"
+    },
+    {
+      "from": "luca2021",
+      "to": "laLunaShort2011",
+      "type": "yan hikaye"
+    },
+    {
+      "from": "turningRed2022",
+      "to": "insideOut2015",
+      "type": "duygusal tema devamı"
+    },
+    {
+      "from": "lightyear2022",
+      "to": "toyStory1995",
+      "type": "iç film/karakter kökeni"
+    },
+    {
+      "from": "elemental2023",
+      "to": "insideOut2015",
+      "type": "tematik benzerlik"
+    },
+    {
+      "from": "elemental2023",
+      "to": "soul2020",
+      "type": "soyut dünya göndermesi"
+    },
+    {
+      "from": "elemental2023",
+      "to": "turningRed2022",
+      "type": "şehir yaşamı paralelliği"
+    },
+    {
+      "from": "insideOut22024",
+      "to": "insideOut2015",
+      "type": "devam"
+    },
+    {
+      "from": "insideOut22024",
+      "to": "soul2020",
+      "type": "duygu ve bilinç teması"
+    },
+    {
+      "from": "insideOut22024",
+      "to": "elemental2023",
+      "type": "görsel gönderme"
+    }
+  ]
 }

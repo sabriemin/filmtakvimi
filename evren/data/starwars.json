@@ -1,346 +1,346 @@
 {
   "nodes": [
-  {
-    "id": "phantomMenace1999",
-    "label": "The Phantom Menace (1999)",
-    "title": "The Phantom Menace",
-    "image": "images/starwars.jpg",
-    "shape": "image",
-    "description": "Galaktik Cumhuriyet’in çöküşünün başlangıcında Jedi ustası Qui-Gon Jinn ve çırağı Obi-Wan Kenobi, genç Anakin Skywalker'ı keşfeder.",
-    "refers_to": "İlk Star Wars üçlemesinde geçen karakterlerin geçmişlerine göndermeler içerir.",
-    "type": "film",
-    "release_date": "1999-05-19",
-    "level": 0
-  },
-  {
-    "id": "attackOfTheClones2002",
-    "label": "Attack of the Clones (2002)",
-    "title": "Attack of the Clones",
-    "image": "images/starwars.jpg",
-    "shape": "image",
-    "description": "Anakin Skywalker Jedi eğitimi alırken, Galaktik Cumhuriyet ayrılıkçı tehditlerle karşı karşıya kalır.",
-    "refers_to": "Klon Savaşları'nın başlangıcı, sonraki animasyon dizilere zemin hazırlar.",
-    "type": "film",
-    "release_date": "2002-05-16",
-    "level": 1
-  },
-  {
-    "id": "cloneWars2008",
-    "label": "The Clone Wars (2008)",
-    "title": "The Clone Wars",
-    "image": "images/starwars.jpg",
-    "shape": "image",
-    "description": "Anakin ve Obi-Wan, Klon Savaşları sırasında birçok cephede savaşır. Ahsoka Tano tanıtılır.",
-    "refers_to": "Attack of the Clones ve Revenge of the Sith arasında geçer.",
-    "type": "dizi",
-    "release_date": "2008-10-03",
-    "level": 2
-  },
-  {
-    "id": "revengeOfTheSith2005",
-    "label": "Revenge of the Sith (2005)",
-    "title": "Revenge of the Sith",
-    "image": "images/starwars.jpg",
-    "shape": "image",
-    "description": "Anakin karanlık tarafa geçer ve Darth Vader olur. Cumhuriyet, İmparatorluk’a dönüşür.",
-    "refers_to": "Anakin’in düşüşü, Luke’un hikâyesinin temelini oluşturur.",
-    "type": "film",
-    "release_date": "2005-05-19",
-    "level": 3
-  },
-  {
-    "id": "badBatch2021",
-    "label": "The Bad Batch (2021)",
-    "title": "The Bad Batch",
-    "image": "images/starwars.jpg",
-    "shape": "image",
-    "description": "Emir 66 sonrası genetik olarak farklılaşmış bir klon birliği galaksinin yeni düzeninde hayatta kalmaya çalışır.",
-    "refers_to": "Clone Wars dizisinin doğrudan devamı niteliğindedir.",
-    "type": "dizi",
-    "release_date": "2021-05-04",
-    "level": 4
-  },
-  {
-    "id": "solo2018",
-    "label": "Solo: A Star Wars Story (2018)",
-    "title": "Solo: A Star Wars Story",
-    "image": "images/starwars.jpg",
-    "shape": "image",
-    "description": "Genç Han Solo’nun Lando Calrissian ve Chewbacca ile tanışmasını anlatır.",
-    "refers_to": "Original Trilogy’deki Han Solo karakterinin kökenini açıklar.",
-    "type": "film",
-    "release_date": "2018-05-25",
-    "level": 5
-  },
-  {
-    "id": "obiWanKenobi2022",
-    "label": "Obi-Wan Kenobi (2022)",
-    "title": "Obi-Wan Kenobi",
-    "image": "images/starwars.jpg",
-    "shape": "image",
-    "description": "Obi-Wan, Order 66 sonrası saklanmaktadır. Genç Leia'nın kaçırılmasıyla göreve döner.",
-    "refers_to": "Revenge of the Sith ve A New Hope arasına köprü kurar.",
-    "type": "dizi",
-    "release_date": "2022-05-27",
-    "level": 6
-  },
-  {
-    "id": "rebels2014",
-    "label": "Star Wars Rebels (2014)",
-    "title": "Star Wars Rebels",
-    "image": "images/starwars.jpg",
-    "shape": "image",
-    "description": "Ezra Bridger ve bir grup isyancı, İmparatorluğa karşı savaşır.",
-    "refers_to": "Rogue One’a giden olayların zeminini hazırlar.",
-    "type": "dizi",
-    "release_date": "2014-10-03",
-    "level": 7
-  },
-  {
-    "id": "andor2022",
-    "label": "Andor (2022)",
-    "title": "Andor",
-    "image": "images/starwars.jpg",
-    "shape": "image",
-    "description": "Rogue One'dan tanıdığımız Cassian Andor’un direniş savaşçısı haline gelişini anlatır.",
-    "refers_to": "Rogue One öncesini anlatır. İsyanın doğuşunu işler.",
-    "type": "dizi",
-    "release_date": "2022-09-21",
-    "level": 8
-  },
-  {
-    "id": "rogueOne2016",
-    "label": "Rogue One (2016)",
-    "title": "Rogue One",
-    "image": "images/starwars.jpg",
-    "shape": "image",
-    "description": "İsyancılar, Ölüm Yıldızı’nın planlarını çalmak için ölümcül bir görev üstlenir.",
-    "refers_to": "A New Hope'un hemen öncesini anlatır.",
-    "type": "film",
-    "release_date": "2016-12-16",
-    "level": 9
-  },
-  {
-    "id": "aNewHope1977",
-    "label": "A New Hope (1977)",
-    "title": "A New Hope",
-    "image": "images/starwars.jpg",
-    "shape": "image",
-    "description": "Genç Luke Skywalker, Obi-Wan Kenobi ile tanışır ve İsyan’a katılarak Ölüm Yıldızı’na karşı savaşır.",
-    "refers_to": "Rogue One’un doğrudan devamıdır. Vader ve Leia’nın hikâyeleri devam eder.",
-    "type": "film",
-    "release_date": "1977-05-25",
-    "level": 10
-  },
-  {
-    "id": "empireStrikesBack1980",
-    "label": "The Empire Strikes Back (1980)",
-    "title": "The Empire Strikes Back",
-    "image": "images/starwars.jpg",
-    "shape": "image",
-    "description": "İmparatorluk, İsyan’a büyük darbe indirir. Luke, Vader’ın kim olduğunu öğrenir.",
-    "refers_to": "Yoda ilk kez tanıtılır. Skywalker ailesi mitolojisi derinleşir.",
-    "type": "film",
-    "release_date": "1980-05-21",
-    "level": 11
-  },
-  {
-    "id": "returnOfTheJedi1983",
-    "label": "Return of the Jedi (1983)",
-    "title": "Return of the Jedi",
-    "image": "images/starwars.jpg",
-    "shape": "image",
-    "description": "Luke, Vader’ı kurtarmaya çalışırken İmparatorluğun ikinci Ölüm Yıldızı’nı yok etmeye çalışırlar.",
-    "refers_to": "Vader’ın kefareti ve Anakin’in dönüşü işlenir.",
-    "type": "film",
-    "release_date": "1983-05-25",
-    "level": 12
-  },
-  {
-    "id": "mandalorian2019",
-    "label": "The Mandalorian (2019)",
-    "title": "The Mandalorian",
-    "image": "images/starwars.jpg",
-    "shape": "image",
-    "description": "Galaksinin uzak köşelerinde bir Mandalorian ödül avcısının Baby Yoda (Grogu) ile olan macerası.",
-    "refers_to": "Return of the Jedi sonrası geçer. Ahsoka, Bo-Katan gibi karakterlerle Clone Wars’a bağ kurar.",
-    "type": "dizi",
-    "release_date": "2019-11-12",
-    "level": 13
-  },
-  {
-    "id": "bookOfBobaFett2021",
-    "label": "The Book of Boba Fett (2021)",
-    "title": "The Book of Boba Fett",
-    "image": "images/starwars.jpg",
-    "shape": "image",
-    "description": "Boba Fett, Tatooine'deki suç dünyasında hüküm sürmeye çalışır.",
-    "refers_to": "Mandalorian ile doğrudan bağlantılıdır. Clone Wars’a karakter gönderir.",
-    "type": "dizi",
-    "release_date": "2021-12-29",
-    "level": 13
-  },
-  {
-    "id": "ahsoka2023",
-    "label": "Ahsoka (2023)",
-    "title": "Ahsoka",
-    "image": "images/starwars.jpg",
-    "shape": "image",
-    "description": "Ahsoka Tano, kayıp İmparatorluk subayı Thrawn’ı ararken eski düşmanlarla yüzleşir.",
-    "refers_to": "Rebels dizisinin doğrudan devamı. Anakin’in hayal görünümleri Clone Wars bağlantısı kurar.",
-    "type": "dizi",
-    "release_date": "2023-08-22",
-    "level": 14
-  },
-  {
-    "id": "forceAwakens2015",
-    "label": "The Force Awakens (2015)",
-    "title": "The Force Awakens",
-    "image": "images/starwars.jpg",
-    "shape": "image",
-    "description": "Rey, Finn ve Poe gibi yeni kahramanlar tanıtılır. Luke Skywalker yıllardır kayıptır.",
-    "refers_to": "Han Solo ve Leia’nın yaşlılık dönemleri, Mandalorian’dan sonraki zaman dilimi.",
-    "type": "film",
-    "release_date": "2015-12-18",
-    "level": 15
-  },
-  {
-    "id": "lastJedi2017",
-    "label": "The Last Jedi (2017)",
-    "title": "The Last Jedi",
-    "image": "images/starwars.jpg",
-    "shape": "image",
-    "description": "Rey, Luke’tan Jedi eğitimi almak ister. Kylo Ren karanlık tarafa daha çok bağlanır.",
-    "refers_to": "Yoda'nın Force hayaleti görünür. Clone Wars'tan miras kalan felsefeler tartışılır.",
-    "type": "film",
-    "release_date": "2017-12-15",
-    "level": 16
-  },
-  {
-    "id": "riseOfSkywalker2019",
-    "label": "The Rise of Skywalker (2019)",
-    "title": "The Rise of Skywalker",
-    "image": "images/starwars.jpg",
-    "shape": "image",
-    "description": "Rey ve arkadaşları, Palpatine’in geri döndüğünü öğrenir. Skywalker efsanesi sona erer.",
-    "refers_to": "Tüm seriye göndermeler içerir. Ahsoka’nın sesi duyulur. Clone Wars + Rebels + Saga birleşimi.",
-    "type": "film",
-    "release_date": "2019-12-20",
-    "level": 17
-  },
-  {
-    "id": "visions2021",
-    "label": "Star Wars: Visions (2021)",
-    "title": "Star Wars: Visions",
-    "image": "images/starwars.jpg",
-    "shape": "image",
-    "description": "Farklı Japon stüdyolar tarafından üretilmiş alternatif Star Wars hikâyeleri.",
-    "refers_to": "Ana zaman çizgisine ait değildir ancak Jedi, Sith gibi temel temaları işler.",
-    "type": "dizi",
-    "release_date": "2021-09-22",
-    "level": 18
+    {
+      "id": "phantomMenace1999",
+      "label": "The Phantom Menace (1999)",
+      "title": "The Phantom Menace",
+      "image": "images/starwars.jpg",
+      "shape": "image",
+      "description": "Galaktik Cumhuriyet’in çöküşünün başlangıcında Jedi ustası Qui-Gon Jinn ve çırağı Obi-Wan Kenobi, genç Anakin Skywalker'ı keşfeder. Galaktik Cumhuriyet’in çöküşünün başlangıcında Jedi ustası Qui-Gon Jinn ve çırağı Obi-Wan Kenobi, genç Anakin Skywalker'ı keşfeder. Galaktik Cumhuriyet’in çöküşünün başlangıcında Jedi ustası Qui-Gon Jinn ve çırağı Obi-Wan Kenobi, genç Anakin Skywalker'ı keşfeder. Galaktik Cumhuriyet’in çöküşünün başlangıcında Jedi ustası Qui-Gon Jinn ve çırağı Obi-Wan Kenobi, genç Anakin Skywalker'ı keşfeder. Galaktik Cumhuriyet’in çöküşünün başlangıcında Jedi ustası Qui-Gon Jinn ve çırağı Obi-Wan Kenobi, genç Anakin Skywalker'ı keşfeder. Galaktik Cumhuriyet’in çöküşünün başlangıcında Jedi ustası Qui-Gon Jinn ve çırağı Obi-Wan Kenobi, genç Anakin Skywalker'ı keşfeder. Galaktik Cumhuriyet’in çöküşünün başlangıcında Jedi ustası Qui-Gon Jinn ve çırağı Obi-Wan Kenobi, genç Anakin Skywalker'ı keşfeder. Galaktik Cumhuriyet’in çöküşünün başlangıcında Jedi ustası Qui-Gon Jinn ve çırağı Obi-Wan Kenobi, genç Anakin Skywalker'ı keşfeder. Galaktik Cumhuriyet’in çöküşünün başlangıcında Jedi ustası Qui-Gon Jinn ve çırağı Obi-Wan Kenobi, genç Anakin Skywalker'ı keşfeder. Galaktik Cumhuriyet’in çöküşünün başlangıcında Jedi ustası Qui-Gon Jinn ve çırağı Obi-Wan Kenobi, genç Anakin Skywalker'ı keşfeder.",
+      "refers_to": "İlk Star Wars üçlemesinde geçen karakterlerin geçmişlerine göndermeler içerir. İlk Star Wars üçlemesinde geçen karakterlerin geçmişlerine göndermeler içerir. İlk Star Wars üçlemesinde geçen karakterlerin geçmişlerine göndermeler içerir. İlk Star Wars üçlemesinde geçen karakterlerin geçmişlerine göndermeler içerir. İlk Star Wars üçlemesinde geçen karakterlerin geçmişlerine göndermeler içerir. İlk Star Wars üçlemesinde geçen karakterlerin geçmişlerine göndermeler içerir. İlk Star Wars üçlemesinde geçen karakterlerin geçmişlerine göndermeler içerir. İlk Star Wars üçlemesinde geçen karakterlerin geçmişlerine göndermeler içerir. İlk Star Wars üçlemesinde geçen karakterlerin geçmişlerine göndermeler içerir. İlk Star Wars üçlemesinde geçen karakterlerin geçmişlerine göndermeler içerir. İlk Star Wars üçlemesinde geçen karakterlerin geçmişlerine göndermeler içerir. İlk Star Wars üçlemesinde geçen karakterlerin geçmişlerine göndermeler içerir. İlk Star Wars üçlemesinde geçen karakterlerin geçmişlerine göndermeler içerir. İlk Star Wars üçlemesinde geçen karakterlerin geçmişlerine göndermeler içerir. İlk Star Wars üçlemesinde geçen karakterlerin geçmişlerine göndermeler içerir. İlk Star Wars üçlemesinde geçen karakterlerin geçmişlerine göndermeler içerir. İlk Star Wars üçlemesinde geçen karakterlerin geçmişlerine göndermeler içerir.",
+      "type": "film",
+      "release_date": "1999-05-19",
+      "level": 0
+    },
+    {
+      "id": "attackOfTheClones2002",
+      "label": "Attack of the Clones (2002)",
+      "title": "Attack of the Clones",
+      "image": "images/starwars.jpg",
+      "shape": "image",
+      "description": "Anakin Skywalker Jedi eğitimi alırken, Galaktik Cumhuriyet ayrılıkçı tehditlerle karşı karşıya kalır. Anakin Skywalker Jedi eğitimi alırken, Galaktik Cumhuriyet ayrılıkçı tehditlerle karşı karşıya kalır. Anakin Skywalker Jedi eğitimi alırken, Galaktik Cumhuriyet ayrılıkçı tehditlerle karşı karşıya kalır. Anakin Skywalker Jedi eğitimi alırken, Galaktik Cumhuriyet ayrılıkçı tehditlerle karşı karşıya kalır. Anakin Skywalker Jedi eğitimi alırken, Galaktik Cumhuriyet ayrılıkçı tehditlerle karşı karşıya kalır. Anakin Skywalker Jedi eğitimi alırken, Galaktik Cumhuriyet ayrılıkçı tehditlerle karşı karşıya kalır. Anakin Skywalker Jedi eğitimi alırken, Galaktik Cumhuriyet ayrılıkçı tehditlerle karşı karşıya kalır. Anakin Skywalker Jedi eğitimi alırken, Galaktik Cumhuriyet ayrılıkçı tehditlerle karşı karşıya kalır. Anakin Skywalker Jedi eğitimi alırken, Galaktik Cumhuriyet ayrılıkçı tehditlerle karşı karşıya kalır. Anakin Skywalker Jedi eğitimi alırken, Galaktik Cumhuriyet ayrılıkçı tehditlerle karşı karşıya kalır. Anakin Skywalker Jedi eğitimi alırken, Galaktik Cumhuriyet ayrılıkçı tehditlerle karşı karşıya kalır. Anakin Skywalker Jedi eğitimi alırken, Galaktik Cumhuriyet ayrılıkçı tehditlerle karşı karşıya kalır. Anakin Skywalker Jedi eğitimi alırken, Galaktik Cumhuriyet ayrılıkçı tehditlerle karşı karşıya kalır.",
+      "refers_to": "Klon Savaşları'nın başlangıcı, sonraki animasyon dizilere zemin hazırlar. Klon Savaşları'nın başlangıcı, sonraki animasyon dizilere zemin hazırlar. Klon Savaşları'nın başlangıcı, sonraki animasyon dizilere zemin hazırlar. Klon Savaşları'nın başlangıcı, sonraki animasyon dizilere zemin hazırlar. Klon Savaşları'nın başlangıcı, sonraki animasyon dizilere zemin hazırlar. Klon Savaşları'nın başlangıcı, sonraki animasyon dizilere zemin hazırlar. Klon Savaşları'nın başlangıcı, sonraki animasyon dizilere zemin hazırlar. Klon Savaşları'nın başlangıcı, sonraki animasyon dizilere zemin hazırlar. Klon Savaşları'nın başlangıcı, sonraki animasyon dizilere zemin hazırlar. Klon Savaşları'nın başlangıcı, sonraki animasyon dizilere zemin hazırlar. Klon Savaşları'nın başlangıcı, sonraki animasyon dizilere zemin hazırlar. Klon Savaşları'nın başlangıcı, sonraki animasyon dizilere zemin hazırlar. Klon Savaşları'nın başlangıcı, sonraki animasyon dizilere zemin hazırlar. Klon Savaşları'nın başlangıcı, sonraki animasyon dizilere zemin hazırlar. Klon Savaşları'nın başlangıcı, sonraki animasyon dizilere zemin hazırlar. Klon Savaşları'nın başlangıcı, sonraki animasyon dizilere zemin hazırlar. Klon Savaşları'nın başlangıcı, sonraki animasyon dizilere zemin hazırlar. Klon Savaşları'nın başlangıcı, sonraki animasyon dizilere zemin hazırlar. Klon Savaşları'nın başlangıcı, sonraki animasyon dizilere zemin hazırlar.",
+      "type": "film",
+      "release_date": "2002-05-16",
+      "level": 1
+    },
+    {
+      "id": "cloneWars2008",
+      "label": "The Clone Wars (2008)",
+      "title": "The Clone Wars",
+      "image": "images/starwars.jpg",
+      "shape": "image",
+      "description": "Anakin ve Obi-Wan, Klon Savaşları sırasında birçok cephede savaşır. Ahsoka Tano tanıtılır. Anakin ve Obi-Wan, Klon Savaşları sırasında birçok cephede savaşır. Ahsoka Tano tanıtılır. Anakin ve Obi-Wan, Klon Savaşları sırasında birçok cephede savaşır. Ahsoka Tano tanıtılır. Anakin ve Obi-Wan, Klon Savaşları sırasında birçok cephede savaşır. Ahsoka Tano tanıtılır. Anakin ve Obi-Wan, Klon Savaşları sırasında birçok cephede savaşır. Ahsoka Tano tanıtılır. Anakin ve Obi-Wan, Klon Savaşları sırasında birçok cephede savaşır. Ahsoka Tano tanıtılır. Anakin ve Obi-Wan, Klon Savaşları sırasında birçok cephede savaşır. Ahsoka Tano tanıtılır. Anakin ve Obi-Wan, Klon Savaşları sırasında birçok cephede savaşır. Ahsoka Tano tanıtılır. Anakin ve Obi-Wan, Klon Savaşları sırasında birçok cephede savaşır. Ahsoka Tano tanıtılır. Anakin ve Obi-Wan, Klon Savaşları sırasında birçok cephede savaşır. Ahsoka Tano tanıtılır. Anakin ve Obi-Wan, Klon Savaşları sırasında birçok cephede savaşır. Ahsoka Tano tanıtılır. Anakin ve Obi-Wan, Klon Savaşları sırasında birçok cephede savaşır. Ahsoka Tano tanıtılır. Anakin ve Obi-Wan, Klon Savaşları sırasında birçok cephede savaşır. Ahsoka Tano tanıtılır.",
+      "refers_to": "Attack of the Clones ve Revenge of the Sith arasında geçer. Attack of the Clones ve Revenge of the Sith arasında geçer. Attack of the Clones ve Revenge of the Sith arasında geçer. Attack of the Clones ve Revenge of the Sith arasında geçer. Attack of the Clones ve Revenge of the Sith arasında geçer. Attack of the Clones ve Revenge of the Sith arasında geçer. Attack of the Clones ve Revenge of the Sith arasında geçer. Attack of the Clones ve Revenge of the Sith arasında geçer. Attack of the Clones ve Revenge of the Sith arasında geçer. Attack of the Clones ve Revenge of the Sith arasında geçer. Attack of the Clones ve Revenge of the Sith arasında geçer. Attack of the Clones ve Revenge of the Sith arasında geçer. Attack of the Clones ve Revenge of the Sith arasında geçer. Attack of the Clones ve Revenge of the Sith arasında geçer.",
+      "type": "dizi",
+      "release_date": "2008-10-03",
+      "level": 2
+    },
+    {
+      "id": "revengeOfTheSith2005",
+      "label": "Revenge of the Sith (2005)",
+      "title": "Revenge of the Sith",
+      "image": "images/starwars.jpg",
+      "shape": "image",
+      "description": "Anakin karanlık tarafa geçer ve Darth Vader olur. Cumhuriyet, İmparatorluk’a dönüşür. Anakin karanlık tarafa geçer ve Darth Vader olur. Cumhuriyet, İmparatorluk’a dönüşür. Anakin karanlık tarafa geçer ve Darth Vader olur. Cumhuriyet, İmparatorluk’a dönüşür. Anakin karanlık tarafa geçer ve Darth Vader olur. Cumhuriyet, İmparatorluk’a dönüşür. Anakin karanlık tarafa geçer ve Darth Vader olur. Cumhuriyet, İmparatorluk’a dönüşür. Anakin karanlık tarafa geçer ve Darth Vader olur. Cumhuriyet, İmparatorluk’a dönüşür. Anakin karanlık tarafa geçer ve Darth Vader olur. Cumhuriyet, İmparatorluk’a dönüşür. Anakin karanlık tarafa geçer ve Darth Vader olur. Cumhuriyet, İmparatorluk’a dönüşür. Anakin karanlık tarafa geçer ve Darth Vader olur. Cumhuriyet, İmparatorluk’a dönüşür. Anakin karanlık tarafa geçer ve Darth Vader olur. Cumhuriyet, İmparatorluk’a dönüşür. Anakin karanlık tarafa geçer ve Darth Vader olur. Cumhuriyet, İmparatorluk’a dönüşür. Anakin karanlık tarafa geçer ve Darth Vader olur. Cumhuriyet, İmparatorluk’a dönüşür. Anakin karanlık tarafa geçer ve Darth Vader olur. Cumhuriyet, İmparatorluk’a dönüşür. Anakin karanlık tarafa geçer ve Darth Vader olur. Cumhuriyet, İmparatorluk’a dönüşür.",
+      "refers_to": "Anakin’in düşüşü, Luke’un hikâyesinin temelini oluşturur. Anakin’in düşüşü, Luke’un hikâyesinin temelini oluşturur. Anakin’in düşüşü, Luke’un hikâyesinin temelini oluşturur. Anakin’in düşüşü, Luke’un hikâyesinin temelini oluşturur. Anakin’in düşüşü, Luke’un hikâyesinin temelini oluşturur. Anakin’in düşüşü, Luke’un hikâyesinin temelini oluşturur. Anakin’in düşüşü, Luke’un hikâyesinin temelini oluşturur. Anakin’in düşüşü, Luke’un hikâyesinin temelini oluşturur. Anakin’in düşüşü, Luke’un hikâyesinin temelini oluşturur. Anakin’in düşüşü, Luke’un hikâyesinin temelini oluşturur. Anakin’in düşüşü, Luke’un hikâyesinin temelini oluşturur. Anakin’in düşüşü, Luke’un hikâyesinin temelini oluşturur. Anakin’in düşüşü, Luke’un hikâyesinin temelini oluşturur. Anakin’in düşüşü, Luke’un hikâyesinin temelini oluşturur. Anakin’in düşüşü, Luke’un hikâyesinin temelini oluşturur. Anakin’in düşüşü, Luke’un hikâyesinin temelini oluşturur. Anakin’in düşüşü, Luke’un hikâyesinin temelini oluşturur. Anakin’in düşüşü, Luke’un hikâyesinin temelini oluşturur. Anakin’in düşüşü, Luke’un hikâyesinin temelini oluşturur. Anakin’in düşüşü, Luke’un hikâyesinin temelini oluşturur. Anakin’in düşüşü, Luke’un hikâyesinin temelini oluşturur. Anakin’in düşüşü, Luke’un hikâyesinin temelini oluşturur. Anakin’in düşüşü, Luke’un hikâyesinin temelini oluşturur. Anakin’in düşüşü, Luke’un hikâyesinin temelini oluşturur. Anakin’in düşüşü, Luke’un hikâyesinin temelini oluşturur. Anakin’in düşüşü, Luke’un hikâyesinin temelini olu",
+      "type": "film",
+      "release_date": "2005-05-19",
+      "level": 3
+    },
+    {
+      "id": "badBatch2021",
+      "label": "The Bad Batch (2021)",
+      "title": "The Bad Batch",
+      "image": "images/starwars.jpg",
+      "shape": "image",
+      "description": "Emir 66 sonrası genetik olarak farklılaşmış bir klon birliği galaksinin yeni düzeninde hayatta kalmaya çalışır. Emir 66 sonrası genetik olarak farklılaşmış bir klon birliği galaksinin yeni düzeninde hayatta kalmaya çalışır. Emir 66 sonrası genetik olarak farklılaşmış bir klon birliği galaksinin yeni düzeninde hayatta kalmaya çalışır. Emir 66 sonrası genetik olarak farklılaşmış bir klon birliği galaksinin yeni düzeninde hayatta kalmaya çalışır. Emir 66 sonrası genetik olarak farklılaşmış bir klon birliği galaksinin yeni düzeninde hayatta kalmaya çalışır. Emir 66 sonrası genetik olarak farklılaşmış bir klon birliği galaksinin yeni düzeninde hayatta kalmaya çalışır. Emir 66 sonrası genetik olarak farklılaşmış bir klon birliği galaksinin yeni düzeninde hayatta kalmaya çalışır. Emir 66 sonrası genetik olarak farklılaşmış bir klon birliği galaksinin yeni düzeninde hayatta kalmaya çalışır. Emir 66 sonrası genetik olarak farklılaşmış bir klon birliği galaksinin yeni düzeninde hayatta kalmaya çalışır. Emir 66 sonrası genetik olarak farklılaşmış bir klon birliği galaksinin yeni düzeninde hayatta kalmaya çalışır. Emir 66 sonrası genetik olarak farklılaşmış bir klon birliği galaksinin yeni düzeninde hayatta kalmaya çalışır.",
+      "refers_to": "Clone Wars dizisinin doğrudan devamı niteliğindedir. Clone Wars dizisinin doğrudan devamı niteliğindedir. Clone Wars dizisinin doğrudan devamı niteliğindedir. Clone Wars dizisinin doğrudan devamı niteliğindedir. Clone Wars dizisinin doğrudan devamı niteliğindedir. Clone Wars dizisinin doğrudan devamı niteliğindedir. Clone Wars dizisinin doğrudan devamı niteliğindedir. Clone Wars dizisinin doğrudan devamı niteliğindedir. Clone Wars dizisinin doğrudan devamı niteliğindedir. Clone Wars dizisinin doğrudan devamı niteliğindedir. Clone Wars dizisinin doğrudan devamı niteliğindedir. Clone Wars dizisinin doğrudan devamı niteliğindedir. Clone Wars dizisinin doğrudan devamı niteliğindedir. Clone Wars dizisinin doğrudan devamı niteliğindedir. Clone Wars dizisinin doğrudan devamı niteliğindedir. Clone Wars dizisinin doğrudan devamı niteliğindedir. Clone Wars dizisinin doğrudan devamı niteliğindedir. Clone Wars dizisinin doğrudan devamı niteliğindedir. Clone Wars dizisinin doğrudan devamı niteliğindedir. Clone Wars dizisinin doğrudan devamı niteliğindedir. Clone Wars dizisinin doğrudan devamı niteliğindedir. Clone Wars dizisinin doğrudan devamı niteliğindedir. Clone Wars dizisinin doğrudan devamı niteliğindedir. Clone Wars dizisinin doğrudan devamı niteliğindedir. Clone Wars dizisinin doğrudan devamı niteliğindedir. Clone Wars dizisinin doğrudan devamı niteliğindedir.",
+      "type": "dizi",
+      "release_date": "2021-05-04",
+      "level": 4
+    },
+    {
+      "id": "solo2018",
+      "label": "Solo: A Star Wars Story (2018)",
+      "title": "Solo: A Star Wars Story",
+      "image": "images/starwars.jpg",
+      "shape": "image",
+      "description": "Genç Han Solo’nun Lando Calrissian ve Chewbacca ile tanışmasını anlatır. Genç Han Solo’nun Lando Calrissian ve Chewbacca ile tanışmasını anlatır. Genç Han Solo’nun Lando Calrissian ve Chewbacca ile tanışmasını anlatır. Genç Han Solo’nun Lando Calrissian ve Chewbacca ile tanışmasını anlatır. Genç Han Solo’nun Lando Calrissian ve Chewbacca ile tanışmasını anlatır. Genç Han Solo’nun Lando Calrissian ve Chewbacca ile tanışmasını anlatır. Genç Han Solo’nun Lando Calrissian ve Chewbacca ile tanışmasını anlatır. Genç Han Solo’nun Lando Calrissian ve Chewbacca ile tanışmasını anlatır. Genç Han Solo’nun Lando Calrissian ve Chewbacca ile tanışmasını anlatır. Genç Han Solo’nun Lando Calrissian ve Chewbacca ile tanışmasını anlatır. Genç Han Solo’nun Lando Calrissian ve Chewbacca ile tanışmasını anlatır. Genç Han Solo’nun Lando Calrissian ve Chewbacca ile tanışmasını anlatır. Genç Han Solo’nun Lando Calrissian ve Chewbacca ile tanışmasını anlatır. Genç Han Solo’nun Lando Calrissian ve Chewbacca ile tanışmasını anlatır. Genç Han Solo’nun Lando Calrissian ve Chewbacca ile tanışmasını anlatır. Genç Han Solo’nun Lando Calrissian ve Chewbacca ile tanışmasını anlatır.",
+      "refers_to": "Original Trilogy’deki Han Solo karakterinin kökenini açıklar. Original Trilogy’deki Han Solo karakterinin kökenini açıklar. Original Trilogy’deki Han Solo karakterinin kökenini açıklar. Original Trilogy’deki Han Solo karakterinin kökenini açıklar. Original Trilogy’deki Han Solo karakterinin kökenini açıklar. Original Trilogy’deki Han Solo karakterinin kökenini açıklar. Original Trilogy’deki Han Solo karakterinin kökenini açıklar. Original Trilogy’deki Han Solo karakterinin kökenini açıklar. Original Trilogy’deki Han Solo karakterinin kökenini açıklar. Original Trilogy’deki Han Solo karakterinin kökenini açıklar. Original Trilogy’deki Han Solo karakterinin kökenini açıklar. Original Trilogy’deki Han Solo karakterinin kökenini açıklar. Original Trilogy’deki Han Solo karakterinin kökenini açıklar. Original Trilogy’deki Han Solo karakterinin kökenini açıklar. Original Trilogy’deki Han Solo karakterinin kökenini açıklar. Original Trilogy’deki Han Solo karakterinin kökenini açıklar. Original Trilogy’deki Han Solo karakterinin kökenini açıklar. Original Trilogy’deki Han Solo karakterinin kökenini açıklar. Original Trilogy’deki Han Solo karakterinin kökenini açıklar. Original Trilogy’deki Han Solo karakterinin kökenini açıklar. Original Trilogy’deki Han Solo karakterinin kökenini açıklar. Original Trilogy’deki Han Solo karakterinin kökenini açıklar.",
+      "type": "film",
+      "release_date": "2018-05-25",
+      "level": 5
+    },
+    {
+      "id": "obiWanKenobi2022",
+      "label": "Obi-Wan Kenobi (2022)",
+      "title": "Obi-Wan Kenobi",
+      "image": "images/starwars.jpg",
+      "shape": "image",
+      "description": "Obi-Wan, Order 66 sonrası saklanmaktadır. Genç Leia'nın kaçırılmasıyla göreve döner. Obi-Wan, Order 66 sonrası saklanmaktadır. Genç Leia'nın kaçırılmasıyla göreve döner. Obi-Wan, Order 66 sonrası saklanmaktadır. Genç Leia'nın kaçırılmasıyla göreve döner. Obi-Wan, Order 66 sonrası saklanmaktadır. Genç Leia'nın kaçırılmasıyla göreve döner. Obi-Wan, Order 66 sonrası saklanmaktadır. Genç Leia'nın kaçırılmasıyla göreve döner. Obi-Wan, Order 66 sonrası saklanmaktadır. Genç Leia'nın kaçırılmasıyla göreve döner. Obi-Wan, Order 66 sonrası saklanmaktadır. Genç Leia'nın kaçırılmasıyla göreve döner. Obi-Wan, Order 66 sonrası saklanmaktadır. Genç Leia'nın kaçırılmasıyla göreve döner. Obi-Wan, Order 66 sonrası saklanmaktadır. Genç Leia'nın kaçırılmasıyla göreve döner. Obi-Wan, Order 66 sonrası saklanmaktadır. Genç Leia'nın kaçırılmasıyla göreve döner. Obi-Wan, Order 66 sonrası saklanmaktadır. Genç Leia'nın kaçırılmasıyla göreve döner. Obi-Wan, Order 66 sonrası saklanmaktadır. Genç Leia'nın kaçırılmasıyla göreve döner. Obi-Wan, Order 66 sonrası saklanmaktadır. Genç Leia'nın kaçırılmasıyla göreve döner. Obi-Wan, Order 66 sonrası saklanmaktadır. Genç Leia'nın kaçırılmasıyla göreve döner. Obi-Wan, Order 66 sonrası saklanmaktadır. Genç Leia'nın kaçırılmasıyla göreve döner. Obi-Wan, Order 66 sonrası saklanmaktadır. Genç Leia'nın kaçırılmasıyla göreve döner.",
+      "refers_to": "Revenge of the Sith ve A New Hope arasına köprü kurar. Revenge of the Sith ve A New Hope arasına köprü kurar. Revenge of the Sith ve A New Hope arasına köprü kurar. Revenge of the Sith ve A New Hope arasına köprü kurar. Revenge of the Sith ve A New Hope arasına köprü kurar. Revenge of the Sith ve A New Hope arasına köprü kurar. Revenge of the Sith ve A New Hope arasına köprü kurar. Revenge of the Sith ve A New Hope arasına köprü kurar. Revenge of the Sith ve A New Hope arasına köprü kurar. Revenge of the Sith ve A New Hope arasına köprü kurar. Revenge of the Sith ve A New Hope arasına köprü kurar. Revenge of the Sith ve A New Hope arasına köprü kurar. Revenge of the Sith ve A New Hope arasına köprü kurar. Revenge of the Sith ve A New Hope arasına köprü kurar.",
+      "type": "dizi",
+      "release_date": "2022-05-27",
+      "level": 6
+    },
+    {
+      "id": "rebels2014",
+      "label": "Star Wars Rebels (2014)",
+      "title": "Star Wars Rebels",
+      "image": "images/starwars.jpg",
+      "shape": "image",
+      "description": "Ezra Bridger ve bir grup isyancı, İmparatorluğa karşı savaşır. Ezra Bridger ve bir grup isyancı, İmparatorluğa karşı savaşır. Ezra Bridger ve bir grup isyancı, İmparatorluğa karşı savaşır. Ezra Bridger ve bir grup isyancı, İmparatorluğa karşı savaşır. Ezra Bridger ve bir grup isyancı, İmparatorluğa karşı savaşır. Ezra Bridger ve bir grup isyancı, İmparatorluğa karşı savaşır. Ezra Bridger ve bir grup isyancı, İmparatorluğa karşı savaşır. Ezra Bridger ve bir grup isyancı, İmparatorluğa karşı savaşır. Ezra Bridger ve bir grup isyancı, İmparatorluğa karşı savaşır. Ezra Bridger ve bir grup isyancı, İmparatorluğa karşı savaşır. Ezra Bridger ve bir grup isyancı, İmparatorluğa karşı savaşır. Ezra Bridger ve bir grup isyancı, İmparatorluğa karşı savaşır. Ezra Bridger ve bir grup isyancı, İmparatorluğa karşı savaşır. Ezra Bridger ve bir grup isyancı, İmparatorluğa karşı savaşır. Ezra Bridger ve bir grup isyancı, İmparatorluğa karşı savaşır. Ezra Bridger ve bir grup isyancı, İmparatorluğa karşı savaşır. Ezra Bridger ve bir grup isyancı, İmparatorluğa karşı savaşır.",
+      "refers_to": "Rogue One’a giden olayların zeminini hazırlar. Rogue One’a giden olayların zeminini hazırlar. Rogue One’a giden olayların zeminini hazırlar. Rogue One’a giden olayların zeminini hazırlar. Rogue One’a giden olayların zeminini hazırlar. Rogue One’a giden olayların zeminini hazırlar. Rogue One’a giden olayların zeminini hazırlar. Rogue One’a giden olayların zeminini hazırlar. Rogue One’a giden olayların zeminini hazırlar. Rogue One’a giden olayların zeminini hazırlar. Rogue One’a giden olayların zeminini hazırlar. Rogue One’a giden olayların zeminini hazırlar. Rogue One’a giden olayların zeminini hazırlar. Rogue One’a giden olayların zeminini hazırlar. Rogue One’a giden olayların zeminini hazırlar. Rogue One’a giden olayların zeminini hazırlar. Rogue One’a giden olayların zeminini hazırlar. Rogue One’a giden olayların zeminini hazırlar. Rogue One’a giden olayların zeminini hazırlar. Rogue One’a giden olayların zeminini hazırlar. Rogue One’a giden olayların zeminini hazırlar. Rogue One’a giden olayların zeminini hazırlar. Rogue One’a giden olayların zeminini hazırlar. Rogue One’a giden olayların zeminini hazırlar. Rogue One’a giden olayların zeminini hazırlar. Rogue One’a giden olayların zeminini hazırlar.",
+      "type": "dizi",
+      "release_date": "2014-10-03",
+      "level": 7
+    },
+    {
+      "id": "andor2022",
+      "label": "Andor (2022)",
+      "title": "Andor",
+      "image": "images/starwars.jpg",
+      "shape": "image",
+      "description": "Rogue One'dan tanıdığımız Cassian Andor’un direniş savaşçısı haline gelişini anlatır. Rogue One'dan tanıdığımız Cassian Andor’un direniş savaşçısı haline gelişini anlatır. Rogue One'dan tanıdığımız Cassian Andor’un direniş savaşçısı haline gelişini anlatır. Rogue One'dan tanıdığımız Cassian Andor’un direniş savaşçısı haline gelişini anlatır. Rogue One'dan tanıdığımız Cassian Andor’un direniş savaşçısı haline gelişini anlatır. Rogue One'dan tanıdığımız Cassian Andor’un direniş savaşçısı haline gelişini anlatır. Rogue One'dan tanıdığımız Cassian Andor’un direniş savaşçısı haline gelişini anlatır. Rogue One'dan tanıdığımız Cassian Andor’un direniş savaşçısı haline gelişini anlatır. Rogue One'dan tanıdığımız Cassian Andor’un direniş savaşçısı haline gelişini anlatır. Rogue One'dan tanıdığımız Cassian Andor’un direniş savaşçısı haline gelişini anlatır. Rogue One'dan tanıdığımız Cassian Andor’un direniş savaşçısı haline gelişini anlatır. Rogue One'dan tanıdığımız Cassian Andor’un direniş savaşçısı haline gelişini anlatır. Rogue One'dan tanıdığımız Cassian Andor’un direniş savaşçısı haline gelişini anlatır. Rogue One'dan tanıdığımız Cassian Andor’un direniş savaşçısı haline gelişini anlatır. Rogue One'dan tanıdığımız Cassian Andor’un direniş savaşçısı haline gelişini anlatır. Rogue One'dan tanıdığımız Cassian Andor’un direniş savaşçısı haline gelişini anlatır.",
+      "refers_to": "Rogue One öncesini anlatır. İsyanın doğuşunu işler. Rogue One öncesini anlatır. İsyanın doğuşunu işler. Rogue One öncesini anlatır. İsyanın doğuşunu işler. Rogue One öncesini anlatır. İsyanın doğuşunu işler. Rogue One öncesini anlatır. İsyanın doğuşunu işler. Rogue One öncesini anlatır. İsyanın doğuşunu işler. Rogue One öncesini anlatır. İsyanın doğuşunu işler. Rogue One öncesini anlatır. İsyanın doğuşunu işler. Rogue One öncesini anlatır. İsyanın doğuşunu işler. Rogue One öncesini anlatır. İsyanın doğuşunu işler. Rogue One öncesini anlatır. İsyanın doğuşunu işler. Rogue One öncesini anlatır. İsyanın doğuşunu işler. Rogue One öncesini anlatır. İsyanın doğuşunu işler. Rogue One öncesini anlatır. İsyanın doğuşunu işler. Rogue One öncesini anlatır. İsyanın doğuşunu işler. Rogue One öncesini anlatır. İsyanın doğuşunu işler. Rogue One öncesini anlatır. İsyanın doğuşunu işler. Rogue One öncesini anlatır. İsyanın doğuşunu işler. Rogue One öncesini anlatır. İsyanın doğuşunu işler. Rogue One öncesini anlatır. İsyanın doğuşunu işler. Rogue One öncesini anlatır. İsyanın doğuşunu işler. Rogue One öncesini anlatır. İsyanın doğuşunu işler.",
+      "type": "dizi",
+      "release_date": "2022-09-21",
+      "level": 8
+    },
+    {
+      "id": "rogueOne2016",
+      "label": "Rogue One (2016)",
+      "title": "Rogue One",
+      "image": "images/starwars.jpg",
+      "shape": "image",
+      "description": "İsyancılar, Ölüm Yıldızı’nın planlarını çalmak için ölümcül bir görev üstlenir. İsyancılar, Ölüm Yıldızı’nın planlarını çalmak için ölümcül bir görev üstlenir. İsyancılar, Ölüm Yıldızı’nın planlarını çalmak için ölümcül bir görev üstlenir. İsyancılar, Ölüm Yıldızı’nın planlarını çalmak için ölümcül bir görev üstlenir. İsyancılar, Ölüm Yıldızı’nın planlarını çalmak için ölümcül bir görev üstlenir. İsyancılar, Ölüm Yıldızı’nın planlarını çalmak için ölümcül bir görev üstlenir. İsyancılar, Ölüm Yıldızı’nın planlarını çalmak için ölümcül bir görev üstlenir. İsyancılar, Ölüm Yıldızı’nın planlarını çalmak için ölümcül bir görev üstlenir. İsyancılar, Ölüm Yıldızı’nın planlarını çalmak için ölümcül bir görev üstlenir. İsyancılar, Ölüm Yıldızı’nın planlarını çalmak için ölümcül bir görev üstlenir. İsyancılar, Ölüm Yıldızı’nın planlarını çalmak için ölümcül bir görev üstlenir. İsyancılar, Ölüm Yıldızı’nın planlarını çalmak için ölümcül bir görev üstlenir. İsyancılar, Ölüm Yıldızı’nın planlarını çalmak için ölümcül bir görev üstlenir. İsyancılar, Ölüm Yıldızı’nın planlarını çalmak için ölümcül bir görev üstlenir. İsyancılar, Ölüm Yıldızı’nın planlarını çalmak için ölümcül bir görev üstlenir. İsyancılar, Ölüm Yıldızı’nın planlarını çalmak için ölümcül bir görev üstlenir.",
+      "refers_to": "A New Hope'un hemen öncesini anlatır. A New Hope'un hemen öncesini anlatır. A New Hope'un hemen öncesini anlatır. A New Hope'un hemen öncesini anlatır. A New Hope'un hemen öncesini anlatır. A New Hope'un hemen öncesini anlatır. A New Hope'un hemen öncesini anlatır. A New Hope'un hemen öncesini anlatır. A New Hope'un hemen öncesini anlatır. A New Hope'un hemen öncesini anlatır. A New Hope'un hemen öncesini anlatır. A New Hope'un hemen öncesini anlatır. A New Hope'un hemen öncesini anlatır. A New Hope'un hemen öncesini anlatır. A New Hope'un hemen öncesini anlatır. A New Hope'un hemen öncesini anlatır. A New Hope'un hemen öncesini anlatır. A New Hope'un hemen öncesini anlatır. A New Hope'un hemen öncesini anlatır. A New Hope'un hemen öncesini anlatır. A New Hope'un hemen öncesini anlatır. A New Hope'un hemen öncesini anlatır. A New Hope'un hemen öncesini anlatır. A New Hope'un hemen öncesini anlatır. A New Hope'un hemen öncesini anlatır. A New Hope'un hemen öncesini anlatır.",
+      "type": "film",
+      "release_date": "2016-12-16",
+      "level": 9
+    },
+    {
+      "id": "aNewHope1977",
+      "label": "A New Hope (1977)",
+      "title": "A New Hope",
+      "image": "images/starwars.jpg",
+      "shape": "image",
+      "description": "Genç Luke Skywalker, Obi-Wan Kenobi ile tanışır ve İsyan’a katılarak Ölüm Yıldızı’na karşı savaşır. Genç Luke Skywalker, Obi-Wan Kenobi ile tanışır ve İsyan’a katılarak Ölüm Yıldızı’na karşı savaşır. Genç Luke Skywalker, Obi-Wan Kenobi ile tanışır ve İsyan’a katılarak Ölüm Yıldızı’na karşı savaşır. Genç Luke Skywalker, Obi-Wan Kenobi ile tanışır ve İsyan’a katılarak Ölüm Yıldızı’na karşı savaşır. Genç Luke Skywalker, Obi-Wan Kenobi ile tanışır ve İsyan’a katılarak Ölüm Yıldızı’na karşı savaşır. Genç Luke Skywalker, Obi-Wan Kenobi ile tanışır ve İsyan’a katılarak Ölüm Yıldızı’na karşı savaşır. Genç Luke Skywalker, Obi-Wan Kenobi ile tanışır ve İsyan’a katılarak Ölüm Yıldızı’na karşı savaşır. Genç Luke Skywalker, Obi-Wan Kenobi ile tanışır ve İsyan’a katılarak Ölüm Yıldızı’na karşı savaşır. Genç Luke Skywalker, Obi-Wan Kenobi ile tanışır ve İsyan’a katılarak Ölüm Yıldızı’na karşı savaşır. Genç Luke Skywalker, Obi-Wan Kenobi ile tanışır ve İsyan’a katılarak Ölüm Yıldızı’na karşı savaşır. Genç Luke Skywalker, Obi-Wan Kenobi ile tanışır ve İsyan’a katılarak Ölüm Yıldızı’na karşı savaşır.",
+      "refers_to": "Rogue One’un doğrudan devamıdır. Vader ve Leia’nın hikâyeleri devam eder. Rogue One’un doğrudan devamıdır. Vader ve Leia’nın hikâyeleri devam eder. Rogue One’un doğrudan devamıdır. Vader ve Leia’nın hikâyeleri devam eder. Rogue One’un doğrudan devamıdır. Vader ve Leia’nın hikâyeleri devam eder. Rogue One’un doğrudan devamıdır. Vader ve Leia’nın hikâyeleri devam eder. Rogue One’un doğrudan devamıdır. Vader ve Leia’nın hikâyeleri devam eder. Rogue One’un doğrudan devamıdır. Vader ve Leia’nın hikâyeleri devam eder. Rogue One’un doğrudan devamıdır. Vader ve Leia’nın hikâyeleri devam eder. Rogue One’un doğrudan devamıdır. Vader ve Leia’nın hikâyeleri devam eder. Rogue One’un doğrudan devamıdır. Vader ve Leia’nın hikâyeleri devam eder. Rogue One’un doğrudan devamıdır. Vader ve Leia’nın hikâyeleri devam eder. Rogue One’un doğrudan devamıdır. Vader ve Leia’nın hikâyeleri devam eder. Rogue One’un doğrudan devamıdır. Vader ve Leia’nın hikâyeleri devam eder. Rogue One’un doğrudan devamıdır. Vader ve Leia’nın hikâyeleri devam eder. Rogue One’un doğrudan devamıdır. Vader ve Leia’nın hikâyeleri devam eder. Rogue One’un doğrudan devamıdır. Vader ve Leia’nın hikâyeleri devam eder.",
+      "type": "film",
+      "release_date": "1977-05-25",
+      "level": 10
+    },
+    {
+      "id": "empireStrikesBack1980",
+      "label": "The Empire Strikes Back (1980)",
+      "title": "The Empire Strikes Back",
+      "image": "images/starwars.jpg",
+      "shape": "image",
+      "description": "İmparatorluk, İsyan’a büyük darbe indirir. Luke, Vader’ın kim olduğunu öğrenir. İmparatorluk, İsyan’a büyük darbe indirir. Luke, Vader’ın kim olduğunu öğrenir. İmparatorluk, İsyan’a büyük darbe indirir. Luke, Vader’ın kim olduğunu öğrenir. İmparatorluk, İsyan’a büyük darbe indirir. Luke, Vader’ın kim olduğunu öğrenir. İmparatorluk, İsyan’a büyük darbe indirir. Luke, Vader’ın kim olduğunu öğrenir. İmparatorluk, İsyan’a büyük darbe indirir. Luke, Vader’ın kim olduğunu öğrenir. İmparatorluk, İsyan’a büyük darbe indirir. Luke, Vader’ın kim olduğunu öğrenir. İmparatorluk, İsyan’a büyük darbe indirir. Luke, Vader’ın kim olduğunu öğrenir. İmparatorluk, İsyan’a büyük darbe indirir. Luke, Vader’ın kim olduğunu öğrenir. İmparatorluk, İsyan’a büyük darbe indirir. Luke, Vader’ın kim olduğunu öğrenir. İmparatorluk, İsyan’a büyük darbe indirir. Luke, Vader’ın kim olduğunu öğrenir. İmparatorluk, İsyan’a büyük darbe indirir. Luke, Vader’ın kim olduğunu öğrenir. İmparatorluk, İsyan’a büyük darbe indirir. Luke, Vader’ın kim olduğunu öğrenir. İmparatorluk, İsyan’a büyük darbe indirir. Luke, Vader’ın kim olduğunu öğrenir. İmparatorluk, İsyan’a büyük darbe indirir. Luke, Vader’ın kim olduğunu öğrenir. İmparatorluk, İsyan’a büyük darbe indirir. Luke, Vader’ın kim olduğunu öğrenir.",
+      "refers_to": "Yoda ilk kez tanıtılır. Skywalker ailesi mitolojisi derinleşir. Yoda ilk kez tanıtılır. Skywalker ailesi mitolojisi derinleşir. Yoda ilk kez tanıtılır. Skywalker ailesi mitolojisi derinleşir. Yoda ilk kez tanıtılır. Skywalker ailesi mitolojisi derinleşir. Yoda ilk kez tanıtılır. Skywalker ailesi mitolojisi derinleşir. Yoda ilk kez tanıtılır. Skywalker ailesi mitolojisi derinleşir. Yoda ilk kez tanıtılır. Skywalker ailesi mitolojisi derinleşir. Yoda ilk kez tanıtılır. Skywalker ailesi mitolojisi derinleşir. Yoda ilk kez tanıtılır. Skywalker ailesi mitolojisi derinleşir. Yoda ilk kez tanıtılır. Skywalker ailesi mitolojisi derinleşir. Yoda ilk kez tanıtılır. Skywalker ailesi mitolojisi derinleşir. Yoda ilk kez tanıtılır. Skywalker ailesi mitolojisi derinleşir. Yoda ilk kez tanıtılır. Skywalker ailesi mitolojisi derinleşir. Yoda ilk kez tanıtılır. Skywalker ailesi mitolojisi derinleşir. Yoda ilk kez tanıtılır. Skywalker ailesi mitolojisi derinleşir. Yoda ilk kez tanıtılır. Skywalker ailesi mitolojisi derinleşir. Yoda ilk kez tanıtılır. Skywalker ailesi mitolojisi derinleşir. Yoda ilk kez tanıtılır. Skywalker ailesi mitolojisi derinleşir. Yoda ilk kez tanıtılır. Skywalker ailesi mitolojisi derinleşir.",
+      "type": "film",
+      "release_date": "1980-05-21",
+      "level": 11
+    },
+    {
+      "id": "returnOfTheJedi1983",
+      "label": "Return of the Jedi (1983)",
+      "title": "Return of the Jedi",
+      "image": "images/starwars.jpg",
+      "shape": "image",
+      "description": "Luke, Vader’ı kurtarmaya çalışırken İmparatorluğun ikinci Ölüm Yıldızı’nı yok etmeye çalışırlar. Luke, Vader’ı kurtarmaya çalışırken İmparatorluğun ikinci Ölüm Yıldızı’nı yok etmeye çalışırlar. Luke, Vader’ı kurtarmaya çalışırken İmparatorluğun ikinci Ölüm Yıldızı’nı yok etmeye çalışırlar. Luke, Vader’ı kurtarmaya çalışırken İmparatorluğun ikinci Ölüm Yıldızı’nı yok etmeye çalışırlar. Luke, Vader’ı kurtarmaya çalışırken İmparatorluğun ikinci Ölüm Yıldızı’nı yok etmeye çalışırlar. Luke, Vader’ı kurtarmaya çalışırken İmparatorluğun ikinci Ölüm Yıldızı’nı yok etmeye çalışırlar. Luke, Vader’ı kurtarmaya çalışırken İmparatorluğun ikinci Ölüm Yıldızı’nı yok etmeye çalışırlar. Luke, Vader’ı kurtarmaya çalışırken İmparatorluğun ikinci Ölüm Yıldızı’nı yok etmeye çalışırlar. Luke, Vader’ı kurtarmaya çalışırken İmparatorluğun ikinci Ölüm Yıldızı’nı yok etmeye çalışırlar. Luke, Vader’ı kurtarmaya çalışırken İmparatorluğun ikinci Ölüm Yıldızı’nı yok etmeye çalışırlar. Luke, Vader’ı kurtarmaya çalışırken İmparatorluğun ikinci Ölüm Yıldızı’nı yok etmeye çalışırlar. Luke, Vader’ı kurtarmaya çalışırken İmparatorluğun ikinci Ölüm Yıldızı’nı yok etmeye çalışırlar. Luke, Vader’ı kurtarmaya çalışırken İmparatorluğun ikinci Ölüm Yıldızı’nı yok etmeye çalışırlar. Luke, Vader’ı kurtarmaya çalışırken İmparatorluğun ikinci Ölüm Yıldızı’nı yok etmeye çalışırlar.",
+      "refers_to": "Vader’ın kefareti ve Anakin’in dönüşü işlenir. Vader’ın kefareti ve Anakin’in dönüşü işlenir. Vader’ın kefareti ve Anakin’in dönüşü işlenir. Vader’ın kefareti ve Anakin’in dönüşü işlenir. Vader’ın kefareti ve Anakin’in dönüşü işlenir. Vader’ın kefareti ve Anakin’in dönüşü işlenir. Vader’ın kefareti ve Anakin’in dönüşü işlenir. Vader’ın kefareti ve Anakin’in dönüşü işlenir. Vader’ın kefareti ve Anakin’in dönüşü işlenir. Vader’ın kefareti ve Anakin’in dönüşü işlenir. Vader’ın kefareti ve Anakin’in dönüşü işlenir. Vader’ın kefareti ve Anakin’in dönüşü işlenir. Vader’ın kefareti ve Anakin’in dönüşü işlenir. Vader’ın kefareti ve Anakin’in dönüşü işlenir. Vader’ın kefareti ve Anakin’in dönüşü işlenir. Vader’ın kefareti ve Anakin’in dönüşü işlenir. Vader’ın kefareti ve Anakin’in dönüşü işlenir. Vader’ın kefareti ve Anakin’in dönüşü işlenir. Vader’ın kefareti ve Anakin’in dönüşü işlenir. Vader’ın kefareti ve Anakin’in dönüşü işlenir. Vader’ın kefareti ve Anakin’in dönüşü işlenir. Vader’ın kefareti ve Anakin’in dönüşü işlenir. Vader’ın kefareti ve Anakin’in dönüşü işlenir. Vader’ın kefareti ve Anakin’in dönüşü işlenir. Vader’ın kefareti ve Anakin’in dönüşü işlenir. Vader’ın kefareti ve Anakin’in dönüşü işlenir.",
+      "type": "film",
+      "release_date": "1983-05-25",
+      "level": 12
+    },
+    {
+      "id": "mandalorian2019",
+      "label": "The Mandalorian (2019)",
+      "title": "The Mandalorian",
+      "image": "images/starwars.jpg",
+      "shape": "image",
+      "description": "Galaksinin uzak köşelerinde bir Mandalorian ödül avcısının Baby Yoda (Grogu) ile olan macerası. Galaksinin uzak köşelerinde bir Mandalorian ödül avcısının Baby Yoda (Grogu) ile olan macerası. Galaksinin uzak köşelerinde bir Mandalorian ödül avcısının Baby Yoda (Grogu) ile olan macerası. Galaksinin uzak köşelerinde bir Mandalorian ödül avcısının Baby Yoda (Grogu) ile olan macerası. Galaksinin uzak köşelerinde bir Mandalorian ödül avcısının Baby Yoda (Grogu) ile olan macerası. Galaksinin uzak köşelerinde bir Mandalorian ödül avcısının Baby Yoda (Grogu) ile olan macerası. Galaksinin uzak köşelerinde bir Mandalorian ödül avcısının Baby Yoda (Grogu) ile olan macerası. Galaksinin uzak köşelerinde bir Mandalorian ödül avcısının Baby Yoda (Grogu) ile olan macerası. Galaksinin uzak köşelerinde bir Mandalorian ödül avcısının Baby Yoda (Grogu) ile olan macerası. Galaksinin uzak köşelerinde bir Mandalorian ödül avcısının Baby Yoda (Grogu) ile olan macerası. Galaksinin uzak köşelerinde bir Mandalorian ödül avcısının Baby Yoda (Grogu) ile olan macerası. Galaksinin uzak köşelerinde bir Mandalorian ödül avcısının Baby Yoda (Grogu) ile olan macerası.",
+      "refers_to": "Return of the Jedi sonrası geçer. Ahsoka, Bo-Katan gibi karakterlerle Clone Wars’a bağ kurar. Return of the Jedi sonrası geçer. Ahsoka, Bo-Katan gibi karakterlerle Clone Wars’a bağ kurar. Return of the Jedi sonrası geçer. Ahsoka, Bo-Katan gibi karakterlerle Clone Wars’a bağ kurar. Return of the Jedi sonrası geçer. Ahsoka, Bo-Katan gibi karakterlerle Clone Wars’a bağ kurar. Return of the Jedi sonrası geçer. Ahsoka, Bo-Katan gibi karakterlerle Clone Wars’a bağ kurar. Return of the Jedi sonrası geçer. Ahsoka, Bo-Katan gibi karakterlerle Clone Wars’a bağ kurar. Return of the Jedi sonrası geçer. Ahsoka, Bo-Katan gibi karakterlerle Clone Wars’a bağ kurar. Return of the Jedi sonrası geçer. Ahsoka, Bo-Katan gibi karakterlerle Clone Wars’a bağ kurar. Return of the Jedi sonrası geçer. Ahsoka, Bo-Katan gibi karakterlerle Clone Wars’a bağ kurar. Return of the Jedi sonrası geçer. Ahsoka, Bo-Katan gibi karakterlerle Clone Wars’a bağ kurar. Return of the Jedi sonrası geçer. Ahsoka, Bo-Katan gibi karakterlerle Clone Wars’a bağ kurar.",
+      "type": "dizi",
+      "release_date": "2019-11-12",
+      "level": 13
+    },
+    {
+      "id": "bookOfBobaFett2021",
+      "label": "The Book of Boba Fett (2021)",
+      "title": "The Book of Boba Fett",
+      "image": "images/starwars.jpg",
+      "shape": "image",
+      "description": "Boba Fett, Tatooine'deki suç dünyasında hüküm sürmeye çalışır. Boba Fett, Tatooine'deki suç dünyasında hüküm sürmeye çalışır. Boba Fett, Tatooine'deki suç dünyasında hüküm sürmeye çalışır. Boba Fett, Tatooine'deki suç dünyasında hüküm sürmeye çalışır. Boba Fett, Tatooine'deki suç dünyasında hüküm sürmeye çalışır. Boba Fett, Tatooine'deki suç dünyasında hüküm sürmeye çalışır. Boba Fett, Tatooine'deki suç dünyasında hüküm sürmeye çalışır. Boba Fett, Tatooine'deki suç dünyasında hüküm sürmeye çalışır. Boba Fett, Tatooine'deki suç dünyasında hüküm sürmeye çalışır. Boba Fett, Tatooine'deki suç dünyasında hüküm sürmeye çalışır. Boba Fett, Tatooine'deki suç dünyasında hüküm sürmeye çalışır. Boba Fett, Tatooine'deki suç dünyasında hüküm sürmeye çalışır. Boba Fett, Tatooine'deki suç dünyasında hüküm sürmeye çalışır. Boba Fett, Tatooine'deki suç dünyasında hüküm sürmeye çalışır. Boba Fett, Tatooine'deki suç dünyasında hüküm sürmeye çalışır. Boba Fett, Tatooine'deki suç dünyasında hüküm sürmeye çalışır. Boba Fett, Tatooine'deki suç dünyasında hüküm sürmeye çalışır. Boba Fett, Tatooine'deki suç dünyasında hüküm sürmeye çalışır. Boba Fett, Tatooine'deki suç dünyasında hüküm sürmeye çalışır.",
+      "refers_to": "Mandalorian ile doğrudan bağlantılıdır. Clone Wars’a karakter gönderir. Mandalorian ile doğrudan bağlantılıdır. Clone Wars’a karakter gönderir. Mandalorian ile doğrudan bağlantılıdır. Clone Wars’a karakter gönderir. Mandalorian ile doğrudan bağlantılıdır. Clone Wars’a karakter gönderir. Mandalorian ile doğrudan bağlantılıdır. Clone Wars’a karakter gönderir. Mandalorian ile doğrudan bağlantılıdır. Clone Wars’a karakter gönderir. Mandalorian ile doğrudan bağlantılıdır. Clone Wars’a karakter gönderir. Mandalorian ile doğrudan bağlantılıdır. Clone Wars’a karakter gönderir. Mandalorian ile doğrudan bağlantılıdır. Clone Wars’a karakter gönderir. Mandalorian ile doğrudan bağlantılıdır. Clone Wars’a karakter gönderir. Mandalorian ile doğrudan bağlantılıdır. Clone Wars’a karakter gönderir. Mandalorian ile doğrudan bağlantılıdır. Clone Wars’a karakter gönderir. Mandalorian ile doğrudan bağlantılıdır. Clone Wars’a karakter gönderir. Mandalorian ile doğrudan bağlantılıdır. Clone Wars’a karakter gönderir. Mandalorian ile doğrudan bağlantılıdır. Clone Wars’a karakter gönderir. Mandalorian ile doğrudan bağlantılıdır. Clone Wars’a karakter gönderir. Mandalorian ile doğrudan bağlantılıdır. Clone Wars’a karakter gönderir. Mandalorian ile doğrudan bağlantılıdır. Clone Wars’a karakter gönderir. Mandalorian ile doğrudan bağlantılıdır. Clone Wars’a karakter gönderir.",
+      "type": "dizi",
+      "release_date": "2021-12-29",
+      "level": 13
+    },
+    {
+      "id": "ahsoka2023",
+      "label": "Ahsoka (2023)",
+      "title": "Ahsoka",
+      "image": "images/starwars.jpg",
+      "shape": "image",
+      "description": "Ahsoka Tano, kayıp İmparatorluk subayı Thrawn’ı ararken eski düşmanlarla yüzleşir. Ahsoka Tano, kayıp İmparatorluk subayı Thrawn’ı ararken eski düşmanlarla yüzleşir. Ahsoka Tano, kayıp İmparatorluk subayı Thrawn’ı ararken eski düşmanlarla yüzleşir. Ahsoka Tano, kayıp İmparatorluk subayı Thrawn’ı ararken eski düşmanlarla yüzleşir. Ahsoka Tano, kayıp İmparatorluk subayı Thrawn’ı ararken eski düşmanlarla yüzleşir. Ahsoka Tano, kayıp İmparatorluk subayı Thrawn’ı ararken eski düşmanlarla yüzleşir. Ahsoka Tano, kayıp İmparatorluk subayı Thrawn’ı ararken eski düşmanlarla yüzleşir. Ahsoka Tano, kayıp İmparatorluk subayı Thrawn’ı ararken eski düşmanlarla yüzleşir. Ahsoka Tano, kayıp İmparatorluk subayı Thrawn’ı ararken eski düşmanlarla yüzleşir. Ahsoka Tano, kayıp İmparatorluk subayı Thrawn’ı ararken eski düşmanlarla yüzleşir. Ahsoka Tano, kayıp İmparatorluk subayı Thrawn’ı ararken eski düşmanlarla yüzleşir. Ahsoka Tano, kayıp İmparatorluk subayı Thrawn’ı ararken eski düşmanlarla yüzleşir. Ahsoka Tano, kayıp İmparatorluk subayı Thrawn’ı ararken eski düşmanlarla yüzleşir. Ahsoka Tano, kayıp İmparatorluk subayı Thrawn’ı ararken eski düşmanlarla yüzleşir. Ahsoka Tano, kayıp İmparatorluk subayı Thrawn’ı ararken eski düşmanlarla yüzleşir. Ahsoka Tano, kayıp İmparatorluk subayı Thrawn’ı ararken eski düşmanlarla yüzleşir.",
+      "refers_to": "Rebels dizisinin doğrudan devamı. Anakin’in hayal görünümleri Clone Wars bağlantısı kurar. Rebels dizisinin doğrudan devamı. Anakin’in hayal görünümleri Clone Wars bağlantısı kurar. Rebels dizisinin doğrudan devamı. Anakin’in hayal görünümleri Clone Wars bağlantısı kurar. Rebels dizisinin doğrudan devamı. Anakin’in hayal görünümleri Clone Wars bağlantısı kurar. Rebels dizisinin doğrudan devamı. Anakin’in hayal görünümleri Clone Wars bağlantısı kurar. Rebels dizisinin doğrudan devamı. Anakin’in hayal görünümleri Clone Wars bağlantısı kurar. Rebels dizisinin doğrudan devamı. Anakin’in hayal görünümleri Clone Wars bağlantısı kurar. Rebels dizisinin doğrudan devamı. Anakin’in hayal görünümleri Clone Wars bağlantısı kurar. Rebels dizisinin doğrudan devamı. Anakin’in hayal görünümleri Clone Wars bağlantısı kurar. Rebels dizisinin doğrudan devamı. Anakin’in hayal görünümleri Clone Wars bağlantısı kurar. Rebels dizisinin doğrudan devamı. Anakin’in hayal görünümleri Clone Wars bağlantısı kurar. Rebels dizisinin doğrudan devamı. Anakin’in hayal görünümleri Clone Wars bağlantısı kurar. Rebels dizisinin doğrudan devamı. Anakin’in hayal görünümleri Clone Wars bağlantısı kurar. Rebels dizisinin doğrudan devamı. Anakin’in hayal görünümleri Clone Wars bağlantısı kurar.",
+      "type": "dizi",
+      "release_date": "2023-08-22",
+      "level": 14
+    },
+    {
+      "id": "forceAwakens2015",
+      "label": "The Force Awakens (2015)",
+      "title": "The Force Awakens",
+      "image": "images/starwars.jpg",
+      "shape": "image",
+      "description": "Rey, Finn ve Poe gibi yeni kahramanlar tanıtılır. Luke Skywalker yıllardır kayıptır. Rey, Finn ve Poe gibi yeni kahramanlar tanıtılır. Luke Skywalker yıllardır kayıptır. Rey, Finn ve Poe gibi yeni kahramanlar tanıtılır. Luke Skywalker yıllardır kayıptır. Rey, Finn ve Poe gibi yeni kahramanlar tanıtılır. Luke Skywalker yıllardır kayıptır. Rey, Finn ve Poe gibi yeni kahramanlar tanıtılır. Luke Skywalker yıllardır kayıptır. Rey, Finn ve Poe gibi yeni kahramanlar tanıtılır. Luke Skywalker yıllardır kayıptır. Rey, Finn ve Poe gibi yeni kahramanlar tanıtılır. Luke Skywalker yıllardır kayıptır. Rey, Finn ve Poe gibi yeni kahramanlar tanıtılır. Luke Skywalker yıllardır kayıptır. Rey, Finn ve Poe gibi yeni kahramanlar tanıtılır. Luke Skywalker yıllardır kayıptır. Rey, Finn ve Poe gibi yeni kahramanlar tanıtılır. Luke Skywalker yıllardır kayıptır. Rey, Finn ve Poe gibi yeni kahramanlar tanıtılır. Luke Skywalker yıllardır kayıptır. Rey, Finn ve Poe gibi yeni kahramanlar tanıtılır. Luke Skywalker yıllardır kayıptır. Rey, Finn ve Poe gibi yeni kahramanlar tanıtılır. Luke Skywalker yıllardır kayıptır.",
+      "refers_to": "Han Solo ve Leia’nın yaşlılık dönemleri, Mandalorian’dan sonraki zaman dilimi. Han Solo ve Leia’nın yaşlılık dönemleri, Mandalorian’dan sonraki zaman dilimi. Han Solo ve Leia’nın yaşlılık dönemleri, Mandalorian’dan sonraki zaman dilimi. Han Solo ve Leia’nın yaşlılık dönemleri, Mandalorian’dan sonraki zaman dilimi. Han Solo ve Leia’nın yaşlılık dönemleri, Mandalorian’dan sonraki zaman dilimi. Han Solo ve Leia’nın yaşlılık dönemleri, Mandalorian’dan sonraki zaman dilimi. Han Solo ve Leia’nın yaşlılık dönemleri, Mandalorian’dan sonraki zaman dilimi. Han Solo ve Leia’nın yaşlılık dönemleri, Mandalorian’dan sonraki zaman dilimi. Han Solo ve Leia’nın yaşlılık dönemleri, Mandalorian’dan sonraki zaman dilimi. Han Solo ve Leia’nın yaşlılık dönemleri, Mandalorian’dan sonraki zaman dilimi. Han Solo ve Leia’nın yaşlılık dönemleri, Mandalorian’dan sonraki zaman dilimi. Han Solo ve Leia’nın yaşlılık dönemleri, Mandalorian’dan sonraki zaman dilimi. Han Solo ve Leia’nın yaşlılık dönemleri, Mandalorian’dan sonraki zaman dilimi. Han Solo ve Leia’nın yaşlılık dönemleri, Mandalorian’dan sonraki zaman dilimi. Han Solo ve Leia’nın yaşlılık dönemleri, Mandalorian’dan sonraki zaman dilimi. Han Solo ve Leia’nın yaşlılık dönemleri, Mandalorian’dan sonraki zaman dilimi.",
+      "type": "film",
+      "release_date": "2015-12-18",
+      "level": 15
+    },
+    {
+      "id": "lastJedi2017",
+      "label": "The Last Jedi (2017)",
+      "title": "The Last Jedi",
+      "image": "images/starwars.jpg",
+      "shape": "image",
+      "description": "Rey, Luke’tan Jedi eğitimi almak ister. Kylo Ren karanlık tarafa daha çok bağlanır. Rey, Luke’tan Jedi eğitimi almak ister. Kylo Ren karanlık tarafa daha çok bağlanır. Rey, Luke’tan Jedi eğitimi almak ister. Kylo Ren karanlık tarafa daha çok bağlanır. Rey, Luke’tan Jedi eğitimi almak ister. Kylo Ren karanlık tarafa daha çok bağlanır. Rey, Luke’tan Jedi eğitimi almak ister. Kylo Ren karanlık tarafa daha çok bağlanır. Rey, Luke’tan Jedi eğitimi almak ister. Kylo Ren karanlık tarafa daha çok bağlanır. Rey, Luke’tan Jedi eğitimi almak ister. Kylo Ren karanlık tarafa daha çok bağlanır. Rey, Luke’tan Jedi eğitimi almak ister. Kylo Ren karanlık tarafa daha çok bağlanır. Rey, Luke’tan Jedi eğitimi almak ister. Kylo Ren karanlık tarafa daha çok bağlanır. Rey, Luke’tan Jedi eğitimi almak ister. Kylo Ren karanlık tarafa daha çok bağlanır. Rey, Luke’tan Jedi eğitimi almak ister. Kylo Ren karanlık tarafa daha çok bağlanır. Rey, Luke’tan Jedi eğitimi almak ister. Kylo Ren karanlık tarafa daha çok bağlanır.",
+      "refers_to": "Yoda'nın Force hayaleti görünür. Clone Wars'tan miras kalan felsefeler tartışılır. Yoda'nın Force hayaleti görünür. Clone Wars'tan miras kalan felsefeler tartışılır. Yoda'nın Force hayaleti görünür. Clone Wars'tan miras kalan felsefeler tartışılır. Yoda'nın Force hayaleti görünür. Clone Wars'tan miras kalan felsefeler tartışılır. Yoda'nın Force hayaleti görünür. Clone Wars'tan miras kalan felsefeler tartışılır. Yoda'nın Force hayaleti görünür. Clone Wars'tan miras kalan felsefeler tartışılır. Yoda'nın Force hayaleti görünür. Clone Wars'tan miras kalan felsefeler tartışılır. Yoda'nın Force hayaleti görünür. Clone Wars'tan miras kalan felsefeler tartışılır. Yoda'nın Force hayaleti görünür. Clone Wars'tan miras kalan felsefeler tartışılır. Yoda'nın Force hayaleti görünür. Clone Wars'tan miras kalan felsefeler tartışılır. Yoda'nın Force hayaleti görünür. Clone Wars'tan miras kalan felsefeler tartışılır. Yoda'nın Force hayaleti görünür. Clone Wars'tan miras kalan felsefeler tartışılır. Yoda'nın Force hayaleti görünür. Clone Wars'tan miras kalan felsefeler tartışılır. Yoda'nın Force hayaleti görünür. Clone Wars'tan miras kalan felsefeler tartışılır. Yoda'nın Force hayaleti görünür. Clone Wars'tan miras kalan felsefeler tartışılır. Yoda'nın Force hayaleti görünür. Clone Wars'tan miras kalan felsefeler tartışılır.",
+      "type": "film",
+      "release_date": "2017-12-15",
+      "level": 16
+    },
+    {
+      "id": "riseOfSkywalker2019",
+      "label": "The Rise of Skywalker (2019)",
+      "title": "The Rise of Skywalker",
+      "image": "images/starwars.jpg",
+      "shape": "image",
+      "description": "Rey ve arkadaşları, Palpatine’in geri döndüğünü öğrenir. Skywalker efsanesi sona erer. Rey ve arkadaşları, Palpatine’in geri döndüğünü öğrenir. Skywalker efsanesi sona erer. Rey ve arkadaşları, Palpatine’in geri döndüğünü öğrenir. Skywalker efsanesi sona erer. Rey ve arkadaşları, Palpatine’in geri döndüğünü öğrenir. Skywalker efsanesi sona erer. Rey ve arkadaşları, Palpatine’in geri döndüğünü öğrenir. Skywalker efsanesi sona erer. Rey ve arkadaşları, Palpatine’in geri döndüğünü öğrenir. Skywalker efsanesi sona erer. Rey ve arkadaşları, Palpatine’in geri döndüğünü öğrenir. Skywalker efsanesi sona erer. Rey ve arkadaşları, Palpatine’in geri döndüğünü öğrenir. Skywalker efsanesi sona erer. Rey ve arkadaşları, Palpatine’in geri döndüğünü öğrenir. Skywalker efsanesi sona erer. Rey ve arkadaşları, Palpatine’in geri döndüğünü öğrenir. Skywalker efsanesi sona erer. Rey ve arkadaşları, Palpatine’in geri döndüğünü öğrenir. Skywalker efsanesi sona erer. Rey ve arkadaşları, Palpatine’in geri döndüğünü öğrenir. Skywalker efsanesi sona erer. Rey ve arkadaşları, Palpatine’in geri döndüğünü öğrenir. Skywalker efsanesi sona erer. Rey ve arkadaşları, Palpatine’in geri döndüğünü öğrenir. Skywalker efsanesi sona erer.",
+      "refers_to": "Tüm seriye göndermeler içerir. Ahsoka’nın sesi duyulur. Clone Wars + Rebels + Saga birleşimi. Tüm seriye göndermeler içerir. Ahsoka’nın sesi duyulur. Clone Wars + Rebels + Saga birleşimi. Tüm seriye göndermeler içerir. Ahsoka’nın sesi duyulur. Clone Wars + Rebels + Saga birleşimi. Tüm seriye göndermeler içerir. Ahsoka’nın sesi duyulur. Clone Wars + Rebels + Saga birleşimi. Tüm seriye göndermeler içerir. Ahsoka’nın sesi duyulur. Clone Wars + Rebels + Saga birleşimi. Tüm seriye göndermeler içerir. Ahsoka’nın sesi duyulur. Clone Wars + Rebels + Saga birleşimi. Tüm seriye göndermeler içerir. Ahsoka’nın sesi duyulur. Clone Wars + Rebels + Saga birleşimi. Tüm seriye göndermeler içerir. Ahsoka’nın sesi duyulur. Clone Wars + Rebels + Saga birleşimi. Tüm seriye göndermeler içerir. Ahsoka’nın sesi duyulur. Clone Wars + Rebels + Saga birleşimi. Tüm seriye göndermeler içerir. Ahsoka’nın sesi duyulur. Clone Wars + Rebels + Saga birleşimi. Tüm seriye göndermeler içerir. Ahsoka’nın sesi duyulur. Clone Wars + Rebels + Saga birleşimi.",
+      "type": "film",
+      "release_date": "2019-12-20",
+      "level": 17
+    },
+    {
+      "id": "visions2021",
+      "label": "Star Wars: Visions (2021)",
+      "title": "Star Wars: Visions",
+      "image": "images/starwars.jpg",
+      "shape": "image",
+      "description": "Farklı Japon stüdyolar tarafından üretilmiş alternatif Star Wars hikâyeleri. Farklı Japon stüdyolar tarafından üretilmiş alternatif Star Wars hikâyeleri. Farklı Japon stüdyolar tarafından üretilmiş alternatif Star Wars hikâyeleri. Farklı Japon stüdyolar tarafından üretilmiş alternatif Star Wars hikâyeleri. Farklı Japon stüdyolar tarafından üretilmiş alternatif Star Wars hikâyeleri. Farklı Japon stüdyolar tarafından üretilmiş alternatif Star Wars hikâyeleri. Farklı Japon stüdyolar tarafından üretilmiş alternatif Star Wars hikâyeleri. Farklı Japon stüdyolar tarafından üretilmiş alternatif Star Wars hikâyeleri. Farklı Japon stüdyolar tarafından üretilmiş alternatif Star Wars hikâyeleri. Farklı Japon stüdyolar tarafından üretilmiş alternatif Star Wars hikâyeleri. Farklı Japon stüdyolar tarafından üretilmiş alternatif Star Wars hikâyeleri. Farklı Japon stüdyolar tarafından üretilmiş alternatif Star Wars hikâyeleri. Farklı Japon stüdyolar tarafından üretilmiş alternatif Star Wars hikâyeleri. Farklı Japon stüdyolar tarafından üretilmiş alternatif Star Wars hikâyeleri. Farklı Japon stüdyolar tarafından üretilmiş alternatif Star Wars hikâyeleri. Farklı Japon stüdyolar tarafından üretilmiş alternatif Star Wars hikâyeleri. Farklı Japon stüdyolar tarafından üretilmiş alternatif Star Wars hikâyeleri.",
+      "refers_to": "Ana zaman çizgisine ait değildir ancak Jedi, Sith gibi temel temaları işler. Ana zaman çizgisine ait değildir ancak Jedi, Sith gibi temel temaları işler. Ana zaman çizgisine ait değildir ancak Jedi, Sith gibi temel temaları işler. Ana zaman çizgisine ait değildir ancak Jedi, Sith gibi temel temaları işler. Ana zaman çizgisine ait değildir ancak Jedi, Sith gibi temel temaları işler. Ana zaman çizgisine ait değildir ancak Jedi, Sith gibi temel temaları işler. Ana zaman çizgisine ait değildir ancak Jedi, Sith gibi temel temaları işler. Ana zaman çizgisine ait değildir ancak Jedi, Sith gibi temel temaları işler. Ana zaman çizgisine ait değildir ancak Jedi, Sith gibi temel temaları işler. Ana zaman çizgisine ait değildir ancak Jedi, Sith gibi temel temaları işler. Ana zaman çizgisine ait değildir ancak Jedi, Sith gibi temel temaları işler. Ana zaman çizgisine ait değildir ancak Jedi, Sith gibi temel temaları işler. Ana zaman çizgisine ait değildir ancak Jedi, Sith gibi temel temaları işler.",
+      "type": "dizi",
+      "release_date": "2021-09-22",
+      "level": 18
     }
   ],
   "edges": [
-  {
-    "from": "phantomMenace1999",
-    "to": "attackOfTheClones2002",
-    "type": "devam"
-  },
-  {
-    "from": "attackOfTheClones2002",
-    "to": "cloneWars2008",
-    "type": "ön hikaye"
-  },
-  {
-    "from": "cloneWars2008",
-    "to": "revengeOfTheSith2005",
-    "type": "ön hikaye"
-  },
-  {
-    "from": "revengeOfTheSith2005",
-    "to": "obiWanKenobi2022",
-    "type": "devam"
-  },
-  {
-    "from": "cloneWars2008",
-    "to": "badBatch2021",
-    "type": "devam"
-  },
-  {
-    "from": "badBatch2021",
-    "to": "rebels2014",
-    "type": "ön hikaye"
-  },
-  {
-    "from": "solo2018",
-    "to": "rogueOne2016",
-    "type": "karakter göndermesi"
-  },
-  {
-    "from": "obiWanKenobi2022",
-    "to": "rogueOne2016",
-    "type": "zaman çizgisi bağlantısı"
-  },
-  {
-    "from": "rebels2014",
-    "to": "rogueOne2016",
-    "type": "ön hikaye"
-  },
-  {
-    "from": "andor2022",
-    "to": "rogueOne2016",
-    "type": "devam"
-  },
-  {
-    "from": "rogueOne2016",
-    "to": "aNewHope1977",
-    "type": "ön hikaye"
-  },
-  {
-    "from": "aNewHope1977",
-    "to": "empireStrikesBack1980",
-    "type": "devam"
-  },
-  {
-    "from": "empireStrikesBack1980",
-    "to": "returnOfTheJedi1983",
-    "type": "devam"
-  },
-  {
-    "from": "returnOfTheJedi1983",
-    "to": "mandalorian2019",
-    "type": "devam"
-  },
-  {
-    "from": "mandalorian2019",
-    "to": "bookOfBobaFett2021",
-    "type": "yan hikaye"
-  },
-  {
-    "from": "rebels2014",
-    "to": "ahsoka2023",
-    "type": "devam"
-  },
-  {
-    "from": "mandalorian2019",
-    "to": "ahsoka2023",
-    "type": "karakter göndermesi"
-  },
-  {
-    "from": "ahsoka2023",
-    "to": "riseOfSkywalker2019",
-    "type": "zihinsel bağlantı"
-  },
-  {
-    "from": "forceAwakens2015",
-    "to": "lastJedi2017",
-    "type": "devam"
-  },
-  {
-    "from": "lastJedi2017",
-    "to": "riseOfSkywalker2019",
-    "type": "devam"
-  }
-]
+    {
+      "from": "phantomMenace1999",
+      "to": "attackOfTheClones2002",
+      "type": "devam"
+    },
+    {
+      "from": "attackOfTheClones2002",
+      "to": "cloneWars2008",
+      "type": "ön hikaye"
+    },
+    {
+      "from": "cloneWars2008",
+      "to": "revengeOfTheSith2005",
+      "type": "ön hikaye"
+    },
+    {
+      "from": "revengeOfTheSith2005",
+      "to": "obiWanKenobi2022",
+      "type": "devam"
+    },
+    {
+      "from": "cloneWars2008",
+      "to": "badBatch2021",
+      "type": "devam"
+    },
+    {
+      "from": "badBatch2021",
+      "to": "rebels2014",
+      "type": "ön hikaye"
+    },
+    {
+      "from": "solo2018",
+      "to": "rogueOne2016",
+      "type": "karakter göndermesi"
+    },
+    {
+      "from": "obiWanKenobi2022",
+      "to": "rogueOne2016",
+      "type": "zaman çizgisi bağlantısı"
+    },
+    {
+      "from": "rebels2014",
+      "to": "rogueOne2016",
+      "type": "ön hikaye"
+    },
+    {
+      "from": "andor2022",
+      "to": "rogueOne2016",
+      "type": "devam"
+    },
+    {
+      "from": "rogueOne2016",
+      "to": "aNewHope1977",
+      "type": "ön hikaye"
+    },
+    {
+      "from": "aNewHope1977",
+      "to": "empireStrikesBack1980",
+      "type": "devam"
+    },
+    {
+      "from": "empireStrikesBack1980",
+      "to": "returnOfTheJedi1983",
+      "type": "devam"
+    },
+    {
+      "from": "returnOfTheJedi1983",
+      "to": "mandalorian2019",
+      "type": "devam"
+    },
+    {
+      "from": "mandalorian2019",
+      "to": "bookOfBobaFett2021",
+      "type": "yan hikaye"
+    },
+    {
+      "from": "rebels2014",
+      "to": "ahsoka2023",
+      "type": "devam"
+    },
+    {
+      "from": "mandalorian2019",
+      "to": "ahsoka2023",
+      "type": "karakter göndermesi"
+    },
+    {
+      "from": "ahsoka2023",
+      "to": "riseOfSkywalker2019",
+      "type": "zihinsel bağlantı"
+    },
+    {
+      "from": "forceAwakens2015",
+      "to": "lastJedi2017",
+      "type": "devam"
+    },
+    {
+      "from": "lastJedi2017",
+      "to": "riseOfSkywalker2019",
+      "type": "devam"
+    }
+  ]
 }
