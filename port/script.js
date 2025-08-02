@@ -57,7 +57,22 @@ Promise.all([
 ];
 
   allNodes = new vis.DataSet(
-    combinedNodes.map((n) => ({
+    combinedNodes.map((n, idx) => ({
+      id: n.id,
+      label: `${n.label}`,
+      image: n.image,
+      shape: "image",
+      title: n.title,
+      description: n.description,
+      refers_to: n.refers_to,
+      group: n.type,
+      level: n.level,
+      x: (n.type === 'dizi' ? 300 : 0),
+      y: n.level * 300,
+      fixed: true,
+      universe: n.universe
+    }))
+  ) => ({
       id: n.id,
       label: `${n.label}`,
       image: n.image,
