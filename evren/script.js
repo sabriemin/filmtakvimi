@@ -149,7 +149,8 @@ Promise.all([
   network.on("click", function (params) {
     if (params.nodes.length > 0) {
       const node = allNodes.get(params.nodes[0]);
-      titleEl.textContent = `${node.title} (${new Date(node.release_date).toLocaleDateString('tr-TR')})`;
+      const year = node.release_date ? new Date(node.release_date).getFullYear() : "Bilinmiyor";
+      titleEl.textContent = `${node.title} (${year})`;
       const parsedDate = new Date(node.release_date);
       const formattedDate = !isNaN(parsedDate) ? parsedDate.toLocaleDateString("tr-TR") : "Bilinmiyor";
       descEl.innerHTML = `<strong>${node.type === 'dizi' ? 'Dizi' : 'Film'} Özeti:</strong><br>${node.description}<br><br><strong>Vizyon Tarihi:</strong> ${formattedDate}`;
@@ -161,6 +162,7 @@ Promise.all([
                          "Bağlantı Yok";
       refersEl.innerHTML = `<strong>Bağlantı Türü:</strong> ${edgeLabel}<br><br><strong>Göndermeler:</strong><br>${node.refers_to}`;
       infoBox.classList.remove("hidden");
+      infoBox.scrollTop = 0;
       network.setOptions({ interaction: { dragView: false } });
       infoBox.style.position = "fixed";
       infoBox.style.left = "50%";
