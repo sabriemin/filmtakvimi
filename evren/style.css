@@ -1,15 +1,24 @@
-
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #222;
+  transition: background-color 0.3s, color 0.3s;
 }
+body.dark {
+  background-color: #111;
+  color: #eee;
+}
+
 #network {
   width: 100vw;
   height: 100vh;
 }
+
 .hidden {
   display: none;
 }
+
 .modal {
   position: fixed;
   top: 50%;
@@ -26,6 +35,12 @@ body {
   box-shadow: 0 0 15px rgba(0,0,0,0.4);
   z-index: 1001;
 }
+body.dark .modal {
+  background-color: #222;
+  color: #fff;
+  border-color: #777;
+}
+
 #modal-overlay {
   position: fixed;
   top: 0;
@@ -35,16 +50,67 @@ body {
   background-color: rgba(0,0,0,0.5);
   z-index: 1000;
 }
+
 .modal button {
   margin-top: 1em;
+  padding: 0.5em 1em;
+  background-color: #3498db;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
 }
+.modal button:hover {
+  background-color: #2980b9;
+}
+
 #compare-add-btn {
   position: absolute;
   top: 10px;
   right: 10px;
 }
+
 #close-modal-btn {
   position: absolute;
   bottom: 10px;
   right: 10px;
+}
+
+input[type="text"], select {
+  padding: 0.5em;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin: 5px;
+}
+body.dark input[type="text"], body.dark select {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+button {
+  font-size: 14px;
+  padding: 0.5em 1em;
+  border-radius: 6px;
+  border: none;
+  margin: 5px;
+  cursor: pointer;
+  background-color: #2ecc71;
+  color: white;
+}
+button:hover {
+  background-color: #27ae60;
+}
+
+.year-marker {
+  position: absolute;
+  top: 0;
+  font-size: 12px;
+  color: gray;
+  z-index: 10;
+}
+
+.type-filter {
+  margin-right: 10px;
 }
