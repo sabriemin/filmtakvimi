@@ -34,6 +34,8 @@ function loadUniverseData() {
   return Promise.all(promises);
 }
 
+let selectedNodes = [];
+
 function drawNetwork() {
   const data = {
     nodes: allNodes,
@@ -69,10 +71,10 @@ function drawNetwork() {
 
   network.on("click", function (params) {
     if (params.nodes.length > 0) {
-      const node = allNodes.get(params.nodes[0]);
-      titleEl.innerHTML = node.label || "Bilinmeyen";
+      const nodeId = params.nodes[0];
+      const node = allNodes.get(nodeId);
 
-      // Vizyon tarihi ve tür başlığı üstüne
+      titleEl.innerHTML = node.label || "Bilinmeyen";
       const typeIcon = node.type === "dizi" ? "📺 Dizi" : "🎬 Film";
       const dateInfo = node.release_date ? `🗓️ ${node.release_date}` : "";
       const metaInfo = `<div style="margin-top: 6px; font-size: 14px; color: gray;">${typeIcon} &nbsp; ${dateInfo}</div>`;
@@ -82,8 +84,17 @@ function drawNetwork() {
       refersEl.innerHTML = "<b>📌 Gönderme</b><br>" + (node.refers_to || "Yok.");
       infoBox.classList.remove("hidden");
       overlay.classList.remove("hidden");
+
+      // Karşılaştırma için
+      if (!selectedNodes.includes(nodeId)) {
+        selectedNodes.push(nodeId);
+      }
+      if (selectedNodes.length > 2) {
+        selectedNodes.shift();
+      }
     }
   });
+});
     if (params.nodes.length > 0) {
       const node = allNodes.get(params.nodes[0]);
       titleEl.textContent = node.label || "Bilinmeyen";
@@ -244,20 +255,6 @@ function init() {
 }
 
 init();
-
-let selectedNodes = [];
-
-network.on("click", function (params) {
-  if (params.nodes.length > 0) {
-    const nodeId = params.nodes[0];
-    if (!selectedNodes.includes(nodeId)) {
-      selectedNodes.push(nodeId);
-    }
-    if (selectedNodes.length > 2) {
-      selectedNodes.shift(); // En fazla 2 node tut
-    }
-  }
-});
 
 // Karşılaştırma butonuna tıklanınca
 document.getElementById("compare-btn").addEventListener("click", () => {
