@@ -129,3 +129,56 @@ body:not(.dark) #legend-box {
   height: 16px;
   accent-color: #3498db;
 }
+
+
+#connection-filters {
+  max-width: 300px;
+  padding: 1rem;
+  background-color: #1e1e1e;
+  color: #fff;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  overflow-y: auto;
+  max-height: 90vh;
+  position: fixed;
+  top: 70px;
+  left: 10px;
+  z-index: 9999 !important;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  pointer-events: auto;
+}
+
+#connection-filters h3 {
+  margin-bottom: 0.5rem;
+}
+
+#connection-filters .group {
+  margin-bottom: 1rem;
+}
+
+#connection-filters .group h4 {
+  margin-bottom: 0.3rem;
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+#connection-filters label {
+  display: block;
+  margin-left: 10px;
+  margin-bottom: 4px;
+}
+
+#connection-filters button {
+  margin-right: 6px;
+  font-size: 0.8rem;
+  padding: 4px 8px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#connection-filters button:hover {
+  background-color: #444;
+}
