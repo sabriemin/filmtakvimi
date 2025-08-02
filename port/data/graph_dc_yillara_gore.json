@@ -26,8 +26,8 @@
     },
     {
       "id": "BatmanvSupermanDawnofJustice",
-      "label": "Batman v Superman: Dawn of Justice (2016)",
-      "title": "Batman v Superman: Dawn of Justice",
+      "label": "Batman v Superman: Dawn of Justice (Extended)",
+      "title": "Batman v Superman: Dawn of Justice (Extended)",
       "image": "/port/images/dc.jpg",
       "shape": "image",
       "description": "",
@@ -39,7 +39,7 @@
     {
       "id": "SuicideSquad2016",
       "label": "Suicide Squad (2016)",
-      "title": "Suicide Squad",
+      "title": "Suicide Squad (2016)",
       "image": "/port/images/dc.jpg",
       "shape": "image",
       "description": "Amanda Waller, tehlikeli görevler için süper suçlulardan oluşan bir ekip kurar: Suicide Squad. Harley Quinn, Deadshot, Killer Croc gibi karakterlerin yer aldığı ekip, büyülü bir tehdidi durdurmak üzere göreve gönderilir. Film, kaotik mizahı, anti-kahraman anlatımı ve stilize aksiyon sahneleriyle dikkat çeker. Ancak eleştirilere rağmen bazı karakterler izleyicilerce sevildi. Film, kötüler üzerinden kahramanlık kavramını sorgular.",
@@ -50,20 +50,20 @@
     },
     {
       "id": "TheSuicideSquad2021",
-      "label": "Suicide Squad (2016)",
-      "title": "Suicide Squad",
+      "label": "The Suicide Squad (2021)",
+      "title": "The Suicide Squad (2021)",
       "image": "/port/images/dc.jpg",
       "shape": "image",
       "description": "James Gunn’ın yeniden başlattığı bu film, hükümetin ölümcül görevler için oluşturduğu yeni bir anti-kahraman ekibini konu alır. Harley Quinn, Bloodsport, Peacemaker ve King Shark gibi renkli karakterlerin yer aldığı ekip, Corto Maltese adasında gizli bir projeyi yok etmek için gönderilir. Film, sert mizahı, absürt aksiyonu ve duygusal anları başarıyla harmanlar.",
       "refers_to": "İlk Suicide Squad filminden Harley Quinn ve Rick Flag geri döner. Amanda Waller’ın kontrol mekanizması genişletilir. Project Starfish, DC’nin uzaylı tehditlerine gönderme yapar. Peacemaker karakteri, kendi dizisine temel oluşturur. Film, DCEU’nun anlatı tonunda yeni bir yol açar: ciddiyetle absürtlüğün dengesi.",
       "type": "film",
-      "release_date": "2016-08-05",
+      "release_date": "2021-08-05",
       "level": 1
     },
     {
       "id": "WonderWoman",
       "label": "Wonder Woman (2017)",
-      "title": "Wonder Woman",
+      "title": "Wonder Woman (2017)",
       "image": "/port/images/dc.jpg",
       "shape": "image",
       "description": "Wonder Woman, Amazon prensesi Diana’nın 1. Dünya Savaşı sırasında insanların dünyasına gelişini ve savaş tanrısı Ares’e karşı savaşını konu alır. Diana, adalet, sevgi ve barış kavramlarını keşfederken kendi gücünü de tanır. Steve Trevor ile olan ilişkisi, insanlıkla bağ kurmasına yardımcı olur. Film, feminizm, savaşın yıkıcılığı ve kahramanlığın felsefi yönleriyle öne çıkar. Patty Jenkins’in yönetmenliğiyle duygusal ve güçlü bir hikâye sunar.",
@@ -74,20 +74,20 @@
     },
     {
       "id": "WonderWoman1984",
-      "label": "Wonder Woman (2017)",
-      "title": "Wonder Woman",
+      "label": "Wonder Woman 1984",
+      "title": "Wonder Woman 1984",
       "image": "/port/images/dc.jpg",
       "shape": "image",
       "description": "Diana Prince, bu sefer 1980’lerin renkli ve karmaşık dünyasında ortaya çıkar. Eski aşkı Steve Trevor gizemli bir şekilde geri dönerken, dünya çapında dilekleri gerçekleştiren bir taş tüm düzeni bozar. Maxwell Lord ve Cheetah gibi yeni tehditlerle yüzleşen Diana, gücün bedelini ve fedakârlığın gerekliliğini bir kez daha öğrenir. Film, nostaljik atmosferi ve tematik derinliğiyle dikkat çeker.",
       "refers_to": "İlk filmdeki Steve Trevor’un kaybı burada merkezde yeniden işlenir. Diana’nın ölümsüzlüğü ve yalnızlığı bu filmde daha belirgin hale gelir. Maxwell Lord’un karakteri, DC evrenindeki güç sapkınlıklarını temsil eder. Cheetah’ın dönüşümü, çizgi romanlara sadık bir kötü karakter yaratır. Film sonunda Diana, insanlıkla olan bağını güçlendirir ve modern çağa geçişi tamamlar.",
       "type": "film",
-      "release_date": "2017-06-02",
+      "release_date": "2020-12-25",
       "level": 2
     },
     {
       "id": "JusticeLeague",
-      "label": "Justice League (2017)",
-      "title": "Justice League",
+      "label": "Justice League (Theatrical)",
+      "title": "Justice League (Theatrical)",
       "image": "/port/images/dc.jpg",
       "shape": "image",
       "description": "Justice League, Superman’in ölümünün ardından dünyayı savunacak yeni bir ekip oluşturulmasını konu alır. Batman ve Wonder Woman, yaklaşan Steppenwolf tehdidine karşı Flash, Aquaman ve Cyborg’u bir araya getirir. Superman’in diriltilmesi, takımın moral gücünü artırır. Film, birlik olma, affetme ve kahramanlığın anlamı üzerine inşa edilir. Joss Whedon tarafından tamamlanan bu versiyon, Zack Snyder’ın vizyonundan sapmalar içerir ve karışık eleştiriler almıştır.",
@@ -98,32 +98,32 @@
     },
     {
       "id": "ZackCut",
-      "label": "Justice League (2017)",
-      "title": "Justice League",
+      "label": "Justice League (Zack Cut)",
+      "title": "Justice League (Zack Cut)",
       "image": "/port/images/dc.jpg",
       "shape": "image",
       "description": "Zack Snyder’s Justice League, orijinal yönetmenin vizyonuna sadık kalınarak yeniden kurgulanan dört saatlik bir destandır. Film, karakter gelişimine, evren inşasına ve Steppenwolf’un motivasyonlarına daha fazla odaklanır. Superman’in dönüşü daha anlamlı işlenir, Cyborg’un ailesel travmaları derinleştirilir. Film, birlik, umut ve evrensel tehditlere karşı hazırlık temalarını işler. Karanlık tonu, yavaş anlatımı ve mitolojik referanslarıyla DCEU’nun zirvesi olarak kabul edilir.",
       "refers_to": "Man of Steel ve Batman v Superman’de atılan tüm yapısal ipuçları bu versiyonda karşılık bulur. Darkseid’in gösterilmesi, Apokolips tehdidinin büyüklüğünü hissettirir. Knightmare sahneleri, olası bir gelecekte yaşanacak distopik olaylara gönderme yapar. Martian Manhunter’ın tanıtımı, DC evreninin genişleyeceğinin göstergesidir. Flash’ın zamanla oynadığı sahneler, multiverse ve kriz temalarını güçlendirir. Bu versiyon, DCEU için hem kapanış hem de potansiyel yeni başlangıç sunar.",
       "type": "film",
-      "release_date": "2017-11-17",
+      "release_date": "2021-03-18",
       "level": 2
     },
     {
       "id": "ZackSnydersJusticeLeague",
-      "label": "Justice League (2017)",
-      "title": "Justice League",
+      "label": "Justice League (Snyder's Cut)",
+      "title": "Justice League (Snyder's Cut)",
       "image": "/port/images/dc.jpg",
       "shape": "image",
       "description": "",
       "refers_to": "",
       "type": "film",
-      "release_date": "2017-11-17",
+      "release_date": "2021-03-18",
       "level": 2
     },
     {
       "id": "Aquaman",
       "label": "Aquaman (2018)",
-      "title": "Aquaman",
+      "title": "Aquaman (2018)",
       "image": "/port/images/dc.jpg",
       "shape": "image",
       "description": "Arthur Curry, insan ve Atlantisli kökenlerinin arasında sıkışmış bir kahramandır. Atlantis tahtını hak eden kişi olduğunu kanıtlamak için hem denizaltı krallıklarıyla hem de geçmişiyle yüzleşir. Film, görsel anlamda zengin sualtı dünyasıyla dikkat çeker. Arthur’un annesiyle olan ilişkisi ve kardeşi Orm’la çatışması, karakterin gelişimini şekillendirir. Film, güç, miras ve barışın bedeli gibi temalarla ilerler.",
@@ -134,20 +134,20 @@
     },
     {
       "id": "AquamanandtheLostKingdom",
-      "label": "Aquaman (2018)",
-      "title": "Aquaman",
+      "label": "Aquaman and the Lost Kingdom",
+      "title": "Aquaman and the Lost Kingdom",
       "image": "/port/images/dc.jpg",
       "shape": "image",
       "description": "Arthur Curry artık Atlantis’in kralıdır. Ancak yeni bir tehdit, kayıp bir krallığın uyanmasıyla ortaya çıkar. Arthur, kardeşi Orm’la iş birliği yaparak büyük bir savaşın önüne geçmeye çalışır. Film, aile, birlik ve çevresel tehditler temalarını işler. Görsel açıdan güçlü bir denizaltı fantastik dünyası sunar.",
       "refers_to": "İlk Aquaman filminde bırakılan bazı konular burada tamamlanır. Orm’un değişimi ve kardeşlik teması, DCEU’nun aile odaklı yönünü güçlendirir. Black Manta’nın intikamı sürerken Atlantis’in geçmişi derinleşir. Film, DC evreninin mitolojik yönünü daha da genişletir ve Aquaman’in liderlik sorumluluğunu işler.",
       "type": "film",
-      "release_date": "2018-12-21",
+      "release_date": "2023-12-22",
       "level": 3
     },
     {
       "id": "Shazam",
       "label": "Shazam! (2019)",
-      "title": "Shazam!",
+      "title": "Shazam! (2019)",
       "image": "/port/images/dc.jpg",
       "shape": "image",
       "description": "Billy Batson, sihirli bir sözle yetişkin bir süper kahramana dönüşen genç bir çocuktur. Film, eğlenceli ve sıcak tonuyla DCEU’dan ayrılır. Aile, aidiyet ve sorumluluk temaları işlenir. Billy’nin evlatlık ailesiyle kurduğu bağ ve kahraman olmayı öğrenme süreci, genç izleyicilere hitap eder. Komedi unsurları, klasik kahraman hikâyesine taze bir soluk getirir.",
@@ -158,14 +158,14 @@
     },
     {
       "id": "ShazamFuryoftheGods",
-      "label": "Shazam! (2019)",
-      "title": "Shazam!",
+      "label": "Shazam! Fury of the Gods",
+      "title": "Shazam! Fury of the Gods",
       "image": "/port/images/dc.jpg",
       "shape": "image",
       "description": "Billy Batson ve ailesi, süper kahraman güçleriyle dünyayı korumaya çalışırken tanrıçaların saldırısıyla karşı karşıya kalır. Hespera ve Kalypso’nun gelişi, güçlerin kökenine dair sırları açığa çıkarır. Film, aile bağları, fedakârlık ve kahramanlığın ruhunu işlerken komedi tonunu da korur. Shazam ailesi bir arada mücadele eder.",
       "refers_to": "İlk filmdeki güç paylaşımı burada daha derinleştirilir. Tanrıçalar, DC mitolojisinde yeni bir kapı aralar. Wonder Woman’ın sürpriz sahnesi, evren bağlantısını güçlendirir. Billy’nin olgunlaşması, karakter gelişiminin doğal uzantısıdır. Ayrıca post-credit sahnesi, Justice Society ve Amanda Waller bağlantısına işaret eder.",
       "type": "film",
-      "release_date": "2019-04-05",
+      "release_date": "2023-03-17",
       "level": 4
     },
     {
@@ -232,18 +232,18 @@
   "edges": [
     {
       "from": "ManOfSteel",
-      "to": "BirdsofPrey",
-      "type": "devam"
-    },
-    {
-      "from": "BirdsofPrey",
-      "to": "BlueBeetle",
+      "to": "BvS",
       "type": "devam"
     },
     {
       "from": "BvS",
-      "to": "BatmanvSupermanDawnofJustice",
+      "to": "JusticeLeague",
       "type": "devam"
+    },
+    {
+      "from": "JusticeLeague",
+      "to": "ZackCut",
+      "type": "yan-hikaye"
     },
     {
       "from": "SuicideSquad2016",
@@ -251,23 +251,8 @@
       "type": "devam"
     },
     {
-      "from": "TheSuicideSquad2021",
-      "to": "Peacemaker",
-      "type": "devam"
-    },
-    {
       "from": "WonderWoman",
       "to": "WonderWoman1984",
-      "type": "devam"
-    },
-    {
-      "from": "JusticeLeague",
-      "to": "ZackCut",
-      "type": "devam"
-    },
-    {
-      "from": "ZackCut",
-      "to": "ZackSnydersJusticeLeague",
       "type": "devam"
     },
     {
@@ -281,44 +266,14 @@
       "type": "devam"
     },
     {
-      "from": "JusticeLeague",
-      "to": "ZackCut",
-      "type": "yan-hikaye"
-    },
-    {
-      "from": "JusticeLeague",
-      "to": "ZackSnydersJusticeLeague",
-      "type": "yan-hikaye"
-    },
-    {
-      "from": "BlackAdam",
-      "to": "Shazam",
-      "type": "yan-hikaye"
-    },
-    {
       "from": "BirdsofPrey",
       "to": "Peacemaker",
       "type": "evren-geçişi"
     },
     {
-      "from": "SuicideSquad2016",
-      "to": "TheSuicideSquad2021",
-      "type": "evren-geçişi"
-    },
-    {
-      "from": "ShazamFuryoftheGods",
-      "to": "WonderWoman",
-      "type": "evren-geçişi"
-    },
-    {
-      "from": "Peacemaker",
-      "to": "JusticeLeague",
-      "type": "evren-geçişi"
-    },
-    {
-      "from": "TheFlash",
-      "to": "BatmanvSupermanDawnofJustice",
-      "type": "evren-geçişi"
+      "from": "BlackAdam",
+      "to": "Shazam",
+      "type": "yan-hikaye"
     }
   ]
 }
