@@ -1,49 +1,13 @@
 {
   "nodes": [
     {
-      "id": "sw_ep1",
-      "label": "The Phantom Menace (1999)",
-      "title": "Episode I - The Phantom Menace",
-      "image": "images/starwars.jpg",
-      "shape": "image",
-      "description": "Galaktik Cumhuriyet, içten içe yozlaşma ve çürümeyle mücadele ederken Naboo gezegeni, Ticaret Federasyonu'nun kuşatması altındadır. Jedi Ustası Qui-Gon Jinn ve çırağı Obi-Wan Kenobi, krizle ilgili müzakereleri yürütmek için Naboo'ya gönderilir. Ancak işler beklendiği gibi gitmez ve çift, genç Kraliçe Padmé Amidala ile birlikte gezegenden kaçar. Tatooine'de mola verdiklerinde, Anakin Skywalker adında olağanüstü yeteneklere sahip bir çocukla tanışırlar. Anakin’in içindeki Güç potansiyelinin fark edilmesiyle, Jedi Konseyi'ne sunulması kararlaştırılır. Bu sırada, karanlık bir figür olan Darth Sidious’un yönlendirmeleriyle Galaktik Senato'da entrikalar dönmekte ve Sith tehdidi yeniden gün yüzüne çıkmaktadır. Film, Anakin’in Jedi olma yolundaki ilk adımlarını ve Cumhuriyet’in düşüşe geçişini başlatan olayları detaylı biçimde işler. Hem karakter gelişimi hem de evrenin politik yapısının temelleri bu filmde atılır.",
-      "refers_to": "Film boyunca Naboo, Coruscant ve Tatooine gibi ikonik mekanlar tanıtılır. Jedi Konseyi'nin yapısı, Jedi yolları ve Güç’ün dengesi derinlemesine işlenir. Qui-Gon’un Anakin’e olan inancı, Jedi düzeninde bölünmeye neden olur. Darth Maul’un çift ışın kılıcı ve Sith'in geri dönüşü, evrenin karanlıkla yüzleşeceğini işaret eder. Padmé ile Anakin arasındaki ilk temas, gelecekteki aşkın ve trajedinin temellerini atar. Anakin’in ‘seçilmiş kişi’ olarak konumlanması, üçlemeyi etkileyen kader teması için başlangıçtır.",
-      "type": "film",
-      "release_date": "1999-05-19",
-      "level": 0
-    },
-    {
-      "id": "sw_ep2",
-      "label": "Attack of the Clones (2002)",
-      "title": "Episode II - Attack of the Clones",
-      "image": "images/starwars.jpg",
-      "shape": "image",
-      "description": "Episode II - Attack of the Clones filmi, Star Wars evreninin önemli yapı taşlarından biridir. Film boyunca karakter gelişimleri, galaktik çatışmalar, ve Güç'ün doğası derinlemesine işlenir. Episode II - Attack of the Clones, yalnızca aksiyon değil aynı zamanda evrenin mitolojisine de katkıda bulunur. Filmdeki olaylar, daha sonraki hikayelerin seyrini doğrudan etkiler. Anlatımı, müzikleri ve karakter etkileşimleriyle öne çıkan bu yapım, hem duygusal hem de felsefi temaları ele alır. Yönetmenlik ve sinematografi açısından da dikkat çekicidir.",
-      "refers_to": "Episode II - Attack of the Clones içerisinde Jedi, Sith, Direniş ve Galaktik İmparatorluk gibi kavramlar detaylı biçimde ele alınır. Film ayrıca, önceki yapımlara gönderme yapan sahneler ve karakter dinamikleriyle serinin bütünlüğünü sağlar. Örneğin, karakterlerin geçmişleriyle yüzleşmeleri, yeni tehditlerin yükselmesi ve Güç'ün dengesi üzerine yapılan vurgular dikkat çeker. Episode II - Attack of the Clones ayrıca, hayran teorilerine de ilham kaynağı olmuş önemli olaylar içerir.",
-      "type": "film",
-      "release_date": "2002-05-16",
-      "level": 1
-    },
-    {
-      "id": "sw_ep3",
-      "label": "Revenge of the Sith (2005)",
-      "title": "Episode III - Revenge of the Sith",
-      "image": "images/starwars.jpg",
-      "shape": "image",
-      "description": "Episode III - Revenge of the Sith filmi, Star Wars evreninin önemli yapı taşlarından biridir. Film boyunca karakter gelişimleri, galaktik çatışmalar, ve Güç'ün doğası derinlemesine işlenir. Episode III - Revenge of the Sith, yalnızca aksiyon değil aynı zamanda evrenin mitolojisine de katkıda bulunur. Filmdeki olaylar, daha sonraki hikayelerin seyrini doğrudan etkiler. Anlatımı, müzikleri ve karakter etkileşimleriyle öne çıkan bu yapım, hem duygusal hem de felsefi temaları ele alır. Yönetmenlik ve sinematografi açısından da dikkat çekicidir.",
-      "refers_to": "Episode III - Revenge of the Sith içerisinde Jedi, Sith, Direniş ve Galaktik İmparatorluk gibi kavramlar detaylı biçimde ele alınır. Film ayrıca, önceki yapımlara gönderme yapan sahneler ve karakter dinamikleriyle serinin bütünlüğünü sağlar. Örneğin, karakterlerin geçmişleriyle yüzleşmeleri, yeni tehditlerin yükselmesi ve Güç'ün dengesi üzerine yapılan vurgular dikkat çeker. Episode III - Revenge of the Sith ayrıca, hayran teorilerine de ilham kaynağı olmuş önemli olaylar içerir.",
-      "type": "film",
-      "release_date": "2005-05-19",
-      "level": 2
-    },
-    {
       "id": "sw_ep4",
       "label": "A New Hope (1977)",
       "title": "Episode IV - A New Hope",
       "image": "images/starwars.jpg",
       "shape": "image",
-      "description": "Episode IV - A New Hope filmi, Star Wars evreninin önemli yapı taşlarından biridir. Film boyunca karakter gelişimleri, galaktik çatışmalar, ve Güç'ün doğası derinlemesine işlenir. Episode IV - A New Hope, yalnızca aksiyon değil aynı zamanda evrenin mitolojisine de katkıda bulunur. Filmdeki olaylar, daha sonraki hikayelerin seyrini doğrudan etkiler. Anlatımı, müzikleri ve karakter etkileşimleriyle öne çıkan bu yapım, hem duygusal hem de felsefi temaları ele alır. Yönetmenlik ve sinematografi açısından da dikkat çekicidir.",
-      "refers_to": "Episode IV - A New Hope içerisinde Jedi, Sith, Direniş ve Galaktik İmparatorluk gibi kavramlar detaylı biçimde ele alınır. Film ayrıca, önceki yapımlara gönderme yapan sahneler ve karakter dinamikleriyle serinin bütünlüğünü sağlar. Örneğin, karakterlerin geçmişleriyle yüzleşmeleri, yeni tehditlerin yükselmesi ve Güç'ün dengesi üzerine yapılan vurgular dikkat çeker. Episode IV - A New Hope ayrıca, hayran teorilerine de ilham kaynağı olmuş önemli olaylar içerir.",
+      "description": "Episode IV - A New Hope, Luke Skywalker’ın kahramanlık yolculuğunun başladığı ikonik yapımdır. Galaktik İmparatorluk’un baskısına karşı koyan Asi İttifakı, Death Star planlarını ele geçirmiştir. Bu planları taşıyan Prenses Leia, yardım çağrısını Obi-Wan Kenobi’ye ulaştırmak için R2-D2’yu görevlendirir. Luke, Obi-Wan ve Han Solo ile çıktığı yolculukta hem Güç’le tanışır hem de kaderini keşfeder. Film, klasik iyi-kötü mücadelesini galaktik düzeyde işlerken, kahramanlık, fedakârlık ve umut temalarını merkezine alır. Death Star’ın yok edilişi, galaksinin özgürlük mücadelesinde bir dönüm noktasıdır.",
+      "refers_to": "A New Hope, Obi-Wan ve Darth Vader arasındaki yüzleşmeyle geçmiş hesaplaşmaları gün yüzüne çıkarır. Luke’un Jedi mirasına olan ilgisi, onun yolculuğunun başlangıcını temsil eder. Leia’nın liderliği, Direniş’in ahlaki temelini oluşturur. Han Solo’nun bireysel çıkarlarını bir kenara bırakması, karakter dönüşümünün simgesidir. Film, Güç kavramının metafizik boyutlarını tanıtarak sonraki anlatılara felsefi derinlik kazandırır. R2-D2 ve C-3PO, hikâyeyi bağlayan anlatı aracı olarak işlev görür. Bu bölüm, tüm serinin evrensel yapı taşlarını kurar.",
       "type": "film",
       "release_date": "1977-05-25",
       "level": 3
@@ -54,8 +18,8 @@
       "title": "Episode V - The Empire Strikes Back",
       "image": "images/starwars.jpg",
       "shape": "image",
-      "description": "Episode V - The Empire Strikes Back filmi, Star Wars evreninin önemli yapı taşlarından biridir. Film boyunca karakter gelişimleri, galaktik çatışmalar, ve Güç'ün doğası derinlemesine işlenir. Episode V - The Empire Strikes Back, yalnızca aksiyon değil aynı zamanda evrenin mitolojisine de katkıda bulunur. Filmdeki olaylar, daha sonraki hikayelerin seyrini doğrudan etkiler. Anlatımı, müzikleri ve karakter etkileşimleriyle öne çıkan bu yapım, hem duygusal hem de felsefi temaları ele alır. Yönetmenlik ve sinematografi açısından da dikkat çekicidir.",
-      "refers_to": "Episode V - The Empire Strikes Back içerisinde Jedi, Sith, Direniş ve Galaktik İmparatorluk gibi kavramlar detaylı biçimde ele alınır. Film ayrıca, önceki yapımlara gönderme yapan sahneler ve karakter dinamikleriyle serinin bütünlüğünü sağlar. Örneğin, karakterlerin geçmişleriyle yüzleşmeleri, yeni tehditlerin yükselmesi ve Güç'ün dengesi üzerine yapılan vurgular dikkat çeker. Episode V - The Empire Strikes Back ayrıca, hayran teorilerine de ilham kaynağı olmuş önemli olaylar içerir.",
+      "description": "Episode V - The Empire Strikes Back, serinin en karanlık ve derinlikli bölümlerinden biridir. Asi İttifakı Hoth gezegeninde İmparatorluk tarafından saldırıya uğrar. Luke, Yoda’dan Jedi eğitimi almak üzere Dagobah’a giderken, Han Solo ve Leia Cloud City’e yönelir. Filmde Luke, Vader’la yüzleşir ve onun babası olduğunu öğrenerek şok yaşar. Aşk, ihanet, kişisel yüzleşme ve çaresizlik hissi film boyunca hissedilir. Empire Strikes Back, kahramanların zayıflıklarıyla tanıştığı, mücadelelerinin kişiselleştiği bir kırılma noktasıdır.",
+      "refers_to": "Film, Luke’un Jedi eğitimiyle birlikte içsel çatışmalarına odaklanır. Vader’ın “Ben senin babanım” repliği, sinema tarihinin en büyük sürprizlerinden biridir ve Skywalker hanedanının trajedisini derinleştirir. Han Solo’nun dondurulması ve Leia’nın ona olan aşkı, karakter bağlarını güçlendirir. Lando Calrissian’ın ihaneti ve sonradan Direniş’e katılması, gruplar arasındaki güvensizliğin karmaşıklığını gösterir. Film, galaktik savaşın sadece fiziksel değil, aynı zamanda psikolojik bir mücadele olduğunu da ortaya koyar.",
       "type": "film",
       "release_date": "1980-05-21",
       "level": 4
@@ -66,11 +30,47 @@
       "title": "Episode VI - Return of the Jedi",
       "image": "images/starwars.jpg",
       "shape": "image",
-      "description": "Episode VI - Return of the Jedi filmi, Star Wars evreninin önemli yapı taşlarından biridir. Film boyunca karakter gelişimleri, galaktik çatışmalar, ve Güç'ün doğası derinlemesine işlenir. Episode VI - Return of the Jedi, yalnızca aksiyon değil aynı zamanda evrenin mitolojisine de katkıda bulunur. Filmdeki olaylar, daha sonraki hikayelerin seyrini doğrudan etkiler. Anlatımı, müzikleri ve karakter etkileşimleriyle öne çıkan bu yapım, hem duygusal hem de felsefi temaları ele alır. Yönetmenlik ve sinematografi açısından da dikkat çekicidir.",
-      "refers_to": "Episode VI - Return of the Jedi içerisinde Jedi, Sith, Direniş ve Galaktik İmparatorluk gibi kavramlar detaylı biçimde ele alınır. Film ayrıca, önceki yapımlara gönderme yapan sahneler ve karakter dinamikleriyle serinin bütünlüğünü sağlar. Örneğin, karakterlerin geçmişleriyle yüzleşmeleri, yeni tehditlerin yükselmesi ve Güç'ün dengesi üzerine yapılan vurgular dikkat çeker. Episode VI - Return of the Jedi ayrıca, hayran teorilerine de ilham kaynağı olmuş önemli olaylar içerir.",
+      "description": "Episode VI - Return of the Jedi, klasik üçlemenin son halkası olarak kahramanlık, kefaret ve özgürlüğün zaferini konu alır. Luke, artık tam bir Jedi olma yolundadır ve babası Darth Vader’ı kurtarma umuduyla hareket eder. Asi İttifakı, Endor’daki kalkan jeneratörünü yok ederek ikinci Death Star’ı imha etmeye çalışır. Luke’un İmparator’la yüzleşmesi, Güç’ün aydınlık ve karanlık tarafları arasındaki mücadelenin zirvesini oluşturur. Vader’ın fedakarlığı, Skywalker soyunun kurtuluşuna vesile olur. Film, direnişin zaferiyle sona erer.",
+      "refers_to": "Return of the Jedi, Vader’ın içsel çatışmasının çözümü ve Palpatine’in düşüşü ile Sith düzeninin sonunu getirir. Leia’nın Skywalker soyundan olduğu öğrenilir ve Luke ile bağı güçlenir. Ewokların Endor’daki katkısı, galakside küçük güçlerin de büyük zaferler kazanabileceğini gösterir. Jedi kimliğini tamamlayan Luke, Güç’ün dengesini yeniden sağlar. Film, tematik olarak kefaret, aile bağları ve seçimlerle ilgili güçlü mesajlar taşır. Bu kapanış, yeni kuşağın miras alacağı hikâyenin başlangıcını da hazırlar.",
       "type": "film",
       "release_date": "1983-05-25",
       "level": 5
+    },
+    {
+      "id": "sw_ep1",
+      "label": "The Phantom Menace (1999)",
+      "title": "Episode I - The Phantom Menace",
+      "image": "images/starwars.jpg",
+      "shape": "image",
+      "description": "Episode I - The Phantom Menace, Star Wars evreninin kronolojik başlangıç noktasıdır ve galaksinin kaderini etkileyecek olayların tohumlarını atar. Galaktik Cumhuriyet’in görünürde barış içinde olduğu bir dönemde, Ticaret Federasyonu’nun Naboo gezegenini abluka altına alması galaksinin istikrarını tehdit eder. Jedi Ustası Qui-Gon Jinn ve çırağı Obi-Wan Kenobi, durumu araştırmak üzere Naboo’ya gönderilir ve genç Kraliçe Padmé Amidala ile tanışarak olayların içine çekilirler. Kaçışları sırasında Tatooine gezegeninde karşılaştıkları Anakin Skywalker, içindeki Güç potansiyeliyle dikkat çeker. Film, Anakin’in Jedi olma yolundaki ilk adımını ve Güç’ün dengesini etkileyecek seçilmiş kişi inancının doğuşunu işler. Politik entrikalar, Sith’lerin geri dönüşü ve Jedi düzeninin kibirli yapısı bu bölümde temellendirilir. Film, galaktik çöküşün başlangıcını anlatırken aynı zamanda yeni bir çağın öncüsüdür.",
+      "refers_to": "The Phantom Menace, Jedi Konseyi’nin yapısını ve Galaktik Cumhuriyet’in çürümüş bürokratik yapısını detaylı şekilde sunar. Anakin’in keşfi, Güç'ün dengeye kavuşması mitini başlatır ve onun gelecekteki kaderine dair ipuçları verir. Darth Sidious’un perde arkasındaki manipülasyonları, İmparator Palpatine’in yükselişine dair ilk işaretleri barındırır. Qui-Gon’un Konsey’e karşı gelen yaklaşımı, Jedi düzeninin katılığını ve bu nedenle düşüşe yatkınlığını vurgular. Sith Lordu Darth Maul’un ortaya çıkışı, Sith tehdidinin geri döndüğünün göstergesidir. Ayrıca Padmé ile Anakin’in ilk karşılaşması, ileride galaksiyi etkileyecek trajik bir ilişkinin başlangıcıdır.",
+      "type": "film",
+      "release_date": "1999-05-19",
+      "level": 0
+    },
+    {
+      "id": "sw_ep2",
+      "label": "Attack of the Clones (2002)",
+      "title": "Episode II - Attack of the Clones",
+      "image": "images/starwars.jpg",
+      "shape": "image",
+      "description": "Episode II - Attack of the Clones, Star Wars evreninin merkezinde yer alan Cumhuriyet'in çözülmeye başladığı bir dönemi ele alır. Jedi Şövalyesi Obi-Wan Kenobi, suikast girişiminden sonra eski klon askerlerinin üretildiği Kamino gezegenine ulaşır. Bu süreçte Count Dooku’nun liderliğindeki Ayrılıkçılar hareketi galakside kaosu büyütmektedir. Anakin Skywalker, Padmé Amidala ile birlikte görev alırken aralarındaki romantik ilişki derinleşir. Film, Güç’ün karanlık tarafına ilk büyük geçiş sinyallerini verirken, Anakin’in öfke ve acı ile yüzleşmesini de işler. Klon Savaşları’nın fitilini ateşleyen olaylar zinciri, Cumhuriyet’in gizli yüzünü ve Sith planlarının kapsamını da ortaya koyar. Film, siyasi manipülasyon, kimlik çatışması ve duygusal kırılmalarla doludur.",
+      "refers_to": "Attack of the Clones, Palpatine’in olağanüstü yetkiler kazanması ve Klon Ordusu’nun yaratılışı ile Galaktik İmparatorluk’un temelinin atıldığı yapıttır. Dooku’nun Jedi Düzeni’nden ayrılması ve Sith Lordu olarak konumlanması, karanlık tarafın etkisini artırır. Anakin’in annesinin ölümüyle yaşadığı duygusal çöküş, gelecekteki dönüşümünün psikolojik zeminini oluşturur. Ayrıca Yoda’nın savaşa doğrudan katılması Jedi öğretilerindeki dönüşümü simgeler. Film, aşk ve görev arasındaki ikilemleri derinleştirirken, aynı zamanda evrende büyük bir savaşın eşiğine gelindiğini ilan eder.",
+      "type": "film",
+      "release_date": "2002-05-16",
+      "level": 1
+    },
+    {
+      "id": "sw_ep3",
+      "label": "Revenge of the Sith (2005)",
+      "title": "Episode III - Revenge of the Sith",
+      "image": "images/starwars.jpg",
+      "shape": "image",
+      "description": "Episode III - Revenge of the Sith, Star Wars evreninin en karanlık ve dramatik bölümüdür. Klon Savaşları tüm galaksiye yayılmışken, Jedi Konseyi ve Cumhuriyet içindeki çatlaklar daha görünür hale gelir. Anakin Skywalker, Padmé’nin ölümüyle ilgili kâbuslar görür ve Palpatine’in sunduğu karanlık yoldan medet umar. Film, Anakin’in Darth Vader’a dönüşümünü, Jedi düzeninin yıkılışını ve İmparatorluk’un kuruluşunu anlatır. Order 66 emriyle Jedi'lar katledilirken, Padmé’nin ölümü ve Obi-Wan ile Anakin’in epik düellosu hikâyenin doruk noktasını oluşturur. Film, bireysel trajedi ile galaktik felaketi birleştirerek unutulmaz bir anlatı sunar.",
+      "refers_to": "Revenge of the Sith, Palpatine’in gerçek kimliğinin açığa çıkması ve Sith’lerin nihai zaferiyle serinin dönüm noktasıdır. Anakin’in karanlık tarafa geçişi, Güç’ün dengesinin bozulduğunu simgeler. Padmé ile olan ilişkisindeki takıntı, Anakin’in kontrolsüzlüğünü ortaya çıkarır. Order 66 sahneleri, Jedi Düzeni’nin mutlak yıkımını vurgular. Yoda ve Obi-Wan’ın sürgün hayatlarına geçişi, orijinal üçleme için köprü kurar. Filmdeki tüm olaylar, Episode IV’te başlayacak olan yeni direnişin temellerini hazırlar.",
+      "type": "film",
+      "release_date": "2005-05-19",
+      "level": 2
     },
     {
       "id": "sw_ep7",
@@ -78,8 +78,8 @@
       "title": "Episode VII - The Force Awakens",
       "image": "images/starwars.jpg",
       "shape": "image",
-      "description": "Episode VII - The Force Awakens filmi, Star Wars evreninin önemli yapı taşlarından biridir. Film boyunca karakter gelişimleri, galaktik çatışmalar, ve Güç'ün doğası derinlemesine işlenir. Episode VII - The Force Awakens, yalnızca aksiyon değil aynı zamanda evrenin mitolojisine de katkıda bulunur. Filmdeki olaylar, daha sonraki hikayelerin seyrini doğrudan etkiler. Anlatımı, müzikleri ve karakter etkileşimleriyle öne çıkan bu yapım, hem duygusal hem de felsefi temaları ele alır. Yönetmenlik ve sinematografi açısından da dikkat çekicidir.",
-      "refers_to": "Episode VII - The Force Awakens içerisinde Jedi, Sith, Direniş ve Galaktik İmparatorluk gibi kavramlar detaylı biçimde ele alınır. Film ayrıca, önceki yapımlara gönderme yapan sahneler ve karakter dinamikleriyle serinin bütünlüğünü sağlar. Örneğin, karakterlerin geçmişleriyle yüzleşmeleri, yeni tehditlerin yükselmesi ve Güç'ün dengesi üzerine yapılan vurgular dikkat çeker. Episode VII - The Force Awakens ayrıca, hayran teorilerine de ilham kaynağı olmuş önemli olaylar içerir.",
+      "description": "Episode VII - The Force Awakens, yeni nesil kahramanları tanıttığı ve eski efsaneleri selamladığı bir geçiş filmidir. İlk Düzen, Cumhuriyet’in küllerinden doğarak galaksiyi yeniden tehdit eder. Rey adlı terkedilmiş bir genç, BB-8 ile yolları kesişince direnişin parçası haline gelir. Finn ve Poe gibi yeni karakterler, kahramanlık ve özgürlük mücadelesinde önemli rol üstlenir. Han Solo ve Leia yeniden sahneye çıkar. Kylo Ren’in karanlık tarafa geçişi ve Han Solo’yu öldürmesi, hikâyeyi duygusal ve mitolojik düzeyde derinleştirir.",
+      "refers_to": "Film, Luke Skywalker’ın kayboluşunu gizemli bir olay haline getirir. Rey’in Güç’le olan bağı, geçmişe ve geleceğe dair ipuçları sunar. Kylo Ren’in kimlik çatışması, Vader’ın mirasıyla hesaplaşmanın modern yansımasıdır. Starkiller Üssü’nün yok edilmesi, eski döngülerin tekrarını simgeler. Leia’nın liderliği ve Han’ın ölümü, eski neslin yerini yenilere bırakmasının sembolüdür. Film, klasik anlatı yapısını koruyarak, yeni bir efsanenin tohumlarını atar.",
       "type": "film",
       "release_date": "2015-12-18",
       "level": 6
@@ -90,8 +90,8 @@
       "title": "Episode VIII - The Last Jedi",
       "image": "images/starwars.jpg",
       "shape": "image",
-      "description": "Episode VIII - The Last Jedi filmi, Star Wars evreninin önemli yapı taşlarından biridir. Film boyunca karakter gelişimleri, galaktik çatışmalar, ve Güç'ün doğası derinlemesine işlenir. Episode VIII - The Last Jedi, yalnızca aksiyon değil aynı zamanda evrenin mitolojisine de katkıda bulunur. Filmdeki olaylar, daha sonraki hikayelerin seyrini doğrudan etkiler. Anlatımı, müzikleri ve karakter etkileşimleriyle öne çıkan bu yapım, hem duygusal hem de felsefi temaları ele alır. Yönetmenlik ve sinematografi açısından da dikkat çekicidir.",
-      "refers_to": "Episode VIII - The Last Jedi içerisinde Jedi, Sith, Direniş ve Galaktik İmparatorluk gibi kavramlar detaylı biçimde ele alınır. Film ayrıca, önceki yapımlara gönderme yapan sahneler ve karakter dinamikleriyle serinin bütünlüğünü sağlar. Örneğin, karakterlerin geçmişleriyle yüzleşmeleri, yeni tehditlerin yükselmesi ve Güç'ün dengesi üzerine yapılan vurgular dikkat çeker. Episode VIII - The Last Jedi ayrıca, hayran teorilerine de ilham kaynağı olmuş önemli olaylar içerir.",
+      "description": "Episode VIII - The Last Jedi, statükoyu sarsan, karakterleri kendi sınırlarıyla yüzleştiren bir anlatıdır. Rey, Luke’tan Jedi eğitimi almak ister ancak Luke’un Jedi düzenine duyduğu inanç kaybı, eğitimi zorlaştırır. Kylo Ren ile Rey arasındaki psişik bağ, karanlık ve aydınlık tarafın birbiriyle olan geçişkenliğini ortaya çıkarır. Direniş, İlk Düzen karşısında hayatta kalma mücadelesi verirken büyük kayıplar yaşanır. Film, güç, başarısızlık ve inanç temalarını ters köşe anlatımlarla işler.",
+      "refers_to": "Luke’un son fedakarlığı, efsanenin yeniden doğmasını sağlar. Rey’in kendi gücünü bulması ve bağımsız bir kimlik kazanması, Jedi kalıplarının ötesine geçişi temsil eder. Snoke’un ölümü, klasik Sith yapısının yıkıldığını gösterir. Kylo Ren’in iktidar arzusu, kişisel bir tiranlığa dönüşür. Rose ve Finn’in alt hikâyesi, savaşın ahlaki boyutunu tartışmaya açar. Film, Star Wars mitolojisini yeniden yorumlayan cesur anlatı tercihleriyle dikkat çeker.",
       "type": "film",
       "release_date": "2017-12-15",
       "level": 7
@@ -102,35 +102,11 @@
       "title": "Episode IX - The Rise of Skywalker",
       "image": "images/starwars.jpg",
       "shape": "image",
-      "description": "Episode IX - The Rise of Skywalker filmi, Star Wars evreninin önemli yapı taşlarından biridir. Film boyunca karakter gelişimleri, galaktik çatışmalar, ve Güç'ün doğası derinlemesine işlenir. Episode IX - The Rise of Skywalker, yalnızca aksiyon değil aynı zamanda evrenin mitolojisine de katkıda bulunur. Filmdeki olaylar, daha sonraki hikayelerin seyrini doğrudan etkiler. Anlatımı, müzikleri ve karakter etkileşimleriyle öne çıkan bu yapım, hem duygusal hem de felsefi temaları ele alır. Yönetmenlik ve sinematografi açısından da dikkat çekicidir.",
-      "refers_to": "Episode IX - The Rise of Skywalker içerisinde Jedi, Sith, Direniş ve Galaktik İmparatorluk gibi kavramlar detaylı biçimde ele alınır. Film ayrıca, önceki yapımlara gönderme yapan sahneler ve karakter dinamikleriyle serinin bütünlüğünü sağlar. Örneğin, karakterlerin geçmişleriyle yüzleşmeleri, yeni tehditlerin yükselmesi ve Güç'ün dengesi üzerine yapılan vurgular dikkat çeker. Episode IX - The Rise of Skywalker ayrıca, hayran teorilerine de ilham kaynağı olmuş önemli olaylar içerir.",
+      "description": "Episode IX - The Rise of Skywalker, Skywalker destanının final perdesidir. İmparator Palpatine’in geri dönüşüyle galaksi yeniden tehdit altına girer. Rey, geçmişiyle yüzleşerek kimliğini bulmak zorundadır. Kylo Ren ile olan karmaşık ilişkisi, karanlıkla aydınlık arasındaki çizgiyi belirsizleştirir. Direniş son büyük savaşa hazırlanırken eski karakterler son bir kez daha sahneye çıkar. Film, aksiyon, nostalji ve sembolik kapanışları bir araya getirerek geniş bir anlatı sunar.",
+      "refers_to": "Rey’in Palpatine’in torunu olduğunun ortaya çıkması, soyun değil seçimlerin önemini vurgular. Ben Solo’nun kefareti ve fedakarlığı, Vader’ın mirasının yeniden anlamlandırılmasını sağlar. Leia’nın Güç kullanımı ve ölümü, Skywalker hanedanının kapanışına duygusal bir boyut katar. Lando, Luke’un hayaleti ve diğer efsanevi figürler, eski ruhu yeniden canlandırır. Finalde Rey’in Skywalker adını seçmesi, öz-kimlik ve umut mesajıyla evreni yeni bir çağa taşır.",
       "type": "film",
       "release_date": "2019-12-20",
       "level": 8
-    },
-    {
-      "id": "sw_mando",
-      "label": "The Mandalorian (2019)",
-      "title": "The Mandalorian",
-      "image": "images/starwars.jpg",
-      "shape": "image",
-      "description": "The Mandalorian filmi, Star Wars evreninin önemli yapı taşlarından biridir. Film boyunca karakter gelişimleri, galaktik çatışmalar, ve Güç'ün doğası derinlemesine işlenir. The Mandalorian, yalnızca aksiyon değil aynı zamanda evrenin mitolojisine de katkıda bulunur. Filmdeki olaylar, daha sonraki hikayelerin seyrini doğrudan etkiler. Anlatımı, müzikleri ve karakter etkileşimleriyle öne çıkan bu yapım, hem duygusal hem de felsefi temaları ele alır. Yönetmenlik ve sinematografi açısından da dikkat çekicidir.",
-      "refers_to": "The Mandalorian içerisinde Jedi, Sith, Direniş ve Galaktik İmparatorluk gibi kavramlar detaylı biçimde ele alınır. Film ayrıca, önceki yapımlara gönderme yapan sahneler ve karakter dinamikleriyle serinin bütünlüğünü sağlar. Örneğin, karakterlerin geçmişleriyle yüzleşmeleri, yeni tehditlerin yükselmesi ve Güç'ün dengesi üzerine yapılan vurgular dikkat çeker. The Mandalorian ayrıca, hayran teorilerine de ilham kaynağı olmuş önemli olaylar içerir.",
-      "type": "dizi",
-      "release_date": "2019-11-12",
-      "level": 9
-    },
-    {
-      "id": "sw_ahsoka",
-      "label": "Ahsoka (2023)",
-      "title": "Ahsoka",
-      "image": "images/starwars.jpg",
-      "shape": "image",
-      "description": "Ahsoka filmi, Star Wars evreninin önemli yapı taşlarından biridir. Film boyunca karakter gelişimleri, galaktik çatışmalar, ve Güç'ün doğası derinlemesine işlenir. Ahsoka, yalnızca aksiyon değil aynı zamanda evrenin mitolojisine de katkıda bulunur. Filmdeki olaylar, daha sonraki hikayelerin seyrini doğrudan etkiler. Anlatımı, müzikleri ve karakter etkileşimleriyle öne çıkan bu yapım, hem duygusal hem de felsefi temaları ele alır. Yönetmenlik ve sinematografi açısından da dikkat çekicidir.",
-      "refers_to": "Ahsoka içerisinde Jedi, Sith, Direniş ve Galaktik İmparatorluk gibi kavramlar detaylı biçimde ele alınır. Film ayrıca, önceki yapımlara gönderme yapan sahneler ve karakter dinamikleriyle serinin bütünlüğünü sağlar. Örneğin, karakterlerin geçmişleriyle yüzleşmeleri, yeni tehditlerin yükselmesi ve Güç'ün dengesi üzerine yapılan vurgular dikkat çeker. Ahsoka ayrıca, hayran teorilerine de ilham kaynağı olmuş önemli olaylar içerir.",
-      "type": "dizi",
-      "release_date": "2023-08-22",
-      "level": 10
     }
   ],
   "edges": [
