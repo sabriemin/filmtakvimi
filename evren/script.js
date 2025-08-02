@@ -177,7 +177,8 @@ Promise.all([
     backgroundEl.style.backgroundImage = "url('images/pixar.jpg')";
   } else {
         infoBox.style.width = "auto";
-        infoBox.style.maxHeight = "none";
+        infoBox.style.maxHeight = "500px";
+      infoBox.style.overflowY = "auto";
         infoBox.style.fontSize = "inherit";
       }
     }
@@ -340,7 +341,7 @@ function makeDraggable(el, handle) {
     handle.addEventListener("mouseup", closeDragElement);
     handle.addEventListener("mousemove", elementDrag);
   }
- 
+
   function elementDrag(e) {
     e.preventDefault();
     pos1 = pos3 - e.clientX;

@@ -12,6 +12,9 @@ body {
 }
 
 #info-box {
+  max-height: 500px;
+  overflow-y: auto;
+
   position: absolute;
   top: 50px;
   left: 50px;
@@ -60,6 +63,9 @@ body {
 /* === Responsive Düzenlemeler === */
 @media (max-width: 768px) {
   #info-box {
+  max-height: 500px;
+  overflow-y: auto;
+
     left: 50%;
     top: 20px;
     transform: translateX(-50%);
@@ -99,6 +105,9 @@ body {
 }
 
 #info-box {
+  max-height: 500px;
+  overflow-y: auto;
+
   background-color: var(--box-bg);
   border: 1px solid var(--border-color);
   box-shadow: 0 0 12px var(--shadow-color);
@@ -136,6 +145,9 @@ body {
 }
 
 #info-box {
+  max-height: 500px;
+  overflow-y: auto;
+
   border-radius: 12px;
   padding: 20px;
   transition: all 0.3s ease;
@@ -168,6 +180,9 @@ body {
 /* === Hover ve Geçiş Efektleri === */
 
 #info-box {
+  max-height: 500px;
+  overflow-y: auto;
+
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
