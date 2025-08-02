@@ -161,7 +161,6 @@ Promise.all([
                          "Bağlantı Yok";
       refersEl.innerHTML = `<strong>Bağlantı Türü:</strong> ${edgeLabel}<br><br><strong>Göndermeler:</strong><br>${node.refers_to}`;
       infoBox.classList.remove("hidden");
-      makeDraggable(infoBox);
       infoBox.style.position = "fixed";
       infoBox.style.left = "50%";
       infoBox.style.top = "50%";
@@ -328,10 +327,9 @@ function createUniverseTabs() {
 
 
 
-// Sürüklenebilirlik
-function makeDraggable(el) {
+function makeDraggable(el, handle) {
   let pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-  el.onmousedown = dragMouseDown;
+  handle.onmousedown = dragMouseDown;
 
   function dragMouseDown(e) {
     e = e || window.event;
