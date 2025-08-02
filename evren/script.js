@@ -332,7 +332,6 @@ function makeDraggable(el, handle) {
   handle.onmousedown = dragMouseDown;
 
   function dragMouseDown(e) {
-    e = e || window.event;
     e.preventDefault();
     pos3 = e.clientX;
     pos4 = e.clientY;
@@ -341,7 +340,6 @@ function makeDraggable(el, handle) {
   }
 
   function elementDrag(e) {
-    e = e || window.event;
     e.preventDefault();
     pos1 = pos3 - e.clientX;
     pos2 = pos4 - e.clientY;
