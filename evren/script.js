@@ -145,6 +145,7 @@ Promise.all([
     if (params.nodes.length > 0) {
       const node = allNodes.get(params.nodes[0]);
       titleEl.textContent = `${node.title} (${new Date(node.release_date).toLocaleDateString('tr-TR')})`;
+      titleEl.innerHTML += `<div class="tag tag-${node.universe.toLowerCase()}">${node.universe}</div>`;
       const parsedDate = new Date(node.release_date);
       const formattedDate = !isNaN(parsedDate) ? parsedDate.toLocaleDateString("tr-TR") : "Bilinmiyor";
       descEl.innerHTML = `<strong>${node.type === 'dizi' ? 'Dizi' : 'Film'} Özeti:</strong><br>${node.description}<br><br><strong>Vizyon Tarihi:</strong> ${formattedDate}`;
