@@ -30,6 +30,8 @@ function updateBackground(universe) {
     backgroundEl.style.backgroundImage = "url('images/dc.jpg')";
   } else if (universe === "Star Wars") {
     backgroundEl.style.backgroundImage = "url('images/starwars.jpg')";
+  } else if (universe === "Pixar") {
+    backgroundEl.style.backgroundImage = "url('images/pixar.jpg')";
   } else {
     backgroundEl.style.backgroundImage = "linear-gradient(to bottom right, #0f2027, #203a43, #2c5364)";
   }
@@ -38,19 +40,22 @@ function updateBackground(universe) {
 Promise.all([
   fetch("data/marvel.json").then(res => res.json()),
   fetch("data/dc.json").then(res => res.json()),
-  fetch("data/starwars.json").then(res => res.json())
-]).then(([marvelData, dcData, swData]) => {
+  fetch("data/starwars.json").then(res => res.json()),
+  fetch("data/pixar.json").then(res => res.json())
+]).then(([marvelData, dcData, swData, pixarData]) => {
   const addUniverseTag = (data, universe) => {
     return data.nodes.map(n => ({ ...n, universe }))
   };
 
   const combinedNodes = [
+    ...addUniverseTag(pixarData, "Pixar"),
     ...addUniverseTag(marvelData, "Marvel"),
     ...addUniverseTag(dcData, "DC"),
     ...addUniverseTag(swData, "Star Wars")
   ];
 
   const combinedEdges = [
+    ...pixarData.edges,
     ...marvelData.edges,
     ...dcData.edges,
     ...swData.edges
@@ -145,7 +150,6 @@ Promise.all([
     if (params.nodes.length > 0) {
       const node = allNodes.get(params.nodes[0]);
       titleEl.textContent = `${node.title} (${new Date(node.release_date).toLocaleDateString('tr-TR')})`;
-      titleEl.innerHTML += `<div class="tag tag-${node.universe.toLowerCase()}">${node.universe}</div>`;
       const parsedDate = new Date(node.release_date);
       const formattedDate = !isNaN(parsedDate) ? parsedDate.toLocaleDateString("tr-TR") : "Bilinmiyor";
       descEl.innerHTML = `<strong>${node.type === 'dizi' ? 'Dizi' : 'Film'} Özeti:</strong><br>${node.description}<br><br><strong>Vizyon Tarihi:</strong> ${formattedDate}`;
@@ -168,7 +172,9 @@ Promise.all([
         infoBox.style.maxHeight = "70vh";
         infoBox.style.overflowY = "auto";
         infoBox.style.fontSize = "13px";
-      } else {
+      } else if (universe === "Pixar") {
+    backgroundEl.style.backgroundImage = "url('images/pixar.jpg')";
+  } else {
         infoBox.style.width = "auto";
         infoBox.style.maxHeight = "none";
         infoBox.style.fontSize = "inherit";
@@ -277,7 +283,7 @@ function createUniverseTabs() {
   select.style.cursor = "pointer";
   select.style.marginTop = "8px";
 
-  const universeList = ["Hepsi", "Marvel", "DC", "Star Wars"];
+  const universeList = ["Hepsi", "Marvel", "DC", "Star Wars", "Pixar"];
   universeList.forEach((universe) => {
     const option = document.createElement("option");
     option.value = universe;
