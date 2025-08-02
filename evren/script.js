@@ -340,7 +340,7 @@ function makeDraggable(el, handle) {
     handle.addEventListener("mouseup", closeDragElement);
     handle.addEventListener("mousemove", elementDrag);
   }
-
+ 
   function elementDrag(e) {
     e.preventDefault();
     pos1 = pos3 - e.clientX;
