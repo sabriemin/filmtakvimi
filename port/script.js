@@ -118,7 +118,9 @@ Promise.all([
     interaction: {
       hover: false,
       tooltipDelay: 100,
-      dragNodes: true
+      dragNodes: true,
+      multiselect: true,
+      selectable: true
     },
     groups: {
       film: {
