@@ -9,6 +9,8 @@
 </head>
 <body>
 
+  <button id="toggle-theme">🌙 Tema Değiştir</button>
+
   <div id="info-box">
     <h2>Film Başlığı</h2>
     <p>Bu bir test açıklamasıdır. Tema, hover, etiket ve responsive stiller bu kutuda denenebilir.</p>
@@ -29,6 +31,12 @@
       <button class="filter-button">Star Wars</button>
     </div>
   </div>
+
+  <script>
+    document.getElementById("toggle-theme").addEventListener("click", () => {
+      document.body.classList.toggle("light-mode");
+    });
+  </script>
 
 </body>
 </html>
