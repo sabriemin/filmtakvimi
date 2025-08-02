@@ -112,8 +112,9 @@ Promise.all([
         enabled: true,
         direction: "UD",
         sortMethod: "directed",
+        sortMethod: "directed",
         levelSeparation: 150,
-        nodeSpacing: 250
+        nodeSpacing: 300
       }
     },
     physics: {
