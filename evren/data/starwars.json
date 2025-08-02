@@ -1,173 +1,346 @@
 {
   "nodes": [
-    {
-      "id": "sw_ep4",
-      "label": "A New Hope (1977)",
-      "title": "Episode IV - A New Hope",
-      "image": "images/starwars.jpg",
-      "shape": "image",
-      "description": "Episode IV - A New Hope, Luke Skywalker’ın kahramanlık yolculuğunun başladığı ikonik yapımdır. Galaktik İmparatorluk’un baskısına karşı koyan Asi İttifakı, Death Star planlarını ele geçirmiştir. Bu planları taşıyan Prenses Leia, yardım çağrısını Obi-Wan Kenobi’ye ulaştırmak için R2-D2’yu görevlendirir. Luke, Obi-Wan ve Han Solo ile çıktığı yolculukta hem Güç’le tanışır hem de kaderini keşfeder. Film, klasik iyi-kötü mücadelesini galaktik düzeyde işlerken, kahramanlık, fedakârlık ve umut temalarını merkezine alır. Death Star’ın yok edilişi, galaksinin özgürlük mücadelesinde bir dönüm noktasıdır.",
-      "refers_to": "A New Hope, Obi-Wan ve Darth Vader arasındaki yüzleşmeyle geçmiş hesaplaşmaları gün yüzüne çıkarır. Luke’un Jedi mirasına olan ilgisi, onun yolculuğunun başlangıcını temsil eder. Leia’nın liderliği, Direniş’in ahlaki temelini oluşturur. Han Solo’nun bireysel çıkarlarını bir kenara bırakması, karakter dönüşümünün simgesidir. Film, Güç kavramının metafizik boyutlarını tanıtarak sonraki anlatılara felsefi derinlik kazandırır. R2-D2 ve C-3PO, hikâyeyi bağlayan anlatı aracı olarak işlev görür. Bu bölüm, tüm serinin evrensel yapı taşlarını kurar.",
-      "type": "film",
-      "release_date": "1977-05-25",
-      "level": 3,
-      "universe": "Star Wars"
-    },
-    {
-      "id": "sw_ep5",
-      "label": "The Empire Strikes Back (1980)",
-      "title": "Episode V - The Empire Strikes Back",
-      "image": "images/starwars.jpg",
-      "shape": "image",
-      "description": "Episode V - The Empire Strikes Back, serinin en karanlık ve derinlikli bölümlerinden biridir. Asi İttifakı Hoth gezegeninde İmparatorluk tarafından saldırıya uğrar. Luke, Yoda’dan Jedi eğitimi almak üzere Dagobah’a giderken, Han Solo ve Leia Cloud City’e yönelir. Filmde Luke, Vader’la yüzleşir ve onun babası olduğunu öğrenerek şok yaşar. Aşk, ihanet, kişisel yüzleşme ve çaresizlik hissi film boyunca hissedilir. Empire Strikes Back, kahramanların zayıflıklarıyla tanıştığı, mücadelelerinin kişiselleştiği bir kırılma noktasıdır.",
-      "refers_to": "Film, Luke’un Jedi eğitimiyle birlikte içsel çatışmalarına odaklanır. Vader’ın “Ben senin babanım” repliği, sinema tarihinin en büyük sürprizlerinden biridir ve Skywalker hanedanının trajedisini derinleştirir. Han Solo’nun dondurulması ve Leia’nın ona olan aşkı, karakter bağlarını güçlendirir. Lando Calrissian’ın ihaneti ve sonradan Direniş’e katılması, gruplar arasındaki güvensizliğin karmaşıklığını gösterir. Film, galaktik savaşın sadece fiziksel değil, aynı zamanda psikolojik bir mücadele olduğunu da ortaya koyar.",
-      "type": "film",
-      "release_date": "1980-05-21",
-      "level": 4,
-      "universe": "Star Wars"
-    },
-    {
-      "id": "sw_ep6",
-      "label": "Return of the Jedi (1983)",
-      "title": "Episode VI - Return of the Jedi",
-      "image": "images/starwars.jpg",
-      "shape": "image",
-      "description": "Episode VI - Return of the Jedi, klasik üçlemenin son halkası olarak kahramanlık, kefaret ve özgürlüğün zaferini konu alır. Luke, artık tam bir Jedi olma yolundadır ve babası Darth Vader’ı kurtarma umuduyla hareket eder. Asi İttifakı, Endor’daki kalkan jeneratörünü yok ederek ikinci Death Star’ı imha etmeye çalışır. Luke’un İmparator’la yüzleşmesi, Güç’ün aydınlık ve karanlık tarafları arasındaki mücadelenin zirvesini oluşturur. Vader’ın fedakarlığı, Skywalker soyunun kurtuluşuna vesile olur. Film, direnişin zaferiyle sona erer.",
-      "refers_to": "Return of the Jedi, Vader’ın içsel çatışmasının çözümü ve Palpatine’in düşüşü ile Sith düzeninin sonunu getirir. Leia’nın Skywalker soyundan olduğu öğrenilir ve Luke ile bağı güçlenir. Ewokların Endor’daki katkısı, galakside küçük güçlerin de büyük zaferler kazanabileceğini gösterir. Jedi kimliğini tamamlayan Luke, Güç’ün dengesini yeniden sağlar. Film, tematik olarak kefaret, aile bağları ve seçimlerle ilgili güçlü mesajlar taşır. Bu kapanış, yeni kuşağın miras alacağı hikâyenin başlangıcını da hazırlar.",
-      "type": "film",
-      "release_date": "1983-05-25",
-      "level": 5,
-      "universe": "Star Wars"
-    },
-    {
-      "id": "sw_ep1",
-      "label": "The Phantom Menace (1999)",
-      "title": "Episode I - The Phantom Menace",
-      "image": "images/starwars.jpg",
-      "shape": "image",
-      "description": "Episode I - The Phantom Menace, Star Wars evreninin kronolojik başlangıç noktasıdır ve galaksinin kaderini etkileyecek olayların tohumlarını atar. Galaktik Cumhuriyet’in görünürde barış içinde olduğu bir dönemde, Ticaret Federasyonu’nun Naboo gezegenini abluka altına alması galaksinin istikrarını tehdit eder. Jedi Ustası Qui-Gon Jinn ve çırağı Obi-Wan Kenobi, durumu araştırmak üzere Naboo’ya gönderilir ve genç Kraliçe Padmé Amidala ile tanışarak olayların içine çekilirler. Kaçışları sırasında Tatooine gezegeninde karşılaştıkları Anakin Skywalker, içindeki Güç potansiyeliyle dikkat çeker. Film, Anakin’in Jedi olma yolundaki ilk adımını ve Güç’ün dengesini etkileyecek seçilmiş kişi inancının doğuşunu işler. Politik entrikalar, Sith’lerin geri dönüşü ve Jedi düzeninin kibirli yapısı bu bölümde temellendirilir. Film, galaktik çöküşün başlangıcını anlatırken aynı zamanda yeni bir çağın öncüsüdür.",
-      "refers_to": "The Phantom Menace, Jedi Konseyi’nin yapısını ve Galaktik Cumhuriyet’in çürümüş bürokratik yapısını detaylı şekilde sunar. Anakin’in keşfi, Güç'ün dengeye kavuşması mitini başlatır ve onun gelecekteki kaderine dair ipuçları verir. Darth Sidious’un perde arkasındaki manipülasyonları, İmparator Palpatine’in yükselişine dair ilk işaretleri barındırır. Qui-Gon’un Konsey’e karşı gelen yaklaşımı, Jedi düzeninin katılığını ve bu nedenle düşüşe yatkınlığını vurgular. Sith Lordu Darth Maul’un ortaya çıkışı, Sith tehdidinin geri döndüğünün göstergesidir. Ayrıca Padmé ile Anakin’in ilk karşılaşması, ileride galaksiyi etkileyecek trajik bir ilişkinin başlangıcıdır.",
-      "type": "film",
-      "release_date": "1999-05-19",
-      "level": 0,
-      "universe": "Star Wars"
-    },
-    {
-      "id": "sw_ep2",
-      "label": "Attack of the Clones (2002)",
-      "title": "Episode II - Attack of the Clones",
-      "image": "images/starwars.jpg",
-      "shape": "image",
-      "description": "Episode II - Attack of the Clones, Star Wars evreninin merkezinde yer alan Cumhuriyet'in çözülmeye başladığı bir dönemi ele alır. Jedi Şövalyesi Obi-Wan Kenobi, suikast girişiminden sonra eski klon askerlerinin üretildiği Kamino gezegenine ulaşır. Bu süreçte Count Dooku’nun liderliğindeki Ayrılıkçılar hareketi galakside kaosu büyütmektedir. Anakin Skywalker, Padmé Amidala ile birlikte görev alırken aralarındaki romantik ilişki derinleşir. Film, Güç’ün karanlık tarafına ilk büyük geçiş sinyallerini verirken, Anakin’in öfke ve acı ile yüzleşmesini de işler. Klon Savaşları’nın fitilini ateşleyen olaylar zinciri, Cumhuriyet’in gizli yüzünü ve Sith planlarının kapsamını da ortaya koyar. Film, siyasi manipülasyon, kimlik çatışması ve duygusal kırılmalarla doludur.",
-      "refers_to": "Attack of the Clones, Palpatine’in olağanüstü yetkiler kazanması ve Klon Ordusu’nun yaratılışı ile Galaktik İmparatorluk’un temelinin atıldığı yapıttır. Dooku’nun Jedi Düzeni’nden ayrılması ve Sith Lordu olarak konumlanması, karanlık tarafın etkisini artırır. Anakin’in annesinin ölümüyle yaşadığı duygusal çöküş, gelecekteki dönüşümünün psikolojik zeminini oluşturur. Ayrıca Yoda’nın savaşa doğrudan katılması Jedi öğretilerindeki dönüşümü simgeler. Film, aşk ve görev arasındaki ikilemleri derinleştirirken, aynı zamanda evrende büyük bir savaşın eşiğine gelindiğini ilan eder.",
-      "type": "film",
-      "release_date": "2002-05-16",
-      "level": 1,
-      "universe": "Star Wars"
-    },
-    {
-      "id": "sw_ep3",
-      "label": "Revenge of the Sith (2005)",
-      "title": "Episode III - Revenge of the Sith",
-      "image": "images/starwars.jpg",
-      "shape": "image",
-      "description": "Episode III - Revenge of the Sith, Star Wars evreninin en karanlık ve dramatik bölümüdür. Klon Savaşları tüm galaksiye yayılmışken, Jedi Konseyi ve Cumhuriyet içindeki çatlaklar daha görünür hale gelir. Anakin Skywalker, Padmé’nin ölümüyle ilgili kâbuslar görür ve Palpatine’in sunduğu karanlık yoldan medet umar. Film, Anakin’in Darth Vader’a dönüşümünü, Jedi düzeninin yıkılışını ve İmparatorluk’un kuruluşunu anlatır. Order 66 emriyle Jedi'lar katledilirken, Padmé’nin ölümü ve Obi-Wan ile Anakin’in epik düellosu hikâyenin doruk noktasını oluşturur. Film, bireysel trajedi ile galaktik felaketi birleştirerek unutulmaz bir anlatı sunar.",
-      "refers_to": "Revenge of the Sith, Palpatine’in gerçek kimliğinin açığa çıkması ve Sith’lerin nihai zaferiyle serinin dönüm noktasıdır. Anakin’in karanlık tarafa geçişi, Güç’ün dengesinin bozulduğunu simgeler. Padmé ile olan ilişkisindeki takıntı, Anakin’in kontrolsüzlüğünü ortaya çıkarır. Order 66 sahneleri, Jedi Düzeni’nin mutlak yıkımını vurgular. Yoda ve Obi-Wan’ın sürgün hayatlarına geçişi, orijinal üçleme için köprü kurar. Filmdeki tüm olaylar, Episode IV’te başlayacak olan yeni direnişin temellerini hazırlar.",
-      "type": "film",
-      "release_date": "2005-05-19",
-      "level": 2,
-      "universe": "Star Wars"
-    },
-    {
-      "id": "sw_ep7",
-      "label": "The Force Awakens (2015)",
-      "title": "Episode VII - The Force Awakens",
-      "image": "images/starwars.jpg",
-      "shape": "image",
-      "description": "Episode VII - The Force Awakens, yeni nesil kahramanları tanıttığı ve eski efsaneleri selamladığı bir geçiş filmidir. İlk Düzen, Cumhuriyet’in küllerinden doğarak galaksiyi yeniden tehdit eder. Rey adlı terkedilmiş bir genç, BB-8 ile yolları kesişince direnişin parçası haline gelir. Finn ve Poe gibi yeni karakterler, kahramanlık ve özgürlük mücadelesinde önemli rol üstlenir. Han Solo ve Leia yeniden sahneye çıkar. Kylo Ren’in karanlık tarafa geçişi ve Han Solo’yu öldürmesi, hikâyeyi duygusal ve mitolojik düzeyde derinleştirir.",
-      "refers_to": "Film, Luke Skywalker’ın kayboluşunu gizemli bir olay haline getirir. Rey’in Güç’le olan bağı, geçmişe ve geleceğe dair ipuçları sunar. Kylo Ren’in kimlik çatışması, Vader’ın mirasıyla hesaplaşmanın modern yansımasıdır. Starkiller Üssü’nün yok edilmesi, eski döngülerin tekrarını simgeler. Leia’nın liderliği ve Han’ın ölümü, eski neslin yerini yenilere bırakmasının sembolüdür. Film, klasik anlatı yapısını koruyarak, yeni bir efsanenin tohumlarını atar.",
-      "type": "film",
-      "release_date": "2015-12-18",
-      "level": 6,
-      "universe": "Star Wars"
-    },
-    {
-      "id": "sw_ep8",
-      "label": "The Last Jedi (2017)",
-      "title": "Episode VIII - The Last Jedi",
-      "image": "images/starwars.jpg",
-      "shape": "image",
-      "description": "Episode VIII - The Last Jedi, statükoyu sarsan, karakterleri kendi sınırlarıyla yüzleştiren bir anlatıdır. Rey, Luke’tan Jedi eğitimi almak ister ancak Luke’un Jedi düzenine duyduğu inanç kaybı, eğitimi zorlaştırır. Kylo Ren ile Rey arasındaki psişik bağ, karanlık ve aydınlık tarafın birbiriyle olan geçişkenliğini ortaya çıkarır. Direniş, İlk Düzen karşısında hayatta kalma mücadelesi verirken büyük kayıplar yaşanır. Film, güç, başarısızlık ve inanç temalarını ters köşe anlatımlarla işler.",
-      "refers_to": "Luke’un son fedakarlığı, efsanenin yeniden doğmasını sağlar. Rey’in kendi gücünü bulması ve bağımsız bir kimlik kazanması, Jedi kalıplarının ötesine geçişi temsil eder. Snoke’un ölümü, klasik Sith yapısının yıkıldığını gösterir. Kylo Ren’in iktidar arzusu, kişisel bir tiranlığa dönüşür. Rose ve Finn’in alt hikâyesi, savaşın ahlaki boyutunu tartışmaya açar. Film, Star Wars mitolojisini yeniden yorumlayan cesur anlatı tercihleriyle dikkat çeker.",
-      "type": "film",
-      "release_date": "2017-12-15",
-      "level": 7,
-      "universe": "Star Wars"
-    },
-    {
-      "id": "sw_ep9",
-      "label": "The Rise of Skywalker (2019)",
-      "title": "Episode IX - The Rise of Skywalker",
-      "image": "images/starwars.jpg",
-      "shape": "image",
-      "description": "Episode IX - The Rise of Skywalker, Skywalker destanının final perdesidir. İmparator Palpatine’in geri dönüşüyle galaksi yeniden tehdit altına girer. Rey, geçmişiyle yüzleşerek kimliğini bulmak zorundadır. Kylo Ren ile olan karmaşık ilişkisi, karanlıkla aydınlık arasındaki çizgiyi belirsizleştirir. Direniş son büyük savaşa hazırlanırken eski karakterler son bir kez daha sahneye çıkar. Film, aksiyon, nostalji ve sembolik kapanışları bir araya getirerek geniş bir anlatı sunar.",
-      "refers_to": "Rey’in Palpatine’in torunu olduğunun ortaya çıkması, soyun değil seçimlerin önemini vurgular. Ben Solo’nun kefareti ve fedakarlığı, Vader’ın mirasının yeniden anlamlandırılmasını sağlar. Leia’nın Güç kullanımı ve ölümü, Skywalker hanedanının kapanışına duygusal bir boyut katar. Lando, Luke’un hayaleti ve diğer efsanevi figürler, eski ruhu yeniden canlandırır. Finalde Rey’in Skywalker adını seçmesi, öz-kimlik ve umut mesajıyla evreni yeni bir çağa taşır.",
-      "type": "film",
-      "release_date": "2019-12-20",
-      "level": 8,
-      "universe": "Star Wars"
+  {
+    "id": "phantomMenace1999",
+    "label": "The Phantom Menace (1999)",
+    "title": "The Phantom Menace",
+    "image": "images/starwars.jpg",
+    "shape": "image",
+    "description": "Galaktik Cumhuriyet’in çöküşünün başlangıcında Jedi ustası Qui-Gon Jinn ve çırağı Obi-Wan Kenobi, genç Anakin Skywalker'ı keşfeder.",
+    "refers_to": "İlk Star Wars üçlemesinde geçen karakterlerin geçmişlerine göndermeler içerir.",
+    "type": "film",
+    "release_date": "1999-05-19",
+    "level": 0
+  },
+  {
+    "id": "attackOfTheClones2002",
+    "label": "Attack of the Clones (2002)",
+    "title": "Attack of the Clones",
+    "image": "images/starwars.jpg",
+    "shape": "image",
+    "description": "Anakin Skywalker Jedi eğitimi alırken, Galaktik Cumhuriyet ayrılıkçı tehditlerle karşı karşıya kalır.",
+    "refers_to": "Klon Savaşları'nın başlangıcı, sonraki animasyon dizilere zemin hazırlar.",
+    "type": "film",
+    "release_date": "2002-05-16",
+    "level": 1
+  },
+  {
+    "id": "cloneWars2008",
+    "label": "The Clone Wars (2008)",
+    "title": "The Clone Wars",
+    "image": "images/starwars.jpg",
+    "shape": "image",
+    "description": "Anakin ve Obi-Wan, Klon Savaşları sırasında birçok cephede savaşır. Ahsoka Tano tanıtılır.",
+    "refers_to": "Attack of the Clones ve Revenge of the Sith arasında geçer.",
+    "type": "dizi",
+    "release_date": "2008-10-03",
+    "level": 2
+  },
+  {
+    "id": "revengeOfTheSith2005",
+    "label": "Revenge of the Sith (2005)",
+    "title": "Revenge of the Sith",
+    "image": "images/starwars.jpg",
+    "shape": "image",
+    "description": "Anakin karanlık tarafa geçer ve Darth Vader olur. Cumhuriyet, İmparatorluk’a dönüşür.",
+    "refers_to": "Anakin’in düşüşü, Luke’un hikâyesinin temelini oluşturur.",
+    "type": "film",
+    "release_date": "2005-05-19",
+    "level": 3
+  },
+  {
+    "id": "badBatch2021",
+    "label": "The Bad Batch (2021)",
+    "title": "The Bad Batch",
+    "image": "images/starwars.jpg",
+    "shape": "image",
+    "description": "Emir 66 sonrası genetik olarak farklılaşmış bir klon birliği galaksinin yeni düzeninde hayatta kalmaya çalışır.",
+    "refers_to": "Clone Wars dizisinin doğrudan devamı niteliğindedir.",
+    "type": "dizi",
+    "release_date": "2021-05-04",
+    "level": 4
+  },
+  {
+    "id": "solo2018",
+    "label": "Solo: A Star Wars Story (2018)",
+    "title": "Solo: A Star Wars Story",
+    "image": "images/starwars.jpg",
+    "shape": "image",
+    "description": "Genç Han Solo’nun Lando Calrissian ve Chewbacca ile tanışmasını anlatır.",
+    "refers_to": "Original Trilogy’deki Han Solo karakterinin kökenini açıklar.",
+    "type": "film",
+    "release_date": "2018-05-25",
+    "level": 5
+  },
+  {
+    "id": "obiWanKenobi2022",
+    "label": "Obi-Wan Kenobi (2022)",
+    "title": "Obi-Wan Kenobi",
+    "image": "images/starwars.jpg",
+    "shape": "image",
+    "description": "Obi-Wan, Order 66 sonrası saklanmaktadır. Genç Leia'nın kaçırılmasıyla göreve döner.",
+    "refers_to": "Revenge of the Sith ve A New Hope arasına köprü kurar.",
+    "type": "dizi",
+    "release_date": "2022-05-27",
+    "level": 6
+  },
+  {
+    "id": "rebels2014",
+    "label": "Star Wars Rebels (2014)",
+    "title": "Star Wars Rebels",
+    "image": "images/starwars.jpg",
+    "shape": "image",
+    "description": "Ezra Bridger ve bir grup isyancı, İmparatorluğa karşı savaşır.",
+    "refers_to": "Rogue One’a giden olayların zeminini hazırlar.",
+    "type": "dizi",
+    "release_date": "2014-10-03",
+    "level": 7
+  },
+  {
+    "id": "andor2022",
+    "label": "Andor (2022)",
+    "title": "Andor",
+    "image": "images/starwars.jpg",
+    "shape": "image",
+    "description": "Rogue One'dan tanıdığımız Cassian Andor’un direniş savaşçısı haline gelişini anlatır.",
+    "refers_to": "Rogue One öncesini anlatır. İsyanın doğuşunu işler.",
+    "type": "dizi",
+    "release_date": "2022-09-21",
+    "level": 8
+  },
+  {
+    "id": "rogueOne2016",
+    "label": "Rogue One (2016)",
+    "title": "Rogue One",
+    "image": "images/starwars.jpg",
+    "shape": "image",
+    "description": "İsyancılar, Ölüm Yıldızı’nın planlarını çalmak için ölümcül bir görev üstlenir.",
+    "refers_to": "A New Hope'un hemen öncesini anlatır.",
+    "type": "film",
+    "release_date": "2016-12-16",
+    "level": 9
+  },
+  {
+    "id": "aNewHope1977",
+    "label": "A New Hope (1977)",
+    "title": "A New Hope",
+    "image": "images/starwars.jpg",
+    "shape": "image",
+    "description": "Genç Luke Skywalker, Obi-Wan Kenobi ile tanışır ve İsyan’a katılarak Ölüm Yıldızı’na karşı savaşır.",
+    "refers_to": "Rogue One’un doğrudan devamıdır. Vader ve Leia’nın hikâyeleri devam eder.",
+    "type": "film",
+    "release_date": "1977-05-25",
+    "level": 10
+  },
+  {
+    "id": "empireStrikesBack1980",
+    "label": "The Empire Strikes Back (1980)",
+    "title": "The Empire Strikes Back",
+    "image": "images/starwars.jpg",
+    "shape": "image",
+    "description": "İmparatorluk, İsyan’a büyük darbe indirir. Luke, Vader’ın kim olduğunu öğrenir.",
+    "refers_to": "Yoda ilk kez tanıtılır. Skywalker ailesi mitolojisi derinleşir.",
+    "type": "film",
+    "release_date": "1980-05-21",
+    "level": 11
+  },
+  {
+    "id": "returnOfTheJedi1983",
+    "label": "Return of the Jedi (1983)",
+    "title": "Return of the Jedi",
+    "image": "images/starwars.jpg",
+    "shape": "image",
+    "description": "Luke, Vader’ı kurtarmaya çalışırken İmparatorluğun ikinci Ölüm Yıldızı’nı yok etmeye çalışırlar.",
+    "refers_to": "Vader’ın kefareti ve Anakin’in dönüşü işlenir.",
+    "type": "film",
+    "release_date": "1983-05-25",
+    "level": 12
+  },
+  {
+    "id": "mandalorian2019",
+    "label": "The Mandalorian (2019)",
+    "title": "The Mandalorian",
+    "image": "images/starwars.jpg",
+    "shape": "image",
+    "description": "Galaksinin uzak köşelerinde bir Mandalorian ödül avcısının Baby Yoda (Grogu) ile olan macerası.",
+    "refers_to": "Return of the Jedi sonrası geçer. Ahsoka, Bo-Katan gibi karakterlerle Clone Wars’a bağ kurar.",
+    "type": "dizi",
+    "release_date": "2019-11-12",
+    "level": 13
+  },
+  {
+    "id": "bookOfBobaFett2021",
+    "label": "The Book of Boba Fett (2021)",
+    "title": "The Book of Boba Fett",
+    "image": "images/starwars.jpg",
+    "shape": "image",
+    "description": "Boba Fett, Tatooine'deki suç dünyasında hüküm sürmeye çalışır.",
+    "refers_to": "Mandalorian ile doğrudan bağlantılıdır. Clone Wars’a karakter gönderir.",
+    "type": "dizi",
+    "release_date": "2021-12-29",
+    "level": 13
+  },
+  {
+    "id": "ahsoka2023",
+    "label": "Ahsoka (2023)",
+    "title": "Ahsoka",
+    "image": "images/starwars.jpg",
+    "shape": "image",
+    "description": "Ahsoka Tano, kayıp İmparatorluk subayı Thrawn’ı ararken eski düşmanlarla yüzleşir.",
+    "refers_to": "Rebels dizisinin doğrudan devamı. Anakin’in hayal görünümleri Clone Wars bağlantısı kurar.",
+    "type": "dizi",
+    "release_date": "2023-08-22",
+    "level": 14
+  },
+  {
+    "id": "forceAwakens2015",
+    "label": "The Force Awakens (2015)",
+    "title": "The Force Awakens",
+    "image": "images/starwars.jpg",
+    "shape": "image",
+    "description": "Rey, Finn ve Poe gibi yeni kahramanlar tanıtılır. Luke Skywalker yıllardır kayıptır.",
+    "refers_to": "Han Solo ve Leia’nın yaşlılık dönemleri, Mandalorian’dan sonraki zaman dilimi.",
+    "type": "film",
+    "release_date": "2015-12-18",
+    "level": 15
+  },
+  {
+    "id": "lastJedi2017",
+    "label": "The Last Jedi (2017)",
+    "title": "The Last Jedi",
+    "image": "images/starwars.jpg",
+    "shape": "image",
+    "description": "Rey, Luke’tan Jedi eğitimi almak ister. Kylo Ren karanlık tarafa daha çok bağlanır.",
+    "refers_to": "Yoda'nın Force hayaleti görünür. Clone Wars'tan miras kalan felsefeler tartışılır.",
+    "type": "film",
+    "release_date": "2017-12-15",
+    "level": 16
+  },
+  {
+    "id": "riseOfSkywalker2019",
+    "label": "The Rise of Skywalker (2019)",
+    "title": "The Rise of Skywalker",
+    "image": "images/starwars.jpg",
+    "shape": "image",
+    "description": "Rey ve arkadaşları, Palpatine’in geri döndüğünü öğrenir. Skywalker efsanesi sona erer.",
+    "refers_to": "Tüm seriye göndermeler içerir. Ahsoka’nın sesi duyulur. Clone Wars + Rebels + Saga birleşimi.",
+    "type": "film",
+    "release_date": "2019-12-20",
+    "level": 17
+  },
+  {
+    "id": "visions2021",
+    "label": "Star Wars: Visions (2021)",
+    "title": "Star Wars: Visions",
+    "image": "images/starwars.jpg",
+    "shape": "image",
+    "description": "Farklı Japon stüdyolar tarafından üretilmiş alternatif Star Wars hikâyeleri.",
+    "refers_to": "Ana zaman çizgisine ait değildir ancak Jedi, Sith gibi temel temaları işler.",
+    "type": "dizi",
+    "release_date": "2021-09-22",
+    "level": 18
     }
   ],
   "edges": [
-    {
-      "from": "sw_ep1",
-      "to": "sw_ep2",
-      "type": "devam"
-    },
-    {
-      "from": "sw_ep2",
-      "to": "sw_ep3",
-      "type": "devam"
-    },
-    {
-      "from": "sw_ep3",
-      "to": "sw_ep4",
-      "type": "devam"
-    },
-    {
-      "from": "sw_ep4",
-      "to": "sw_ep5",
-      "type": "devam"
-    },
-    {
-      "from": "sw_ep5",
-      "to": "sw_ep6",
-      "type": "devam"
-    },
-    {
-      "from": "sw_ep6",
-      "to": "sw_ep7",
-      "type": "devam"
-    },
-    {
-      "from": "sw_ep7",
-      "to": "sw_ep8",
-      "type": "devam"
-    },
-    {
-      "from": "sw_ep8",
-      "to": "sw_ep9",
-      "type": "devam"
-    },
-    {
-      "from": "sw_ep6",
-      "to": "sw_mando",
-      "type": "yan"
-    },
-    {
-      "from": "sw_mando",
-      "to": "sw_ahsoka",
-      "type": "yan"
-    }
-  ]
+  {
+    "from": "phantomMenace1999",
+    "to": "attackOfTheClones2002",
+    "type": "devam"
+  },
+  {
+    "from": "attackOfTheClones2002",
+    "to": "cloneWars2008",
+    "type": "ön hikaye"
+  },
+  {
+    "from": "cloneWars2008",
+    "to": "revengeOfTheSith2005",
+    "type": "ön hikaye"
+  },
+  {
+    "from": "revengeOfTheSith2005",
+    "to": "obiWanKenobi2022",
+    "type": "devam"
+  },
+  {
+    "from": "cloneWars2008",
+    "to": "badBatch2021",
+    "type": "devam"
+  },
+  {
+    "from": "badBatch2021",
+    "to": "rebels2014",
+    "type": "ön hikaye"
+  },
+  {
+    "from": "solo2018",
+    "to": "rogueOne2016",
+    "type": "karakter göndermesi"
+  },
+  {
+    "from": "obiWanKenobi2022",
+    "to": "rogueOne2016",
+    "type": "zaman çizgisi bağlantısı"
+  },
+  {
+    "from": "rebels2014",
+    "to": "rogueOne2016",
+    "type": "ön hikaye"
+  },
+  {
+    "from": "andor2022",
+    "to": "rogueOne2016",
+    "type": "devam"
+  },
+  {
+    "from": "rogueOne2016",
+    "to": "aNewHope1977",
+    "type": "ön hikaye"
+  },
+  {
+    "from": "aNewHope1977",
+    "to": "empireStrikesBack1980",
+    "type": "devam"
+  },
+  {
+    "from": "empireStrikesBack1980",
+    "to": "returnOfTheJedi1983",
+    "type": "devam"
+  },
+  {
+    "from": "returnOfTheJedi1983",
+    "to": "mandalorian2019",
+    "type": "devam"
+  },
+  {
+    "from": "mandalorian2019",
+    "to": "bookOfBobaFett2021",
+    "type": "yan hikaye"
+  },
+  {
+    "from": "rebels2014",
+    "to": "ahsoka2023",
+    "type": "devam"
+  },
+  {
+    "from": "mandalorian2019",
+    "to": "ahsoka2023",
+    "type": "karakter göndermesi"
+  },
+  {
+    "from": "ahsoka2023",
+    "to": "riseOfSkywalker2019",
+    "type": "zihinsel bağlantı"
+  },
+  {
+    "from": "forceAwakens2015",
+    "to": "lastJedi2017",
+    "type": "devam"
+  },
+  {
+    "from": "lastJedi2017",
+    "to": "riseOfSkywalker2019",
+    "type": "devam"
+  }
+]
 }
