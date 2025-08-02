@@ -1,285 +1,52 @@
 body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: black;
   margin: 0;
-  background-color: #000;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: white;
-  overflow: hidden;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #eee;
 }
 
 #network {
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
+  border: 1px solid #ccc;
+  background-color: #f7f7f7;
+}
+
+.dark #network {
+  background-color: #1f1f1f;
+}
+
+select, input, button {
+  margin: 8px;
+  padding: 8px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.dark select, .dark input, .dark button {
+  background-color: #333;
+  color: white;
+  border-color: #555;
 }
 
 #info-box {
-  width: 460px;
-  height: 500px;
-  overflow-y: auto;
-  background: var(--box-bg);
-  padding: 16px;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  color: var(--text);
+  background-color: #222;
+  color: white;
+  padding: 20px;
+  border: 1px solid #555;
+  border-radius: 10px;
+  max-width: 400px;
+  z-index: 100;
 }
 
 #info-box.hidden {
   display: none;
-}
-
-#info-box h2 {
-  margin: 0;
-  font-size: 1.2em;
-  color: #ff5555;
-}
-
-#info-box p {
-  font-size: 0.9em;
-  line-height: 1.4;
-}
-
-#info-box button {
-  align-self: flex-end;
-  padding: 6px 12px;
-  background-color: #ff5555;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-#info-box button:hover {
-  background-color: #ff2222;
-}
-
-
-/* === Responsive Düzenlemeler === */
-@media (max-width: 768px) {
-  #info-box {
-  width: 460px;
-  height: 500px;
-  overflow-y: auto;
-  background: var(--box-bg);
-  padding: 16px;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  color: var(--text);
-}
-
-  #info-box h2 {
-    font-size: 1em;
-  }
-
-  #info-box p {
-    font-size: 0.85em;
-  }
-
-  #info-box button {
-    padding: 8px 14px;
-    font-size: 0.9em;
-  }
-}
-
-
-/* === Tema Değişkenleri === */
-:root {
-  --bg-color: #000;
-  --text-color: #fff;
-  --box-bg: rgba(30, 30, 30, 0.95);
-  --accent: #ff5555;
-  --accent-hover: #ff2222;
-  --border-color: #444;
-  --shadow-color: rgba(255, 255, 255, 0.2);
-}
-
-body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-}
-
-#info-box {
-  width: 460px;
-  height: 500px;
-  overflow-y: auto;
-  background: var(--box-bg);
-  padding: 16px;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  color: var(--text);
-}
-
-#info-box h2 {
-  color: var(--accent);
-}
-
-#info-box button {
-  background-color: var(--accent);
-}
-
-#info-box button:hover {
-  background-color: var(--accent-hover);
-}
-
-/* === Açık Tema === */
-body.light-mode {
-  --bg-color: #f2f2f2;
-  --text-color: #111;
-  --box-bg: rgba(255, 255, 255, 0.95);
-  --accent: #007bff;
-  --accent-hover: #0056b3;
-  --border-color: #ccc;
-  --shadow-color: rgba(0, 0, 0, 0.15);
-}
-
-
-/* === Modern Görünüm Geliştirmeleri === */
-
-body {
-  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
-}
-
-#info-box {
-  width: 460px;
-  height: 500px;
-  overflow-y: auto;
-  background: var(--box-bg);
-  padding: 16px;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  color: var(--text);
-}
-
-#info-box h2 {
-  font-weight: 600;
-  font-size: 1.4em;
-  margin-bottom: 8px;
-}
-
-#info-box p {
-  font-size: 1em;
-  opacity: 0.95;
-}
-
-#info-box button {
-  border-radius: 6px;
-  font-weight: 500;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-#info-box button:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-}
-
-
-/* === Hover ve Geçiş Efektleri === */
-
-#info-box {
-  width: 460px;
-  height: 500px;
-  overflow-y: auto;
-  background: var(--box-bg);
-  padding: 16px;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  color: var(--text);
-}
-
-#info-box:hover {
-  transform: scale(1.01);
-  box-shadow: 0 0 20px var(--accent);
-}
-
-a {
-  color: var(--accent);
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-a:hover {
-  color: var(--accent-hover);
-  text-decoration: underline;
-}
-
-.card, .movie, .tag {
-  transition: all 0.3s ease;
-}
-
-.card:hover, .movie:hover, .tag:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
-}
-
-
-/* === Evren Etiketi (Tag) Stilleri === */
-
-.tag {
-  display: inline-block;
-  padding: 4px 10px;
-  font-size: 0.8em;
-  font-weight: bold;
-  border-radius: 999px;
-  color: white;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  margin-top: 6px;
-  margin-bottom: 6px;
-}
-
-/* Evrene özel renkler */
-.tag-marvel {
-  background-color: #e23636;
-}
-
-.tag-dc {
-  background-color: #0073e6;
-}
-
-.tag-starwars {
-  background-color: #ffd700;
-  color: black;
-}
-
-.tag-pixar {
-  background-color: #9b59b6;
-}
-
-
-/* === Arama ve Filtreleme Arayüzü === */
-
-.search-input {
-  padding: 10px 14px;
-  border: 1px solid var(--border-color);
-  border-radius: 8px;
-  font-size: 1em;
-  width: 100%;
-  max-width: 300px;
-  background-color: var(--box-bg);
-  color: var(--text-color);
-  transition: border 0.3s ease;
-  outline: none;
-  margin-bottom: 16px;
-}
-
-.search-input:focus {
-  border-color: var(--accent);
-}
-
-.filter-button {
-  padding: 8px 14px;
-  margin: 4px;
-  background-color: transparent;
-  border: 2px solid var(--accent);
-  color: var(--accent);
-  border-radius: 6px;
-  font-size: 0.9em;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.filter-button:hover,
-.filter-button.active {
-  background-color: var(--accent);
-  color: white;
 }
