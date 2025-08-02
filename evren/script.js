@@ -1,4 +1,4 @@
-// Düzenlenmiş script.js
+
 const container = document.getElementById("network");
 const infoBox = document.getElementById("info-box");
 const overlay = document.getElementById("modal-overlay");
@@ -34,7 +34,6 @@ function loadUniverseData() {
         allNodes.add(nodes);
 
         const coloredEdges = data.edges.map(e => {
-          let color = "#999";
           const colorMap = {
             "devam": "#2980b9",
             "ön hikaye": "#e67e22",
@@ -53,8 +52,11 @@ function loadUniverseData() {
             "multiverse birleşmesi": "#e84393",
             "paralel Kang anlatımı": "#16a085"
           };
-          if (colorMap[e.type]) color = colorMap[e.type];
-          return { ...e, color: { color }, arrows: "to" };
+          return {
+            ...e,
+            color: { color: colorMap[e.type] || "#999" },
+            arrows: "to"
+          };
         });
         allEdges.add(coloredEdges);
         universeNodesMap[universe] = nodes.map(n => n.id);
@@ -64,7 +66,10 @@ function loadUniverseData() {
 }
 
 function drawNetwork() {
-  const data = { nodes: allNodes, edges: allEdges };
+  const data = {
+    nodes: allNodes,
+    edges: allEdges
+  };
   const options = {
     nodes: {
       shape: "image",
@@ -84,7 +89,9 @@ function drawNetwork() {
       Pixar: { color: { background: "orange", border: "darkorange" } },
       "Star Wars": { color: { background: "lightblue", border: "steelblue" } }
     },
-    physics: { stabilization: true }
+    physics: {
+      stabilization: true
+    }
   };
 
   network = new vis.Network(container, data, options);
@@ -111,58 +118,8 @@ function drawNetwork() {
 
       infoBox.classList.remove("hidden");
       overlay.classList.remove("hidden");
-
-      if (!selectedNodes.includes(nodeId)) {
-        selectedNodes.push(nodeId);
-        if (selectedNodes.length > 2) selectedNodes.shift();
-      }
     }
   });
-}
-
-function closeInfoBox() {
-  infoBox.classList.add("hidden");
-  overlay.classList.add("hidden");
-}
-
-function setupThemeToggle() {
-  const btn = document.createElement("button");
-  btn.textContent = "🌙 Tema Değiştir";
-  btn.onclick = () => {
-    document.body.classList.toggle("dark");
-    applyLabelTheme();
-  };
-  document.body.insertBefore(btn, container);
-}
-
-function setupUniverseDropdown() {
-  const select = document.createElement("select");
-  select.innerHTML = '<option value="Hepsi">Hepsi</option>' +
-    Object.keys(dataFiles).map(u => `<option value="${u}">${u}</option>`).join("");
-  select.onchange = () => {
-    const selected = select.value;
-    allNodes.forEach(n => {
-      allNodes.update({ id: n.id, hidden: selected !== "Hepsi" && n.universe !== selected });
-    });
-    if (selected !== "Hepsi") {
-      const ids = universeNodesMap[selected];
-      network.fit({ nodes: ids, animation: true });
-    }
-  };
-  document.body.insertBefore(select, container);
-}
-
-function setupSearchBox() {
-  const input = document.createElement("input");
-  input.placeholder = "Ara...";
-  input.oninput = () => {
-    const term = input.value.toLowerCase();
-    allNodes.forEach(n => {
-      const match = n.label && n.label.toLowerCase().includes(term);
-      allNodes.update({ id: n.id, hidden: !match });
-    });
-  };
-  document.body.insertBefore(input, container);
 }
 
 function handleAddToCompare(nodeId) {
@@ -196,28 +153,15 @@ function setupCompareButtonNew() {
         <p><b>Yayın Tarihleri:</b> ${a.release_date} ↔ ${b.release_date}</p>
       `;
     }
-
     box.classList.remove("hidden");
     overlay.classList.remove("hidden");
-  });
-}
-
-function applyLabelTheme() {
-  const dark = document.body.classList.contains("dark");
-  const fontColor = dark ? "#ffffff" : "#111111";
-  allNodes.forEach(n => {
-    allNodes.update({ id: n.id, font: { color: fontColor } });
   });
 }
 
 function init() {
   loadUniverseData().then(() => {
     drawNetwork();
-    setupThemeToggle();
-    setupUniverseDropdown();
-    setupSearchBox();
     setupCompareButtonNew();
-    applyLabelTheme();
   });
 }
 
