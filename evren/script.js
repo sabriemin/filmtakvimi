@@ -129,6 +129,7 @@ Promise.all([
       hover: false,
       tooltipDelay: 100,
       dragNodes: false,
+      dragView: true,
       multiselect: true,
       selectable: true
     },
