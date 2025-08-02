@@ -1,5 +1,5 @@
 {
-  "films": [
+  "nodes": [
     {
       "id": "A_Bugs_Life",
       "label": "A Bug's Life (1998)",
@@ -170,3 +170,4 @@
     }
   ]
 }
+
