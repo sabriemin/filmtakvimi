@@ -59,7 +59,8 @@ Promise.all([
   allNodes = new vis.DataSet(
     combinedNodes.map((n, idx) => ({
       id: n.id,
-      label: `${n.label}`,
+      label: `${n.title}
+(${new Date(n.release_date).toLocaleDateString('tr-TR')})`,
       image: n.image,
       shape: "image",
       title: n.title,
@@ -143,7 +144,7 @@ Promise.all([
     if (params.nodes.length > 0) {
       const node = allNodes.get(params.nodes[0]);
       titleEl.textContent = node.title;
-      descEl.innerHTML = `<strong>${node.type === 'dizi' ? 'Dizi' : 'Film'} Özeti:</strong><br>${node.description}`;
+      descEl.innerHTML = `<strong>${node.type === 'dizi' ? 'Dizi' : 'Film'} Özeti:</strong><br>${node.description}<br><br><strong>Vizyon Tarihi:</strong> ${new Date(node.release_date).toLocaleDateString('tr-TR')}`;
       refersEl.innerHTML = `<strong>Göndermeler:</strong><br>${node.refers_to}`;
       infoBox.classList.remove("hidden");
       infoBox.style.position = "fixed";
