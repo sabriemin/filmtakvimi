@@ -144,7 +144,9 @@ Promise.all([
     if (params.nodes.length > 0) {
       const node = allNodes.get(params.nodes[0]);
       titleEl.textContent = node.title;
-      descEl.innerHTML = `<strong>${node.type === 'dizi' ? 'Dizi' : 'Film'} Özeti:</strong><br>${node.description}<br><br><strong>Vizyon Tarihi:</strong> ${new Date(node.release_date).toLocaleDateString('tr-TR')}`;
+      const date = new Date(node.release_date);
+      const formattedDate = isNaN(date.getTime()) ? "Bilinmiyor" : date.toLocaleDateString("tr-TR");
+      descEl.innerHTML = `<strong>${node.type === 'dizi' ? 'Dizi' : 'Film'} Özeti:</strong><br>${node.description}<br><br><strong>Vizyon Tarihi:</strong> ${formattedDate}`;
       refersEl.innerHTML = `<strong>Göndermeler:</strong><br>${node.refers_to}`;
       infoBox.classList.remove("hidden");
       infoBox.style.position = "fixed";
