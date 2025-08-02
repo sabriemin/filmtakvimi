@@ -237,17 +237,22 @@
     },
     {
       "from": "BvS",
-      "to": "JusticeLeague",
+      "to": "BatmanvSupermanDawnofJustice",
       "type": "devam"
     },
     {
-      "from": "JusticeLeague",
-      "to": "ZackCut",
-      "type": "yan-hikaye"
+      "from": "BatmanvSupermanDawnofJustice",
+      "to": "SuicideSquad2016",
+      "type": "devam"
     },
     {
       "from": "SuicideSquad2016",
       "to": "TheSuicideSquad2021",
+      "type": "devam"
+    },
+    {
+      "from": "TheSuicideSquad2021",
+      "to": "WonderWoman",
       "type": "devam"
     },
     {
@@ -256,8 +261,33 @@
       "type": "devam"
     },
     {
+      "from": "WonderWoman1984",
+      "to": "JusticeLeague",
+      "type": "devam"
+    },
+    {
+      "from": "JusticeLeague",
+      "to": "ZackCut",
+      "type": "devam"
+    },
+    {
+      "from": "ZackCut",
+      "to": "ZackSnydersJusticeLeague",
+      "type": "devam"
+    },
+    {
+      "from": "ZackSnydersJusticeLeague",
+      "to": "Aquaman",
+      "type": "devam"
+    },
+    {
       "from": "Aquaman",
       "to": "AquamanandtheLostKingdom",
+      "type": "devam"
+    },
+    {
+      "from": "AquamanandtheLostKingdom",
+      "to": "Shazam",
       "type": "devam"
     },
     {
@@ -266,14 +296,29 @@
       "type": "devam"
     },
     {
+      "from": "ShazamFuryoftheGods",
+      "to": "BirdsofPrey",
+      "type": "devam"
+    },
+    {
       "from": "BirdsofPrey",
       "to": "Peacemaker",
-      "type": "evren-geçişi"
+      "type": "devam"
+    },
+    {
+      "from": "Peacemaker",
+      "to": "BlackAdam",
+      "type": "devam"
     },
     {
       "from": "BlackAdam",
-      "to": "Shazam",
-      "type": "yan-hikaye"
+      "to": "TheFlash",
+      "type": "devam"
+    },
+    {
+      "from": "TheFlash",
+      "to": "BlueBeetle",
+      "type": "devam"
     }
   ]
 }
