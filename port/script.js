@@ -67,7 +67,7 @@ Promise.all([
       refers_to: n.refers_to,
       group: n.type,
       level: n.level,
-      x: (n.type === 'dizi' ? 300 : 0),
+      x: (n.type === 'dizi' ? 600 : 0),
       y: n.level * 300,
       fixed: { x: false, y: false },
       universe: n.universe
