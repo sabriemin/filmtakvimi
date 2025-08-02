@@ -152,7 +152,9 @@ Promise.all([
       const formattedDate = !isNaN(parsedDate) ? parsedDate.toLocaleDateString("tr-TR") : "Bilinmiyor";
       const release = node.release_date || "Bilinmiyor";
       const tur = node.type || "Tür Yok";
-      descEl.innerHTML = `<span style="margin-right: 20px;">📅 <strong>Vizyon:</strong> ${release}</span><span>🔗 <strong>Tür:</strong> ${tur}</span>`;
+      const release = node.release_date || "Bilinmiyor";
+      const tur = node.type || "Tür Yok";
+      descEl.innerHTML = `<span style="margin-right: 20px;">📅 <strong>Vizyon:</strong> ${release}</span><span>🔗 <strong>Tür:</strong> ${tur}</span><br><br><strong>Film Özeti:</strong><br>${node.description}<br>`;
       const edgesForNode = allEdges.get().filter(e => e.to === node.id || e.from === node.id);
       const edgeType = edgesForNode.length > 0 ? edgesForNode[0].type : null;
       const edgeLabel = edgeType === "devam" ? "Devam Filmi" :
