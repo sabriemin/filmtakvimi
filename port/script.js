@@ -112,9 +112,7 @@ Promise.all([
         direction: "UD",
         sortMethod: "directed",
         levelSeparation: 150,
-        nodeSpacing: function (level, node) {
-          return node.group === 'dizi' ? 400 : 120;
-        }
+        nodeSpacing: 250
       }
     },
     physics: {
