@@ -20,18 +20,18 @@ backgroundEl.style.zIndex = "-1";
 backgroundEl.style.backgroundSize = "cover";
 backgroundEl.style.backgroundPosition = "center";
 backgroundEl.style.opacity = "0.1";
-backgroundEl.style.filter = "blur(12px)";
+backgroundEl.style.filter = "blur(4px)";
 document.body.appendChild(backgroundEl);
 
 function updateBackground(universe) {
   if (universe === "Marvel") {
-    backgroundEl.style.backgroundImage = "url('images/marvel.jpg')";
+    backgroundEl.style.backgroundImage = "url('images/anasayfa.jpg')";
   } else if (universe === "DC") {
-    backgroundEl.style.backgroundImage = "url('images/dc.jpg')";
+    backgroundEl.style.backgroundImage = "url('images/anasayfa.jpg')";
   } else if (universe === "Star Wars") {
-    backgroundEl.style.backgroundImage = "url('images/starwars.jpg')";
+    backgroundEl.style.backgroundImage = "url('images/anasayfa.jpg')";
   } else {
-    backgroundEl.style.backgroundImage = "linear-gradient(to bottom right, #0f2027, #203a43, #2c5364)";
+    backgroundEl.style.backgroundImage = "url('images/anasayfa.jpg')";
   }
 }
 
@@ -157,7 +157,7 @@ Promise.all([
                          edgeType === "evren-geçişi" ? "Evren Geçişi" :
                          edgeType === "yan-hikaye" ? "Yan Hikâye" :
                          "Bağlantı Yok";
-      refersEl.innerHTML = `<strong>Bağlantı Türü:</strong> ${edgeLabel}<br><br><strong>Göndermeler:</strong><br>${node.refers_to}`;
+      refersEl.innerHTML = `<strong>Tür:</strong> ${edgeLabel}<br><br><strong>Göndermeler:</strong><br>${node.refers_to}`;
       infoBox.classList.remove("hidden");
       infoBox.scrollTop = 0;
       infoBox.style.position = "fixed";
