@@ -30,32 +30,27 @@ function updateBackground(universe) {
     backgroundEl.style.backgroundImage = "url('images/dc.jpg')";
   } else if (universe === "Star Wars") {
     backgroundEl.style.backgroundImage = "url('images/starwars.jpg')";
-  } else if (universe === "Pixar") {
-    backgroundEl.style.backgroundImage = "url('images/pixar.jpg')";
   } else {
-    backgroundEl.style.backgroundImage = "url('images/anasayfa.jpg')";
+    backgroundEl.style.backgroundImage = "linear-gradient(to bottom right, #0f2027, #203a43, #2c5364)";
   }
 }
 
 Promise.all([
   fetch("data/marvel.json").then(res => res.json()),
   fetch("data/dc.json").then(res => res.json()),
-  fetch("data/starwars.json").then(res => res.json()),
-  fetch("data/pixar.json").then(res => res.json())
-]).then(([marvelData, dcData, swData, pixarData]) => {
+  fetch("data/starwars.json").then(res => res.json())
+]).then(([marvelData, dcData, swData]) => {
   const addUniverseTag = (data, universe) => {
     return data.nodes.map(n => ({ ...n, universe }))
   };
 
   const combinedNodes = [
-    ...addUniverseTag(pixarData, "Pixar"),
     ...addUniverseTag(marvelData, "Marvel"),
     ...addUniverseTag(dcData, "DC"),
     ...addUniverseTag(swData, "Star Wars")
   ];
 
   const combinedEdges = [
-    ...pixarData.edges,
     ...marvelData.edges,
     ...dcData.edges,
     ...swData.edges
@@ -128,7 +123,7 @@ Promise.all([
     interaction: {
       hover: false,
       tooltipDelay: 100,
-      dragNodes: false,
+      dragNodes: true,
       multiselect: true,
       selectable: true
     },
@@ -149,11 +144,10 @@ Promise.all([
   network.on("click", function (params) {
     if (params.nodes.length > 0) {
       const node = allNodes.get(params.nodes[0]);
-      const year = node.release_date ? new Date(node.release_date).getFullYear() : "Bilinmiyor";
-      titleEl.textContent = `${node.title} (${year})`;
+      titleEl.textContent = `${node.title} (${new Date(node.release_date).toLocaleDateString('tr-TR')})`;
       const parsedDate = new Date(node.release_date);
       const formattedDate = !isNaN(parsedDate) ? parsedDate.toLocaleDateString("tr-TR") : "Bilinmiyor";
-      descEl.innerHTML = `<strong>${node.type === 'dizi' ? 'Dizi' : 'Film'} Özeti:</strong><br>${node.description}<br><br><strong>Vizyon Tarihi:</strong> ${formattedDate}`;
+      descEl.innerHTML = `<span style="margin-right: 20px;">📅 <strong>Vizyon:</strong> ${formattedDate}</span><span>🔗 <strong>Tür:</strong> ${node.type || "Tür Yok"}</span><br><br><strong>${node.type === "dizi" ? "Dizi" : "Film"} Özeti:</strong><br>${node.description}`;
       const edgesForNode = allEdges.get().filter(e => e.to === node.id || e.from === node.id);
       const edgeType = edgesForNode.length > 0 ? edgesForNode[0].type : null;
       const edgeLabel = edgeType === "devam" ? "Devam Filmi" :
@@ -162,8 +156,6 @@ Promise.all([
                          "Bağlantı Yok";
       refersEl.innerHTML = `<strong>Bağlantı Türü:</strong> ${edgeLabel}<br><br><strong>Göndermeler:</strong><br>${node.refers_to}`;
       infoBox.classList.remove("hidden");
-      infoBox.scrollTop = 0;
-      network.setOptions({ interaction: { dragView: false } });
       infoBox.style.position = "fixed";
       infoBox.style.left = "50%";
       infoBox.style.top = "50%";
@@ -175,12 +167,9 @@ Promise.all([
         infoBox.style.maxHeight = "70vh";
         infoBox.style.overflowY = "auto";
         infoBox.style.fontSize = "13px";
-      } else if (universe === "Pixar") {
-    backgroundEl.style.backgroundImage = "url('images/pixar.jpg')";
-  } else {
+      } else {
         infoBox.style.width = "auto";
-        infoBox.style.maxHeight = "500px";
-      infoBox.style.overflowY = "auto";
+        infoBox.style.maxHeight = "none";
         infoBox.style.fontSize = "inherit";
       }
     }
@@ -222,7 +211,6 @@ function createLegendBox() {
 }
 
 function closeInfoBox() {
-  network.setOptions({ interaction: { dragView: true } });
   document.getElementById("info-box").classList.add("hidden");
 }
 
@@ -288,7 +276,7 @@ function createUniverseTabs() {
   select.style.cursor = "pointer";
   select.style.marginTop = "8px";
 
-  const universeList = ["Hepsi", "Marvel", "DC", "Star Wars", "Pixar"];
+  const universeList = ["Hepsi", "Marvel", "DC", "Star Wars"];
   universeList.forEach((universe) => {
     const option = document.createElement("option");
     option.value = universe;
@@ -328,34 +316,4 @@ function createUniverseTabs() {
 
   wrapper.appendChild(select);
   document.body.appendChild(wrapper);
-}
-
-
-
-function makeDraggable(el, handle) {
-  let pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-  handle.onmousedown = dragMouseDown;
-
-  function dragMouseDown(e) {
-    e.preventDefault();
-    pos3 = e.clientX;
-    pos4 = e.clientY;
-    handle.addEventListener("mouseup", closeDragElement);
-    handle.addEventListener("mousemove", elementDrag);
-  }
-
-  function elementDrag(e) {
-    e.preventDefault();
-    pos1 = pos3 - e.clientX;
-    pos2 = pos4 - e.clientY;
-    pos3 = e.clientX;
-    pos4 = e.clientY;
-    el.style.top = (el.offsetTop - pos2) + "px";
-    el.style.left = (el.offsetLeft - pos1) + "px";
-  }
-
-  function closeDragElement() {
-    handle.onmouseup = null;
-    handle.onmousemove = null;
-  }
 }
