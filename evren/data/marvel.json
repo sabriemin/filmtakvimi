@@ -10,7 +10,8 @@
       "refers_to": "Film sonunda SHIELD direktörü Nick Fury’nin 'Avengers Girişimi'nden bahsettiği sahne, Marvel evrenindeki bağlantılı yapının başlangıç noktasıdır. Ayrıca Stark’ın medya karşısında kimliğini açıklaması, süper kahramanlık normlarını tersine çevirir. Film boyunca Stark’ın karakter dönüşümü ve sorumluluk kavramıyla yüzleşmesi, ilerideki iç çatışmaların temelini oluşturur. Obadiah Stane’in teknoloji hırsı, Stark Industries’in etik dönüşümünün önünü açar. Iron Man, sadece bireysel kurtuluşu değil, aynı zamanda global bir tehdit anlayışına karşı kişisel inisiyatifin önemini de vurgular. Ayrıca Pepper Potts ile kurduğu ilişki, duygusal eksende karakterin motivasyonlarını daha anlaşılır kılar. Bu film, hem karakter temelli hem de evren temelli bir anlatının ilk tuğlasıdır.",
       "type": "film",
       "release_date": "2008-05-02",
-      "level": 0
+      "level": 0,
+      "universe": "Marvel"
     },
     {
       "id": "TheIncredibleHulk",
@@ -22,7 +23,8 @@
       "refers_to": "Filmde Tony Stark’ın after-credits sahnesinde General Ross’la buluşması, Iron Man ile kurulan ilk doğrudan bağlantılardan biridir. Ayrıca Stark Industries logosunun silahlarda görünmesi, evren içi tutarlılığı güçlendirir. Emil Blonsky’nin dönüşümü, süper asker programının etik sorunlarını gündeme getirir. Bruce Banner’ın kendini kontrol etme çabası, ileriki filmlerde yaşanacak içsel çatışmaların temellerini atar. Hulk karakterinin bu filmdeki yalnızlığı ve toplumdan kaçışı, Avengers’ta yeniden insanlarla kuracağı bağlara anlam kazandırır. Her ne kadar MCU içinde en az atıf yapılan filmlerden biri olsa da, karakterin evrene entegrasyonu açısından temel yapı taşlarından biridir.",
       "type": "film",
       "release_date": "2008-06-13",
-      "level": 0
+      "level": 0,
+      "universe": "Marvel"
     },
     {
       "id": "IronMan2",
@@ -34,7 +36,8 @@
       "refers_to": "Filmde Nick Fury’nin Tony Stark’a yaklaşımı, Avengers planının şekillenmeye başladığını gösterir. Coulson’un New Mexico’ya gönderilmesi, Thor’un çekiciyle ilgili olaylara doğrudan geçiştir. Howard Stark’ın bıraktığı mesajlar, Tony’nin babasının mirasını bilimsel anlamda sürdürmesini sağlar. Stark Expo sahneleri, teknolojinin toplum üzerindeki etkisini ve Stark’ın kamusal vizyonunu simgeler. Film, SHIELD’ın daha aktif şekilde anlatıya entegre olmasıyla evrenin genişlediği hissini verir. Tony’nin zehirlenme süreci ve yeni element keşfi, onun sürekli kendini yenileme gücünü sembolize eder.",
       "type": "film",
       "release_date": "2010-05-07",
-      "level": 1
+      "level": 1,
+      "universe": "Marvel"
     },
     {
       "id": "Thor",
@@ -46,7 +49,8 @@
       "refers_to": "Film, Iron Man 2'nin sonunda Coulson’un çekici bulmasıyla başlayan olaylara devam eder. SHIELD’ın yerel müdahaleleri ve Jane Foster’ın bilimsel gözlemleri, evrenin bilim ve mitoloji karışımını oluşturur. Loki’nin düşüşü, Avengers’ta ana düşman olarak karşımıza çıkmasının ilk sinyalidir. Odin’in dokuz diyar anlatımı ve Bifrost geçidi, Marvel evreninin genişliğine dair ilk büyük ipuçlarını verir. Thor’un Asgard’a dönmeden önce dünyada öğrendikleri, onu daha empatik ve adaletli bir lider haline getirir. Bu film, Avengers’a zemin hazırlarken Thor’un karakterini hem bireysel hem de evrensel düzeyde temellendirir.",
       "type": "film",
       "release_date": "2011-05-06",
-      "level": 2
+      "level": 2,
+      "universe": "Marvel"
     },
     {
       "id": "CaptainAmericaTheFirstAvenger",
@@ -58,7 +62,8 @@
       "refers_to": "Film, Tesseract’ın tanıtımıyla sonsuzluk taşlarına giriş yapar. Howard Stark’ın teknoloji katkısı, oğlunun gelecekteki gelişimini etkiler. Peggy Carter’ın karakteri, hem duygusal hem de tarihsel bağlayıcılık sağlar. Red Skull’un kayboluşu, Infinity War’da yeniden karşımıza çıkmasıyla büyük bir sürprize dönüşür. Steve’in özverili karakteri, Avengers’ın ahlaki pusulasını oluşturur. Zamanın dışında uyanışı, günümüz dünyasında yaşayacağı çatışmaların başlangıcını hazırlar. Bu film, Marvel evreninin hem geçmişini hem de geleceğini bir arada tutan bir köprü vazifesi görür.",
       "type": "film",
       "release_date": "2011-07-22",
-      "level": 2
+      "level": 2,
+      "universe": "Marvel"
     },
     {
       "id": "TheAvengers",
@@ -70,7 +75,8 @@
       "refers_to": "Film, önceki yapımlarda tanıtılan tüm ana karakterleri bir araya getirir. Loki’nin Thor filminden gelen motivasyonu, Tesseract’ın Captain America filmindeki kökeni ve Iron Man’in teknolojik üstünlüğü burada birleşir. SHIELD’ın operasyonları ve Nick Fury’nin manipülasyonları, sonraki filmlerde eleştirilecektir. Ayrıca, Thanos’un after-credits sahnesinde ilk kez görünmesi, Infinity Saga’nın temel taşını oluşturur. New York Savaşı, daha sonraki filmlerde defalarca referans verilen travmatik bir olay haline gelir. Film, MCU evreninin birlikte çalışabilirliğini ve uzun vadeli hikâye anlatımını kanıtlar niteliktedir.",
       "type": "film",
       "release_date": "2012-05-04",
-      "level": 3
+      "level": 3,
+      "universe": "Marvel"
     },
     {
       "id": "IronMan3",
@@ -82,7 +88,8 @@
       "refers_to": "Filmde New York Savaşı'nın yarattığı psikolojik etkiler, Marvel evreninde bir ilk olarak işlenir. Tony’nin yaşadığı anksiyete ve kabuslar, bir süper kahramanın zayıflıklarını ortaya koyar. Ayrıca SHIELD unsurlarının olmaması, Iron Man’in bireysel mücadeleye odaklandığı bir dönemdir. Mandarin’in aslında bir oyuncu çıkması, hayranlar arasında tartışmalara neden olurken, bu karakterin daha sonra Shang-Chi filminde yeniden karşımıza çıkmasıyla MCU’nun genişlemesine katkı sağlar. Film, aynı zamanda Stark’ın zırhlarını yok etmesiyle geçici bir kapanış sağlar, ancak karakter daha sonra Avengers: Age of Ultron ile geri döner.",
       "type": "film",
       "release_date": "2013-05-03",
-      "level": 4
+      "level": 4,
+      "universe": "Marvel"
     },
     {
       "id": "ThorTheDarkWorld",
@@ -94,7 +101,8 @@
       "refers_to": "Aether’in aslında bir sonsuzluk taşı olduğu sonradan açıklanır ve bu, Infinity Saga’nın temel yapıtaşlarından biridir. Loki’nin ölüm sahnesi ve ardından tahta geçmesi, Thor: Ragnarok’un olaylarına doğrudan zemin hazırlar. Ayrıca Collector karakterine yapılan kısa gönderme, Guardians of the Galaxy filmine bir köprü görevi görür. Film genel olarak evrenin daha büyük tehditlere karşı ne kadar kırılgan olduğunu gösterir. Thor’un karakter gelişimi, duygusal bağlılık ve liderlik arasında bir denge kurmak üzerine şekillenir. Film, Marvel’ın mistik ve bilimsel unsurlarını harmanlamayı sürdürür.",
       "type": "film",
       "release_date": "2013-11-08",
-      "level": 4
+      "level": 4,
+      "universe": "Marvel"
     },
     {
       "id": "CaptainAmericaTheWinterSoldier",
@@ -106,7 +114,8 @@
       "refers_to": "Film, SHIELD’ın çöküşüyle birlikte tüm evrende büyük yankılar yaratır. Avengers: Age of Ultron’dan itibaren SHIELD’ın eski yapısı yerini küçük ve bağımsız birimlere bırakır. Bucky’nin geçmişi, Captain America: Civil War’a doğrudan bağlanır. Nick Fury’nin ölümü sahnesi ve sahte ölümü, karakterin derinliğini artırır. Ayrıca HYDRA’nın sızması, Agent Sitwell ve Alexander Pierce gibi karakterler üzerinden netleşir. Filmde kullanılan Project Insight teknolojisi, modern gözetleme ve kontrol temalarını işler. Black Widow’un hükümet sırlarını ifşa etmesi ise, onun karakter gelişiminde büyük bir kırılma yaratır.",
       "type": "film",
       "release_date": "2014-04-04",
-      "level": 5
+      "level": 5,
+      "universe": "Marvel"
     },
     {
       "id": "GuardiansoftheGalaxy",
@@ -118,7 +127,8 @@
       "refers_to": "Thanos’un ilk kez açıkça bir karakter olarak görünmesi, Infinity Saga’nın köklerini derinleştirir. Gamora’nın Thanos’un evlatlığı olması, ileride gelecek dramatik hikâyelere zemin hazırlar. Ayrıca Collector’un varlığı, evrende sonsuzluk taşlarının toplanması fikrine gönderme yapar. Ronan’ın Kree ırkına mensup oluşu, ileriki filmlerde Captain Marvel ile bağlantılı şekilde tekrar ele alınır. Filmde karakterlerin bireysel travmaları ve kolektif bağlılıkları, MCU içinde farklı bir ekip dinamiği sunar. Bu yapı, daha sonra Endgame gibi büyük çaplı birlikteliklerde önemli roller oynayacaktır. Ayrıca Groot’un fedakarlığı, duygusal bağ kurma açısından MCU’daki önemli sahnelerden biridir.",
       "type": "film",
       "release_date": "2014-08-01",
-      "level": 5
+      "level": 5,
+      "universe": "Marvel"
     },
     {
       "id": "AvengersAgeofUltron",
@@ -130,7 +140,8 @@
       "refers_to": "Sokovia Olayı, Captain America: Civil War’un temel nedenlerinden biridir. Ayrıca Vision’un ortaya çıkışı, hem Thor’un kehanetlerine hem de sonsuzluk taşlarına dair önemli ipuçları barındırır. Hawkeye’ın ailesiyle tanıştırılmamız, karaktere derinlik kazandırır. Thor’un gördüğü rüya sahneleri, Ragnarok ve Infinity War’a dair öncül bilgiler taşır. Ultron’un yaratılış süreci, Iron Man’in ileriye dönük pişmanlıklarının temelini oluşturur. Ayrıca Hulk’un ortadan kaybolması, onun daha sonra Thor: Ragnarok’ta yeniden ortaya çıkmasının zeminini hazırlar. Film, MCU’nun giderek kararan tonunu ve karmaşık karakter ilişkilerini derinleştirir.",
       "type": "film",
       "release_date": "2015-05-01",
-      "level": 6
+      "level": 6,
+      "universe": "Marvel"
     },
     {
       "id": "Ant-Man",
@@ -142,7 +153,8 @@
       "refers_to": "Ant-Man, Avengers: Age of Ultron sonrası dönemde geçer ve o filmdeki olaylara küçük göndermeler yapar. Ayrıca Falcon ile Scott'ın kısa dövüş sahnesi, Ant-Man’in Avengers ile ilk temasını oluşturur. SHIELD’ın geçmişi ve Hydra’nın teknoloji üzerindeki etkileri de filmde arka planda hissedilir. Kuantum boyutuna ilk kez adım atılması, gelecekteki Doctor Strange ve özellikle Endgame filminde merkezi bir rol oynayacak olan zaman ve mekân kavramlarının değişimini hazırlar. Hank Pym’in geçmişi ve Janet Van Dyne'a yapılan göndermeler, devam filmi olan Ant-Man and the Wasp için temel oluşturur. Film, MCU’nun mikro dünyasına bir kapı aralar.",
       "type": "film",
       "release_date": "2015-07-17",
-      "level": 6
+      "level": 6,
+      "universe": "Marvel"
     },
     {
       "id": "CaptainAmericaCivilWar",
@@ -154,7 +166,8 @@
       "refers_to": "Civil War, önceki filmlerde tohumları atılmış olan güvensizlik, kişisel kayıplar ve iktidar sorunu gibi temaların zirveye ulaştığı filmdir. Winter Soldier’ın geçmişi, özellikle Tony Stark’ın aile trajedisiyle birleşince duygusal bir patlama yaşanır. Black Panther’in intikam arayışı, karakterin kendi filmine doğrudan zemin hazırlar. Spider-Man’in dahil edilmesi, MCU’nun Sony ile yaptığı anlaşma sonrası gerçekleşmiş önemli bir dönüm noktasıdır. Film, Avengers ekibini parçalayarak Infinity War’da neden birlik içinde olmadıklarını açıklar. Zemo'nun manipülasyonu, gücün dışındaki tehditleri de gözler önüne serer. Film, süper kahramanların sadece güçle değil, ahlaki tercihlerle de tanımlandığını vurgular.",
       "type": "film",
       "release_date": "2016-05-06",
-      "level": 7
+      "level": 7,
+      "universe": "Marvel"
     },
     {
       "id": "DoctorStrange",
@@ -166,7 +179,8 @@
       "refers_to": "Film, sonsuzluk taşlarından biri olan Zaman Taşı’nı tanıtarak Infinity Saga’ya büyük katkı sunar. Wong ve Mordo gibi karakterler, gelecekteki büyücü çatışmalarının habercisidir. Kamar-Taj’ın varlığı, Loki ve Wanda gibi karakterlerle olan bağlantılarla birlikte Multiverse of Madness’a doğrudan bağlanır. Kaecilius’un boyutlar arası planları, evrenin büyüyle nasıl şekillenebileceğine dair ilk büyük örneklerden biridir. Strange’in New York Sanctum’unun koruyucusu olması, onu doğal olarak Avengers’a bağlar. Ayrıca Thor: Ragnarok’un after-credits sahnesiyle, Thor’un Strange ile temasa geçtiği gösterilir.",
       "type": "film",
       "release_date": "2016-11-04",
-      "level": 7
+      "level": 7,
+      "universe": "Marvel"
     },
     {
       "id": "GuardiansoftheGalaxyVol2",
@@ -178,7 +192,8 @@
       "refers_to": "Yondu’nun Peter için gerçek bir baba figürü olduğu ortaya çıkar ve bu bağ, Endgame’deki Quill’in kararlarını da etkiler. Ego’nun Celestial oluşu, Eternals filminde daha geniş şekilde işlenir. Gamora-Nebula ilişkisi, Thanos’un etkisinin kişisel düzeyde nasıl hissedildiğini gösterir. Ayrıca film boyunca sonsuzluk taşlarına doğrudan gönderme yapılmasa da, Celestial ve boyutlar arası güç temaları MCU’nun daha da genişleyeceğinin işaretini verir. Film sonunda gösterilen Adam Warlock ipucu, gelecekteki tehditlerin habercisidir. Baby Groot’un gelişimi, hem duygusal hem de hikâyesel olarak önemlidir.",
       "type": "film",
       "release_date": "2017-05-05",
-      "level": 8
+      "level": 8,
+      "universe": "Marvel"
     },
     {
       "id": "Spider-ManHomecoming",
@@ -190,7 +205,8 @@
       "refers_to": "Tony Stark ve Happy Hogan’ın varlığı, Spider-Man’i Avengers evrenine entegre eder. Film, Civil War’daki olaylara ve New York Savaşı’na sürekli göndermeler içerir. Vulture’un motivasyonu, SHIELD ve Damage Control gibi yapıların küçük işletmelere etkisi üzerinden sosyo-ekonomik mesajlar verir. Peter’ın elinden kostümün alınması, onun içsel olarak büyümesini sağlar. Ayrıca film sonunda gösterilen Scorpion karakteri, ileriki filmler için bir tehdit yaratır. Genç bir kahramanın büyük evrende nasıl yer bulmaya çalıştığını gösteren film, MCU’nun yeni jenerasyon karakterlerine kapı aralar.",
       "type": "film",
       "release_date": "2017-07-07",
-      "level": 8
+      "level": 8,
+      "universe": "Marvel"
     },
     {
       "id": "ThorRagnarok",
@@ -202,7 +218,8 @@
       "refers_to": "Film, doğrudan Doctor Strange ile bağlantı kurar; Strange kısa bir sahnede Thor ve Loki’ye yardım eder. Hela’nın ortaya çıkışı, sonsuzluk taşlarının ne kadar güçlü tehditleri uyandırabileceğini gösterir. Ayrıca Sakaar’da geçen olaylar, Hulk’un Age of Ultron sonrası ortadan kaybolmasının nedenini açıklar. Thor’un gücünü çekici olmadan da kullanabilmesi, Infinity War’daki performansına zemin hazırlar. Asgard’ın yok olması, evrenin yerinden oynamasına neden olur ve kozmik düzeyde değişim başlatır. Loki’nin tekrar Tesseract’ı alması ise Infinity War’un doğrudan habercisidir.",
       "type": "film",
       "release_date": "2017-11-03",
-      "level": 8
+      "level": 8,
+      "universe": "Marvel"
     },
     {
       "id": "BlackPanther",
@@ -214,7 +231,8 @@
       "refers_to": "Wakanda, daha önce Age of Ultron’da Ulysses Klaue ile ve vibranyum referanslarıyla tanıtılmıştı. Black Panther’in Civil War’daki çıkışı sonrası bu film, karakterin arka planını ve ülkesini detaylandırır. Killmonger’ın dünya politikalarına dair sorgulamaları, Marvel evreninde nadiren ele alınan gerçekçi meseleleri gündeme getirir. Film sonunda Wakanda’nın dünyaya açılması, Infinity War’da bu ülkenin kilit bir savunma noktası olmasına neden olur. Shuri’nin teknolojik becerileri, Tony Stark ile denk tutulacak kadar önemlidir. Film ayrıca Thanos’a karşı mücadelede Wakanda’nın stratejik rolünü önceden haber verir.",
       "type": "film",
       "release_date": "2018-02-16",
-      "level": 9
+      "level": 9,
+      "universe": "Marvel"
     },
     {
       "id": "AvengersInfinityWar",
@@ -226,7 +244,8 @@
       "refers_to": "Film, önceki tüm yapımlarda tanıtılan taşların yerlerini ve koruyucularını birleştirerek büyük bir bütünlük sağlar. Thanos’un motivasyonunun ilk kez detaylı işlenmesi, karakterin empatik yönünü de ortaya çıkarır. Gamora’nın ölümü, hem duygusal hem de dramatik bir kırılmadır. Red Skull’un Soul Stone’un koruyucusu olarak dönüşü, geçmiş filmlere doğrudan bir referanstır. Iron Man’in Doctor Strange ile olan ilişkisi, evrenin geleceği açısından kritik önemdedir. Film, Endgame’e geçişte geri dönüşsüz görünen bir kırılma yaratarak MCU’nun anlatı gücünü artırır.",
       "type": "film",
       "release_date": "2018-04-27",
-      "level": 9
+      "level": 9,
+      "universe": "Marvel"
     },
     {
       "id": "Ant-ManandtheWasp",
@@ -238,7 +257,8 @@
       "refers_to": "Filmin en kritik bağlantısı, after-credits sahnesinde tüm karakterlerin Snap ile yok olması ve Scott’ın kuantum aleminde sıkışıp kalmasıdır. Bu durum, Endgame’de zaman yolculuğu fikrinin önünü açar. Ayrıca Ghost karakterinin güç dengesizliği, MCU’da farklı türde tehditlerin varlığına dikkat çeker. Janet Van Dyne’ın kuantum aleminden dönüşü, bu boyutun yalnızca bilimsel değil, mistik yönlere de sahip olduğunu gösterir. Scott’ın kızına duyduğu sevgi ve sorumluluk duygusu, onun fedakarlıklarının temelini oluşturur. Film, küçük ölçekte ama büyük sonuçlar doğuracak olaylara kapı aralar.",
       "type": "film",
       "release_date": "2018-07-06",
-      "level": 9
+      "level": 9,
+      "universe": "Marvel"
     },
     {
       "id": "CaptainMarvel",
@@ -250,7 +270,8 @@
       "refers_to": "Nick Fury’nin gözünü nasıl kaybettiği, SHIELD’ın ilk yılları ve Tesseract’ın konumu gibi detaylar, MCU evreninin geçmişine dair boşlukları doldurur. Skrull’ların mağdur değil, kaçaklar olduğu ortaya çıkarak Captain Marvel’ın empati ve adalet kavramlarını öne çıkarır. Goose adlı Flerken yaratığı, mizahi ama önemli bir yan detay olarak dikkat çeker. Film sonunda Carol, Avengers: Endgame için önemli bir çağrı alır. Tesseract’ın geçmişi de açıklığa kavuşarak, sonsuzluk taşlarının zaman çizelgesi netleşir. Carol’ın güç seviyesi, onu Thanos’a karşı kilit bir figür yapar.",
       "type": "film",
       "release_date": "2019-03-08",
-      "level": 10
+      "level": 10,
+      "universe": "Marvel"
     },
     {
       "id": "AvengersEndgame",
@@ -262,7 +283,8 @@
       "refers_to": "Film, önceki 21 Marvel yapımına sayısız gönderme içerir. Zaman yolculuğu sekanslarında 2012 New York Savaşı, Asgard’daki olaylar ve Vormir’deki ruh taşı bölümü gibi önemli anlara geri dönülür. Tony Stark’ın geçmişiyle yüzleşmesi, Steve Rogers’ın Peggy’ye olan aşkını seçmesi, karakterlerin gelişimini tamamlar. Film sonunda yeni Captain America olarak Falcon’ın seçilmesi, gelecekteki yapımlara geçişi sağlar. Ayrıca Thanos’un yok edilmesi, ancak yeni tehditlere yer açılması için evrende bir boşluk bırakır. Endgame, MCU’nun hem finali hem de yeni fazların temelidir.",
       "type": "film",
       "release_date": "2019-04-26",
-      "level": 10
+      "level": 10,
+      "universe": "Marvel"
     },
     {
       "id": "Spider-ManFarFromHome",
@@ -274,7 +296,8 @@
       "refers_to": "Far From Home, Endgame’in hemen ardından geçer ve Tony Stark’ın ölümünün etkilerini hem duygusal hem de teknolojik düzeyde işler. Mysterio’nun multiverse yalanı, ileride gerçek çoklu evren hikâyelerinin temelini atar. Ayrıca filmin sonunda Peter’ın kimliğinin ifşa edilmesi, No Way Home’un doğrudan tetikleyicisidir. Nick Fury’nin aslında bir Skrull çıkması, Secret Invasion dizisine zemin hazırlar. Tony’nin bıraktığı gözlük teknolojisi ve Happy Hogan’ın varlığı, Spider-Man’in Stark evreniyle olan bağını sürdürür. Film, genç kahramanların büyüme yolculuğunda önemli bir geçiş aşamasıdır.",
       "type": "film",
       "release_date": "2019-07-02",
-      "level": 10
+      "level": 10,
+      "universe": "Marvel"
     },
     {
       "id": "BlackWidow",
@@ -286,7 +309,8 @@
       "refers_to": "Film, Civil War sonrası ve Infinity War öncesi bir zaman diliminde geçer. Natasha’nın geçmişine dair detaylar, özellikle Budapest görevine yapılan atıflar, MCU’nun önceki yapımlarını bağlamlandırır. Film sonunda Yelena’nın Clint Barton’a yönlendirilmesi, Hawkeye dizisinin temelini oluşturur. Taskmaster karakteri ve Red Room gibi unsurlar, MCU’da kadın suikastçılar ve gizli örgütler hakkındaki anlatıları derinleştirir. Natasha’nın bağımsızlığı ve öz iradesi, Endgame’deki fedakarlığının arka planını güçlendirir. Ayrıca film, yeni Black Widow’un kim olacağına dair bayrak değişimini de temsil eder.",
       "type": "film",
       "release_date": "2021-07-09",
-      "level": 11
+      "level": 11,
+      "universe": "Marvel"
     },
     {
       "id": "Shang-ChiandtheLegendoftheTenRings",
@@ -298,7 +322,8 @@
       "refers_to": "Film, Iron Man (2008)’de adı geçen On Halka terör örgütünü gerçek bir mitolojiyle bağlayarak MCU’nun geçmişine referans sunar. Abomination’un dövüş sahnesi, Hulk evreniyle bağlantı kurarken Wong’un ortaya çıkışı, karakterin evrensel bağlarını gösterir. After-credits sahnesi, On Halka’nın kökeninin bilinmeyen başka bir boyuta uzandığını gösterir. Bu durum, Multiverse temalarıyla ilişkilidir. Shang-Chi’nin Avengers’a davet edilmesi, karakterin gelecekteki evren planlarına entegre olduğunu ortaya koyar.",
       "type": "film",
       "release_date": "2021-09-03",
-      "level": 11
+      "level": 11,
+      "universe": "Marvel"
     },
     {
       "id": "Eternals",
@@ -310,7 +335,8 @@
       "refers_to": "Film, Celestial’ları derinlemesine işler ve Guardians of the Galaxy filmlerindeki göndermeleri açıklığa kavuşturur. Thanos’un bir Eternal ve Deviant genleri taşıması, önceki olaylarla genetik bağ kurar. After-credits sahnesinde Black Knight (Dane Whitman) ve Eros (Thanos’un kardeşi) tanıtılır. Ayrıca Arishem’in yargılama tehdidi, Marvel evreninde büyük kozmik dengelerin değişeceğinin habercisidir. Film, daha önceki MCU yapımlarından bağımsız ilerlese de, sonrasında çoklu evren ve evrensel yargı süreçlerine geçiş için bir köprü oluşturur.",
       "type": "film",
       "release_date": "2021-11-05",
-      "level": 11
+      "level": 11,
+      "universe": "Marvel"
     },
     {
       "id": "Spider-ManNoWayHome",
@@ -322,7 +348,8 @@
       "refers_to": "Film, önceki iki Spider-Man evrenine doğrudan bağlantılar kurarak, hayranları için nostaljik bir köprü oluşturur. Multiverse fikri ilk kez bu kadar geniş işlenir. Green Goblin’in felsefi kötülüğü, Peter’ın karakterini şekillendirir. Aunt May’in ölümü, büyük güçle gelen büyük sorumluluğun yeni bir versiyonudur. Film sonunda Peter’ın herkesin hafızasından silinmesi, karakteri sıfırlar. Böylece klasik çizgi roman Spider-Man evresine geçiş yapılır. After-credits sahneleri, Venom ve Doctor Strange ile olan bağları güçlendirir.",
       "type": "film",
       "release_date": "2021-12-17",
-      "level": 11
+      "level": 11,
+      "universe": "Marvel"
     },
     {
       "id": "DoctorStrangeintheMultiverseofMadness",
@@ -334,7 +361,8 @@
       "refers_to": "WandaVision dizisine doğrudan bağlanan film, Darkhold’un etkisini detaylandırır. Ayrıca What If...? animasyon dizisindeki alternatif Strange karakteriyle paralellik kurar. Illuminati sahnesinde X-Men ve Fantastic Four gibi evrenlere göz kırpılır. America Chavez’in tanıtımı, gelecekteki genç kahramanların MCU’ya entegrasyonuna işaret eder. Multiverse temasının uç noktaya taşınması, Secret Wars ve Kang gibi gelecek tehditlerin temelini hazırlar. Film, sadece Doctor Strange’in değil, tüm evrenin sınırsız olasılıklarını keşfeder.",
       "type": "film",
       "release_date": "2022-05-06",
-      "level": 12
+      "level": 12,
+      "universe": "Marvel"
     },
     {
       "id": "ThorLoveandThunder",
@@ -346,7 +374,8 @@
       "refers_to": "Jane Foster’ın dönüşü, ilk iki Thor filmine duygusal bir bağ sunar. Gorr’un kullandığı Necrosword, Venom’un simbiyot kökenlerine kadar uzanan bir bağlantı içerir. Olimpos tanrılarının ve Zeus’un tanıtılması, MCU’nun mitolojik alanını genişletir. Film sonunda Thor’un evlatlık edindiği kız Love, gelecekteki yapımlarda önemli bir rol oynayabilir. Ayrıca Eternity gibi kozmik varlıkların gösterilmesi, evrenin metafizik boyutuna işaret eder. Kapanış sahneleri ve Gorr’un motivasyonu, MCU’nun karakter derinliği arayışına katkı sunar.",
       "type": "film",
       "release_date": "2022-07-08",
-      "level": 12
+      "level": 12,
+      "universe": "Marvel"
     },
     {
       "id": "BlackPantherWakandaForever",
@@ -358,7 +387,8 @@
       "refers_to": "Namor’un ortaya çıkışı, Marvel evrenine yeni bir deniz altı uygarlığı ve anti-kahraman tanımlar. Riri Williams’ın tanıtımı, Ironheart dizisi için bir ön hazırlıktır. Filmdeki yas süreci, gerçek dünyadaki Chadwick Boseman’ın kaybına saygı duruşu niteliğindedir. Wakanda’nın savunma gücü ve diplomatik ilişkileri, Marvel’ın dünya politikası anlatısına katkı sunar. After-credits sahnesiyle T’Challa’nın oğlunun tanıtılması, miras temasının geleceğe taşındığını gösterir. Film, geçmişe veda ve geleceğe hazırlık arasında bir köprüdür.",
       "type": "film",
       "release_date": "2022-11-11",
-      "level": 12
+      "level": 12,
+      "universe": "Marvel"
     },
     {
       "id": "Ant-ManandtheWaspQuantumania",
@@ -370,7 +400,8 @@
       "refers_to": "Kang, Loki dizisindeki 'He Who Remains' karakterinin bir varyantıdır ve bu filmde tam anlamıyla kötü versiyonu tanıtılır. Kuantum alemindeki şehirler ve uygarlıklar, Marvel evreninde bilinmeyen bölgelere işaret eder. Cassie’nin teknoloji konusundaki yetenekleri, Young Avengers dizisi için hazırlık niteliğindedir. Kang’ın zamanla ilgili felsefesi ve çoklu evrenleri fethetme arzusu, Secret Wars gibi büyük çaplı hikâyelere zemin hazırlar. Film, küçük bir karakter grubunun devasa kozmik etkiler yaratabileceğini gösterir.",
       "type": "film",
       "release_date": "2023-02-17",
-      "level": 13
+      "level": 13,
+      "universe": "Marvel"
     },
     {
       "id": "GuardiansoftheGalaxyVol3",
@@ -382,7 +413,8 @@
       "refers_to": "Rocket’in geçmişi, önceki filmlerde ipuçlarıyla gösterilmişti; bu film o anlatımı tamamlar. Gamora’nın alternatif bir versiyon olarak ekipte yer alması, Endgame sonrası olaylara bağlanır. High Evolutionary karakteri, MCU’nun biyoteknoloji ve etik sorularını gündeme getirir. Film sonunda ekip dağılsa da, yeni üyelerle yoluna devam edeceği sinyali verilir. Star-Lord’un dünyaya dönmesi ve Adam Warlock’un ekibe katılması, gelecekteki evren yapıları için temel oluşturur.",
       "type": "film",
       "release_date": "2023-05-05",
-      "level": 13
+      "level": 13,
+      "universe": "Marvel"
     },
     {
       "id": "TheMarvels",
@@ -394,7 +426,8 @@
       "refers_to": "Film, Ms. Marvel dizisinin doğrudan devamıdır ve Kamala’nın MCU’ya entegrasyonunu sağlar. Monica’nın güçlerini WandaVision’da kazanmış olması, büyü ve bilim temasını birleştirir. Carol’ın yıllar süren yokluğu, ilk Captain Marvel filmindeki olayların sonuçlarını gözler önüne serer. Ayrıca Nick Fury’nin uzayda kurduğu SABER istasyonu, Secret Invasion ve diğer kozmik MCU projelerine zemin hazırlar. After-credits sahnesiyle X-Men evrenine ilk net geçiş yapılır.",
       "type": "film",
       "release_date": "2023-11-10",
-      "level": 13
+      "level": 13,
+      "universe": "Marvel"
     }
   ],
   "edges": [

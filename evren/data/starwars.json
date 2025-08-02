@@ -10,7 +10,8 @@
       "refers_to": "A New Hope, Obi-Wan ve Darth Vader arasındaki yüzleşmeyle geçmiş hesaplaşmaları gün yüzüne çıkarır. Luke’un Jedi mirasına olan ilgisi, onun yolculuğunun başlangıcını temsil eder. Leia’nın liderliği, Direniş’in ahlaki temelini oluşturur. Han Solo’nun bireysel çıkarlarını bir kenara bırakması, karakter dönüşümünün simgesidir. Film, Güç kavramının metafizik boyutlarını tanıtarak sonraki anlatılara felsefi derinlik kazandırır. R2-D2 ve C-3PO, hikâyeyi bağlayan anlatı aracı olarak işlev görür. Bu bölüm, tüm serinin evrensel yapı taşlarını kurar.",
       "type": "film",
       "release_date": "1977-05-25",
-      "level": 3
+      "level": 3,
+      "universe": "Star Wars"
     },
     {
       "id": "sw_ep5",
@@ -22,7 +23,8 @@
       "refers_to": "Film, Luke’un Jedi eğitimiyle birlikte içsel çatışmalarına odaklanır. Vader’ın “Ben senin babanım” repliği, sinema tarihinin en büyük sürprizlerinden biridir ve Skywalker hanedanının trajedisini derinleştirir. Han Solo’nun dondurulması ve Leia’nın ona olan aşkı, karakter bağlarını güçlendirir. Lando Calrissian’ın ihaneti ve sonradan Direniş’e katılması, gruplar arasındaki güvensizliğin karmaşıklığını gösterir. Film, galaktik savaşın sadece fiziksel değil, aynı zamanda psikolojik bir mücadele olduğunu da ortaya koyar.",
       "type": "film",
       "release_date": "1980-05-21",
-      "level": 4
+      "level": 4,
+      "universe": "Star Wars"
     },
     {
       "id": "sw_ep6",
@@ -34,7 +36,8 @@
       "refers_to": "Return of the Jedi, Vader’ın içsel çatışmasının çözümü ve Palpatine’in düşüşü ile Sith düzeninin sonunu getirir. Leia’nın Skywalker soyundan olduğu öğrenilir ve Luke ile bağı güçlenir. Ewokların Endor’daki katkısı, galakside küçük güçlerin de büyük zaferler kazanabileceğini gösterir. Jedi kimliğini tamamlayan Luke, Güç’ün dengesini yeniden sağlar. Film, tematik olarak kefaret, aile bağları ve seçimlerle ilgili güçlü mesajlar taşır. Bu kapanış, yeni kuşağın miras alacağı hikâyenin başlangıcını da hazırlar.",
       "type": "film",
       "release_date": "1983-05-25",
-      "level": 5
+      "level": 5,
+      "universe": "Star Wars"
     },
     {
       "id": "sw_ep1",
@@ -46,7 +49,8 @@
       "refers_to": "The Phantom Menace, Jedi Konseyi’nin yapısını ve Galaktik Cumhuriyet’in çürümüş bürokratik yapısını detaylı şekilde sunar. Anakin’in keşfi, Güç'ün dengeye kavuşması mitini başlatır ve onun gelecekteki kaderine dair ipuçları verir. Darth Sidious’un perde arkasındaki manipülasyonları, İmparator Palpatine’in yükselişine dair ilk işaretleri barındırır. Qui-Gon’un Konsey’e karşı gelen yaklaşımı, Jedi düzeninin katılığını ve bu nedenle düşüşe yatkınlığını vurgular. Sith Lordu Darth Maul’un ortaya çıkışı, Sith tehdidinin geri döndüğünün göstergesidir. Ayrıca Padmé ile Anakin’in ilk karşılaşması, ileride galaksiyi etkileyecek trajik bir ilişkinin başlangıcıdır.",
       "type": "film",
       "release_date": "1999-05-19",
-      "level": 0
+      "level": 0,
+      "universe": "Star Wars"
     },
     {
       "id": "sw_ep2",
@@ -58,7 +62,8 @@
       "refers_to": "Attack of the Clones, Palpatine’in olağanüstü yetkiler kazanması ve Klon Ordusu’nun yaratılışı ile Galaktik İmparatorluk’un temelinin atıldığı yapıttır. Dooku’nun Jedi Düzeni’nden ayrılması ve Sith Lordu olarak konumlanması, karanlık tarafın etkisini artırır. Anakin’in annesinin ölümüyle yaşadığı duygusal çöküş, gelecekteki dönüşümünün psikolojik zeminini oluşturur. Ayrıca Yoda’nın savaşa doğrudan katılması Jedi öğretilerindeki dönüşümü simgeler. Film, aşk ve görev arasındaki ikilemleri derinleştirirken, aynı zamanda evrende büyük bir savaşın eşiğine gelindiğini ilan eder.",
       "type": "film",
       "release_date": "2002-05-16",
-      "level": 1
+      "level": 1,
+      "universe": "Star Wars"
     },
     {
       "id": "sw_ep3",
@@ -70,7 +75,8 @@
       "refers_to": "Revenge of the Sith, Palpatine’in gerçek kimliğinin açığa çıkması ve Sith’lerin nihai zaferiyle serinin dönüm noktasıdır. Anakin’in karanlık tarafa geçişi, Güç’ün dengesinin bozulduğunu simgeler. Padmé ile olan ilişkisindeki takıntı, Anakin’in kontrolsüzlüğünü ortaya çıkarır. Order 66 sahneleri, Jedi Düzeni’nin mutlak yıkımını vurgular. Yoda ve Obi-Wan’ın sürgün hayatlarına geçişi, orijinal üçleme için köprü kurar. Filmdeki tüm olaylar, Episode IV’te başlayacak olan yeni direnişin temellerini hazırlar.",
       "type": "film",
       "release_date": "2005-05-19",
-      "level": 2
+      "level": 2,
+      "universe": "Star Wars"
     },
     {
       "id": "sw_ep7",
@@ -82,7 +88,8 @@
       "refers_to": "Film, Luke Skywalker’ın kayboluşunu gizemli bir olay haline getirir. Rey’in Güç’le olan bağı, geçmişe ve geleceğe dair ipuçları sunar. Kylo Ren’in kimlik çatışması, Vader’ın mirasıyla hesaplaşmanın modern yansımasıdır. Starkiller Üssü’nün yok edilmesi, eski döngülerin tekrarını simgeler. Leia’nın liderliği ve Han’ın ölümü, eski neslin yerini yenilere bırakmasının sembolüdür. Film, klasik anlatı yapısını koruyarak, yeni bir efsanenin tohumlarını atar.",
       "type": "film",
       "release_date": "2015-12-18",
-      "level": 6
+      "level": 6,
+      "universe": "Star Wars"
     },
     {
       "id": "sw_ep8",
@@ -94,7 +101,8 @@
       "refers_to": "Luke’un son fedakarlığı, efsanenin yeniden doğmasını sağlar. Rey’in kendi gücünü bulması ve bağımsız bir kimlik kazanması, Jedi kalıplarının ötesine geçişi temsil eder. Snoke’un ölümü, klasik Sith yapısının yıkıldığını gösterir. Kylo Ren’in iktidar arzusu, kişisel bir tiranlığa dönüşür. Rose ve Finn’in alt hikâyesi, savaşın ahlaki boyutunu tartışmaya açar. Film, Star Wars mitolojisini yeniden yorumlayan cesur anlatı tercihleriyle dikkat çeker.",
       "type": "film",
       "release_date": "2017-12-15",
-      "level": 7
+      "level": 7,
+      "universe": "Star Wars"
     },
     {
       "id": "sw_ep9",
@@ -106,7 +114,8 @@
       "refers_to": "Rey’in Palpatine’in torunu olduğunun ortaya çıkması, soyun değil seçimlerin önemini vurgular. Ben Solo’nun kefareti ve fedakarlığı, Vader’ın mirasının yeniden anlamlandırılmasını sağlar. Leia’nın Güç kullanımı ve ölümü, Skywalker hanedanının kapanışına duygusal bir boyut katar. Lando, Luke’un hayaleti ve diğer efsanevi figürler, eski ruhu yeniden canlandırır. Finalde Rey’in Skywalker adını seçmesi, öz-kimlik ve umut mesajıyla evreni yeni bir çağa taşır.",
       "type": "film",
       "release_date": "2019-12-20",
-      "level": 8
+      "level": 8,
+      "universe": "Star Wars"
     }
   ],
   "edges": [
