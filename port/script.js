@@ -121,7 +121,7 @@ Promise.all([
     },
     physics: false,
     interaction: {
-      hover: true,
+      hover: false,
       tooltipDelay: 100,
       dragNodes: true
     },
@@ -149,10 +149,7 @@ Promise.all([
     }
   });
   allNodes.forEach(node => {
-    network.body.nodes[node.id].options = {
-      ...network.body.nodes[node.id].options,
-      title: node.description.slice(0, 200) + '...'
-    };
+    
   });
 
   network.on("click", function (params) {
