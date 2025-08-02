@@ -132,6 +132,7 @@ function setupThemeToggle() {
   btn.textContent = "🌙 Tema Değiştir";
   btn.onclick = () => document.body.classList.toggle("dark");
     applyLabelTheme();
+    updateLegendForUniverse("Hepsi");
   document.body.insertBefore(btn, container);
 }
 
@@ -140,6 +141,7 @@ function setupUniverseDropdown() {
   select.innerHTML = '<option value="Hepsi">Hepsi</option>' +
     Object.keys(dataFiles).map(u => `<option value="${u}">${u}</option>`).join("");
   select.onchange = () => {
+    updateLegendForUniverse(select.value);
     const selected = select.value;
     allNodes.forEach(n => {
       allNodes.update({ id: n.id, hidden: selected !== "Hepsi" && n.universe !== selected });
@@ -246,13 +248,15 @@ function init() {
     setupCompareButtonNew();
     addCheckboxes();
     
-    setupTypeFilterCheckboxes();
-    applyLabelTheme();
+        applyLabelTheme();
+    updateLegendForUniverse("Hepsi");
   });
 }
 
 init();
 
+
+}
 
 // checkbox ile seçilenleri karşılaştır
 function setupCheckboxCompare() {
@@ -274,7 +278,6 @@ function setupCheckboxCompare() {
 
     document.getElementById("compare-box").classList.remove("hidden");
     document.getElementById("modal-overlay").classList.remove("hidden");
-  });
 }
 
 function setupTypeFilterCheckboxes() {
@@ -287,10 +290,6 @@ function setupTypeFilterCheckboxes() {
 
       allEdges.forEach(edge => {
         const match = selectedTypes.includes(edge.type);
-        allEdges.update({ id: edge.id, hidden: !match });
-      });
-    });
-  });
 }
 
 function applyLabelTheme() {
@@ -298,8 +297,6 @@ function applyLabelTheme() {
   const fontColor = dark ? "#ffffff" : "#111111";
 
   allNodes.forEach(n => {
-    allNodes.update({ id: n.id, font: { color: fontColor } });
-  });
 }
 
 let selectedCompareNodes = [];
@@ -338,5 +335,48 @@ function setupCompareButtonNew() {
 
     box.classList.remove("hidden");
     overlay.classList.remove("hidden");
+}
+
+function updateLegendForUniverse(selected) {
+  const legendBox = document.getElementById("legend-box");
+  const allTypesSet = new Set();
+  allEdges.forEach(edge => {
+    const fromNode = allNodes.get(edge.from);
+    const toNode = allNodes.get(edge.to);
+    const involved = [fromNode?.universe, toNode?.universe];
+    if (selected === "Hepsi" || involved.includes(selected)) {
+      allTypesSet.add(edge.type);
+    }
   });
+
+  const types = Array.from(allTypesSet);
+  const colorMap = {
+    "devam": "#2980b9",
+    "ön hikaye": "#e67e22",
+    "yan hikaye": "#8e44ad",
+    "evren geçişi": "#c0392b",
+    "görsel gönderme": "#7f8c8d",
+    "karakter göndermesi": "#27ae60",
+    "kurumsal gönderme": "#6e4b25",
+    "zaman çizgisi bağlantısı": "#1abc9c",
+    "karakter geçişi": "#2ecc71",
+    "tematik benzerlik": "#f1c40f",
+    "duygu ve bilinç teması": "#9b59b6",
+    "konseptsel devam": "#34495e",
+    "şehir yaşamı paralelliği": "#d35400",
+    "iç film/karakter kökeni": "#7d3c98",
+    "multiverse birleşmesi": "#e84393",
+    "paralel Kang anlatımı": "#16a085"
+  };
+
+  legendBox.innerHTML = types.map(type => `
+    <div class="legend-item">
+      <label>
+        <input type="checkbox" class="type-filter" data-type="${type}" checked />
+        <span class="legend-color" style="background:${colorMap[type] || '#ccc'};"></span> ${type}
+      </label>
+    </div>
+  `).join("");
+
+  setupTypeFilterCheckboxes(); // filtreleri yeniden bağla
 }
