@@ -134,7 +134,6 @@ function setupThemeToggle() {
   btn.onclick = () => {
     document.body.classList.toggle("dark");
     applyLabelTheme();
-    updateLegendForUniverse("Hepsi");
   };
   document.body.insertBefore(btn, container);
 }
@@ -144,7 +143,6 @@ function setupUniverseDropdown() {
   select.innerHTML = '<option value="Hepsi">Hepsi</option>' +
     Object.keys(dataFiles).map(u => `<option value="${u}">${u}</option>`).join("");
   select.onchange = () => {
-    updateLegendForUniverse(select.value);
     const selected = select.value;
     allNodes.forEach(n => {
       allNodes.update({ id: n.id, hidden: selected !== "Hepsi" && n.universe !== selected });
@@ -276,16 +274,6 @@ function setupTypeFilterCheckboxes() {
   });
 }
 
-function updateLegendForUniverse(selected) {
-  const legendBox = document.getElementById("legend-box");
-  const allTypesSet = new Set();
-  allEdges.forEach(edge => {
-    const fromNode = allNodes.get(edge.from);
-    const toNode = allNodes.get(edge.to);
-    const involved = [fromNode?.universe, toNode?.universe];
-    if (selected === "Hepsi" || involved.includes(selected)) {
-      allTypesSet.add(edge.type);
-    }
   });
 
   const types = Array.from(allTypesSet);
@@ -329,7 +317,6 @@ function init() {
     setupTimelineToggle();
     setupCompareButtonNew();
     applyLabelTheme();
-    updateLegendForUniverse("Hepsi");
   });
 }
 
