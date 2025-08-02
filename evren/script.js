@@ -16,25 +16,36 @@ let allNodes = new vis.DataSet();
 let allEdges = new vis.DataSet();
 let network;
 let universeNodesMap = {};
+let selectedNodes = [];
 
 function loadUniverseData() {
   const promises = Object.entries(dataFiles).map(([universe, path]) =>
-    fetch(path).then(res => res.json()).then(data => {
-      const nodes = data.nodes.map(n => ({
-        ...n,
-        universe,
-        group: universe,
-        title: n.label,
-      }));
-      allNodes.add(nodes);
-      allEdges.add(data.edges);
-      universeNodesMap[universe] = nodes.map(n => n.id);
-    })
+    fetch(path)
+      .then(res => res.json())
+      .then(data => {
+        const nodes = data.nodes.map(n => ({
+          ...n,
+          universe,
+          group: universe,
+          title: n.label,
+        }));
+        allNodes.add(nodes);
+
+        const coloredEdges = data.edges.map(e => {
+          let color = "#999";
+          if (e.type === "devam") color = "#f39c12";
+          else if (e.type === "spinoff") color = "#3498db";
+          else if (e.type === "aynievren") color = "#2ecc71";
+          else if (e.type === "alternatif") color = "#9b59b6";
+          return { ...e, color: { color }, arrows: "to" };
+        });
+        allEdges.add(coloredEdges);
+
+        universeNodesMap[universe] = nodes.map(n => n.id);
+      })
   );
   return Promise.all(promises);
 }
-
-let selectedNodes = [];
 
 function drawNetwork() {
   const data = {
@@ -88,20 +99,8 @@ function drawNetwork() {
       // Karşılaştırma için
       if (!selectedNodes.includes(nodeId)) {
         selectedNodes.push(nodeId);
+        if (selectedNodes.length > 2) selectedNodes.shift();
       }
-      if (selectedNodes.length > 2) {
-        selectedNodes.shift();
-      }
-    }
-  });
-});
-    if (params.nodes.length > 0) {
-      const node = allNodes.get(params.nodes[0]);
-      titleEl.textContent = node.label || "Bilinmeyen";
-      descEl.textContent = node.description || "Açıklama yok.";
-      refersEl.textContent = node.refers_to || "";
-      infoBox.classList.remove("hidden");
-      overlay.classList.remove("hidden");
     }
   });
 }
@@ -195,51 +194,27 @@ function showYearMarkers() {
   });
 }
 
-function enableCompareMode() {
-  let selectedNodes = [];
-  const compareBox = document.createElement("div");
-  compareBox.id = "compare-box";
-  compareBox.style.position = "fixed";
-  compareBox.style.top = "50%";
-  compareBox.style.left = "50%";
-  compareBox.style.transform = "translate(-50%, -50%)";
-  compareBox.style.zIndex = "200";
-  compareBox.style.background = "#333";
-  compareBox.style.color = "white";
-  compareBox.style.padding = "20px";
-  compareBox.style.borderRadius = "12px";
-  compareBox.style.display = "none";
+function setupCompareButton() {
+  const btn = document.getElementById("compare-btn");
+  btn.addEventListener("click", () => {
+    const box = document.getElementById("compare-box");
+    const content = document.getElementById("compare-content");
 
-  const content = document.createElement("div");
-  content.id = "compare-content";
-  compareBox.appendChild(content);
-
-  const closeBtn = document.createElement("button");
-  closeBtn.textContent = "Kapat";
-  closeBtn.onclick = () => {
-    compareBox.style.display = "none";
-    selectedNodes = [];
-  };
-  compareBox.appendChild(closeBtn);
-  document.body.appendChild(compareBox);
-
-  network.on("doubleClick", function (params) {
-    if (params.nodes.length > 0) {
-      const node = allNodes.get(params.nodes[0]);
-      if (selectedNodes.length < 2) {
-        selectedNodes.push(node);
-      }
-      if (selectedNodes.length === 2) {
-        const [a, b] = selectedNodes;
-        content.innerHTML = `
-          <h3>${a.label} ↔ ${b.label}</h3>
-          <p><b>Açıklamalar:</b><br>${a.description}<hr>${b.description}</p>
-          <p><b>Referanslar:</b><br>${a.refers_to}<hr>${b.refers_to}</p>
-          <p><b>Yayın Tarihleri:</b> ${a.release_date} ↔ ${b.release_date}</p>
-        `;
-        compareBox.style.display = "block";
-      }
+    if (selectedNodes.length !== 2) {
+      content.innerHTML = "Lütfen iki öğe seçin.";
+    } else {
+      const a = allNodes.get(selectedNodes[0]);
+      const b = allNodes.get(selectedNodes[1]);
+      content.innerHTML = `
+        <h3>${a.label} ↔ ${b.label}</h3>
+        <p><b>Açıklamalar:</b><br>${a.description}<hr>${b.description}</p>
+        <p><b>Referanslar:</b><br>${a.refers_to}<hr>${b.refers_to}</p>
+        <p><b>Yayın Tarihleri:</b> ${a.release_date} ↔ ${b.release_date}</p>
+      `;
     }
+
+    box.classList.remove("hidden");
+    overlay.classList.remove("hidden");
   });
 }
 
@@ -250,32 +225,8 @@ function init() {
     setupUniverseDropdown();
     setupSearchBox();
     setupTimelineToggle();
-    enableCompareMode();
+    setupCompareButton();
   });
 }
 
 init();
-
-// Karşılaştırma butonuna tıklanınca
-document.getElementById("compare-btn").addEventListener("click", () => {
-  if (selectedNodes.length !== 2) {
-    document.getElementById("compare-content").innerHTML = "Lütfen iki öğe seçin.";
-  } else {
-    const node1 = allNodes.get(selectedNodes[0]);
-    const node2 = allNodes.get(selectedNodes[1]);
-    const html = `
-      <b>${node1.label}</b> (${node1.type}, ${node1.release_date})<br>
-      <i>${node1.description}</i><br><br>
-      <b>${node2.label}</b> (${node2.type}, ${node2.release_date})<br>
-      <i>${node2.description}</i>
-    `;
-    document.getElementById("compare-content").innerHTML = html;
-  }
-  document.getElementById("compare-box").classList.remove("hidden");
-  document.getElementById("modal-overlay").classList.remove("hidden");
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-  console.log("Sayfa yüklendi.");
-  drawGraph();
-});
