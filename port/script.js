@@ -143,11 +143,12 @@ Promise.all([
   network.on("click", function (params) {
     if (params.nodes.length > 0) {
       const node = allNodes.get(params.nodes[0]);
-      titleEl.textContent = node.title;
-      const date = new Date(node.release_date);
-      const formattedDate = isNaN(date.getTime()) ? "Bilinmiyor" : date.toLocaleDateString("tr-TR");
+      titleEl.textContent = `${node.title} (${new Date(node.release_date).toLocaleDateString('tr-TR')})`;
+      const formattedDate = node.release_date ? new Date(node.release_date).toLocaleDateString("tr-TR") : "Bilinmiyor";
       descEl.innerHTML = `<strong>${node.type === 'dizi' ? 'Dizi' : 'Film'} Özeti:</strong><br>${node.description}<br><br><strong>Vizyon Tarihi:</strong> ${formattedDate}`;
-      refersEl.innerHTML = `<strong>Göndermeler:</strong><br>${node.refers_to}`;
+      const edgeType = allEdges.get().find(e => e.to === node.id || e.from === node.id)?.type || "bilinmiyor";
+      const edgeLabel = edgeType === "devam" ? "Devam Filmi" : edgeType === "evren-geçişi" ? "Evren Geçişi" : edgeType === "yan-hikaye" ? "Yan Hikâye" : edgeType;
+      refersEl.innerHTML = `<strong>Bağlantı Türü:</strong> ${edgeLabel}<br><br><strong>Göndermeler:</strong><br>${node.refers_to}`;
       infoBox.classList.remove("hidden");
       infoBox.style.position = "fixed";
       infoBox.style.left = "50%";
