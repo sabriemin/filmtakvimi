@@ -1,4 +1,13 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Evren Ağı</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 <body>
+  <!-- Evren filtreleme menüsü -->
   <select id="universe-select" style="position: fixed; top: 10px; left: 10px; z-index: 200;">
     <option value="all">Tüm Evrenler</option>
     <option value="marvel">Marvel</option>
@@ -7,17 +16,28 @@
     <option value="starwars">Star Wars</option>
   </select>
 
-  <button id="compare-btn" style="position: fixed; top: 10px; right: 10px; z-index: 200;">🎯 Karşılaştır</button>
+  <!-- Karşılaştırma butonu -->
+  <button id="compare-btn" style="position: fixed; top: 10px; right: 10px; z-index: 200;">
+    🎯 Karşılaştır
+  </button>
 
+  <!-- Modal arkaplan -->
   <div class="hidden" id="modal-overlay"></div>
+
+  <!-- Modal bilgi kutusu -->
   <div class="modal hidden" id="info-box">
     <h2 id="info-title"></h2>
     <p id="info-description"></p>
     <p><i id="info-refers"></i></p>
-    <button onclick="document.getElementById('info-box').classList.add('hidden'); document.getElementById('modal-overlay').classList.add('hidden');">Kapat</button>
+    <button onclick="document.getElementById('info-box').classList.add('hidden'); document.getElementById('modal-overlay').classList.add('hidden');">
+      Kapat
+    </button>
   </div>
 
+  <!-- Ağ görselleştirmesi alanı -->
   <div id="network"></div>
 
+  <!-- Ana JavaScript -->
   <script src="script.js"></script>
 </body>
+</html>
