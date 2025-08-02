@@ -363,3 +363,32 @@ function selectAllConnections(selectAll) {
   });
   applyConnectionFilters();
 }
+
+
+
+// Bağlantı türü filtreleme (type alanına göre)
+const connectionFilters = document.querySelectorAll('#connection-filters input[type="checkbox"]');
+connectionFilters.forEach(cb => cb.addEventListener("change", applyConnectionFilters));
+
+function applyConnectionFilters() {
+  const selectedTypes = Array.from(connectionFilters)
+    .filter(cb => cb.checked)
+    .map(cb => cb.value);
+
+  const filteredEdges = allEdges.get().filter(edge =>
+    selectedTypes.length === 0 || selectedTypes.includes(edge.type)
+  );
+
+  network.setData({
+    nodes: allNodes,
+    edges: filteredEdges
+  });
+}
+
+// Tümünü Seç / Temizle
+function selectAllConnections(selectAll) {
+  connectionFilters.forEach(cb => {
+    cb.checked = selectAll;
+  });
+  applyConnectionFilters();
+}
