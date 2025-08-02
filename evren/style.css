@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+  color: #111;
+  transition: background 0.3s, color 0.3s;
+}
+body.dark {
+  background-color: #111;
+  color: #eee;
+}
+
+button, select, input {
+  margin: 6px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+select, input {
+  background-color: #f0f0f0;
+}
+
+body.dark select, 
+body.dark input {
+  background-color: #222;
+  color: white;
+}
+
+#network {
+  width: 100vw;
+  height: 100vh;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #222;
+  color: white;
+  padding: 24px;
+  border-radius: 12px;
+  z-index: 100;
+  max-width: 500px;
+  box-shadow: 0 0 16px rgba(0,0,0,0.5);
+}
+
+#modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 50;
+}
+
+.hidden {
+  display: none;
+}
+
+.year-marker {
+  font-size: 12px;
+  color: gray;
+  position: absolute;
+  top: 0;
+  z-index: 20;
+}
+
+#compare-box {
+  max-width: 600px;
+  background: #333;
+  padding: 20px;
+  color: white;
+  border-radius: 16px;
+  z-index: 300;
+  overflow-y: auto;
+}
+
+body.dark {
+  background-color: #111;
+  color: #f0f0f0;
+}
+
+body.dark button,
+body.dark select,
+body.dark input {
+  background-color: #222;
+  color: #f0f0f0;
+}
+
+#legend-box {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(0,0,0,0.7);
+  color: white;
+  padding: 10px;
+  font-size: 13px;
+  border-radius: 8px;
+  z-index: 100;
+}
+
+body:not(.dark) #legend-box {
+  background-color: rgba(255,255,255,0.9);
+  color: black;
+}
+
+.legend-item {
+  margin-bottom: 4px;
+}
+.legend-color {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: 6px;
+  border-radius: 3px;
+}
+
+.node-checkbox {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: 200;
+  width: 16px;
+  height: 16px;
+  accent-color: #3498db;
+}
