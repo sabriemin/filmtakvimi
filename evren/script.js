@@ -334,3 +334,34 @@ function init() {
 }
 
 init();
+
+
+
+// Bağlantı türü filtreleme
+const connectionFilters = document.querySelectorAll('#connection-filters input[type="checkbox"]');
+connectionFilters.forEach(cb => cb.addEventListener("change", applyConnectionFilters));
+
+function applyConnectionFilters() {
+  const selectedTypes = Array.from(connectionFilters)
+    .filter(cb => cb.checked)
+    .map(cb => cb.nextSibling.textContent.trim());
+
+  const filteredEdges = allEdges.get().filter(edge =>
+    selectedTypes.length === 0 || selectedTypes.includes(edge.label)
+  );
+
+  network.setData({
+    nodes: allNodes,
+    edges: filteredEdges
+  });
+}
+
+
+
+// Tümünü Seç / Temizle butonları işlevi
+function selectAllConnections(selectAll) {
+  connectionFilters.forEach(cb => {
+    cb.checked = selectAll;
+  });
+  applyConnectionFilters();
+}
