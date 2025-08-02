@@ -121,6 +121,11 @@
       "type": "devam"
     },
     {
+      "from": "sw_ep3",
+      "to": "sw_ep4",
+      "type": "devam"
+    },
+    {
       "from": "sw_ep4",
       "to": "sw_ep5",
       "type": "devam"
@@ -128,6 +133,11 @@
     {
       "from": "sw_ep5",
       "to": "sw_ep6",
+      "type": "devam"
+    },
+    {
+      "from": "sw_ep6",
+      "to": "sw_ep7",
       "type": "devam"
     },
     {
@@ -141,29 +151,14 @@
       "type": "devam"
     },
     {
-      "from": "sw_ep3",
-      "to": "sw_ep4",
-      "type": "evren-geçişi"
-    },
-    {
       "from": "sw_ep6",
-      "to": "sw_ep7",
-      "type": "evren-geçişi"
+      "to": "sw_mando",
+      "type": "yan"
     },
     {
-      "from": "sw_ep1",
-      "to": "sw_ep6",
-      "type": "yan-hikaye"
-    },
-    {
-      "from": "sw_ep2",
-      "to": "sw_ep5",
-      "type": "yan-hikaye"
-    },
-    {
-      "from": "sw_ep3",
-      "to": "sw_ep9",
-      "type": "yan-hikaye"
+      "from": "sw_mando",
+      "to": "sw_ahsoka",
+      "type": "yan"
     }
   ]
 }
