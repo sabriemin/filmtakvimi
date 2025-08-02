@@ -367,7 +367,6 @@ function selectAllConnections(selectAll) {
 
 
 // Bağlantı türü filtreleme (type alanına göre)
-const connectionFilters = document.querySelectorAll('#connection-filters input[type="checkbox"]');
 connectionFilters.forEach(cb => cb.addEventListener("change", applyConnectionFilters));
 
 function applyConnectionFilters() {
