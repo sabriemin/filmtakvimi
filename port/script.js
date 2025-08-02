@@ -144,10 +144,15 @@ Promise.all([
     if (params.nodes.length > 0) {
       const node = allNodes.get(params.nodes[0]);
       titleEl.textContent = `${node.title} (${new Date(node.release_date).toLocaleDateString('tr-TR')})`;
-      const formattedDate = node.release_date ? new Date(node.release_date).toLocaleDateString("tr-TR") : "Bilinmiyor";
+      const parsedDate = new Date(node.release_date);
+      const formattedDate = !isNaN(parsedDate) ? parsedDate.toLocaleDateString("tr-TR") : "Bilinmiyor";
       descEl.innerHTML = `<strong>${node.type === 'dizi' ? 'Dizi' : 'Film'} Özeti:</strong><br>${node.description}<br><br><strong>Vizyon Tarihi:</strong> ${formattedDate}`;
-      const edgeType = allEdges.get().find(e => e.to === node.id || e.from === node.id)?.type || "bilinmiyor";
-      const edgeLabel = edgeType === "devam" ? "Devam Filmi" : edgeType === "evren-geçişi" ? "Evren Geçişi" : edgeType === "yan-hikaye" ? "Yan Hikâye" : edgeType;
+      const edgesForNode = allEdges.get().filter(e => e.to === node.id || e.from === node.id);
+      const edgeType = edgesForNode.length > 0 ? edgesForNode[0].type : null;
+      const edgeLabel = edgeType === "devam" ? "Devam Filmi" :
+                         edgeType === "evren-geçişi" ? "Evren Geçişi" :
+                         edgeType === "yan-hikaye" ? "Yan Hikâye" :
+                         "Bağlantı Yok";
       refersEl.innerHTML = `<strong>Bağlantı Türü:</strong> ${edgeLabel}<br><br><strong>Göndermeler:</strong><br>${node.refers_to}`;
       infoBox.classList.remove("hidden");
       infoBox.style.position = "fixed";
