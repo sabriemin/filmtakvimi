@@ -128,7 +128,7 @@ Promise.all([
     interaction: {
       hover: false,
       tooltipDelay: 100,
-      dragNodes: true,
+      dragNodes: false,
       multiselect: true,
       selectable: true
     },
