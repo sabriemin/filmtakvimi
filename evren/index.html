@@ -2,41 +2,22 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <title>Style.css Testi</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marvel Film Ağı</title>
+  <link href="style.css" rel="stylesheet" />
+  <link href="https://unpkg.com/vis@4.21.0/dist/vis.min.css" rel="stylesheet" />
+  <script src="https://unpkg.com/vis@4.21.0/dist/vis.min.js"></script>
 </head>
 <body>
-
-  <button id="toggle-theme">🌙 Tema Değiştir</button>
-
-  <div id="info-box">
-    <h2>Film Başlığı</h2>
-    <p>Bu bir test açıklamasıdır. Tema, hover, etiket ve responsive stiller bu kutuda denenebilir.</p>
-    <span class="tag tag-marvel">Marvel</span>
-    <span class="tag tag-dc">DC</span>
-    <span class="tag tag-starwars">Star Wars</span>
-    <span class="tag tag-pixar">Pixar</span>
-    <button>Kapat</button>
+  <div id="network"></div>
+  <div id="info-box" class="hidden">
+    <h2 id="info-title"></h2>
+    <p id="info-description"></p>
+    <p id="info-refers"></p>
+    <button onclick="closeInfoBox()">Kapat</button>
   </div>
 
-  <div style="margin: 20px;">
-    <input class="search-input" type="text" placeholder="Film veya dizi ara...">
-    <div>
-      <button class="filter-button active">Hepsi</button>
-      <button class="filter-button">Marvel</button>
-      <button class="filter-button">DC</button>
-      <button class="filter-button">Pixar</button>
-      <button class="filter-button">Star Wars</button>
-    </div>
-  </div>
-
-  <script>
-    document.getElementById("toggle-theme").addEventListener("click", () => {
-      document.body.classList.toggle("light-mode");
-    });
-  </script>
-
+  <script src="script.js"></script>
 </body>
 </html>
