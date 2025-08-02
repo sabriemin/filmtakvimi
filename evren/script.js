@@ -20,7 +20,7 @@ backgroundEl.style.zIndex = "-1";
 backgroundEl.style.backgroundSize = "cover";
 backgroundEl.style.backgroundPosition = "center";
 backgroundEl.style.opacity = "0.1";
-backgroundEl.style.filter = "blur(4px)";
+backgroundEl.style.filter = "blur(12px)";
 document.body.appendChild(backgroundEl);
 
 function updateBackground(universe) {
@@ -123,14 +123,13 @@ Promise.all([
       }
     },
     physics: {
-      enabled: true
+      enabled: false
     },
     interaction: {
-      hover: true,
+      hover: false,
       tooltipDelay: 100,
       dragNodes: false,
-      dragView: true,
-      multiselect: false,
+      multiselect: true,
       selectable: true
     },
     groups: {
@@ -162,6 +161,7 @@ Promise.all([
                          "Bağlantı Yok";
       refersEl.innerHTML = `<strong>Bağlantı Türü:</strong> ${edgeLabel}<br><br><strong>Göndermeler:</strong><br>${node.refers_to}`;
       infoBox.classList.remove("hidden");
+      network.setOptions({ interaction: { dragView: false } });
       infoBox.style.position = "fixed";
       infoBox.style.left = "50%";
       infoBox.style.top = "50%";
@@ -170,7 +170,7 @@ Promise.all([
 
       if (window.innerWidth < 600) {
         infoBox.style.width = "90vw";
-        infoBox.style.maxHeight = "70vh";
+        infoBox.style.maxHeiQght = "70vh";
         infoBox.style.overflowY = "auto";
         infoBox.style.fontSize = "13px";
       } else if (universe === "Pixar") {
@@ -219,6 +219,7 @@ function createLegendBox() {
 }
 
 function closeInfoBox() {
+  network.setOptions({ interaction: { dragView: true } });
   document.getElementById("info-box").classList.add("hidden");
 }
 
