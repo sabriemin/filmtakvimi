@@ -114,6 +114,7 @@ function setupThemeToggle() {
   const btn = document.createElement("button");
   btn.textContent = "🌙 Tema Değiştir";
   btn.onclick = () => document.body.classList.toggle("dark");
+    applyLabelTheme();
   document.body.insertBefore(btn, container);
 }
 
@@ -228,6 +229,8 @@ function init() {
     setupCompareButton();
     addCheckboxes();
     setupCheckboxCompare();
+    setupTypeFilterCheckboxes();
+    applyLabelTheme();
   });
 }
 
@@ -286,5 +289,30 @@ function setupCheckboxCompare() {
 
     document.getElementById("compare-box").classList.remove("hidden");
     document.getElementById("modal-overlay").classList.remove("hidden");
+  });
+}
+
+function setupTypeFilterCheckboxes() {
+  const checkboxes = document.querySelectorAll(".type-filter");
+  checkboxes.forEach(cb => {
+    cb.addEventListener("change", () => {
+      const selectedTypes = Array.from(checkboxes)
+        .filter(c => c.checked)
+        .map(c => c.dataset.type);
+
+      allEdges.forEach(edge => {
+        const match = selectedTypes.includes(edge.type);
+        allEdges.update({ id: edge.id, hidden: !match });
+      });
+    });
+  });
+}
+
+function applyLabelTheme() {
+  const dark = document.body.classList.contains("dark");
+  const fontColor = dark ? "#ffffff" : "#111111";
+
+  allNodes.forEach(n => {
+    allNodes.update({ id: n.id, font: { color: fontColor } });
   });
 }
