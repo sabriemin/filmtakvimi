@@ -134,7 +134,6 @@ function setupThemeToggle() {
   btn.onclick = () => {
     document.body.classList.toggle("dark");
     applyLabelTheme();
-    setupModalInteraction();
   };
   document.body.insertBefore(btn, container);
 }
@@ -259,7 +258,6 @@ function setupCompareButtonNew() {
     }
 
     box.classList.remove("hidden");
-    enhanceCompareModalStyle();
     overlay.classList.remove("hidden");
   });
 }
@@ -276,74 +274,5 @@ function init() {
     setupTimelineToggle();
     setupCompareButtonNew();
 
-document.addEventListener("DOMContentLoaded", init);
-  })
-};
-
-
-function setupModalInteraction() {
-  // Kapatma butonu oluştur
-  const closeBtn = document.createElement("span");
-  closeBtn.innerHTML = "&times;";
-  closeBtn.style.position = "absolute";
-  closeBtn.style.top = "10px";
-  closeBtn.style.right = "20px";
-  closeBtn.style.cursor = "pointer";
-  closeBtn.style.fontSize = "24px";
-  closeBtn.style.color = "#aaa";
-  closeBtn.title = "Kapat";
-  closeBtn.onclick = closeInfoBox;
-  infoBox.appendChild(closeBtn);
-
-  // Overlay'e tıklanınca kapat
-  overlay.addEventListener("click", (e) => {
-    if (e.target === overlay) {
-      closeInfoBox();
-    }
-  });
-
-  // ESC ile kapat
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") {
-      closeInfoBox();
-    }
-  });
-}
-
-
-function enhanceCompareModalStyle() {
-  const box = document.getElementById("compare-box");
-  const overlay = document.getElementById("modal-overlay");
-
-  if (box) {
-    box.style.maxWidth = "700px";
-    box.style.margin = "auto";
-    box.style.padding = "20px";
-    box.style.backgroundColor = "#fff";
-    box.style.borderRadius = "12px";
-    box.style.boxShadow = "0 0 20px rgba(0,0,0,0.2)";
-    box.style.position = "relative";
-    box.style.maxHeight = "80vh";
-    box.style.overflowY = "auto";
-    box.style.color = "#000";
-  }
-
-  if (overlay) {
-    overlay.style.display = "flex";
-    overlay.style.alignItems = "center";
-    overlay.style.justifyContent = "center";
-    overlay.style.backdropFilter = "blur(6px)";
-  }
-
-  const closeBtn = document.createElement("span");
-  closeBtn.innerHTML = "&times;";
-  closeBtn.style.position = "absolute";
-  closeBtn.style.top = "10px";
-  closeBtn.style.right = "20px";
-  closeBtn.style.cursor = "pointer";
-  closeBtn.style.fontSize = "24px";
-  closeBtn.style.color = "#aaa";
-  closeBtn.title = "Kapat";
-  closeBtn.onclick = closeInfoBox;
-  box.appendChild(closeBtn);
+document.addEventListener("DOMContentLoaded", init); });
 }
