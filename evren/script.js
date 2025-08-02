@@ -134,6 +134,7 @@ function setupThemeToggle() {
   btn.onclick = () => {
     document.body.classList.toggle("dark");
     applyLabelTheme();
+    setupModalInteraction();
   };
   document.body.insertBefore(btn, container);
 }
@@ -308,7 +309,39 @@ function init() {
     setupCompareButtonNew();
     setupTypeFilterCheckboxes();
     applyLabelTheme();
+    setupModalInteraction();
   });
 }
 
 document.addEventListener("DOMContentLoaded", init);
+
+
+
+function setupModalInteraction() {
+  // Kapatma butonu oluştur
+  const closeBtn = document.createElement("span");
+  closeBtn.innerHTML = "&times;";
+  closeBtn.style.position = "absolute";
+  closeBtn.style.top = "10px";
+  closeBtn.style.right = "20px";
+  closeBtn.style.cursor = "pointer";
+  closeBtn.style.fontSize = "24px";
+  closeBtn.style.color = "#aaa";
+  closeBtn.title = "Kapat";
+  closeBtn.onclick = closeInfoBox;
+  infoBox.appendChild(closeBtn);
+
+  // Overlay'e tıklanınca kapat
+  overlay.addEventListener("click", (e) => {
+    if (e.target === overlay) {
+      closeInfoBox();
+    }
+  });
+
+  // ESC ile kapat
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      closeInfoBox();
+    }
+  });
+}
