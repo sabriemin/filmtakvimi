@@ -335,8 +335,8 @@ function makeDraggable(el, handle) {
     e.preventDefault();
     pos3 = e.clientX;
     pos4 = e.clientY;
-    document.onmouseup = closeDragElement;
-    document.onmousemove = elementDrag;
+    handle.addEventListener("mouseup", closeDragElement);
+    handle.addEventListener("mousemove", elementDrag);
   }
 
   function elementDrag(e) {
@@ -350,7 +350,7 @@ function makeDraggable(el, handle) {
   }
 
   function closeDragElement() {
-    document.onmouseup = null;
-    document.onmousemove = null;
+    handle.onmouseup = null;
+    handle.onmousemove = null;
   }
 }
