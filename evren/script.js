@@ -130,7 +130,7 @@ Promise.all([
       tooltipDelay: 100,
       dragNodes: false,
       dragView: true,
-      multiselect: true,
+      multiselect: false,
       selectable: true
     },
     groups: {
