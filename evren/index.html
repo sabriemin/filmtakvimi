@@ -1,25 +1,47 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Evren Ağı</title>
-  <link rel="stylesheet" href="style.css">
-  <script type="text/javascript" src="https://unpkg.com/vis-network@9.1.2/dist/vis-network.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Vis.js (gerekli!) -->
+  <link href="https://unpkg.com/vis-network/styles/vis-network.min.css" rel="stylesheet" />
+  <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
 </head>
 <body>
-  <button id="compare-btn" style="position: fixed; top: 10px; right: 10px; z-index: 200;">🎯 Karşılaştır</button>
+  <!-- Evren filtreleme menüsü -->
+  <select id="universe-select" style="position: fixed; top: 10px; left: 10px; z-index: 200;">
+    <option value="all">Tüm Evrenler</option>
+    <option value="marvel">Marvel</option>
+    <option value="dc">DC</option>
+    <option value="pixar">Pixar</option>
+    <option value="starwars">Star Wars</option>
+  </select>
 
+  <!-- Karşılaştırma butonu -->
+  <button id="compare-btn" style="position: fixed; top: 10px; right: 10px; z-index: 200;">
+    🎯 Karşılaştır
+  </button>
+
+  <!-- Modal arkaplan -->
   <div class="hidden" id="modal-overlay"></div>
+
+  <!-- Modal bilgi kutusu -->
   <div class="modal hidden" id="info-box">
     <h2 id="info-title"></h2>
     <p id="info-description"></p>
     <p><i id="info-refers"></i></p>
-    <button onclick="document.getElementById('info-box').classList.add('hidden'); document.getElementById('modal-overlay').classList.add('hidden');">Kapat</button>
+    <button onclick="document.getElementById('info-box').classList.add('hidden'); document.getElementById('modal-overlay').classList.add('hidden');">
+      Kapat
+    </button>
   </div>
 
+  <!-- Ağ görselleştirmesi alanı -->
   <div id="network"></div>
 
+  <!-- Ana JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>

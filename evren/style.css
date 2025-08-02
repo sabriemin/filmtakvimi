@@ -93,33 +93,12 @@ body.dark input {
   color: #f0f0f0;
 }
 
-#legend-box {
-  position: fixed;
-  bottom: 10px;
-  left: 10px;
-  background-color: rgba(0,0,0,0.7);
-  color: white;
-  padding: 10px;
-  font-size: 13px;
-  border-radius: 8px;
-  z-index: 100;
-}
 
-body:not(.dark) #legend-box {
-  background-color: rgba(255,255,255,0.9);
-  color: black;
-}
 
-.legend-item {
-  margin-bottom: 4px;
-}
-.legend-color {
-  display: inline-block;
-  width: 14px;
-  height: 14px;
-  margin-right: 6px;
-  border-radius: 3px;
-}
+body:not(.dark) 
+
+
+
 
 .node-checkbox {
   position: absolute;
@@ -185,108 +164,30 @@ body:not(.dark) #legend-box {
 
 
 
-#legend-box {
-  max-width: 300px;
-  padding: 1rem;
-  background-color: #1e1e1e;
-  color: #fff;
-  font-size: 0.9rem;
-  border-radius: 8px;
-  overflow-y: auto;
-  max-height: 90vh;
-  position: fixed;
-  top: 70px;
-  left: 10px;
-  z-index: 9999 !important;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
-  pointer-events: auto;
-}
-
-#legend-box .group {
-  margin-bottom: 1rem;
-}
-
-#legend-box h4 {
-  margin-bottom: 0.3rem;
-  font-size: 0.95rem;
-  color: #ccc;
-}
-
-#legend-box label {
-  display: block;
-  margin-left: 10px;
-  margin-bottom: 4px;
-}
-
-#legend-box button {
-  margin-right: 6px;
-  font-size: 0.8rem;
-  padding: 4px 8px;
-  background-color: #333;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-#legend-box button:hover {
-  background-color: #444;
-}
 
 
 
-#legend-container {
-  position: fixed;
-  top: 70px;
-  left: 10px;
-  width: 320px;
-  background-color: #1e1e1e;
-  color: white;
-  padding: 1rem;
-  border-radius: 10px;
-  max-height: 90vh;
-  overflow-y: auto;
-  z-index: 9999;
-  box-shadow: 0 0 10px rgba(0,0,0,0.4);
-}
 
-.legend-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
 
-.legend-card {
-  background: #2a2a2a;
-  border-radius: 8px;
-  padding: 0.7rem;
-}
 
-.legend-card h4 {
-  margin-bottom: 0.4rem;
-  color: #bbb;
-}
 
-.legend-card label {
-  display: block;
-  margin-left: 8px;
-  margin-bottom: 4px;
-}
 
-.legend-buttons {
-  margin-top: 10px;
-  display: flex;
-  gap: 6px;
-}
-.legend-buttons button {
-  flex: 1;
-  background: #444;
-  color: white;
-  border: none;
-  padding: 6px 8px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.legend-buttons button:hover {
-  background: #666;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
