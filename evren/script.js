@@ -33,7 +33,7 @@ function updateBackground(universe) {
   } else if (universe === "Pixar") {
     backgroundEl.style.backgroundImage = "url('images/pixar.jpg')";
   } else {
-    backgroundEl.style.backgroundImage = "linear-gradient(to bottom right, #0f2027, #203a43, #2c5364)";
+    backgroundEl.style.backgroundImage = "url('images/anasayfa.jpg')";
   }
 }
 
