@@ -150,7 +150,9 @@ Promise.all([
       titleEl.textContent = `${node.title} (${new Date(node.release_date).toLocaleDateString('tr-TR')})`;
       const parsedDate = new Date(node.release_date);
       const formattedDate = !isNaN(parsedDate) ? parsedDate.toLocaleDateString("tr-TR") : "Bilinmiyor";
-      descEl.innerHTML = `<span style="margin-right: 20px;">📅 <strong>Vizyon:</strong> ${node.release_date || "Bilinmiyor"}</span><span>🔗 <strong>Tür:</strong> ${node.type || "Tür Yok"}</span><br><br><strong>${node.type === "dizi" ? "Dizi" : "Film"} Özeti:</strong><br>${node.description}`;
+      const release = node.release_date || "Bilinmiyor";
+      const tur = node.type || "Tür Yok";
+      descEl.innerHTML = `<span style="margin-right: 20px;">📅 <strong>Vizyon:</strong> ${release}</span><span>🔗 <strong>Tür:</strong> ${tur}</span>`;
       const edgesForNode = allEdges.get().filter(e => e.to === node.id || e.from === node.id);
       const edgeType = edgesForNode.length > 0 ? edgesForNode[0].type : null;
       const edgeLabel = edgeType === "devam" ? "Devam Filmi" :
