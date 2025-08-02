@@ -36,21 +36,24 @@ function updateBackground(universe) {
 }
 
 Promise.all([
+  fetch("data/pixar.json").then(res => res.json()),
   fetch("data/marvel.json").then(res => res.json()),
   fetch("data/dc.json").then(res => res.json()),
   fetch("data/starwars.json").then(res => res.json())
-]).then(([marvelData, dcData, swData]) => {
+]).then(([pixarData, marvelData, dcData, swData]) => {
   const addUniverseTag = (data, universe) => {
     return data.nodes.map(n => ({ ...n, universe }))
   };
 
   const combinedNodes = [
+    ...addUniverseTag(pixarData, "Pixar"),
     ...addUniverseTag(marvelData, "Marvel"),
     ...addUniverseTag(dcData, "DC"),
     ...addUniverseTag(swData, "Star Wars")
   ];
 
   const combinedEdges = [
+    ...pixarData.edges,
     ...marvelData.edges,
     ...dcData.edges,
     ...swData.edges
@@ -147,7 +150,7 @@ Promise.all([
       titleEl.textContent = `${node.title} (${new Date(node.release_date).toLocaleDateString('tr-TR')})`;
       const parsedDate = new Date(node.release_date);
       const formattedDate = !isNaN(parsedDate) ? parsedDate.toLocaleDateString("tr-TR") : "Bilinmiyor";
-      descEl.innerHTML = `<span style="margin-right: 20px;">📅 <strong>Vizyon:</strong> ${formattedDate}</span><span>🔗 <strong>Tür:</strong> ${node.type || "Tür Yok"}</span><br><br><strong>${node.type === "dizi" ? "Dizi" : "Film"} Özeti:</strong><br>${node.description}`;
+      descEl.innerHTML = `<span style="margin-right: 20px;">📅 <strong>Vizyon:</strong> ${node.release_date || "Bilinmiyor"}</span><span>🔗 <strong>Tür:</strong> ${node.type || "Tür Yok"}</span><br><br><strong>${node.type === "dizi" ? "Dizi" : "Film"} Özeti:</strong><br>${node.description}`;
       const edgesForNode = allEdges.get().filter(e => e.to === node.id || e.from === node.id);
       const edgeType = edgesForNode.length > 0 ? edgesForNode[0].type : null;
       const edgeLabel = edgeType === "devam" ? "Devam Filmi" :
@@ -156,6 +159,7 @@ Promise.all([
                          "Bağlantı Yok";
       refersEl.innerHTML = `<strong>Bağlantı Türü:</strong> ${edgeLabel}<br><br><strong>Göndermeler:</strong><br>${node.refers_to}`;
       infoBox.classList.remove("hidden");
+      infoBox.scrollTop = 0;
       infoBox.style.position = "fixed";
       infoBox.style.left = "50%";
       infoBox.style.top = "50%";
@@ -276,7 +280,7 @@ function createUniverseTabs() {
   select.style.cursor = "pointer";
   select.style.marginTop = "8px";
 
-  const universeList = ["Hepsi", "Marvel", "DC", "Star Wars"];
+  const universeList = ["Hepsi", "Marvel", "DC", "Star Wars", "Pixar"];
   universeList.forEach((universe) => {
     const option = document.createElement("option");
     option.value = universe;
