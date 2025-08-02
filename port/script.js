@@ -136,6 +136,18 @@ Promise.all([
   };
 
   network = new vis.Network(container, dataSet, options);
+
+  network.setOptions({
+    layout: {
+      hierarchical: {
+        enabled: true,
+        direction: "UD",
+        sortMethod: "directed",
+        levelSeparation: 180,
+        nodeSpacing: 150
+      }
+    }
+  });
   allNodes.forEach(node => {
     network.body.nodes[node.id].options = {
       ...network.body.nodes[node.id].options,
