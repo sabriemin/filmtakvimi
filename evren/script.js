@@ -277,3 +277,8 @@ document.getElementById("compare-btn").addEventListener("click", () => {
   document.getElementById("compare-box").classList.remove("hidden");
   document.getElementById("modal-overlay").classList.remove("hidden");
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  console.log("Sayfa yüklendi.");
+  drawGraph();
+});
