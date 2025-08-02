@@ -32,25 +32,25 @@ function loadUniverseData() {
         allNodes.add(nodes);
 
         const coloredEdges = data.edges.map(e => {
-  let color = "#999";
-  if (e.type === "devam") color = "#2980b9";
-  else if (e.type === "ön hikaye") color = "#e67e22";
-  else if (e.type === "yan hikaye") color = "#8e44ad";
-  else if (e.type === "evren geçişi") color = "#c0392b";
-  else if (e.type === "görsel gönderme") color = "#7f8c8d";
-  else if (e.type === "karakter göndermesi") color = "#27ae60";
-  else if (e.type === "kurumsal gönderme") color = "#6e4b25";
-  else if (e.type === "zaman çizgisi bağlantısı") color = "#1abc9c";
-  else if (e.type === "karakter geçişi") color = "#2ecc71";
-  else if (e.type === "tematik benzerlik") color = "#f1c40f";
-  else if (e.type === "duygu ve bilinç teması") color = "#9b59b6";
-  else if (e.type === "konseptsel devam") color = "#34495e";
-  else if (e.type === "şehir yaşamı paralelliği") color = "#d35400";
-  else if (e.type === "iç film/karakter kökeni") color = "#7d3c98";
-  else if (e.type === "multiverse birleşmesi") color = "#e84393";
-  else if (e.type === "paralel Kang anlatımı") color = "#16a085";
-  return { ...e, color: { color }, arrows: "to" };
-});
+          let color = "#999";
+          if (e.type === "devam") color = "#2980b9";
+          else if (e.type === "ön hikaye") color = "#e67e22";
+          else if (e.type === "yan hikaye") color = "#8e44ad";
+          else if (e.type === "evren geçişi") color = "#c0392b";
+          else if (e.type === "görsel gönderme") color = "#7f8c8d";
+          else if (e.type === "karakter göndermesi") color = "#27ae60";
+          else if (e.type === "kurumsal gönderme") color = "#6e4b25";
+          else if (e.type === "zaman çizgisi bağlantısı") color = "#1abc9c";
+          else if (e.type === "karakter geçişi") color = "#2ecc71";
+          else if (e.type === "tematik benzerlik") color = "#f1c40f";
+          else if (e.type === "duygu ve bilinç teması") color = "#9b59b6";
+          else if (e.type === "konseptsel devam") color = "#34495e";
+          else if (e.type === "şehir yaşamı paralelliği") color = "#d35400";
+          else if (e.type === "iç film/karakter kökeni") color = "#7d3c98";
+          else if (e.type === "multiverse birleşmesi") color = "#e84393";
+          else if (e.type === "paralel Kang anlatımı") color = "#16a085";
+          return { ...e, color: { color }, arrows: "to" };
+        });
         allEdges.add(coloredEdges);
 
         universeNodesMap[universe] = nodes.map(n => n.id);
@@ -102,18 +102,19 @@ function drawNetwork() {
       const dateInfo = node.release_date ? `🗓️ ${node.release_date}` : "";
       const metaInfo = `<div style="margin-top: 6px; font-size: 14px; color: gray;">${typeIcon} &nbsp; ${dateInfo}</div>`;
       titleEl.innerHTML += metaInfo;
-const addBtn = document.createElement("button");
+
+      descEl.innerHTML = "<b>🎞️ Özeti</b><br>" + (node.description || "Açıklama yok.");
+      refersEl.innerHTML = "<b>📌 Gönderme</b><br>" + (node.refers_to || "Yok.");
+
+      const addBtn = document.createElement("button");
       addBtn.textContent = "🎯 Karşılaştırmaya Ekle";
       addBtn.onclick = () => handleAddToCompare(node.id);
       descEl.appendChild(document.createElement("br"));
       descEl.appendChild(addBtn);
 
-      descEl.innerHTML = "<b>🎞️ Özeti</b><br>" + (node.description || "Açıklama yok.");
-      refersEl.innerHTML = "<b>📌 Gönderme</b><br>" + (node.refers_to || "Yok.");
       infoBox.classList.remove("hidden");
       overlay.classList.remove("hidden");
 
-      // Karşılaştırma için
       if (!selectedNodes.includes(nodeId)) {
         selectedNodes.push(nodeId);
         if (selectedNodes.length > 2) selectedNodes.shift();
@@ -130,9 +131,11 @@ function closeInfoBox() {
 function setupThemeToggle() {
   const btn = document.createElement("button");
   btn.textContent = "🌙 Tema Değiştir";
-  btn.onclick = () => document.body.classList.toggle("dark");
+  btn.onclick = () => {
+    document.body.classList.toggle("dark");
     applyLabelTheme();
     updateLegendForUniverse("Hepsi");
+  };
   document.body.insertBefore(btn, container);
 }
 
@@ -159,10 +162,6 @@ function setupSearchBox() {
   input.placeholder = "Ara...";
   input.oninput = () => {
     const term = input.value.toLowerCase();
-    if (!term) {
-      allNodes.forEach(n => allNodes.update({ id: n.id, hidden: false }));
-      return;
-    }
     allNodes.forEach(n => {
       const match = n.label && n.label.toLowerCase().includes(term);
       allNodes.update({ id: n.id, hidden: !match });
@@ -214,89 +213,12 @@ function showYearMarkers() {
   });
 }
 
-function setupCompareButton() {
-  const btn = document.getElementById("compare-btn");
-  btn.addEventListener("click", () => {
-    const box = document.getElementById("compare-box");
-    const content = document.getElementById("compare-content");
-
-    if (selectedNodes.length !== 2) {
-      content.innerHTML = "Lütfen iki öğe seçin.";
-    } else {
-      const a = allNodes.get(selectedNodes[0]);
-      const b = allNodes.get(selectedNodes[1]);
-      content.innerHTML = `
-        <h3>${a.label} ↔ ${b.label}</h3>
-        <p><b>Açıklamalar:</b><br>${a.description}<hr>${b.description}</p>
-        <p><b>Referanslar:</b><br>${a.refers_to}<hr>${b.refers_to}</p>
-        <p><b>Yayın Tarihleri:</b> ${a.release_date} ↔ ${b.release_date}</p>
-      `;
-    }
-
-    box.classList.remove("hidden");
-    overlay.classList.remove("hidden");
-  });
-}
-
-function init() {
-  loadUniverseData().then(() => {
-    drawNetwork();
-    setupThemeToggle();
-    setupUniverseDropdown();
-    setupSearchBox();
-    setupTimelineToggle();
-    setupCompareButtonNew();
-    addCheckboxes();
-    
-        applyLabelTheme();
-    updateLegendForUniverse("Hepsi");
-  });
-}
-
-init();
-
-
-}
-
-// checkbox ile seçilenleri karşılaştır
-function setupCheckboxCompare() {
-  const btn = document.getElementById("compare-btn");
-  btn.addEventListener("click", () => {
-    const checkedBoxes = document.querySelectorAll(".node-checkbox:checked");
-    if (checkedBoxes.length !== 2) {
-      document.getElementById("compare-content").innerHTML = "Lütfen iki film/dizi seçin.";
-    } else {
-      const ids = Array.from(checkedBoxes).map(cb => cb.dataset.nodeId);
-      const [a, b] = ids.map(id => allNodes.get(id));
-      document.getElementById("compare-content").innerHTML = `
-        <h3>${a.label} ↔ ${b.label}</h3>
-        <p><b>Açıklamalar:</b><br>${a.description}<hr>${b.description}</p>
-        <p><b>Referanslar:</b><br>${a.refers_to}<hr>${b.refers_to}</p>
-        <p><b>Yayın Tarihleri:</b> ${a.release_date} ↔ ${b.release_date}</p>
-      `;
-    }
-
-    document.getElementById("compare-box").classList.remove("hidden");
-    document.getElementById("modal-overlay").classList.remove("hidden");
-}
-
-function setupTypeFilterCheckboxes() {
-  const checkboxes = document.querySelectorAll(".type-filter");
-  checkboxes.forEach(cb => {
-    cb.addEventListener("change", () => {
-      const selectedTypes = Array.from(checkboxes)
-        .filter(c => c.checked)
-        .map(c => c.dataset.type);
-
-      allEdges.forEach(edge => {
-        const match = selectedTypes.includes(edge.type);
-}
-
 function applyLabelTheme() {
   const dark = document.body.classList.contains("dark");
   const fontColor = dark ? "#ffffff" : "#111111";
-
   allNodes.forEach(n => {
+    allNodes.update({ id: n.id, font: { color: fontColor } });
+  });
 }
 
 let selectedCompareNodes = [];
@@ -335,6 +257,23 @@ function setupCompareButtonNew() {
 
     box.classList.remove("hidden");
     overlay.classList.remove("hidden");
+  });
+}
+
+function setupTypeFilterCheckboxes() {
+  const checkboxes = document.querySelectorAll(".type-filter");
+  checkboxes.forEach(cb => {
+    cb.addEventListener("change", () => {
+      const selectedTypes = Array.from(checkboxes)
+        .filter(c => c.checked)
+        .map(c => c.dataset.type);
+
+      allEdges.forEach(edge => {
+        const match = selectedTypes.includes(edge.type);
+        allEdges.update({ id: edge.id, hidden: !match });
+      });
+    });
+  });
 }
 
 function updateLegendForUniverse(selected) {
@@ -378,5 +317,20 @@ function updateLegendForUniverse(selected) {
     </div>
   `).join("");
 
-  setupTypeFilterCheckboxes(); // filtreleri yeniden bağla
+  setupTypeFilterCheckboxes();
 }
+
+function init() {
+  loadUniverseData().then(() => {
+    drawNetwork();
+    setupThemeToggle();
+    setupUniverseDropdown();
+    setupSearchBox();
+    setupTimelineToggle();
+    setupCompareButtonNew();
+    applyLabelTheme();
+    updateLegendForUniverse("Hepsi");
+  });
+}
+
+init();
