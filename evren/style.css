@@ -80,3 +80,43 @@ body.dark input {
   z-index: 300;
   overflow-y: auto;
 }
+
+body.dark {
+  background-color: #111;
+  color: #f0f0f0;
+}
+
+body.dark button,
+body.dark select,
+body.dark input {
+  background-color: #222;
+  color: #f0f0f0;
+}
+
+#legend-box {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(0,0,0,0.7);
+  color: white;
+  padding: 10px;
+  font-size: 13px;
+  border-radius: 8px;
+  z-index: 100;
+}
+
+body:not(.dark) #legend-box {
+  background-color: rgba(255,255,255,0.9);
+  color: black;
+}
+
+.legend-item {
+  margin-bottom: 4px;
+}
+.legend-color {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: 6px;
+  border-radius: 3px;
+}

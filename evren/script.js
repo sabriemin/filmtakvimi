@@ -70,6 +70,22 @@ function drawNetwork() {
   network.on("click", function (params) {
     if (params.nodes.length > 0) {
       const node = allNodes.get(params.nodes[0]);
+      titleEl.innerHTML = node.label || "Bilinmeyen";
+
+      // Vizyon tarihi ve tür başlığı üstüne
+      const typeIcon = node.type === "dizi" ? "📺 Dizi" : "🎬 Film";
+      const dateInfo = node.release_date ? `🗓️ ${node.release_date}` : "";
+      const metaInfo = `<div style="margin-top: 6px; font-size: 14px; color: gray;">${typeIcon} &nbsp; ${dateInfo}</div>`;
+      titleEl.innerHTML += metaInfo;
+
+      descEl.innerHTML = "<b>🎞️ Özeti</b><br>" + (node.description || "Açıklama yok.");
+      refersEl.innerHTML = "<b>📌 Gönderme</b><br>" + (node.refers_to || "Yok.");
+      infoBox.classList.remove("hidden");
+      overlay.classList.remove("hidden");
+    }
+  });
+    if (params.nodes.length > 0) {
+      const node = allNodes.get(params.nodes[0]);
       titleEl.textContent = node.label || "Bilinmeyen";
       descEl.textContent = node.description || "Açıklama yok.";
       refersEl.textContent = node.refers_to || "";
@@ -228,3 +244,36 @@ function init() {
 }
 
 init();
+
+let selectedNodes = [];
+
+network.on("click", function (params) {
+  if (params.nodes.length > 0) {
+    const nodeId = params.nodes[0];
+    if (!selectedNodes.includes(nodeId)) {
+      selectedNodes.push(nodeId);
+    }
+    if (selectedNodes.length > 2) {
+      selectedNodes.shift(); // En fazla 2 node tut
+    }
+  }
+});
+
+// Karşılaştırma butonuna tıklanınca
+document.getElementById("compare-btn").addEventListener("click", () => {
+  if (selectedNodes.length !== 2) {
+    document.getElementById("compare-content").innerHTML = "Lütfen iki öğe seçin.";
+  } else {
+    const node1 = allNodes.get(selectedNodes[0]);
+    const node2 = allNodes.get(selectedNodes[1]);
+    const html = `
+      <b>${node1.label}</b> (${node1.type}, ${node1.release_date})<br>
+      <i>${node1.description}</i><br><br>
+      <b>${node2.label}</b> (${node2.type}, ${node2.release_date})<br>
+      <i>${node2.description}</i>
+    `;
+    document.getElementById("compare-content").innerHTML = html;
+  }
+  document.getElementById("compare-box").classList.remove("hidden");
+  document.getElementById("modal-overlay").classList.remove("hidden");
+});
