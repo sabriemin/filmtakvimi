@@ -1,21 +1,23 @@
+
 <!DOCTYPE html>
 <html lang="tr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Film Evreni – Bugün Ne Oldu?</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Marvel Film Ağı</title>
+  <link href="style.css" rel="stylesheet" />
+  <link href="https://unpkg.com/vis@4.21.0/dist/vis.min.css" rel="stylesheet" />
+  <script src="https://unpkg.com/vis@4.21.0/dist/vis.min.js"></script>
 </head>
 <body>
-  <header>
-    <h1>🎬 Film Evreni Takvimi</h1>
-    <p class="subtitle">Bugün kurgusal dünyalarda neler oldu?</p>
-  </header>
-  <main>
-    <section id="today-events">
-      <p>Yükleniyor...</p>
-    </section>
-  </main>
-  <script src="evren.js"></script>
+  <div id="network"></div>
+  <div id="info-box" class="hidden">
+    <h2 id="info-title"></h2>
+    <p id="info-description"></p>
+    <p id="info-refers"></p>
+    <button onclick="closeInfoBox()">Kapat</button>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
