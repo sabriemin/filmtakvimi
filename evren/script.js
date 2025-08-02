@@ -20,7 +20,7 @@ backgroundEl.style.zIndex = "-1";
 backgroundEl.style.backgroundSize = "cover";
 backgroundEl.style.backgroundPosition = "center";
 backgroundEl.style.opacity = "0.1";
-backgroundEl.style.filter = "blur(12px)";
+backgroundEl.style.filter = "blur(4px)";
 document.body.appendChild(backgroundEl);
 
 function updateBackground(universe) {
