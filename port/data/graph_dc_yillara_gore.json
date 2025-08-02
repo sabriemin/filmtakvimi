@@ -25,30 +25,6 @@
       "level": 1
     },
     {
-      "id": "JusticeLeague",
-      "label": "Justice League (2017)",
-      "title": "Justice League",
-      "image": "/port/images/dc.jpg",
-      "shape": "image",
-      "description": "Justice League, Superman’in ölümünün ardından dünyayı savunacak yeni bir ekip oluşturulmasını konu alır. Batman ve Wonder Woman, yaklaşan Steppenwolf tehdidine karşı Flash, Aquaman ve Cyborg’u bir araya getirir. Superman’in diriltilmesi, takımın moral gücünü artırır. Film, birlik olma, affetme ve kahramanlığın anlamı üzerine inşa edilir. Joss Whedon tarafından tamamlanan bu versiyon, Zack Snyder’ın vizyonundan sapmalar içerir ve karışık eleştiriler almıştır.",
-      "refers_to": "Batman v Superman’in sonunda ölen Superman’in geri getirilmesi, bu filmde kritik bir dönüm noktasıdır. Mother Box teknolojisi, Cyborg’un kökenini ve gelecekteki teknolojik tehditleri işler. Ayrıca Darkseid’e dair ilk ipuçları burada verilir. Wonder Woman’ın Amazon geçmişi ve Aquaman’in Atlantis bağlantısı, karakterlerin kendi solo filmlerine bağlanır. Flash’ın zaman yolculuğu ise ilerideki multiverse anlatılarına zemin hazırlar.",
-      "type": "film",
-      "release_date": "2017-11-17",
-      "level": 2
-    },
-    {
-      "id": "ZackCut",
-      "label": "Justice League (2017)",
-      "title": "Justice League",
-      "image": "/port/images/dc.jpg",
-      "shape": "image",
-      "description": "Zack Snyder’s Justice League, orijinal yönetmenin vizyonuna sadık kalınarak yeniden kurgulanan dört saatlik bir destandır. Film, karakter gelişimine, evren inşasına ve Steppenwolf’un motivasyonlarına daha fazla odaklanır. Superman’in dönüşü daha anlamlı işlenir, Cyborg’un ailesel travmaları derinleştirilir. Film, birlik, umut ve evrensel tehditlere karşı hazırlık temalarını işler. Karanlık tonu, yavaş anlatımı ve mitolojik referanslarıyla DCEU’nun zirvesi olarak kabul edilir.",
-      "refers_to": "Man of Steel ve Batman v Superman’de atılan tüm yapısal ipuçları bu versiyonda karşılık bulur. Darkseid’in gösterilmesi, Apokolips tehdidinin büyüklüğünü hissettirir. Knightmare sahneleri, olası bir gelecekte yaşanacak distopik olaylara gönderme yapar. Martian Manhunter’ın tanıtımı, DC evreninin genişleyeceğinin göstergesidir. Flash’ın zamanla oynadığı sahneler, multiverse ve kriz temalarını güçlendirir. Bu versiyon, DCEU için hem kapanış hem de potansiyel yeni başlangıç sunar.",
-      "type": "film",
-      "release_date": "2017-11-17",
-      "level": 2
-    },
-    {
       "id": "BatmanvSupermanDawnofJustice",
       "label": "Batman v Superman: Dawn of Justice (2016)",
       "title": "Batman v Superman: Dawn of Justice",
@@ -73,6 +49,18 @@
       "level": 1
     },
     {
+      "id": "TheSuicideSquad2021",
+      "label": "Suicide Squad (2016)",
+      "title": "Suicide Squad",
+      "image": "/port/images/dc.jpg",
+      "shape": "image",
+      "description": "James Gunn’ın yeniden başlattığı bu film, hükümetin ölümcül görevler için oluşturduğu yeni bir anti-kahraman ekibini konu alır. Harley Quinn, Bloodsport, Peacemaker ve King Shark gibi renkli karakterlerin yer aldığı ekip, Corto Maltese adasında gizli bir projeyi yok etmek için gönderilir. Film, sert mizahı, absürt aksiyonu ve duygusal anları başarıyla harmanlar.",
+      "refers_to": "İlk Suicide Squad filminden Harley Quinn ve Rick Flag geri döner. Amanda Waller’ın kontrol mekanizması genişletilir. Project Starfish, DC’nin uzaylı tehditlerine gönderme yapar. Peacemaker karakteri, kendi dizisine temel oluşturur. Film, DCEU’nun anlatı tonunda yeni bir yol açar: ciddiyetle absürtlüğün dengesi.",
+      "type": "film",
+      "release_date": "2016-08-05",
+      "level": 1
+    },
+    {
       "id": "WonderWoman",
       "label": "Wonder Woman (2017)",
       "title": "Wonder Woman",
@@ -85,6 +73,54 @@
       "level": 2
     },
     {
+      "id": "WonderWoman1984",
+      "label": "Wonder Woman (2017)",
+      "title": "Wonder Woman",
+      "image": "/port/images/dc.jpg",
+      "shape": "image",
+      "description": "Diana Prince, bu sefer 1980’lerin renkli ve karmaşık dünyasında ortaya çıkar. Eski aşkı Steve Trevor gizemli bir şekilde geri dönerken, dünya çapında dilekleri gerçekleştiren bir taş tüm düzeni bozar. Maxwell Lord ve Cheetah gibi yeni tehditlerle yüzleşen Diana, gücün bedelini ve fedakârlığın gerekliliğini bir kez daha öğrenir. Film, nostaljik atmosferi ve tematik derinliğiyle dikkat çeker.",
+      "refers_to": "İlk filmdeki Steve Trevor’un kaybı burada merkezde yeniden işlenir. Diana’nın ölümsüzlüğü ve yalnızlığı bu filmde daha belirgin hale gelir. Maxwell Lord’un karakteri, DC evrenindeki güç sapkınlıklarını temsil eder. Cheetah’ın dönüşümü, çizgi romanlara sadık bir kötü karakter yaratır. Film sonunda Diana, insanlıkla olan bağını güçlendirir ve modern çağa geçişi tamamlar.",
+      "type": "film",
+      "release_date": "2017-06-02",
+      "level": 2
+    },
+    {
+      "id": "JusticeLeague",
+      "label": "Justice League (2017)",
+      "title": "Justice League",
+      "image": "/port/images/dc.jpg",
+      "shape": "image",
+      "description": "Justice League, Superman’in ölümünün ardından dünyayı savunacak yeni bir ekip oluşturulmasını konu alır. Batman ve Wonder Woman, yaklaşan Steppenwolf tehdidine karşı Flash, Aquaman ve Cyborg’u bir araya getirir. Superman’in diriltilmesi, takımın moral gücünü artırır. Film, birlik olma, affetme ve kahramanlığın anlamı üzerine inşa edilir. Joss Whedon tarafından tamamlanan bu versiyon, Zack Snyder’ın vizyonundan sapmalar içerir ve karışık eleştiriler almıştır.",
+      "refers_to": "Batman v Superman’in sonunda ölen Superman’in geri getirilmesi, bu filmde kritik bir dönüm noktasıdır. Mother Box teknolojisi, Cyborg’un kökenini ve gelecekteki teknolojik tehditleri işler. Ayrıca Darkseid’e dair ilk ipuçları burada verilir. Wonder Woman’ın Amazon geçmişi ve Aquaman’in Atlantis bağlantısı, karakterlerin kendi solo filmlerine bağlanır. Flash’ın zaman yolculuğu ise ilerideki multiverse anlatılarına zemin hazırlar.",
+      "type": "film",
+      "release_date": "2017-11-17",
+      "level": 2
+    },
+    {
+      "id": "ZackCut",
+      "label": "Justice League (2017)",
+      "title": "Justice League",
+      "image": "/port/images/dc.jpg",
+      "shape": "image",
+      "description": "Zack Snyder’s Justice League, orijinal yönetmenin vizyonuna sadık kalınarak yeniden kurgulanan dört saatlik bir destandır. Film, karakter gelişimine, evren inşasına ve Steppenwolf’un motivasyonlarına daha fazla odaklanır. Superman’in dönüşü daha anlamlı işlenir, Cyborg’un ailesel travmaları derinleştirilir. Film, birlik, umut ve evrensel tehditlere karşı hazırlık temalarını işler. Karanlık tonu, yavaş anlatımı ve mitolojik referanslarıyla DCEU’nun zirvesi olarak kabul edilir.",
+      "refers_to": "Man of Steel ve Batman v Superman’de atılan tüm yapısal ipuçları bu versiyonda karşılık bulur. Darkseid’in gösterilmesi, Apokolips tehdidinin büyüklüğünü hissettirir. Knightmare sahneleri, olası bir gelecekte yaşanacak distopik olaylara gönderme yapar. Martian Manhunter’ın tanıtımı, DC evreninin genişleyeceğinin göstergesidir. Flash’ın zamanla oynadığı sahneler, multiverse ve kriz temalarını güçlendirir. Bu versiyon, DCEU için hem kapanış hem de potansiyel yeni başlangıç sunar.",
+      "type": "film",
+      "release_date": "2017-11-17",
+      "level": 2
+    },
+    {
+      "id": "ZackSnydersJusticeLeague",
+      "label": "Justice League (2017)",
+      "title": "Justice League",
+      "image": "/port/images/dc.jpg",
+      "shape": "image",
+      "description": "",
+      "refers_to": "",
+      "type": "film",
+      "release_date": "2017-11-17",
+      "level": 2
+    },
+    {
       "id": "Aquaman",
       "label": "Aquaman (2018)",
       "title": "Aquaman",
@@ -92,6 +128,18 @@
       "shape": "image",
       "description": "Arthur Curry, insan ve Atlantisli kökenlerinin arasında sıkışmış bir kahramandır. Atlantis tahtını hak eden kişi olduğunu kanıtlamak için hem denizaltı krallıklarıyla hem de geçmişiyle yüzleşir. Film, görsel anlamda zengin sualtı dünyasıyla dikkat çeker. Arthur’un annesiyle olan ilişkisi ve kardeşi Orm’la çatışması, karakterin gelişimini şekillendirir. Film, güç, miras ve barışın bedeli gibi temalarla ilerler.",
       "refers_to": "Justice League’de tanıtılan Arthur’un karakteri burada derinleşir. Atlantis kültürü ve krallıkları, DC evrenine yeni bir boyut katar. Orm ve Black Manta gibi kötü karakterler, gelecekteki çatışmalar için temel oluşturur. Film sonunda Arthur’un kral oluşu, ikinci filmdeki olayların başlangıç noktasıdır. Ayrıca Wonder Woman ile mitolojik paralellikler taşır.",
+      "type": "film",
+      "release_date": "2018-12-21",
+      "level": 3
+    },
+    {
+      "id": "AquamanandtheLostKingdom",
+      "label": "Aquaman (2018)",
+      "title": "Aquaman",
+      "image": "/port/images/dc.jpg",
+      "shape": "image",
+      "description": "Arthur Curry artık Atlantis’in kralıdır. Ancak yeni bir tehdit, kayıp bir krallığın uyanmasıyla ortaya çıkar. Arthur, kardeşi Orm’la iş birliği yaparak büyük bir savaşın önüne geçmeye çalışır. Film, aile, birlik ve çevresel tehditler temalarını işler. Görsel açıdan güçlü bir denizaltı fantastik dünyası sunar.",
+      "refers_to": "İlk Aquaman filminde bırakılan bazı konular burada tamamlanır. Orm’un değişimi ve kardeşlik teması, DCEU’nun aile odaklı yönünü güçlendirir. Black Manta’nın intikamı sürerken Atlantis’in geçmişi derinleşir. Film, DC evreninin mitolojik yönünü daha da genişletir ve Aquaman’in liderlik sorumluluğunu işler.",
       "type": "film",
       "release_date": "2018-12-21",
       "level": 3
@@ -109,54 +157,6 @@
       "level": 4
     },
     {
-      "id": "BirdsofPrey",
-      "label": "Birds of Prey (2020)",
-      "title": "Birds of Prey",
-      "image": "/port/images/dc.jpg",
-      "shape": "image",
-      "description": "Harley Quinn, Joker’den ayrıldıktan sonra Gotham’da kendi başına hayatta kalmaya çalışır. Black Canary, Huntress ve Renee Montoya ile yolları kesişir. Film, Gotham’daki kadın karakterlerin ortak düşman Roman Sionis’e karşı birleşmesini konu alır. Renkli görselleri, anlatıcı yapısı ve Harley’nin çılgın karakteriyle öne çıkar. Film, kadın dayanışması ve bireysel özgürlük temalarını işler.",
-      "refers_to": "Suicide Squad sonrası Harley’nin kişisel yolculuğu anlatılır. Joker’den bahsedilse de doğrudan gösterilmez. Huntress’in geçmişi ve Montoya’nın polis bağlantıları, Gotham evrenini genişletir. Black Mask’in kaybı, Gotham’daki suç dengelerini etkiler. Film, karakter odaklı DC hikâyelerinin nasıl anlatılabileceğine dair örnek sunar.",
-      "type": "film",
-      "release_date": "2020-02-07",
-      "level": 5
-    },
-    {
-      "id": "WonderWoman1984",
-      "label": "Wonder Woman (2017)",
-      "title": "Wonder Woman",
-      "image": "/port/images/dc.jpg",
-      "shape": "image",
-      "description": "Diana Prince, bu sefer 1980’lerin renkli ve karmaşık dünyasında ortaya çıkar. Eski aşkı Steve Trevor gizemli bir şekilde geri dönerken, dünya çapında dilekleri gerçekleştiren bir taş tüm düzeni bozar. Maxwell Lord ve Cheetah gibi yeni tehditlerle yüzleşen Diana, gücün bedelini ve fedakârlığın gerekliliğini bir kez daha öğrenir. Film, nostaljik atmosferi ve tematik derinliğiyle dikkat çeker.",
-      "refers_to": "İlk filmdeki Steve Trevor’un kaybı burada merkezde yeniden işlenir. Diana’nın ölümsüzlüğü ve yalnızlığı bu filmde daha belirgin hale gelir. Maxwell Lord’un karakteri, DC evrenindeki güç sapkınlıklarını temsil eder. Cheetah’ın dönüşümü, çizgi romanlara sadık bir kötü karakter yaratır. Film sonunda Diana, insanlıkla olan bağını güçlendirir ve modern çağa geçişi tamamlar.",
-      "type": "film",
-      "release_date": "2017-06-02",
-      "level": 2
-    },
-    {
-      "id": "TheSuicideSquad2021",
-      "label": "Suicide Squad (2016)",
-      "title": "Suicide Squad",
-      "image": "/port/images/dc.jpg",
-      "shape": "image",
-      "description": "James Gunn’ın yeniden başlattığı bu film, hükümetin ölümcül görevler için oluşturduğu yeni bir anti-kahraman ekibini konu alır. Harley Quinn, Bloodsport, Peacemaker ve King Shark gibi renkli karakterlerin yer aldığı ekip, Corto Maltese adasında gizli bir projeyi yok etmek için gönderilir. Film, sert mizahı, absürt aksiyonu ve duygusal anları başarıyla harmanlar.",
-      "refers_to": "İlk Suicide Squad filminden Harley Quinn ve Rick Flag geri döner. Amanda Waller’ın kontrol mekanizması genişletilir. Project Starfish, DC’nin uzaylı tehditlerine gönderme yapar. Peacemaker karakteri, kendi dizisine temel oluşturur. Film, DCEU’nun anlatı tonunda yeni bir yol açar: ciddiyetle absürtlüğün dengesi.",
-      "type": "film",
-      "release_date": "2016-08-05",
-      "level": 1
-    },
-    {
-      "id": "BlackAdam",
-      "label": "Black Adam (2022)",
-      "title": "Black Adam",
-      "image": "/port/images/dc.jpg",
-      "shape": "image",
-      "description": "Kahndaq'ın antik şampiyonu Black Adam, binlerce yıl hapsedildikten sonra yeniden dünyaya döner. Onun adaleti serttir ve merhametsizdir. Justice Society üyeleri Hawkman, Doctor Fate, Atom Smasher ve Cyclone, Black Adam’ı durdurmak için harekete geçer. Film, güç, adalet ve efsaneler temalarını işler. Dwayne Johnson’ın karizmasıyla karakter yeniden tanıtılır.",
-      "refers_to": "Shazam evrenine bağlı olsa da doğrudan temas kurulmaz. Amanda Waller’ın cameo’su evren bütünlüğünü gösterir. Superman’in sahne sonu cameo’su büyük yankı uyandırır. Justice Society’nin tanıtılması, DC’nin alt ekiplerini sahneye çıkartır. Film, DCEU için alternatif bir kahraman anlayışı sunar: kahraman olmayan kurtarıcı.",
-      "type": "film",
-      "release_date": "2022-10-21",
-      "level": 6
-    },
-    {
       "id": "ShazamFuryoftheGods",
       "label": "Shazam! (2019)",
       "title": "Shazam!",
@@ -169,16 +169,40 @@
       "level": 4
     },
     {
-      "id": "ZackSnydersJusticeLeague",
-      "label": "Justice League (2017)",
-      "title": "Justice League",
+      "id": "BirdsofPrey",
+      "label": "Birds of Prey (2020)",
+      "title": "Birds of Prey",
       "image": "/port/images/dc.jpg",
       "shape": "image",
-      "description": "",
-      "refers_to": "",
+      "description": "Harley Quinn, Joker’den ayrıldıktan sonra Gotham’da kendi başına hayatta kalmaya çalışır. Black Canary, Huntress ve Renee Montoya ile yolları kesişir. Film, Gotham’daki kadın karakterlerin ortak düşman Roman Sionis’e karşı birleşmesini konu alır. Renkli görselleri, anlatıcı yapısı ve Harley’nin çılgın karakteriyle öne çıkar. Film, kadın dayanışması ve bireysel özgürlük temalarını işler.",
+      "refers_to": "Suicide Squad sonrası Harley’nin kişisel yolculuğu anlatılır. Joker’den bahsedilse de doğrudan gösterilmez. Huntress’in geçmişi ve Montoya’nın polis bağlantıları, Gotham evrenini genişletir. Black Mask’in kaybı, Gotham’daki suç dengelerini etkiler. Film, karakter odaklı DC hikâyelerinin nasıl anlatılabileceğine dair örnek sunar.",
       "type": "film",
-      "release_date": "2017-11-17",
-      "level": 2
+      "release_date": "2020-02-07",
+      "level": 5
+    },
+    {
+      "id": "Peacemaker",
+      "label": "Peacemaker (2022)",
+      "title": "Peacemaker",
+      "image": "/port/images/dc.jpg",
+      "shape": "image",
+      "description": "The Suicide Squad sonrası Peacemaker, hastaneden çıkar ve yeniden görevlendirilir. Bu sefer görev sadece fiziksel değil, psikolojik de bir savaştır. Dizi, onun çocukluk travmaları, aile ilişkileri ve kimliğiyle yüzleşmesini anlatır. Mizah, aksiyon ve karakter gelişimi başarılı bir şekilde harmanlanır. John Cena’nın performansı dikkat çeker.",
+      "refers_to": "Peacemaker, The Suicide Squad filminin doğrudan devamıdır. Amanda Waller ve ARGUS organizasyonu genişletilir. Dizi boyunca diğer DC karakterlerine bolca göndermede bulunulur. Karakterin babası White Dragon, ırkçı temaları işleyerek hikâyeyi daha karanlık hale getirir. Final sahnesinde Justice League üyeleri görülerek evren bağlantısı pekiştirilir.",
+      "type": "film",
+      "release_date": "2022-01-13",
+      "level": 6
+    },
+    {
+      "id": "BlackAdam",
+      "label": "Black Adam (2022)",
+      "title": "Black Adam",
+      "image": "/port/images/dc.jpg",
+      "shape": "image",
+      "description": "Kahndaq'ın antik şampiyonu Black Adam, binlerce yıl hapsedildikten sonra yeniden dünyaya döner. Onun adaleti serttir ve merhametsizdir. Justice Society üyeleri Hawkman, Doctor Fate, Atom Smasher ve Cyclone, Black Adam’ı durdurmak için harekete geçer. Film, güç, adalet ve efsaneler temalarını işler. Dwayne Johnson’ın karizmasıyla karakter yeniden tanıtılır.",
+      "refers_to": "Shazam evrenine bağlı olsa da doğrudan temas kurulmaz. Amanda Waller’ın cameo’su evren bütünlüğünü gösterir. Superman’in sahne sonu cameo’su büyük yankı uyandırır. Justice Society’nin tanıtılması, DC’nin alt ekiplerini sahneye çıkartır. Film, DCEU için alternatif bir kahraman anlayışı sunar: kahraman olmayan kurtarıcı.",
+      "type": "film",
+      "release_date": "2022-10-21",
+      "level": 6
     },
     {
       "id": "TheFlash",
@@ -203,30 +227,6 @@
       "type": "film",
       "release_date": "2023-08-18",
       "level": 7
-    },
-    {
-      "id": "AquamanandtheLostKingdom",
-      "label": "Aquaman (2018)",
-      "title": "Aquaman",
-      "image": "/port/images/dc.jpg",
-      "shape": "image",
-      "description": "Arthur Curry artık Atlantis’in kralıdır. Ancak yeni bir tehdit, kayıp bir krallığın uyanmasıyla ortaya çıkar. Arthur, kardeşi Orm’la iş birliği yaparak büyük bir savaşın önüne geçmeye çalışır. Film, aile, birlik ve çevresel tehditler temalarını işler. Görsel açıdan güçlü bir denizaltı fantastik dünyası sunar.",
-      "refers_to": "İlk Aquaman filminde bırakılan bazı konular burada tamamlanır. Orm’un değişimi ve kardeşlik teması, DCEU’nun aile odaklı yönünü güçlendirir. Black Manta’nın intikamı sürerken Atlantis’in geçmişi derinleşir. Film, DC evreninin mitolojik yönünü daha da genişletir ve Aquaman’in liderlik sorumluluğunu işler.",
-      "type": "film",
-      "release_date": "2018-12-21",
-      "level": 3
-    },
-    {
-      "id": "Peacemaker",
-      "label": "Peacemaker (2022)",
-      "title": "Peacemaker",
-      "image": "/port/images/dc.jpg",
-      "shape": "image",
-      "description": "The Suicide Squad sonrası Peacemaker, hastaneden çıkar ve yeniden görevlendirilir. Bu sefer görev sadece fiziksel değil, psikolojik de bir savaştır. Dizi, onun çocukluk travmaları, aile ilişkileri ve kimliğiyle yüzleşmesini anlatır. Mizah, aksiyon ve karakter gelişimi başarılı bir şekilde harmanlanır. John Cena’nın performansı dikkat çeker.",
-      "refers_to": "Peacemaker, The Suicide Squad filminin doğrudan devamıdır. Amanda Waller ve ARGUS organizasyonu genişletilir. Dizi boyunca diğer DC karakterlerine bolca göndermede bulunulur. Karakterin babası White Dragon, ırkçı temaları işleyerek hikâyeyi daha karanlık hale getirir. Final sahnesinde Justice League üyeleri görülerek evren bağlantısı pekiştirilir.",
-      "type": "film",
-      "release_date": "2022-01-13",
-      "level": 6
     }
   ],
   "edges": [
