@@ -102,6 +102,11 @@ function drawNetwork() {
       const dateInfo = node.release_date ? `🗓️ ${node.release_date}` : "";
       const metaInfo = `<div style="margin-top: 6px; font-size: 14px; color: gray;">${typeIcon} &nbsp; ${dateInfo}</div>`;
       titleEl.innerHTML += metaInfo;
+const addBtn = document.createElement("button");
+      addBtn.textContent = "🎯 Karşılaştırmaya Ekle";
+      addBtn.onclick = () => handleAddToCompare(node.id);
+      descEl.appendChild(document.createElement("br"));
+      descEl.appendChild(addBtn);
 
       descEl.innerHTML = "<b>🎞️ Özeti</b><br>" + (node.description || "Açıklama yok.");
       refersEl.innerHTML = "<b>📌 Gönderme</b><br>" + (node.refers_to || "Yok.");
@@ -238,9 +243,9 @@ function init() {
     setupUniverseDropdown();
     setupSearchBox();
     setupTimelineToggle();
-    setupCompareButton();
+    setupCompareButtonNew();
     addCheckboxes();
-    setupCheckboxCompare();
+    
     setupTypeFilterCheckboxes();
     applyLabelTheme();
   });
@@ -248,39 +253,7 @@ function init() {
 
 init();
 
-function addCheckboxes() {
-  const canvas = network.canvas.frame.canvas;
-  const parent = canvas.parentElement;
-  const nodeCheckboxes = {};
 
-  allNodes.forEach((node) => {
-    const box = document.createElement("input");
-    box.type = "checkbox";
-    box.className = "node-checkbox";
-    box.style.position = "absolute";
-    box.style.zIndex = 101;
-    box.dataset.nodeId = node.id;
-    box.onclick = e => e.stopPropagation(); // ağ tıklamasını engelle
-
-    parent.appendChild(box);
-    nodeCheckboxes[node.id] = box;
-  });
-
-  network.on("afterDrawing", () => {
-    const positions = network.getPositions();
-    const canvasRect = network.body.container.getBoundingClientRect();
-
-    allNodes.forEach((node) => {
-      const posRaw = positions[node.id];
-      if (!posRaw) return;
-      const pos = network.canvasToDOM(posRaw);
-      const box = nodeCheckboxes[node.id];
-      if (box) {
-        box.style.left = `${pos.x + canvasRect.left - 10}px`;
-        box.style.top = `${pos.y + canvasRect.top - 10}px`;
-      }
-    });
-  });
 }
 
 // checkbox ile seçilenleri karşılaştır
@@ -303,7 +276,6 @@ function setupCheckboxCompare() {
 
     document.getElementById("compare-box").classList.remove("hidden");
     document.getElementById("modal-overlay").classList.remove("hidden");
-  });
 }
 
 function setupTypeFilterCheckboxes() {
@@ -316,10 +288,6 @@ function setupTypeFilterCheckboxes() {
 
       allEdges.forEach(edge => {
         const match = selectedTypes.includes(edge.type);
-        allEdges.update({ id: edge.id, hidden: !match });
-      });
-    });
-  });
 }
 
 function applyLabelTheme() {
@@ -327,6 +295,42 @@ function applyLabelTheme() {
   const fontColor = dark ? "#ffffff" : "#111111";
 
   allNodes.forEach(n => {
-    allNodes.update({ id: n.id, font: { color: fontColor } });
-  });
+}
+
+let selectedCompareNodes = [];
+
+function updateCompareButtonState() {
+  const compareBtn = document.getElementById("compare-btn");
+  compareBtn.disabled = selectedCompareNodes.length !== 2;
+}
+
+function handleAddToCompare(nodeId) {
+  if (!selectedCompareNodes.includes(nodeId)) {
+    selectedCompareNodes.push(nodeId);
+    if (selectedCompareNodes.length > 2) selectedCompareNodes.shift();
+  }
+  updateCompareButtonState();
+}
+
+function setupCompareButtonNew() {
+  const btn = document.getElementById("compare-btn");
+  btn.addEventListener("click", () => {
+    const box = document.getElementById("compare-box");
+    const content = document.getElementById("compare-content");
+
+    if (selectedCompareNodes.length !== 2) {
+      content.innerHTML = "Lütfen iki film/dizi seçin.";
+    } else {
+      const a = allNodes.get(selectedCompareNodes[0]);
+      const b = allNodes.get(selectedCompareNodes[1]);
+      content.innerHTML = `
+        <h3>${a.label} ↔ ${b.label}</h3>
+        <p><b>Açıklamalar:</b><br>${a.description}<hr>${b.description}</p>
+        <p><b>Referanslar:</b><br>${a.refers_to}<hr>${b.refers_to}</p>
+        <p><b>Yayın Tarihleri:</b> ${a.release_date} ↔ ${b.release_date}</p>
+      `;
+    }
+
+    box.classList.remove("hidden");
+    overlay.classList.remove("hidden");
 }
