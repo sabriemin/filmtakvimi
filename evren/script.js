@@ -254,8 +254,6 @@ function init() {
 init();
 
 
-}
-
 // checkbox ile seçilenleri karşılaştır
 function setupCheckboxCompare() {
   const btn = document.getElementById("compare-btn");
@@ -276,6 +274,7 @@ function setupCheckboxCompare() {
 
     document.getElementById("compare-box").classList.remove("hidden");
     document.getElementById("modal-overlay").classList.remove("hidden");
+  });
 }
 
 function setupTypeFilterCheckboxes() {
@@ -288,6 +287,10 @@ function setupTypeFilterCheckboxes() {
 
       allEdges.forEach(edge => {
         const match = selectedTypes.includes(edge.type);
+        allEdges.update({ id: edge.id, hidden: !match });
+      });
+    });
+  });
 }
 
 function applyLabelTheme() {
@@ -295,6 +298,8 @@ function applyLabelTheme() {
   const fontColor = dark ? "#ffffff" : "#111111";
 
   allNodes.forEach(n => {
+    allNodes.update({ id: n.id, font: { color: fontColor } });
+  });
 }
 
 let selectedCompareNodes = [];
@@ -333,4 +338,5 @@ function setupCompareButtonNew() {
 
     box.classList.remove("hidden");
     overlay.classList.remove("hidden");
+  });
 }
