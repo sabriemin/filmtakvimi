@@ -32,13 +32,25 @@ function loadUniverseData() {
         allNodes.add(nodes);
 
         const coloredEdges = data.edges.map(e => {
-          let color = "#999";
-          if (e.type === "devam") color = "#f39c12";
-          else if (e.type === "spinoff") color = "#3498db";
-          else if (e.type === "aynievren") color = "#2ecc71";
-          else if (e.type === "alternatif") color = "#9b59b6";
-          return { ...e, color: { color }, arrows: "to" };
-        });
+  let color = "#999";
+  if (e.type === "devam") color = "#2980b9";
+  else if (e.type === "ön hikaye") color = "#e67e22";
+  else if (e.type === "yan hikaye") color = "#8e44ad";
+  else if (e.type === "evren geçişi") color = "#c0392b";
+  else if (e.type === "görsel gönderme") color = "#7f8c8d";
+  else if (e.type === "karakter göndermesi") color = "#27ae60";
+  else if (e.type === "kurumsal gönderme") color = "#6e4b25";
+  else if (e.type === "zaman çizgisi bağlantısı") color = "#1abc9c";
+  else if (e.type === "karakter geçişi") color = "#2ecc71";
+  else if (e.type === "tematik benzerlik") color = "#f1c40f";
+  else if (e.type === "duygu ve bilinç teması") color = "#9b59b6";
+  else if (e.type === "konseptsel devam") color = "#34495e";
+  else if (e.type === "şehir yaşamı paralelliği") color = "#d35400";
+  else if (e.type === "iç film/karakter kökeni") color = "#7d3c98";
+  else if (e.type === "multiverse birleşmesi") color = "#e84393";
+  else if (e.type === "paralel Kang anlatımı") color = "#16a085";
+  return { ...e, color: { color }, arrows: "to" };
+});
         allEdges.add(coloredEdges);
 
         universeNodesMap[universe] = nodes.map(n => n.id);
@@ -259,7 +271,9 @@ function addCheckboxes() {
     const canvasRect = network.body.container.getBoundingClientRect();
 
     allNodes.forEach((node) => {
-      const pos = network.canvasToDOM(positions[node.id]);
+      const posRaw = positions[node.id];
+      if (!posRaw) return;
+      const pos = network.canvasToDOM(posRaw);
       const box = nodeCheckboxes[node.id];
       if (box) {
         box.style.left = `${pos.x + canvasRect.left - 10}px`;

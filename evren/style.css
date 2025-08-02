@@ -120,3 +120,12 @@ body:not(.dark) #legend-box {
   margin-right: 6px;
   border-radius: 3px;
 }
+
+.node-checkbox {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: 200;
+  width: 16px;
+  height: 16px;
+  accent-color: #3498db;
+}
