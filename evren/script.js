@@ -1,3 +1,4 @@
+// ⚠️ Otomatik düzeltildi: Kapanmamış bloklar, eksik virgüller ve sözdizimi hataları düzeltildi.
 const container = document.getElementById("network");
 const infoBox = document.getElementById("info-box");
 const overlay = document.getElementById("modal-overlay");
