@@ -400,22 +400,27 @@
   "edges": [
     {
       "from": "IronMan",
-      "to": "TheIncredibleHulk",
-      "type": "devam"
-    },
-    {
-      "from": "TheIncredibleHulk",
       "to": "IronMan2",
       "type": "devam"
     },
     {
       "from": "IronMan2",
-      "to": "Thor",
+      "to": "TheAvengers",
       "type": "devam"
     },
     {
-      "from": "Thor",
-      "to": "CaptainAmericaTheFirstAvenger",
+      "from": "WandaVision",
+      "to": "DoctorStrangeintheMultiverseofMadness",
+      "type": "evren-geçişi"
+    },
+    {
+      "from": "Loki",
+      "to": "DoctorStrangeintheMultiverseofMadness",
+      "type": "evren-geçişi"
+    },
+    {
+      "from": "GuardiansoftheGalaxy",
+      "to": "GuardiansoftheGalaxyVol2",
       "type": "devam"
     },
     {
@@ -424,139 +429,9 @@
       "type": "devam"
     },
     {
-      "from": "TheAvengers",
-      "to": "IronMan3",
-      "type": "devam"
-    },
-    {
-      "from": "IronMan3",
-      "to": "ThorTheDarkWorld",
-      "type": "devam"
-    },
-    {
-      "from": "ThorTheDarkWorld",
-      "to": "CaptainAmericaTheWinterSoldier",
-      "type": "devam"
-    },
-    {
-      "from": "CaptainAmericaTheWinterSoldier",
-      "to": "GuardiansoftheGalaxy",
-      "type": "devam"
-    },
-    {
-      "from": "GuardiansoftheGalaxy",
-      "to": "AvengersAgeofUltron",
-      "type": "devam"
-    },
-    {
-      "from": "AvengersAgeofUltron",
-      "to": "Ant-Man",
-      "type": "devam"
-    },
-    {
-      "from": "Ant-Man",
+      "from": "TheFalconandtheWinterSoldier",
       "to": "CaptainAmericaCivilWar",
-      "type": "devam"
-    },
-    {
-      "from": "CaptainAmericaCivilWar",
-      "to": "DoctorStrange",
-      "type": "devam"
-    },
-    {
-      "from": "DoctorStrange",
-      "to": "GuardiansoftheGalaxyVol2",
-      "type": "devam"
-    },
-    {
-      "from": "GuardiansoftheGalaxyVol2",
-      "to": "Spider-ManHomecoming",
-      "type": "devam"
-    },
-    {
-      "from": "Spider-ManHomecoming",
-      "to": "ThorRagnarok",
-      "type": "devam"
-    },
-    {
-      "from": "ThorRagnarok",
-      "to": "BlackPanther",
-      "type": "devam"
-    },
-    {
-      "from": "BlackPanther",
-      "to": "AvengersInfinityWar",
-      "type": "devam"
-    },
-    {
-      "from": "AvengersInfinityWar",
-      "to": "Ant-ManandtheWasp",
-      "type": "devam"
-    },
-    {
-      "from": "Ant-ManandtheWasp",
-      "to": "CaptainMarvel",
-      "type": "devam"
-    },
-    {
-      "from": "CaptainMarvel",
-      "to": "AvengersEndgame",
-      "type": "devam"
-    },
-    {
-      "from": "AvengersEndgame",
-      "to": "Spider-ManFarFromHome",
-      "type": "devam"
-    },
-    {
-      "from": "Spider-ManFarFromHome",
-      "to": "BlackWidow",
-      "type": "devam"
-    },
-    {
-      "from": "BlackWidow",
-      "to": "Shang-ChiandtheLegendoftheTenRings",
-      "type": "devam"
-    },
-    {
-      "from": "Shang-ChiandtheLegendoftheTenRings",
-      "to": "Eternals",
-      "type": "devam"
-    },
-    {
-      "from": "Eternals",
-      "to": "Spider-ManNoWayHome",
-      "type": "devam"
-    },
-    {
-      "from": "Spider-ManNoWayHome",
-      "to": "DoctorStrangeintheMultiverseofMadness",
-      "type": "devam"
-    },
-    {
-      "from": "DoctorStrangeintheMultiverseofMadness",
-      "to": "ThorLoveandThunder",
-      "type": "devam"
-    },
-    {
-      "from": "ThorLoveandThunder",
-      "to": "BlackPantherWakandaForever",
-      "type": "devam"
-    },
-    {
-      "from": "BlackPantherWakandaForever",
-      "to": "Ant-ManandtheWaspQuantumania",
-      "type": "devam"
-    },
-    {
-      "from": "Ant-ManandtheWaspQuantumania",
-      "to": "GuardiansoftheGalaxyVol3",
-      "type": "devam"
-    },
-    {
-      "from": "GuardiansoftheGalaxyVol3",
-      "to": "TheMarvels",
-      "type": "devam"
+      "type": "yan-hikaye"
     }
   ]
 }
