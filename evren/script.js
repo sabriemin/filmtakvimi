@@ -277,7 +277,8 @@ function init() {
     setupCompareButtonNew();
 
 document.addEventListener("DOMContentLoaded", init);
-
+  })
+};
 
 
 function setupModalInteraction() {
@@ -345,4 +346,4 @@ function enhanceCompareModalStyle() {
   closeBtn.title = "Kapat";
   closeBtn.onclick = closeInfoBox;
   box.appendChild(closeBtn);
-}})}
+}
