@@ -1,5 +1,14 @@
 <body>
+  <select id="universe-select" style="position: fixed; top: 10px; left: 10px; z-index: 200;">
+    <option value="all">Tüm Evrenler</option>
+    <option value="marvel">Marvel</option>
+    <option value="dc">DC</option>
+    <option value="pixar">Pixar</option>
+    <option value="starwars">Star Wars</option>
+  </select>
+
   <button id="compare-btn" style="position: fixed; top: 10px; right: 10px; z-index: 200;">🎯 Karşılaştır</button>
+
   <div class="hidden" id="modal-overlay"></div>
   <div class="modal hidden" id="info-box">
     <h2 id="info-title"></h2>
