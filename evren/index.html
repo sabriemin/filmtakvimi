@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Film Evreni Ağı - Gelişmiş Özellikler ve Çoklu Dil</title>
+  <title>Film Evreni Ağı - Mobil ve UX İyileştirme</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
@@ -47,6 +47,7 @@
       color: #374151;
       cursor: pointer;
       transition: color 0.2s ease;
+      z-index: 10;
     }
     .close-btn:hover {
       color: #ef4444;
@@ -96,12 +97,15 @@
       color: #111827;
       flex-grow: 1;
       transition: color 0.3s;
+      min-width: 150px;
     }
     header .controls {
       display: flex;
       flex-wrap: wrap;
       gap: 12px;
       align-items: center;
+      flex-grow: 2;
+      justify-content: flex-end;
     }
     input, select, button {
       padding: 8px 14px;
@@ -127,8 +131,9 @@
     }
     #search {
       width: 180px;
+      min-width: 140px;
     }
-    #universeFilter, #edgeFilter, #langSelect {
+    #universeFilter, #edgeFilter, #yearRange, #langSelect {
       min-width: 140px;
     }
     #yearRange {
@@ -140,8 +145,13 @@
         align-items: stretch;
         gap: 8px;
       }
+      header h1 {
+        flex-grow: 0;
+        text-align: center;
+      }
       #search, #universeFilter, #edgeFilter, #yearRange, #langSelect {
         width: 100%;
+        min-width: unset;
       }
       #network {
         margin: 8px 0 0 0;
@@ -189,6 +199,63 @@
     body.dark #modalTitle {
       color: #f9fafb;
     }
+
+    /* Legend */
+    #legend {
+      position: fixed;
+      bottom: 16px;
+      right: 16px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+      max-width: 320px;
+      max-height: 240px;
+      overflow-y: auto;
+      padding: 12px 16px;
+      font-size: 0.85rem;
+      z-index: 1001;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    body.dark #legend {
+      background-color: #1f2937;
+      color: #d1d5db;
+    }
+    #legend h3 {
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    #legend ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    #legend li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 6px;
+    }
+    #legend .color-box {
+      width: 18px;
+      height: 18px;
+      border-radius: 4px;
+      margin-right: 8px;
+      flex-shrink: 0;
+    }
+
+    /* Modal full screen on small */
+    @media (max-width: 640px) {
+      .modal-content {
+        max-width: 100vw;
+        max-height: 100vh;
+        border-radius: 0;
+        padding: 1rem;
+      }
+      .close-btn {
+        top: 8px;
+        right: 8px;
+        font-size: 24px;
+      }
+    }
   </style>
 </head>
 <body class="h-full flex flex-col" :class="{dark: isDarkMode}">
@@ -221,9 +288,22 @@
 
 <div id="network" class="flex-grow"></div>
 
+<!-- Legend -->
+<div id="legend" aria-label="Edge Types Legend">
+  <h3 x-text="lang === 'tr' ? 'Bağlantı Türleri' : 'Edge Types'"></h3>
+  <ul>
+    <template x-for="(color, type) in edgeColors" :key="type">
+      <li>
+        <span class="color-box" :style="'background-color: ' + color"></span>
+        <span x-text="type"></span>
+      </li>
+    </template>
+  </ul>
+</div>
+
 <!-- Modal -->
-<div id="modalOverlay" x-show="modalOpen" x-transition class="fixed inset-0 modal-bg flex items-center justify-center z-50 p-4" @click.away="modalOpen = false">
-  <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+<div id="modalOverlay" x-show="modalOpen" x-transition class="fixed inset-0 modal-bg flex items-center justify-center z-50 p-4" @click.away="modalOpen = false" style="display:none;">
+  <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle" @click.stop>
     <button id="closeModal" class="close-btn" aria-label="Close" @click="modalOpen = false">✖</button>
     <h2 id="modalTitle" x-text="modalNode?.label || ''"></h2>
     <p id="modalUniverse" x-text="(lang === 'tr' ? 'Evren: ' : 'Universe: ') + (modalNode?.universe || '')"></p>
@@ -277,6 +357,15 @@ function app() {
       this.loadData();
       this.isDarkMode = localStorage.getItem('darkMode') === 'true';
       this.lang = localStorage.getItem('lang') || 'tr';
+      this.$watch('isDarkMode', val => {
+        if(val) document.body.classList.add('dark'); else document.body.classList.remove('dark');
+        localStorage.setItem('darkMode', val);
+      });
+      this.$watch('lang', val => localStorage.setItem('lang', val));
+      this.$watch('search', () => this.applyFilters());
+      this.$watch('selectedUniverse', () => this.applyFilters());
+      this.$watch('selectedEdgeType', () => this.applyFilters());
+      this.$watch('maxYear', () => this.applyFilters());
     },
 
     async loadData() {
@@ -376,6 +465,9 @@ function app() {
       );
 
       this.updateNetwork();
+      if(this.network) {
+        setTimeout(() => this.network.fit({animation: true}), 100);
+      }
     },
 
     updateNetwork() {
@@ -429,17 +521,6 @@ function app() {
 
     toggleTheme() {
       this.isDarkMode = !this.isDarkMode;
-      localStorage.setItem('darkMode', this.isDarkMode);
-    },
-
-    $watch: {
-      search() { this.applyFilters(); },
-      selectedUniverse() { this.applyFilters(); },
-      selectedEdgeType() { this.applyFilters(); },
-      maxYear() { this.applyFilters(); },
-      lang(value) {
-        localStorage.setItem('lang', value);
-      }
     }
   }
 }
