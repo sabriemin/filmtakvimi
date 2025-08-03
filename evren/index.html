@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="tr" class="h-full">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Film Evreni Ağı - Gelişmiş Tasarım</title>
+  <title>Film Evreni Ağı - Gelişmiş Özellikler</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
   <style>
@@ -119,6 +118,19 @@
     #search::placeholder {
       color: #9ca3af;
     }
+    #toggleTimeline {
+      background-color: #ef4444;
+      color: white;
+      font-weight: 600;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+    #toggleTimeline:hover {
+      background-color: #dc2626;
+    }
     @media (max-width: 640px) {
       header {
         flex-direction: column;
@@ -149,6 +161,7 @@
     <select id="universeFilter" aria-label="Evren seç" >
       <option value="">Tüm Evrenler</option>
     </select>
+    <button id="toggleTimeline" aria-pressed="false" title="Zaman Çizelgesi Görünümü">⏳ Zaman Çizelgesi</button>
   </div>
 </header>
 
@@ -172,6 +185,26 @@
   let nodes, edges;
   let filteredNodes = [];
   let filteredEdges = [];
+  let timelineMode = false;
+
+  const edgeColors = {
+    "devam": "#2980b9",
+    "ön hikaye": "#e67e22",
+    "yan hikaye": "#8e44ad",
+    "evren geçişi": "#c0392b",
+    "görsel gönderme": "#7f8c8d",
+    "karakter göndermesi": "#27ae60",
+    "kurumsal gönderme": "#6e4b25",
+    "zaman çizgisi bağlantısı": "#1abc9c",
+    "karakter geçişi": "#2ecc71",
+    "tematik benzerlik": "#f1c40f",
+    "duygu ve bilinç teması": "#9b59b6",
+    "konseptsel devam": "#34495e",
+    "şehir yaşamı paralelliği": "#d35400",
+    "iç film/karakter kökeni": "#7d3c98",
+    "multiverse birleşmesi": "#e84393",
+    "paralel Kang anlatımı": "#16a085"
+  };
 
   async function loadData() {
     const evrenler = [
@@ -226,22 +259,44 @@
   function updateNetwork() {
     nodes.clear();
     edges.clear();
-    nodes.add(filteredNodes.map(n => ({
-      id: n.id,
-      label: n.label,
-      title: n.description || "",
-      image: n.image,
-      shape: 'circularImage',
-      borderWidth: 2,
-      borderWidthSelected: 4,
-      color: { border: '#ef4444' }
-    })));
-    edges.add(filteredEdges.map(e => ({
-      from: e.from,
-      to: e.to,
-      arrows: 'to',
-      color: { color: '#ef4444' }
-    })));
+    if(timelineMode){
+      // timeline modu için x koordinatlarını tarih bazlı ayarla
+      const timelineNodes = filteredNodes.map(n => {
+        let x = 0;
+        if(n.release_date){
+          x = new Date(n.release_date).getTime() / 10000000;
+        }
+        return {
+          ...n,
+          x,
+          y: 0,
+          fixed: {x:true, y:false},
+          shape: 'circularImage',
+          borderWidth: 2,
+          borderWidthSelected: 6,
+          color: { border: '#ef4444' }
+        };
+      });
+      nodes.add(timelineNodes);
+    } else {
+      nodes.add(filteredNodes.map(n => ({
+        ...n,
+        shape: 'circularImage',
+        borderWidth: 2,
+        borderWidthSelected: 6,
+        color: { border: '#ef4444' }
+      })));
+    }
+    edges.add(filteredEdges.map(e => {
+      let color = edgeColors[e.type] || '#888';
+      let width = (e.type === 'devam' || e.type === 'karakter geçişi') ? 3 : 1.5;
+      return {
+        ...e,
+        arrows: 'to',
+        color: { color },
+        width
+      };
+    }));
   }
 
   function showModal(node) {
@@ -262,6 +317,12 @@
     if(e.target.id === 'modalOverlay') hideModal();
   });
 
+  document.getElementById('toggleTimeline').addEventListener('click', e => {
+    timelineMode = !timelineMode;
+    e.target.textContent = timelineMode ? '🔄 Normal Görünüm' : '⏳ Zaman Çizelgesi';
+    applyFilters();
+  });
+
   async function start() {
     await loadData();
     nodes = new vis.DataSet();
@@ -270,7 +331,6 @@
     const data = { nodes, edges };
     const options = {
       nodes: {
-        shape: 'circularImage',
         size: 25,
         font: { color: '#fff', size: 14 },
         borderWidthSelected: 6,
@@ -278,10 +338,16 @@
       },
       edges: {
         arrows: { to: { enabled: true, scaleFactor: 0.5 } },
-        color: '#ef4444'
+        smooth: {
+          enabled: true,
+          type: 'dynamic'
+        }
       },
       interaction: { hover: true, tooltipDelay: 200 },
-      physics: { stabilization: true, barnesHut: { gravitationalConstant: -4000 } },
+      physics: {
+        stabilization: true,
+        barnesHut: { gravitationalConstant: -4000 }
+      },
       layout: { improvedLayout: true }
     };
     network = new vis.Network(container, data, options);
@@ -291,6 +357,16 @@
         const node = nodes.get(params.nodes[0]);
         showModal(node);
       }
+    });
+
+    network.on('hoverEdge', params => {
+      if(params.edge){
+        const edge = edges.get(params.edge);
+        network.body.container.title = 'Bağlantı türü: ' + (edge.type || 'Bilinmiyor');
+      }
+    });
+    network.on('blurEdge', () => {
+      network.body.container.title = '';
     });
 
     document.getElementById('search').addEventListener('input', applyFilters);
