@@ -1,0 +1,203 @@
+{
+  "nodes": [
+    {
+      "id": "film/harrypotterandthesorcerersstone",
+      "label": "Harry Potter and the Sorcerer's Stone (2001)",
+      "title": "Harry Potter and the Sorcerer's Stone",
+      "image": "images/harrypotter.jpg",
+      "shape": "image",
+      "description": "Harry Potter and the Sorcerer's Stone, Pixar’ın etkileyici anlatımıyla şekillenen bir yapımdır. Film, ölüm ve ötesi temasını işlerken izleyiciye unutulmaz bir görsel ve duygusal deneyim sunar. Karakter gelişimi, hikâye akışı ve yaratıcı evren tasarımıyla Harry Potter and the Sorcerer's Stone, stüdyonun anlatı başarısının güçlü örneklerinden biridir.",
+      "refers_to": "Harry Potter and the Sorcerer's Stone, Pixar evrenindeki diğer yapımlara çeşitli yollarla bağlanır. Filmdeki semboller, karakter göndermeleri veya mekan tekrarları, Toy Story’den WALL-E’ye kadar birçok yapıma referans oluşturur. Bu bağlantılar, evrenin bütünlüğünü ve anlatılar arası sürekliliği pekiştirir.",
+      "type": "film",
+      "release_date": "2001-11-16",
+      "level": 0
+    },
+    {
+      "id": "film/harrypotterandthechamberofsecrets",
+      "label": "Harry Potter and the Chamber of Secrets (2002)",
+      "title": "Harry Potter and the Chamber of Secrets",
+      "image": "images/harrypotter.jpg",
+      "shape": "image",
+      "description": "Harry Potter and the Chamber of Secrets, Pixar’ın etkileyici anlatımıyla şekillenen bir yapımdır. Film, ölüm ve ötesi temasını işlerken izleyiciye unutulmaz bir görsel ve duygusal deneyim sunar. Karakter gelişimi, hikâye akışı ve yaratıcı evren tasarımıyla Harry Potter and the Chamber of Secrets, stüdyonun anlatı başarısının güçlü örneklerinden biridir.",
+      "refers_to": "Harry Potter and the Chamber of Secrets, Pixar evrenindeki diğer yapımlara çeşitli yollarla bağlanır. Filmdeki semboller, karakter göndermeleri veya mekan tekrarları, Toy Story’den WALL-E’ye kadar birçok yapıma referans oluşturur. Bu bağlantılar, evrenin bütünlüğünü ve anlatılar arası sürekliliği pekiştirir.",
+      "type": "film",
+      "release_date": "2002-11-15",
+      "level": 1
+    },
+    {
+      "id": "film/harrypotterandtheprisonerofazkaban",
+      "label": "Harry Potter and the Prisoner of Azkaban (2004)",
+      "title": "Harry Potter and the Prisoner of Azkaban",
+      "image": "images/harrypotter.jpg",
+      "shape": "image",
+      "description": "Harry Potter and the Prisoner of Azkaban, Pixar’ın etkileyici anlatımıyla şekillenen bir yapımdır. Film, kimlik ve aidiyet arayışı temasını işlerken izleyiciye unutulmaz bir görsel ve duygusal deneyim sunar. Karakter gelişimi, hikâye akışı ve yaratıcı evren tasarımıyla Harry Potter and the Prisoner of Azkaban, stüdyonun anlatı başarısının güçlü örneklerinden biridir.",
+      "refers_to": "Harry Potter and the Prisoner of Azkaban, Pixar evrenindeki diğer yapımlara çeşitli yollarla bağlanır. Filmdeki semboller, karakter göndermeleri veya mekan tekrarları, Toy Story’den WALL-E’ye kadar birçok yapıma referans oluşturur. Bu bağlantılar, evrenin bütünlüğünü ve anlatılar arası sürekliliği pekiştirir.",
+      "type": "film",
+      "release_date": "2004-06-04",
+      "level": 2
+    },
+    {
+      "id": "film/harrypotterandthegobletoffire",
+      "label": "Harry Potter and the Goblet of Fire (2005)",
+      "title": "Harry Potter and the Goblet of Fire",
+      "image": "images/harrypotter.jpg",
+      "shape": "image",
+      "description": "Harry Potter and the Goblet of Fire, Pixar’ın etkileyici anlatımıyla şekillenen bir yapımdır. Film, karanlık güçlere karşı direniş temasını işlerken izleyiciye unutulmaz bir görsel ve duygusal deneyim sunar. Karakter gelişimi, hikâye akışı ve yaratıcı evren tasarımıyla Harry Potter and the Goblet of Fire, stüdyonun anlatı başarısının güçlü örneklerinden biridir.",
+      "refers_to": "Harry Potter and the Goblet of Fire, Pixar evrenindeki diğer yapımlara çeşitli yollarla bağlanır. Filmdeki semboller, karakter göndermeleri veya mekan tekrarları, Toy Story’den WALL-E’ye kadar birçok yapıma referans oluşturur. Bu bağlantılar, evrenin bütünlüğünü ve anlatılar arası sürekliliği pekiştirir.",
+      "type": "film",
+      "release_date": "2005-11-18",
+      "level": 3
+    },
+    {
+      "id": "film/harrypotterandtheorderofthephoenix",
+      "label": "Harry Potter and the Order of the Phoenix (2007)",
+      "title": "Harry Potter and the Order of the Phoenix",
+      "image": "images/harrypotter.jpg",
+      "shape": "image",
+      "description": "Harry Potter and the Order of the Phoenix, Pixar’ın etkileyici anlatımıyla şekillenen bir yapımdır. Film, seçilmiş kişi olmanın sorumluluğu temasını işlerken izleyiciye unutulmaz bir görsel ve duygusal deneyim sunar. Karakter gelişimi, hikâye akışı ve yaratıcı evren tasarımıyla Harry Potter and the Order of the Phoenix, stüdyonun anlatı başarısının güçlü örneklerinden biridir.",
+      "refers_to": "Harry Potter and the Order of the Phoenix, Pixar evrenindeki diğer yapımlara çeşitli yollarla bağlanır. Filmdeki semboller, karakter göndermeleri veya mekan tekrarları, Toy Story’den WALL-E’ye kadar birçok yapıma referans oluşturur. Bu bağlantılar, evrenin bütünlüğünü ve anlatılar arası sürekliliği pekiştirir.",
+      "type": "film",
+      "release_date": "2007-07-11",
+      "level": 4
+    },
+    {
+      "id": "film/harrypotterandthehalfbloodprince",
+      "label": "Harry Potter and the Half-Blood Prince (2009)",
+      "title": "Harry Potter and the Half-Blood Prince",
+      "image": "images/harrypotter.jpg",
+      "shape": "image",
+      "description": "Harry Potter and the Half-Blood Prince, Pixar’ın etkileyici anlatımıyla şekillenen bir yapımdır. Film, karanlık güçlere karşı direniş temasını işlerken izleyiciye unutulmaz bir görsel ve duygusal deneyim sunar. Karakter gelişimi, hikâye akışı ve yaratıcı evren tasarımıyla Harry Potter and the Half-Blood Prince, stüdyonun anlatı başarısının güçlü örneklerinden biridir.",
+      "refers_to": "Harry Potter and the Half-Blood Prince, Pixar evrenindeki diğer yapımlara çeşitli yollarla bağlanır. Filmdeki semboller, karakter göndermeleri veya mekan tekrarları, Toy Story’den WALL-E’ye kadar birçok yapıma referans oluşturur. Bu bağlantılar, evrenin bütünlüğünü ve anlatılar arası sürekliliği pekiştirir.",
+      "type": "film",
+      "release_date": "2009-07-15",
+      "level": 5
+    },
+    {
+      "id": "film/harrypotterandthedeathlyhallowspart1",
+      "label": "Harry Potter and the Deathly Hallows – Part 1 (2010)",
+      "title": "Harry Potter and the Deathly Hallows – Part 1",
+      "image": "images/harrypotter.jpg",
+      "shape": "image",
+      "description": "Harry Potter and the Deathly Hallows – Part 1, Pixar’ın etkileyici anlatımıyla şekillenen bir yapımdır. Film, kaderin yükü temasını işlerken izleyiciye unutulmaz bir görsel ve duygusal deneyim sunar. Karakter gelişimi, hikâye akışı ve yaratıcı evren tasarımıyla Harry Potter and the Deathly Hallows – Part 1, stüdyonun anlatı başarısının güçlü örneklerinden biridir.",
+      "refers_to": "Harry Potter and the Deathly Hallows – Part 1, Pixar evrenindeki diğer yapımlara çeşitli yollarla bağlanır. Filmdeki semboller, karakter göndermeleri veya mekan tekrarları, Toy Story’den WALL-E’ye kadar birçok yapıma referans oluşturur. Bu bağlantılar, evrenin bütünlüğünü ve anlatılar arası sürekliliği pekiştirir.",
+      "type": "film",
+      "release_date": "2010-11-19",
+      "level": 6
+    },
+    {
+      "id": "film/harrypotterandthedeathlyhallowspart2",
+      "label": "Harry Potter and the Deathly Hallows – Part 2 (2011)",
+      "title": "Harry Potter and the Deathly Hallows – Part 2",
+      "image": "images/harrypotter.jpg",
+      "shape": "image",
+      "description": "Harry Potter and the Deathly Hallows – Part 2, Pixar’ın etkileyici anlatımıyla şekillenen bir yapımdır. Film, kaderin yükü temasını işlerken izleyiciye unutulmaz bir görsel ve duygusal deneyim sunar. Karakter gelişimi, hikâye akışı ve yaratıcı evren tasarımıyla Harry Potter and the Deathly Hallows – Part 2, stüdyonun anlatı başarısının güçlü örneklerinden biridir.",
+      "refers_to": "Harry Potter and the Deathly Hallows – Part 2, Pixar evrenindeki diğer yapımlara çeşitli yollarla bağlanır. Filmdeki semboller, karakter göndermeleri veya mekan tekrarları, Toy Story’den WALL-E’ye kadar birçok yapıma referans oluşturur. Bu bağlantılar, evrenin bütünlüğünü ve anlatılar arası sürekliliği pekiştirir.",
+      "type": "film",
+      "release_date": "2011-07-15",
+      "level": 7
+    },
+    {
+      "id": "film/fantasticbeastsandwheretofindthem",
+      "label": "Fantastic Beasts and Where to Find Them (2016)",
+      "title": "Fantastic Beasts and Where to Find Them",
+      "image": "images/harrypotter.jpg",
+      "shape": "image",
+      "description": "Fantastic Beasts and Where to Find Them, Pixar’ın etkileyici anlatımıyla şekillenen bir yapımdır. Film, kimlik ve aidiyet arayışı temasını işlerken izleyiciye unutulmaz bir görsel ve duygusal deneyim sunar. Karakter gelişimi, hikâye akışı ve yaratıcı evren tasarımıyla Fantastic Beasts and Where to Find Them, stüdyonun anlatı başarısının güçlü örneklerinden biridir.",
+      "refers_to": "Fantastic Beasts and Where to Find Them, Pixar evrenindeki diğer yapımlara çeşitli yollarla bağlanır. Filmdeki semboller, karakter göndermeleri veya mekan tekrarları, Toy Story’den WALL-E’ye kadar birçok yapıma referans oluşturur. Bu bağlantılar, evrenin bütünlüğünü ve anlatılar arası sürekliliği pekiştirir.",
+      "type": "film",
+      "release_date": "2016-11-18",
+      "level": 8
+    },
+    {
+      "id": "film/fantasticbeaststhecrimesofgrindelwald",
+      "label": "Fantastic Beasts: The Crimes of Grindelwald (2018)",
+      "title": "Fantastic Beasts: The Crimes of Grindelwald",
+      "image": "images/harrypotter.jpg",
+      "shape": "image",
+      "description": "Fantastic Beasts: The Crimes of Grindelwald, Pixar’ın etkileyici anlatımıyla şekillenen bir yapımdır. Film, kimlik ve aidiyet arayışı temasını işlerken izleyiciye unutulmaz bir görsel ve duygusal deneyim sunar. Karakter gelişimi, hikâye akışı ve yaratıcı evren tasarımıyla Fantastic Beasts: The Crimes of Grindelwald, stüdyonun anlatı başarısının güçlü örneklerinden biridir.",
+      "refers_to": "Fantastic Beasts: The Crimes of Grindelwald, Pixar evrenindeki diğer yapımlara çeşitli yollarla bağlanır. Filmdeki semboller, karakter göndermeleri veya mekan tekrarları, Toy Story’den WALL-E’ye kadar birçok yapıma referans oluşturur. Bu bağlantılar, evrenin bütünlüğünü ve anlatılar arası sürekliliği pekiştirir.",
+      "type": "film",
+      "release_date": "2018-11-16",
+      "level": 9
+    },
+    {
+      "id": "film/fantasticbeaststhesecretsofdumbledore",
+      "label": "Fantastic Beasts: The Secrets of Dumbledore (2022)",
+      "title": "Fantastic Beasts: The Secrets of Dumbledore",
+      "image": "images/harrypotter.jpg",
+      "shape": "image",
+      "description": "Fantastic Beasts: The Secrets of Dumbledore, Pixar’ın etkileyici anlatımıyla şekillenen bir yapımdır. Film, karanlık güçlere karşı direniş temasını işlerken izleyiciye unutulmaz bir görsel ve duygusal deneyim sunar. Karakter gelişimi, hikâye akışı ve yaratıcı evren tasarımıyla Fantastic Beasts: The Secrets of Dumbledore, stüdyonun anlatı başarısının güçlü örneklerinden biridir.",
+      "refers_to": "Fantastic Beasts: The Secrets of Dumbledore, Pixar evrenindeki diğer yapımlara çeşitli yollarla bağlanır. Filmdeki semboller, karakter göndermeleri veya mekan tekrarları, Toy Story’den WALL-E’ye kadar birçok yapıma referans oluşturur. Bu bağlantılar, evrenin bütünlüğünü ve anlatılar arası sürekliliği pekiştirir.",
+      "type": "film",
+      "release_date": "2022-04-15",
+      "level": 10
+    }
+  ],
+  "edges": [
+    {
+      "from": "film/harrypotterandthesorcerersstone",
+      "to": "film/harrypotterandthechamberofsecrets",
+      "type": "devam"
+    },
+    {
+      "from": "film/harrypotterandthechamberofsecrets",
+      "to": "film/harrypotterandtheprisonerofazkaban",
+      "type": "devam"
+    },
+    {
+      "from": "film/harrypotterandtheprisonerofazkaban",
+      "to": "film/harrypotterandthegobletoffire",
+      "type": "devam"
+    },
+    {
+      "from": "film/harrypotterandthegobletoffire",
+      "to": "film/harrypotterandtheorderofthephoenix",
+      "type": "devam"
+    },
+    {
+      "from": "film/harrypotterandtheorderofthephoenix",
+      "to": "film/harrypotterandthehalfbloodprince",
+      "type": "devam"
+    },
+    {
+      "from": "film/harrypotterandthehalfbloodprince",
+      "to": "film/harrypotterandthedeathlyhallowspart1",
+      "type": "devam"
+    },
+    {
+      "from": "film/harrypotterandthedeathlyhallowspart1",
+      "to": "film/harrypotterandthedeathlyhallowspart2",
+      "type": "devam"
+    },
+    {
+      "from": "film/harrypotterandthedeathlyhallowspart2",
+      "to": "film/fantasticbeastsandwheretofindthem",
+      "type": "devam"
+    },
+    {
+      "from": "film/fantasticbeastsandwheretofindthem",
+      "to": "film/fantasticbeaststhecrimesofgrindelwald",
+      "type": "devam"
+    },
+    {
+      "from": "film/fantasticbeaststhecrimesofgrindelwald",
+      "to": "film/fantasticbeaststhesecretsofdumbledore",
+      "type": "devam"
+    },
+    {
+      "from": "film/fantasticbeastsandwheretofindthem",
+      "to": "film/fantasticbeaststhecrimesofgrindelwald",
+      "type": "devam"
+    },
+    {
+      "from": "film/fantasticbeaststhecrimesofgrindelwald",
+      "to": "film/fantasticbeaststhesecretsofdumbledore",
+      "type": "devam"
+    },
+    {
+      "from": "film/fantasticbeaststhesecretsofdumbledore",
+      "to": "film/harrypotterandthesorcerersstone",
+      "type": "karakter göndermesi"
+    }
+  ]
+}
