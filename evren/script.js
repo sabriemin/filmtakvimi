@@ -127,8 +127,8 @@ function drawNetwork() {
   const metaInfo = `<div style="margin-top: 6px; font-size: 14px; color: gray;">${typeIcon} &nbsp; ${dateInfo}</div>`;
   titleEl.innerHTML += metaInfo;
 
-  descEl.innerHTML = "<b>🎞️ Özeti</b><br>" + (node.description || "Açıklama yok.");
-  refersEl.innerHTML = "<b>📌 Gönderme</b><br>" + (node.refers_to || "Yok.");
+  descEl.innerHTML = "<b>🎞️ Özeti</b><br>" + (node.description ?? "Açıklama yok.");
+  refersEl.innerHTML = "<b>📌 Gönderme</b><br>" + (node.refers_to ?? "Yok.");
 
   const addBtn = document.createElement("button");
   addBtn.textContent = "🎯 Karşılaştırmaya Ekle";
@@ -145,24 +145,7 @@ function drawNetwork() {
 function closeInfoBox() {
   infoBox.classList.add("hidden");
   overlay.classList.add("hidden");
-
-
-    if (selected !== "Hepsi") {
-      const ids = universeNodesMap[selected];
-      network.fit({ nodes: ids, animation: true });
-      allNodes.clear();
-      allNodes.add(nodes);
-      showYearMarkers();
-      timelineActive = true;
-      btn.textContent = "🔁 Normal Görünüm";
-    } else {
-      document.querySelectorAll(".year-marker").forEach(e => e.remove());
-      allNodes.clear(); allEdges.clear();
-      loadUniverseData().then(drawNetwork);
-      timelineActive = false;
-      btn.textContent = "📅 Zaman Çizelgesi";
-    }
-  };
+}
 
 
 
@@ -317,3 +300,6 @@ function createTopControls() {
   document.body.appendChild(wrapper);
 }
 
+
+
+overlay.addEventListener("click", closeInfoBox);
