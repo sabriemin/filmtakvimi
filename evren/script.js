@@ -296,6 +296,6 @@ function init() {
     setupSearchBox();
     setupTimelineToggle();
     setupCompareButtonNew();
-
-document.addEventListener("DOMContentLoaded", init); });
+});
 }
+document.addEventListener("DOMContentLoaded", init); 
