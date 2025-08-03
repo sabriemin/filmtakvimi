@@ -70,6 +70,7 @@ function loadUniverseData() {
 }
 
 function drawNetwork() {
+  allNodes.add([{ id: "test", label: "Test", image: "images/starwars.jpg", shape: "image" }]);
   console.log('🎯 drawNetwork çağrıldı');
   console.log('📌 Node sayısı:', allNodes.length);
   console.log('📌 Edge sayısı:', allEdges.length);
