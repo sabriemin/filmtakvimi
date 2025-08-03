@@ -116,9 +116,7 @@ function drawNetwork() {
 
 
 
-    if (params.nodes.length > 0) {
-      const nodeId = params.nodes[0];
-      const node = allNodes.get(nodeId);
+
 
       titleEl.innerHTML = node.label || "Bilinmeyen";
       const typeIcon = node.type === "dizi" ? "📺 Dizi" : "🎬 Film";
@@ -142,7 +140,7 @@ function drawNetwork() {
         selectedNodes.push(nodeId);
         if (selectedNodes.length > 2) selectedNodes.shift();
       }
-    }
+    
  
 
 
