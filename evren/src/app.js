@@ -4,12 +4,8 @@ import { applyFiltersFactory } from './filters.js';
 import { toggleTimelineFactory } from './timeline.js';
 import { toggleThemeFactory } from './theme.js';
 import { edgeColors, formatUniverseName } from './utils.js';
-
 export function app() {
-  return {
-    applyFilters: null, // sonra set edilecek
-    toggleTimeline: null,
-    toggleTheme: null,
+  const appObj = {
     network: null,
     allNodes: [],
     allEdges: [],
@@ -79,20 +75,20 @@ export function app() {
       this.applyFilters();
     },
 
-    applyFilters: null, // filters.js
-    toggleTimeline: null, // timeline.js
-    toggleTheme: null, // theme.js
+    applyFilters: null, // Sonradan set edilecek
+    toggleTimeline: null,
+    toggleTheme: null,
     formatUniverseName
   };
+
+  // Bağlamaları hemen yapalım
+  appObj.applyFilters = applyFiltersFactory(appObj);
+  appObj.toggleTimeline = toggleTimelineFactory(appObj);
+  appObj.toggleTheme = toggleThemeFactory(appObj);
+
+  return appObj;
 }
 
-// Factories bağlanıyor
-const appObj = app();
-appObj.applyFilters = applyFiltersFactory(appObj);
-appObj.toggleTimeline = toggleTimelineFactory(appObj);
-appObj.toggleTheme = toggleThemeFactory(appObj);
-return appObj;
-// Alpine'a tanıt
-Alpine.start();
+// Alpine global olarak tanır
 window.app = app;
-
+Alpine.start();
