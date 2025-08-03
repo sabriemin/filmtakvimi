@@ -89,28 +89,35 @@ function drawNetwork() {
     physics: { stabilization: true }
   };
   network = new vis.Network(container, data, options);
+network.on("click", function (params) {
+  if (params.nodes.length > 0) {
+    const nodeId = params.nodes[0];
+    const node = allNodes.get(nodeId);
+    if (!node) return;
+
+    if (selectedNodes.length === 0) {
+      selectedNodes.push(node);
+      showInfo(node);
+    } else if (selectedNodes.length === 1 && selectedNodes[0].id !== node.id) {
+      selectedNodes.push(node);
+      showComparison(selectedNodes[0], selectedNodes[1]);
+      selectedNodes = [];
+    } else {
+      selectedNodes = [node];
+      showInfo(node);
+    }
+  }
+});
+}
+
+
+
+  network = new vis.Network(container, data, options);
+
   network.on("stabilized", () => {
     console.log("✅ Ağ çizimi tamamlandı");
   });
-  network.on("click", function (params) {
-    if (params.nodes.length > 0) {
-      const nodeId = params.nodes[0];
-      const node = allNodes.get(nodeId);
-      if (!node) return;
-      if (selectedNodes.length === 0) {
-        selectedNodes.push(node);
-        showInfo(node);
-      } else if (selectedNodes.length === 1 && selectedNodes[0].id !== node.id) {
-        selectedNodes.push(node);
-        showComparison(selectedNodes[0], selectedNodes[1]);
-        selectedNodes = [];
-      } else {
-        selectedNodes = [node];
-        showInfo(node);
-      }
-    }
-  });
-}
+
 
 
     if (params.nodes.length > 0) {
@@ -146,60 +153,14 @@ function drawNetwork() {
 function closeInfoBox() {
   infoBox.classList.add("hidden");
   overlay.classList.add("hidden");
-}
 
-function setupThemeToggle() {
-  const btn = document.createElement("button");
-  btn.textContent = "🌙 Tema Değiştir";
-  btn.onclick = () => {
-    document.body.classList.toggle("dark");
-    applyLabelTheme();
-  };
   document.body.insertBefore(btn, container);
-}
 
-function setupUniverseDropdown() {
-  const select = document.createElement("select");
-  select.innerHTML = '<option value="Hepsi">Hepsi</option>' +
-    Object.keys(dataFiles).map(u => `<option value="${u}">${u}</option>`).join("");
-  select.onchange = () => {
-    const selected = select.value;
-    allNodes.forEach(n => {
-      allNodes.update({ id: n.id, hidden: selected !== "Hepsi" && n.universe !== selected });
-    });
     if (selected !== "Hepsi") {
       const ids = universeNodesMap[selected];
       network.fit({ nodes: ids, animation: true });
-    }
-  };
   document.body.insertBefore(select, container);
-}
-
-
-function setupSearchBox() {
-  const input = document.createElement("input");
-  input.placeholder = "Ara...";
-  input.oninput = () => {
-    const term = input.value.toLowerCase();
-    allNodes.forEach(n => {
-      const match = n.label && n.label.toLowerCase().includes(term);
-      allNodes.update({ id: n.id, hidden: !match });
-    });
-  };
   document.body.insertBefore(input, container);
-}
-
-function setupTimelineToggle() {
-  const btn = document.createElement("button");
-  btn.textContent = "📅 Zaman Çizelgesi";
-  let timelineActive = false;
-
-  btn.onclick = () => {
-    if (!timelineActive) {
-      const nodes = allNodes.get().map(n => {
-        const x = new Date(n.release_date).getTime() / 10000000;
-        return { ...n, x, y: n.level || 0, physics: false, fixed: true };
-      });
       allNodes.clear();
       allNodes.add(nodes);
       showYearMarkers();
@@ -214,7 +175,9 @@ function setupTimelineToggle() {
     }
   };
   document.body.insertBefore(btn, container);
-}
+
+
+
 
 function showYearMarkers() {
   document.querySelectorAll(".year-marker").forEach(e => e.remove());
