@@ -24,6 +24,7 @@ function loadUniverseData() {
     fetch(path)
       .then(res => res.json())
       .then(data => {
+        console.log('✅ Veri yüklendi:', universe, data);
         const nodes = data.nodes.map(n => ({
           ...n,
           universe,
@@ -262,17 +263,54 @@ function setupCompareButtonNew() {
   });
 }
 
+function setupTypeFilterCheckboxes() {
+  const checkboxes = document.querySelectorAll(".type-filter");
+  checkboxes.forEach(cb => {
+    cb.addEventListener("change", () => {
+      const selectedTypes = Array.from(checkboxes)
+        .filter(c => c.checked)
+        .map(c => c.dataset.type);
 
+      allEdges.forEach(edge => {
+        const match = selectedTypes.includes(edge.type);
+        allEdges.update({ id: edge.id, hidden: !match });
+      });
+    });
+  });
+}
 
+function selectAllConnections(selectAll) {
+  const connectionFilters = document.querySelectorAll(".type-filter");
+  connectionFilters.forEach(cb => {
+    cb.checked = selectAll;
+  });
+  applyConnectionFilters();
+}
+
+function applyConnectionFilters() {
+  const checkboxes = document.querySelectorAll(".type-filter");
+  const selectedTypes = Array.from(checkboxes)
+    .filter(c => c.checked)
+    .map(c => c.dataset.type);
+
+  allEdges.forEach(edge => {
+    const match = selectedTypes.includes(edge.type);
+    allEdges.update({ id: edge.id, hidden: !match });
+  });
+}
 
 function init() {
   loadUniverseData().then(() => {
+    console.log('📦 Tüm veriler başarıyla yüklendi.');
     drawNetwork();
     setupThemeToggle();
     setupUniverseDropdown();
     setupSearchBox();
     setupTimelineToggle();
     setupCompareButtonNew();
-
-document.addEventListener("DOMContentLoaded", init); });
+    setupTypeFilterCheckboxes();
+    applyLabelTheme();
+  });
 }
+
+document.addEventListener("DOMContentLoaded", init);
