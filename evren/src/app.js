@@ -90,7 +90,4 @@ appObj.toggleTimeline = toggleTimelineFactory(appObj);
 appObj.toggleTheme = toggleThemeFactory(appObj);
 
 // Alpine'a tanıt
-import Alpine from 'alpinejs';
-window.Alpine = Alpine;
 Alpine.data('app', () => appObj);
-Alpine.start();
