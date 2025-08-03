@@ -181,3 +181,112 @@ body.dark .ui-top-controls input {
 .ui-top-controls input {
   min-width: 160px;
 }
+
+
+/* 🎬 Geliştirilmiş Bilgi Kutusu (Info Modal) */
+#info-box {
+  background: #ffffffee;
+  color: #111;
+  padding: 24px 28px;
+  border-radius: 14px;
+  z-index: 300;
+  max-width: 600px;
+  width: 90%;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  font-size: 15px;
+  line-height: 1.6;
+  animation: fadeIn 0.4s ease;
+}
+body.dark #info-box {
+  background: #1a1a1aee;
+  color: #eee;
+}
+#info-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+#info-description {
+  margin-bottom: 14px;
+}
+#info-refers {
+  display: block;
+  padding: 10px;
+  background: #f6f6f6;
+  border-left: 4px solid #888;
+  border-radius: 6px;
+  font-style: normal;
+  font-size: 14px;
+  color: #333;
+}
+body.dark #info-refers {
+  background: #222;
+  border-left-color: #aaa;
+  color: #ddd;
+}
+#info-box button {
+  margin-top: 12px;
+  padding: 10px 18px;
+  font-weight: 600;
+  border-radius: 10px;
+  background-color: #007aff;
+  color: white;
+}
+#info-box button:hover {
+  opacity: 0.9;
+}
+
+/* 🎯 Karşılaştırma Kutusu */
+#compare-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#compare-content {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+#compare-content > div {
+  flex: 1;
+  background: #444;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+/* 🗓 Yıl etiketleri geliştirildi */
+.year-marker {
+  font-size: 13px;
+  color: #666;
+  background: rgba(255,255,255,0.8);
+  padding: 2px 6px;
+  border-radius: 4px;
+  position: absolute;
+  top: 0;
+  z-index: 20;
+  font-weight: bold;
+}
+body.dark .year-marker {
+  background: rgba(0,0,0,0.6);
+  color: #ccc;
+}
+
+/* 🎨 Geçiş efektleri */
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/* 📱 Mobil uyumluluk */
+@media (max-width: 600px) {
+  .ui-top-controls {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  #compare-content {
+    flex-direction: column;
+  }
+  #info-box {
+    width: 95%;
+  }
+}
