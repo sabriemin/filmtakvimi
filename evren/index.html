@@ -16,23 +16,15 @@
   </style>
 </head>
 <body>
-  <button id="compare-btn" style="position: fixed; top: 10px; right: 10px; z-index: 200;">🎯 Karşılaştır</button>
-
-  <div id="network"></div>
-  <div id="modal-overlay" class="hidden"></div>
-
-  <div class="modal hidden" id="info-box">
-    <h2 id="info-title"></h2>
-    <p id="info-description"></p>
-    <p><i id="info-refers"></i></p>
-    <button onclick="document.getElementById('info-box').classList.add('hidden'); document.getElementById('modal-overlay').classList.add('hidden');">Kapat</button>
-  </div>
-
-  <div class="modal hidden" id="compare-box">
-    <h2>🎯 Karşılaştırma</h2>
-    <div id="compare-content">İki film/dizi seçiniz.</div>
-    <button onclick="document.getElementById('compare-box').classList.add('hidden'); document.getElementById('modal-overlay').classList.add('hidden');">Kapat</button>
-  </div>
+<body><button id="compare-btn" style="position: fixed; top: 10px; right: 10px; z-index: 200;">🎯 Karşılaştır</button>
+<div class="hidden" id="modal-overlay"></div>
+<div class="modal hidden" id="info-box">
+<h2 id="info-title"></h2>
+<p id="info-description"></p>
+<p><i id="info-refers"></i></p>
+<button onclick="document.getElementById('info-box').classList.add('hidden'); document.getElementById('modal-overlay').classList.add('hidden');">Kapat</button>
+</div>
+<div id="network"></div>
 
   <script src="script.js"></script>
 </body>
