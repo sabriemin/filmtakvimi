@@ -113,14 +113,6 @@ function drawNetwork() {
 }
 
 
-  network = new vis.Network(container, data, options);
-
-  network.on("stabilized", () => {
-    console.log("✅ Ağ çizimi tamamlandı");
-  });
-
-
-
     if (params.nodes.length > 0) {
       const nodeId = params.nodes[0];
       const node = allNodes.get(nodeId);
