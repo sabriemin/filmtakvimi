@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="tr" x-data="app()" x-init="loadAll()">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Film Evreni Ağı</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+</head>
+<body class="bg-gray-100 text-gray-900 p-4">
+
+  <h1 class="text-3xl font-bold mb-6">🎬 Film Evreni Ağı</h1>
+
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+    <template x-for="film in films" :key="film.id">
+      <div class="bg-white rounded-lg shadow p-2 cursor-pointer hover:shadow-lg" @click="selectFilm(film)">
+        <img :src="film.image" alt="" class="rounded w-full h-40 object-cover mb-2">
+        <h2 class="text-lg font-semibold" x-text="film.label"></h2>
+        <p class="text-sm text-gray-500" x-text="film.universe"></p>
+      </div>
+    </template>
+  </div>
+
+  <!-- Modal -->
+  <div x-show="selected" class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50" x-transition>
+    <div class="bg-white p-6 rounded max-w-md w-full relative" @click.outside="selected = null">
+      <h2 class="text-2xl font-bold mb-2" x-text="selected.label"></h2>
+      <p class="mb-2 text-sm text-gray-500" x-text="'Evren: ' + selected.universe"></p>
+      <p class="mb-2" x-text="selected.description || 'Açıklama yok.'"></p>
+      <p class="text-xs italic text-gray-600" x-text="'🎯 Göndermeler: ' + (selected.refers_to || 'Yok')"></p>
+      <button class="absolute top-2 right-2 text-gray-600 hover:text-black" @click="selected = null">✖</button>
+    </div>
+  </div>
+
+  <script>
+    function app() {
+      return {
+        films: [],
+        selected: null,
+        async loadAll() {
+          const files = [
+            "avatar_last_airbender",
+            "avatar_pandora",
+            "dc",
+            "harrypotter",
+            "marvel",
+            "matrix",
+            "middleearth",
+            "pixar",
+            "starwars"
+          ];
+          let all = [];
+          for (let f of files) {
+            const res = await fetch('data/' + f + '.json');
+            const json = await res.json();
+            all.push(...json.nodes.map(n => ({ ...n, universe: f })));
+          }
+          this.films = all;
+        },
+        selectFilm(film) {
+          this.selected = film;
+        }
+      }
+    }
+  </script>
+</body>
+</html>
