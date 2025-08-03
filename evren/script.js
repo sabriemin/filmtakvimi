@@ -113,7 +113,26 @@ function drawNetwork() {
   });
 }
 
- 
+ function showInfo(node) {
+  titleEl.innerHTML = node.label || "Bilinmeyen";
+  const typeIcon = node.type === "dizi" ? "📺 Dizi" : "🎬 Film";
+  const dateInfo = node.release_date ? `🗓️ ${node.release_date}` : "";
+  const metaInfo = `<div style="margin-top: 6px; font-size: 14px; color: gray;">${typeIcon} &nbsp; ${dateInfo}</div>`;
+  titleEl.innerHTML += metaInfo;
+
+  descEl.innerHTML = "<b>🎞️ Özeti</b><br>" + (node.description || "Açıklama yok.");
+  refersEl.innerHTML = "<b>📌 Gönderme</b><br>" + (node.refers_to || "Yok.");
+
+  const addBtn = document.createElement("button");
+  addBtn.textContent = "🎯 Karşılaştırmaya Ekle";
+  addBtn.onclick = () => handleAddToCompare(node.id);
+  descEl.appendChild(document.createElement("br"));
+  descEl.appendChild(addBtn);
+
+  infoBox.classList.remove("hidden");
+  overlay.classList.remove("hidden");
+}
+
 
 
 function closeInfoBox() {
