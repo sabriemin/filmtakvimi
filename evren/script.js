@@ -79,7 +79,18 @@ function loadUniverseData() {
 function drawNetwork() {
   const container = document.getElementById("network");
   const data = { nodes: allNodes, edges: allEdges };
-  const options = {
+  const options = getNetworkOptions();
+
+  network = new vis.Network(container, data, options);
+
+  setupNodeClickEvents();
+  network.on("stabilized", () => {
+    console.log("✅ Ağ çizimi tamamlandı");
+  });
+}
+
+function getNetworkOptions() {
+  return {
     nodes: {
       shape: "dot",
       size: 25,
@@ -92,9 +103,9 @@ function drawNetwork() {
     layout: { improvedLayout: true },
     physics: { stabilization: true }
   };
+}
 
-  network = new vis.Network(container, data, options);
-
+function setupNodeClickEvents() {
   network.on("click", function (params) {
     if (params.nodes.length > 0) {
       const nodeId = params.nodes[0];
@@ -114,11 +125,8 @@ function drawNetwork() {
       }
     }
   });
-
-  network.on("stabilized", () => {
-    console.log("✅ Ağ çizimi tamamlandı");
-  });
 }
+
 
  function showInfo(node) {
   titleEl.innerHTML = node.label || "Bilinmeyen";
