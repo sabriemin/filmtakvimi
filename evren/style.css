@@ -117,3 +117,12 @@ body:not(.dark)
   height: 16px;
   accent-color: #3498db;
 }
+
+.ui-top-controls {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 200;
+  display: flex;
+  gap: 8px;
+}

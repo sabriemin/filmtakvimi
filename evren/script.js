@@ -70,6 +70,7 @@ function loadUniverseData() {
 }
 
 function drawNetwork() {
+  const container = document.getElementById("network");
   console.log("🎯 drawNetwork çağrıldı");
   console.log("📌 Node sayısı:", allNodes.length);
   console.log("📌 Edge sayısı:", allEdges.length);
@@ -92,8 +93,64 @@ function drawNetwork() {
     console.log("✅ Ağ çizimi tamamlandı");
   });
   network.on("click", function (params) {
- });
-};
+    if (params.nodes.length > 0) {
+      const nodeId = params.nodes[0];
+      const node = allNodes.get(nodeId);
+      if (!node) return;
+      if (selectedNodes.length === 0) {
+        selectedNodes.push(node);
+        showInfo(node);
+      } else if (selectedNodes.length === 1 && selectedNodes[0].id !== node.id) {
+        selectedNodes.push(node);
+        showComparison(selectedNodes[0], selectedNodes[1]);
+        selectedNodes = [];
+      } else {
+        selectedNodes = [node];
+        showInfo(node);
+      }
+    }
+  });
+}
+
+
+  network = new vis.Network(container, data, options);
+
+  network.on("stabilized", () => {
+    console.log("✅ Ağ çizimi tamamlandı");
+  });
+
+
+
+    if (params.nodes.length > 0) {
+      const nodeId = params.nodes[0];
+      const node = allNodes.get(nodeId);
+
+      titleEl.innerHTML = node.label || "Bilinmeyen";
+      const typeIcon = node.type === "dizi" ? "📺 Dizi" : "🎬 Film";
+      const dateInfo = node.release_date ? `🗓️ ${node.release_date}` : "";
+      const metaInfo = `<div style="margin-top: 6px; font-size: 14px; color: gray;">${typeIcon} &nbsp; ${dateInfo}</div>`;
+      titleEl.innerHTML += metaInfo;
+
+      descEl.innerHTML = "<b>🎞️ Özeti</b><br>" + (node.description || "Açıklama yok.");
+      refersEl.innerHTML = "<b>📌 Gönderme</b><br>" + (node.refers_to || "Yok.");
+
+      const addBtn = document.createElement("button");
+      addBtn.textContent = "🎯 Karşılaştırmaya Ekle";
+      addBtn.onclick = () => handleAddToCompare(node.id);
+      descEl.appendChild(document.createElement("br"));
+      descEl.appendChild(addBtn);
+
+      infoBox.classList.remove("hidden");
+      overlay.classList.remove("hidden");
+
+      if (!selectedNodes.includes(nodeId)) {
+        selectedNodes.push(nodeId);
+        if (selectedNodes.length > 2) selectedNodes.shift();
+      }
+    }
+ 
+
+
 function closeInfoBox() {
   infoBox.classList.add("hidden");
   overlay.classList.add("hidden");
@@ -240,11 +297,78 @@ function init() {
   loadUniverseData().then(() => {
     console.log('📦 Tüm veriler başarıyla yüklendi.');
     drawNetwork();
+    createTopControls();
     setupThemeToggle();
     setupUniverseDropdown();
     setupSearchBox();
     setupTimelineToggle();
     setupCompareButtonNew();
-  });
+});
 }
 document.addEventListener("DOMContentLoaded", init); 
+
+function createTopControls() {
+  const wrapper = document.createElement("div");
+  wrapper.className = "ui-top-controls";
+
+  const themeBtn = document.createElement("button");
+  themeBtn.textContent = "🌙 Tema Değiştir";
+  themeBtn.onclick = () => {
+    document.body.classList.toggle("dark");
+    applyLabelTheme();
+  };
+
+  const select = document.createElement("select");
+  select.innerHTML = '<option value="Hepsi">Hepsi</option>' +
+    Object.keys(dataFiles).map(u => `<option value="${u}">${u}</option>`).join("");
+  select.onchange = () => {
+    const selected = select.value;
+    allNodes.forEach(n => {
+      allNodes.update({ id: n.id, hidden: selected !== "Hepsi" && n.universe !== selected });
+    });
+    if (selected !== "Hepsi") {
+      const ids = universeNodesMap[selected];
+      network.fit({ nodes: ids, animation: true });
+    }
+  };
+
+  const input = document.createElement("input");
+  input.placeholder = "Ara...";
+  input.oninput = () => {
+    const term = input.value.toLowerCase();
+    allNodes.forEach(n => {
+      const match = n.label && n.label.toLowerCase().includes(term);
+      allNodes.update({ id: n.id, hidden: !match });
+    });
+  };
+
+  const timelineBtn = document.createElement("button");
+  timelineBtn.textContent = "📅 Zaman Çizelgesi";
+  let timelineActive = false;
+  timelineBtn.onclick = () => {
+    if (!timelineActive) {
+      const nodes = allNodes.get().map(n => {
+        const x = new Date(n.release_date).getTime() / 10000000;
+        return { ...n, x, y: n.level || 0, physics: false, fixed: true };
+      });
+      allNodes.clear();
+      allNodes.add(nodes);
+      showYearMarkers();
+      timelineActive = true;
+      timelineBtn.textContent = "🔁 Normal Görünüm";
+    } else {
+      document.querySelectorAll(".year-marker").forEach(e => e.remove());
+      allNodes.clear(); allEdges.clear();
+      loadUniverseData().then(drawNetwork);
+      timelineActive = false;
+      timelineBtn.textContent = "📅 Zaman Çizelgesi";
+    }
+  };
+
+  wrapper.appendChild(themeBtn);
+  wrapper.appendChild(select);
+  wrapper.appendChild(input);
+  wrapper.appendChild(timelineBtn);
+  document.body.appendChild(wrapper);
+}
+
