@@ -65,6 +65,13 @@ function loadUniverseData() {
 }
 
 function drawNetwork() {
+  console.log('🎯 drawNetwork çağrıldı');
+  console.log('📌 Node sayısı:', allNodes.length);
+  console.log('📌 Edge sayısı:', allEdges.length);
+  console.log('📦 container:', container);
+  if (!container || container.offsetWidth === 0 || container.offsetHeight === 0) {
+    console.warn('⚠️ #network container görünmüyor veya boyutu 0.');
+  }
   const data = {
     nodes: allNodes,
     edges: allEdges
