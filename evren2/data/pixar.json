@@ -1,0 +1,522 @@
+{
+  "nodes": [
+    {
+      "id": "toyStory1995",
+      "label": "Toy Story (1995)",
+      "title": "Toy Story",
+      "image": "images/pixar.jpg",
+      "shape": "image",
+      "description": "Toy Story, oyuncakların insanlar yokken kendi hayatlarını yaşadığı fikriyle sinema tarihinde çığır açan ilk uzun metrajlı animasyon filmidir. Woody ve Buzz arasında gelişen dostluk, liderlik çatışması ve aidiyet duygusu izleyiciye hem eğlenceli hem dokunaklı anlar sunar. Pixar'ın yaratıcı anlatımı ve karakter tasarımları, bu filmi unutulmaz bir başlangıç noktasına dönüştürmüştür.",
+      "refers_to": "Toy Story, Pixar evreninin diğer yapımlarıyla sembolik ve fiziksel birçok bağlantı içerir. Pizza Planet kamyonu başta olmak üzere Dinoco logosu ve karakter göndermeleri, Pixar'ın sinematik süreklilik anlayışının ilk işaretlerini verir. Film, Lightyear ve sonraki Toy Story bölümlerine doğrudan zemin hazırlar.",
+      "type": "film",
+      "release_date": "1995-11-22",
+      "level": 0
+    },
+    {
+      "id": "aBugsLife1998",
+      "label": "A Bug's Life (1998)",
+      "title": "A Bug's Life",
+      "image": "images/pixar.jpg",
+      "shape": "image",
+      "description": "A Bug’s Life, küçük bir karınca olan Flik’in cesaretiyle başladığı devrim niteliğindeki bir özgürlük hikâyesidir. Zorbalığa karşı direnişi konu alan film, doğanın içinden karakterlerle evrensel değerleri işler. Mizah dolu anlatımı ve detaylı animasyonları ile Pixar’ın erken dönem ustalık örneklerinden biridir.",
+      "refers_to": "Film, diğer Pixar yapımlarında görsel göndermelerle yer bulur. Flik karakteri Toy Story 2’de oyuncak rafında görünürken, Pizza Planet kamyonu bu filmde de kısa süreliğine yer alır. Ayrıca filmdeki doğa betimlemeleri WALL-E gibi daha sonraki filmlerde tekrar hayat bulur.",
+      "type": "film",
+      "release_date": "1998-11-25",
+      "level": 1
+    },
+    {
+      "id": "toyStory21999",
+      "label": "Toy Story 2 (1999)",
+      "title": "Toy Story 2",
+      "image": "images/pixar.jpg",
+      "shape": "image",
+      "description": "Toy Story 2, Woody'nin geçmişiyle yüzleştiği ve aidiyet kavramının sorgulandığı duygusal bir devam filmidir. Jessie ve Bullseye gibi karakterlerin tanıtıldığı yapım, ilk filme göre daha geniş bir duygusal derinlik ve aksiyon sunar. Pixar’ın hikâye anlatımında olgunlaştığını gösteren bir yapıttır.",
+      "refers_to": "Film, hem önceki Toy Story’ye hem de sonrakilere doğrudan bağlanır. Flik ve diğer karakterlere yapılan göndermeler, Pixar evreni içinde çapraz referans örneklerindendir. Pizza Planet kamyonu ve Dinoco detayları, görsel sürekliliği destekler.",
+      "type": "film",
+      "release_date": "1999-11-24",
+      "level": 2
+    },
+    {
+      "id": "monstersInc2001",
+      "label": "Monsters, Inc. (2001)",
+      "title": "Monsters, Inc.",
+      "image": "images/pixar.jpg",
+      "shape": "image",
+      "description": "Monsters, Inc., Pixar’ın etkileyici anlatımıyla şekillenen bir yapımdır. Film, aile bağları temasını işlerken izleyiciye unutulmaz bir görsel ve duygusal deneyim sunar. Karakter gelişimi, hikâye akışı ve yaratıcı evren tasarımıyla Monsters, Inc., stüdyonun anlatı başarısının güçlü örneklerinden biridir.",
+      "refers_to": "Monsters, Inc., Pixar evrenindeki diğer yapımlara çeşitli yollarla bağlanır. Filmdeki semboller, karakter göndermeleri veya mekan tekrarları, Toy Story’den WALL-E’ye kadar birçok yapıma referans oluşturur. Bu bağlantılar, evrenin bütünlüğünü ve anlatılar arası sürekliliği pekiştirir.",
+      "type": "film",
+      "release_date": "2001-11-02",
+      "level": 3
+    },
+    {
+      "id": "findingNemo2003",
+      "label": "Finding Nemo (2003)",
+      "title": "Finding Nemo",
+      "image": "images/pixar.jpg",
+      "shape": "image",
+      "description": "Finding Nemo, Pixar’ın etkileyici anlatımıyla şekillenen bir yapımdır. Film, arkadaşlık temasını işlerken izleyiciye unutulmaz bir görsel ve duygusal deneyim sunar. Karakter gelişimi, hikâye akışı ve yaratıcı evren tasarımıyla Finding Nemo, stüdyonun anlatı başarısının güçlü örneklerinden biridir.",
+      "refers_to": "Finding Nemo, Pixar evrenindeki diğer yapımlara çeşitli yollarla bağlanır. Filmdeki semboller, karakter göndermeleri veya mekan tekrarları, Toy Story’den WALL-E’ye kadar birçok yapıma referans oluşturur. Bu bağlantılar, evrenin bütünlüğünü ve anlatılar arası sürekliliği pekiştirir.",
+      "type": "film",
+      "release_date": "2003-05-30",
+      "level": 4
+    },
+    {
+      "id": "theIncredibles2004",
+      "label": "The Incredibles (2004)",
+      "title": "The Incredibles",
+      "image": "images/pixar.jpg",
+      "shape": "image",
+      "description": "The Incredibles, Pixar’ın etkileyici anlatımıyla şekillenen bir yapımdır. Film, arkadaşlık temasını işlerken izleyiciye unutulmaz bir görsel ve duygusal deneyim sunar. Karakter gelişimi, hikâye akışı ve yaratıcı evren tasarımıyla The Incredibles, stüdyonun anlatı başarısının güçlü örneklerinden biridir.",
+      "refers_to": "The Incredibles, Pixar evrenindeki diğer yapımlara çeşitli yollarla bağlanır. Filmdeki semboller, karakter göndermeleri veya mekan tekrarları, Toy Story’den WALL-E’ye kadar birçok yapıma referans oluşturur. Bu bağlantılar, evrenin bütünlüğünü ve anlatılar arası sürekliliği pekiştirir.",
+      "type": "film",
+      "release_date": "2004-11-05",
+      "level": 5
+    },
+    {
+      "id": "cars2006",
+      "label": "Cars (2006)",
+      "title": "Cars",
+      "image": "images/pixar.jpg",
+      "shape": "image",
+      "description": "Cars, Pixar’ın etkileyici anlatımıyla şekillenen bir yapımdır. Film, kendini keşfetme temasını işlerken izleyiciye unutulmaz bir görsel ve duygusal deneyim sunar. Karakter gelişimi, hikâye akışı ve yaratıcı evren tasarımıyla Cars, stüdyonun anlatı başarısının güçlü örneklerinden biridir.",
+      "refers_to": "Cars, Pixar evrenindeki diğer yapımlara çeşitli yollarla bağlanır. Filmdeki semboller, karakter göndermeleri veya mekan tekrarları, Toy Story’den WALL-E’ye kadar birçok yapıma referans oluşturur. Bu bağlantılar, evrenin bütünlüğünü ve anlatılar arası sürekliliği pekiştirir.",
+      "type": "film",
+      "release_date": "2006-06-09",
+      "level": 6
+    },
+    {
+      "id": "ratatouille2007",
+      "label": "Ratatouille (2007)",
+      "title": "Ratatouille",
+      "image": "images/pixar.jpg",
+      "shape": "image",
+      "description": "Ratatouille, Pixar’ın etkileyici anlatımıyla şekillenen bir yapımdır. Film, kendini keşfetme temasını işlerken izleyiciye unutulmaz bir görsel ve duygusal deneyim sunar. Karakter gelişimi, hikâye akışı ve yaratıcı evren tasarımıyla Ratatouille, stüdyonun anlatı başarısının güçlü örneklerinden biridir.",
+      "refers_to": "Ratatouille, Pixar evrenindeki diğer yapımlara çeşitli yollarla bağlanır. Filmdeki semboller, karakter göndermeleri veya mekan tekrarları, Toy Story’den WALL-E’ye kadar birçok yapıma referans oluşturur. Bu bağlantılar, evrenin bütünlüğünü ve anlatılar arası sürekliliği pekiştirir.",
+      "type": "film",
+      "release_date": "2007-06-29",
+      "level": 7
+    },
+    {
+      "id": "wallE2008",
+      "label": "WALL-E (2008)",
+      "title": "WALL-E",
+      "image": "images/pixar.jpg",
+      "shape": "image",
+      "description": "WALL-E, Pixar’ın etkileyici anlatımıyla şekillenen bir yapımdır. Film, aile bağları temasını işlerken izleyiciye unutulmaz bir görsel ve duygusal deneyim sunar. Karakter gelişimi, hikâye akışı ve yaratıcı evren tasarımıyla WALL-E, stüdyonun anlatı başarısının güçlü örneklerinden biridir.",
+      "refers_to": "WALL-E, Pixar evrenindeki diğer yapımlara çeşitli yollarla bağlanır. Filmdeki semboller, karakter göndermeleri veya mekan tekrarları, Toy Story’den WALL-E’ye kadar birçok yapıma referans oluşturur. Bu bağlantılar, evrenin bütünlüğünü ve anlatılar arası sürekliliği pekiştirir.",
+      "type": "film",
+      "release_date": "2008-06-27",
+      "level": 8
+    },
+    {
+      "id": "up2009",
+      "label": "Up (2009)",
+      "title": "Up",
+      "image": "images/pixar.jpg",
+      "shape": "image",
+      "description": "Up, Pixar’ın etkileyici anlatımıyla şekillenen bir yapımdır. Film, aile bağları temasını işlerken izleyiciye unutulmaz bir görsel ve duygusal deneyim sunar. Karakter gelişimi, hikâye akışı ve yaratıcı evren tasarımıyla Up, stüdyonun anlatı başarısının güçlü örneklerinden biridir.",
+      "refers_to": "Up, Pixar evrenindeki diğer yapımlara çeşitli yollarla bağlanır. Filmdeki semboller, karakter göndermeleri veya mekan tekrarları, Toy Story’den WALL-E’ye kadar birçok yapıma referans oluşturur. Bu bağlantılar, evrenin bütünlüğünü ve anlatılar arası sürekliliği pekiştirir.",
+      "type": "film",
+      "release_date": "2009-05-29",
+      "level": 9
+    },
+    {
+      "id": "toyStory32010",
+      "label": "Toy Story 3 (2010)",
+      "title": "Toy Story 3",
+      "image": "images/pixar.jpg",
+      "shape": "image",
+      "description": "Toy Story 3, Pixar’ın etkileyici anlatımıyla şekillenen bir yapımdır. Film, arkadaşlık temasını işlerken izleyiciye unutulmaz bir görsel ve duygusal deneyim sunar. Karakter gelişimi, hikâye akışı ve yaratıcı evren tasarımıyla Toy Story 3, stüdyonun anlatı başarısının güçlü örneklerinden biridir.",
+      "refers_to": "Toy Story 3, Pixar evrenindeki diğer yapımlara çeşitli yollarla bağlanır. Filmdeki semboller, karakter göndermeleri veya mekan tekrarları, Toy Story’den WALL-E’ye kadar birçok yapıma referans oluşturur. Bu bağlantılar, evrenin bütünlüğünü ve anlatılar arası sürekliliği pekiştirir.",
+      "type": "film",
+      "release_date": "2010-06-18",
+      "level": 10
+    },
+    {
+      "id": "cars22011",
+      "label": "Cars 2 (2011)",
+      "title": "Cars 2",
+      "image": "images/pixar.jpg",
+      "shape": "image",
+      "description": "Cars 2, Pixar’ın etkileyici anlatımıyla şekillenen bir yapımdır. Film, özgürlük temasını işlerken izleyiciye unutulmaz bir görsel ve duygusal deneyim sunar. Karakter gelişimi, hikâye akışı ve yaratıcı evren tasarımıyla Cars 2, stüdyonun anlatı başarısının güçlü örneklerinden biridir.",
+      "refers_to": "Cars 2, Pixar evrenindeki diğer yapımlara çeşitli yollarla bağlanır. Filmdeki semboller, karakter göndermeleri veya mekan tekrarları, Toy Story’den WALL-E’ye kadar birçok yapıma referans oluşturur. Bu bağlantılar, evrenin bütünlüğünü ve anlatılar arası sürekliliği pekiştirir.",
+      "type": "film",
+      "release_date": "2011-06-24",
+      "level": 11
+    },
+    {
+      "id": "brave2012",
+      "label": "Brave (2012)",
+      "title": "Brave",
+      "image": "images/pixar.jpg",
+      "shape": "image",
+      "description": "Brave, Pixar’ın etkileyici anlatımıyla şekillenen bir yapımdır. Film, cesaret temasını işlerken izleyiciye unutulmaz bir görsel ve duygusal deneyim sunar. Karakter gelişimi, hikâye akışı ve yaratıcı evren tasarımıyla Brave, stüdyonun anlatı başarısının güçlü örneklerinden biridir.",
+      "refers_to": "Brave, Pixar evrenindeki diğer yapımlara çeşitli yollarla bağlanır. Filmdeki semboller, karakter göndermeleri veya mekan tekrarları, Toy Story’den WALL-E’ye kadar birçok yapıma referans oluşturur. Bu bağlantılar, evrenin bütünlüğünü ve anlatılar arası sürekliliği pekiştirir.",
+      "type": "film",
+      "release_date": "2012-06-22",
+      "level": 12
+    },
+    {
+      "id": "monstersUniversity2013",
+      "label": "Monsters University (2013)",
+      "title": "Monsters University",
+      "image": "images/pixar.jpg",
+      "shape": "image",
+      "description": "Monsters University, Pixar’ın etkileyici anlatımıyla şekillenen bir yapımdır. Film, toplumsal dayanışma temasını işlerken izleyiciye unutulmaz bir görsel ve duygusal deneyim sunar. Karakter gelişimi, hikâye akışı ve yaratıcı evren tasarımıyla Monsters University, stüdyonun anlatı başarısının güçlü örneklerinden biridir.",
+      "refers_to": "Monsters University, Pixar evrenindeki diğer yapımlara çeşitli yollarla bağlanır. Filmdeki semboller, karakter göndermeleri veya mekan tekrarları, Toy Story’den WALL-E’ye kadar birçok yapıma referans oluşturur. Bu bağlantılar, evrenin bütünlüğünü ve anlatılar arası sürekliliği pekiştirir.",
+      "type": "film",
+      "release_date": "2013-06-21",
+      "level": 13
+    },
+    {
+      "id": "insideOut2015",
+      "label": "Inside Out (2015)",
+      "title": "Inside Out",
+      "image": "images/pixar.jpg",
+      "shape": "image",
+      "description": "Inside Out, Pixar’ın etkileyici anlatımıyla şekillenen bir yapımdır. Film, aile bağları temasını işlerken izleyiciye unutulmaz bir görsel ve duygusal deneyim sunar. Karakter gelişimi, hikâye akışı ve yaratıcı evren tasarımıyla Inside Out, stüdyonun anlatı başarısının güçlü örneklerinden biridir.",
+      "refers_to": "Inside Out, Pixar evrenindeki diğer yapımlara çeşitli yollarla bağlanır. Filmdeki semboller, karakter göndermeleri veya mekan tekrarları, Toy Story’den WALL-E’ye kadar birçok yapıma referans oluşturur. Bu bağlantılar, evrenin bütünlüğünü ve anlatılar arası sürekliliği pekiştirir.",
+      "type": "film",
+      "release_date": "2015-06-19",
+      "level": 14
+    },
+    {
+      "id": "theGoodDinosaur2015",
+      "label": "The Good Dinosaur (2015)",
+      "title": "The Good Dinosaur",
+      "image": "images/pixar.jpg",
+      "shape": "image",
+      "description": "The Good Dinosaur, Pixar’ın etkileyici anlatımıyla şekillenen bir yapımdır. Film, arkadaşlık temasını işlerken izleyiciye unutulmaz bir görsel ve duygusal deneyim sunar. Karakter gelişimi, hikâye akışı ve yaratıcı evren tasarımıyla The Good Dinosaur, stüdyonun anlatı başarısının güçlü örneklerinden biridir.",
+      "refers_to": "The Good Dinosaur, Pixar evrenindeki diğer yapımlara çeşitli yollarla bağlanır. Filmdeki semboller, karakter göndermeleri veya mekan tekrarları, Toy Story’den WALL-E’ye kadar birçok yapıma referans oluşturur. Bu bağlantılar, evrenin bütünlüğünü ve anlatılar arası sürekliliği pekiştirir.",
+      "type": "film",
+      "release_date": "2015-11-25",
+      "level": 14
+    },
+    {
+      "id": "findingDory2016",
+      "label": "Finding Dory (2016)",
+      "title": "Finding Dory",
+      "image": "images/pixar.jpg",
+      "shape": "image",
+      "description": "Finding Dory, Pixar’ın etkileyici anlatımıyla şekillenen bir yapımdır. Film, zamanın geçiciliği temasını işlerken izleyiciye unutulmaz bir görsel ve duygusal deneyim sunar. Karakter gelişimi, hikâye akışı ve yaratıcı evren tasarımıyla Finding Dory, stüdyonun anlatı başarısının güçlü örneklerinden biridir.",
+      "refers_to": "Finding Dory, Pixar evrenindeki diğer yapımlara çeşitli yollarla bağlanır. Filmdeki semboller, karakter göndermeleri veya mekan tekrarları, Toy Story’den WALL-E’ye kadar birçok yapıma referans oluşturur. Bu bağlantılar, evrenin bütünlüğünü ve anlatılar arası sürekliliği pekiştirir.",
+      "type": "film",
+      "release_date": "2016-06-17",
+      "level": 15
+    },
+    {
+      "id": "cars32017",
+      "label": "Cars 3 (2017)",
+      "title": "Cars 3",
+      "image": "images/pixar.jpg",
+      "shape": "image",
+      "description": "Cars 3, Pixar’ın etkileyici anlatımıyla şekillenen bir yapımdır. Film, toplumsal dayanışma temasını işlerken izleyiciye unutulmaz bir görsel ve duygusal deneyim sunar. Karakter gelişimi, hikâye akışı ve yaratıcı evren tasarımıyla Cars 3, stüdyonun anlatı başarısının güçlü örneklerinden biridir.",
+      "refers_to": "Cars 3, Pixar evrenindeki diğer yapımlara çeşitli yollarla bağlanır. Filmdeki semboller, karakter göndermeleri veya mekan tekrarları, Toy Story’den WALL-E’ye kadar birçok yapıma referans oluşturur. Bu bağlantılar, evrenin bütünlüğünü ve anlatılar arası sürekliliği pekiştirir.",
+      "type": "film",
+      "release_date": "2017-06-16",
+      "level": 16
+    },
+    {
+      "id": "coco2017",
+      "label": "Coco (2017)",
+      "title": "Coco",
+      "image": "images/pixar.jpg",
+      "shape": "image",
+      "description": "Coco, Pixar’ın etkileyici anlatımıyla şekillenen bir yapımdır. Film, aidiyet temasını işlerken izleyiciye unutulmaz bir görsel ve duygusal deneyim sunar. Karakter gelişimi, hikâye akışı ve yaratıcı evren tasarımıyla Coco, stüdyonun anlatı başarısının güçlü örneklerinden biridir.",
+      "refers_to": "Coco, Pixar evrenindeki diğer yapımlara çeşitli yollarla bağlanır. Filmdeki semboller, karakter göndermeleri veya mekan tekrarları, Toy Story’den WALL-E’ye kadar birçok yapıma referans oluşturur. Bu bağlantılar, evrenin bütünlüğünü ve anlatılar arası sürekliliği pekiştirir.",
+      "type": "film",
+      "release_date": "2017-11-22",
+      "level": 16
+    },
+    {
+      "id": "incredibles22018",
+      "label": "Incredibles 2 (2018)",
+      "title": "Incredibles 2",
+      "image": "images/pixar.jpg",
+      "shape": "image",
+      "description": "Incredibles 2, Pixar’ın etkileyici anlatımıyla şekillenen bir yapımdır. Film, cesaret temasını işlerken izleyiciye unutulmaz bir görsel ve duygusal deneyim sunar. Karakter gelişimi, hikâye akışı ve yaratıcı evren tasarımıyla Incredibles 2, stüdyonun anlatı başarısının güçlü örneklerinden biridir.",
+      "refers_to": "Incredibles 2, Pixar evrenindeki diğer yapımlara çeşitli yollarla bağlanır. Filmdeki semboller, karakter göndermeleri veya mekan tekrarları, Toy Story’den WALL-E’ye kadar birçok yapıma referans oluşturur. Bu bağlantılar, evrenin bütünlüğünü ve anlatılar arası sürekliliği pekiştirir.",
+      "type": "film",
+      "release_date": "2018-06-15",
+      "level": 17
+    },
+    {
+      "id": "toyStory42019",
+      "label": "Toy Story 4 (2019)",
+      "title": "Toy Story 4",
+      "image": "images/pixar.jpg",
+      "shape": "image",
+      "description": "Toy Story 4, Pixar’ın etkileyici anlatımıyla şekillenen bir yapımdır. Film, değişim temasını işlerken izleyiciye unutulmaz bir görsel ve duygusal deneyim sunar. Karakter gelişimi, hikâye akışı ve yaratıcı evren tasarımıyla Toy Story 4, stüdyonun anlatı başarısının güçlü örneklerinden biridir.",
+      "refers_to": "Toy Story 4, Pixar evrenindeki diğer yapımlara çeşitli yollarla bağlanır. Filmdeki semboller, karakter göndermeleri veya mekan tekrarları, Toy Story’den WALL-E’ye kadar birçok yapıma referans oluşturur. Bu bağlantılar, evrenin bütünlüğünü ve anlatılar arası sürekliliği pekiştirir.",
+      "type": "film",
+      "release_date": "2019-06-21",
+      "level": 18
+    },
+    {
+      "id": "onward2020",
+      "label": "Onward (2020)",
+      "title": "Onward",
+      "image": "images/pixar.jpg",
+      "shape": "image",
+      "description": "Onward, Pixar’ın etkileyici anlatımıyla şekillenen bir yapımdır. Film, aidiyet temasını işlerken izleyiciye unutulmaz bir görsel ve duygusal deneyim sunar. Karakter gelişimi, hikâye akışı ve yaratıcı evren tasarımıyla Onward, stüdyonun anlatı başarısının güçlü örneklerinden biridir.",
+      "refers_to": "Onward, Pixar evrenindeki diğer yapımlara çeşitli yollarla bağlanır. Filmdeki semboller, karakter göndermeleri veya mekan tekrarları, Toy Story’den WALL-E’ye kadar birçok yapıma referans oluşturur. Bu bağlantılar, evrenin bütünlüğünü ve anlatılar arası sürekliliği pekiştirir.",
+      "type": "film",
+      "release_date": "2020-03-06",
+      "level": 19
+    },
+    {
+      "id": "soul2020",
+      "label": "Soul (2020)",
+      "title": "Soul",
+      "image": "images/pixar.jpg",
+      "shape": "image",
+      "description": "Soul, Pixar’ın etkileyici anlatımıyla şekillenen bir yapımdır. Film, değişim temasını işlerken izleyiciye unutulmaz bir görsel ve duygusal deneyim sunar. Karakter gelişimi, hikâye akışı ve yaratıcı evren tasarımıyla Soul, stüdyonun anlatı başarısının güçlü örneklerinden biridir.",
+      "refers_to": "Soul, Pixar evrenindeki diğer yapımlara çeşitli yollarla bağlanır. Filmdeki semboller, karakter göndermeleri veya mekan tekrarları, Toy Story’den WALL-E’ye kadar birçok yapıma referans oluşturur. Bu bağlantılar, evrenin bütünlüğünü ve anlatılar arası sürekliliği pekiştirir.",
+      "type": "film",
+      "release_date": "2020-12-25",
+      "level": 19
+    },
+    {
+      "id": "luca2021",
+      "label": "Luca (2021)",
+      "title": "Luca",
+      "image": "images/pixar.jpg",
+      "shape": "image",
+      "description": "Luca, Pixar’ın etkileyici anlatımıyla şekillenen bir yapımdır. Film, aidiyet temasını işlerken izleyiciye unutulmaz bir görsel ve duygusal deneyim sunar. Karakter gelişimi, hikâye akışı ve yaratıcı evren tasarımıyla Luca, stüdyonun anlatı başarısının güçlü örneklerinden biridir.",
+      "refers_to": "Luca, Pixar evrenindeki diğer yapımlara çeşitli yollarla bağlanır. Filmdeki semboller, karakter göndermeleri veya mekan tekrarları, Toy Story’den WALL-E’ye kadar birçok yapıma referans oluşturur. Bu bağlantılar, evrenin bütünlüğünü ve anlatılar arası sürekliliği pekiştirir.",
+      "type": "film",
+      "release_date": "2021-06-18",
+      "level": 20
+    },
+    {
+      "id": "turningRed2022",
+      "label": "Turning Red (2022)",
+      "title": "Turning Red",
+      "image": "images/pixar.jpg",
+      "shape": "image",
+      "description": "Turning Red, Pixar’ın etkileyici anlatımıyla şekillenen bir yapımdır. Film, zamanın geçiciliği temasını işlerken izleyiciye unutulmaz bir görsel ve duygusal deneyim sunar. Karakter gelişimi, hikâye akışı ve yaratıcı evren tasarımıyla Turning Red, stüdyonun anlatı başarısının güçlü örneklerinden biridir.",
+      "refers_to": "Turning Red, Pixar evrenindeki diğer yapımlara çeşitli yollarla bağlanır. Filmdeki semboller, karakter göndermeleri veya mekan tekrarları, Toy Story’den WALL-E’ye kadar birçok yapıma referans oluşturur. Bu bağlantılar, evrenin bütünlüğünü ve anlatılar arası sürekliliği pekiştirir.",
+      "type": "film",
+      "release_date": "2022-03-11",
+      "level": 21
+    },
+    {
+      "id": "lightyear2022",
+      "label": "Lightyear (2022)",
+      "title": "Lightyear",
+      "image": "images/pixar.jpg",
+      "shape": "image",
+      "description": "Lightyear, Pixar’ın etkileyici anlatımıyla şekillenen bir yapımdır. Film, zamanın geçiciliği temasını işlerken izleyiciye unutulmaz bir görsel ve duygusal deneyim sunar. Karakter gelişimi, hikâye akışı ve yaratıcı evren tasarımıyla Lightyear, stüdyonun anlatı başarısının güçlü örneklerinden biridir.",
+      "refers_to": "Lightyear, Pixar evrenindeki diğer yapımlara çeşitli yollarla bağlanır. Filmdeki semboller, karakter göndermeleri veya mekan tekrarları, Toy Story’den WALL-E’ye kadar birçok yapıma referans oluşturur. Bu bağlantılar, evrenin bütünlüğünü ve anlatılar arası sürekliliği pekiştirir.",
+      "type": "film",
+      "release_date": "2022-06-17",
+      "level": 21
+    },
+    {
+      "id": "elemental2023",
+      "label": "Elemental (2023)",
+      "title": "Elemental",
+      "image": "images/pixar.jpg",
+      "shape": "image",
+      "description": "Ateş, su, toprak ve hava halklarının birlikte yaşadığı Element Şehri'nde, Ember adlı ateş halkından bir kız ile Wade adlı su halkından bir oğlanın dostluğu üzerinden önyargı, kültür çatışması ve birliktelik temaları işlenir.",
+      "refers_to": "Inside Out ve Soul gibi soyut kavramların vücut bulduğu Pixar evreni çizgisini sürdürür. Pizza Planet logosu bir tabela şeklinde görünür. Filmde Buy n Large’a referans içeren ticari reklam panoları yer alır.",
+      "type": "film",
+      "release_date": "2023-06-16",
+      "level": 22
+    },
+    {
+      "id": "insideOut22024",
+      "label": "Inside Out 2 (2024)",
+      "title": "Inside Out 2",
+      "image": "images/pixar.jpg",
+      "shape": "image",
+      "description": "Inside Out 2, Pixar’ın etkileyici anlatımıyla şekillenen bir yapımdır. Film, arkadaşlık temasını işlerken izleyiciye unutulmaz bir görsel ve duygusal deneyim sunar. Karakter gelişimi, hikâye akışı ve yaratıcı evren tasarımıyla Inside Out 2, stüdyonun anlatı başarısının güçlü örneklerinden biridir.",
+      "refers_to": "Inside Out 2, Pixar evrenindeki diğer yapımlara çeşitli yollarla bağlanır. Filmdeki semboller, karakter göndermeleri veya mekan tekrarları, Toy Story’den WALL-E’ye kadar birçok yapıma referans oluşturur. Bu bağlantılar, evrenin bütünlüğünü ve anlatılar arası sürekliliği pekiştirir.",
+      "type": "film",
+      "release_date": "2024-06-14",
+      "level": 23
+    }
+  ],
+  "edges": [
+    {
+      "from": "toyStory1995",
+      "to": "toyStory21999",
+      "type": "devam"
+    },
+    {
+      "from": "toyStory1995",
+      "to": "aBugsLife1998",
+      "type": "evren geçişi"
+    },
+    {
+      "from": "aBugsLife1998",
+      "to": "toyStory21999",
+      "type": "karakter göndermesi"
+    },
+    {
+      "from": "toyStory21999",
+      "to": "monstersInc2001",
+      "type": "evren geçişi"
+    },
+    {
+      "from": "monstersInc2001",
+      "to": "findingNemo2003",
+      "type": "karakter göndermesi"
+    },
+    {
+      "from": "findingNemo2003",
+      "to": "toyStory21999",
+      "type": "evren geçişi"
+    },
+    {
+      "from": "theIncredibles2004",
+      "to": "ratatouille2007",
+      "type": "karakter göndermesi"
+    },
+    {
+      "from": "cars2006",
+      "to": "toyStory1995",
+      "type": "evren geçişi"
+    },
+    {
+      "from": "ratatouille2007",
+      "to": "up2009",
+      "type": "evren geçişi"
+    },
+    {
+      "from": "wallE2008",
+      "to": "up2009",
+      "type": "kurumsal gönderme"
+    },
+    {
+      "from": "toyStory32010",
+      "to": "toyStory21999",
+      "type": "devam"
+    },
+    {
+      "from": "toyStory32010",
+      "to": "up2009",
+      "type": "karakter göndermesi"
+    },
+    {
+      "from": "cars22011",
+      "to": "cars2006",
+      "type": "devam"
+    },
+    {
+      "from": "cars22011",
+      "to": "toyStory1995",
+      "type": "evren geçişi"
+    },
+    {
+      "from": "brave2012",
+      "to": "monstersInc2001",
+      "type": "karakter göndermesi"
+    },
+    {
+      "from": "monstersUniversity2013",
+      "to": "monstersInc2001",
+      "type": "ön hikaye"
+    },
+    {
+      "from": "monstersUniversity2013",
+      "to": "aBugsLife1998",
+      "type": "görsel gönderme"
+    },
+    {
+      "from": "insideOut2015",
+      "to": "ratatouille2007",
+      "type": "karakter gönderme"
+    },
+    {
+      "from": "insideOut2015",
+      "to": "up2009",
+      "type": "görsel gönderme"
+    },
+    {
+      "from": "theGoodDinosaur2015",
+      "to": "toyStory1995",
+      "type": "görsel gönderme"
+    },
+    {
+      "from": "findingDory2016",
+      "to": "findingNemo2003",
+      "type": "devam"
+    },
+    {
+      "from": "cars32017",
+      "to": "cars22011",
+      "type": "devam"
+    },
+    {
+      "from": "coco2017",
+      "to": "insideOut2015",
+      "type": "görsel gönderme"
+    },
+    {
+      "from": "incredibles22018",
+      "to": "theIncredibles2004",
+      "type": "devam"
+    },
+    {
+      "from": "toyStory42019",
+      "to": "toyStory32010",
+      "type": "devam"
+    },
+    {
+      "from": "onward2020",
+      "to": "ratatouille2007",
+      "type": "karakter göndermesi"
+    },
+    {
+      "from": "soul2020",
+      "to": "insideOut2015",
+      "type": "konseptsel devam"
+    },
+    {
+      "from": "luca2021",
+      "to": "laLunaShort2011",
+      "type": "yan hikaye"
+    },
+    {
+      "from": "turningRed2022",
+      "to": "insideOut2015",
+      "type": "duygusal tema devamı"
+    },
+    {
+      "from": "lightyear2022",
+      "to": "toyStory1995",
+      "type": "iç film/karakter kökeni"
+    },
+    {
+      "from": "elemental2023",
+      "to": "insideOut2015",
+      "type": "tematik benzerlik"
+    },
+    {
+      "from": "elemental2023",
+      "to": "soul2020",
+      "type": "soyut dünya göndermesi"
+    },
+    {
+      "from": "elemental2023",
+      "to": "turningRed2022",
+      "type": "şehir yaşamı paralelliği"
+    },
+    {
+      "from": "insideOut22024",
+      "to": "insideOut2015",
+      "type": "devam"
+    },
+    {
+      "from": "insideOut22024",
+      "to": "soul2020",
+      "type": "duygu ve bilinç teması"
+    },
+    {
+      "from": "insideOut22024",
+      "to": "elemental2023",
+      "type": "görsel gönderme"
+    }
+  ]
+}

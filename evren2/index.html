@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Film Evreni Ağı</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://unpkg.com/vis-network@9.1.2/dist/vis-network.min.js"></script>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+    #network {
+      width: 100vw !important;
+      height: 100vh !important;
+      position: absolute !important;
+      top: 0;
+      left: 0;
+      background: #fff !important;
+      display: block !important;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <button id="compare-btn" style="position: fixed; top: 10px; right: 10px; z-index: 200;">🎯 Karşılaştır</button>
+
+  <div id="network"></div>
+  <div id="modal-overlay" class="hidden"></div>
+
+  <div class="modal hidden" id="info-box">
+    <h2 id="info-title"></h2>
+    <p id="info-description"></p>
+    <p><i id="info-refers"></i></p>
+    <button onclick="document.getElementById('info-box').classList.add('hidden'); document.getElementById('modal-overlay').classList.add('hidden');">Kapat</button>
+  </div>
+
+  <div class="modal hidden" id="compare-box">
+    <h2>🎯 Karşılaştırma</h2>
+    <div id="compare-content">İki film/dizi seçiniz.</div>
+    <button onclick="document.getElementById('compare-box').classList.add('hidden'); document.getElementById('modal-overlay').classList.add('hidden');">Kapat</button>
+  </div>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
