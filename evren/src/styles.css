@@ -1,0 +1,37 @@
+html, body, #network {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+#network {
+  border-radius: 12px;
+  margin: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  border: 1px solid #e2e8f0;
+  position: relative;
+}
+.timeline-grid {
+  position: absolute;
+  top: 48px;
+  left: 0;
+  right: 0;
+  height: 24px;
+  z-index: 50;
+  pointer-events: none;
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+.timeline-grid .tick {
+  position: absolute;
+  height: 100%;
+  border-left: 1px solid #d1d5db;
+  text-align: center;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+body.dark .timeline-grid .tick {
+  border-color: #374151;
+  color: #9ca3af;
+}
