@@ -262,28 +262,29 @@
 
 <header>
   <h1 x-text="lang === 'tr' ? '🎬 Film Evreni Ağı' : '🎬 Film Universe Network'"></h1>
-  <div class="controls">
-    <input id="search" x-model="search" :placeholder="lang === 'tr' ? 'Ara...' : 'Search...'" aria-label="Search" />
-    <select id="universeFilter" x-model="selectedUniverse" aria-label="Universe Filter">
-      <option value="">{{ lang === 'tr' ? 'Tüm Evrenler' : 'All Universes' }}</option>
-      <template x-for="u in universeList" :key="u">
-        <option :value="u" x-text="u"></option>
-      </template>
-    </select>
-    <select id="edgeFilter" x-model="selectedEdgeType" aria-label="Edge Type Filter">
-      <option value="">{{ lang === 'tr' ? 'Tüm Bağlantılar' : 'All Edges' }}</option>
-      <template x-for="type in edgeTypeList" :key="type">
-        <option :value="type" x-text="type"></option>
-      </template>
-    </select>
-    <input type="range" id="yearRange" min="1950" max="2030" step="1" x-model.number="maxYear" :title="lang === 'tr' ? 'Yıl Aralığı' : 'Year Range'"/>
-    <button @click="toggleTimeline" x-text="timelineMode ? (lang === 'tr' ? '🔄 Normal Görünüm' : '🔄 Normal View') : (lang === 'tr' ? '⏳ Zaman Çizelgesi' : '⏳ Timeline View')"></button>
-    <button @click="toggleTheme" :aria-pressed="isDarkMode" :title="lang === 'tr' ? 'Tema Değiştir' : 'Toggle Theme'" x-text="isDarkMode ? (lang === 'tr' ? '🌞 Açık Mod' : '🌞 Light Mode') : (lang === 'tr' ? '🌙 Koyu Mod' : '🌙 Dark Mode')"></button>
-    <select id="langSelect" x-model="lang" aria-label="Language Select" class="bg-white text-black">
-      <option value="tr">Türkçe</option>
-      <option value="en">English</option>
-    </select>
-  </div>
+<!-- Controls kısmı -->
+<div class="controls">
+  <input id="search" x-model="search" :placeholder="lang === 'tr' ? 'Ara...' : 'Search...'" aria-label="Search" />
+  <select id="universeFilter" x-model="selectedUniverse" aria-label="Universe Filter">
+    <option value="">{{ lang === 'tr' ? 'Tüm Evrenler' : 'All Universes' }}</option>
+    <template x-for="u in universeList" :key="u">
+      <option :value="u" x-text="u"></option>
+    </template>
+  </select>
+  <select id="edgeFilter" x-model="selectedEdgeType" aria-label="Edge Type Filter">
+    <option value="">{{ lang === 'tr' ? 'Tüm Bağlantılar' : 'All Edges' }}</option>
+    <template x-for="type in edgeTypeList" :key="type">
+      <option :value="type" x-text="type"></option>
+    </template>
+  </select>
+  <button @click="toggleTimeline" x-text="timelineMode ? (lang === 'tr' ? '🔄 Normal Görünüm' : '🔄 Normal View') : (lang === 'tr' ? '⏳ Zaman Çizelgesi' : '⏳ Timeline View')"></button>
+  <button @click="toggleTheme" :aria-pressed="isDarkMode" :title="lang === 'tr' ? 'Tema Değiştir' : 'Toggle Theme'" x-text="isDarkMode ? (lang === 'tr' ? '🌞 Açık Mod' : '🌞 Light Mode') : (lang === 'tr' ? '🌙 Koyu Mod' : '🌙 Dark Mode')"></button>
+  <select id="langSelect" x-model="lang" aria-label="Language Select" class="bg-white text-black">
+    <option value="tr">Türkçe</option>
+    <option value="en">English</option>
+  </select>
+</div>
+
 </header>
 
 <div id="network" class="flex-grow"></div>
@@ -445,30 +446,29 @@ function app() {
       });
     },
 
-    applyFilters() {
-      const searchTerm = this.search.toLowerCase();
-      const universe = this.selectedUniverse;
-      const edgeType = this.selectedEdgeType;
-      const maxYear = this.maxYear;
+applyFilters() {
+  const searchTerm = this.search.toLowerCase();
+  const universe = this.selectedUniverse;
+  const edgeType = this.selectedEdgeType;
 
-      this.filteredNodes = this.allNodes.filter(n =>
-        (!universe || n.universe === universe) &&
-        (!searchTerm || (n.label && n.label.toLowerCase().includes(searchTerm))) &&
-        (!maxYear || !n.release_date || new Date(n.release_date).getFullYear() <= maxYear)
-      );
+  this.filteredNodes = this.allNodes.filter(n =>
+    (!universe || n.universe === universe) &&
+    (!searchTerm || (n.label && n.label.toLowerCase().includes(searchTerm)))
+  );
 
-      const nodeIds = new Set(this.filteredNodes.map(n => n.id));
+  const nodeIds = new Set(this.filteredNodes.map(n => n.id));
 
-      this.filteredEdges = this.allEdges.filter(e =>
-        nodeIds.has(e.from) && nodeIds.has(e.to) &&
-        (!edgeType || e.type === edgeType)
-      );
+  this.filteredEdges = this.allEdges.filter(e =>
+    nodeIds.has(e.from) && nodeIds.has(e.to) &&
+    (!edgeType || e.type === edgeType)
+  );
 
-      this.updateNetwork();
-      if(this.network) {
-        setTimeout(() => this.network.fit({animation: true}), 100);
-      }
-    },
+  this.updateNetwork();
+  if(this.network) {
+    setTimeout(() => this.network.fit({animation: true}), 100);
+  }
+},
+
 
     updateNetwork() {
       this.nodes.clear();
