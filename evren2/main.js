@@ -103,7 +103,6 @@ function drawNetwork() {
     layout: { improvedLayout: true },
     physics: { stabilization: true }
   };
-}
 
 // setupNodeClickEvents moved to modules/draw.js
   network.on("click", function (params) {
@@ -125,8 +124,7 @@ function drawNetwork() {
       }
     }
   });
-}
-}
+
 
  function showInfo(node) {
   titleEl.innerHTML = node.label || "Bilinmeyen";
