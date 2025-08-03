@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Film Evreni Ağı - Legend Dahil</title>
+  <title>Film Evreni Ağı</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
@@ -107,6 +107,12 @@
       flex-grow: 2;
       justify-content: flex-end;
     }
+    label {
+      font-weight: 600;
+      color: #374151;
+      margin-right: 6px;
+      user-select: none;
+    }
     input, select, button {
       padding: 8px 14px;
       border-radius: 8px;
@@ -133,11 +139,8 @@
       width: 180px;
       min-width: 140px;
     }
-    #universeFilter, #edgeFilter, #yearRange, #langSelect {
+    #universeFilter, #edgeFilter, #langSelect {
       min-width: 140px;
-    }
-    #yearRange {
-      width: 160px;
     }
     @media (max-width: 640px) {
       header {
@@ -149,7 +152,11 @@
         flex-grow: 0;
         text-align: center;
       }
-      #search, #universeFilter, #edgeFilter, #yearRange, #langSelect {
+      label {
+        margin-right: 0;
+        margin-bottom: 2px;
+      }
+      #search, #universeFilter, #edgeFilter, #langSelect {
         width: 100%;
         min-width: unset;
       }
@@ -179,6 +186,9 @@
     }
     body.dark header h1 {
       color: #f9fafb;
+    }
+    body.dark label {
+      color: #d1d5db;
     }
     body.dark input, body.dark select, body.dark button {
       background-color: #374151;
@@ -254,22 +264,28 @@
 <header>
   <h1 x-text="lang === 'tr' ? '🎬 Film Evreni Ağı' : '🎬 Film Universe Network'"></h1>
   <div class="controls">
+    <label for="search" x-text="lang === 'tr' ? 'Ara' : 'Search'"></label>
     <input id="search" x-model="search" :placeholder="lang === 'tr' ? 'Ara...' : 'Search...'" aria-label="Search" />
+
+    <label for="universeFilter" x-text="lang === 'tr' ? 'Evren' : 'Universe'"></label>
     <select id="universeFilter" x-model="selectedUniverse" aria-label="Universe Filter">
       <option value="">{{ lang === 'tr' ? 'Tüm Evrenler' : 'All Universes' }}</option>
       <template x-for="u in universeList" :key="u">
         <option :value="u" x-text="u"></option>
       </template>
     </select>
+
+    <label for="edgeFilter" x-text="lang === 'tr' ? 'Bağlantı Türü' : 'Edge Type'"></label>
     <select id="edgeFilter" x-model="selectedEdgeType" aria-label="Edge Type Filter">
       <option value="">{{ lang === 'tr' ? 'Tüm Bağlantılar' : 'All Edges' }}</option>
       <template x-for="type in edgeTypeList" :key="type">
         <option :value="type" x-text="type"></option>
       </template>
     </select>
-    <input type="range" id="yearRange" min="1950" max="2030" step="1" x-model.number="maxYear" :title="lang === 'tr' ? 'Yıl Aralığı' : 'Year Range'"/>
-    <button @click="toggleTimeline" x-text="timelineMode ? (lang === 'tr' ? '🔄 Normal Görünüm' : '🔄 Normal View') : (lang === 'tr' ? '⏳ Zaman Çizelgesi' : '⏳ Timeline View')"></button>
+
     <button @click="toggleTheme" :aria-pressed="isDarkMode" :title="lang === 'tr' ? 'Tema Değiştir' : 'Toggle Theme'" x-text="isDarkMode ? (lang === 'tr' ? '🌞 Açık Mod' : '🌞 Light Mode') : (lang === 'tr' ? '🌙 Koyu Mod' : '🌙 Dark Mode')"></button>
+
+    <label for="langSelect" x-text="lang === 'tr' ? 'Dil' : 'Language'"></label>
     <select id="langSelect" x-model="lang" aria-label="Language Select" class="bg-white text-black">
       <option value="tr">Türkçe</option>
       <option value="en">English</option>
@@ -297,8 +313,8 @@
   <h3 x-text="lang === 'tr' ? 'Bağlantı Türleri' : 'Edge Types'"></h3>
   <ul>
     <template x-for="(color, type) in edgeColors" :key="type">
-      <li class="flex items-center mb-1">
-        <span class="color-box" :style="`background-color: ${color}`"></span>
+      <li>
+        <span class="color-box" :style="'background-color: ' + color"></span>
         <span x-text="type"></span>
       </li>
     </template>
@@ -318,7 +334,6 @@ function app() {
     search: '',
     selectedUniverse: '',
     selectedEdgeType: '',
-    maxYear: new Date().getFullYear(),
     timelineMode: false,
     modalOpen: false,
     modalNode: null,
@@ -361,7 +376,6 @@ function app() {
 
       this.$watch('selectedUniverse', () => this.applyFilters());
       this.$watch('selectedEdgeType', () => this.applyFilters());
-      this.$watch('maxYear', () => this.applyFilters());
     },
 
     async loadData() {
@@ -395,6 +409,7 @@ function app() {
     },
 
     setupNetwork() {
+      const fontColor = this.isDarkMode ? '#fff' : '#111827';
       this.nodes = new vis.DataSet();
       this.edges = new vis.DataSet();
       const container = document.getElementById('network');
@@ -402,7 +417,7 @@ function app() {
       const options = {
         nodes: {
           size: 25,
-          font: { color: '#fff', size: 14 },
+          font: { color: fontColor, size: 14 },
           borderWidthSelected: 6,
           color: { border: '#ef4444' }
         },
@@ -420,27 +435,28 @@ function app() {
         },
         layout: { improvedLayout: true }
       };
-      this.network = new vis.Network(container, data, options);
-
-      this.network.on('click', params => {
-        if(params.nodes.length > 0){
-          const node = this.nodes.get(params.nodes[0]);
-          this.modalNode = node;
-          this.modalOpen = true;
-        }
-      });
+      if(this.network) {
+        this.network.setOptions(options);
+      } else {
+        this.network = new vis.Network(container, data, options);
+        this.network.on('click', params => {
+          if(params.nodes.length > 0){
+            const node = this.nodes.get(params.nodes[0]);
+            this.modalNode = node;
+            this.modalOpen = true;
+          }
+        });
+      }
     },
 
     applyFilters() {
       const searchTerm = this.search.toLowerCase();
       const universe = this.selectedUniverse;
       const edgeType = this.selectedEdgeType;
-      const maxYear = this.maxYear;
 
       this.filteredNodes = this.allNodes.filter(n =>
         (!universe || n.universe === universe) &&
-        (!searchTerm || (n.label && n.label.toLowerCase().includes(searchTerm))) &&
-        (!maxYear || !n.release_date || new Date(n.release_date).getFullYear() <= maxYear)
+        (!searchTerm || (n.label && n.label.toLowerCase().includes(searchTerm)))
       );
 
       const nodeIds = new Set(this.filteredNodes.map(n => n.id));
@@ -483,13 +499,12 @@ function app() {
       }));
     },
 
-    toggleTimeline() {
-      this.timelineMode = !this.timelineMode;
-      this.applyFilters();
-    },
-
     toggleTheme() {
       this.isDarkMode = !this.isDarkMode;
+      this.setupNetwork();
+      localStorage.setItem('darkMode', this.isDarkMode);
+      if(this.isDarkMode) document.body.classList.add('dark');
+      else document.body.classList.remove('dark');
     }
   }
 }
