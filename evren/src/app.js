@@ -89,5 +89,7 @@ appObj.toggleTimeline = toggleTimelineFactory(appObj);
 appObj.toggleTheme = toggleThemeFactory(appObj);
 
 Alpine.start();
+window.app = app;
+
 
 
