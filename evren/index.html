@@ -4,43 +4,164 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Film Evreni Ağı - vis-network</title>
+  <title>Film Evreni Ağı - Gelişmiş Tasarım</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
   <style>
     html, body, #network {
       height: 100%;
       margin: 0; padding: 0;
+      background: #f9fafb;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     #network {
-      border: 1px solid #ddd;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+      border: 1px solid #e2e8f0;
       background: white;
+      margin: 12px;
     }
     .modal-bg {
-      background: rgba(0,0,0,0.6);
+      background: rgba(0,0,0,0.75);
+      backdrop-filter: blur(3px);
+    }
+    .modal-content {
+      max-width: 600px;
+      width: 90vw;
+      max-height: 80vh;
+      overflow-y: auto;
+      background: white;
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 12px 24px rgba(0,0,0,0.25);
+      position: relative;
+    }
+    .close-btn {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      font-size: 28px;
+      font-weight: 700;
+      color: #374151;
+      cursor: pointer;
+      transition: color 0.2s ease;
+    }
+    .close-btn:hover {
+      color: #ef4444;
+    }
+    #modalTitle {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 0.25rem;
+      color: #111827;
+    }
+    #modalUniverse {
+      font-size: 0.9rem;
+      color: #6b7280;
+      margin-bottom: 1rem;
+    }
+    #modalDescription {
+      font-size: 1rem;
+      color: #374151;
+      margin-bottom: 1rem;
+      line-height: 1.5;
+      white-space: pre-wrap;
+    }
+    #modalRefersTo {
+      font-style: italic;
+      font-size: 0.85rem;
+      color: #6b7280;
+      border-left: 4px solid #ef4444;
+      padding-left: 12px;
+    }
+    header {
+      background: white;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+      padding: 16px 24px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 12px;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: #111827;
+      flex-grow: 1;
+    }
+    header .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    input#search, select#universeFilter {
+      padding: 8px 14px;
+      border-radius: 8px;
+      border: 1px solid #d1d5db;
+      font-size: 1rem;
+      transition: border-color 0.2s ease;
+    }
+    input#search:focus, select#universeFilter:focus {
+      outline: none;
+      border-color: #ef4444;
+      box-shadow: 0 0 4px #ef4444aa;
+    }
+    #search {
+      width: 180px;
+    }
+    #universeFilter {
+      min-width: 160px;
+    }
+    #search::placeholder {
+      color: #9ca3af;
+    }
+    @media (max-width: 640px) {
+      header {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+      }
+      #search, #universeFilter {
+        width: 100%;
+      }
+      #network {
+        margin: 8px 0 0 0;
+        border-radius: 0;
+      }
+    }
+    /* Node hover glow */
+    .vis-network .vis-node:hover {
+      box-shadow: 0 0 10px 3px #ef4444;
+      transition: box-shadow 0.3s ease;
     }
   </style>
 </head>
 <body class="h-full flex flex-col">
 
-<header class="p-4 bg-gray-100 flex flex-wrap gap-4 items-center">
-  <h1 class="text-xl font-bold flex-grow">🎬 Film Evreni Ağı</h1>
-  <input id="search" placeholder="Ara..." class="border rounded px-3 py-1" />
-  <select id="universeFilter" class="border rounded px-3 py-1">
-    <option value="">Tüm Evrenler</option>
-  </select>
+<header>
+  <h1>🎬 Film Evreni Ağı</h1>
+  <div class="controls">
+    <input id="search" placeholder="Ara..." aria-label="Film ara" />
+    <select id="universeFilter" aria-label="Evren seç" >
+      <option value="">Tüm Evrenler</option>
+    </select>
+  </div>
 </header>
 
 <div id="network" class="flex-grow"></div>
 
 <!-- Modal -->
-<div id="modalOverlay" class="hidden fixed inset-0 modal-bg flex items-center justify-center z-50">
-  <div class="bg-white rounded-lg max-w-lg w-full p-6 relative">
-    <button id="closeModal" class="absolute top-3 right-3 text-gray-600 hover:text-black font-bold text-xl">✖</button>
-    <h2 id="modalTitle" class="text-2xl font-bold mb-2"></h2>
-    <p id="modalUniverse" class="text-sm text-gray-600 mb-2"></p>
-    <p id="modalDescription" class="mb-2"></p>
-    <p id="modalRefersTo" class="text-xs italic text-gray-500"></p>
+<div id="modalOverlay" class="hidden fixed inset-0 modal-bg flex items-center justify-center z-50 p-4">
+  <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button id="closeModal" class="close-btn" aria-label="Kapat">✖</button>
+    <h2 id="modalTitle"></h2>
+    <p id="modalUniverse"></p>
+    <p id="modalDescription"></p>
+    <p id="modalRefersTo"></p>
   </div>
 </div>
 
@@ -113,13 +234,13 @@
       shape: 'circularImage',
       borderWidth: 2,
       borderWidthSelected: 4,
-      color: { border: '#111' }
+      color: { border: '#ef4444' }
     })));
     edges.add(filteredEdges.map(e => ({
       from: e.from,
       to: e.to,
       arrows: 'to',
-      color: { color: '#888' }
+      color: { color: '#ef4444' }
     })));
   }
 
@@ -152,14 +273,16 @@
         shape: 'circularImage',
         size: 25,
         font: { color: '#fff', size: 14 },
-        borderWidthSelected: 4
+        borderWidthSelected: 6,
+        color: { border: '#ef4444' }
       },
       edges: {
         arrows: { to: { enabled: true, scaleFactor: 0.5 } },
-        color: '#555'
+        color: '#ef4444'
       },
-      interaction: { hover: true },
-      physics: { stabilization: true }
+      interaction: { hover: true, tooltipDelay: 200 },
+      physics: { stabilization: true, barnesHut: { gravitationalConstant: -4000 } },
+      layout: { improvedLayout: true }
     };
     network = new vis.Network(container, data, options);
 
