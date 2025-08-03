@@ -1,68 +1,182 @@
 
 <!DOCTYPE html>
-<html lang="tr" x-data="app()" x-init="loadAll()">
+<html lang="tr" class="h-full">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Film Evreni Ağı</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Film Evreni Ağı - vis-network</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
-</head>
-<body class="bg-gray-100 text-gray-900 p-4">
-
-  <h1 class="text-3xl font-bold mb-6">🎬 Film Evreni Ağı</h1>
-
-  <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-    <template x-for="film in films" :key="film.id">
-      <div class="bg-white rounded-lg shadow p-2 cursor-pointer hover:shadow-lg" @click="selectFilm(film)">
-        <img :src="film.image" alt="" class="rounded w-full h-40 object-cover mb-2">
-        <h2 class="text-lg font-semibold" x-text="film.label"></h2>
-        <p class="text-sm text-gray-500" x-text="film.universe"></p>
-      </div>
-    </template>
-  </div>
-
-  <!-- Modal -->
-  <div x-show="selected" class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50" x-transition>
-    <div class="bg-white p-6 rounded max-w-md w-full relative" @click.outside="selected = null">
-      <h2 class="text-2xl font-bold mb-2" x-text="selected.label"></h2>
-      <p class="mb-2 text-sm text-gray-500" x-text="'Evren: ' + selected.universe"></p>
-      <p class="mb-2" x-text="selected.description || 'Açıklama yok.'"></p>
-      <p class="text-xs italic text-gray-600" x-text="'🎯 Göndermeler: ' + (selected.refers_to || 'Yok')"></p>
-      <button class="absolute top-2 right-2 text-gray-600 hover:text-black" @click="selected = null">✖</button>
-    </div>
-  </div>
-
-  <script>
-    function app() {
-      return {
-        films: [],
-        selected: null,
-        async loadAll() {
-          const files = [
-            "avatar_last_airbender",
-            "avatar_pandora",
-            "dc",
-            "harrypotter",
-            "marvel",
-            "matrix",
-            "middleearth",
-            "pixar",
-            "starwars"
-          ];
-          let all = [];
-          for (let f of files) {
-            const res = await fetch('data/' + f + '.json');
-            const json = await res.json();
-            all.push(...json.nodes.map(n => ({ ...n, universe: f })));
-          }
-          this.films = all;
-        },
-        selectFilm(film) {
-          this.selected = film;
-        }
-      }
+  <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+  <style>
+    html, body, #network {
+      height: 100%;
+      margin: 0; padding: 0;
     }
-  </script>
+    #network {
+      border: 1px solid #ddd;
+      background: white;
+    }
+    .modal-bg {
+      background: rgba(0,0,0,0.6);
+    }
+  </style>
+</head>
+<body class="h-full flex flex-col">
+
+<header class="p-4 bg-gray-100 flex flex-wrap gap-4 items-center">
+  <h1 class="text-xl font-bold flex-grow">🎬 Film Evreni Ağı</h1>
+  <input id="search" placeholder="Ara..." class="border rounded px-3 py-1" />
+  <select id="universeFilter" class="border rounded px-3 py-1">
+    <option value="">Tüm Evrenler</option>
+  </select>
+</header>
+
+<div id="network" class="flex-grow"></div>
+
+<!-- Modal -->
+<div id="modalOverlay" class="hidden fixed inset-0 modal-bg flex items-center justify-center z-50">
+  <div class="bg-white rounded-lg max-w-lg w-full p-6 relative">
+    <button id="closeModal" class="absolute top-3 right-3 text-gray-600 hover:text-black font-bold text-xl">✖</button>
+    <h2 id="modalTitle" class="text-2xl font-bold mb-2"></h2>
+    <p id="modalUniverse" class="text-sm text-gray-600 mb-2"></p>
+    <p id="modalDescription" class="mb-2"></p>
+    <p id="modalRefersTo" class="text-xs italic text-gray-500"></p>
+  </div>
+</div>
+
+<script>
+  let network;
+  let allNodes = [];
+  let allEdges = [];
+  let nodes, edges;
+  let filteredNodes = [];
+  let filteredEdges = [];
+
+  async function loadData() {
+    const evrenler = [
+      "avatar_last_airbender",
+      "avatar_pandora",
+      "dc",
+      "harrypotter",
+      "marvel",
+      "matrix",
+      "middleearth",
+      "pixar",
+      "starwars"
+    ];
+    let nodesTemp = [];
+    let edgesTemp = [];
+    for (const evren of evrenler) {
+      const res = await fetch('data/' + evren + '.json');
+      const data = await res.json();
+      nodesTemp = nodesTemp.concat(data.nodes.map(n => ({...n, universe: evren})));
+      edgesTemp = edgesTemp.concat(data.edges);
+    }
+    allNodes = nodesTemp;
+    allEdges = edgesTemp;
+  }
+
+  function initUniverseFilter() {
+    const select = document.getElementById('universeFilter');
+    const universes = [...new Set(allNodes.map(n => n.universe))];
+    universes.forEach(u => {
+      const opt = document.createElement('option');
+      opt.value = u;
+      opt.textContent = u;
+      select.appendChild(opt);
+    });
+    select.addEventListener('change', () => {
+      applyFilters();
+    });
+  }
+
+  function applyFilters() {
+    const searchTerm = document.getElementById('search').value.toLowerCase();
+    const universe = document.getElementById('universeFilter').value;
+    filteredNodes = allNodes.filter(n =>
+      (!universe || n.universe === universe) &&
+      (!searchTerm || (n.label && n.label.toLowerCase().includes(searchTerm)))
+    );
+    const nodeIds = new Set(filteredNodes.map(n => n.id));
+    filteredEdges = allEdges.filter(e => nodeIds.has(e.from) && nodeIds.has(e.to));
+    updateNetwork();
+  }
+
+  function updateNetwork() {
+    nodes.clear();
+    edges.clear();
+    nodes.add(filteredNodes.map(n => ({
+      id: n.id,
+      label: n.label,
+      title: n.description || "",
+      image: n.image,
+      shape: 'circularImage',
+      borderWidth: 2,
+      borderWidthSelected: 4,
+      color: { border: '#111' }
+    })));
+    edges.add(filteredEdges.map(e => ({
+      from: e.from,
+      to: e.to,
+      arrows: 'to',
+      color: { color: '#888' }
+    })));
+  }
+
+  function showModal(node) {
+    const modal = document.getElementById('modalOverlay');
+    document.getElementById('modalTitle').textContent = node.label || 'Bilinmeyen';
+    document.getElementById('modalUniverse').textContent = 'Evren: ' + (node.universe || 'Bilinmiyor');
+    document.getElementById('modalDescription').textContent = node.description || 'Açıklama yok.';
+    document.getElementById('modalRefersTo').textContent = 'Göndermeler: ' + (node.refers_to || 'Yok.');
+    modal.classList.remove('hidden');
+  }
+
+  function hideModal() {
+    document.getElementById('modalOverlay').classList.add('hidden');
+  }
+
+  document.getElementById('closeModal').addEventListener('click', hideModal);
+  document.getElementById('modalOverlay').addEventListener('click', e => {
+    if(e.target.id === 'modalOverlay') hideModal();
+  });
+
+  async function start() {
+    await loadData();
+    nodes = new vis.DataSet();
+    edges = new vis.DataSet();
+    const container = document.getElementById('network');
+    const data = { nodes, edges };
+    const options = {
+      nodes: {
+        shape: 'circularImage',
+        size: 25,
+        font: { color: '#fff', size: 14 },
+        borderWidthSelected: 4
+      },
+      edges: {
+        arrows: { to: { enabled: true, scaleFactor: 0.5 } },
+        color: '#555'
+      },
+      interaction: { hover: true },
+      physics: { stabilization: true }
+    };
+    network = new vis.Network(container, data, options);
+
+    network.on('click', params => {
+      if(params.nodes.length > 0){
+        const node = nodes.get(params.nodes[0]);
+        showModal(node);
+      }
+    });
+
+    document.getElementById('search').addEventListener('input', applyFilters);
+    initUniverseFilter();
+    applyFilters();
+  }
+
+  start();
+</script>
+
 </body>
 </html>
