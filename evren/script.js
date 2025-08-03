@@ -70,7 +70,6 @@ function loadUniverseData() {
 }
 
 function drawNetwork() {
-  const container = document.getElementById("network");
   console.log("🎯 drawNetwork çağrıldı");
   console.log("📌 Node sayısı:", allNodes.length);
   console.log("📌 Edge sayısı:", allEdges.length);
@@ -93,57 +92,8 @@ function drawNetwork() {
     console.log("✅ Ağ çizimi tamamlandı");
   });
   network.on("click", function (params) {
-    if (params.nodes.length > 0) {
-      const nodeId = params.nodes[0];
-      const node = allNodes.get(nodeId);
-      if (!node) return;
-      if (selectedNodes.length === 0) {
-        selectedNodes.push(node);
-        showInfo(node);
-      } else if (selectedNodes.length === 1 && selectedNodes[0].id !== node.id) {
-        selectedNodes.push(node);
-        showComparison(selectedNodes[0], selectedNodes[1]);
-        selectedNodes = [];
-      } else {
-        selectedNodes = [node];
-        showInfo(node);
-      }
-    }
-  });
-}
-
-
-
-
-
-
-
-      titleEl.innerHTML = node.label || "Bilinmeyen";
-      const typeIcon = node.type === "dizi" ? "📺 Dizi" : "🎬 Film";
-      const dateInfo = node.release_date ? `🗓️ ${node.release_date}` : "";
-      const metaInfo = `<div style="margin-top: 6px; font-size: 14px; color: gray;">${typeIcon} &nbsp; ${dateInfo}</div>`;
-      titleEl.innerHTML += metaInfo;
-
-      descEl.innerHTML = "<b>🎞️ Özeti</b><br>" + (node.description || "Açıklama yok.");
-      refersEl.innerHTML = "<b>📌 Gönderme</b><br>" + (node.refers_to || "Yok.");
-
-      const addBtn = document.createElement("button");
-      addBtn.textContent = "🎯 Karşılaştırmaya Ekle";
-      addBtn.onclick = () => handleAddToCompare(node.id);
-      descEl.appendChild(document.createElement("br"));
-      descEl.appendChild(addBtn);
-
-      infoBox.classList.remove("hidden");
-      overlay.classList.remove("hidden");
-
-      if (!selectedNodes.includes(nodeId)) {
-        selectedNodes.push(nodeId);
-        if (selectedNodes.length > 2) selectedNodes.shift();
-      }
-    
- 
-
-
+ });
+};
 function closeInfoBox() {
   infoBox.classList.add("hidden");
   overlay.classList.add("hidden");
@@ -295,6 +245,6 @@ function init() {
     setupSearchBox();
     setupTimelineToggle();
     setupCompareButtonNew();
-});
+  });
 }
 document.addEventListener("DOMContentLoaded", init); 
