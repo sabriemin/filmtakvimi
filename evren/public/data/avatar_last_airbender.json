@@ -1,0 +1,115 @@
+{
+  "nodes": [
+    {
+      "id": "film/avatarthelastairbender",
+      "label": "Avatar: The Last Airbender (2005)",
+      "title": "Avatar: The Last Airbender",
+      "image": "images/avatar.jpg",
+      "shape": "image",
+      "description": "Avatar: The Last Airbender, Pixar’ın etkileyici anlatımıyla şekillenen bir yapımdır. Film, ahlaki seçimler ve liderlik temasını işlerken izleyiciye unutulmaz bir görsel ve duygusal deneyim sunar. Karakter gelişimi, hikâye akışı ve yaratıcı evren tasarımıyla Avatar: The Last Airbender, stüdyonun anlatı başarısının güçlü örneklerinden biridir.",
+      "refers_to": "Avatar: The Last Airbender, Pixar evrenindeki diğer yapımlara çeşitli yollarla bağlanır. Filmdeki semboller, karakter göndermeleri veya mekan tekrarları, Toy Story’den WALL-E’ye kadar birçok yapıma referans oluşturur. Bu bağlantılar, evrenin bütünlüğünü ve anlatılar arası sürekliliği pekiştirir.",
+      "type": "dizi",
+      "release_date": "2005-02-21",
+      "level": 0
+    },
+    {
+      "id": "film/avatarthelastairbender2010",
+      "label": "Avatar: The Last Airbender (2010) (2010)",
+      "title": "Avatar: The Last Airbender (2010)",
+      "image": "images/avatar.jpg",
+      "shape": "image",
+      "description": "Avatar: The Last Airbender (2010), Pixar’ın etkileyici anlatımıyla şekillenen bir yapımdır. Film, atalardan gelen güç temasını işlerken izleyiciye unutulmaz bir görsel ve duygusal deneyim sunar. Karakter gelişimi, hikâye akışı ve yaratıcı evren tasarımıyla Avatar: The Last Airbender (2010), stüdyonun anlatı başarısının güçlü örneklerinden biridir.",
+      "refers_to": "Avatar: The Last Airbender (2010), Pixar evrenindeki diğer yapımlara çeşitli yollarla bağlanır. Filmdeki semboller, karakter göndermeleri veya mekan tekrarları, Toy Story’den WALL-E’ye kadar birçok yapıma referans oluşturur. Bu bağlantılar, evrenin bütünlüğünü ve anlatılar arası sürekliliği pekiştirir.",
+      "type": "film",
+      "release_date": "2010-07-01",
+      "level": 1
+    },
+    {
+      "id": "film/thelegendofkorra",
+      "label": "The Legend of Korra (2012)",
+      "title": "The Legend of Korra",
+      "image": "images/avatar.jpg",
+      "shape": "image",
+      "description": "The Legend of Korra, Pixar’ın etkileyici anlatımıyla şekillenen bir yapımdır. Film, kültürler arası çatışma temasını işlerken izleyiciye unutulmaz bir görsel ve duygusal deneyim sunar. Karakter gelişimi, hikâye akışı ve yaratıcı evren tasarımıyla The Legend of Korra, stüdyonun anlatı başarısının güçlü örneklerinden biridir.",
+      "refers_to": "The Legend of Korra, Pixar evrenindeki diğer yapımlara çeşitli yollarla bağlanır. Filmdeki semboller, karakter göndermeleri veya mekan tekrarları, Toy Story’den WALL-E’ye kadar birçok yapıma referans oluşturur. Bu bağlantılar, evrenin bütünlüğünü ve anlatılar arası sürekliliği pekiştirir.",
+      "type": "dizi",
+      "release_date": "2012-04-14",
+      "level": 2
+    },
+    {
+      "id": "film/avatarthelastairbendernetflix2024",
+      "label": "Avatar: The Last Airbender (Netflix 2024) (2024)",
+      "title": "Avatar: The Last Airbender (Netflix 2024)",
+      "image": "images/avatar.jpg",
+      "shape": "image",
+      "description": "Avatar: The Last Airbender (Netflix 2024), Pixar’ın etkileyici anlatımıyla şekillenen bir yapımdır. Film, kimlik çatışması ve ruhsal büyüme temasını işlerken izleyiciye unutulmaz bir görsel ve duygusal deneyim sunar. Karakter gelişimi, hikâye akışı ve yaratıcı evren tasarımıyla Avatar: The Last Airbender (Netflix 2024), stüdyonun anlatı başarısının güçlü örneklerinden biridir.",
+      "refers_to": "Avatar: The Last Airbender (Netflix 2024), Pixar evrenindeki diğer yapımlara çeşitli yollarla bağlanır. Filmdeki semboller, karakter göndermeleri veya mekan tekrarları, Toy Story’den WALL-E’ye kadar birçok yapıma referans oluşturur. Bu bağlantılar, evrenin bütünlüğünü ve anlatılar arası sürekliliği pekiştirir.",
+      "type": "dizi",
+      "release_date": "2024-02-22",
+      "level": 3
+    },
+    {
+      "id": "film/avataraangfilm2025",
+      "label": "Avatar Aang Film (2025) (2025)",
+      "title": "Avatar Aang Film (2025)",
+      "image": "images/avatar.jpg",
+      "shape": "image",
+      "description": "Avatar Aang Film (2025), Pixar’ın etkileyici anlatımıyla şekillenen bir yapımdır. Film, barışın bedeli temasını işlerken izleyiciye unutulmaz bir görsel ve duygusal deneyim sunar. Karakter gelişimi, hikâye akışı ve yaratıcı evren tasarımıyla Avatar Aang Film (2025), stüdyonun anlatı başarısının güçlü örneklerinden biridir.",
+      "refers_to": "Avatar Aang Film (2025), Pixar evrenindeki diğer yapımlara çeşitli yollarla bağlanır. Filmdeki semboller, karakter göndermeleri veya mekan tekrarları, Toy Story’den WALL-E’ye kadar birçok yapıma referans oluşturur. Bu bağlantılar, evrenin bütünlüğünü ve anlatılar arası sürekliliği pekiştirir.",
+      "type": "film",
+      "release_date": "2025-10-01",
+      "level": 4
+    },
+    {
+      "id": "film/zukofilmi",
+      "label": "Zuko Filmi (2026)",
+      "title": "Zuko Filmi",
+      "image": "images/avatar.jpg",
+      "shape": "image",
+      "description": "Zuko Filmi, Pixar’ın etkileyici anlatımıyla şekillenen bir yapımdır. Film, ahlaki seçimler ve liderlik temasını işlerken izleyiciye unutulmaz bir görsel ve duygusal deneyim sunar. Karakter gelişimi, hikâye akışı ve yaratıcı evren tasarımıyla Zuko Filmi, stüdyonun anlatı başarısının güçlü örneklerinden biridir.",
+      "refers_to": "Zuko Filmi, Pixar evrenindeki diğer yapımlara çeşitli yollarla bağlanır. Filmdeki semboller, karakter göndermeleri veya mekan tekrarları, Toy Story’den WALL-E’ye kadar birçok yapıma referans oluşturur. Bu bağlantılar, evrenin bütünlüğünü ve anlatılar arası sürekliliği pekiştirir.",
+      "type": "film",
+      "release_date": "2026-12-01",
+      "level": 5
+    },
+    {
+      "id": "film/yeniavatarfilmikorrasonrası",
+      "label": "Yeni Avatar Filmi (Korra sonrası) (2028)",
+      "title": "Yeni Avatar Filmi (Korra sonrası)",
+      "image": "images/avatar.jpg",
+      "shape": "image",
+      "description": "Yeni Avatar Filmi (Korra sonrası), Pixar’ın etkileyici anlatımıyla şekillenen bir yapımdır. Film, barışın bedeli temasını işlerken izleyiciye unutulmaz bir görsel ve duygusal deneyim sunar. Karakter gelişimi, hikâye akışı ve yaratıcı evren tasarımıyla Yeni Avatar Filmi (Korra sonrası), stüdyonun anlatı başarısının güçlü örneklerinden biridir.",
+      "refers_to": "Yeni Avatar Filmi (Korra sonrası), Pixar evrenindeki diğer yapımlara çeşitli yollarla bağlanır. Filmdeki semboller, karakter göndermeleri veya mekan tekrarları, Toy Story’den WALL-E’ye kadar birçok yapıma referans oluşturur. Bu bağlantılar, evrenin bütünlüğünü ve anlatılar arası sürekliliği pekiştirir.",
+      "type": "film",
+      "release_date": "2028-06-01",
+      "level": 6
+    }
+  ],
+  "edges": [
+    {
+      "from": "film/avatarthelastairbender",
+      "to": "film/thelegendofkorra",
+      "type": "devam"
+    },
+    {
+      "from": "film/avatarthelastairbender",
+      "to": "film/avataraangfilm2025",
+      "type": "devam"
+    },
+    {
+      "from": "film/avatarthelastairbender",
+      "to": "film/zukofilmi",
+      "type": "karakter göndermesi"
+    },
+    {
+      "from": "film/avatarthelastairbender",
+      "to": "film/avatarthelastairbendernetflix2024",
+      "type": "yeniden yapım"
+    },
+    {
+      "from": "film/thelegendofkorra",
+      "to": "film/yeniavatarfilmikorrasonrası",
+      "type": "devam"
+    }
+  ]
+}

@@ -1,0 +1,346 @@
+{
+  "nodes": [
+    {
+      "id": "phantomMenace1999",
+      "label": "The Phantom Menace (1999)",
+      "title": "The Phantom Menace",
+      "image": "images/starwars.jpg",
+      "shape": "image",
+      "description": "Star Wars: A New Hope, sinema tarihinin en etkileyici bilim kurgu anlatılarından birini başlatır. Film, genç Luke Skywalker’ın çöl gezegeni Tatooine’de sıradan bir hayat sürerken galaksiyi değiştirecek bir kaderle yüzleşmesini konu alır. Gizemli bir mesaj taşıyan R2-D2'nun ortaya çıkışıyla Luke, eski Jedi Obi-Wan Kenobi ile tanışır. Prenses Leia’yı kurtarmak ve Ölüm Yıldızı’nı yok etmek için Han Solo ve Chewbacca ile bir araya gelirler. Bu süreçte Luke, Güç’ün varlığını keşfeder ve ilk adımlarını atar. A New Hope, klasik kahraman yolculuğunu uzay operası formatında sunarak hem aksiyon hem duygusal katmanlar içerir. Film, kötülüğün sembolü Darth Vader ve İmparatorluk rejimiyle mücadeleyi, özgürlük arayışının sembolü olan Asi İttifakı’nın direnişiyle çarpıcı şekilde birleştirir. Efektleri, müzikleri ve anlatımıyla kültleşmiştir.",
+      "refers_to": "A New Hope, sonraki Star Wars filmleri için temel bir yapı taşını oluşturur. Filmde tanıtılan karakterler—Luke, Leia, Han Solo ve Darth Vader—gelecek bölümlerde gelişir. Obi-Wan’ın geçmişi, öncül üçlemede daha derinlemesine işlenirken, Luke’un Jedi yolculuğu orijinal üçlemenin diğer filmlerinde tamamlanır. Filmde bahsedilen Güç, Jedi ve Sith kavramları, evrenin felsefi derinliğini oluşturur. Ayrıca R2-D2 ve C-3PO gibi droidler, neredeyse tüm filmlerde yer alarak bir süreklilik hissi sağlar. Ölüm Yıldızı gibi teknolojiler ve İmparatorluk’un yapısı, Rogue One ve Andor gibi daha sonraki yapımlarda daha detaylı işlenmiştir. A New Hope’un birçok sahnesi, devam filmleri ve spin-off’larda bilinçli biçimde yeniden canlandırılır.",
+      "type": "film",
+      "release_date": "1999-05-19",
+      "level": 0
+    },
+    {
+      "id": "attackOfTheClones2002",
+      "label": "Attack of the Clones (2002)",
+      "title": "Attack of the Clones",
+      "image": "images/starwars.jpg",
+      "shape": "image",
+      "description": "The Empire Strikes Back, Star Wars evreninde karanlık temaların hâkim olduğu ve karakter gelişimlerinin derinleştiği bir başyapıttır. Luke, Hoth gezegenindeki Asi üssünde İmparatorluk saldırısına uğradıktan sonra Yoda’nın rehberliğinde Jedi eğitimine başlar. Han, Leia, Chewbacca ve C-3PO ise bulundukları uzay gemisiyle kaçarken Cloud City'ye sığınır. Burada Darth Vader tarafından tuzağa düşürülürler. Film, Luke’un Vader ile ilk yüzleşmesini ve şok edici soy bağını keşfetmesini konu alır. Vader’ın meşhur 'Ben senin babanım' repliği sinema tarihine geçer. Film boyunca karakterler ciddi bedeller öder. Han Solo karbonit içinde dondurulur, Leia çaresizlikle izler. Film, umut ve direnişin yanı sıra kişisel çatışmaları da merkeze alarak galaksinin geleceği için büyük bir gerilim oluşturur.",
+      "refers_to": "The Empire Strikes Back, A New Hope’un bıraktığı yerden devam ederken, karakterler arasında daha derin ilişkiler kurar. Luke’un Vader ile olan bağı, serinin dramatik omurgasını oluşturur. Yoda’nın tanıtılması, Jedi gelenekleri hakkında daha fazla bilgi verirken, Dagobah sistemi daha sonra animasyon dizilerde ve Mandalorian gibi yapımlarda tekrar karşımıza çıkar. Filmde Han Solo’nun başına gelenler Return of the Jedi’a doğrudan bağlanır. Ayrıca Lando Calrissian karakteri, Solo filminde gençliğiyle yeniden işlenir. İmparatorluk’un stratejik saldırıları ve Asi İttifakı'nın dağılışı, Andor gibi dizilere ilham verir. Luke’un eğitimi ve içsel çatışmaları, sonraki Jedi anlatımlarının temelidir.",
+      "type": "film",
+      "release_date": "2002-05-16",
+      "level": 1
+    },
+    {
+      "id": "cloneWars2008",
+      "label": "The Clone Wars (2008)",
+      "title": "The Clone Wars",
+      "image": "images/starwars.jpg",
+      "shape": "image",
+      "description": "Return of the Jedi, orijinal üçlemenin epik finalini sunar. Luke Skywalker, Jedi olarak yetkinleşirken babası Darth Vader’ı karanlık taraftan kurtarmaya çalışır. Han Solo, Jabba the Hutt’un elinden kurtarılır ve Asi İttifakı son savaş için hazırlanır. Endor orman ayında Ölüm Yıldızı’nın ikinci versiyonu devreye girmeden önce yok edilmeye çalışılır. Ewok kabilesi yardımıyla yer savaşı yürütülürken, Luke İmparator Palpatine ile yüzleşmek zorunda kalır. Bu yüzleşme, hem Luke’un Güç’e olan bağını hem de Vader’ın içsel çatışmasını doruğa taşır. Vader, sonunda oğlunu korumak için İmparator’u yok eder ve kefaretini öder. Film, asi zaferiyle sona ererken, galaksinin yeni bir umutla yeniden şekillenmeye başladığını simgeler. Müzikleri, duygusal sahneleri ve aksiyonu ile unutulmazdır.",
+      "refers_to": "Return of the Jedi, orijinal üçlemenin doruk noktasıdır ve birçok devam filmine zemin hazırlar. Luke’un Jedi olarak gelişimi ve Vader’ın kurtuluşu, The Rise of Skywalker’da yansıma bulur. Ewok’lar, animasyon dizilere konu olurken, Endor savaşı sonrası durum Mandalorian dizisinin bağlamını oluşturur. Palpatine’in ölümü, The Force Awakens ile sorgulanır. Leia’nın liderliğe yükselmesi, sonraki üçlemede devam eder. Ayrıca filmdeki Vader’ın kefareti, Obi-Wan Kenobi dizisinde de tematik olarak işlenir. R2-D2 ve C-3PO’nun devam eden varlığı, evrensel sürekliliği korur. Filmdeki teknolojiler ve gemiler, video oyunları ve kitaplarda da detaylı olarak işlenmiştir.",
+      "type": "dizi",
+      "release_date": "2008-10-03",
+      "level": 2
+    },
+    {
+      "id": "revengeOfTheSith2005",
+      "label": "Revenge of the Sith (2005)",
+      "title": "Revenge of the Sith",
+      "image": "images/starwars.jpg",
+      "shape": "image",
+      "description": "Revenge of the Sith, Pixar’ın etkileyici anlatımıyla şekillenen bir yapımdır. Film, kaderin ağırlığı temasını işlerken izleyiciye unutulmaz bir görsel ve duygusal deneyim sunar. Karakter gelişimi, hikâye akışı ve yaratıcı evren tasarımıyla Revenge of the Sith, stüdyonun anlatı başarısının güçlü örneklerinden biridir.",
+      "refers_to": "Revenge of the Sith, Pixar evrenindeki diğer yapımlara çeşitli yollarla bağlanır. Filmdeki semboller, karakter göndermeleri veya mekan tekrarları, Toy Story’den WALL-E’ye kadar birçok yapıma referans oluşturur. Bu bağlantılar, evrenin bütünlüğünü ve anlatılar arası sürekliliği pekiştirir.",
+      "type": "film",
+      "release_date": "2005-05-19",
+      "level": 3
+    },
+    {
+      "id": "badBatch2021",
+      "label": "The Bad Batch (2021)",
+      "title": "The Bad Batch",
+      "image": "images/starwars.jpg",
+      "shape": "image",
+      "description": "The Bad Batch, Pixar’ın etkileyici anlatımıyla şekillenen bir yapımdır. Film, kaderin ağırlığı temasını işlerken izleyiciye unutulmaz bir görsel ve duygusal deneyim sunar. Karakter gelişimi, hikâye akışı ve yaratıcı evren tasarımıyla The Bad Batch, stüdyonun anlatı başarısının güçlü örneklerinden biridir.",
+      "refers_to": "The Bad Batch, Pixar evrenindeki diğer yapımlara çeşitli yollarla bağlanır. Filmdeki semboller, karakter göndermeleri veya mekan tekrarları, Toy Story’den WALL-E’ye kadar birçok yapıma referans oluşturur. Bu bağlantılar, evrenin bütünlüğünü ve anlatılar arası sürekliliği pekiştirir.",
+      "type": "dizi",
+      "release_date": "2021-05-04",
+      "level": 4
+    },
+    {
+      "id": "solo2018",
+      "label": "Solo: A Star Wars Story (2018)",
+      "title": "Solo: A Star Wars Story",
+      "image": "images/starwars.jpg",
+      "shape": "image",
+      "description": "Solo: A Star Wars Story, Pixar’ın etkileyici anlatımıyla şekillenen bir yapımdır. Film, kaderin ağırlığı temasını işlerken izleyiciye unutulmaz bir görsel ve duygusal deneyim sunar. Karakter gelişimi, hikâye akışı ve yaratıcı evren tasarımıyla Solo: A Star Wars Story, stüdyonun anlatı başarısının güçlü örneklerinden biridir.",
+      "refers_to": "Solo: A Star Wars Story, Pixar evrenindeki diğer yapımlara çeşitli yollarla bağlanır. Filmdeki semboller, karakter göndermeleri veya mekan tekrarları, Toy Story’den WALL-E’ye kadar birçok yapıma referans oluşturur. Bu bağlantılar, evrenin bütünlüğünü ve anlatılar arası sürekliliği pekiştirir.",
+      "type": "film",
+      "release_date": "2018-05-25",
+      "level": 5
+    },
+    {
+      "id": "obiWanKenobi2022",
+      "label": "Obi-Wan Kenobi (2022)",
+      "title": "Obi-Wan Kenobi",
+      "image": "images/starwars.jpg",
+      "shape": "image",
+      "description": "Obi-Wan Kenobi, Pixar’ın etkileyici anlatımıyla şekillenen bir yapımdır. Film, direnişin anlamı temasını işlerken izleyiciye unutulmaz bir görsel ve duygusal deneyim sunar. Karakter gelişimi, hikâye akışı ve yaratıcı evren tasarımıyla Obi-Wan Kenobi, stüdyonun anlatı başarısının güçlü örneklerinden biridir.",
+      "refers_to": "Obi-Wan Kenobi, Pixar evrenindeki diğer yapımlara çeşitli yollarla bağlanır. Filmdeki semboller, karakter göndermeleri veya mekan tekrarları, Toy Story’den WALL-E’ye kadar birçok yapıma referans oluşturur. Bu bağlantılar, evrenin bütünlüğünü ve anlatılar arası sürekliliği pekiştirir.",
+      "type": "dizi",
+      "release_date": "2022-05-27",
+      "level": 6
+    },
+    {
+      "id": "rebels2014",
+      "label": "Star Wars Rebels (2014)",
+      "title": "Star Wars Rebels",
+      "image": "images/starwars.jpg",
+      "shape": "image",
+      "description": "Star Wars Rebels, Pixar’ın etkileyici anlatımıyla şekillenen bir yapımdır. Film, kahramanlık temasını işlerken izleyiciye unutulmaz bir görsel ve duygusal deneyim sunar. Karakter gelişimi, hikâye akışı ve yaratıcı evren tasarımıyla Star Wars Rebels, stüdyonun anlatı başarısının güçlü örneklerinden biridir.",
+      "refers_to": "Star Wars Rebels, Pixar evrenindeki diğer yapımlara çeşitli yollarla bağlanır. Filmdeki semboller, karakter göndermeleri veya mekan tekrarları, Toy Story’den WALL-E’ye kadar birçok yapıma referans oluşturur. Bu bağlantılar, evrenin bütünlüğünü ve anlatılar arası sürekliliği pekiştirir.",
+      "type": "dizi",
+      "release_date": "2014-10-03",
+      "level": 7
+    },
+    {
+      "id": "andor2022",
+      "label": "Andor (2022)",
+      "title": "Andor",
+      "image": "images/starwars.jpg",
+      "shape": "image",
+      "description": "Andor, Pixar’ın etkileyici anlatımıyla şekillenen bir yapımdır. Film, kahramanlık temasını işlerken izleyiciye unutulmaz bir görsel ve duygusal deneyim sunar. Karakter gelişimi, hikâye akışı ve yaratıcı evren tasarımıyla Andor, stüdyonun anlatı başarısının güçlü örneklerinden biridir.",
+      "refers_to": "Andor, Pixar evrenindeki diğer yapımlara çeşitli yollarla bağlanır. Filmdeki semboller, karakter göndermeleri veya mekan tekrarları, Toy Story’den WALL-E’ye kadar birçok yapıma referans oluşturur. Bu bağlantılar, evrenin bütünlüğünü ve anlatılar arası sürekliliği pekiştirir.",
+      "type": "dizi",
+      "release_date": "2022-09-21",
+      "level": 8
+    },
+    {
+      "id": "rogueOne2016",
+      "label": "Rogue One (2016)",
+      "title": "Rogue One",
+      "image": "images/starwars.jpg",
+      "shape": "image",
+      "description": "Rogue One, Pixar’ın etkileyici anlatımıyla şekillenen bir yapımdır. Film, direnişin anlamı temasını işlerken izleyiciye unutulmaz bir görsel ve duygusal deneyim sunar. Karakter gelişimi, hikâye akışı ve yaratıcı evren tasarımıyla Rogue One, stüdyonun anlatı başarısının güçlü örneklerinden biridir.",
+      "refers_to": "Rogue One, Pixar evrenindeki diğer yapımlara çeşitli yollarla bağlanır. Filmdeki semboller, karakter göndermeleri veya mekan tekrarları, Toy Story’den WALL-E’ye kadar birçok yapıma referans oluşturur. Bu bağlantılar, evrenin bütünlüğünü ve anlatılar arası sürekliliği pekiştirir.",
+      "type": "film",
+      "release_date": "2016-12-16",
+      "level": 9
+    },
+    {
+      "id": "aNewHope1977",
+      "label": "A New Hope (1977)",
+      "title": "A New Hope",
+      "image": "images/starwars.jpg",
+      "shape": "image",
+      "description": "A New Hope, Pixar’ın etkileyici anlatımıyla şekillenen bir yapımdır. Film, karanlık ve aydınlık tarafın dengesi temasını işlerken izleyiciye unutulmaz bir görsel ve duygusal deneyim sunar. Karakter gelişimi, hikâye akışı ve yaratıcı evren tasarımıyla A New Hope, stüdyonun anlatı başarısının güçlü örneklerinden biridir.",
+      "refers_to": "A New Hope, Pixar evrenindeki diğer yapımlara çeşitli yollarla bağlanır. Filmdeki semboller, karakter göndermeleri veya mekan tekrarları, Toy Story’den WALL-E’ye kadar birçok yapıma referans oluşturur. Bu bağlantılar, evrenin bütünlüğünü ve anlatılar arası sürekliliği pekiştirir.",
+      "type": "film",
+      "release_date": "1977-05-25",
+      "level": 10
+    },
+    {
+      "id": "empireStrikesBack1980",
+      "label": "The Empire Strikes Back (1980)",
+      "title": "The Empire Strikes Back",
+      "image": "images/starwars.jpg",
+      "shape": "image",
+      "description": "The Empire Strikes Back, Pixar’ın etkileyici anlatımıyla şekillenen bir yapımdır. Film, aile bağlarının gücü temasını işlerken izleyiciye unutulmaz bir görsel ve duygusal deneyim sunar. Karakter gelişimi, hikâye akışı ve yaratıcı evren tasarımıyla The Empire Strikes Back, stüdyonun anlatı başarısının güçlü örneklerinden biridir.",
+      "refers_to": "The Empire Strikes Back, Pixar evrenindeki diğer yapımlara çeşitli yollarla bağlanır. Filmdeki semboller, karakter göndermeleri veya mekan tekrarları, Toy Story’den WALL-E’ye kadar birçok yapıma referans oluşturur. Bu bağlantılar, evrenin bütünlüğünü ve anlatılar arası sürekliliği pekiştirir.",
+      "type": "film",
+      "release_date": "1980-05-21",
+      "level": 11
+    },
+    {
+      "id": "returnOfTheJedi1983",
+      "label": "Return of the Jedi (1983)",
+      "title": "Return of the Jedi",
+      "image": "images/starwars.jpg",
+      "shape": "image",
+      "description": "Return of the Jedi, Pixar’ın etkileyici anlatımıyla şekillenen bir yapımdır. Film, direnişin anlamı temasını işlerken izleyiciye unutulmaz bir görsel ve duygusal deneyim sunar. Karakter gelişimi, hikâye akışı ve yaratıcı evren tasarımıyla Return of the Jedi, stüdyonun anlatı başarısının güçlü örneklerinden biridir.",
+      "refers_to": "Return of the Jedi, Pixar evrenindeki diğer yapımlara çeşitli yollarla bağlanır. Filmdeki semboller, karakter göndermeleri veya mekan tekrarları, Toy Story’den WALL-E’ye kadar birçok yapıma referans oluşturur. Bu bağlantılar, evrenin bütünlüğünü ve anlatılar arası sürekliliği pekiştirir.",
+      "type": "film",
+      "release_date": "1983-05-25",
+      "level": 12
+    },
+    {
+      "id": "mandalorian2019",
+      "label": "The Mandalorian (2019)",
+      "title": "The Mandalorian",
+      "image": "images/starwars.jpg",
+      "shape": "image",
+      "description": "The Mandalorian, Pixar’ın etkileyici anlatımıyla şekillenen bir yapımdır. Film, aile bağlarının gücü temasını işlerken izleyiciye unutulmaz bir görsel ve duygusal deneyim sunar. Karakter gelişimi, hikâye akışı ve yaratıcı evren tasarımıyla The Mandalorian, stüdyonun anlatı başarısının güçlü örneklerinden biridir.",
+      "refers_to": "The Mandalorian, Pixar evrenindeki diğer yapımlara çeşitli yollarla bağlanır. Filmdeki semboller, karakter göndermeleri veya mekan tekrarları, Toy Story’den WALL-E’ye kadar birçok yapıma referans oluşturur. Bu bağlantılar, evrenin bütünlüğünü ve anlatılar arası sürekliliği pekiştirir.",
+      "type": "dizi",
+      "release_date": "2019-11-12",
+      "level": 13
+    },
+    {
+      "id": "bookOfBobaFett2021",
+      "label": "The Book of Boba Fett (2021)",
+      "title": "The Book of Boba Fett",
+      "image": "images/starwars.jpg",
+      "shape": "image",
+      "description": "The Book of Boba Fett, Pixar’ın etkileyici anlatımıyla şekillenen bir yapımdır. Film, kendini keşfetme temasını işlerken izleyiciye unutulmaz bir görsel ve duygusal deneyim sunar. Karakter gelişimi, hikâye akışı ve yaratıcı evren tasarımıyla The Book of Boba Fett, stüdyonun anlatı başarısının güçlü örneklerinden biridir.",
+      "refers_to": "The Book of Boba Fett, Pixar evrenindeki diğer yapımlara çeşitli yollarla bağlanır. Filmdeki semboller, karakter göndermeleri veya mekan tekrarları, Toy Story’den WALL-E’ye kadar birçok yapıma referans oluşturur. Bu bağlantılar, evrenin bütünlüğünü ve anlatılar arası sürekliliği pekiştirir.",
+      "type": "dizi",
+      "release_date": "2021-12-29",
+      "level": 13
+    },
+    {
+      "id": "ahsoka2023",
+      "label": "Ahsoka (2023)",
+      "title": "Ahsoka",
+      "image": "images/starwars.jpg",
+      "shape": "image",
+      "description": "Ahsoka, Pixar’ın etkileyici anlatımıyla şekillenen bir yapımdır. Film, kaderin ağırlığı temasını işlerken izleyiciye unutulmaz bir görsel ve duygusal deneyim sunar. Karakter gelişimi, hikâye akışı ve yaratıcı evren tasarımıyla Ahsoka, stüdyonun anlatı başarısının güçlü örneklerinden biridir.",
+      "refers_to": "Ahsoka, Pixar evrenindeki diğer yapımlara çeşitli yollarla bağlanır. Filmdeki semboller, karakter göndermeleri veya mekan tekrarları, Toy Story’den WALL-E’ye kadar birçok yapıma referans oluşturur. Bu bağlantılar, evrenin bütünlüğünü ve anlatılar arası sürekliliği pekiştirir.",
+      "type": "dizi",
+      "release_date": "2023-08-22",
+      "level": 14
+    },
+    {
+      "id": "forceAwakens2015",
+      "label": "The Force Awakens (2015)",
+      "title": "The Force Awakens",
+      "image": "images/starwars.jpg",
+      "shape": "image",
+      "description": "The Force Awakens, Pixar’ın etkileyici anlatımıyla şekillenen bir yapımdır. Film, kaderin ağırlığı temasını işlerken izleyiciye unutulmaz bir görsel ve duygusal deneyim sunar. Karakter gelişimi, hikâye akışı ve yaratıcı evren tasarımıyla The Force Awakens, stüdyonun anlatı başarısının güçlü örneklerinden biridir.",
+      "refers_to": "The Force Awakens, Pixar evrenindeki diğer yapımlara çeşitli yollarla bağlanır. Filmdeki semboller, karakter göndermeleri veya mekan tekrarları, Toy Story’den WALL-E’ye kadar birçok yapıma referans oluşturur. Bu bağlantılar, evrenin bütünlüğünü ve anlatılar arası sürekliliği pekiştirir.",
+      "type": "film",
+      "release_date": "2015-12-18",
+      "level": 15
+    },
+    {
+      "id": "lastJedi2017",
+      "label": "The Last Jedi (2017)",
+      "title": "The Last Jedi",
+      "image": "images/starwars.jpg",
+      "shape": "image",
+      "description": "The Last Jedi, Pixar’ın etkileyici anlatımıyla şekillenen bir yapımdır. Film, sadakat temasını işlerken izleyiciye unutulmaz bir görsel ve duygusal deneyim sunar. Karakter gelişimi, hikâye akışı ve yaratıcı evren tasarımıyla The Last Jedi, stüdyonun anlatı başarısının güçlü örneklerinden biridir.",
+      "refers_to": "The Last Jedi, Pixar evrenindeki diğer yapımlara çeşitli yollarla bağlanır. Filmdeki semboller, karakter göndermeleri veya mekan tekrarları, Toy Story’den WALL-E’ye kadar birçok yapıma referans oluşturur. Bu bağlantılar, evrenin bütünlüğünü ve anlatılar arası sürekliliği pekiştirir.",
+      "type": "film",
+      "release_date": "2017-12-15",
+      "level": 16
+    },
+    {
+      "id": "riseOfSkywalker2019",
+      "label": "The Rise of Skywalker (2019)",
+      "title": "The Rise of Skywalker",
+      "image": "images/starwars.jpg",
+      "shape": "image",
+      "description": "The Rise of Skywalker, Pixar’ın etkileyici anlatımıyla şekillenen bir yapımdır. Film, direnişin anlamı temasını işlerken izleyiciye unutulmaz bir görsel ve duygusal deneyim sunar. Karakter gelişimi, hikâye akışı ve yaratıcı evren tasarımıyla The Rise of Skywalker, stüdyonun anlatı başarısının güçlü örneklerinden biridir.",
+      "refers_to": "The Rise of Skywalker, Pixar evrenindeki diğer yapımlara çeşitli yollarla bağlanır. Filmdeki semboller, karakter göndermeleri veya mekan tekrarları, Toy Story’den WALL-E’ye kadar birçok yapıma referans oluşturur. Bu bağlantılar, evrenin bütünlüğünü ve anlatılar arası sürekliliği pekiştirir.",
+      "type": "film",
+      "release_date": "2019-12-20",
+      "level": 17
+    },
+    {
+      "id": "visions2021",
+      "label": "Star Wars: Visions (2021)",
+      "title": "Star Wars: Visions",
+      "image": "images/starwars.jpg",
+      "shape": "image",
+      "description": "Star Wars: Visions, Pixar’ın etkileyici anlatımıyla şekillenen bir yapımdır. Film, karanlık ve aydınlık tarafın dengesi temasını işlerken izleyiciye unutulmaz bir görsel ve duygusal deneyim sunar. Karakter gelişimi, hikâye akışı ve yaratıcı evren tasarımıyla Star Wars: Visions, stüdyonun anlatı başarısının güçlü örneklerinden biridir.",
+      "refers_to": "Star Wars: Visions, Pixar evrenindeki diğer yapımlara çeşitli yollarla bağlanır. Filmdeki semboller, karakter göndermeleri veya mekan tekrarları, Toy Story’den WALL-E’ye kadar birçok yapıma referans oluşturur. Bu bağlantılar, evrenin bütünlüğünü ve anlatılar arası sürekliliği pekiştirir.",
+      "type": "dizi",
+      "release_date": "2021-09-22",
+      "level": 18
+    }
+  ],
+  "edges": [
+    {
+      "from": "phantomMenace1999",
+      "to": "attackOfTheClones2002",
+      "type": "devam"
+    },
+    {
+      "from": "attackOfTheClones2002",
+      "to": "cloneWars2008",
+      "type": "ön hikaye"
+    },
+    {
+      "from": "cloneWars2008",
+      "to": "revengeOfTheSith2005",
+      "type": "ön hikaye"
+    },
+    {
+      "from": "revengeOfTheSith2005",
+      "to": "obiWanKenobi2022",
+      "type": "devam"
+    },
+    {
+      "from": "cloneWars2008",
+      "to": "badBatch2021",
+      "type": "devam"
+    },
+    {
+      "from": "badBatch2021",
+      "to": "rebels2014",
+      "type": "ön hikaye"
+    },
+    {
+      "from": "solo2018",
+      "to": "rogueOne2016",
+      "type": "karakter göndermesi"
+    },
+    {
+      "from": "obiWanKenobi2022",
+      "to": "rogueOne2016",
+      "type": "zaman çizgisi bağlantısı"
+    },
+    {
+      "from": "rebels2014",
+      "to": "rogueOne2016",
+      "type": "ön hikaye"
+    },
+    {
+      "from": "andor2022",
+      "to": "rogueOne2016",
+      "type": "devam"
+    },
+    {
+      "from": "rogueOne2016",
+      "to": "aNewHope1977",
+      "type": "ön hikaye"
+    },
+    {
+      "from": "aNewHope1977",
+      "to": "empireStrikesBack1980",
+      "type": "devam"
+    },
+    {
+      "from": "empireStrikesBack1980",
+      "to": "returnOfTheJedi1983",
+      "type": "devam"
+    },
+    {
+      "from": "returnOfTheJedi1983",
+      "to": "mandalorian2019",
+      "type": "devam"
+    },
+    {
+      "from": "mandalorian2019",
+      "to": "bookOfBobaFett2021",
+      "type": "yan hikaye"
+    },
+    {
+      "from": "rebels2014",
+      "to": "ahsoka2023",
+      "type": "devam"
+    },
+    {
+      "from": "mandalorian2019",
+      "to": "ahsoka2023",
+      "type": "karakter göndermesi"
+    },
+    {
+      "from": "ahsoka2023",
+      "to": "riseOfSkywalker2019",
+      "type": "zihinsel bağlantı"
+    },
+    {
+      "from": "forceAwakens2015",
+      "to": "lastJedi2017",
+      "type": "devam"
+    },
+    {
+      "from": "lastJedi2017",
+      "to": "riseOfSkywalker2019",
+      "type": "devam"
+    }
+  ]
+}
