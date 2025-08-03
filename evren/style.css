@@ -169,3 +169,40 @@ body.dark .ui-top-controls input {
     width: 95%;
   }
 }
+
+
+/* Temaya göre zemin ve yazı rengi kontrastını netleştirir */
+body {
+  background-color: #ffffff;
+  color: #111111;
+}
+body.dark {
+  background-color: #111111;
+  color: #eeeeee;
+}
+.modal {
+  background-color: #ffffffee;
+  color: #111111;
+}
+body.dark .modal {
+  background-color: #1a1a1aee;
+  color: #eeeeee;
+}
+.ui-top-controls {
+  background: rgba(255, 255, 255, 0.85);
+}
+body.dark .ui-top-controls {
+  background: rgba(0, 0, 0, 0.7);
+}
+.ui-top-controls button,
+.ui-top-controls select,
+.ui-top-controls input {
+  background-color: #f9f9f9;
+  color: #111;
+}
+body.dark .ui-top-controls button,
+body.dark .ui-top-controls select,
+body.dark .ui-top-controls input {
+  background-color: #222;
+  color: #eee;
+}
