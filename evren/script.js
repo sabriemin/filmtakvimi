@@ -83,7 +83,7 @@ function drawNetwork() {
   };
   const options = {
     nodes: {
-      shape: "image",
+      shape: "dot",
       size: 25,
       font: { color: "#fff", size: 14 }
     },
@@ -288,5 +288,5 @@ function init() {
     setupTimelineToggle();
     setupCompareButtonNew();
 
-document.addEventListener("DOMContentLoaded", init);  });
+document.addEventListener("DOMContentLoaded", init); });
 }
