@@ -70,18 +70,16 @@ function loadUniverseData() {
 }
 
 function drawNetwork() {
-  console.warn("⚠️ #network container görünmüyor veya boyutu sıfır.");
-
+  console.log("🎯 drawNetwork() çağrıldı");
   console.log('📌 Node sayısı:', allNodes.length);
   console.log('📌 Edge sayısı:', allEdges.length);
   console.log('📦 container:', container);
-  console.warn('⚠️ #network container görünmüyor veya boyutu 0.');
-}
 
   const data = {
     nodes: allNodes,
     edges: allEdges
   };
+
   const options = {
     nodes: {
       shape: "dot",
@@ -95,18 +93,21 @@ function drawNetwork() {
     layout: {
       improvedLayout: true
     },
+    physics: { stabilization: true },
     groups: {
       "Marvel": { color: { background: "red", border: "darkred" } },
       "DC": { color: { background: "blue", border: "navy" } },
       "Pixar": { color: { background: "orange", border: "darkorange" } },
       "Star Wars": { color: { background: "lightblue", border: "steelblue" } }
-    },
-    physics: { stabilization: true }
+    }
   };
 
   network = new vis.Network(container, data, options);
+
   network.on("stabilized", () => {
-});
+    console.log("✅ Ağ çizimi tamamlandı");
+  });
+}
 
 
   network.on("click", function (params) {
