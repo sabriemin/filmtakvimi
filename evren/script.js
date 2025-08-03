@@ -31,6 +31,13 @@ function loadUniverseData() {
       .then(data => {
         console.log('✅ Veri yüklendi:', universe, data);
         const nodes = data.nodes.map(n => ({
+  shape: "circularImage",
+  image: n.image,
+  borderWidth: 2,
+  borderWidthSelected: 4,
+  color: {
+    border: document.body.classList.contains("dark") ? "#fff" : "#111"
+  },
           ...n,
           universe,
           group: universe,
@@ -180,9 +187,15 @@ function showYearMarkers() {
 function applyLabelTheme() {
   const dark = document.body.classList.contains("dark");
   const fontColor = dark ? "#ffffff" : "#111111";
+  const borderColor = dark ? "#ffffff" : "#111111";
   allNodes.forEach(n => {
-    allNodes.update({ id: n.id, font: { color: fontColor } });
+    allNodes.update({
+      id: n.id,
+      font: { color: fontColor },
+      color: { border: borderColor }
+    });
   });
+
 }
 
 function updateCompareButtonState() {
