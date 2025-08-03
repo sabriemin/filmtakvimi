@@ -1,17 +1,16 @@
+
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
   background-color: #fff;
   color: #111;
   transition: background 0.3s, color 0.3s;
-
   overflow: hidden;
 }
 body.dark {
   background-color: #111;
   color: #eee;
 }
-
 button, select, input {
   margin: 6px;
   padding: 8px 12px;
@@ -20,171 +19,30 @@ button, select, input {
   font-size: 14px;
   cursor: pointer;
 }
-
 button:hover {
   opacity: 0.85;
 }
-
 select, input {
   background-color: #f0f0f0;
 }
-
-body.dark select, 
-body.dark input {
+body.dark select, body.dark input {
   background-color: #222;
   color: white;
 }
-
 #network {
   width: 100vw;
   height: 100vh;
   position: absolute;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
   z-index: 1;
   background: #fff;
 }
-
 .modal {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: #222;
-  color: white;
-  padding: 24px;
-  border-radius: 12px;
-  z-index: 100;
-  max-width: 500px;
-  box-shadow: 0 0 16px rgba(0,0,0,0.5);
-}
-
-#modal-overlay {
-  position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0,0,0,0.6);
-  z-index: 50;
-}
-
-.hidden {
-  display: none;
-}
-
-.year-marker {
-  font-size: 12px;
-  color: gray;
-  position: absolute;
-  top: 0;
-  z-index: 20;
-}
-
-#compare-box {
-  max-width: 600px;
-  background: #333;
-  padding: 20px;
-  color: white;
-  border-radius: 16px;
-  z-index: 300;
-  overflow-y: auto;
-}
-
-body.dark {
-  background-color: #111;
-  color: #f0f0f0;
-}
-
-body.dark button,
-body.dark select,
-body.dark input {
-  background-color: #222;
-  color: #f0f0f0;
-}
-
-
-
-body:not(.dark) 
-
-
-
-
-.node-checkbox {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  z-index: 200;
-  width: 16px;
-  height: 16px;
-  accent-color: #3498db;
-}
-
-.ui-top-controls {
-  position: fixed;
-  top: 10px;
-  left: 10px;
-  z-index: 200;
-  display: flex;
-  gap: 8px;
-}
-
-
-/* 🔹 Gelişmiş Üst Kontrol Paneli */
-.ui-top-controls {
-  position: fixed;
-  top: 16px;
-  left: 16px;
-  z-index: 200;
-  display: flex;
-  gap: 12px;
-  padding: 12px 16px;
-  background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(8px);
-  border-radius: 12px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-}
-
-/* 🔸 Karanlık tema için uyarlama */
-body.dark .ui-top-controls {
-  background: rgba(0, 0, 0, 0.6);
-}
-
-/* 🔘 Ortak buton stilleri */
-.ui-top-controls button,
-.ui-top-controls select,
-.ui-top-controls input {
-  padding: 8px 14px;
-  border-radius: 8px;
-  font-size: 14px;
-  border: none;
-  outline: none;
-  background-color: #f9f9f9;
-  box-shadow: inset 0 0 0 1px #ccc;
-  transition: all 0.2s ease;
-}
-
-body.dark .ui-top-controls button,
-body.dark .ui-top-controls select,
-body.dark .ui-top-controls input {
-  background-color: #1f1f1f;
-  color: #f0f0f0;
-  box-shadow: inset 0 0 0 1px #444;
-}
-
-.ui-top-controls button:hover,
-.ui-top-controls select:hover,
-.ui-top-controls input:hover {
-  box-shadow: inset 0 0 0 1px #999;
-}
-
-/* 🔳 Arama kutusu genişliği */
-.ui-top-controls input[type="text"],
-.ui-top-controls input {
-  min-width: 160px;
-}
-
-
-/* 🎬 Geliştirilmiş Bilgi Kutusu (Info Modal) */
-#info-box {
   background: #ffffffee;
   color: #111;
   padding: 24px 28px;
@@ -197,7 +55,7 @@ body.dark .ui-top-controls input {
   line-height: 1.6;
   animation: fadeIn 0.4s ease;
 }
-body.dark #info-box {
+body.dark .modal {
   background: #1a1a1aee;
   color: #eee;
 }
@@ -235,26 +93,15 @@ body.dark #info-refers {
 #info-box button:hover {
   opacity: 0.9;
 }
-
-/* 🎯 Karşılaştırma Kutusu */
-#compare-box {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+#modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 50;
 }
-#compare-content {
-  display: flex;
-  gap: 20px;
-  justify-content: space-between;
+.hidden {
+  display: none;
 }
-#compare-content > div {
-  flex: 1;
-  background: #444;
-  padding: 12px;
-  border-radius: 10px;
-}
-
-/* 🗓 Yıl etiketleri geliştirildi */
 .year-marker {
   font-size: 13px;
   color: #666;
@@ -270,21 +117,53 @@ body.dark .year-marker {
   background: rgba(0,0,0,0.6);
   color: #ccc;
 }
-
-/* 🎨 Geçiş efektleri */
+.ui-top-controls {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  z-index: 200;
+  display: flex;
+  gap: 12px;
+  padding: 12px 16px;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+body.dark .ui-top-controls {
+  background: rgba(0, 0, 0, 0.6);
+}
+.ui-top-controls button,
+.ui-top-controls select,
+.ui-top-controls input {
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  background-color: #f9f9f9;
+  box-shadow: inset 0 0 0 1px #ccc;
+  transition: all 0.2s ease;
+}
+body.dark .ui-top-controls button,
+body.dark .ui-top-controls select,
+body.dark .ui-top-controls input {
+  background-color: #1f1f1f;
+  color: #f0f0f0;
+  box-shadow: inset 0 0 0 1px #444;
+}
+.ui-top-controls input[type="text"],
+.ui-top-controls input {
+  min-width: 160px;
+}
 @keyframes fadeIn {
   from {opacity: 0;}
   to {opacity: 1;}
 }
-
-/* 📱 Mobil uyumluluk */
 @media (max-width: 600px) {
   .ui-top-controls {
     flex-wrap: wrap;
     gap: 8px;
-  }
-  #compare-content {
-    flex-direction: column;
   }
   #info-box {
     width: 95%;
