@@ -2,7 +2,7 @@
   "name": "film-evreni-react",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://<kullanici_adiniz>.github.io/<repo_adi>",
+  "homepage": "https://sabriemin.github.io/filmtakvimi/evren",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -19,6 +19,6 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build -b gh-pages -r https://github.com/sabriemin/filmtakvimi.git -s evren"
   }
 }
