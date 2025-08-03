@@ -126,3 +126,58 @@ body:not(.dark)
   display: flex;
   gap: 8px;
 }
+
+
+/* 🔹 Gelişmiş Üst Kontrol Paneli */
+.ui-top-controls {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  z-index: 200;
+  display: flex;
+  gap: 12px;
+  padding: 12px 16px;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+/* 🔸 Karanlık tema için uyarlama */
+body.dark .ui-top-controls {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* 🔘 Ortak buton stilleri */
+.ui-top-controls button,
+.ui-top-controls select,
+.ui-top-controls input {
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  background-color: #f9f9f9;
+  box-shadow: inset 0 0 0 1px #ccc;
+  transition: all 0.2s ease;
+}
+
+body.dark .ui-top-controls button,
+body.dark .ui-top-controls select,
+body.dark .ui-top-controls input {
+  background-color: #1f1f1f;
+  color: #f0f0f0;
+  box-shadow: inset 0 0 0 1px #444;
+}
+
+.ui-top-controls button:hover,
+.ui-top-controls select:hover,
+.ui-top-controls input:hover {
+  box-shadow: inset 0 0 0 1px #999;
+}
+
+/* 🔳 Arama kutusu genişliği */
+.ui-top-controls input[type="text"],
+.ui-top-controls input {
+  min-width: 160px;
+}
