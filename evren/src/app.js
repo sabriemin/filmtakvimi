@@ -88,4 +88,6 @@ appObj.applyFilters = applyFiltersFactory(appObj);
 appObj.toggleTimeline = toggleTimelineFactory(appObj);
 appObj.toggleTheme = toggleThemeFactory(appObj);
 
-Alpine.data('app', () => appObj);
+Alpine.start();
+
+
