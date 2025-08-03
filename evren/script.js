@@ -70,16 +70,11 @@ function loadUniverseData() {
 }
 
 function drawNetwork() {
-  console.log("🎯 drawNetwork() çağrıldı");
-  console.log('📌 Node sayısı:', allNodes.length);
-  console.log('📌 Edge sayısı:', allEdges.length);
-  console.log('📦 container:', container);
-
-  const data = {
-    nodes: allNodes,
-    edges: allEdges
-  };
-
+  const container = document.getElementById("network");
+  console.log("🎯 drawNetwork çağrıldı");
+  console.log("📌 Node sayısı:", allNodes.length);
+  console.log("📌 Edge sayısı:", allEdges.length);
+  const data = { nodes: allNodes, edges: allEdges };
   const options = {
     nodes: {
       shape: "dot",
@@ -90,27 +85,42 @@ function drawNetwork() {
       arrows: "to",
       color: "#888"
     },
-    layout: {
-      improvedLayout: true
-    },
-    physics: { stabilization: true },
-    groups: {
-      "Marvel": { color: { background: "red", border: "darkred" } },
-      "DC": { color: { background: "blue", border: "navy" } },
-      "Pixar": { color: { background: "orange", border: "darkorange" } },
-      "Star Wars": { color: { background: "lightblue", border: "steelblue" } }
-    }
+    layout: { improvedLayout: true },
+    physics: { stabilization: true }
   };
+  network = new vis.Network(container, data, options);
+  network.on("stabilized", () => {
+    console.log("✅ Ağ çizimi tamamlandı");
+  });
+  network.on("click", function (params) {
+    if (params.nodes.length > 0) {
+      const nodeId = params.nodes[0];
+      const node = allNodes.get(nodeId);
+      if (!node) return;
+      if (selectedNodes.length === 0) {
+        selectedNodes.push(node);
+        showInfo(node);
+      } else if (selectedNodes.length === 1 && selectedNodes[0].id !== node.id) {
+        selectedNodes.push(node);
+        showComparison(selectedNodes[0], selectedNodes[1]);
+        selectedNodes = [];
+      } else {
+        selectedNodes = [node];
+        showInfo(node);
+      }
+    }
+  });
+}
+
 
   network = new vis.Network(container, data, options);
 
   network.on("stabilized", () => {
     console.log("✅ Ağ çizimi tamamlandı");
   });
-}
 
 
-  network.on("click", function (params) {
+
     if (params.nodes.length > 0) {
       const nodeId = params.nodes[0];
       const node = allNodes.get(nodeId);
@@ -138,7 +148,7 @@ function drawNetwork() {
         if (selectedNodes.length > 2) selectedNodes.shift();
       }
     }
-  });
+ 
 
 
 function closeInfoBox() {
