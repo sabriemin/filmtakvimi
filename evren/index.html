@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="tr" class="h-full">
+<html lang="tr" x-data="app()" x-init="init()">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Film Evreni Ağı - Gelişmiş Özellikler</title>
+  <title>Film Evreni Ağı - Gelişmiş Özellikler ve Çoklu Dil</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
   <style>
     html, body, #network {
       height: 100%;
       margin: 0; padding: 0;
-      background: #f9fafb;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      transition: background-color 0.3s, color 0.3s;
     }
     #network {
       border-radius: 12px;
@@ -19,6 +20,7 @@
       border: 1px solid #e2e8f0;
       background: white;
       margin: 12px;
+      transition: background-color 0.3s;
     }
     .modal-bg {
       background: rgba(0,0,0,0.75);
@@ -34,6 +36,7 @@
       padding: 24px;
       box-shadow: 0 12px 24px rgba(0,0,0,0.25);
       position: relative;
+      transition: background-color 0.3s, color 0.3s;
     }
     .close-btn {
       position: absolute;
@@ -85,51 +88,51 @@
       position: sticky;
       top: 0;
       z-index: 1000;
+      transition: background-color 0.3s, color 0.3s;
     }
     header h1 {
       font-size: 1.75rem;
       font-weight: 700;
       color: #111827;
       flex-grow: 1;
+      transition: color 0.3s;
     }
     header .controls {
       display: flex;
       flex-wrap: wrap;
       gap: 12px;
+      align-items: center;
     }
-    input#search, select#universeFilter {
+    input, select, button {
       padding: 8px 14px;
       border-radius: 8px;
       border: 1px solid #d1d5db;
       font-size: 1rem;
-      transition: border-color 0.2s ease;
+      transition: border-color 0.2s ease, background-color 0.3s, color 0.3s;
     }
-    input#search:focus, select#universeFilter:focus {
+    input:focus, select:focus {
       outline: none;
       border-color: #ef4444;
       box-shadow: 0 0 4px #ef4444aa;
     }
-    #search {
-      width: 180px;
-    }
-    #universeFilter {
-      min-width: 160px;
-    }
-    #search::placeholder {
-      color: #9ca3af;
-    }
-    #toggleTimeline {
+    button {
       background-color: #ef4444;
       color: white;
       font-weight: 600;
       border: none;
-      padding: 8px 16px;
-      border-radius: 8px;
       cursor: pointer;
-      transition: background-color 0.2s ease;
     }
-    #toggleTimeline:hover {
+    button:hover {
       background-color: #dc2626;
+    }
+    #search {
+      width: 180px;
+    }
+    #universeFilter, #edgeFilter, #langSelect {
+      min-width: 140px;
+    }
+    #yearRange {
+      width: 160px;
     }
     @media (max-width: 640px) {
       header {
@@ -137,7 +140,7 @@
         align-items: stretch;
         gap: 8px;
       }
-      #search, #universeFilter {
+      #search, #universeFilter, #edgeFilter, #yearRange, #langSelect {
         width: 100%;
       }
       #network {
@@ -150,231 +153,296 @@
       box-shadow: 0 0 10px 3px #ef4444;
       transition: box-shadow 0.3s ease;
     }
+    /* Dark mode */
+    body.dark {
+      background-color: #111827;
+      color: #d1d5db;
+    }
+    body.dark #network {
+      background-color: #1f2937;
+      border-color: #374151;
+    }
+    body.dark header {
+      background-color: #1f2937;
+      color: #d1d5db;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.7);
+    }
+    body.dark header h1 {
+      color: #f9fafb;
+    }
+    body.dark input, body.dark select, body.dark button {
+      background-color: #374151;
+      border-color: #4b5563;
+      color: #d1d5db;
+    }
+    body.dark input:focus, body.dark select:focus {
+      border-color: #ef4444;
+      box-shadow: 0 0 4px #ef4444aa;
+    }
+    body.dark button:hover {
+      background-color: #dc2626;
+    }
+    body.dark .modal-content {
+      background-color: #1f2937;
+      color: #d1d5db;
+    }
+    body.dark #modalTitle {
+      color: #f9fafb;
+    }
   </style>
 </head>
-<body class="h-full flex flex-col">
+<body class="h-full flex flex-col" :class="{dark: isDarkMode}">
 
 <header>
-  <h1>🎬 Film Evreni Ağı</h1>
+  <h1 x-text="lang === 'tr' ? '🎬 Film Evreni Ağı' : '🎬 Film Universe Network'"></h1>
   <div class="controls">
-    <input id="search" placeholder="Ara..." aria-label="Film ara" />
-    <select id="universeFilter" aria-label="Evren seç" >
-      <option value="">Tüm Evrenler</option>
+    <input id="search" x-model="search" :placeholder="lang === 'tr' ? 'Ara...' : 'Search...'" aria-label="Search" />
+    <select id="universeFilter" x-model="selectedUniverse" aria-label="Universe Filter">
+      <option value="">{{ lang === 'tr' ? 'Tüm Evrenler' : 'All Universes' }}</option>
+      <template x-for="u in universeList" :key="u">
+        <option :value="u" x-text="u"></option>
+      </template>
     </select>
-    <button id="toggleTimeline" aria-pressed="false" title="Zaman Çizelgesi Görünümü">⏳ Zaman Çizelgesi</button>
+    <select id="edgeFilter" x-model="selectedEdgeType" aria-label="Edge Type Filter">
+      <option value="">{{ lang === 'tr' ? 'Tüm Bağlantılar' : 'All Edges' }}</option>
+      <template x-for="type in edgeTypeList" :key="type">
+        <option :value="type" x-text="type"></option>
+      </template>
+    </select>
+    <input type="range" id="yearRange" min="1950" max="2030" step="1" x-model.number="maxYear" :title="lang === 'tr' ? 'Yıl Aralığı' : 'Year Range'"/>
+    <button @click="toggleTimeline" x-text="timelineMode ? (lang === 'tr' ? '🔄 Normal Görünüm' : '🔄 Normal View') : (lang === 'tr' ? '⏳ Zaman Çizelgesi' : '⏳ Timeline View')"></button>
+    <button @click="toggleTheme" :aria-pressed="isDarkMode" :title="lang === 'tr' ? 'Tema Değiştir' : 'Toggle Theme'" x-text="isDarkMode ? (lang === 'tr' ? '🌞 Açık Mod' : '🌞 Light Mode') : (lang === 'tr' ? '🌙 Koyu Mod' : '🌙 Dark Mode')"></button>
+    <select id="langSelect" x-model="lang" aria-label="Language Select" class="bg-white text-black">
+      <option value="tr">Türkçe</option>
+      <option value="en">English</option>
+    </select>
   </div>
 </header>
 
 <div id="network" class="flex-grow"></div>
 
 <!-- Modal -->
-<div id="modalOverlay" class="hidden fixed inset-0 modal-bg flex items-center justify-center z-50 p-4">
+<div id="modalOverlay" x-show="modalOpen" x-transition class="fixed inset-0 modal-bg flex items-center justify-center z-50 p-4" @click.away="modalOpen = false">
   <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-    <button id="closeModal" class="close-btn" aria-label="Kapat">✖</button>
-    <h2 id="modalTitle"></h2>
-    <p id="modalUniverse"></p>
-    <p id="modalDescription"></p>
-    <p id="modalRefersTo"></p>
+    <button id="closeModal" class="close-btn" aria-label="Close" @click="modalOpen = false">✖</button>
+    <h2 id="modalTitle" x-text="modalNode?.label || ''"></h2>
+    <p id="modalUniverse" x-text="(lang === 'tr' ? 'Evren: ' : 'Universe: ') + (modalNode?.universe || '')"></p>
+    <p id="modalDescription" x-text="modalNode?.description || (lang === 'tr' ? 'Açıklama yok.' : 'No description.')"></p>
+    <p id="modalRefersTo" x-text="(lang === 'tr' ? 'Göndermeler: ' : 'References: ') + (modalNode?.refers_to || (lang === 'tr' ? 'Yok.' : 'None.'))"></p>
   </div>
 </div>
 
 <script>
-  let network;
-  let allNodes = [];
-  let allEdges = [];
-  let nodes, edges;
-  let filteredNodes = [];
-  let filteredEdges = [];
-  let timelineMode = false;
+function app() {
+  return {
+    network: null,
+    allNodes: [],
+    allEdges: [],
+    nodes: null,
+    edges: null,
+    filteredNodes: [],
+    filteredEdges: [],
+    search: '',
+    selectedUniverse: '',
+    selectedEdgeType: '',
+    maxYear: new Date().getFullYear(),
+    timelineMode: false,
+    modalOpen: false,
+    modalNode: null,
+    universeList: [],
+    edgeTypeList: [],
+    isDarkMode: false,
+    lang: 'tr',
 
-  const edgeColors = {
-    "devam": "#2980b9",
-    "ön hikaye": "#e67e22",
-    "yan hikaye": "#8e44ad",
-    "evren geçişi": "#c0392b",
-    "görsel gönderme": "#7f8c8d",
-    "karakter göndermesi": "#27ae60",
-    "kurumsal gönderme": "#6e4b25",
-    "zaman çizgisi bağlantısı": "#1abc9c",
-    "karakter geçişi": "#2ecc71",
-    "tematik benzerlik": "#f1c40f",
-    "duygu ve bilinç teması": "#9b59b6",
-    "konseptsel devam": "#34495e",
-    "şehir yaşamı paralelliği": "#d35400",
-    "iç film/karakter kökeni": "#7d3c98",
-    "multiverse birleşmesi": "#e84393",
-    "paralel Kang anlatımı": "#16a085"
-  };
+    edgeColors: {
+      "devam": "#2980b9",
+      "ön hikaye": "#e67e22",
+      "yan hikaye": "#8e44ad",
+      "evren geçişi": "#c0392b",
+      "görsel gönderme": "#7f8c8d",
+      "karakter göndermesi": "#27ae60",
+      "kurumsal gönderme": "#6e4b25",
+      "zaman çizgisi bağlantısı": "#1abc9c",
+      "karakter geçişi": "#2ecc71",
+      "tematik benzerlik": "#f1c40f",
+      "duygu ve bilinç teması": "#9b59b6",
+      "konseptsel devam": "#34495e",
+      "şehir yaşamı paralelliği": "#d35400",
+      "iç film/karakter kökeni": "#7d3c98",
+      "multiverse birleşmesi": "#e84393",
+      "paralel Kang anlatımı": "#16a085"
+    },
 
-  async function loadData() {
-    const evrenler = [
-      "avatar_last_airbender",
-      "avatar_pandora",
-      "dc",
-      "harrypotter",
-      "marvel",
-      "matrix",
-      "middleearth",
-      "pixar",
-      "starwars"
-    ];
-    let nodesTemp = [];
-    let edgesTemp = [];
-    for (const evren of evrenler) {
-      const res = await fetch('data/' + evren + '.json');
-      const data = await res.json();
-      nodesTemp = nodesTemp.concat(data.nodes.map(n => ({...n, universe: evren})));
-      edgesTemp = edgesTemp.concat(data.edges);
-    }
-    allNodes = nodesTemp;
-    allEdges = edgesTemp;
-  }
+    init() {
+      this.loadData();
+      this.isDarkMode = localStorage.getItem('darkMode') === 'true';
+      this.lang = localStorage.getItem('lang') || 'tr';
+    },
 
-  function initUniverseFilter() {
-    const select = document.getElementById('universeFilter');
-    const universes = [...new Set(allNodes.map(n => n.universe))];
-    universes.forEach(u => {
-      const opt = document.createElement('option');
-      opt.value = u;
-      opt.textContent = u;
-      select.appendChild(opt);
-    });
-    select.addEventListener('change', () => {
-      applyFilters();
-    });
-  }
+    async loadData() {
+      const evrenler = [
+        "avatar_last_airbender",
+        "avatar_pandora",
+        "dc",
+        "harrypotter",
+        "marvel",
+        "matrix",
+        "middleearth",
+        "pixar",
+        "starwars"
+      ];
+      let nodesTemp = [];
+      let edgesTemp = [];
+      for (const evren of evrenler) {
+        const res = await fetch('data/' + evren + '.json');
+        const data = await res.json();
+        nodesTemp = nodesTemp.concat(data.nodes.map(n => ({...n, universe: evren})));
+        edgesTemp = edgesTemp.concat(data.edges);
+      }
+      this.allNodes = nodesTemp;
+      this.allEdges = edgesTemp;
 
-  function applyFilters() {
-    const searchTerm = document.getElementById('search').value.toLowerCase();
-    const universe = document.getElementById('universeFilter').value;
-    filteredNodes = allNodes.filter(n =>
-      (!universe || n.universe === universe) &&
-      (!searchTerm || (n.label && n.label.toLowerCase().includes(searchTerm)))
-    );
-    const nodeIds = new Set(filteredNodes.map(n => n.id));
-    filteredEdges = allEdges.filter(e => nodeIds.has(e.from) && nodeIds.has(e.to));
-    updateNetwork();
-  }
+      this.universeList = [...new Set(this.allNodes.map(n => n.universe))];
+      this.edgeTypeList = [...new Set(this.allEdges.map(e => e.type))].filter(t => t);
 
-  function updateNetwork() {
-    nodes.clear();
-    edges.clear();
-    if(timelineMode){
-      // timeline modu için x koordinatlarını tarih bazlı ayarla
-      const timelineNodes = filteredNodes.map(n => {
-        let x = 0;
-        if(n.release_date){
-          x = new Date(n.release_date).getTime() / 10000000;
+      this.setupNetwork();
+      this.applyFilters();
+    },
+
+    setupNetwork() {
+      this.nodes = new vis.DataSet();
+      this.edges = new vis.DataSet();
+      const container = document.getElementById('network');
+      const data = { nodes: this.nodes, edges: this.edges };
+      const options = {
+        nodes: {
+          size: 25,
+          font: { color: '#fff', size: 14 },
+          borderWidthSelected: 6,
+          color: { border: '#ef4444' }
+        },
+        edges: {
+          arrows: { to: { enabled: true, scaleFactor: 0.5 } },
+          smooth: {
+            enabled: true,
+            type: 'dynamic'
+          }
+        },
+        interaction: { hover: true, tooltipDelay: 200 },
+        physics: {
+          stabilization: true,
+          barnesHut: { gravitationalConstant: -4000 }
+        },
+        layout: { improvedLayout: true }
+      };
+      this.network = new vis.Network(container, data, options);
+
+      this.network.on('click', params => {
+        if(params.nodes.length > 0){
+          const node = this.nodes.get(params.nodes[0]);
+          this.modalNode = node;
+          this.modalOpen = true;
         }
-        return {
+      });
+
+      this.network.on('hoverEdge', params => {
+        if(params.edge){
+          const edge = this.edges.get(params.edge);
+          this.network.body.container.title = (this.lang === 'tr' ? 'Bağlantı türü: ' : 'Edge type: ') + (edge.type || (this.lang === 'tr' ? 'Bilinmiyor' : 'Unknown'));
+        }
+      });
+      this.network.on('blurEdge', () => {
+        this.network.body.container.title = '';
+      });
+    },
+
+    applyFilters() {
+      const searchTerm = this.search.toLowerCase();
+      const universe = this.selectedUniverse;
+      const edgeType = this.selectedEdgeType;
+      const maxYear = this.maxYear;
+
+      this.filteredNodes = this.allNodes.filter(n =>
+        (!universe || n.universe === universe) &&
+        (!searchTerm || (n.label && n.label.toLowerCase().includes(searchTerm))) &&
+        (!maxYear || !n.release_date || new Date(n.release_date).getFullYear() <= maxYear)
+      );
+
+      const nodeIds = new Set(this.filteredNodes.map(n => n.id));
+
+      this.filteredEdges = this.allEdges.filter(e =>
+        nodeIds.has(e.from) && nodeIds.has(e.to) &&
+        (!edgeType || e.type === edgeType)
+      );
+
+      this.updateNetwork();
+    },
+
+    updateNetwork() {
+      this.nodes.clear();
+      this.edges.clear();
+
+      if(this.timelineMode){
+        const timelineNodes = this.filteredNodes.map(n => {
+          let x = 0;
+          if(n.release_date){
+            x = new Date(n.release_date).getTime() / 10000000;
+          }
+          return {
+            ...n,
+            x,
+            y: 0,
+            fixed: {x:true, y:false},
+            shape: 'circularImage',
+            borderWidth: 2,
+            borderWidthSelected: 6,
+            color: { border: '#ef4444' }
+          };
+        });
+        this.nodes.add(timelineNodes);
+      } else {
+        this.nodes.add(this.filteredNodes.map(n => ({
           ...n,
-          x,
-          y: 0,
-          fixed: {x:true, y:false},
           shape: 'circularImage',
           borderWidth: 2,
           borderWidthSelected: 6,
           color: { border: '#ef4444' }
+        })));
+      }
+
+      this.edges.add(this.filteredEdges.map(e => {
+        let color = this.edgeColors[e.type] || '#888';
+        let width = (e.type === 'devam' || e.type === 'karakter geçişi') ? 3 : 1.5;
+        return {
+          ...e,
+          arrows: 'to',
+          color: { color },
+          width
         };
-      });
-      nodes.add(timelineNodes);
-    } else {
-      nodes.add(filteredNodes.map(n => ({
-        ...n,
-        shape: 'circularImage',
-        borderWidth: 2,
-        borderWidthSelected: 6,
-        color: { border: '#ef4444' }
-      })));
+      }));
+    },
+
+    toggleTimeline() {
+      this.timelineMode = !this.timelineMode;
+      this.applyFilters();
+    },
+
+    toggleTheme() {
+      this.isDarkMode = !this.isDarkMode;
+      localStorage.setItem('darkMode', this.isDarkMode);
+    },
+
+    $watch: {
+      search() { this.applyFilters(); },
+      selectedUniverse() { this.applyFilters(); },
+      selectedEdgeType() { this.applyFilters(); },
+      maxYear() { this.applyFilters(); },
+      lang(value) {
+        localStorage.setItem('lang', value);
+      }
     }
-    edges.add(filteredEdges.map(e => {
-      let color = edgeColors[e.type] || '#888';
-      let width = (e.type === 'devam' || e.type === 'karakter geçişi') ? 3 : 1.5;
-      return {
-        ...e,
-        arrows: 'to',
-        color: { color },
-        width
-      };
-    }));
   }
-
-  function showModal(node) {
-    const modal = document.getElementById('modalOverlay');
-    document.getElementById('modalTitle').textContent = node.label || 'Bilinmeyen';
-    document.getElementById('modalUniverse').textContent = 'Evren: ' + (node.universe || 'Bilinmiyor');
-    document.getElementById('modalDescription').textContent = node.description || 'Açıklama yok.';
-    document.getElementById('modalRefersTo').textContent = 'Göndermeler: ' + (node.refers_to || 'Yok.');
-    modal.classList.remove('hidden');
-  }
-
-  function hideModal() {
-    document.getElementById('modalOverlay').classList.add('hidden');
-  }
-
-  document.getElementById('closeModal').addEventListener('click', hideModal);
-  document.getElementById('modalOverlay').addEventListener('click', e => {
-    if(e.target.id === 'modalOverlay') hideModal();
-  });
-
-  document.getElementById('toggleTimeline').addEventListener('click', e => {
-    timelineMode = !timelineMode;
-    e.target.textContent = timelineMode ? '🔄 Normal Görünüm' : '⏳ Zaman Çizelgesi';
-    applyFilters();
-  });
-
-  async function start() {
-    await loadData();
-    nodes = new vis.DataSet();
-    edges = new vis.DataSet();
-    const container = document.getElementById('network');
-    const data = { nodes, edges };
-    const options = {
-      nodes: {
-        size: 25,
-        font: { color: '#fff', size: 14 },
-        borderWidthSelected: 6,
-        color: { border: '#ef4444' }
-      },
-      edges: {
-        arrows: { to: { enabled: true, scaleFactor: 0.5 } },
-        smooth: {
-          enabled: true,
-          type: 'dynamic'
-        }
-      },
-      interaction: { hover: true, tooltipDelay: 200 },
-      physics: {
-        stabilization: true,
-        barnesHut: { gravitationalConstant: -4000 }
-      },
-      layout: { improvedLayout: true }
-    };
-    network = new vis.Network(container, data, options);
-
-    network.on('click', params => {
-      if(params.nodes.length > 0){
-        const node = nodes.get(params.nodes[0]);
-        showModal(node);
-      }
-    });
-
-    network.on('hoverEdge', params => {
-      if(params.edge){
-        const edge = edges.get(params.edge);
-        network.body.container.title = 'Bağlantı türü: ' + (edge.type || 'Bilinmiyor');
-      }
-    });
-    network.on('blurEdge', () => {
-      network.body.container.title = '';
-    });
-
-    document.getElementById('search').addEventListener('input', applyFilters);
-    initUniverseFilter();
-    applyFilters();
-  }
-
-  start();
+}
 </script>
 
 </body>
