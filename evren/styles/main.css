@@ -1,4 +1,6 @@
 html, body, #network {
+  will-change: transform;
+
   height: 100%;
   margin: 0;
   padding: 0;
@@ -6,7 +8,8 @@ html, body, #network {
   transition: background-color 0.3s, color 0.3s;
 }
 #network {
-  height: calc(100vh - 96px);
+  will-change: transform;
+
   border-radius: 12px;
   margin: 12px;
   box-shadow: 0 4px 16px rgba(0,0,0,0.12);
@@ -69,6 +72,8 @@ body.dark {
   color: #d1d5db;
 }
 body.dark #network {
+  will-change: transform;
+
   background-color: #1f2937;
   border-color: #374151;
 }
