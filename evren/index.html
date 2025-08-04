@@ -28,7 +28,37 @@
 </head>
 <body class="flex flex-col min-h-screen" x-data="app" x-init="init()" class="dark:bg-gray-900 text-white overflow-hidden">
 
-  <header class="bg-white dark:bg-gray-800 shadow sticky top-0 z-50 p-4 flex flex-wrap gap-2 justify-between items-center">
+  <!-- modernized -->
+
+<header class="backdrop-blur-lg bg-white/5 dark:bg-slate-800/10 border border-slate-700/30 shadow-lg rounded-2xl p-4 m-4 flex flex-wrap gap-3 justify-between items-center">
+  <h1 class="text-2xl font-bold text-white">🎬 Film Evreni Ağı</h1>
+  <div class="flex flex-wrap gap-3 items-center">
+    <input x-model="search" placeholder="Ara..." class="px-4 py-2 rounded-xl bg-slate-800/40 text-white placeholder-gray-400 border border-slate-600 focus:outline-none" />
+    <select x-model="selectedUniverse" class="px-4 py-2 rounded-xl bg-slate-800/40 text-white border border-slate-600 focus:outline-none">
+      <option value="">Tüm Evrenler</option>
+      <template x-for="u in universeList" :key="u">
+        <option :value="u" x-text="formatUniverseName(u)"></option>
+      </template>
+    </select>
+    <select x-model="selectedEdgeType" class="px-4 py-2 rounded-xl bg-slate-800/40 text-white border border-slate-600 focus:outline-none">
+      <option value="">Tüm Bağlantılar</option>
+      <template x-for="t in edgeTypeList" :key="t">
+        <option :value="t" x-text="t"></option>
+      </template>
+    </select>
+    <input type="range" min="1950" max="2030" x-model.number="maxYear" class="accent-pink-500" />
+    <button @click="toggleTimeline" class="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-2 rounded-xl font-semibold shadow hover:opacity-90">
+      <span x-text="timelineMode ? '🔄 Normal' : '⏳ Zaman'"></span>
+    </button>
+    <button @click="toggleTheme" class="bg-gradient-to-r from-yellow-300 to-orange-400 text-black px-4 py-2 rounded-xl font-semibold shadow hover:opacity-90">
+      <span x-text="isDarkMode ? '🌙 Koyu' : '🌞 Açık'"></span>
+    </button>
+  </div>
+</header>
+
+<!-- end modernized -->
+
+<!--bg-white dark:bg-gray-800 shadow sticky top-0 z-50 p-4 flex flex-wrap gap-2 justify-between items-center">
     <h1 class="text-xl font-bold">🎬 Film Evreni Ağı</h1>
     <div class="w-full sm:w-auto flex flex-wrap gap-2 items-center justify-end mt-2">
       <input x-model="search" placeholder="Ara..." class="border rounded px-3 py-1 text-black dark:text-white bg-white dark:bg-gray-700" />
