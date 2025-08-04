@@ -104,3 +104,5 @@ export function app() {
     }
   }
 }
+
+window.app = app;
