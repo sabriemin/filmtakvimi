@@ -1,7 +1,14 @@
 html, body, #network {
+  width: 100%;
+  height: 100%;
   flex-grow: 1;
   min-height: 0;
   will-change: transform;
+  border-radius: 12px;
+  margin: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  border: 1px solid #e2e8f0;
+}
   will-change: transform;
 
   height: 100%;
@@ -11,9 +18,16 @@ html, body, #network {
   transition: background-color 0.3s, color 0.3s;
 }
 #network {
+  width: 100%;
+  height: 100%;
   flex-grow: 1;
   min-height: 0;
   will-change: transform;
+  border-radius: 12px;
+  margin: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  border: 1px solid #e2e8f0;
+}
   will-change: transform;
 
   border-radius: 12px;
@@ -78,9 +92,16 @@ body.dark {
   color: #d1d5db;
 }
 body.dark #network {
+  width: 100%;
+  height: 100%;
   flex-grow: 1;
   min-height: 0;
   will-change: transform;
+  border-radius: 12px;
+  margin: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  border: 1px solid #e2e8f0;
+}
   will-change: transform;
 
   background-color: #1f2937;
