@@ -1,0 +1,86 @@
+{
+  "nodes": [
+    {
+      "id": "film/avatar",
+      "label": "Avatar (2009)",
+      "title": "Avatar",
+      "image": "images/pandora.jpg",
+      "shape": "image",
+      "description": "'Avatar' filminde doğa ile ruhsal bağların derinliği teması güçlü bir anlatımla işlenir. Pandora'nın büyüleyici doğası ve ruhsal derinliği, insanlığın açgözlülüğüyle çarpışır. Film, görsel ihtişamının ötesinde, kimlik, aidiyet ve direniş gibi evrensel değerleri sorgular.",
+      "refers_to": "Avatar, Avatar: The Way of Water ve Avatar 5 filmlerine anlatı devamlılığı açısından güçlü göndermeler yapar. Özellikle karakter gelişimi, aile bağları ve Pandora'nın korunmasına dair ortak vurgular öne çıkar.",
+      "type": "film",
+      "release_date": "2009-12-18",
+      "level": 0
+    },
+    {
+      "id": "film/avatarthewayofwater",
+      "label": "Avatar: The Way of Water (2022)",
+      "title": "Avatar: The Way of Water",
+      "image": "images/pandora.jpg",
+      "shape": "image",
+      "description": "'Avatar: The Way of Water' filminde ruhani liderlik, geçmişin yankıları ve kabile dayanışması teması güçlü bir anlatımla işlenir. Pandora'nın büyüleyici doğası ve ruhsal derinliği, insanlığın açgözlülüğüyle çarpışır. Film, görsel ihtişamının ötesinde, kimlik, aidiyet ve direniş gibi evrensel değerleri sorgular.",
+      "refers_to": "Bu film, Avatar 3 ve Avatar 5 ile birlikte Pandora evreninin ruhani derinliğini ve toplumsal çatışmalarını işleyerek, evrenin bütüncül yapısını destekler.",
+      "type": "film",
+      "release_date": "2022-12-16",
+      "level": 1
+    },
+    {
+      "id": "film/avatar3",
+      "label": "Avatar 3 (2025)",
+      "title": "Avatar 3",
+      "image": "images/pandora.jpg",
+      "shape": "image",
+      "description": "'Avatar 3' filminde ailenin korunması ve aidiyet teması güçlü bir anlatımla işlenir. Pandora'nın büyüleyici doğası ve ruhsal derinliği, insanlığın açgözlülüğüyle çarpışır. Film, görsel ihtişamının ötesinde, kimlik, aidiyet ve direniş gibi evrensel değerleri sorgular.",
+      "refers_to": "Avatar ve Avatar: The Way of Water ile olan bağlar; mekânsal süreklilik, karakter geçmişi ve evrensel çatışma düzlemleri üzerinden filmde güçlü bir şekilde hissedilir.",
+      "type": "film",
+      "release_date": "2025-12-19",
+      "level": 2
+    },
+    {
+      "id": "film/avatar4",
+      "label": "Avatar 4 (2029)",
+      "title": "Avatar 4",
+      "image": "images/pandora.jpg",
+      "shape": "image",
+      "description": "'Avatar 4' filminde insan istilasının yol açtığı yıkım teması güçlü bir anlatımla işlenir. Pandora'nın büyüleyici doğası ve ruhsal derinliği, insanlığın açgözlülüğüyle çarpışır. Film, görsel ihtişamının ötesinde, kimlik, aidiyet ve direniş gibi evrensel değerleri sorgular.",
+      "refers_to": "Avatar 4, Avatar 3 ve Avatar: The Way of Water filmlerine anlatı devamlılığı açısından güçlü göndermeler yapar. Özellikle karakter gelişimi, aile bağları ve Pandora'nın korunmasına dair ortak vurgular öne çıkar.",
+      "type": "film",
+      "release_date": "2029-12-21",
+      "level": 3
+    },
+    {
+      "id": "film/avatar5",
+      "label": "Avatar 5 (2031)",
+      "title": "Avatar 5",
+      "image": "images/pandora.jpg",
+      "shape": "image",
+      "description": "'Avatar 5' filminde ruhani liderlik, geçmişin yankıları ve kabile dayanışması teması güçlü bir anlatımla işlenir. Pandora'nın büyüleyici doğası ve ruhsal derinliği, insanlığın açgözlülüğüyle çarpışır. Film, görsel ihtişamının ötesinde, kimlik, aidiyet ve direniş gibi evrensel değerleri sorgular.",
+      "refers_to": "Avatar 5, önceki yapımlar olan Avatar 4 ve Avatar 3 ile birlikte, Na'vi halkının yaşadığı evrimsel mücadeleyi derinleştirir ve yeni nesillere aktarılan direnişi resmeder.",
+      "type": "film",
+      "release_date": "2031-12-19",
+      "level": 4
+    }
+  ],
+  "edges": [
+    {
+      "from": "film/avatar",
+      "to": "film/avatarthewayofwater",
+      "type": "devam"
+    },
+    {
+      "from": "film/avatarthewayofwater",
+      "to": "film/avatar3",
+      "type": "devam"
+    },
+    {
+      "from": "film/avatar3",
+      "to": "film/avatar4",
+      "type": "devam"
+    },
+    {
+      "from": "film/avatar4",
+      "to": "film/avatar5",
+      "type": "devam"
+    }
+  ]
+}

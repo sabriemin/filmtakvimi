@@ -1,0 +1,115 @@
+{
+  "nodes": [
+    {
+      "id": "film/avatarthelastairbender",
+      "label": "Avatar: The Last Airbender (2005)",
+      "title": "Avatar: The Last Airbender",
+      "image": "images/avatar.jpg",
+      "shape": "image",
+      "description": "'Avatar: The Last Airbender' yapımı, Avatar evreninde uluslararası barışın yeniden sağlanması temasını merkezine alır. Karakterlerin ruhsal ve fiziksel gelişimleri, elementlerin gücünü öğrenme süreci ve bireysel sorumluluklar üzerinden anlatılır. Dengeyi sağlama çabası, evrenin temelini oluşturur.",
+      "refers_to": "Avatar: The Last Airbender, Avatar Aang Film (2025) ve Avatar: The Last Airbender (Netflix 2024) ile tarihsel olaylara, karakterlerin atalarına ve element ustalığına dair paralellikler kurar. Bu bağlamlar evrenin sürekliliğini pekiştirir.",
+      "type": "dizi",
+      "release_date": "2005-02-21",
+      "level": 0
+    },
+    {
+      "id": "film/avatarthelastairbender2010",
+      "label": "Avatar: The Last Airbender (2010) (2010)",
+      "title": "Avatar: The Last Airbender (2010)",
+      "image": "images/avatar.jpg",
+      "shape": "image",
+      "description": "'Avatar: The Last Airbender (2010)' yapımı, Avatar evreninde uluslararası barışın yeniden sağlanması temasını merkezine alır. Karakterlerin ruhsal ve fiziksel gelişimleri, elementlerin gücünü öğrenme süreci ve bireysel sorumluluklar üzerinden anlatılır. Dengeyi sağlama çabası, evrenin temelini oluşturur.",
+      "refers_to": "Avatar: The Last Airbender (2010), Zuko Filmi ve Avatar: The Last Airbender (Netflix 2024) ile tarihsel olaylara, karakterlerin atalarına ve element ustalığına dair paralellikler kurar. Bu bağlamlar evrenin sürekliliğini pekiştirir.",
+      "type": "film",
+      "release_date": "2010-07-01",
+      "level": 1
+    },
+    {
+      "id": "film/thelegendofkorra",
+      "label": "The Legend of Korra (2012)",
+      "title": "The Legend of Korra",
+      "image": "images/avatar.jpg",
+      "shape": "image",
+      "description": "'The Legend of Korra' yapımı, Avatar evreninde ruhsal yolculuk, maneviyat ve benlik keşfi temasını merkezine alır. Karakterlerin ruhsal ve fiziksel gelişimleri, elementlerin gücünü öğrenme süreci ve bireysel sorumluluklar üzerinden anlatılır. Dengeyi sağlama çabası, evrenin temelini oluşturur.",
+      "refers_to": "Avatar: The Last Airbender (2010) ve Avatar Aang Film (2025) yapımlarıyla doğrudan ilişkili olan bu yapım, ulusların geçmiş çatışmaları ve ruhsal gelenekler üzerinden güçlü göndermeler barındırır.",
+      "type": "dizi",
+      "release_date": "2012-04-14",
+      "level": 2
+    },
+    {
+      "id": "film/avatarthelastairbendernetflix2024",
+      "label": "Avatar: The Last Airbender (Netflix 2024) (2024)",
+      "title": "Avatar: The Last Airbender (Netflix 2024)",
+      "image": "images/avatar.jpg",
+      "shape": "image",
+      "description": "'Avatar: The Last Airbender (Netflix 2024)' yapımı, Avatar evreninde eski geleneklerin yeni kuşaklarla çatışması temasını merkezine alır. Karakterlerin ruhsal ve fiziksel gelişimleri, elementlerin gücünü öğrenme süreci ve bireysel sorumluluklar üzerinden anlatılır. Dengeyi sağlama çabası, evrenin temelini oluşturur.",
+      "refers_to": "Bu yapım, Avatar: The Last Airbender (2010) ve Yeni Avatar Filmi (Korra sonrası) ile birlikte eski ve yeni Avatar’ların mücadelelerini bağlamsal olarak işler. Ruhu, geçmişi ve toplumsal yapıları üzerinden göndermelerde bulunur.",
+      "type": "dizi",
+      "release_date": "2024-02-22",
+      "level": 3
+    },
+    {
+      "id": "film/avataraangfilm2025",
+      "label": "Avatar Aang Film (2025) (2025)",
+      "title": "Avatar Aang Film (2025)",
+      "image": "images/avatar.jpg",
+      "shape": "image",
+      "description": "'Avatar Aang Film (2025)' yapımı, Avatar evreninde dört elementin ustalığına giden zorlu yol temasını merkezine alır. Karakterlerin ruhsal ve fiziksel gelişimleri, elementlerin gücünü öğrenme süreci ve bireysel sorumluluklar üzerinden anlatılır. Dengeyi sağlama çabası, evrenin temelini oluşturur.",
+      "refers_to": "Bu yapım, Avatar: The Last Airbender (Netflix 2024) ve Avatar: The Last Airbender (2010) ile birlikte eski ve yeni Avatar’ların mücadelelerini bağlamsal olarak işler. Ruhu, geçmişi ve toplumsal yapıları üzerinden göndermelerde bulunur.",
+      "type": "film",
+      "release_date": "2025-10-01",
+      "level": 4
+    },
+    {
+      "id": "film/zukofilmi",
+      "label": "Zuko Filmi (2026)",
+      "title": "Zuko Filmi",
+      "image": "images/avatar.jpg",
+      "shape": "image",
+      "description": "'Zuko Filmi' yapımı, Avatar evreninde uluslararası barışın yeniden sağlanması temasını merkezine alır. Karakterlerin ruhsal ve fiziksel gelişimleri, elementlerin gücünü öğrenme süreci ve bireysel sorumluluklar üzerinden anlatılır. Dengeyi sağlama çabası, evrenin temelini oluşturur.",
+      "refers_to": "Yeni Avatar Filmi (Korra sonrası) ve Avatar: The Last Airbender (2010) yapımlarıyla doğrudan ilişkili olan bu yapım, ulusların geçmiş çatışmaları ve ruhsal gelenekler üzerinden güçlü göndermeler barındırır.",
+      "type": "film",
+      "release_date": "2026-12-01",
+      "level": 5
+    },
+    {
+      "id": "film/yeniavatarfilmikorrasonrası",
+      "label": "Yeni Avatar Filmi (Korra sonrası) (2028)",
+      "title": "Yeni Avatar Filmi (Korra sonrası)",
+      "image": "images/avatar.jpg",
+      "shape": "image",
+      "description": "'Yeni Avatar Filmi (Korra sonrası)' yapımı, Avatar evreninde eski geleneklerin yeni kuşaklarla çatışması temasını merkezine alır. Karakterlerin ruhsal ve fiziksel gelişimleri, elementlerin gücünü öğrenme süreci ve bireysel sorumluluklar üzerinden anlatılır. Dengeyi sağlama çabası, evrenin temelini oluşturur.",
+      "refers_to": "Yeni Avatar Filmi (Korra sonrası), Avatar: The Last Airbender (2010) ve Avatar Aang Film (2025) ile tarihsel olaylara, karakterlerin atalarına ve element ustalığına dair paralellikler kurar. Bu bağlamlar evrenin sürekliliğini pekiştirir.",
+      "type": "film",
+      "release_date": "2028-06-01",
+      "level": 6
+    }
+  ],
+  "edges": [
+    {
+      "from": "film/avatarthelastairbender",
+      "to": "film/thelegendofkorra",
+      "type": "devam"
+    },
+    {
+      "from": "film/avatarthelastairbender",
+      "to": "film/avataraangfilm2025",
+      "type": "devam"
+    },
+    {
+      "from": "film/avatarthelastairbender",
+      "to": "film/zukofilmi",
+      "type": "karakter göndermesi"
+    },
+    {
+      "from": "film/avatarthelastairbender",
+      "to": "film/avatarthelastairbendernetflix2024",
+      "type": "yeniden yapım"
+    },
+    {
+      "from": "film/thelegendofkorra",
+      "to": "film/yeniavatarfilmikorrasonrası",
+      "type": "devam"
+    }
+  ]
+}
