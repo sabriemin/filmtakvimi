@@ -1,3 +1,4 @@
+
 export function initFilters(ctx) {
   let debounceTimeout = null;
 
@@ -19,32 +20,22 @@ export function applyFilters(ctx) {
   const edgeType = ctx.selectedEdgeType;
   const maxYear = ctx.maxYear;
 
-  ctx.filteredNodes = ctx.allNodes.filter(n =>
-    (!universe || n.universe === universe) &&
-    (!searchTerm || (n.label && n.label.toLowerCase().includes(searchTerm))) &&
-    (!maxYear || !n.release_date || new Date(n.release_date).getFullYear() <= maxYear)
-  );
+  // Node'ları gizle/göster
+  ctx.allNodes.forEach(node => {
+    const visible = (!universe || node.universe === universe) &&
+      (!searchTerm || (node.label && node.label.toLowerCase().includes(searchTerm))) &&
+      (!maxYear || !node.release_date || new Date(node.release_date).getFullYear() <= maxYear);
 
-  const nodeIds = new Set(ctx.filteredNodes.map(n => n.id));
+    ctx.nodes.update({ id: node.id, hidden: !visible });
+  });
 
-  ctx.filteredEdges = ctx.allEdges.filter(e =>
-    nodeIds.has(e.from) && nodeIds.has(e.to) &&
-    (!edgeType || e.type === edgeType)
-  );
+  const visibleNodeIds = new Set(ctx.allNodes.filter(n => !ctx.nodes.get(n.id).hidden).map(n => n.id));
 
-  ctx.updateNetwork?.();
+  // Edge'leri gizle/göster
+  ctx.allEdges.forEach(edge => {
+    const visible = visibleNodeIds.has(edge.from) && visibleNodeIds.has(edge.to) &&
+      (!edgeType || edge.type === edgeType);
 
-if(ctx.network) {
-  if(ctx.fitTimeout) clearTimeout(ctx.fitTimeout);
-  ctx.fitTimeout = setTimeout(() => {
-  ctx.network.redraw();
-ctx.network.redraw();
-    ctx.network.once('stabilized', () => {
-      if (!ctx.timelineMode) {
-      ctx.network.fit({ animation: false });
-    }
-    });
-
-  }, 300);
-}
+    ctx.edges.update({ id: edge.id, hidden: !visible });
+  });
 }
