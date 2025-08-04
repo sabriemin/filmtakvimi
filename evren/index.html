@@ -1,80 +1,36 @@
 <!DOCTYPE html>
-<html lang="tr" x-data="app" x-init="init()">
+<html lang="tr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Film Evreni Ağı - Legend Dahil</title>
+  <title>Film Evreni Ağı</title>
+
+  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- vis-network -->
   <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+
+  <!-- Alpine.js -->
   <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
-  <link rel="stylesheet" href="src/styles.css">
+
+  <!-- Özel stiller -->
+  <link rel="stylesheet" href="styles/main.css">
 </head>
-<body :class="{ dark: isDarkMode, 'overflow-hidden': modalOpen }">
+<body x-data="app()" x-init="init()" class="dark:bg-gray-900 text-white overflow-hidden">
 
-<header class="bg-white dark:bg-gray-800 shadow sticky top-0 z-50 p-4 flex flex-wrap gap-2 justify-between items-center">
-  <h1 class="text-xl font-bold" x-text="lang === 'tr' ? '🎬 Film Evreni Ağı' : '🎬 Film Universe Network'"></h1>
-  <div class="w-full sm:w-auto flex flex-col sm:flex-row gap-2 items-stretch sm:items-center justify-end">
-    <input x-model="search" :placeholder="lang === 'tr' ? 'Ara...' : 'Search...'" class="border rounded px-3 py-1 text-black dark:text-white bg-white dark:bg-gray-700" />
+  <header class="bg-white dark:bg-gray-800 shadow sticky top-0 z-50 p-4 flex flex-wrap gap-2 justify-between items-center">
+    <h1 class="text-xl font-bold">🎬 Film Evreni Ağı</h1>
+    <!-- Filtre bileşenleri buraya gelecek -->
+  </header>
 
-    <select x-model="selectedUniverse" class="border rounded px-2 py-1 text-black dark:text-white bg-white dark:bg-gray-700">
-      <option value="" x-text="lang === 'tr' ? 'Tüm Evrenler' : 'All Universes'"></option>
-      <template x-for="u in universeList" :key="u">
-        <option :value="u" x-text="formatUniverseName(u)"></option>
-      </template>
-    </select>
+  <main class="flex-1">
+    <div id="network" class="h-screen"></div>
+  </main>
 
-    <select x-model="selectedEdgeType" class="border rounded px-2 py-1 text-black dark:text-white bg-white dark:bg-gray-700">
-      <option value="" x-text="lang === 'tr' ? 'Tüm Bağlantılar' : 'All Edges'"></option>
-      <template x-for="t in edgeTypeList" :key="t">
-        <option :value="t" x-text="t"></option>
-      </template>
-    </select>
+  <!-- Modal, Legend vs. bileşenler ayrı dosyalara ayrılabilir -->
 
-    <input type="range" min="1950" max="2030" x-model.number="maxYear" class="w-32" />
-
-    <button @click="toggleTimeline" class="bg-red-500 hover:bg-red-600 text-white px-2 py-1 rounded">
-      <span x-text="timelineMode ? (lang === 'tr' ? '🔄 Normal' : '🔄 Normal') : (lang === 'tr' ? '⏳ Zaman' : '⏳ Timeline')"></span>
-    </button>
-
-    <button @click="toggleTheme" class="bg-yellow-400 text-black px-2 py-1 rounded">
-      <span x-text="isDarkMode ? (lang === 'tr' ? '🌙 Koyu' : '🌙 Dark') : (lang === 'tr' ? '🌞 Açık' : '🌞 Light')"></span>
-    </button>
-
-    <select x-model="lang" class="border rounded px-2 py-1 text-black dark:text-white bg-white dark:bg-gray-700">
-      <option value="tr">Türkçe</option>
-      <option value="en">English</option>
-    </select>
-  </div>
-</header>
-
-<div id="network" class="flex-grow"></div>
-
-<!-- Modal -->
-<div x-show="modalOpen" x-transition class="fixed inset-0 modal-bg flex items-center justify-center z-50 p-4" @click.away="modalOpen = false">
-  <div class="modal-content" role="dialog" aria-modal="true" @click.stop>
-    <button class="close-btn" @click="modalOpen = false">✖</button>
-    <h2 class="text-xl font-bold" x-text="modalNode?.label"></h2>
-    <p x-text="(lang === 'tr' ? 'Evren: ' : 'Universe: ') + modalNode?.universe"></p>
-    <p><strong x-text="lang === 'tr' ? 'Vizyon: ' : 'Release: '"></strong><span x-text="modalNode?.release_date || '-' "></span></p>
-    <p><strong x-text="lang === 'tr' ? 'Tür: ' : 'Type: '"></strong><span x-text="modalNode?.type"></span></p>
-    <p class="mt-2 whitespace-pre-wrap" x-text="modalNode?.description || (lang === 'tr' ? 'Açıklama yok.' : 'No description.')"></p>
-    <p class="italic border-l-4 border-red-500 pl-2 mt-2 text-sm" x-text="(lang === 'tr' ? 'Göndermeler: ' : 'References: ') + (modalNode?.refers_to || '-')"></p>
-  </div>
-</div>
-
-<!-- Legend -->
-<div id="legend">
-  <h3 class="font-bold mb-2" x-text="lang === 'tr' ? 'Bağlantı Türleri' : 'Edge Types'"></h3>
-  <ul>
-    <template x-for="(color, type) in edgeColors" :key="type">
-      <li class="flex items-center mb-1">
-        <span class="w-4 h-4 rounded mr-2" :style="`background-color: ${color}`"></span>
-        <span x-text="type"></span>
-      </li>
-    </template>
-  </ul>
-</div>
-
-<script type="module" src="src/app.js"></script>
+  <!-- JS Modüller -->
+  <script type="module" src="src/app.js"></script>
 </body>
 </html>
