@@ -1,0 +1,203 @@
+{
+  "nodes": [
+    {
+      "id": "film/harrypotterandthesorcerersstone",
+      "label": "Harry Potter and the Sorcerer's Stone (2001)",
+      "title": "Harry Potter and the Sorcerer's Stone",
+      "image": "images/harrypotter.jpg",
+      "shape": "image",
+      "description": "'Harry Potter and the Sorcerer's Stone' filminde karakter gelişimi, ihanet ve kahramanlık işleniyor. Film, büyücü evreninde geçen olaylarla hem karakterlerin kişisel gelişimini hem de karanlık güçlerle verilen mücadeleyi derinlemesine ele alıyor. Hikaye, sihirli objeler, tarihi çatışmalar ve ahlaki seçimlerle örülmüş, izleyiciyi duygusal ve entelektüel bir yolculuğa çıkarıyor.",
+      "refers_to": "Bu yapım, Harry Potter and the Deathly Hallows – Part 2 ve Harry Potter and the Deathly Hallows – Part 1 filmine içerdiği karakterler, ortak mekanlar veya geçmişe dönük olaylarla göndermeler içeriyor. Büyü dünyasının sürekliliğini güçlendiriyor.",
+      "type": "film",
+      "release_date": "2001-11-16",
+      "level": 0
+    },
+    {
+      "id": "film/harrypotterandthechamberofsecrets",
+      "label": "Harry Potter and the Chamber of Secrets (2002)",
+      "title": "Harry Potter and the Chamber of Secrets",
+      "image": "images/harrypotter.jpg",
+      "shape": "image",
+      "description": "'Harry Potter and the Chamber of Secrets' filminde karanlık güçlerin yükselişiyle artan tehdit işleniyor. Film, büyücü evreninde geçen olaylarla hem karakterlerin kişisel gelişimini hem de karanlık güçlerle verilen mücadeleyi derinlemesine ele alıyor. Hikaye, sihirli objeler, tarihi çatışmalar ve ahlaki seçimlerle örülmüş, izleyiciyi duygusal ve entelektüel bir yolculuğa çıkarıyor.",
+      "refers_to": "Bu yapım, Harry Potter and the Goblet of Fire ve Fantastic Beasts and Where to Find Them filmine içerdiği karakterler, ortak mekanlar veya geçmişe dönük olaylarla göndermeler içeriyor. Büyü dünyasının sürekliliğini güçlendiriyor.",
+      "type": "film",
+      "release_date": "2002-11-15",
+      "level": 1
+    },
+    {
+      "id": "film/harrypotterandtheprisonerofazkaban",
+      "label": "Harry Potter and the Prisoner of Azkaban (2004)",
+      "title": "Harry Potter and the Prisoner of Azkaban",
+      "image": "images/harrypotter.jpg",
+      "shape": "image",
+      "description": "'Harry Potter and the Prisoner of Azkaban' filminde büyü dünyasının ilk keşfi ve Hogwarts'ın kapılarının açılması işleniyor. Film, büyücü evreninde geçen olaylarla hem karakterlerin kişisel gelişimini hem de karanlık güçlerle verilen mücadeleyi derinlemesine ele alıyor. Hikaye, sihirli objeler, tarihi çatışmalar ve ahlaki seçimlerle örülmüş, izleyiciyi duygusal ve entelektüel bir yolculuğa çıkarıyor.",
+      "refers_to": "Bu yapım, Harry Potter and the Deathly Hallows – Part 1 ve Fantastic Beasts: The Secrets of Dumbledore filmine içerdiği karakterler, ortak mekanlar veya geçmişe dönük olaylarla göndermeler içeriyor. Büyü dünyasının sürekliliğini güçlendiriyor.",
+      "type": "film",
+      "release_date": "2004-06-04",
+      "level": 2
+    },
+    {
+      "id": "film/harrypotterandthegobletoffire",
+      "label": "Harry Potter and the Goblet of Fire (2005)",
+      "title": "Harry Potter and the Goblet of Fire",
+      "image": "images/harrypotter.jpg",
+      "shape": "image",
+      "description": "'Harry Potter and the Goblet of Fire' filminde büyü dünyasının ilk keşfi ve Hogwarts'ın kapılarının açılması işleniyor. Film, büyücü evreninde geçen olaylarla hem karakterlerin kişisel gelişimini hem de karanlık güçlerle verilen mücadeleyi derinlemesine ele alıyor. Hikaye, sihirli objeler, tarihi çatışmalar ve ahlaki seçimlerle örülmüş, izleyiciyi duygusal ve entelektüel bir yolculuğa çıkarıyor.",
+      "refers_to": "Bu yapım, Fantastic Beasts: The Crimes of Grindelwald ve Harry Potter and the Order of the Phoenix filmine içerdiği karakterler, ortak mekanlar veya geçmişe dönük olaylarla göndermeler içeriyor. Büyü dünyasının sürekliliğini güçlendiriyor.",
+      "type": "film",
+      "release_date": "2005-11-18",
+      "level": 3
+    },
+    {
+      "id": "film/harrypotterandtheorderofthephoenix",
+      "label": "Harry Potter and the Order of the Phoenix (2007)",
+      "title": "Harry Potter and the Order of the Phoenix",
+      "image": "images/harrypotter.jpg",
+      "shape": "image",
+      "description": "'Harry Potter and the Order of the Phoenix' filminde büyücü toplumundaki politik çatışmalar ve aile bağları işleniyor. Film, büyücü evreninde geçen olaylarla hem karakterlerin kişisel gelişimini hem de karanlık güçlerle verilen mücadeleyi derinlemesine ele alıyor. Hikaye, sihirli objeler, tarihi çatışmalar ve ahlaki seçimlerle örülmüş, izleyiciyi duygusal ve entelektüel bir yolculuğa çıkarıyor.",
+      "refers_to": "Bu yapım, Harry Potter and the Prisoner of Azkaban ve Fantastic Beasts: The Secrets of Dumbledore filmine içerdiği karakterler, ortak mekanlar veya geçmişe dönük olaylarla göndermeler içeriyor. Büyü dünyasının sürekliliğini güçlendiriyor.",
+      "type": "film",
+      "release_date": "2007-07-11",
+      "level": 4
+    },
+    {
+      "id": "film/harrypotterandthehalfbloodprince",
+      "label": "Harry Potter and the Half-Blood Prince (2009)",
+      "title": "Harry Potter and the Half-Blood Prince",
+      "image": "images/harrypotter.jpg",
+      "shape": "image",
+      "description": "'Harry Potter and the Half-Blood Prince' filminde büyücü toplumundaki politik çatışmalar ve aile bağları işleniyor. Film, büyücü evreninde geçen olaylarla hem karakterlerin kişisel gelişimini hem de karanlık güçlerle verilen mücadeleyi derinlemesine ele alıyor. Hikaye, sihirli objeler, tarihi çatışmalar ve ahlaki seçimlerle örülmüş, izleyiciyi duygusal ve entelektüel bir yolculuğa çıkarıyor.",
+      "refers_to": "Bu yapım, Harry Potter and the Deathly Hallows – Part 2 ve Harry Potter and the Deathly Hallows – Part 1 filmine içerdiği karakterler, ortak mekanlar veya geçmişe dönük olaylarla göndermeler içeriyor. Büyü dünyasının sürekliliğini güçlendiriyor.",
+      "type": "film",
+      "release_date": "2009-07-15",
+      "level": 5
+    },
+    {
+      "id": "film/harrypotterandthedeathlyhallowspart1",
+      "label": "Harry Potter and the Deathly Hallows – Part 1 (2010)",
+      "title": "Harry Potter and the Deathly Hallows – Part 1",
+      "image": "images/harrypotter.jpg",
+      "shape": "image",
+      "description": "'Harry Potter and the Deathly Hallows – Part 1' filminde karanlık güçlerin yükselişiyle artan tehdit işleniyor. Film, büyücü evreninde geçen olaylarla hem karakterlerin kişisel gelişimini hem de karanlık güçlerle verilen mücadeleyi derinlemesine ele alıyor. Hikaye, sihirli objeler, tarihi çatışmalar ve ahlaki seçimlerle örülmüş, izleyiciyi duygusal ve entelektüel bir yolculuğa çıkarıyor.",
+      "refers_to": "Bu yapım, Harry Potter and the Chamber of Secrets ve Fantastic Beasts and Where to Find Them filmine içerdiği karakterler, ortak mekanlar veya geçmişe dönük olaylarla göndermeler içeriyor. Büyü dünyasının sürekliliğini güçlendiriyor.",
+      "type": "film",
+      "release_date": "2010-11-19",
+      "level": 6
+    },
+    {
+      "id": "film/harrypotterandthedeathlyhallowspart2",
+      "label": "Harry Potter and the Deathly Hallows – Part 2 (2011)",
+      "title": "Harry Potter and the Deathly Hallows – Part 2",
+      "image": "images/harrypotter.jpg",
+      "shape": "image",
+      "description": "'Harry Potter and the Deathly Hallows – Part 2' filminde geçmişin sırlarının açığa çıkışı ve kaderin şekillenmesi işleniyor. Film, büyücü evreninde geçen olaylarla hem karakterlerin kişisel gelişimini hem de karanlık güçlerle verilen mücadeleyi derinlemesine ele alıyor. Hikaye, sihirli objeler, tarihi çatışmalar ve ahlaki seçimlerle örülmüş, izleyiciyi duygusal ve entelektüel bir yolculuğa çıkarıyor.",
+      "refers_to": "Bu yapım, Harry Potter and the Goblet of Fire ve Harry Potter and the Sorcerer's Stone filmine içerdiği karakterler, ortak mekanlar veya geçmişe dönük olaylarla göndermeler içeriyor. Büyü dünyasının sürekliliğini güçlendiriyor.",
+      "type": "film",
+      "release_date": "2011-07-15",
+      "level": 7
+    },
+    {
+      "id": "film/fantasticbeastsandwheretofindthem",
+      "label": "Fantastic Beasts and Where to Find Them (2016)",
+      "title": "Fantastic Beasts and Where to Find Them",
+      "image": "images/harrypotter.jpg",
+      "shape": "image",
+      "description": "'Fantastic Beasts and Where to Find Them' filminde büyü dünyasının ilk keşfi ve Hogwarts'ın kapılarının açılması işleniyor. Film, büyücü evreninde geçen olaylarla hem karakterlerin kişisel gelişimini hem de karanlık güçlerle verilen mücadeleyi derinlemesine ele alıyor. Hikaye, sihirli objeler, tarihi çatışmalar ve ahlaki seçimlerle örülmüş, izleyiciyi duygusal ve entelektüel bir yolculuğa çıkarıyor.",
+      "refers_to": "Bu yapım, Fantastic Beasts: The Crimes of Grindelwald ve Harry Potter and the Goblet of Fire filmine içerdiği karakterler, ortak mekanlar veya geçmişe dönük olaylarla göndermeler içeriyor. Büyü dünyasının sürekliliğini güçlendiriyor.",
+      "type": "film",
+      "release_date": "2016-11-18",
+      "level": 8
+    },
+    {
+      "id": "film/fantasticbeaststhecrimesofgrindelwald",
+      "label": "Fantastic Beasts: The Crimes of Grindelwald (2018)",
+      "title": "Fantastic Beasts: The Crimes of Grindelwald",
+      "image": "images/harrypotter.jpg",
+      "shape": "image",
+      "description": "'Fantastic Beasts: The Crimes of Grindelwald' filminde ölümle yüzleşme, fedakarlık ve büyü dünyasının geleceği işleniyor. Film, büyücü evreninde geçen olaylarla hem karakterlerin kişisel gelişimini hem de karanlık güçlerle verilen mücadeleyi derinlemesine ele alıyor. Hikaye, sihirli objeler, tarihi çatışmalar ve ahlaki seçimlerle örülmüş, izleyiciyi duygusal ve entelektüel bir yolculuğa çıkarıyor.",
+      "refers_to": "Bu yapım, Harry Potter and the Half-Blood Prince ve Harry Potter and the Goblet of Fire filmine içerdiği karakterler, ortak mekanlar veya geçmişe dönük olaylarla göndermeler içeriyor. Büyü dünyasının sürekliliğini güçlendiriyor.",
+      "type": "film",
+      "release_date": "2018-11-16",
+      "level": 9
+    },
+    {
+      "id": "film/fantasticbeaststhesecretsofdumbledore",
+      "label": "Fantastic Beasts: The Secrets of Dumbledore (2022)",
+      "title": "Fantastic Beasts: The Secrets of Dumbledore",
+      "image": "images/harrypotter.jpg",
+      "shape": "image",
+      "description": "'Fantastic Beasts: The Secrets of Dumbledore' filminde karakterlerin içsel yolculukları ve dostlukları işleniyor. Film, büyücü evreninde geçen olaylarla hem karakterlerin kişisel gelişimini hem de karanlık güçlerle verilen mücadeleyi derinlemesine ele alıyor. Hikaye, sihirli objeler, tarihi çatışmalar ve ahlaki seçimlerle örülmüş, izleyiciyi duygusal ve entelektüel bir yolculuğa çıkarıyor.",
+      "refers_to": "Bu yapım, Harry Potter and the Chamber of Secrets ve Harry Potter and the Half-Blood Prince filmine içerdiği karakterler, ortak mekanlar veya geçmişe dönük olaylarla göndermeler içeriyor. Büyü dünyasının sürekliliğini güçlendiriyor.",
+      "type": "film",
+      "release_date": "2022-04-15",
+      "level": 10
+    }
+  ],
+  "edges": [
+    {
+      "from": "film/harrypotterandthesorcerersstone",
+      "to": "film/harrypotterandthechamberofsecrets",
+      "type": "devam"
+    },
+    {
+      "from": "film/harrypotterandthechamberofsecrets",
+      "to": "film/harrypotterandtheprisonerofazkaban",
+      "type": "devam"
+    },
+    {
+      "from": "film/harrypotterandtheprisonerofazkaban",
+      "to": "film/harrypotterandthegobletoffire",
+      "type": "devam"
+    },
+    {
+      "from": "film/harrypotterandthegobletoffire",
+      "to": "film/harrypotterandtheorderofthephoenix",
+      "type": "devam"
+    },
+    {
+      "from": "film/harrypotterandtheorderofthephoenix",
+      "to": "film/harrypotterandthehalfbloodprince",
+      "type": "devam"
+    },
+    {
+      "from": "film/harrypotterandthehalfbloodprince",
+      "to": "film/harrypotterandthedeathlyhallowspart1",
+      "type": "devam"
+    },
+    {
+      "from": "film/harrypotterandthedeathlyhallowspart1",
+      "to": "film/harrypotterandthedeathlyhallowspart2",
+      "type": "devam"
+    },
+    {
+      "from": "film/harrypotterandthedeathlyhallowspart2",
+      "to": "film/fantasticbeastsandwheretofindthem",
+      "type": "devam"
+    },
+    {
+      "from": "film/fantasticbeastsandwheretofindthem",
+      "to": "film/fantasticbeaststhecrimesofgrindelwald",
+      "type": "devam"
+    },
+    {
+      "from": "film/fantasticbeaststhecrimesofgrindelwald",
+      "to": "film/fantasticbeaststhesecretsofdumbledore",
+      "type": "devam"
+    },
+    {
+      "from": "film/fantasticbeastsandwheretofindthem",
+      "to": "film/fantasticbeaststhecrimesofgrindelwald",
+      "type": "devam"
+    },
+    {
+      "from": "film/fantasticbeaststhecrimesofgrindelwald",
+      "to": "film/fantasticbeaststhesecretsofdumbledore",
+      "type": "devam"
+    },
+    {
+      "from": "film/fantasticbeaststhesecretsofdumbledore",
+      "to": "film/harrypotterandthesorcerersstone",
+      "type": "karakter göndermesi"
+    }
+  ]
+}
