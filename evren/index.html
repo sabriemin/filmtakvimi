@@ -25,14 +25,8 @@
   <!-- vis-network -->
   <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
   <!-- Alpine.js -->
-<script type="module">
-  import Alpine from 'https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/module.esm.js'
-  import { app } from './src/app.js'
-
-  window.Alpine = Alpine;
-  Alpine.data('app', app); // bu kritik
-  Alpine.start();
-</script>
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+  <link rel="stylesheet" href="styles/main.css" />
 </head>
 
 <body class="bg-background text-white min-h-screen flex flex-col overflow-hidden">
@@ -66,7 +60,7 @@
   </header>
 
   <!-- Network -->
-  <main class="flex-grow p-4 overflow-hidden">
+  <main class="flex-grow overflow-hidden">
     <div id="network" class="w-full h-full rounded-2xl border border-white/10 shadow-md"></div>
   </main>
 
