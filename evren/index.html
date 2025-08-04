@@ -12,17 +12,21 @@
   <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
 
   <!-- Alpine.js -->
-  <script type="module">
-  import Alpine from 'https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/module.esm.js';
+<script type="module">
+  import Alpine from 'https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/module.esm.js'
+  import { app } from './src/app.js'
+
   window.Alpine = Alpine;
+  Alpine.data('app', app); // bu kritik
   Alpine.start();
 </script>
+
 
 
   <!-- Özel stiller -->
   <link rel="stylesheet" href="styles/main.css">
 </head>
-<body x-data="app()" x-init="init()" class="dark:bg-gray-900 text-white overflow-hidden">
+<body x-data="app" x-init="init()" class="dark:bg-gray-900 text-white overflow-hidden">
 
   <header class="bg-white dark:bg-gray-800 shadow sticky top-0 z-50 p-4 flex flex-wrap gap-2 justify-between items-center">
     <h1 class="text-xl font-bold">🎬 Film Evreni Ağı</h1>
