@@ -32,6 +32,10 @@ export function setupNetwork(ctx) {
   };
 
   const network = new vis.Network(container, data, options);
+  network.once('stabilizationIterationsDone', function () {
+    network.setOptions({ physics: false });
+  });
+
 
   network.on('click', params => {
     if(params.nodes.length > 0){

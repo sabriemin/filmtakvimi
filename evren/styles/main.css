@@ -6,9 +6,9 @@ html, body, #network {
   transition: background-color 0.3s, color 0.3s;
 }
 #network {
-  height: calc(100vh - 72px); /* üst header yüksekliğine göre ayarlanabilir */
-  margin: 12px;
+  height: calc(100vh - 96px);
   border-radius: 12px;
+  margin: 12px;
   box-shadow: 0 4px 16px rgba(0,0,0,0.12);
   border: 1px solid #e2e8f0;
 }
