@@ -41,6 +41,19 @@
     <div class="flex flex-col md:flex-row justify-between gap-4 items-center">
       <h1 class="text-2xl font-bold text-white">🎬 Film Evreni Ağı</h1>
       <div class="flex flex-wrap items-center gap-2">
+        
+<select x-model="selectedDataset" @change="changeDataset" class="bg-white text-gray-800 p-2 border rounded">
+  <option value="marvel">Marvel</option>
+  <option value="dc">DC</option>
+  <option value="starwars">Star Wars</option>
+  <option value="harrypotter">Harry Potter</option>
+  <option value="middleearth">Middle Earth</option>
+  <option value="matrix">Matrix</option>
+  <option value="pixar">Pixar</option>
+  <option value="avatar_pandora">Avatar: Pandora</option>
+  <option value="avatar_last_airbender">Avatar: Last Airbender</option>
+</select>
+
         <input x-model="search" placeholder="Ara..." class="px-4 py-2 rounded-xl bg-white/10 text-white placeholder-gray-400 border border-white/10 focus:outline-none" />
         <select x-model="selectedUniverse" class="bg-white text-gray-800 w-full p-2 border rounded">
           <option value="">Tüm Evrenler</option>

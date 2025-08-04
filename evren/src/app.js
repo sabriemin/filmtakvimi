@@ -4,6 +4,11 @@ import { applyFilters, initFilters } from './filters.js';
 
 export function app() {
   return {
+    selectedDataset: 'marvel',
+
+    changeDataset() {
+      this.loadData();
+    },
     network: null,
     allNodes: [],
     allEdges: [],
@@ -34,7 +39,7 @@ export function app() {
     },
 
     async loadData() {
-      const res = await fetch('data/marvel.json');
+      const res = await fetch(`data/${this.selectedDataset}.json`);
       const data = await res.json();
       this.allNodes = data.nodes;
       this.allEdges = data.edges;
