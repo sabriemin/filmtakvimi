@@ -17,3 +17,15 @@ html, body {
   border-radius: 16px;
   will-change: transform;
 }
+
+
+/* Açılır menü için okunabilirlik */
+select {
+  background-color: white;
+  color: #111827;
+}
+
+/* Grafik alanı tam ekran yapılandırması */
+#network {
+  height: calc(100vh - 120px);
+}
