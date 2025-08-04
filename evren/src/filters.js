@@ -38,7 +38,10 @@ if(ctx.network) {
   if(ctx.fitTimeout) clearTimeout(ctx.fitTimeout);
   ctx.fitTimeout = setTimeout(() => {
   ctx.network.redraw();
-ctx.network.fit({ animation: true });
+ctx.network.redraw();
+    ctx.network.once('stabilized', () => {
+      ctx.network.fit({ animation: true });
+    });
 
   }, 300);
 }

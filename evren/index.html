@@ -30,6 +30,29 @@
 
   <header class="bg-white dark:bg-gray-800 shadow sticky top-0 z-50 p-4 flex flex-wrap gap-2 justify-between items-center">
     <h1 class="text-xl font-bold">🎬 Film Evreni Ağı</h1>
+    <div class="w-full sm:w-auto flex flex-col sm:flex-row gap-2 items-stretch sm:items-center justify-end mt-2">
+      <input x-model="search" placeholder="Ara..." class="border rounded px-3 py-1 text-black dark:text-white bg-white dark:bg-gray-700" />
+      <select x-model="selectedUniverse" class="border rounded px-2 py-1 text-black dark:text-white bg-white dark:bg-gray-700">
+        <option value="">Tüm Evrenler</option>
+        <template x-for="u in universeList" :key="u">
+          <option :value="u" x-text="formatUniverseName(u)"></option>
+        </template>
+      </select>
+      <select x-model="selectedEdgeType" class="border rounded px-2 py-1 text-black dark:text-white bg-white dark:bg-gray-700">
+        <option value="">Tüm Bağlantılar</option>
+        <template x-for="t in edgeTypeList" :key="t">
+          <option :value="t" x-text="t"></option>
+        </template>
+      </select>
+      <input type="range" min="1950" max="2030" x-model.number="maxYear" class="w-32" />
+      <button @click="toggleTimeline" class="bg-red-500 hover:bg-red-600 text-white px-2 py-1 rounded">
+        <span x-text="timelineMode ? '🔄 Normal' : '⏳ Zaman'"></span>
+      </button>
+      <button @click="toggleTheme" class="bg-yellow-400 text-black px-2 py-1 rounded">
+        <span x-text="isDarkMode ? '🌙 Koyu' : '🌞 Açık'"></span>
+      </button>
+    </div>
+
     <!-- Filtre bileşenleri buraya gelecek -->
   </header>
 
