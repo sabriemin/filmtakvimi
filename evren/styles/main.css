@@ -1,4 +1,7 @@
 html, body, #network {
+  flex-grow: 1;
+  min-height: 0;
+  will-change: transform;
   will-change: transform;
 
   height: 100%;
@@ -8,6 +11,9 @@ html, body, #network {
   transition: background-color 0.3s, color 0.3s;
 }
 #network {
+  flex-grow: 1;
+  min-height: 0;
+  will-change: transform;
   will-change: transform;
 
   border-radius: 12px;
@@ -72,6 +78,9 @@ body.dark {
   color: #d1d5db;
 }
 body.dark #network {
+  flex-grow: 1;
+  min-height: 0;
+  will-change: transform;
   will-change: transform;
 
   background-color: #1f2937;
