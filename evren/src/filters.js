@@ -40,7 +40,9 @@ if(ctx.network) {
   ctx.network.redraw();
 ctx.network.redraw();
     ctx.network.once('stabilized', () => {
-      ctx.network.fit({ animation: true });
+      if (!ctx.timelineMode) {
+      ctx.network.fit({ animation: false });
+    }
     });
 
   }, 300);
