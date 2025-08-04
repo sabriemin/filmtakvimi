@@ -4,86 +4,75 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>🎬 Film Evreni Ağı</title>
+  <title>Film Evreni Ağı</title>
 
-  <!-- Tailwind CDN -->
+  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          colors: {
-            background: '#0f172a',
-            card: 'rgba(255,255,255,0.05)'
-          }
-        }
-      }
-    }
-  </script>
+  <link href="styles/main.css" rel="stylesheet" />
 
-  <!-- vis-network -->
-  <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
   <!-- Alpine.js -->
-<script type="module">
-  import Alpine from 'https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/module.esm.js'
-  import { app } from './src/app.js'
-
-  window.Alpine = Alpine;
-  Alpine.data('app', app); // bu kritik
-  Alpine.start();
-</script> 
+  <script type="module">
+    import Alpine from 'https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/module.esm.js'
+    import { app } from './src/app.js'
+    window.Alpine = Alpine;
+    Alpine.data('app', app);
+    Alpine.start();
+  </script>
 </head>
 
 <body class="bg-background text-white min-h-screen flex flex-col overflow-hidden">
   <!-- Header -->
-  <header class="p-4 m-4 rounded-2xl backdrop-blur-md bg-white/5 border border-white/10 shadow-xl">
-    <div class="flex flex-col md:flex-row justify-between gap-4 items-center">
-      <h1 class="text-2xl font-bold text-white">🎬 Film Evreni Ağı</h1>
-      <div class="flex flex-wrap items-center gap-2">
-        
-<select x-model="selectedDataset" @change="changeDataset" class="bg-white text-gray-800 p-2 border rounded">
-  <option value="marvel">Marvel</option>
-  <option value="dc">DC</option>
-  <option value="starwars">Star Wars</option>
-  <option value="harrypotter">Harry Potter</option>
-  <option value="middleearth">Middle Earth</option>
-  <option value="matrix">Matrix</option>
-  <option value="pixar">Pixar</option>
-  <option value="avatar_pandora">Avatar: Pandora</option>
-  <option value="avatar_last_airbender">Avatar: Last Airbender</option>
-</select>
+  <header class="sticky top-0 z-50 bg-white/10 backdrop-blur border-b border-white/20 shadow-sm p-4">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-4 items-center justify-between">
+      <h1 class="text-2xl font-semibold text-white">🎬 Film Evreni Ağı</h1>
+      <div class="flex flex-wrap items-center gap-3 w-full md:w-auto">
+        <input x-model="search" placeholder="Ara..." class="px-4 py-2 rounded-lg bg-white/10 text-white placeholder-gray-300 border border-white/20 focus:outline-none w-full md:w-48" />
 
-        <input x-model="search" placeholder="Ara..." class="px-4 py-2 rounded-xl bg-white/10 text-white placeholder-gray-400 border border-white/10 focus:outline-none" />
-        <select x-model="selectedUniverse" class="bg-white text-gray-800 w-full p-2 border rounded">
+        <select x-model="selectedDataset" @change="changeDataset" class="rounded-lg px-3 py-2 text-gray-800 bg-white border w-full md:w-auto">
+          <option value="marvel">Marvel</option>
+          <option value="dc">DC</option>
+          <option value="starwars">Star Wars</option>
+          <option value="harrypotter">Harry Potter</option>
+          <option value="middleearth">Middle Earth</option>
+          <option value="matrix">Matrix</option>
+          <option value="pixar">Pixar</option>
+          <option value="avatar_pandora">Avatar: Pandora</option>
+          <option value="avatar_last_airbender">Avatar: Last Airbender</option>
+        </select>
+
+        <select x-model="selectedUniverse" class="rounded-lg px-3 py-2 text-gray-800 bg-white border w-full md:w-auto">
           <option value="">Tüm Evrenler</option>
           <template x-for="u in universeList" :key="u">
             <option :value="u" x-text="formatUniverseName(u)"></option>
           </template>
         </select>
-        <select x-model="selectedEdgeType" class="px-4 py-2 rounded-xl bg-white/10 text-white border border-white/10 focus:outline-none">
+
+        <select x-model="selectedEdgeType" class="rounded-lg px-3 py-2 bg-white/10 text-white border border-white/20 w-full md:w-auto">
           <option value="">Tüm Bağlantılar</option>
           <template x-for="t in edgeTypeList" :key="t">
             <option :value="t" x-text="t"></option>
           </template>
         </select>
-        <input type="range" min="1950" max="2030" x-model.number="maxYear" class="accent-pink-500" />
-        <button @click="toggleTimeline" class="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-2 rounded-xl font-semibold shadow hover:opacity-90">
+
+        <input type="range" min="1950" max="2030" x-model.number="maxYear" class="accent-pink-500 w-full md:w-32" />
+
+        <button @click="toggleTimeline" class="px-4 py-2 rounded-lg font-medium bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow">
           <span x-text="timelineMode ? '🔄 Normal' : '⏳ Zaman'"></span>
         </button>
-        <button @click="toggleTheme" class="bg-gradient-to-r from-yellow-300 to-orange-400 text-black px-4 py-2 rounded-xl font-semibold shadow hover:opacity-90">
+
+        <button @click="toggleTheme" class="px-4 py-2 rounded-lg font-medium bg-gradient-to-r from-yellow-300 to-orange-400 text-black shadow">
           <span x-text="isDarkMode ? '🌙 Koyu' : '🌞 Açık'"></span>
         </button>
       </div>
     </div>
   </header>
 
-  <!-- Network -->
-  <main class="flex-grow overflow-hidden">
-    <div id="network" class="w-full h-full rounded-2xl border border-white/10 shadow-md"></div>
+  <!-- Network Area -->
+  <main class="flex-grow overflow-hidden p-4">
+    <div id="network" class="w-full h-full rounded-xl border border-white/20 shadow-xl bg-white/5 backdrop-blur"></div>
   </main>
 
-  <!-- JS App -->
+  <!-- JS Entrypoint -->
   <script type="module" src="src/app.js"></script>
 </body>
 </html>
