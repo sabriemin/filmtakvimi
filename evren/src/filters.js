@@ -34,10 +34,12 @@ export function applyFilters(ctx) {
 
   ctx.updateNetwork?.();
 
-  if(ctx.network) {
-    if(ctx.fitTimeout) clearTimeout(ctx.fitTimeout);
-    ctx.fitTimeout = setTimeout(() => {
-      ctx.network.fit({ animation: true });
-    }, 300);
-  }
+if(ctx.network) {
+  if(ctx.fitTimeout) clearTimeout(ctx.fitTimeout);
+  ctx.fitTimeout = setTimeout(() => {
+  ctx.network.redraw();
+ctx.network.fit({ animation: true });
+
+  }, 300);
+}
 }
