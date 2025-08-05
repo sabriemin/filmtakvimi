@@ -1,346 +1,398 @@
 {
   "nodes": [
     {
-      "id": "phantomMenace1999",
-      "label": "The Phantom Menace (1999)",
-      "title": "The Phantom Menace",
-      "image": "images/starwars.jpg",
-      "shape": "image",
-      "description": "'The Phantom Menace' yapımı, Star Wars evreninde Jedi düzeninin sınavı teması etrafında şekillenir. Jedi'lar, Sith'ler, klon orduları ve politik entrikalar arasında geçen bu hikâye, galaksinin kaderini belirleyecek çatışmalara ışık tutar. Güç'ün doğası, bireylerin seçimleri ve evrensel mücadeleler filmin merkezindedir.",
-      "refers_to": "Bu yapım, The Force Awakens ve Solo: A Star Wars Story ile karakter bağlantıları, olayların devamlılığı ve Güç'e dair mistik göndermeler yoluyla derin bağlar kurar. Bu referanslar evrenin bütünlüğünü pekiştirir.",
+      "id": "film/starwars/1999_phantom_menace",
+      "label": "Star Wars: Bölüm I – Gizli Tehlike (1999)",
+      "title": "Star Wars: Episode I – The Phantom Menace",
       "type": "film",
       "release_date": "1999-05-19",
-      "level": 0
-    },
-    {
-      "id": "attackOfTheClones2002",
-      "label": "Attack of the Clones (2002)",
-      "title": "Attack of the Clones",
+      "end_date": null,
       "image": "images/starwars.jpg",
       "shape": "image",
-      "description": "'Attack of the Clones' yapımı, Star Wars evreninde karanlık ve aydınlık arasındaki denge teması etrafında şekillenir. Jedi'lar, Sith'ler, klon orduları ve politik entrikalar arasında geçen bu hikâye, galaksinin kaderini belirleyecek çatışmalara ışık tutar. Güç'ün doğası, bireylerin seçimleri ve evrensel mücadeleler filmin merkezindedir.",
-      "refers_to": "Bu yapım, Revenge of the Sith ve Ahsoka ile karakter bağlantıları, olayların devamlılığı ve Güç'e dair mistik göndermeler yoluyla derin bağlar kurar. Bu referanslar evrenin bütünlüğünü pekiştirir.",
-      "type": "film",
-      "release_date": "2002-05-16",
-      "level": 1
-    },
-    {
-      "id": "cloneWars2008",
-      "label": "The Clone Wars (2008)",
-      "title": "The Clone Wars",
-      "image": "images/starwars.jpg",
-      "shape": "image",
-      "description": "'The Clone Wars' yapımı, Star Wars evreninde karanlık ve aydınlık arasındaki denge teması etrafında şekillenir. Jedi'lar, Sith'ler, klon orduları ve politik entrikalar arasında geçen bu hikâye, galaksinin kaderini belirleyecek çatışmalara ışık tutar. Güç'ün doğası, bireylerin seçimleri ve evrensel mücadeleler filmin merkezindedir.",
-      "refers_to": "Bu yapım, The Phantom Menace ve A New Hope ile karakter bağlantıları, olayların devamlılığı ve Güç'e dair mistik göndermeler yoluyla derin bağlar kurar. Bu referanslar evrenin bütünlüğünü pekiştirir.",
-      "type": "dizi",
-      "release_date": "2008-10-03",
-      "level": 2
-    },
-    {
-      "id": "revengeOfTheSith2005",
-      "label": "Revenge of the Sith (2005)",
-      "title": "Revenge of the Sith",
-      "image": "images/starwars.jpg",
-      "shape": "image",
-      "description": "'Revenge of the Sith' yapımı, Star Wars evreninde aile bağları ve kimlik arayışı teması etrafında şekillenir. Jedi'lar, Sith'ler, klon orduları ve politik entrikalar arasında geçen bu hikâye, galaksinin kaderini belirleyecek çatışmalara ışık tutar. Güç'ün doğası, bireylerin seçimleri ve evrensel mücadeleler filmin merkezindedir.",
-      "refers_to": "Bu yapım, A New Hope ve Andor ile karakter bağlantıları, olayların devamlılığı ve Güç'e dair mistik göndermeler yoluyla derin bağlar kurar. Bu referanslar evrenin bütünlüğünü pekiştirir.",
-      "type": "film",
-      "release_date": "2005-05-19",
+      "description": "Galaktik Cumhuriyet’in görünürde barış içindeki döneminde Naboo gezegeni Ticaret Federasyonu’nun uyguladığı bir abluka ile karşı karşıya kalır ve Senato’daki siyasal tıkanıklık giderek derinleşir. Jedi Ustası Qui-Gon Jinn ile Padawan’ı Obi-Wan Kenobi krizi çözmek için arabulucu olarak gönderilir; olaylar Kraliçe Amidala’yı korumaktan Tatooine’deki uzak bir çöl dünyasına uzanan geniş bir maceraya dönüşür. Burada olağanüstü pilotluk içgüdülerine ve Güç’e duyarlılığa sahip genç bir köle olan Anakin Skywalker’la tanışırlar. Film, siyaset, manevra ve kader temalarını ilk kez bu ölçekte bir araya getirirken serinin mitik tonunu farklı bir çağın estetiğiyle buluşturur. Tasarım dili parlak şehirler, saraylar ve geleneksel ritüeller aracılığıyla galaksinin refah illüzyonunu yansıtır; yüzeydeki düzenin altında ise güç dengelerini sarsacak derin bir huzursuzluk büyümektedir. Usta-çırak ilişkisi, kurumsal kurallar ile bireysel sezgi arasındaki sürtünmeyi görünür kılar. İnanç, merak ve sorumluluk kavramları aynı hikâye düzleminde ilerler; masum bir keşif yolculuğu yavaş yavaş galaktik ölçekte sonuçları olacak bir dizi tercihe kapı açar. Anlatı, sonraki bölümlerde gelişecek çatışmaların tohumlarını eker ve destanın uzun soluklu karakter yolculuklarının başlangıç çizgisini belirginleştirir. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir.",
+      "refers_to": "Bu bölüm Prequel üçlemesinin açılış halkası olarak Skywalker destanının tarihsel kökenlerini kurar ve sahneye çıkan karakterlerin ilişkilerini temellendirir. Naboo krizi ve Cumhuriyet’in karar alma süreçlerindeki hantallık daha sonraki siyasi dönüşümleri anlamak için işlevsel bir bağlam sağlar. Qui-Gon’un Anakin’i keşfi Jedi düzeninin kehanetlere ve sezgisel yargılara yaklaşımını örnekler; Obi-Wan ile usta-çırak bağı ise ileride görülecek sorumluluk ve kayıp temalarını haber verir. Yapım tasarımı, refah görünümünün ardındaki gerilimi bilinçli bir biçimde vurgular; diplomasi, ticaret ve güvenlik söylemleri anlatının merkezine yerleştirilir. İzleme sıralamasında film, kanonik anlatıya giriş niteliği taşır ve daha sonra yoğunlaşacak etik tartışmaların, kurumların kırılganlığının ve kişisel kaderin kesişimini görünür kılar. Böylece ilerleyen bölümlerdeki kararların arka planını oluşturan siyasal ve kültürel dinamikler netleşir; izleyici hem karakterlerin motivasyonlarını hem de galaksinin kurumsal yapısını anlamlandıracak uzun erimli bir perspektif kazanır. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir.",
+      "canonical_level": "canon",
+      "sources": [
+        {
+          "name": "Official",
+          "url": "https://www.starwars.com/films"
+        },
+        {
+          "name": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Star_Wars:_Episode_I_%E2%80%93_The_Phantom_Menace"
+        }
+      ],
+      "lang": "tr",
       "level": 3
     },
     {
-      "id": "badBatch2021",
-      "label": "The Bad Batch (2021)",
-      "title": "The Bad Batch",
+      "id": "film/starwars/2002_attack_of_the_clones",
+      "label": "Star Wars: Bölüm II – Klonların Saldırısı (2002)",
+      "title": "Star Wars: Episode II – Attack of the Clones",
+      "type": "film",
+      "release_date": "2002-05-16",
+      "end_date": null,
       "image": "images/starwars.jpg",
       "shape": "image",
-      "description": "'The Bad Batch' yapımı, Star Wars evreninde galaktik savaşlar ve kahramanlık teması etrafında şekillenir. Jedi'lar, Sith'ler, klon orduları ve politik entrikalar arasında geçen bu hikâye, galaksinin kaderini belirleyecek çatışmalara ışık tutar. Güç'ün doğası, bireylerin seçimleri ve evrensel mücadeleler filmin merkezindedir.",
-      "refers_to": "Bu yapım, Star Wars: Visions ve Obi-Wan Kenobi ile karakter bağlantıları, olayların devamlılığı ve Güç'e dair mistik göndermeler yoluyla derin bağlar kurar. Bu referanslar evrenin bütünlüğünü pekiştirir.",
-      "type": "dizi",
-      "release_date": "2021-05-04",
-      "level": 4
+      "description": "Klon Savaşları’nın eşiğinde Cumhuriyet’in görünmez fay hatları belirginleşir. Senatör Padmé Amidala’ya yönelik saldırılar güvenlik kaygılarını yükseltirken Jedi Konseyi karmaşık bir soruşturma yürütür. Obi-Wan Kenobi, ipuçlarını takip ederken kopya askerlerin üretildiği devasa bir tesise ve emri belirsiz bir sipariş geçmişine ulaşır; bu keşif, etik sınırlar ve askeri zorunluluklar arasındaki gerilimi keskinleştirir. Genç Jedi Anakin Skywalker ise koruma görevi sırasında kişisel bağları, sadakat duygusu ve kayıp korkusuyla yüzleşir. Hikâye, politik komploları kişisel seçimlerle iç içe geçirir; merhametle kontrol, özgür irade ile kader, görev ile sahiplenme arasında gidip gelen çatışmalar büyür. Görsel dünya geniş çöller, üretim hatları ve opak bürokrasi mekânlarıyla çeşitlenir; içe dönük karakter anları, büyük ölçekli savaşın hazırlık atmosferiyle dengelenir. Anlatı, düzenin kırılganlığını ve kırılmanın toplumsal sonuçlarını sezdirerek sonraki bölümün dramatik tonunu hazırlar. Filmin ritmi, soru işaretlerini çoğaltırken umut duygusunu tamamen söndürmez; ilişkilerdeki yakınlık ve uzaklık hareketli bir denge içinde kalır. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir.",
+      "refers_to": "Bu bölüm Prequel üçlemesinin orta halkası olarak köprü işlevi görür ve Klon Savaşları’na giden parametrelerin nasıl şekillendiğini görünür kılar. Jedi Düzeni’nin muhafazakâr karar alma pratikleri ile Cumhuriyet’in şeffaf olmayan süreçleri birleştiğinde kurumlar kırılganlaşır; güvenlik lehine genişleyen yetkiler, beklenmedik sonuçları beraberinde getirir. Anakin ile Padmé arasındaki ilişki ilerleyen olaylarda etkisi yoğun hissedilecek duygusal ve etik bir arka plan oluşturur; kahramanın psikolojisi, korku ve bağlanma temaları üzerinden anlaşılır. İzleme bağlamında film, hem kişisel hem siyasal düzlemde açık uçlu sorular bırakır; izleyiciyi yaklaşan hesaplaşmanın ağırlığına hazırlar. Tasarım, parlak yüzeylerin ardındaki belirsizliği ve kurumların iç içe geçen çıkarlarını işaret eder. Böylece sonraki bölümde yaşanacak kırılma yalnızca bireysel bir trajedi değil, uzun vadeli bir sistem dönüşümü olarak kavranır; anlatı bütünlüğü içerisinde bu eser, neden-sonuç zincirinin vazgeçilmez halkasıdır. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir.",
+      "canonical_level": "canon",
+      "sources": [
+        {
+          "name": "Official",
+          "url": "https://www.starwars.com/films"
+        },
+        {
+          "name": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Star_Wars:_Episode_II_%E2%80%93_Attack_of_the_Clones"
+        }
+      ],
+      "lang": "tr",
+      "level": 3
     },
     {
-      "id": "solo2018",
-      "label": "Solo: A Star Wars Story (2018)",
-      "title": "Solo: A Star Wars Story",
+      "id": "film/starwars/2005_revenge_of_the_sith",
+      "label": "Star Wars: Bölüm III – Sith'in İntikamı (2005)",
+      "title": "Star Wars: Episode III – Revenge of the Sith",
+      "type": "film",
+      "release_date": "2005-05-19",
+      "end_date": null,
       "image": "images/starwars.jpg",
       "shape": "image",
-      "description": "'Solo: A Star Wars Story' yapımı, Star Wars evreninde aile bağları ve kimlik arayışı teması etrafında şekillenir. Jedi'lar, Sith'ler, klon orduları ve politik entrikalar arasında geçen bu hikâye, galaksinin kaderini belirleyecek çatışmalara ışık tutar. Güç'ün doğası, bireylerin seçimleri ve evrensel mücadeleler filmin merkezindedir.",
-      "refers_to": "Bu yapım, Return of the Jedi ve Andor ile karakter bağlantıları, olayların devamlılığı ve Güç'e dair mistik göndermeler yoluyla derin bağlar kurar. Bu referanslar evrenin bütünlüğünü pekiştirir.",
+      "description": "Galaktik çatışma doruğa tırmanırken Cumhuriyet’i içeriden kemiren manipülasyon görünür hâle gelir. Uzayan savaşın yarattığı yorgunluk ve korku, kurumların hızlı ve sert çözümlere yönelmesine neden olur. Anakin Skywalker’ın iç dünyasında sevgi, kayıp ve güç arzusu arasında süren gerilim keskinleşir; sorumluluk duygusuyla kişisel korkular arasındaki denge bozulduğunda alınan kararların bedeli büyür. Obi-Wan Kenobi, sadakat ve gerçeklik arasında kalan zorlu bir etik zemin üzerinde yürür; Padmé Amidala ise idealizm ile güvenlik hesapları arasında sıkışır. Anlatı, bireysel kırılmaları sistem dönüşümüyle paralel bir çizgide ilerletir; seyirci, otoriterliğin güvenlik söylemi üzerinden nasıl meşrulaştırıldığına tanıklık eder. Görsel dil, çöküşün eşiğindeki kurumların ve savaşın gölgesinde sıkışan şehirlerin atmosferini yansıtır. Duygusal ton yoğun, melodramatik değil; katharsis, kişisel seçimlerin kaçınılmaz sonuçları üzerinden kurulur. Film, destanın geri kalanını şekillendiren büyük bir dönemeçte konumlanır ve sonraki anlatılar için belirleyici bir başlangıç noktası oluşturur. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir.",
+      "refers_to": "Prequel üçlemesini kapatan bu eser, Anakin Skywalker’ın dramatik dönüşümünü merkeze alır ve destanın bütününe ışık tutan neden-sonuç zincirini tamamlar. Otoriter bir düzenin yükselişini, demokratik kurumların kriz anlarında nasıl kırılganlaştığını ve korkunun politikada hangi kapıları araladığını örnekler. Jedi kurumunun kör noktaları ile bireysel kaygıların kesişmesi, beklenmedik sonuçlar doğurur; bu, sonraki filmlerde karşılaşılacak galaktik düzenin kökenlerini anlaşılır kılar. İzleme açısından yapım, önceki iki bölümde biriken soruları yanıtlayarak orijinal üçlemenin başlangıç koşullarını hazırlar; teknik ve tematik öğeler büyük anlatı içinde anlamlı bir köprü kurar. Böylece karakter yaylarının neden belirli yönlere evrildiği netleşir; izleyici, hem kişisel hem siyasal düzlemde kapsamlı bir tablo elde eder. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir.",
+      "canonical_level": "canon",
+      "sources": [
+        {
+          "name": "Official",
+          "url": "https://www.starwars.com/films"
+        },
+        {
+          "name": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Star_Wars:_Episode_III_%E2%80%93_Revenge_of_the_Sith"
+        }
+      ],
+      "lang": "tr",
+      "level": 3
+    },
+    {
+      "id": "film/starwars/2018_solo",
+      "label": "Han Solo: Bir Star Wars Hikayesi (2018)",
+      "title": "Solo: A Star Wars Story",
       "type": "film",
       "release_date": "2018-05-25",
-      "level": 5
-    },
-    {
-      "id": "obiWanKenobi2022",
-      "label": "Obi-Wan Kenobi (2022)",
-      "title": "Obi-Wan Kenobi",
+      "end_date": null,
       "image": "images/starwars.jpg",
       "shape": "image",
-      "description": "'Obi-Wan Kenobi' yapımı, Star Wars evreninde aile bağları ve kimlik arayışı teması etrafında şekillenir. Jedi'lar, Sith'ler, klon orduları ve politik entrikalar arasında geçen bu hikâye, galaksinin kaderini belirleyecek çatışmalara ışık tutar. Güç'ün doğası, bireylerin seçimleri ve evrensel mücadeleler filmin merkezindedir.",
-      "refers_to": "Bu yapım, The Last Jedi ve Attack of the Clones ile karakter bağlantıları, olayların devamlılığı ve Güç'e dair mistik göndermeler yoluyla derin bağlar kurar. Bu referanslar evrenin bütünlüğünü pekiştirir.",
-      "type": "dizi",
-      "release_date": "2022-05-27",
-      "level": 6
+      "description": "Galaksinin kenar bölgelerindeki kaçakçılık rotaları ve suç ağları arasında şekillenen bu serüven, cesur fakat deneyimsiz bir gencin kişisel özgürlük arayışıyla başlar. Baskıcı koşullardan kurtulmak için kurulan planlar, güven ilişkilerini sürekli test eden beklenmedik gelişmelere yol açar. Ekip kurma, sadakat ve ihanet temaları etrafında ilerleyen olaylar, zorlu hırsızlıklar ve doğaçlama kararlarla şekillenir. Lüks mekânlardan karanlık aracı dünyalarına uzanan geniş coğrafya, karakterin pragmatik tarafını ve risk alma iştahını görünür kılar. Yolculuk boyunca kurulan dostluklar ve rakiplikler, başka anlatılarda önemli rol oynayacak ilişkilerin nasıl filizlendiğini açıklar. Film, büyük savaşların dışında kalan bir suç dünyasını merkeze alarak evrenin ekonomik ve toplumsal arka planına dair farklı bir pencere açar; böylece kahramanın daha sonra sergileyeceği esnek ahlaki tutumun kökenleri anlaşılır. Anlatı, aksiyonun temposunu karakter anlarıyla dengelemeyi hedefler; sonuçta ortaya çıkan portre, hızlı düşünme ve cesur hamlelerle ayakta kalan bir maceraperest figürüdür. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir.",
+      "refers_to": "Yapım, ana destanın kenarında duran bir başlangıç hikâyesi işlevi görür ve karakterin ikonografisinin nasıl oluştuğunu anlatır. Zaman çizelgesindeki konumu, daha sonra karşılaşacağımız arkadaşlıkların ve araçların köklerini göstererek orijinal üçlemeyle bağ kurar. İzleme sırasına eklenmesi, bazı sembolik ayrıntıların nereden geldiğine dair açıklayıcı bir tatmin sağlar; ancak film aynı zamanda bağımsız bir macera olarak da çalışır. Tematik açıdan güven, sadakat ve kişisel çıkar arasındaki gerilim öne çıkar; kahramanın karar alma biçimi, zorlu koşullarda esneklik ve yaratıcılık üzerinden tanımlanır. Bu bağlam, ileride görülecek iş birliklerinin neden belirli değerlere dayanarak sürdüğünü açıklar ve saga içindeki karakter gelişiminin sürekliliğini destekler. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir.",
+      "canonical_level": "canon",
+      "sources": [
+        {
+          "name": "Official",
+          "url": "https://www.starwars.com/films"
+        },
+        {
+          "name": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Solo:_A_Star_Wars_Story"
+        }
+      ],
+      "lang": "tr",
+      "level": 3
     },
     {
-      "id": "rebels2014",
-      "label": "Star Wars Rebels (2014)",
-      "title": "Star Wars Rebels",
-      "image": "images/starwars.jpg",
-      "shape": "image",
-      "description": "'Star Wars Rebels' yapımı, Star Wars evreninde Sith'lerin yükselişi teması etrafında şekillenir. Jedi'lar, Sith'ler, klon orduları ve politik entrikalar arasında geçen bu hikâye, galaksinin kaderini belirleyecek çatışmalara ışık tutar. Güç'ün doğası, bireylerin seçimleri ve evrensel mücadeleler filmin merkezindedir.",
-      "refers_to": "Bu yapım, The Force Awakens ve The Last Jedi ile karakter bağlantıları, olayların devamlılığı ve Güç'e dair mistik göndermeler yoluyla derin bağlar kurar. Bu referanslar evrenin bütünlüğünü pekiştirir.",
-      "type": "dizi",
-      "release_date": "2014-10-03",
-      "level": 7
-    },
-    {
-      "id": "andor2022",
-      "label": "Andor (2022)",
-      "title": "Andor",
-      "image": "images/starwars.jpg",
-      "shape": "image",
-      "description": "'Andor' yapımı, Star Wars evreninde galaktik savaşlar ve kahramanlık teması etrafında şekillenir. Jedi'lar, Sith'ler, klon orduları ve politik entrikalar arasında geçen bu hikâye, galaksinin kaderini belirleyecek çatışmalara ışık tutar. Güç'ün doğası, bireylerin seçimleri ve evrensel mücadeleler filmin merkezindedir.",
-      "refers_to": "Bu yapım, Rogue One ve Return of the Jedi ile karakter bağlantıları, olayların devamlılığı ve Güç'e dair mistik göndermeler yoluyla derin bağlar kurar. Bu referanslar evrenin bütünlüğünü pekiştirir.",
-      "type": "dizi",
-      "release_date": "2022-09-21",
-      "level": 8
-    },
-    {
-      "id": "rogueOne2016",
-      "label": "Rogue One (2016)",
-      "title": "Rogue One",
-      "image": "images/starwars.jpg",
-      "shape": "image",
-      "description": "'Rogue One' yapımı, Star Wars evreninde direnişin örgütlenişi teması etrafında şekillenir. Jedi'lar, Sith'ler, klon orduları ve politik entrikalar arasında geçen bu hikâye, galaksinin kaderini belirleyecek çatışmalara ışık tutar. Güç'ün doğası, bireylerin seçimleri ve evrensel mücadeleler filmin merkezindedir.",
-      "refers_to": "Bu yapım, The Book of Boba Fett ve Star Wars: Visions ile karakter bağlantıları, olayların devamlılığı ve Güç'e dair mistik göndermeler yoluyla derin bağlar kurar. Bu referanslar evrenin bütünlüğünü pekiştirir.",
+      "id": "film/starwars/2016_rogue_one",
+      "label": "Rogue One: Bir Star Wars Hikayesi (2016)",
+      "title": "Rogue One: A Star Wars Story",
       "type": "film",
       "release_date": "2016-12-16",
-      "level": 9
-    },
-    {
-      "id": "aNewHope1977",
-      "label": "A New Hope (1977)",
-      "title": "A New Hope",
+      "end_date": null,
       "image": "images/starwars.jpg",
       "shape": "image",
-      "description": "'A New Hope' yapımı, Star Wars evreninde galaktik cumhuriyetin çöküşü teması etrafında şekillenir. Jedi'lar, Sith'ler, klon orduları ve politik entrikalar arasında geçen bu hikâye, galaksinin kaderini belirleyecek çatışmalara ışık tutar. Güç'ün doğası, bireylerin seçimleri ve evrensel mücadeleler filmin merkezindedir.",
-      "refers_to": "Bu yapım, Andor ve The Rise of Skywalker ile karakter bağlantıları, olayların devamlılığı ve Güç'e dair mistik göndermeler yoluyla derin bağlar kurar. Bu referanslar evrenin bütünlüğünü pekiştirir.",
+      "description": "Büyük bir savaş istasyonunun zayıf noktasına ulaşmayı mümkün kılacak planların peşine düşen farklı geçmişlerden insanların oluşturduğu küçük bir ekip, kişisel hikâyelerle kolektif amaç arasındaki ilişkinin güçlü bir örneğini sunar. Karakterler borçlar, vicdani sorgulamalar ve umut kırıklarıyla yola çıkarken görev büyür, risk artar ve geri dönüşsüz tercihler yapılır. Film, büyük kahramanlık mitlerinden çok sıradan insanların fedakârlıklarına odaklanır; savaşın gri alanlarında etik ile zorunluluk arasındaki çizgi bulanıklaşır. Görsel anlatım tozlu kasabalardan tropik kıyılara uzanır; sakin planların ardından gelen yoğun çatışmalar ritmi belirler. Olayların sonuçları yalnızca bir teknik başarının ötesine geçer ve daha sonra izleyeceğimiz geniş anlatının kapılarını doğrudan aralar. Böylece küçük ölçekte bir görevin, tarihin akışını değiştirebilecek etkiler doğurabileceği fikri güçlü biçimde kurulur. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir.",
+      "refers_to": "Antoloji kapsamına girse de eser, merkez anlatıya doğrudan bağlanan bir köprü işlevi görür ve izleme sıralamasında orijinal üçlemenin açılışından hemen önce konumlanır. Hikâyenin zemini, takip eden filmde karşılaşacağımız başlangıç koşullarını açıklığa kavuşturduğu için önemlidir. Tematik olarak kahramanlık anlatısına alternatif bir perspektif sunar ve dayanışmanın değerini sıradan bireylerin kararlılığı üzerinden gösterir. Üslup ve ritim tercihi, casusluk gerilimi ile savaş anlatısını dengeler; finalin duygusal etkisi, fedakârlığın gerçek bedeli vurgulanarak elde edilir. Bu nedenle eser, destanın sürekliliğini pekiştiren kritik bir yapı taşıdır ve zaman çizelgesindeki yerinin netliği izleme deneyimini güçlendirir. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir.",
+      "canonical_level": "canon",
+      "sources": [
+        {
+          "name": "Official",
+          "url": "https://www.starwars.com/films"
+        },
+        {
+          "name": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Rogue_One"
+        }
+      ],
+      "lang": "tr",
+      "level": 3
+    },
+    {
+      "id": "film/starwars/1977_a_new_hope",
+      "label": "Star Wars: Bölüm IV – Yeni Bir Umut (1977)",
+      "title": "Star Wars: Episode IV – A New Hope",
       "type": "film",
       "release_date": "1977-05-25",
-      "level": 10
-    },
-    {
-      "id": "empireStrikesBack1980",
-      "label": "The Empire Strikes Back (1980)",
-      "title": "The Empire Strikes Back",
+      "end_date": null,
       "image": "images/starwars.jpg",
       "shape": "image",
-      "description": "'The Empire Strikes Back' yapımı, Star Wars evreninde teknoloji ve mistisizmin çatışması teması etrafında şekillenir. Jedi'lar, Sith'ler, klon orduları ve politik entrikalar arasında geçen bu hikâye, galaksinin kaderini belirleyecek çatışmalara ışık tutar. Güç'ün doğası, bireylerin seçimleri ve evrensel mücadeleler filmin merkezindedir.",
-      "refers_to": "Bu yapım, A New Hope ve Star Wars Rebels ile karakter bağlantıları, olayların devamlılığı ve Güç'e dair mistik göndermeler yoluyla derin bağlar kurar. Bu referanslar evrenin bütünlüğünü pekiştirir.",
+      "description": "Galaksinin ücra bir köşesinde yaşayan genç bir çiftçi, iki droid aracılığıyla büyük bir çatışmanın içine çekilir ve meraktan sorumluluk duygusuna uzanan hızlı bir dönüşüm yaşar. Küçük bir ekiple çıktığı yolculukta kaçak bir kaptan, sadık bir yardımcı ve bilge bir rehber ona eşlik eder; ezici bir imparatorluk gücüne karşı cesaret ve yaratıcılık tek sığınaklarıdır. Efsane anlatısının arketiplerini kullanan film, mizah ve macera unsurlarını umut temasını öne çıkaracak şekilde dengeler. Görsel tasarım çorak gezegenler, uzay istasyonları ve isyancı üsleri üzerinden çeşitlilik sunar; müzik ve tempo, kahramanın içsel yolculuğuyla uyumlu bir yükseliş izler. Anlatı, bireysel kararların kolektif sonuçlar doğurabileceğini gösterirken fedakârlık ve arkadaşlık vurgusunu da diri tutar. İlk kez izleyenler için başlı başına tatmin edici bir macera sunarken daha geniş bir destanın giriş kapısı olma işlevini de yerine getirir. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir.",
+      "refers_to": "Orijinal üçlemenin açılış filmi olarak eser, evrenin kurallarını ve ana çatışmanın doğasını izleyiciye açık biçimde tanıtır. Karakter kadrosu, ilerleyen bölümlerde gelişecek dostluklar ve gerilimler için sağlam bir temel sağlar; böylece dramatik seçimlerin duygusal etkisi güçlenir. İzleme bağlamında film, hem bağımsız bir serüven olarak çalışır hem de daha geniş anlatının ilk adımıdır. Tematik düzeyde umut ve sorumluluk kavramları belirgindir; kahramanın kendi potansiyelini keşfetmesi, kolektif amaca bağlanmanın ne anlama geldiğini açıklar. Bu konum, sonraki iki bölümde artacak gerilimin ve nihai yüzleşmenin anlaşılmasına doğrudan katkıda bulunur. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir.",
+      "canonical_level": "canon",
+      "sources": [
+        {
+          "name": "Official",
+          "url": "https://www.starwars.com/films"
+        },
+        {
+          "name": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Star_Wars_(film)"
+        }
+      ],
+      "lang": "tr",
+      "level": 3
+    },
+    {
+      "id": "film/starwars/1980_empire_strikes_back",
+      "label": "Star Wars: Bölüm V – İmparator'un Dönüşü (1980)",
+      "title": "Star Wars: Episode V – The Empire Strikes Back",
       "type": "film",
       "release_date": "1980-05-21",
-      "level": 11
-    },
-    {
-      "id": "returnOfTheJedi1983",
-      "label": "Return of the Jedi (1983)",
-      "title": "Return of the Jedi",
+      "end_date": null,
       "image": "images/starwars.jpg",
       "shape": "image",
-      "description": "'Return of the Jedi' yapımı, Star Wars evreninde karanlık ve aydınlık arasındaki denge teması etrafında şekillenir. Jedi'lar, Sith'ler, klon orduları ve politik entrikalar arasında geçen bu hikâye, galaksinin kaderini belirleyecek çatışmalara ışık tutar. Güç'ün doğası, bireylerin seçimleri ve evrensel mücadeleler filmin merkezindedir.",
-      "refers_to": "Bu yapım, The Bad Batch ve A New Hope ile karakter bağlantıları, olayların devamlılığı ve Güç'e dair mistik göndermeler yoluyla derin bağlar kurar. Bu referanslar evrenin bütünlüğünü pekiştirir.",
+      "description": "Mücadele, kahramanların dağınık ve kırılgan hâlini açığa çıkaran bir dizi başarısızlıkla sürer. Ezici düşman, stratejik üstünlüğünü soğukkanlı bir kararlılıkla uygular; küçük hatalar büyük sonuçlara yol açar. Genç kahraman uzak bir dünyada bilge bir usta ile yoğun bir eğitimden geçerken, diğerleri kaçış ve dayanışma arasında gidip gelen zor kararlarla yüzleşir. Dostluk bağları farklı sınavlardan geçer; güven kırılganlaşır, sorumluluk ağırlaşır. Görsel ve anlatısal tasarım, gerilimi yükseltmek için mekân ve tempo çeşitliliği kullanır; her adım bir bedel doğurur. Film, umut duygusunu tamamen söndürmeden belirsizlik ve tehlike atmosferini kalıcı kılar; böylece final bölümüne taşınacak duygusal yük güçlenir. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir.",
+      "refers_to": "Orijinal üçlemenin orta halkası olarak eser, kahramanın olgunlaşma sürecini ve ekibin kırılganlığını aynı anda görünür kılar. Dramaturjik açıdan hazırlık ve yüzleşme temaları öne çıkar; anlatı, klasik macera şemasını tersyüz ederek sürprizli bir yön izler. Mekân çeşitliliği ve riskli kaçış sahneleri, karakter ilişkilerine yeni gerilimler ekler; izleyici, nihai çözüme giden yolda kaybetmenin nasıl eğitici olabileceğini deneyimler. Bu film, finalin duygusal ve stratejik zemininin kurulması bakımından vazgeçilmezdir. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir.",
+      "canonical_level": "canon",
+      "sources": [
+        {
+          "name": "Official",
+          "url": "https://www.starwars.com/films"
+        },
+        {
+          "name": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/The_Empire_Strikes_Back"
+        }
+      ],
+      "lang": "tr",
+      "level": 3
+    },
+    {
+      "id": "film/starwars/1983_return_of_the_jedi",
+      "label": "Star Wars: Bölüm VI – Jedi'nin Dönüşü (1983)",
+      "title": "Star Wars: Episode VI – Return of the Jedi",
       "type": "film",
       "release_date": "1983-05-25",
-      "level": 12
-    },
-    {
-      "id": "mandalorian2019",
-      "label": "The Mandalorian (2019)",
-      "title": "The Mandalorian",
+      "end_date": null,
       "image": "images/starwars.jpg",
       "shape": "image",
-      "description": "'The Mandalorian' yapımı, Star Wars evreninde teknoloji ve mistisizmin çatışması teması etrafında şekillenir. Jedi'lar, Sith'ler, klon orduları ve politik entrikalar arasında geçen bu hikâye, galaksinin kaderini belirleyecek çatışmalara ışık tutar. Güç'ün doğası, bireylerin seçimleri ve evrensel mücadeleler filmin merkezindedir.",
-      "refers_to": "Bu yapım, Solo: A Star Wars Story ve Star Wars Rebels ile karakter bağlantıları, olayların devamlılığı ve Güç'e dair mistik göndermeler yoluyla derin bağlar kurar. Bu referanslar evrenin bütünlüğünü pekiştirir.",
-      "type": "dizi",
-      "release_date": "2019-11-12",
-      "level": 13
+      "description": "Kurtarma girişimleri, stratejik saldırılar ve kişisel yüzleşmeler aynı çizgide ilerlerken, kahramanlarımız bir dönemi kapatacak bir dizi karar vermek zorunda kalır. Önceki hatalardan çıkarılan dersler somut eylemlere dönüşür; dayanışma, riskli hamlelerin başarısında belirleyici olur. Düşmanın sembolik gücü, beklenmedik işbirlikleri ve yerel toplulukların desteğiyle kırılma noktasına getirilir. Eylemler yalnızca aksiyon değil, önceki seçimlerin etik sonuçlarını görünür kılar; umut ve bağışlanma temaları dramatik düzlemde güç kazanır. Görsel anlatım, orman gezegenlerinden devasa yapısal tesislere uzanır; ritim, finale yaklaşmanın ağırlığıyla yoğunlaşır. Film, bireysel yolculukların siyasi ve askeri sonuçlarla nasıl bütünleşebildiğini göstererek dönemi kapatan bir katharsis sunar. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir.",
+      "refers_to": "Orijinal üçlemenin kapanış halkası olarak eser, başlatılmış tematik ve anlatısal çizgileri bir araya getirir. Başlangıçtaki macera duygusu sorumluluğa; kişisel arayış, toplumsal sonuçlara bağlanır. Önceden hazırlanmış çatışmalar, izleyicinin beklediği ölçekte bir çözümle kapanır; bu esnada karakterlerin gelişim çizgileri dengeli biçimde tamamlanır. İzleme bağlamında film, yeni döneme geçişi mümkün kılacak bir duygusal dinginlik sağlar; böylece daha sonra anlatının bıraktığı yerden devam eden hikâyeler için uygun bir zemin hazırlanır. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir.",
+      "canonical_level": "canon",
+      "sources": [
+        {
+          "name": "Official",
+          "url": "https://www.starwars.com/films"
+        },
+        {
+          "name": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Return_of_the_Jedi"
+        }
+      ],
+      "lang": "tr",
+      "level": 3
     },
     {
-      "id": "bookOfBobaFett2021",
-      "label": "The Book of Boba Fett (2021)",
-      "title": "The Book of Boba Fett",
-      "image": "images/starwars.jpg",
-      "shape": "image",
-      "description": "'The Book of Boba Fett' yapımı, Star Wars evreninde direnişin örgütlenişi teması etrafında şekillenir. Jedi'lar, Sith'ler, klon orduları ve politik entrikalar arasında geçen bu hikâye, galaksinin kaderini belirleyecek çatışmalara ışık tutar. Güç'ün doğası, bireylerin seçimleri ve evrensel mücadeleler filmin merkezindedir.",
-      "refers_to": "Bu yapım, The Empire Strikes Back ve Star Wars Rebels ile karakter bağlantıları, olayların devamlılığı ve Güç'e dair mistik göndermeler yoluyla derin bağlar kurar. Bu referanslar evrenin bütünlüğünü pekiştirir.",
-      "type": "dizi",
-      "release_date": "2021-12-29",
-      "level": 13
-    },
-    {
-      "id": "ahsoka2023",
-      "label": "Ahsoka (2023)",
-      "title": "Ahsoka",
-      "image": "images/starwars.jpg",
-      "shape": "image",
-      "description": "'Ahsoka' yapımı, Star Wars evreninde galaktik cumhuriyetin çöküşü teması etrafında şekillenir. Jedi'lar, Sith'ler, klon orduları ve politik entrikalar arasında geçen bu hikâye, galaksinin kaderini belirleyecek çatışmalara ışık tutar. Güç'ün doğası, bireylerin seçimleri ve evrensel mücadeleler filmin merkezindedir.",
-      "refers_to": "Bu yapım, The Force Awakens ve The Mandalorian ile karakter bağlantıları, olayların devamlılığı ve Güç'e dair mistik göndermeler yoluyla derin bağlar kurar. Bu referanslar evrenin bütünlüğünü pekiştirir.",
-      "type": "dizi",
-      "release_date": "2023-08-22",
-      "level": 14
-    },
-    {
-      "id": "forceAwakens2015",
-      "label": "The Force Awakens (2015)",
-      "title": "The Force Awakens",
-      "image": "images/starwars.jpg",
-      "shape": "image",
-      "description": "'The Force Awakens' yapımı, Star Wars evreninde galaktik cumhuriyetin çöküşü teması etrafında şekillenir. Jedi'lar, Sith'ler, klon orduları ve politik entrikalar arasında geçen bu hikâye, galaksinin kaderini belirleyecek çatışmalara ışık tutar. Güç'ün doğası, bireylerin seçimleri ve evrensel mücadeleler filmin merkezindedir.",
-      "refers_to": "Bu yapım, The Book of Boba Fett ve The Mandalorian ile karakter bağlantıları, olayların devamlılığı ve Güç'e dair mistik göndermeler yoluyla derin bağlar kurar. Bu referanslar evrenin bütünlüğünü pekiştirir.",
+      "id": "film/starwars/2015_force_awakens",
+      "label": "Star Wars: Bölüm VII – Güç Uyanıyor (2015)",
+      "title": "Star Wars: Episode VII – The Force Awakens",
       "type": "film",
       "release_date": "2015-12-18",
-      "level": 15
-    },
-    {
-      "id": "lastJedi2017",
-      "label": "The Last Jedi (2017)",
-      "title": "The Last Jedi",
+      "end_date": null,
       "image": "images/starwars.jpg",
       "shape": "image",
-      "description": "'The Last Jedi' yapımı, Star Wars evreninde karanlık ve aydınlık arasındaki denge teması etrafında şekillenir. Jedi'lar, Sith'ler, klon orduları ve politik entrikalar arasında geçen bu hikâye, galaksinin kaderini belirleyecek çatışmalara ışık tutar. Güç'ün doğası, bireylerin seçimleri ve evrensel mücadeleler filmin merkezindedir.",
-      "refers_to": "Bu yapım, Solo: A Star Wars Story ve The Force Awakens ile karakter bağlantıları, olayların devamlılığı ve Güç'e dair mistik göndermeler yoluyla derin bağlar kurar. Bu referanslar evrenin bütünlüğünü pekiştirir.",
+      "description": "Yeni bir güç odağının yükselişi, barışın kırılganlığını hatırlatır ve geçmişten gelen sembollerle meşruiyet kurmaya çalışan yapıları ön plana çıkarır. Genç bir toplayıcı ve vicdani bir kaçak, tesadüflerle başladıkları kaçışta birbirlerine ve yeni dostlara tutunur; eski kahramanların mirası, yeni kuşağın kimlik arayışıyla kesişir. Kayıp, aidiyet ve umut temaları yolculuğa yön verirken, farklı gezegenler ve kültürler arasındaki geçişler anlatıya genişlik katar. Ekip, önce hayatta kalmayı sonra da kaybolmuş bir rehberi bulmayı hedefler; küçük başarılar büyük karşılaşmalara zemin hazırlar. Film, klasik serüven duygusunu çağdaş bir ritimle birleştirir; mizah ve gerilim dengesi, tanıdık ikonografiyi yeniliklerle harmanlar. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir.",
+      "refers_to": "Devam üçlemesinin açılış halkası olarak eser, anlatısal mirası devralır ve yeni başkarakterleri sahneye yerleştirir. Tanıdık simgelerin kullanımı süreklilik hissini güçlendirirken, yeni motivasyonlar taze bir yön sunar. Tematik olarak kimlik, aidiyet ve mitin gücü öne çıkar; karakterler geçmişten devraldıkları hikâyelerin gölgesinde kendi yollarını arar. Teknolojik ve estetik güncellemeler seriyi çağdaş izleyiciye yaklaştırır; anlatı, eski ile yeni arasında duygusal bir köprü kurar. Böylece sonraki iki bölümde doruğa çıkacak çatışmalar için hem kişisel hem yapısal zemin hazırlanır. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir.",
+      "canonical_level": "canon",
+      "sources": [
+        {
+          "name": "Official",
+          "url": "https://www.starwars.com/films"
+        },
+        {
+          "name": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Star_Wars:_Episode_VII_%E2%80%93_The_Force_Awakens"
+        }
+      ],
+      "lang": "tr",
+      "level": 3
+    },
+    {
+      "id": "film/starwars/2017_the_last_jedi",
+      "label": "Star Wars: Bölüm VIII – Son Jedi (2017)",
+      "title": "Star Wars: Episode VIII – The Last Jedi",
       "type": "film",
       "release_date": "2017-12-15",
-      "level": 16
-    },
-    {
-      "id": "riseOfSkywalker2019",
-      "label": "The Rise of Skywalker (2019)",
-      "title": "The Rise of Skywalker",
+      "end_date": null,
       "image": "images/starwars.jpg",
       "shape": "image",
-      "description": "'The Rise of Skywalker' yapımı, Star Wars evreninde aile bağları ve kimlik arayışı teması etrafında şekillenir. Jedi'lar, Sith'ler, klon orduları ve politik entrikalar arasında geçen bu hikâye, galaksinin kaderini belirleyecek çatışmalara ışık tutar. Güç'ün doğası, bireylerin seçimleri ve evrensel mücadeleler filmin merkezindedir.",
-      "refers_to": "Bu yapım, Star Wars Rebels ve Return of the Jedi ile karakter bağlantıları, olayların devamlılığı ve Güç'e dair mistik göndermeler yoluyla derin bağlar kurar. Bu referanslar evrenin bütünlüğünü pekiştirir.",
+      "description": "Küçük bir direniş gücü ezici bir düşman tarafından aralıksız takip edilirken, farklı cephelerde alınan kararlar birlikte hayatta kalmanın koşullarını belirler. Genç kahraman, inzivaya çekilmiş efsanevi bir figürden rehberlik arar; ancak rehber, geçmişin hatalarıyla hesaplaşmadan yol gösteremeyeceğini görür. Komuta düzeyindeki ayrışmalar, cesur bireysel eylemler ve planlı fedakârlıklar aynı anda tartışılır. Umut, başarısızlıkların eğitici niteliği üzerinden yeniden tanımlanır; güç ve liderlik anlayışı sorgulanır. Görsel anlatım, geniş boşluklar ile yoğun takip sahneleri arasında ritmik bir denge kurar; karakter merkezli anlar, büyük ölçekli set parçalarıyla dönüşümlü ilerler. Film, beklenmedik yönleri ve risk alan tercihleriyle tartışma yaratırken anlatının duygusal ağırlığını artırır. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir.",
+      "refers_to": "Devam üçlemesinin ikinci halkası olarak yapım, klasik beklentileri geciktirir ve çözümü erteler. Tematik odak; hatadan öğrenme, başarısızlığın öğreticiliği ve liderliğin etik sorumluluğudur. Karakterler yeni kavrayışlar geliştirir; bu kavrayışlar final bölümünde alacakları kararların arka planını oluşturur. İzleme bağlamında film, tartışmalı ama verimli bir ara durak olarak işlev görür; hikâyeyi derinleştirir ve kişisel çatışmaları keskinleştirir. Böylece kapanışa giden yol daha yoğun bir duygusal gerilimle örülür. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir.",
+      "canonical_level": "canon",
+      "sources": [
+        {
+          "name": "Official",
+          "url": "https://www.starwars.com/films"
+        },
+        {
+          "name": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Star_Wars:_The_Last_Jedi"
+        }
+      ],
+      "lang": "tr",
+      "level": 3
+    },
+    {
+      "id": "film/starwars/2019_rise_of_skywalker",
+      "label": "Star Wars: Bölüm IX – Skywalker’ın Yükselişi (2019)",
+      "title": "Star Wars: Episode IX – The Rise of Skywalker",
       "type": "film",
       "release_date": "2019-12-20",
-      "level": 17
-    },
-    {
-      "id": "visions2021",
-      "label": "Star Wars: Visions (2021)",
-      "title": "Star Wars: Visions",
+      "end_date": null,
       "image": "images/starwars.jpg",
       "shape": "image",
-      "description": "'Star Wars: Visions' yapımı, Star Wars evreninde galaktik savaşlar ve kahramanlık teması etrafında şekillenir. Jedi'lar, Sith'ler, klon orduları ve politik entrikalar arasında geçen bu hikâye, galaksinin kaderini belirleyecek çatışmalara ışık tutar. Güç'ün doğası, bireylerin seçimleri ve evrensel mücadeleler filmin merkezindedir.",
-      "refers_to": "Bu yapım, The Phantom Menace ve The Rise of Skywalker ile karakter bağlantıları, olayların devamlılığı ve Güç'e dair mistik göndermeler yoluyla derin bağlar kurar. Bu referanslar evrenin bütünlüğünü pekiştirir.",
-      "type": "dizi",
-      "release_date": "2021-09-22",
-      "level": 18
+      "description": "Sürmekte olan mücadele, dağınık ittifakların yeniden bir araya gelmesini ve geçmişten gelen bazı sırların yüzeye çıkmasını kaçınılmaz kılar. Kahramanlar farklı rotalara ayrılarak birbirini tamamlayan görevler üstlenir; kişisel sınavlar, kolektif amaca katkı sağladığında gerilim artar. Umut ile korku arasındaki salınım anlatının ritmini belirler; kayıpların anısı yeni kararların ağırlığını derinleştirir. Simgesel karşılaşmalar ve miras teması, sona yaklaşan bir destanın duygusal dokusunu güçlendirir. Yapım, yüksek tempolu eylem anlarını karakter merkezli duraklamalarla dengelemeye çalışır; sonuçta ortaya çıkan tablo, farklı nesillerin aynı hedef doğrultusunda kurduğu bir dayanışmayı vurgular. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir.",
+      "refers_to": "Devam üçlemesinin kapanış halkası olarak film, karakter yaylarını ve tematik çizgileri tamamlamayı amaçlar. İzleme bağlamında önceki iki bölümde biriken sorulara yanıt arar; serinin mitolojik mirasını çağdaş bir dille yeniden yorumlar. Çeşitli görev hatları, kahramanların yetkinliklerini ve işbirliği becerilerini sergiler; bu yapı finaldeki toplu çözümün inandırıcılığını destekler. Umut, dayanışma ve öz-kimlik temaları yoğun şekilde işlenir; kapanış, geleceğe yönelik olasılıklara kapı aralarken destanın uzun erimli etkisini vurgular. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir.",
+      "canonical_level": "canon",
+      "sources": [
+        {
+          "name": "Official",
+          "url": "https://www.starwars.com/films"
+        },
+        {
+          "name": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Star_Wars:_The_Rise_of_Skywalker"
+        }
+      ],
+      "lang": "tr",
+      "level": 3
     }
   ],
   "edges": [
     {
-      "from": "phantomMenace1999",
-      "to": "attackOfTheClones2002",
-      "type": "devam"
+      "from": "film/starwars/1999_phantom_menace",
+      "to": "film/starwars/2002_attack_of_the_clones",
+      "type": "devam",
+      "weight": 1,
+      "sources": [
+        {
+          "name": "Official",
+          "url": "https://www.starwars.com/films"
+        }
+      ],
+      "notes": ""
     },
     {
-      "from": "attackOfTheClones2002",
-      "to": "cloneWars2008",
-      "type": "ön hikaye"
+      "from": "film/starwars/2002_attack_of_the_clones",
+      "to": "film/starwars/2005_revenge_of_the_sith",
+      "type": "devam",
+      "weight": 1,
+      "sources": [
+        {
+          "name": "Official",
+          "url": "https://www.starwars.com/films"
+        }
+      ],
+      "notes": ""
     },
     {
-      "from": "cloneWars2008",
-      "to": "revengeOfTheSith2005",
-      "type": "ön hikaye"
+      "from": "film/starwars/2018_solo",
+      "to": "film/starwars/2016_rogue_one",
+      "type": "öncesi",
+      "weight": 1,
+      "sources": [
+        {
+          "name": "Official",
+          "url": "https://www.starwars.com/films"
+        }
+      ],
+      "notes": "Kronolojik olarak önce."
     },
     {
-      "from": "revengeOfTheSith2005",
-      "to": "obiWanKenobi2022",
-      "type": "devam"
+      "from": "film/starwars/2016_rogue_one",
+      "to": "film/starwars/1977_a_new_hope",
+      "type": "öncesi",
+      "weight": 1,
+      "sources": [
+        {
+          "name": "Official",
+          "url": "https://www.starwars.com/films"
+        }
+      ],
+      "notes": "Doğrudan bağlanır."
     },
     {
-      "from": "cloneWars2008",
-      "to": "badBatch2021",
-      "type": "devam"
+      "from": "film/starwars/1977_a_new_hope",
+      "to": "film/starwars/1980_empire_strikes_back",
+      "type": "devam",
+      "weight": 1,
+      "sources": [
+        {
+          "name": "Official",
+          "url": "https://www.starwars.com/films"
+        }
+      ],
+      "notes": ""
     },
     {
-      "from": "badBatch2021",
-      "to": "rebels2014",
-      "type": "ön hikaye"
+      "from": "film/starwars/1980_empire_strikes_back",
+      "to": "film/starwars/1983_return_of_the_jedi",
+      "type": "devam",
+      "weight": 1,
+      "sources": [
+        {
+          "name": "Official",
+          "url": "https://www.starwars.com/films"
+        }
+      ],
+      "notes": ""
     },
     {
-      "from": "solo2018",
-      "to": "rogueOne2016",
-      "type": "karakter göndermesi"
+      "from": "film/starwars/1983_return_of_the_jedi",
+      "to": "film/starwars/2015_force_awakens",
+      "type": "devam",
+      "weight": 1,
+      "sources": [
+        {
+          "name": "Official",
+          "url": "https://www.starwars.com/films"
+        }
+      ],
+      "notes": "Zaman atlaması sonrası saga devam eder."
     },
     {
-      "from": "obiWanKenobi2022",
-      "to": "rogueOne2016",
-      "type": "zaman çizgisi bağlantısı"
+      "from": "film/starwars/2015_force_awakens",
+      "to": "film/starwars/2017_the_last_jedi",
+      "type": "devam",
+      "weight": 1,
+      "sources": [
+        {
+          "name": "Official",
+          "url": "https://www.starwars.com/films"
+        }
+      ],
+      "notes": ""
     },
     {
-      "from": "rebels2014",
-      "to": "rogueOne2016",
-      "type": "ön hikaye"
-    },
-    {
-      "from": "andor2022",
-      "to": "rogueOne2016",
-      "type": "devam"
-    },
-    {
-      "from": "rogueOne2016",
-      "to": "aNewHope1977",
-      "type": "ön hikaye"
-    },
-    {
-      "from": "aNewHope1977",
-      "to": "empireStrikesBack1980",
-      "type": "devam"
-    },
-    {
-      "from": "empireStrikesBack1980",
-      "to": "returnOfTheJedi1983",
-      "type": "devam"
-    },
-    {
-      "from": "returnOfTheJedi1983",
-      "to": "mandalorian2019",
-      "type": "devam"
-    },
-    {
-      "from": "mandalorian2019",
-      "to": "bookOfBobaFett2021",
-      "type": "yan hikaye"
-    },
-    {
-      "from": "rebels2014",
-      "to": "ahsoka2023",
-      "type": "devam"
-    },
-    {
-      "from": "mandalorian2019",
-      "to": "ahsoka2023",
-      "type": "karakter göndermesi"
-    },
-    {
-      "from": "ahsoka2023",
-      "to": "riseOfSkywalker2019",
-      "type": "zihinsel bağlantı"
-    },
-    {
-      "from": "forceAwakens2015",
-      "to": "lastJedi2017",
-      "type": "devam"
-    },
-    {
-      "from": "lastJedi2017",
-      "to": "riseOfSkywalker2019",
-      "type": "devam"
+      "from": "film/starwars/2017_the_last_jedi",
+      "to": "film/starwars/2019_rise_of_skywalker",
+      "type": "devam",
+      "weight": 1,
+      "sources": [
+        {
+          "name": "Official",
+          "url": "https://www.starwars.com/films"
+        }
+      ],
+      "notes": ""
     }
   ]
 }
