@@ -3,144 +3,65 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Film Evreni Ağı</title>
+  <title>🎬 Film Evreni Ağı</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
   <style>
     :root { color-scheme: dark; }
-    html, body {
-      height: 100%;
-      margin: 0;
-      color: #d1d5db;
-      font-family: 'Segoe UI', system-ui, -apple-system, Roboto, 'Helvetica Neue', Arial, sans-serif;
-      background: transparent;
-    }
+    html, body { height: 100%; margin: 0; color: #d1d5db; font-family: 'Segoe UI', system-ui, -apple-system, Roboto, 'Helvetica Neue', Arial, sans-serif; background: transparent; }
 
-    /* Tam ekran arkaplan görseli (IMG tabanlı, mobilde sorunsuz) */
-    #bgImg{
-      position: fixed;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      filter: blur(12px) brightness(0.65);
-      transform: scale(1.06);
-      z-index: -2;
-      backface-visibility: hidden;
-      will-change: transform;
-    }
-    #bgOverlay{
-      position: fixed;
-      inset: 0;
-      z-index:-1;
-      background: rgba(0,0,0,0.35);
-    }
+    /* Tam ekran arkaplan IMG (mobil uyumlu) */
+    #bgImg{ position: fixed; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: blur(12px) brightness(0.65); transform: scale(1.06); z-index: -2; backface-visibility: hidden; will-change: transform; }
+    #bgOverlay{ position: fixed; inset: 0; z-index:-1; background: rgba(0,0,0,0.35); }
 
     /* Graph tam ekran; transparan */
     #network { position: fixed; inset: 0; background: transparent; border: none; }
 
     /* Cam (glass) yüzey */
-    .glass {
-      background: rgba(31,41,55,0.45);
-      border: 1px solid rgba(255,255,255,0.12);
-      box-shadow: 0 12px 30px rgba(0,0,0,0.35);
-      backdrop-filter: blur(18px);
-      -webkit-backdrop-filter: blur(18px);
-    }
+    .glass { background: rgba(31,41,55,0.45); border: 1px solid rgba(255,255,255,0.12); box-shadow: 0 12px 30px rgba(0,0,0,0.35); backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); }
 
     /* Formlar */
     input { color: #e5e7eb; background-color: rgba(55,65,81,0.55); border: 1px solid rgba(255,255,255,0.12); outline: none; }
     input::placeholder { color: #9ca3af; }
 
     /* Autocomplete paneli */
-    .ac-panel {
-      background: rgba(31,41,55,0.9);
-      border: 1px solid rgba(255,255,255,0.14);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      box-shadow: 0 14px 28px rgba(0,0,0,0.5);
-    }
+    .ac-panel { background: rgba(31,41,55,0.9); border: 1px solid rgba(255,255,255,0.14); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: 0 14px 28px rgba(0,0,0,0.5); }
     .ac-item { cursor: pointer; }
     .ac-item:hover { background: rgba(255,255,255,0.08); }
 
     /* Custom dropdown (glass) */
     .dropdown-btn { cursor: pointer; }
-    .dropdown-panel {
-      background: rgba(31,41,55,0.65);
-      border: 1px solid rgba(255,255,255,0.14);
-      box-shadow: 0 16px 40px rgba(0,0,0,0.45);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-    }
+    .dropdown-panel { background: rgba(31,41,55,0.65); border: 1px solid rgba(255,255,255,0.14); box-shadow: 0 16px 40px rgba(0,0,0,0.45); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); }
     .dropdown-item { cursor: pointer; }
     .dropdown-item:hover { background: rgba(255,255,255,0.06); }
-
+    
     /* Modal */
     .modal-bg { background: rgba(0,0,0,0.75); backdrop-filter: blur(4px); }
-    .modal-content {
-      width: 92vw; max-width: 780px;
-      max-height: 85vh; overflow-y: auto;
-      background: #0f172a; color: #e5e7eb;
-      border-radius: 18px; padding: 0;
-      box-shadow: 0 12px 24px rgba(0,0,0,0.45); position: relative;
-      border: 1px solid rgba(255,255,255,0.08);
-    }
-    .modal-header {
-      display: grid; grid-template-columns: 120px 1fr; gap: 16px;
-      padding: 16px; border-bottom: 1px solid rgba(255,255,255,0.06);
-      background: radial-gradient(1200px 400px at -20% -40%, rgba(239,68,68,0.08), transparent);
-    }
-    .poster {
-      width: 120px; height: 160px; border-radius: 10px; object-fit: cover;
-      background: #111827;
-      border: 1px solid rgba(255,255,255,0.08);
-    }
+    .modal-content { width: 92vw; max-width: 780px; max-height: 85vh; overflow-y: auto; background: #0f172a; color: #e5e7eb; border-radius: 18px; padding: 0; box-shadow: 0 12px 24px rgba(0,0,0,0.45); position: relative; border: 1px solid rgba(255,255,255,0.08); }
+    .modal-header { display: grid; grid-template-columns: 120px 1fr; gap: 16px; padding: 16px; border-bottom: 1px solid rgba(255,255,255,0.06); background: radial-gradient(1200px 400px at -20% -40%, rgba(239,68,68,0.08), transparent); }
+    .poster { width: 120px; height: 160px; border-radius: 10px; object-fit: cover; background: #111827; border: 1px solid rgba(255,255,255,0.08); }
     .modal-body { padding: 16px; }
-    .chip {
-      display: inline-flex; align-items: center; gap: 6px;
-      background: rgba(255,255,255,0.06);
-      border: 1px solid rgba(255,255,255,0.10);
-      padding: 4px 10px; border-radius: 999px; font-size: 12px;
-    }
+    .chip { display: inline-flex; align-items: center; gap: 6px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10); padding: 4px 10px; border-radius: 999px; font-size: 12px; }
 
     /* Meta tek kolon */
     .meta-grid { display: grid; grid-template-columns: 1fr; gap: 12px; margin-top: 10px; }
     .meta-item { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.06); padding: 10px 12px; border-radius: 12px; }
     .section-title { font-size: 0.9rem; opacity: 0.85; margin-bottom: 6px; }
 
-    .close-btn {
-      position: absolute; top: 12px; right: 12px;
-      width: 36px; height: 36px; border-radius: 999px;
-      display: grid; place-items: center;
-      background: rgba(255,255,255,0.06);
-      border: 1px solid rgba(255,255,255,0.1);
-      cursor: pointer;
-    }
+    .close-btn { position: absolute; top: 12px; right: 12px; width: 36px; height: 36px; border-radius: 999px; display: grid; place-items: center; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); cursor: pointer; }
     .close-btn:hover { background: rgba(239,68,68,0.15); border-color: rgba(239,68,68,0.5); }
 
     /* Legend: üstte toggle, mobilde kapalı + küçük */
     #legendWrap { position: fixed; left: 16px; bottom: 16px; z-index: 40; }
-    #legendToggle {
-      margin-bottom: 8px;
-      background: rgba(31,41,55,0.55);
-      border: 1px solid rgba(255,255,255,0.14);
-      backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
-    }
-    #legend {
-      background: rgba(31,41,55,0.45);
-      border: 1px solid rgba(255,255,255,0.12);
-      box-shadow: 0 8px 18px rgba(0,0,0,0.35);
-      backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
-      border-radius: 12px; padding: 12px 16px;
-      max-width: 320px; max-height: 260px; overflow-y: auto;
-      font-size: 0.85rem;
-    }
-    @media (max-width: 640px) {
-      #legend { font-size: 0.72rem; max-width: 220px; padding: 8px 10px; }
-    }
+    #legendToggle { margin-bottom: 8px; background: rgba(31,41,55,0.55); border: 1px solid rgba(255,255,255,0.14); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); }
+    #legend { background: rgba(31,41,55,0.45); border: 1px solid rgba(255,255,255,0.12); box-shadow: 0 8px 18px rgba(0,0,0,0.35); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-radius: 12px; padding: 12px 16px; max-width: 320px; max-height: 260px; overflow-y: auto; font-size: 0.85rem; }
+    @media (max-width: 640px) { #legend { font-size: 0.72rem; max-width: 220px; padding: 8px 10px; } }
+
+    /* Paylaş çubuğu */
+    .share-bar { position: absolute; top: 8px; left: 12px; right: 56px; display:flex; align-items:center; gap:8px; opacity:.95; }
+    .share-btn { display:inline-flex; align-items:center; gap:6px; padding:6px 10px; border-radius:10px; background: rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.14); font-size:12px; }
+    .share-btn:hover { background: rgba(255,255,255,0.1); }
   </style>
 </head>
 <body class="dark" :class="{ 'overflow-hidden': modalOpen }">
@@ -149,7 +70,7 @@
 <img id="bgImg" :src="bgUrl" alt="" />
 <div id="bgOverlay"></div>
 
-<!-- Kompakt CAM NAVBAR (mobil tam genişlik, sm: md, lg: lg) -->
+<!-- Kompakt CAM NAVBAR -->
 <header class="fixed top-4 left-0 right-0 z-50">
   <div class="w-full sm:max-w-md lg:max-w-lg mx-auto px-3">
     <div class="glass rounded-xl px-3 py-2">
@@ -161,39 +82,26 @@
         <div class="flex items-center gap-2">
           <!-- Arama + Autocomplete + X temizle -->
           <div class="relative w-full">
-            <input
-              x-model="search"
-              type="search"
-              placeholder="Ara..."
-              class="border rounded-lg px-3 py-1.5 w-full pr-8"
-              @focus="acOpen = true"
-              @blur="setTimeout(() => acOpen = false, 120)"
-            />
-            <button
-              x-show="search"
-              @mousedown.prevent
-              @click="search=''; suggestions=[]; applyFilters()"
-              class="absolute inset-y-0 right-2 my-auto h-6 w-6 rounded-full grid place-items-center opacity-80 hover:opacity-100 hover:bg-white/10"
-              aria-label="Temizle">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M18.3 5.71a1 1 0 0 0-1.41 0L12 10.59 7.11 5.7A1 1 0 0 0 5.7 7.11L10.59 12l-4.9 4.89a1 1 0 1 0 1.41 1.41L12 13.41l4.89 4.9a1 1 0 0 0 1.41-1.41L13.41 12l4.9-4.89a1 1 0 0 0-.01-1.4Z"/>
-              </svg>
+            <input x-model="search" type="search" placeholder="Ara..." class="border rounded-lg px-3 py-1.5 w-full pr-8"
+                   @focus="acOpen = true" @blur="setTimeout(() => acOpen = false, 120)" />
+            <button x-show="search" @mousedown.prevent @click="search=''; suggestions=[]; applyFilters()"
+                    class="absolute inset-y-0 right-2 my-auto h-6 w-6 rounded-full grid place-items-center opacity-80 hover:opacity-100 hover:bg-white/10"
+                    aria-label="Temizle">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M18.3 5.71a1 1 0 0 0-1.41 0L12 10.59 7.11 5.7A1 1 0 0 0 5.7 7.11L10.59 12l-4.9 4.89a1 1 0 1 0 1.41 1.41L12 13.41l4.89 4.9a1 1 0 0 0 1.41-1.41L13.41 12l4.9-4.89a1 1 0 0 0-.01-1.4Z"/></svg>
             </button>
 
             <!-- Öneriler -->
             <div x-show="acOpen && search && suggestions.length"
                  class="ac-panel absolute z-50 w-full mt-1 rounded-lg overflow-hidden max-h-56 overflow-y-auto">
               <template x-for="(s, idx) in suggestions" :key="s">
-                <div class="ac-item px-3 py-1.5"
-                     @mousedown.prevent
-                     @click="search = s; acOpen=false; applyFilters();">
+                <div class="ac-item px-3 py-1.5" @mousedown.prevent @click="search = s; acOpen=false; applyFilters();">
                   <span x-text="s"></span>
                 </div>
               </template>
             </div>
           </div>
 
-          <!-- Custom Universe Dropdown (glass) -->
+          <!-- Universe Dropdown (glass) -->
           <div class="relative min-w-[200px]" x-data="{ open:false, filterText:'' }" @keydown.escape="open=false" @click.outside="open=false">
             <div class="dropdown-btn border rounded-lg px-3 py-1.5 w-full flex items-center justify-between select-none"
                  @click="open=!open" :aria-expanded="open">
@@ -209,9 +117,7 @@
               <ul class="max-h-64 overflow-y-auto">
                 <li class="dropdown-item px-3 py-2" @click="selectedUniverse=''; open=false; filterText=''; applyFilters()">Tüm Evrenler</li>
                 <template x-for="u in universeList.filter(u => !filterText || formatUniverseName(u).toLowerCase().includes(filterText.toLowerCase()))" :key="u">
-                  <li class="dropdown-item px-3 py-2"
-                      @click="selectedUniverse=u; open=false; filterText=''; applyFilters()"
-                      x-text="formatUniverseName(u)"></li>
+                  <li class="dropdown-item px-3 py-2" @click="selectedUniverse=u; open=false; filterText=''; applyFilters()" x-text="formatUniverseName(u)"></li>
                 </template>
               </ul>
             </div>
@@ -230,15 +136,14 @@
 <div x-show="modalOpen" x-transition class="fixed inset-0 modal-bg flex items-center justify-center z-50 p-4"
      @click.away="modalOpen = false" @keydown.escape.window="modalOpen=false" aria-labelledby="modalTitle" role="dialog" aria-modal="true">
   <div class="modal-content" @click.stop>
+
+
+
     <button class="close-btn" aria-label="Kapat" @click="modalOpen=false">✖</button>
 
     <div class="modal-header">
-      <template x-if="modalNode?.image">
-        <img :src="modalNode.image" alt="" class="poster" loading="lazy" />
-      </template>
-      <template x-if="!modalNode?.image">
-        <div class="poster"></div>
-      </template>
+      <template x-if="modalNode?.image"><img :src="modalNode.image" alt="" class="poster" loading="lazy" /></template>
+      <template x-if="!modalNode?.image"><div class="poster"></div></template>
 
       <div class="flex flex-col gap-2">
         <h2 id="modalTitle" class="text-xl font-semibold" x-text="modalNode?.label"></h2>
@@ -263,24 +168,38 @@
           </div>
         </div>
 
-        <!-- Watch later butonu -->
-        <div class="mt-1">
-          <button class="px-3 py-1.5 text-sm rounded-lg border border-white/20 hover:bg-white/10"
-                  @click="toggleWatchLater(modalNode)">
-            <span x-text="isInWatchLater(modalNode?.id) ? 'Listeden çıkar' : 'Daha sonra izle'"></span>
-          </button>
-        </div>
-      </div>
-    </div>
+          <!-- Watch later + Paylaş -->
+          <div class="mt-1 flex items-center gap-2 flex-wrap col-span-2">
+            <button class="px-3 py-1.5 text-sm rounded-lg border border-white/20 hover:bg-white/10" @click="toggleWatchLater(modalNode)">
+              <span x-text="isInWatchLater(modalNode?.id) ? 'Listeden çıkar' : 'Daha sonra izle'"></span>
+            </button>
+
+            <!-- Paylaş butonları -->
+            <button class="share-btn" @click="shareNode(modalNode,'native')" title="Paylaş">
+              <!-- sistem paylaşımı -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 5.5l-2-2V9H10V3.5l-2 2-1-1L10.5 1 15 4.5l-1 1z"/><path d="M19 10v8H5v-8H3v10h18V10z"/></svg>
+              <span>Paylaş</span>
+            </button>
+
+            <button class="share-btn" @click="shareNode(modalNode,'whatsapp')" title="WhatsApp">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.62-6.003C.122 5.281 5.403 0 12.057 0c3.17 0 6.155 1.237 8.4 3.482A11.79 11.79 0 0124 11.873c-.003 6.653-5.284 11.935-11.938 11.935a11.9 11.9 0 01-6.019-1.63L.057 24zm6.597-3.807c1.737 1.035 3.276 1.666 5.392 1.666 5.448 0 9.886-4.434 9.889-9.877.003-5.462-4.415-9.89-9.881-9.89-5.452 0-9.885 4.433-9.885 9.885 0 2.253.744 3.891 1.99 5.642l-.656 2.393 2.151-.819zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.298-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.199-.347.223-.645.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.521.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.521-.074-.149-.669-1.611-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.017-1.04 2.479 0 1.461 1.065 2.873 1.213 3.071.149.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.718 2.006-1.412.248-.694.248-1.289.173-1.412z"/></svg>
+              <span>WhatsApp</span>
+            </button>
+
+            <button class="share-btn" @click="shareNode(modalNode,'x')" title="X">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2H21l-6.5 7.43L22.5 22H16l-5.1-6.61L5 22H2.244l6.98-7.985L1.5 2H8l4.62 6.055L18.244 2zm-2.11 18h1.645L7.986 4h-1.7L16.134 20z"/></svg>
+              <span>X</span>
+            </button>
+          </div>
+
+
 
     <!-- Gövde -->
     <div class="modal-body space-y-4">
       <!-- Açıklama -->
       <div>
         <div class="flex items-center gap-2 mb-2">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-red-400" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M4 5h16v14H4z" fill="none"/><path d="M4 5h16v14H4z"/>
-          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-red-400" viewBox="0 0 24 24" fill="currentColor"><path d="M4 5h16v14H4z" fill="none"/><path d="M4 5h16v14H4z"/></svg>
           <span class="font-semibold">Açıklama</span>
         </div>
         <div class="bg-white/5 border border-white/10 rounded-lg p-3 leading-relaxed">
@@ -292,9 +211,7 @@
       <template x-if="modalNode?.refers_to">
         <div>
           <div class="flex items-center gap-2 mb-2">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-blue-400" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M10.59 13.41a1.99 1.99 0 002.82 0l5-5a2 2 0 10-2.82-2.82l-5 5a2 2 0 000 2.82z"/><path d="M13.41 10.59a1.99 1.99 0 000 2.82l5 5a2 2 0 102.82-2.82l-5-5a2 2 0 00-2.82 0z"/>
-            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-blue-400" viewBox="0 0 24 24" fill="currentColor"><path d="M10.59 13.41a1.99 1.99 0 002.82 0l5-5a2 2 0 10-2.82-2.82l-5 5a2 2 0 000 2.82z"/><path d="M13.41 10.59a1.99 1.99 0 000 2.82l5 5a2 2 0 102.82-2.82l-5-5a2 2 0 00-2.82 0z"/></svg>
             <span class="font-semibold">Göndermeler</span>
           </div>
           <div class="bg-white/5 border border-white/10 rounded-lg p-3 italic text-sm leading-relaxed">
@@ -312,23 +229,37 @@
       <!-- Notlar -->
       <div>
         <div class="section-title">Notlar</div>
-        <div class="bg-white/5 border border-white/10 rounded-lg p-2 space-y-2">
-          <template x-if="!comments[modalNode?.id] || !comments[modalNode?.id].length">
+        <div class="bg-white/5 border border-white/10 rounded-lg p-2 space-y-2" role="list">
+          <template x-if="!notes[modalNode?.id] || !notes[modalNode?.id].length">
             <div class="text-sm opacity-70">Henüz not yok.</div>
           </template>
 
-          <template x-for="(c, i) in (comments[modalNode?.id] || [])" :key="i">
-            <div class="bg-white/5 rounded p-2 text-sm flex justify-between gap-2">
-              <span x-text="c.text"></span>
-              <button class="opacity-60 hover:opacity-100 text-xs"
-                      @click="deleteComment(modalNode.id, i)">Sil</button>
+          <template x-for="(c, i) in (notes[modalNode?.id] || [])" :key="i">
+            <div class="bg-white/5 rounded p-2 text-sm flex items-start justify-between gap-3" role="listitem">
+              <div class="space-y-1">
+                <div class="flex items-center gap-2">
+                  <span class="text-xs opacity-70" x-text="new Date(c.ts).toLocaleDateString()"></span>
+                  <template x-if="c.pin"><span class="text-xs">📌</span></template>
+                  <template x-if="c.tags?.length">
+                    <div class="flex gap-1 flex-wrap">
+                      <template x-for="t in c.tags" :key="t">
+                        <span class="px-1.5 py-0.5 rounded bg-white/10 text-[11px]">#<span x-text="t"></span></span>
+                      </template>
+                    </div>
+                  </template>
+                </div>
+                <div class="leading-relaxed whitespace-pre-wrap" x-text="c.text"></div>
+              </div>
+              <div class="flex flex-col gap-1">
+                <button class="text-xs opacity-80 hover:opacity-100" @click="togglePin(modalNode.id, i)"><span x-text="c.pin ? 'Unpin' : 'Pin'"></span></button>
+                <button class="text-xs opacity-80 hover:opacity-100" @click="deleteNote(modalNode.id, i)">Sil</button>
+              </div>
             </div>
           </template>
 
           <div class="flex gap-2">
-            <input x-model="newComment" placeholder="Not yaz..." class="border rounded px-2 py-1 w-full" />
-            <button class="px-2 py-1 text-sm rounded border border-white/20 hover:bg-white/10"
-                    @click="addComment(modalNode.id)">Ekle</button>
+            <input x-model="newNote" placeholder="Not ekle... #etiket" class="border rounded px-2 py-1 w-full" />
+            <button class="px-2 py-1 text-sm rounded border border-white/20 hover:bg-white/10" @click="addNote(modalNode.id)">Ekle</button>
           </div>
         </div>
       </div>
@@ -337,14 +268,10 @@
 </div>
 
 <!-- Watch Later (sağ alt mini panel) -->
-<button class="fixed right-4 bottom-4 z-40 glass rounded-full w-12 h-12 grid place-items-center hover:bg-white/10"
-        title="Daha sonra izle" @click="watchLaterOpen = !watchLaterOpen">★</button>
-<div x-show="watchLaterOpen" x-transition
-     class="fixed right-4 bottom-20 z-40 glass rounded-xl p-3 w-64 max-h-72 overflow-y-auto">
-  <div class="font-semibold mb-2">Daha sonra izle</div>
-  <template x-if="!watchLater.length">
-    <div class="text-sm opacity-70">Liste boş.</div>
-  </template>
+<button class="fixed right-4 bottom-4 z-40 glass rounded-full w-12 h-12 grid place-items-center hover:bg-white/10" title="Daha sonra" @click="watchLaterOpen = !watchLaterOpen">★</button>
+<div x-show="watchLaterOpen" x-transition class="fixed right-4 bottom-20 z-40 glass rounded-xl p-3 w-64 max-h-72 overflow-y-auto">
+  <div class="font-semibold mb-2">Daha sonra</div>
+  <template x-if="!watchLater.length"><div class="text-sm opacity-70">Liste boş.</div></template>
   <template x-for="n in watchLater" :key="n.id">
     <div class="flex items-center justify-between gap-2 py-1">
       <button class="text-left hover:underline truncate" @click="__openNode(n.id)"><span x-text="n.label || n.id"></span></button>
@@ -353,26 +280,68 @@
   </template>
 </div>
 
+<!-- Notlar FAB & Panel (evren/etiket filtreli, metin GÖSTERMEZ) -->
+<button class="fixed right-4 bottom-[7.5rem] z-40 glass rounded-full w-12 h-12 grid place-items-center hover:bg-white/10" title="Notlar" @click="notesOpen = !notesOpen">📝</button>
+<div x-show="notesOpen" x-transition class="fixed right-4 bottom-[12.5rem] z-40 glass rounded-xl p-3 w-[22rem] max-h-[70vh] overflow-y-auto">
+  <div class="flex items-center justify-between mb-2">
+    <div class="font-semibold">Notlar</div>
+    <button class="text-sm opacity-80 hover:opacity-100" @click="notesOpen=false">Kapat</button>
+  </div>
+
+  <!-- Filtreler -->
+  <div class="flex flex-col gap-2 mb-2">
+    <select x-model="notesUniverseFilter" class="border rounded px-2 py-1 bg-white/10">
+      <option value="">Tüm evrenler</option>
+      <template x-for="u in universeList" :key="u">
+        <option :value="u" x-text="formatUniverseName(u)"></option>
+      </template>
+    </select>
+    <div class="relative">
+      <input x-model="notesTagFilter" placeholder="#etiket ile ara" class="border rounded px-2 py-1 w-full bg-white/10 pr-8" />
+      <button x-show="notesTagFilter" @click="notesTagFilter=''" class="absolute right-2 inset-y-0 my-auto text-xs opacity-70 hover:opacity-100">x</button>
+    </div>
+    <!-- Hızlı etiket önerileri -->
+    <div class="flex gap-1 flex-wrap">
+      <template x-for="t in topTags" :key="t">
+        <button class="text-xs px-2 py-0.5 rounded bg-white/10 hover:bg-white/20" @click="notesTagFilter = '#' + t">#<span x-text="t"></span></button>
+      </template>
+    </div>
+  </div>
+
+  <!-- Liste (yalnızca nerede hangi not var) -->
+  <template x-if="!notesSummary.length"><div class="text-sm opacity-70">Not bulunamadı.</div></template>
+  <template x-for="item in notesSummary" :key="item.nodeId">
+    <div class="bg-white/5 border border-white/10 rounded-lg p-2 mb-2">
+      <div class="text-sm">
+        <button class="underline hover:opacity-100" @click="__openNode(item.nodeId)">
+          <span x-text="item.label || item.nodeId"></span>
+        </button>
+        <span class="opacity-80"> • </span>
+        <span class="opacity-90" x-text="formatUniverseName(item.universe)"></span>
+      </div>
+      <div class="text-xs opacity-80 mt-1">Not sayısı: <span x-text="item.count"></span></div>
+      <template x-if="item.tags && item.tags.length">
+        <div class="flex gap-1 flex-wrap mt-1">
+          <template x-for="t in item.tags" :key="t">
+            <button class="text-[11px] px-1.5 py-0.5 rounded bg-white/10 hover:bg-white/20" @click="notesTagFilter='#'+t">#<span x-text="t"></span></button>
+          </template>
+        </div>
+      </template>
+    </div>
+  </template>
+</div>
+
 <!-- Legend Toggle + Legend (filtreli + çizgi örnekli) -->
 <div id="legendWrap">
-  <button id="legendToggle"
-          class="glass px-3 py-1.5 rounded-lg text-sm hover:bg-white/10 transition"
-          @click="showLegend = !showLegend">
+  <button id="legendToggle" class="glass px-3 py-1.5 rounded-lg text-sm hover:bg-white/10 transition" @click="showLegend = !showLegend">
     Bağlantılar <span x-text="showLegend ? '(Gizle)' : '(Göster)'"></span>
   </button>
-
   <div id="legend" x-show="showLegend" x-transition>
     <h3 class="font-bold mb-2">Bağlantılar</h3>
     <ul>
-      <!-- Sadece mevcut grafikte kullanılan türleri göster; ayrıca çizgi tipini de göster -->
       <template x-for="[type, color] in legendEntries" :key="type">
         <li class="flex items-center mb-1">
-          <svg width="36" height="8" class="mr-2">
-            <line x1="2" y1="4" x2="34" y2="4"
-                  :stroke="color"
-                  stroke-width="3"
-                  :stroke-dasharray="(edgeStyles[type]?.dashes ? edgeStyles[type].dashes.join(',') : '0')" />
-          </svg>
+          <svg width="36" height="8" class="mr-2"><line x1="2" y1="4" x2="34" y2="4" :stroke="color" stroke-width="3" :stroke-dasharray="(edgeStyles[type]?.dashes ? edgeStyles[type].dashes.join(',') : '0')" /></svg>
           <span x-text="type"></span>
         </li>
       </template>
@@ -383,31 +352,25 @@
 <script>
 function app() {
   return {
-    /* State */
-    network: null,
-    allNodes: [], allEdges: [], nodes: null, edges: null,
+    /* ----- State ----- */
+    network: null, allNodes: [], allEdges: [], nodes: null, edges: null,
     filteredNodes: [], filteredEdges: [],
-    search: '', selectedUniverse: '',
-    modalOpen: false, modalNode: null,
-    universeList: [], fitTimeout: null,
-    showLegend: true,
+    search: '', selectedUniverse: '', modalOpen: false, modalNode: null,
+    universeList: [], fitTimeout: null, showLegend: true,
 
     /* Autocomplete */
-    suggestions: [],
-    acOpen: false,
+    suggestions: [], acOpen: false,
 
     /* Watch later */
-    watchLater: [],
-    watchLaterOpen: false,
+    watchLater: [], watchLaterOpen: false,
 
-    /* Comments */
-    comments: {},
-    newComment: '',
+    /* Notlar */
+    notes: {}, newNote: '', notesOpen: false, notesUniverseFilter: '', notesTagFilter: '',
 
     /* Dinamik arkaplan */
-    bgUrl: 'images/bg.jpg',  // başlangıç
+    bgUrl: 'images/anasayfa.jpg',
     bgMap: {
-      "": "images/bg.jpg",
+      "": "images/anasayfa.jpg",
       "avatar_last_airbender": "images/avatar.jpg",
       "avatar_pandora": "images/pandora.jpg",
       "dc": "images/dc.jpg",
@@ -419,7 +382,7 @@ function app() {
       "starwars": "images/starwars.jpg"
     },
 
-    /* Renkler ve stiller */
+    /* Renkler & stiller */
     edgeColors: {
       "devam": "#2980b9", "ön hikaye": "#e67e22", "yan hikaye": "#8e44ad",
       "evren geçişi": "#c0392b", "görsel gönderme": "#7f8c8d", "karakter göndermesi": "#27ae60",
@@ -429,204 +392,234 @@ function app() {
       "multiverse birleşmesi": "#e84393", "paralel Kang anlatımı": "#16a085"
     },
     edgeStyles: {
-      "devam": { width: 3, dashes: false },
-      "karakter geçişi": { width: 3, dashes: [10,4] },
-      "evren geçişi": { width: 2.5, dashes: [6,4] },
-      "multiverse birleşmesi": { width: 2.5, dashes: [2,6] },
-      "görsel gönderme": { width: 1.8, dashes: [2,6] },
-      "karakter göndermesi": { width: 2, dashes: [6,6] },
-      "ön hikaye": { width: 2.2, dashes: false },
-      "yan hikaye": { width: 2, dashes: [8,6] },
-      "tematik benzerlik": { width: 1.8, dashes: [12,6] },
-      "zaman çizgisi bağlantısı": { width: 1.8, dashes: [4,4] },
-      "kurumsal gönderme": { width: 1.8, dashes: [2,8] },
-      "konseptsel devam": { width: 2, dashes: false },
-      "şehir yaşamı paralelliği": { width: 1.8, dashes: [10,8] },
-      "iç film/karakter kökeni": { width: 2, dashes: [5,5] },
+      "devam": { width: 3, dashes: false }, "karakter geçişi": { width: 3, dashes: [10,4] },
+      "evren geçişi": { width: 2.5, dashes: [6,4] }, "multiverse birleşmesi": { width: 2.5, dashes: [2,6] },
+      "görsel gönderme": { width: 1.8, dashes: [2,6] }, "karakter göndermesi": { width: 2, dashes: [6,6] },
+      "ön hikaye": { width: 2.2, dashes: false }, "yan hikaye": { width: 2, dashes: [8,6] },
+      "tematik benzerlik": { width: 1.8, dashes: [12,6] }, "zaman çizgisi bağlantısı": { width: 1.8, dashes: [4,4] },
+      "kurumsal gönderme": { width: 1.8, dashes: [2,8] }, "konseptsel devam": { width: 2, dashes: false },
+      "şehir yaşamı paralelliği": { width: 1.8, dashes: [10,8] }, "iç film/karakter kökeni": { width: 2, dashes: [5,5] },
       "paralel Kang anlatımı": { width: 2.5, dashes: [3,7] }
     },
 
-    /* Legend için hesaplanmış liste */
+    /* Legend: sadece kullanılan tipleri göster (evren seçiliyse) */
     get legendEntries() {
       const usedTypes = new Set(this.filteredEdges.map(e => e.type));
-      const pairs = Object.entries(this.edgeColors)
-        .filter(([t]) => usedTypes.has(t) || !this.selectedUniverse);
-      return pairs;
+      return Object.entries(this.edgeColors).filter(([t]) => usedTypes.has(t) || !this.selectedUniverse);
     },
 
-    /* ---------- INIT ---------- */
+    /* Notlar: panel özeti (metinsiz) */
+    get notesSummary(){
+      // Flat notlar → node bazında grupla
+      const groups = new Map(); // nodeId -> {count, tags:Set, label, universe}
+      for (const [nodeId, arr] of Object.entries(this.notes)){
+        if (!arr || !arr.length) continue;
+        const node = this.nodes?.get(nodeId) || this.allNodes.find(n => String(n.id)===String(nodeId));
+        const g = groups.get(nodeId) || { count: 0, tags: new Set(), label: node?.label || nodeId, universe: node?.universe || '' };
+        g.count += arr.length;
+        for (const n of arr) (n.tags||[]).forEach(t => g.tags.add(t));
+        groups.set(nodeId, g);
+      }
+      // Filtreler: evren + etiket
+      const u = this.notesUniverseFilter;
+      const tagQ = (this.notesTagFilter || '').trim().replace(/^#/, '').toLowerCase();
+      const list = Array.from(groups.entries()).map(([nodeId, g]) => ({
+        nodeId, label: g.label, universe: g.universe,
+        count: g.count,
+        tags: Array.from(g.tags)
+      }))
+      .filter(x => (!u || x.universe === u) && (!tagQ || x.tags.some(t => t.includes(tagQ))))
+      .sort((a,b)=> b.count - a.count || a.label.localeCompare(b.label));
+      return list;
+    },
+
+    /* ----- INIT ----- */
     init() {
-      // Legend: mobilde varsayılan kapalı
+      // Legend mobilde kapalı
       this.showLegend = window.innerWidth >= 640;
 
-      // Local verileri yükle
-      this.loadWatchLater();
-      this.loadComments();
+      // Migration: comments -> notes (bir kez)
+      try {
+        const old = localStorage.getItem('comments');
+        if (old && !localStorage.getItem('notes')) { localStorage.setItem('notes', old); localStorage.removeItem('comments'); }
+      } catch {}
 
-      // Arkaplan ilk yükleme + preload
+      // Yerel veriler
+      this.loadWatchLater(); this.loadNotes();
+
+      // Arkaplan
       this.setBackgroundFor(this.selectedUniverse);
       this.warmBackgrounds();
 
       // Veri
       this.loadData();
 
-      // Arama debounce + autocomplete
+      // Arama debounce + autocomplete (NOT: not metninde aramaz!)
       let debounceTimeout = null;
       this.$watch('search', (val) => {
         clearTimeout(debounceTimeout);
         debounceTimeout = setTimeout(() => {
           this.applyFilters();
-          // Autocomplete önerileri
           if (val) {
-            const lower = val.toLowerCase();
-            // başta eşleşenleri öne al
-            const starts = [];
-            const contains = [];
-            const seen = new Set();
+            const lower = val.toLowerCase(), starts = [], contains = [], seen = new Set();
             for (const n of this.allNodes) {
-              const lbl = n.label;
-              if (!lbl) continue;
-              const l = lbl.toLowerCase();
-              if (l.startsWith(lower)) {
-                if (!seen.has(lbl)) { starts.push(lbl); seen.add(lbl); }
-              } else if (l.includes(lower)) {
-                if (!seen.has(lbl)) { contains.push(lbl); seen.add(lbl); }
-              }
+              const lbl = n.label; if (!lbl) continue; const l = lbl.toLowerCase();
+              if (l.startsWith(lower)) { if (!seen.has(lbl)) { starts.push(lbl); seen.add(lbl); } }
+              else if (l.includes(lower)) { if (!seen.has(lbl)) { contains.push(lbl); seen.add(lbl); } }
               if (starts.length + contains.length >= 10) break;
             }
             this.suggestions = [...starts, ...contains];
-          } else {
-            this.suggestions = [];
-          }
+          } else this.suggestions = [];
         }, 220);
       });
 
       // Evren değişince filtre + arkaplan
-      this.$watch('selectedUniverse', (val) => {
-        this.applyFilters();
-        this.setBackgroundFor(val);
-      });
+      this.$watch('selectedUniverse', (val) => { this.applyFilters(); this.setBackgroundFor(val); });
     },
 
-    /* ---------- BACKGROUND HELPERS ---------- */
+    /* ----- BACKGROUND HELPERS ----- */
     async setBackgroundFor(universe){
       const primary = this.bgMap[universe || ""] || this.bgMap[""];
-      const fallbacks = ["images/bg.jpg", "images/bg.jpg"];
+      const fallbacks = ["images/anasayfa.jpg", "images/bg.jpg"];
       const tried = new Set();
-
       const tryLoad = (url) => new Promise((resolve,reject)=>{
         if(!url || tried.has(url)) return reject();
         tried.add(url);
         const img = new Image();
         img.onload = () => resolve(url);
         img.onerror = () => reject();
-        img.decoding = 'async';
-        img.referrerPolicy = 'no-referrer';
-        img.src = url;
+        img.decoding = 'async'; img.referrerPolicy = 'no-referrer'; img.src = url;
       });
-
-      const candidates = [primary, ...fallbacks];
-      for (const url of candidates){
-        try {
-          const ok = await tryLoad(url);
-          this.bgUrl = ok;
-          return;
-        } catch {}
+      for (const url of [primary, ...fallbacks]) {
+        try { const ok = await tryLoad(url); this.bgUrl = ok; return; } catch {}
       }
     },
-    warmBackgrounds(){
-      const urls = [...new Set(Object.values(this.bgMap))];
-      urls.forEach(u => { const i = new Image(); i.decoding='async'; i.src = u; });
-    },
+    warmBackgrounds(){ [...new Set(Object.values(this.bgMap))].forEach(u => { const i = new Image(); i.decoding='async'; i.src = u; }); },
 
-    /* ---------- WATCH LATER ---------- */
-    loadWatchLater() {
-      try { this.watchLater = JSON.parse(localStorage.getItem('watchLater') || '[]'); } catch { this.watchLater = []; }
-    },
-    saveWatchLater() {
-      localStorage.setItem('watchLater', JSON.stringify(this.watchLater));
-    },
-    isInWatchLater(id) {
-      return !!this.watchLater.find(x => x.id === id);
-    },
-    toggleWatchLater(node) {
+    /* ----- WATCH LATER ----- */
+    loadWatchLater(){ try { this.watchLater = JSON.parse(localStorage.getItem('watchLater') || '[]'); } catch { this.watchLater = []; } },
+    saveWatchLater(){ localStorage.setItem('watchLater', JSON.stringify(this.watchLater)); },
+    isInWatchLater(id){ return !!this.watchLater.find(x => String(x.id) === String(id)); },
+    toggleWatchLater(node){
       if (!node?.id) return;
-      if (this.isInWatchLater(node.id)) {
-        this.watchLater = this.watchLater.filter(x => x.id !== node.id);
-      } else {
-        this.watchLater.unshift({ id: node.id, label: node.label || String(node.id) });
-      }
+      if (this.isInWatchLater(node.id)) this.watchLater = this.watchLater.filter(x => String(x.id) !== String(node.id));
+      else this.watchLater.unshift({ id: node.id, label: node.label || String(node.id) });
       this.saveWatchLater();
     },
-    removeWatchLater(id) {
-      this.watchLater = this.watchLater.filter(x => x.id !== id);
-      this.saveWatchLater();
-    },
+    removeWatchLater(id){ this.watchLater = this.watchLater.filter(x => String(x.id) !== String(id)); this.saveWatchLater(); },
 
-    /* ---------- COMMENTS ---------- */
-    loadComments() {
-      try { this.comments = JSON.parse(localStorage.getItem('comments') || '{}'); } catch { this.comments = {}; }
+    /* ----- NOTES ----- */
+    loadNotes(){ try { this.notes = JSON.parse(localStorage.getItem('notes')||'{}'); } catch { this.notes = {}; } },
+    saveNotes(){ localStorage.setItem('notes', JSON.stringify(this.notes)); },
+    extractTags(t){ return Array.from(t.matchAll(/#([\p{L}\d_-]+)/gu)).map(m=>m[1].toLowerCase()); },
+    addNote(nodeId){
+      const t = (this.newNote || '').trim(); if (!nodeId || !t) return;
+      const item = { text: t, tags: this.extractTags(t), pin: false, ts: Date.now(), editedTs: null };
+      (this.notes[nodeId] ||= []).unshift(item); this.newNote = ''; this.saveNotes();
     },
-    saveComments() {
-      localStorage.setItem('comments', JSON.stringify(this.comments));
-    },
-    addComment(nodeId) {
-      const t = (this.newComment || '').trim();
-      if (!nodeId || !t) return;
-      if (!this.comments[nodeId]) this.comments[nodeId] = [];
-      this.comments[nodeId].unshift({ text: t, ts: Date.now() });
-      this.newComment = '';
-      this.saveComments();
-    },
-    deleteComment(nodeId, idx) {
-      if (!this.comments[nodeId]) return;
-      this.comments[nodeId].splice(idx, 1);
-      this.saveComments();
-    },
+    togglePin(nodeId, idx){ const n = this.notes[nodeId]?.[idx]; if (!n) return; n.pin = !n.pin; this.saveNotes(); },
+    deleteNote(nodeId, idx){ this.notes[nodeId].splice(idx, 1); this.saveNotes(); },
 
-    /* ---------- DATA & GRAPH ---------- */
+    /* Paylaşım (modal üstündeki butonlar) */
+    buildNodeUrl(nodeId){
+      const node = this.nodes?.get(nodeId) || this.allNodes.find(n => String(n.id)===String(nodeId));
+      const u = node?.universe || '';
+      const base = location.origin + location.pathname;
+      const params = new URLSearchParams({ u, node: String(nodeId) });
+      return `${base}?${params.toString()}`;
+    },
+    shareNode(node, platform){
+      if (!node?.id) return;
+      const url = this.buildNodeUrl(node.id);
+      const text = `${node.label || node.id} — ${this.formatUniverseName(node.universe)}\n${url}`;
+      const enc = encodeURIComponent(text);
+      const shareUrl = platform === 'whatsapp'
+        ? `https://api.whatsapp.com/send?text=${enc}`
+        : platform === 'x'
+          ? `https://twitter.com/intent/tweet?text=${enc}`
+          : '';
+      if (shareUrl) window.open(shareUrl, '_blank', 'noopener');
+    },
+/* Paylaşım metni oluşturur: başlık + evren + vizyon + kısa özet + derin bağlantı + site bilgisi */
+buildSharePayload(node) {
+  if (!node?.id) return { title: 'Film Evreni Ağı', text: '', url: location.origin };
+
+  const siteName = '🎬 Film Evreni Ağı';
+  const url = this.buildNodeUrl(node.id);
+  const title = node.label || 'Bilinmeyen Yapım';
+  const universe = this.formatUniverseName(node.universe || '');
+  const date = node.release_date ? `Vizyon: ${node.release_date}` : '';
+  const descFull = (node.description || '').trim();
+  const desc = descFull ? (descFull.length > 200 ? descFull.slice(0, 197) + '…' : descFull) : '';
+  const host = location.hostname.replace(/^www\./, '');
+
+  const lines = [
+    `${siteName}`,
+    `${title} — ${universe}${date ? ' • ' + date : ''}`,
+    desc ? `Özet: ${desc}` : null,
+    `Bağlantı: ${url}`,
+    `Kaynak: ${host}`
+  ].filter(Boolean);
+
+  const text = lines.join('\n');
+  return { title, text, url };
+},
+
+/* Paylaşım butonları (native / whatsapp / x) */
+shareNode(node, platform) {
+  const { title, text, url } = this.buildSharePayload(node);
+  const encText = encodeURIComponent(text);
+
+  if (platform === 'native' && navigator.share) {
+    navigator.share({ title, text, url }).catch(() => { /* kullanıcı iptal etti */ });
+    return;
+  }
+
+  let shareUrl = '';
+  if (platform === 'whatsapp') {
+    shareUrl = `https://api.whatsapp.com/send?text=${encText}`;
+  } else if (platform === 'x') {
+    // X: metin + URL birlikte gönderilecek (metnin içinde URL zaten var)
+    shareUrl = `https://twitter.com/intent/tweet?text=${encText}`;
+  } else {
+    // Yedek: sadece URL aç
+    shareUrl = url;
+  }
+  window.open(shareUrl, '_blank', 'noopener');
+},
+
+    /* ----- DATA & GRAPH ----- */
     async loadData() {
       const evrenler = ["avatar_last_airbender","avatar_pandora","dc","harrypotter","marvel","matrix","middleearth","pixar","starwars"];
       try {
         const results = await Promise.all(evrenler.map(evren =>
-          fetch('data/' + evren + '.json', { cache: 'no-store' }).then(r => {
-            if (!r.ok) throw new Error(evren + ' yüklenemedi');
-            return r.json().then(data => ({ evren, data }));
-          })
+          fetch('data/' + evren + '.json', { cache: 'no-store' }).then(r => { if (!r.ok) throw new Error(evren + ' yüklenemedi'); return r.json().then(data => ({ evren, data })); })
         ));
         let nodesTemp = [], edgesTemp = [];
-        for (const { evren, data } of results) {
-          nodesTemp = nodesTemp.concat(data.nodes.map(n => ({ ...n, universe: evren })));
-          edgesTemp = edgesTemp.concat(data.edges);
-        }
-        this.allNodes = nodesTemp;
-        this.allEdges = edgesTemp;
-        this.universeList = [...new Set(this.allNodes.map(n => n.universe))];
+        for (const { evren, data } of results) { nodesTemp = nodesTemp.concat(data.nodes.map(n => ({ ...n, universe: evren }))); edgesTemp = edgesTemp.concat(data.edges); }
+        this.allNodes = nodesTemp; this.allEdges = edgesTemp; this.universeList = [...new Set(this.allNodes.map(n => n.universe))];
 
         // Posterleri ısıt (cache)
-        const posterUrls = this.allNodes.filter(n => n.image).map(n => n.image);
-        posterUrls.forEach(u => { const i = new Image(); i.decoding='async'; i.src = u; });
+        this.allNodes.filter(n => n.image).forEach(n => { const i = new Image(); i.decoding='async'; i.src = n.image; });
 
-        this.setupNetwork();
+        this.setupNetwork(); this.applyFilters();
+
+        // URL deep-link: ?u=&node=
+        const params = new URLSearchParams(location.search);
+        const qU = params.get('u'); const qNode = params.get('node');
+        if (qU && this.universeList.includes(qU)) this.selectedUniverse = qU;
         this.applyFilters();
-      } catch (err) {
-        console.error(err);
-        alert('Veri yükleme hatası: ' + err.message);
-      }
+        if (qNode && (this.nodes?.get(qNode))) {
+          this.modalNode = this.nodes.get(qNode); this.modalOpen = true;
+          this.network.selectNodes([qNode]); this.network.focus(qNode, { animation: true, scale: 1 });
+        }
+      } catch (err) { console.error(err); alert('Veri yükleme hatası: ' + err.message); }
     },
 
     makeOptions() {
       return {
-        nodes: {
-          size: 25,
-          font: { color: '#e5e7eb', size: 14 },
-          borderWidthSelected: 6,
-          color: { border: '#ef4444' }
-        },
-        edges: {
-          arrows: { to: { enabled: true, scaleFactor: 0.5 } },
-          smooth: { enabled: true, type: 'dynamic' }
-        },
+        nodes: { size: 25, font: { color: '#e5e7eb', size: 14 }, borderWidthSelected: 6, color: { border: '#ef4444' } },
+        edges: { arrows: { to: { enabled: true, scaleFactor: 0.5 } }, smooth: { enabled: true, type: 'dynamic' } },
         interaction: { hover: true, tooltipDelay: 200, zoomView: true, dragView: true },
         physics: { stabilization: true, barnesHut: { gravitationalConstant: -4000 } },
         layout: { improvedLayout: true }
@@ -634,23 +627,16 @@ function app() {
     },
 
     setupNetwork() {
-      this.nodes = new vis.DataSet();
-      this.edges = new vis.DataSet();
+      this.nodes = new vis.DataSet(); this.edges = new vis.DataSet();
       const container = document.getElementById('network');
       this.network = new vis.Network(container, { nodes: this.nodes, edges: this.edges }, this.makeOptions());
-
-      this.network.on('click', params => {
-        if (params.nodes.length > 0) {
-          const node = this.nodes.get(params.nodes[0]);
-          this.modalNode = node; this.modalOpen = true;
-        }
-      });
+      this.network.on('click', params => { if (params.nodes.length > 0) { const node = this.nodes.get(params.nodes[0]); this.modalNode = node; this.modalOpen = true; } });
     },
 
     applyFilters() {
-      const searchTerm = (this.search || '').toLowerCase();
-      const universe = this.selectedUniverse;
+      const searchTerm = (this.search || '').toLowerCase(); const universe = this.selectedUniverse;
 
+      // NOT: Not metninde arama YAPMA
       this.filteredNodes = this.allNodes.filter(n =>
         (!universe || n.universe === universe) &&
         (!searchTerm || (n.label && n.label.toLowerCase().includes(searchTerm)))
@@ -667,14 +653,15 @@ function app() {
     },
 
     updateNetwork() {
-      this.nodes.clear();
-      this.edges.clear();
+      this.nodes.clear(); this.edges.clear();
 
-      // Node’lar
+      // Node’lar + not sayısı rozeti
       this.nodes.add(this.filteredNodes.map(n => {
-        const hasImage = !!n.image;
+        const hasImage = !!n.image; const noteCount = (this.notes[n.id]?.length || 0);
         return {
           ...n,
+          label: noteCount ? `${n.label}\n📝 ${noteCount}` : n.label,
+          font: { color: '#e5e7eb', size: 14, multi: true, vadjust: 4 },
           shape: hasImage ? 'circularImage' : 'dot',
           borderWidth: 2, borderWidthSelected: 6,
           color: hasImage ? { border: '#ef4444' } : { background: '#ef4444', border: '#ef4444' }
@@ -691,30 +678,13 @@ function app() {
 
     neighborChips(nodeId) {
       if (!nodeId || !this.network) return '';
-      const neighbors = this.network.getConnectedNodes(nodeId)
-        .map(id => this.nodes.get(id))
-        .filter(Boolean);
+      const neighbors = this.network.getConnectedNodes(nodeId).map(id => this.nodes.get(id)).filter(Boolean);
       if (!neighbors.length) return '<span class="text-sm opacity-70">Bağlantı bulunamadı.</span>';
-
-      return neighbors.map(n => `
-        <button class="chip hover:brightness-110" onclick="window.__openNode('${String(n.id).replace(/'/g,'&#39;')}')">
-          ${n.label ? n.label.replace(/</g,'&lt;') : 'ID ' + n.id}
-        </button>
-      `).join('');
+      return neighbors.map(n => `<button class="chip hover:brightness-110" onclick="window.__openNode('${String(n.id).replace(/'/g,'&#39;')}')">${n.label ? n.label.replace(/</g,'&lt;') : 'ID ' + n.id}</button>`).join('');
     },
 
     formatUniverseName(name) {
-      const map = {
-        "avatar_last_airbender": "Avatar: Son Hava Bükücü",
-        "avatar_pandora": "Avatar (Pandora)",
-        "dc": "DC",
-        "marvel": "Marvel",
-        "harrypotter": "Harry Potter",
-        "matrix": "Matrix",
-        "middleearth": "Orta Dünya",
-        "pixar": "Pixar",
-        "starwars": "Star Wars"
-      };
+      const map = { "avatar_last_airbender": "Avatar: Son Hava Bükücü", "avatar_pandora": "Avatar (Pandora)", "dc": "DC", "marvel": "Marvel", "harrypotter": "Harry Potter", "matrix": "Matrix", "middleearth": "Orta Dünya", "pixar": "Pixar", "starwars": "Star Wars" };
       return map[name] || name;
     }
   }
@@ -722,15 +692,9 @@ function app() {
 
 /* Modal içinden komşu düğüme atlamak için global yardımcı */
 window.__openNode = function(id) {
-  const scope = document.querySelector('html')?.__x.$data;
-  if (!scope?.nodes) return;
+  const scope = document.querySelector('html')?.__x.$data; if (!scope?.nodes) return;
   const node = scope.nodes.get(id);
-  if (node) {
-    scope.modalNode = node;
-    scope.modalOpen = true;
-    scope.network.selectNodes([id]);
-    scope.network.focus(id, { animation: true, scale: 1 });
-  }
+  if (node) { scope.modalNode = node; scope.modalOpen = true; scope.network.selectNodes([id]); scope.network.focus(id, { animation: true, scale: 1 }); }
 };
 </script>
 
