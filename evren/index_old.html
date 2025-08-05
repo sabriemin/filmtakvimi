@@ -1,1 +1,504 @@
+<!DOCTYPE html>
+<html lang="tr" x-data="app()" x-init="init()">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Film Evreni Ağı</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+  <style>
+    :root { color-scheme: dark; }
+    html, body {
+      height: 100%;
+      margin: 0;
+      color: #d1d5db;
+      font-family: 'Segoe UI', system-ui, -apple-system, Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: transparent;
+    }
 
+    /* Dinamik arkaplan katmanı (Alpine ile stil bağlanıyor) */
+    #bg {
+      position: fixed; inset: 0; z-index: -2;
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      filter: blur(12px) brightness(0.65);
+      transform: scale(1.06);
+    }
+    /* Karartma overlay */
+    #bgOverlay {
+      position: fixed; inset: 0; z-index: -1;
+      background: rgba(0,0,0,0.35);
+    }
+
+    /* Graph tam ekran; transparan zemin */
+    #network { position: fixed; inset: 0; background: transparent; border: none; }
+
+    /* Cam (glass) navbar */
+    .glass {
+      background: rgba(31,41,55,0.45);
+      border: 1px solid rgba(255,255,255,0.12);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+    }
+
+    /* Form */
+    input { color: #e5e7eb; background-color: rgba(55,65,81,0.55); border: 1px solid rgba(255,255,255,0.12); outline: none; }
+    input::placeholder { color: #9ca3af; }
+
+    /* Custom dropdown (glass) */
+    .dropdown-btn { cursor: pointer; }
+    .dropdown-panel {
+      background: rgba(31,41,55,0.65);
+      border: 1px solid rgba(255,255,255,0.14);
+      box-shadow: 0 16px 40px rgba(0,0,0,0.45);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+    .dropdown-item { cursor: pointer; }
+    .dropdown-item:hover { background: rgba(255,255,255,0.06); }
+
+    /* Modal */
+    .modal-bg { background: rgba(0,0,0,0.75); backdrop-filter: blur(4px); }
+    .modal-content {
+      width: 92vw; max-width: 780px;
+      max-height: 85vh; overflow-y: auto;
+      background: #0f172a; color: #e5e7eb;
+      border-radius: 18px; padding: 0;
+      box-shadow: 0 12px 24px rgba(0,0,0,0.45); position: relative;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+    .modal-header {
+      display: grid; grid-template-columns: 120px 1fr; gap: 16px;
+      padding: 16px; border-bottom: 1px solid rgba(255,255,255,0.06);
+      background: radial-gradient(1200px 400px at -20% -40%, rgba(239,68,68,0.08), transparent);
+    }
+    .poster {
+      width: 120px; height: 160px; border-radius: 10px; object-fit: cover;
+      background: #111827;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+    .modal-body { padding: 16px; }
+    .chip {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.10);
+      padding: 4px 10px; border-radius: 999px; font-size: 12px;
+    }
+
+    /* Meta tek kolon */
+    .meta-grid { display: grid; grid-template-columns: 1fr; gap: 12px; margin-top: 10px; }
+    .meta-item { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.06); padding: 10px 12px; border-radius: 12px; }
+    .section-title { font-size: 0.9rem; opacity: 0.85; margin-bottom: 6px; }
+
+    .close-btn {
+      position: absolute; top: 12px; right: 12px;
+      width: 36px; height: 36px; border-radius: 999px;
+      display: grid; place-items: center;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      cursor: pointer;
+    }
+    .close-btn:hover { background: rgba(239,68,68,0.15); border-color: rgba(239,68,68,0.5); }
+
+    /* Legend: üstte toggle, mobilde kapalı + küçük */
+    #legendWrap { position: fixed; left: 16px; bottom: 16px; z-index: 40; }
+    #legendToggle {
+      margin-bottom: 8px;
+      background: rgba(31,41,55,0.55);
+      border: 1px solid rgba(255,255,255,0.14);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
+    #legend {
+      background: rgba(31,41,55,0.45);
+      border: 1px solid rgba(255,255,255,0.12);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.35);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-radius: 12px; padding: 12px 16px;
+      max-width: 320px; max-height: 240px; overflow-y: auto;
+      font-size: 0.85rem;
+    }
+    @media (max-width: 640px) {
+      #legend { font-size: 0.72rem; max-width: 220px; padding: 8px 10px; }
+    }
+  </style>
+</head>
+<body class="dark" :class="{ 'overflow-hidden': modalOpen }">
+
+<!-- Dinamik arkaplan -->
+<div id="bg" :style="bgStyle"></div>
+<div id="bgOverlay"></div>
+
+<!-- Kompakt CAM NAVBAR -->
+<header class="fixed top-4 left-0 right-0 z-50">
+  <div class="max-w-xs sm:max-w-md mx-auto px-3">
+    <div class="glass rounded-xl px-3 py-2">
+      <div class="flex flex-col gap-2">
+        <div class="flex items-center justify-center">
+          <h1 class="text-base sm:text-lg font-bold text-center">🎬 Film Evreni Ağı</h1>
+        </div>
+        <div class="flex items-center gap-2">
+          <input x-model="search" placeholder="Ara..." class="border rounded-lg px-3 py-1.5 w-full" />
+          <!-- Custom Universe Dropdown (glass) -->
+          <div class="relative min-w-[200px]" x-data="{ open:false, filterText:'' }" @keydown.escape="open=false" @click.outside="open=false">
+            <div class="dropdown-btn border rounded-lg px-3 py-1.5 w-full flex items-center justify-between select-none"
+                 @click="open=!open" :aria-expanded="open">
+              <span class="truncate" x-text="selectedUniverse ? formatUniverseName(selectedUniverse) : 'Tüm Evrenler'"></span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 opacity-80 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd"/>
+              </svg>
+            </div>
+            <div x-show="open" x-transition class="dropdown-panel absolute mt-2 left-0 right-0 rounded-xl overflow-hidden" style="z-index:60">
+              <div class="p-2 border-b border-white/10">
+                <input x-model="filterText" placeholder="Evren ara..." class="w-full px-3 py-2 rounded-lg border" />
+              </div>
+              <ul class="max-h-64 overflow-y-auto">
+                <li class="dropdown-item px-3 py-2" @click="selectedUniverse=''; open=false; filterText=''; applyFilters()">Tüm Evrenler</li>
+                <template x-for="u in universeList.filter(u => !filterText || formatUniverseName(u).toLowerCase().includes(filterText.toLowerCase()))" :key="u">
+                  <li class="dropdown-item px-3 py-2"
+                      @click="selectedUniverse=u; open=false; filterText=''; applyFilters()"
+                      x-text="formatUniverseName(u)"></li>
+                </template>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Ağ grafiği -->
+<div id="network"></div>
+
+<!-- Gelişmiş Modal -->
+<div x-show="modalOpen" x-transition class="fixed inset-0 modal-bg flex items-center justify-center z-50 p-4"
+     @click.away="modalOpen = false" @keydown.escape.window="modalOpen=false" aria-labelledby="modalTitle" role="dialog" aria-modal="true">
+  <div class="modal-content" @click.stop>
+    <button class="close-btn" aria-label="Kapat" @click="modalOpen=false">✖</button>
+
+    <!-- Üst kısım: poster + başlık/rozetler -->
+    <div class="modal-header">
+      <template x-if="modalNode?.image">
+        <img :src="modalNode.image" alt="" class="poster" />
+      </template>
+      <template x-if="!modalNode?.image">
+        <div class="poster"></div>
+      </template>
+
+      <div class="flex flex-col gap-2">
+        <h2 id="modalTitle" class="text-xl font-semibold" x-text="modalNode?.label"></h2>
+        <div class="flex flex-wrap gap-2">
+          <span class="chip">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l4 4-10 10H2v-4L12 2z"/><path d="M3 22h18v-2H3v2z"/></svg>
+            <span x-text="formatUniverseName(modalNode?.universe)"></span>
+          </span>
+          <template x-if="modalNode?.type">
+            <span class="chip">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 22c5.421 0 10-4.579 10-10S17.421 2 12 2 2 6.579 2 12s4.579 10 10 10z"/></svg>
+              <span x-text="modalNode.type"></span>
+            </span>
+          </template>
+        </div>
+
+        <!-- Meta: tek kolon, sadece Vizyon -->
+        <div class="meta-grid">
+          <div class="meta-item">
+            <div class="section-title">Vizyon</div>
+            <div x-text="modalNode?.release_date || '-'"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gövde -->
+    <div class="modal-body space-y-4">
+
+      <!-- Açıklama -->
+      <div>
+        <div class="flex items-center gap-2 mb-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-red-400" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M4 5h16v14H4z" fill="none"/><path d="M4 5h16v14H4z"/>
+          </svg>
+          <span class="font-semibold">Açıklama</span>
+        </div>
+        <div class="bg-white/5 border border-white/10 rounded-lg p-3 leading-relaxed">
+          <span x-text="modalNode?.description || 'Açıklama yok.'"></span>
+        </div>
+      </div>
+
+      <!-- Göndermeler -->
+      <template x-if="modalNode?.refers_to">
+        <div>
+          <div class="flex items-center gap-2 mb-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-blue-400" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M10.59 13.41a1.99 1.99 0 002.82 0l5-5a2 2 0 10-2.82-2.82l-5 5a2 2 0 000 2.82z"/><path d="M13.41 10.59a1.99 1.99 0 000 2.82l5 5a2 2 0 102.82-2.82l-5-5a2 2 0 00-2.82 0z"/>
+            </svg>
+            <span class="font-semibold">Göndermeler</span>
+          </div>
+          <div class="bg-white/5 border border-white/10 rounded-lg p-3 italic text-sm leading-relaxed">
+            <span x-text="modalNode.refers_to"></span>
+          </div>
+        </div>
+      </template>
+
+      <!-- Bağlantılı yapımlar -->
+      <div>
+        <div class="section-title">Bağlantılı Yapımlar</div>
+        <div class="flex flex-wrap gap-2" x-html="neighborChips(modalNode?.id)"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Legend Toggle + Legend -->
+<div id="legendWrap">
+  <button id="legendToggle"
+          class="glass px-3 py-1.5 rounded-lg text-sm hover:bg-white/10 transition"
+          @click="showLegend = !showLegend">
+    Bağlantılar <span x-text="showLegend ? '(Gizle)' : '(Göster)'"></span>
+  </button>
+
+  <div id="legend" x-show="showLegend" x-transition>
+    <h3 class="font-bold mb-2">Bağlantılar</h3>
+    <ul>
+      <template x-for="(color, type) in edgeColors" :key="type">
+        <li class="flex items-center mb-1">
+          <span class="w-4 h-4 rounded mr-2" :style="`background-color: ${color}`"></span>
+          <span x-text="type"></span>
+        </li>
+      </template>
+    </ul>
+  </div>
+</div>
+
+<script>
+function app() {
+  return {
+    /* State */
+    network: null,
+    allNodes: [], allEdges: [], nodes: null, edges: null,
+    filteredNodes: [], filteredEdges: [],
+    search: '', selectedUniverse: '',
+    modalOpen: false, modalNode: null,
+    universeList: [], fitTimeout: null,
+    showLegend: true,
+
+    /* Dinamik arkaplan stili */
+    bgStyle: 'background-image: url(images/bg.jpg);',
+
+    /* Renkler */
+    edgeColors: {
+      "devam": "#2980b9", "ön hikaye": "#e67e22", "yan hikaye": "#8e44ad",
+      "evren geçişi": "#c0392b", "görsel gönderme": "#7f8c8d", "karakter göndermesi": "#27ae60",
+      "kurumsal gönderme": "#6e4b25", "zaman çizgisi bağlantısı": "#1abc9c", "karakter geçişi": "#2ecc71",
+      "tematik benzerlik": "#f1c40f", "duygu ve bilinç teması": "#9b59b6", "konseptsel devam": "#34495e",
+      "şehir yaşamı paralelliği": "#d35400", "iç film/karakter kökeni": "#7d3c98",
+      "multiverse birleşmesi": "#e84393", "paralel Kang anlatımı": "#16a085"
+    },
+
+    /* Edge çizgi stilleri */
+    edgeStyles: {
+      "devam": { width: 3, dashes: false },
+      "karakter geçişi": { width: 3, dashes: [10,4] },
+      "evren geçişi": { width: 2.5, dashes: [6,4] },
+      "multiverse birleşmesi": { width: 2.5, dashes: [2,6] },
+      "görsel gönderme": { width: 1.8, dashes: [2,6] },
+      "karakter göndermesi": { width: 2, dashes: [6,6] },
+      "ön hikaye": { width: 2.2, dashes: false },
+      "yan hikaye": { width: 2, dashes: [8,6] },
+      "tematik benzerlik": { width: 1.8, dashes: [12,6] },
+      "zaman çizgisi bağlantısı": { width: 1.8, dashes: [4,4] },
+      "kurumsal gönderme": { width: 1.8, dashes: [2,8] },
+      "konseptsel devam": { width: 2, dashes: false },
+      "şehir yaşamı paralelliği": { width: 1.8, dashes: [10,8] },
+      "iç film/karakter kökeni": { width: 2, dashes: [5,5] },
+      "paralel Kang anlatımı": { width: 2.5, dashes: [3,7] }
+    },
+
+    /* Evren → arkaplan görsel eşlemesi */
+    bgMap: {
+      "": "images/bg.jpg",
+      "avatar_last_airbender": "images/avatar.jpg",
+      "avatar_pandora": "images/pandora.jpg",
+      "dc": "images/dc.jpg",
+      "harrypotter": "images/harrypotter.jpg",
+      "marvel": "images/marvel.jpg",
+      "matrix": "images/matrix.jpg",
+      "middleearth": "images/middleearth.jpg",
+      "pixar": "images/pixar.jpg",
+      "starwars": "images/starwars.jpg"
+    },
+
+    init() {
+      // Legend: mobilde varsayılan kapalı
+      this.showLegend = window.innerWidth >= 640;
+
+      this.loadData();
+
+      // Arama debounce
+      let debounceTimeout = null;
+      this.$watch('search', () => {
+        clearTimeout(debounceTimeout);
+        debounceTimeout = setTimeout(() => this.applyFilters(), 250);
+      });
+
+      // Evren değiştikçe filtre ve arkaplan güncelle
+      this.$watch('selectedUniverse', (val) => {
+        this.applyFilters();
+        const url = this.bgMap[val || ""] || this.bgMap[""];
+        this.bgStyle = `background-image: url(${url});`;
+      });
+    },
+
+    async loadData() {
+      const evrenler = ["avatar_last_airbender","avatar_pandora","dc","harrypotter","marvel","matrix","middleearth","pixar","starwars"];
+      try {
+        const results = await Promise.all(evrenler.map(evren =>
+          fetch('data/' + evren + '.json').then(r => {
+            if (!r.ok) throw new Error(evren + ' yüklenemedi');
+            return r.json().then(data => ({ evren, data }));
+          })
+        ));
+        let nodesTemp = [], edgesTemp = [];
+        for (const { evren, data } of results) {
+          nodesTemp = nodesTemp.concat(data.nodes.map(n => ({ ...n, universe: evren })));
+          edgesTemp = edgesTemp.concat(data.edges);
+        }
+        this.allNodes = nodesTemp;
+        this.allEdges = edgesTemp;
+        this.universeList = [...new Set(this.allNodes.map(n => n.universe))];
+
+        this.setupNetwork();
+        this.applyFilters();
+      } catch (err) {
+        console.error(err);
+        alert('Veri yükleme hatası: ' + err.message);
+      }
+    },
+
+    makeOptions() {
+      return {
+        nodes: {
+          size: 25,
+          font: { color: '#e5e7eb', size: 14 },
+          borderWidthSelected: 6,
+          color: { border: '#ef4444' }
+        },
+        edges: {
+          arrows: { to: { enabled: true, scaleFactor: 0.5 } },
+          smooth: { enabled: true, type: 'dynamic' }
+        },
+        interaction: { hover: true, tooltipDelay: 200, zoomView: true, dragView: true },
+        physics: { stabilization: true, barnesHut: { gravitationalConstant: -4000 } },
+        layout: { improvedLayout: true }
+      };
+    },
+
+    setupNetwork() {
+      this.nodes = new vis.DataSet();
+      this.edges = new vis.DataSet();
+      const container = document.getElementById('network');
+      this.network = new vis.Network(container, { nodes: this.nodes, edges: this.edges }, this.makeOptions());
+
+      this.network.on('click', params => {
+        if (params.nodes.length > 0) {
+          const node = this.nodes.get(params.nodes[0]);
+          this.modalNode = node; this.modalOpen = true;
+        }
+      });
+    },
+
+    applyFilters() {
+      const searchTerm = this.search.toLowerCase();
+      const universe = this.selectedUniverse;
+
+      this.filteredNodes = this.allNodes.filter(n =>
+        (!universe || n.universe === universe) &&
+        (!searchTerm || (n.label && n.label.toLowerCase().includes(searchTerm)))
+      );
+
+      const nodeIds = new Set(this.filteredNodes.map(n => n.id));
+      this.filteredEdges = this.allEdges.filter(e => nodeIds.has(e.from) && nodeIds.has(e.to));
+
+      this.updateNetwork();
+      if (this.network) {
+        if (this.fitTimeout) clearTimeout(this.fitTimeout);
+        this.fitTimeout = setTimeout(() => this.network.fit({ animation: true }), 250);
+      }
+    },
+
+    updateNetwork() {
+      this.nodes.clear();
+      this.edges.clear();
+
+      // Node’lar
+      this.nodes.add(this.filteredNodes.map(n => {
+        const hasImage = !!n.image;
+        return {
+          ...n,
+          shape: hasImage ? 'circularImage' : 'dot',
+          borderWidth: 2, borderWidthSelected: 6,
+          color: hasImage ? { border: '#ef4444' } : { background: '#ef4444', border: '#ef4444' }
+        };
+      }));
+
+      // Edge’ler (renk + çizgi stili)
+      this.edges.add(this.filteredEdges.map(e => {
+        const color = this.edgeColors[e.type] || '#9ca3af';
+        const s = this.edgeStyles[e.type] || { width: 1.5, dashes: false };
+        return { ...e, arrows: 'to', color: { color }, width: s.width, dashes: s.dashes };
+      }));
+    },
+
+    neighborChips(nodeId) {
+      if (!nodeId || !this.network) return '';
+      const neighbors = this.network.getConnectedNodes(nodeId)
+        .map(id => this.nodes.get(id))
+        .filter(Boolean);
+      if (!neighbors.length) return '<span class="text-sm opacity-70">Bağlantı bulunamadı.</span>';
+
+      return neighbors.map(n => `
+        <button class="chip hover:brightness-110" onclick="window.__openNode('${String(n.id).replace(/'/g,'&#39;')}')">
+          ${n.label ? n.label.replace(/</g,'&lt;') : 'ID ' + n.id}
+        </button>
+      `).join('');
+    },
+
+    formatUniverseName(name) {
+      const map = {
+        "avatar_last_airbender": "Avatar: Son Hava Bükücü",
+        "avatar_pandora": "Avatar (Pandora)",
+        "dc": "DC",
+        "marvel": "Marvel",
+        "harrypotter": "Harry Potter",
+        "matrix": "Matrix",
+        "middleearth": "Orta Dünya",
+        "pixar": "Pixar",
+        "starwars": "Star Wars"
+      };
+      return map[name] || name;
+    }
+  }
+}
+
+/* Modal içinden komşu düğüme atlamak için global yardımcı */
+window.__openNode = function(id) {
+  const scope = document.querySelector('html')?.__x.$data;
+  if (!scope?.nodes) return;
+  const node = scope.nodes.get(id);
+  if (node) {
+    scope.modalNode = node;
+    scope.modalOpen = true;
+    scope.network.selectNodes([id]);
+    scope.network.focus(id, { animation: true, scale: 1 });
+  }
+};
+</script>
+
+</body>
+</html>
