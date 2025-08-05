@@ -158,6 +158,25 @@
             </span>
           </template>
 
+
+        <template x-if="modalNode?.canonical_level">
+          <span class="chip">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l9 4-9 16-9-4 9-16z"/></svg>
+            <span x-text="modalNode.canonical_level.toUpperCase()"></span>
+          </span>
+        </template>
+        <template x-if="modalNode?.lang">
+  <button class="chip hover:brightness-110" @click="translateNode()" title="İngilizce çevir / geri al">
+    🌐 <span x-text="modalNode.lang.toUpperCase()"></span>
+  </button>
+</template>
+        <template x-if="modalNode?.level">
+          <span class="chip">
+            🎯 Seviye <span x-text="modalNode.level"></span>
+          </span>
+        </template>
+
+
 <!-- Paylaş -->
         <div class="flex items-center gap-2">
           <span class="text-sm">Paylaş:</span>
@@ -221,12 +240,28 @@
 
 
         <!-- Meta: tek kolon -->
-        <div class="meta-grid">
-          <div class="meta-item">
-            <div class="section-title">Vizyon</div>
-            <div x-text="modalNode?.release_date ? toTRDate(modalNode.release_date) : '-'"></div>
-          </div>
-        </div>
+<div class="meta-grid grid-cols-2 sm:grid-cols-2 gap-4 mt-2">
+  
+  <!-- Vizyon: Grid 1 -->
+  <div class="meta-item" style="grid-column: 1;">
+    <div class="section-title">Vizyon</div>
+    <div x-text="modalNode?.release_date ? toTRDate(modalNode.release_date) : '-'"></div>
+  </div>
+
+  <!-- Kaynaklar: Grid 2 -->
+  <template x-if="modalNode?.sources?.length">
+    <div class="meta-item" style="grid-column: 2;">
+      <div class="section-title">Kaynaklar</div>
+      <ul class="list-disc list-inside text-sm space-y-1">
+        <template x-for="src in modalNode.sources" :key="src.url">
+          <li><a class="underline hover:opacity-90" :href="src.url" target="_blank" x-text="src.name"></a></li>
+        </template>
+      </ul>
+    </div>
+  </template>
+
+</div>
+
 
       
       </div>
@@ -340,7 +375,7 @@
     </div>
     <!-- Hızlı etiket önerileri -->
     <div class="flex gap-1 flex-wrap">
-      <template x-for="t in topTags" :key="t">
+      <!-- Etiket önerileri kaldırıldı -->
         <button class="text-xs px-2 py-0.5 rounded bg-white/10 hover:bg-white/20" @click="notesTagFilter = '#' + t">#<span x-text="t"></span></button>
       </template>
     </div>
@@ -422,7 +457,8 @@ function app() {
 
     /* Renkler & stiller */
     edgeColors: {
-      "devam": "#2980b9", "ön hikaye": "#e67e22", "yan hikaye": "#8e44ad",
+      "devam": "#2980b9",
+      "öncesi": "#f39c12", "ön hikaye": "#e67e22", "yan hikaye": "#8e44ad",
       "evren geçişi": "#c0392b", "görsel gönderme": "#7f8c8d", "karakter göndermesi": "#27ae60",
       "kurumsal gönderme": "#6e4b25", "zaman çizgisi bağlantısı": "#1abc9c", "karakter geçişi": "#2ecc71",
       "tematik benzerlik": "#f1c40f", "duygu ve bilinç teması": "#9b59b6", "konseptsel devam": "#34495e",
@@ -430,7 +466,8 @@ function app() {
       "multiverse birleşmesi": "#e84393", "paralel Kang anlatımı": "#16a085"
     },
     edgeStyles: {
-      "devam": { width: 3, dashes: false }, "karakter geçişi": { width: 3, dashes: [10,4] },
+      "devam": { width: 3, dashes: false },
+      "öncesi": { width: 2, dashes: [4, 6] }, "karakter geçişi": { width: 3, dashes: [10,4] },
       "evren geçişi": { width: 2.5, dashes: [6,4] }, "multiverse birleşmesi": { width: 2.5, dashes: [2,6] },
       "görsel gönderme": { width: 1.8, dashes: [2,6] }, "karakter göndermesi": { width: 2, dashes: [6,6] },
       "ön hikaye": { width: 2.2, dashes: false }, "yan hikaye": { width: 2, dashes: [8,6] },
@@ -844,6 +881,60 @@ if ('serviceWorker' in navigator) {
     return `${dd}/${mm}/${yyyy}`;
   };
 </script>
+<script>
+// ÇEVİRİ API'Sİ
+async function translateText(text, targetLang = 'en', sourceLang = 'tr') {
+  const response = await fetch('https://libretranslate.com/translate', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      q: text,
+      source: sourceLang,
+      target: targetLang,
+      format: 'text'
+    })
+  });
+
+  const data = await response.json();
+  return data?.translatedText || '[Çeviri başarısız]';
+}
+
+// Alpine'ye translateNode fonksiyonu ekle
+document.addEventListener('alpine:init', () => {
+  Alpine.data('app', (originalApp = app) => {
+    const state = originalApp();
+    const originalTextMap = new Map();
+
+    state.translateNode = async function () {
+      const node = this.modalNode;
+      if (!node?.id) return;
+
+      const descEl = document.querySelector('[x-text="modalNode?.description || \'Film Özeti yok.\'"]');
+      const refEl = document.querySelector('[x-text="modalNode.refers_to"]');
+
+      if (!originalTextMap.has(node.id)) {
+        originalTextMap.set(node.id, {
+          desc: descEl?.innerText,
+          ref: refEl?.innerText
+        });
+
+        if (descEl) descEl.innerText = await translateText(descEl.innerText);
+        if (refEl) refEl.innerText = await translateText(refEl.innerText);
+      } else {
+        const original = originalTextMap.get(node.id);
+        if (descEl) descEl.innerText = original.desc;
+        if (refEl) refEl.innerText = original.ref;
+        originalTextMap.delete(node.id);
+      }
+    };
+
+    return state;
+  });
+});
+</script>
+
 
 
 </body>
