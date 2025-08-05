@@ -35,7 +35,7 @@
     .dropdown-panel { background: rgba(31,41,55,0.65); border: 1px solid rgba(255,255,255,0.14); box-shadow: 0 16px 40px rgba(0,0,0,0.45); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); }
     .dropdown-item { cursor: pointer; }
     .dropdown-item:hover { background: rgba(255,255,255,0.06); }
-    
+
     /* Modal */
     .modal-bg { background: rgba(0,0,0,0.75); backdrop-filter: blur(4px); }
     .modal-content { width: 92vw; max-width: 780px; max-height: 85vh; overflow-y: auto; background: #0f172a; color: #e5e7eb; border-radius: 18px; padding: 0; box-shadow: 0 12px 24px rgba(0,0,0,0.45); position: relative; border: 1px solid rgba(255,255,255,0.08); }
@@ -137,8 +137,6 @@
      @click.away="modalOpen = false" @keydown.escape.window="modalOpen=false" aria-labelledby="modalTitle" role="dialog" aria-modal="true">
   <div class="modal-content" @click.stop>
 
-
-
     <button class="close-btn" aria-label="Kapat" @click="modalOpen=false">✖</button>
 
     <div class="modal-header">
@@ -147,52 +145,92 @@
 
       <div class="flex flex-col gap-2">
         <h2 id="modalTitle" class="text-xl font-semibold" x-text="modalNode?.label"></h2>
-        <div class="flex flex-wrap gap-2">
+        <div class="flex flex-wrap items-center gap-2">
           <span class="chip">
             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l4 4-10 10H2v-4L12 2z"/><path d="M3 22h18v-2H3v2z"/></svg>
             <span x-text="formatUniverseName(modalNode?.universe)"></span>
           </span>
+
           <template x-if="modalNode?.type">
             <span class="chip">
               <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 22c5.421 0 10-4.579 10-10S17.421 2 12 2 2 6.579 2 12s4.579 10 10 10z"/></svg>
               <span x-text="modalNode.type"></span>
             </span>
           </template>
+
+<!-- Paylaş -->
+        <div class="flex items-center gap-2">
+          <span class="text-sm">Paylaş:</span>
+
+          <!-- X (Twitter) -->
+          <button @click="shareToX(modalNode)" class="p-1 hover:bg-white/10 rounded-full" title="X'te Paylaş">
+            <!-- X icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1227" width="18" height="18" fill="currentColor">
+              <path d="M714.163 548.125L1160.89 0H1050.73L672.672 453.5L396.947 0H0L466.46 729.84L0 1227H110.155L512.993 753.975L803.053 1227H1200L714.163 548.125ZM563.279 687.089L518.127 619.865L149.791 79.694H356.3L636.021 490.821L681.173 558.045L1050.73 1147.31H844.224L563.279 687.089Z"/>
+            </svg>
+          </button>
+
+          <!-- WhatsApp -->
+          <button @click="shareToWhatsApp(modalNode)" class="p-1 hover:bg-white/10 rounded-full" title="WhatsApp'ta Paylaş">
+            <!-- WhatsApp icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="18" height="18" fill="currentColor">
+              <path d="M16 0C7.164 0 0 7.164 0 16c0 2.82.734 5.574 2.133 7.984L.063 32l8.188-2.047C10.492 30.996 13.203 32 16 32c8.836 0 16-7.164 16-16S24.836 0 16 0zm0 29.188c-2.539 0-5.023-.68-7.195-1.973l-.516-.305-4.855 1.215 1.293-4.73-.34-.555C3.688 21.289 3.063 18.68 3.063 16 3.063 8.836 8.836 3.063 16 3.063S28.938 8.836 28.938 16 23.164 28.938 16 28.938z"/><path d="M23.57 18.813c-.402-.203-2.375-1.18-2.746-1.316-.371-.137-.641-.203-.91.203-.27.402-1.043 1.316-1.277 1.586-.234.27-.469.305-.871.102-.402-.203-1.699-.625-3.238-1.992-1.195-1.066-2.004-2.383-2.238-2.785-.234-.402-.023-.621.18-.824.184-.184.402-.48.605-.719.203-.234.27-.402.402-.672.137-.27.066-.508-.027-.711-.098-.203-.91-2.195-1.246-3.012-.328-.789-.664-.68-.91-.691l-.77-.016c-.27 0-.707.102-1.078.508-.371.402-1.418 1.387-1.418 3.387 0 1.996 1.453 3.922 1.66 4.195.203.27 2.855 4.363 6.922 6.113.969.418 1.723.668 2.309.855.969.309 1.848.266 2.547.16.777-.117 2.375-.973 2.711-1.91.34-.938.34-1.742.234-1.91-.102-.168-.367-.27-.77-.473z"/>
+            </svg>
+          </button>
+
+          <!-- LinkedIn -->
+          <button @click="shareToLinkedIn(modalNode)" class="p-1 hover:bg-white/10 rounded-full" title="LinkedIn'de Paylaş">
+            <!-- LinkedIn icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="18" height="18" fill="currentColor">
+              <path d="M100.28 448H7.4V148.9h92.88zm-46.44-339C24.33 109 0 84.67 0 54.5S24.33 0 54.5 0s54.5 24.33 54.5 54.5S84.67 109 54.5 109zM447.9 448h-92.4V302.4c0-34.7-.7-79.3-48.3-79.3-48.3 0-55.7 37.7-55.7 76.7V448h-92.4V148.9h88.7v40.8h1.3c12.4-23.6 42.6-48.3 87.6-48.3 93.7 0 110.9 61.7 110.9 142V448z"/>
+            </svg>
+          </button>
+
+          <!-- Link kopyala -->
+          <button @click="copyShare(modalNode)" class="p-1 hover:bg-white/10 rounded-full" title="Metni ve Linki Kopyala">
+            <!-- Link icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M3.9 12a5 5 0 0 1 8.5-3.54l1.06 1.06-1.42 1.42-1.06-1.06a3 3 0 1 0-4.24 4.24l2.12 2.12a3 3 0 0 0 4.24 0l1.06-1.06 1.42 1.42-1.06 1.06a5 5 0 0 1-7.07 0L3.9 15.54A5 5 0 0 1 3.9 12z"/>
+              <path d="M20.1 12a5 5 0 0 1-8.5 3.54l-1.06-1.06 1.42-1.42 1.06 1.06a3 3 0 0 0 4.24-4.24l-2.12-2.12a3 3 0 0 0-4.24 0l-1.06 1.06-1.42-1.42 1.06-1.06a5 5 0 0 1 7.07 0l2.12 2.12A5 5 0 0 1 20.1 12z"/>
+            </svg>
+          </button>
         </div>
+
+          <!-- Daha Sonra İzle (yıldız ikon) -->
+          <button
+            class="ml-auto p-2 rounded-full hover:bg-white/10"
+            @click="toggleWatchLater(modalNode)"
+            :title="isInWatchLater(modalNode?.id) ? 'Listeden çıkar' : 'Daha sonra izle'">
+
+            <!-- Boş yıldız (listede değil) -->
+            <svg x-show="!isInWatchLater(modalNode?.id)" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+            </svg>
+
+            <!-- Dolu yıldız (listede) -->
+            <svg x-show="isInWatchLater(modalNode?.id)" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+            </svg>
+          </button>
+
+
+        </div>
+ 
+        
+        
+
 
         <!-- Meta: tek kolon -->
         <div class="meta-grid">
           <div class="meta-item">
             <div class="section-title">Vizyon</div>
-            <div x-text="modalNode?.release_date || '-'"></div>
+            <div x-text="modalNode?.release_date ? toTRDate(modalNode.release_date) : '-'"></div>
           </div>
         </div>
 
-          <!-- Watch later + Paylaş -->
-          <div class="mt-1 flex items-center gap-2 flex-wrap col-span-2">
-            <button class="px-3 py-1.5 text-sm rounded-lg border border-white/20 hover:bg-white/10" @click="toggleWatchLater(modalNode)">
-              <span x-text="isInWatchLater(modalNode?.id) ? 'Listeden çıkar' : 'Daha sonra izle'"></span>
-            </button>
-
-            <!-- Paylaş butonları -->
-            <button class="share-btn" @click="shareNode(modalNode,'native')" title="Paylaş">
-              <!-- sistem paylaşımı -->
-              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 5.5l-2-2V9H10V3.5l-2 2-1-1L10.5 1 15 4.5l-1 1z"/><path d="M19 10v8H5v-8H3v10h18V10z"/></svg>
-              <span>Paylaş</span>
-            </button>
-
-            <button class="share-btn" @click="shareNode(modalNode,'whatsapp')" title="WhatsApp">
-              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.62-6.003C.122 5.281 5.403 0 12.057 0c3.17 0 6.155 1.237 8.4 3.482A11.79 11.79 0 0124 11.873c-.003 6.653-5.284 11.935-11.938 11.935a11.9 11.9 0 01-6.019-1.63L.057 24zm6.597-3.807c1.737 1.035 3.276 1.666 5.392 1.666 5.448 0 9.886-4.434 9.889-9.877.003-5.462-4.415-9.89-9.881-9.89-5.452 0-9.885 4.433-9.885 9.885 0 2.253.744 3.891 1.99 5.642l-.656 2.393 2.151-.819zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.298-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.199-.347.223-.645.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.521.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.521-.074-.149-.669-1.611-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.017-1.04 2.479 0 1.461 1.065 2.873 1.213 3.071.149.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.718 2.006-1.412.248-.694.248-1.289.173-1.412z"/></svg>
-              <span>WhatsApp</span>
-            </button>
-
-            <button class="share-btn" @click="shareNode(modalNode,'x')" title="X">
-              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2H21l-6.5 7.43L22.5 22H16l-5.1-6.61L5 22H2.244l6.98-7.985L1.5 2H8l4.62 6.055L18.244 2zm-2.11 18h1.645L7.986 4h-1.7L16.134 20z"/></svg>
-              <span>X</span>
-            </button>
-          </div>
-
-
+      
+      </div>
+    </div>
 
     <!-- Gövde -->
     <div class="modal-body space-y-4">
@@ -368,9 +406,9 @@ function app() {
     notes: {}, newNote: '', notesOpen: false, notesUniverseFilter: '', notesTagFilter: '',
 
     /* Dinamik arkaplan */
-    bgUrl: 'images/anasayfa.jpg',
+    bgUrl: 'images/bg.jpg',
     bgMap: {
-      "": "images/anasayfa.jpg",
+      "": "images/bg.jpg",
       "avatar_last_airbender": "images/avatar.jpg",
       "avatar_pandora": "images/pandora.jpg",
       "dc": "images/dc.jpg",
@@ -477,10 +515,12 @@ function app() {
       this.$watch('selectedUniverse', (val) => { this.applyFilters(); this.setBackgroundFor(val); });
     },
 
+
+
     /* ----- BACKGROUND HELPERS ----- */
     async setBackgroundFor(universe){
       const primary = this.bgMap[universe || ""] || this.bgMap[""];
-      const fallbacks = ["images/anasayfa.jpg", "images/bg.jpg"];
+      const fallbacks = ["images/bg.jpg", "images/bg.jpg"];
       const tried = new Set();
       const tryLoad = (url) => new Promise((resolve,reject)=>{
         if(!url || tried.has(url)) return reject();
@@ -540,53 +580,6 @@ function app() {
           : '';
       if (shareUrl) window.open(shareUrl, '_blank', 'noopener');
     },
-/* Paylaşım metni oluşturur: başlık + evren + vizyon + kısa özet + derin bağlantı + site bilgisi */
-buildSharePayload(node) {
-  if (!node?.id) return { title: 'Film Evreni Ağı', text: '', url: location.origin };
-
-  const siteName = '🎬 Film Evreni Ağı';
-  const url = this.buildNodeUrl(node.id);
-  const title = node.label || 'Bilinmeyen Yapım';
-  const universe = this.formatUniverseName(node.universe || '');
-  const date = node.release_date ? `Vizyon: ${node.release_date}` : '';
-  const descFull = (node.description || '').trim();
-  const desc = descFull ? (descFull.length > 200 ? descFull.slice(0, 197) + '…' : descFull) : '';
-  const host = location.hostname.replace(/^www\./, '');
-
-  const lines = [
-    `${siteName}`,
-    `${title} — ${universe}${date ? ' • ' + date : ''}`,
-    desc ? `Özet: ${desc}` : null,
-    `Bağlantı: ${url}`,
-    `Kaynak: ${host}`
-  ].filter(Boolean);
-
-  const text = lines.join('\n');
-  return { title, text, url };
-},
-
-/* Paylaşım butonları (native / whatsapp / x) */
-shareNode(node, platform) {
-  const { title, text, url } = this.buildSharePayload(node);
-  const encText = encodeURIComponent(text);
-
-  if (platform === 'native' && navigator.share) {
-    navigator.share({ title, text, url }).catch(() => { /* kullanıcı iptal etti */ });
-    return;
-  }
-
-  let shareUrl = '';
-  if (platform === 'whatsapp') {
-    shareUrl = `https://api.whatsapp.com/send?text=${encText}`;
-  } else if (platform === 'x') {
-    // X: metin + URL birlikte gönderilecek (metnin içinde URL zaten var)
-    shareUrl = `https://twitter.com/intent/tweet?text=${encText}`;
-  } else {
-    // Yedek: sadece URL aç
-    shareUrl = url;
-  }
-  window.open(shareUrl, '_blank', 'noopener');
-},
 
     /* ----- DATA & GRAPH ----- */
     async loadData() {
@@ -708,6 +701,150 @@ if ('serviceWorker' in navigator) {
   });
 }
 </script>
+
+<script>
+  const SHARE_PHRASES = {
+    more: 'Devamı için ziyaret et:',
+    farewell: 'Sinemayla kalın.',
+    dash: ' — ',
+  };
+
+  const EMOJI = {
+    title: '🎬',     // film adı başı
+    date: '📅',      // tarih başı
+    summary: '📝',   // 3. satır başı
+    more: '👉',      // CTA sonu
+    link: '🔗',      // link başı
+    bye: '🍿',       // uğurlama sonu
+  };
+
+  function preferredUrl(node) {
+    const base = typeof window !== 'undefined'
+      ? window.location.origin + window.location.pathname
+      : '';
+    const id = node?.id ? `#${node.id}` : '';
+    return node?.url || base + id;
+  }
+
+  // YYYY-MM-DD → gg/aa/yyyy (sadece 2. satır için)
+  function toTRDate(value) {
+    if (!value) return '';
+    const s = String(value).trim();
+    const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(s);
+    if (m) return `${m[3]}/${m[2]}/${m[1]}`;
+    const d = new Date(s);
+    if (isNaN(d)) return s;
+    const dd = String(d.getDate()).padStart(2, '0');
+    const mm = String(d.getMonth() + 1).padStart(2, '0');
+    const yyyy = d.getFullYear();
+    return `${dd}/${mm}/${yyyy}`;
+  }
+
+  // Kısaltma: en fazla max karakter, keserse "..." ekler
+  function truncateDots(text, max) {
+    const t = (text || '').trim();
+    if (!t) return '';
+    if (t.length <= max) return t;
+    return t.slice(0, Math.max(0, max - 3)).trimEnd() + '...';
+  }
+
+  // Satırın sonunda nokta yoksa ekle
+  function ensurePeriod(line) {
+    if (!line) return '';
+    return /[.!?…]$/.test(line.trim()) ? line : line.trim() + '.';
+  }
+
+  function composeShareText(node) {
+    // 1) Film adı (etiketsiz, başında emoji)
+    const filmAdi  = node?.label || node?.title || node?.name || 'Bu yapım';
+    const line1 = `${EMOJI.title} ${filmAdi}`;
+
+    // 2) Tarih (gg/aa/yyyy, başında emoji)
+    const takvimTR = toTRDate(node?.release_date || node?.date);
+    const line2 = takvimTR ? `${EMOJI.date} ${takvimTR}` : '';
+
+    // 3) Açıklama & Göndermeler (etiketli, kısaltılmış, sonu "...")
+    const aciklamaFull    = (node?.description || '').trim();
+    const gondermelerFull = (node?.refers_to || '').trim();
+
+    // kısaltma limitleri (istersen değiştir)
+    const aciklama    = truncateDots(aciklamaFull, 120);
+    const gondermeler = truncateDots(gondermelerFull, 100);
+
+    let line3 = '';
+    if (aciklama && gondermeler) {
+      line3 = `${EMOJI.summary} Açıklama: ${aciklama}${SHARE_PHRASES.dash}Göndermeler: ${gondermeler}`;
+    } else if (aciklama) {
+      line3 = `${EMOJI.summary} Açıklama: ${aciklama}`;
+    } else if (gondermeler) {
+      line3 = `${EMOJI.summary} Göndermeler: ${gondermeler}`;
+    }
+    if (line3) line3 = ensurePeriod(line3); // satırı noktayla bitir
+
+    // 4–6) CTA, link, uğurlama
+    const url = preferredUrl(node);
+    const line4 = `${SHARE_PHRASES.more} ${EMOJI.more}`;
+    const line5 = `${EMOJI.link} ${url}`;
+    const line6 = `${SHARE_PHRASES.farewell} ${EMOJI.bye}`;
+
+    return [line1, line2, line3, line4, line5, line6]
+      .filter(Boolean)
+      .join('\n');
+  }
+
+  // X için tek satır (URL ayrı parametre)
+  function composeShareTextForX(node, max = 240) {
+    const url = preferredUrl(node);
+    const single = composeShareText(node).replace(/\n+/g, ' | ');
+    const withoutUrl = single.replace(url, '').replace(/\s*\|\s*\|\s*/g, ' | ').trim();
+    return withoutUrl.length <= max ? withoutUrl : (withoutUrl.slice(0, max - 1) + '…');
+  }
+
+  // Paylaş işlevleri
+  window.shareToX = function(node) {
+    const url = preferredUrl(node);
+    const text = composeShareTextForX(node);
+    window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`,
+      '_blank','noopener,noreferrer');
+  };
+  window.shareToWhatsApp = function(node) {
+    const text = composeShareText(node);
+    window.open(`https://api.whatsapp.com/send?text=${encodeURIComponent(text)}`,
+      '_blank','noopener,noreferrer');
+  };
+  window.shareToLinkedIn = function(node) {
+    const url  = preferredUrl(node);
+    const name = node?.label || node?.title || node?.name || 'Bu yapım';
+    const sum  = composeShareText(node);
+    window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}&title=${encodeURIComponent(name)}&summary=${encodeURIComponent(sum)}`,
+      '_blank','noopener,noreferrer');
+  };
+  window.copyShare = async function(node) {
+    const full = composeShareText(node) + '\n';
+    try { await navigator.clipboard.writeText(full); alert('Paylaşım metni ve link kopyalandı.'); }
+    catch {
+      const ta = document.createElement('textarea'); ta.value = full; document.body.appendChild(ta);
+      ta.select(); document.execCommand('copy'); document.body.removeChild(ta);
+      alert('Paylaşım metni ve link kopyalandı.');
+    }
+  };
+</script>
+
+<script>
+  window.toTRDate = function(value) {
+    if (!value) return '';
+    const s = String(value).trim();
+    const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(s);
+    if (m) return `${m[3]}/${m[2]}/${m[1]}`;
+    const d = new Date(s);
+    if (isNaN(d)) return s;
+    const dd = String(d.getDate()).padStart(2, '0');
+    const mm = String(d.getMonth() + 1).padStart(2, '0');
+    const yyyy = d.getFullYear();
+    return `${dd}/${mm}/${yyyy}`;
+  };
+</script>
+
 
 </body>
 </html>
