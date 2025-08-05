@@ -234,14 +234,14 @@
 
     <!-- Gövde -->
     <div class="modal-body space-y-4">
-      <!-- Açıklama -->
+      <!-- Film Özeti -->
       <div>
         <div class="flex items-center gap-2 mb-2">
           <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-red-400" viewBox="0 0 24 24" fill="currentColor"><path d="M4 5h16v14H4z" fill="none"/><path d="M4 5h16v14H4z"/></svg>
-          <span class="font-semibold">Açıklama</span>
+          <span class="font-semibold">Film Özeti</span>
         </div>
         <div class="bg-white/5 border border-white/10 rounded-lg p-3 leading-relaxed">
-          <span x-text="modalNode?.description || 'Açıklama yok.'"></span>
+          <span x-text="modalNode?.description || 'Film Özeti yok.'"></span>
         </div>
       </div>
 
@@ -763,7 +763,7 @@ if ('serviceWorker' in navigator) {
     const takvimTR = toTRDate(node?.release_date || node?.date);
     const line2 = takvimTR ? `${EMOJI.date} ${takvimTR}` : '';
 
-    // 3) Açıklama & Göndermeler (etiketli, kısaltılmış, sonu "...")
+    // 3) Film Özeti & Göndermeler (etiketli, kısaltılmış, sonu "...")
     const aciklamaFull    = (node?.description || '').trim();
     const gondermelerFull = (node?.refers_to || '').trim();
 
@@ -773,9 +773,9 @@ if ('serviceWorker' in navigator) {
 
     let line3 = '';
     if (aciklama && gondermeler) {
-      line3 = `${EMOJI.summary} Açıklama: ${aciklama}${SHARE_PHRASES.dash}Göndermeler: ${gondermeler}`;
+      line3 = `${EMOJI.summary} Film Özeti: ${aciklama}${SHARE_PHRASES.dash}Göndermeler: ${gondermeler}`;
     } else if (aciklama) {
-      line3 = `${EMOJI.summary} Açıklama: ${aciklama}`;
+      line3 = `${EMOJI.summary} Film Özeti: ${aciklama}`;
     } else if (gondermeler) {
       line3 = `${EMOJI.summary} Göndermeler: ${gondermeler}`;
     }
