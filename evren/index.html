@@ -17,17 +17,23 @@
       background: transparent;
     }
 
-    /* Dinamik arkaplan (Alpine ile stil bağlanır) */
-    #bg {
-      position: fixed; inset: 0; z-index: -2;
-      background-position: center center;
-      background-size: cover;
-      background-repeat: no-repeat;
+    /* Tam ekran arkaplan görseli (IMG tabanlı, mobilde sorunsuz) */
+    #bgImg{
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
       filter: blur(12px) brightness(0.65);
       transform: scale(1.06);
+      z-index: -2;
+      backface-visibility: hidden;
+      will-change: transform;
     }
-    #bgOverlay {
-      position: fixed; inset: 0; z-index: -1;
+    #bgOverlay{
+      position: fixed;
+      inset: 0;
+      z-index:-1;
       background: rgba(0,0,0,0.35);
     }
 
@@ -139,8 +145,8 @@
 </head>
 <body class="dark" :class="{ 'overflow-hidden': modalOpen }">
 
-<!-- Dinamik arkaplan -->
-<div id="bg" :style="bgStyle"></div>
+<!-- Dinamik arkaplan (IMG + overlay) -->
+<img id="bgImg" :src="bgUrl" alt="" />
 <div id="bgOverlay"></div>
 
 <!-- Kompakt CAM NAVBAR (mobil tam genişlik, sm: md, lg: lg) -->
@@ -153,14 +159,34 @@
         </div>
 
         <div class="flex items-center gap-2">
-          <!-- Arama + Autocomplete -->
+          <!-- Arama + Autocomplete + X temizle -->
           <div class="relative w-full">
-            <input x-model="search" placeholder="Ara..." class="border rounded-lg px-3 py-1.5 w-full" @focus="acOpen = true" @blur="setTimeout(() => acOpen = false, 120)" />
+            <input
+              x-model="search"
+              type="search"
+              placeholder="Ara..."
+              class="border rounded-lg px-3 py-1.5 w-full pr-8"
+              @focus="acOpen = true"
+              @blur="setTimeout(() => acOpen = false, 120)"
+            />
+            <button
+              x-show="search"
+              @mousedown.prevent
+              @click="search=''; suggestions=[]; applyFilters()"
+              class="absolute inset-y-0 right-2 my-auto h-6 w-6 rounded-full grid place-items-center opacity-80 hover:opacity-100 hover:bg-white/10"
+              aria-label="Temizle">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.3 5.71a1 1 0 0 0-1.41 0L12 10.59 7.11 5.7A1 1 0 0 0 5.7 7.11L10.59 12l-4.9 4.89a1 1 0 1 0 1.41 1.41L12 13.41l4.89 4.9a1 1 0 0 0 1.41-1.41L13.41 12l4.9-4.89a1 1 0 0 0-.01-1.4Z"/>
+              </svg>
+            </button>
+
             <!-- Öneriler -->
             <div x-show="acOpen && search && suggestions.length"
                  class="ac-panel absolute z-50 w-full mt-1 rounded-lg overflow-hidden max-h-56 overflow-y-auto">
-              <template x-for="s in suggestions" :key="s">
-                <div class="ac-item px-3 py-1.5" @mousedown.prevent @click="search = s; acOpen=false; applyFilters();">
+              <template x-for="(s, idx) in suggestions" :key="s">
+                <div class="ac-item px-3 py-1.5"
+                     @mousedown.prevent
+                     @click="search = s; acOpen=false; applyFilters();">
                   <span x-text="s"></span>
                 </div>
               </template>
@@ -208,7 +234,7 @@
 
     <div class="modal-header">
       <template x-if="modalNode?.image">
-        <img :src="modalNode.image" alt="" class="poster" />
+        <img :src="modalNode.image" alt="" class="poster" loading="lazy" />
       </template>
       <template x-if="!modalNode?.image">
         <div class="poster"></div>
@@ -236,12 +262,19 @@
             <div x-text="modalNode?.release_date || '-'"></div>
           </div>
         </div>
+
+        <!-- Watch later butonu -->
+        <div class="mt-1">
+          <button class="px-3 py-1.5 text-sm rounded-lg border border-white/20 hover:bg-white/10"
+                  @click="toggleWatchLater(modalNode)">
+            <span x-text="isInWatchLater(modalNode?.id) ? 'Listeden çıkar' : 'Daha sonra izle'"></span>
+          </button>
+        </div>
       </div>
     </div>
 
     <!-- Gövde -->
     <div class="modal-body space-y-4">
-
       <!-- Açıklama -->
       <div>
         <div class="flex items-center gap-2 mb-2">
@@ -275,8 +308,49 @@
         <div class="section-title">Bağlantılı Yapımlar</div>
         <div class="flex flex-wrap gap-2" x-html="neighborChips(modalNode?.id)"></div>
       </div>
+
+      <!-- Yorumlar -->
+      <div>
+        <div class="section-title">Yorumlar</div>
+        <div class="bg-white/5 border border-white/10 rounded-lg p-2 space-y-2">
+          <template x-if="!comments[modalNode?.id] || !comments[modalNode?.id].length">
+            <div class="text-sm opacity-70">Henüz yorum yok.</div>
+          </template>
+
+          <template x-for="(c, i) in (comments[modalNode?.id] || [])" :key="i">
+            <div class="bg-white/5 rounded p-2 text-sm flex justify-between gap-2">
+              <span x-text="c.text"></span>
+              <button class="opacity-60 hover:opacity-100 text-xs"
+                      @click="deleteComment(modalNode.id, i)">Sil</button>
+            </div>
+          </template>
+
+          <div class="flex gap-2">
+            <input x-model="newComment" placeholder="Yorum yaz..." class="border rounded px-2 py-1 w-full" />
+            <button class="px-2 py-1 text-sm rounded border border-white/20 hover:bg-white/10"
+                    @click="addComment(modalNode.id)">Ekle</button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+</div>
+
+<!-- Watch Later (sağ alt mini panel) -->
+<button class="fixed right-4 bottom-4 z-40 glass rounded-full w-12 h-12 grid place-items-center hover:bg-white/10"
+        title="Daha sonra" @click="watchLaterOpen = !watchLaterOpen">★</button>
+<div x-show="watchLaterOpen" x-transition
+     class="fixed right-4 bottom-20 z-40 glass rounded-xl p-3 w-64 max-h-72 overflow-y-auto">
+  <div class="font-semibold mb-2">Daha sonra</div>
+  <template x-if="!watchLater.length">
+    <div class="text-sm opacity-70">Liste boş.</div>
+  </template>
+  <template x-for="n in watchLater" :key="n.id">
+    <div class="flex items-center justify-between gap-2 py-1">
+      <button class="text-left hover:underline truncate" @click="__openNode(n.id)"><span x-text="n.label || n.id"></span></button>
+      <button class="text-xs opacity-80 hover:opacity-100" @click="removeWatchLater(n.id)">Sil</button>
+    </div>
+  </template>
 </div>
 
 <!-- Legend Toggle + Legend (filtreli + çizgi örnekli) -->
@@ -293,7 +367,6 @@
       <!-- Sadece mevcut grafikte kullanılan türleri göster; ayrıca çizgi tipini de göster -->
       <template x-for="[type, color] in legendEntries" :key="type">
         <li class="flex items-center mb-1">
-          <!-- Çizgi örneği (renk + dash) -->
           <svg width="36" height="8" class="mr-2">
             <line x1="2" y1="4" x2="34" y2="4"
                   :stroke="color"
@@ -323,8 +396,28 @@ function app() {
     suggestions: [],
     acOpen: false,
 
+    /* Watch later */
+    watchLater: [],
+    watchLaterOpen: false,
+
+    /* Comments */
+    comments: {},
+    newComment: '',
+
     /* Dinamik arkaplan */
-    bgStyle: 'background-image: url(images/bg.jpg);',
+    bgUrl: 'images/bg.jpg',  // başlangıç
+    bgMap: {
+      "": "images/bg.jpg",
+      "avatar_last_airbender": "images/avatar.jpg",
+      "avatar_pandora": "images/pandora.jpg",
+      "dc": "images/dc.jpg",
+      "harrypotter": "images/harrypotter.jpg",
+      "marvel": "images/marvel.jpg",
+      "matrix": "images/matrix.jpg",
+      "middleearth": "images/middleearth.jpg",
+      "pixar": "images/pixar.jpg",
+      "starwars": "images/starwars.jpg"
+    },
 
     /* Renkler ve stiller */
     edgeColors: {
@@ -353,33 +446,28 @@ function app() {
       "paralel Kang anlatımı": { width: 2.5, dashes: [3,7] }
     },
 
-    /* Evren → arkaplan */
-    bgMap: {
-      "": "images/bg.jpg",
-      "avatar_last_airbender": "images/avatar.jpg",
-      "avatar_pandora": "images/pandora.jpg",
-      "dc": "images/dc.jpg",
-      "harrypotter": "images/harrypotter.jpg",
-      "marvel": "images/marvel.jpg",
-      "matrix": "images/matrix.jpg",
-      "middleearth": "images/middleearth.jpg",
-      "pixar": "images/pixar.jpg",
-      "starwars": "images/starwars.jpg"
-    },
-
-    /* Legend için hesaplanmış liste (renk + kullanılma durumu) */
+    /* Legend için hesaplanmış liste */
     get legendEntries() {
-      // Eğer filtrelenmiş kenarlar varsa, sadece kullanılan tipleri göster.
       const usedTypes = new Set(this.filteredEdges.map(e => e.type));
       const pairs = Object.entries(this.edgeColors)
-        .filter(([t]) => usedTypes.has(t) || !this.selectedUniverse); // evren seçili değilse hepsini göster
+        .filter(([t]) => usedTypes.has(t) || !this.selectedUniverse);
       return pairs;
     },
 
+    /* ---------- INIT ---------- */
     init() {
       // Legend: mobilde varsayılan kapalı
       this.showLegend = window.innerWidth >= 640;
 
+      // Local verileri yükle
+      this.loadWatchLater();
+      this.loadComments();
+
+      // Arkaplan ilk yükleme + preload
+      this.setBackgroundFor(this.selectedUniverse);
+      this.warmBackgrounds();
+
+      // Veri
       this.loadData();
 
       // Arama debounce + autocomplete
@@ -391,31 +479,117 @@ function app() {
           // Autocomplete önerileri
           if (val) {
             const lower = val.toLowerCase();
-            const set = new Set();
+            // başta eşleşenleri öne al
+            const starts = [];
+            const contains = [];
+            const seen = new Set();
             for (const n of this.allNodes) {
-              if (n.label && n.label.toLowerCase().includes(lower)) set.add(n.label);
-              if (set.size >= 10) break;
+              const lbl = n.label;
+              if (!lbl) continue;
+              const l = lbl.toLowerCase();
+              if (l.startsWith(lower)) {
+                if (!seen.has(lbl)) { starts.push(lbl); seen.add(lbl); }
+              } else if (l.includes(lower)) {
+                if (!seen.has(lbl)) { contains.push(lbl); seen.add(lbl); }
+              }
+              if (starts.length + contains.length >= 10) break;
             }
-            this.suggestions = Array.from(set);
+            this.suggestions = [...starts, ...contains];
           } else {
             this.suggestions = [];
           }
         }, 220);
       });
 
-      // Evren değiştikçe filtre ve arkaplan
+      // Evren değişince filtre + arkaplan
       this.$watch('selectedUniverse', (val) => {
         this.applyFilters();
-        const url = this.bgMap[val || ""] || this.bgMap[""];
-        this.bgStyle = `background-image: url(${url});`;
+        this.setBackgroundFor(val);
       });
     },
 
+    /* ---------- BACKGROUND HELPERS ---------- */
+    async setBackgroundFor(universe){
+      const primary = this.bgMap[universe || ""] || this.bgMap[""];
+      const fallbacks = ["images/bg.jpg", "images/bg.jpg"];
+      const tried = new Set();
+
+      const tryLoad = (url) => new Promise((resolve,reject)=>{
+        if(!url || tried.has(url)) return reject();
+        tried.add(url);
+        const img = new Image();
+        img.onload = () => resolve(url);
+        img.onerror = () => reject();
+        img.decoding = 'async';
+        img.referrerPolicy = 'no-referrer';
+        img.src = url;
+      });
+
+      const candidates = [primary, ...fallbacks];
+      for (const url of candidates){
+        try {
+          const ok = await tryLoad(url);
+          this.bgUrl = ok;
+          return;
+        } catch {}
+      }
+    },
+    warmBackgrounds(){
+      const urls = [...new Set(Object.values(this.bgMap))];
+      urls.forEach(u => { const i = new Image(); i.decoding='async'; i.src = u; });
+    },
+
+    /* ---------- WATCH LATER ---------- */
+    loadWatchLater() {
+      try { this.watchLater = JSON.parse(localStorage.getItem('watchLater') || '[]'); } catch { this.watchLater = []; }
+    },
+    saveWatchLater() {
+      localStorage.setItem('watchLater', JSON.stringify(this.watchLater));
+    },
+    isInWatchLater(id) {
+      return !!this.watchLater.find(x => x.id === id);
+    },
+    toggleWatchLater(node) {
+      if (!node?.id) return;
+      if (this.isInWatchLater(node.id)) {
+        this.watchLater = this.watchLater.filter(x => x.id !== node.id);
+      } else {
+        this.watchLater.unshift({ id: node.id, label: node.label || String(node.id) });
+      }
+      this.saveWatchLater();
+    },
+    removeWatchLater(id) {
+      this.watchLater = this.watchLater.filter(x => x.id !== id);
+      this.saveWatchLater();
+    },
+
+    /* ---------- COMMENTS ---------- */
+    loadComments() {
+      try { this.comments = JSON.parse(localStorage.getItem('comments') || '{}'); } catch { this.comments = {}; }
+    },
+    saveComments() {
+      localStorage.setItem('comments', JSON.stringify(this.comments));
+    },
+    addComment(nodeId) {
+      const t = (this.newComment || '').trim();
+      if (!nodeId || !t) return;
+      if (!this.comments[nodeId]) this.comments[nodeId] = [];
+      this.comments[nodeId].unshift({ text: t, ts: Date.now() });
+      this.newComment = '';
+      this.saveComments();
+    },
+    deleteComment(nodeId, idx) {
+      if (!this.comments[nodeId]) return;
+      this.comments[nodeId].splice(idx, 1);
+      this.saveComments();
+    },
+
+    /* ---------- DATA & GRAPH ---------- */
     async loadData() {
       const evrenler = ["avatar_last_airbender","avatar_pandora","dc","harrypotter","marvel","matrix","middleearth","pixar","starwars"];
       try {
         const results = await Promise.all(evrenler.map(evren =>
-          fetch('data/' + evren + '.json').then(r => {
+          fetch('data/' + evren + '.json', { cache: 'no-store' }).then(r => {
             if (!r.ok) throw new Error(evren + ' yüklenemedi');
             return r.json().then(data => ({ evren, data }));
           })
@@ -428,6 +602,10 @@ function app() {
         this.allNodes = nodesTemp;
         this.allEdges = edgesTemp;
         this.universeList = [...new Set(this.allNodes.map(n => n.universe))];
+
+        // Posterleri ısıt (cache)
+        const posterUrls = this.allNodes.filter(n => n.image).map(n => n.image);
+        posterUrls.forEach(u => { const i = new Image(); i.decoding='async'; i.src = u; });
 
         this.setupNetwork();
         this.applyFilters();
@@ -470,7 +648,7 @@ function app() {
     },
 
     applyFilters() {
-      const searchTerm = this.search.toLowerCase();
+      const searchTerm = (this.search || '').toLowerCase();
       const universe = this.selectedUniverse;
 
       this.filteredNodes = this.allNodes.filter(n =>
@@ -554,6 +732,17 @@ window.__openNode = function(id) {
     scope.network.focus(id, { animation: true, scale: 1 });
   }
 };
+</script>
+
+<!-- Service Worker kaydı -->
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('sw.js')
+      .then(reg => console.log('SW registered', reg.scope))
+      .catch(err => console.warn('SW register failed', err));
+  });
+}
 </script>
 
 </body>
