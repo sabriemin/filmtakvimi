@@ -6,7 +6,7 @@
   <title>🎬 Film Evreni Ağı</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.5/dist/cdn.min.js" defer></script>
   <style>
     :root { color-scheme: dark; }
     html, body { height: 100%; margin: 0; color: #d1d5db; font-family: 'Segoe UI', system-ui, -apple-system, Roboto, 'Helvetica Neue', Arial, sans-serif; background: transparent; }
@@ -62,7 +62,12 @@
     .share-bar { position: absolute; top: 8px; left: 12px; right: 56px; display:flex; align-items:center; gap:8px; opacity:.95; }
     .share-btn { display:inline-flex; align-items:center; gap:6px; padding:6px 10px; border-radius:10px; background: rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.14); font-size:12px; }
     .share-btn:hover { background: rgba(255,255,255,0.1); }
-  </style>
+  
+    /* Gizli scrollbar (mobil yatay kaydırma için) */
+    .no-scrollbar::-webkit-scrollbar{ display:none; }
+    .no-scrollbar{ -ms-overflow-style:none; scrollbar-width:none; }
+    </style>
+
 </head>
 <body class="dark" :class="{ 'overflow-hidden': modalOpen }">
 
@@ -134,8 +139,8 @@
 
 <!-- Gelişmiş Modal -->
 <div x-show="modalOpen" x-transition class="fixed inset-0 modal-bg flex items-center justify-center z-50 p-4"
-     @click.away="modalOpen = false" @keydown.escape.window="modalOpen=false" aria-labelledby="modalTitle" role="dialog" aria-modal="true">
-  <div class="modal-content" @click.stop>
+     @click.outside="modalOpen = false" @keydown.escape.window="modalOpen=false" aria-labelledby="modalTitle" role="dialog" aria-modal="true">
+  <div class="modal-content" @click.stop @click.stop>
 
     <button class="close-btn" aria-label="Kapat" @click="modalOpen=false">✖</button>
 
@@ -342,6 +347,11 @@
   </template>
 </div>
 
+
+<!-- Timeline FAB -->
+<button class="fixed right-4 bottom-[13rem] z-40 glass rounded-full w-12 h-12 grid place-items-center hover:bg-white/10" title="Zaman Çizgisi" @click="timelineOpen = !timelineOpen">📅</button>
+
+
 <!-- Notlar FAB & Panel (evren/etiket filtreli, metin GÖSTERMEZ) -->
 <button class="fixed right-4 bottom-[7.5rem] z-40 glass rounded-full w-12 h-12 grid place-items-center hover:bg-white/10" title="Notlar" @click="notesOpen = !notesOpen">📝</button>
 <div x-show="notesOpen" x-transition class="fixed right-4 bottom-[12.5rem] z-40 glass rounded-xl p-3 w-[22rem] max-h-[70vh] overflow-y-auto">
@@ -418,6 +428,7 @@ function app() {
     network: null, allNodes: [], allEdges: [], nodes: null, edges: null,
     filteredNodes: [], filteredEdges: [],
     search: '', selectedUniverse: '', modalOpen: false, modalNode: null,
+    timelineOpen: false,
     universeList: [], fitTimeout: null, showLegend: true,
 
     /* Autocomplete */
@@ -467,6 +478,30 @@ function app() {
     },
 
     /* Legend: sadece kullanılan tipleri göster (evren seçiliyse) */
+    
+    get timelineSortedNodes(){
+      const u = this.selectedUniverse;
+      return [...this.allNodes]
+        .filter(n => n.release_date && (!u || n.universe === u))
+        .sort((a, b) => new Date(a.release_date) - new Date(b.release_date));
+    },
+    /* Timeline: Yıla göre gruplama (en yeni yıl en üstte) */
+    get groupTimelineByYear(){
+      const groups = new Map(); // year -> array of nodes
+      for (const n of this.timelineSortedNodes) {
+        const y = new Date(n.release_date).getFullYear();
+        if (!groups.has(y)) groups.set(y, []);
+        groups.get(y).push(n);
+      }
+      // İçerideki her yılı tarihine göre artan sırala
+      for (const [y, arr] of groups.entries()) {
+        arr.sort((a,b)=> new Date(a.release_date) - new Date(b.release_date));
+      }
+      // Yılları büyükten küçüğe sıralı bir dizi olarak döndür
+      return Array.from(groups.entries())
+        .sort((a,b)=> b[0]-a[0]); // [[year, nodes], ...]
+    },
+
     get legendEntries() {
       const usedTypes = new Set(this.filteredEdges.map(e => e.type));
       return Object.entries(this.edgeColors).filter(([t]) => usedTypes.has(t) || !this.selectedUniverse);
@@ -497,7 +532,25 @@ function app() {
       return list;
     },
 
-    /* ----- INIT ----- */
+    
+    /* Not etiketleri: en sık geçen ilk 10 etiketi döner (evren filtresi dikkate alınır) */
+    get topTags(){
+      const counts = new Map();
+      const u = this.notesUniverseFilter;
+      for (const [nodeId, arr] of Object.entries(this.notes)){
+        if (!arr || !arr.length) continue;
+        const node = this.allNodes.find(n => String(n.id) === String(nodeId));
+        if (u && node?.universe !== u) continue;
+        for (const n of arr) for (const t of (n.tags || [])) {
+          counts.set(t, (counts.get(t) || 0) + 1);
+        }
+      }
+      return Array.from(counts.entries())
+        .sort((a,b) => b[1] - a[1])
+        .slice(0, 10)
+        .map(([t]) => t);
+    },
+/* ----- INIT ----- */
     init() {
       // Legend mobilde kapalı
       this.showLegend = window.innerWidth >= 640;
@@ -649,7 +702,15 @@ function app() {
       this.nodes = new vis.DataSet(); this.edges = new vis.DataSet();
       const container = document.getElementById('network');
       this.network = new vis.Network(container, { nodes: this.nodes, edges: this.edges }, this.makeOptions());
-      this.network.on('click', params => { if (params.nodes.length > 0) { const node = this.nodes.get(params.nodes[0]); this.modalNode = node; this.modalOpen = true; } });
+      this.network.on('click', params => {
+        if (params.nodes.length > 0) {
+          const node = this.nodes.get(params.nodes[0]);
+          requestAnimationFrame(() => {
+            this.modalNode = node;
+            this.modalOpen = true;
+          });
+        }
+      });
     },
 
     applyFilters() {
@@ -713,7 +774,7 @@ function app() {
 window.__openNode = function(id) {
   const scope = document.querySelector('html')?.__x.$data; if (!scope?.nodes) return;
   const node = scope.nodes.get(id);
-  if (node) { scope.modalNode = node; scope.modalOpen = true; scope.network.selectNodes([id]); scope.network.focus(id, { animation: true, scale: 1 }); }
+  if (node) { requestAnimationFrame(() => { scope.modalNode = node; scope.modalOpen = true; scope.network.selectNodes([id]); scope.network.focus(id, { animation: true, scale: 1 }); }); }
 };
 </script>
 
@@ -871,6 +932,113 @@ if ('serviceWorker' in navigator) {
   };
 </script>
 
+
+
+
+
+<!-- Timeline Paneli (GELİŞMİŞ, GLASS & KÜÇÜK KARTLAR) -->
+<div x-show="timelineOpen" x-transition class="fixed inset-0 z-40 p-4 flex items-center justify-center bg-black/80 backdrop-blur-sm">
+  <div class="bg-gray-900/70 glass rounded-2xl p-4 max-h-[90vh] overflow-y-auto w-full max-w-6xl border border-white/10">
+    <div class="flex justify-between items-center mb-3">
+      <h2 class="text-base sm:text-lg font-semibold">Vizyon Zaman Çizgisi</h2>
+      <div class="hidden sm:flex items-center gap-2 text-xs sm:text-sm opacity-80">
+        <span x-text="selectedUniverse ? formatUniverseName(selectedUniverse) : 'Tüm Evrenler'"></span>
+        <span>•</span>
+        <span x-text="timelineSortedNodes.length + ' yapım'"></span>
+      </div>
+      <button @click="timelineOpen = false" class="text-xs sm:text-sm opacity-80 hover:opacity-100">Kapat ✖</button>
+    </div>
+
+    <!-- Yıl Grupları -->
+    <template x-for="[year, items] in groupTimelineByYear" :key="year">
+      <section class="mb-5">
+        <div class="flex items-center justify-between mb-2">
+          <h3 class="text-sm sm:text-base font-semibold opacity-90">📅 <span x-text="year"></span></h3>
+          <div class="text-[11px] sm:text-xs opacity-70" x-text="items.length + ' yapım'"></div>
+        </div>
+
+        <!-- Masaüstü: daha küçük kartlar, daha fazla sütun -->
+        <div class="hidden sm:grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2.5">
+          <template x-for="n in items" :key="n.id">
+            <div class="glass border border-white/10 rounded-xl overflow-hidden hover:bg-white/10 transition cursor-pointer shadow-sm"
+                 @click="__openNode(n.id)">
+              <div class="aspect-[2/3] bg-black/30 overflow-hidden">
+                <img :src="n.image || 'images/placeholder.jpg'" alt="" class="w-full h-full object-cover" loading="lazy" />
+              </div>
+              <div class="px-2 py-1.5">
+                <div class="text-[11px] opacity-70" x-text="toTRDate(n.release_date)"></div>
+                <div class="text-xs font-semibold leading-snug line-clamp-2 mt-0.5" x-text="n.label"></div>
+              </div>
+            </div>
+          </template>
+        </div>
+
+        <!-- Mobil: daha küçük kart + yatay kaydırma -->
+        <div class="sm:hidden -mx-2 px-2 overflow-x-auto flex gap-2.5 snap-x snap-mandatory pb-2 no-scrollbar">
+          <template x-for="n in items" :key="n.id">
+            <div class="min-w-[46%] max-w-[60%] glass border border-white/10 rounded-xl overflow-hidden hover:bg-white/10 transition cursor-pointer snap-start shadow-sm"
+                 @click="__openNode(n.id)">
+              <div class="aspect-[2/3] bg-black/30 overflow-hidden">
+                <img :src="n.image || 'images/placeholder.jpg'" alt="" class="w-full h-full object-cover" loading="lazy" />
+              </div>
+              <div class="px-2 py-1.5">
+                <div class="text-[11px] opacity-70" x-text="toTRDate(n.release_date)"></div>
+                <div class="text-xs font-semibold leading-snug line-clamp-2 mt-0.5" x-text="n.label"></div>
+              </div>
+            </div>
+          </template>
+        </div>
+      </section>
+    </template>
+
+    <template x-if="!groupTimelineByYear.length">
+      <div class="text-sm opacity-70">Gösterilecek yapım bulunamadı.</div>
+    </template>
+  </div>
+</div>
+<!-- Masaüstü: çok sütunlu grid -->
+        <div class="hidden sm:grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+          <template x-for="n in items" :key="n.id">
+            <div class="bg-white/5 border border-white/10 rounded-lg overflow-hidden hover:bg-white/10 transition cursor-pointer"
+                 @click="__openNode(n.id)">
+              <div class="aspect-[3/4] bg-black/40 overflow-hidden">
+                <img :src="n.image || 'images/placeholder.jpg'" alt="" class="w-full h-full object-cover" loading="lazy" />
+              </div>
+              <div class="p-2">
+                <div class="text-xs opacity-70" x-text="toTRDate(n.release_date)"></div>
+                <div class="font-semibold leading-snug line-clamp-2 mt-0.5" x-text="n.label"></div>
+              </div>
+            </div>
+          </template>
+        </div>
+
+        <!-- Mobil: yatay kaydırma (snap) -->
+        <div class="sm:hidden -mx-2 px-2 overflow-x-auto flex gap-3 snap-x snap-mandatory pb-2 no-scrollbar">
+          <template x-for="n in items" :key="n.id">
+            <div class="min-w-[58%] max-w-[70%] bg-white/5 border border-white/10 rounded-lg overflow-hidden hover:bg-white/10 transition cursor-pointer snap-start"
+                 @click="__openNode(n.id)">
+              <div class="aspect-[3/4] bg-black/40 overflow-hidden">
+                <img :src="n.image || 'images/placeholder.jpg'" alt="" class="w-full h-full object-cover" loading="lazy" />
+              </div>
+              <div class="p-2">
+                <div class="text-xs opacity-70" x-text="toTRDate(n.release_date)"></div>
+                <div class="font-semibold leading-snug line-clamp-2 mt-0.5" x-text="n.label"></div>
+              </div>
+            </div>
+          </template>
+        </div>
+      </section>
+    </template>
+
+    <template x-if="!groupTimelineByYear.length">
+      <div class="text-sm opacity-70">Gösterilecek yapım bulunamadı.</div>
+    </template>
+  </div>
+</div>
+</template>
+    </div>
+  </div>
+</div>
 
 </body>
 </html>
