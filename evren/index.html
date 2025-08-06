@@ -287,11 +287,39 @@
         </div>
       </template>
 
-      <!-- Bağlantılı yapımlar -->
-      <div>
-        <div class="section-title">Bağlantılı Yapımlar</div>
-        <div class="flex flex-wrap gap-2" x-html="neighborChips(modalNode?.id)"></div>
-      </div>
+<!-- Bağlantılı yapımlar -->
+<div>
+  <div class="section-title">Bağlantılı Yapımlar</div>
+  <div class="flex flex-wrap gap-2">
+ 
+    
+    <template x-for="e in edgeList || []" :key="e.otherNodeId || (e.from + '-' + e.to)">
+  <div class="flex items-center mb-1">
+    <button
+      class="chip"
+      :style="`background:${edgeColors[e.type] || '#eee'}; color:#fff`"
+      @click="__openNode(e.otherNodeId)"
+      :title="e.type"
+      x-text="nodes.get(e.otherNodeId)?.label || e.otherNodeId"
+    ></button>
+    <template x-if="e.notes">
+      <span class="ml-2 text-xs italic opacity-80" x-text="e.notes"></span>
+    </template>
+  </div>
+</template>
+
+
+      </button>
+    </template>
+    <template x-if="!edgeList.length">
+      <span class="text-sm opacity-70">Bağlantı bulunamadı.</span>
+    </template>
+  </div>
+</div>
+
+
+
+
 
       <!-- Notlar -->
       <div>
@@ -348,8 +376,6 @@
 </div>
 
 
-<!-- Timeline FAB -->
-<button class="fixed right-4 bottom-[13rem] z-40 glass rounded-full w-12 h-12 grid place-items-center hover:bg-white/10" title="Zaman Çizgisi" @click="timelineOpen = !timelineOpen">📅</button>
 
 
 <!-- Notlar FAB & Panel (evren/etiket filtreli, metin GÖSTERMEZ) -->
@@ -455,24 +481,40 @@ function app() {
       "starwars": "images/starwars.jpg"
     },
 
+
+
+edgeList() {
+  if (!this.modalNode || !this.allEdges) return [];
+  return this.allEdges
+    .filter(e => e.from === this.modalNode.id || e.to === this.modalNode.id)
+    .map(e => ({
+      ...e,
+      otherNodeId: e.from === this.modalNode.id ? e.to : e.from
+    }));
+}
+
+
+,
+
+
     /* Renkler & stiller */
     edgeColors: {
-      "devam": "#2980b9",
-      "öncesi": "#f39c12", "ön hikaye": "#e67e22", "yan hikaye": "#8e44ad",
-      "evren geçişi": "#c0392b", "görsel gönderme": "#7f8c8d", "karakter göndermesi": "#27ae60",
-      "kurumsal gönderme": "#6e4b25", "zaman çizgisi bağlantısı": "#1abc9c", "karakter geçişi": "#2ecc71",
-      "tematik benzerlik": "#f1c40f", "duygu ve bilinç teması": "#9b59b6", "konseptsel devam": "#34495e",
-      "şehir yaşamı paralelliği": "#d35400", "iç film/karakter kökeni": "#7d3c98",
-      "multiverse birleşmesi": "#e84393", "paralel Kang anlatımı": "#16a085"
+      "Devam": "#2980b9",
+      "Öncesi": "#f39c12", "ön hikaye": "#e67e22", "Yan Hikayee": "#8e44ad",
+      "Aynı Evren": "#c0392b", "görsel gönderme": "#7f8c8d", "karakter göndermesi": "#27ae60",
+      "kurumsal gönderme": "#6e4b25", "zaman çizgisi bağlantısı": "#1abc9c", "remake": "#2ecc71",
+      "Teori Bağlantısı": "#f1c40f", "duygu ve bilinç teması": "#9b59b6", "konseptsel Devam": "#34495e",
+      "şehir yaşamı paralelliği": "#d35400", "karakter_bağlantısı": "#7d3c98",
+      "Tema Ortaklığı": "#e84393",
     },
     edgeStyles: {
-      "devam": { width: 3, dashes: false },
-      "öncesi": { width: 2, dashes: [4, 6] }, "karakter geçişi": { width: 3, dashes: [10,4] },
+      "Devam": { width: 3, dashes: false },
+      "Öncesi": { width: 2, dashes: [4, 6] }, "karakter geçişi": { width: 3, dashes: [10,4] },
       "evren geçişi": { width: 2.5, dashes: [6,4] }, "multiverse birleşmesi": { width: 2.5, dashes: [2,6] },
       "görsel gönderme": { width: 1.8, dashes: [2,6] }, "karakter göndermesi": { width: 2, dashes: [6,6] },
       "ön hikaye": { width: 2.2, dashes: false }, "yan hikaye": { width: 2, dashes: [8,6] },
-      "tematik benzerlik": { width: 1.8, dashes: [12,6] }, "zaman çizgisi bağlantısı": { width: 1.8, dashes: [4,4] },
-      "kurumsal gönderme": { width: 1.8, dashes: [2,8] }, "konseptsel devam": { width: 2, dashes: false },
+      "tematik benzerlik": { width: 1.8, dashes: [12,6] }, "Teori Bağlantısı": { width: 1.8, dashes: [4,4] },
+      "kurumsal gönderme": { width: 1.8, dashes: [2,8] }, "konseptsel Devam": { width: 2, dashes: false },
       "şehir yaşamı paralelliği": { width: 1.8, dashes: [10,8] }, "iç film/karakter kökeni": { width: 2, dashes: [5,5] },
       "paralel Kang anlatımı": { width: 2.5, dashes: [3,7] }
     },
@@ -531,6 +573,36 @@ function app() {
       .sort((a,b)=> b.count - a.count || a.label.localeCompare(b.label));
       return list;
     },
+
+getAllEdgesWithNotes(nodeId) {
+  if (!nodeId) return [];
+  // Hem giden hem gelen tüm kenarları al
+  const connectedEdges = this.allEdges
+    .filter(e => e.from === nodeId || e.to === nodeId)
+    .map(e => {
+      // Edge'teki diğer düğümün id ve label'ı
+      const otherNodeId = e.from === nodeId ? e.to : e.from;
+      const otherNode = this.allNodes.find(n => String(n.id) === String(otherNodeId));
+      return {
+        id: e.id || (e.from + "_" + e.to + "_" + (e.type || "")),
+        otherNodeId,
+        otherNodeLabel: otherNode?.label || otherNodeId,
+        type: e.type,
+        edgeHasNotes: !!e.notes,
+        edgeNoteText: e.notes || "",
+        nodeHasNotes: !!(this.notes && this.notes[otherNodeId] && this.notes[otherNodeId].length)
+      };
+    });
+  return connectedEdges;
+},
+
+
+
+formatEdgeType(type) {
+  // tip label'ını düzenle (örn. "Devam" → "Devam")
+  if (!type) return '';
+  return type.charAt(0).toUpperCase() + type.slice(1);
+},
 
     
     /* Not etiketleri: en sık geçen ilk 10 etiketi döner (evren filtresi dikkate alınır) */
@@ -688,6 +760,16 @@ function app() {
       } catch (err) { console.error(err); alert('Veri yükleme hatası: ' + err.message); }
     },
 
+   openNode(id) {
+      const node = this.nodes?.get(id) || this.allNodes.find(n => String(n.id) === String(id));
+      if (node) {
+        this.modalNode = node;
+        this.modalOpen = true;
+        this.network?.selectNodes([id]);
+        this.network?.focus(id, { animation: true, scale: 1 });
+      }
+    },
+
     makeOptions() {
       return {
         nodes: { size: 25, font: { color: '#e5e7eb', size: 14 }, borderWidthSelected: 6, color: { border: '#ef4444' } },
@@ -769,14 +851,39 @@ function app() {
     }
   }
 }
-
-/* Modal içinden komşu düğüme atlamak için global yardımcı */
-window.__openNode = function(id) {
-  const scope = document.querySelector('html')?.__x.$data; if (!scope?.nodes) return;
-  const node = scope.nodes.get(id);
-  if (node) { requestAnimationFrame(() => { scope.modalNode = node; scope.modalOpen = true; scope.network.selectNodes([id]); scope.network.focus(id, { animation: true, scale: 1 }); }); }
+window.openNode = function(id) {
+  const scope = document.querySelector('html')?.__x?.$data;
+  if (!scope?.openNode) return;
+  scope.openNode(id);
 };
+
+
+window.__openNode = function(id) {
+  // HTML ana elemanında __x yoksa tüm x-data alanlarını tara
+  let scope = document.querySelector('html')?.__x?.$data;
+  if (!scope?.nodes) {
+    // Fallback: Herhangi bir x-data (app) scope’u bul
+    for (const el of document.querySelectorAll('[x-data]')) {
+      if (el.__x && el.__x.$data?.nodes) {
+        scope = el.__x.$data;
+        break;
+      }
+    }
+  }
+  if (!scope?.nodes) return;
+  const node = scope.nodes.get(id);
+  if (node) {
+    requestAnimationFrame(() => {
+      scope.modalNode = node;
+      scope.modalOpen = true;
+      scope.network.selectNodes([id]);
+      scope.network.focus(id, { animation: true, scale: 1 });
+    });
+  }
+};
+
 </script>
+
 
 <!-- Service Worker kaydı -->
 <script>
@@ -932,109 +1039,6 @@ if ('serviceWorker' in navigator) {
   };
 </script>
 
-
-
-
-
-<!-- Timeline Paneli (GELİŞMİŞ, GLASS & KÜÇÜK KARTLAR) -->
-<div x-show="timelineOpen" x-transition class="fixed inset-0 z-40 p-4 flex items-center justify-center bg-black/80 backdrop-blur-sm">
-  <div class="bg-gray-900/70 glass rounded-2xl p-4 max-h-[90vh] overflow-y-auto w-full max-w-6xl border border-white/10">
-    <div class="flex justify-between items-center mb-3">
-      <h2 class="text-base sm:text-lg font-semibold">Vizyon Zaman Çizgisi</h2>
-      <div class="hidden sm:flex items-center gap-2 text-xs sm:text-sm opacity-80">
-        <span x-text="selectedUniverse ? formatUniverseName(selectedUniverse) : 'Tüm Evrenler'"></span>
-        <span>•</span>
-        <span x-text="timelineSortedNodes.length + ' yapım'"></span>
-      </div>
-      <button @click="timelineOpen = false" class="text-xs sm:text-sm opacity-80 hover:opacity-100">Kapat ✖</button>
-    </div>
-
-    <!-- Yıl Grupları -->
-    <template x-for="[year, items] in groupTimelineByYear" :key="year">
-      <section class="mb-5">
-        <div class="flex items-center justify-between mb-2">
-          <h3 class="text-sm sm:text-base font-semibold opacity-90">📅 <span x-text="year"></span></h3>
-          <div class="text-[11px] sm:text-xs opacity-70" x-text="items.length + ' yapım'"></div>
-        </div>
-
-        <!-- Masaüstü: daha küçük kartlar, daha fazla sütun -->
-        <div class="hidden sm:grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2.5">
-          <template x-for="n in items" :key="n.id">
-            <div class="glass border border-white/10 rounded-xl overflow-hidden hover:bg-white/10 transition cursor-pointer shadow-sm"
-                 @click="__openNode(n.id)">
-              <div class="aspect-[2/3] bg-black/30 overflow-hidden">
-                <img :src="n.image || 'images/placeholder.jpg'" alt="" class="w-full h-full object-cover" loading="lazy" />
-              </div>
-              <div class="px-2 py-1.5">
-                <div class="text-[11px] opacity-70" x-text="toTRDate(n.release_date)"></div>
-                <div class="text-xs font-semibold leading-snug line-clamp-2 mt-0.5" x-text="n.label"></div>
-              </div>
-            </div>
-          </template>
-        </div>
-
-        <!-- Mobil: daha küçük kart + yatay kaydırma -->
-        <div class="sm:hidden -mx-2 px-2 overflow-x-auto flex gap-2.5 snap-x snap-mandatory pb-2 no-scrollbar">
-          <template x-for="n in items" :key="n.id">
-            <div class="min-w-[46%] max-w-[60%] glass border border-white/10 rounded-xl overflow-hidden hover:bg-white/10 transition cursor-pointer snap-start shadow-sm"
-                 @click="__openNode(n.id)">
-              <div class="aspect-[2/3] bg-black/30 overflow-hidden">
-                <img :src="n.image || 'images/placeholder.jpg'" alt="" class="w-full h-full object-cover" loading="lazy" />
-              </div>
-              <div class="px-2 py-1.5">
-                <div class="text-[11px] opacity-70" x-text="toTRDate(n.release_date)"></div>
-                <div class="text-xs font-semibold leading-snug line-clamp-2 mt-0.5" x-text="n.label"></div>
-              </div>
-            </div>
-          </template>
-        </div>
-      </section>
-    </template>
-
-    <template x-if="!groupTimelineByYear.length">
-      <div class="text-sm opacity-70">Gösterilecek yapım bulunamadı.</div>
-    </template>
-  </div>
-</div>
-<!-- Masaüstü: çok sütunlu grid -->
-        <div class="hidden sm:grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
-          <template x-for="n in items" :key="n.id">
-            <div class="bg-white/5 border border-white/10 rounded-lg overflow-hidden hover:bg-white/10 transition cursor-pointer"
-                 @click="__openNode(n.id)">
-              <div class="aspect-[3/4] bg-black/40 overflow-hidden">
-                <img :src="n.image || 'images/placeholder.jpg'" alt="" class="w-full h-full object-cover" loading="lazy" />
-              </div>
-              <div class="p-2">
-                <div class="text-xs opacity-70" x-text="toTRDate(n.release_date)"></div>
-                <div class="font-semibold leading-snug line-clamp-2 mt-0.5" x-text="n.label"></div>
-              </div>
-            </div>
-          </template>
-        </div>
-
-        <!-- Mobil: yatay kaydırma (snap) -->
-        <div class="sm:hidden -mx-2 px-2 overflow-x-auto flex gap-3 snap-x snap-mandatory pb-2 no-scrollbar">
-          <template x-for="n in items" :key="n.id">
-            <div class="min-w-[58%] max-w-[70%] bg-white/5 border border-white/10 rounded-lg overflow-hidden hover:bg-white/10 transition cursor-pointer snap-start"
-                 @click="__openNode(n.id)">
-              <div class="aspect-[3/4] bg-black/40 overflow-hidden">
-                <img :src="n.image || 'images/placeholder.jpg'" alt="" class="w-full h-full object-cover" loading="lazy" />
-              </div>
-              <div class="p-2">
-                <div class="text-xs opacity-70" x-text="toTRDate(n.release_date)"></div>
-                <div class="font-semibold leading-snug line-clamp-2 mt-0.5" x-text="n.label"></div>
-              </div>
-            </div>
-          </template>
-        </div>
-      </section>
-    </template>
-
-    <template x-if="!groupTimelineByYear.length">
-      <div class="text-sm opacity-70">Gösterilecek yapım bulunamadı.</div>
-    </template>
-  </div>
-</div>
 </template>
     </div>
   </div>
