@@ -959,7 +959,7 @@
      {
       "from": "film/disney/1937_snow_white_and_the_seven_dwarfs",
       "to": "kisa_film/disney_mickey_short_steamboat_willie",
-      "type": "inspirasyon",
+      "type": "Esinlenme",
       "weight": 0.7,
       "sources": [],
       "notes": "Steamboat Willie, Disney animasyonlarının temelini oluşturur."
@@ -977,6 +977,7 @@
       "to": "film/pixar/2012_brave",
       "type": "Teori Bağlantısı",
       "weight": 1.0,
+      "sources": [],
       "notes": "The Good Dinosaur, 65 milyon yıl önce Kretase döneminde geçer ve Pixar evreninin alternatif tarihini başlatır. Dinozorların zekası ve hayatta kalışı ile insan etkisinin çevresel sonuçlarını gösterir. Bu dönem, evrenin temellerini oluşturur ve sonraki sihirli olaylara zemin hazırlar."
     },
     {
@@ -984,6 +985,7 @@
       "to": "film/pixar/2004_the_incredibles",
       "type": "Teori Bağlantısı",
       "weight": 0.95,
+      "sources": [],
       "notes": "Brave, 10. yüzyılda sihir ve doğaüstü güçlerin dünyaya girişiyle insan ve sihirli varlıklar arasındaki etkileşimi simgeler. The Incredibles ise 1950-60’larda insan enerjisinin süper kahramanlara dönüşümünü gösterir. Bu iki film, sihrin ve teknolojinin evrimine dair bağlantılı iki önemli dönüm noktasıdır."
     },
     {
@@ -991,6 +993,7 @@
       "to": "film/pixar/1995_toy_story",
       "type": "Teori Bağlantısı",
       "weight": 0.9,
+      "sources": [],
       "notes": "The Incredibles’daki süper güç teknolojisi ve hükümet destekli programlar, 1995 Toy Story’de BnL şirketinin oyuncakları enerji ile beslemesi için altyapı sağlar. Bu bağ, insan enerjisinin teknolojiyle birleşimini ve oyuncakların bilinç kazanmasını teorik olarak açıklar."
     },
     {
@@ -998,6 +1001,7 @@
       "to": "film/pixar/1999_toy_story_2",
       "type": "Teori Bağlantısı",
       "weight": 1.0,
+      "sources": [],
       "notes": "Toy Story 2, ilk filmin devamı olarak oyuncakların bilinç kazanması, sahiplerine duydukları bağlılık ve kendi kimliklerini keşfetmeleri temasını derinleştirir. Teori açısından evrenin temel kurgu dinamiklerinin güçlendiği önemli bir aşamadır."
     },
     {
@@ -1005,6 +1009,7 @@
       "to": "film/pixar/2010_toy_story_3",
       "type": "Teori Bağlantısı",
       "weight": 1.0,
+      "sources": [],
       "notes": "Toy Story 3, oyuncakların sahiplerinin değişen hayatlarına uyum sağlama sürecini anlatırken evrenin devamlılığını ve oyuncakların varoluş mücadelesini başarıyla sürdürür. Oyuncakların aidiyet ve bağlılık temaları teori içinde kritik öneme sahiptir."
     },
     {
@@ -1012,6 +1017,7 @@
       "to": "film/pixar/2016_finding_dory",
       "type": "Teori Bağlantısı",
       "weight": 0.9,
+      "sources": [],
       "notes": "Finding Dory, Finding Nemo’nun devamı olarak deniz altı ekosistemindeki gelişmiş zekâ ve hafıza temalarını daha detaylı işler. Bu bağlamda, bireysel kimlik ve hafızanın evrimi teori açısından önemli bir bağlantıdır."
     },
     {
@@ -1019,6 +1025,7 @@
       "to": "film/pixar/2007_toy_story_3",
       "type": "Teori Bağlantısı",
       "weight": 0.8,
+      "sources": [],
       "notes": "Ratatouille’da hayvan zekâsının insan kültürüyle etkileşimi, Toy Story 3’te oyuncakların insan yaşamındaki yerini destekleyen bir temadır. İki film de duygusal bağlar ve varoluş mücadelesini farklı açılardan inceler."
     },
     {
@@ -1026,6 +1033,7 @@
       "to": "film/pixar/2006_cars",
       "type": "Teori Bağlantısı",
       "weight": 0.85,
+      "sources": [],
       "notes": "Wall-E, Dünya’nın aşırı tüketim sonucu yaşanmaz hale gelmesini ve insanlığın uzaya taşınmasını anlatırken, Cars serisi makinelerin dünyaya hükmettiği dönemi temsil eder. Bu iki dönem evrenin farklı aşamalarını gösterir."
     },
     {
@@ -1033,6 +1041,7 @@
       "to": "film/pixar/2015_inside_out",
       "type": "Teori Bağlantısı",
       "weight": 0.9,
+      "sources": [],
       "notes": "Soul ve Inside Out filmleri insan bilinci ve ruhani varoluş temalarını farklı perspektiflerden ele alır. Inside Out duygusal zekâyı, Soul ise yaşam ve ölüm arasındaki ruhani yolculuğu detaylandırır; bu iki film birbirini tamamlar niteliktedir."
     },
     {
@@ -1040,6 +1049,7 @@
       "to": "film/pixar/2020_soul",
       "type": "Teori Bağlantısı",
       "weight": 0.8,
+      "sources": [],
       "notes": "Coco ve Soul, ölüm sonrası yaşam ve ruhun yolculuğu temalarını farklı kültürel ve felsefi açıdan ele alır. Her iki film, insan hayatının metafizik boyutlarını teorik olarak güçlü biçimde temsil eder."
     }
   ]
