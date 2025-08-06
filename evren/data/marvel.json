@@ -548,7 +548,7 @@
   ],
   "edges": [
     {
-      "from": "film/marvel/2008_iron_man",
+      "from": "film/mcu/2008_iron_man",
       "to": "film/marvel/2010_iron_man_2",
       "type": "Devam",
       "weight": 1,
