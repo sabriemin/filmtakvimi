@@ -7,7 +7,7 @@
       "image": "images/pandora.jpg",
       "shape": "image",
       "description": "'Avatar' filminde doğa ile ruhsal bağların derinliği teması güçlü bir anlatımla işlenir. Pandora'nın büyüleyici doğası ve ruhsal derinliği, insanlığın açgözlülüğüyle çarpışır. Film, görsel ihtişamının ötesinde, kimlik, aidiyet ve direniş gibi evrensel değerleri sorgular.",
-      "refers_to": "Avatar, Avatar: The Way of Water ve Avatar 5 filmlerine anlatı devamlılığı açısından güçlü göndermeler yapar. Özellikle karakter gelişimi, aile bağları ve Pandora'nın korunmasına dair ortak vurgular öne çıkar.",
+      "refers_to": "Avatar, Avatar: The Way of Water ve Avatar 5 filmlerine anlatı Devamlılığı açısından güçlü göndermeler yapar. Özellikle karakter gelişimi, aile bağları ve Pandora'nın korunmasına dair ortak vurgular öne çıkar.",
       "type": "film",
       "release_date": "2009-12-18",
       "level": 0
@@ -43,7 +43,7 @@
       "image": "images/pandora.jpg",
       "shape": "image",
       "description": "'Avatar 4' filminde insan istilasının yol açtığı yıkım teması güçlü bir anlatımla işlenir. Pandora'nın büyüleyici doğası ve ruhsal derinliği, insanlığın açgözlülüğüyle çarpışır. Film, görsel ihtişamının ötesinde, kimlik, aidiyet ve direniş gibi evrensel değerleri sorgular.",
-      "refers_to": "Avatar 4, Avatar 3 ve Avatar: The Way of Water filmlerine anlatı devamlılığı açısından güçlü göndermeler yapar. Özellikle karakter gelişimi, aile bağları ve Pandora'nın korunmasına dair ortak vurgular öne çıkar.",
+      "refers_to": "Avatar 4, Avatar 3 ve Avatar: The Way of Water filmlerine anlatı Devamlılığı açısından güçlü göndermeler yapar. Özellikle karakter gelişimi, aile bağları ve Pandora'nın korunmasına dair ortak vurgular öne çıkar.",
       "type": "film",
       "release_date": "2029-12-21",
       "level": 3
@@ -65,22 +65,22 @@
     {
       "from": "film/avatar",
       "to": "film/avatarthewayofwater",
-      "type": "devam"
+      "type": "Devam"
     },
     {
       "from": "film/avatarthewayofwater",
       "to": "film/avatar3",
-      "type": "devam"
+      "type": "Devam"
     },
     {
       "from": "film/avatar3",
       "to": "film/avatar4",
-      "type": "devam"
+      "type": "Devam"
     },
     {
       "from": "film/avatar4",
       "to": "film/avatar5",
-      "type": "devam"
+      "type": "Devam"
     }
   ]
 }

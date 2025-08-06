@@ -137,62 +137,62 @@
     {
       "from": "film/harrypotterandthesorcerersstone",
       "to": "film/harrypotterandthechamberofsecrets",
-      "type": "devam"
+      "type": "Devam"
     },
     {
       "from": "film/harrypotterandthechamberofsecrets",
       "to": "film/harrypotterandtheprisonerofazkaban",
-      "type": "devam"
+      "type": "Devam"
     },
     {
       "from": "film/harrypotterandtheprisonerofazkaban",
       "to": "film/harrypotterandthegobletoffire",
-      "type": "devam"
+      "type": "Devam"
     },
     {
       "from": "film/harrypotterandthegobletoffire",
       "to": "film/harrypotterandtheorderofthephoenix",
-      "type": "devam"
+      "type": "Devam"
     },
     {
       "from": "film/harrypotterandtheorderofthephoenix",
       "to": "film/harrypotterandthehalfbloodprince",
-      "type": "devam"
+      "type": "Devam"
     },
     {
       "from": "film/harrypotterandthehalfbloodprince",
       "to": "film/harrypotterandthedeathlyhallowspart1",
-      "type": "devam"
+      "type": "Devam"
     },
     {
       "from": "film/harrypotterandthedeathlyhallowspart1",
       "to": "film/harrypotterandthedeathlyhallowspart2",
-      "type": "devam"
+      "type": "Devam"
     },
     {
       "from": "film/harrypotterandthedeathlyhallowspart2",
       "to": "film/fantasticbeastsandwheretofindthem",
-      "type": "devam"
+      "type": "Devam"
     },
     {
       "from": "film/fantasticbeastsandwheretofindthem",
       "to": "film/fantasticbeaststhecrimesofgrindelwald",
-      "type": "devam"
+      "type": "Devam"
     },
     {
       "from": "film/fantasticbeaststhecrimesofgrindelwald",
       "to": "film/fantasticbeaststhesecretsofdumbledore",
-      "type": "devam"
+      "type": "Devam"
     },
     {
       "from": "film/fantasticbeastsandwheretofindthem",
       "to": "film/fantasticbeaststhecrimesofgrindelwald",
-      "type": "devam"
+      "type": "Devam"
     },
     {
       "from": "film/fantasticbeaststhecrimesofgrindelwald",
       "to": "film/fantasticbeaststhesecretsofdumbledore",
-      "type": "devam"
+      "type": "Devam"
     },
     {
       "from": "film/fantasticbeaststhesecretsofdumbledore",

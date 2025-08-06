@@ -1,678 +1,730 @@
 {
   "nodes": [
     {
-      "id": "ironMan2008",
+      "id": "film/marvel/2008_iron_man",
       "label": "Iron Man (2008)",
       "title": "Iron Man",
-      "image": "images/marvel.jpg",
-      "shape": "image",
-      "description": "'Iron Man' yapımı, Marvel Sinematik Evreni’nde aile, kayıp ve intikam döngüsü temasını derinlemesine işler. Film, karakterin içsel çatışmalarını, geçmişin gölgelerini ve kahramanlıkla gelen bedelleri ele alır. Aksiyonun yanı sıra duygusal çözülmeler ve çok katmanlı hikâyelerle öne çıkar.",
-      "refers_to": "WandaVision ve Loki ile Iron Man arasında kurulan ilişkiler, çoklu evren anlatısında zaman yolculuğu, teknolojik miras ve kahramanlık ideallerinin değişimi gibi konulara dayalıdır. Bu göndermeler evrenin sürekliliğini destekler.",
       "type": "film",
       "release_date": "2008-05-02",
-      "level": 0
-    },
-    {
-      "id": "incredibleHulk2008",
-      "label": "The Incredible Hulk (2008)",
-      "title": "The Incredible Hulk",
+      "end_date": null,
       "image": "images/marvel.jpg",
       "shape": "image",
-      "description": "'The Incredible Hulk' yapımı, Marvel Sinematik Evreni’nde teknolojinin sınırları ile etik çelişkiler temasını derinlemesine işler. Film, karakterin içsel çatışmalarını, geçmişin gölgelerini ve kahramanlıkla gelen bedelleri ele alır. Aksiyonun yanı sıra duygusal çözülmeler ve çok katmanlı hikâyelerle öne çıkar.",
-      "refers_to": "Thor: The Dark World ve Captain America: The First Avenger ile The Incredible Hulk arasında kurulan ilişkiler, çoklu evren anlatısında zaman yolculuğu, teknolojik miras ve kahramanlık ideallerinin değişimi gibi konulara dayalıdır. Bu göndermeler evrenin sürekliliğini destekler.",
-      "type": "film",
-      "release_date": "2008-06-13",
-      "level": 0
-    },
-    {
-      "id": "ironMan22010",
-      "label": "Iron Man 2 (2010)",
-      "title": "Iron Man 2",
-      "image": "images/marvel.jpg",
-      "shape": "image",
-      "description": "'Iron Man 2' yapımı, Marvel Sinematik Evreni’nde aile, kayıp ve intikam döngüsü temasını derinlemesine işler. Film, karakterin içsel çatışmalarını, geçmişin gölgelerini ve kahramanlıkla gelen bedelleri ele alır. Aksiyonun yanı sıra duygusal çözülmeler ve çok katmanlı hikâyelerle öne çıkar.",
-      "refers_to": "WandaVision ve The Avengers ile Iron Man 2 arasında kurulan ilişkiler, çoklu evren anlatısında zaman yolculuğu, teknolojik miras ve kahramanlık ideallerinin değişimi gibi konulara dayalıdır. Bu göndermeler evrenin sürekliliğini destekler.",
-      "type": "film",
-      "release_date": "2010-05-07",
-      "level": 1
-    },
-    {
-      "id": "thor2011",
-      "label": "Thor (2011)",
-      "title": "Thor",
-      "image": "images/marvel.jpg",
-      "shape": "image",
-      "description": "'Thor' yapımı, Marvel Sinematik Evreni’nde güç ve sorumluluk ilişkisi temasını derinlemesine işler. Film, karakterin içsel çatışmalarını, geçmişin gölgelerini ve kahramanlıkla gelen bedelleri ele alır. Aksiyonun yanı sıra duygusal çözülmeler ve çok katmanlı hikâyelerle öne çıkar.",
-      "refers_to": "Thor filminde, Ironheart ve Spider-Man: No Way Home ile doğrudan ilişkili olan karakterler üzerinden gönderme yapılır. Özellikle ortak düşmanlar, takım kurma süreci ve süper kahramanların kişisel yolculukları bu bağlantıları güçlendirir.",
-      "type": "film",
-      "release_date": "2011-05-06",
-      "level": 2
-    },
-    {
-      "id": "captainAmerica2011",
-      "label": "Captain America: The First Avenger (2011)",
-      "title": "Captain America: The First Avenger",
-      "image": "images/marvel.jpg",
-      "shape": "image",
-      "description": "'Captain America: The First Avenger' yapımı, Marvel Sinematik Evreni’nde multievrenin karmaşası ve olasılıklar temasını derinlemesine işler. Film, karakterin içsel çatışmalarını, geçmişin gölgelerini ve kahramanlıkla gelen bedelleri ele alır. Aksiyonun yanı sıra duygusal çözülmeler ve çok katmanlı hikâyelerle öne çıkar.",
-      "refers_to": "Iron Man ve Black Panther ile olan bağlar, Captain America: The First Avenger içinde yalnızca olaylarla değil, aynı zamanda diyaloglar, simgesel kostümler ve görsel motifler aracılığıyla da kurulur. Böylece Marvel evreni çok katmanlı hale gelir.",
-      "type": "film",
-      "release_date": "2011-07-22",
-      "level": 2
-    },
-    {
-      "id": "avengers2012",
-      "label": "The Avengers (2012)",
-      "title": "The Avengers",
-      "image": "images/marvel.jpg",
-      "shape": "image",
-      "description": "'The Avengers' yapımı, Marvel Sinematik Evreni’nde evrensel tehdide karşı birlik temasını derinlemesine işler. Film, karakterin içsel çatışmalarını, geçmişin gölgelerini ve kahramanlıkla gelen bedelleri ele alır. Aksiyonun yanı sıra duygusal çözülmeler ve çok katmanlı hikâyelerle öne çıkar.",
-      "refers_to": "The Avengers filminde, Captain Marvel ve The Marvels ile doğrudan ilişkili olan karakterler üzerinden gönderme yapılır. Özellikle ortak düşmanlar, takım kurma süreci ve süper kahramanların kişisel yolculukları bu bağlantıları güçlendirir.",
-      "type": "film",
-      "release_date": "2012-05-04",
+      "description": "Tony Stark, zengin ve dahi bir mühendis olarak, Afganistan’da kaçırılması sonrası hayatını değiştiren bir dönüşüm yaşar. Kendi geliştirdiği yüksek teknoloji zırhı ile Iron Man’e dönüşür ve hem kişisel kurtuluşunu hem de dünyayı tehdit eden güçlere karşı savaşını başlatır. Film, teknolojinin gücünü, kişisel sorumluluğu ve kahraman olmanın karmaşık yanlarını detaylıca işler. Stark’ın egosu ile fedakarlık arasındaki çatışma, modern süper kahraman anlatısına yeni bir soluk getirir. Aynı zamanda, MCU evreninin inşasında kritik bir adım olup, ilerleyen yapımların temelini oluşturur. Film, aksiyon dolu sahneleri ve karakter gelişimiyle hem eleştirmenlerden hem de izleyicilerden olumlu yorumlar almıştır.",
+      "refers_to": "Iron Man, Marvel Sinematik Evreni'nin başlangıcını temsil eder ve Tony Stark karakterinin derinlemesine incelendiği bir yapımdır. Film, teknolojinin etik sınırları, kahramanlık kavramı ve bireysel dönüşüm temalarını vurgular. Stark’ın kaçırılması ve ardından geliştirdiği zırh, modern kahramanlık hikayelerinin simgesi haline gelmiştir. MCU’nun sonraki filmlerinde Stark’ın liderlik rolü, teknolojik inovasyonlar ve karakter gelişimi bu filmde atılan temellerle şekillenir. Ayrıca, film evrenin geri kalanıyla bağlantılı pek çok ipucu barındırır ve bütünlüğü sağlar.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://www.marvel.com/movies/iron-man"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Iron_Man_(2008_film)"}
+      ],
+      "lang": "tr",
       "level": 3
     },
     {
-      "id": "ironMan32013",
+      "id": "film/marvel/2008_the_incredible_hulk",
+      "label": "The Incredible Hulk (2008)",
+      "title": "The Incredible Hulk",
+      "type": "film",
+      "release_date": "2008-06-13",
+      "end_date": null,
+      "image": "images/marvel.jpg",
+      "shape": "image",
+      "description": "Bruce Banner, genetik deneyler sonucu kendini Hulk’a dönüştüren bir bilim insanıdır. Film, Banner’ın bu dönüşümle başa çıkma mücadelesini, hem içsel çatışmalarını hem de devletin onu avlamasını anlatır. Şiddetin kontrolü, insan doğasının sınırları ve kahramanlık temaları derinlemesine işlenir. Banner, kendi kimliği ve insanlık hali arasında gidip gelirken, hem kendi kontrolünü sağlamaya çalışır hem de dünyayı tehdit eden güçlere karşı durur. Film, aksiyon ve bilim kurgu unsurlarını birleştirirken, MCU’nun evrensel yapısını genişleten önemli bir parça olarak öne çıkar.",
+      "refers_to": "The Incredible Hulk, MCU’nun erken dönem filmlerinden biri olarak Bruce Banner karakterinin dramatik dönüşümünü ele alır. Film, kahramanlık ve insan doğası arasındaki gerilimi ve kontrol temalarını işler. Banner’ın dönüşümü ve mücadelesi, MCU’nun genişleyen anlatısında önemli bir yer tutar. Filmde devlet ve bilim kurumlarının rolü, etik sorular ve kişisel sorumluluk bağlamında sorgulanır. Bu yapım, Hulk karakterinin evrimi ve sonraki MCU yapımlarıyla entegrasyonunda temel oluşturur.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://www.marvel.com/movies/the-incredible-hulk"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/The_Incredible_Hulk_(2008_film)"}
+      ],
+      "lang": "tr",
+      "level": 3
+    },
+    {
+      "id": "film/marvel/2010_iron_man_2",
+      "label": "Iron Man 2 (2010)",
+      "title": "Iron Man 2",
+      "type": "film",
+      "release_date": "2010-05-07",
+      "end_date": null,
+      "image": "images/marvel.jpg",
+      "shape": "image",
+      "description": "Tony Stark, Iron Man olarak kamuya açıklanmasının ardından kendisini hem yeni düşmanlara hem de sağlık sorunlarına karşı mücadele ederken bulur. Stark’ın artan halk baskısı ve rakiplerin tehditleri, onun kişisel ve profesyonel sınırlarını zorlar. Film, teknoloji, sorumluluk ve miras temalarını işlerken, Stark’ın karakter gelişimi ve gelecekteki kahramanlar için yol açtığı liderlik rolüne odaklanır. Hikaye, Stark’ın geçmişi ve ailesiyle yüzleşmesi, yeni ittifaklar ve düşmanlıklarla örülür. Ayrıca, Avengers’ın kurulma sürecinin zeminini hazırlar.",
+      "refers_to": "Iron Man 2, MCU’nun erken evrelerinde Tony Stark karakterinin gelişimini ve zorluklarını detaylandırır. Film, Stark’ın sağlık sorunları, halkla ilişkiler ve teknoloji arasındaki dengeleri keşfederken liderlik temasını güçlendirir. Ayrıca, yeni düşmanların ortaya çıkması ve Stark’ın geçmişiyle yüzleşmesi, ilerleyen evrende önemli rol oynar. Avengers takımı için hazırlık ve bağlam sunan yapım, MCU’nun sürekliliğini sağlar ve karakterin derinleşmesini destekler.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://www.marvel.com/movies/iron-man-2"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Iron_Man_2"}
+      ],
+      "lang": "tr",
+      "level": 3
+    },
+    {
+      "id": "film/marvel/2011_thor",
+      "label": "Thor (2011)",
+      "title": "Thor",
+      "type": "film",
+      "release_date": "2011-05-06",
+      "end_date": null,
+      "image": "images/marvel.jpg",
+      "shape": "image",
+      "description": "Asgard’ın güçlü prensi Thor, kibri ve sorumsuzluğu yüzünden Dünya’ya sürgün edilir. İnsanlarla olan ilişkisi ve dünyayı koruma sorumluluğu, onun olgunlaşma ve kahramanlık yolculuğunda merkezî bir rol oynar. Film, mitoloji ve bilim kurgu unsurlarını harmanlayarak, evrenin farklı boyutlarını keşfeder. Thor’un ailesi ve Asgard’daki siyasi çekişmeler, hikâyeye epik bir derinlik kazandırır. Film, MCU’nun büyüyen evrenine yeni bir boyut getirir ve mitolojik unsurlarla modern anlatıyı birleştirir.",
+      "refers_to": "Thor, MCU’nun Asgard mitolojisini ve karakter gelişimini tanıtan yapımıdır. Thor’un sürgünü, insanlarla etkileşimi ve sorumluluk bilincini kazanma süreci, kahramanlık temasını derinleştirir. Asgard ve diğer mitolojik unsurlar, evrenin genişlemesine katkı sağlar. Film, aile, görev ve liderlik temalarını işlerken, Thor’un sonraki maceralarına temel oluşturur. MCU’da mitoloji ve bilim kurgu arasında köprü kuran önemli bir yapımdır.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://www.marvel.com/movies/thor"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Thor_(film)"}
+      ],
+      "lang": "tr",
+      "level": 3
+    },
+    {
+      "id": "film/marvel/2011_captain_america_first_avenger",
+      "label": "Captain America: İlk Yenilmez (2011)",
+      "title": "Captain America: The First Avenger",
+      "type": "film",
+      "release_date": "2011-07-22",
+      "end_date": null,
+      "image": "images/marvel.jpg",
+      "shape": "image",
+      "description": "Steve Rogers, II. Dünya Savaşı sırasında süper asker serumuyla güçlendirilerek Captain America’ya dönüşür. HYDRA örgütüne karşı verdiği mücadele, özgürlük ve cesaret temalarını işler. Film, MCU’nun temellerini atarken hem karakter gelişimini hem de genişleyen evrenin başlangıcını anlatır. Bu süreçte Rogers, ihanet ve kayıplarla yüzleşir, kişisel fedakarlıklarla kahraman olmanın ne anlama geldiğini keşfeder. Olay örgüsü, tarihî ve bilim kurgu unsurlarını birleştirerek, izleyiciye duygusal ve epik bir deneyim sunar. Ayrıca film, Steve Rogers’ın modern dünyaya adaptasyonuna zemin hazırlar. MCU’nun geri kalan yapımları için köprü vazifesi görür ve karakterin evrimi boyunca yaşadığı değişimlerin temelini atar.",
+      "refers_to": "Bu film, Captain America karakterinin köken hikayesini anlatır ve MCU’nun ilk evrelerinde önemli bir mihenk taşıdır. Rogers’ın süper asker oluşu, özgürlük ve vatanseverlik temalarıyla birleşerek geniş evrende etik ve kahramanlık kavramlarının tartışılmasına önayak olur. Filmde HYDRA’nın yükselişi ve ihanet teması, sonraki yapımlarda da etkisini gösterir. Tarihî olaylarla kurgusal ögelerin harmanlandığı anlatı, kahramanın kişisel mücadelesini genişletirken evrenin politik ve sosyal dinamiklerine de ışık tutar. MCU’nun ilerleyen yapımlarında Steve Rogers’ın liderlik rolü ve karakter gelişimi bu yapımda temellenmiştir.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://www.marvel.com/movies/captain-america-the-first-avenger"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Captain_America:_The_First_Avenger"}
+      ],
+      "lang": "tr",
+      "level": 3
+    },
+    {
+      "id": "film/marvel/2012_avengers",
+      "label": "The Avengers (2012)",
+      "title": "The Avengers",
+      "type": "film",
+      "release_date": "2012-05-04",
+      "end_date": null,
+      "image": "images/marvel.jpg",
+      "shape": "image",
+      "description": "Dünyanın en güçlü kahramanları, Loki’nin Dünya’yı ele geçirme tehdidine karşı bir araya gelir. Film, takım dinamikleri, bireysel çatışmalar ve kahramanlığın kolektif yönlerini işler. Avengers’ın kuruluşu, MCU evreninde bir dönüm noktasıdır ve karakterler arasındaki ilişki ağı genişler. Filmde aksiyon, mizah ve dramatik unsurlar başarılı şekilde dengelenirken, izleyiciye kahramanların birleşme sürecini etkileyici biçimde sunar. Ayrıca, film ilerleyen yapımlara birçok referans ve ipucu bırakır.",
+      "refers_to": "The Avengers, Marvel Sinematik Evreni’nin önemli bir dönüm noktasıdır ve süper kahramanların bir araya gelerek ortak bir amaç için mücadele ettiği hikâyeyi anlatır. Film, takım çalışması, liderlik ve bireysel yeteneklerin kolektif güce dönüşümü temalarını işler. Loki’nin tehdidi karşısında birleşen kahramanların çatışmaları ve uyum süreçleri, karakter gelişimine katkı sağlar. MCU’nun sonraki yapımlarında bu filmde atılan temalar ve karakterler üzerine inşa edilir. İzleyiciler için kahramanlık ve dostluk temasını pekiştiren önemli bir yapıttır.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://www.marvel.com/movies/avengers"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/The_Avengers_(2012_film)"}
+      ],
+      "lang": "tr",
+      "level": 3
+    },
+     {
+      "id": "film/marvel/2013_iron_man_3",
       "label": "Iron Man 3 (2013)",
       "title": "Iron Man 3",
-      "image": "images/marvel.jpg",
-      "shape": "image",
-      "description": "'Iron Man 3' yapımı, Marvel Sinematik Evreni’nde ekip ruhu ve fedakarlığın öne çıkışı temasını derinlemesine işler. Film, karakterin içsel çatışmalarını, geçmişin gölgelerini ve kahramanlıkla gelen bedelleri ele alır. Aksiyonun yanı sıra duygusal çözülmeler ve çok katmanlı hikâyelerle öne çıkar.",
-      "refers_to": "Iron Man 3 filminde, The Incredible Hulk ve Avengers: Infinity War ile doğrudan ilişkili olan karakterler üzerinden gönderme yapılır. Özellikle ortak düşmanlar, takım kurma süreci ve süper kahramanların kişisel yolculukları bu bağlantıları güçlendirir.",
       "type": "film",
       "release_date": "2013-05-03",
-      "level": 4
-    },
-    {
-      "id": "thorDarkWorld2013",
-      "label": "Thor: The Dark World (2013)",
-      "title": "Thor: The Dark World",
+      "end_date": null,
       "image": "images/marvel.jpg",
       "shape": "image",
-      "description": "'Thor: The Dark World' yapımı, Marvel Sinematik Evreni’nde aile, kayıp ve intikam döngüsü temasını derinlemesine işler. Film, karakterin içsel çatışmalarını, geçmişin gölgelerini ve kahramanlıkla gelen bedelleri ele alır. Aksiyonun yanı sıra duygusal çözülmeler ve çok katmanlı hikâyelerle öne çıkar.",
-      "refers_to": "Secret Invasion ve The Marvels ile Thor: The Dark World arasında kurulan ilişkiler, çoklu evren anlatısında zaman yolculuğu, teknolojik miras ve kahramanlık ideallerinin değişimi gibi konulara dayalıdır. Bu göndermeler evrenin sürekliliğini destekler.",
+      "description": "Tony Stark, Avengers savaşından sonra yaşadığı travmalarla baş etmeye çalışır. Yeni düşman Mandarin'in tehdidiyle yüzleşirken, Iron Man zırhlarını kaybeder ve kendi gücünü keşfetme yolculuğuna çıkar. Film, kişisel mücadele, kurtuluş ve kimlik arayışı temalarını derinleştirir. Stark'ın strateji ve dehası, aksiyon dolu sahnelerle birleşerek MCU'nun karakter gelişiminde önemli bir dönemeçtir. Ayrıca, film Stark ve Pepper Potts arasındaki ilişkiyi derinleştirir ve evrenin genişlemesine katkı sağlar.",
+      "refers_to": "Iron Man 3, Tony Stark'ın kişisel ve kahramanlık yolculuğunun kritik bir evresidir. Film, karakterin zorluklarla başa çıkma yöntemlerini ve kimlik sorgulamalarını detaylandırır. Mandarin tehdidi, Stark'ın geçmişi ve korkularıyla yüzleşmesini tetikler. Bu yapım, MCU'nun Devamında teknolojinin sınırlarını ve insanın direncini keşfetme temalarını destekler. Stark ve Pepper Potts ilişkisi, filmin duygusal omurgasını oluşturur ve sonraki filmlerde önemli rol oynar.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://www.marvel.com/movies/iron-man-3"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Iron_Man_3"}
+      ],
+      "lang": "tr",
+      "level": 3
+    },
+    {
+      "id": "film/marvel/2013_thor_dark_world",
+      "label": "Thor: Karanlık Dünya (2013)",
+      "title": "Thor: The Dark World",
       "type": "film",
       "release_date": "2013-11-08",
-      "level": 4
-    },
-    {
-      "id": "captainAmericaWS2014",
-      "label": "Captain America: The Winter Soldier (2014)",
-      "title": "Captain America: The Winter Soldier",
+      "end_date": null,
       "image": "images/marvel.jpg",
       "shape": "image",
-      "description": "'Captain America: The Winter Soldier' yapımı, Marvel Sinematik Evreni’nde multievrenin karmaşası ve olasılıklar temasını derinlemesine işler. Film, karakterin içsel çatışmalarını, geçmişin gölgelerini ve kahramanlıkla gelen bedelleri ele alır. Aksiyonun yanı sıra duygusal çözülmeler ve çok katmanlı hikâyelerle öne çıkar.",
-      "refers_to": "Captain America: The Winter Soldier filminde, The Falcon and the Winter Soldier ve Captain Marvel ile doğrudan ilişkili olan karakterler üzerinden gönderme yapılır. Özellikle ortak düşmanlar, takım kurma süreci ve süper kahramanların kişisel yolculukları bu bağlantıları güçlendirir.",
+      "description": "Thor, karanlık elf Malekith'in tehditlerine karşı mücadele ederken, Dünya ve Asgard arasında dengeyi korumaya çalışır. Film, aşk, sorumluluk ve kader temalarını işler. Jane Foster ile ilişkisi, Thor'un kişisel gelişimi ve kahramanlık yolculuğunda merkezî bir yer tutar. Evrenin farklı boyutları ve mitolojik unsurları detaylandırılırken, MCU'nun genişlemesine önemli katkılar sağlar. Film, karakterlerin ve evrenin daha karmaşık hale geldiği bir dönemin başlangıcını simgeler.",
+      "refers_to": "Thor: The Dark World, Thor ve Jane Foster arasındaki ilişkiyi ve Asgard'ın karşı karşıya olduğu tehditleri anlatır. Film, kader, aşk ve kahramanlık kavramlarını derinleştirir. Karanlık elflerin ortaya çıkışı ve evrenin farklı boyutlarının keşfi, MCU'nun mitolojik ve kozmik yönlerini genişletir. Bu yapım, Thor karakterinin gelişimini sürdürürken, MCU'nun sonraki evrelerine temel oluşturur. Ayrıca, evrenler arası denge ve güç dengesi temaları filmde önemli bir yer tutar.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://www.marvel.com/movies/thor-the-dark-world"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Thor:_The_Dark_World"}
+      ],
+      "lang": "tr",
+      "level": 3
+    },
+    {
+      "id": "film/marvel/2014_captain_america_winter_soldier",
+      "label": "Captain America: Kış Askeri (2014)",
+      "title": "Captain America: The Winter Soldier",
       "type": "film",
       "release_date": "2014-04-04",
-      "level": 5
-    },
-    {
-      "id": "guardiansOfTheGalaxy2014",
-      "label": "Guardians of the Galaxy (2014)",
-      "title": "Guardians of the Galaxy",
+      "end_date": null,
       "image": "images/marvel.jpg",
       "shape": "image",
-      "description": "'Guardians of the Galaxy' yapımı, Marvel Sinematik Evreni’nde teknolojinin sınırları ile etik çelişkiler temasını derinlemesine işler. Film, karakterin içsel çatışmalarını, geçmişin gölgelerini ve kahramanlıkla gelen bedelleri ele alır. Aksiyonun yanı sıra duygusal çözülmeler ve çok katmanlı hikâyelerle öne çıkar.",
-      "refers_to": "Guardians of the Galaxy yapımında, Captain Marvel ve Loki ile ilişkili çok sayıda göndermeye rastlamak mümkündür. Özellikle olay örgüsünde beliren çatışmalar, karakterlerin geçmişte yaşadıkları travmalar ve ekip içindeki dinamikler üzerinden güçlü bağlar kurulmuştur.",
+      "description": "Steve Rogers, modern dünyada S.H.I.E.L.D.'ın içindeki yolsuzluk ve tehditlerle mücadele ederken, geçmişinden gelen gizemli bir düşmanla yüzleşir. Film, özgürlük, güven ve ihanet temalarını işler. Kış Askeri'nin ortaya çıkışı, Rogers'ın sadakat sınavlarını ve kahramanlık yolculuğunu derinleştirir. Aksiyon dolu sahneler, karakter gelişimi ve siyasi entrikalarla MCU'nun daha karanlık ve karmaşık bir dönemi başlar. Film, Avengers sonrası evrenin güvenlik dinamiklerini şekillendirir.",
+      "refers_to": "Captain America: The Winter Soldier, MCU'nun en kritik yapımlarından biridir ve Steve Rogers'ın modern dünyadaki mücadelesini detaylandırır. Film, devlet kurumları, güven ve ihanet temalarını işler. Kış Askeri'nin kimliği ve geçmişi, Rogers'ın kahramanlık anlayışını sınar. Bu yapım, MCU'nun Devamındaki politik ve askeri konuların temelini atar ve karakterlerin gelişimini derinleştirir. Ayrıca, S.H.I.E.L.D.'ın çöküşü ve yeni tehditlerin yükselişi filmde önemli yer tutar.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://www.marvel.com/movies/captain-america-the-winter-soldier"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Captain_America:_The_Winter_Soldier"}
+      ],
+      "lang": "tr",
+      "level": 3
+    },
+    {
+      "id": "film/marvel/2014_guardians_of_the_galaxy",
+      "label": "Galaksinin Koruyucuları (2014)",
+      "title": "Guardians of the Galaxy",
       "type": "film",
       "release_date": "2014-08-01",
-      "level": 5
-    },
-    {
-      "id": "avengersAoU2015",
-      "label": "Avengers: Age of Ultron (2015)",
-      "title": "Avengers: Age of Ultron",
+      "end_date": null,
       "image": "images/marvel.jpg",
       "shape": "image",
-      "description": "'Avengers: Age of Ultron' yapımı, Marvel Sinematik Evreni’nde ekip ruhu ve fedakarlığın öne çıkışı temasını derinlemesine işler. Film, karakterin içsel çatışmalarını, geçmişin gölgelerini ve kahramanlıkla gelen bedelleri ele alır. Aksiyonun yanı sıra duygusal çözülmeler ve çok katmanlı hikâyelerle öne çıkar.",
-      "refers_to": "Avengers: Age of Ultron yapımında, Secret Invasion ve The Avengers ile ilişkili çok sayıda göndermeye rastlamak mümkündür. Özellikle olay örgüsünde beliren çatışmalar, karakterlerin geçmişte yaşadıkları travmalar ve ekip içindeki dinamikler üzerinden güçlü bağlar kurulmuştur.",
-      "type": "film",
-      "release_date": "2015-05-01",
-      "level": 6
+      "description": "Bir araya gelen farklı geçmişlere sahip suçlular ve maceraperestler, evreni tehdit eden büyük bir güce karşı güçlerini birleştirir. Film, aile, bağ, kahramanlık ve kefaret temalarını işler. Mizah ve aksiyonu ustaca harmanlayan anlatı, MCU'nun kozmik yönünü ve genişleyen evrenini başarılı şekilde temsil eder. Karakterlerin kişisel geçmişleri ve ilişkileri, takımın dinamiklerini derinleştirir. Film, görsel efektleri ve müzikleriyle de dikkat çeker.",
+      "refers_to": "Guardians of the Galaxy, Marvel Sinematik Evreni'nin kozmik yönünü açığa çıkaran önemli bir yapımdır. Film, farklı geçmişlerden gelen karakterlerin bir araya gelerek aile ve takım olma temasını işler. Evrenin kozmik tehditleri ve büyük güç dengeleri filmde ön plandadır. Karakter gelişimi ve mizah, yapımın temel taşlarındandır. MCU'nun sonraki yapımlarında bu film, galaksinin genişlemesine ve yeni kahramanların ortaya çıkmasına zemin hazırlar.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://www.marvel.com/movies/guardians-of-the-galaxy"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Guardians_of_the_Galaxy_(film)"}
+      ],
+      "lang": "tr",
+      "level": 3
     },
     {
-      "id": "antMan2015",
-      "label": "Ant-Man (2015)",
-      "title": "Ant-Man",
-      "image": "images/marvel.jpg",
-      "shape": "image",
-      "description": "'Ant-Man' yapımı, Marvel Sinematik Evreni’nde ekip ruhu ve fedakarlığın öne çıkışı temasını derinlemesine işler. Film, karakterin içsel çatışmalarını, geçmişin gölgelerini ve kahramanlıkla gelen bedelleri ele alır. Aksiyonun yanı sıra duygusal çözülmeler ve çok katmanlı hikâyelerle öne çıkar.",
-      "refers_to": "Ant-Man yapımında, Doctor Strange ve Captain America: The First Avenger ile ilişkili çok sayıda göndermeye rastlamak mümkündür. Özellikle olay örgüsünde beliren çatışmalar, karakterlerin geçmişte yaşadıkları travmalar ve ekip içindeki dinamikler üzerinden güçlü bağlar kurulmuştur.",
-      "type": "film",
-      "release_date": "2015-07-17",
-      "level": 6
-    },
-    {
-      "id": "civilWar2016",
-      "label": "Captain America: Civil War (2016)",
-      "title": "Captain America: Civil War",
-      "image": "images/marvel.jpg",
-      "shape": "image",
-      "description": "'Captain America: Civil War' yapımı, Marvel Sinematik Evreni’nde multievrenin karmaşası ve olasılıklar temasını derinlemesine işler. Film, karakterin içsel çatışmalarını, geçmişin gölgelerini ve kahramanlıkla gelen bedelleri ele alır. Aksiyonun yanı sıra duygusal çözülmeler ve çok katmanlı hikâyelerle öne çıkar.",
-      "refers_to": "The Incredible Hulk ve Hawkeye ile olan bağlar, Captain America: Civil War içinde yalnızca olaylarla değil, aynı zamanda diyaloglar, simgesel kostümler ve görsel motifler aracılığıyla da kurulur. Böylece Marvel evreni çok katmanlı hale gelir.",
-      "type": "film",
-      "release_date": "2016-05-06",
-      "level": 7
-    },
-    {
-      "id": "doctorStrange2016",
-      "label": "Doctor Strange (2016)",
-      "title": "Doctor Strange",
-      "image": "images/marvel.jpg",
-      "shape": "image",
-      "description": "'Doctor Strange' yapımı, Marvel Sinematik Evreni’nde güç ve sorumluluk ilişkisi temasını derinlemesine işler. Film, karakterin içsel çatışmalarını, geçmişin gölgelerini ve kahramanlıkla gelen bedelleri ele alır. Aksiyonun yanı sıra duygusal çözülmeler ve çok katmanlı hikâyelerle öne çıkar.",
-      "refers_to": "Doctor Strange, Ant-Man ve Captain America: Civil War yapımlarına hem karakter gelişimi hem de olayların zamansal ilerleyişi açısından referanslar sunar. Marvel evrenindeki kahramanların geçmişteki etkileşimleri, bu filmde farklı şekillerde yeniden yorumlanır.",
-      "type": "film",
-      "release_date": "2016-11-04",
-      "level": 7
-    },
-    {
-      "id": "gotgVol2_2017",
-      "label": "Guardians of the Galaxy Vol. 2 (2017)",
+      "id": "film/marvel/2017_guardians_of_the_galaxy_vol_2",
+      "label": "Galaksinin Koruyucuları Vol. 2 (2017)",
       "title": "Guardians of the Galaxy Vol. 2",
-      "image": "images/marvel.jpg",
-      "shape": "image",
-      "description": "'Guardians of the Galaxy Vol. 2' yapımı, Marvel Sinematik Evreni’nde güç ve sorumluluk ilişkisi temasını derinlemesine işler. Film, karakterin içsel çatışmalarını, geçmişin gölgelerini ve kahramanlıkla gelen bedelleri ele alır. Aksiyonun yanı sıra duygusal çözülmeler ve çok katmanlı hikâyelerle öne çıkar.",
-      "refers_to": "Ironheart ve Captain America: The First Avenger ile olan bağlar, Guardians of the Galaxy Vol. 2 içinde yalnızca olaylarla değil, aynı zamanda diyaloglar, simgesel kostümler ve görsel motifler aracılığıyla da kurulur. Böylece Marvel evreni çok katmanlı hale gelir.",
       "type": "film",
       "release_date": "2017-05-05",
-      "level": 8
-    },
-    {
-      "id": "spidermanHomecoming2017",
-      "label": "Spider-Man: Homecoming (2017)",
-      "title": "Spider-Man: Homecoming",
+      "end_date": null,
       "image": "images/marvel.jpg",
       "shape": "image",
-      "description": "'Spider-Man: Homecoming' yapımı, Marvel Sinematik Evreni’nde evrensel tehdide karşı birlik temasını derinlemesine işler. Film, karakterin içsel çatışmalarını, geçmişin gölgelerini ve kahramanlıkla gelen bedelleri ele alır. Aksiyonun yanı sıra duygusal çözülmeler ve çok katmanlı hikâyelerle öne çıkar.",
-      "refers_to": "Echo ve The Marvels ile olan bağlar, Spider-Man: Homecoming içinde yalnızca olaylarla değil, aynı zamanda diyaloglar, simgesel kostümler ve görsel motifler aracılığıyla da kurulur. Böylece Marvel evreni çok katmanlı hale gelir.",
+      "description": "Takım, aile bağlarını ve geçmişlerini sorgularken, kozmik tehditler ve kişisel çatışmalarla yüzleşir. Film, kimlik, bağışlama ve bağlılık temalarını işler. Mizah ve duygusal sahnelerle dolu anlatı, karakterlerin derinleşmesini sağlar. Evrenin kozmik dengeleri ve karakterlerin iç dünyası detaylandırılırken, takımın geleceği şekillenir. Film, MCU'nun gelişen evreninde önemli bir dönemeçtir.",
+      "refers_to": "Guardians of the Galaxy Vol. 2, karakterlerin kişisel geçmişleri ve takım dinamiklerini derinleştirir. Film, kimlik, aile ve bağışlama temalarını işler. Kozmik tehditler ve güç dengeleri anlatının merkezindedir. MCU'nun Devamında karakterlerin gelişimi ve takımın geleceği bu yapımla şekillenir. Mizah ve drama dengesi, filmin güçlü yanlarındandır. Bu film, önceki yapımla bağlantılı olarak evrenin genişlemesine Devam eder.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://www.marvel.com/movies/guardians-of-the-galaxy-vol-2"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Guardians_of_the_Galaxy_Vol._2"}
+      ],
+      "lang": "tr",
+      "level": 3
+    },
+    {
+      "id": "film/marvel/2014_captain_america_civil_war",
+      "label": "Captain America: İç Savaş (2016)",
+      "title": "Captain America: Civil War",
       "type": "film",
-      "release_date": "2017-07-07",
-      "level": 8
-    },
-    {
-      "id": "thorRagnarok2017",
-      "label": "Thor: Ragnarok (2017)",
-      "title": "Thor: Ragnarok",
+      "release_date": "2016-05-06",
+      "end_date": null,
       "image": "images/marvel.jpg",
       "shape": "image",
-      "description": "'Thor: Ragnarok' yapımı, Marvel Sinematik Evreni’nde teknolojinin sınırları ile etik çelişkiler temasını derinlemesine işler. Film, karakterin içsel çatışmalarını, geçmişin gölgelerini ve kahramanlıkla gelen bedelleri ele alır. Aksiyonun yanı sıra duygusal çözülmeler ve çok katmanlı hikâyelerle öne çıkar.",
-      "refers_to": "Thor: The Dark World ve Avengers: Infinity War ile Thor: Ragnarok arasında kurulan ilişkiler, çoklu evren anlatısında zaman yolculuğu, teknolojik miras ve kahramanlık ideallerinin değişimi gibi konulara dayalıdır. Bu göndermeler evrenin sürekliliğini destekler.",
-      "type": "film",
-      "release_date": "2017-11-03",
-      "level": 9
+      "description": "Avengers üyeleri, hükümetin süper kahraman faaliyetlerini denetleme girişimiyle ikiye bölünür. Steve Rogers ve Tony Stark liderliğinde oluşan karşıt gruplar arasında gerilim tırmanırken, dostluklar ve ittifaklar sınanır. Film, sorumluluk, özgürlük ve bağlılık temalarını işler. İç Savaş, MCU'nun karakter gelişimi ve politik temalarının önemli bir dönüm noktasıdır. Ayrıca, Spider-Man ve Black Panther gibi yeni kahramanların tanıtıldığı yapım, evrenin çeşitlenmesini sağlar.",
+      "refers_to": "Captain America: Civil War, süper kahramanların farklı ideolojiler doğrultusunda ayrışmasını ve çatışmasını ele alır. Film, sorumluluk ve özgürlük kavramlarını sorgular ve karakterlerin kişisel çatışmalarını derinleştirir. Rogers ve Stark arasındaki liderlik çekişmesi, filmin dramatik omurgasını oluşturur. Yeni kahramanların tanıtılması ve ilişkilerin gelişimi, MCU'nun sonraki evrelerine zemin hazırlar. Ayrıca, film süper kahramanların toplumdaki rolüne dair önemli mesajlar verir.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://www.marvel.com/movies/captain-america-civil-war"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Captain_America:_Civil_War"}
+      ],
+      "lang": "tr",
+      "level": 3
     },
     {
-      "id": "blackPanther2018",
-      "label": "Black Panther (2018)",
-      "title": "Black Panther",
-      "image": "images/marvel.jpg",
-      "shape": "image",
-      "description": "'Black Panther' yapımı, Marvel Sinematik Evreni’nde teknolojinin sınırları ile etik çelişkiler temasını derinlemesine işler. Film, karakterin içsel çatışmalarını, geçmişin gölgelerini ve kahramanlıkla gelen bedelleri ele alır. Aksiyonun yanı sıra duygusal çözülmeler ve çok katmanlı hikâyelerle öne çıkar.",
-      "refers_to": "Black Panther, Secret Invasion ve Moon Knight yapımlarına hem karakter gelişimi hem de olayların zamansal ilerleyişi açısından referanslar sunar. Marvel evrenindeki kahramanların geçmişteki etkileşimleri, bu filmde farklı şekillerde yeniden yorumlanır.",
-      "type": "film",
-      "release_date": "2018-02-16",
-      "level": 10
-    },
-    {
-      "id": "infinityWar2018",
-      "label": "Avengers: Infinity War (2018)",
-      "title": "Avengers: Infinity War",
-      "image": "images/marvel.jpg",
-      "shape": "image",
-      "description": "'Avengers: Infinity War' yapımı, Marvel Sinematik Evreni’nde güç ve sorumluluk ilişkisi temasını derinlemesine işler. Film, karakterin içsel çatışmalarını, geçmişin gölgelerini ve kahramanlıkla gelen bedelleri ele alır. Aksiyonun yanı sıra duygusal çözülmeler ve çok katmanlı hikâyelerle öne çıkar.",
-      "refers_to": "Moon Knight ve Captain Marvel ile Avengers: Infinity War arasında kurulan ilişkiler, çoklu evren anlatısında zaman yolculuğu, teknolojik miras ve kahramanlık ideallerinin değişimi gibi konulara dayalıdır. Bu göndermeler evrenin sürekliliğini destekler.",
-      "type": "film",
-      "release_date": "2018-04-27",
-      "level": 11
-    },
-    {
-      "id": "antManWasp2018",
-      "label": "Ant-Man and the Wasp (2018)",
-      "title": "Ant-Man and the Wasp",
-      "image": "images/marvel.jpg",
-      "shape": "image",
-      "description": "'Ant-Man and the Wasp' yapımı, Marvel Sinematik Evreni’nde zaman ve mekânın ötesindeki mücadele temasını derinlemesine işler. Film, karakterin içsel çatışmalarını, geçmişin gölgelerini ve kahramanlıkla gelen bedelleri ele alır. Aksiyonun yanı sıra duygusal çözülmeler ve çok katmanlı hikâyelerle öne çıkar.",
-      "refers_to": "Ant-Man and the Wasp, Captain America: The Winter Soldier ve Spider-Man: Homecoming yapımlarına hem karakter gelişimi hem de olayların zamansal ilerleyişi açısından referanslar sunar. Marvel evrenindeki kahramanların geçmişteki etkileşimleri, bu filmde farklı şekillerde yeniden yorumlanır.",
-      "type": "film",
-      "release_date": "2018-07-06",
-      "level": 11
-    },
-    {
-      "id": "captainMarvel2019",
-      "label": "Captain Marvel (2019)",
-      "title": "Captain Marvel",
-      "image": "images/marvel.jpg",
-      "shape": "image",
-      "description": "'Captain Marvel' yapımı, Marvel Sinematik Evreni’nde ekip ruhu ve fedakarlığın öne çıkışı temasını derinlemesine işler. Film, karakterin içsel çatışmalarını, geçmişin gölgelerini ve kahramanlıkla gelen bedelleri ele alır. Aksiyonun yanı sıra duygusal çözülmeler ve çok katmanlı hikâyelerle öne çıkar.",
-      "refers_to": "The Marvels ve Thor ile Captain Marvel arasında kurulan ilişkiler, çoklu evren anlatısında zaman yolculuğu, teknolojik miras ve kahramanlık ideallerinin değişimi gibi konulara dayalıdır. Bu göndermeler evrenin sürekliliğini destekler.",
-      "type": "film",
-      "release_date": "2019-03-08",
-      "level": 11
-    },
-    {
-      "id": "endgame2019",
-      "label": "Avengers: Endgame (2019)",
-      "title": "Avengers: Endgame",
-      "image": "images/marvel.jpg",
-      "shape": "image",
-      "description": "'Avengers: Endgame' yapımı, Marvel Sinematik Evreni’nde güç ve sorumluluk ilişkisi temasını derinlemesine işler. Film, karakterin içsel çatışmalarını, geçmişin gölgelerini ve kahramanlıkla gelen bedelleri ele alır. Aksiyonun yanı sıra duygusal çözülmeler ve çok katmanlı hikâyelerle öne çıkar.",
-      "refers_to": "Ironheart ve What If...? ile Avengers: Endgame arasında kurulan ilişkiler, çoklu evren anlatısında zaman yolculuğu, teknolojik miras ve kahramanlık ideallerinin değişimi gibi konulara dayalıdır. Bu göndermeler evrenin sürekliliğini destekler.",
-      "type": "film",
-      "release_date": "2019-04-26",
-      "level": 12
-    },
-    {
-      "id": "spidermanFFH2019",
-      "label": "Spider-Man: Far From Home (2019)",
-      "title": "Spider-Man: Far From Home",
-      "image": "images/marvel.jpg",
-      "shape": "image",
-      "description": "'Spider-Man: Far From Home' yapımı, Marvel Sinematik Evreni’nde evrensel tehdide karşı birlik temasını derinlemesine işler. Film, karakterin içsel çatışmalarını, geçmişin gölgelerini ve kahramanlıkla gelen bedelleri ele alır. Aksiyonun yanı sıra duygusal çözülmeler ve çok katmanlı hikâyelerle öne çıkar.",
-      "refers_to": "Avengers: Age of Ultron ve Black Widow ile Spider-Man: Far From Home arasında kurulan ilişkiler, çoklu evren anlatısında zaman yolculuğu, teknolojik miras ve kahramanlık ideallerinin değişimi gibi konulara dayalıdır. Bu göndermeler evrenin sürekliliğini destekler.",
-      "type": "film",
-      "release_date": "2019-07-02",
-      "level": 13
-    },
-    {
-      "id": "wandavision2021",
-      "label": "WandaVision (2021)",
-      "title": "WandaVision",
-      "image": "images/marvel.jpg",
-      "shape": "image",
-      "description": "'WandaVision' yapımı, Marvel Sinematik Evreni’nde teknolojinin sınırları ile etik çelişkiler temasını derinlemesine işler. Film, karakterin içsel çatışmalarını, geçmişin gölgelerini ve kahramanlıkla gelen bedelleri ele alır. Aksiyonun yanı sıra duygusal çözülmeler ve çok katmanlı hikâyelerle öne çıkar.",
-      "refers_to": "WandaVision, The Marvels ve Spider-Man: No Way Home yapımlarına hem karakter gelişimi hem de olayların zamansal ilerleyişi açısından referanslar sunar. Marvel evrenindeki kahramanların geçmişteki etkileşimleri, bu filmde farklı şekillerde yeniden yorumlanır.",
-      "type": "dizi",
-      "release_date": "2021-01-15",
-      "level": 14
-    },
-    {
-      "id": "falconWinterSoldier2021",
-      "label": "The Falcon and the Winter Soldier (2021)",
-      "title": "The Falcon and the Winter Soldier",
-      "image": "images/marvel.jpg",
-      "shape": "image",
-      "description": "'The Falcon and the Winter Soldier' yapımı, Marvel Sinematik Evreni’nde güç ve sorumluluk ilişkisi temasını derinlemesine işler. Film, karakterin içsel çatışmalarını, geçmişin gölgelerini ve kahramanlıkla gelen bedelleri ele alır. Aksiyonun yanı sıra duygusal çözülmeler ve çok katmanlı hikâyelerle öne çıkar.",
-      "refers_to": "The Avengers ve Avengers: Age of Ultron ile The Falcon and the Winter Soldier arasında kurulan ilişkiler, çoklu evren anlatısında zaman yolculuğu, teknolojik miras ve kahramanlık ideallerinin değişimi gibi konulara dayalıdır. Bu göndermeler evrenin sürekliliğini destekler.",
-      "type": "dizi",
-      "release_date": "2021-03-19",
-      "level": 14
-    },
-    {
-      "id": "loki2021",
-      "label": "Loki (2021)",
-      "title": "Loki",
-      "image": "images/marvel.jpg",
-      "shape": "image",
-      "description": "'Loki' yapımı, Marvel Sinematik Evreni’nde güç ve sorumluluk ilişkisi temasını derinlemesine işler. Film, karakterin içsel çatışmalarını, geçmişin gölgelerini ve kahramanlıkla gelen bedelleri ele alır. Aksiyonun yanı sıra duygusal çözülmeler ve çok katmanlı hikâyelerle öne çıkar.",
-      "refers_to": "Loki yapımında, Guardians of the Galaxy ve The Incredible Hulk ile ilişkili çok sayıda göndermeye rastlamak mümkündür. Özellikle olay örgüsünde beliren çatışmalar, karakterlerin geçmişte yaşadıkları travmalar ve ekip içindeki dinamikler üzerinden güçlü bağlar kurulmuştur.",
-      "type": "dizi",
-      "release_date": "2021-06-09",
-      "level": 14
-    },
-    {
-      "id": "blackWidow2021",
+      "id": "film/marvel/2018_black_widow",
       "label": "Black Widow (2021)",
       "title": "Black Widow",
-      "image": "images/marvel.jpg",
-      "shape": "image",
-      "description": "'Black Widow' yapımı, Marvel Sinematik Evreni’nde multievrenin karmaşası ve olasılıklar temasını derinlemesine işler. Film, karakterin içsel çatışmalarını, geçmişin gölgelerini ve kahramanlıkla gelen bedelleri ele alır. Aksiyonun yanı sıra duygusal çözülmeler ve çok katmanlı hikâyelerle öne çıkar.",
-      "refers_to": "Black Widow yapımında, What If...? ve Captain Marvel ile ilişkili çok sayıda göndermeye rastlamak mümkündür. Özellikle olay örgüsünde beliren çatışmalar, karakterlerin geçmişte yaşadıkları travmalar ve ekip içindeki dinamikler üzerinden güçlü bağlar kurulmuştur.",
       "type": "film",
       "release_date": "2021-07-09",
-      "level": 13
-    },
-    {
-      "id": "whatIf2021",
-      "label": "What If...? (2021)",
-      "title": "What If...?",
+      "end_date": null,
       "image": "images/marvel.jpg",
       "shape": "image",
-      "description": "'What If...?' yapımı, Marvel Sinematik Evreni’nde zaman ve mekânın ötesindeki mücadele temasını derinlemesine işler. Film, karakterin içsel çatışmalarını, geçmişin gölgelerini ve kahramanlıkla gelen bedelleri ele alır. Aksiyonun yanı sıra duygusal çözülmeler ve çok katmanlı hikâyelerle öne çıkar.",
-      "refers_to": "What If...? filminde, Guardians of the Galaxy Vol. 2 ve Thor ile doğrudan ilişkili olan karakterler üzerinden gönderme yapılır. Özellikle ortak düşmanlar, takım kurma süreci ve süper kahramanların kişisel yolculukları bu bağlantıları güçlendirir.",
+      "description": "Natasha Romanoff, geçmişindeki karanlık sırlarla yüzleşmek ve ailesini korumak için harekete geçer. Film, casusluk, aile bağları ve kurtuluş temalarını işler. Black Widow'un bağımsız hikayesi, karakterin Avengers'taki yerini ve kişisel mücadelelerini derinleştirir. Aksiyon dolu sahneler ve duygusal anlatım, MCU'nun karakter odaklı yapımlarından biridir. Film, Marvel evreninde kadının gücünü ve dayanıklılığını ön plana çıkarır.",
+      "refers_to": "Black Widow, Natasha Romanoff'un geçmişine odaklanan ve karakterin iç dünyasını detaylandıran bir yapımdır. Film, aile, sadakat ve özgürlük temalarını işler. Romanoff'un kişisel mücadelesi ve kurtuluş arayışı, Avengers'taki rolünü anlamlandırır. Aksiyon ve dramatik unsurların dengesi, filmin güçlü yanlarındandır. MCU'nun kadın kahramanlarına verdiği değerin somut bir göstergesidir ve evrenin çeşitliliğini artırır.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://www.marvel.com/movies/black-widow"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Black_Widow_(2021_film)"}
+      ],
+      "lang": "tr",
+      "level": 3
+    },
+    {
+      "id": "film/marvel/2018_black_panther",
+      "label": "Black Panther (2018)",
+      "title": "Black Panther",
+      "type": "film",
+      "release_date": "2018-02-16",
+      "end_date": null,
+      "image": "images/marvel.jpg",
+      "shape": "image",
+      "description": "T'Challa, babasının ölümünden sonra Wakanda kralı olur ve hem iç hem dış tehditlerle mücadele eder. Film, liderlik, kültür ve sorumluluk temalarını işler. Wakanda'nın gelişmiş teknolojisi ve geleneksel yapısı arasındaki çatışma anlatılır. Black Panther, kültürel önemi ve güçlü karakterleriyle MCU'nun en etkili yapımlarından biridir. Film, farklılıkların gücünü vurgularken, kahramanlık ve aidiyet kavramlarını derinleştirir.",
+      "refers_to": "Black Panther, MCU'da Afrikalı bir kahramanın liderlik mücadelesini ve kültürel zenginliğini anlatır. Film, T'Challa'nın kişisel ve toplumsal sorumlulukları arasındaki dengeyi keşfeder. Wakanda'nın teknolojik üstünlüğü ve kültürel değerleri, evrenin çeşitlenmesine katkı sağlar. Yapım, siyah kahraman temsiliyeti açısından dönüm noktasıdır ve MCU'nun genişlemesinde önemli rol oynar. Ayrıca, karakterlerin gelişimi ve ilişkileri filmde etkileyici biçimde işlenir.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://www.marvel.com/movies/black-panther"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Black_Panther_(film)"}
+      ],
+      "lang": "tr",
+      "level": 3
+    },
+    {
+      "id": "film/marvel/2017_spider_man_homecoming",
+      "label": "Spider-Man: Eve Dönüş (2017)",
+      "title": "Spider-Man: Homecoming",
+      "type": "film",
+      "release_date": "2017-07-07",
+      "end_date": null,
+      "image": "images/marvel.jpg",
+      "shape": "image",
+      "description": "Peter Parker, Tony Stark'ın rehberliğinde süper kahraman olmanın inceliklerini öğrenirken, gençlik sorunları ve kötülüğe karşı mücadele arasında denge kurar. Film, ergenlik temaları, sorumluluk ve kahramanlık arasında gidip gelen hikâyesiyle dikkat çeker. MCU'ya taze bir soluk getiren yapım, karakter gelişimi ve aksiyon sahneleriyle öne çıkar. Spider-Man'in özgün tonu, filmin başarısında önemli rol oynar.",
+      "refers_to": "Spider-Man: Homecoming, Peter Parker'ın MCU'daki ilk solo macerasıdır ve karakterin gençlik sorunlarıyla kahramanlık görevlerini dengelemesini anlatır. Tony Stark ile olan ilişkisi, filmde mentorluk ve sorumluluk temalarını güçlendirir. Film, Spider-Man'in karakter gelişimini destekler ve sonraki yapımlar için temel oluşturur. Ergenlik, kimlik ve kahramanlık gibi temalar, filmin dramatik omurgasını oluşturur. MCU'nun genç izleyiciye yönelik önemli yapımlarındandır.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://www.marvel.com/movies/spider-man-homecoming"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Spider-Man:_Homecoming"}
+      ],
+      "lang": "tr",
+      "level": 3
+    },
+    {
+      "id": "film/marvel/2016_doctor_strange",
+      "label": "Doctor Strange (2016)",
+      "title": "Doctor Strange",
+      "type": "film",
+      "release_date": "2016-11-04",
+      "end_date": null,
+      "image": "images/marvel.jpg",
+      "shape": "image",
+      "description": "Stephen Strange, kaza sonrası ellerini kaybettikten sonra mistik sanatlara yönelir ve evrenin koruyucusu olur. Film, kişisel dönüşüm, mistisizm ve kader temalarını işler. Strange’in büyü ve evrenler arası yolculuğu, MCU'nun mistik boyutunu genişletir. Karakterin egosu ile sorumluluk çatışması, filmin dramatik omurgasını oluşturur. Görsel efektler ve anlatı teknikleriyle film, evrenin yeni bir katmanını izleyiciye sunar.",
+      "refers_to": "Doctor Strange, MCU'nun mistik boyutunu tanıtan önemli yapımdır. Stephen Strange'in dönüşümü ve mistik güçlerle tanışması, karakterin evrimine ışık tutar. Film, büyü, kader ve evrenler arası yolculuk temalarını derinleştirir. MCU'nun sonraki yapımlarında Strange'in rolü ve mistik unsurlar bu filmde temellenir. Karakterin kişisel mücadelesi ve sorumlulukları, filmin ana eksenidir. Görsel zenginlik ve anlatı teknikleri filmi benzersiz kılar.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://www.marvel.com/movies/doctor-strange"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Doctor_Strange_(2016_film)"}
+      ],
+      "lang": "tr",
+      "level": 3
+    },
+     {
+      "id": "film/marvel/2021_wandavision",
+      "label": "WandaVision (2021)",
+      "title": "WandaVision",
       "type": "dizi",
-      "release_date": "2021-08-11",
-      "level": 15
-    },
-    {
-      "id": "shangChi2021",
-      "label": "Shang-Chi and the Legend of the Ten Rings (2021)",
-      "title": "Shang-Chi",
+      "release_date": "2021-01-15",
+      "end_date": "2021-03-05",
       "image": "images/marvel.jpg",
       "shape": "image",
-      "description": "'Shang-Chi' yapımı, Marvel Sinematik Evreni’nde evrensel tehdide karşı birlik temasını derinlemesine işler. Film, karakterin içsel çatışmalarını, geçmişin gölgelerini ve kahramanlıkla gelen bedelleri ele alır. Aksiyonun yanı sıra duygusal çözülmeler ve çok katmanlı hikâyelerle öne çıkar.",
-      "refers_to": "Shang-Chi, Thor: Ragnarok ve WandaVision yapımlarına hem karakter gelişimi hem de olayların zamansal ilerleyişi açısından referanslar sunar. Marvel evrenindeki kahramanların geçmişteki etkileşimleri, bu filmde farklı şekillerde yeniden yorumlanır.",
+      "description": "Wanda Maximoff ve Vision, alışılmışın dışında sitcom tarzında başlayan bir hayat yaşarken gerçeklik ve hayal arasındaki sınırlar bulanıklaşır. Dizi, aşk, kayıp ve travma temalarını işlerken, karakterlerin psikolojik derinliğine odaklanır. Wanda’nın güçlerinin kontrolü ve gerçeklik algısı, MCU’nun büyüyen mitolojisine önemli katkılar sağlar. Dizi, hem klasik televizyon formatlarını hem de modern süper kahraman anlatısını harmanlar. İzleyicilere yenilikçi bir anlatı deneyimi sunar.",
+      "refers_to": "WandaVision, MCU’da Wanda Maximoff’un kişisel trajedisi ve güçlerinin evrimini detaylandıran önemli bir yapımdır. Dizi, aşk, kayıp ve gerçeklik algısı temalarını derinleştirirken, karakterin psikolojik durumunu ve süper kahraman olmanın karmaşıklığını işler. Dizi, MCU’nun sonraki yapımlarında etkisini gösteren olayların temelini oluşturur. Yenilikçi anlatım teknikleri ve klasik sitcom unsurlarıyla MCU evreninde benzersiz bir yer tutar.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://www.marvel.com/tv-shows/wandavision/1"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/WandaVision"}
+      ],
+      "lang": "tr",
+      "level": 3
+    },
+    {
+      "id": "film/marvel/2021_falcon_and_winter_soldier",
+      "label": "The Falcon and the Winter Soldier (2021)",
+      "title": "The Falcon and the Winter Soldier",
+      "type": "dizi",
+      "release_date": "2021-03-19",
+      "end_date": "2021-04-23",
+      "image": "images/marvel.jpg",
+      "shape": "image",
+      "description": "Sam Wilson (Falcon) ve Bucky Barnes (Winter Soldier), Captain America’nın mirasını taşırken yeni tehditlere karşı birlikte mücadele eder. Dizi, kimlik, miras ve dostluk temalarını işler. İkili arasındaki dinamik, karakter gelişimi ve politik alt metinler diziye derinlik katar. Modern süper kahraman anlatısına farklı bir bakış açısı sunar ve MCU’nun sonraki evrelerine köprü olur.",
+      "refers_to": "The Falcon and the Winter Soldier, Sam Wilson ve Bucky Barnes’ın Captain America’nın mirasını taşıma sürecini anlatır. Dizi, kimlik, dostluk ve sorumluluk temalarını derinleştirir. İkili arasındaki ilişki ve karşılaşılan tehditler, karakterlerin gelişimini etkiler. Dizi, MCU’nun genişleyen evreninde önemli bir yer tutar ve gelecek yapımlara zemin hazırlar.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://www.marvel.com/tv-shows/the-falcon-and-the-winter-soldier/1"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/The_Falcon_and_the_Winter_Soldier"}
+      ],
+      "lang": "tr",
+      "level": 3
+    },
+    {
+      "id": "film/marvel/2021_shang_chi_and_the_legend_of_the_ten_rings",
+      "label": "Shang-Chi ve On Halka Efsanesi (2021)",
+      "title": "Shang-Chi and the Legend of the Ten Rings",
       "type": "film",
       "release_date": "2021-09-03",
-      "level": 15
+      "end_date": null,
+      "image": "images/marvel.jpg",
+      "shape": "image",
+      "description": "Shang-Chi, geçmişiyle yüzleşirken On Halka adlı gizemli örgütle mücadele eder. Film, kimlik, aile bağları ve kader temalarını işler. Aksiyon ve dövüş sahneleriyle dikkat çeken yapım, MCU’nun Asya temalarını ön plana çıkarır. Karakterin gelişimi ve ailesiyle olan çatışması, film boyunca merkezî bir rol oynar. Evrenin çeşitlenmesine katkı sağlar ve yeni kahramanlar için temel oluşturur.",
+      "refers_to": "Shang-Chi and the Legend of the Ten Rings, MCU'da yeni bir kahramanın ortaya çıkışını ve geçmişle hesaplaşmasını anlatır. Film, aile, kimlik ve kader temalarını derinleştirir. Aksiyon sahneleri ve kültürel unsurlar, yapımın özgünlüğünü artırır. MCU'nun evrenini genişleten film, karakter gelişimini ve aile içi çatışmaları detaylandırır. Gelecek yapımlarda Shang-Chi'nin rolü için sağlam bir temel oluşturur.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://www.marvel.com/movies/shang-chi-and-the-legend-of-the-ten-rings"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Shang-Chi_and_the_Legend_of_the_Ten_Rings"}
+      ],
+      "lang": "tr",
+      "level": 3
     },
     {
-      "id": "eternals2021",
+      "id": "film/marvel/2021_eternals",
       "label": "Eternals (2021)",
       "title": "Eternals",
-      "image": "images/marvel.jpg",
-      "shape": "image",
-      "description": "'Eternals' yapımı, Marvel Sinematik Evreni’nde ekip ruhu ve fedakarlığın öne çıkışı temasını derinlemesine işler. Film, karakterin içsel çatışmalarını, geçmişin gölgelerini ve kahramanlıkla gelen bedelleri ele alır. Aksiyonun yanı sıra duygusal çözülmeler ve çok katmanlı hikâyelerle öne çıkar.",
-      "refers_to": "Thor ve Ant-Man and the Wasp: Quantumania ile olan bağlar, Eternals içinde yalnızca olaylarla değil, aynı zamanda diyaloglar, simgesel kostümler ve görsel motifler aracılığıyla da kurulur. Böylece Marvel evreni çok katmanlı hale gelir.",
       "type": "film",
       "release_date": "2021-11-05",
-      "level": 15
-    },
-    {
-      "id": "hawkeye2021",
-      "label": "Hawkeye (2021)",
-      "title": "Hawkeye",
+      "end_date": null,
       "image": "images/marvel.jpg",
       "shape": "image",
-      "description": "'Hawkeye' yapımı, Marvel Sinematik Evreni’nde ekip ruhu ve fedakarlığın öne çıkışı temasını derinlemesine işler. Film, karakterin içsel çatışmalarını, geçmişin gölgelerini ve kahramanlıkla gelen bedelleri ele alır. Aksiyonun yanı sıra duygusal çözülmeler ve çok katmanlı hikâyelerle öne çıkar.",
-      "refers_to": "The Falcon and the Winter Soldier ve What If...? ile Hawkeye arasında kurulan ilişkiler, çoklu evren anlatısında zaman yolculuğu, teknolojik miras ve kahramanlık ideallerinin değişimi gibi konulara dayalıdır. Bu göndermeler evrenin sürekliliğini destekler.",
-      "type": "dizi",
-      "release_date": "2021-11-24",
-      "level": 15
+      "description": "Ebedi varlıklar olan Eternals, binlerce yıldır dünyayı gizlice korumaktadır. Film, mitoloji, tarih ve insanlık temalarını işler. Eternals'ın farklı yetenekleri ve kişisel çatışmaları detaylandırılır. Film, MCU'nun kozmik ve mitolojik yönünü genişletir ve evrenin daha derin katmanlarını keşfeder. İnsanlık ve evren arasındaki bağ, karakterlerin hikayesinde ön plandadır.",
+      "refers_to": "Eternals, MCU'nun evrenin tarihine ve kozmik yapısına derinlemesine bakan önemli bir yapımdır. Binlerce yıldır dünyayı koruyan Eternals'ın kişisel ve kolektif çatışmaları işlenir. Film, mitoloji ve bilim kurgu öğelerini birleştirir. MCU'nun kozmik ve tarihsel temasını güçlendirir ve evrenin genişlemesine katkı sağlar. Karakterlerin evrimi ve insanlık ile evren arasındaki ilişki filmde önemli yer tutar.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://www.marvel.com/movies/eternals"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Eternals_(film)"}
+      ],
+      "lang": "tr",
+      "level": 3
     },
-    {
-      "id": "spidermanNoWayHome2021",
-      "label": "Spider-Man: No Way Home (2021)",
-      "title": "Spider-Man: No Way Home",
-      "image": "images/marvel.jpg",
-      "shape": "image",
-      "description": "'Spider-Man: No Way Home' yapımı, Marvel Sinematik Evreni’nde aile, kayıp ve intikam döngüsü temasını derinlemesine işler. Film, karakterin içsel çatışmalarını, geçmişin gölgelerini ve kahramanlıkla gelen bedelleri ele alır. Aksiyonun yanı sıra duygusal çözülmeler ve çok katmanlı hikâyelerle öne çıkar.",
-      "refers_to": "Spider-Man: No Way Home yapımında, Moon Knight ve The Falcon and the Winter Soldier ile ilişkili çok sayıda göndermeye rastlamak mümkündür. Özellikle olay örgüsünde beliren çatışmalar, karakterlerin geçmişte yaşadıkları travmalar ve ekip içindeki dinamikler üzerinden güçlü bağlar kurulmuştur.",
-      "type": "film",
-      "release_date": "2021-12-17",
-      "level": 15
-    },
-    {
-      "id": "moonKnight2022",
-      "label": "Moon Knight (2022)",
-      "title": "Moon Knight",
-      "image": "images/marvel.jpg",
-      "shape": "image",
-      "description": "'Moon Knight' yapımı, Marvel Sinematik Evreni’nde aile, kayıp ve intikam döngüsü temasını derinlemesine işler. Film, karakterin içsel çatışmalarını, geçmişin gölgelerini ve kahramanlıkla gelen bedelleri ele alır. Aksiyonun yanı sıra duygusal çözülmeler ve çok katmanlı hikâyelerle öne çıkar.",
-      "refers_to": "Moon Knight, Eternals ve Ant-Man and the Wasp yapımlarına hem karakter gelişimi hem de olayların zamansal ilerleyişi açısından referanslar sunar. Marvel evrenindeki kahramanların geçmişteki etkileşimleri, bu filmde farklı şekillerde yeniden yorumlanır.",
-      "type": "dizi",
-      "release_date": "2022-03-30",
-      "level": 16
-    },
-    {
-      "id": "quantumania2023",
-      "label": "Ant-Man and the Wasp: Quantumania (2023)",
-      "title": "Ant-Man and the Wasp: Quantumania",
-      "image": "images/marvel.jpg",
-      "shape": "image",
-      "description": "'Ant-Man and the Wasp: Quantumania' yapımı, Marvel Sinematik Evreni’nde zaman ve mekânın ötesindeki mücadele temasını derinlemesine işler. Film, karakterin içsel çatışmalarını, geçmişin gölgelerini ve kahramanlıkla gelen bedelleri ele alır. Aksiyonun yanı sıra duygusal çözülmeler ve çok katmanlı hikâyelerle öne çıkar.",
-      "refers_to": "Ant-Man and the Wasp: Quantumania filminde, The Avengers ve Iron Man 3 ile doğrudan ilişkili olan karakterler üzerinden gönderme yapılır. Özellikle ortak düşmanlar, takım kurma süreci ve süper kahramanların kişisel yolculukları bu bağlantıları güçlendirir.",
-      "type": "film",
-      "release_date": "2023-02-17",
-      "level": 17
-    },
-    {
-      "id": "secretInvasion2023",
-      "label": "Secret Invasion (2023)",
-      "title": "Secret Invasion",
-      "image": "images/marvel.jpg",
-      "shape": "image",
-      "description": "'Secret Invasion' yapımı, Marvel Sinematik Evreni’nde multievrenin karmaşası ve olasılıklar temasını derinlemesine işler. Film, karakterin içsel çatışmalarını, geçmişin gölgelerini ve kahramanlıkla gelen bedelleri ele alır. Aksiyonun yanı sıra duygusal çözülmeler ve çok katmanlı hikâyelerle öne çıkar.",
-      "refers_to": "Secret Invasion filminde, Hawkeye ve Avengers: Infinity War ile doğrudan ilişkili olan karakterler üzerinden gönderme yapılır. Özellikle ortak düşmanlar, takım kurma süreci ve süper kahramanların kişisel yolculukları bu bağlantıları güçlendirir.",
-      "type": "dizi",
-      "release_date": "2023-06-21",
-      "level": 17
-    },
-    {
-      "id": "gotgVol3_2023",
-      "label": "Guardians of the Galaxy Vol. 3 (2023)",
+     {
+      "id": "film/marvel/2023_guardians_of_the_galaxy_vol_3",
+      "label": "Galaksinin Koruyucuları Vol. 3 (2023)",
       "title": "Guardians of the Galaxy Vol. 3",
-      "image": "images/marvel.jpg",
-      "shape": "image",
-      "description": "'Guardians of the Galaxy Vol. 3' yapımı, Marvel Sinematik Evreni’nde teknolojinin sınırları ile etik çelişkiler temasını derinlemesine işler. Film, karakterin içsel çatışmalarını, geçmişin gölgelerini ve kahramanlıkla gelen bedelleri ele alır. Aksiyonun yanı sıra duygusal çözülmeler ve çok katmanlı hikâyelerle öne çıkar.",
-      "refers_to": "Guardians of the Galaxy Vol. 3 yapımında, Echo ve Captain Marvel ile ilişkili çok sayıda göndermeye rastlamak mümkündür. Özellikle olay örgüsünde beliren çatışmalar, karakterlerin geçmişte yaşadıkları travmalar ve ekip içindeki dinamikler üzerinden güçlü bağlar kurulmuştur.",
       "type": "film",
       "release_date": "2023-05-05",
-      "level": 17
-    },
-    {
-      "id": "lokiS2_2023",
-      "label": "Loki: Season 2 (2023)",
-      "title": "Loki: Season 2",
+      "end_date": null,
       "image": "images/marvel.jpg",
       "shape": "image",
-      "description": "'Loki: Season 2' yapımı, Marvel Sinematik Evreni’nde ekip ruhu ve fedakarlığın öne çıkışı temasını derinlemesine işler. Film, karakterin içsel çatışmalarını, geçmişin gölgelerini ve kahramanlıkla gelen bedelleri ele alır. Aksiyonun yanı sıra duygusal çözülmeler ve çok katmanlı hikâyelerle öne çıkar.",
-      "refers_to": "Loki: Season 2, The Incredible Hulk ve WandaVision yapımlarına hem karakter gelişimi hem de olayların zamansal ilerleyişi açısından referanslar sunar. Marvel evrenindeki kahramanların geçmişteki etkileşimleri, bu filmde farklı şekillerde yeniden yorumlanır.",
-      "type": "dizi",
-      "release_date": "2023-10-05",
-      "level": 18
+      "description": "Galaksinin Koruyucuları ekibi, yeni ve eski tehlikelerle yüzleşirken kişisel geçmişleri ve bağlarını sorgular. Film, arkadaşlık, bağışlama ve kimlik temalarını işler. Takım dinamikleri ve karakter gelişimi odaklı anlatım, MCU evreninin yeni dönemine güçlü bir giriş yapar. Görsel efektler ve aksiyon sahneleri filmde ön plandadır. Ayrıca, karakterlerin içsel yolculukları duygusal derinlik katar.",
+      "refers_to": "Guardians of the Galaxy Vol. 3, takımın kişisel ve kolektif gelişimini anlatır. Film, dostluk, aile ve kimlik temalarını derinleştirir. Yeni ve eski tehditlerle yüzleşme, karakterlerin geçmişleriyle hesaplaşmalarını tetikler. MCU’nun kozmik evreninin önemli bir parçası olarak, film evrenin genişlemesini ve karakterlerin ilerlemesini sağlar. Görsel zenginlik ve aksiyonun yanı sıra duygusal unsurlar da filmin temel taşlarındandır.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://www.marvel.com/movies/guardians-of-the-galaxy-vol-3"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Guardians_of_the_Galaxy_Vol._3"}
+      ],
+      "lang": "tr",
+      "level": 3
     },
     {
-      "id": "echo2024",
-      "label": "Echo (2024)",
-      "title": "Echo",
+      "id": "film/marvel/2023_ant_man_and_the_wasp_quantumania",
+      "label": "Ant-Man ve Wasp: Quantumania (2023)",
+      "title": "Ant-Man and the Wasp: Quantumania",
+      "type": "film",
+      "release_date": "2023-02-17",
+      "end_date": null,
       "image": "images/marvel.jpg",
       "shape": "image",
-      "description": "'Echo' yapımı, Marvel Sinematik Evreni’nde multievrenin karmaşası ve olasılıklar temasını derinlemesine işler. Film, karakterin içsel çatışmalarını, geçmişin gölgelerini ve kahramanlıkla gelen bedelleri ele alır. Aksiyonun yanı sıra duygusal çözülmeler ve çok katmanlı hikâyelerle öne çıkar.",
-      "refers_to": "Echo yapımında, Spider-Man: No Way Home ve Eternals ile ilişkili çok sayıda göndermeye rastlamak mümkündür. Özellikle olay örgüsünde beliren çatışmalar, karakterlerin geçmişte yaşadıkları travmalar ve ekip içindeki dinamikler üzerinden güçlü bağlar kurulmuştur.",
-      "type": "dizi",
-      "release_date": "2024-01-10",
-      "level": 19
+      "description": "Scott Lang ve Hope van Dyne, kuantum evreninde yeni bir maceraya atılır. Film, aile, keşif ve kahramanlık temalarını işlerken, çoklu evren konseptini genişletir. Karakterlerin karşılaştığı yeni tehditler ve zorluklar, MCU’nun geleceği için önemli ipuçları sunar. Komedi ve aksiyonun dengeli birleşimi, filmin öne çıkan özelliklerindendir. Ayrıca, yeni karakterler ve gelişmelerle evrenin kapsamı artırılır.",
+      "refers_to": "Ant-Man and the Wasp: Quantumania, MCU’nun çoklu evren temasını genişleten bir yapımdır. Scott Lang ve ekibinin kuantum evrenindeki maceraları, aile bağları ve kahramanlık kavramlarını derinleştirir. Film, çoklu evrenin tehlikeleri ve fırsatları üzerine odaklanır. Yeni karakterler ve tehditler, MCU’nun ilerleyen dönemlerine yön verir. Komedi ve aksiyon unsurları, filmin dinamik yapısını oluşturur. Evrenin genişlemesini ve yeni hikayelerin temelini atar.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://www.marvel.com/movies/ant-man-and-the-wasp-quantumania"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Ant-Man_and_the_Wasp:_Quantumania"}
+      ],
+      "lang": "tr",
+      "level": 3
     },
     {
-      "id": "msMarvel2022",
-      "label": "Ms. Marvel (2022)",
-      "title": "Ms. Marvel",
+      "id": "film/marvel/2023_secret_invasion",
+      "label": "Secret Invasion (2023)",
+      "title": "Secret Invasion",
+      "type": "dizi",
+      "release_date": "2023-06-21",
+      "end_date": null,
       "image": "images/marvel.jpg",
       "shape": "image",
-      "description": "'Ms. Marvel' yapımı, Marvel Sinematik Evreni’nde multievrenin karmaşası ve olasılıklar temasını derinlemesine işler. Film, karakterin içsel çatışmalarını, geçmişin gölgelerini ve kahramanlıkla gelen bedelleri ele alır. Aksiyonun yanı sıra duygusal çözülmeler ve çok katmanlı hikâyelerle öne çıkar.",
-      "refers_to": "Secret Invasion ve Captain Marvel ile Ms. Marvel arasında kurulan ilişkiler, çoklu evren anlatısında zaman yolculuğu, teknolojik miras ve kahramanlık ideallerinin değişimi gibi konulara dayalıdır. Bu göndermeler evrenin sürekliliğini destekler.",
-      "type": "dizi",
-      "release_date": "2022-06-08",
-      "level": 16
+      "description": "Nick Fury ve Talos, gizli bir Skrull istilasını ortaya çıkarmak için bir araya gelir. Dizi, casusluk, kimlik ve ihanet temalarını işler. MCU’da gizli örgütler ve çoklu evrenin karmaşıklığını genişleten yapım, karakterlerin derinlemesine işlenmesine odaklanır. Gerilim ve aksiyon unsurları dizinin temel dinamiklerindendir. MCU’nun geleceğine dair önemli ipuçları verir.",
+      "refers_to": "Secret Invasion, MCU’da gizli istilayı konu alan önemli bir dizidir. Nick Fury ve Talos’un iş birliği ve karşılaştıkları tehditler, evrenin siyasi ve casusluk yönünü derinleştirir. Dizi, kimlik, ihanet ve sadakat temalarını işlerken, çoklu evrenin karmaşıklığını ortaya koyar. Karakterlerin kişisel ve kolektif mücadeleleri, yapımın merkezindedir. Gerilim dolu anlatım ve aksiyon sahneleri, dizinin öne çıkan özelliklerindendir. MCU’nun ilerleyen dönemlerine temel oluşturur.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://www.marvel.com/tv-shows/secret-invasion/1"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Secret_Invasion_(miniseries)"}
+      ],
+      "lang": "tr",
+      "level": 3
     },
     {
-      "id": "theMarvels2023",
+      "id": "film/marvel/2023_the_marvels",
       "label": "The Marvels (2023)",
       "title": "The Marvels",
-      "image": "images/marvel.jpg",
-      "shape": "image",
-      "description": "'The Marvels' yapımı, Marvel Sinematik Evreni’nde zaman ve mekânın ötesindeki mücadele temasını derinlemesine işler. Film, karakterin içsel çatışmalarını, geçmişin gölgelerini ve kahramanlıkla gelen bedelleri ele alır. Aksiyonun yanı sıra duygusal çözülmeler ve çok katmanlı hikâyelerle öne çıkar.",
-      "refers_to": "The Marvels, Iron Man ve Ms. Marvel yapımlarına hem karakter gelişimi hem de olayların zamansal ilerleyişi açısından referanslar sunar. Marvel evrenindeki kahramanların geçmişteki etkileşimleri, bu filmde farklı şekillerde yeniden yorumlanır.",
       "type": "film",
       "release_date": "2023-11-10",
-      "level": 18
-    },
-    {
-      "id": "ironheart2024",
-      "label": "Ironheart (2024)",
-      "title": "Ironheart",
+      "end_date": null,
       "image": "images/marvel.jpg",
       "shape": "image",
-      "description": "'Ironheart' yapımı, Marvel Sinematik Evreni’nde aile, kayıp ve intikam döngüsü temasını derinlemesine işler. Film, karakterin içsel çatışmalarını, geçmişin gölgelerini ve kahramanlıkla gelen bedelleri ele alır. Aksiyonun yanı sıra duygusal çözülmeler ve çok katmanlı hikâyelerle öne çıkar.",
-      "refers_to": "Ironheart yapımında, Ms. Marvel ve The Avengers ile ilişkili çok sayıda göndermeye rastlamak mümkündür. Özellikle olay örgüsünde beliren çatışmalar, karakterlerin geçmişte yaşadıkları travmalar ve ekip içindeki dinamikler üzerinden güçlü bağlar kurulmuştur.",
-      "type": "dizi",
-      "release_date": "2024-08-01",
-      "level": 19
+      "description": "Carol Danvers, Monica Rambeau ve Kamala Khan güçlerini birleştirerek kozmik tehditlere karşı savaşır. Film, güç, sorumluluk ve birlik temalarını işler. Karakterlerin ilişkileri ve gelişimi ön plandadır. MCU’nun kozmik evreninde yeni bir dönemi başlatır ve farklı kahramanların etkileşimini artırır. Aksiyon ve görsel efektler filmde dikkat çeker.",
+      "refers_to": "The Marvels, MCU’da farklı kahramanların güçlerini birleştirerek ortak bir tehdit karşısında birleşmesini anlatır. Film, birlik, sorumluluk ve güç dengesi temalarını derinleştirir. Carol Danvers, Monica Rambeau ve Kamala Khan’ın karakter gelişimleri filmde detaylandırılır. MCU’nun kozmik evreninin genişlemesi ve farklı kahramanların iş birliği, yapımın temel noktalarını oluşturur. Görsel efektler ve aksiyon sahneleri, filmi izleyici için çekici kılar.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://www.marvel.com/movies/the-marvels"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/The_Marvels"}
+      ],
+      "lang": "tr",
+      "level": 3
+    },
+     {
+      "id": "film/marvel/2011_the_consultant",
+      "label": "The Consultant (2011)",
+      "title": "The Consultant",
+      "type": "kısa_film",
+      "release_date": "2011-08-02",
+      "end_date": null,
+      "image": "images/marvel.jpg",
+      "shape": "image",
+      "description": "Bu kısa film, Iron Man 2 ve The Incredible Hulk filmleri arasındaki bağlantıyı sağlar. SHIELD ajanları bir anlaşmazlığı çözmek üzere bir araya gelir. Film, MCU'nun genişleyen evrenine ince detaylar ve karakter ilişkileri katar. Mizah ve casusluk unsurlarıyla kısa ama etkili bir köprü görevi görür.",
+      "refers_to": "The Consultant, MCU'nun film evrenini birbirine bağlayan kısa yapımlardan biridir. SHIELD içindeki stratejik manevraları ve karakterler arası dinamikleri gösterir. Kısa film, geniş evrende yaşanan olayların ayrıntılarını destekler ve serinin Devamlılığını sağlar.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://www.marvel.com/movies/iron-man-2"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Marvel_One-Shots#The_Consultant"}
+      ],
+      "lang": "tr",
+      "level": 3
+    },
+    {
+      "id": "film/marvel/2012_item_47",
+      "label": "Item 47 (2012)",
+      "title": "Item 47",
+      "type": "kısa_film",
+      "release_date": "2012-09-25",
+      "end_date": null,
+      "image": "images/marvel.jpg",
+      "shape": "image",
+      "description": "Item 47, The Avengers filminden sonra kaybolan bir uzaylı silahının Dünya'da yaratığı kaosu konu alır. İki sıradan vatandaşın bu teknolojiyi kullanarak suç dünyasında yarattığı etkiyi anlatır. Kısa film, MCU'nun evrenine daha fazla derinlik katarak normal insanların süper güçlerle ilişkisini gösterir.",
+      "refers_to": "Item 47, MCU'nun günlük insanları ve süper kahramanlar arasındaki bağlantıyı anlatan önemli kısa yapımlardan biridir. The Avengers'ın etkileri ve sonuçları bu filmde detaylandırılır. Kısa film, evrende yaşanan geniş çaplı olayların sıradan insanlar üzerindeki etkisini gözler önüne serer.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://www.marvel.com/movies/avengers"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Marvel_One-Shots#Item_47"}
+      ],
+      "lang": "tr",
+      "level": 3
+    },
+    {
+      "id": "film/marvel/2022_guardians_of_the_galaxy_holiday_special",
+      "label": "Guardians of the Galaxy Holiday Special (2022)",
+      "title": "Guardians of the Galaxy Holiday Special",
+      "type": "özel",
+      "release_date": "2022-11-25",
+      "end_date": null,
+      "image": "images/marvel.jpg",
+      "shape": "image",
+      "description": "Galaksinin Koruyucuları ekibi, yılbaşı zamanı yeni bir maceraya atılır. Mizah ve aksiyon dolu bu özel yapım, takımın dinamiklerini ve karakter gelişimlerini eğlenceli bir şekilde sunar. MCU'nun kozmik evrenine renk katan ve genişleten bir yan ürün olarak yer alır.",
+      "refers_to": "Guardians of the Galaxy Holiday Special, MCU'da ekip üyelerinin arasındaki bağları ve kişiliklerini eğlenceli bir şekilde sergileyen özel yapımlardan biridir. Film, karakterlerin günlük yaşantılarına dair detaylar sunar ve kozmik evrenin renkli yönünü ortaya koyar.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://www.marvel.com/movies/guardians-of-the-galaxy-holiday-special"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Guardians_of_the_Galaxy_Holiday_Special"}
+      ],
+      "lang": "tr",
+      "level": 3
+    },
+    {
+      "id": "film/marvel/2021_what_if",
+      "label": "What If...? (2021)",
+      "title": "What If...?",
+      "type": "dizi_animasyon",
+      "release_date": "2021-08-11",
+      "end_date": "2021-10-06",
+      "image": "images/marvel.jpg",
+      "shape": "image",
+      "description": "MCU evreninde olası alternatif gerçeklikleri ve farklı senaryoları keşfeden animasyon dizisi. Karakterlerin farklı seçimler yapması ve sonuçların değişmesi üzerine odaklanır. Dizi, çoklu evren kavramını genişletir ve evrenin ne kadar esnek olduğunu gösterir. Yenilikçi anlatım tarzıyla dikkat çeker.",
+      "refers_to": "What If...? dizisi, MCU'nun alternatif evrenlerini ve olası senaryolarını keşfeder. Karakterlerin farklı tercihlerinin evreni nasıl etkilediğini gösterir. Dizi, çoklu evren temasını derinleştirir ve MCU'nun genişlemesine katkı sağlar. Yenilikçi anlatım ve farklı bakış açıları ile MCU'nun sınırlarını zorlar. İzleyicilere yeni perspektifler sunar.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://www.marvel.com/tv-shows/what-if/1"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/What_If...%3F_(TV_series)"}
+      ],
+      "lang": "tr",
+      "level": 3
     }
   ],
   "edges": [
     {
-      "from": "ironMan2008",
-      "to": "ironMan22010",
-      "type": "devam"
+      "from": "film/marvel/2008_iron_man",
+      "to": "film/marvel/2010_iron_man_2",
+      "type": "Devam",
+      "weight": 1,
+      "sources": [{"name": "Official", "url": "https://www.marvel.com/movies/iron-man-2"}],
+      "notes": "Iron Man 2 doğrudan Devamıdır."
     },
     {
-      "from": "ironMan22010",
-      "to": "avengers2012",
-      "type": "kurucu bağlantı"
+      "from": "film/marvel/2010_iron_man_2",
+      "to": "film/marvel/2012_avengers",
+      "type": "Devam",
+      "weight": 1,
+      "sources": [{"name": "Official", "url": "https://www.marvel.com/movies/avengers"}],
+      "notes": "Iron Man 2’den Avengers’a Devam."
     },
     {
-      "from": "incredibleHulk2008",
-      "to": "avengers2012",
-      "type": "karakter transferi"
+      "from": "film/marvel/2008_the_incredible_hulk",
+      "to": "film/marvel/2012_avengers",
+      "type": "Devam",
+      "weight": 1,
+      "sources": [{"name": "Official", "url": "https://www.marvel.com/movies/avengers"}],
+      "notes": "Hulk karakteri Avengers’a katılır."
     },
     {
-      "from": "thor2011",
-      "to": "avengers2012",
-      "type": "devam"
+      "from": "film/marvel/2011_thor",
+      "to": "film/marvel/2012_avengers",
+      "type": "Devam",
+      "weight": 1,
+      "sources": [{"name": "Official", "url": "https://www.marvel.com/movies/avengers"}],
+      "notes": "Thor, Avengers ile Devam eder."
     },
     {
-      "from": "captainAmerica2011",
-      "to": "avengers2012",
-      "type": "devam"
+      "from": "film/marvel/2011_captain_america_first_avenger",
+      "to": "film/marvel/2012_avengers",
+      "type": "Devam",
+      "weight": 1,
+      "sources": [{"name": "Official", "url": "https://www.marvel.com/movies/avengers"}],
+      "notes": "Captain America hikayesi Avengers ile Devam eder."
+    },
+     {
+      "from": "film/marvel/2013_iron_man_3",
+      "to": "film/marvel/2010_iron_man_2",
+      "type": "Öncesi",
+      "weight": 1,
+      "sources": [{"name": "Official", "url": "https://www.marvel.com/movies/iron-man-3"}],
+      "notes": "Iron Man 3, Iron Man 2'nin Devamıdır."
     },
     {
-      "from": "avengers2012",
-      "to": "guardiansOfTheGalaxy2014",
-      "type": "sonsöz göndermesi"
+      "from": "film/marvel/2013_iron_man_3",
+      "to": "film/marvel/2012_avengers",
+      "type": "Devam",
+      "weight": 1,
+      "sources": [{"name": "Official", "url": "https://www.marvel.com/movies/iron-man-3"}],
+      "notes": "Iron Man 3, Avengers'a hazırlık sağlar."
     },
     {
-      "from": "ironMan22010",
-      "to": "ironMan32013",
-      "type": "devam"
+      "from": "film/marvel/2013_thor_dark_world",
+      "to": "film/marvel/2012_avengers",
+      "type": "Devam",
+      "weight": 1,
+      "sources": [{"name": "Official", "url": "https://www.marvel.com/movies/thor-the-dark-world"}],
+      "notes": "Thor: The Dark World, Avengers'a bağlanır."
     },
     {
-      "from": "thor2011",
-      "to": "thorDarkWorld2013",
-      "type": "devam"
+      "from": "film/marvel/2014_captain_america_winter_soldier",
+      "to": "film/marvel/2012_avengers",
+      "type": "Devam",
+      "weight": 1,
+      "sources": [{"name": "Official", "url": "https://www.marvel.com/movies/captain-america-the-winter-soldier"}],
+      "notes": "Winter Soldier, Avengers'a Devam eder."
     },
     {
-      "from": "captainAmerica2011",
-      "to": "captainAmericaWS2014",
-      "type": "devam"
+      "from": "film/marvel/2014_guardians_of_the_galaxy",
+      "to": "film/marvel/2017_guardians_of_the_galaxy_vol_2",
+      "type": "Devam",
+      "weight": 1,
+      "sources": [{"name": "Official", "url": "https://www.marvel.com/movies/guardians-of-the-galaxy-vol-2"}],
+      "notes": "Guardians Vol. 2, ilk filme Devam eder."
     },
     {
-      "from": "avengers2012",
-      "to": "avengersAoU2015",
-      "type": "devam"
+      "from": "film/marvel/2014_captain_america_civil_war",
+      "to": "film/marvel/2018_black_widow",
+      "type": "Öncesi",
+      "weight": 1,
+      "sources": [{"name": "Official", "url": "https://www.marvel.com/movies/captain-america-civil-war"}],
+      "notes": "Black Widow, Civil War Öncesi geçer."
     },
     {
-      "from": "thorDarkWorld2013",
-      "to": "guardiansOfTheGalaxy2014",
-      "type": "sonsöz bağlantısı"
+      "from": "film/marvel/2014_captain_america_civil_war",
+      "to": "film/marvel/2018_black_panther",
+      "type": "Öncesi",
+      "weight": 1,
+      "sources": [{"name": "Official", "url": "https://www.marvel.com/movies/captain-america-civil-war"}],
+      "notes": "Black Panther, Civil War sonrası başlar."
     },
     {
-      "from": "captainAmericaWS2014",
-      "to": "avengersAoU2015",
-      "type": "karakter devamlılığı"
+      "from": "film/marvel/2014_captain_america_civil_war",
+      "to": "film/marvel/2017_spider_man_homecoming",
+      "type": "Öncesi",
+      "weight": 1,
+      "sources": [{"name": "Official", "url": "https://www.marvel.com/movies/captain-america-civil-war"}],
+      "notes": "Spider-Man: Homecoming, Civil War sonrası gelişir."
     },
     {
-      "from": "avengersAoU2015",
-      "to": "antMan2015",
-      "type": "zaman çizgisi bağlantısı"
+      "from": "film/marvel/2016_doctor_strange",
+      "to": "film/marvel/2018_avengers_infinity_war",
+      "type": "Öncesi",
+      "weight": 1,
+      "sources": [{"name": "Official", "url": "https://www.marvel.com/movies/avengers-infinity-war"}],
+      "notes": "Doctor Strange, Infinity War Öncesi yer alır."
+    },
+     {
+      "from": "film/marvel/2021_wandavision",
+      "to": "film/marvel/2022_doctor_strange_multiverse_of_madness",
+      "type": "Öncesi",
+      "weight": 1,
+      "sources": [{"name": "Official", "url": "https://www.marvel.com/tv-shows/wandavision/1"}],
+      "notes": "WandaVision, Doctor Strange 2 Öncesi."
     },
     {
-      "from": "avengersAoU2015",
-      "to": "civilWar2016",
-      "type": "devam"
+      "from": "film/marvel/2021_falcon_and_winter_soldier",
+      "to": "film/marvel/2022_moon_knight",
+      "type": "Öncesi",
+      "weight": 1,
+      "sources": [{"name": "Official", "url": "https://www.marvel.com/tv-shows/the-falcon-and-the-winter-soldier/1"}],
+      "notes": "Falcon and Winter Soldier, Moon Knight Öncesi."
     },
     {
-      "from": "civilWar2016",
-      "to": "spidermanHomecoming2017",
-      "type": "karakter tanıtımı"
+      "from": "film/marvel/2021_shang_chi_and_the_legend_of_the_ten_rings",
+      "to": "film/marvel/2023_the_marvels",
+      "type": "Öncesi",
+      "weight": 1,
+      "sources": [{"name": "Official", "url": "https://www.marvel.com/movies/shang-chi-and-the-legend-of-the-ten-rings"}],
+      "notes": "Shang-Chi, The Marvels Öncesi."
+    },
+     {
+      "from": "film/marvel/2023_guardians_of_the_galaxy_vol_3",
+      "to": "film/marvel/2023_ant_man_and_the_wasp_quantumania",
+      "type": "Öncesi",
+      "weight": 1,
+      "sources": [{"name": "Official", "url": "https://www.marvel.com/movies/guardians-of-the-galaxy-vol-3"}],
+      "notes": "Guardians 3, Ant-Man 3'ten önce."
     },
     {
-      "from": "civilWar2016",
-      "to": "blackPanther2018",
-      "type": "karakter tanıtımı"
+      "from": "film/marvel/2023_ant_man_and_the_wasp_quantumania",
+      "to": "film/marvel/2023_secret_invasion",
+      "type": "Öncesi",
+      "weight": 1,
+      "sources": [{"name": "Official", "url": "https://www.marvel.com/movies/ant-man-and-the-wasp-quantumania"}],
+      "notes": "Ant-Man 3, Secret Invasion'dan önce."
     },
     {
-      "from": "doctorStrange2016",
-      "to": "infinityWar2018",
-      "type": "ön hazırlık"
+      "from": "film/marvel/2023_secret_invasion",
+      "to": "film/marvel/2023_the_marvels",
+      "type": "Öncesi",
+      "weight": 1,
+      "sources": [{"name": "Official", "url": "https://www.marvel.com/tv-shows/secret-invasion/1"}],
+      "notes": "Secret Invasion, The Marvels Öncesi."
+    },
+     {
+      "from": "film/marvel/2011_iron_man_2",
+      "to": "film/marvel/2011_the_consultant",
+      "type": "Aynı Evren",
+      "weight": 1,
+      "sources": [{"name": "Official", "url": "https://www.marvel.com/movies/iron-man-2"}],
+      "notes": "The Consultant, Iron Man 2 ile bağlantılıdır."
     },
     {
-      "from": "guardiansOfTheGalaxy2014",
-      "to": "gotgVol2_2017",
-      "type": "devam"
+      "from": "film/marvel/2012_avengers",
+      "to": "film/marvel/2012_item_47",
+      "type": "Aynı Evren",
+      "weight": 1,
+      "sources": [{"name": "Official", "url": "https://www.marvel.com/movies/avengers"}],
+      "notes": "Item 47, Avengers ile bağlantılıdır."
     },
     {
-      "from": "thorDarkWorld2013",
-      "to": "thorRagnarok2017",
-      "type": "devam"
+      "from": "film/marvel/2022_guardians_of_the_galaxy_holiday_special",
+      "to": "film/marvel/2017_guardians_of_the_galaxy_vol_2",
+      "type": "Devam",
+      "weight": 1,
+      "sources": [{"name": "Official", "url": "https://www.marvel.com/movies/guardians-of-the-galaxy-vol-2"}],
+      "notes": "Holiday Special, Guardians Vol. 2 sonrası."
     },
     {
-      "from": "thorRagnarok2017",
-      "to": "infinityWar2018",
-      "type": "doğrudan geçiş"
-    },
-    {
-      "from": "infinityWar2018",
-      "to": "endgame2019",
-      "type": "devam"
-    },
-    {
-      "from": "antManWasp2018",
-      "to": "endgame2019",
-      "type": "zaman yolculuğu altyapısı"
-    },
-    {
-      "from": "captainMarvel2019",
-      "to": "endgame2019",
-      "type": "yardımcı karakter"
-    },
-    {
-      "from": "endgame2019",
-      "to": "spidermanFFH2019",
-      "type": "duygusal devam"
-    },
-    {
-      "from": "endgame2019",
-      "to": "wandavision2021",
-      "type": "duygusal devam"
-    },
-    {
-      "from": "endgame2019",
-      "to": "falconWinterSoldier2021",
-      "type": "miras devamı"
-    },
-    {
-      "from": "loki2021",
-      "to": "whatIf2021",
-      "type": "multiverse temeli"
-    },
-    {
-      "from": "blackWidow2021",
-      "to": "hawkeye2021",
-      "type": "karakter geçişi"
-    },
-    {
-      "from": "shangChi2021",
-      "to": "eternals2021",
-      "type": "kozmik göndermeler"
-    },
-    {
-      "from": "msMarvel2022",
-      "to": "theMarvels2023",
-      "type": "karakter geçişi"
-    },
-    {
-      "from": "wandavision2021",
-      "to": "theMarvels2023",
-      "type": "Monica Rambeau gelişimi"
-    },
-    {
-      "from": "secretInvasion2023",
-      "to": "theMarvels2023",
-      "type": "Skrull hikâye devamı"
-    },
-    {
-      "from": "loki2021",
-      "to": "quantumania2023",
-      "type": "Kang bağlantısı"
-    },
-    {
-      "from": "quantumania2023",
-      "to": "lokiS2_2023",
-      "type": "paralel Kang anlatımı"
-    },
-    {
-      "from": "hawkeye2021",
-      "to": "echo2024",
-      "type": "karakter geçişi"
-    },
-    {
-      "from": "gotgVol2_2017",
-      "to": "gotgVol3_2023",
-      "type": "devam"
+      "from": "film/marvel/2021_what_if",
+      "to": "film/marvel/2023_what_if_season_2",
+      "type": "Devam",
+      "weight": 1,
+      "sources": [],
+      "notes": "What If...? dizisinin ikinci sezonu için bağlantı."
     }
   ]
 }

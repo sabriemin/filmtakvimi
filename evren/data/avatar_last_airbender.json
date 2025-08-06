@@ -89,12 +89,12 @@
     {
       "from": "film/avatarthelastairbender",
       "to": "film/thelegendofkorra",
-      "type": "devam"
+      "type": "Devam"
     },
     {
       "from": "film/avatarthelastairbender",
       "to": "film/avataraangfilm2025",
-      "type": "devam"
+      "type": "Devam"
     },
     {
       "from": "film/avatarthelastairbender",
@@ -109,7 +109,7 @@
     {
       "from": "film/thelegendofkorra",
       "to": "film/yeniavatarfilmikorrasonrası",
-      "type": "devam"
+      "type": "Devam"
     }
   ]
 }

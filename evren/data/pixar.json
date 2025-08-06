@@ -1,517 +1,1046 @@
 {
   "nodes": [
     {
-      "id": "toyStory1995",
-      "label": "Toy Story (1995)",
+      "id": "film/pixar/1995_toy_story",
+      "label": "Oyuncak Hikayesi (1995)",
       "title": "Toy Story",
-      "image": "images/pixar.jpg",
-      "shape": "image",
-      "description": "'Toy Story' yapımı, Pixar evreninde toplumdaki yerini bulma temasını özgün biçimde işler. Film; mizah, duygu ve felsefi alt metinlerle izleyiciye hem çocuklara hem yetişkinlere hitap eden çok katmanlı bir anlatı sunar. Animasyonun ötesinde, derinlemesine karakter gelişimleri ile öne çıkar.",
-      "refers_to": "Bu film, Incredibles 2 ve Lightyear gibi yapımlarla birlikte izleyiciyi ortak bir evrende dolaştırır. Renk paletleri, çevre tasarımları ve yan karakter ipuçları bu bağlantıyı destekler.",
       "type": "film",
       "release_date": "1995-11-22",
-      "level": 0
-    },
-    {
-      "id": "aBugsLife1998",
-      "label": "A Bug's Life (1998)",
-      "title": "A Bug's Life",
+      "end_date": null,
       "image": "images/pixar.jpg",
       "shape": "image",
-      "description": "'A Bug's Life' yapımı, Pixar evreninde çocukluk ve anılarla bağ kurma temasını özgün biçimde işler. Film; mizah, duygu ve felsefi alt metinlerle izleyiciye hem çocuklara hem yetişkinlere hitap eden çok katmanlı bir anlatı sunar. Animasyonun ötesinde, derinlemesine karakter gelişimleri ile öne çıkar.",
-      "refers_to": "'A Bug's Life' yapımında, Elemental ve The Good Dinosaur filmlerine dair sahne düzenlemeleri, karakter arka planları ve gizli nesne referanslarıyla örülü bir bağ kurulur. Pixar’ın yaratıcı dünyası bu detaylarla genişler.",
-      "type": "film",
-      "release_date": "1998-11-25",
-      "level": 1
-    },
-    {
-      "id": "toyStory21999",
-      "label": "Toy Story 2 (1999)",
-      "title": "Toy Story 2",
-      "image": "images/pixar.jpg",
-      "shape": "image",
-      "description": "'Toy Story 2' yapımı, Pixar evreninde dostluk, kayıp ve yeniden keşif temasını özgün biçimde işler. Film; mizah, duygu ve felsefi alt metinlerle izleyiciye hem çocuklara hem yetişkinlere hitap eden çok katmanlı bir anlatı sunar. Animasyonun ötesinde, derinlemesine karakter gelişimleri ile öne çıkar.",
-      "refers_to": "Toy Story 2, Cars 3 ve Brave ile duygusal hafıza, aile yapıları ve kahraman yolculuğu gibi evrensel temaları paylaşır. Karakterlerin kararları, diğer filmlerle paralel bir gelişim sunar.",
-      "type": "film",
-      "release_date": "1999-11-24",
-      "level": 2
-    },
-    {
-      "id": "monstersInc2001",
-      "label": "Monsters, Inc. (2001)",
-      "title": "Monsters, Inc.",
-      "image": "images/pixar.jpg",
-      "shape": "image",
-      "description": "'Monsters, Inc.' yapımı, Pixar evreninde çocukluk ve anılarla bağ kurma temasını özgün biçimde işler. Film; mizah, duygu ve felsefi alt metinlerle izleyiciye hem çocuklara hem yetişkinlere hitap eden çok katmanlı bir anlatı sunar. Animasyonun ötesinde, derinlemesine karakter gelişimleri ile öne çıkar.",
-      "refers_to": "'Monsters, Inc.' yapımında, Cars ve Monsters University filmlerine dair sahne düzenlemeleri, karakter arka planları ve gizli nesne referanslarıyla örülü bir bağ kurulur. Pixar’ın yaratıcı dünyası bu detaylarla genişler.",
-      "type": "film",
-      "release_date": "2001-11-02",
+      "description": "Pixar'ın ilk uzun metrajlı filmi olan Oyuncak Hikayesi, oyuncakların gizli dünyasını keşfeder. Woody, Buzz Lightyear ve diğer oyuncaklar arasındaki rekabet, dostluk ve sadakat temaları detaylıca işlenir. Film, bilgisayar animasyonunda devrim yaratmış, çocuklar kadar yetişkinler tarafından da büyük beğeni toplamıştır. Hikaye, değişim ve büyüme temasını oyuncakların perspektifinden anlatırken, arkadaşlığın ve aidiyetin önemini vurgular. Oyuncakların hayatlarının gizemli yönlerini ortaya koyan anlatı, izleyiciye sıcak ve duygusal bir deneyim sunar.",
+      "refers_to": "Toy Story, animasyon dünyasında dönüm noktası olarak kabul edilir ve Pixar'ın yaratıcı gücünü ortaya koyar. Film, oyuncakların kendi iç dünyalarını ve insanlarla olan ilişkilerini insancıl bir yaklaşımla ele alır. Woody ve Buzz arasındaki gelişen dostluk, film boyunca ilerleyen temel hikayedir. Teknik yenilikler ve özgün karakter tasarımları, filmin başarısını artırmıştır. Pixar Teorisi kapsamında birçok filmde görülen ortak motiflerin başlangıcı olarak da önem taşır.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://www.pixar.com/feature-films/toy-story"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Toy_Story"}
+      ],
+      "lang": "tr",
       "level": 3
     },
     {
-      "id": "findingNemo2003",
-      "label": "Finding Nemo (2003)",
-      "title": "Finding Nemo",
+      "id": "film/pixar/1998_a_bug_s_life",
+      "label": "Bir Böcek Hikayesi (1998)",
+      "title": "A Bug's Life",
+      "type": "film",
+      "release_date": "1998-11-25",
+      "end_date": null,
       "image": "images/pixar.jpg",
       "shape": "image",
-      "description": "'Finding Nemo' yapımı, Pixar evreninde dostluk, kayıp ve yeniden keşif temasını özgün biçimde işler. Film; mizah, duygu ve felsefi alt metinlerle izleyiciye hem çocuklara hem yetişkinlere hitap eden çok katmanlı bir anlatı sunar. Animasyonun ötesinde, derinlemesine karakter gelişimleri ile öne çıkar.",
-      "refers_to": "'Finding Nemo' yapımında, Brave ve Toy Story 4 filmlerine dair sahne düzenlemeleri, karakter arka planları ve gizli nesne referanslarıyla örülü bir bağ kurulur. Pixar’ın yaratıcı dünyası bu detaylarla genişler.",
+      "description": "Bir Böcek Hikayesi, küçük bir karınca kolonisinin baskıcı çekirgelerden korunmak için verdiği mücadeleyi anlatır. Film, cesaret, birlik ve liderlik temalarını işlerken, bireysel sorumluluğun önemini vurgular. Karakterlerin renkli ve özgün tasarımları, Pixar’ın yaratıcı dünyasını zenginleştirir. Animasyon teknikleri ve mizahi anlatımıyla çocuklar ve yetişkinler için keyifli bir seyirlik sunar. Hikaye, toplumsal dayanışma ve kahramanlık kavramlarını eğlenceli şekilde ele alır.",
+      "refers_to": "A Bug's Life, Pixar'ın özgün anlatı tarzını sürdürür ve doğa dünyasındaki güç dengelerini sorgular. Karınca kolonisinin çekirgelerle mücadelesi, dayanışma ve cesaretin önemini öne çıkarır. Film, bireylerin bir araya gelerek büyük değişimler yaratabileceğini gösterir. Teknik açıdan Pixar'ın gelişimini yansıtırken, animasyonun sınırlarını zorlar. Ayrıca, filmin temaları birçok Pixar yapımında tekrarlanan motiflere işaret eder.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://www.pixar.com/feature-films/a-bugs-life"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/A_Bug's_Life"}
+      ],
+      "lang": "tr",
+      "level": 3
+    },
+    {
+      "id": "film/pixar/1999_toy_story_2",
+      "label": "Oyuncak Hikayesi 2 (1999)",
+      "title": "Toy Story 2",
+      "type": "film",
+      "release_date": "1999-11-24",
+      "end_date": null,
+      "image": "images/pixar.jpg",
+      "shape": "image",
+      "description": "Oyuncak Hikayesi 2, Woody'nin kaçırılması sonrası Buzz ve diğer oyuncakların onu kurtarma çabasını anlatır. Film, dostluk, bağlılık ve kimlik temalarını derinleştirir. İlk filmin başarısını Devam ettiren yapım, karakterlerin iç dünyalarını daha detaylı keşfeder. Pixar’ın teknik ve anlatı açısından gelişimini yansıtırken, izleyiciye duygusal ve eğlenceli bir deneyim sunar. Film, oyuncakların dünyasının karmaşıklığını ve oyuncak-insan ilişkisini daha da zenginleştirir.",
+      "refers_to": "Toy Story 2, ilk filmin doğrudan Devamı olarak Woody’nin macerasını merkezine alır. Film, bağlılık ve kahramanlık temalarını derinleştirir. Pixar’ın animasyon teknolojileri ve karakter gelişimi bu yapımda da ön plandadır. Hikaye, oyuncakların insanlarla olan bağlarını ve kendi aralarındaki dayanışmayı detaylandırır. Toy Story serisinin diğer filmleri için sağlam bir temel oluşturur.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://www.pixar.com/feature-films/toy-story-2"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Toy_Story_2"}
+      ],
+      "lang": "tr",
+      "level": 3
+    },
+    {
+      "id": "film/pixar/2001_monsters_inc",
+      "label": "Sevimli Canavarlar (2001)",
+      "title": "Monsters, Inc.",
+      "type": "film",
+      "release_date": "2001-11-02",
+      "end_date": null,
+      "image": "images/pixar.jpg",
+      "shape": "image",
+      "description": "Sevimli Canavarlar, çocukların korkularını enerjiye dönüştüren canavarların dünyasını anlatır. Sulley ve Mike’ın dostluğu, korku ve sevgi temaları etrafında gelişir. Film, mizah, duygu ve yaratıcı animasyon teknikleriyle dikkat çeker. Karakterlerin gelişimi ve fantastik dünya detayları, izleyiciyi büyüler. Hikaye, dostluk, sorumluluk ve değişim temalarını başarılı şekilde işler ve Pixar’ın yaratıcılığını ortaya koyar.",
+      "refers_to": "Monsters, Inc., Pixar’ın yaratıcı ve yenilikçi animasyonlarından biridir. Film, korku ve sevgi temasını bir araya getirerek izleyiciye hem eğlenceli hem duygusal bir deneyim sunar. Sulley ve Mike’ın maceraları, dostluk ve sorumluluk kavramlarını derinleştirir. Pixar’ın animasyon teknolojileri ve anlatı gücü, bu filmde zirveye ulaşır. Film, izleyicinin hayal gücünü besler ve çocuklarla yetişkinler arasında köprü kurar.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://www.pixar.com/feature-films/monsters-inc"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Monsters,_Inc."}
+      ],
+      "lang": "tr",
+      "level": 3
+    },
+    {
+      "id": "film/pixar/2003_finding_nemo",
+      "label": "Kayıp Balık Nemo (2003)",
+      "title": "Finding Nemo",
       "type": "film",
       "release_date": "2003-05-30",
-      "level": 4
-    },
-    {
-      "id": "theIncredibles2004",
-      "label": "The Incredibles (2004)",
-      "title": "The Incredibles",
+      "end_date": null,
       "image": "images/pixar.jpg",
       "shape": "image",
-      "description": "'The Incredibles' yapımı, Pixar evreninde duyguların içsel yolculuğu temasını özgün biçimde işler. Film; mizah, duygu ve felsefi alt metinlerle izleyiciye hem çocuklara hem yetişkinlere hitap eden çok katmanlı bir anlatı sunar. Animasyonun ötesinde, derinlemesine karakter gelişimleri ile öne çıkar.",
-      "refers_to": "The Incredibles, Luca ve The Good Dinosaur ile duygusal hafıza, aile yapıları ve kahraman yolculuğu gibi evrensel temaları paylaşır. Karakterlerin kararları, diğer filmlerle paralel bir gelişim sunar.",
+      "description": "Finding Nemo, kaybolan küçük balık Nemo'yu bulmak için babası Marlin'in okyanusta verdiği zorlu mücadeleyi anlatır. Film, aile, cesaret ve keşif temalarını işler. Pixar’ın canlı deniz altı dünyası ve karakter tasarımları, izleyiciyi derinden etkiler. Hikaye, sevgi ve bağlılık kavramlarını güçlü bir şekilde vurgular. Ayrıca, film animasyonun teknik sınırlarını zorlayan yenilikçi yöntemler sunar.",
+      "refers_to": "Finding Nemo, aile bağları ve cesaret temalarını işleyen Pixar'ın sevilen yapımlarından biridir. Marlin ve Dory’nin maceraları, izleyicilere dayanışma ve keşif duygusunu aktarıyor. Film, animasyon teknolojilerindeki gelişmelerle canlı ve etkileyici bir denizaltı dünyası sunar. Pixar’ın anlatı gücü ve teknik becerisi bu filmde ön plana çıkar. Ayrıca, karakterlerin gelişimi ve etkileşimleri filme derinlik katar.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://www.pixar.com/feature-films/finding-nemo"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Finding_Nemo"}
+      ],
+      "lang": "tr",
+      "level": 3
+    },
+    {
+      "id": "film/pixar/2004_the_incredibles",
+      "label": "İnanılmaz Aile (2004)",
+      "title": "The Incredibles",
       "type": "film",
       "release_date": "2004-11-05",
-      "level": 5
-    },
-    {
-      "id": "cars2006",
-      "label": "Cars (2006)",
-      "title": "Cars",
+      "end_date": null,
       "image": "images/pixar.jpg",
       "shape": "image",
-      "description": "'Cars' yapımı, Pixar evreninde duyguların içsel yolculuğu temasını özgün biçimde işler. Film; mizah, duygu ve felsefi alt metinlerle izleyiciye hem çocuklara hem yetişkinlere hitap eden çok katmanlı bir anlatı sunar. Animasyonun ötesinde, derinlemesine karakter gelişimleri ile öne çıkar.",
-      "refers_to": "A Bug's Life ve Toy Story 3 ile Cars arasında kurgusal zaman, mekân ve karakter mirası açısından çok sayıda gönderme bulunur. Anlatının tematik dokusu, evrensel duygular etrafında örülür.",
-      "type": "film",
-      "release_date": "2006-06-09",
-      "level": 6
+      "description": "İnanılmaz Aile, süper güçlere sahip bir ailenin normal hayatı sürdürmeye çalışırken gizli kahramanlıklarına Devam etmesini anlatır. Film, aile bağları, kimlik ve sorumluluk temalarını işler. Aksiyon dolu sahneler ve karakter gelişimiyle Pixar’ın önemli eserlerinden biridir. Ailenin iç çatışmaları ve dış tehditlerle mücadelesi, hikayeye derinlik katar. Film, süper kahraman temasını aile dinamikleriyle harmanlayarak özgün bir bakış açısı sunar.",
+      "refers_to": "The Incredibles, süper kahraman temalı aile draması olarak dikkat çeker. Film, bireysel yeteneklerin ve aile bağlarının önemini vurgular. Karakterlerin gelişimi ve çatışmaları, hikayeyi zenginleştirir. Pixar’ın animasyon kalitesi ve anlatı gücü, filmi unutulmaz kılar. Ailenin sıradan hayat ile kahramanlık arasındaki dengesi, evrensel temalarla harmanlanır. Bu yapım, Pixar’ın farklı türlerde başarılı olabileceğinin kanıtıdır.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://www.pixar.com/feature-films/the-incredibles"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/The_Incredibles"}
+      ],
+      "lang": "tr",
+      "level": 3
     },
     {
-      "id": "ratatouille2007",
-      "label": "Ratatouille (2007)",
-      "title": "Ratatouille",
-      "image": "images/pixar.jpg",
-      "shape": "image",
-      "description": "'Ratatouille' yapımı, Pixar evreninde ailenin önemi ve bireysel kimlik arayışı temasını özgün biçimde işler. Film; mizah, duygu ve felsefi alt metinlerle izleyiciye hem çocuklara hem yetişkinlere hitap eden çok katmanlı bir anlatı sunar. Animasyonun ötesinde, derinlemesine karakter gelişimleri ile öne çıkar.",
-      "refers_to": "Bu film, Inside Out 2 ve Toy Story gibi yapımlarla birlikte izleyiciyi ortak bir evrende dolaştırır. Renk paletleri, çevre tasarımları ve yan karakter ipuçları bu bağlantıyı destekler.",
-      "type": "film",
-      "release_date": "2007-06-29",
-      "level": 7
-    },
-    {
-      "id": "wallE2008",
-      "label": "WALL-E (2008)",
-      "title": "WALL-E",
-      "image": "images/pixar.jpg",
-      "shape": "image",
-      "description": "'WALL-E' yapımı, Pixar evreninde dostluk, kayıp ve yeniden keşif temasını özgün biçimde işler. Film; mizah, duygu ve felsefi alt metinlerle izleyiciye hem çocuklara hem yetişkinlere hitap eden çok katmanlı bir anlatı sunar. Animasyonun ötesinde, derinlemesine karakter gelişimleri ile öne çıkar.",
-      "refers_to": "Bu film, Ratatouille ve A Bug's Life gibi yapımlarla birlikte izleyiciyi ortak bir evrende dolaştırır. Renk paletleri, çevre tasarımları ve yan karakter ipuçları bu bağlantıyı destekler.",
-      "type": "film",
-      "release_date": "2008-06-27",
-      "level": 8
-    },
-    {
-      "id": "up2009",
-      "label": "Up (2009)",
-      "title": "Up",
-      "image": "images/pixar.jpg",
-      "shape": "image",
-      "description": "'Up' yapımı, Pixar evreninde duyguların içsel yolculuğu temasını özgün biçimde işler. Film; mizah, duygu ve felsefi alt metinlerle izleyiciye hem çocuklara hem yetişkinlere hitap eden çok katmanlı bir anlatı sunar. Animasyonun ötesinde, derinlemesine karakter gelişimleri ile öne çıkar.",
-      "refers_to": "Bu film, Elemental ve Inside Out gibi yapımlarla birlikte izleyiciyi ortak bir evrende dolaştırır. Renk paletleri, çevre tasarımları ve yan karakter ipuçları bu bağlantıyı destekler.",
-      "type": "film",
-      "release_date": "2009-05-29",
-      "level": 9
-    },
-    {
-      "id": "toyStory32010",
-      "label": "Toy Story 3 (2010)",
+      "id": "film/pixar/2010_toy_story_3",
+      "label": "Oyuncak Hikayesi 3 (2010)",
       "title": "Toy Story 3",
-      "image": "images/pixar.jpg",
-      "shape": "image",
-      "description": "'Toy Story 3' yapımı, Pixar evreninde çocukluk ve anılarla bağ kurma temasını özgün biçimde işler. Film; mizah, duygu ve felsefi alt metinlerle izleyiciye hem çocuklara hem yetişkinlere hitap eden çok katmanlı bir anlatı sunar. Animasyonun ötesinde, derinlemesine karakter gelişimleri ile öne çıkar.",
-      "refers_to": "Toy Story 3’da kullanılan bazı nesneler, Turning Red ve Monsters, Inc. filmlerinde karşımıza çıkarak gizli geçişler oluşturur. Bu yapım, Pixar evrenindeki zaman çizgisini örüntüsel şekilde pekiştirir.",
       "type": "film",
       "release_date": "2010-06-18",
-      "level": 10
-    },
-    {
-      "id": "cars22011",
-      "label": "Cars 2 (2011)",
-      "title": "Cars 2",
+      "end_date": null,
       "image": "images/pixar.jpg",
       "shape": "image",
-      "description": "'Cars 2' yapımı, Pixar evreninde çocukluk ve anılarla bağ kurma temasını özgün biçimde işler. Film; mizah, duygu ve felsefi alt metinlerle izleyiciye hem çocuklara hem yetişkinlere hitap eden çok katmanlı bir anlatı sunar. Animasyonun ötesinde, derinlemesine karakter gelişimleri ile öne çıkar.",
-      "refers_to": "Cars 2’da kullanılan bazı nesneler, Coco ve Incredibles 2 filmlerinde karşımıza çıkarak gizli geçişler oluşturur. Bu yapım, Pixar evrenindeki zaman çizgisini örüntüsel şekilde pekiştirir.",
+      "description": "Toy Story 3, oyuncakların sahibi Andy’nin üniversiteye gitmesiyle başlayan yeni dönemini anlatır. Oyuncaklar, yeni bir yuva ararken dostluk, bağlılık ve değişim temaları üzerine yoğunlaşır. Film, Pixar’ın duygusal anlatım gücünü zirveye taşıyarak hem çocuklar hem yetişkinler için dokunaklı bir hikâye sunar. Bu Devam filminde, oyuncakların dünyası daha da derinleştirilir ve onların insanlarla olan ilişkileri yeni boyutlar kazanır. Film, serinin önceki yapımlarıyla uyumlu şekilde karakter gelişimini ve temalarını genişletir.",
+      "refers_to": "Toy Story 3, serinin önceki filmlerinin ardından oyuncakların yeni hayatlarına ve sahiplerinin büyüme sürecine odaklanır. Film, aidiyet, veda ve dostluk gibi evrensel temaları işler. Pixar’ın animasyon kalitesi ve anlatı gücü, bu filmde zirveye ulaşmıştır. Hikaye, oyuncakların insanlarla olan bağlarını ve kendi aralarındaki dayanışmayı güçlendirir. Toy Story serisi için etkileyici bir Devam filmidir ve duygusal derinliğiyle izleyicileri etkiler.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://www.pixar.com/feature-films/toy-story-3"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Toy_Story_3"}
+      ],
+      "lang": "tr",
+      "level": 3
+    },
+    {
+      "id": "film/pixar/2011_cars_2",
+      "label": "Arabalar 2 (2011)",
+      "title": "Cars 2",
       "type": "film",
       "release_date": "2011-06-24",
-      "level": 11
-    },
-    {
-      "id": "brave2012",
-      "label": "Brave (2012)",
-      "title": "Brave",
+      "end_date": null,
       "image": "images/pixar.jpg",
       "shape": "image",
-      "description": "'Brave' yapımı, Pixar evreninde toplumdaki yerini bulma temasını özgün biçimde işler. Film; mizah, duygu ve felsefi alt metinlerle izleyiciye hem çocuklara hem yetişkinlere hitap eden çok katmanlı bir anlatı sunar. Animasyonun ötesinde, derinlemesine karakter gelişimleri ile öne çıkar.",
-      "refers_to": "'Brave' yapımında, Monsters University ve Lightyear filmlerine dair sahne düzenlemeleri, karakter arka planları ve gizli nesne referanslarıyla örülü bir bağ kurulur. Pixar’ın yaratıcı dünyası bu detaylarla genişler.",
-      "type": "film",
-      "release_date": "2012-06-22",
-      "level": 12
+      "description": "Arabalar 2, şampiyon yarışçı Şimşek McQueen ve en iyi arkadaşı Mater’in uluslararası casusluk ve yarış dünyasındaki maceralarını anlatır. Film, dostluk, sadakat ve cesaret temalarını işler. Animasyon teknikleri ve aksiyon dolu sahneleriyle dikkat çeker. Pixar’ın renkli karakter dünyasını genişleten bu Devam filmi, farklı temaları bir araya getirir. Hikaye, arkadaşlık ve macera unsurlarını harmanlayarak izleyiciye eğlenceli bir deneyim sunar.",
+      "refers_to": "Cars 2, ilk filmin Devamı olarak Şimşek McQueen ve Mater’in maceralarını anlatır. Film, dostluk, sadakat ve kahramanlık temalarını ön plana çıkarır. Uluslararası casusluk ve yarış unsurları, filmi aksiyon dolu ve heyecanlı kılar. Pixar’ın animasyon kalitesi ve karakter gelişimi, yapımda kendini gösterir. Arabalar serisinin farklı yönlerini keşfeder ve evreni genişletir.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://www.pixar.com/feature-films/cars-2"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Cars_2"}
+      ],
+      "lang": "tr",
+      "level": 3
     },
     {
-      "id": "monstersUniversity2013",
-      "label": "Monsters University (2013)",
+      "id": "film/pixar/2013_monsters_university",
+      "label": "Canavarlar Üniversitesi (2013)",
       "title": "Monsters University",
-      "image": "images/pixar.jpg",
-      "shape": "image",
-      "description": "'Monsters University' yapımı, Pixar evreninde duyguların içsel yolculuğu temasını özgün biçimde işler. Film; mizah, duygu ve felsefi alt metinlerle izleyiciye hem çocuklara hem yetişkinlere hitap eden çok katmanlı bir anlatı sunar. Animasyonun ötesinde, derinlemesine karakter gelişimleri ile öne çıkar.",
-      "refers_to": "'Monsters University' yapımında, Lightyear ve Brave filmlerine dair sahne düzenlemeleri, karakter arka planları ve gizli nesne referanslarıyla örülü bir bağ kurulur. Pixar’ın yaratıcı dünyası bu detaylarla genişler.",
       "type": "film",
       "release_date": "2013-06-21",
-      "level": 13
-    },
-    {
-      "id": "insideOut2015",
-      "label": "Inside Out (2015)",
-      "title": "Inside Out",
+      "end_date": null,
       "image": "images/pixar.jpg",
       "shape": "image",
-      "description": "'Inside Out' yapımı, Pixar evreninde korkularla yüzleşme ve cesaret temasını özgün biçimde işler. Film; mizah, duygu ve felsefi alt metinlerle izleyiciye hem çocuklara hem yetişkinlere hitap eden çok katmanlı bir anlatı sunar. Animasyonun ötesinde, derinlemesine karakter gelişimleri ile öne çıkar.",
-      "refers_to": "Brave ve The Incredibles ile Inside Out arasında kurgusal zaman, mekân ve karakter mirası açısından çok sayıda gönderme bulunur. Anlatının tematik dokusu, evrensel duygular etrafında örülür.",
+      "description": "Canavarlar Üniversitesi, Monsters, Inc.'in Öncesinde geçer ve Sulley ile Mike’ın üniversitedeki tanışmalarını ve dostluklarının başlangıcını anlatır. Film, dostluk, rekabet ve kendini keşfetme temalarını işler. Pixar’ın yaratıcı dünyasında geçen film, karakterlerin gençlik yıllarını ve gelişim süreçlerini detaylandırır. Teknik açıdan yüksek kalitede animasyon ve hikaye anlatımı sunar. Film, serinin ana yapımına derinlik katarak karakterlerin kökenlerini genişletir.",
+      "refers_to": "Monsters University, Monsters, Inc.'in Öncesini anlatarak karakterlerin geçmişlerini ve evrimlerini keşfeder. Film, dostluk, rekabet ve kendini geliştirme temalarını derinleştirir. Pixar’ın animasyon ve hikaye anlatımı gücü bu yapımda da belirgindir. Sulley ve Mike’ın üniversite hayatı, sonraki maceralarına zemin hazırlar. Serinin hayranları için önemli bir tamamlayıcıdır.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://www.pixar.com/feature-films/monsters-university"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Monsters_University"}
+      ],
+      "lang": "tr",
+      "level": 3
+    },
+     {
+      "id": "film/pixar/2015_inside_out",
+      "label": "Ters Yüz (2015)",
+      "title": "Inside Out",
       "type": "film",
       "release_date": "2015-06-19",
-      "level": 14
-    },
-    {
-      "id": "theGoodDinosaur2015",
-      "label": "The Good Dinosaur (2015)",
-      "title": "The Good Dinosaur",
+      "end_date": null,
       "image": "images/pixar.jpg",
       "shape": "image",
-      "description": "'The Good Dinosaur' yapımı, Pixar evreninde korkularla yüzleşme ve cesaret temasını özgün biçimde işler. Film; mizah, duygu ve felsefi alt metinlerle izleyiciye hem çocuklara hem yetişkinlere hitap eden çok katmanlı bir anlatı sunar. Animasyonun ötesinde, derinlemesine karakter gelişimleri ile öne çıkar.",
-      "refers_to": "Lightyear ve Inside Out 2 ile The Good Dinosaur arasında kurgusal zaman, mekân ve karakter mirası açısından çok sayıda gönderme bulunur. Anlatının tematik dokusu, evrensel duygular etrafında örülür.",
+      "description": "Ters Yüz, genç bir kızın zihnindeki duyguları antropomorfik karakterler olarak canlandırır. Film, duyguların karmaşıklığını, büyüme sürecini ve kimlik oluşumunu detaylandırır. Sevinç, Korku, Üzüntü, Öfke ve Tiksinti gibi karakterler aracılığıyla izleyiciye duygusal zekâ ve içsel denge temaları aktarılır. Pixar’ın yaratıcı anlatımı ve animasyon kalitesi, bu filmi benzersiz kılar. Film, çocuklar ve yetişkinler için anlamlı ve düşündürücü bir deneyim sunar.",
+      "refers_to": "Inside Out, insan duygularının karmaşıklığını ve önemini merkezine alan Pixar'ın özgün yapımlarındandır. Film, zihinsel süreçlerin ve kişisel gelişimin animasyon aracılığıyla anlatıldığı ender eserlerden biridir. Duygusal zekâ, kimlik ve büyüme temaları filmde ön plandadır. Pixar’ın teknik ve yaratıcı gücü, bu yapımda da kendini gösterir. Film, izleyicilere duygularını anlama ve kabul etme konusunda yeni perspektifler sunar.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://www.pixar.com/feature-films/inside-out"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Inside_Out_(2015_film)"}
+      ],
+      "lang": "tr",
+      "level": 3
+    },
+    {
+      "id": "film/pixar/2015_the_good_dinosaur",
+      "label": "İyi Dinozor (2015)",
+      "title": "The Good Dinosaur",
       "type": "film",
       "release_date": "2015-11-25",
-      "level": 14
-    },
-    {
-      "id": "findingDory2016",
-      "label": "Finding Dory (2016)",
-      "title": "Finding Dory",
+      "end_date": null,
       "image": "images/pixar.jpg",
       "shape": "image",
-      "description": "'Finding Dory' yapımı, Pixar evreninde çocukluk ve anılarla bağ kurma temasını özgün biçimde işler. Film; mizah, duygu ve felsefi alt metinlerle izleyiciye hem çocuklara hem yetişkinlere hitap eden çok katmanlı bir anlatı sunar. Animasyonun ötesinde, derinlemesine karakter gelişimleri ile öne çıkar.",
-      "refers_to": "Bu film, Toy Story ve Cars 2 gibi yapımlarla birlikte izleyiciyi ortak bir evrende dolaştırır. Renk paletleri, çevre tasarımları ve yan karakter ipuçları bu bağlantıyı destekler.",
+      "description": "İyi Dinozor, alternatif bir evrende dinozorların insanlarla birlikte yaşadığı bir dünyada geçer. Film, korku, dostluk ve aile temalarını işler. Ana karakter Arlo'nun kendini keşfetme yolculuğu ve karşılaştığı zorluklar hikayenin merkezindedir. Pixar’ın görsel zenginliği ve anlatım gücüyle dikkat çeken yapım, aile bağlarının önemini vurgular. Film, izleyicilere cesaret ve dayanıklılık mesajları verir.",
+      "refers_to": "The Good Dinosaur, Pixar’ın farklı anlatı deneylerinden biri olarak, alternatif bir tarih ve evren sunar. Arlo’nun yolculuğu, kendini bulma ve zorluklarla başa çıkma temalarını işler. Film, aile ve dostluk bağlarını güçlendirir. Pixar’ın teknik ve görsel anlatımı, bu yapımda da ön plandadır. Hikaye, izleyiciye evrensel değerleri aktarmada başarılıdır.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://www.pixar.com/feature-films/the-good-dinosaur"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/The_Good_Dinosaur"}
+      ],
+      "lang": "tr",
+      "level": 3
+    },
+    {
+      "id": "film/pixar/2016_finding_dory",
+      "label": "Kayıp Balık Dory (2016)",
+      "title": "Finding Dory",
       "type": "film",
       "release_date": "2016-06-17",
-      "level": 15
-    },
-    {
-      "id": "cars32017",
-      "label": "Cars 3 (2017)",
-      "title": "Cars 3",
+      "end_date": null,
       "image": "images/pixar.jpg",
       "shape": "image",
-      "description": "'Cars 3' yapımı, Pixar evreninde insan olmanın anlamı temasını özgün biçimde işler. Film; mizah, duygu ve felsefi alt metinlerle izleyiciye hem çocuklara hem yetişkinlere hitap eden çok katmanlı bir anlatı sunar. Animasyonun ötesinde, derinlemesine karakter gelişimleri ile öne çıkar.",
-      "refers_to": "Cars 3’da kullanılan bazı nesneler, Toy Story ve Elemental filmlerinde karşımıza çıkarak gizli geçişler oluşturur. Bu yapım, Pixar evrenindeki zaman çizgisini örüntüsel şekilde pekiştirir.",
+      "description": "Finding Dory, unutkanlık sorunu yaşayan Dory'nin geçmişini ve ailesini arama macerasını anlatır. Film, aile, hafıza ve keşif temalarını işler. Dory'nin dostlukları ve zorluklarla mücadelesi, izleyiciye umut ve dayanıklılık mesajları verir. Pixar’ın görsel efektleri ve karakter tasarımları, filmi duygusal ve eğlenceli kılar. Hikaye, sevgi ve bağlılık temalarını vurgular.",
+      "refers_to": "Finding Dory, Finding Nemo'nun Devamı olarak Dory karakterinin derinlemesine hikayesini anlatır. Film, aile bağları, hafıza ve kimlik temalarını işler. Dory’nin macerası, izleyiciye umut ve dayanıklılık sunar. Pixar’ın teknik ve yaratıcı başarısı filmde ön plana çıkar. Film, denizaltı dünyasının güzelliklerini ve zorluklarını etkileyici biçimde yansıtır.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://www.pixar.com/feature-films/finding-dory"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Finding_Dory"}
+      ],
+      "lang": "tr",
+      "level": 3
+    },
+     {
+      "id": "film/pixar/2017_cars_3",
+      "label": "Arabalar 3 (2017)",
+      "title": "Cars 3",
       "type": "film",
       "release_date": "2017-06-16",
-      "level": 16
-    },
-    {
-      "id": "coco2017",
-      "label": "Coco (2017)",
-      "title": "Coco",
+      "end_date": null,
       "image": "images/pixar.jpg",
       "shape": "image",
-      "description": "'Coco' yapımı, Pixar evreninde korkularla yüzleşme ve cesaret temasını özgün biçimde işler. Film; mizah, duygu ve felsefi alt metinlerle izleyiciye hem çocuklara hem yetişkinlere hitap eden çok katmanlı bir anlatı sunar. Animasyonun ötesinde, derinlemesine karakter gelişimleri ile öne çıkar.",
-      "refers_to": "Coco, Lightyear ve Toy Story 2 ile duygusal hafıza, aile yapıları ve kahraman yolculuğu gibi evrensel temaları paylaşır. Karakterlerin kararları, diğer filmlerle paralel bir gelişim sunar.",
+      "description": "Arabalar 3, Şimşek McQueen’in yeni nesil yarışçılarla mücadele ettiği ve yeniden zirveye çıkma çabasını anlatır. Film, azim, yenilik ve dostluk temalarını işler. McQueen’in yaşadığı zorluklar ve yeni nesil ile uyum süreci hikayeye derinlik katar. Pixar’ın gelişmiş animasyon teknikleriyle birleşen film, hem çocuklar hem yetişkinler için ilham verici bir deneyim sunar.",
+      "refers_to": "Cars 3, Arabalar serisinin Devamı olarak McQueen’in kariyerindeki zorlukları ve gelişimini anlatır. Film, azim, değişim ve dostluk temalarını ön plana çıkarır. Yeni nesil yarışçılarla karşılaşan McQueen’in uyum süreci, hikayeye dramatik bir boyut katar. Pixar’ın teknik başarısı ve karakter odaklı anlatımı bu yapımda da kendini gösterir. Seri için güçlü bir Devam filmidir.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://www.pixar.com/feature-films/cars-3"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Cars_3"}
+      ],
+      "lang": "tr",
+      "level": 3
+    },
+    {
+      "id": "film/pixar/2017_coco",
+      "label": "Kayıp Balık Nemo (2017)",
+      "title": "Coco",
       "type": "film",
       "release_date": "2017-11-22",
-      "level": 16
-    },
-    {
-      "id": "incredibles22018",
-      "label": "Incredibles 2 (2018)",
-      "title": "Incredibles 2",
+      "end_date": null,
       "image": "images/pixar.jpg",
       "shape": "image",
-      "description": "'Incredibles 2' yapımı, Pixar evreninde insan olmanın anlamı temasını özgün biçimde işler. Film; mizah, duygu ve felsefi alt metinlerle izleyiciye hem çocuklara hem yetişkinlere hitap eden çok katmanlı bir anlatı sunar. Animasyonun ötesinde, derinlemesine karakter gelişimleri ile öne çıkar.",
-      "refers_to": "Toy Story ve Soul ile Incredibles 2 arasında kurgusal zaman, mekân ve karakter mirası açısından çok sayıda gönderme bulunur. Anlatının tematik dokusu, evrensel duygular etrafında örülür.",
+      "description": "Coco, genç Miguel'in Meksika’nın Ölüler Günü kutlamalarında ailesinin sırlarını keşfetmesini ve müziğe olan tutkusunu anlatır. Film, aile bağları, hafıza ve kültürel kimlik temalarını işler. Pixar’ın zengin görsel anlatımı ve duygusal hikayesi, izleyicileri derinden etkiler. Hikaye, sevgi, bağışlama ve aidiyet kavramlarını vurgular. Müzik ve renkler, filmde ön plandadır ve kültürel detaylar büyük önem taşır.",
+      "refers_to": "Coco, aile ve kültürel kimlik temalarını işleyen Pixar'ın önemli yapımlarındandır. Miguel'in yolculuğu, aile bağları ve hafıza kavramlarını derinleştirir. Film, Meksika kültürünü ve Ölüler Günü geleneklerini detaylı ve saygılı şekilde sunar. Pixar’ın teknik ve yaratıcı gücü, bu filmde kendini gösterir. Coco, izleyicilere sevgi, bağışlama ve kimlik üzerine güçlü mesajlar verir.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://www.pixar.com/feature-films/coco"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Coco_(film)"}
+      ],
+      "lang": "tr",
+      "level": 3
+    },
+    {
+      "id": "film/pixar/2018_incredibles_2",
+      "label": "İnanılmaz Aile 2 (2018)",
+      "title": "Incredibles 2",
       "type": "film",
       "release_date": "2018-06-15",
-      "level": 17
-    },
-    {
-      "id": "toyStory42019",
-      "label": "Toy Story 4 (2019)",
-      "title": "Toy Story 4",
+      "end_date": null,
       "image": "images/pixar.jpg",
       "shape": "image",
-      "description": "'Toy Story 4' yapımı, Pixar evreninde duyguların içsel yolculuğu temasını özgün biçimde işler. Film; mizah, duygu ve felsefi alt metinlerle izleyiciye hem çocuklara hem yetişkinlere hitap eden çok katmanlı bir anlatı sunar. Animasyonun ötesinde, derinlemesine karakter gelişimleri ile öne çıkar.",
-      "refers_to": "Toy Story 4, Soul ve Monsters University ile duygusal hafıza, aile yapıları ve kahraman yolculuğu gibi evrensel temaları paylaşır. Karakterlerin kararları, diğer filmlerle paralel bir gelişim sunar.",
+      "description": "İnanılmaz Aile 2, süper kahramanların normal hayat ile kahramanlık arasındaki mücadelesini sürdürdüğü Devam filmidir. Elastigirl öne çıkarak toplumun kahramanlara bakışını değiştirmeye çalışırken, Bob evde aileyi yönetir. Film, aile bağları, sorumluluk ve güç temalarını işler. Aksiyon sahneleri ve karakter gelişimiyle Pixar’ın sevilen serilerinden biridir. Ayrıca, yeni düşman ve tehditler hikayeye gerilim katar.",
+      "refers_to": "Incredibles 2, ilk filmin Devamı olarak süper kahraman ailesinin iç dinamiklerini ve mücadelelerini anlatır. Elastigirl’in liderliği ve Bob’un evdeki rolü, hikayeye zenginlik katar. Film, aile, sorumluluk ve toplumun kahramanlara bakışı temalarını derinleştirir. Pixar’ın teknik başarısı ve karakter odaklı anlatımı, Devam filminde de kendini gösterir. Evren için önemli bir Devam yapımıdır.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://www.pixar.com/feature-films/incredibles-2"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Incredibles_2"}
+      ],
+      "lang": "tr",
+      "level": 3
+    },
+      {
+      "id": "film/pixar/2019_toy_story_4",
+      "label": "Oyuncak Hikayesi 4 (2019)",
+      "title": "Toy Story 4",
       "type": "film",
       "release_date": "2019-06-21",
-      "level": 18
+      "end_date": null,
+      "image": "images/pixar.jpg",
+      "shape": "image",
+      "description": "Toy Story 4, Woody ve arkadaşlarının yeni maceralarını anlatır. Film, aidiyet, kimlik ve değişim temalarını işlerken, oyuncakların insanlarla olan ilişkilerini yeni açılardan keşfeder. Özellikle Woody’nin kendi yolunu bulma süreci ön plandadır. Pixar’ın olağanüstü animasyon kalitesi ve duygusal anlatımıyla dikkat çeker. Seri, hem nostalji hem de yeni hikayelerle zenginleştirilmiştir.",
+      "refers_to": "Toy Story 4, serinin önceki filmlerine saygı duruşunda bulunarak karakterlerin gelişimini Devam ettirir. Woody’nin bağımsızlık arayışı ve yeni dostluklar kurması, filmde işlenen temel temalardır. Pixar’ın teknik başarıları ve derin anlatımı, filmi güçlü bir Devam filmi yapar. Oyuncakların dünyasının zenginleştirildiği bu film, Pixar evreninde önemli bir yere sahiptir.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://www.pixar.com/feature-films/toy-story-4"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Toy_Story_4"}
+      ],
+      "lang": "tr",
+      "level": 3
     },
     {
-      "id": "onward2020",
+      "id": "film/pixar/2020_onward",
       "label": "Onward (2020)",
       "title": "Onward",
-      "image": "images/pixar.jpg",
-      "shape": "image",
-      "description": "'Onward' yapımı, Pixar evreninde hayal gücü ile gerçeklik arasındaki sınır temasını özgün biçimde işler. Film; mizah, duygu ve felsefi alt metinlerle izleyiciye hem çocuklara hem yetişkinlere hitap eden çok katmanlı bir anlatı sunar. Animasyonun ötesinde, derinlemesine karakter gelişimleri ile öne çıkar.",
-      "refers_to": "'Onward' yapımında, Cars 3 ve Coco filmlerine dair sahne düzenlemeleri, karakter arka planları ve gizli nesne referanslarıyla örülü bir bağ kurulur. Pixar’ın yaratıcı dünyası bu detaylarla genişler.",
       "type": "film",
       "release_date": "2020-03-06",
-      "level": 19
+      "end_date": null,
+      "image": "images/pixar.jpg",
+      "shape": "image",
+      "description": "Onward, iki kardeşin babalarını tekrar görmek için sihirli bir maceraya atılmasını anlatır. Film, aile, kayıp ve umut temalarını işler. Fantastik öğeler ve modern dünyayı harmanlayan hikaye, Pixar’ın duygusal derinliğini gösterir. Karakterlerin kişisel yolculukları ve kardeşlik bağları, filmin merkezinde yer alır. Animasyonun teknik kalitesi ve özgün anlatımıyla dikkat çeker.",
+      "refers_to": "Onward, Pixar’ın fantastik ve duygusal bir macerasıdır. İki kardeşin kaybettikleri babalarıyla yeniden bağlantı kurma çabası, aile ve umut temalarını derinleştirir. Film, modern sihirli dünya ile gerçekliği harmanlar. Karakter gelişimi ve güçlü anlatımıyla izleyicilere dokunur. Pixar’ın teknik ve yaratıcı gücü bu filmde de ön plandadır.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://www.pixar.com/feature-films/onward"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Onward_(film)"}
+      ],
+      "lang": "tr",
+      "level": 3
     },
     {
-      "id": "soul2020",
+      "id": "film/pixar/2020_soul",
       "label": "Soul (2020)",
       "title": "Soul",
-      "image": "images/pixar.jpg",
-      "shape": "image",
-      "description": "'Soul' yapımı, Pixar evreninde duyguların içsel yolculuğu temasını özgün biçimde işler. Film; mizah, duygu ve felsefi alt metinlerle izleyiciye hem çocuklara hem yetişkinlere hitap eden çok katmanlı bir anlatı sunar. Animasyonun ötesinde, derinlemesine karakter gelişimleri ile öne çıkar.",
-      "refers_to": "Bu film, Toy Story ve Onward gibi yapımlarla birlikte izleyiciyi ortak bir evrende dolaştırır. Renk paletleri, çevre tasarımları ve yan karakter ipuçları bu bağlantıyı destekler.",
       "type": "film",
       "release_date": "2020-12-25",
-      "level": 19
+      "end_date": null,
+      "image": "images/pixar.jpg",
+      "shape": "image",
+      "description": "Soul, müzik öğretmeni Joe Gardner’ın hayat, ölüm ve ruh kavramlarını keşfettiği derin bir yolculuğu anlatır. Film, yaşamın anlamı, tutkular ve kimlik temalarını işler. Soyut ve somut dünyalar arasında geçişler yaparak, izleyiciye felsefi ve duygusal bir deneyim sunar. Pixar’ın yaratıcı animasyon teknikleri ve güçlü anlatımı, filmi özgün kılar. Film, hem çocuklar hem yetişkinler için düşündürücü bir yapım olarak öne çıkar.",
+      "refers_to": "Soul, yaşamın anlamı ve bireysel tutkular üzerine odaklanan Pixar yapımlarından biridir. Joe Gardner’ın ruhani yolculuğu, felsefi ve duygusal temalarla zenginleşir. Film, yaşam ve ölüm arasındaki ince çizgiyi animasyonla etkileyici biçimde işler. Pixar’ın yenilikçi anlatımı ve görsel zenginliği filmde belirgindir. Soul, izleyicilere yaşamın değerini yeniden düşünme fırsatı sunar.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://www.pixar.com/feature-films/soul"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Soul_(2020_film)"}
+      ],
+      "lang": "tr",
+      "level": 3
     },
     {
-      "id": "luca2021",
+      "id": "film/pixar/2021_luca",
       "label": "Luca (2021)",
       "title": "Luca",
-      "image": "images/pixar.jpg",
-      "shape": "image",
-      "description": "'Luca' yapımı, Pixar evreninde korkularla yüzleşme ve cesaret temasını özgün biçimde işler. Film; mizah, duygu ve felsefi alt metinlerle izleyiciye hem çocuklara hem yetişkinlere hitap eden çok katmanlı bir anlatı sunar. Animasyonun ötesinde, derinlemesine karakter gelişimleri ile öne çıkar.",
-      "refers_to": "Luca’da kullanılan bazı nesneler, Lightyear ve Monsters, Inc. filmlerinde karşımıza çıkarak gizli geçişler oluşturur. Bu yapım, Pixar evrenindeki zaman çizgisini örüntüsel şekilde pekiştirir.",
       "type": "film",
       "release_date": "2021-06-18",
-      "level": 20
+      "end_date": null,
+      "image": "images/pixar.jpg",
+      "shape": "image",
+      "description": "Luca, İtalya'nın kıyı kasabasında geçen bir yaz boyunca iki genç deniz canavarının insan kılığına girerek yaşadığı maceraları anlatır. Film, dostluk, kimlik ve kabullenme temalarını işler. Sıcak atmosferi ve renkli karakterleriyle dikkat çeker. Pixar’ın animasyon kalitesi ve hafif mizahi yaklaşımı, filmi izleyiciler için eğlenceli ve dokunaklı kılar.",
+      "refers_to": "Luca, kimlik ve dostluk temalarını işleyen hafif ve eğlenceli Pixar yapımlarından biridir. İki deniz canavarının insan dünyasındaki deneyimleri, kabullenme ve arkadaşlık kavramlarını vurgular. Film, İtalyan kültürünü ve yaz atmosferini başarılı şekilde yansıtır. Pixar’ın teknik ve yaratıcı becerisi filmde ön plandadır. Luca, sıcak ve samimi anlatımıyla izleyiciye keyifli bir deneyim sunar.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://www.pixar.com/feature-films/luca"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Luca_(film)"}
+      ],
+      "lang": "tr",
+      "level": 3
     },
     {
-      "id": "turningRed2022",
+      "id": "film/pixar/2022_turning_red",
       "label": "Turning Red (2022)",
       "title": "Turning Red",
-      "image": "images/pixar.jpg",
-      "shape": "image",
-      "description": "'Turning Red' yapımı, Pixar evreninde duyguların içsel yolculuğu temasını özgün biçimde işler. Film; mizah, duygu ve felsefi alt metinlerle izleyiciye hem çocuklara hem yetişkinlere hitap eden çok katmanlı bir anlatı sunar. Animasyonun ötesinde, derinlemesine karakter gelişimleri ile öne çıkar.",
-      "refers_to": "Bu film, Elemental ve Toy Story gibi yapımlarla birlikte izleyiciyi ortak bir evrende dolaştırır. Renk paletleri, çevre tasarımları ve yan karakter ipuçları bu bağlantıyı destekler.",
       "type": "film",
       "release_date": "2022-03-11",
-      "level": 21
+      "end_date": null,
+      "image": "images/pixar.jpg",
+      "shape": "image",
+      "description": "Turning Red, ergenlik çağındaki Mei’nin kendini kontrol edemeyip dev bir kırmızı panda formuna dönüşmesini konu alır. Film, büyüme, kimlik ve aile ilişkileri temalarını işler. Mizahi ve samimi anlatımıyla dikkat çeker. Pixar’ın yenilikçi animasyon tarzı ve gençlik sorunlarını işleyişi, filmi özgün kılar. Film, izleyicilere ergenlik sürecinin zorlukları ve aile bağlarının önemi hakkında eğlenceli ve dokunaklı bir bakış sunar.",
+      "refers_to": "Turning Red, ergenlik dönemi ve aile bağları üzerine odaklanan Pixar filmlerinden biridir. Mei’nin kırmızı panda dönüşümü, büyüme sancılarını ve kimlik arayışını sembolize eder. Film, gençlik problemlerini mizahi ve duygusal bir şekilde işler. Pixar’ın teknik ve yaratıcı başarıları bu yapımda da ön plana çıkar. İzleyicilere empati ve anlayışla yaklaşan film, genç izleyiciler için önemli mesajlar içerir.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://www.pixar.com/feature-films/turning-red"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Turning_Red"}
+      ],
+      "lang": "tr",
+      "level": 3
     },
     {
-      "id": "lightyear2022",
+      "id": "film/pixar/2022_lightyear",
       "label": "Lightyear (2022)",
       "title": "Lightyear",
-      "image": "images/pixar.jpg",
-      "shape": "image",
-      "description": "'Lightyear' yapımı, Pixar evreninde duyguların içsel yolculuğu temasını özgün biçimde işler. Film; mizah, duygu ve felsefi alt metinlerle izleyiciye hem çocuklara hem yetişkinlere hitap eden çok katmanlı bir anlatı sunar. Animasyonun ötesinde, derinlemesine karakter gelişimleri ile öne çıkar.",
-      "refers_to": "Bu film, Finding Dory ve Brave gibi yapımlarla birlikte izleyiciyi ortak bir evrende dolaştırır. Renk paletleri, çevre tasarımları ve yan karakter ipuçları bu bağlantıyı destekler.",
       "type": "film",
       "release_date": "2022-06-17",
-      "level": 21
-    },
-    {
-      "id": "elemental2023",
-      "label": "Elemental (2023)",
-      "title": "Elemental",
+      "end_date": null,
       "image": "images/pixar.jpg",
       "shape": "image",
-      "description": "'Elemental' yapımı, Pixar evreninde dostluk, kayıp ve yeniden keşif temasını özgün biçimde işler. Film; mizah, duygu ve felsefi alt metinlerle izleyiciye hem çocuklara hem yetişkinlere hitap eden çok katmanlı bir anlatı sunar. Animasyonun ötesinde, derinlemesine karakter gelişimleri ile öne çıkar.",
-      "refers_to": "'Elemental' yapımında, Up ve WALL-E filmlerine dair sahne düzenlemeleri, karakter arka planları ve gizli nesne referanslarıyla örülü bir bağ kurulur. Pixar’ın yaratıcı dünyası bu detaylarla genişler.",
+      "description": "Lightyear, Buzz Lightyear karakterinin gerçek hikayesini anlatan bilim kurgu temalı bir animasyondur. Film, keşif, cesaret ve kimlik temalarını işler. Uzay yolculuğu ve teknolojik gelişmeler filmde ön plandadır. Pixar’ın animasyon kalitesi ve derin karakter analiziyle dikkat çeker. Film, Toy Story serisinin arka planını zenginleştirir ve karakterin kökenlerini keşfeder.",
+      "refers_to": "Lightyear, Toy Story evreninde yer alan Buzz Lightyear karakterinin gerçek yaşamına odaklanan bilim kurgu animasyonudur. Film, keşif ve cesaret temalarını işlerken karakterin kişisel gelişimini de detaylandırır. Pixar’ın teknik ve anlatı gücü, filmde öne çıkar. Lightyear, Toy Story ile bağlantılı olup, karakterin evrenini genişletir. Film, izleyicilere farklı bir bilim kurgu animasyon deneyimi sunar.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://www.pixar.com/feature-films/lightyear"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Lightyear_(film)"}
+      ],
+      "lang": "tr",
+      "level": 3
+    },
+      {
+      "id": "film/disney/1937_snow_white_and_the_seven_dwarfs",
+      "label": "Pamuk Prenses ve Yedi Cüceler (1937)",
+      "title": "Snow White and the Seven Dwarfs",
       "type": "film",
-      "release_date": "2023-06-16",
-      "level": 22
+      "release_date": "1937-12-21",
+      "end_date": null,
+      "image": "images/disney.jpg",
+      "shape": "image",
+      "description": "Pamuk Prenses ve Yedi Cüceler, Walt Disney'in ilk tam uzunlukta animasyon filmidir ve animasyon tarihinin dönüm noktalarından biridir. Kötü kalpli kraliçe tarafından kovulan Pamuk Prenses, ormanda yedi sevimli cüce ile karşılaşır. Film, iyilik, dostluk ve cesaret temalarını işlerken, masalsı anlatımı ve müzikleriyle çocukların ve yetişkinlerin kalbini kazanmıştır. Disney’in animasyon teknolojisindeki yenilikleri ve hikaye anlatımı, bu eseri klasikler arasına sokar.",
+      "refers_to": "Snow White and the Seven Dwarfs, animasyon tarihinin ilk uzun metrajlı yapımı olarak büyük öneme sahiptir. Film, masal anlatımındaki başarısı ve teknik yenilikleriyle Disney’in temel taşlarından biri olmuştur. Karakterlerin canlılığı ve müziklerin kalitesi, izleyiciyi büyüler. Film, iyilik ve kötülük temalarının evrensel bir anlatımıdır. Disney’in sonraki eserlerine ilham kaynağıdır.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://disney.com/snow-white-and-the-seven-dwarfs"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Snow_White_and_the_Seven_Dwarfs_(1937_film)"}
+      ],
+      "lang": "tr",
+      "level": 3
     },
     {
-      "id": "insideOut22024",
-      "label": "Inside Out 2 (2024)",
-      "title": "Inside Out 2",
-      "image": "images/pixar.jpg",
-      "shape": "image",
-      "description": "'Inside Out 2' yapımı, Pixar evreninde korkularla yüzleşme ve cesaret temasını özgün biçimde işler. Film; mizah, duygu ve felsefi alt metinlerle izleyiciye hem çocuklara hem yetişkinlere hitap eden çok katmanlı bir anlatı sunar. Animasyonun ötesinde, derinlemesine karakter gelişimleri ile öne çıkar.",
-      "refers_to": "Finding Dory ve A Bug's Life ile Inside Out 2 arasında kurgusal zaman, mekân ve karakter mirası açısından çok sayıda gönderme bulunur. Anlatının tematik dokusu, evrensel duygular etrafında örülür.",
+      "id": "film/disney/1950_cinderella",
+      "label": "Sindirella (1950)",
+      "title": "Cinderella",
       "type": "film",
-      "release_date": "2024-06-14",
-      "level": 23
-    }
+      "release_date": "1950-02-15",
+      "end_date": null,
+      "image": "images/disney.jpg",
+      "shape": "image",
+      "description": "Sindirella, Walt Disney’in klasik peri masalı uyarlamasıdır. Kötü üvey annesi ve kız kardeşleri tarafından eziyet edilen Sindirella, perisi sayesinde baloya gider ve prensle tanışır. Film, umut, iyilik ve hayallerin gerçekleşmesi temalarını işler. Disney’in zarif animasyonları ve unutulmaz müzikleriyle, sinema tarihinin en sevilen klasiklerinden biri olmuştur. Film, adaletin ve sevginin gücünü masalsı bir dille anlatır.",
+      "refers_to": "Cinderella, Disney’in peri masalı türündeki en önemli yapımlarından biridir. Film, umudun ve iyiliğin kötü koşulları yenebileceğini gösterir. Sindirella karakteri, sabır ve sevgiyle zorlukların üstesinden gelir. Disney’in animasyon kalitesi ve müzikal yapısı, filmi nesiller boyu sevilir kılar. Film, klasik hikaye anlatımının ve animasyonun zirvesi olarak kabul edilir.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://disney.com/cinderella"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Cinderella_(1950_film)"}
+      ],
+      "lang": "tr",
+      "level": 3
+    },
+    {
+      "id": "film/disney/1959_sleeping_beauty",
+      "label": "Uyuyan Güzel (1959)",
+      "title": "Sleeping Beauty",
+      "type": "film",
+      "release_date": "1959-01-29",
+      "end_date": null,
+      "image": "images/disney.jpg",
+      "shape": "image",
+      "description": "Uyuyan Güzel, kötü peri Malefiz’in laneti sonucu uykuya dalan prenses Aurora’nın hikayesini anlatır. Film, kader, cesaret ve sevgi temalarını işler. Disney’in sanatsal animasyonları ve müzikleriyle dikkat çeker. Klasik peri masalı atmosferini güçlü görseller ve karakterlerle destekler. Hikaye, iyilik ve kötülüğün mücadelesini epik bir dille anlatır. Film, Disney’in animasyon mirasının önemli bir parçasıdır.",
+      "refers_to": "Sleeping Beauty, Disney’in peri masalı geleneğini sürdürür ve güçlü görsel anlatımıyla öne çıkar. Film, kader ve sevgi temasını dramatik bir şekilde işler. Aurora’nın lanetten uyanışı, iyiliğin zaferini simgeler. Disney’in animasyon teknikleri ve müzikal unsurları, filmi unutulmaz kılar. Film, klasik peri masallarının sinemadaki en güzel örneklerinden biridir.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://disney.com/sleeping-beauty"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Sleeping_Beauty_(1959_film)"}
+      ],
+      "lang": "tr",
+      "level": 3
+    },
+    {
+      "id": "film/disney/1994_lion_king",
+      "label": "Aslan Kral (1994)",
+      "title": "The Lion King",
+      "type": "film",
+      "release_date": "1994-06-24",
+      "end_date": null,
+      "image": "images/disney.jpg",
+      "shape": "image",
+      "description": "Aslan Kral, genç Simba'nın babasının ölümü sonrası kendini kral olarak kabul etme yolculuğunu anlatır. Film, sorumluluk, aile ve kader temalarını işler. Disney’in unutulmaz müzikleri ve etkileyici animasyonları ile kültürel bir fenomen haline gelmiştir. Hikaye, güç, büyüme ve affetme temalarını derinleştirirken izleyiciyi duygusal bir yolculuğa çıkarır. Aslan Kral, Disney’in en sevilen ve en başarılı animasyonlarından biridir.",
+      "refers_to": "The Lion King, Disney animasyon tarihinde dönüm noktalarından biridir. Film, güçlü karakter gelişimi ve tematik derinliği ile dikkat çeker. Simba’nın kendini bulma ve liderlik yolculuğu, evrensel değerlerle örülmüştür. Disney’in animasyon teknolojileri ve müzikal başarısı, filmi unutulmaz kılar. Aslan Kral, aile bağları ve kader kavramlarını sinema izleyicisine güçlü şekilde aktarır.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://movies.disney.com/the-lion-king-1994"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/The_Lion_King"}
+      ],
+      "lang": "tr",
+      "level": 3
+    },
+    {
+      "id": "film/disney/1995_pocahontas",
+      "label": "Pocahontas (1995)",
+      "title": "Pocahontas",
+      "type": "film",
+      "release_date": "1995-06-23",
+      "end_date": null,
+      "image": "images/disney.jpg",
+      "shape": "image",
+      "description": "Pocahontas, Kızılderili prensesi ve İngiliz yerleşimcisi John Smith arasındaki kültürel çatışma ve aşk hikayesini anlatır. Film, doğa, barış ve anlayış temalarını işler. Disney’in büyüleyici müzikleri ve görsel anlatımıyla dikkat çeker. Hikaye, farklı kültürler arasındaki empati ve saygıyı vurgular. Pocahontas, Disney’in tarihsel masallarına özgün bir bakış açısı getirir.",
+      "refers_to": "Pocahontas, Disney’in kültürel çeşitliliği ve empatiyi işlediği önemli animasyonlarından biridir. Film, tarih ve masal unsurlarını harmanlayarak izleyiciye barış ve anlayış mesajları verir. Disney’in görsel zenginliği ve müzik başarısı filmde ön plana çıkar. Pocahontas ve John Smith arasındaki ilişki, kültürlerarası iletişimi ve uzlaşmayı temsil eder. Film, izleyiciye doğa ve insan arasındaki bağı hatırlatır.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://movies.disney.com/pocahontas"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Pocahontas_(1995_film)"}
+      ],
+      "lang": "tr",
+      "level": 3
+    },
+    {
+      "id": "film/disney/1996_hunchback_of_notre_dame",
+      "label": "Notre Dame'ın Kamburu (1996)",
+      "title": "The Hunchback of Notre Dame",
+      "type": "film",
+      "release_date": "1996-06-21",
+      "end_date": null,
+      "image": "images/disney.jpg",
+      "shape": "image",
+      "description": "Notre Dame'ın Kamburu, kambur çan kulesi görevlisi Quasimodo’nun kendini kabul etme ve sevgi arayışını anlatır. Film, ayrımcılık, sevgi ve cesaret temalarını işler. Disney’in dramatik müzikleri ve güçlü karakter anlatımıyla öne çıkar. Hikaye, insanın iç dünyasına dokunur ve farklılıkların kabulünü vurgular. Film, Disney’in karanlık ve derin temaları başarıyla işlediği yapımlardan biridir.",
+      "refers_to": "The Hunchback of Notre Dame, Disney’in daha karanlık ve dramatik anlatılarına bir örnektir. Quasimodo’nun toplum dışı kalışı ve sevgi arayışı, izleyiciye empatiyi öğretir. Film, ayrımcılık ve kabul temalarını etkileyici şekilde işler. Disney’in animasyon kalitesi ve müzikleri, filmi unutulmaz kılar. Film, klasik hikayeyi çocuklar ve yetişkinler için erişilebilir kılarak güçlü mesajlar verir.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://movies.disney.com/the-hunchback-of-notre-dame"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/The_Hunchback_of_Notre_Dame_(1996_film)"}
+      ],
+      "lang": "tr",
+      "level": 3
+    },
+     {
+      "id": "film/disney/2013_frozen",
+      "label": "Karlar Ülkesi (2013)",
+      "title": "Frozen",
+      "type": "film",
+      "release_date": "2013-11-27",
+      "end_date": null,
+      "image": "images/disney.jpg",
+      "shape": "image",
+      "description": "Karlar Ülkesi, kraliçe Elsa’nın buz güçleriyle yaşadığı zorlukları ve kız kardeşi Anna ile olan bağlarını anlatır. Film, sevgi, özgürlük ve kendini kabul etme temalarını işler. Disney’in unutulmaz şarkıları ve animasyon kalitesiyle büyük başarı kazanmıştır. Hikaye, güçlü kadın karakterler ve aile bağlarına odaklanır. Karlar Ülkesi, modern Disney prenses filmlerinin öncüsüdür.",
+      "refers_to": "Frozen, Disney’in kadın kahramanlarına odaklanan önemli bir yapımıdır. Elsa ve Anna’nın hikayesi, sevgi ve özgürlük temalarını güçlü şekilde işler. Film, animasyon kalitesi ve müzikleriyle kültürel bir fenomen olmuştur. Disney Prenses serisine yeni bir soluk getirirken, kendini kabul ve aile bağları gibi temaları derinleştirir. Film, izleyicilere güç, dayanışma ve sevgi mesajları sunar.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://movies.disney.com/frozen"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Frozen_(2013_film)"}
+      ],
+      "lang": "tr",
+      "level": 3
+    },
+    {
+      "id": "film/disney/2016_moana",
+      "label": "Moana (2016)",
+      "title": "Moana",
+      "type": "film",
+      "release_date": "2016-11-23",
+      "end_date": null,
+      "image": "images/disney.jpg",
+      "shape": "image",
+      "description": "Moana, cesur bir genç kızın halkını kurtarmak için okyanusa açılma macerasını anlatır. Film, liderlik, doğa ve kimlik temalarını işler. Disney’in etkileyici müzikleri ve görsel efektleriyle dikkat çeker. Hikaye, kendini keşfetme ve doğayla uyum içinde olma mesajlarını derinleştirir. Moana, modern Disney prensesleri arasında güçlü bir karakter olarak öne çıkar.",
+      "refers_to": "Moana, Disney’in kültürel çeşitliliği ve güçlü kadın karakterleri ön plana çıkardığı önemli filmlerden biridir. Film, liderlik ve kendini bulma temalarını işler. Moana’nın yolculuğu, doğayla bağ kurma ve halkına hizmet etme temalarıyla zenginleştirilir. Disney’in animasyon ve müzik başarısı filmde ön plandadır. Moana, izleyicilere cesaret, kararlılık ve özsaygı mesajları verir.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://movies.disney.com/moana"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Moana_(2016_film)"}
+      ],
+      "lang": "tr",
+      "level": 3
+    },
+    {
+      "id": "film/disney/2019_frozen_2",
+      "label": "Karlar Ülkesi 2 (2019)",
+      "title": "Frozen II",
+      "type": "film",
+      "release_date": "2019-11-22",
+      "end_date": null,
+      "image": "images/disney.jpg",
+      "shape": "image",
+      "description": "Karlar Ülkesi 2, Elsa ve Anna’nın geçmişin sırlarını keşfetmek için çıktığı yolculuğu anlatır. Film, kendini keşfetme, aile ve kader temalarını derinleştirir. Unutulmaz şarkılar ve gelişmiş animasyon teknikleriyle dikkat çeker. Hikaye, karakterlerin içsel yolculuklarını ve evrensel temaları başarılı şekilde işler. Devam filmi, ilk filmin başarısını taçlandırır.",
+      "refers_to": "Frozen II, ilk filmin ardından Elsa ve Anna’nın kişisel ve ailevi yolculuklarını derinleştirir. Film, geçmişle yüzleşme, kimlik ve kader temalarını işler. Disney’in teknik ve anlatı gücü filmde belirgindir. Şarkılar ve görsel anlatım, filmi izleyiciler için unutulmaz kılar. Devam filmi olarak, ilk filmin temalarını genişletir ve yeni derinlikler katar.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://movies.disney.com/frozen-2"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Frozen_II"}
+      ],
+      "lang": "tr",
+      "level": 3
+    },
+    {
+      "id": "film/disney/2016_zootopia",
+      "label": "Zootropolis (2016)",
+      "title": "Zootopia",
+      "type": "film",
+      "release_date": "2016-03-04",
+      "end_date": null,
+      "image": "images/disney.jpg",
+      "shape": "image",
+      "description": "Zootropolis, hayvanların insan gibi yaşadığı bir şehirde geçen bir polisiye macera filmidir. Judy Hopps adlı tavşan polis ve tilki Nick Wilde, birlikte bir gizemi çözmek için çalışırlar. Film, önyargı, çeşitlilik ve toplumdaki farklılıkları kabullenme temalarını işler. Disney’in renkli animasyonları ve sürükleyici hikayesi, tüm yaş gruplarından izleyicilere hitap eder. Film, mizah ve ciddi toplumsal mesajları başarıyla harmanlar.",
+      "refers_to": "Zootopia, Disney’in sosyal mesajlarını mizahi ve etkileyici bir biçimde sunduğu önemli filmlerinden biridir. Farklı türde hayvanların birlikte yaşadığı şehirde geçen hikaye, önyargı ve kabullenme temalarını işler. Judy ve Nick’in iş birliği, dostluk ve cesaret vurgusunu güçlendirir. Disney’in animasyon teknolojisi ve güçlü anlatımı, filmi kültürel olarak önemli kılar. Film, izleyicilere empati ve birlik mesajları sunar.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://movies.disney.com/zootopia"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Zootopia"}
+      ],
+      "lang": "tr",
+      "level": 3
+    },
+    {
+      "id": "film/disney/2017_big_hero_6",
+      "label": "6 Süper Kahraman (2014)",
+      "title": "Big Hero 6",
+      "type": "film",
+      "release_date": "2014-11-07",
+      "end_date": null,
+      "image": "images/disney.jpg",
+      "shape": "image",
+      "description": "Big Hero 6, genç robotik dahisi Hiro Hamada ve şişman robot Baymax’in maceralarını anlatır. Film, dostluk, kayıp ve kahramanlık temalarını işler. Yüksek teknolojili San Fransokyo şehrinde geçen hikaye, aksiyon ve duygu doludur. Disney’in animasyon kalitesi ve karakter çeşitliliği, filmi izleyiciler için unutulmaz kılar. Film, teknoloji ve insanlık arasında köprü kurar.",
+      "refers_to": "Big Hero 6, Disney’in süper kahraman temasını işlediği başarılı yapımlarından biridir. Hiro ve Baymax’in dostluğu, filmde ana duygusal ekseni oluşturur. Film, teknoloji, bilim ve aile bağlarını etkileyici şekilde işler. Disney’in görsel efektleri ve anlatı gücü, filmi güçlü kılar. San Fransokyo şehrinin tasarımı ve karakter çeşitliliği filme renk katar.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://movies.disney.com/big-hero-6"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Big_Hero_6_(film)"}
+      ],
+      "lang": "tr",
+      "level": 3
+    },
+    {
+      "id": "film/disney/2018_ralph_breaks_the_internet",
+      "label": "Ralph ve İnternetin Kırılması (2018)",
+      "title": "Ralph Breaks the Internet",
+      "type": "film",
+      "release_date": "2018-11-21",
+      "end_date": null,
+      "image": "images/disney.jpg",
+      "shape": "image",
+      "description": "Ralph ve Vanellope, internet dünyasında yeni bir maceraya atılır. Film, dostluk, değişim ve teknolojinin hayatımızdaki rolü temalarını işler. Disney’in renkli animasyonları ve mizahi anlatımı, izleyicilere eğlenceli ve düşündürücü bir deneyim sunar. Hikaye, dijital dünyanın karmaşıklığını eğlenceli şekilde ele alırken karakterlerin gelişimine de odaklanır.",
+      "refers_to": "Ralph Breaks the Internet, ilk filmin Devamı olarak teknoloji ve dostluk temalarını güncel ve yaratıcı bir biçimde ele alır. Ralph ve Vanellope’nin internet dünyasındaki maceraları, değişim ve uyum temalarını işler. Disney’in teknik başarısı ve mizahi anlatımı filmi izleyici için çekici kılar. Film, dijital dünyanın etkisini ve sosyal medyanın gücünü başarılı şekilde işler.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://movies.disney.com/ralph-breaks-the-internet"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Ralph_Breaks_the_Internet"}
+      ],
+      "lang": "tr",
+      "level": 3
+    },
+     {
+      "id": "film/disney/2013_frozen_fever",
+      "label": "Frozen Fever (2015)",
+      "title": "Frozen Fever",
+      "type": "kısa_film",
+      "release_date": "2015-03-13",
+      "end_date": null,
+      "image": "images/disney.jpg",
+      "shape": "image",
+      "description": "Frozen Fever, Elsa’nın Anna için düzenlediği doğum günü partasında yaşanan eğlenceli ve sihirli olayları anlatan kısa filmdir. Kısa film, sevgi, dostluk ve aile bağları temalarını sürdürür. Disney’in popüler Frozen evrenine neşe ve renk katan yapımlardan biridir. Eğlenceli müzikler ve renkli animasyonlarla dikkat çeker.",
+      "refers_to": "Frozen Fever, Frozen filminden sonra çıkan ve karakterlerin günlük yaşamlarına dair küçük bir kesit sunan kısa filmdir. Elsa ve Anna arasındaki bağ ve sevgi temaları öne çıkar. Film, Frozen hayranları için keyifli bir ek yapım olarak kabul edilir. Disney’in kısa filmler geleneğinin başarılı örneklerinden biridir.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://movies.disney.com/frozen-fever"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Frozen_Fever"}
+      ],
+      "lang": "tr",
+      "level": 3
+    },
+    {
+      "id": "film/disney/2020_muppets_now",
+      "label": "Muppets Now (2020)",
+      "title": "Muppets Now",
+      "type": "dizi",
+      "release_date": "2020-07-31",
+      "end_date": null,
+      "image": "images/disney.jpg",
+      "shape": "image",
+      "description": "Muppets Now, klasik Muppet karakterlerinin modern çağda günlük yaşamlarını ve komik maceralarını anlatan dizi formatında bir yapımdır. Dizi, mizah, dostluk ve eğlence temalarını işler. Disney’in ikonik Muppet evrenini yeni nesil izleyicilere tanıtan önemli bir yapımdır. Renkli karakterler ve çeşitli skeçlerle izleyiciye keyifli anlar sunar.",
+      "refers_to": "Muppets Now, Muppet karakterlerinin çağdaş dünyada nasıl uyum sağladığını ve maceralarını anlatır. Dizi, klasik ve modern unsurları harmanlayarak izleyiciyi eğlendirir. Disney’in Muppet markasını canlı tutma çabalarının bir parçasıdır. Komedi ve dostluk temaları dizinin temel dinamiklerini oluşturur.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://disneyplus.com/series/muppets-now/"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Muppets_Now"}
+      ],
+      "lang": "tr",
+      "level": 3
+    },
+    {
+      "id": "film/disney/2019_raya_and_the_last_dragon",
+      "label": "Raya ve Son Ejderha (2021)",
+      "title": "Raya and the Last Dragon",
+      "type": "film",
+      "release_date": "2021-03-05",
+      "end_date": null,
+      "image": "images/disney.jpg",
+      "shape": "image",
+      "description": "Raya ve Son Ejderha, ejderhaların eski çağlarda yaşadığı bir dünyada, genç savaşçı Raya’nın halkını birleştirerek karanlık güçlere karşı verdiği mücadeleyi anlatır. Film, güven, birlik ve cesaret temalarını işler. Disney’in zengin görsel tasarımı ve derin hikayesiyle dikkat çeker. Film, Asya kültürlerinden ilham alan mitolojik ve fantastik öğeler içerir.",
+      "refers_to": "Raya and the Last Dragon, Disney’in kültürel çeşitliliği ve güçlü kadın karakterleri ön plana çıkardığı önemli filmlerden biridir. Film, güven ve birlik temalarını işlerken görsel ve anlatı açısından zengin bir deneyim sunar. Raya’nın liderlik ve cesaret yolculuğu, izleyiciye güçlü mesajlar verir. Disney’in animasyon ve hikaye anlatımındaki başarısı filmde belirgindir.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://movies.disney.com/raya-and-the-last-dragon"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Raya_and_the_Last_Dragon"}
+      ],
+      "lang": "tr",
+      "level": 3
+    },
+    {
+      "id": "film/disney/2019_aladdin_live_action",
+      "label": "Aladdin (Canlı Aksiyon) (2019)",
+      "title": "Aladdin",
+      "type": "film",
+      "release_date": "2019-05-24",
+      "end_date": null,
+      "image": "images/disney.jpg",
+      "shape": "image",
+      "description": "Aladdin (2019), Disney’in klasik animasyon filmi Aladdin’in canlı aksiyon uyarlamasıdır. Film, genç Aladdin’in sihirli lambayı bulup prenses Jasmine ile aşkını anlatırken, cesaret, özgürlük ve kader temalarını işler. Orijinal filme sadık kalınarak yeni sahneler ve detaylar eklenmiştir. Disney’in görsel efektleri ve oyuncu performanslarıyla dikkat çeken bu yapım, nostalji ile modernliği harmanlar.",
+      "refers_to": "Aladdin (2019), 1992 yapımı animasyon filminin canlı aksiyon versiyonu olarak, klasik hikayeyi günümüz izleyicisine sunar. Film, orijinal hikayeyi koruyup genişletirken görsel ve teknik açıdan yenilikler getirir. Disney’in başarılı oyuncu kadrosu ve prodüksiyon kalitesiyle dikkat çeker. Film, cesaret ve sevgi temalarını güçlü şekilde işler. Nostaljiyle modern sinemayı birleştiren önemli bir yapımdır.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://movies.disney.com/aladdin-2019"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Aladdin_(2019_film)"}
+      ],
+      "lang": "tr",
+      "level": 3
+    },
+    {
+      "id": "film/disney/2021_jungle_cruise",
+      "label": "Orman Macerası (2021)",
+      "title": "Jungle Cruise",
+      "type": "film",
+      "release_date": "2021-07-30",
+      "end_date": null,
+      "image": "images/disney.jpg",
+      "shape": "image",
+      "description": "Jungle Cruise, Amazon ormanlarında geçen macera dolu bir yolculuğu anlatır. Lily ve kaptan Frank, gizemli bir ağacı bulmak için tehlikeli bir yolculuğa çıkar. Film, macera, cesaret ve dostluk temalarını işler. Disney’in görsel efektleri ve aksiyon dolu sahneleriyle dikkat çeker. Eğlenceli karakterler ve sürükleyici hikaye, izleyiciye heyecanlı bir deneyim sunar.",
+      "refers_to": "Jungle Cruise, Disneyland tema parkındaki aynı isimli eğlence turundan uyarlanmış bir macera filmidir. Film, aksiyon ve mizahı başarılı şekilde harmanlar. Disney’in prodüksiyon kalitesi ve oyuncu performansları filmi çekici kılar. Macera ve keşif temaları ön plandadır. Film, izleyicilere eğlenceli ve sürükleyici bir sinema deneyimi sunar.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://movies.disney.com/jungle-cruise"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Jungle_Cruise_(film)"}
+      ],
+      "lang": "tr",
+      "level": 3
+    },
+    {
+      "id": "dizi/disney/star_vs_the_forces_of_evil",
+      "label": "Star vs. The Forces of Evil (2015-2019)",
+      "title": "Star vs. The Forces of Evil",
+      "type": "dizi",
+      "release_date": "2015-01-18",
+      "end_date": "2019-05-19",
+      "image": "images/disney.jpg",
+      "shape": "image",
+      "description": "Star vs. The Forces of Evil, genç prenses Star Butterfly’nin dünyalar arası maceralarını anlatan animasyon dizisidir. Dizi, dostluk, büyüme ve cesaret temalarını işler. Renkli karakterleri ve eğlenceli hikayeleriyle geniş bir izleyici kitlesine hitap eder. Disney’in animasyon dizileri arasında önemli bir yere sahiptir.",
+      "refers_to": "Star vs. The Forces of Evil, genç bir prensesin farklı dünyalarda maceralarını anlatan, arkadaşlık ve sorumluluk temalarını ön plana çıkaran Disney dizisidir. Dizi, fantastik öğelerle dolu ve eğlenceli hikayeleriyle dikkat çeker. Karakter gelişimi ve mizahi unsurlar diziyi çekici kılar. Disney kanalında yayınlanan başarılı animasyon dizilerinden biridir.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://disneyxd.disney.com/star-vs-the-forces-of-evil"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Star_vs._the_Forces_of_Evil"}
+      ],
+      "lang": "tr",
+      "level": 3
+    },
+    {
+      "id": "dizi/disney_descendants",
+      "label": "Descendants (2015-2019)",
+      "title": "Descendants",
+      "type": "dizi",
+      "release_date": "2015-07-31",
+      "end_date": "2019-08-02",
+      "image": "images/disney.jpg",
+      "shape": "image",
+      "description": "Descendants, Disney kötü karakterlerinin çocuklarının hikayesini anlatan müzikal drama dizisidir. Seri, kimlik, aile ve arkadaşlık temalarını işler. Genç oyuncuların performansları ve şarkılarıyla dikkat çeker. Disney Channel’ın popüler genç yapımlarından biridir ve yan ürünleriyle geniş bir evren oluşturmuştur.",
+      "refers_to": "Descendants, Disney kötü karakterlerin çocuklarının büyüme ve kendini bulma hikayelerini müzikal olarak anlatan başarılı bir dizidir. Kimlik ve aile bağları temalarını işler. Seri, genç izleyiciye yönelik eğlenceli ve anlamlı içerikler sunar. Disney Channel’ın önemli gençlik yapımlarından biri olarak kabul edilir.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://movies.disney.com/descendants"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Descendants_(film_series)"}
+      ],
+      "lang": "tr",
+      "level": 3
+    },
+    {
+      "id": "kisa_film/disney_mickey_short_steamboat_willie",
+      "label": "Steamboat Willie (1928)",
+      "title": "Steamboat Willie",
+      "type": "kısa_film",
+      "release_date": "1928-11-18",
+      "end_date": null,
+      "image": "images/disney.jpg",
+      "shape": "image",
+      "description": "Steamboat Willie, Mickey Mouse’un sinemaya giriş yaptığı ilk sesli kısa filmdir. Walt Disney’in animasyon tarihinde bir dönüm noktasıdır. Film, mizahi anlatımı ve müzik uyumuyla büyük beğeni toplamıştır. Mickey Mouse karakterinin popülerleşmesinde önemli bir rol oynamıştır.",
+      "refers_to": "Steamboat Willie, animasyon tarihinde sesli filmlerin başlangıcı olarak kabul edilir. Mickey Mouse karakterinin doğuşu ve Disney’in yükselişini simgeler. Film, kısa ama etkili anlatımıyla animasyonun gelişiminde mihenk taşıdır. Walt Disney’in yenilikçi vizyonunun ilk somut örneğidir.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://www.disney.com"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Steamboat_Willie"}
+      ],
+      "lang": "tr",
+      "level": 3
+    },
+    {
+      "id": "kisa_film/disney_frozen_fever",
+      "label": "Frozen Fever (2015)",
+      "title": "Frozen Fever",
+      "type": "kısa_film",
+      "release_date": "2015-03-13",
+      "end_date": null,
+      "image": "images/disney.jpg",
+      "shape": "image",
+      "description": "Frozen Fever, Elsa’nın Anna için düzenlediği doğum günü partasında geçen komik ve sıcak olayları anlatan kısa filmdir. Kısa film, Frozen evrenine renk katarak sevgi ve dostluk temalarını işler. Disney’in renkli animasyonları ve müzikleriyle dikkat çeker.",
+      "refers_to": "Frozen Fever, Frozen filminin Devamı niteliğinde, karakterlerin günlük hayatlarına dair küçük bir kesit sunar. Elsa ve Anna arasındaki bağ, filmde ön plandadır. Disney’in kısa film geleneğinin başarılı bir örneğidir ve Frozen hayranları tarafından sevilir.",
+      "canonical_level": "canon",
+      "sources": [
+        {"name": "Official", "url": "https://movies.disney.com/frozen-fever"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Frozen_Fever"}
+      ],
+      "lang": "tr",
+      "level": 3
+    },
+    {
+  "id": "film/pixar/2012_brave",
+  "label": "Brave (2012)",
+  "title": "Brave",
+  "type": "film",
+  "release_date": "2012-06-22",
+  "end_date": null,
+  "image": "images/pixar.jpg",
+  "shape": "image",
+  "description": "Brave, 10. yüzyılda geçen, cesur prenses Merida’nın kendi kaderini bulma ve sihirli güçlerle yüzleşme hikayesini anlatır. Film, aile bağları, özgürlük ve büyü temalarını işler. Pixar evreni teorisinde, sihrin dünyaya girişinin simgesi olarak önemli bir dönüm noktasıdır.",
+  "refers_to": "Brave, Pixar teorisinde sihrin ve doğaüstü güçlerin insan dünyasına karıştığı dönem olarak kabul edilir. Filmdeki mistik olaylar, diğer Pixar filmlerindeki teknoloji ve insan enerjisi temalarıyla köprü kurar. Merida’nın hikayesi, evrende sihrin başlangıcını temsil eder.",
+  "canonical_level": "canon",
+  "sources": [
+    {"name": "Official", "url": "https://movies.disney.com/brave"},
+    {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Brave_(2012_film)"}
+  ],
+  "lang": "tr",
+  "level": 3
+}
   ],
   "edges": [
     {
-      "from": "toyStory1995",
-      "to": "toyStory21999",
-      "type": "devam"
+      "from": "film/pixar/1995_toy_story",
+      "to": "film/pixar/1999_toy_story_2",
+      "type": "Devam",
+      "weight": 1,
+      "sources": [{"name": "Official", "url": "https://www.pixar.com/feature-films/toy-story-2"}],
+      "notes": "Toy Story 2, Toy Story'nin Devamıdır."
     },
     {
-      "from": "toyStory1995",
-      "to": "aBugsLife1998",
-      "type": "evren geçişi"
+      "from": "film/pixar/1995_toy_story",
+      "to": "film/pixar/1998_a_bug_s_life",
+      "type": "Aynı Evren",
+      "weight": 0.5,
+      "sources": [],
+      "notes": "Her iki film Pixar evreninin farklı hikayeleridir."
     },
     {
-      "from": "aBugsLife1998",
-      "to": "toyStory21999",
-      "type": "karakter göndermesi"
+      "from": "film/pixar/1999_toy_story_2",
+      "to": "film/pixar/2010_toy_story_3",
+      "type": "Devam",
+      "weight": 1,
+      "sources": [{"name": "Official", "url": "https://www.pixar.com/feature-films/toy-story-3"}],
+      "notes": "Toy Story 3, Toy Story 2'nin Devamıdır."
     },
     {
-      "from": "toyStory21999",
-      "to": "monstersInc2001",
-      "type": "evren geçişi"
+      "from": "film/pixar/2001_monsters_inc",
+      "to": "film/pixar/2013_monsters_university",
+      "type": "Öncesi",
+      "weight": 1,
+      "sources": [{"name": "Official", "url": "https://www.pixar.com/feature-films/monsters-university"}],
+      "notes": "Monsters University, Monsters, Inc.'in Öncesinde geçer."
     },
     {
-      "from": "monstersInc2001",
-      "to": "findingNemo2003",
-      "type": "karakter göndermesi"
+      "from": "film/pixar/2011_cars_2",
+      "to": "film/pixar/2006_cars",
+      "type": "Devam",
+      "weight": 1,
+      "sources": [{"name": "Official", "url": "https://www.pixar.com/feature-films/cars"}],
+      "notes": "Cars 2, Cars'ın Devamıdır."
     },
     {
-      "from": "findingNemo2003",
-      "to": "toyStory21999",
-      "type": "evren geçişi"
+      "from": "film/pixar/2010_toy_story_3",
+      "to": "film/pixar/2019_toy_story_4",
+      "type": "Devam",
+      "weight": 1,
+      "sources": [{"name": "Official", "url": "https://www.pixar.com/feature-films/toy-story-4"}],
+      "notes": "Toy Story 4, Toy Story 3'ün Devamıdır."
     },
     {
-      "from": "theIncredibles2004",
-      "to": "ratatouille2007",
-      "type": "karakter göndermesi"
+      "from": "film/pixar/2003_finding_nemo",
+      "to": "film/pixar/2016_finding_dory",
+      "type": "Devam",
+      "weight": 1,
+      "sources": [{"name": "Official", "url": "https://www.pixar.com/feature-films/finding-dory"}],
+      "notes": "Finding Dory, Finding Nemo'nun Devam filmidir."
+    },
+      {
+      "from": "film/pixar/2011_cars_2",
+      "to": "film/pixar/2017_cars_3",
+      "type": "Devam",
+      "weight": 1,
+      "sources": [{"name": "Official", "url": "https://www.pixar.com/feature-films/cars-3"}],
+      "notes": "Cars 3, Cars 2'nin Devamıdır."
+    },
+
+    {
+      "from": "film/pixar/2018_incredibles_2",
+      "to": "film/pixar/2004_the_incredibles",
+      "type": "Devam",
+      "weight": 1,
+      "sources": [{"name": "Official", "url": "https://www.pixar.com/feature-films/incredibles-2"}],
+      "notes": "Incredibles 2, The Incredibles'in Devamıdır."
+    },
+       {
+      "from": "film/disney/1937_snow_white_and_the_seven_dwarfs",
+      "to": "film/disney/1950_cinderella",
+      "type": "Aynı Evren",
+      "weight": 0.5,
+      "sources": [],
+      "notes": "Disney klasik peri masalları tematik olarak bağlantılıdır."
     },
     {
-      "from": "cars2006",
-      "to": "toyStory1995",
-      "type": "evren geçişi"
+      "from": "film/disney/1950_cinderella",
+      "to": "film/disney/1959_sleeping_beauty",
+      "type": "Aynı Evren",
+      "weight": 0.5,
+      "sources": [],
+      "notes": "Klasik Disney peri masalları birbirine tematik olarak yakındır."
+    },
+     {
+      "from": "film/disney/1959_sleeping_beauty",
+      "to": "film/disney/1996_hunchback_of_notre_dame",
+      "type": "Aynı Evren",
+      "weight": 0.3,
+      "sources": [],
+      "notes": "Disney’in karanlık temalı klasik ve modern yapımları tematik olarak bağlantılıdır."
     },
     {
-      "from": "ratatouille2007",
-      "to": "up2009",
-      "type": "evren geçişi"
+      "from": "film/disney/2013_frozen",
+      "to": "film/disney/2019_frozen_2",
+      "type": "Devam",
+      "weight": 1,
+      "sources": [{"name": "Official", "url": "https://movies.disney.com/frozen-2"}],
+      "notes": "Frozen II, Frozen filminin Devamıdır."
     },
     {
-      "from": "wallE2008",
-      "to": "up2009",
-      "type": "kurumsal gönderme"
+      "from": "film/disney/2013_frozen",
+      "to": "film/disney/2013_frozen_fever",
+      "type": "Yan Hikayee",
+      "weight": 0.7,
+      "sources": [{"name": "Official", "url": "https://movies.disney.com/frozen-fever"}],
+      "notes": "Frozen Fever, Frozen filmine bağlı kısa filmdir."
     },
     {
-      "from": "toyStory32010",
-      "to": "toyStory21999",
-      "type": "devam"
+      "from": "film/disney/2019_raya_and_the_last_dragon",
+      "to": "film/disney/2020_muppets_now",
+      "type": "Aynı Evren",
+      "weight": 0.2,
+      "sources": [],
+      "notes": "Her iki yapım Disney evreninde bağımsız eserlerdir."
     },
     {
-      "from": "toyStory32010",
-      "to": "up2009",
-      "type": "karakter göndermesi"
+      "from": "film/disney/1992_aladdin",
+      "to": "film/disney/2019_aladdin_live_action",
+      "type": "remake",
+      "weight": 1,
+      "sources": [],
+      "notes": "Aladdin (2019) animasyon filmin canlı aksiyon uyarlamasıdır."
     },
     {
-      "from": "cars22011",
-      "to": "cars2006",
-      "type": "devam"
+      "from": "film/disney/2013_frozen",
+      "to": "dizi/disney/star_vs_the_forces_of_evil",
+      "type": "Aynı Evren",
+      "weight": 0.1,
+      "sources": [],
+      "notes": "Star vs. The Forces of Evil ile Frozen tematik olarak Disney evreninde bağımsız eserlerdir."
+    },
+     {
+      "from": "film/disney/1937_snow_white_and_the_seven_dwarfs",
+      "to": "kisa_film/disney_mickey_short_steamboat_willie",
+      "type": "inspirasyon",
+      "weight": 0.7,
+      "sources": [],
+      "notes": "Steamboat Willie, Disney animasyonlarının temelini oluşturur."
     },
     {
-      "from": "cars22011",
-      "to": "toyStory1995",
-      "type": "evren geçişi"
+      "from": "film/disney/2013_frozen",
+      "to": "kisa_film/disney_frozen_fever",
+      "type": "Yan Hikayee",
+      "weight": 0.9,
+      "sources": [{"name": "Official", "url": "https://movies.disney.com/frozen-fever"}],
+      "notes": "Frozen Fever, Frozen filminin kısa Devamıdır."
+    },
+      {
+      "from": "film/pixar/2015_the_good_dinosaur",
+      "to": "film/pixar/2012_brave",
+      "type": "Teori Bağlantısı",
+      "weight": 1.0,
+      "notes": "The Good Dinosaur, 65 milyon yıl önce Kretase döneminde geçer ve Pixar evreninin alternatif tarihini başlatır. Dinozorların zekası ve hayatta kalışı ile insan etkisinin çevresel sonuçlarını gösterir. Bu dönem, evrenin temellerini oluşturur ve sonraki sihirli olaylara zemin hazırlar."
     },
     {
-      "from": "brave2012",
-      "to": "monstersInc2001",
-      "type": "karakter göndermesi"
+      "from": "film/pixar/2012_brave",
+      "to": "film/pixar/2004_the_incredibles",
+      "type": "Teori Bağlantısı",
+      "weight": 0.95,
+      "notes": "Brave, 10. yüzyılda sihir ve doğaüstü güçlerin dünyaya girişiyle insan ve sihirli varlıklar arasındaki etkileşimi simgeler. The Incredibles ise 1950-60’larda insan enerjisinin süper kahramanlara dönüşümünü gösterir. Bu iki film, sihrin ve teknolojinin evrimine dair bağlantılı iki önemli dönüm noktasıdır."
     },
     {
-      "from": "monstersUniversity2013",
-      "to": "monstersInc2001",
-      "type": "ön hikaye"
+      "from": "film/pixar/2004_the_incredibles",
+      "to": "film/pixar/1995_toy_story",
+      "type": "Teori Bağlantısı",
+      "weight": 0.9,
+      "notes": "The Incredibles’daki süper güç teknolojisi ve hükümet destekli programlar, 1995 Toy Story’de BnL şirketinin oyuncakları enerji ile beslemesi için altyapı sağlar. Bu bağ, insan enerjisinin teknolojiyle birleşimini ve oyuncakların bilinç kazanmasını teorik olarak açıklar."
     },
     {
-      "from": "monstersUniversity2013",
-      "to": "aBugsLife1998",
-      "type": "görsel gönderme"
+      "from": "film/pixar/1995_toy_story",
+      "to": "film/pixar/1999_toy_story_2",
+      "type": "Teori Bağlantısı",
+      "weight": 1.0,
+      "notes": "Toy Story 2, ilk filmin devamı olarak oyuncakların bilinç kazanması, sahiplerine duydukları bağlılık ve kendi kimliklerini keşfetmeleri temasını derinleştirir. Teori açısından evrenin temel kurgu dinamiklerinin güçlendiği önemli bir aşamadır."
     },
     {
-      "from": "insideOut2015",
-      "to": "ratatouille2007",
-      "type": "karakter gönderme"
+      "from": "film/pixar/1999_toy_story_2",
+      "to": "film/pixar/2010_toy_story_3",
+      "type": "Teori Bağlantısı",
+      "weight": 1.0,
+      "notes": "Toy Story 3, oyuncakların sahiplerinin değişen hayatlarına uyum sağlama sürecini anlatırken evrenin devamlılığını ve oyuncakların varoluş mücadelesini başarıyla sürdürür. Oyuncakların aidiyet ve bağlılık temaları teori içinde kritik öneme sahiptir."
     },
     {
-      "from": "insideOut2015",
-      "to": "up2009",
-      "type": "görsel gönderme"
+      "from": "film/pixar/2003_finding_nemo",
+      "to": "film/pixar/2016_finding_dory",
+      "type": "Teori Bağlantısı",
+      "weight": 0.9,
+      "notes": "Finding Dory, Finding Nemo’nun devamı olarak deniz altı ekosistemindeki gelişmiş zekâ ve hafıza temalarını daha detaylı işler. Bu bağlamda, bireysel kimlik ve hafızanın evrimi teori açısından önemli bir bağlantıdır."
     },
     {
-      "from": "theGoodDinosaur2015",
-      "to": "toyStory1995",
-      "type": "görsel gönderme"
+      "from": "film/pixar/2007_ratatouille",
+      "to": "film/pixar/2007_toy_story_3",
+      "type": "Teori Bağlantısı",
+      "weight": 0.8,
+      "notes": "Ratatouille’da hayvan zekâsının insan kültürüyle etkileşimi, Toy Story 3’te oyuncakların insan yaşamındaki yerini destekleyen bir temadır. İki film de duygusal bağlar ve varoluş mücadelesini farklı açılardan inceler."
     },
     {
-      "from": "findingDory2016",
-      "to": "findingNemo2003",
-      "type": "devam"
+      "from": "film/pixar/2008_wall_e",
+      "to": "film/pixar/2006_cars",
+      "type": "Teori Bağlantısı",
+      "weight": 0.85,
+      "notes": "Wall-E, Dünya’nın aşırı tüketim sonucu yaşanmaz hale gelmesini ve insanlığın uzaya taşınmasını anlatırken, Cars serisi makinelerin dünyaya hükmettiği dönemi temsil eder. Bu iki dönem evrenin farklı aşamalarını gösterir."
     },
     {
-      "from": "cars32017",
-      "to": "cars22011",
-      "type": "devam"
+      "from": "film/pixar/2020_soul",
+      "to": "film/pixar/2015_inside_out",
+      "type": "Teori Bağlantısı",
+      "weight": 0.9,
+      "notes": "Soul ve Inside Out filmleri insan bilinci ve ruhani varoluş temalarını farklı perspektiflerden ele alır. Inside Out duygusal zekâyı, Soul ise yaşam ve ölüm arasındaki ruhani yolculuğu detaylandırır; bu iki film birbirini tamamlar niteliktedir."
     },
     {
-      "from": "coco2017",
-      "to": "insideOut2015",
-      "type": "görsel gönderme"
-    },
-    {
-      "from": "incredibles22018",
-      "to": "theIncredibles2004",
-      "type": "devam"
-    },
-    {
-      "from": "toyStory42019",
-      "to": "toyStory32010",
-      "type": "devam"
-    },
-    {
-      "from": "onward2020",
-      "to": "ratatouille2007",
-      "type": "karakter göndermesi"
-    },
-    {
-      "from": "soul2020",
-      "to": "insideOut2015",
-      "type": "konseptsel devam"
-    },
-    {
-      "from": "turningRed2022",
-      "to": "insideOut2015",
-      "type": "duygusal tema devamı"
-    },
-    {
-      "from": "lightyear2022",
-      "to": "toyStory1995",
-      "type": "iç film/karakter kökeni"
-    },
-    {
-      "from": "elemental2023",
-      "to": "insideOut2015",
-      "type": "tematik benzerlik"
-    },
-    {
-      "from": "elemental2023",
-      "to": "soul2020",
-      "type": "soyut dünya göndermesi"
-    },
-    {
-      "from": "elemental2023",
-      "to": "turningRed2022",
-      "type": "şehir yaşamı paralelliği"
-    },
-    {
-      "from": "insideOut22024",
-      "to": "insideOut2015",
-      "type": "devam"
-    },
-    {
-      "from": "insideOut22024",
-      "to": "soul2020",
-      "type": "duygu ve bilinç teması"
-    },
-    {
-      "from": "insideOut22024",
-      "to": "elemental2023",
-      "type": "görsel gönderme"
+      "from": "film/pixar/2017_coco",
+      "to": "film/pixar/2020_soul",
+      "type": "Teori Bağlantısı",
+      "weight": 0.8,
+      "notes": "Coco ve Soul, ölüm sonrası yaşam ve ruhun yolculuğu temalarını farklı kültürel ve felsefi açıdan ele alır. Her iki film, insan hayatının metafizik boyutlarını teorik olarak güçlü biçimde temsil eder."
     }
   ]
 }

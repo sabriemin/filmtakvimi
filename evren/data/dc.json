@@ -33,7 +33,7 @@
       "image": "images/dc.jpg",
       "shape": "image",
       "description": "'Batman v Superman: Dawn of Justice (Extended)' yapımı, DC evreninde kötülüğe karşı fedakârlığın ve inancın zaferi teması etrafında şekillenir. Kahramanların kişisel yolculukları, ahlaki ikilemleri ve güçle kurdukları ilişkiler film boyunca güçlü bir anlatımla sunulur. Görsel atmosfer ve anlatı derinliği öne çıkar.",
-      "refers_to": "Bu filmdeki olay örgüsü, Man of Steel ve Birds of Prey yapımlarında anlatılan gelişmelerin devamı niteliğindedir. Geçmişte yaşananlar, karakter seçimleri ve çatışma dinamikleri bu bağlamda yeniden işlenir.",
+      "refers_to": "Bu filmdeki olay örgüsü, Man of Steel ve Birds of Prey yapımlarında anlatılan gelişmelerin Devamı niteliğindedir. Geçmişte yaşananlar, karakter seçimleri ve çatışma dinamikleri bu bağlamda yeniden işlenir.",
       "type": "film",
       "release_date": "2016-03-25",
       "level": 1,
@@ -111,7 +111,7 @@
       "image": "images/dc.jpg",
       "shape": "image",
       "description": "'Justice League (Zack Cut)' yapımı, DC evreninde kahramanların karanlık geçmişleriyle yüzleşmesi teması etrafında şekillenir. Kahramanların kişisel yolculukları, ahlaki ikilemleri ve güçle kurdukları ilişkiler film boyunca güçlü bir anlatımla sunulur. Görsel atmosfer ve anlatı derinliği öne çıkar.",
-      "refers_to": "Bu filmdeki olay örgüsü, Birds of Prey ve Aquaman and the Lost Kingdom yapımlarında anlatılan gelişmelerin devamı niteliğindedir. Geçmişte yaşananlar, karakter seçimleri ve çatışma dinamikleri bu bağlamda yeniden işlenir.",
+      "refers_to": "Bu filmdeki olay örgüsü, Birds of Prey ve Aquaman and the Lost Kingdom yapımlarında anlatılan gelişmelerin Devamı niteliğindedir. Geçmişte yaşananlar, karakter seçimleri ve çatışma dinamikleri bu bağlamda yeniden işlenir.",
       "type": "film",
       "release_date": "2021-03-18",
       "level": 2,
@@ -189,7 +189,7 @@
       "image": "images/dc.jpg",
       "shape": "image",
       "description": "'Birds of Prey' yapımı, DC evreninde birlik olmanın bedeli ve kimliklerin çatışması teması etrafında şekillenir. Kahramanların kişisel yolculukları, ahlaki ikilemleri ve güçle kurdukları ilişkiler film boyunca güçlü bir anlatımla sunulur. Görsel atmosfer ve anlatı derinliği öne çıkar.",
-      "refers_to": "Bu filmdeki olay örgüsü, Suicide Squad (2016) ve Justice League (Snyder's Cut) yapımlarında anlatılan gelişmelerin devamı niteliğindedir. Geçmişte yaşananlar, karakter seçimleri ve çatışma dinamikleri bu bağlamda yeniden işlenir.",
+      "refers_to": "Bu filmdeki olay örgüsü, Suicide Squad (2016) ve Justice League (Snyder's Cut) yapımlarında anlatılan gelişmelerin Devamı niteliğindedir. Geçmişte yaşananlar, karakter seçimleri ve çatışma dinamikleri bu bağlamda yeniden işlenir.",
       "type": "film",
       "release_date": "2020-02-07",
       "level": 5,
@@ -252,12 +252,12 @@
     {
       "from": "ManOfSteel",
       "to": "BvS",
-      "type": "devam"
+      "type": "Devam"
     },
     {
       "from": "BvS",
       "to": "JusticeLeague",
-      "type": "devam"
+      "type": "Devam"
     },
     {
       "from": "JusticeLeague",
@@ -267,22 +267,22 @@
     {
       "from": "SuicideSquad2016",
       "to": "TheSuicideSquad2021",
-      "type": "devam"
+      "type": "Devam"
     },
     {
       "from": "WonderWoman",
       "to": "WonderWoman1984",
-      "type": "devam"
+      "type": "Devam"
     },
     {
       "from": "Aquaman",
       "to": "AquamanandtheLostKingdom",
-      "type": "devam"
+      "type": "Devam"
     },
     {
       "from": "Shazam",
       "to": "ShazamFuryoftheGods",
-      "type": "devam"
+      "type": "Devam"
     },
     {
       "from": "BirdsofPrey",

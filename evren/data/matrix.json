@@ -65,12 +65,12 @@
     {
       "from": "film/thematrix",
       "to": "film/thematrixreloaded",
-      "type": "devam"
+      "type": "Devam"
     },
     {
       "from": "film/thematrixreloaded",
       "to": "film/thematrixrevolutions",
-      "type": "devam"
+      "type": "Devam"
     },
     {
       "from": "film/theanimatrix",
@@ -80,7 +80,7 @@
     {
       "from": "film/thematrixrevolutions",
       "to": "film/thematrixresurrections",
-      "type": "devam"
+      "type": "Devam"
     }
   ]
 }
