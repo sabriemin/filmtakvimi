@@ -124,7 +124,8 @@
 </div>
 <!-- Poster -->
 <div class="absolute left-1/2 top-full -translate-x-1/2 -translate-y-1/2 z-20">
-<div @click="showPosterDialog = true" class="cursor-pointer"><img :src="modalNode.image" alt="" class="w-32 h-32 rounded-full border-4 border-black shadow-xl object-cover"/></div>
+<div @click="showPosterDialog = true" class="cursor-pointer"><img :src="modalNode.image" alt=""
+class="w-32 h-32 rounded-full object-cover drop-shadow-[0_0_20px_rgba(168,85,247,0.5)] ring-2 ring-purple-400/30"/></div>
 </div>
 </div>
 <!-- İçerik alanı -->
@@ -177,9 +178,14 @@
 </template>
 <!-- Bağlantılı Yapımlar -->
 <div class="bg-white/5 border border-white/10 p-4 rounded">
-<h3 class="text-lg font-semibold mb-2">Bağlantılı Yapımlar</h3>
+<h3 @click="linkedOpen = !linkedOpen" class="text-lg font-semibold mb-1 cursor-pointer border-b border-white/10 pb-1 mb-2 flex items-center justify-between">Bağlantılı Yapımlar
+<svg class="w-4 h-4 inline-block ml-2" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!linkedOpen"></path>
+<path d="M5 15l7-7 7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="linkedOpen"></path>
+</svg>
+</h3>
 <template x-if="edgeList.length">
-<div class="flex flex-wrap gap-2">
+<div class="flex flex-wrap gap-2" x-show="linkedOpen">
 <template :key="e.otherNodeId" x-for="e in edgeList">
 <div :class="{
            'bg-blue-900/40 border-blue-500/30': e.type === 'Devam',
@@ -192,8 +198,8 @@
 <div class="font-semibold" x-text="nodes.get(e.otherNodeId)?.label || e.otherNodeId"></div>
 <div class="text-xs text-white/70 italic" x-text="e.type"></div>
 <template x-if="e.notes">
-<div class="mt-1 text-[11px] text-white/80 bg-white/5 border border-white/10 rounded px-2 py-1 leading-snug tracking-tight">
-<span class="text-blue-300 mr-1">ℹ️</span>
+<div class="border-l-4 border-blue-500 pl-2 ml-1 text-[12px] text-white/80 italic mt-1">
+<span class="text-blue-300">Not:</span>
 <span x-text="e.notes"></span>
 </div>
 </template>
@@ -272,6 +278,7 @@
 <script>
     function app() {
       return {
+        linkedOpen: window.innerWidth > 640,
         showFavAdded: false,
         showFavMsg: false,
 
@@ -370,6 +377,7 @@
               const otherNodeId = e.from === nodeId ? e.to : e.from;
               const otherNode = this.allNodes.find(n => String(n.id) === String(otherNodeId));
               return {
+        linkedOpen: window.innerWidth > 640,
         showFavAdded: false,
         showFavMsg: false,
 
@@ -455,6 +463,7 @@
         },
         openNode(id) { const node = this.nodes?.get(id) || this.allNodes.find(n => String(n.id) === String(id)); if (node) { this.modalNode = node; this.modalOpen = true; this.network?.selectNodes([id]); this.network?.focus(id, { animation: true, scale: 1 }); } },
         makeOptions() { return {
+        linkedOpen: window.innerWidth > 640,
         showFavAdded: false,
         showFavMsg: false,
 
@@ -474,6 +483,7 @@
         updateNetwork() {
           this.nodes.clear(); this.edges.clear();
           this.nodes.add(this.filteredNodes.map(n => { const hasImage = !!n.image; const noteCount = (this.notes[n.id]?.length || 0); return {
+        linkedOpen: window.innerWidth > 640,
         showFavAdded: false,
         showFavMsg: false,
 
@@ -482,6 +492,7 @@
         showPosterDialog: false,
      ...n, label: noteCount ? `${n.label}\n📝 ${noteCount}` : n.label, font: { color: '#e5e7eb', size: 14, multi: true, vadjust: 4 }, shape: hasImage ? 'circularImage' : 'dot', borderWidth: 2, borderWidthSelected: 6, color: hasImage ? { border: '#ef4444' } : { background: '#ef4444', border: '#ef4444' } }; }));
           this.edges.add(this.filteredEdges.map(e => { const color = this.edgeColors[e.type] || '#9ca3af'; const s = this.edgeStyles[e.type] || { width: 1.5, dashes: false }; return {
+        linkedOpen: window.innerWidth > 640,
         showFavAdded: false,
         showFavMsg: false,
 
@@ -541,9 +552,9 @@
   </script>
 <template x-if="showPosterDialog">
 <div @click.self="showPosterDialog = false" class="fixed inset-0 bg-black/70 backdrop-blur-md z-50 flex items-center justify-center">
-<div class="relative bg-black/80 p-4 rounded-xl border border-white/10 shadow-2xl max-w-[90vw] max-h-[85vh]">
+<div class="p-4 rounded-xl shadow-2xl max-w-[90vw] max-h-[85vh]">
 <button @click="showPosterDialog = false" class="absolute top-2 right-2 w-8 h-8 rounded-full bg-white/10 border border-white/20 text-white text-sm">✕</button>
-<img :src="modalNode.image" class="max-w-[75vw] max-h-[70vh] rounded-lg shadow"/>
+<img :src="modalNode.image" class="max-w-[75vw] max-h-[70vh] rounded-xl shadow-lg object-cover"/>
 </div>
 </div>
 </template>
