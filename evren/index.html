@@ -60,6 +60,16 @@
   }
 </style>
 
+<style>
+  @media (max-width: 640px) {
+    .modal-content {
+      max-height: 70vh;
+      overflow-y: auto;
+      scroll-padding-bottom: 8rem; /* klavye için alt boşluk */
+    }
+  }
+</style>
+
 
 <!-- Shepherd.js CSS ve JS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shepherd.js/dist/css/shepherd.css"/>
@@ -1152,6 +1162,20 @@ this.$watch('selectedUniverse', (val) => {
 <script>
     window.toTRDate = function(value) { if (!value) return ''; const s = String(value).trim(); const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(s); if (m) return `${m[3]}/${m[2]}/${m[1]}`; const d = new Date(s); if (isNaN(d)) return s; const dd = String(d.getDate()).padStart(2, '0'); const mm = String(d.getMonth() + 1).padStart(2, '0'); const yyyy = d.getFullYear(); return `${dd}/${mm}/${yyyy}`; };
   </script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const input = document.querySelector('input[placeholder="Not ekle... #etiket"]');
+    if (input) {
+      input.addEventListener('focus', () => {
+        setTimeout(() => {
+          input.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }, 300);
+      });
+    }
+  });
+</script>
+
 
 </div>
 <div id="legendWrap" x-show="selectedUniverse">
