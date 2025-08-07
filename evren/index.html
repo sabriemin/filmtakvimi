@@ -8,7 +8,7 @@
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/shepherd.js@8.4.1/dist/js/shepherd.min.js"></script>
-<<script src="data/shepherd.min.js"></script>
+<script src="data/shepherd.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.5/dist/cdn.min.js"></script>
 <style>
     :root { color-scheme: dark; }
@@ -57,16 +57,6 @@
     background: transparent;
     border: none;
     z-index: 0;
-  }
-</style>
-
-<style>
-  @media (max-width: 640px) {
-    .modal-content {
-      max-height: 70vh;
-      overflow-y: auto;
-      scroll-padding-bottom: 8rem; /* klavye için alt boşluk */
-    }
   }
 </style>
 
@@ -1162,20 +1152,6 @@ this.$watch('selectedUniverse', (val) => {
 <script>
     window.toTRDate = function(value) { if (!value) return ''; const s = String(value).trim(); const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(s); if (m) return `${m[3]}/${m[2]}/${m[1]}`; const d = new Date(s); if (isNaN(d)) return s; const dd = String(d.getDate()).padStart(2, '0'); const mm = String(d.getMonth() + 1).padStart(2, '0'); const yyyy = d.getFullYear(); return `${dd}/${mm}/${yyyy}`; };
   </script>
-
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const input = document.querySelector('input[placeholder="Not ekle... #etiket"]');
-    if (input) {
-      input.addEventListener('focus', () => {
-        setTimeout(() => {
-          input.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        }, 300);
-      });
-    }
-  });
-</script>
-
 
 </div>
 <div id="legendWrap" x-show="selectedUniverse">
