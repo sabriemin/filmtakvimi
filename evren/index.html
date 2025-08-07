@@ -449,6 +449,18 @@ class="w-32 h-32 rounded-full object-cover drop-shadow-[0_0_20px_rgba(168,85,247
 
 
 </div>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const input = document.querySelector('input[placeholder="Not ekle... #etiket"]');
+    if (input) {
+      input.addEventListener('focus', () => {
+        setTimeout(() => {
+          input.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }, 300);
+      });
+    }
+  });
+</script>
 
 
 <script>
