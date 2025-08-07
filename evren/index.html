@@ -10,6 +10,7 @@
 <script src="https://cdn.jsdelivr.net/npm/shepherd.js@8.4.1/dist/js/shepherd.min.js"></script>
 <script src="data/shepherd.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.5/dist/cdn.min.js"></script>
+
 <style>
     :root { color-scheme: dark; }
     html, body { height: 100%; margin: 0; color: #d1d5db; font-family: 'Segoe UI', system-ui, -apple-system, Roboto, 'Helvetica Neue', Arial, sans-serif; background: transparent; }
@@ -37,7 +38,7 @@
     .section-title { font-size: 0.9rem; opacity: 0.85; margin-bottom: 6px; }
     .close-btn { position: absolute; top: 12px; right: 12px; width: 36px; height: 36px; border-radius: 999px; display: grid; place-items: center; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); cursor: pointer; }
     .close-btn:hover { background: rgba(239,68,68,0.15); border-color: rgba(239,68,68,0.5); }
-    #legendWrap { position: fixed; left: 16px; bottom: 16px; z-index: 40; }
+    #legendWrap { position: fixed; left: 16px; bottom: 5rem; z-index: 40; }
     #legendToggle { margin-bottom: 8px; background: rgba(31,41,55,0.55); border: 1px solid rgba(255,255,255,0.14); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); }
     #legend { background: rgba(31,41,55,0.45); border: 1px solid rgba(255,255,255,0.12); box-shadow: 0 8px 18px rgba(0,0,0,0.35); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-radius: 12px; padding: 12px 16px; max-width: 320px; max-height: 260px; overflow-y: auto; font-size: 0.85rem; }
     @media (max-width: 640px) { #legend { font-size: 0.72rem; max-width: 220px; padding: 8px 10px; } }
@@ -68,32 +69,12 @@
 
 <style>
   
-
-  
-
-  
-
-  
-
-  
-
   .shepherd-cancel-icon {
     color: #fff !important;
   }
 </style>
-
-
 <style>
   
-
-  
-
-  
-
-  
-
-  
-
   .shepherd-cancel-icon {
     color: #fff !important;
   }
@@ -158,7 +139,7 @@
 
 
 
-<body :class="{ 'overflow-hidden': modalOpen }" class="dark">
+<body :class="{ 'overflow-hidden': modalOpen }" class="dark flex-col min-h-screen flex">
 <img :src="bgUrl" alt="" id="bgImg"/>
 <div id="bgOverlay"></div>
 <style>
@@ -174,7 +155,7 @@
 </style>
 
 <!-- Hoş Geldin Bilgilendirmesi -->
-<div x-show="!selectedUniverse"
+<div x-show="!selectedUniverse && !panel"
      class="fixed inset-0 flex items-center justify-center z-50">
   <div style="max-height: 70vh; overflow-y: auto; " class="mobile-centered bg-black/85 text-white border border-white/10 rounded-2xl shadow-2xl p-6 text-sm w-[90%] max-w-2xl backdrop-blur-md space-y-4">
     <h2 class="text-2xl font-bold text-center">🎬 Film Evreni Ağı'na Hoş Geldin!</h2>
@@ -466,6 +447,9 @@ class="w-32 h-32 rounded-full object-cover drop-shadow-[0_0_20px_rgba(168,85,247
 <script>
     function app() {
       return {
+    panel: null,
+        panel: null,
+    panel: null,
     startTour() {
       const dropdown = document.querySelector('.dropdown-btn');
       dropdown?.classList.add('pointer-events-none', 'opacity-50');
@@ -492,7 +476,7 @@ tour.addStep({
   text: 'Buradan bir evren seçebilirsin.',
   attachTo: { element: '.dropdown-btn', on: 'bottom' },
   buttons: [{
-    text: 'Devam',
+    text: 'İleri',
     action: function () {
       const dropdown = document.querySelector('.dropdown-btn');
       dropdown?.classList.remove('pointer-events-none', 'opacity-50');
@@ -546,7 +530,7 @@ tour.addStep({
   title: 'Film Ara 🔍',
   text: 'Film veya dizi aramak için burayı kullan.',
   attachTo: { element: 'input[type=search]', on: 'bottom' },
-  buttons: [{ text: 'Devam', action: tour.next }]
+  buttons: [{ text: 'İleri', action: tour.next }]
 });
 
 // 5. Yapım Grafiği
@@ -589,7 +573,7 @@ tour.addStep({
   title: 'Paylaşım 🚀',
   text: 'Bu butonla yapım bağlantısını kopyalayabilir veya sosyal medyada paylaşabilirsin.',
   attachTo: { element: 'button[title="Kopyala"]', on: 'bottom' },
-  buttons: [{ text: 'Devam', action: tour.next }]
+  buttons: [{ text: 'İleri', action: tour.next }]
 });
 
 // 9. Vizyon Tarihi
@@ -597,7 +581,7 @@ tour.addStep({
   title: '🎬 Vizyon Tarihi',
   text: 'Burada yapımın vizyon tarihini görebilirsin.',
   attachTo: { element: '.modal-content [x-text*=toTRDate]', on: 'bottom' },
-  buttons: [{ text: 'Devam', action: tour.next }]
+  buttons: [{ text: 'İleri', action: tour.next }]
 });
 
 // 10. Tür ve IMDB
@@ -605,7 +589,7 @@ tour.addStep({
   title: '⭐ Tür ve IMDB',
   text: 'Yapımın türü ve IMDB puanı burada.',
   attachTo: { element: '.modal-content .text-xs.flex', on: 'bottom' },
-  buttons: [{ text: 'Devam', action: tour.next }]
+  buttons: [{ text: 'İleri', action: tour.next }]
 });
 
 // 6. Favorilere Ekle
@@ -614,7 +598,7 @@ tour.addStep({
   text: 'Bir yapımı favorilerine eklemek için bu butonu kullan.',
   attachTo: { element: '[x-text*=Favorilere]', on: 'bottom' },
   buttons: [{
-    text: 'Devam',
+    text: 'İleri',
     action: function () {
       const btn = document.querySelector('[x-text*=Favorilere]');
       if (btn && btn.textContent.includes('✔ Favorilere Eklendi')) {
@@ -631,7 +615,7 @@ tour.addStep({
   title: '🎭 Tür, Yönetmen, Oyuncular',
   text: 'Bu bölümde temel bilgiler yer alır.',
   attachTo: { element: '.modal-content .grid > div:nth-child(1)', on: 'bottom' },
-  buttons: [{ text: 'Devam', action: tour.next }]
+  buttons: [{ text: 'İleri', action: tour.next }]
 });
 
 // 12. Evren ve Kaynaklar
@@ -639,7 +623,7 @@ tour.addStep({
   title: '🌌 Evren ve Kaynaklar',
   text: 'Yapımın ait olduğu evreni ve kaynakları burada görebilirsin.',
   attachTo: { element: '.modal-content .grid > div:nth-child(2)', on: 'bottom' },
-  buttons: [{ text: 'Devam', action: tour.next }]
+  buttons: [{ text: 'İleri', action: tour.next }]
 });
 
 // 13. İçerik Özeti
@@ -651,7 +635,7 @@ tour.addStep({
     on: "bottom"
   },
   scrollTo: true,
-  buttons: [{ text: 'Devam', action: tour.next }]
+  buttons: [{ text: 'İleri', action: tour.next }]
 });
 
 // 14. Göndermeler
@@ -663,7 +647,7 @@ tour.addStep({
     on: "bottom"
   },
   scrollTo: true,
-  buttons: [{ text: 'Devam', action: tour.next }]
+  buttons: [{ text: 'İleri', action: tour.next }]
 });
 
 // 15. Bağlantılı Yapımlar
@@ -675,7 +659,7 @@ tour.addStep({
     on: "bottom"
   },
   scrollTo: true,
-  buttons: [{ text: 'Devam', action: tour.next }]
+  buttons: [{ text: 'İleri', action: tour.next }]
 });
 
 
@@ -686,7 +670,7 @@ tour.addStep({
   attachTo: { element: 'input[placeholder="Not ekle... #etiket"]', on: 'bottom' },
   
   buttons: [{
-    text: 'Devam',
+    text: 'İleri',
     action: function () {
       try {
         const items = Array.from(document.querySelectorAll('.modal-content div'));
@@ -758,7 +742,7 @@ tour.addStep({
   title: 'Oklar Neyi Gösterir? 🔁',
   text: 'Grafikteki oklar yapımlar arasındaki ilişkiyi gösterir.',
   attachTo: { element: '#network canvas', on: 'top' },
-  buttons: [{ text: 'Devam', action: tour.next }]
+  buttons: [{ text: 'İleri', action: tour.next }]
 });
 
 // 18. Legend Alanı
@@ -766,7 +750,7 @@ tour.addStep({
   title: '📘 Bağlantılar Açıklaması',
   text: 'Bağlantılar alanı evren renklerini ve türlerini açıklar.',
   attachTo: { element: '#legend_bar', on: 'left' },
-  buttons: [{ text: 'Devam', action: tour.next }]
+  buttons: [{ text: 'İleri', action: tour.next }]
 });
 
 // 19. Favori ve Not Paneli
@@ -777,7 +761,7 @@ tour.addStep({
   scrollTo: false,
   buttons: [
     {
-      text: 'Devam',
+      text: 'İleri',
       action: function () {
         // Panel içeriği DOM'da görünür mü kontrol et
         const panel = document.querySelector('[x-show="panelOpen"]');
@@ -806,15 +790,12 @@ tour.addStep({
 
 
 
-
-
-
 // 20. Favori Yönetimi
 tour.addStep({
   title: '⭐ Favorileri Gör ve Sil',
   text: 'Bu alanda favori yapımları görebilir ve silebilirsin.',
   attachTo: { element: '#fav_bar', on: 'left' },
-  buttons: [{ text: 'Devam', action: tour.next }]
+  buttons: [{ text: 'İleri', action: tour.next }]
 });
 
 // 21. Not Yönetimi
@@ -822,7 +803,7 @@ tour.addStep({
   title: '📝 Notları Gör, Düzenle, Sil',
   text: 'Notlarını bu alanda görüntüleyebilir, düzenleyebilir ya da silebilirsin.',
   attachTo: { element: '#notlar_bar', on: 'left' },
-  buttons: [{ text: 'Devam', action: tour.next }]
+  buttons: [{ text: 'İleri', action: tour.next }]
 });
 
 // 22. Tur Bitti 🎉
@@ -833,8 +814,6 @@ tour.addStep({
 });
       tour.start();
     },
-
- 
 
     editingNoteIndex: null,
     editedNoteText: '',
@@ -958,6 +937,7 @@ get legendEntries() {
               const otherNodeId = e.from === nodeId ? e.to : e.from;
               const otherNode = this.allNodes.find(n => String(n.id) === String(otherNodeId));
               return {
+    panel: null,
         linkedOpen: window.innerWidth > 640,
         showFavAdded: false,
         showFavMsg: false,
@@ -1182,11 +1162,11 @@ this.$watch('selectedUniverse', (val) => {
 
 
 <!-- Yeni panel açma butonu -->
-<button @click="panelOpen = !panelOpen" id="panel_bar" class="fixed right-4 bottom-4 z-50 glass rounded-full w-12 h-12 grid place-items-center hover:bg-white/10" title="Notlar ve Favoriler">📁</button>
+<button @click="panelOpen = !panelOpen" id="panel_bar" class="fixed right-4 bottom-[5rem] z-50 glass rounded-full w-12 h-12 grid place-items-center hover:bg-white/10" title="Notlar ve Favoriler">📁</button>
 
 
 <!-- Notlar & Favoriler Paneli -->
-<div class="fixed right-4 bottom-20 z-50 glass rounded-xl p-4 w-[22rem] max-h-[45vh] overflow-y-auto text-white text-sm space-y-4"
+<div class="fixed right-4 bottom-[9rem] z-50 glass rounded-xl p-4 w-[22rem] max-h-[45vh] overflow-y-auto text-white text-sm space-y-4"
      x-show="panelOpen" x-transition>
 
   <!-- Sekmeler -->
@@ -1260,5 +1240,252 @@ this.$watch('selectedUniverse', (val) => {
   </div>
 </div>
 
+
+<!-- Bilgi Panelleri -->
+<div x-show="panel === 'hakkimizda'" class="fixed inset-0 flex items-center justify-center z-50">
+  <div class="mobile-centered bg-black/85 text-white border border-white/10 rounded-2xl shadow-2xl p-6 text-sm w-[90%] max-w-2xl backdrop-blur-md space-y-4">
+    <h2 class="text-2xl font-bold text-center">ℹ️ Hakkımızda</h2>
+<div class="text-base text-white/80 space-y-3 text-left">
+  <p><strong>Film Evreni Ağı</strong>, sinema ve dizi evrenlerini etkileşimli ve görsel bir biçimde keşfetmek isteyenler için tasarlanmış bir bilgi platformudur.</p>
+  <p>Amacımız, sinema tutkunlarının evrenler arası ilişkileri kolayca anlamasını sağlamak ve her yapımın birbirine nasıl bağlandığını sezgisel olarak sunmaktır.</p>
+  <ul class="list-disc list-inside space-y-1">
+    <li>Farklı sinematik evrenleri merkezden uca, zaman çizgisi ya da karakter bağlantılarıyla görselleştirir.</li>
+    <li>Kullanıcılara kişisel notlar alma, favori yapımlarını işaretleme imkanı tanır.</li>
+    <li>Yapım bilgileri, karakter ilişkileri ve göndermeler gibi içerikleri zenginleştirir.</li>
+    <li>Kullanıcıların yorum yazmasına değil, bilgiye odaklanmasına olanak sağlar.</li>
+    <li>Hafif, reklamsız ve üyelik gerektirmeyen bir deneyim sunar.</li>
+  </ul>
+  <p>Film Evreni Ağı bağımsız bir girişimdir ve herhangi bir stüdyo veya yayıncıyla bağlantısı yoktur.</p>
+</div>
+    <div class="text-center">
+      <button @click="panel = null" class="mt-4 px-5 py-2 bg-white/10 border border-white/20 text-white text-sm rounded-lg hover:bg-white/20 transition">Geri Dön</button>
+    </div>
+  </div>
+</div>
+
+<div x-show="panel === 'gizlilik'" class="fixed inset-0 flex items-center justify-center z-50">
+  <div class="mobile-centered bg-black/85 text-white border border-white/10 rounded-2xl shadow-2xl p-6 text-sm w-[90%] max-w-2xl backdrop-blur-md space-y-4">
+    <h2 class="text-2xl font-bold text-center">🔐 Gizlilik Politikası</h2>
+<div class="text-base text-white/80 space-y-3 text-left">
+  <p>Film Evreni Ağı olarak gizliliğinizi ciddiye alıyoruz. Platformumuz, anonim kullanıcı deneyimi sunar ve size ait verileri ifşa etmez.</p>
+
+  <h3 class="font-semibold mt-4 mb-1">Toplanan Bilgiler</h3>
+  <ul class="list-disc list-inside space-y-1">
+    <li>Kullanıcıdan aktif olarak <strong>hiçbir kişisel bilgi</strong> talep edilmez.</li>
+    <li>Ad, e-posta, üyelik, şifre vb. sistemde <strong>tutulmaz</strong>.</li>
+    <li>Favoriler ve notlar yalnızca tarayıcı (localStorage) üzerinde saklanır.</li>
+  </ul>
+
+  <h3 class="font-semibold mt-4 mb-1">Veri Kullanımı</h3>
+  <ul class="list-disc list-inside space-y-1">
+    <li>Veriler yalnızca size görünür şekilde cihazınızda tutulur.</li>
+    <li>Kullanıcı davranışı izlenmez, analiz yapılmaz.</li>
+  </ul>
+
+  <h3 class="font-semibold mt-4 mb-1">3. Taraflar ve İzleme</h3>
+  <ul class="list-disc list-inside space-y-1">
+    <li>Google Analytics, Facebook Pixel gibi izleme araçları <strong>kullanılmaz</strong>.</li>
+    <li>Reklam, takip veya sponsor sistemleri entegre edilmemiştir.</li>
+  </ul>
+
+  <h3 class="font-semibold mt-4 mb-1">Veri Paylaşımı</h3>
+  <ul class="list-disc list-inside space-y-1">
+    <li>Hiçbir veri 3. şahıslarla <strong>paylaşılmaz</strong>.</li>
+    <li>Yasal bir zorunluluk olmadıkça veri kaydı yoktur.</li>
+  </ul>
+
+ <div class="text-center mt-4">
+  <button @click="panel = 'iletisim'" class="px-4 py-2 bg-white/10 border border-white/20 text-white text-sm rounded hover:bg-white/20">
+    İletişim Formunu Aç
+  </button>
+</div>
+</div>
+    <div class="text-center">
+      <button @click="panel = null" class="mt-4 px-5 py-2 bg-white/10 border border-white/20 text-white text-sm rounded-lg hover:bg-white/20 transition">Geri Dön</button>
+    </div>
+  </div>
+</div>
+
+<div x-show="panel === 'cerez'" class="fixed inset-0 flex items-center justify-center z-50">
+  <div class="mobile-centered bg-black/85 text-white border border-white/10 rounded-2xl shadow-2xl p-6 text-sm w-[90%] max-w-2xl backdrop-blur-md space-y-4">
+    <h2 class="text-2xl font-bold text-center">🍪 Çerez Politikası</h2>
+<div class="text-base text-white/80 space-y-3 text-left">
+  <p>Web sitemiz yalnızca <strong>zorunlu ve deneyimi iyileştiren çerezler</strong> kullanır.</p>
+
+  <h3 class="font-semibold mt-4 mb-1">Kullandığımız Çerez Türleri</h3>
+  <ul class="list-disc list-inside space-y-1">
+    <li><strong>Oturum Çerezleri:</strong> Geçici olarak tutulur, oturum kapandığında silinir.</li>
+    <li><strong>Tercih Çerezleri:</strong> Tema ayarları, notlar, favoriler gibi verileri saklar.</li>
+  </ul>
+
+  <h3 class="font-semibold mt-4 mb-1">Kullanım Amaçları</h3>
+  <ul class="list-disc list-inside space-y-1">
+    <li>Karanlık/aydınlık tema tercihini hatırlama</li>
+    <li>Son seçilen evreni veya yapımı hatırlama</li>
+    <li>Kişisel not ve favori listesini koruma</li>
+  </ul>
+
+  <h3 class="font-semibold mt-4 mb-1">Toplamadığımız Veriler</h3>
+  <ul class="list-disc list-inside space-y-1">
+    <li>Davranış analizi, IP adresi, konum, geçmiş gibi veriler toplanmaz.</li>
+    <li>Reklam çerezi veya sosyal medya takibi <strong>yoktur</strong>.</li>
+  </ul>
+
+  <p class="mt-4">Çerezleri tarayıcınızdan temizleyebilir veya engelleyebilirsiniz. Bu durumda bazı özellikler çalışmayabilir.</p>
+</div>
+    <div class="text-center">
+      <button @click="panel = null" class="mt-4 px-5 py-2 bg-white/10 border border-white/20 text-white text-sm rounded-lg hover:bg-white/20 transition">Geri Dön</button>
+    </div>
+  </div>
+</div>
+
+<div x-show="panel === 'kullanim'" class="fixed inset-0 flex items-center justify-center z-50">
+  <div class="mobile-centered bg-black/85 text-white border border-white/10 rounded-2xl shadow-2xl p-6 text-sm w-[90%] max-w-2xl backdrop-blur-md space-y-4">
+    <h2 class="text-2xl font-bold text-center">📜 Kullanım Koşulları</h2>
+<div class="text-base text-white/80 space-y-3 text-left">
+  <p>Platformu kullanarak aşağıdaki koşulları kabul etmiş sayılırsınız:</p>
+
+  <h3 class="font-semibold mt-4 mb-1">Kullanım Amacı</h3>
+  <ul class="list-disc list-inside space-y-1">
+    <li>Yalnızca <strong>kişisel ve eğitsel</strong> kullanım içindir.</li>
+    <li>Herhangi bir ticari faaliyet amacıyla kullanılamaz.</li>
+  </ul>
+
+  <h3 class="font-semibold mt-4 mb-1">İçerik ve Sorumluluk</h3>
+  <ul class="list-disc list-inside space-y-1">
+    <li>Bilgiler kamuya açık kaynaklardan derlenmiştir.</li>
+    <li>İçerik doğruluğu garanti edilmez; referans amaçlıdır.</li>
+    <li>Telifli materyallerin sahibi yapım şirketleridir.</li>
+  </ul>
+
+  <h3 class="font-semibold mt-4 mb-1">Kısıtlamalar</h3>
+  <ul class="list-disc list-inside space-y-1">
+    <li>İçerik izinsiz kopyalanamaz, dağıtılamaz, satılamaz.</li>
+    <li>Kod yapısı ve veri yapıları izinsiz çoğaltılamaz.</li>
+  </ul>
+
+  <p class="mt-4">Kuralları ihlal eden kullanıcıların erişimi engellenebilir.</p>
+</div>
+    <div class="text-center">
+      <button @click="panel = null" class="mt-4 px-5 py-2 bg-white/10 border border-white/20 text-white text-sm rounded-lg hover:bg-white/20 transition">Geri Dön</button>
+    </div>
+  </div>
+</div>
+
+<div x-show="panel === 'dmca'" class="fixed inset-0 flex items-center justify-center z-50">
+  <div class="mobile-centered bg-black/85 text-white border border-white/10 rounded-2xl shadow-2xl p-6 text-sm w-[90%] max-w-2xl backdrop-blur-md space-y-4">
+    <h2 class="text-2xl font-bold text-center">⚖️ DMCA Bildirimi</h2>
+<div class="text-base text-white/80 space-y-3 text-left">
+  <p>Film Evreni Ağı telif hakkı sahiplerine saygı duyar ve ihlal bildirimlerini ciddiyetle ele alır.</p>
+
+  <h3 class="font-semibold mt-4 mb-1">Bildiriminizde Bulunması Gerekenler</h3>
+  <ul class="list-disc list-inside space-y-1">
+    <li>Hak sahibinin adı ve iletişim bilgileri</li>
+    <li>İhlal ettiği düşünülen içeriğin tam bağlantısı (URL)</li>
+    <li>Telif hakkı sahibi olduğunuza dair açık beyan</li>
+  </ul>
+
+  <h3 class="font-semibold mt-4 mb-1">Süreç</h3>
+  <ul class="list-disc list-inside space-y-1">
+    <li>Bildirimin ardından en geç 48 saat içinde yanıt verilir.</li>
+    <li>Uygun görüldüğü takdirde içerik yayından kaldırılır.</li>
+  </ul>
+
+  <h3 class="font-semibold mt-4 mb-1">Yasal Uyarı</h3>
+  <ul class="list-disc list-inside space-y-1">
+    <li>Yanlış beyanla gönderilen bildirimler yasal sorumluluk doğurur.</li>
+  </ul>
+
+  <div class="text-center mt-4">
+  <button @click="panel = 'iletisim'" class="px-4 py-2 bg-white/10 border border-white/20 text-white text-sm rounded hover:bg-white/20">
+    İletişim Formunu Aç
+  </button>
+</div>
+</div>
+
+    <div class="text-center">
+      <button @click="panel = null" class="mt-4 px-5 py-2 bg-white/10 border border-white/20 text-white text-sm rounded-lg hover:bg-white/20 transition">Geri Dön</button>
+    </div>
+  </div>
+</div>
+
+<div x-show="panel === 'iletisim'" class="fixed inset-0 flex items-center justify-center z-50">
+  <div class="mobile-centered bg-black/85 text-white border border-white/10 rounded-2xl shadow-2xl p-6 text-sm w-[90%] max-w-xl backdrop-blur-md space-y-4">
+    <h2 class="text-2xl font-bold text-center">📬 İletişim Formu</h2>
+
+    <form id="iletisimForm" class="space-y-4">
+      <div>
+        <label class="block mb-1">Adınız</label>
+        <input type="text" name="name" class="w-full px-3 py-2 rounded bg-white/10 border border-white/20" required>
+      </div>
+      <div>
+        <label class="block mb-1">E-posta Adresiniz</label>
+        <input type="email" name="email" class="w-full px-3 py-2 rounded bg-white/10 border border-white/20" required>
+      </div>
+      <div>
+        <label class="block mb-1">Konu</label>
+        <select name="subject" required class="w-full px-3 py-2 rounded bg-white/10 border border-white/20">
+          <option disabled selected>Seçin</option>
+          <option>İstek-Öneri</option>
+          <option>DMCA</option>
+          <option>İletişim</option>
+        </select>
+      </div>
+      <div>
+        <label class="block mb-1">Mesajınız</label>
+        <textarea name="message" rows="5" class="w-full px-3 py-2 rounded bg-white/10 border border-white/20" required></textarea>
+      </div>
+      <div class="text-center">
+        <button type="submit" class="px-4 py-2 bg-white/10 border border-white/20 text-white text-sm rounded hover:bg-white/20">Gönder</button>
+      </div>
+    </form>
+
+    <div class="text-center">
+      <button @click="panel = null" class="mt-2 px-4 py-1 text-sm text-white border border-white/20 rounded hover:bg-white/20">İptal</button>
+    </div>
+  </div>
+
+  <!-- EmailJS entegrasyonu -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init("7UKhuE7htA-_Kgs1q"); // public key
+    })();
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const form = document.getElementById("iletisimForm");
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        emailjs.sendForm("service_7klkor6", "template_7shk4yl", form)
+          .then(() => {
+            alert("Mesajınız başarıyla gönderildi. Teşekkür ederiz!");
+            form.reset();
+            panel = null;
+          })
+          .catch((error) => {
+            alert("Bir hata oluştu: " + JSON.stringify(error));
+          });
+      });
+    });
+  </script>
+</div>
+
+
+
+<footer class="bg-black/70 text-white/70 text-xs text-center py-4 border-t border-white/10 mt-auto relative z-50">
+  <div class="space-y-2">
+    <div>© 2025 Film Evreni Ağı</div>
+    <div class="flex flex-wrap justify-center gap-x-4 gap-y-1 text-xs">
+      <a href="#" @click.prevent="panel='hakkimizda'" class="underline hover:text-white block">Hakkımızda</a>
+      <a href="#" @click.prevent="panel='gizlilik'" class="underline hover:text-white block">Gizlilik</a>
+      <a href="#" @click.prevent="panel='cerez'" class="underline hover:text-white block">Çerez Politikası</a>
+      <a href="#" @click.prevent="panel='kullanim'" class="underline hover:text-white block">Kullanım Koşulları</a>
+      <a href="#" @click.prevent="panel='dmca'" class="underline hover:text-white block">DMCA</a>
+    </div>
+  </div>
+</footer>
+
 </body>
+
+
 </html>
