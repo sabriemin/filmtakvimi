@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Admin Girişi (TOTP)</title>
+  <style>
+    :root { color-scheme: dark; }
+    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; background:#0b1220; color:#e5e7eb; display:grid; place-items:center; min-height:100vh; }
+    .card { width:92vw; max-width:420px; background: rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.12); padding:22px; border-radius:16px; box-shadow: 0 8px 30px rgba(0,0,0,0.45); }
+    label { display:block; margin:8px 0 6px; font-size:14px; opacity:.9; }
+    input, button { width:100%; padding:10px 12px; border-radius:10px; }
+    input { border:1px solid rgba(255,255,255,0.18); background: rgba(255,255,255,0.06); color:#fff; outline:none; letter-spacing: 3px; text-align:center; font-size:18px; }
+    button { border:1px solid rgba(99,102,241,0.5); background: rgba(99,102,241,0.15); color:#c7d2fe; cursor:pointer; }
+    button:hover { background: rgba(99,102,241,0.25); }
+    .muted { font-size:12px; opacity:.75; }
+    .err { color:#fca5a5; font-size:13px; min-height:18px; }
+    .ok { color:#86efac; font-size:13px; min-height:18px; }
+    .qr { display:none; margin-top:12px; text-align:center; }
+    img { max-width:260px; border-radius:12px; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1 style="margin:0 0 10px 0; font-size:18px;">🔐 Admin Girişi (TOTP)</h1>
+    <p class="muted">Authenticator uygulamasındaki 6 haneli kodu gir.</p>
+    <label>Kod</label>
+    <input id="otp" type="text" inputmode="numeric" maxlength="6" placeholder="• • • • • •"/>
+    <div style="height:8px"></div>
+    <button id="btn">Giriş yap</button>
+    <div id="msg" class="err"></div>
+    <hr style="margin:16px 0; border-color: rgba(255,255,255,0.12)">
+    <p class="muted">Kurulum yok mu? (Yalnızca yönetici)</p>
+    <label>Yönetici parolası</label>
+    <input id="adminpw" type="password" placeholder="Yalnızca ilk kurulum için"/>
+    <button id="setup">Kurulum QR Oluştur</button>
+    <div class="qr" id="qrBox">
+      <p class="ok">Authenticator'da bu QR'ı tara veya otpauth URL'ini kullan.</p>
+      <img id="qr" alt="QR">
+      <p id="otpauth" class="muted" style="word-break: break-all;"></p>
+    </div>
+  </div>
+
+<script>
+const TARGET = (new URLSearchParams(location.search).get('to') || '/admin.html');
+
+document.getElementById('btn').addEventListener('click', async () => {
+  const code = document.getElementById('otp').value.replace(/\D/g,'').slice(0,6);
+  if (code.length !== 6) return show('Lütfen 6 haneli kod gir.');
+  try {
+    const r = await fetch('/totp/verify', {
+      method:'POST',
+      headers:{ 'Content-Type':'application/json' },
+      body: JSON.stringify({ token: code }),
+      credentials: 'include'
+    });
+    const j = await r.json().catch(()=>({}));
+    if (!r.ok) return show(j.error || 'Kod hatalı');
+    location.href = TARGET;
+  } catch (e) { show('Sunucuya ulaşılamadı.'); }
+});
+
+document.getElementById('setup').addEventListener('click', async () => {
+  const pw = document.getElementById('adminpw').value;
+  if (!pw) return show('Yönetici parolası gerekli.');
+  try {
+    const r = await fetch('/totp/setup', {
+      method:'POST',
+      headers:{ 'Content-Type':'application/json' },
+      body: JSON.stringify({ password: pw }),
+      credentials: 'include'
+    });
+    const j = await r.json();
+    if (!r.ok) return show(j.error || 'Kurulum başarısız');
+    document.getElementById('qr').src = j.qr;
+    document.getElementById('otpauth').textContent = j.otpauth;
+    document.getElementById('qrBox').style.display = 'block';
+    show('QR oluşturuldu. Authenticator ile tara.', true);
+  } catch (e) { show('Sunucuya ulaşılamadı.'); }
+});
+
+function show(msg, ok=false){
+  const el = document.getElementById('msg');
+  el.textContent = msg;
+  el.className = ok ? 'ok' : 'err';
+}
+</script>
+</body>
+</html>

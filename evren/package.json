@@ -1,0 +1,21 @@
+{
+  "name": "film-evreni-token-auth",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "auth": "node auth-server.js",
+    "web": "node resource-server.js",
+    "start": "npm-run-all --parallel auth web"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "npm-run-all": "^4.1.5",
+    "speakeasy": "^2.0.0",
+    "qrcode": "^1.5.4"
+  }
+}

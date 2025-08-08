@@ -1,6 +1,28 @@
 <!DOCTYPE html>
 <html lang="tr" x-data="adminApp()" x-init="init()">
-<head>
+\1
+
+<!-- Client-side auth guard -->
+<style>body{visibility:hidden}</style>
+<script>
+(function(){
+  async function check(){
+    try {
+      const r = await fetch('/verify-token', { credentials: 'include' });
+      if (!r.ok) { location.replace('/login-totp.html?to=/admin.html'); return; }
+      document.body.style.visibility = 'visible';
+    } catch (e) {
+      location.replace('/login-totp.html?to=/admin.html');
+    }
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', check);
+  } else {
+    check();
+  }
+})();
+</script>
+
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>🎛️ Admin Panel · Film Evreni Ağı</title>
