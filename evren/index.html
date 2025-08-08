@@ -1965,6 +1965,45 @@ const searchTerm = this.norm(this.search);
   </div>
 </footer>
 
+
+<!-- Hidden admin redirect snippet: begin -->
+<script>
+(function(){
+  var target = "admin.html";
+  function go(){ try { window.location.href = target; } catch(e){} }
+
+  // 1) Hotkey: Ctrl/Cmd + Alt + A
+  window.addEventListener("keydown", function(e){
+    var isA = (e.key || "").toLowerCase() === "a";
+    if (isA && e.altKey && (e.ctrlKey || e.metaKey)) {
+      e.preventDefault();
+      go();
+    }
+  }, { passive: false });
+
+  // 2) Hash trigger: #admin
+  if ((location.hash || "").toLowerCase() === "#admin") {
+    go();
+  }
+
+  // 3) Type sequence: "admin" within 1.5s anywhere
+  var buffer = "";
+  var timer = null;
+  window.addEventListener("keydown", function(e){
+    var k = (e.key || "");
+    if (k.length === 1 && !e.ctrlKey && !e.metaKey && !e.altKey) {
+      buffer += k.toLowerCase();
+      if (timer) clearTimeout(timer);
+      timer = setTimeout(function(){ buffer = ""; }, 1500);
+      if (buffer.endsWith("admin")) {
+        go();
+      }
+    }
+  });
+})();
+</script>
+<!-- Hidden admin redirect snippet: end -->
+
 </body>
 
 
