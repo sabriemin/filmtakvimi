@@ -151,7 +151,7 @@
       max-height: 70vh;
       overflow-y: auto;
       position: relative;
-      top: 42%;
+      top: 38%;
       transform: translateY(-50%);
     }
   }
@@ -202,88 +202,106 @@
     <!-- Mobilde arama ve anasayfa yanyana, dropdown altta olacak sekilde yeniden yapılandırıldı -->
 <div class="flex flex-col sm:flex-row gap-2">
 
-  <!-- Anasayfa + Arama + (Mobil Filtre Butonu) -->
-  <div class="flex flex-row items-center gap-2 w-full">
-    <!-- Anasayfa Butonu -->
-    <a href="/evren" title="Anasayfa" class="text-white border border-white/30 hover:bg-white/10 rounded-md p-2 transition w-9 h-9 flex items-center justify-center">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M4 10v10h6v-6h4v6h6V10L12 3z" />
+  <!-- Mobil/masaüstü: Anasayfa + Arama + Mobil Filtre aynı satır -->
+  <div class="flex flex-row items-center gap-2 w-full sm:flex-1 sm:basis-0 sm:min-w-0">
+
+    <!-- Anasayfa -->
+    <a href="/evren" title="Anasayfa"
+       class="text-white border border-white/30 hover:bg-white/10 rounded-md p-2 transition w-9 h-9 flex items-center justify-center">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+           stroke-width="2" stroke="currentColor" class="w-5 h-5">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 10v10h6v-6h4v6h6V10L12 3z"/>
       </svg>
     </a>
 
-    <!-- Arama Kutusu -->
-    <div class="relative w-full">
-      <input @blur="setTimeout(() => acOpen = false, 120)" 
-             @focus="acOpen = true" 
-             class="border rounded-lg px-3 py-1.5 w-full pr-8" 
-             placeholder="Ara..." 
-             type="search" 
-             x-model="search">
-      <button @click="search=''; suggestions=[]; applyFilters()" 
-              @mousedown.prevent="" 
-              aria-label="Temizle" 
-              class="absolute inset-y-0 right-2 my-auto h-6 w-6 rounded-full grid place-items-center opacity-80 hover:opacity-100 hover:bg-white/10" 
-              x-show="search" 
-              style="display: none;">
+    <!-- Arama -->
+    <div class="relative flex-1 min-w-0">
+      <input
+        @blur="setTimeout(() => acOpen = false, 120)"
+        @focus="acOpen = true"
+        class="border rounded-lg px-3 py-1.5 w-full pr-10"
+        placeholder="Ara..."
+        type="search"
+        x-model="search"
+      />
+      <button
+        @click="search=''; suggestions=[]; applyFilters()"
+        @mousedown.prevent
+        aria-label="Temizle"
+        class="absolute inset-y-0 right-2 my-auto h-6 w-6 rounded-full grid place-items-center opacity-80 hover:opacity-100 hover:bg-white/10"
+        x-show="search"
+        style="display:none;">
         <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M18.3 5.71a1 1 0 0 0-1.41 0L12 10.59 7.11 5.7A1 1 0 0 0 5.7 7.11L10.59 12l-4.9 4.89a1 1 0 1 0 1.41 1.41L12 13.41l4.89 4.9a1 1 0 0 0 1.41-1.41L13.41 12l4.9-4.89a1 1 0 0 0-.01-1.4Z"></path>
+          <path d="M18.3 5.71a1 1 0 0 0-1.41 0L12 10.59 7.11 5.7A1 1 0 0 0 5.7 7.11L10.59 12l-4.9 4.89a1 1 0 1 0 1.41 1.41L12 13.41l4.89 4.9a1 1 0 0 0 1.41-1.41L13.41 12l4.9-4.89a1 1 0 0 0-.01-1.4Z"/>
         </svg>
       </button>
-    </div>
-
-    <!-- Filtre Butonu (Mobil) -->
-    <button 
-      @click="openFilterPanel = !openFilterPanel"
-      class="flex items-center justify-center w-9 h-9 border border-white/30 hover:bg-white/10 rounded-md transition sm:hidden"
-      title="Filtreler"
-    >
-      <svg xmlns="http://www.w3.org/2000/svg" 
-           fill="none" viewBox="0 0 24 24" 
-           stroke-width="2" stroke="currentColor" 
-           class="w-5 h-5 text-white">
-        <path stroke-linecap="round" stroke-linejoin="round" 
-              d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2a1 1 0 01-.293.707l-5.414 5.414a1 1 0 00-.293.707v4.586a1 1 0 01-.553.894l-4 2A1 1 0 019 19v-6.586a1 1 0 00-.293-.707L3.293 6.707A1 1 0 013 6V4z" />
-      </svg>
-    </button>
-  </div>
-
-  <!-- Evren Seçimi Dropdown + (Masaüstü Filtre Butonu) -->
-  <div class="flex flex-row items-center gap-2 sm:w-[200px]">
-    <!-- Dropdown Evren Seçimi -->
-    <div @click.outside="open=false" @keydown.escape="open=false" class="relative w-full" x-data="{ open:false, filterText:'' }">
-      <div :aria-expanded="open" @click="open=!open" class="dropdown-btn border rounded-lg px-3 py-1.5 w-full flex items-center justify-between select-none" aria-expanded="false">
-        <span id="#universe_select" class="truncate" x-text="selectedUniverse ? formatUniverseName(selectedUniverse) : 'Tüm Evrenler'">Tüm Evrenler</span>
-        <svg class="h-4 w-4 opacity-80 ml-2" fill="currentColor" viewBox="0 0 20 20"><path clip-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" fill-rule="evenodd"></path></svg>
-      </div>
-      <div class="dropdown-panel absolute mt-2 left-0 right-0 rounded-xl overflow-hidden" style="z-index: 60; display: none;" x-show="open" x-transition>
-        <div class="p-2 border-b border-white/10">
-          <input class="w-full px-3 py-2 rounded-lg border" placeholder="Evren ara..." x-model="filterText">
-        </div>
-        <ul class="max-h-64 overflow-y-auto">
-          <template :key="u" x-for="u in universeList.filter(u => !filterText || formatUniverseName(u).toLowerCase().includes(filterText.toLowerCase()))">
-            <li @click="selectedUniverse=u; open=false; filterText=''; applyFilters()" class="dropdown-item px-3 py-2" x-text="formatUniverseName(u)"></li>
-          </template>
-        </ul>
+      <!-- AC panel -->
+      <div class="ac-panel absolute z-50 w-full mt-1 rounded-lg overflow-hidden max-h-56 overflow-y-auto"
+           x-show="acOpen && search && suggestions.length" style="display:none;">
+        <template x-for="(s, idx) in suggestions" :key="s">
+          <div @click="search = s; acOpen=false; applyFilters();" @mousedown.prevent class="ac-item px-3 py-1.5">
+            <span x-text="s"></span>
+          </div>
+        </template>
       </div>
     </div>
 
-    <!-- Filtre Butonu (Masaüstü) -->
-    <button 
+    <!-- Filtre butonu: mobil -->
+    <button
       @click="openFilterPanel = !openFilterPanel"
-      class="hidden sm:flex items-center justify-center w-9 h-9 border border-white/30 hover:bg-white/10 rounded-md transition"
-      title="Filtreler"
-    >
-      <svg xmlns="http://www.w3.org/2000/svg" 
-           fill="none" viewBox="0 0 24 24" 
-           stroke-width="2" stroke="currentColor" 
-           class="w-5 h-5 text-white">
-        <path stroke-linecap="round" stroke-linejoin="round" 
-              d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2a1 1 0 01-.293.707l-5.414 5.414a1 1 0 00-.293.707v4.586a1 1 0 01-.553.894l-4 2A1 1 0 019 19v-6.586a1 1 0 00-.293-.707L3.293 6.707A1 1 0 013 6V4z" />
+      class="relative flex sm:hidden items-center justify-center w-9 h-9 border border-white/30 hover:bg-white/10 rounded-md transition"
+      title="Filtreler">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+           stroke-width="2" stroke="currentColor" class="w-5 h-5 text-white">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3 4h18v2l-6 6v4.6l-4 2V12L3 6z"/>
       </svg>
+      <span x-show="activeFilterCount" class="absolute -top-1 -right-1 text-[10px] px-1.5 py-[1px] rounded-full bg-emerald-500 text-black font-semibold">
+        <span x-text="activeFilterCount"></span>
+      </span>
     </button>
   </div>
+
+  <!-- Evren Seçimi -->
+  <div class="relative flex-1 basis-0 min-w-0" x-data="{ open:false, filterText:'' }">
+    <div :aria-expanded="open" @click="open=!open"
+         class="dropdown-btn border rounded-lg px-3 py-1.5 w-full flex items-center justify-between select-none">
+      <span class="truncate" x-text="selectedUniverse ? formatUniverseName(selectedUniverse) : 'Tüm Evrenler'">Tüm Evrenler</span>
+      <svg class="h-4 w-4 opacity-80 ml-2" fill="currentColor" viewBox="0 0 20 20">
+        <path clip-rule="evenodd" fill-rule="evenodd"
+              d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z"/>
+      </svg>
+    </div>
+    <div class="dropdown-panel absolute mt-2 left-0 right-0 rounded-xl overflow-hidden"
+         style="z-index:60; display:none;" x-show="open" x-transition>
+      <div class="p-2 border-b border-white/10">
+        <input class="w-full px-3 py-2 rounded-lg border" placeholder="Evren ara..." x-model="filterText">
+      </div>
+      <ul class="max-h-64 overflow-y-auto">
+        <template x-for="u in universeList.filter(u => !filterText || formatUniverseName(u).toLowerCase().includes(filterText.toLowerCase()))" :key="u">
+          <li @click="selectedUniverse=u; open=false; filterText=''; applyFilters()"
+              class="dropdown-item px-3 py-2" x-text="formatUniverseName(u)"></li>
+        </template>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Filtre butonu: masaüstü -->
+  <button
+    @click="openFilterPanel = !openFilterPanel"
+    class="relative hidden sm:flex items-center justify-center w-9 h-9 border border-white/30 hover:bg-white/10 rounded-md transition"
+    title="Filtreler">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+         stroke-width="2" stroke="currentColor" class="w-5 h-5 text-white">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M3 4h18v2l-6 6v4.6l-4 2V12L3 6z"/>
+    </svg>
+    <span x-show="activeFilterCount" class="absolute -top-1 -right-1 text-[10px] px-1.5 py-[1px] rounded-full bg-emerald-500 text-black font-semibold">
+      <span x-text="activeFilterCount"></span>
+    </span>
+  </button>
 
 </div>
+
+
 
   </div>
 </div>
@@ -324,18 +342,24 @@
     </div>
   </div>
 
-  <!-- Tür (Genre) -->
-  <div class="mb-4">
-    <div class="text-sm font-medium mb-2">Tür</div>
-    <div class="flex flex-wrap gap-2">
-      <template x-for="g in availableGenres" :key="g">
-        <label class="text-xs px-2 py-1 rounded-full border border-white/20 bg-white/5 cursor-pointer select-none">
-          <input type="checkbox" class="hidden" :value="g" x-model="filters.genres">
-          <span x-text="g"></span>
-        </label>
-      </template>
-    </div>
+<!-- Tür (Genre) -->
+<div class="mb-4">
+  <div class="text-sm font-medium mb-2">Tür</div>
+  <div class="flex flex-wrap gap-2">
+    <template x-for="g in availableGenres" :key="g">
+      <label
+        class="px-2 py-1 rounded-full border cursor-pointer select-none text-xs transition"
+        :class="filters.genres.includes(g)
+          ? 'bg-emerald-500 border-emerald-500 text-black'
+          : 'bg-white/5 border-white/20 text-white hover:bg-white/10'">
+        
+        <input type="checkbox" class="hidden" :value="g" x-model="filters.genres">
+        <span x-text="g"></span>
+      </label>
+    </template>
   </div>
+</div>
+
 
   <!-- Yıl aralığı -->
   <div class="mb-4 grid grid-cols-2 gap-2">
@@ -431,14 +455,61 @@ class="w-32 h-32 rounded-full object-cover drop-shadow-[0_0_20px_rgba(168,85,247
 </div>
 <div class="bg-white/5 p-4 rounded-lg border border-white/10 space-y-1">
 <div><strong>Evren:</strong> <span x-text="formatUniverseName(modalNode.universe)"></span></div>
-<template x-if="modalNode.sources?.length">
-<div><strong>Kaynaklar:</strong>
-<ul class="list-disc list-inside">
-<template :key="src.url" x-for="src in modalNode.sources">
-<li><a :href="src.url" class="underline" target="_blank" x-text="src.name"></a></li>
-</template>
-</ul>
+<template x-if="Array.isArray(modalNode.sources) ? modalNode.sources.length : Object.keys(modalNode.sources || {}).length">
+
+
+<!-- Kaynaklar -->
+<div
+  class="mt-4"
+  x-data="{ groups: [] }"
+  x-effect="
+    (() => {
+      const raw =
+        modalNode?.sources
+        || modalNode?.source
+        || modalNode?.links
+        || null;
+
+      const normalized = normalizeSources(raw);
+      const order = ['Kaynaklar','Görsel','Platform'];
+
+      groups = order
+        .map(cat => ({ cat, items: (normalized?.[cat] || []) }))
+        .filter(g => g.items.length);
+    })()
+  "
+  x-show="groups.length"
+>
+
+
+  <template x-for="g in groups" :key="g.cat">
+    <div class="mb-3">
+      <h4 class="text-sm font-medium mb-1 inline-flex items-center gap-1">
+        <span x-text="getSourceIcon(g.cat)"></span>
+        <span x-text="g.cat"></span>
+      </h4>
+      <ul class="list-disc list-inside text-sm space-y-0.5">
+        <template x-for="src in g.items" :key="src.url || src.name">
+          <li>
+            <a href="#"
+               @click.prevent="confirmExternal(src.url)"
+               class="text-emerald-400 hover:underline"
+               x-text="src.name || src.url"></a>
+          </li>
+        </template>
+      </ul>
+    </div>
+  </template>
 </div>
+
+<!-- Hiç kaynak yoksa nazik mesaj -->
+<div class="mt-4 text-sm text-white/70" x-show="!groups?.length">
+  Bu yapım için kayıtlı bir kaynak bulunamadı.
+</div>
+
+
+
+
 </template>
 </div>
 </div>
@@ -528,6 +599,21 @@ class="w-32 h-32 rounded-full object-cover drop-shadow-[0_0_20px_rgba(168,85,247
   'bg-teal-800/30 border-teal-400/20': e.type === 'Kozmik Genişleme',
   'bg-cyan-900/30 border-cyan-500/20': e.type === 'Çoklu Evren',
   'bg-red-800/30 border-red-400/20': e.type === 'Evrensel Gelişme',
+  
+  // Eklenen eksik type’lar:
+  'bg-indigo-900/30 border-indigo-500/20': e.type === 'Ana Hikaye Bağlantısı',
+  'bg-red-950/30 border-red-600/20': e.type === 'Ana Tehdit',
+  'bg-sky-900/30 border-sky-500/20': e.type === 'Doğrudan Devam',
+  'bg-emerald-950/30 border-emerald-600/20': e.type === 'Evrensel Bağlantı',
+  'bg-stone-900/30 border-stone-500/20': e.type === 'Geçmiş Hikayesi',
+  'bg-green-900/30 border-green-500/20': e.type === 'Hikaye Devamı',
+  'bg-cyan-800/30 border-cyan-400/20': e.type === 'Hikaye Öncesi',
+  'bg-slate-800/30 border-slate-400/20': e.type === 'Karakter Devamı',
+  'bg-orange-700/30 border-orange-300/20': e.type === 'Siyasi Etki',
+  'bg-fuchsia-900/30 border-fuchsia-500/20': e.type === 'Crossover',
+  'bg-gray-700/30 border-gray-400/20': e.type === 'Tarihsel Bağlantı',
+  'bg-purple-800/30 border-purple-300/20': e.type === 'Türsel Bağlantı',
+
   'bg-white/10 border-white/20': !e.type
          }" @click="__openNode(e.otherNodeId)" class="rounded-xl p-3 text-sm cursor-pointer transition relative border space-y-1">
 <div class="font-semibold" x-text="nodes.get(e.otherNodeId)?.label || e.otherNodeId">
@@ -1003,8 +1089,7 @@ tour.addStep({
         bgUrl: 'images/bg.jpg',
         bgMap: {
           "": "images/bg.jpg",
-          "avatar_last_airbender": "images/avatar.jpg",
-          "avatar_pandora": "images/pandora.jpg",
+          "avatar": "images/pandora.jpg",
           "dc": "images/dc.jpg",
           "harrypotter": "images/harrypotter.jpg",
           "marvel": "images/marvel.jpg",
@@ -1020,50 +1105,158 @@ tour.addStep({
             .map(e => ({ ...e, otherNodeId: e.from === this.modalNode.id ? e.to : e.from }));
         },
 edgeColors: {
-  "Devam": "#2980b9",                // Mavi - ana hikaye devamı
-  "Takım Kurulumu": "#27ae60",       // Yeşil - birlik ve oluşum
-  "Karakter Geçişi": "#34495e",      // Koyu gri - karakter odaklı
-  "Gizli Bağlantı": "#8e44ad",       // Mor - gizli/arka plan bağlantı
-  "Psikolojik Etki": "#e74c3c",      // Kırmızı - duygusal/mental etki
-  "Karakter Bağlantısı": "#9b59b6",  // Açık mor - karakter ilişkisi
-  "Yeni Tehdit": "#c0392b",          // Koyu kırmızı - tehdit
-  "Sonsuzluk Taşı": "#f1c40f",       // Altın - Infinity Stones
-  "Siyasi Çözülme": "#d35400",       // Turuncu - siyasi çatışma
-  "Kozmik Katılım": "#16a085",       // Turkuaz - kozmik olaylar
-  "Anahtar Karakter": "#e84393",     // Pembe - hikayede kilit kişi
-  "Önemli Olay": "#e67e22",          // Turuncu - kritik olay
-  "Mekan Bağlantısı": "#6e4b25",     // Kahverengi - yer odaklı bağ
-  "Paralel Olay": "#7f8c8d",         // Gri - eş zamanlı olaylar
-  "Anahtar Olay": "#f39c12",         // Altın sarısı - önemli dönüm
-  "Sonrası Etki": "#9b59b6",         // Mor - olay sonrası etki
-  "Kozmik Genişleme": "#1abc9c",     // Turkuaz-yeşil - evrenin genişlemesi
-  "Çoklu Evren": "#00bcd4",          // Açık mavi - multiverse
-  "Evrensel Gelişme": "#c0392b"      // Kırmızı - büyük çaplı gelişme
+  "Ana Hikaye Bağlantısı": "#2c3e50", // Koyu mavi-gri - ana hikaye bağı
+  "Ana Tehdit": "#ff0000",            // Kırmızı - ana düşman
+  "Anahtar Karakter": "#e84393",      // Pembe - hikayede kilit kişi
+  "Anahtar Olay": "#f39c12",          // Altın sarısı - önemli dönüm
+  "Crossover": "#8e44ad",             // Mor - dizi/film geçişi
+  "Devam": "#2980b9",                 // Mavi - ana hikaye devamı
+  "Doğrudan Devam": "#3498db",        // Açık mavi - direkt devam
+  "Evrensel Bağlantı": "#16a085",     // Turkuaz - evrensel bağ
+  "Evrensel Gelişme": "#c0392b",      // Kırmızı - büyük çaplı gelişme
+  "Geçmiş Hikayesi": "#6e4b25",       // Kahverengi - geçmiş olay
+  "Gizli Bağlantı": "#8e44ad",        // Mor - gizli/arka plan bağlantı
+  "Hikaye Devamı": "#27ae60",         // Yeşil - hikaye devamı
+  "Hikaye Öncesi": "#1abc9c",         // Turkuaz-yeşil - ön hikaye
+  "Karakter Bağlantısı": "#9b59b6",   // Açık mor - karakter ilişkisi
+  "Karakter Devamı": "#34495e",       // Koyu gri - karakter hikaye devamı
+  "Karakter Geçişi": "#34495e",       // Koyu gri - karakter odaklı geçiş
+  "Kozmik Genişleme": "#1abc9c",      // Turkuaz-yeşil - evrenin genişlemesi
+  "Kozmik Katılım": "#16a085",        // Turkuaz - kozmik olaylar
+  "Mekan Bağlantısı": "#6e4b25",      // Kahverengi - yer odaklı bağ
+  "Paralel Olay": "#7f8c8d",          // Gri - eş zamanlı olaylar
+  "Psikolojik Etki": "#e74c3c",       // Kırmızı - duygusal/mental etki
+  "Siyasi Etki": "#d35400",           // Turuncu - siyasi etki
+  "Siyasi Çözülme": "#d35400",        // Turuncu - siyasi çatışma
+  "Sonrası Etki": "#9b59b6",          // Mor - olay sonrası etki
+  "Sonsuzluk Taşı": "#f1c40f",        // Altın - Infinity Stones
+  "Takım Kurulumu": "#27ae60",        // Yeşil - birlik ve oluşum
+  "Tarihsel Bağlantı": "#95a5a6",     // Açık gri - tarihsel bağ
+  "Türsel Bağlantı": "#8e44ad",       // Mor - türsel benzerlik
+  "Yeni Tehdit": "#c0392b",           // Koyu kırmızı - tehdit
+  "Çoklu Evren": "#00bcd4",           // Açık mavi - multiverse
+  "Önemli Olay": "#e67e22"            // Turuncu - kritik olay
 },
 
-edgeStyles:{
-  "Devam": { width: 3,   dashes: false },
-  "Takım Kurulumu": { width: 2.8, dashes: false },
-  "Karakter Geçişi": { width: 3,   dashes: [10,4] },
-  "Gizli Bağlantı": { width: 2.2, dashes: [3,7] },
-  "Psikolojik Etki": { width: 2.5, dashes: [2,6] },
-  "Karakter Bağlantısı": { width: 2.2, dashes: [6,4] },
-  "Yeni Tehdit": { width: 2.5, dashes: [4,4] },
-  "Sonsuzluk Taşı": { width: 2.5, dashes: [2,6] },
-  "Siyasi Çözülme": { width: 2.8, dashes: [6,6] },
-  "Kozmik Katılım": { width: 2.3, dashes: [5,5] },
+edgeStyles: {
+  "Ana Hikaye Bağlantısı": { width: 3, dashes: false },
+  "Ana Tehdit": { width: 3, dashes: [6,4] },
   "Anahtar Karakter": { width: 2.3, dashes: [8,4] },
-  "Önemli Olay": { width: 3,   dashes: [2,6] },
-  "Mekan Bağlantısı": { width: 2,   dashes: [8,6] },
-  "Paralel Olay": { width: 2,   dashes: [12,6] },
   "Anahtar Olay": { width: 2.6, dashes: [2,4] },
-  "Sonrası Etki": { width: 2.4, dashes: [6,8] },
+  "Crossover": { width: 2.5, dashes: [4,8] },
+  "Devam": { width: 3, dashes: false },
+  "Doğrudan Devam": { width: 3, dashes: [2,6] },
+  "Evrensel Bağlantı": { width: 2.3, dashes: [5,5] },
+  "Evrensel Gelişme": { width: 2.5, dashes: [4,4] },
+  "Geçmiş Hikayesi": { width: 2.2, dashes: [6,6] },
+  "Gizli Bağlantı": { width: 2.2, dashes: [3,7] },
+  "Hikaye Devamı": { width: 2.8, dashes: false },
+  "Hikaye Öncesi": { width: 2.5, dashes: [4,6] },
+  "Karakter Bağlantısı": { width: 2.2, dashes: [6,4] },
+  "Karakter Devamı": { width: 3, dashes: [6,4] },
+  "Karakter Geçişi": { width: 3, dashes: [10,4] },
   "Kozmik Genişleme": { width: 2.5, dashes: [4,6] },
+  "Kozmik Katılım": { width: 2.3, dashes: [5,5] },
+  "Mekan Bağlantısı": { width: 2, dashes: [8,6] },
+  "Paralel Olay": { width: 2, dashes: [12,6] },
+  "Psikolojik Etki": { width: 2.5, dashes: [2,6] },
+  "Siyasi Etki": { width: 2.4, dashes: [6,8] },
+  "Siyasi Çözülme": { width: 2.8, dashes: [6,6] },
+  "Sonrası Etki": { width: 2.4, dashes: [6,8] },
+  "Sonsuzluk Taşı": { width: 2.5, dashes: [2,6] },
+  "Takım Kurulumu": { width: 2.8, dashes: false },
+  "Tarihsel Bağlantı": { width: 2.3, dashes: [5,7] },
+  "Türsel Bağlantı": { width: 2.5, dashes: [4,6] },
+  "Yeni Tehdit": { width: 2.5, dashes: [4,4] },
   "Çoklu Evren": { width: 2.8, dashes: [6,3] },
-  "Evrensel Gelişme": { width: 2.5, dashes: [4,4] }
+  "Önemli Olay": { width: 3, dashes: [2,6] }
+},
+
+// ---- yardımcılar (return {...} içine) ----
+normUrl(u) { try { return new URL(u).href; } catch { return u || ''; } },
+hostName(u) { try { return new URL(u).hostname.replace(/^www\./,''); } catch { return u || ''; } },
+normalizeItem(it) {
+  if (!it) return null;
+  if (typeof it === 'string') {
+    const url = this.normUrl(it);
+    return url ? { name: this.hostName(url) || url, url } : null;
+  }
+  if (typeof it === 'object') {
+    const url = this.normUrl(it.url || '');
+    const name = it.name || this.hostName(url) || url;
+    return (url || name) ? { name, url } : null;
+  }
+  return null;
+},
+mapCategory(key) {
+  const k = (key || '').toLowerCase();
+  if (k.includes('görsel') || k.includes('gorsel') || k.includes('image') || k.includes('poster')) return 'Görsel';
+  if (k.includes('platform') || k.includes('watch') || k.includes('stream')) return 'Platform';
+  // default
+  return 'Kaynaklar';
+},
+normalizeSources(src) {
+  // Her durumda şu yapıyı döndür: { Kaynaklar:[], Görsel:[], Platform:[] }
+  const out = { Kaynaklar: [], Görsel: [], Platform: [] };
+
+  const push = (cat, item) => {
+    const n = this.normalizeItem(item);
+    if (n) out[cat].push(n);
+  };
+
+  if (!src) return out;
+
+  // Obje: { "Kaynaklar": [...], "Görsel": [...], "Platform": [...] , ... }
+  if (typeof src === 'object' && !Array.isArray(src)) {
+    for (const [k, v] of Object.entries(src)) {
+      const cat = this.mapCategory(k);
+      const arr = Array.isArray(v) ? v : [v];
+      arr.forEach(it => push(cat, it));
+    }
+    return out;
+  }
+
+  // Dizi:
+  // - Düz link listesi: [{name,url}] ya da ["https://..."] -> Kaynaklar
+  // - Gruplu: [{category:'...', items:[...]}]
+  if (Array.isArray(src)) {
+    if (!src.length || typeof src[0] !== 'object' || ('url' in src[0]) || ('name' in src[0])) {
+      src.forEach(it => push('Kaynaklar', it));
+    } else {
+      src.forEach(g => {
+        const cat = this.mapCategory(g?.category);
+        const items = Array.isArray(g?.items) ? g.items : (g?.items ? [g.items] : []);
+        items.forEach(it => push(cat, it));
+      });
+    }
+    return out;
+  }
+
+  // String / tek obje vs:
+  push('Kaynaklar', src);
+  return out;
+},
+
+getSourceIcon(cat) {
+  if (cat === 'Görsel') return '🖼️';
+  if (cat === 'Platform') return '🎬';
+  return '📚'; // Kaynaklar
+},
+confirmExternal(url) {
+  const msg = 'Bu bağlantı sizi harici bir siteye yönlendirecek. Devam etmek istiyor musunuz?';
+  if (url && confirm(msg)) window.open(url, '_blank', 'noopener');
 },
 
 
+norm(s) {
+  if (!s) return '';
+  // TR küçültme + ı→i düzeltmesi + aksan temizleme
+  return s
+    .toLocaleLowerCase('tr')   // İ→i, I→ı
+    .replace(/ı/g, 'i')        // 'ı'ları da 'i' yap
+    .normalize('NFD')          // aksanları ayır
+    .replace(/[\u0300-\u036f]/g, ''); // aksanları sil
+},
 
 
         get timelineSortedNodes(){
@@ -1176,11 +1369,8 @@ get availableGenres() {
         },
         init() {
           
+this.resetFilters();
 
-try {
-  const saved = JSON.parse(localStorage.getItem('filters') || 'null');
-  if (saved) this.filters = saved;
-} catch {}
 
 this.$watch && this.$watch('filters', (v) => {
   localStorage.setItem('filters', JSON.stringify(v));
@@ -1195,23 +1385,34 @@ this.showLegend = true;
 this.setupNetwork();
 this.applyFilters();
 
+
+
           let debounceTimeout = null;
-          this.$watch('search', (val) => {
-            clearTimeout(debounceTimeout);
-            debounceTimeout = setTimeout(() => {
-              this.applyFilters();
-              if (val) {
-                const lower = val.toLowerCase(), starts = [], contains = [], seen = new Set();
-                for (const n of this.allNodes) {
-                  const lbl = n.label; if (!lbl) continue; const l = lbl.toLowerCase();
-                  if (l.startsWith(lower)) { if (!seen.has(lbl)) { starts.push(lbl); seen.add(lbl); } }
-                  else if (l.includes(lower)) { if (!seen.has(lbl)) { contains.push(lbl); seen.add(lbl); } }
-                  if (starts.length + contains.length >= 10) break;
-                }
-                this.suggestions = [...starts, ...contains];
-              } else this.suggestions = [];
-            }, 220);
-          });
+this.$watch('search', (val) => {
+  clearTimeout(debounceTimeout);
+  debounceTimeout = setTimeout(() => {
+    this.applyFilters();
+    if (val) {
+      const q = this.norm(val);
+      const starts = [], contains = [], seen = new Set();
+      for (const n of this.allNodes) {
+        const lbl = n.label || '';
+        const l = this.norm(lbl);
+        if (l.startsWith(q)) {
+          if (!seen.has(lbl)) { starts.push(lbl); seen.add(lbl); }
+        } else if (l.includes(q)) {
+          if (!seen.has(lbl)) { contains.push(lbl); seen.add(lbl); }
+        }
+        if (starts.length + contains.length >= 10) break;
+      }
+      this.suggestions = [...starts, ...contains];
+    } else {
+      this.suggestions = [];
+    }
+  }, 220);
+});
+
+
           
 this.$watch('selectedUniverse', (val) => {
   if (val) {
@@ -1264,7 +1465,7 @@ this.$watch('selectedUniverse', (val) => {
         buildNodeUrl(nodeId){ const node = this.nodes?.get(nodeId) || this.allNodes.find(n => String(n.id)===String(nodeId)); const u = node?.universe || ''; const base = location.origin + location.pathname; const params = new URLSearchParams({ u, node: String(nodeId) }); return `${base}?${params.toString()}`; },
         shareNode(node, platform){ if (!node?.id) return; const url = this.buildNodeUrl(node.id); const text = `${node.label || node.id} — ${this.formatUniverseName(node.universe)}\n${url}`; const enc = encodeURIComponent(text); const shareUrl = platform === 'whatsapp' ? `https://api.whatsapp.com/send?text=${enc}` : platform === 'x' ? `https://twitter.com/intent/tweet?text=${enc}` : ''; if (shareUrl) window.open(shareUrl, '_blank', 'noopener'); },
         async loadData() {
-          const evrenler = ["avatar_last_airbender","avatar_pandora","dc","harrypotter","marvel","matrix","middleearth","pixar","starwars"];
+          const evrenler = ["avatar","dc","harrypotter","marvel","matrix","middleearth","pixar","starwars"];
           try {
             const results = await Promise.all(evrenler.map(evren => fetch('data/' + evren + '.json', { cache: 'no-store' }).then(r => { if (!r.ok) throw new Error(evren + ' yüklenemedi'); return r.json().then(data => ({ evren, data })); })));
             let nodesTemp = [], edgesTemp = [];
@@ -1293,7 +1494,8 @@ this.$watch('selectedUniverse', (val) => {
         applyFilters() {
   if (!this.nodes || !this.edges) return;
 
-  const searchTerm = (this.search || '').toLowerCase();
+const searchTerm = this.norm(this.search);
+
   const universe = this.selectedUniverse;
 
   const f = this.filters || {};
@@ -1306,7 +1508,10 @@ this.$watch('selectedUniverse', (val) => {
   this.filteredNodes = (this.allNodes || []).filter(n => {
     // Evren + arama
     if (universe && n.universe !== universe) return false;
-    if (searchTerm && !(n.label && n.label.toLowerCase().includes(searchTerm))) return false;
+  if (searchTerm) {
+  const lbl = this.norm(n.label);
+  if (!lbl.includes(searchTerm)) return false;
+}
 
     // Yıl
     if (yearMin != null || yearMax != null) {
@@ -1372,7 +1577,7 @@ this.$watch('selectedUniverse', (val) => {
      ...e, arrows: 'to', color: { color }, width: s.width, dashes: s.dashes }; }));
         },
         neighborChips(nodeId) { if (!nodeId || !this.network) return ''; const neighbors = this.network.getConnectedNodes(nodeId).map(id => this.nodes.get(id)).filter(Boolean); if (!neighbors.length) return '<span class="text-sm opacity-70">Bağlantı bulunamadı.</span>'; return neighbors.map(n => `<button class="chip hover:brightness-110" onclick="window.__openNode('${String(n.id).replace(/'/g,'&#39;')}')">${n.label ? n.label.replace(/</g,'&lt;') : 'ID ' + n.id}</button>`).join(''); },
-        formatUniverseName(name) { const map = { "avatar_last_airbender": "Avatar: Son Hava Bükücü", "avatar_pandora": "Avatar (Pandora)", "dc": "DC", "marvel": "Marvel", "harrypotter": "Harry Potter", "matrix": "Matrix", "middleearth": "Orta Dünya", "pixar": "Pixar", "starwars": "Star Wars" }; return map[name] || name; }
+        formatUniverseName(name) { const map = { "avatar": "Avatar", "dc": "DC", "marvel": "Marvel", "harrypotter": "Harry Potter", "matrix": "Matrix", "middleearth": "Orta Dünya", "pixar": "Pixar", "starwars": "Star Wars" }; return map[name] || name; }
       }
     }
     window.openNode = function(id) { const scope = document.querySelector('html')?.__x?.$data; if (!scope?.openNode) return; scope.openNode(id); };
