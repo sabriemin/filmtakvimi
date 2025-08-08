@@ -9,10 +9,10 @@
   async function check(){
     try {
       const r = await fetch('/verify-token', { credentials: 'include' });
-      if (!r.ok) { location.replace('/login-totp.html?to=/admin.html'); return; }
+      if (!r.ok) { location.replace('/evren/login.html?to=/admin.html'); return; }
       document.body.style.visibility = 'visible';
     } catch (e) {
-      location.replace('evren/login.html?to=/admin.html');
+      location.replace('/evren/login.html?to=/admin.html');
     }
   }
   if (document.readyState === 'loading') {
