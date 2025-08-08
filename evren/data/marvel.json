@@ -865,38 +865,6 @@
   "lang": "tr"
 },
 {
-  "id": "film/mcu/2021_spider_man_no_way_home",
-  "label": "Spider-Man: No Way Home (2021)",
-  "title": "Spider-Man: No Way Home",
-  "type": "film",
-  "release_date": "2021-12-17",
-  "end_date": null,
-  "image": "https://static.boxofficeturkiye.com/movie/poster/full/69/2015169-56206561.jpg",
-  "imdb_rating": 8.2,
-  "yönetmen": ["Jon Watts"],
-  "oyuncular": ["Tom Holland", "Zendaya", "Benedict Cumberbatch", "Jacob Batalon", "Alfred Molina", "Jamie Foxx", "Willem Dafoe"],
-  "tür": ["Bilim Kurgu", "Aksiyon", "Macera"],
-  "shape": "image",
-  "description": "'Spider-Man: No Way Home', Faz 4'ün dördüncü filmi ve **Spider-Man: Far From Home**'un doğrudan devamıdır. Film, Peter Parker'ın (Örümcek Adam) kimliğinin Mysterio tarafından ifşa edilmesinden sonra, hayatının altüst olmasıyla başlar. Peter, bu durumun sevdiklerinin hayatını tehlikeye attığını düşünerek Doctor Strange'den yardım ister. Strange, Peter'ın kimliğini herkesin unutması için bir büyü yapar. Ancak Peter'ın sürekli büyüyü bölmesi, çoklu evrenleri açar ve geçmiş filmlerden, farklı evrenlerden gelen düşmanlar (Doktor Ahtapot, Yeşil Cin, Elektro, Kertenkele, Kum Adam) MCU'ya gelir. Peter, bu düşmanları kendi evrenlerine geri göndermeye çalışırken, diğer evrenlerden gelen iki farklı `Örümcek Adam` (Tobey Maguire ve Andrew Garfield) ile tanışır. Üç Örümcek Adam, bir araya gelerek bu düşmanları iyileştirmeye ve onları kendi evrenlerine geri göndermeye çalışır. `No Way Home`, hayranların uzun zamandır beklediği, Örümcek Adam serisinin en önemli filmlerinden biri olarak kabul edilir. Jon Watts'ın yönettiği film, duygusal anları, aksiyonu ve çoklu evren temasını başarılı bir şekilde birleştirir. Film, Peter Parker'ın bir kahraman olarak yaşadığı en büyük trajediyi ve fedakarlığı anlatır. Tom Holland'ın performansı, Peter'ın kaybını ve sorumluluklarını derinlemesine yansıtır. `No Way Home`, MCU'nun çoklu evren konseptini tamamen açar ve evrenin geleceği için yeni bir dönemin başlangıcını işaret eder.",
-  "refers_to": "'Spider-Man: No Way Home', MCU'nun en önemli filmlerinden biridir ve çoklu evren konseptini tamamen açan bir yapımdır. Filmin en önemli atfı, **Sam Raimi** ve **Marc Webb**'in yönettiği Örümcek Adam filmlerinin ana karakterlerini ve düşmanlarını MCU'ya dahil etmesidir. Bu durum, bu filmlerin de MCU'nun çoklu evreninde var olduğunu kanıtlar. Filmde, Doctor Strange'in yaptığı büyünün ters gitmesi, **Doctor Strange in the Multiverse of Madness** filmindeki çoklu evren felaketine zemin hazırlar. Film, Peter Parker'ın, sevdiklerini korumak için, kimliğini tüm dünyanın unutmasını istemesiyle, kişisel fedakarlığın ne kadar önemli olduğunu vurgular. Filmin sonunda, Peter'ın herkes tarafından unutulması, onun **Avengers: Endgame**'de yaşadığı kayıplardan sonra, en büyük trajediyi yaşamasına neden olur ve onu, kendi başına bir kahraman olmaya iter. Filmin jenerik sonrası sahnelerinden biri, Tom Hardy'nin canlandırdığı `Venom`'un MCU'ya gelmesi ve sonra tekrar kendi evrenine dönmesini gösterir. Bu sahne, `Venom` evreninin de MCU'nun çoklu evreninde var olduğunu kanıtlar. `No Way Home`, MCU'nun çoklu evren konseptini açarken, bir yandan da Peter Parker'ın hikayesini sıfırlayarak, onu yeni bir döneme hazırlar. Film, `Spider-Man`'in geçmiş filmleriyle kurduğu güçlü bağlar sayesinde, hayranlar için duygusal ve tatmin edici bir final sunar. `No Way Home`, MCU'nun gelecekteki çoklu evren filmleri için bir referans noktasıdır.",
-  "canonical_level": "canon",
-  "sources": [
-    {
-      "name": "Marvel Studios Official Site",
-      "url": "https://www.marvel.com/movies/spider-man-no-way-home"
-    },
-    {
-      "name": "IMDb",
-      "url": "https://www.imdb.com/title/tt10872600/"
-    },
-    {
-      "name": "Box Office Türkiye",
-      "url": "https://boxofficeturkiye.com/film/orumcek-adam-eve-donus-yok--2015169"
-    }
-  ],
-  "lang": "tr"
-},
-{
   "id": "film/mcu/2022_doctor_strange_multiverse_of_madness",
   "label": "Doctor Strange in the Multiverse of Madness (2022)",
   "title": "Doctor Strange in the Multiverse of Madness",
