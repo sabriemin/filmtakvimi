@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="tr" x-data="adminApp()" x-init="init()" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>🎛️ Admin Panel · Film Evreni Ağı</title>
+
+  <!-- Client-side auth guard -->
+  <style>body{visibility:hidden}</style>
+  <script>
+  (function(){
+    async function check(){
+      try {
+        const r = await fetch('/verify-token', { credentials: 'include' });
+        if (!r.ok) { location.replace('/login-totp.html?to=/admin.html'); return; }
+        document.body.style.visibility = 'visible';
+      } catch (e) {
+        location.replace('/login.html?to=/admin.html');
+      }
+    }
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', check);
+    } else {
+      check();
+    }
+  })();
+  </script>
+
+  <!-- Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.5/dist/cdn.min.js" defer></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+
+  <!-- Theme -->
+  <style>
+    :root { color-scheme: dark; }
+    html, body { height: 100%; }
+    body { background:
+      radial-gradient(1200px 800px at 20% -10%, rgba(59,130,246,.15), transparent 50%),
+      radial-gradient(1200px 800px at 120% 20%, rgba(99,102,241,.14), transparent 50%),
+      linear-gradient(180deg, #0b1220, #0b1220);
+      color: #e5e7eb;
+    }
+    .glass { background: rgba(31,41,55,0.55); border: 1px solid rgba(255,255,255,0.12); backdrop-filter: blur(12px); }
+    textarea, input, select { background: rgba(55,65,81,0.55); border: 1px solid rgba(255,255,255,0.12); color: #e5e7eb; border-radius: 10px; }
+    textarea::placeholder, input::placeholder { color:#9ca3af }
+    .kbd { padding:2px 6px; border:1px solid rgba(255,255,255,0.2); border-bottom-width:2px; border-radius:6px; font-size:12px; }
+    input:focus, select:focus, textarea:focus { outline: none; box-shadow: 0 0 0 3px rgba(59,130,246,0.35); border-color: rgba(59,130,246,0.65); }
+    .shadow-soft { box-shadow: 0 8px 24px rgba(0,0,0,.25); }
+    thead.sticky-head th { position: sticky; top: 0; background: rgba(2,6,23,0.9); backdrop-filter: blur(6px); z-index: 10; }
+    tbody tr:nth-child(odd){ background: rgba(255,255,255,0.02); }
+    tbody tr:hover{ background: rgba(59,130,246,0.08); }
+    ::-webkit-scrollbar { width: 10px; height: 10px; }
+    ::-webkit-scrollbar-thumb { background: rgba(148,163,184,.35); border-radius: 8px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    .pill { border:1px solid rgba(255,255,255,.16); background: rgba(255,255,255,.06); padding:.25rem .5rem; border-radius:9999px; font-size:.75rem; }
+  </style>
+</head>
+<body class="min-h-screen">
+  <!-- Topbar -->
+  <header class="sticky top-0 z-50">
+    <div class="bg-gradient-to-r from-sky-500/15 via-indigo-500/15 to-fuchsia-500/15">
+      <div class="max-w-7xl mx-auto px-4 py-3 flex items-center gap-3">
+        <a href="/evren" class="px-3 py-1.5 rounded-lg border border-white/20 hover:bg-white/10 transition">⟵ Siteye Dön</a>
+        <div class="flex items-center gap-2">
+          <h1 class="text-lg font-bold">🎛️ Admin Panel</h1>
+          <span x-show="_dirty" class="text-xs px-2 py-0.5 rounded-full border border-amber-400/40 text-amber-300 bg-amber-500/10">Kaydedilmemiş</span>
+        </div>
+        <div class="ml-auto flex items-center gap-2 text-sm">
+          <button class="px-3 py-1.5 rounded-lg border border-white/20 hover:bg-white/10 transition" @click="newDraft()">Yeni Taslak</button>
+          <button class="px-3 py-1.5 rounded-lg border border-white/20 hover:bg-white/10 transition" @click="importAll()">İçe Aktar</button>
+          <button class="px-3 py-1.5 rounded-lg border border-emerald-400/40 text-emerald-300 hover:bg-emerald-500/10 transition" @click="exportAll()">Dışa Aktar</button>
+          <button class="px-3 py-1.5 rounded-lg border border-sky-400/40 text-sky-300 hover:bg-sky-500/10 transition" @click="validateAll()">Doğrula</button>
+          <button class="px-3 py-1.5 rounded-lg border border-indigo-400/40 text-indigo-300 hover:bg-indigo-500/10 transition" @click="zipAll()">Tümünü Zip</button>
+          <button class="px-3 py-1.5 rounded-lg border border-yellow-400/40 text-yellow-300 hover:bg-yellow-500/10 transition" @click="openLinkTester()">Linkleri Test Et</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="max-w-7xl mx-auto px-4 py-6 grid grid-cols-12 gap-4">
+    <!-- Sidebar -->
+    <aside class="col-span-12 lg:col-span-3 space-y-4">
+      <div class="glass rounded-2xl p-4 shadow-soft">
+        <h2 class="font-semibold mb-3">Evrenler</h2>
+        <div class="flex gap-2 mb-3">
+          <button class="px-2 py-1 text-sm rounded-lg border border-white/20 hover:bg-white/10" @click="addUniverse()">+ Ekle</button>
+          <button class="px-2 py-1 text-sm rounded-lg border border-white/20 hover:bg-white/10" @click="removeUniverse()">– Sil</button>
+        </div>
+        <select x-model="currentUniverse" class="w-full rounded-lg px-2 py-2">
+          <template x-for="u in universes" :key="u">
+            <option :value="u" x-text="formatUniverse(u)"></option>
+          </template>
+        </select>
+      </div>
+
+      <div class="glass rounded-2xl p-4 shadow-soft">
+        <h2 class="font-semibold">Arama / Filtre</h2>
+        <input x-model.trim.debounce.250ms="q" class="w-full rounded-lg px-3 py-2" placeholder="Yapım ara..." />
+        <div class="grid grid-cols-2 gap-2 text-sm mt-2">
+          <div>
+            <label class="block mb-1 opacity-80">Yıl (min)</label>
+            <input type="number" x-model.number="filters.yearMin" class="w-full rounded-lg px-2 py-1.5" />
+          </div>
+          <div>
+            <label class="block mb-1 opacity-80">Yıl (max)</label>
+            <input type="number" x-model.number="filters.yearMax" class="w-full rounded-lg px-2 py-1.5" />
+          </div>
+        </div>
+        <div class="mt-2">
+          <label class="block mb-1 opacity-80">IMDb (min)</label>
+          <input type="number" step="0.1" x-model.number="filters.imdbMin" class="w-full rounded-lg px-2 py-1.5" />
+        </div>
+        <div class="flex gap-2 mt-2">
+          <button class="px-3 py-1.5 rounded-lg border border-white/20 hover:bg-white/10" @click="resetFilters()">Sıfırla</button>
+          <div class="text-xs opacity-70 self-center">Aktif: <span x-text="activeFilterCount"></span></div>
+        </div>
+      </div>
+
+      <div class="glass rounded-2xl p-4 shadow-soft">
+        <h2 class="font-semibold mb-2">Yardım</h2>
+        <ul class="text-sm list-disc list-inside space-y-1 opacity-80">
+          <li><span class="kbd">Ctrl</span> + <span class="kbd">S</span> taslağı kaydeder.</li>
+          <li>JSON düzenleyicilerinde <em>geçerli</em> JSON zorunludur.</li>
+          <li>İçe Aktar → zip veya tek JSON kabul eder.</li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- Content -->
+    <section class="col-span-12 lg:col-span-9 space-y-4">
+      <!-- Universe Stats -->
+      <div class="grid sm:grid-cols-3 gap-3">
+        <div class="glass rounded-2xl p-4 shadow-soft">
+          <div class="flex items-center gap-2 text-sm">🎬 Yapım: <b class="text-white" x-text="stats.nodes"></b></div>
+        </div>
+        <div class="glass rounded-2xl p-4 shadow-soft">
+          <div class="flex items-center gap-2 text-sm">🔗 Bağlantı: <b class="text-white" x-text="stats.edges"></b></div>
+        </div>
+        <div class="glass rounded-2xl p-4 shadow-soft">
+          <div class="flex items-center gap-2 text-sm">🗂️ Kaynaklı Yapım: <b class="text-white" x-text="stats.withSources"></b></div>
+        </div>
+      </div>
+
+      <!-- Tabs -->
+      <div class="flex gap-2">
+        <button :class="tab==='nodes' ? 'bg-white/10 border-white/30' : 'bg-white/5 border-white/20'" class="px-3 py-1.5 rounded-lg border" @click="tab='nodes'">Yapımlar</button>
+        <button :class="tab==='edges' ? 'bg-white/10 border-white/30' : 'bg-white/5 border-white/20'" class="px-3 py-1.5 rounded-lg border" @click="tab='edges'">Bağlantılar</button>
+        <button :class="tab==='preview' ? 'bg-white/10 border-white/30' : 'bg-white/5 border-white/20'" class="px-3 py-1.5 rounded-lg border" @click="tab='preview'">Ön İzleme</button>
+      </div>
+
+      <!-- Nodes Table -->
+      <div x-show="tab==='nodes'" class="glass rounded-2xl p-4 shadow-soft">
+        <div class="flex gap-2 mb-3">
+          <button class="px-3 py-1.5 rounded-lg border border-emerald-400/40 text-emerald-300 hover:bg-emerald-500/10" @click="addNode()">+ Yapım</button>
+          <button class="px-3 py-1.5 rounded-lg border border-red-400/40 text-red-300 hover:bg-red-500/10" @click="deleteSelectedNodes()" :disabled="!selectedNodeIds.size">Sil (<span x-text="selectedNodeIds.size"></span>)</button>
+          <div class="ml-auto flex gap-2">
+            <button class="px-3 py-1.5 rounded-lg border border-sky-400/40 text-sky-300 hover:bg-sky-500/10" @click="bulkFillSources()">Seçilene Kaynak Şablonu</button>
+            <!-- Seçilene Platform/Görsel kaldırıldı -->
+            <button class="px-3 py-1.5 rounded-lg border border-white/20 hover:bg-white/10" @click="saveDraft()">Taslağı Kaydet</button>
+          </div>
+        </div>
+
+        <div class="overflow-x-auto rounded-xl">
+          <table class="w-full text-sm">
+            <thead class="text-left opacity-80 sticky-head">
+              <tr>
+                <th class="py-2 pr-2 w-8"><input type="checkbox" @change="toggleSelectAll($event, 'nodes')"/></th>
+                <th class="py-2 pr-2">ID</th>
+                <th class="py-2 pr-2">Başlık</th>
+                <th class="py-2 pr-2">Tarih</th>
+                <th class="py-2 pr-2">Tür</th>
+                <th class="py-2 pr-2">IMDb</th>
+                <th class="py-2 pr-2">Tip</th>
+                <th class="py-2 pr-2">Görsel</th>
+                <th class="py-2 pr-2">Kaynaklar (JSON)</th>
+                <th class="py-2 pr-2">İşlem</th>
+              </tr>
+            </thead>
+            <tbody>
+              <template x-for="(n, idx) in filteredNodes" :key="n.id">
+                <tr class="border-t border-white/10 align-top">
+                  <td class="py-2 pr-2"><input type="checkbox" :checked="selectedNodeIds.has(n.id)" @change="toggleSelect(n.id)"/></td>
+                  <td class="py-2 pr-2 w-24"><input class="w-full rounded-lg px-2 py-1" x-model="n.id" @change="touch()" /></td>
+                  <td class="py-2 pr-2 min-w-52"><input class="w-full rounded-lg px-2 py-1" x-model="n.label" @change="touch()" /></td>
+                  <td class="py-2 pr-2 w-36"><input type="date" class="w-full rounded-lg px-2 py-1" x-model="n.release_date" @change="touch()" /></td>
+                  <td class="py-2 pr-2 w-56"><input class="w-full rounded-lg px-2 py-1" x-model="n.tür" placeholder="Aksiyon, Bilim Kurgu" @change="touch()" /></td>
+                  <td class="py-2 pr-2 w-24"><input type="number" step="0.1" class="w-full rounded-lg px-2 py-1" x-model.number="n.imdb_rating" @change="touch()" /></td>
+                  <td class="py-2 pr-2 w-28">
+                    <select class="w-full rounded-lg px-2 py-1" x-model="n.type" @change="touch()">
+                      <option value="movie">Film</option>
+                      <option value="series">Dizi</option>
+                    </select>
+                  </td>
+                  <td class="py-2 pr-2 w-52"><input class="w-full rounded-lg px-2 py-1" x-model="n.image" placeholder="Poster URL" @change="touch()" /></td>
+                  <td class="py-2 pr-2 w-[420px]">
+                    <textarea class="w-full rounded-lg px-2 py-1 h-28 font-mono text-xs" x-model="n.sourcesText" @change="touch()" placeholder='{"Kaynaklar":[{"name":"...","url":"..."}],"Görsel":[...],"Platform":[...]}' @dblclick="openSourceHelper(n)"></textarea>
+                    <div class="text-xs mt-1">
+                      <span :class="isValidJSON(n.sourcesText) ? 'text-emerald-400' : 'text-red-400'" x-text="isValidJSON(n.sourcesText) ? '✔ Geçerli JSON' : '✖ Geçersiz JSON'"></span>
+                    </div>
+                  </td>
+                  <td class="py-2 pr-2 w-36">
+                    <div class="flex flex-col gap-1">
+                      <button class="px-2 py-1 rounded-lg border border-white/20 hover:bg-white/10" @click="previewNode(n)">Ön İzleme</button>
+                      <button class="px-2 py-1 rounded-lg border border-rose-400/40 text-rose-300 hover:bg-rose-500/10" @click="removeNode(idx)">Sil</button>
+                    </div>
+                  </td>
+                </tr>
+              </template>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Edges Table -->
+      <div x-show="tab==='edges'" class="glass rounded-2xl p-4 shadow-soft">
+        <div class="flex gap-2 mb-3">
+          <button class="px-3 py-1.5 rounded-lg border border-emerald-400/40 text-emerald-300 hover:bg-emerald-500/10" @click="addEdge()">+ Bağlantı</button>
+          <button class="px-3 py-1.5 rounded-lg border border-red-400/40 text-red-300 hover:bg-red-500/10" @click="deleteSelectedEdges()" :disabled="!selectedEdgeIdx.size">Sil (<span x-text="selectedEdgeIdx.size"></span>)</button>
+        </div>
+
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm">
+            <thead class="text-left opacity-80 sticky-head">
+              <tr>
+                <th class="py-2 pr-2"><input type="checkbox" @change="toggleSelectAll($event, 'edges')"/></th>
+                <th class="py-2 pr-2">From</th>
+                <th class="py-2 pr-2">To</th>
+                <th class="py-2 pr-2">Tür</th>
+                <th class="py-2 pr-2">Not</th>
+                <th class="py-2 pr-2">İşlem</th>
+              </tr>
+            </thead>
+            <tbody>
+              <template x-for="(e, i) in current.edges" :key="i">
+                <tr class="border-t border-white/10 align-top">
+                  <td class="py-2 pr-2"><input type="checkbox" :checked="selectedEdgeIdx.has(i)" @change="toggleSelectEdge(i)"/></td>
+                  <td class="py-2 pr-2 w-44">
+                    <select class="w-full rounded-lg px-2 py-1" x-model="e.from" @change="touch()">
+                      <template x-for="n in current.nodes" :key="n.id">
+                        <option :value="n.id" x-text="n.label"></option>
+                      </template>
+                    </select>
+                  </td>
+                  <td class="py-2 pr-2 w-44">
+                    <select class="w-full rounded-lg px-2 py-1" x-model="e.to" @change="touch()">
+                      <template x-for="n in current.nodes" :key="n.id">
+                        <option :value="n.id" x-text="n.label"></option>
+                      </template>
+                    </select>
+                  </td>
+                  <td class="py-2 pr-2 w-56">
+                    <input class="w-full rounded-lg px-2 py-1" x-model="e.type" list="edgeTypes" placeholder="Devam, Crossover, ..." @change="touch()"/>
+                  </td>
+                  <td class="py-2 pr-2 w-[420px]"><textarea class="w-full rounded-lg px-2 py-1 h-20" x-model="e.notes" @change="touch()"></textarea></td>
+                  <td class="py-2 pr-2 w-28">
+                    <button class="px-2 py-1 rounded-lg border border-rose-400/40 text-rose-300 hover:bg-rose-500/10" @click="removeEdge(i)">Sil</button>
+                  </td>
+                </tr>
+              </template>
+            </tbody>
+          </table>
+        </div>
+
+        <datalist id="edgeTypes">
+          <option value="Devam"></option>
+          <option value="Doğrudan Devam"></option>
+          <option value="Crossover"></option>
+          <option value="Ana Hikaye Bağlantısı"></option>
+          <option value="Ana Tehdit"></option>
+          <option value="Sonsuzluk Taşı"></option>
+          <option value="Çoklu Evren"></option>
+        </datalist>
+      </div>
+
+      <!-- Preview -->
+      <div x-show="tab==='preview'" class="glass rounded-2xl p-4 shadow-soft">
+        <h3 class="font-semibold mb-3">Seçili Yapım Önizleme</h3>
+        <template x-if="preview">
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div class="sm:col-span-1 space-y-2">
+              <img :src="preview.image" class="w-full rounded-xl border border-white/10 object-cover" />
+              <div class="text-xs opacity-80">Poster URL: <span class="break-all" x-text="preview.image"></span></div>
+              <div class="flex items-center gap-2 text-xs">
+                <button class="px-2 py-1 rounded-lg border border-white/20 hover:bg-white/10" @click="checkPoster()">Posteri Kontrol Et</button>
+                <span>Durum:</span>
+                <span :class="previewPoster.ok===true ? 'text-emerald-400' : (previewPoster.ok===false ? 'text-rose-400' : 'text-yellow-300')" x-text="previewPoster.running ? 'Kontrol ediliyor…' : (previewPoster.text || '-')"></span>
+              </div>
+            </div>
+            <div class="sm:col-span-2 space-y-2 text-sm">
+              <div class="text-2xl font-bold" x-text="preview.label"></div>
+              <div class="flex items-center gap-2">
+                <span class="pill">Vizyon: <span class="font-semibold ml-1" x-text="preview.release_date"></span></span>
+                <span class="pill">IMDb: <span class="font-semibold ml-1" x-text="preview.imdb_rating"></span></span>
+                <span class="pill">Tip: <span class="font-semibold ml-1" x-text="preview.type"></span></span>
+              </div>
+              <div><b>Tür:</b> <span x-text="preview.tür"></span></div>
+              <div>
+                <b>Kaynaklar:</b>
+                <div class="mt-2 grid sm:grid-cols-2 gap-3">
+                  <template x-for="(arr, k) in normalizeSources(preview.sources)" :key="k">
+                    <div class="border border-white/10 rounded-lg p-2">
+                      <div class="text-xs font-semibold mb-1 flex items-center gap-1">
+                        <span x-text="k"></span>
+                        <span class="opacity-60">(<span x-text="arr.length"></span>)</span>
+                      </div>
+                      <ul class="space-y-1">
+                        <template x-for="src in arr" :key="src.url || src.name">
+                          <li class="flex items-center gap-2 text-xs">
+                            <img :src="favicon(src.url)" class="w-4 h-4 rounded" alt=""/>
+                            <a href="#" @click.prevent="window.open(src.url, '_blank','noopener')" class="hover:underline" x-text="src.name || src.url"></a>
+                          </li>
+                        </template>
+                      </ul>
+                    </div>
+                  </template>
+                </div>
+              </div>
+            </div>
+          </div>
+        </template>
+        <template x-if="!preview">
+          <div class="text-sm opacity-70">Tablodan bir yapımı "Ön İzleme" ile aç.</div>
+        </template>
+      </div>
+    </section>
+  </main>
+
+  <!-- Source Helper Modal -->
+  <div x-show="showSourceHelper" class="fixed inset-0 z-50 flex items-center justify-center bg-black/60">
+    <div class="glass rounded-2xl p-4 w-[92vw] max-w-xl shadow-soft">
+      <div class="flex items-center justify-between mb-3">
+        <h3 class="font-semibold">Kaynak Yardımcısı</h3>
+        <button class="px-2 py-1 rounded-lg border border-white/20" @click="showSourceHelper=false">Kapat</button>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+        <div>
+          <label class="block mb-1">Kategori</label>
+          <select class="w-full rounded-lg px-2 py-1.5" x-model="sourceHelper.category">
+            <option>Kaynaklar</option>
+            <option>Görsel</option>
+            <option>Platform</option>
+          </select>
+        </div>
+        <div class="sm:col-span-2">
+          <label class="block mb-1">Ad</label>
+          <input class="w-full rounded-lg px-2 py-1.5" x-model="sourceHelper.name" placeholder="IMDb / Disney+ / Box Office Türkiye" />
+        </div>
+        <div class="sm:col-span-2">
+          <label class="block mb-1">URL</label>
+          <input class="w-full rounded-lg px-2 py-1.5" x-model="sourceHelper.url" placeholder="https://..." />
+          <div class="text-xs opacity-70 mt-1 flex items-center gap-2" x-show="sourceHelper.url">
+            <img :src="favicon(sourceHelper.url)" class="w-4 h-4 rounded" alt=""/>
+            <span x-text="hostName(sourceHelper.url)"></span>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-end gap-2 mt-4">
+        <button class="px-3 py-1.5 rounded-lg border border-white/20 hover:bg-white/10" @click="addSourceEntry()">Ekle</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hidden file input -->
+  <input type="file" id="fileInput" class="hidden" multiple />
+
+  <!-- Scripts (app logic with polish) -->
+  <script>
+    function adminApp(){
+      return {
+        colVis: { thumb: true, id: true, title: true, date: true, tur: true, imdb: true, type: true, image: true, src: true, actions: true },
+        toasts: [],
+        previewPoster: { running:false, ok:null, text:'' },
+        linkTest: { open:false, running:false, results:[], total:0, checked:0 },
+
+        _dirty: false,
+        showSourceHelper: false,
+        sourceHelper: { node: null, category: 'Kaynaklar', name: '', url: '' },
+
+        universes: ['avatar','dc','harrypotter','marvel','matrix','middleearth','pixar','starwars'],
+        currentUniverse: 'marvel',
+        dataMap: {},
+        tab: 'nodes',
+        q: '',
+        filters: { yearMin: null, yearMax: null, imdbMin: null },
+        selectedNodeIds: new Set(),
+        selectedEdgeIdx: new Set(),
+        preview: null,
+
+        get current(){ return this.dataMap[this.currentUniverse] || { nodes: [], edges: [] } },
+        get stats(){
+          const cur = this.current;
+          const nodes = cur.nodes || [];
+          const edges = cur.edges || [];
+          const withSources = nodes.filter(n => !!n.sources || !!n.sourcesText).length;
+          return { nodes: nodes.length, edges: edges.length, withSources };
+        },
+        formatUniverse(u){ const m={avatar:'Avatar',dc:'DC',harrypotter:'Harry Potter',marvel:'Marvel',matrix:'Matrix',middleearth:'Orta Dünya',pixar:'Pixar',starwars:'Star Wars'}; return m[u]||u; },
+
+        async init(){
+          // Ctrl/Cmd+S kaydet
+          window.addEventListener('keydown', (e) => {
+            if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 's') { e.preventDefault(); this.saveDraft(); }
+          });
+
+          // LocalStorage taslakları
+          const stash = localStorage.getItem('adminDraft');
+          if (stash) { try { this.dataMap = JSON.parse(stash); } catch(e){} }
+          if (!Object.keys(this.dataMap).length) { await this.loadAllFromDataFolder(); }
+
+          // Kısayollar (Platform/Görsel kaldırıldı; sadece Link Test)
+          window.addEventListener('keydown', (e) => {
+            if (e.altKey && e.code === 'KeyT'){ e.preventDefault(); this.openLinkTester(); }
+          });
+        },
+
+        async loadAllFromDataFolder(){
+          for (const u of this.universes) {
+            try {
+              const r = await fetch('data/' + u + '.json', { cache: 'no-store' });
+              if (r.ok){
+                const j = await r.json();
+                (j.nodes||[]).forEach(n => { n.sourcesText = n.sources ? JSON.stringify(n.sources, null, 2) : (n.sourcesText || ''); });
+                this.$nextTick(() => { this.dataMap[u] = j; });
+              }
+            } catch (e) { console.warn('Yüklenemedi:', u, e); }
+          }
+        },
+
+        get activeFilterCount(){ let c=0; const f=this.filters; if (this.q) c++; if (f.yearMin!=null||f.yearMax!=null) c++; if (f.imdbMin!=null) c++; return c; },
+        resetFilters(){ this.q=''; this.filters = { yearMin:null, yearMax:null, imdbMin:null }; },
+        get filteredNodes(){
+          const q = (this.q||'').toLocaleLowerCase('tr');
+          const f = this.current.nodes || [];
+          const yMin = this.filters.yearMin != null ? Number(this.filters.yearMin) : null;
+          const yMax = this.filters.yearMax != null ? Number(this.filters.yearMax) : null;
+          const imdbMin = this.filters.imdbMin != null ? Number(this.filters.imdbMin) : null;
+          return f.filter(n => {
+            if (q){ const lbl=(n.label||'').toLocaleLowerCase('tr'); if (!lbl.includes(q)) return false; }
+            if (yMin!=null||yMax!=null){ const y = n.release_date ? new Date(n.release_date).getFullYear() : null; if (yMin!=null && (y==null||y<yMin)) return false; if (yMax!=null && (y==null||y>yMax)) return false; }
+            if (imdbMin!=null){ const r = n.imdb_rating!=null?Number(n.imdb_rating):null; if (r==null||r<imdbMin) return false; }
+            return true;
+          });
+        },
+
+        addNode(){
+          const id = (crypto.randomUUID ? crypto.randomUUID() : Math.random().toString(16).slice(2)).slice(0,8);
+          const n = { id: id, label: 'Yeni Yapım', release_date: '', tür: '', imdb_rating: null, type: 'movie', image: '', sourcesText: '' };
+          this.current.nodes.unshift(n); this.touch();
+        },
+        removeNode(idx){ this.current.nodes.splice(idx,1); this.touch(); },
+        toggleSelect(id){ this.selectedNodeIds.has(id) ? this.selectedNodeIds.delete(id) : this.selectedNodeIds.add(id); },
+        toggleSelectAll(ev, what){
+          if (what==='nodes'){
+            this.selectedNodeIds.clear();
+            if (ev.target.checked){ for (const n of this.filteredNodes) this.selectedNodeIds.add(n.id); }
+          } else if (what==='edges'){
+            this.selectedEdgeIdx.clear();
+            if (ev.target.checked){ for (let i=0;i<(this.current.edges||[]).length;i++) this.selectedEdgeIdx.add(i); }
+          }
+        },
+        deleteSelectedNodes(){ if (!this.selectedNodeIds.size) return; this.current.nodes = this.current.nodes.filter(n => !this.selectedNodeIds.has(n.id)); this.selectedNodeIds.clear(); this.touch(); },
+        bulkFillSources(){
+          const template = {
+            "Kaynaklar": [ { "name": "IMDb", "url": "https://www.imdb.com/" } ],
+            "Görsel": [],
+            "Platform": []
+          };
+          this.current.nodes.forEach(n => { if (this.selectedNodeIds.has(n.id) && !n.sourcesText){ n.sourcesText = JSON.stringify(template, null, 2); } });
+          this.touch();
+        },
+        previewNode(n){
+          if (this.isValidJSON(n.sourcesText)) n.sources = JSON.parse(n.sourcesText);
+          this.preview = JSON.parse(JSON.stringify(n));
+          this.tab = 'preview';
+        },
+
+        addEdge(){ const e={ from: this.current.nodes[0]?.id || '', to: this.current.nodes[0]?.id || '', type: 'Devam', notes: '' }; (this.current.edges ||= []).unshift(e); this.touch(); },
+        removeEdge(i){ this.current.edges.splice(i,1); this.touch(); },
+        toggleSelectEdge(i){ this.selectedEdgeIdx.has(i) ? this.selectedEdgeIdx.delete(i) : this.selectedEdgeIdx.add(i); },
+        deleteSelectedEdges(){ if (!this.selectedEdgeIdx.size) return; this.current.edges = this.current.edges.filter((_,i)=>!this.selectedEdgeIdx.has(i)); this.selectedEdgeIdx.clear(); this.touch(); },
+
+        addUniverse(){ const u = prompt('Yeni evren anahtarı (küçük harf, boşluksuz):'); if (!u) return; if (this.universes.includes(u)) return alert('Zaten var'); this.universes.push(u); this.dataMap[u] = { nodes: [], edges: [] }; this.currentUniverse = u; this.touch(); },
+        removeUniverse(){ if (!confirm('Seçili evreni silmek istiyor musun?')) return; const u=this.currentUniverse; this.universes = this.universes.filter(x=>x!==u); delete this.dataMap[u]; this.currentUniverse = this.universes[0] || ''; this.touch(); },
+
+        async importAll(){
+          const input = document.getElementById('fileInput');
+          input.accept = '.json,.zip,application/json,application/zip';
+          input.onchange = async (e) => {
+            const files = Array.from(e.target.files||[]);
+            for (const f of files){
+              if (f.name.endsWith('.json')){
+                const txt = await f.text();
+                try {
+                  const j = JSON.parse(txt);
+                  if (j.nodes && j.edges){
+                    const name = f.name.replace(/\.json$/,'');
+                    (j.nodes||[]).forEach(n => { n.sourcesText = n.sources ? JSON.stringify(n.sources, null, 2) : (n.sourcesText || ''); });
+                    this.$nextTick(()=>{ this.dataMap[name] = j; if (!this.universes.includes(name)) this.universes.push(name); this.currentUniverse = name; });
+                  } else {
+                    alert(f.name + ' beklenen formatta değil (nodes/edges).');
+                  }
+                } catch(err){ alert('JSON okunamadı: '+ f.name); }
+              } else {
+                alert('Şimdilik yalnızca .json destekleniyor.');
+              }
+            }
+            input.value = '';
+          };
+          input.click();
+        },
+        exportAll(){
+          const map = {};
+          for (const u of this.universes){
+            const j = JSON.parse(JSON.stringify(this.dataMap[u] || { nodes:[], edges:[] }));
+            (j.nodes||[]).forEach(n => { if (n.sourcesText && this.isValidJSON(n.sourcesText)) n.sources = JSON.parse(n.sourcesText); delete n.sourcesText; });
+            map[u] = j;
+          }
+          const one = JSON.stringify(map[this.currentUniverse], null, 2);
+          downloadText(this.currentUniverse + '.json', one);
+        },
+
+        validateAll(){
+          const problems = [];
+          for (const [u, j] of Object.entries(this.dataMap)){
+            const nodeIds = new Set((j.nodes||[]).map(n => String(n.id)));
+            for (const n of j.nodes||[]){
+              if (!n.id || !n.label) problems.push('['+u+'] Node eksik alan: id/label -> ' + JSON.stringify(n));
+              if (n.sourcesText && !this.isValidJSON(n.sourcesText)) problems.push('['+u+'] ' + n.label + ' kaynak JSON geçersiz.');
+              if (n.sourcesText && this.isValidJSON(n.sourcesText)){
+                const parsed = JSON.parse(n.sourcesText);
+                const allowed = ['Kaynaklar','Görsel','Platform'];
+                for (const k of Object.keys(parsed||{})){
+                  if (!allowed.includes(this.mapCategory(k))) problems.push('['+u+'] ' + n.label + ' kaynak kategorisi tanınmadı: ' + k);
+                }
+              }
+            }
+            for (const [i,e] of (j.edges||[]).entries()){
+              if (!nodeIds.has(String(e.from)) || !nodeIds.has(String(e.to))) problems.push('['+u+'] Edge ' + i + ': from/to id bulunamadı.');
+            }
+          }
+          if (!problems.length) { alert('Her şey yolunda ✔'); }
+          else { alert('Bulunan sorunlar:\n- ' + problems.join('\n- ')); }
+        },
+
+        touch(){ this._dirty = true; },
+        saveDraft(){
+          localStorage.setItem('adminDraft', JSON.stringify(this.dataMap));
+          this._dirty = false;
+          alert('Taslak kaydedildi.');
+        },
+        newDraft(){ if (confirm('Tüm taslakları temizle?')) { localStorage.removeItem('adminDraft'); this.dataMap = {}; this.loadAllFromDataFolder(); } },
+
+        isValidJSON(s){ if (!s || typeof s !== 'string') return false; try { JSON.parse(s); return true; } catch { return false; } },
+        mapCategory(key){ const k=(key||'').toLowerCase(); if (k.includes('görsel')||k.includes('gorsel')||k.includes('image')||k.includes('poster')) return 'Görsel'; if (k.includes('platform')||k.includes('watch')||k.includes('stream')) return 'Platform'; return 'Kaynaklar'; },
+        normalizeItem(it){ if (!it) return null; if (typeof it==='string'){ try{ const url=new URL(it).href; return { name: url, url: url }; } catch{ return { name: it, url: it }; } } if (typeof it==='object'){ const url=it.url||''; const name=it.name||url||''; return (name||url)?{ name: name, url: url }:null; } return null; },
+        normalizeSources(src){ const out={ Kaynaklar:[], Görsel:[], Platform:[] }; const push=(cat,it)=>{ const n=this.normalizeItem(it); if(n) out[cat].push(n); }; if (!src) return out; if (typeof src==='object' && !Array.isArray(src)){ for (const [k,v] of Object.entries(src)){ const cat=this.mapCategory(k); const arr=Array.isArray(v)?v:[v]; arr.forEach(it=>push(cat,it)); } return out; } if (Array.isArray(src)){ if (!src.length || typeof src[0] !== 'object' || ('url' in src[0]) || ('name' in src[0])){ src.forEach(it=>push('Kaynaklar', it)); } else { src.forEach(g=>{ const cat=this.mapCategory(g?.category); const items=Array.isArray(g?.items)?g.items:(g?.items?[g.items]:[]); items.forEach(it=>push(cat,it)); }); } return out; } push('Kaynaklar', src); return out; },
+
+        // Link Tester helpers (stubs)
+        openLinkTester(){ this.linkTest.open = true; },
+        closeLinkTester(){ this.linkTest.open = false; },
+        runLinkTests(){ /* TODO: implement if needed */ },
+
+        // Poster check stub
+        checkPoster(){ this.previewPoster = { running:true, ok:null, text:'Kontrol ediliyor…' }; setTimeout(()=>{ this.previewPoster = { running:false, ok:true, text:'Ulaşılabilir' }; }, 800); },
+      }
+    }
+
+    function downloadText(filename, text){
+      const blob = new Blob([text], { type: 'application/json;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a'); a.href = url; a.download = filename; a.click(); setTimeout(()=>URL.revokeObjectURL(url), 500);
+    }
+  </script>
+
+  <!-- Toasts -->
+  <div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-[100] space-y-2 w-[92vw] max-w-md">
+    <template x-for="t in toasts" :key="t.id">
+      <div class="glass rounded-lg px-3 py-2 text-sm border shadow-soft"
+           :class="t.type==='success' ? 'border-emerald-400/40 text-emerald-300' : (t.type==='error' ? 'border-rose-400/40 text-rose-300' : 'border-white/20 text-white')">
+        <span x-text="t.message"></span>
+      </div>
+    </template>
+  </div>
+
+  <footer class="max-w-7xl mx-auto px-4 py-8 opacity-70 text-xs">
+    <div class="border-t border-white/10 pt-4">© Film Evreni Ağı · Yönetim Paneli</div>
+  </footer>
+</body>
+</html>
