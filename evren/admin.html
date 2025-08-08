@@ -12,7 +12,7 @@
       if (!r.ok) { location.replace('/login-totp.html?to=/admin.html'); return; }
       document.body.style.visibility = 'visible';
     } catch (e) {
-      location.replace('/login-totp.html?to=/admin.html');
+      location.replace('evren/login.html?to=/admin.html');
     }
   }
   if (document.readyState === 'loading') {
