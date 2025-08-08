@@ -5,11 +5,14 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>🎬 Film Evreni Ağı</title>
+<script src="app.obf.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.5/dist/cdn.min.js" defer></script>
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/shepherd.js@8.4.1/dist/js/shepherd.min.js"></script>
 <script src="data/shepherd.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.5/dist/cdn.min.js"></script>
+
 
 <style>
     :root { color-scheme: dark; }
@@ -333,16 +336,46 @@ class="w-32 h-32 rounded-full object-cover drop-shadow-[0_0_20px_rgba(168,85,247
 </div>
 <!-- Göndermeler -->
 <template x-if="modalNode.refers_to">
-<div>
-<h3 @click="refersOpen = !refersOpen" id="göndermeler" class="text-lg font-semibold mb-2 cursor-pointer flex justify-between items-center border-b border-white/10 pb-1 mb-4">Göndermeler
-<svg class="w-4 h-4 inline-block ml-2" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!refersOpen"></path>
-<path d="M5 15l7-7 7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="refersOpen"></path>
-</svg>
-</h3><div class="text-sm text-red-400 italic mb-2" x-show="refersOpen">⚠ Bu alan spoiler içerebilir.</div>
-<div class="bg-white/5 p-4 rounded-lg border border-white/10 italic text-sm" x-show="refersOpen" x-text="modalNode.refers_to"></div>
-</div>
+  <div>
+    <h3 @click="refersOpen = !refersOpen" id="göndermeler"
+        class="text-lg font-semibold mb-2 cursor-pointer flex justify-between items-center border-b border-white/10 pb-1 mb-4">
+      Göndermeler
+      <svg class="w-4 h-4 inline-block ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+           xmlns="http://www.w3.org/2000/svg">
+        <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              x-show="!refersOpen"></path>
+        <path d="M5 15l7-7 7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              x-show="refersOpen"></path>
+      </svg>
+    </h3>
+
+    <div class="text-sm text-red-400 italic mb-2" x-show="refersOpen">
+      ⚠ Bu alan spoiler içerebilir.
+    </div>
+
+    <div class="bg-white/5 p-4 rounded-lg border border-white/10 italic text-sm"
+         x-show="refersOpen"
+         x-html="(() => {
+           const t = modalNode.refers_to == null ? '' : String(modalNode.refers_to);
+
+           // Güvenlik: HTML escape
+           const esc = t
+             .replace(/&/g,'&amp;')
+             .replace(/</g,'&lt;')
+             .replace(/>/g,'&gt;');
+
+           // **Kalın** -> renkli span
+           let out = esc.replace(/\*\*(.+?)\*\*/g,
+             '<span class=&quot;text-sky-300 font-semibold underline decoration-dotted&quot;>$1</span>'
+           );
+           return out;
+         })()">
+    </div>
+  </div>
 </template>
+
+
+
 <!-- Bağlantılı Yapımlar -->
 
 
@@ -358,12 +391,26 @@ class="w-32 h-32 rounded-full object-cover drop-shadow-[0_0_20px_rgba(168,85,247
 <div class="flex flex-wrap gap-2" x-show="linkedOpen">
 <template :key="e.otherNodeId" x-for="e in edgeList">
 <div :class="{
-           'bg-blue-900/40 border-blue-500/30': e.type === 'Devam',
-           'bg-yellow-900/30 border-yellow-400/20': e.type === 'Öncesi',
-           'bg-purple-900/30 border-purple-500/20': e.type === 'yan hikaye',
-           'bg-green-900/30 border-green-500/20': e.type === 'karakter göndermesi',
-           'bg-red-900/30 border-red-400/20': e.type === 'Aynı Evren',
-           'bg-white/10 border-white/20': !e.type
+  'bg-blue-900/40 border-blue-500/30': e.type === 'Devam',
+  'bg-emerald-900/30 border-emerald-500/20': e.type === 'Takım Kurulumu',
+  'bg-slate-900/30 border-slate-500/20': e.type === 'Karakter Geçişi',
+  'bg-purple-900/30 border-purple-500/20': e.type === 'Gizli Bağlantı',
+  'bg-red-900/30 border-red-500/20': e.type === 'Psikolojik Etki',
+  'bg-violet-900/30 border-violet-500/20': e.type === 'Karakter Bağlantısı',
+  'bg-rose-900/30 border-rose-500/20': e.type === 'Yeni Tehdit',
+  'bg-amber-900/30 border-amber-400/20': e.type === 'Sonsuzluk Taşı',
+  'bg-orange-900/30 border-orange-500/20': e.type === 'Siyasi Çözülme',
+  'bg-teal-900/30 border-teal-500/20': e.type === 'Kozmik Katılım',
+  'bg-pink-900/30 border-pink-500/20': e.type === 'Anahtar Karakter',
+  'bg-orange-800/30 border-orange-400/20': e.type === 'Önemli Olay',
+  'bg-yellow-900/30 border-yellow-500/20': e.type === 'Mekan Bağlantısı',
+  'bg-gray-800/30 border-gray-500/20': e.type === 'Paralel Olay',
+  'bg-amber-800/30 border-amber-500/20': e.type === 'Anahtar Olay',
+  'bg-violet-800/30 border-violet-400/20': e.type === 'Sonrası Etki',
+  'bg-teal-800/30 border-teal-400/20': e.type === 'Kozmik Genişleme',
+  'bg-cyan-900/30 border-cyan-500/20': e.type === 'Çoklu Evren',
+  'bg-red-800/30 border-red-400/20': e.type === 'Evrensel Gelişme',
+  'bg-white/10 border-white/20': !e.type
          }" @click="__openNode(e.otherNodeId)" class="rounded-xl p-3 text-sm cursor-pointer transition relative border space-y-1">
 <div class="font-semibold" x-text="nodes.get(e.otherNodeId)?.label || e.otherNodeId">
 </div>
@@ -855,26 +902,51 @@ tour.addStep({
             .filter(e => e.from === this.modalNode.id || e.to === this.modalNode.id)
             .map(e => ({ ...e, otherNodeId: e.from === this.modalNode.id ? e.to : e.from }));
         },
-        edgeColors: {
-          "Devam": "#2980b9",
-          "Öncesi": "#f39c12", "ön hikaye": "#e67e22", "yan hikaye": "#8e44ad",
-          "Aynı Evren": "#c0392b", "görsel gönderme": "#7f8c8d", "karakter göndermesi": "#27ae60",
-          "kurumsal gönderme": "#6e4b25", "zaman çizgisi bağlantısı": "#1abc9c", "remake": "#2ecc71",
-          "Teori Bağlantısı": "#f1c40f", "duygu ve bilinç teması": "#9b59b6", "konseptsel Devam": "#34495e",
-          "şehir yaşamı paralelliği": "#d35400", "karakter_bağlantısı": "#7d3c98",
-          "Tema Ortaklığı": "#e84393"
-        },
-        edgeStyles: {
-          "Devam": { width: 3, dashes: false },
-          "Öncesi": { width: 2, dashes: [4, 6] }, "karakter geçişi": { width: 3, dashes: [10,4] },
-          "evren geçişi": { width: 2.5, dashes: [6,4] }, "multiverse birleşmesi": { width: 2.5, dashes: [2,6] },
-          "görsel gönderme": { width: 1.8, dashes: [2,6] }, "karakter göndermesi": { width: 2, dashes: [6,6] },
-          "ön hikaye": { width: 2.2, dashes: false }, "yan hikaye": { width: 2, dashes: [8,6] },
-          "tematik benzerlik": { width: 1.8, dashes: [12,6] }, "Teori Bağlantısı": { width: 1.8, dashes: [4,4] },
-          "kurumsal gönderme": { width: 1.8, dashes: [2,8] }, "konseptsel Devam": { width: 2, dashes: false },
-          "şehir yaşamı paralelliği": { width: 1.8, dashes: [10,8] }, "iç film/karakter kökeni": { width: 2, dashes: [5,5] },
-          "paralel Kang anlatımı": { width: 2.5, dashes: [3,7] }
-        },
+edgeColors: {
+  "Devam": "#2980b9",                // Mavi - ana hikaye devamı
+  "Takım Kurulumu": "#27ae60",       // Yeşil - birlik ve oluşum
+  "Karakter Geçişi": "#34495e",      // Koyu gri - karakter odaklı
+  "Gizli Bağlantı": "#8e44ad",       // Mor - gizli/arka plan bağlantı
+  "Psikolojik Etki": "#e74c3c",      // Kırmızı - duygusal/mental etki
+  "Karakter Bağlantısı": "#9b59b6",  // Açık mor - karakter ilişkisi
+  "Yeni Tehdit": "#c0392b",          // Koyu kırmızı - tehdit
+  "Sonsuzluk Taşı": "#f1c40f",       // Altın - Infinity Stones
+  "Siyasi Çözülme": "#d35400",       // Turuncu - siyasi çatışma
+  "Kozmik Katılım": "#16a085",       // Turkuaz - kozmik olaylar
+  "Anahtar Karakter": "#e84393",     // Pembe - hikayede kilit kişi
+  "Önemli Olay": "#e67e22",          // Turuncu - kritik olay
+  "Mekan Bağlantısı": "#6e4b25",     // Kahverengi - yer odaklı bağ
+  "Paralel Olay": "#7f8c8d",         // Gri - eş zamanlı olaylar
+  "Anahtar Olay": "#f39c12",         // Altın sarısı - önemli dönüm
+  "Sonrası Etki": "#9b59b6",         // Mor - olay sonrası etki
+  "Kozmik Genişleme": "#1abc9c",     // Turkuaz-yeşil - evrenin genişlemesi
+  "Çoklu Evren": "#00bcd4",          // Açık mavi - multiverse
+  "Evrensel Gelişme": "#c0392b"      // Kırmızı - büyük çaplı gelişme
+},
+
+edgeStyles:{
+  "Devam": { width: 3,   dashes: false },
+  "Takım Kurulumu": { width: 2.8, dashes: false },
+  "Karakter Geçişi": { width: 3,   dashes: [10,4] },
+  "Gizli Bağlantı": { width: 2.2, dashes: [3,7] },
+  "Psikolojik Etki": { width: 2.5, dashes: [2,6] },
+  "Karakter Bağlantısı": { width: 2.2, dashes: [6,4] },
+  "Yeni Tehdit": { width: 2.5, dashes: [4,4] },
+  "Sonsuzluk Taşı": { width: 2.5, dashes: [2,6] },
+  "Siyasi Çözülme": { width: 2.8, dashes: [6,6] },
+  "Kozmik Katılım": { width: 2.3, dashes: [5,5] },
+  "Anahtar Karakter": { width: 2.3, dashes: [8,4] },
+  "Önemli Olay": { width: 3,   dashes: [2,6] },
+  "Mekan Bağlantısı": { width: 2,   dashes: [8,6] },
+  "Paralel Olay": { width: 2,   dashes: [12,6] },
+  "Anahtar Olay": { width: 2.6, dashes: [2,4] },
+  "Sonrası Etki": { width: 2.4, dashes: [6,8] },
+  "Kozmik Genişleme": { width: 2.5, dashes: [4,6] },
+  "Çoklu Evren": { width: 2.8, dashes: [6,3] },
+  "Evrensel Gelişme": { width: 2.5, dashes: [4,4] }
+},
+
+
         get timelineSortedNodes(){
           const u = this.selectedUniverse;
           return [...this.allNodes]
@@ -1225,7 +1297,6 @@ this.$watch('selectedUniverse', (val) => {
     </template>
   </div>
 </div>
-
 
 <!-- Bilgi Panelleri -->
 <div x-show="panel === 'hakkimizda'" class="fixed inset-0 flex items-center justify-center z-50">
