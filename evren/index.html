@@ -200,53 +200,171 @@
     </div>
 
     <!-- Mobilde arama ve anasayfa yanyana, dropdown altta olacak sekilde yeniden yapılandırıldı -->
-    <div class="flex flex-col sm:flex-row gap-2">
+<div class="flex flex-col sm:flex-row gap-2">
 
-      <div class="flex flex-row items-center gap-2 w-full">
-        <!-- Anasayfa Butonu -->
-        <a href="/evren" title="Anasayfa" class="text-white border border-white/30 hover:bg-white/10 rounded-md p-2 transition w-9 h-9 flex items-center justify-center">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M4 10v10h6v-6h4v6h6V10L12 3z" />
-          </svg>
-        </a>
+  <!-- Anasayfa + Arama + (Mobil Filtre Butonu) -->
+  <div class="flex flex-row items-center gap-2 w-full">
+    <!-- Anasayfa Butonu -->
+    <a href="/evren" title="Anasayfa" class="text-white border border-white/30 hover:bg-white/10 rounded-md p-2 transition w-9 h-9 flex items-center justify-center">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 10v10h6v-6h4v6h6V10L12 3z" />
+      </svg>
+    </a>
 
-        <!-- Arama Kutusu -->
-        <div class="relative w-full">
-          <input @blur="setTimeout(() => acOpen = false, 120)" @focus="acOpen = true" class="border rounded-lg px-3 py-1.5 w-full pr-8" placeholder="Ara..." type="search" x-model="search">
-          <button @click="search=''; suggestions=[]; applyFilters()" @mousedown.prevent="" aria-label="Temizle" class="absolute inset-y-0 right-2 my-auto h-6 w-6 rounded-full grid place-items-center opacity-80 hover:opacity-100 hover:bg-white/10" x-show="search" style="display: none;">
-            <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.3 5.71a1 1 0 0 0-1.41 0L12 10.59 7.11 5.7A1 1 0 0 0 5.7 7.11L10.59 12l-4.9 4.89a1 1 0 1 0 1.41 1.41L12 13.41l4.89 4.9a1 1 0 0 0 1.41-1.41L13.41 12l4.9-4.89a1 1 0 0 0-.01-1.4Z"></path></svg>
-          </button>
-          <div class="ac-panel absolute z-50 w-full mt-1 rounded-lg overflow-hidden max-h-56 overflow-y-auto" x-show="acOpen &amp;&amp; search &amp;&amp; suggestions.length" style="display: none;">
-            <template :key="s" x-for="(s, idx) in suggestions">
-              <div @click="search = s; acOpen=false; applyFilters();" @mousedown.prevent="" class="ac-item px-3 py-1.5"><span x-text="s"></span></div>
-            </template>
-          </div>
-        </div>
-      </div>
-
-      <!-- Dropdown Evren Seçimi -->
-      <div @click.outside="open=false" @keydown.escape="open=false" class="relative w-full sm:w-[200px]" x-data="{ open:false, filterText:'' }">
-        <div :aria-expanded="open" @click="open=!open" class="dropdown-btn border rounded-lg px-3 py-1.5 w-full flex items-center justify-between select-none" aria-expanded="false">
-          <span id="#universe_select" class="truncate" x-text="selectedUniverse ? formatUniverseName(selectedUniverse) : 'Tüm Evrenler'">Tüm Evrenler</span>
-          <svg class="h-4 w-4 opacity-80 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" fill-rule="evenodd"></path></svg>
-        </div>
-        <div class="dropdown-panel absolute mt-2 left-0 right-0 rounded-xl overflow-hidden" style="z-index: 60; display: none;" x-show="open" x-transition="">
-          <div class="p-2 border-b border-white/10">
-            <input class="w-full px-3 py-2 rounded-lg border" placeholder="Evren ara..." x-model="filterText">
-          </div>
-          <ul class="max-h-64 overflow-y-auto">
-            <template :key="u" x-for="u in universeList.filter(u => !filterText || formatUniverseName(u).toLowerCase().includes(filterText.toLowerCase()))">
-              <li @click="selectedUniverse=u; open=false; filterText=''; applyFilters()" class="dropdown-item px-3 py-2" x-text="formatUniverseName(u)"></li>
-            </template>
-          </ul>
-        </div>
-      </div>
-
+    <!-- Arama Kutusu -->
+    <div class="relative w-full">
+      <input @blur="setTimeout(() => acOpen = false, 120)" 
+             @focus="acOpen = true" 
+             class="border rounded-lg px-3 py-1.5 w-full pr-8" 
+             placeholder="Ara..." 
+             type="search" 
+             x-model="search">
+      <button @click="search=''; suggestions=[]; applyFilters()" 
+              @mousedown.prevent="" 
+              aria-label="Temizle" 
+              class="absolute inset-y-0 right-2 my-auto h-6 w-6 rounded-full grid place-items-center opacity-80 hover:opacity-100 hover:bg-white/10" 
+              x-show="search" 
+              style="display: none;">
+        <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M18.3 5.71a1 1 0 0 0-1.41 0L12 10.59 7.11 5.7A1 1 0 0 0 5.7 7.11L10.59 12l-4.9 4.89a1 1 0 1 0 1.41 1.41L12 13.41l4.89 4.9a1 1 0 0 0 1.41-1.41L13.41 12l4.9-4.89a1 1 0 0 0-.01-1.4Z"></path>
+        </svg>
+      </button>
     </div>
+
+    <!-- Filtre Butonu (Mobil) -->
+    <button 
+      @click="openFilterPanel = !openFilterPanel"
+      class="flex items-center justify-center w-9 h-9 border border-white/30 hover:bg-white/10 rounded-md transition sm:hidden"
+      title="Filtreler"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" 
+           fill="none" viewBox="0 0 24 24" 
+           stroke-width="2" stroke="currentColor" 
+           class="w-5 h-5 text-white">
+        <path stroke-linecap="round" stroke-linejoin="round" 
+              d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2a1 1 0 01-.293.707l-5.414 5.414a1 1 0 00-.293.707v4.586a1 1 0 01-.553.894l-4 2A1 1 0 019 19v-6.586a1 1 0 00-.293-.707L3.293 6.707A1 1 0 013 6V4z" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Evren Seçimi Dropdown + (Masaüstü Filtre Butonu) -->
+  <div class="flex flex-row items-center gap-2 sm:w-[200px]">
+    <!-- Dropdown Evren Seçimi -->
+    <div @click.outside="open=false" @keydown.escape="open=false" class="relative w-full" x-data="{ open:false, filterText:'' }">
+      <div :aria-expanded="open" @click="open=!open" class="dropdown-btn border rounded-lg px-3 py-1.5 w-full flex items-center justify-between select-none" aria-expanded="false">
+        <span id="#universe_select" class="truncate" x-text="selectedUniverse ? formatUniverseName(selectedUniverse) : 'Tüm Evrenler'">Tüm Evrenler</span>
+        <svg class="h-4 w-4 opacity-80 ml-2" fill="currentColor" viewBox="0 0 20 20"><path clip-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" fill-rule="evenodd"></path></svg>
+      </div>
+      <div class="dropdown-panel absolute mt-2 left-0 right-0 rounded-xl overflow-hidden" style="z-index: 60; display: none;" x-show="open" x-transition>
+        <div class="p-2 border-b border-white/10">
+          <input class="w-full px-3 py-2 rounded-lg border" placeholder="Evren ara..." x-model="filterText">
+        </div>
+        <ul class="max-h-64 overflow-y-auto">
+          <template :key="u" x-for="u in universeList.filter(u => !filterText || formatUniverseName(u).toLowerCase().includes(filterText.toLowerCase()))">
+            <li @click="selectedUniverse=u; open=false; filterText=''; applyFilters()" class="dropdown-item px-3 py-2" x-text="formatUniverseName(u)"></li>
+          </template>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Filtre Butonu (Masaüstü) -->
+    <button 
+      @click="openFilterPanel = !openFilterPanel"
+      class="hidden sm:flex items-center justify-center w-9 h-9 border border-white/30 hover:bg-white/10 rounded-md transition"
+      title="Filtreler"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" 
+           fill="none" viewBox="0 0 24 24" 
+           stroke-width="2" stroke="currentColor" 
+           class="w-5 h-5 text-white">
+        <path stroke-linecap="round" stroke-linejoin="round" 
+              d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2a1 1 0 01-.293.707l-5.414 5.414a1 1 0 00-.293.707v4.586a1 1 0 01-.553.894l-4 2A1 1 0 019 19v-6.586a1 1 0 00-.293-.707L3.293 6.707A1 1 0 013 6V4z" />
+      </svg>
+    </button>
+  </div>
+
+</div>
+
   </div>
 </div>
 </div>
 </header>
+<!-- Overlay -->
+<div
+  x-show="openFilterPanel"
+  @click="openFilterPanel = false"
+  class="fixed inset-0 bg-black/50 backdrop-blur-sm z-[70]"
+  x-transition.opacity
+></div>
+
+<!-- Drawer (Filtre Paneli) -->
+<aside
+  x-show="openFilterPanel"
+  @keydown.escape.window="openFilterPanel=false"
+  class="fixed right-0 top-0 bottom-0 w-[92vw] sm:w-[360px] z-[80] glass border-l border-white/20 p-4 overflow-y-auto"
+  x-transition:enter="transition ease-out duration-200"
+  x-transition:enter-start="translate-x-full"
+  x-transition:enter-end="translate-x-0"
+  x-transition:leave="transition ease-in duration-150"
+  x-transition:leave-start="translate-x-0"
+  x-transition:leave-end="translate-x-full"
+>
+  <div class="flex items-center justify-between mb-3">
+    <h3 class="text-lg font-semibold">Filtreler</h3>
+    <button @click="openFilterPanel=false" class="w-8 h-8 rounded-full bg-white/10 border border-white/20">✕</button>
+  </div>
+
+  <!-- Yapım Tipi -->
+  <div class="mb-4">
+    <div class="text-sm font-medium mb-2">Yapım Tipi</div>
+    <div class="inline-flex rounded-lg overflow-hidden border border-white/20">
+      <button @click="filters.type='all'"  :class="filters.type==='all'  ? 'bg-white/20' : 'bg-white/5'" class="px-3 py-1.5 text-sm">Hepsi</button>
+      <button @click="filters.type='film'" :class="filters.type==='film' ? 'bg-white/20' : 'bg-white/5'" class="px-3 py-1.5 text-sm">Film</button>
+      <button @click="filters.type='dizi'" :class="filters.type==='dizi' ? 'bg-white/20' : 'bg-white/5'" class="px-3 py-1.5 text-sm">Dizi</button>
+    </div>
+  </div>
+
+  <!-- Tür (Genre) -->
+  <div class="mb-4">
+    <div class="text-sm font-medium mb-2">Tür</div>
+    <div class="flex flex-wrap gap-2">
+      <template x-for="g in availableGenres" :key="g">
+        <label class="text-xs px-2 py-1 rounded-full border border-white/20 bg-white/5 cursor-pointer select-none">
+          <input type="checkbox" class="hidden" :value="g" x-model="filters.genres">
+          <span x-text="g"></span>
+        </label>
+      </template>
+    </div>
+  </div>
+
+  <!-- Yıl aralığı -->
+  <div class="mb-4 grid grid-cols-2 gap-2">
+    <div>
+      <div class="text-sm font-medium mb-1">Yıl (min)</div>
+      <input type="number" class="w-full px-3 py-2 rounded bg-white/10 border border-white/20" placeholder="2008" x-model.number="filters.yearMin">
+    </div>
+    <div>
+      <div class="text-sm font-medium mb-1">Yıl (max)</div>
+      <input type="number" class="w-full px-3 py-2 rounded bg-white/10 border border-white/20" placeholder="2025" x-model.number="filters.yearMax">
+    </div>
+  </div>
+
+  <!-- IMDb -->
+  <div class="mb-6">
+    <div class="flex items-center justify-between mb-1">
+      <div class="text-sm font-medium">IMDb (en az)</div>
+      <div class="text-xs opacity-80" x-text="filters.imdbMin ?? '-'"></div>
+    </div>
+    <input type="range" min="0" max="10" step="0.1" x-model.number="filters.imdbMin" class="w-full">
+    <div class="text-xs opacity-70 mt-1">0 – 10</div>
+  </div>
+
+  <!-- Aksiyonlar -->
+  <div class="flex gap-2">
+    <button @click="applyFilters(); openFilterPanel=false" class="px-3 py-2 rounded bg-emerald-600 hover:bg-emerald-700 text-white text-sm">Uygula</button>
+    <button @click="resetFilters()" class="px-3 py-2 rounded bg-white/10 border border-white/20 text-sm">Sıfırla</button>
+  </div>
+</aside>
 <div id="network" x-show="selectedUniverse" x-transition x-show="showGraph" x-transition></div>
 
 <div @click.outside="if (!window.Shepherd?.activeTour) modalOpen = false" @keydown.escape.window="modalOpen=false" aria-labelledby="modalTitle" aria-modal="true" class="fixed inset-0 modal-bg flex items-center justify-center z-50 p-4" role="dialog" id="modal_container" x-show="modalOpen" x-transition="">
@@ -567,7 +685,6 @@ tour.addStep({
     }
   }
 });
-
 
 
 
@@ -947,6 +1064,8 @@ edgeStyles:{
 },
 
 
+
+
         get timelineSortedNodes(){
           const u = this.selectedUniverse;
           return [...this.allNodes]
@@ -971,6 +1090,43 @@ get legendEntries() {
   );
 }
 ,
+
+openFilterPanel: false,
+
+filters: {
+  genres: [],     // ["Aksiyon","Bilim Kurgu"] gibi
+  yearMin: null,  // 2008
+  yearMax: null,  // 2025
+  imdbMin: null,  // 7.0
+  type: 'all',    // 'all' | 'film' | 'dizi'
+},
+
+get activeFilterCount() {
+  let c = 0;
+  if (this.filters.genres?.length) c++;
+  if (this.filters.yearMin != null || this.filters.yearMax != null) c++;
+  if (this.filters.imdbMin != null) c++;
+  if (this.filters.type && this.filters.type !== 'all') c++;
+  return c;
+},
+
+resetFilters() {
+  this.filters = { genres: [], yearMin: null, yearMax: null, imdbMin: null, type: 'all' };
+  this.applyFilters();
+  this.openFilterPanel = false;
+},
+
+get availableGenres() {
+  const s = new Set();
+  for (const n of this.allNodes) {
+    const raw = (n.tür || n.genre || n.genres || '').toString();
+    raw.split(/[,\|/]/).map(x => x.trim()).filter(Boolean).forEach(g => s.add(g));
+  }
+  return s.size ? Array.from(s).sort() : [
+    "Aksiyon","Macera","Bilim Kurgu","Dram","Fantastik","Animasyon","Komedi","Gerilim"
+  ];
+},
+
         get notesSummary(){
           const groups = new Map();
           for (const [nodeId, arr] of Object.entries(this.notes)){
@@ -1019,7 +1175,18 @@ get legendEntries() {
           return Array.from(counts.entries()).sort((a,b) => b[1] - a[1]).slice(0, 10).map(([t]) => t);
         },
         init() {
-          this.showLegend = true;
+          
+
+try {
+  const saved = JSON.parse(localStorage.getItem('filters') || 'null');
+  if (saved) this.filters = saved;
+} catch {}
+
+this.$watch && this.$watch('filters', (v) => {
+  localStorage.setItem('filters', JSON.stringify(v));
+});
+
+this.showLegend = true;
           try { const old = localStorage.getItem('comments'); if (old && !localStorage.getItem('notes')) { localStorage.setItem('notes', old); localStorage.removeItem('comments'); } } catch {}
           this.loadWatchLater(); this.loadNotes(); this.network = null;
           this.setBackgroundFor(this.selectedUniverse); this.warmBackgrounds();
@@ -1124,14 +1291,65 @@ this.$watch('selectedUniverse', (val) => {
      nodes: { size: 25, font: { color: '#e5e7eb', size: 14 }, borderWidthSelected: 6, color: { border: '#ef4444' } }, edges: { arrows: { to: { enabled: true, scaleFactor: 0.5 } }, smooth: { enabled: true, type: 'dynamic' } }, interaction: { hover: true, tooltipDelay: 200, zoomView: true, dragView: true }, physics: { stabilization: true, barnesHut: { gravitationalConstant: -4000 } }, layout: { improvedLayout: true } }; },
         setupNetwork() { this.nodes = new vis.DataSet(); this.edges = new vis.DataSet(); const container = document.getElementById('network'); this.network = new vis.Network(container, { nodes: this.nodes, edges: this.edges }, this.makeOptions()); this.network.on('click', params => { if (params.nodes.length > 0) { const node = this.nodes.get(params.nodes[0]); requestAnimationFrame(() => { this.modalNode = node; this.modalOpen = true; }); } }); },
         applyFilters() {
-          if (!this.nodes || !this.edges) return;
-          const searchTerm = (this.search || '').toLowerCase(); const universe = this.selectedUniverse;
-          this.filteredNodes = this.allNodes.filter(n => (!universe || n.universe === universe) && (!searchTerm || (n.label && n.label.toLowerCase().includes(searchTerm))));
-          const nodeIds = new Set(this.filteredNodes.map(n => n.id));
-          this.filteredEdges = this.allEdges.filter(e => nodeIds.has(e.from) && nodeIds.has(e.to));
-          this.updateNetwork();
-          if (this.network) { if (this.fitTimeout) clearTimeout(this.fitTimeout); this.fitTimeout = setTimeout(() => this.network.fit({ animation: true }), 220); }
-        },
+  if (!this.nodes || !this.edges) return;
+
+  const searchTerm = (this.search || '').toLowerCase();
+  const universe = this.selectedUniverse;
+
+  const f = this.filters || {};
+  const yearMin = f.yearMin != null ? Number(f.yearMin) : null;
+  const yearMax = f.yearMax != null ? Number(f.yearMax) : null;
+  const imdbMin = f.imdbMin != null ? Number(f.imdbMin) : null;
+  const chosenGenres = new Set(((f.genres || [])).map(g => (g||'').toLowerCase()));
+  const wantedType = (f.type || 'all');
+
+  this.filteredNodes = (this.allNodes || []).filter(n => {
+    // Evren + arama
+    if (universe && n.universe !== universe) return false;
+    if (searchTerm && !(n.label && n.label.toLowerCase().includes(searchTerm))) return false;
+
+    // Yıl
+    if (yearMin != null || yearMax != null) {
+      const y = n.release_date ? new Date(n.release_date).getFullYear() : null;
+      if (yearMin != null && (y == null || y < yearMin)) return false;
+      if (yearMax != null && (y == null || y > yearMax)) return false;
+    }
+
+    // IMDb
+    if (imdbMin != null) {
+      const r = n.imdb_rating != null ? Number(n.imdb_rating) : null;
+      if (r == null || r < imdbMin) return false;
+    }
+
+    // Tür (genre)
+    if (chosenGenres.size) {
+      const raw = (n.tür || n.genre || n.genres || '').toString().toLowerCase();
+      const nodeGenres = raw.split(/[,\|/]/).map(x => x.trim()).filter(Boolean);
+      const hasAny = nodeGenres.some(g => chosenGenres.has(g));
+      if (!hasAny) return false;
+    }
+
+    // Yapım tipi (film/dizi)
+    if (wantedType !== 'all') {
+      const nodeType = (n.type || n.tip || '').toString().trim().toLowerCase();
+      const mapped = nodeType == 'movie' ? 'film'
+                   : nodeType == 'series' ? 'dizi'
+                   : nodeType;
+      if (mapped !== wantedType) return false;
+    }
+
+    return true;
+  });
+
+  const nodeIds = new Set(this.filteredNodes.map(n => n.id));
+  this.filteredEdges = (this.allEdges || []).filter(e => nodeIds.has(e.from) && nodeIds.has(e.to));
+
+  this.updateNetwork && this.updateNetwork();
+  if (this.network) {
+    if (this.fitTimeout) clearTimeout(this.fitTimeout);
+    this.fitTimeout = setTimeout(() => this.network.fit({ animation: true }), 220);
+  }
+},
         updateNetwork() {
           this.nodes.clear(); this.edges.clear();
           this.nodes.add(this.filteredNodes.map(n => { const hasImage = !!n.image; const noteCount = (this.notes[n.id]?.length || 0); return {
