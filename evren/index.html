@@ -296,12 +296,12 @@
       </div>
     </div>
 
-    <!-- Filtre butonu: mobil -->
-    <button
-      @click="openFilterPanel = !openFilterPanel"
-      id="filter_btn"
-      class="relative flex sm:hidden items-center justify-center w-9 h-9 border border-white/30 hover:bg-white/10 rounded-md transition"
-      title="Filtreler">
+                <!-- Filtre butonu: mobil -->
+                <button
+                  @click="openFilterPanel = !openFilterPanel"
+                  class="relative flex h-9 w-9 items-center justify-center rounded-md border border-white/30 transition hover:bg-white/10 sm:hidden"
+                  title="Filtreler"
+                >
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
            stroke-width="2" stroke="currentColor" class="w-5 h-5 text-white">
         <path stroke-linecap="round" stroke-linejoin="round" d="M3 4h18v2l-6 6v4.6l-4 2V12L3 6z"/>
@@ -336,11 +336,12 @@
     </div>
   </div>
 
-  <!-- Filtre butonu: masaüstü -->
-  <button
-    @click="openFilterPanel = !openFilterPanel"
-    class="relative hidden sm:flex items-center justify-center w-9 h-9 border border-white/30 hover:bg-white/10 rounded-md transition"
-    title="Filtreler">
+              <button
+                @click="openFilterPanel = !openFilterPanel"
+                id="filter_btn"
+                class="relative hidden h-9 w-9 items-center justify-center rounded-md border border-white/30 transition hover:bg-white/10 sm:flex"
+                title="Filtreler"
+              >
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
          stroke-width="2" stroke="currentColor" class="w-5 h-5 text-white">
       <path stroke-linecap="round" stroke-linejoin="round" d="M3 4h18v2l-6 6v4.6l-4 2V12L3 6z"/>
