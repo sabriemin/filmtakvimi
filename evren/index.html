@@ -421,7 +421,7 @@
 </aside>
 <div id="network" x-show="selectedUniverse" x-transition x-show="showGraph" x-transition></div>
 
-<div @click.outside="if (!window.Shepherd?.activeTour) modalOpen = false" @keydown.escape.window="modalOpen=false" aria-labelledby="modalTitle" aria-modal="true" class="fixed inset-0 modal-bg flex items-center justify-center z-50 p-4" role="dialog" id="modal_container" x-show="modalOpen" x-transition="">
+<div @click.outside="if (!window.Shepherd?.activeTour) modalOpen=false; resetPrettyUrl && resetPrettyUrl()" @keydown.escape.window="modalOpen=false; resetPrettyUrl && resetPrettyUrl()" aria-labelledby="modalTitle" aria-modal="true" class="fixed inset-0 modal-bg flex items-center justify-center z-50 p-4" role="dialog" id="modal_container" x-show="modalOpen" x-transition="">
 <div @click.stop="" class="modal-content" style="overflow-y: visible;">
 <div class="relative rounded-xl overflow-hidden backdrop-blur-md bg-black/50 text-white max-h-[90vh] overflow-y-visible">
 <!-- Üst blur görsel alanı -->
@@ -438,7 +438,7 @@
 <img alt="IN" src="https://img.icons8.com/ios-filled/20/ffffff/linkedin.png"/>
 </button>
 <button @click="copyShare(modalNode)" class="text-white hover:opacity-80" title="Kopyala">📋</button>
-</div></div><div class="absolute top-3 right-3 flex gap-2 items-center z-20"><div @click="modalOpen = false" class="close-btn" id="modal-close">✕</div></div>
+</div></div><div class="absolute top-3 right-3 flex gap-2 items-center z-20"><div @click="modalOpen=false; resetPrettyUrl && resetPrettyUrl()" class="close-btn" id="modal-close">✕</div></div>
 <!-- Üst çubuk -->
 <div class="flex justify-between items-start"><div class="absolute top-3 right-3 flex gap-2 items-center z-20"></div></div>
 <!-- Alt bilgi -->
@@ -1105,7 +1105,7 @@ tour.addStep({
           this.__openNode(id);
         } else if (this.nodes && typeof this.nodes.get === 'function') {
           const it = this.nodes.get(id);
-          if (it) { this.modalNode = it; this.modalOpen = true; }
+          if (it) { this.modalNode = it; this.modalOpen = true; this.$nextTick(()=>{ try{ this.pushPrettyUrl && this.pushPrettyUrl(this.modalNode); }catch(e){} }); }
         } else if (Array.isArray(this.allNodes)) {
           const it = this.allNodes.find(x => x && x.id === id);
           if (it) { this.modalNode = it; this.modalOpen = true; }
@@ -1460,6 +1460,17 @@ this.$watch('search', (val) => {
   }, 220);
 });
 
+this.$watch('modalOpen', (isOpen) => {
+  try {
+    if (isOpen && this.modalNode) {
+      this.pushPrettyUrl && this.pushPrettyUrl(this.modalNode);
+    } else {
+      this.resetPrettyUrl && this.resetPrettyUrl();
+    }
+  } catch(e) { console.warn('modalOpen watch', e); }
+});
+
+
 
           
 this.$watch('selectedUniverse', (val) => {
@@ -1510,7 +1521,55 @@ this.$watch('selectedUniverse', (val) => {
           this.cancelEditNote();
         },
 
-        buildNodeUrl(nodeId){ const node = this.nodes?.get(nodeId) || this.allNodes.find(n => String(n.id)===String(nodeId)); const u = node?.universe || ''; const base = location.origin + location.pathname; const params = new URLSearchParams({ u, node: String(nodeId) }); return `${base}?${params.toString()}`; },
+        
+makeSlug(str) {
+  return (str || '')
+    .toLocaleLowerCase('tr')
+    .normalize('NFD').replace(/[̀-\u036f]/g, '')
+    .replace(/ı/g,'i').replace(/İ/g,'i').replace(/ş/g,'s')
+    .replace(/ç/g,'c').replace(/ğ/g,'g').replace(/ö/g,'o').replace(/ü/g,'u')
+    .replace(/[^a-z0-9]+/g,'-')
+    .replace(/(^-|-$)/g,'');
+},
+nodeYear(n) {
+  const y = (n?.release_date || n?.date || '').toString();
+  const m = y.match(/\d{4}/);
+  return m ? m[0] : '';
+},
+prettyNodePath(node) {
+  const name = node?.label || node?.title || node?.name || '';
+  const raw = this.makeSlug(name);
+  const m = raw.match(/-(\d{4})$/);
+  const slugNoYear = m ? raw.slice(0, -5) : raw;
+  const yrFromSlug = m ? m[1] : null;
+  const yr = yrFromSlug || this.nodeYear(node);
+  const finalSlug = yr ? `${slugNoYear}-${yr}` : slugNoYear;
+
+  const parts = location.pathname.split('/').filter(Boolean);
+  const base = parts.length ? `/${parts[0]}` : '/evren';
+  return `${base}/${finalSlug}`;
+},
+pushPrettyUrl(node) {
+  try {
+    const url = new URL(location.href);
+    url.search = '';
+    url.hash = '';
+    url.pathname = this.prettyNodePath(node);
+    history.replaceState({}, '', url);
+  } catch(e) { console.warn('pushPrettyUrl', e); }
+},
+resetPrettyUrl() {
+  try {
+    const parts = location.pathname.split('/').filter(Boolean);
+    if (parts.length > 1) parts.pop();
+    const url = new URL(location.href);
+    url.pathname = '/' + parts.join('/');
+    url.search = '';
+    url.hash = '';
+    history.replaceState({}, '', url);
+  } catch(e) { console.warn('resetPrettyUrl', e); }
+},
+buildNodeUrl(nodeId){ const node = this.nodes?.get(nodeId) || this.allNodes.find(n => String(n.id)===String(nodeId)); const u = node?.universe || ''; const base = location.origin + location.pathname; const params = new URLSearchParams({ u, node: String(nodeId) }); return `${base}?${params.toString()}`; },
         shareNode(node, platform){ if (!node?.id) return; const url = this.buildNodeUrl(node.id); const text = `${node.label || node.id} — ${this.formatUniverseName(node.universe)}\n${url}`; const enc = encodeURIComponent(text); const shareUrl = platform === 'whatsapp' ? `https://api.whatsapp.com/send?text=${enc}` : platform === 'x' ? `https://twitter.com/intent/tweet?text=${enc}` : ''; if (shareUrl) window.open(shareUrl, '_blank', 'noopener'); },
         async loadData() {
           const evrenler = ["avatar","dc","harrypotter","marvel","matrix","middleearth","pixar","starwars"];
@@ -1521,7 +1580,31 @@ this.$watch('selectedUniverse', (val) => {
             this.allNodes = nodesTemp; this.allEdges = edgesTemp; this.universeList = [...new Set(this.allNodes.map(n => n.universe))];
             this.allNodes.filter(n => n.image).forEach(n => { const i = new Image(); i.decoding='async'; i.src = n.image; });
             
-            const params = new URLSearchParams(location.search);
+            
+            // Pretty URL: /evren/<slug>[-YYYY] varsa, node'u bul ve modal aç
+            {
+              const segs = location.pathname.split('/').filter(Boolean);
+              const last = segs[segs.length - 1];
+              if (last && last !== 'evren') {
+                const m = last.match(/(.+?)-(\d{4})$/);
+                const wantSlug = (m ? m[1] : last);
+                const wantYear = (m ? m[2] : null);
+                const node = this.allNodes.find(n => {
+                  const slug = this.makeSlug(n.label || n.title || n.name);
+                  const yr   = this.nodeYear(n);
+                  return slug === wantSlug && (!wantYear || yr === wantYear);
+                });
+                if (node) {
+                  this.selectedUniverse = node.universe;
+                  this.applyFilters();
+                  this.$nextTick(() => this.openNode(node.id));
+                  // pretty path kullanıldı; query param bloğunu atla
+                } else {
+                  // devam et ve query paramlarını dene
+                }
+              }
+            }
+const params = new URLSearchParams(location.search);
             const qU = params.get('u'); const qNode = params.get('node');
             if (qU && this.universeList.includes(qU)) this.selectedUniverse = qU;
             this.applyFilters();
@@ -1655,7 +1738,19 @@ const searchTerm = this.norm(this.search);
 <script>
     const SHARE_PHRASES = { more: 'Devamı için ziyaret et:', farewell: 'Sinemayla kalın.', dash: ' — ' };
     const EMOJI = { title: '🎬', date: '📅', summary: '📝', more: '👉', link: '🔗', bye: '🍿' };
-    function preferredUrl(node) { const base = typeof window !== 'undefined' ? window.location.origin + window.location.pathname : ''; const id = node?.id ? `#${node.id}` : ''; return node?.url || base + id; }
+    function preferredUrl(node){
+  const name = (node?.label || node?.title || node?.name || '').toString();
+  const raw = (window.app?.makeSlug ? window.app.makeSlug(name) : name.toLowerCase().replace(/\s+/g,'-'));
+  const m = raw.match(/-(\d{4})$/);
+  const slugNoYear = m ? raw.slice(0, -5) : raw;
+  const yrFromSlug = m ? m[1] : null;
+  const yr = yrFromSlug || (window.app?.nodeYear ? window.app.nodeYear(node) : '');
+  const finalSlug = yr ? `${slugNoYear}-${yr}` : slugNoYear;
+
+  const parts = location.pathname.split('/').filter(Boolean);
+  const base = parts.length ? `/${parts[0]}` : '/evren';
+  return location.origin + `${base}/${finalSlug}`;
+}
     function composeShareText(node) {
       const filmAdi  = node?.label || node?.title || node?.name || 'Bu yapım';
       const line1 = `${EMOJI.title} ${filmAdi}`;
