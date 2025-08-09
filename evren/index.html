@@ -159,6 +159,20 @@
 
 
 <body :class="{ 'overflow-hidden': modalOpen }" class="dark flex-col min-h-screen flex">
+<!-- GH Pages SPA redirect consumer -->
+<script>
+(function(){
+  try {
+    var r = sessionStorage.getItem('redirect');
+    if (r) {
+      sessionStorage.removeItem('redirect');
+      // Put the original path back into the address bar (no reload)
+      if (history && history.replaceState) history.replaceState({}, '', r);
+    }
+  } catch(e) { /* ignore */ }
+})();
+</script>
+
 <img :src="bgUrl" alt="" id="bgImg"/>
 <div id="bgOverlay"></div>
 <style>
