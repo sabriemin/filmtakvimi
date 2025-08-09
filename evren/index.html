@@ -177,24 +177,27 @@
 <img :src="bgUrl" alt="" id="bgImg"/>
 <div id="bgOverlay"></div>
 <style>
-  @media (max-width: 639px) {
-    .mobile-centered {
-      max-height: 70vh;
-      overflow-y: auto;
-      position: relative;
-      top: 45%;
-      transform: translateY(-50%);
-    }
+@media (max-width: 639px) {
+  .mobile-centered {
+    max-height: 70vh;
+    overflow-y: auto;
+    position: relative;
+    top: 45%;
+    transform: translateY(-50%);
+    padding: 1rem;         /* p-6 yerine daha az */
+    font-size: 0.85rem;    /* text-sm yerine daha küçük */
   }
+}
+
 </style>
 
 <!-- Hoş Geldin Bilgilendirmesi -->
 <div x-show="!selectedUniverse && !panel"
      class="fixed inset-0 flex items-center justify-center z-50">
   <div style="max-height: 70vh; overflow-y: auto; " class="mobile-centered bg-black/85 text-white border border-white/10 rounded-2xl shadow-2xl p-6 text-sm w-[90%] max-w-2xl backdrop-blur-md space-y-4">
-    <h2 class="text-2xl font-bold text-center">🎬 Film Evreni Ağı'na Hoş Geldin!</h2>
+    <h2 class="text-xl sm:text-2xl font-bold text-center">🎬 Film Evreni Ağı'na Hoş Geldin!</h2>
     <p class="text-base text-center text-white/80">Bu platform, farklı sinematik evrenler arasında bağ kurmanı ve yapımları daha derinlemesine keşfetmeni sağlar.</p>
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm mt-2">
+    <div class="grid grid-cols-1 gap-2 text-xs mt-1 sm:grid-cols-2 sm:gap-4 sm:text-sm">
       <div class="bg-white/10 rounded-lg p-4 border border-white/10">
         <h3 class="font-semibold mb-2">🗺️ Etkileşimli Harita</h3>
         <p>Seçtiğin evrene ait yapımlar arasındaki bağlantıları grafik olarak görebilirsin.</p>
