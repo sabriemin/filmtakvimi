@@ -181,7 +181,7 @@
       max-height: 70vh;
       overflow-y: auto;
       position: relative;
-      top: 38%;
+      top: 50%;
       transform: translateY(-50%);
     }
   }
@@ -1438,7 +1438,11 @@ this.$watch && this.$watch('filters', (v) => {
   localStorage.setItem('filters', JSON.stringify(v));
 });
 
-this.showLegend = true;
+  if (window.innerWidth < 640) {
+    this.showLegend = false;
+  } else {
+    this.showLegend = true;
+  }
           try { const old = localStorage.getItem('comments'); if (old && !localStorage.getItem('notes')) { localStorage.setItem('notes', old); localStorage.removeItem('comments'); } } catch {}
           this.loadWatchLater(); this.loadNotes(); this.network = null;
           this.setBackgroundFor(this.selectedUniverse); this.warmBackgrounds();
