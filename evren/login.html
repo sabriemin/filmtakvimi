@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="tr" data-theme="auto">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#0b1220" id="meta-theme-color" />
+<title>Kod + Şifre ile Giriş</title>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<style>
+  /* === Tema Değişkenleri === */
+  :root {
+    --bg: #0b1220;
+    --bg-2: #0f172a;
+    --card: rgba(255,255,255,0.06);
+    --card-stroke: rgba(255,255,255,0.08);
+    --txt: #e5e7eb;
+    --muted: #a3a3a3;
+    --primary: #6366f1;
+    --primary-2:#4f46e5;
+    --success:#22c55e;
+    --error:#f87171;
+    --focus: 0 0 0 3px rgba(99,102,241,.45);
+    --shadow: 0 18px 45px rgba(0,0,0,.35);
+    --input: rgba(255,255,255,.10);
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #f5f7fb;
+      --bg-2: #eef2ff;
+      --card: rgba(255,255,255,0.9);
+      --card-stroke: rgba(17,24,39,.06);
+      --txt: #0f172a;
+      --muted: #6b7280;
+      --input: rgba(15,23,42,.06);
+      --shadow: 0 18px 45px rgba(15,23,42,.08);
+    }
+  }
+  html[data-theme="dark"] {
+    --bg:#0b1220; --bg-2:#0f172a; --card:rgba(255,255,255,0.06); --card-stroke:rgba(255,255,255,0.08);
+    --txt:#e5e7eb; --muted:#a3a3a3; --input:rgba(255,255,255,.10); --shadow:0 18px 45px rgba(0,0,0,.35);
+  }
+  html[data-theme="light"] {
+    --bg:#f5f7fb; --bg-2:#eef2ff; --card:rgba(255,255,255,0.9); --card-stroke:rgba(17,24,39,.06);
+    --txt:#0f172a; --muted:#6b7280; --input:rgba(15,23,42,.06); --shadow:0 18px 45px rgba(15,23,42,.08);
+  }
+
+  /* === Global === */
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji","Segoe UI Emoji";
+    color: var(--txt);
+    min-height: 100dvh; /* mobil / iOS güvenli */
+    background:
+      radial-gradient(1200px 800px at 10% -10%, var(--bg-2) 0%, transparent 60%),
+      radial-gradient(1000px 700px at 110% 20%, var(--bg-2) 0%, transparent 55%),
+      var(--bg);
+    display: grid;
+    place-items: center;
+    padding: max(16px, env(safe-area-inset-top)) max(16px, env(safe-area-inset-right)) max(16px, env(safe-area-inset-bottom)) max(16px, env(safe-area-inset-left));
+  }
+
+  .wrap {
+    width: min(94vw, 420px);
+  }
+
+  .brand {
+    display:flex; align-items:center; justify-content:center; gap:10px; margin-bottom:14px;
+    user-select:none;
+  }
+  .brand .logo {
+    width:32px; height:32px; border-radius:10px;
+    background: linear-gradient(135deg, var(--primary), var(--primary-2));
+    box-shadow: 0 8px 20px rgba(99,102,241,.45);
+  }
+  .brand h1 {
+    font-size: 18px; letter-spacing:.3px; margin:0; font-weight:700;
+  }
+
+  .card {
+    background: var(--card);
+    backdrop-filter: blur(10px);
+    box-shadow: var(--shadow);
+    border: 1px solid var(--card-stroke);
+    border-radius: 16px;
+    padding: 18px;
+    animation: fade .5s ease;
+  }
+  .card h2 {
+    margin: 2px 0 8px;
+    font-size: 20px;
+    text-align:center;
+  }
+  .sub { color: var(--muted); font-size: 14px; text-align:center; margin-bottom: 10px; }
+
+  .field { margin: 10px 0; }
+  .label { font-size: 13px; color: var(--muted); margin-bottom: 6px; display:block; }
+  .control {
+    position: relative;
+  }
+  input {
+    width: 100%;
+    padding: 12px 40px 12px 12px;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    background: var(--input);
+    color: var(--txt);
+    outline: none;
+    font-size: 15px;
+    transition: .2s;
+  }
+  input::placeholder { color: color-mix(in oklab, var(--muted) 80%, var(--txt)); }
+  input:focus { box-shadow: var(--focus); border-color: color-mix(in oklab, var(--primary) 60%, transparent); }
+  .trailing {
+    position:absolute; right:8px; top:50%; translate:0 -50%;
+    display:flex; align-items:center; gap:6px;
+  }
+  .icon-btn {
+    border: 0; background: transparent; width: 32px; height: 32px; border-radius: 8px; cursor: pointer;
+    display:grid; place-items:center; color: var(--muted);
+  }
+  .icon-btn:hover { background: color-mix(in oklab, var(--input) 80%, transparent); color: var(--txt); }
+  .btn {
+    width: 100%; padding: 12px; border-radius: 12px; border: none; cursor: pointer;
+    background: linear-gradient(90deg, var(--primary), var(--primary-2));
+    color: #fff; font-weight: 700; letter-spacing:.3px; font-size: 15px;
+    transition: transform .15s ease;
+  }
+  .btn:hover { transform: translateY(-1px); }
+  .btn:active { transform: translateY(0); }
+  .btn[disabled] { opacity:.6; cursor:not-allowed; }
+
+  .row {
+    display:flex; gap:10px; align-items:center; justify-content:space-between; margin-top:8px;
+  }
+  .link-btn {
+    appearance:none; border:0; background:transparent; color: var(--primary-2); cursor:pointer; padding: 6px 0;
+    font-size: 14px;
+  }
+  .msg { min-height: 22px; margin-top: 8px; font-size: 14px; text-align:center; }
+  .msg.error { color: var(--error); }
+  .msg.ok { color: var(--success); }
+
+  .theme-switch {
+    position:fixed; right: max(14px, env(safe-area-inset-right)); top: max(14px, env(safe-area-inset-top));
+    z-index:2;
+  }
+
+  @keyframes fade { from {opacity:0; translate:0 6px;} to {opacity:1; translate:0 0;} }
+  @media (min-width: 480px) {
+    .card { padding: 22px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    * { animation: none !important; transition: none !important; }
+  }
+</style>
+</head>
+<body>
+  <!-- Tema Anahtarı -->
+  <div class="theme-switch">
+    <button class="icon-btn" id="themeToggle" aria-label="Temayı değiştir" title="Tema">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.64 13a9 9 0 1 1-10.63-10.6 1 1 0 0 1 1.11 1.45A7 7 0 1 0 19.2 11.9a1 1 0 0 1 1.45-1.11l.99.21z"/></svg>
+    </button>
+  </div>
+
+  <div class="wrap">
+    <div class="brand">
+      <div class="logo" aria-hidden="true"></div>
+      <h1>Evren Admin</h1>
+    </div>
+
+    <div class="card" role="region" aria-labelledby="title">
+      <h2 id="title">🔐 Admin Girişi</h2>
+      <p class="sub">E-posta ile doğrulama kodu + admin şifresi</p>
+
+      <!-- Adım 1 -->
+      <div id="step1" aria-live="polite">
+        <div class="field">
+          <label for="email" class="label">E-posta</label>
+          <div class="control">
+            <input id="email" type="email" inputmode="email" autocomplete="email" placeholder="ornek@mail.com" />
+          </div>
+        </div>
+        <button id="sendCode" class="btn">Kod Gönder</button>
+        <div class="row">
+          <span style="font-size:13px;color:var(--muted)">Kod 5 dakika geçerli.</span>
+        </div>
+        <div class="msg" id="msg1" role="status" aria-live="polite"></div>
+      </div>
+
+      <!-- Adım 2 -->
+      <div id="step2" style="display:none;" aria-live="polite">
+        <div class="field">
+          <label for="codeInput" class="label">6 Haneli Kod</label>
+          <div class="control">
+            <input id="codeInput" type="text" inputmode="numeric" pattern="[0-9]*" maxlength="6" placeholder="••••••" aria-describedby="codeHelp" />
+            <div id="codeHelp" class="label" style="margin-top:6px;">E-postana gelen kodu gir.</div>
+            <div class="trailing">
+              <button id="pasteCode" class="icon-btn" aria-label="Kodu yapıştır">
+                📋
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="passInput" class="label">Admin Şifresi</label>
+          <div class="control">
+            <input id="passInput" type="password" autocomplete="current-password" placeholder="Şifren" />
+            <div class="trailing">
+              <button id="togglePass" class="icon-btn" aria-label="Şifreyi göster/gizle">👁️</button>
+            </div>
+          </div>
+        </div>
+
+        <button id="verifyCode" class="btn">Giriş Yap</button>
+
+        <div class="row">
+          <button id="resend" class="link-btn" disabled>Yeniden kod gönder (60)</button>
+          <span id="expires" style="font-size:13px;color:var(--muted)">Süre: 05:00</span>
+        </div>
+
+        <div class="msg" id="msg2" role="status" aria-live="polite"></div>
+      </div>
+    </div>
+  </div>
+
+<script>
+(() => {
+  // === Tema ===
+  const metaTheme = document.getElementById('meta-theme-color');
+  const root = document.documentElement;
+  const savedTheme = localStorage.getItem('theme'); // 'light' | 'dark' | 'auto'
+  if (savedTheme) root.setAttribute('data-theme', savedTheme);
+  updateMetaColor();
+
+  document.getElementById('themeToggle').addEventListener('click', () => {
+    const cur = root.getAttribute('data-theme') || 'auto';
+    const next = cur === 'auto' ? 'dark' : cur === 'dark' ? 'light' : 'auto';
+    root.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+    updateMetaColor();
+  });
+
+  function updateMetaColor() {
+    const theme = getComputedStyle(document.documentElement).getPropertyValue('--bg').trim();
+    metaTheme.setAttribute('content', theme);
+  }
+
+  // === EmailJS ===
+  emailjs.init("7UKhuE7htA-_Kgs1q"); // Public Key
+  const serviceID = "service_5wutqka";
+  const templateID = "template_hephzpl";
+  const PASSWORD_HASH = "979156e02ac4618099f716e758f80d5cf6a8aaf9cc32834b960d71a3fba9eefe"; // Admin1997 hash
+
+  const el = {
+    step1: document.getElementById('step1'),
+    step2: document.getElementById('step2'),
+    email: document.getElementById('email'),
+    send: document.getElementById('sendCode'),
+    msg1: document.getElementById('msg1'),
+    msg2: document.getElementById('msg2'),
+    code: document.getElementById('codeInput'),
+    pass: document.getElementById('passInput'),
+    verify: document.getElementById('verifyCode'),
+    togglePass: document.getElementById('togglePass'),
+    pasteCode: document.getElementById('pasteCode'),
+    resend: document.getElementById('resend'),
+    expires: document.getElementById('expires'),
+  };
+
+  let generatedCode = null;
+  let codeExpiry = null; // timestamp
+  let countdown = null;  // interval id
+  let resendCountdown = null;
+  let remaining = 0;
+
+  function setCookie(name, value, minutes) {
+    let expires = "";
+    if (minutes) {
+      const date = new Date();
+      date.setTime(date.getTime() + (minutes*60*1000));
+      expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = `${name}=${value || ""}${expires}; path=/; SameSite=Strict`;
+  }
+
+  async function sha256Hex(text) {
+    const buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(text));
+    return [...new Uint8Array(buf)].map(b => b.toString(16).padStart(2, '0')).join('');
+  }
+
+  function showMsg(target, text, type = '') {
+    target.className = 'msg ' + (type || '');
+    target.textContent = text || '';
+  }
+
+  function formatMMSS(msLeft) {
+    const s = Math.max(0, Math.floor(msLeft / 1000));
+    const m = String(Math.floor(s / 60)).padStart(2, '0');
+    const r = String(s % 60).padStart(2, '0');
+    return `${m}:${r}`;
+  }
+
+  // Kod gönder
+  el.send.addEventListener('click', async () => {
+    const email = el.email.value.trim();
+    if (!email) { showMsg(el.msg1, "E-posta adresini gir.", "error"); return; }
+
+    el.send.disabled = true; showMsg(el.msg1, "Kod gönderiliyor…");
+    try {
+      generatedCode = Math.floor(100000 + Math.random() * 900000).toString();
+      codeExpiry = Date.now() + (5 * 60 * 1000); // 5 dk
+      const params = { to_email: email, code: generatedCode };
+      await emailjs.send(serviceID, templateID, params);
+
+      // UI
+      el.step1.style.display = "none";
+      el.step2.style.display = "block";
+      showMsg(el.msg2, "Kod e-postana gönderildi!", "ok");
+
+      // sayaçlar
+      startExpiryCountdown();
+      startResendCountdown(60);
+    } catch (err) {
+      console.error(err);
+      showMsg(el.msg1, "Gönderim başarısız. Lütfen tekrar dene.", "error");
+    } finally {
+      el.send.disabled = false;
+    }
+  });
+
+  function startExpiryCountdown() {
+    stopExpiryCountdown();
+    countdown = setInterval(() => {
+      const left = codeExpiry - Date.now();
+      el.expires.textContent = "Süre: " + formatMMSS(left);
+      if (left <= 0) {
+        stopExpiryCountdown();
+        showMsg(el.msg2, "Kodun süresi doldu. Yeniden kod gönder.", "error");
+      }
+    }, 500);
+  }
+  function stopExpiryCountdown() { if (countdown) { clearInterval(countdown); countdown = null; } }
+
+  function startResendCountdown(sec) {
+    clearInterval(resendCountdown);
+    remaining = sec;
+    el.resend.disabled = true;
+    el.resend.textContent = `Yeniden kod gönder (${remaining})`;
+    resendCountdown = setInterval(() => {
+      remaining--;
+      el.resend.textContent = `Yeniden kod gönder (${remaining})`;
+      if (remaining <= 0) {
+        clearInterval(resendCountdown);
+        el.resend.disabled = false;
+        el.resend.textContent = "Yeniden kod gönder";
+      }
+    }, 1000);
+  }
+
+  el.resend.addEventListener('click', () => {
+    // Adım 1 butonunu tetikle
+    el.step1.style.display = "block";
+    el.step2.style.display = "none";
+    showMsg(el.msg1, "Kod tekrar gönderiliyor…");
+    el.send.click();
+  });
+
+  // Şifre göster / gizle
+  el.togglePass.addEventListener('click', () => {
+    const t = el.pass.getAttribute('type') === 'password' ? 'text' : 'password';
+    el.pass.setAttribute('type', t);
+    el.togglePass.textContent = t === 'password' ? '👁️' : '🙈';
+  });
+
+  // Kodu yapıştır (Clipboard API)
+  el.pasteCode.addEventListener('click', async () => {
+    try {
+      const txt = await navigator.clipboard.readText();
+      const onlyNums = (txt || '').replace(/\D/g, '').slice(0,6);
+      if (onlyNums.length === 6) {
+        el.code.value = onlyNums;
+        showMsg(el.msg2, "Kod yapıştırıldı.", "ok");
+      } else {
+        showMsg(el.msg2, "Panoda 6 haneli bir kod bulunamadı.", "error");
+      }
+    } catch {
+      showMsg(el.msg2, "Panoya erişilemedi.", "error");
+    }
+  });
+
+  // Giriş
+  document.getElementById('verifyCode').addEventListener('click', async () => {
+    const enteredCode = el.code.value.trim();
+    const enteredPass = el.pass.value;
+
+    if (!enteredCode || !enteredPass) { showMsg(el.msg2, "Kod ve şifreyi gir.", "error"); return; }
+    if (!generatedCode || !codeExpiry) { showMsg(el.msg2, "Önce kod al.", "error"); return; }
+    if (Date.now() > codeExpiry) { showMsg(el.msg2, "Kodun süresi doldu.", "error"); return; }
+    if (enteredCode !== generatedCode) { showMsg(el.msg2, "Kod yanlış.", "error"); return; }
+
+    const enteredHash = await sha256Hex(enteredPass);
+    if (enteredHash !== PASSWORD_HASH) { showMsg(el.msg2, "Şifre yanlış.", "error"); return; }
+
+    // Başarılı
+    setCookie("admin_token", generatedCode, 30); // 30 dk
+    showMsg(el.msg2, "Giriş başarılı, yönlendiriliyorsun…", "ok");
+    el.verify.disabled = true;
+    setTimeout(() => { window.location.href = "/evren/admin.html"; }, 400);
+  });
+})();
+</script>
+</body>
+</html>
