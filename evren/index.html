@@ -11,7 +11,7 @@
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/shepherd.js@8.4.1/dist/js/shepherd.min.js"></script>
-<script src="data/shepherd.min.js"></script>
+<script src="assets/js/shepherd.min.js"></script>
 
 
 <style>
@@ -31,7 +31,7 @@
     .dropdown-item { cursor: pointer; }
     .dropdown-item:hover { background: rgba(255,255,255,0.06); }
     .modal-bg { background: rgba(0,0,0,0.75); backdrop-filter: blur(4px); }
-    .modal-content { width: 92vw; max-width: 780px; max-height: 85vh; overflow-y: auto; background: #0f172a; color: #e5e7eb; border-radius: 18px; padding: 0; box-shadow: 0 12px 24px rgba(0,0,0,0.45); position: relative; border: 1px solid rgba(255,255,255,0.08); }
+    .modal-content { width: 92vw; max-width: 780px; max-height: 85vh; overflow-y: auto; background: #0f172a; color: #e5e7eb; border-radius: 18px; padding: 0; box-shadow: 0 12px 24px rgba(0,0,0,0.45); position: absolute; top: 10px; border: 1px solid rgba(255,255,255,0.08); }
     .modal-header { display: grid; grid-template-columns: 120px 1fr; gap: 16px; padding: 16px; border-bottom: 1px solid rgba(255,255,255,0.06); background: radial-gradient(1200px 400px at -20% -40%, rgba(239,68,68,0.08), transparent); }
     .poster { width: 120px; height: 160px; border-radius: 10px; object-fit: cover; background: #111827; border: 1px solid rgba(255,255,255,0.08); }
     .modal-body { padding: 16px; }
@@ -299,6 +299,7 @@
     <!-- Filtre butonu: mobil -->
     <button
       @click="openFilterPanel = !openFilterPanel"
+      id="filter_btn"
       class="relative flex sm:hidden items-center justify-center w-9 h-9 border border-white/30 hover:bg-white/10 rounded-md transition"
       title="Filtreler">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -758,361 +759,438 @@ class="w-32 h-32 rounded-full object-cover drop-shadow-[0_0_20px_rgba(168,85,247
 </script>
 
 
-<script>
-    function app() {
-      return {
-    panel: null,
-        panel: null,
-    panel: null,
-    startTour() {
-      const dropdown = document.querySelector('.dropdown-btn');
-      dropdown?.classList.add('pointer-events-none', 'opacity-50');
-      dropdown?.setAttribute('disabled', 'true');
-      // Shepherd rehberi: Baştan sona adımlar
+    <script>
+      function app() {
+        return {
+          panel: null,
+          startTour() {
+            const dropdown = document.querySelector(".dropdown-btn");
+            dropdown?.classList.add("pointer-events-none", "opacity-50");
+            dropdown?.setAttribute("disabled", "true");
+            // Shepherd rehberi: Baştan sona adımlar
 
-const tour = new Shepherd.Tour({
-  defaultStepOptions: {
-    scrollTo: true,
-    cancelIcon: { enabled: true }
-  }
-});
+            const tour = new Shepherd.Tour({
+              defaultStepOptions: {
+                scrollTo: true,
+                cancelIcon: { enabled: true },
+              },
+            });
 
-// 1. Hoş Geldin
-tour.addStep({
-  title: 'Hoş Geldin 🎬',
-  text: 'Film Evreni Ağı’na hoş geldin!',
-  buttons: [{ text: 'İleri', action: tour.next }]
-});
+            // 1. Hoş Geldin
+            tour.addStep({
+              title: "Hoş Geldin 🎬",
+              text: "Film Evreni Ağı’na hoş geldin!",
+              buttons: [{ text: "İleri", action: tour.next }],
+            });
 
-// 2. Evren Seç
-tour.addStep({
-  title: 'Evren Seç 🌌',
-  text: 'Buradan bir evren seçebilirsin.',
-  attachTo: { element: '.dropdown-btn', on: 'bottom' },
-  buttons: [{
-    text: 'İleri',
-    action: function () {
-      const dropdown = document.querySelector('.dropdown-btn');
-      dropdown?.classList.remove('pointer-events-none', 'opacity-50');
-      dropdown?.removeAttribute('disabled');
-      tour.next();
-    }
-  }]
-});
+            // 2. Evren Seç
+            tour.addStep({
+              title: "Evren Seç 🌌",
+              text: "Buradan bir evren seçebilirsin.",
+              attachTo: { element: ".dropdown-btn", on: "bottom" },
+              buttons: [
+                {
+                  text: "İleri",
+                  action: function () {
+                    const dropdown = document.querySelector(".dropdown-btn");
+                    dropdown?.classList.remove("pointer-events-none", "opacity-50");
+                    dropdown?.removeAttribute("disabled");
+                    tour.next();
+                  },
+                },
+              ],
+            });
 
-// 3. Şimdi Evren Seç
-const isMobile = window.innerWidth < 640;
+            // 3. Şimdi Evren Seç
+            const isMobile = window.innerWidth < 640;
 
-tour.addStep({
-  title: '🌌 Evren Seç',
-  text: 'Lütfen bir evren seç.',
-  attachTo: {
-    element: '.dropdown-btn',
-    on: isMobile ? 'top' : 'left'
-  },
-  scrollTo: true,
-  buttons: [],
-  when: {
-    show() {
-      const geçerliMi = (val) => val && val !== '' && val !== 'all';
+            tour.addStep({
+              title: "🌌 Evren Seç",
+              text: "Lütfen bir evren seç.",
+              attachTo: {
+                element: ".dropdown-btn",
+                on: isMobile ? "top" : "left",
+              },
+              scrollTo: true,
+              buttons: [],
+              when: {
+                show() {
+                  const geçerliMi = (val) => val && val !== "" && val !== "all";
 
-      const kontrolEt = () => {
-        try {
-          const selected = Alpine.store('selectedUniverse') || Alpine.raw(Alpine.$data(document.querySelector('[x-data]'))).selectedUniverse;
+                  const kontrolEt = () => {
+                    try {
+                      const selected =
+                        Alpine.store("selectedUniverse") ||
+                        Alpine.raw(Alpine.$data(document.querySelector("[x-data]")))
+                          .selectedUniverse;
 
-          if (geçerliMi(selected)) {
-            clearInterval(interval);
-            tour.next();
-          }
-        } catch (e) {
-          // Alpine hazır değilse sessizce bekle
-        }
-      };
+                      if (geçerliMi(selected)) {
+                        clearInterval(interval);
+                        tour.next();
+                      }
+                    } catch (e) {
+                      // Alpine hazır değilse sessizce bekle
+                    }
+                  };
 
-      kontrolEt();
-      const interval = setInterval(kontrolEt, 400);
-    }
-  }
-});
+                  kontrolEt();
+                  const interval = setInterval(kontrolEt, 400);
+                },
+              },
+            });
+
+            // 4. Arama
+            tour.addStep({
+              title: "Film Ara 🔍",
+              text: "Film veya dizi aramak için burayı kullan.",
+              attachTo: { element: "input[type=search]", on: "bottom" },
+              buttons: [{ text: "İleri", action: tour.next }],
+            });
+
+            // 5. Yapım Grafiği
+            tour.addStep({
+              title: "Yapım Grafiği 📊",
+              text: "Seçilen evrene ait yapımlar bu ağ grafiğinde gösterilir. <br><br> Bir yapıma tıklayarak yapım bilgi panelini aç.",
+              attachTo: { element: "#network", on: "top" },
+              scrollTo: false,
+              buttons: [], // Buton göstermiyoruz
+              when: {
+                show() {
+                  const checkModalOpen = () => {
+                    const modal = document.querySelector(".modal-content");
+                    const h2 = modal?.querySelector("h2");
+                    const isVisible = modal && getComputedStyle(modal).display !== "none";
+                    const hasTitle = h2 && h2.textContent.trim().length > 0;
+                    return isVisible && hasTitle;
+                  };
+
+                  if (checkModalOpen()) {
+                    tour.next(); // Zaten açık ve içerik varsa direkt geç
+                    return;
+                  }
+
+                  // Aralıkla kontrol et
+                  const interval = setInterval(() => {
+                    if (checkModalOpen()) {
+                      clearInterval(interval);
+                      tour.next();
+                    }
+                  }, 400);
+                },
+              },
+            });
+
+            // 8. Paylaşım
+            tour.addStep({
+              title: "Paylaşım 🚀",
+              text: "Bu butonla yapım bağlantısını kopyalayabilir veya sosyal medyada paylaşabilirsin.",
+              attachTo: { element: 'button[title="Kopyala"]', on: "bottom" },
+              buttons: [{ text: "İleri", action: tour.next }],
+            });
+
+            // 9. Vizyon Tarihi
+            tour.addStep({
+              title: "🎬 Vizyon Tarihi",
+              text: "Burada yapımın vizyon tarihini görebilirsin.",
+              attachTo: { element: ".modal-content [x-text*=toTRDate]", on: "bottom" },
+              buttons: [{ text: "İleri", action: tour.next }],
+            });
+
+            // 10. Tür ve IMDB
+            tour.addStep({
+              title: "⭐ Tür ve IMDB",
+              text: "Yapımın türü ve IMDB puanı burada.",
+              attachTo: { element: ".modal-content .text-xs.flex", on: "bottom" },
+              buttons: [{ text: "İleri", action: tour.next }],
+            });
+
+            // 6. Favorilere Ekle
+            tour.addStep({
+              title: "Favorilere Ekle ⭐",
+              text: "Bir yapımı favorilerine eklemek için bu butonu kullan.",
+              attachTo: { element: "[x-text*=Favorilere]", on: "bottom" },
+              buttons: [
+                {
+                  text: "İleri",
+                  action: function () {
+                    const btn = document.querySelector("[x-text*=Favorilere]");
+                    if (btn && btn.textContent.includes("✔ Favorilere Eklendi")) {
+                      return tour.next();
+                    } else {
+                      alert("Lütfen önce favorilere ekle.");
+                    }
+                  },
+                },
+              ],
+            });
+
+            // 11. Tür / Yönetmen / Oyuncular
+            tour.addStep({
+              title: "🎭 Tür, Yönetmen, Oyuncular",
+              text: "Bu bölümde temel bilgiler yer alır.",
+              attachTo: { element: ".modal-content .grid > div:nth-child(1)", on: "bottom" },
+              buttons: [{ text: "İleri", action: tour.next }],
+            });
+
+            // 12. Evren ve Kaynaklar
+            tour.addStep({
+              title: "🌌 Evren ve Kaynaklar",
+              text: "Yapımın ait olduğu evreni ve kaynakları burada görebilirsin.",
+              attachTo: { element: ".modal-content .grid > div:nth-child(2)", on: "bottom" },
+              buttons: [{ text: "İleri", action: tour.next }],
+            });
+
+            // 13. İçerik Özeti
+            tour.addStep({
+              title: "📝 İçerik Özeti",
+              text: "Burada filmin kısa özeti yer alır.",
+              attachTo: {
+                element: "#content-summary",
+                on: "bottom",
+              },
+              scrollTo: true,
+              buttons: [{ text: "İleri", action: tour.next }],
+            });
+
+            // 14. Göndermeler
+            tour.addStep({
+              title: "🎯 Göndermeler",
+              text: "Filmde yapılan diğer yapımlara göndermeleri burada görebilirsiniz.",
+              attachTo: {
+                element: "#göndermeler",
+                on: "bottom",
+              },
+              scrollTo: true,
+              buttons: [{ text: "İleri", action: tour.next }],
+            });
+
+            // 15. Bağlantılı Yapımlar
+            tour.addStep({
+              title: "🔗 Bağlantılı Yapımlar",
+              text: "İlgili evrende geçen diğer yapımlar bu bölümde gösterilir.",
+              attachTo: {
+                element: "#related-works",
+                on: "bottom",
+              },
+              scrollTo: true,
+              buttons: [{ text: "İleri", action: tour.next }],
+            });
+
+            // 7. Not Ekle
+            tour.addStep({
+              title: "Not Ekle 📝",
+              text: "Buraya kişisel notlarını yazabilir, #etiket ekleyebilirsin.",
+              attachTo: {
+                element: 'input[placeholder="Not ekle... #etiket"]',
+                on: "bottom",
+              },
+              scrollTo: true,
+              buttons: [
+                {
+                  text: "İleri",
+                  action: () => tour.next(),
+                },
+              ],
+            });
+
+            // 16. Yapım Panelini Kapat
+            tour.addStep({
+              title: "📕 Yapım Panelini Kapat",
+              text: "Bu paneli kapatarak bir sonraki adıma geçebilirsin.",
+              attachTo: { element: "#modal-close", on: "top" },
+              scrollTo: true,
+              buttons: [],
+              when: {
+                show() {
+                  let modal;
+
+                  const interval = setInterval(() => {
+                    modal = document.querySelector("#modal_container");
+
+                    // Modal DOM'da bile değilse → kapandı demektir
+                    if (!modal) {
+                      clearInterval(interval);
+                      tour.next();
+                      return;
+                    }
+
+                    // Modal DOM'da ama görünmüyorsa
+                    const style = window.getComputedStyle(modal);
+                    const isHidden =
+                      style.display === "none" ||
+                      style.visibility === "hidden" ||
+                      style.opacity === "0" ||
+                      modal.classList.contains("hidden") ||
+                      modal.offsetWidth === 0 ||
+                      modal.offsetHeight === 0;
+
+                    if (isHidden) {
+                      clearInterval(interval);
+                      tour.next();
+                    }
+                  }, 300);
+                },
+              },
+            });
+
+            // 17. Oklar (İlişkiler)
+            tour.addStep({
+              title: "Oklar Neyi Gösterir? 🔁",
+              text: "Grafikteki oklar yapımlar arasındaki ilişkiyi gösterir.",
+              attachTo: { element: "#network canvas", on: "top" },
+              buttons: [{ text: "İleri", action: tour.next }],
+            });
+
+            // 18. Legend Alanı
+            tour.addStep({
+              title: "📘 Bağlantılar Açıklaması",
+              text: "Bağlantılar alanı evren renklerini ve türlerini açıklar.",
+              attachTo: { element: "#legend_bar", on: "top" },
+              buttons: [{ text: "İleri", action: tour.next }],
+            });
+
+            // Yardımcı: ekranda görünen filtre butonunu bul
+            function getVisibleFilterBtn() {
+              const btns = document.querySelectorAll('button[title="Filtreler"]');
+              for (const el of btns) {
+                const r = el.getBoundingClientRect();
+                const st = getComputedStyle(el);
+                const visible =
+                  r.width > 0 &&
+                  r.height > 0 &&
+                  st.visibility !== "hidden" &&
+                  st.display !== "none";
+                if (visible) return el;
+              }
+              return null;
+            }
+
+            // (startTour() içindeki mevcut "Filtreler" adımını bununla değiştir)
+            tour.addStep({
+              title: "🎯 Filtreler",
+              text: "Yapımları tür, yıl, IMDb ve tipine göre daraltabilirsin.",
+              // İlk bağlama denemesi; show()’da kesinleştireceğiz
+              attachTo: { element: "#filter_btn", on: "bottom" },
+              buttons: [
+                {
+                  text: "İleri",
+                  action: function () {
+                    const btn = getVisibleFilterBtn();
+                    tour.next();
+                  },
+                },
+              ],
+              when: {
+                show() {
+                  // Görünür butonu bul ve adımı ona yeniden bağla
+                  const btn = getVisibleFilterBtn();
+                  if (btn) {
+                    const step = tour.currentStep;
+                    step.updateStepOptions({
+                      attachTo: { element: btn, on: "bottom" },
+                    });
+                  }
+                },
+              },
+            });
+
+            // Timeline
+            tour.addStep({
+              title: "📅 Zaman Çizelgesi",
+              text: "Seçili evrendeki yapımları çıkış yıllarına göre sırayla burada görebilirsin.",
+              attachTo: { element: "#timeline_bar", on: "top" },
+              buttons: [
+                {
+                  text: "İleri",
+                  action: function () {
+                    const btn = document.querySelector("#timeline_bar");
+                    if (!btn) return tour.next();
+
+                    tour.next();
+                  },
+                },
+              ],
+            });
+
+            // 19. Favori ve Not Paneli
+            tour.addStep({
+              title: "📂 Sağ Alt Panel",
+              text: "Sağ altta favori ve notları görmek için bu alanı kullanabilirsin.",
+              attachTo: { element: "#panel_bar", on: "top" },
+              scrollTo: false,
+              buttons: [
+                {
+                  text: "İleri",
+                  action: function () {
+                    // Panel içeriği DOM'da görünür mü kontrol et
+                    const panel = document.querySelector('[x-show="panelOpen"]');
+
+                    const isVisible = panel && window.getComputedStyle(panel).display !== "none";
+
+                    if (isVisible) {
+                      tour.next();
+                      return;
+                    }
+
+                    alert("Lütfen önce paneli açmalısın.");
+
+                    // Panel açıldığında bekle ve sonra ilerle
+                    const interval = setInterval(() => {
+                      const nowVisible = panel && window.getComputedStyle(panel).display !== "none";
+                      if (nowVisible) {
+                        clearInterval(interval);
+                        tour.next();
+                      }
+                    }, 400); // her 0.4 sn'de bir kontrol et
+                  },
+                },
+              ],
+            });
+
+            // 20. Favori Yönetimi
+            tour.addStep({
+              title: "⭐ Favorileri Gör ve Sil",
+              text: "Bu alanda favori yapımları görebilir ve silebilirsin.",
+              attachTo: { element: "#fav_bar", on: "left" },
+              buttons: [{ text: "İleri", action: tour.next }],
+            });
+
+            // 21. Not Yönetimi
+            tour.addStep({
+              title: "📝 Notları Gör, Düzenle, Sil",
+              text: "Notlarını bu alanda görüntüleyebilir, düzenleyebilir ya da silebilirsin.",
+              attachTo: { element: "#notlar_bar", on: "left" },
+              buttons: [{ text: "İleri", action: tour.next }],
+            });
+
+            // 22. Tur Bitti 🎉
+            tour.addStep({
+              title: "Tebrikler! 🎉",
+              text: "Film Evreni Ağı rehberini başarıyla tamamladın. Keşfetmeye hazırsın!",
+              buttons: [{ text: "Kapat", action: tour.complete }],
+            });
+            tour.start();
+
+            document.addEventListener("keydown", function (e) {
+              if (e.key === "Enter") {
+                // Eğer aktif bir step varsa ve ileri butonu varsa ilerlet
+                const step = tour.currentStep;
+                if (step) {
+                  // Eğer adımda butonlar varsa ilk "next" action'ını çalıştır
+                  const nextBtn = step.options.buttons?.find((b) => b.action === tour.next);
+                  if (nextBtn) {
+                    tour.next();
+                  } else {
+                    // Eğer özel action varsa onu çalıştır
+                    const btnWithAction = step.options.buttons?.[0];
+                    btnWithAction?.action?.();
+                  }
+                }
+              }
+            });
+          },
 
 
-
-
-// 4. Arama
-tour.addStep({
-  title: 'Film Ara 🔍',
-  text: 'Film veya dizi aramak için burayı kullan.',
-  attachTo: { element: 'input[type=search]', on: 'bottom' },
-  buttons: [{ text: 'İleri', action: tour.next }]
-});
-
-// 5. Yapım Grafiği
-tour.addStep({
-  title: 'Yapım Grafiği 📊',
-  text: 'Seçilen evrene ait yapımlar bu ağ grafiğinde gösterilir. <br><br> Bir yapıma tıklayarak yapım bilgi panelini aç.',
-  attachTo: { element: '#network', on: 'top' },
-  scrollTo: false,
-  buttons: [], // Buton göstermiyoruz
-  when: {
-    show() {
-      const checkModalOpen = () => {
-        const modal = document.querySelector('.modal-content');
-        const h2 = modal?.querySelector('h2');
-        const isVisible = modal && getComputedStyle(modal).display !== 'none';
-        const hasTitle = h2 && h2.textContent.trim().length > 0;
-        return isVisible && hasTitle;
-      };
-
-      if (checkModalOpen()) {
-        tour.next(); // Zaten açık ve içerik varsa direkt geç
-        return;
-      }
-
-      // Aralıkla kontrol et
-      const interval = setInterval(() => {
-        if (checkModalOpen()) {
-          clearInterval(interval);
-          tour.next();
-        }
-      }, 400);
-    }
-  }
-});
-
-
-
-// 8. Paylaşım
-tour.addStep({
-  title: 'Paylaşım 🚀',
-  text: 'Bu butonla yapım bağlantısını kopyalayabilir veya sosyal medyada paylaşabilirsin.',
-  attachTo: { element: 'button[title="Kopyala"]', on: 'bottom' },
-  buttons: [{ text: 'İleri', action: tour.next }]
-});
-
-// 9. Vizyon Tarihi
-tour.addStep({
-  title: '🎬 Vizyon Tarihi',
-  text: 'Burada yapımın vizyon tarihini görebilirsin.',
-  attachTo: { element: '.modal-content [x-text*=toTRDate]', on: 'bottom' },
-  buttons: [{ text: 'İleri', action: tour.next }]
-});
-
-// 10. Tür ve IMDB
-tour.addStep({
-  title: '⭐ Tür ve IMDB',
-  text: 'Yapımın türü ve IMDB puanı burada.',
-  attachTo: { element: '.modal-content .text-xs.flex', on: 'bottom' },
-  buttons: [{ text: 'İleri', action: tour.next }]
-});
-
-// 6. Favorilere Ekle
-tour.addStep({
-  title: 'Favorilere Ekle ⭐',
-  text: 'Bir yapımı favorilerine eklemek için bu butonu kullan.',
-  attachTo: { element: '[x-text*=Favorilere]', on: 'bottom' },
-  buttons: [{
-    text: 'İleri',
-    action: function () {
-      const btn = document.querySelector('[x-text*=Favorilere]');
-      if (btn && btn.textContent.includes('✔ Favorilere Eklendi')) {
-        return tour.next();
-      } else {
-        alert('Lütfen önce favorilere ekle.');
-      }
-    }
-  }]
-});
-
-// 11. Tür / Yönetmen / Oyuncular
-tour.addStep({
-  title: '🎭 Tür, Yönetmen, Oyuncular',
-  text: 'Bu bölümde temel bilgiler yer alır.',
-  attachTo: { element: '.modal-content .grid > div:nth-child(1)', on: 'bottom' },
-  buttons: [{ text: 'İleri', action: tour.next }]
-});
-
-// 12. Evren ve Kaynaklar
-tour.addStep({
-  title: '🌌 Evren ve Kaynaklar',
-  text: 'Yapımın ait olduğu evreni ve kaynakları burada görebilirsin.',
-  attachTo: { element: '.modal-content .grid > div:nth-child(2)', on: 'bottom' },
-  buttons: [{ text: 'İleri', action: tour.next }]
-});
-
-// 13. İçerik Özeti
-tour.addStep({
-  title: "📝 İçerik Özeti",
-  text: "Burada filmin kısa özeti yer alır.",
-  attachTo: {
-    element: "#content-summary",
-    on: "bottom"
-  },
-  scrollTo: true,
-  buttons: [{ text: 'İleri', action: tour.next }]
-});
-
-// 14. Göndermeler
-tour.addStep({
-  title: "🎯 Göndermeler",
-  text: "Filmde yapılan diğer yapımlara göndermeleri burada görebilirsiniz.",
-  attachTo: {
-    element: "#göndermeler",
-    on: "bottom"
-  },
-  scrollTo: true,
-  buttons: [{ text: 'İleri', action: tour.next }]
-});
-
-// 15. Bağlantılı Yapımlar
-tour.addStep({
-  title: "🔗 Bağlantılı Yapımlar",
-  text: "İlgili evrende geçen diğer yapımlar bu bölümde gösterilir.",
-  attachTo: {
-    element: "#related-works",
-    on: "bottom"
-  },
-  scrollTo: true,
-  buttons: [{ text: 'İleri', action: tour.next }]
-});
-
-
-// 7. Not Ekle
-tour.addStep({
-  title: 'Not Ekle 📝',
-  text: 'Buraya kişisel notlarını yazabilir, #etiket ekleyebilirsin.',
-  attachTo: {
-    element: 'input[placeholder="Not ekle... #etiket"]',
-    on: "bottom"
-  },
-  scrollTo: true,
-  buttons: [{
-    text: 'İleri',
-    action: () => tour.next()
-  }]
-});
-
-
-// 16. Yapım Panelini Kapat
-tour.addStep({
-  title: '📕 Yapım Panelini Kapat',
-  text: 'Bu paneli kapatarak bir sonraki adıma geçebilirsin.',
-  attachTo: { element: '#modal-close', on: 'top' },
-  scrollTo: true,
-  buttons: [],
-  when: {
-    show() {
-      let modal;
-
-      const interval = setInterval(() => {
-        modal = document.querySelector('#modal_container');
-
-        // Modal DOM'da bile değilse → kapandı demektir
-        if (!modal) {
-          clearInterval(interval);
-          tour.next();
-          return;
-        }
-
-        // Modal DOM'da ama görünmüyorsa
-        const style = window.getComputedStyle(modal);
-        const isHidden =
-          style.display === 'none' ||
-          style.visibility === 'hidden' ||
-          style.opacity === '0' ||
-          modal.classList.contains('hidden') ||
-          modal.offsetWidth === 0 ||
-          modal.offsetHeight === 0;
-
-        if (isHidden) {
-          clearInterval(interval);
-          tour.next();
-        }
-      }, 300);
-    }
-  }
-});
-
-
-
-
-
-// 17. Oklar (İlişkiler)
-tour.addStep({
-  title: 'Oklar Neyi Gösterir? 🔁',
-  text: 'Grafikteki oklar yapımlar arasındaki ilişkiyi gösterir.',
-  attachTo: { element: '#network canvas', on: 'top' },
-  buttons: [{ text: 'İleri', action: tour.next }]
-});
-
-// 18. Legend Alanı
-tour.addStep({
-  title: '📘 Bağlantılar Açıklaması',
-  text: 'Bağlantılar alanı evren renklerini ve türlerini açıklar.',
-  attachTo: { element: '#legend_bar', on: 'left' },
-  buttons: [{ text: 'İleri', action: tour.next }]
-});
-
-// 19. Favori ve Not Paneli
-tour.addStep({
-  title: '📂 Sağ Alt Panel',
-  text: 'Sağ altta favori ve notları görmek için bu alanı kullanabilirsin.',
-  attachTo: { element: '#panel_bar', on: 'top' },
-  scrollTo: false,
-  buttons: [
-    {
-      text: 'İleri',
-      action: function () {
-        // Panel içeriği DOM'da görünür mü kontrol et
-        const panel = document.querySelector('[x-show="panelOpen"]');
-
-        const isVisible = panel && window.getComputedStyle(panel).display !== 'none';
-
-        if (isVisible) {
-          tour.next();
-          return;
-        }
-
-        alert('Lütfen önce paneli açmalısın.');
-
-        // Panel açıldığında bekle ve sonra ilerle
-        const interval = setInterval(() => {
-          const nowVisible = panel && window.getComputedStyle(panel).display !== 'none';
-          if (nowVisible) {
-            clearInterval(interval);
-            tour.next();
-          }
-        }, 400); // her 0.4 sn'de bir kontrol et
-      }
-    }
-  ]
-});
-
-
-
-// 20. Favori Yönetimi
-tour.addStep({
-  title: '⭐ Favorileri Gör ve Sil',
-  text: 'Bu alanda favori yapımları görebilir ve silebilirsin.',
-  attachTo: { element: '#fav_bar', on: 'left' },
-  buttons: [{ text: 'İleri', action: tour.next }]
-});
-
-// 21. Not Yönetimi
-tour.addStep({
-  title: '📝 Notları Gör, Düzenle, Sil',
-  text: 'Notlarını bu alanda görüntüleyebilir, düzenleyebilir ya da silebilirsin.',
-  attachTo: { element: '#notlar_bar', on: 'left' },
-  buttons: [{ text: 'İleri', action: tour.next }]
-});
-
-// 22. Tur Bitti 🎉
-tour.addStep({
-  title: 'Tebrikler! 🎉',
-  text: 'Film Evreni Ağı rehberini başarıyla tamamladın. Keşfetmeye hazırsın!',
-  buttons: [{ text: 'Kapat', action: tour.complete }]
-});
-      tour.start();
-    },
 
     editingNoteIndex: null,
     editedNoteText: '',
@@ -1167,17 +1245,17 @@ tour.addStep({
         suggestions: [], acOpen: false,
         watchLater: [], watchLaterOpen: false, panelOpen: false, activeTab: 'watch', showGraph: false,
         notes: {}, newNote: '', notesOpen: false, notesUniverseFilter: '', notesTagFilter: '', editingNoteIndex: null, editedNoteText: '',
-        bgUrl: 'images/bg.jpg',
+        bgUrl: 'assets/images/bg.jpg',
         bgMap: {
-          "": "images/bg.jpg",
-          "avatar": "images/pandora.jpg",
-          "dc": "images/dc.jpg",
-          "harrypotter": "images/harrypotter.jpg",
-          "marvel": "images/marvel.jpg",
-          "matrix": "images/matrix.jpg",
-          "middleearth": "images/middleearth.jpg",
-          "pixar": "images/pixar.jpg",
-          "starwars": "images/starwars.jpg"
+          "": "assets/images/bg.jpg",
+          "avatar": "assets/images/pandora.jpg",
+          "dc": "assets/images/dc.jpg",
+          "harrypotter": "assets/images/harrypotter.jpg",
+          "marvel": "assets/images/marvel.jpg",
+          "matrix": "assets/images/matrix.jpg",
+          "middleearth": "assets/images/middleearth.jpg",
+          "pixar": "assets/images/pixar.jpg",
+          "starwars": "assets/images/starwars.jpg"
         },
         get edgeList(){
           if (!this.modalNode || !this.allEdges) return [];
@@ -1524,7 +1602,7 @@ this.$watch('selectedUniverse', (val) => {
         },
         async setBackgroundFor(universe){
           const primary = this.bgMap[universe || ""] || this.bgMap[""];
-          const fallbacks = ["images/bg.jpg", "images/bg.jpg"];
+          const fallbacks = ["assets/images/bg.jpg", "assets/images/bg.jpg"];
           const tried = new Set();
           const tryLoad = (url) => new Promise((resolve,reject)=>{ if(!url || tried.has(url)) return reject(); tried.add(url); const img = new Image(); img.onload = () => resolve(url); img.onerror = () => reject(); img.decoding = 'async'; img.referrerPolicy = 'no-referrer'; img.src = url; });
           for (const url of [primary, ...fallbacks]) { try { const ok = await tryLoad(url); this.bgUrl = ok; return; } catch {} }
@@ -1623,7 +1701,7 @@ async loadData() {
   try {
     const results = await Promise.all(
       evrenler.map(evren =>
-        fetch('data/' + evren + '.json', { cache: 'no-store' })
+        fetch('assets/data/' + evren + '.json', { cache: 'no-store' })
           .then(r => { if (!r.ok) throw new Error(evren + ' yüklenemedi'); return r.json().then(data => ({ evren, data })); })
       )
     );
