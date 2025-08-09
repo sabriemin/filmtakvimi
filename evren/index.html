@@ -237,8 +237,8 @@
   <div class="flex flex-row items-center gap-2 w-full sm:flex-1 sm:basis-0 sm:min-w-0">
 
     <!-- Anasayfa -->
-    <a href="/" title="Anasayfa"
-       class="text-white border border-white/30 hover:bg-white/10 rounded-md p-2 transition w-9 h-9 flex items-center justify-center" @click.prevent="resetPrettyUrl()" @click.prevent="resetPrettyUrl()">
+    <a href="./" title="Anasayfa"
+       class="text-white border border-white/30 hover:bg-white/10 rounded-md p-2 transition w-9 h-9 flex items-center justify-center"">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
            stroke-width="2" stroke="currentColor" class="w-5 h-5">
         <path stroke-linecap="round" stroke-linejoin="round" d="M4 10v10h6v-6h4v6h6V10L12 3z"/>
@@ -1570,14 +1570,26 @@ pushPrettyUrl(node) {
   try {
     const u = node?.universe || '';
     const id = node?.id != null ? String(node.id) : '';
-    this.setParams({ u, node: id });
-  } catch(e) { console.warn('pushPrettyUrl', e); }
+    const url = new URL(location.href);
+    url.searchParams.set('u', u);
+    url.searchParams.set('node', id);
+    history.replaceState({}, '', url);
+  } catch (e) {
+    console.warn('pushPrettyUrl error', e);
+  }
 },
 
 
 resetPrettyUrl() {
-  try { this.setParams({ clearNode: true }); } catch(e) { console.warn('resetPrettyUrl', e); }
-},
+  try {
+    const url = new URL(location.href);
+    url.search = '';
+    history.replaceState({}, '', url.origin + url.pathname);
+  } catch (e) {
+    console.warn('resetPrettyUrl error', e);
+  }
+}
+,
 
 buildNodeUrl(nodeId){ const node = this.nodes?.get(nodeId) || this.allNodes.find(n => String(n.id)===String(nodeId)); const u = node?.universe || ''; const base = location.origin + location.pathname; const params = new URLSearchParams({ u, node: String(nodeId) }); return `${base}?${params.toString()}`; },
         shareNode(node, platform){ if (!node?.id) return; const url = this.buildNodeUrl(node.id); const text = `${node.label || node.id} — ${this.formatUniverseName(node.universe)}\n${url}`; const enc = encodeURIComponent(text); const shareUrl = platform === 'whatsapp' ? `https://api.whatsapp.com/send?text=${enc}` : platform === 'x' ? `https://twitter.com/intent/tweet?text=${enc}` : ''; if (shareUrl) window.open(shareUrl, '_blank', 'noopener'); },
