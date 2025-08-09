@@ -1,9 +1,10 @@
-// sw.js
-const APP_CACHE = 'app-shell-v1';
-const IMG_CACHE = 'img-cache-v1';
+// sw.js (fixed): avoid caching POST, bypass analytics collect, cache GET only
+const APP_CACHE = 'app-shell-v3'; // bump version to force update
+const IMG_CACHE = 'img-cache-v3';
 
+// If your site is served from a subpath (e.g., /evren), remove '/' from APP_SHELL or prefix with the subpath.
 const APP_SHELL = [
-  '/',              // Alt klasörden servis ediyorsan bunu kaldır veya düzelt
+  // '/',
   '/index.html',
   '/images/anasayfa.jpg',
   '/images/avatar.jpg',
@@ -20,7 +21,7 @@ const APP_SHELL = [
 self.addEventListener('install', (e) => {
   e.waitUntil((async () => {
     const cache = await caches.open(APP_CACHE);
-    try { await cache.addAll(APP_SHELL); } catch (e) { /* offline kurulumda hata normal */ }
+    try { await cache.addAll(APP_SHELL); } catch (e) { /* offline install may fail; ignore */ }
     self.skipWaiting();
   })());
 });
@@ -36,19 +37,31 @@ self.addEventListener('activate', (e) => {
 self.addEventListener('fetch', (event) => {
   const req = event.request;
   const url = new URL(req.url);
+
+  // 1) Don't handle non-GET; Cache API can't cache POST/PUT etc.
+  if (req.method !== 'GET') return;
+
+  // 2) Never intercept analytics collect (POST) or any workers.dev calls
+  if (url.pathname.startsWith('/api/analytics/collect')) return;
+  if (url.hostname.endsWith('.workers.dev')) return;
+
+  // 3) Images -> cache-first
   const isImage = req.destination === 'image' || url.pathname.startsWith('/images/') || /\.(png|jpe?g|webp|gif|svg)$/i.test(url.pathname);
   if (isImage) {
     event.respondWith(cacheFirstImages(req));
-  } else {
-    event.respondWith(networkFirst(req));
+    return;
   }
+
+  // 4) Everything else (GET) -> network-first
+  event.respondWith(networkFirst(req));
 });
 
 async function cacheFirstImages(request) {
   const cache = await caches.open(IMG_CACHE);
   const cached = await cache.match(request, { ignoreSearch: true });
   if (cached) {
-    fetch(request).then(res => { if (res.ok) cache.put(request, res.clone()); }).catch(()=>{});
+    // Update in background
+    fetch(request).then(res => { if (res && res.ok) cache.put(request, res.clone()); }).catch(()=>{});
     return cached;
   }
   try {
@@ -61,13 +74,16 @@ async function cacheFirstImages(request) {
 }
 
 async function networkFirst(request) {
+  const cache = await caches.open(APP_CACHE);
   try {
     const res = await fetch(request);
-    const cache = await caches.open(APP_CACHE);
-    cache.put(request, res.clone());
+    // Cache only successful GET responses
+    if (res && res.ok) {
+      await cache.put(request, res.clone());
+    }
     return res;
   } catch (e) {
-    const cached = await caches.match(request, { ignoreSearch: true });
+    const cached = await cache.match(request, { ignoreSearch: true });
     return cached || new Response('', { status: 504, statusText: 'Offline' });
   }
 }
