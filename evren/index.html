@@ -179,15 +179,30 @@
 <style>
 @media (max-width: 639px) {
   .mobile-centered {
-    max-height: 45vh;
+    max-height: 60vh;          /* Daha kısa */
     overflow-y: auto;
     position: relative;
     top: 45%;
     transform: translateY(-50%);
-    padding: 1rem;         /* p-6 yerine daha az */
-    font-size: 0.85rem;    /* text-sm yerine daha küçük */
+    padding: 0.75rem;          /* p-3 boyutunda */
+    font-size: 0.8rem;         /* text-xs ile text-sm arası */
+    border-radius: 0.75rem;    /* Köşeleri biraz daha yuvarlak */
+  }
+
+  .mobile-centered h2 {
+    font-size: 1.1rem;         /* Başlık küçülsün */
+  }
+
+  .mobile-centered p {
+    font-size: 0.78rem;        /* Paragraflar daha küçük */
+    line-height: 1.3;
+  }
+
+  .mobile-centered .grid > div {
+    padding: 0.5rem;           /* İç kartlar daha dar */
   }
 }
+
 
 </style>
 
