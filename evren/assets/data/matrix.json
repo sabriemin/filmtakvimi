@@ -1,0 +1,335 @@
+{
+  "nodes": [
+    {
+      "id": "film/matrix/1999",
+      "label": "The Matrix (1999)",
+      "title": "The Matrix",
+      "type": "film",
+      "release_date": "1999-09-17",
+      "end_date": null,
+      "image": "https://static.boxofficeturkiye.com/movie/poster/full/6/1999106-259580909.jpg",
+      "imdb_rating": 8.7,
+      "yönetmen": [
+        "Lana Wachowski",
+        "Lilly Wachowski"
+      ],
+      "oyuncular": [
+        "Keanu Reeves",
+        "Laurence Fishburne",
+        "Carrie-Anne Moss",
+        "Hugo Weaving",
+        "Gloria Foster"
+      ],
+      "tür": [
+        "Bilim Kurgu",
+        "Aksiyon"
+      ],
+      "shape": "image",
+      "description": "1999 yapımı 'The Matrix', Wachowski Kardeşler tarafından yönetilen ve sinema tarihinin en etkili bilim kurgu filmlerinden biri olarak kabul edilen bir başyapıttır. Film, izleyiciye gerçeklik, özgür irade ve kaderin doğası hakkında derin felsefi sorular sorduran, aynı zamanda görsel olarak devrim niteliğinde bir deneyim sunan bir hikaye anlatır. Hikayenin merkezinde, gündüzleri saygın bir yazılım şirketinde çalışan sıradan bir programcı olan Thomas Anderson bulunmaktadır. Ancak geceleri 'Neo' takma adıyla bilinen, yeraltı dünyasının en yetenekli hacker'larından birine dönüşmektedir. Neo, bir süredir zihnini kurcalayan gizemli bir sorunun peşindedir: 'Matrix nedir?'. Bu arayışı onu, efsanevi hacker Morpheus ve onun ekibiyle tanışmasına götürür. Morpheus, Neo'ya yaşadığı dünyanın aslında bir simülasyon olduğunu, insanlığın bilinçsizce yapay zekalar tarafından enerji kaynağı olarak kullanıldığını ve içinde bulundukları sanal gerçekliğin 'Matrix' olarak bilindiğini açıklar. Morpheus, Neo'nun Matrix'i yıkmak için kehanette bahsedilen 'Seçilmiş Kişi' olabileceğine inanmaktadır. Neo'ya iki seçenek sunar: Mavi hapı alarak sahte ama rahat hayatına geri dönmek ya da kırmızı hapı yutarak gerçeğin acımasız ve tehlikeli dünyasıyla yüzleşmek. Neo, kırmızı hapı seçer ve gerçek dünyada, makinelerle savaşın kalbi olan Zion'da uyanır. Morpheus ve ekibinin yardımıyla, Matrix'in içindeki fizik yasalarını bükebilme yeteneklerini keşfeder ve yapay zeka ajanlarına karşı ölümcül bir savaşa girişir. Film, siberpunk estetiği, 'bullet time' gibi yenilikçi görsel efektleri ve dövüş koreografileriyle sinemada bir çığır açmıştır. Neo'nun bir 'mesih' figürü olarak portresi, dini sembolizmi, Platon'un mağara alegorisi gibi felsefi göndermeleri ve Jean Baudrillard'ın simülasyon teorisi gibi postmodernist düşünceleriyle film, sadece bir aksiyon filmi olmaktan öte, zihinleri zorlayan bir kültürel fenomene dönüşmüştür. Film, izleyiciye bir kez daha etraflarındaki dünyanın gerçekliğini sorgulatır ve 'özgürlük' kavramının gerçek anlamını sorgulamaya teşvik eder. Matrix, popüler kültürde silinmez bir iz bırakmış, sayısız filme, diziye ve oyuna ilham kaynağı olmuştur. Karakterlerin psikolojik gelişimleri, özellikle Neo'nun şüphelerden inanca geçişi ve Ajan Smith'in Neo'ya karşı duyduğu saplantılı nefret, filmin hikayesini daha da güçlendirir. Film, özgürlük mücadelesi, insanın makineleşme karşısındaki yeri ve kimlik arayışı gibi evrensel temaları işlerken, izleyiciyi hem zihinsel hem de duygusal olarak etkilemeyi başarır. Neo'nun Matrix'teki fizik kurallarını bükebilme yeteneği, filmin sonunda doruk noktasına ulaşır ve izleyicileri, devam filmlerinde neler olacağı konusunda büyük bir merak içinde bırakır.",
+      "refers_to": "'The Matrix', daha sonraki tüm hikaye ve filmler için temel bir başlangıç noktasıdır ve evrenin kanonik temellerini atar. Filmin sonu, Neo'nun kendi gücünü ve potansiyelini tamamen keşfetmesiyle sonuçlanır. Neo, artık Matrix'in kurallarını kendi lehine çevirebilen bir varlık haline gelmiştir. Bu durum, devam filmleri olan **The Matrix Reloaded** ve **The Matrix Revolutions**'ın ana hikayesi için bir zemin hazırlar ve 'Seçilmiş Kişi' kehanetinin gerçekliğini pekiştirir. İlk filmde yok edilen Ajan Smith'in, filmin finalinde Neo tarafından 'silinmiş' olmasına rağmen, beklenmedik bir şekilde geri döneceğinin sinyalini vermesi, Reloaded'daki ana tehditlerden birinin temellerini atar. Ajan Smith, bu dönüşümle birlikte, Matrix'in içinde yayılan bir virüs haline gelir ve yalnızca Neo için değil, tüm Matrix için bir tehdit oluşturur. Ayrıca, ilk filmde Morpheus ve ekibinin yaşadığı Zion şehri, devam filmlerinde insanlığın son kalesi ve umudu olarak izleyiciye tanıtılır. Zion'a yapılan büyük makine saldırısı, Reloaded ve Revolutions'ın ana çatışmasını oluşturur ve bu durum, ilk filmde kurulan hikaye örgüsünün doğrudan bir sonucudur. Film, aynı zamanda, **The Animatrix** adlı animasyon serisi için de bir çerçeve oluşturur. Bu kısa filmler, ana üçlemede yalnızca bahsedilen veya ima edilen olayları, yani insanlık ile makineler arasındaki savaşın başlangıcını ve Matrix'in yaratılışını detaylı bir şekilde anlatır. 'The Animatrix'in bölümleri, Matrix'in geçmişini ve ana hikayenin dışında kalan karakterlerin uyanışlarını göstererek, filmin evrenini genişletir ve daha zengin bir arka plan sağlar. Neo'nun ve diğer ana karakterlerin motivasyonları ve inançları, ilk filmde atılan tohumların bir sonucudur ve devam filmlerinde bu temalar daha da derinleşir. 'The Matrix', yalnızca bir film değil, aynı zamanda gelecek filmler için bir köprü, bir manifesto ve bir kültürel simge olarak anılmaya devam eder. Filmin bıraktığı felsefi ve hikayesel boşluklar, Reloaded ve Revolutions ile doldurulur ve izleyiciye Neo'nun yolculuğunun sadece başlangıç olduğunu hissettirir. 'The Matrix'in 'Gerçek nedir?' sorusu, devam filmlerinin temelini oluşturan en önemli felsefi sorudur ve bu soru, filmin atıf yaptığı tüm eserlerde ve popüler kültürde yankılanmaya devam eder.",
+      "canonical_level": "canon",
+      "sources": {
+        "Kaynaklar": [
+          {
+            "name": "Box Office Türkiye",
+            "url": "https://boxofficeturkiye.com/film/matrix--1999106"
+          },
+          {
+            "name": "IMDb",
+            "url": "https://www.imdb.com/title/tt0133093/"
+          },
+          {
+            "name": "Wikipedia",
+            "url": "https://tr.wikipedia.org/wiki/Matrix_(film)"
+          }
+        ],
+        "Görsel": [
+          {
+            "name": "Box Office Türkiye",
+            "url": "https://static.boxofficeturkiye.com/movie/poster/full/6/1999106-259580909.jpg"
+          }
+        ],
+        "Platform": [
+          {
+            "name": "Prime Video",
+            "url": "https://www.primevideo.com/-/tr/detail/The-Matrix/0SC64NC24QA7M9AFWBEK87WWS0"
+          }
+        ]
+      },
+      "lang": "tr"
+    },
+    {
+      "id": "dizi/animatrix/2003",
+      "label": "The Animatrix (2003)",
+      "title": "The Animatrix",
+      "type": "dizi",
+      "release_date": "2003-06-03",
+      "end_date": null,
+      "image": "https://m.media-amazon.com/images/M/MV5BNzU4NzE3ZDgtMTgyNi00NzgzLWE3OWUtMTI5Zjg0NzYyZjU1XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "imdb_rating": 7.3,
+      "yönetmen": [
+        "Peter Chung",
+        "Mahiro Maeda",
+        "Shinichirō Watanabe",
+        "Takeshi Koike",
+        "Yoshiaki Kawajiri",
+        "Kôji Morimoto",
+        "Andy Jones"
+      ],
+      "oyuncular": [
+        "Keanu Reeves",
+        "Carrie-Anne Moss",
+        "Clayton Watson",
+        "Kevin Michael Richardson"
+      ],
+      "tür": [
+        "Animasyon",
+        "Bilim Kurgu",
+        "Aksiyon"
+      ],
+      "shape": "image",
+      "description": "2003 yapımı bir antoloji serisi olan 'The Animatrix', Matrix evrenini genişleten ve dokuz farklı anime kısa filminden oluşan bir koleksiyondur. Film, ana üçlemede sadece bahsedilen veya ima edilen olayları, yani Matrix'in kökenlerini ve yan hikayelerini keşfetmek için Japon anime sanatının farklı ve yetenekli yönetmenlerinin bir araya getirdiği bir projedir. Her kısa film, serinin ana hikayesine yeni bir boyut ekler ve Matrix'in karmaşık dünyasını daha derinlemesine anlamamızı sağlar. 'The Animatrix'in en dikkat çekici bölümlerinden biri olan 'İkinci Rönesans', insanlık ile yapay zeka arasındaki savaşın başlangıcını, insanların makineleri nasıl köleleştirdiğini ve bu durumun makinelerin isyanıyla nasıl sonuçlandığını detaylı bir şekilde anlatır. Bu bölümler, ilk filmde Morpheus'un bahsettiği tarihi olayları görselleştirerek izleyiciye Matrix'in neden yaratıldığına dair güçlü bir arka plan sunar. 'Osiris'in Son Uçuşu' adlı bölüm ise, **The Matrix Reloaded**'ın hemen öncesinde geçen olayları konu alır ve Zion'a yaklaşan büyük makine ordusunun haberini vermeye çalışan bir geminin mürettebatının trajik hikayesini anlatır. 'Dedektif Hikayesi' ve 'World Record' gibi diğer bölümler, Matrix içindeki diğer karakterlerin uyanışlarını ve yapay zeka ile olan bireysel mücadelelerini konu alır. Bu yapım, Matrix evrenindeki felsefi temaları, simülasyon ve gerçeklik arasındaki ince çizgiyi ve insanlığın geleceğini farklı bakış açılarından ele alır. Her kısa film, kendi özgün görsel stili ve hikaye anlatımıyla öne çıkar. Film, Japon anime'sinin dinamik aksiyon sahnelerini, görsel dilini ve duygusal derinliğini kullanarak Matrix'in ana hikayesini zenginleştiren, tamamlayıcı ve kanonik bir eserdir. 'The Animatrix', ana üçlemenin hikayesindeki bazı boşlukları doldurur ve izleyiciye Matrix dünyası hakkında daha derinlemesine bir bilgi sağlar. Bu antoloji serisi, aynı zamanda Wachowski Kardeşler'in hikayesini ne kadar geniş düşündüğünün de bir kanıtıdır ve serinin hayranları için kaçırılmaması gereken bir deneyimdir.",
+      "refers_to": "'The Animatrix', ana film serisine doğrudan bir devam olmamasına rağmen, **The Matrix**'in evrenini ve arka planını genişleterek onunla güçlü ve vazgeçilmez bir bağ kurar. Özellikle, 'The Second Renaissance' adlı bölümler, ilk filmde Morpheus'un anlattığı insanlık ve makineler arasındaki savaşın detaylarını ve Matrix'in yaratılış sürecini sunar. Bu, izleyicinin Matrix'in kökenlerini ve neden bu sanal gerçekliğin yaratıldığını daha iyi anlamasını sağlar. 'The Animatrix', ilk filmin başında Neo'ya Matrix'in ne olduğunu anlamak için gerekli olan 'geçmiş'i sunar. 'Final Flight of the Osiris' bölümü, doğrudan **The Matrix Reloaded**'ın hemen öncesindeki olayları anlatır ve Zion'a gelen makine ordusunun haberini veren geminin mürettebatının fedakarlık hikayesini anlatır. Bu bölüm, Reloaded filminin açılışını ve Zion'daki gergin atmosferi anlamak için kritik bir öneme sahiptir. 'The Animatrix'in diğer bölümleri, ilk filmin ana karakterleri dışındaki kişilerin uyanış hikayelerini ve Matrix'teki hayatlarını keşfeder. Bu yan hikayeler, ana üçlemenin merkezindeki Neo'nun yolculuğunu bağlam içine yerleştirir ve Matrix'in ne kadar geniş ve karmaşık bir dünya olduğunu gösterir. Örneğin, 'Kid's Story' bölümü, **The Matrix Reloaded**'da önemli bir yan karakter olan Kid'in nasıl Matrix'ten kurtulduğunu gösterir ve Neo'nun ona olan etkisini vurgular. Serinin kendisi, sadece bir ek içerik olmaktan ziyade, Matrix evrenini daha derinlemesine anlamak ve deneyimlemek için izlenmesi gereken kanonik bir parçadır. 'The Animatrix', ana üçlemenin felsefi ve hikayesel temalarını destekleyerek, izleyiciye Matrix dünyasının ne kadar çeşitli ve çok katmanlı olduğunu gösterir. Bu yüzden, ana üçlemeyi izleyen her hayran için, bu antoloji serisi, evreni tam olarak anlamak için kritik bir adımdır.",
+      "canonical_level": "canon",
+      "sources": {
+        "Kaynaklar": [
+          {
+            "name": "IMDb",
+            "url": "https://www.imdb.com/title/tt0328832/"
+          },
+          {
+            "name": "Wikipedia",
+            "url": "https://tr.wikipedia.org/wiki/Animatrix"
+          },
+          {
+            "name": "Sinemalar.com",
+            "url": "https://www.sinemalar.com/film/33519/the-animatrix"
+          }
+        ],
+        "Görsel": [
+          {
+            "name": "IMDb",
+            "url": "https://m.media-amazon.com/images/M/MV5BNzU4NzE3ZDgtMTgyNi00NzgzLWE3OWUtMTI5Zjg0NzYyZjU1XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+          }
+        ],
+        "Platform": [
+          {
+            "name": "Prime Video",
+            "url": "https://www.primevideo.com/-/tr/detail/The-Animatrix/0PQJ62HR3TNXTHK93NQAV0J7UD"
+          }
+        ]
+      },
+      "lang": "tr"
+    },
+    {
+      "id": "film/matrix/2003_reloaded",
+      "label": "The Matrix Reloaded (2003)",
+      "title": "The Matrix Reloaded",
+      "type": "film",
+      "release_date": "2003-05-23",
+      "end_date": null,
+      "image": "https://static.boxofficeturkiye.com/movie/poster/full/71/2003071-365489198.jpg",
+      "imdb_rating": 7.2,
+      "yönetmen": [
+        "Lana Wachowski",
+        "Lilly Wachowski"
+      ],
+      "oyuncular": [
+        "Keanu Reeves",
+        "Laurence Fishburne",
+        "Carrie-Anne Moss",
+        "Hugo Weaving",
+        "Jada Pinkett Smith"
+      ],
+      "tür": [
+        "Bilim Kurgu",
+        "Aksiyon"
+      ],
+      "shape": "image",
+      "description": "2003 yapımı 'The Matrix Reloaded', ilk filmin şok edici finalinin ardından hikayeyi doğrudan devam ettiren, serinin felsefi ve aksiyon dolu ikinci filmidir. Neo, artık Matrix içinde neredeyse sınırsız güçlere sahip olan 'Seçilmiş Kişi' rolünü tamamen kabullenmiştir. Film, Neo'nun, Trinity ve Morpheus ile birlikte insanlığın son kalesi olan Zion'u, yaklaşan makine ordusundan kurtarma mücadelesini konu alır. İlk filmde yok edildiği düşünülen Ajan Smith, bu filmde beklenmedik bir şekilde geri döner ve kendini kopyalayarak tüm Matrix'i tehdit eden bir virüs haline gelir. Morpheus ve Zion'daki diğer liderler, makine ordusunun iki gün içinde Zion'a ulaşacağını öğrenirler ve umutsuz bir savaş hazırlığına başlarlar. Bu sırada Neo, sürekli olarak Trinity'nin ölümünü gördüğü kâbuslarla boğuşmaktadır ve bu kâbuslar onun görevine olan inancını sarsar. Neo, Zion'u kurtarmak ve kehaneti tamamlamak için Matrix'in yaratıcısı olan 'Mimar'la konuşması gerektiği bilgisini alır ve bu amaçla Matrix'in daha önce görülmemiş katmanlarına, Merovingian gibi yeni ve karmaşık karakterlerin dünyasına doğru tehlikeli bir yolculuğa çıkar. 'The Matrix Reloaded', serinin felsefi yapısını daha da derinleştirir ve izleyiciye Matrix'in gerçek doğası, kehanetin amacı ve Neo'nun kaderi hakkında daha büyük sorularla baş başa bırakır. Film, bir yandan otoban sahnesi gibi çığır açan aksiyon sekansları sunarken, diğer yandan da Matrix'in altında yatan mekanizmaları ve yapay zekanın karmaşık doğasını keşfeder. Neo'nun gücünü test ettiği, Ajan Smith'in tehlikesini hissettirdiği ve Zion'daki savaş hazırlıklarının gerilimini artırdığı bu film, üçlemenin ana hikayesini bir sonraki boyuta taşır. 'The Matrix Reloaded', aksiyon ve felsefeyi bir araya getirme konusunda ilk filmin mirasını sürdürürken, hikayeyi ve evreni genişleterek izleyicileri **The Matrix Revolutions**'ın destansı final savaşına hazırlar. Film, Matrix'in ne kadar geniş ve tehlikeli bir evren olduğunu göstererek, izleyiciyi hem zihinsel hem de fiziksel bir yolculuğa çıkarır. Neo'nun kendi kimliği ve gücüyle olan mücadelesi, filmin ana dramatik eksenini oluşturur ve onun 'Seçilmiş Kişi' olmanın ne demek olduğunu anlamaya çalışmasını anlatır. Aşk, inanç ve özgür irade temaları, bu filmde daha da derinleşir ve karakterlerin verdikleri kararların sonuçlarını izleyiciye hissettirir.",
+      "refers_to": "'The Matrix Reloaded', doğrudan ilk film olan **The Matrix**'in temelini attığı olaylar ve felsefi temalar üzerine inşa edilmiştir. Filmin hikayesi, Neo'nun 'Seçilmiş Kişi' olarak uyanışının sonuçlarını işler ve onun, Morpheus'un inandığı kehaneti yerine getirme yolculuğuna odaklanır. İlk filmde yok edilen Ajan Smith'in bu filmde çok daha güçlü ve kişisel bir tehdit olarak geri dönmesi, ilk filmin olaylarının doğrudan bir sonucudur. Ajan Smith, bu dönüşümüyle sadece bir program olmaktan çıkarak, Matrix'i tehdit eden bir virüs haline gelir ve Neo'nun en büyük düşmanı olur. Filmin en önemli atıflarından biri, **The Animatrix**'in 'Osiris'in Son Uçuşu' bölümünde anlatılan olaylardır. Bu bölüm, Zion'a gelen makine ordusunun haberini verir ve bu haber, Reloaded filminin ana hikayesini başlatır. Bu bağlantı, iki eserin kanonik bir bütünlük içinde olduğunu gösterir. Reloaded'da yaşanan olaylar, Zion'daki savaş hazırlıkları ve Neo'nun Mimar'la yaptığı görüşme, bir sonraki film olan **The Matrix Revolutions**'da yaşanacak olaylar için zemin hazırlar. Özellikle, Reloaded'ın sonunda Neo'nun gerçek dünyada da makineleri durdurma yeteneğini keşfetmesi, onun gücünün sadece Matrix'le sınırlı olmadığını gösterir ve Revolutions'ın finalinde bu yeteneğini nasıl kullanacağını merak ettirir. Neo'nun 'Seçilmiş Kişi' olmasının bir döngüden ibaret olduğunu ve kendisinin aslında altıncı 'Seçilmiş Kişi' olduğunu öğrenmesi, Revolutions'daki kaderini ve seçimini daha da anlamlı kılar. Reloaded, bu şekilde serinin ortasındaki kritik bir film olarak, ilk filmde kurulan hikaye örgüsünü devam ettirir ve üçlemenin finaline giden yolu açar. Film, felsefi soruları derinleştirirken, hikayeyi ve aksiyonu **The Matrix Revolutions**'a bağlayan hayati bir köprü görevi görür ve izleyicinin merakını dorukta bırakır. Film, bir yandan ilk filmin bıraktığı boşlukları doldururken, diğer yandan da Matrix evreninin ne kadar karmaşık ve çok katmanlı olduğunu gösterir. Neo'nun ve Trinity'nin aşk hikayesi de bu filmde daha derinleşir ve onların birbirleri için ne kadar fedakarlık yapabileceklerini gösterir, bu da Revolutions'ın finali için duygusal bir zemin hazırlar.",
+      "canonical_level": "canon",
+      "sources": {
+        "Kaynaklar": [
+          {
+            "name": "Box Office Türkiye",
+            "url": "https://boxofficeturkiye.com/film/matrix-reloaded--2003071"
+          },
+          {
+            "name": "IMDb",
+            "url": "https://www.imdb.com/title/tt0234215/"
+          },
+          {
+            "name": "Wikipedia",
+            "url": "https://tr.wikipedia.org/wiki/Matrix_Reloaded"
+          }
+        ],
+        "Görsel": [
+          {
+            "name": "Box Office Türkiye",
+            "url": "https://static.boxofficeturkiye.com/movie/poster/full/71/2003071-365489198.jpg"
+          }
+        ],
+        "Platform": [
+          {
+            "name": "Prime Video",
+            "url": "https://www.primevideo.com/detail/The-Matrix-Reloaded/0RQYWV003Z526UUTEJX7P1YEMM"
+          }
+        ]
+      },
+      "lang": "tr"
+    },
+    {
+      "id": "film/matrix/2003_revolutions",
+      "label": "The Matrix Revolutions (2003)",
+      "title": "The Matrix Revolutions",
+      "type": "film",
+      "release_date": "2003-11-05",
+      "end_date": null,
+      "image": "https://upload.wikimedia.org/wikipedia/tr/a/a3/MatrixRevolutions-DVDKapa%C4%9F%C4%B1.jpg",
+      "imdb_rating": 6.7,
+      "yönetmen": [
+        "Lana Wachowski",
+        "Lilly Wachowski"
+      ],
+      "oyuncular": [
+        "Keanu Reeves",
+        "Laurence Fishburne",
+        "Carrie-Anne Moss",
+        "Hugo Weaving",
+        "Jada Pinkett Smith"
+      ],
+      "tür": [
+        "Bilim Kurgu",
+        "Aksiyon"
+      ],
+      "shape": "image",
+      "description": "2003 yapımı 'The Matrix Revolutions', Matrix üçlemesinin destansı finali ve serinin tüm hikayesini sonlandıran filmidir. Film, bir önceki filmin sonunda komada kalan Neo'nun, 'Matrix'in ve gerçek dünyanın arasında sıkışıp kaldığı bir yerden uyanmasıyla başlar. Onun gücünün, sadece sanal dünyada değil, aynı zamanda makinelerin dünyasında da etkili olduğu anlaşılır. İnsanlığın son kalesi Zion, makine ordusunun büyük bir saldırısı altındadır. Kaptan Niobe ve Morpheus gibi karakterler, Zion'u savunmak için umutsuz bir savaş verirken, Neo, Trinity ile birlikte makine şehrine doğru tehlikeli bir yolculuğa çıkar. Amacı, tüm Matrix'i ve gerçek dünyayı tehdit eden Ajan Smith'i durdurmak için makinelerin lideriyle bir anlaşma yapmaktır. Bu yolculuk sırasında, Neo ve Trinity'nin arasındaki aşk daha da derinleşir ve aralarındaki bağ, filmin duygusal çekirdeğini oluşturur. Zion'daki savaş, devasa Sentinels ordusuna karşı verilen umutsuz bir direnişle izleyiciye epik ve gerilimli anlar yaşatır. Neo'nun makine lideriyle yaptığı anlaşma, tüm insanlık için son bir umut ışığı olur: Neo, Smith'i durdurması karşılığında makine savaşının sona ermesini talep eder. Bu anlaşma, Neo ve Smith arasındaki final dövüşüyle doruk noktasına ulaşır. Bu dövüş, sadece fiziksel bir çatışma değil, aynı zamanda felsefi bir hesaplaşmadır. 'The Matrix Revolutions', serinin tüm ana temalarını - seçim, kader, fedakarlık, sevgi ve umut - epik ve dokunaklı bir sona ulaştırır. Filmin sonu, Neo'nun fedakarlığıyla Matrix'in yeniden başlatılması ve insanlığın kurtuluşuyla sonuçlanır. Film, izleyiciye bir yandan üçlemenin hikayesini tamamlarken, diğer yandan da gelecekte insanlık için yeni bir umut ışığı sunarak seriyi sonlandırır. Film, karmaşık felsefi soruları ve aksiyonu bir araya getirme konusundaki başarısını sürdürerek, üçlemenin tamamını anlamlandıran bir final görevi görür. Neo'nun yolculuğu, bir 'Seçilmiş Kişi'den bir kahramana dönüşen, kendi kaderini kendi seçen ve insanlık için büyük bir fedakarlık yapan bir karakterin hikayesini anlatır. 'The Matrix Revolutions', Wachowski Kardeşler'in vizyonunu tamamlayan ve seriyi unutulmaz kılan bir yapım olmuştur.",
+      "refers_to": "'The Matrix Revolutions', doğrudan **The Matrix Reloaded**'ın sonunda bıraktığı yerden devam eder ve üçlemenin finalidir. Reloaded'ın şaşırtıcı bitişi, Neo'nun gerçek dünyada da makineleri durdurma yeteneğini keşfetmesiyle son bulmuştu. Bu yetenek, Revolutions'ın ana hikayesini yönlendirir ve Neo'nun makine şehrine gitme kararını tetikler. Zion'a yapılan büyük makine saldırısı, Reloaded'da duyurulan tehdidin doğrudan sonucudur ve bu saldırı, filmin ana çatışmasını oluşturur. Ajan Smith'in Matrix'teki virüs benzeri büyümesi ve çoğalması, Reloaded'ın ana tehdidi olarak kurulmuştu ve Revolutions'da nihai düşman haline gelir. Film, üçlemenin ana karakterleri Neo, Trinity ve Morpheus'un yolculuklarını tamamlar. Özellikle Neo ve Trinity'nin aşk hikayesi, Reloaded'da başlayan ve bu filmde fedakarlık ve sevgi temalarıyla doruğa ulaşan bir aşk hikayesidir. Bu, iki karakter arasındaki bağın ne kadar güçlü olduğunu ve ne kadar fedakarlık yapabileceklerini gösterir. 'Revolutions', üçlemenin ana hikayesini tatmin edici bir şekilde sonlandırır ve serinin felsefi sorularına bir çözüm sunarak, 1999 yapımı filmden bu yana kurulan tüm hikaye örgüsünü nihai bir sona ulaştırır. Filmin sonunda, Ajan Smith'in yok edilmesi ve Matrix'in yeniden başlatılması, ilk filmde başlayan hikayeyi kapatır ve Matrix'in geleceği için yeni bir umut doğurur. Neo'nun ölümü ve Matrix'in yeni bir barış dönemine girmesi, üçlemenin tüm olaylarının bir sonucudur. Bu film, **The Matrix Resurrections**'ın da başlangıç noktasıdır, çünkü dördüncü film, Neo ve Trinity'nin ölümlerinin ardından nasıl yeniden Matrix'in içinde diriltildiklerini konu alır. Revolutions'daki olaylar, 'Resurrections'da yeniden yorumlanır ve serinin felsefi yapısı daha da karmaşıklaşır.",
+      "canonical_level": "canon",
+      "sources": {
+        "Kaynaklar": [
+          {
+            "name": "Box Office Türkiye",
+            "url": "https://boxofficeturkiye.com/film/matrix-revolutions--2003162"
+          },
+          {
+            "name": "IMDb",
+            "url": "https://www.imdb.com/title/tt0242653/"
+          },
+          {
+            "name": "Wikipedia",
+            "url": "https://tr.wikipedia.org/wiki/Matrix_Revolutions"
+          }
+        ],
+        "Görsel": [
+          {
+            "name": "Wikipedia",
+            "url": "https://upload.wikimedia.org/wikipedia/tr/a/a3/MatrixRevolutions-DVDKapa%C4%9F%C4%B1.jpg"
+          }
+        ],
+        "Platform": [
+          {
+            "name": "Prime Video",
+            "url": "https://www.primevideo.com/-/tr/detail/Matrix-Revolutions/0LCOF6893TO2OHQNR1LDSHIED3"
+          }
+        ]
+      },
+      "lang": "tr"
+    },
+    {
+      "id": "film/matrix/2021_resurrections",
+      "label": "The Matrix Resurrections (2021)",
+      "title": "The Matrix Resurrections",
+      "type": "film",
+      "release_date": "2021-12-24",
+      "end_date": null,
+      "image": "https://static.boxofficeturkiye.com/movie/poster/full/40/2015040-52472877.jpg",
+      "imdb_rating": 5.6,
+      "yönetmen": [
+        "Lana Wachowski"
+      ],
+      "oyuncular": [
+        "Keanu Reeves",
+        "Carrie-Anne Moss",
+        "Yahya Abdul-Mateen II",
+        "Jonathan Groff",
+        "Jessica Henwick"
+      ],
+      "tür": [
+        "Bilim Kurgu",
+        "Aksiyon"
+      ],
+      "shape": "image",
+      "description": "2021 yapımı 'The Matrix Resurrections', Matrix üçlemesinden yıllar sonra gelen ve seriyi yeniden canlandıran dördüncü filmdir. Film, ilk üçlemenin finalindeki olayların ardından yeni bir Matrix versiyonunda yeniden hapsolan Thomas Anderson'ın (Neo) hikayesini konu alır. Thomas Anderson, bu yeni gerçeklikte, ünlü 'The Matrix' video oyunları serisinin yaratıcısıdır. Geçmişinden hiçbir şey hatırlamayan ve ruhsal olarak sıkıntılı olan Thomas, düzenli olarak bir terapistten yardım almaktadır. Terapisti, ona Matrix'in bir kurgu olduğunu ve yaşadığı her şeyin birer halüsinasyon olduğunu anlatır. Ancak 'Bugs' adlı yeni bir karakter ve Morpheus'un genç bir versiyonuyla tanışması, Thomas'ın geçmişini yavaş yavaş hatırlamasına ve Matrix'te yeniden 'uyandığına' inanmasına neden olur. Film, ilk üçlemeden tanıdık yüzlerin ve olayların yeni bir bağlamda yeniden yorumlandığı, bir nevi 'meta' bir hikaye sunar. Özellikle Neo ve Trinity'nin geri dönüşü, yeni tehditler ve yeni ittifaklarla dolu bir macerayı beraberinde getirir. Matrix'in yeni mimarı tarafından yeniden yaratılan bu dünyada, Neo ve Trinity'nin yeniden bir araya gelmesi, makineler ve insanlar arasındaki güç dengelerini yeniden altüst eder. 'The Matrix Resurrections', serinin klasikleşmiş temalarını, yani gerçeklik nedir, aşk her şeyin üstesinden gelebilir mi ve seçimlerimiz gerçekten özgür müdür gibi soruları yeniden ele alır. Film, eski filmlerden sahneleri sık sık anımsatarak ve bu sahneleri yeni bir bağlamda kullanarak, geçmişe saygı duruşunda bulunur. 'Resurrections', hem nostaljik bir deneyim sunar hem de Matrix evreninin geleceği hakkında yeni kapılar açar. Film, bir yandan eski hayranları memnun etmeye çalışırken, diğer yandan da seriye yeni bir soluk getirme çabasındadır. Neo ve Trinity'nin aşkı, bu filmin ana duygusal çekirdeğini oluşturur ve onların birbirleri için verdikleri mücadele, hikayenin merkezine yerleşir. Film, Matrix'in yeni bir versiyonunun nasıl çalıştığını ve insanların makinelerle olan ilişkisinin nasıl değiştiğini göstererek, gelecekteki olası hikayeler için yeni bir başlangıç noktası sunar. Film, felsefi soruları ve aksiyonu bir araya getirme konusundaki başarısını sürdürürken, hikayeyi hem bir devam filmi hem de serinin ana temalarına bir yorum getiren karmaşık bir yapıya sahiptir. 'The Matrix Resurrections', Neo'nun ve Trinity'nin kaderlerinin birleştiği ve yeni bir dönemin başlangıcını işaret eden bir yapımdır.",
+      "refers_to": "'The Matrix Resurrections', serinin ilk filmi olan **The Matrix**'e en yoğun atıfları yapan filmdir ve önceki üç filmin olaylarına bir 'devam' niteliği taşır. Filmin hikayesi, doğrudan Neo ve Trinity'nin **The Matrix Revolutions**'daki ölümlerinin ardından başlar ve bu iki karakterin nasıl yeni bir Matrix'in içinde yeniden diriltildiğini açıklar. 'Resurrections'da Thomas Anderson'ın yaşadığı dünya, ilk filmdeki olayların bir çeşit tekrarı gibidir ve bu durum, filmin ana hikayesiyle iç içe geçmiş bir 'meta' anlatı sunar. Film, ilk üçlemeden sahneleri sık sık anımsatarak ve bu sahneleri yeni bir bağlamda kullanarak geçmişe saygı duruşunda bulunur. Ajan Smith gibi bazı ana karakterleri yeni oyuncularla yeniden sunması, geçmişin ve şimdinin birbiriyle nasıl iç içe geçtiğini gösterir. Filmdeki en önemli atıf, Neo ve Trinity arasındaki aşk hikayesidir. Bu aşk, filmin en önemli duygusal çekirdeğini oluşturur ve Revolutions'daki fedakarlıklarının nasıl boşa gitmediğini gösterir. Bu film, Matrix evreninin yeni bir versiyonunun kurulduğunu ve insanların makinelerle olan ilişkisinin değiştiğini göstererek, gelecekteki olası hikayeler için yeni bir başlangıç noktası sunar. Film, ilk filmde Neo'ya sunulan 'mavi hap-kırmızı hap' ikilemini farklı bir açıdan ele alır ve Neo'nun bu kez kendi seçimini nasıl yapacağını gösterir. Neo'nun 'Seçilmiş Kişi' olmasının bir döngüden ibaret olduğunu ve bu döngüyü kırmanın yollarını araması, filmin ana temasını oluşturur. 'The Matrix Resurrections', önceki filmlerin felsefi ve hikayesel mirasını devralarak, izleyiciye 'gerçeklik' kavramını ve 'aşkın' gücünü sorgulatan bir deneyim sunar. Film, hem bir devam filmi hem de serinin ana temalarına bir yorum getiren karmaşık bir yapıya sahiptir ve Matrix evreninin asla sona ermediğini gösterir.",
+      "canonical_level": "canon",
+      "sources": {
+        "Kaynaklar": [
+          {
+            "name": "Box Office Türkiye",
+            "url": "https://boxofficeturkiye.com/film/the-matrix-resurrections--2015040"
+          },
+          {
+            "name": "IMDb",
+            "url": "https://www.imdb.com/title/tt10838180/"
+          },
+          {
+            "name": "Wikipedia",
+            "url": "https://tr.wikipedia.org/wiki/Matrix_Resurrections"
+          }
+        ],
+        "Görsel": [
+          {
+            "name": "Box Office Türkiye",
+            "url": "https://static.boxofficeturkiye.com/movie/poster/full/40/2015040-52472877.jpg"
+          }
+        ],
+        "Platform": [
+          {
+            "name": "Prime Video",
+            "url": "https://www.primevideo.com/-/tr/detail/The-Matrix-Resurrections/0QDBJGNN6GMHX29XTLHK98S43V"
+          }
+        ]
+      },
+      "lang": "tr"
+    }
+  ],
+  "edges": [
+    {
+      "from": "film/matrix/1999",
+      "to": "film/matrix/2003_reloaded",
+      "type": "Doğrudan Devam",
+      "weight": 1,
+      "notes": "İlk filmin bıraktığı yerden devam eder ve hikayeyi genişletir."
+    },
+    {
+      "from": "film/matrix/2003_reloaded",
+      "to": "film/matrix/2003_revolutions",
+      "type": "Doğrudan Devam",
+      "weight": 1,
+      "notes": "Reloaded'ın sonunda başlayan savaşı ve Neo'nun yolculuğunu tamamlar."
+    },
+    {
+      "from": "film/matrix/2003_revolutions",
+      "to": "film/matrix/2021_resurrections",
+      "type": "Doğrudan Devam",
+      "weight": 1,
+      "notes": "Üçlemenin finalinden yıllar sonra, Neo ve Trinity'nin hikayesini yeniden ele alır."
+    },
+    {
+      "from": "film/matrix/1999",
+      "to": "dizi/animatrix/2003",
+      "type": "Destekleyici Hikaye",
+      "weight": 0.5,
+      "notes": "Matrix evreninin tarihini, arka planını ve yan hikayelerini anlatır."
+    },
+    {
+      "from": "film/matrix/2003_reloaded",
+      "to": "dizi/animatrix/2003",
+      "type": "Destekleyici Hikaye",
+      "weight": 0.5,
+      "notes": "Animatrix'in bir bölümü olan 'Osiris'in Son Uçuşu', Reloaded'ın açılışına zemin hazırlar."
+    }
+  ]
+}

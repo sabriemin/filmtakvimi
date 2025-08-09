@@ -1,0 +1,566 @@
+{
+  "nodes": [
+    {
+      "id": "film/tolkien/hobbit-animasyon-1977",
+      "label": "The Hobbit (1977) (Animasyon)",
+      "title": "The Hobbit",
+      "type": "film",
+      "release_date": "1977-11-27",
+      "end_date": null,
+      "image": "https://m.media-amazon.com/images/M/MV5BYTJhODI1YjMtYjc0Ni00YTcyLTgxNjYtMzYzNDllZWI1ZTI0XkEyXkFqcGc@._V1_.jpg",
+      "imdb_rating": 6.7,
+      "yönetmen": [
+        "Jules Bass",
+        "Arthur Rankin Jr."
+      ],
+      "oyuncular": [
+        "Orson Bean",
+        "John Huston",
+        "Otto Preminger",
+        "Richard Boone",
+        "Hans Conried"
+      ],
+      "tür": [
+        "Animasyon",
+        "Fantastik",
+        "Macera"
+      ],
+      "shape": "image",
+      "description": "1977 yapımı 'The Hobbit', J.R.R. Tolkien'ın 1937'de yayımlanan aynı adlı çocuk romanından uyarlanan ve televizyon için yapılmış müzikal bir animasyon filmidir. Bu film, Peter Jackson'ın canlı aksiyon üçlemesinden onlarca yıl önce, Tolkien'ın Orta Dünya'sını ekrana taşıyan ilk önemli yapımlardan biridir. Film, küçük ve huzurlu bir hobbit olan Bilbo Baggins'in hayatının, büyücü Gandalf'ın beklenmedik ziyaretiyle nasıl değiştiğini anlatır. Gandalf, onu on üç cüceden oluşan bir gruba dahil eder ve bu grup, kayıp hazinelerini geri almak için büyük ve tehlikeli bir maceraya atılır. Cücelerin lideri, eski krallıklarının varisi olan Thorin Meşekalkan'dır. Hedefleri, Yalnız Dağ'daki Erebor krallığına yerleşen ve tüm hazinelerini çalan korkunç ejderha Smaug'dur. Film, Bilbo'nun başlangıçtaki isteksizliğini ve hobbit evinin rahatlığını terk etme tereddüdünü, maceranın sunduğu heyecan ve tehlikelerle ustaca harmanlar. Yolculukları sırasında, grup Goblinlerin tehlikeli tünellerinde, Mirkwood ormanının kötü niyetli örümceklerinin ve orman elflerinin yaşadığı topraklarda zorlu mücadeleler verir. Filmin en kritik anlarından biri, Bilbo'nun Goblin tünellerinde kaybolması ve gizemli yaratık Gollum'la karşılaşmasıdır. Burada, hayatını kurtarmak için onunla bir bilmece oyunu oynar ve bu oyun sırasında, ilerideki tüm olayları tetikleyecek olan 'Tek Yüzük'ü tesadüfen bulur. Animasyonun görsel stili, 1970'lerin kendine özgü 'çizgi film' estetiğini yansıtırken, filmdeki müzikal şarkılar da hikayenin çocuksu ve masalsı tonunu pekiştirir. Filmin hikayesi, Tolkien'ın romanının temel olay örgüsüne sadık kalır, ancak bazı detayları ve karakterleri basitleştirir. Bu film, genç izleyicileri Orta Dünya'yla tanıştırmak için ideal bir giriş niteliği taşırken, aynı zamanda animasyon film yapımcılığı açısından da döneminin önemli bir örneği olmuştur. Tolkien'ın fantastik dünyasını ve mitolojisini yansıtırken, aynı zamanda izleyicinin daha sonraki filmlerdeki olayları anlamasına yardımcı olan temel bilgileri sunar. Bilbo'nun cesaretini ve içindeki maceraperest ruhu keşfedişi, filmin ana temasını oluşturur ve onun kişisel gelişimini vurgular. Film, bu yönüyle yalnızca bir hikaye anlatmakla kalmaz, aynı zamanda bir kahramanın doğuşuna tanıklık eder ve bu, serinin geleceği için çok önemli bir konsepttir. Film, 'Tek Yüzük'ün nasıl bulunduğu gibi kritik bir bilgiyi izleyiciye sunarak, sonraki filmlerin temelini atmıştır.",
+      "refers_to": "Bu animasyon filmi, kronolojik olarak Tolkien'ın evrenindeki olayların başlangıç noktasıdır ve aynı zamanda, Peter Jackson'ın canlı aksiyon üçlemesinin de olay örgüsü bakımından bir öncülüdür. Ancak, bu film ve devamı olan **The Lord of the Rings (1978)** ile **The Return of the King (1980)**, kendi içinde tutarlı ve canlı aksiyon filmlerinden bağımsız bir seri oluşturur. 'The Hobbit' filmi, Tek Yüzük'ün keşfedilme hikayesini anlatarak, doğrudan devam filmi olan 'The Lord of the Rings' için bir zemin hazırlar. Bilbo'nun yüzüğü bulması ve onu bir süre sonra yeğeni Frodo'ya bırakması, 'Yüzüklerin Efendisi' serisinin ana olay örgüsünü başlatan en kritik andır. Bu animasyon filmi, Bilbo'nun Tek Yüzük'ü bulmasını, yüzüğün ne kadar önemli ve tehlikeli bir nesne olduğunu anlamamızı sağlar. Bu bilgi, daha sonraki animasyon filmi olan **The Lord of the Rings (1978)**'in temel çatışmasını oluşturur. 'Hobbit', bu yönüyle sadece kendi başına bir film değil, aynı zamanda daha sonra gelen animasyon film serisinin bir girişi niteliğindedir. Filmde cücelerin kayıp Erebor krallığını geri alma arzusu, Tolkien'ın dünyasının zengin tarihini ve mitolojisini izleyiciye sunar. Bu, daha sonraki filmlerde yer alan diğer ırkların ve krallıkların hikayelerini anlamamız için de bir referans noktası oluşturur. Film, Gandalf'ın Büyücü olarak rolünü, Sauron'un yükselişini ve Orta Dünya'nın durumu hakkındaki endişelerini göstererek, Yüzüklerin Efendisi serisinin daha karanlık atmosferine hazırlık yapar. 'The Hobbit'in hikayesi, aynı zamanda Peter Jackson'ın canlı aksiyon üçlemesi olan **The Hobbit: An Unexpected Journey (2012)**'e de ilham kaynağı olmuştur. Ancak, bu animasyon filmi, canlı aksiyon serisinden farklı bir ton ve anlatım stiline sahiptir ve kendi içinde tamamlanmış bir hikaye anlatır. Film, Tolkien'ın dünyasına genel bir bakış sunar ve bu dünya içindeki temel karakterleri, mekanları ve nesneleri izleyiciye tanıtır. Bilbo'nun yüzüğü bulması, onun macera sonrası değişimi ve bu yüzüğün gelecekteki olaylar için bir katalizör görevi görmesi, filmin en önemli hikaye öğeleridir. Bu animasyon filmi, bu yönüyle hem kendi serisinin başlangıcı hem de Tolkien evreninin daha geniş anlatısı için önemli bir referans noktasıdır.",
+      "canonical_level": "separate_canon",
+      "sources": {
+        "Kaynaklar": [
+          {
+            "name": "IMDb",
+            "url": "https://www.imdb.com/title/tt0077687/"
+          },
+          {
+            "name": "Wikipedia",
+            "url": "https://tr.wikipedia.org/wiki/The_Hobbit_(1977_film)"
+          }
+        ],
+        "Görsel": [
+          {
+            "name": "IMDb",
+            "url": "https://m.media-amazon.com/images/M/MV5BYTJhODI1YjMtYjc0Ni00YTcyLTgxNjYtMzYzNDllZWI1ZTI0XkEyXkFqcGc@._V1_.jpg"
+          }
+        ],
+        "Platform": [
+          {
+            "name": "Prime Video",
+            "url": "https://www.primevideo.com/-/tr/detail/The-Hobbit-1977/0ST83B2133OTP8UWN5EKK3SXM6"
+          }
+        ]
+      },
+      "lang": "tr"
+    },
+    {
+      "id": "film/tolkien/lotr-animasyon-1978",
+      "label": "The Lord of the Rings (1978) (Animasyon)",
+      "title": "The Lord of the Rings",
+      "type": "film",
+      "release_date": "1978-11-15",
+      "end_date": null,
+      "image": "https://m.media-amazon.com/images/M/MV5BZmI4ZmIxOGQtMGY2ZS00Y2Y5LTllMDItYzllOWFmMTNlMmY2XkEyXkFqcGc@._V1_.jpg",
+      "imdb_rating": 6.2,
+      "yönetmen": [
+        "Ralph Bakshi"
+      ],
+      "oyuncular": [
+        "Christopher Guard",
+        "William Squire",
+        "Michael Scholes",
+        "John Hurt",
+        "Simon Chandler"
+      ],
+      "tür": [
+        "Animasyon",
+        "Fantastik",
+        "Macera"
+      ],
+      "shape": "image",
+      "description": "1978 yapımı 'The Lord of the Rings', ünlü yönetmen Ralph Bakshi tarafından yönetilen ve J.R.R. Tolkien'ın 'Yüzüklerin Efendisi' üçlemesinin ilk iki kitabını uyarlayan rotoskopik animasyon filmidir. Bu film, canlı aksiyon uyarlamaları gelmeden önceki en iddialı ve geniş kapsamlı Tolkien uyarlaması olarak kabul edilir. Filmin hikayesi, Bilbo Baggins'in Tek Yüzük'ü, yeğeni Frodo Baggins'e bırakmasıyla başlar. Büyücü Gandalf, yüzüğün aslında Sauron'un tüm Orta Dünya'yı kontrol etmek için yarattığı güçlü bir nesne olduğunu ve onu yok etmesi gerektiğini açıklar. Frodo, sadık dostu Sam'le birlikte Shire'dan ayrılır ve yolda diğer hobbitler, Merry ve Pippin'e katılır. Bu tehlikeli yolculukta onlara, Arathorn'un varisi Aragorn, cüce Gimli, elf Legolas, Gondor'lu savaşçı Boromir ve büyücü Gandalf eşlik eder. Bu grup, 'Yüzük Kardeşliği' olarak adlandırılır ve yüzüğü, sadece Mordor'un derinliklerindeki Kıyamet Dağı'nda yok edebileceklerdir. Film, rotoskop tekniği kullanılarak, oyuncuların gerçek sahnelerinin üzerine çizim yapılmasıyla oluşturulmuştur. Bu teknik, filmin benzersiz ve yer yer korkutucu bir görsel stile sahip olmasını sağlar. Ancak, filmin hikayesi, iki buçuk saatlik süresine sığdırılmaya çalışıldığı için hızlı bir şekilde ilerler ve 'Yüzük Kardeşliği' ile 'İki Kule' kitaplarının büyük bir kısmını kapsar. Film, 'İki Kule'nin sonuna doğru beklenmedik bir şekilde sonlanır ve hikayeyi tamamlanmamış bir şekilde bırakır. Bakshi'nin filmi, Tolkien'ın dünyasının karanlık, mitolojik ve epik doğasını yakalama konusunda başarılı olsa da, filmin yarım kalması ve devamının gelmemesi eleştirmenler ve hayranlar arasında hayal kırıklığı yaratmıştır. Buna rağmen, filmin etkisi, daha sonraki uyarlamalar için bir temel oluşturmuş ve Tolkien'ın dünyasının sinematik potansiyelini göstermiştir. Film, sadece bir animasyon filmi değil, aynı zamanda rotoskop tekniğinin sanat eserlerine nasıl uygulanabileceğinin de bir örneğidir ve filmdeki savaş sahneleri, müzikler ve görsel ton, izleyicinin aklında kalır. Film, Tolkien'ın eserindeki felsefi derinliği ve karakter gelişimlerini yakalamaya çalışır ve Frodo'nun Yüzük'ün ağırlığıyla olan mücadelesi gibi konulara odaklanır. Her ne kadar hikayesi yarım kalsa da, bu film, Tolkien'ın dünyasının ilk büyük sinematik yorumlarından biri olarak kabul edilir ve **The Return of the King (1980)** animasyon filmi için bir öncül görevi görür.",
+      "refers_to": "Bu animasyon filmi, doğrudan **The Hobbit (1977)** filminin devamıdır ve onun hikayesini kronolojik olarak takip eder. 'Hobbit' filminde Bilbo Baggins'in bulduğu Tek Yüzük, bu filmde amcasından yeğeni Frodo'ya geçer ve hikayenin ana çatışmasını başlatır. Filmin anlatısı, 'Hobbit'in masalsı ve çocuksu tonundan, daha karanlık ve epik bir tona geçiş yapar ve Yüzük'ün ne kadar tehlikeli bir güç olduğunu izleyiciye gösterir. Bu film, 'Hobbit'te kurulan 'Tek Yüzük' kavramını derinleştirir ve onun tüm Orta Dünya için nasıl bir tehdit oluşturduğunu açıklar. 'Yüzüklerin Efendisi', üçlemenin ilk iki kitabını kapsasa da, hikayeyi tamamlayamaz. Filmin sonunda, Kardeşliğin dağılması ve ana karakterlerin farklı yollara ayrılması, bir sonraki film olan **The Return of the King (1980)**'in hikayesi için bir geçiş noktası oluşturur. Her ne kadar 'The Return of the King' animasyonu farklı bir stüdyo tarafından yapılmış olsa da, 1978 yapımı filmin yarım kalan hikayesini tamamlamayı amaçlar. 1978 animasyonu, Frodo ve Sam'in Mordor'a olan yolculuğunu ve Aragorn, Legolas ve Gimli'nin Rohan'a olan yolculuğunu paralel bir şekilde anlatarak, **The Return of the King (1980)**'de bu karakterlerin ne yapacağı hakkında bir temel oluşturur. Film, canlı aksiyon üçlemesinden tamamen bağımsız bir kanon oluşturur ve bu yüzden canlı aksiyon filmleriyle doğrudan bir bağlantısı yoktur. Ancak, hikayesel olarak, Peter Jackson'ın **Yüzüklerin Efendisi: Yüzük Kardeşliği (2001)** filminin hikayesiyle aynı noktadan başlar ve Tolkien'ın aynı adlı romanını temel alır. Bu film, Tek Yüzük'ün tehlikesini, Sauron'un yükselişini ve Orta Dünya'nın üzerindeki tehdidi izleyiciye sunar ve bu konular, sonraki animasyon filmi için bir zemin hazırlar. 'Yüzüklerin Efendisi'nin yarım kalan hikayesi, 'Kralın Dönüşü' filminin tamamlamasıyla, bu animasyon serisinin kendi içinde tutarlı bir sonuca ulaşmasını sağlar. Bu yüzden, bu iki film birbirine doğrudan atıfta bulunur ve birbiriyle bütünleşen bir hikaye anlatır.",
+      "canonical_level": "separate_canon",
+      "sources": {
+        "Kaynaklar": [
+          {
+            "name": "IMDb",
+            "url": "https://www.imdb.com/title/tt0077869/"
+          },
+          {
+            "name": "Wikipedia",
+            "url": "https://tr.wikipedia.org/wiki/Y%C3%BCz%C3%BCklerin_Efendisi_(1978_filmi)"
+          }
+        ],
+        "Görsel": [
+          {
+            "name": "IMDb",
+            "url": "https://m.media-amazon.com/images/M/MV5BZmI4ZmIxOGQtMGY2ZS00Y2Y5LTllMDItYzllOWFmMTNlMmY2XkEyXkFqcGc@._V1_.jpg"
+          }
+        ],
+        "Platform": [
+          {
+            "name": "Prime Video",
+            "url": "https://www.primevideo.com/-/tr/detail/The-Lord-of-the-Rings-1978/0P0YEW5SH0BTVJQ2FB5YYQRMER"
+          }
+        ]
+      },
+      "lang": "tr"
+    },
+    {
+      "id": "film/tolkien/kralin-donusu-animasyon-1980",
+      "label": "The Return of the King (1980) (Animasyon)",
+      "title": "The Return of the King",
+      "type": "film",
+      "release_date": "1980-05-11",
+      "end_date": null,
+      "image": "https://m.media-amazon.com/images/M/MV5BNjc5YzQyZWItYzZkNS00NTI1LTljNTUtYjcwMDNmZmFhNTI4XkEyXkFqcGc@._V1_.jpg",
+      "imdb_rating": 5.7,
+      "yönetmen": [
+        "Jules Bass",
+        "Arthur Rankin Jr."
+      ],
+      "oyuncular": [
+        "Orson Bean",
+        "Theodore Bikel",
+        "John Huston",
+        "Roddy McDowall"
+      ],
+      "tür": [
+        "Animasyon",
+        "Fantastik",
+        "Macera"
+      ],
+      "shape": "image",
+      "description": "1980 yapımı 'The Return of the King', J.R.R. Tolkien'ın efsanevi üçlemesinin son kitabı olan 'Kralın Dönüşü'nden uyarlanan bir animasyon filmidir. Bu film, 1977 yapımı 'The Hobbit' filmini de yöneten Jules Bass ve Arthur Rankin Jr. tarafından yapılmıştır. Bu yüzden, Ralph Bakshi'nin 1978 yapımı filminden farklı bir görsel stile ve tona sahiptir. Filmin hikayesi, Bakshi'nin 'Yüzüklerin Efendisi' animasyon filminin bıraktığı yerden devam eder ve Tolkien'ın hikayesini sonlandırmayı amaçlar. Hikaye, Tek Yüzük'ü yok etmek için Mordor'a doğru tehlikeli yolculuğuna devam eden Frodo ve Sam'in mücadelesine odaklanır. Aynı zamanda, Sauron'un güçlerine karşı verilen büyük savaşları da anlatır. Özellikle, Gondor'un başkenti Minas Tirith'in kuşatılması ve Aragorn'un krallık mirasını kabul ederek ordularıyla yardıma gelmesi gibi olaylar filmde yer alır. Filmde, hobbitler Merry ve Pippin'in Rohan ve Gondor ordularıyla birlikte verdikleri savaşlar da işlenir. Filmin tonu, 1977 yapımı 'The Hobbit' animasyonuna benzer şekilde müzikal ve masalsı bir yaklaşıma sahiptir. Bu, Bakshi'nin 1978 yapımı filminin daha karanlık ve yetişkinlere yönelik tonundan önemli ölçüde farklıdır. 'The Return of the King', Bakshi'nin filminde anlatılan hikayenin devamı olarak, Frodo ve Sam'in yolculuğunu ve Yüzük Kardeşliği'nin kalan üyelerinin mücadelesini tamamlar. Filmin finali, Frodo'nun yüzüğü yok etmesi ve Aragorn'un kral olarak taç giymesiyle hikayeyi mutlu bir sonla bitirir. Ancak, bu animasyon filmi, hikayenin bazı önemli kısımlarını atlaması ve aceleci bir anlatıma sahip olması nedeniyle eleştirilmiştir. Filmin düşük IMDb puanı, bu eleştirilerin bir yansımasıdır. Yine de, bu film, Tolkien'ın Orta Dünya'sının animasyon evrenini tamamlayan ve serinin ana hikayesini sonuçlandıran önemli bir parçadır. Film, Tolkien'ın evrenindeki 'iyiliğin kötülüğe karşı savaşı', 'fedakarlık' ve 'dostluk' gibi temel temaları işler. İzleyiciye, kahramanların zorlu mücadelelerinin ve verdikleri kararların nasıl bir sonuca ulaştığını gösterir. 'The Return of the King', animasyon serisinin son halkası olarak, 'The Hobbit' ve 'Yüzüklerin Efendisi' filmlerinin hikayelerini bir araya getirerek, kendi içinde bir bütünlük oluşturur ve seriyi tamamlar.",
+      "refers_to": "Bu film, 1978 yapımı **The Lord of the Rings** animasyon filminin yarım bıraktığı hikayeyi doğrudan devam ettirir ve sonlandırır. Bakshi'nin filminde Yüzük Kardeşliği'nin dağılmasıyla başlayan olaylar, 'Kralın Dönüşü'nde Frodo ve Sam'in Mordor'a olan yolculuğunun finaliyle sonuçlanır. Bu iki film arasında doğrudan ve güçlü bir hikayesel bağlantı vardır. Her ne kadar farklı yönetmenler ve stüdyolar tarafından yapılmış olsalar da, 1980 yapımı film, 1978 yapımı filmin tamamlanmamış anlatısını bitirmeyi amaçlamıştır. Film aynı zamanda, ilk olarak 1977 yapımı **The Hobbit** animasyonunda başlayan Bilbo'nun Tek Yüzük'ü bulma hikayesinin de mantıklı bir sonuca ulaşmasını sağlar. Bu üç animasyon filmi, kendi içinde tutarlı bir animasyon serisi oluşturur ve her biri, bir sonrakine hikayesel bir köprü görevi görür. Bu serinin canlı aksiyon filmleri olan Peter Jackson'ın üçlemesiyle doğrudan bir kanonik bağı yoktur, ancak hikayesel olarak aynı Tolkien evrenine dayanır. 'The Return of the King', Frodo'nun Yüzük'ü yok etme görevini tamamlaması ve Aragorn'un Gondor kralı olarak taç giymesi gibi olayları işleyerek, önceki filmlerde kurulan tüm hikaye örgüsünü bir sonuca ulaştırır. Film, izleyiciye bir önceki filmde başlayan savaşın nasıl sonlandığını ve Orta Dünya'nın kaderinin nasıl belirlendiğini gösterir. Bu yüzden, 1978 yapımı filmi izleyen bir izleyici için 'Kralın Dönüşü' kaçırılmaması gereken ve hikayeyi tamamlayan bir final filmidir. Film, bu yönüyle animasyon serisinin en önemli parçalarından biri olarak kabul edilir ve üçlemenin son halkası olarak tüm hikayeyi bir araya getirir.",
+      "canonical_level": "separate_canon",
+      "sources": {
+        "Kaynaklar": [
+          {
+            "name": "IMDb",
+            "url": "https://www.imdb.com/title/tt0081447/"
+          },
+          {
+            "name": "Wikipedia",
+            "url": "https://tr.wikipedia.org/wiki/The_Return_of_the_King_(1980_filmi)"
+          }
+        ],
+        "Görsel": [
+          {
+            "name": "IMDb",
+            "url": "https://m.media-amazon.com/images/M/MV5BNjc5YzQyZWItYzZkNS00NTI1LTljNTUtYjcwMDNmZmFhNTI4XkEyXkFqcGc@._V1_.jpg"
+          }
+        ],
+        "Platform": [
+          {
+            "name": "Prime Video",
+            "url": "https://www.primevideo.com/dp/B07YQ8Q22R"
+          }
+        ]
+      },
+      "lang": "tr"
+    },
+    {
+      "id": "film/tolkien/yuzuklerin-efendisi-yuzuk-kardesligi-2001",
+      "label": "The Lord of the Rings: The Fellowship of the Ring (2001)",
+      "title": "The Lord of the Rings: The Fellowship of the Ring",
+      "type": "film",
+      "release_date": "2002-01-11",
+      "end_date": null,
+      "image": "https://m.media-amazon.com/images/M/MV5BNzIxMDQ2YTctNDY4MC00ZTRhLTk4ODQtMTVlOWY4NTdiYmMwXkEyXkFqcGc@._V1_.jpg",
+      "imdb_rating": 8.9,
+      "yönetmen": [
+        "Peter Jackson"
+      ],
+      "oyuncular": [
+        "Elijah Wood",
+        "Ian McKellen",
+        "Viggo Mortensen",
+        "Sean Astin",
+        "Orlando Bloom"
+      ],
+      "tür": [
+        "Fantastik",
+        "Macera",
+        "Aksiyon"
+      ],
+      "shape": "image",
+      "description": "2001 yapımı 'The Lord of the Rings: The Fellowship of the Ring', Peter Jackson'ın yönettiği ve J.R.R. Tolkien'ın efsanevi romanından uyarlanan üçlemenin ilk ve sinema tarihinin en etkileyici fantastik filmlerinden biridir. Film, küçük ve huzurlu bir köy olan Shire'da yaşayan hobbit Frodo Baggins'in, amcası Bilbo'dan miras kalan sıradan görünen bir yüzüğün aslında tüm Orta Dünya'yı yok edebilecek bir güce sahip olduğunu öğrenmesiyle başlar. Yüzük, binlerce yıl önce Sauron tarafından dövülmüş ve onun ruhunu taşıyan Tek Yüzük'tür. Büyücü Gandalf'ın yardımıyla, Yüzük'ü Mordor'un derinliklerindeki Kıyamet Dağı'nda yok etmek için tehlikeli bir yolculuğa çıkar. Bu yolculukta ona, diğer hobbitler Sam, Merry ve Pippin, insan savaşçılar Aragorn ve Boromir, cüce Gimli ve elf Legolas'tan oluşan 'Yüzük Kardeşliği' eşlik eder. Film, izleyiciye Orta Dünya'nın fantastik ve detaylı dünyasını görsel olarak büyüleyici bir şekilde tanıtır. Elflerin görkemli krallığı Rivendell'den, Moria madenlerinin karanlık ve tehlikeli dehlizlerine kadar, film her sahnesinde Tolkien'ın yarattığı dünyayı hissettirir. Film, dostluk, fedakarlık, cesaret ve umut gibi evrensel temaları işlerken, karakterlerin psikolojik gelişimine de odaklanır. Frodo'nun Yüzük'ün ağırlığı altında ezilmesi, Aragorn'un krallık mirasıyla yüzleşmesi ve Kardeşliğin üyeleri arasındaki dostluk bağı, filmin ana dramatik unsurlarını oluşturur. Filmin finalinde, Yüzük Kardeşliği'nin dağılması ve ana karakterlerin farklı yollara ayrılması, üçlemenin geri kalanındaki olaylara bir köprü oluşturur. Peter Jackson'ın görsel efektleri, yapay zeka ile oluşturulan devasa savaş sahneleri ve filmdeki epik müzikler, filmi sadece bir macera filmi olmaktan çıkarıp, bir sinematik başyapıta dönüştürmüştür. Film, En İyi Film dahil olmak üzere 13 dalda Akademi Ödülü'ne aday gösterilmiş ve 4 tanesini kazanmıştır. 'Yüzük Kardeşliği', fantastik sinemanın geleceğini şekillendiren ve milyonlarca izleyiciyi Tolkien'ın büyülü dünyasıyla tanıştıran, unutulmaz bir başlangıç noktasıdır.",
+      "refers_to": "Bu film, Peter Jackson'ın Orta Dünya evreninin başlangıç noktasıdır. Ancak kronolojik olarak, bu film, **The Hobbit** canlı aksiyon üçlemesinden sonra gelir. Bu film, amcası Bilbo'nun **Hobbit: An Unexpected Journey (2012)**'de bulduğu Tek Yüzük'ü, yeğeni Frodo'nun miras almasıyla başlar. Bu yüzden, 'Yüzük Kardeşliği', 'Hobbit' üçlemesinde kurulan hikayenin doğrudan bir devamıdır ve Tek Yüzük'ün tehlikesini yeni bir seviyeye taşır. Film, ayrıca **The Lord of the Rings: The Two Towers (2002)**'a doğrudan bir geçiş yapar. Filmin sonunda, Yüzük Kardeşliği'nin dağılması ve karakterlerin farklı yollara ayrılması, bir sonraki filmde her bir karakterin paralel hikayelerini izlememize olanak tanır. Frodo ve Sam'in Mordor'a doğru olan yolculuğu, Aragorn, Legolas ve Gimli'nin ise kaçırılan hobbitleri kurtarmak için yola çıkması, 'İki Kule'nin başlangıç noktalarını oluşturur. Film, bu şekilde serinin devamı için güçlü bir temel ve motivasyon kaynağı sağlar. Filmin hikayesi, aynı zamanda, Frodo'nun Yüzük'ün ağırlığıyla olan mücadelesi gibi konuları işleyerek, serinin final filmi olan **The Lord of the Rings: The Return of the King (2003)**'ün ana çatışmasına zemin hazırlar. Film, bir yandan ana hikayeyi başlatırken, bir yandan da Orta Dünya'nın tarihini, karakterlerini ve olaylarını izleyiciye sunar. 'Yüzük Kardeşliği', Peter Jackson'ın altı filmlik canlı aksiyon serisinin merkezini oluşturan, en önemli filmidir. Filmin felsefi derinliği, karakter gelişimleri ve epik anlatısı, serinin geri kalanına da yön verir ve Tolkien'ın evrenini daha önce hiç olmadığı kadar canlı bir şekilde ekrana taşır. Film, bu yönüyle sadece bir başlangıç filmi değil, aynı zamanda tüm serinin ruhunu ve temelini oluşturan bir yapımdır.",
+      "canonical_level": "canon",
+      "sources": {
+        "Kaynaklar": [
+          {
+            "name": "Box Office Türkiye",
+            "url": "https://boxofficeturkiye.com/film/yuzuklerin-efendisi-yuzuk-kardesligi--2010158"
+          },
+          {
+            "name": "IMDb",
+            "url": "https://www.imdb.com/title/tt0120737/"
+          },
+          {
+            "name": "Wikipedia",
+            "url": "https://tr.wikipedia.org/wiki/Y%C3%BCz%C3%BCklerin_Efendisi:_Y%C3%BCz%C3%BCk_Karde%C5%9Fli%C4%9Fi"
+          }
+        ],
+        "Görsel": [
+          {
+            "name": "IMDb",
+            "url": "https://m.media-amazon.com/images/M/MV5BNzIxMDQ2YTctNDY4MC00ZTRhLTk4ODQtMTVlOWY4NTdiYmMwXkEyXkFqcGc@._V1_.jpg"
+          }
+        ],
+        "Platform": [
+          {
+            "name": "Max",
+            "url": "https://play.hbomax.com/movie/fb9f961f-6302-4776-91d7-f1b7a69fb61d"
+          }
+        ]
+      },
+      "lang": "tr"
+    },
+    {
+      "id": "film/tolkien/yuzuklerin-efendisi-iki-kule-2002",
+      "label": "The Lord of the Rings: The Two Towers (2002)",
+      "title": "The Lord of the Rings: The Two Towers",
+      "type": "film",
+      "release_date": "2002-12-20",
+      "end_date": null,
+      "image": "https://m.media-amazon.com/images/M/MV5BMGQxMDdiOWUtYjc1Ni00YzM1LWE2NjMtZTg3Y2JkMjEzMTJjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "imdb_rating": 8.8,
+      "yönetmen": [
+        "Peter Jackson"
+      ],
+      "oyuncular": [
+        "Elijah Wood",
+        "Ian McKellen",
+        "Viggo Mortensen",
+        "Sean Astin",
+        "Orlando Bloom"
+      ],
+      "tür": [
+        "Fantastik",
+        "Macera",
+        "Aksiyon"
+      ],
+      "shape": "image",
+      "description": "2002 yapımı 'The Lord of the Rings: The Two Towers', Peter Jackson'ın üçlemesinin ikinci filmi olup, ilk filmin bıraktığı yerden hikayeyi daha karmaşık ve epik bir boyuta taşır. 'Yüzük Kardeşliği'nin dağılmasının ardından, film, ana karakterlerin paralel hikayelerini takip eder. Frodo ve Sam, Yüzük'ü Mordor'a ulaştırmak için yolculuklarına devam ederken, bu yolda onları takip eden gizemli ve kurnaz Gollum'un rehberliğine muhtaç kalırlar. Gollum'un karmaşık karakteri, Yüzük'ün çekiciliğini ve yıkıcı etkisini daha da derinleştirir. Diğer yandan, Aragorn, elf Legolas ve cüce Gimli, kaçırılan hobbitler Merry ve Pippin'i kurtarmak için takipçileri Orklar'ı kovalar. Bu yolculuk onları, Saruman'ın güçleri tarafından tehdit edilen Rohan krallığına götürür. Rohan kralı Théoden'in Saruman'ın etkisi altında olduğunu öğrenen kahramanlarımız, onu eski gücüne kavuşturmaya ve yaklaşan büyük savaşa hazırlamaya çalışırlar. Filmin en önemli olayı, Miğfer Dibi'ndeki destansı savaştır. Bu savaş, Rohan'ın kahramanlarının, Saruman'ın Uruk-hai ordusuna karşı verdikleri umutsuz bir direnişin hikayesidir. Film, bu savaşı sinema tarihinin en büyük savaş sahnelerinden biri olarak canlandırır. 'İki Kule', sadece aksiyon ve savaş sahneleriyle değil, aynı zamanda karakter gelişimleriyle de dikkat çeker. Aragorn, Gondor kralı olma kaderiyle yüzleşir, Frodo, Yüzük'ün ağırlığı altında ezilirken, Sam'in sadakati ve gücü daha da belirgin hale gelir. Merry ve Pippin'in Entler'le tanışması ve Fangorn Ormanı'nın uyanışı, hikayeye doğa ve eski güçler temasını ekler. Film, Peter Jackson'ın canlı aksiyon üçlemesinin merkezindeki film olarak, tüm hikaye örgüsünü nihai final savaşına hazırlar ve izleyiciyi hem duygusal hem de aksiyon dolu bir yolculuğa çıkarır. Film, En İyi Görsel Efektler ve En İyi Ses Kurgusu dallarında Akademi Ödülü kazanarak teknik başarısını kanıtlamıştır. 'İki Kule', serinin tonunu daha da ciddileştirir ve yaklaşan büyük savaşın atmosferini yansıtarak, üçlemenin geri kalanı için beklentiyi yükseltir.",
+      "refers_to": "Bu film, **The Lord of the Rings: The Fellowship of the Ring**'in doğrudan devamıdır. İlk filmin sonunda Yüzük Kardeşliği'nin dağılmasıyla başlayan hikayeyi, karakterlerin paralel yolculukları üzerinden anlatır. Frodo ve Sam'in Mordor'a doğru olan yolculuğu, Aragorn, Legolas ve Gimli'nin Rohan'a doğru olan yolculuğu ve Merry ile Pippin'in Entler'le olan hikayesi, ilk filmde kurulan olayların doğrudan sonuçlarıdır. Film, Gollum karakterini tanıtır ve onun, Yüzük'ün üzerindeki etkisini ve Frodo'nun kendi mücadelesini daha da karmaşıklaştırır. 'İki Kule', bu yönüyle bir önceki filmin bıraktığı hikayesel boşlukları doldurur ve karakterlerin gelişimini daha derinlemesine işler. Filmin sonunda, Miğfer Dibi'ndeki zafer ve Frodo ile Sam'in Mordor sınırına yaklaşması, bir sonraki film olan **The Lord of the Rings: The Return of the King (2003)**'ün ana hikayesi için zemin hazırlar. Rohan'ın savaşa girmesi ve Minas Tirith'in tehdit altında olması gibi olaylar, 'Kralın Dönüşü'nde yaşanacak olan büyük savaşın ilk sinyallerini verir. Film, Peter Jackson'ın canlı aksiyon serisinin merkezindeki film olarak, hem 'Yüzük Kardeşliği'nin hikayesini ileriye taşır hem de serinin finaline giden yolu hazırlar. 'İki Kule', bu şekilde serinin ana çatışmalarını ve karakterlerini bir sonraki seviyeye taşıyan kritik bir filmdir ve üçlemenin son filmi için tüm koşulları hazırlar. Gollum'un karakteri, bu filmde daha derinlemesine işlenir ve bu durum, 'Kralın Dönüşü'nün finali için hayati bir önem taşır. Film, bu yönüyle sadece bir devam filmi değil, aynı zamanda üçlemenin en önemli hikaye köprülerinden biridir.",
+      "canonical_level": "canon",
+      "sources": {
+        "Kaynaklar": [
+          {
+            "name": "Box Office Türkiye",
+            "url": "https://boxofficeturkiye.com/film/yuzuklerin-efendisi-iki-kule--2010159"
+          },
+          {
+            "name": "IMDb",
+            "url": "https://www.imdb.com/title/tt0167261/"
+          },
+          {
+            "name": "Wikipedia",
+            "url": "https://tr.wikipedia.org/wiki/Y%C3%BCz%C3%BCklerin_Efendisi:_iki_Kule"
+          }
+        ],
+        "Görsel": [
+          {
+            "name": "IMDb",
+            "url": "https://m.media-amazon.com/images/M/MV5BMGQxMDdiOWUtYjc1Ni00YzM1LWE2NjMtZTg3Y2JkMjEzMTJjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+          }
+        ],
+        "Platform": [
+          {
+            "name": "Max",
+            "url": "https://play.hbomax.com/movie/1b73bd19-1229-4e5f-986a-ae38ac0f5476"
+          }
+        ]
+      },
+      "lang": "tr"
+    },
+    {
+      "id": "film/tolkien/yuzuklerin-efendisi-kralin-donusu-2003",
+      "label": "The Lord of the Rings: The Return of the King (2003)",
+      "title": "The Lord of the Rings: The Return of the King",
+      "type": "film",
+      "release_date": "2003-12-19",
+      "end_date": null,
+      "image": "https://m.media-amazon.com/images/M/MV5BMTZkMjBjNWMtZGI5OC00MGU0LTk4ZTItODg2NWM3NTVmNWQ4XkEyXkFqcGc@._V1_.jpg",
+      "imdb_rating": 9.0,
+      "yönetmen": [
+        "Peter Jackson"
+      ],
+      "oyuncular": [
+        "Elijah Wood",
+        "Ian McKellen",
+        "Viggo Mortensen",
+        "Sean Astin",
+        "Orlando Bloom"
+      ],
+      "tür": [
+        "Fantastik",
+        "Macera",
+        "Aksiyon"
+      ],
+      "shape": "image",
+      "description": "2003 yapımı 'The Lord of the Rings: The Return of the King', Peter Jackson'ın üçlemesini görkemli ve duygusal bir şekilde sonlandıran, sinema tarihinde iz bırakmış bir final filmidir. Orta Dünya'daki tüm güçler, Sauron'un yükselen kötülüğüne karşı son bir mücadele için bir araya gelir. Film, hikayenin üç ana kolunu takip eder: Frodo ve Sam'in, Tek Yüzük'ü yok etmek için Mordor'a olan zorlu ve umutsuz yolculuğu; Aragorn'un krallık mirasını kabul ederek Gondor'un başkenti Minas Tirith'i savunmak için ordularını toplama mücadelesi; ve Gandalf ile diğer kahramanların Sauron'un devasa ordularına karşı verdiği son direniş. Filmin en unutulmaz sahnelerinden biri, Pelenor Çayırları Savaşı'dır. Bu savaş, Gondor ordusunun, Nazgûl ve diğer kötülük güçlerine karşı verdiği destansı mücadeleyi canlandırır. Film, görsel efektleri, devasa savaş sahneleri ve duygusal derinliğiyle izleyiciyi büyüler. 'Kralın Dönüşü', sadece bir aksiyon filmi olmaktan öte, serinin tüm ana temalarını - dostluk, fedakarlık, cesaret, umut ve sevginin gücü - en üst seviyede işler. Frodo ve Sam'in Mordor'daki mücadelesi, Yüzük'ün ağırlığının ve karanlığının getirdiği yükü en iyi şekilde yansıtır. Aragorn'un krallık mirasını kabul etmesi, filmin ana dramatik unsurlarından biridir ve onun bir 'sığınmacı'dan gerçek bir krala dönüşümünü gösterir. Filmin sonu, Frodo'nun Yüzük'ü yok etmesi ve Aragorn'un kral olarak taç giymesiyle hikayeyi mutlu bir sonla bitirir. Bu film, En İyi Film dahil olmak üzere 11 dalda Akademi Ödülü kazanarak, sinema tarihinde bir rekor kırmıştır. 'Kralın Dönüşü', hem hikayeyi hem de karakterlerin yolculuklarını tatmin edici bir şekilde sonlandırır. Film, izleyicilere sadece epik bir hikaye sunmakla kalmaz, aynı zamanda bir dönemin sona erişini ve yeni bir dönemin başlangıcını da işaret eder. Film, Tolkien'ın Orta Dünya'sının tüm mitolojisini, efsanesini ve ruhunu en iyi şekilde yansıtan bir başyapıt olarak kabul edilir ve üçlemenin en önemli parçasıdır.",
+      "refers_to": "Bu film, **The Lord of the Rings: The Two Towers**'ın doğrudan devamıdır ve Peter Jackson'ın canlı aksiyon üçlemesinin finalidir. 'İki Kule'de başlayan Frodo ve Sam'in Mordor'a olan yolculuğu, Aragorn'un krallık mirasıyla yüzleşmesi ve Orta Dünya'nın savaşa hazırlanması gibi tüm hikaye örgülerinin birleştiği son noktadır. Film, Gollum'un ihanetinin ve Frodo'nun Yüzük'ün cazibesiyle son mücadelesinin doruk noktasıdır ve bu olaylar, önceki filmlerde kurulan gerilimlerin doğrudan bir sonucudur. Filmin hikayesi, aynı zamanda Peter Jackson'ın canlı aksiyon serisinin başlangıcı olan **The Hobbit** üçlemesinden de beslenir. 'Kralın Dönüşü', 'Hobbit' serisinde Bilbo'nun bulduğu Tek Yüzük'ün hikayesini sonlandırır ve tüm evreni mantıklı bir sona ulaştırır. Film, bir yandan ana hikayeyi bitirirken, bir yandan da Orta Dünya'nın geleceği için yeni bir umut ışığı yakar. 'Kralın Dönüşü', Peter Jackson'ın altı filmlik canlı aksiyon serisinin finali olarak, tüm karakterlerin yolculuklarını tamamlar ve tüm hikayeyi bir araya getirir. Film, izleyiciye bir önceki filmde başlayan savaşın nasıl sonlandığını ve Orta Dünya'nın kaderinin nasıl belirlendiğini gösterir. Bu yüzden, 'Yüzük Kardeşliği' ve 'İki Kule' filmlerini izleyen bir izleyici için 'Kralın Dönüşü' kaçırılmaması gereken ve hikayeyi tamamlayan bir final filmidir. Film, bu yönüyle tüm serinin en önemli ve en etkileyici parçasıdır.",
+      "canonical_level": "canon",
+      "sources": {
+        "Kaynaklar": [
+          {
+            "name": "Box Office Türkiye",
+            "url": "https://boxofficeturkiye.com/film/yuzuklerin-efendisi-kralin-donusu--2010160"
+          },
+          {
+            "name": "IMDb",
+            "url": "https://www.imdb.com/title/tt0167260/"
+          },
+          {
+            "name": "Wikipedia",
+            "url": "https://tr.wikipedia.org/wiki/Y%C3%BCz%C3%BCklerin_Efendisi:_Kral%C4%B1n_D%C3%B6n%C3%BC%C5%9F%C3%BC"
+          }
+        ],
+        "Görsel": [
+          {
+            "name": "IMDb",
+            "url": "https://m.media-amazon.com/images/M/MV5BMTZkMjBjNWMtZGI5OC00MGU0LTk4ZTItODg2NWM3NTVmNWQ4XkEyXkFqcGc@._V1_.jpg"
+          }
+        ],
+        "Platform": [
+          {
+            "name": "Max",
+            "url": "https://play.hbomax.com/movie/ad704585-6774-4d37-8c61-1bd41154173f"
+          }
+        ]
+      },
+      "lang": "tr"
+    },
+    {
+      "id": "film/tolkien/hobbit-beklenmedik-yolculuk-2012",
+      "label": "The Hobbit: An Unexpected Journey (2012)",
+      "title": "The Hobbit: An Unexpected Journey",
+      "type": "film",
+      "release_date": "2012-12-14",
+      "end_date": null,
+      "image": "https://m.media-amazon.com/images/M/MV5BMTcwNTE4MTUxMl5BMl5BanBnXkFtZTcwMDIyODM4OA@@._V1_FMjpg_UX1000_.jpg",
+      "imdb_rating": 7.8,
+      "yönetmen": [
+        "Peter Jackson"
+      ],
+      "oyuncular": [
+        "Martin Freeman",
+        "Ian McKellen",
+        "Richard Armitage",
+        "Andy Serkis",
+        "Cate Blanchett"
+      ],
+      "tür": [
+        "Fantastik",
+        "Macera",
+        "Aksiyon"
+      ],
+      "shape": "image",
+      "description": "2012 yapımı 'The Hobbit: An Unexpected Journey', Peter Jackson'ın yönettiği ve J.R.R. Tolkien'ın 'Hobbit' romanından uyarlanan üçlemenin ilk filmidir. Bu film, Jackson'ın daha önce çektiği 'Yüzüklerin Efendisi' üçlemesinden önceki olayları anlatan bir prequel niteliğindedir. Hikaye, sakin ve huzurlu bir hobbit olan Bilbo Baggins'in, büyücü Gandalf'ın beklenmedik ziyaretiyle başlayan macerasını konu alır. Gandalf, onu Erebor krallığının varisi Thorin Meşekalkan liderliğindeki on üç cüceden oluşan bir gruba dahil eder. Amaçları, yıllar önce ejderha Smaug tarafından ele geçirilen kayıp cüce krallığını ve hazinesini geri almaktır. Bilbo, başlangıçta bu maceraya karşı isteksiz olsa da, içindeki maceraperest hobbit ruhu onu bu tehlikeli yolculuğa çıkmaya ikna eder. Yolculukları sırasında, grup Trollerle, Goblinlerle ve Dağ Devleriyle karşılaşır. Filmin en kritik anlarından biri, Bilbo'nun Goblin tünellerinde kaybolması ve gizemli yaratık Gollum'la karşılaşmasıdır. Burada, Bilbo'nun hayatını kurtarmak için oynadığı bilmece oyunu, ilerideki tüm olayları tetikleyecek olan Tek Yüzük'ü bulmasına neden olur. Film, Tolkien'ın dünyasının daha naif ve masalsı bir tonunu yansıtarak, 'Yüzüklerin Efendisi' üçlemesindeki daha karanlık ve epik atmosfere bir kontrast oluşturur. 'Beklenmedik Yolculuk', görsel efektler ve aksiyon sahneleriyle Orta Dünya'nın daha önce görülmemiş kısımlarını sergilerken, aynı zamanda Bilbo'nun karakter gelişimini ve maceraya olan bakış açısını da derinlemesine işler. Film, sadece bir macera filmi olmaktan öte, aynı zamanda bir kahramanın doğuşuna tanıklık etmemizi sağlar. Bilbo'nun cesaretini ve içindeki maceraperest ruhu keşfedişi, filmin ana temasını oluşturur ve onun kişisel gelişimini vurgular. Peter Jackson, bu filmde 'Hobbit' romanının hikayesini genişleterek, 'Yüzüklerin Efendisi' üçlemesiyle daha güçlü bağlantılar kurar. Film, bir yandan Hobbit'in ana hikayesini anlatırken, bir yandan da Orta Dünya'nın geleceğini tehdit eden karanlık güçlerin yükselişini ima eder. Bu durum, serinin devam filmleri ve 'Yüzüklerin Efendisi' üçlemesi için zemin hazırlar. 'Beklenmedik Yolculuk', üçlemenin başlangıcı olarak, izleyiciye hem nostaljik bir deneyim sunar hem de Tolkien'ın büyülü dünyasına yeni bir bakış açısı getirir.",
+      "refers_to": "Bu film, kronolojik olarak **The Lord of the Rings: The Fellowship of the Ring (2001)** filminin hikayesinden önce geçer ve Peter Jackson'ın altı filmlik Orta Dünya evreninin başlangıç noktasıdır. 'Beklenmedik Yolculuk', Bilbo Baggins'in Tek Yüzük'ü bulma hikayesini anlatarak, Yüzüklerin Efendisi üçlemesinin ana çatışmasını oluşturan 'Tek Yüzük'ün kökenine bir atıfta bulunur. Bu filmde anlatılan olaylar, Frodo'nun Yüzük'ü miras alması ve onunla olan mücadelesi için bir temel oluşturur. Film, **The Hobbit: The Desolation of Smaug (2013)**'a doğrudan bir geçiş yapar. Bilbo ve cücelerin macerası, bu filmin sonunda Yalnız Dağ'a ulaşmalarıyla sona erer. Filmin hikayesi, aynı zamanda Gandalf'ın Sauron'un yükselişini araştırması gibi olayları da içerir ve bu durum, 'Yüzüklerin Efendisi' üçlemesinde işlenecek ana tehdidin ilk ipuçlarını verir. Bu film, 'Hobbit' üçlemesini başlatan ve serinin sonraki filmleri için zemin hazırlayan en önemli filmidir. 'Beklenmedik Yolculuk', aynı zamanda, 'Yüzüklerin Efendisi' üçlemesindeki karakterlerin (örneğin Gandalf ve Galadriel) daha genç hallerini göstererek, iki seri arasında güçlü bir bağlantı kurar. Film, Tek Yüzük'ün nasıl bulunduğu gibi kritik bir bilgiyi izleyiciye sunarak, 'Yüzüklerin Efendisi' serisinin hikayesini anlamlandırmamızı sağlar. Bu film, Peter Jackson'ın canlı aksiyon serisinin ilk filmi olarak, hem bir prequel hem de 'Yüzüklerin Efendisi' üçlemesinin ana hikayesine bir giriş niteliği taşır. Film, bir yandan hobbitlerin dünyasını tanıtırken, bir yandan da Orta Dünya'nın geleceğini tehdit eden karanlık güçlerin yükselişini gösterir. Bu durum, serinin devam filmleri ve 'Yüzüklerin Efendisi' üçlemesi için zemin hazırlar ve izleyiciye tüm hikayenin nasıl birbiriyle bağlantılı olduğunu gösterir.",
+      "canonical_level": "canon",
+      "sources": {
+        "Kaynaklar": [
+          {
+            "name": "Box Office Türkiye",
+            "url": "https://boxofficeturkiye.com/film/hobbit-beklenmedik-yolculuk--2010161"
+          },
+          {
+            "name": "IMDb",
+            "url": "https://www.imdb.com/title/tt0903624/"
+          },
+          {
+            "name": "Wikipedia",
+            "url": "https://tr.wikipedia.org/wiki/Hobbit:_Beklenmedik_Yolculuk"
+          }
+        ],
+        "Görsel": [
+          {
+            "name": "IMDb",
+            "url": "https://m.media-amazon.com/images/M/MV5BMTcwNTE4MTUxMl5BMl5BanBnXkFtZTcwMDIyODM4OA@@._V1_FMjpg_UX1000_.jpg"
+          }
+        ],
+        "Platform": [
+          {
+            "name": "Prime Video",
+            "url": "https://www.primevideo.com/dp/amzn1.dv.gti.d8a9f6fd-58c9-64dd-15d0-365bdf846db4?autoplay=0&ref_=atv_cf_strg_wb"
+          }
+        ]
+      },
+      "lang": "tr"
+    },
+    {
+      "id": "film/tolkien/hobbit-smaugun-corak-topraklari-2013",
+      "label": "The Hobbit: The Desolation of Smaug (2013)",
+      "title": "The Hobbit: The Desolation of Smaug",
+      "type": "film",
+      "release_date": "2013-12-13",
+      "end_date": null,
+      "image": "https://m.media-amazon.com/images/M/MV5BMzU0NDY0NDEzNV5BMl5BanBnXkFtZTgwOTIxNDU1MDE@._V1_FMjpg_UX1000_.jpg",
+      "imdb_rating": 7.8,
+      "yönetmen": [
+        "Peter Jackson"
+      ],
+      "oyuncular": [
+        "Martin Freeman",
+        "Ian McKellen",
+        "Richard Armitage",
+        "Benedict Cumberbatch",
+        "Evangeline Lilly"
+      ],
+      "tür": [
+        "Fantastik",
+        "Macera",
+        "Aksiyon"
+      ],
+      "shape": "image",
+      "description": "2013 yapımı 'The Hobbit: The Desolation of Smaug', Hobbit üçlemesinin ikinci filmidir ve Peter Jackson'ın Orta Dünya evrenini daha da genişleten bir yapımdır. Bu film, Bilbo Baggins ve cücelerin Yalnız Dağ'a olan tehlikeli yolculuklarını devam ettirir. Grup, ilk filmin sonunda Troller, Goblinler ve Warglarla olan mücadelelerinden sonra daha da zorlu engellerle karşılaşır. Bu filmde, ekip önce Mirkwood ormanının kötü niyetli örümceklerinin yaşadığı topraklardan geçer. Orada, Legolas ve Tauriel gibi elflerle tanışırlar. Tauriel karakteri, özellikle romanlarda yer almayan ve film için yaratılmış önemli bir karakterdir. Filmin en önemli olaylarından biri, cücelerin Göl Kasabası'na ulaşması ve burada insanlarla olan ilişkilerini kurmasıdır. Burada, Yalnız Dağ'daki hazineyi geri alma planlarına devam ederken, halkı Smaug'dan korumaya çalışan Bard karakteriyle tanışırlar. Film, bir yandan cücelerin ve Bilbo'nun macerasına odaklanırken, bir yandan da büyücü Gandalf'ın Dol Guldur'a gitmesini ve Sauron'un yükselişini araştırmasını gösterir. Bu hikaye, Peter Jackson'ın canlı aksiyon serisine özgü ek bir anlatıdır ve 'Yüzüklerin Efendisi' üçlemesiyle olan bağlantıları güçlendirir. Filmin doruk noktası, Bilbo'nun Smaug'un inine girmesi ve onunla olan zekice bir yüzleşmesidir. Smaug'un devasa boyutu ve dehşet verici sesi (Benedict Cumberbatch tarafından canlandırılmıştır) filmin en unutulmaz anlarındandır. 'Smaug'un Çorak Toprakları', hikayeyi bir sonraki filme taşırken, aksiyonu ve gerilimi artırır. Film, bir yandan Bilbo'nun cesaretinin arttığını gösterirken, bir yandan da Orta Dünya'yı bekleyen büyük tehlikelerin ipuçlarını verir. Filmin sonunda, Smaug'un Göl Kasabası'na doğru uçması, bir sonraki filmde yaşanacak olan büyük savaş için zemin hazırlar. Film, 'Yüzüklerin Efendisi' üçlemesindeki epik savaş sahnelerine bir hazırlık niteliğindedir ve serinin tonunu daha da karanlık bir hale getirir.",
+      "refers_to": "Bu film, **The Hobbit: An Unexpected Journey (2012)**'nin doğrudan devamıdır ve ilk filmin bıraktığı yerden hikayeyi devam ettirir. Bilbo'nun ve cücelerin macerası, bu filmde Mirkwood ormanından, Göl Kasabası'ndan geçerek Yalnız Dağ'a ulaşır. Filmin sonunda Bilbo'nun Smaug ile karşı karşıya gelmesi, bir sonraki ve son film olan **The Hobbit: The Battle of the Five Armies (2014)** için zemin hazırlar. Smaug'un Göl Kasabası'na saldırması, 'Beş Ordunun Savaşı'nın başlamasına neden olur. Film, aynı zamanda Gandalf'ın Sauron'un yükselişini araştırmasını ve Yüzüklerin Efendisi üçlemesiyle olan bağlantıları kurar. Bu hikaye örgüsü, daha sonraki **The Lord of the Rings: The Fellowship of the Ring (2001)** filminde anlatılan olayların başlangıç noktalarından biridir ve tüm evreni birbirine bağlar. 'Smaug'un Çorak Toprakları', 'Yüzüklerin Efendisi' serisiyle olan bağlantıları güçlendiren ve serinin tonunu daha da ciddileştiren bir filmdir. Film, bir önceki filmde başlayan hobbit macerasını ileriye taşırken, aynı zamanda tüm Orta Dünya'yı tehdit eden karanlık güçlerin yükselişini gösterir. Bu yüzden, bu film, **The Hobbit: The Battle of the Five Armies**'in hikayesi için kritik bir köprü görevi görür ve serinin finaline giden yolu hazırlar. Film, Bilbo'nun Yüzük'ün üzerindeki etkisini de göstermeye başlar ve bu durum, 'Yüzüklerin Efendisi' serisindeki olayların neden bu kadar önemli olduğunu anlamamızı sağlar.",
+      "canonical_level": "canon",
+      "sources": {
+        "Kaynaklar": [
+          {
+            "name": "Box Office Türkiye",
+            "url": "https://boxofficeturkiye.com/film/hobbit-smaugun-corak-topraklari--2010162"
+          },
+          {
+            "name": "IMDb",
+            "url": "https://www.imdb.com/title/tt1170358/"
+          },
+          {
+            "name": "Wikipedia",
+            "url": "https://tr.wikipedia.org/wiki/Hobbit:_Smaug%27un_%C3%87orak_Topraklar%C4%B1"
+          }
+        ],
+        "Görsel": [
+          {
+            "name": "IMDb",
+            "url": "https://m.media-amazon.com/images/M/MV5BMzU0NDY0NDEzNV5BMl5BanBnXkFtZTgwOTIxNDU1MDE@._V1_FMjpg_UX1000_.jpg"
+          }
+        ],
+        "Platform": [
+          {
+            "name": "Prime Video",
+            "url": "https://www.primevideo.com/detail/The-Hobbit-The-Desolation-of-Smaug/0OWK01NX6K76UK4PIK6J6Y9QES"
+          }
+        ]
+      },
+      "lang": "tr"
+    },
+    {
+      "id": "film/tolkien/hobbit-bes-ordunun-savasi-2014",
+      "label": "The Hobbit: The Battle of the Five Armies (2014)",
+      "title": "The Hobbit: The Battle of the Five Armies",
+      "type": "film",
+      "release_date": "2014-12-17",
+      "end_date": null,
+      "image": "https://m.media-amazon.com/images/M/MV5BMTYzNDE3OTQ3MF5BMl5BanBnXkFtZTgwODczMTg4MjE@._V1_.jpg",
+      "imdb_rating": 7.4,
+      "yönetmen": [
+        "Peter Jackson"
+      ],
+      "oyuncular": [
+        "Martin Freeman",
+        "Ian McKellen",
+        "Richard Armitage",
+        "Evangeline Lilly",
+        "Luke Evans"
+      ],
+      "tür": [
+        "Fantastik",
+        "Macera",
+        "Aksiyon"
+      ],
+      "shape": "image",
+      "description": "2014 yapımı 'The Hobbit: The Battle of the Five Armies', Peter Jackson'ın Hobbit üçlemesini destansı bir savaşla sonlandıran filmidir. Bir önceki filmin sonunda ejderha Smaug, Göl Kasabası'na saldırmaya başlamıştı. Film, Smaug'un yarattığı yıkımla başlar ve kasaba halkının Smaug'a karşı verdiği mücadeleyi gösterir. Ejderhanın ölümüyle Yalnız Dağ'daki Erebor hazinesi sahipsiz kalır ve bu durum, insanlar, elfler ve cüceler arasında bir anlaşmazlığa neden olur. Cücelerin lideri Thorin Meşekalkan, hazine hastalığına yakalanır ve bu durum onu hem müttefiklerinden hem de Bilbo'dan uzaklaştırır. Bu sırada, Orta Dünya'nın en büyük kötülüğü olan Sauron'un güçleri de bu savaşa dahil olur ve film, adından da anlaşılacağı gibi, Beş Ordunun Savaşı'na sahne olur. İnsanlar, cüceler, elfler, orklar ve büyücüler, Orta Dünya'nın kaderini belirleyecek bu büyük savaşta karşı karşıya gelir. Bilbo, bu büyük savaşın ortasında kalır ve en iyi hobbit özelliklerini kullanarak dostlarına yardım etmeye çalışır. Film, bir yandan cücelerin hikayesini ve Thorin'in kişisel mücadelesini sonlandırırken, bir yandan da Sauron'un yükselişini ve 'Yüzüklerin Efendisi' üçlemesine zemin hazırlayan olayları anlatır. 'Beş Ordunun Savaşı', üçlemenin epik bir finali olarak aksiyonu ve karakterlerin dramatik yolculuklarını bir araya getirir. Film, Peter Jackson'ın canlı aksiyon serisinin en büyük savaş sahnelerinden birini sunar. Bilbo'nun, Yüzük'ün gücüyle olan mücadelesi ve onun hobbitlere olan sadakati, filmin ana dramatik unsurlarını oluşturur. Film, bir yandan Hobbit'in hikayesini tamamlar, bir yandan da 'Yüzüklerin Efendisi' üçlemesiyle olan bağlantıları güçlendirir ve serinin tamamını birleştirir. Film, Tolkien'ın dünyasının tüm epik ve fantastik unsurlarını bir araya getirerek, izleyiciye unutulmaz bir final sunar ve Orta Dünya'nın geleceği için yeni bir umut ışığı yakar. 'Beş Ordunun Savaşı', aynı zamanda, 'Hobbit' üçlemesini mantıklı bir sona ulaştırır ve Peter Jackson'ın altı filmlik canlı aksiyon serisinin tamamını anlamlandırır.",
+      "refers_to": "Bu film, **The Hobbit: The Desolation of Smaug (2013)**'un doğrudan devamıdır ve Hobbit üçlemesini tamamlar. Filmin hikayesi, bir önceki filmin sonunda başlayan Smaug'un Göl Kasabası'na saldırısıyla başlar ve bu saldırının sonuçlarını işler. Film, Bilbo'nun Tek Yüzük'le Shire'a dönüşü ve yaşlanmış haliyle görüldüğü son sahnelerle, **The Lord of the Rings: The Fellowship of the Ring (2001)** filminin başlangıcına doğrudan atıfta bulunur. Bu, iki serinin kronolojik olarak nasıl birbiriyle bağlantılı olduğunu gösterir. 'Beş Ordunun Savaşı', Gandalf'ın Sauron'un yükselişine karşı mücadelesini de sonlandırır ve bu, 'Yüzüklerin Efendisi' üçlemesinde işlenecek ana tehdidin tam olarak kurulmasına yardımcı olur. Bu nedenle, bu film, **Yüzüklerin Efendisi** serisi için bir başlangıç noktası ve hazırlık filmi olarak da işlev görür. Film, bir yandan 'Hobbit'in ana hikayesini tamamlar, bir yandan da 'Yüzüklerin Efendisi' üçlemesiyle olan bağlantıları güçlendirir. Bu film, bir hobbitin macera dolu yolculuğunu ve Orta Dünya'nın kaderini etkileyen olayları bir araya getirerek, Peter Jackson'ın canlı aksiyon serisinin tümünü birleştirir. 'Beş Ordunun Savaşı', 'Hobbit' üçlemesinin finali olarak, izleyiciye bir önceki filmlerde kurulan tüm hikayeyi ve karakterlerin gelişimini sonlandıran bir deneyim sunar. Bu yüzden, bu film, tüm serinin en önemli ve en etkileyici parçalarından biridir.",
+      "canonical_level": "canon",
+      "sources": {
+        "Kaynaklar": [
+          {
+            "name": "Box Office Türkiye",
+            "url": "https://boxofficeturkiye.com/film/hobbit-bes-ordunun-savasi--2010163"
+          },
+          {
+            "name": "IMDb",
+            "url": "https://www.imdb.com/title/tt2310332/"
+          },
+          {
+            "name": "Wikipedia",
+            "url": "https://tr.wikipedia.org/wiki/Hobbit:_Be%C5%9F_Ordunun_Sava%C5%9F%C4%B1"
+          }
+        ],
+        "Görsel": [
+          {
+            "name": "IMDb",
+            "url": "https://m.media-amazon.com/images/M/MV5BMTYzNDE3OTQ3MF5BMl5BanBnXkFtZTgwODczMTg4MjE@._V1_.jpg"
+          }
+        ],
+        "Platform": [
+          {
+            "name": "Prime Video",
+            "url": "https://www.primevideo.com/dp/amzn1.dv.gti.36a9f6ce-5fb5-389b-e172-da7a4d4e1865?autoplay=0&ref_=atv_cf_strg_wb"
+          }
+        ]
+      },
+      "lang": "tr"
+    }
+  ],
+  "edges": [
+    {
+      "from": "film/tolkien/hobbit-animasyon-1977",
+      "to": "film/tolkien/lotr-animasyon-1978",
+      "type": "Doğrudan Devam",
+      "weight": 1,
+      "notes": "1977 yapımı Hobbit'in hikayesinin devamıdır."
+    },
+    {
+      "from": "film/tolkien/lotr-animasyon-1978",
+      "to": "film/tolkien/kralin-donusu-animasyon-1980",
+      "type": "Doğrudan Devam",
+      "weight": 1,
+      "notes": "Yarım kalan 1978 filminin hikayesini tamamlar."
+    },
+    {
+      "from": "film/tolkien/hobbit-beklenmedik-yolculuk-2012",
+      "to": "film/tolkien/hobbit-smaugun-corak-topraklari-2013",
+      "type": "Doğrudan Devam",
+      "weight": 1,
+      "notes": "Hobbit üçlemesinin ilk filminin doğrudan devamıdır."
+    },
+    {
+      "from": "film/tolkien/hobbit-smaugun-corak-topraklari-2013",
+      "to": "film/tolkien/hobbit-bes-ordunun-savasi-2014",
+      "type": "Doğrudan Devam",
+      "weight": 1,
+      "notes": "Hobbit üçlemesini sonlandıran final filmidir."
+    },
+    {
+      "from": "film/tolkien/yuzuklerin-efendisi-yuzuk-kardesligi-2001",
+      "to": "film/tolkien/yuzuklerin-efendisi-iki-kule-2002",
+      "type": "Doğrudan Devam",
+      "weight": 1,
+      "notes": "Yüzük Kardeşliği'nin dağılmasıyla başlayan hikayeyi devam ettirir."
+    },
+    {
+      "from": "film/tolkien/yuzuklerin-efendisi-iki-kule-2002",
+      "to": "film/tolkien/yuzuklerin-efendisi-kralin-donusu-2003",
+      "type": "Doğrudan Devam",
+      "weight": 1,
+      "notes": "Yüzüklerin Efendisi üçlemesini görkemli bir şekilde sonlandırır."
+    },
+    {
+      "from": "film/tolkien/hobbit-bes-ordunun-savasi-2014",
+      "to": "film/tolkien/yuzuklerin-efendisi-yuzuk-kardesligi-2001",
+      "type": "Prequel",
+      "weight": 1,
+      "notes": "Hobbit serisinin hikayesi, Yüzüklerin Efendisi serisinin başlangıcına bağlanır."
+    }
+  ]
+}
