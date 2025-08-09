@@ -30,8 +30,15 @@
     .dropdown-panel { background: rgba(31,41,55,0.65); border: 1px solid rgba(255,255,255,0.14); box-shadow: 0 16px 40px rgba(0,0,0,0.45); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); }
     .dropdown-item { cursor: pointer; }
     .dropdown-item:hover { background: rgba(255,255,255,0.06); }
-    .modal-bg { background: rgba(0,0,0,0.75); backdrop-filter: blur(4px); }
-    .modal-content { width: 92vw; max-width: 780px; max-height: 85vh; overflow-y: auto; background: #0f172a; color: #e5e7eb; border-radius: 18px; padding: 0; box-shadow: 0 12px 24px rgba(0,0,0,0.45); position: relative; border: 1px solid rgba(255,255,255,0.08); }
+    .modal-bg { background: rgba(0,0,0,0.75); backdrop-filter: blur(4px); 
+  display: flex-start;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 5vh;
+  padding-bottom: 8vh;
+  box-sizing: border-box;
+}
+    .modal-content { width: 92vw; max-width: 780px; max-height: 60vh; overflow-y: auto; background: #0f172a; color: #e5e7eb; border-radius: 18px; padding: 0; box-shadow: 0 12px 24px rgba(0,0,0,0.45); position: relative; border: 1px solid rgba(255,255,255,0.08); }
     .modal-header { display: grid; grid-template-columns: 120px 1fr; gap: 16px; padding: 16px; border-bottom: 1px solid rgba(255,255,255,0.06); background: radial-gradient(1200px 400px at -20% -40%, rgba(239,68,68,0.08), transparent); }
     .poster { width: 120px; height: 160px; border-radius: 10px; object-fit: cover; background: #111827; border: 1px solid rgba(255,255,255,0.08); }
     .modal-body { padding: 16px; }
@@ -237,8 +244,8 @@
   <div class="flex flex-row items-center gap-2 w-full sm:flex-1 sm:basis-0 sm:min-w-0">
 
     <!-- Anasayfa -->
-    <a href="/evren" title="Anasayfa"
-       class="text-white border border-white/30 hover:bg-white/10 rounded-md p-2 transition w-9 h-9 flex items-center justify-center">
+    <a href="#" title="Anasayfa"
+       class="text-white border border-white/30 hover:bg-white/10 rounded-md p-2 transition w-9 h-9 flex items-center justify-center" @click.prevent="resetPrettyUrl()" @click.prevent="resetPrettyUrl()">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
            stroke-width="2" stroke="currentColor" class="w-5 h-5">
         <path stroke-linecap="round" stroke-linejoin="round" d="M4 10v10h6v-6h4v6h6V10L12 3z"/>
@@ -435,7 +442,7 @@
 </aside>
 <div id="network" x-show="selectedUniverse" x-transition x-show="showGraph" x-transition></div>
 
-<div @click.outside="if (!window.Shepherd?.activeTour) modalOpen=false; resetPrettyUrl && resetPrettyUrl()" @keydown.escape.window="modalOpen=false; resetPrettyUrl && resetPrettyUrl()" aria-labelledby="modalTitle" aria-modal="true" class="fixed inset-0 modal-bg flex items-center justify-center z-50 p-4" role="dialog" id="modal_container" x-show="modalOpen" x-transition="">
+<div @click.outside="if (!window.Shepherd?.activeTour) modalOpen=false; resetPrettyUrl && resetPrettyUrl()" @keydown.escape.window="modalOpen=false; resetPrettyUrl && resetPrettyUrl()" aria-labelledby="modalTitle" aria-modal="true" class="fixed inset-0 modal-bg flex items-center justify-center mt-[-38vh] z-50 p-4" role="dialog" id="modal_container" x-show="modalOpen" x-transition="">
 <div @click.stop="" class="modal-content" style="overflow-y: visible;">
 <div class="relative rounded-xl overflow-hidden backdrop-blur-md bg-black/50 text-white max-h-[90vh] overflow-y-visible">
 <!-- Üst blur görsel alanı -->
@@ -1494,6 +1501,8 @@ this.$watch('selectedUniverse', (val) => {
     this.applyFilters();
   }
   this.notesUniverseFilter = val;
+
+  try { this.setParams({ u: val || '', clearNode: true }); } catch {}
 });
 
         },
@@ -1563,68 +1572,92 @@ prettyNodePath(node) {
   const base = parts.length ? `/${parts[0]}` : '/evren';
   return `${base}/${finalSlug}`;
 },
+
 pushPrettyUrl(node) {
   try {
+    const u = node?.universe || '';
+    const id = node?.id != null ? String(node.id) : '';
     const url = new URL(location.href);
-    url.search = '';
-    url.hash = '';
-    url.pathname = this.prettyNodePath(node);
+    url.searchParams.set('u', u);
+    url.searchParams.set('node', id);
     history.replaceState({}, '', url);
-  } catch(e) { console.warn('pushPrettyUrl', e); }
+  } catch (e) {
+    console.warn('pushPrettyUrl error', e);
+  }
 },
+
+
 resetPrettyUrl() {
   try {
-    const parts = location.pathname.split('/').filter(Boolean);
-    if (parts.length > 1) parts.pop();
     const url = new URL(location.href);
-    url.pathname = '/' + parts.join('/');
-    url.search = '';
-    url.hash = '';
+    url.searchParams.delete('node');
     history.replaceState({}, '', url);
-  } catch(e) { console.warn('resetPrettyUrl', e); }
+  } catch (e) {
+    console.warn('resetPrettyUrl error', e);
+  }
 },
+
 buildNodeUrl(nodeId){ const node = this.nodes?.get(nodeId) || this.allNodes.find(n => String(n.id)===String(nodeId)); const u = node?.universe || ''; const base = location.origin + location.pathname; const params = new URLSearchParams({ u, node: String(nodeId) }); return `${base}?${params.toString()}`; },
         shareNode(node, platform){ if (!node?.id) return; const url = this.buildNodeUrl(node.id); const text = `${node.label || node.id} — ${this.formatUniverseName(node.universe)}\n${url}`; const enc = encodeURIComponent(text); const shareUrl = platform === 'whatsapp' ? `https://api.whatsapp.com/send?text=${enc}` : platform === 'x' ? `https://twitter.com/intent/tweet?text=${enc}` : ''; if (shareUrl) window.open(shareUrl, '_blank', 'noopener'); },
-        async loadData() {
-          const evrenler = ["avatar","dc","harrypotter","marvel","matrix","middleearth","pixar","starwars"];
+        
+
+async loadData() {
+  const evrenler = ["avatar","dc","harrypotter","marvel","matrix","middleearth","pixar","starwars"];
+  try {
+    const results = await Promise.all(
+      evrenler.map(evren =>
+        fetch('data/' + evren + '.json', { cache: 'no-store' })
+          .then(r => { if (!r.ok) throw new Error(evren + ' yüklenemedi'); return r.json().then(data => ({ evren, data })); })
+      )
+    );
+    let nodesTemp = [], edgesTemp = [];
+    for (const { evren, data } of results) {
+      nodesTemp = nodesTemp.concat(data.nodes.map(n => ({ ...n, universe: evren })));
+      edgesTemp = edgesTemp.concat(data.edges);
+    }
+    this.allNodes = nodesTemp;
+    this.allEdges = edgesTemp;
+    this.universeList = [...new Set(this.allNodes.map(n => n.universe))];
+
+    // Parametreleri oku (hata güvenli)
+    let qU = null, qNode = null;
+    try {
+      const params = new URLSearchParams(location.search);
+      qU = params.get('u');
+      qNode = params.get('node');
+    } catch(_) {}
+
+    if (qU && this.universeList.includes(qU)) {
+      this.selectedUniverse = qU;
+    }
+
+    // Filtre uygula (network hazır değilse sorun yok)
+    this.applyFilters?.();
+
+    if (qNode) {
+      const node = this.allNodes.find(n => String(n.id) === String(qNode));
+      if (node) {
+        this.$nextTick?.(() => {
           try {
-            const results = await Promise.all(evrenler.map(evren => fetch('data/' + evren + '.json', { cache: 'no-store' }).then(r => { if (!r.ok) throw new Error(evren + ' yüklenemedi'); return r.json().then(data => ({ evren, data })); })));
-            let nodesTemp = [], edgesTemp = [];
-            for (const { evren, data } of results) { nodesTemp = nodesTemp.concat(data.nodes.map(n => ({ ...n, universe: evren }))); edgesTemp = edgesTemp.concat(data.edges); }
-            this.allNodes = nodesTemp; this.allEdges = edgesTemp; this.universeList = [...new Set(this.allNodes.map(n => n.universe))];
-            this.allNodes.filter(n => n.image).forEach(n => { const i = new Image(); i.decoding='async'; i.src = n.image; });
-            
-            
-            // Pretty URL: /evren/<slug>[-YYYY] varsa, node'u bul ve modal aç
-            {
-              const segs = location.pathname.split('/').filter(Boolean);
-              const last = segs[segs.length - 1];
-              if (last && last !== 'evren') {
-                const m = last.match(/(.+?)-(\d{4})$/);
-                const wantSlug = (m ? m[1] : last);
-                const wantYear = (m ? m[2] : null);
-                const node = this.allNodes.find(n => {
-                  const slug = this.makeSlug(n.label || n.title || n.name);
-                  const yr   = this.nodeYear(n);
-                  return slug === wantSlug && (!wantYear || yr === wantYear);
-                });
-                if (node) {
-                  this.selectedUniverse = node.universe;
-                  this.applyFilters();
-                  this.$nextTick(() => this.openNode(node.id));
-                  // pretty path kullanıldı; query param bloğunu atla
-                } else {
-                  // devam et ve query paramlarını dene
-                }
-              }
+            this.modalNode = node;
+            this.modalOpen = true;
+            if (this.network) {
+              try { this.network.selectNodes([qNode]); } catch {}
+              try { this.network.focus(qNode, { animation: true, scale: 1 }); } catch {}
             }
-const params = new URLSearchParams(location.search);
-            const qU = params.get('u'); const qNode = params.get('node');
-            if (qU && this.universeList.includes(qU)) this.selectedUniverse = qU;
-            this.applyFilters();
-            if (qNode && (this.nodes?.get(qNode))) { this.modalNode = this.nodes.get(qNode); this.modalOpen = true; this.network.selectNodes([qNode]); this.network.focus(qNode, { animation: true, scale: 1 }); }
-          } catch (err) { console.error(err); alert('Veri yükleme hatası: ' + err.message); }
-        },
+          } catch (e) {
+            console.warn('Modal açma sırasında hata:', e);
+          }
+        });
+      }
+    }
+  } catch (err) {
+    console.error('loadData hata:', err);
+    alert('Veri yükleme hatası: ' + (err && err.message ? err.message : String(err)));
+  }
+},
+
+
         openNode(id) { const node = this.nodes?.get(id) || this.allNodes.find(n => String(n.id) === String(id)); if (node) { this.modalNode = node; this.modalOpen = true; window.__modalWasOpened = true; this.network?.selectNodes([id]); this.network?.focus(id, { animation: true, scale: 1 }); } },
         makeOptions() { return {
         linkedOpen: window.innerWidth > 640,
@@ -1753,9 +1786,18 @@ const searchTerm = this.norm(this.search);
     const SHARE_PHRASES = { more: 'Devamı için ziyaret et:', farewell: 'Sinemayla kalın.', dash: ' — ' };
     const EMOJI = { title: '🎬', date: '📅', summary: '📝', more: '👉', link: '🔗', bye: '🍿' };
     function preferredUrl(node){
-  const name = (node?.label || node?.title || node?.name || '').toString();
-  const raw = (window.app?.makeSlug ? window.app.makeSlug(name) : name.toLowerCase().replace(/\s+/g,'-'));
-  const m = raw.match(/-(\d{4})$/);
+  try {
+    const url = new URL(location.href);
+    url.searchParams.set('u', node?.universe || '');
+    url.searchParams.set('node', String(node?.id ?? ''));
+    return url.origin + url.pathname + '?' + url.searchParams.toString();
+  } catch (_) {
+    // Eski tarayıcılar için basit fallback
+    var u = (node && node.universe) ? node.universe : '';
+    var i = (node && node.id != null) ? String(node.id) : '';
+    return location.pathname + '?u=' + encodeURIComponent(u) + '&node=' + encodeURIComponent(i);
+  }
+};
   const slugNoYear = m ? raw.slice(0, -5) : raw;
   const yrFromSlug = m ? m[1] : null;
   const yr = yrFromSlug || (window.app?.nodeYear ? window.app.nodeYear(node) : '');
@@ -1764,7 +1806,7 @@ const searchTerm = this.norm(this.search);
   const parts = location.pathname.split('/').filter(Boolean);
   const base = parts.length ? `/${parts[0]}` : '/evren';
   return location.origin + `${base}/${finalSlug}`;
-}
+
     function composeShareText(node) {
       const filmAdi  = node?.label || node?.title || node?.name || 'Bu yapım';
       const line1 = `${EMOJI.title} ${filmAdi}`;
@@ -2344,6 +2386,51 @@ document.addEventListener('keydown', function(e){
 }();
 </script>
 
+
+
+<script>
+  function setParams(patch = {}) {
+    const url = new URL(location.href);
+    const qs = url.searchParams;
+    Object.entries(patch).forEach(([k, v]) => {
+      if (v === undefined || v === null || v === '') qs.delete(k);
+      else qs.set(k, String(v));
+    });
+    if (patch.clearNode) qs.delete('node');
+    url.search = qs.toString();
+    history.replaceState({}, '', url);
+  }
+  window.pushPrettyUrl = function pushPrettyUrl(node) {
+    try {
+      const u = node?.universe || '';
+      const id = node?.id != null ? String(node.id) : '';
+      setParams({ u, node: id });
+    } catch(e) { console.warn('pushPrettyUrl', e); }
+  };
+  window.resetPrettyUrl = function resetPrettyUrl() {
+    try { setParams({ clearNode: true }); } catch(e) { console.warn('resetPrettyUrl', e); }
+  };
+  window.buildNodeUrl = function buildNodeUrl(nodeId){
+    const url = new URL(location.href);
+    const u = (window.app?.selectedUniverse) || '';
+    url.searchParams.set('u', u || '');
+    url.searchParams.set('node', String(nodeId));
+    return url.origin + url.pathname + '?' + url.searchParams.toString();
+  };
+  window.preferredUrl = function preferredUrl(node){
+  try {
+    const url = new URL(location.href);
+    url.searchParams.set('u', node?.universe || '');
+    url.searchParams.set('node', String(node?.id ?? ''));
+    return url.origin + url.pathname + '?' + url.searchParams.toString();
+  } catch (_) {
+    // Eski tarayıcılar için basit fallback
+    var u = (node && node.universe) ? node.universe : '';
+    var i = (node && node.id != null) ? String(node.id) : '';
+    return location.pathname + '?u=' + encodeURIComponent(u) + '&node=' + encodeURIComponent(i);
+  }
+};
+</script>
 
 </body>
 
