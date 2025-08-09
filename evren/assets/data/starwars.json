@@ -1,398 +1,1389 @@
 {
   "nodes": [
     {
-      "id": "film/starwars/1999_phantom_menace",
-      "label": "Star Wars: Bölüm I – Gizli Tehlike (1999)",
-      "title": "Star Wars: Episode I – The Phantom Menace",
+      "id": "film/star_wars/1999_episode_i",
+      "label": "Gizli Tehlike (1999)",
+      "title": "Star Wars: Bölüm I - Gizli Tehlike",
       "type": "film",
       "release_date": "1999-05-19",
       "end_date": null,
-      "image": "assets/images/starwars.jpg",
-      "shape": "image",
-      "description": "Galaktik Cumhuriyet’in görünürde barış içindeki döneminde Naboo gezegeni Ticaret Federasyonu’nun uyguladığı bir abluka ile karşı karşıya kalır ve Senato’daki siyasal tıkanıklık giderek derinleşir. Jedi Ustası Qui-Gon Jinn ile Padawan’ı Obi-Wan Kenobi krizi çözmek için arabulucu olarak gönderilir; olaylar Kraliçe Amidala’yı korumaktan Tatooine’deki uzak bir çöl dünyasına uzanan geniş bir maceraya dönüşür. Burada olağanüstü pilotluk içgüdülerine ve Güç’e duyarlılığa sahip genç bir köle olan Anakin Skywalker’la tanışırlar. Film, siyaset, manevra ve kader temalarını ilk kez bu ölçekte bir araya getirirken serinin mitik tonunu farklı bir çağın estetiğiyle buluşturur. Tasarım dili parlak şehirler, saraylar ve geleneksel ritüeller aracılığıyla galaksinin refah illüzyonunu yansıtır; yüzeydeki düzenin altında ise güç dengelerini sarsacak derin bir huzursuzluk büyümektedir. Usta-çırak ilişkisi, kurumsal kurallar ile bireysel sezgi arasındaki sürtünmeyi görünür kılar. İnanç, merak ve sorumluluk kavramları aynı hikâye düzleminde ilerler; masum bir keşif yolculuğu yavaş yavaş galaktik ölçekte sonuçları olacak bir dizi tercihe kapı açar. Anlatı, sonraki bölümlerde gelişecek çatışmaların tohumlarını eker ve destanın uzun soluklu karakter yolculuklarının başlangıç çizgisini belirginleştirir. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir.",
-      "refers_to": "Bu bölüm Prequel üçlemesinin açılış halkası olarak Skywalker destanının tarihsel kökenlerini kurar ve sahneye çıkan karakterlerin ilişkilerini temellendirir. Naboo krizi ve Cumhuriyet’in karar alma süreçlerindeki hantallık daha sonraki siyasi dönüşümleri anlamak için işlevsel bir bağlam sağlar. Qui-Gon’un Anakin’i keşfi Jedi düzeninin kehanetlere ve sezgisel yargılara yaklaşımını örnekler; Obi-Wan ile usta-çırak bağı ise ileride görülecek sorumluluk ve kayıp temalarını haber verir. Yapım tasarımı, refah görünümünün ardındaki gerilimi bilinçli bir biçimde vurgular; diplomasi, ticaret ve güvenlik söylemleri anlatının merkezine yerleştirilir. İzleme sıralamasında film, kanonik anlatıya giriş niteliği taşır ve daha sonra yoğunlaşacak etik tartışmaların, kurumların kırılganlığının ve kişisel kaderin kesişimini görünür kılar. Böylece ilerleyen bölümlerdeki kararların arka planını oluşturan siyasal ve kültürel dinamikler netleşir; izleyici hem karakterlerin motivasyonlarını hem de galaksinin kurumsal yapısını anlamlandıracak uzun erimli bir perspektif kazanır. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir.",
-      "canonical_level": "canon",
-      "sources": [
-        {
-          "name": "Official",
-          "url": "https://www.starwars.com/films"
-        },
-        {
-          "name": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Star_Wars:_Episode_I_%E2%80%93_The_Phantom_Menace"
-        }
+      "image": "https://upload.wikimedia.org/wikipedia/tr/7/7a/Ep1.jpg",
+      "imdb_rating": 6.5,
+      "yönetmen": [
+        "George Lucas"
       ],
-      "lang": "tr",
-      "level": 3
+      "oyuncular": [
+        "Liam Neeson",
+        "Ewan McGregor",
+        "Natalie Portman",
+        "Jake Lloyd"
+      ],
+      "tür": [
+        "Bilim Kurgu",
+        "Aksiyon",
+        "Macera"
+      ],
+      "shape": "image",
+      "description": "1999 yapımı 'Star Wars: Bölüm I - Gizli Tehlike', Star Wars efsanesinin kökenlerine dönen bir film olarak, önceki üçlemenin öncesinde geçen olayları anlatır. Galaktik Cumhuriyet'in barışçıl günlerinde başlayan film, Ticaret Federasyonu'nun Naboo gezegenini işgaliyle başlar. Bu kriz, Jedi Şövalyeleri Qui-Gon Jinn ve genç padawan'ı Obi-Wan Kenobi'nin arabuluculuk göreviyle son bulur. Ancak, Federasyon'un saldırısı altında kalan kraliçe Padmé Amidala'yı kurtarmak zorunda kalırlar ve bu süreçte, yolu bozuk bir gezegen olan Tatooine'e düşer. Burada, Qui-Gon Jinn, Güç'e karşı olağanüstü bir yeteneği olan genç köle Anakin Skywalker'ı keşfeder. Jinn, Anakin'in bir kehanete göre dengeyi getirecek olan 'Seçilmiş Kişi' olduğuna inanır ve onu Jedi eğitimi için yanına alır. Filmin ana temaları arasında, Güç'ün doğası, Cumhuriyet'in yozlaşması ve karanlık tarafa doğru ilk adımlar yer alır. Anakin'in annesinden ayrılışı ve Qui-Gon'un kaderini değiştiren düello, izleyiciyi hem duygusal hem de aksiyon dolu bir yolculuğa çıkarır. Görsel efektler ve uzay yarışı sahneleriyle döneminin çok ilerisinde bir yapım olan film, aynı zamanda 'Jar Jar Binks' gibi bazı tartışmalı karakterleri de tanıtmıştır. 'Gizli Tehlike', sadece bir filmin ötesinde, galaktik bir savaşın başlangıç noktasını göstererek sonraki bölümlerin temelini atmıştır. Film, Anakin Skywalker'ın masum bir çocuktan, efsanevi Darth Vader'a dönüşümünün ilk adımlarını atmasıyla birlikte, galaksinin kaderini şekillendiren olayların başlangıcını resmeder. Qui-Gon'un 'Midi-kloryanlar' teorisiyle Güç'e yeni bir bakış açısı getirmesi ve Darth Maul'un ikonik çift taraflı ışın kılıcıyla yaptığı dövüş, filmin akılda kalan anlarındandır. 'Star Wars: Bölüm I - Gizli Tehlike', genç bir Jedi adayının yolculuğunu ve galaksiyi bekleyen karanlık geleceğin ilk işaretlerini ortaya koyan, kapsamlı bir başlangıç hikayesidir.",
+      "refers_to": "'Star Wars: Bölüm I - Gizli Tehlike', sonraki filmler ve diziler için hayati öneme sahip birçok unsuru tanıtır. Filmin en kritik atıf noktası, galaksiyi dengeye getirecek 'Seçilmiş Kişi' kehanetidir ve bu kehanetin, genç Anakin Skywalker olduğuna dair yapılan ilk tespittir. Bu, Anakin'in kaderini ve tüm Star Wars evreninin ana hikayesini belirleyen en temel olaydır ve **Star Wars: Bölüm III - Sith'in İntikamı** filminde bu kehanetin nasıl trajik bir şekilde sonuçlandığını gösterir. Filmdeki Palpatine karakterinin, Şansölye'liğe yükselişinin başlangıcı, daha sonraki filmlerde **Galaktik İmparatorluk'un kuruluşu**na zemin hazırlar. Filmde yer alan ve Darth Sidious olarak bilinen gizemli Sith Lordu'nun varlığı, galaksideki tehdit seviyesini yükseltir ve **Sith'in İntikamı**'ndaki olaylara doğrudan bağlanır. Qui-Gon Jinn'in ölümü, genç Obi-Wan'ın Jedi şövalyesi statüsüne yükselmesinin ve Anakin'in ustası olmasının önünü açar. Bu usta-çırak ilişkisi, serinin ana dinamiklerinden biridir. Film, ayrıca **Star Wars: Klon Savaşları (dizi)**'nda ve diğer yan hikayelerde derinlemesine incelenen **Galaktik Senato'nun siyasi entrikalarına** ve Ticaret Federasyonu'nun rolüne atıfta bulunur. `Gizli Tehlike`, sadece bir başlangıç noktası olmakla kalmaz, aynı zamanda hem ana hikayenin hem de yan hikayelerin temelini atan, evrenin siyasi ve manevi çatışmalarını başlatan bir anahtar yapıt görevi görür. Anakin'in Tatooine'deki kölelik geçmişi ve bu geçmişten kurtuluşu, onun sonraki filmlerdeki kararlarına ve duygusal çatışmalarına zemin hazırlar. Qui-Gon'un ruh formunda yaşama yeteneğini keşfetmesi, daha sonra **Obi-Wan Kenobi**'ye bu tekniği öğretmek için geri döneceğini ima eder ve Güç'ün mistik yönlerine yeni bir boyut kazandırır.",
+      "canonical_level": "canon",
+      "sources": {
+        "Kaynaklar": [
+          {
+            "name": "Box Office Türkiye",
+            "url": "https://boxofficeturkiye.com/film/star-wars-bolum-i-gizli-tehlike--2010831"
+          },
+          {
+            "name": "Star Wars Official Site",
+            "url": "https://www.starwars.com/films/star-wars-episode-i-the-phantom-menace"
+          },
+          {
+            "name": "IMDb",
+            "url": "https://www.imdb.com/title/tt0120915/"
+          }
+        ],
+        "Görsel": [
+          {
+            "name": "Wikipedia",
+            "url": "https://upload.wikimedia.org/wikipedia/tr/7/7a/Ep1.jpg"
+          }
+        ],
+        "Platform": [
+          {
+            "name": "Disney+",
+            "url": "https://www.disneyplus.com/tr-tr/browse/entity-e0a9fee4-2959-4077-ad8c-8fab4fd6e4d1"
+          }
+        ]
+      },
+      "lang": "tr"
     },
     {
-      "id": "film/starwars/2002_attack_of_the_clones",
-      "label": "Star Wars: Bölüm II – Klonların Saldırısı (2002)",
-      "title": "Star Wars: Episode II – Attack of the Clones",
+      "id": "film/star_wars/2002_episode_ii",
+      "label": "Klonların Saldırısı (2002)",
+      "title": "Star Wars: Bölüm II - Klonların Saldırısı",
       "type": "film",
       "release_date": "2002-05-16",
       "end_date": null,
-      "image": "assets/images/starwars.jpg",
-      "shape": "image",
-      "description": "Klon Savaşları’nın eşiğinde Cumhuriyet’in görünmez fay hatları belirginleşir. Senatör Padmé Amidala’ya yönelik saldırılar güvenlik kaygılarını yükseltirken Jedi Konseyi karmaşık bir soruşturma yürütür. Obi-Wan Kenobi, ipuçlarını takip ederken kopya askerlerin üretildiği devasa bir tesise ve emri belirsiz bir sipariş geçmişine ulaşır; bu keşif, etik sınırlar ve askeri zorunluluklar arasındaki gerilimi keskinleştirir. Genç Jedi Anakin Skywalker ise koruma görevi sırasında kişisel bağları, sadakat duygusu ve kayıp korkusuyla yüzleşir. Hikâye, politik komploları kişisel seçimlerle iç içe geçirir; merhametle kontrol, özgür irade ile kader, görev ile sahiplenme arasında gidip gelen çatışmalar büyür. Görsel dünya geniş çöller, üretim hatları ve opak bürokrasi mekânlarıyla çeşitlenir; içe dönük karakter anları, büyük ölçekli savaşın hazırlık atmosferiyle dengelenir. Anlatı, düzenin kırılganlığını ve kırılmanın toplumsal sonuçlarını sezdirerek sonraki bölümün dramatik tonunu hazırlar. Filmin ritmi, soru işaretlerini çoğaltırken umut duygusunu tamamen söndürmez; ilişkilerdeki yakınlık ve uzaklık hareketli bir denge içinde kalır. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir.",
-      "refers_to": "Bu bölüm Prequel üçlemesinin orta halkası olarak köprü işlevi görür ve Klon Savaşları’na giden parametrelerin nasıl şekillendiğini görünür kılar. Jedi Düzeni’nin muhafazakâr karar alma pratikleri ile Cumhuriyet’in şeffaf olmayan süreçleri birleştiğinde kurumlar kırılganlaşır; güvenlik lehine genişleyen yetkiler, beklenmedik sonuçları beraberinde getirir. Anakin ile Padmé arasındaki ilişki ilerleyen olaylarda etkisi yoğun hissedilecek duygusal ve etik bir arka plan oluşturur; kahramanın psikolojisi, korku ve bağlanma temaları üzerinden anlaşılır. İzleme bağlamında film, hem kişisel hem siyasal düzlemde açık uçlu sorular bırakır; izleyiciyi yaklaşan hesaplaşmanın ağırlığına hazırlar. Tasarım, parlak yüzeylerin ardındaki belirsizliği ve kurumların iç içe geçen çıkarlarını işaret eder. Böylece sonraki bölümde yaşanacak kırılma yalnızca bireysel bir trajedi değil, uzun vadeli bir sistem dönüşümü olarak kavranır; anlatı bütünlüğü içerisinde bu eser, neden-sonuç zincirinin vazgeçilmez halkasıdır. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir.",
-      "canonical_level": "canon",
-      "sources": [
-        {
-          "name": "Official",
-          "url": "https://www.starwars.com/films"
-        },
-        {
-          "name": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Star_Wars:_Episode_II_%E2%80%93_Attack_of_the_Clones"
-        }
+      "image": "https://upload.wikimedia.org/wikipedia/tr/0/03/450px-Star_Wars_Attack_of_the_Clones_poster.jpg",
+      "imdb_rating": 6.5,
+      "yönetmen": [
+        "George Lucas"
       ],
-      "lang": "tr",
-      "level": 3
+      "oyuncular": [
+        "Ewan McGregor",
+        "Natalie Portman",
+        "Hayden Christensen",
+        "Christopher Lee"
+      ],
+      "tür": [
+        "Bilim Kurgu",
+        "Aksiyon",
+        "Macera"
+      ],
+      "shape": "image",
+      "description": "2002 yapımı 'Star Wars: Bölüm II - Klonların Saldırısı', 'Gizli Tehlike' filmindeki olaylardan on yıl sonra, galakside artan siyasi huzursuzluk ve ayrılıkçı hareketlerin gölgesinde geçer. Film, artık bir Jedi padawanı olan Anakin Skywalker'ın, Naboo Senatörü Padmé Amidala'yı suikast girişimlerinden korumakla görevlendirilmesiyle başlar. Bu görev sırasında Anakin ile Padmé arasında romantik bir ilişki filizlenir. Diğer yandan, Jedi ustası Obi-Wan Kenobi, suikast girişiminin arkasındaki sırrı araştırırken, Kamino gezegeninde Cumhuriyet için gizlice üretilen devasa bir klon ordusunu keşfeder. Bu keşif, yaklaşmakta olan Galaktik Savaş'ın ilk kıvılcımlarını çakar. Filmin ana teması, masumiyetin yozlaşması ve aşkın yasaklarla nasıl sınandığıdır. Anakin'in yasak aşkı, onun duygusal dengesini sarsar ve karanlık tarafa olan yatkınlığını artırır. Film, bir yandan klon ordusu ile Droid ordusu arasındaki destansı savaş sahnelerini gösterirken, diğer yandan Anakin'in iç çatışmalarına ve karanlık tarafa doğru attığı ilk adımlara odaklanır. Yoda'nın destansı bir düelloda yer alması ve Mace Windu'nun savaş sahneleri, filmin akılda kalan anlarındandır. 'Klonların Saldırısı', siyasi entrikaların ve savaşın galaksiyi nasıl bir kaosa sürüklediğini gösterirken, aynı zamanda Anakin'in trajik dönüşümünün temelini atar. Film, Cumhuriyet'in son günlerini, Jedi Düzeni'nin saflığını yitirmesini ve karanlık bir geleceğin kapılarını aralayan olayları ustalıkla işler. Anakin'in Padmé'ye olan sevgisi, annesinin ölümüyle birleşerek onun kontrolünü kaybetmesine neden olur. Bu durum, onu karanlık tarafa daha da yaklaştıracak olan Palpatine'nin manipülasyonlarına karşı savunmasız hale getirir. Film, genç Jedi'ın kaderini belirleyen önemli dönüm noktalarını sergilerken, galaksiyi saran siyasi gerilimi ve yaklaşan büyük savaşı hazırlayan kilit bir yapım olarak öne çıkar.",
+      "refers_to": "'Star Wars: Bölüm II - Klonların Saldırısı', üçlemenin ve Star Wars evreninin genelinin en kritik dönüm noktalarından birini oluşturur. Filmin en önemli atıfı, Klon Savaşları'nın başlamasıdır. Bu savaş, tüm galaksiyi saran bir çatışma olarak, **Star Wars: Bölüm III - Sith'in İntikamı**'nın ve **Star Wars: Klon Savaşları (dizi)**'nin ana konusunu oluşturur. Anakin'in gizlice Padmé ile evlenmesi ve bu evliliğin yasak olması, onun Jedi Düzeni'ne olan bağlılığını ve duygusal istikrarını derinden sarsar. Bu gizli ilişki, daha sonraki filmlerde, özellikle de **Sith'in İntikamı**'nda, Palpatine tarafından onun karanlık tarafa geçişini hızlandırmak için bir koz olarak kullanılacaktır. Obi-Wan'ın Kamino'da klon ordusunu keşfetmesi ve Jango Fett ile olan mücadelesi, ilerleyen filmlerde ve dizilerde Fett ailesinin (özellikle de oğlu Boba Fett'in) hikayesine zemin hazırlar. Bu, **The Mandalorian** ve **Boba Fett'in Kitabı** gibi diziler için önemli bir bağlantı noktasıdır. Kont Dooku'nun Sith Lordu olarak ortaya çıkması, Palpatine'in gizli planlarının sadece bir parçası olduğunu gösterir ve Sith'in Yüzyıllardır süren intikam planının son aşamasına girildiğini ima eder. Yoda'nın savaş sahnesindeki gücü ve Jedi konseyinin klon ordusu karşısındaki çaresizliği, Jedi Düzeni'nin zayıflığını ortaya koyar. Filmin sonunda, Palpatine'in Galaktik İmparatorluk'u kurmak için temel adımları atması, **Sith'in İntikamı**'nda Cumhuriyet'in nasıl çökeceğini ve İmparatorluğun nasıl yükseleceğini gösteren kritik bir öngörüdür. `Klonların Saldırısı`, Klon Savaşları'nın sadece bir savaş olmadığını, aynı zamanda Palpatine'in nihai planı olan Jedi'ları yok etme ve galaksiye hükmetme planının bir parçası olduğunu açıkça ortaya koyar. Anakin'in annesinin ölümü, onun karanlık tarafa olan öfkesini ve hıncını besler, bu da karakter gelişiminde belirleyici bir rol oynar.",
+      "canonical_level": "canon",
+      "sources": {
+        "Kaynaklar": [
+          {
+            "name": "Box Office Türkiye",
+            "url": "https://boxofficeturkiye.com/film/star-wars-bolum-ii-klonlarin-saldirisi--2000570"
+          },
+          {
+            "name": "Star Wars Official Site",
+            "url": "https://www.starwars.com/films/star-wars-episode-ii-attack-of-the-clones"
+          },
+          {
+            "name": "IMDb",
+            "url": "https://www.imdb.com/title/tt0121765/"
+          }
+        ],
+        "Görsel": [
+          {
+            "name": "Wikipedia",
+            "url": "https://upload.wikimedia.org/wikipedia/tr/0/03/450px-Star_Wars_Attack_of_the_Clones_poster.jpg"
+          }
+        ],
+        "Platform": [
+          {
+            "name": "Disney+",
+            "url": "https://www.disneyplus.com/tr-tr/browse/entity-39cbdf17-1bbe-4de2-b4a4-8e342875c2c6"
+          }
+        ]
+      },
+      "lang": "tr"
     },
     {
-      "id": "film/starwars/2005_revenge_of_the_sith",
-      "label": "Star Wars: Bölüm III – Sith'in İntikamı (2005)",
-      "title": "Star Wars: Episode III – Revenge of the Sith",
+      "id": "film/star_wars/2005_episode_iii",
+      "label": "Sith'in İntikamı (2005)",
+      "title": "Star Wars: Bölüm III - Sith'in İntikamı",
       "type": "film",
       "release_date": "2005-05-19",
       "end_date": null,
-      "image": "assets/images/starwars.jpg",
-      "shape": "image",
-      "description": "Galaktik çatışma doruğa tırmanırken Cumhuriyet’i içeriden kemiren manipülasyon görünür hâle gelir. Uzayan savaşın yarattığı yorgunluk ve korku, kurumların hızlı ve sert çözümlere yönelmesine neden olur. Anakin Skywalker’ın iç dünyasında sevgi, kayıp ve güç arzusu arasında süren gerilim keskinleşir; sorumluluk duygusuyla kişisel korkular arasındaki denge bozulduğunda alınan kararların bedeli büyür. Obi-Wan Kenobi, sadakat ve gerçeklik arasında kalan zorlu bir etik zemin üzerinde yürür; Padmé Amidala ise idealizm ile güvenlik hesapları arasında sıkışır. Anlatı, bireysel kırılmaları sistem dönüşümüyle paralel bir çizgide ilerletir; seyirci, otoriterliğin güvenlik söylemi üzerinden nasıl meşrulaştırıldığına tanıklık eder. Görsel dil, çöküşün eşiğindeki kurumların ve savaşın gölgesinde sıkışan şehirlerin atmosferini yansıtır. Duygusal ton yoğun, melodramatik değil; katharsis, kişisel seçimlerin kaçınılmaz sonuçları üzerinden kurulur. Film, destanın geri kalanını şekillendiren büyük bir dönemeçte konumlanır ve sonraki anlatılar için belirleyici bir başlangıç noktası oluşturur. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir.",
-      "refers_to": "Prequel üçlemesini kapatan bu eser, Anakin Skywalker’ın dramatik dönüşümünü merkeze alır ve destanın bütününe ışık tutan neden-sonuç zincirini tamamlar. Otoriter bir düzenin yükselişini, demokratik kurumların kriz anlarında nasıl kırılganlaştığını ve korkunun politikada hangi kapıları araladığını örnekler. Jedi kurumunun kör noktaları ile bireysel kaygıların kesişmesi, beklenmedik sonuçlar doğurur; bu, sonraki filmlerde karşılaşılacak galaktik düzenin kökenlerini anlaşılır kılar. İzleme açısından yapım, önceki iki bölümde biriken soruları yanıtlayarak orijinal üçlemenin başlangıç koşullarını hazırlar; teknik ve tematik öğeler büyük anlatı içinde anlamlı bir köprü kurar. Böylece karakter yaylarının neden belirli yönlere evrildiği netleşir; izleyici, hem kişisel hem siyasal düzlemde kapsamlı bir tablo elde eder. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir.",
-      "canonical_level": "canon",
-      "sources": [
-        {
-          "name": "Official",
-          "url": "https://www.starwars.com/films"
-        },
-        {
-          "name": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Star_Wars:_Episode_III_%E2%80%93_Revenge_of_the_Sith"
-        }
+      "image": "https://upload.wikimedia.org/wikipedia/tr/c/cd/Y%C4%B1ld%C4%B1z_Sava%C5%9Flar%C4%B1-_B%C3%B6l%C3%BCm_III_-_Sith%27in_%C4%B0ntikam%C4%B1_Film_Posteri.jpg",
+      "imdb_rating": 7.6,
+      "yönetmen": [
+        "George Lucas"
       ],
-      "lang": "tr",
-      "level": 3
+      "oyuncular": [
+        "Ewan McGregor",
+        "Natalie Portman",
+        "Hayden Christensen",
+        "Ian McDiarmid"
+      ],
+      "tür": [
+        "Bilim Kurgu",
+        "Aksiyon",
+        "Macera"
+      ],
+      "shape": "image",
+      "description": "2005 yapımı 'Star Wars: Bölüm III - Sith'in İntikamı', prequel üçlemesinin son halkasıdır ve galaksinin kaderini sonsuza dek değiştiren olayları konu alır. Film, Klon Savaşları'nın sonuna yaklaşırken, Jedi Şövalyeleri'nin galaksiyi tehdit eden ayrılıkçı güçlerle savaşmasını gösterir. Bu sırada, Jedi Konseyi'ne olan güvenini kaybeden ve yasak aşkı Padmé'yi kaybetme korkusuyla yaşayan Anakin Skywalker, gizli bir Sith Lordu olan Şansölye Palpatine'in manipülasyonlarına kurban gider. Palpatine, Anakin'e karanlık tarafın ölümden kurtulma gücünü sunar ve onu 'Seçilmiş Kişi' kehanetini yerine getirme konusunda ikna eder. Anakin, Palpatine'in Sith Lordu olduğunu öğrendiğinde bile, Padmé'yi kurtarmak için karanlık tarafa geçer ve Darth Vader'a dönüşür. Bu dönüşümle birlikte, Palpatine 'Emir 66'yı devreye sokar ve galaksideki tüm Jedi'ların yok edilmesi emrini verir. Film, Jedi Düzeni'nin sonunu, Galaktik İmparatorluk'un kuruluşunu ve Yoda ile Obi-Wan'ın sürgüne gidişini dramatik bir şekilde işler. Anakin ve Obi-Wan arasındaki destansı Mustafar düellosu, hem duygusal bir hesaplaşma hem de filmin doruk noktasıdır. Padmé'nin ölümünün ardından doğan ikizler Luke ve Leia'nın, ilerideki filmlerde İmparatorluğa karşı mücadele edecek yeni bir umudu temsil etmeleriyle film sona erer. 'Sith'in İntikamı', trajedinin ve ihanetin hikayesidir. Anakin'in en yakın dostuna ve akıl hocasına karşı savaşması, genç bir kahramanın nasıl bir canavara dönüştüğünü gösterir. Film, serinin en karanlık ve en yoğun duygusal anlarını barındırırken, aynı zamanda 'Yeni Bir Umut' filminin başlangıcına köprü görevi görür. Anakin'in Darth Vader zırhını ilk giydiği an, Star Wars tarihinin en ikonik sahnelerinden biridir ve bir efsanenin doğuşunu simgeler. Palpatine'in 'Emir 66' ile galaksideki düzeni tamamen alt üst etmesi, tüm galaksinin karanlık bir döneme girmesine neden olur.",
+      "refers_to": "'Star Wars: Bölüm III - Sith'in İntikamı', prequel üçlemesinin tamamlayıcı bir parçası olmanın yanı sıra, orijinal üçlemeye giden yolun en kritik basamağıdır. Filmin en önemli atıfı, Anakin'in Darth Vader'a dönüşümü ve Galaktik İmparatorluk'un resmi olarak kurulmasıdır. Bu, doğrudan **Star Wars: Bölüm IV - Yeni Bir Umut**'ta göreceğimiz galaksi yapısının temelini oluşturur. Obi-Wan ve Yoda'nın sürgüne gitmesi, **Yeni Bir Umut** ve **Obi-Wan Kenobi (dizi)**'deki hikayelere doğrudan zemin hazırlar. Özellikle Obi-Wan'ın Tatooine'e gidip Luke Skywalker'ı uzaktan gözetlemesi, 'Yeni Bir Umut' filminin ana hikayesinin başlangıç noktasıdır. Luke ve Leia'nın ikiz kardeşler olarak doğması ve farklı gezegenlerde saklanmaları, orijinal üçlemede onların kimliklerinin ortaya çıkmasıyla ilgili dramatik anlara yol açar. Bu, **Star Wars: Bölüm VI - Jedi'ın Dönüşü**'ndeki 'Ben senin babanım' sahnesinden bile daha derin bir anlam kazanır. Palpatine'in, yani İmparator'un, galaksideki tüm gücü ele geçirmesi ve Darth Vader'ı sağ kolu yapması, sonraki tüm filmlerdeki ana tehdit figürünü oluşturur. Anakin ve Obi-Wan arasındaki son düello, onların arasındaki usta-padawan ilişkisinin trajik sonunu simgeler ve Obi-Wan'ın daha sonra **Yeni Bir Umut**'ta Luke'a mentorluk yaparken neden bu kadar ihtiyatlı davrandığını açıklar. `Sith'in İntikamı`, serinin tüm çatışmasının kökenini, yani 'iyi' tarafın nasıl çöktüğünü ve 'kötü'nün nasıl iktidara geldiğini gösteren temel bir yapıdır. Film, aynı zamanda Klon Savaşları'nın sona ermesini ve direniş hareketlerinin başlangıcını işaret eder, bu da **Andor** ve **Star Wars Asiler** gibi diziler için bağlam oluşturur.",
+      "canonical_level": "canon",
+      "sources": {
+        "Kaynaklar": [
+          {
+            "name": "Box Office Türkiye",
+            "url": "https://boxofficeturkiye.com/film/star-wars-bolum-iii-sithin-intikami--2002621"
+          },
+          {
+            "name": "Star Wars Official Site",
+            "url": "https://www.starwars.com/films/star-wars-episode-iii-revenge-of-the-sith"
+          },
+          {
+            "name": "IMDb",
+            "url": "https://www.imdb.com/title/tt0121766/"
+          }
+        ],
+        "Görsel": [
+          {
+            "name": "Wikipedia",
+            "url": "https://upload.wikimedia.org/wikipedia/tr/c/cd/Y%C4%B1ld%C4%B1z_Sava%C5%9Flar%C4%B1-_B%C3%B6l%C3%BCm_III_-_Sith%27in_%C4%B0ntikam%C4%B1_Film_Posteri.jpg"
+          }
+        ],
+        "Platform": [
+          {
+            "name": "Disney+",
+            "url": "https://www.disneyplus.com/tr-tr/browse/entity-eb1e2c5f-69bf-4240-a61f-7ffc4e0311b3"
+          }
+        ]
+      },
+      "lang": "tr"
     },
     {
-      "id": "film/starwars/2018_solo",
+      "id": "film/star_wars/2018_han_solo",
       "label": "Han Solo: Bir Star Wars Hikayesi (2018)",
-      "title": "Solo: A Star Wars Story",
+      "title": "Han Solo: Bir Star Wars Hikayesi",
       "type": "film",
       "release_date": "2018-05-25",
       "end_date": null,
-      "image": "assets/images/starwars.jpg",
-      "shape": "image",
-      "description": "Galaksinin kenar bölgelerindeki kaçakçılık rotaları ve suç ağları arasında şekillenen bu serüven, cesur fakat deneyimsiz bir gencin kişisel özgürlük arayışıyla başlar. Baskıcı koşullardan kurtulmak için kurulan planlar, güven ilişkilerini sürekli test eden beklenmedik gelişmelere yol açar. Ekip kurma, sadakat ve ihanet temaları etrafında ilerleyen olaylar, zorlu hırsızlıklar ve doğaçlama kararlarla şekillenir. Lüks mekânlardan karanlık aracı dünyalarına uzanan geniş coğrafya, karakterin pragmatik tarafını ve risk alma iştahını görünür kılar. Yolculuk boyunca kurulan dostluklar ve rakiplikler, başka anlatılarda önemli rol oynayacak ilişkilerin nasıl filizlendiğini açıklar. Film, büyük savaşların dışında kalan bir suç dünyasını merkeze alarak evrenin ekonomik ve toplumsal arka planına dair farklı bir pencere açar; böylece kahramanın daha sonra sergileyeceği esnek ahlaki tutumun kökenleri anlaşılır. Anlatı, aksiyonun temposunu karakter anlarıyla dengelemeyi hedefler; sonuçta ortaya çıkan portre, hızlı düşünme ve cesur hamlelerle ayakta kalan bir maceraperest figürüdür. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir.",
-      "refers_to": "Yapım, ana destanın kenarında duran bir başlangıç hikâyesi işlevi görür ve karakterin ikonografisinin nasıl oluştuğunu anlatır. Zaman çizelgesindeki konumu, daha sonra karşılaşacağımız arkadaşlıkların ve araçların köklerini göstererek orijinal üçlemeyle bağ kurar. İzleme sırasına eklenmesi, bazı sembolik ayrıntıların nereden geldiğine dair açıklayıcı bir tatmin sağlar; ancak film aynı zamanda bağımsız bir macera olarak da çalışır. Tematik açıdan güven, sadakat ve kişisel çıkar arasındaki gerilim öne çıkar; kahramanın karar alma biçimi, zorlu koşullarda esneklik ve yaratıcılık üzerinden tanımlanır. Bu bağlam, ileride görülecek iş birliklerinin neden belirli değerlere dayanarak sürdüğünü açıklar ve saga içindeki karakter gelişiminin sürekliliğini destekler. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir.",
-      "canonical_level": "canon",
-      "sources": [
-        {
-          "name": "Official",
-          "url": "https://www.starwars.com/films"
-        },
-        {
-          "name": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Solo:_A_Star_Wars_Story"
-        }
+      "image": "https://static.boxofficeturkiye.com/movie/poster/300x429/10/2012910-440998772.jpg",
+      "imdb_rating": 6.9,
+      "yönetmen": [
+        "Ron Howard"
       ],
-      "lang": "tr",
-      "level": 3
+      "oyuncular": [
+        "Alden Ehrenreich",
+        "Woody Harrelson",
+        "Emilia Clarke",
+        "Donald Glover"
+      ],
+      "tür": [
+        "Bilim Kurgu",
+        "Aksiyon",
+        "Macera"
+      ],
+      "shape": "image",
+      "description": "2018 yapımı 'Han Solo: Bir Star Wars Hikayesi', Star Wars evreninin en ikonik karakterlerinden biri olan Han Solo'nun gençlik yıllarını konu alan bir yan hikayedir. Film, Han'ın kaçak bir suçlu olarak hayatta kalma mücadelesiyle başlar ve onu, galaksideki en tehlikeli suç örgütlerinden biri olan Kızıl Şafak'ın entrikalarına sürükler. Filmde, Han'ın en yakın dostu Chewbacca ile nasıl tanıştığı, Millennium Falcon'u nasıl kazandığı ve Lando Calrissian ile kurduğu karmaşık ilişki detaylı bir şekilde anlatılır. Hikaye, Han'ın galaksiye yayılmış bir hırsızlık planına dahil olmasıyla doruk noktasına ulaşır. Bu süreçte, Han'ın kendine özgü ahlaki değerleri ve her zaman bir 'kahraman'dan çok bir 'hayatta kalma uzmanı' olarak kalma arzusu ön plana çıkar. Film, 'Sith'in İntikamı' ve 'Yeni Bir Umut' filmleri arasındaki dönemi ele alır. İmparatorluğun giderek güçlendiği, suç örgütlerinin yayıldığı bir galaksiyi tasvir eder. Han Solo'nun en büyük aşkı Qi'ra ile olan ilişkisi, ona olan bağlılığı ve ihanetin acısını deneyimlemesi, karakterinin derinliğini artırır. Donald Glover'ın canlandırdığı Lando Calrissian karakteri, genç ve karizmatik bir kumarbaz olarak dikkat çeker. Filmin en unutulmaz sahnelerinden biri, Han'ın Kessel'den kaçışını, efsanevi '12 parsec' rekoruyla gerçekleştirmesidir. 'Han Solo', bir yandan eğlenceli ve hızlı tempolu bir aksiyon filmi sunarken, diğer yandan serinin en sevilen karakterlerinden birinin nasıl 'Han Solo' haline geldiğini gösteren, zengin ve sürükleyici bir başlangıç hikayesidir. Film, hem Han'ın geçmişine ışık tutar hem de galaksideki suç dünyasının acımasız kurallarını gözler önüne serer.",
+      "refers_to": "'Han Solo: Bir Star Wars Hikayesi', ana hikayenin önemli karakterlerinden birinin köken hikayesini anlatarak, orijinal üçlemede yapılan birçok atıfa ve göndermeye açıklık getirir. Filmin en bariz atıflarından biri, Han'ın 'Millennium Falcon'u Lando Calrissian'dan nasıl kumar masasında kazandığını göstermesidir. Bu olay, **Star Wars: Bölüm V - İmparatorluk Geri Dönüyor**'daki Lando'nun Han'a karşı olan tutumunu daha iyi anlamamızı sağlar. Filmdeki 'Kessel Koşusu' göndermesi, Han'ın **Star Wars: Bölüm IV - Yeni Bir Umut**'ta '12 parsec'ten bahsetmesini somut bir olaya dönüştürür. Ayrıca, filmdeki Kızıl Şafak (Crimson Dawn) suç örgütü ve bu örgütün başında görünen Darth Maul, **Star Wars: Klon Savaşları (dizi)** ve **Star Wars Asiler (dizi)**'deki olaylara doğrudan bağlanır. Bu, Darth Maul'un 'Gizli Tehlike'deki ölümünden sonra nasıl hayatta kaldığını ve suç dünyasında nasıl yükseldiğini gösterir. Han'ın Chewbacca ile olan dostluğu, filmin ana eksenlerinden biridir ve **Yeni Bir Umut**'taki sağlam bağlarının nasıl oluştuğunu gösterir. 'Han Solo', İmparatorluğun yükseliş döneminde, kanunsuzluğun ve suçun galaksiyi nasıl etkisi altına aldığını göstererek, **Rogue One: Bir Star Wars Hikayesi** ve **Andor (dizi)** gibi filmlerin atmosferiyle örtüşür. Film, ana karakterin gençliğini ve onun gelecekteki seçimlerini belirleyen tecrübelerini detaylı bir şekilde işleyerek, Star Wars evrenindeki karakter gelişimine önemli bir katkı sağlar. Qi'ra'nın kaderi, Han'ın gelecekteki ilişkilerinde neden bu kadar çekimser olduğunu ima eder.",
+      "canonical_level": "canon",
+      "sources": {
+        "Kaynaklar": [
+          {
+            "name": "Box Office Türkiye",
+            "url": "https://boxofficeturkiye.com/film/han-solo-bir-star-wars-hikayesi--2012910"
+          },
+          {
+            "name": "Star Wars Official Site",
+            "url": "https://www.starwars.com/films/solo-a-star-wars-story"
+          },
+          {
+            "name": "IMDb",
+            "url": "https://www.imdb.com/title/tt3778644/"
+          }
+        ],
+        "Görsel": [
+          {
+            "name": "Box Office Türkiye",
+            "url": "https://static.boxofficeturkiye.com/movie/poster/300x429/10/2012910-440998772.jpg"
+          }
+        ],
+        "Platform": [
+          {
+            "name": "Disney+",
+            "url": "https://www.disneyplus.com/tr-tr/browse/entity-791bc772-d930-40c9-83ec-5ef85923573e"
+          }
+        ]
+      },
+      "lang": "tr"
     },
     {
-      "id": "film/starwars/2016_rogue_one",
+      "id": "film/star_wars/2016_rogue_one",
       "label": "Rogue One: Bir Star Wars Hikayesi (2016)",
-      "title": "Rogue One: A Star Wars Story",
+      "title": "Rogue One: Bir Star Wars Hikayesi",
       "type": "film",
       "release_date": "2016-12-16",
       "end_date": null,
-      "image": "assets/images/starwars.jpg",
-      "shape": "image",
-      "description": "Büyük bir savaş istasyonunun zayıf noktasına ulaşmayı mümkün kılacak planların peşine düşen farklı geçmişlerden insanların oluşturduğu küçük bir ekip, kişisel hikâyelerle kolektif amaç arasındaki ilişkinin güçlü bir örneğini sunar. Karakterler borçlar, vicdani sorgulamalar ve umut kırıklarıyla yola çıkarken görev büyür, risk artar ve geri dönüşsüz tercihler yapılır. Film, büyük kahramanlık mitlerinden çok sıradan insanların fedakârlıklarına odaklanır; savaşın gri alanlarında etik ile zorunluluk arasındaki çizgi bulanıklaşır. Görsel anlatım tozlu kasabalardan tropik kıyılara uzanır; sakin planların ardından gelen yoğun çatışmalar ritmi belirler. Olayların sonuçları yalnızca bir teknik başarının ötesine geçer ve daha sonra izleyeceğimiz geniş anlatının kapılarını doğrudan aralar. Böylece küçük ölçekte bir görevin, tarihin akışını değiştirebilecek etkiler doğurabileceği fikri güçlü biçimde kurulur. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir.",
-      "refers_to": "Antoloji kapsamına girse de eser, merkez anlatıya doğrudan bağlanan bir köprü işlevi görür ve izleme sıralamasında orijinal üçlemenin açılışından hemen önce konumlanır. Hikâyenin zemini, takip eden filmde karşılaşacağımız başlangıç koşullarını açıklığa kavuşturduğu için önemlidir. Tematik olarak kahramanlık anlatısına alternatif bir perspektif sunar ve dayanışmanın değerini sıradan bireylerin kararlılığı üzerinden gösterir. Üslup ve ritim tercihi, casusluk gerilimi ile savaş anlatısını dengeler; finalin duygusal etkisi, fedakârlığın gerçek bedeli vurgulanarak elde edilir. Bu nedenle eser, destanın sürekliliğini pekiştiren kritik bir yapı taşıdır ve zaman çizelgesindeki yerinin netliği izleme deneyimini güçlendirir. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir.",
-      "canonical_level": "canon",
-      "sources": [
-        {
-          "name": "Official",
-          "url": "https://www.starwars.com/films"
-        },
-        {
-          "name": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Rogue_One"
-        }
+      "image": "https://upload.wikimedia.org/wikipedia/tr/e/ea/Rogue_One_-_Bir_Star_Wars_Hikayesi.jpg",
+      "imdb_rating": 7.8,
+      "yönetmen": [
+        "Gareth Edwards"
       ],
-      "lang": "tr",
-      "level": 3
+      "oyuncular": [
+        "Felicity Jones",
+        "Diego Luna",
+        "Donnie Yen",
+        "Forest Whitaker"
+      ],
+      "tür": [
+        "Bilim Kurgu",
+        "Aksiyon",
+        "Macera"
+      ],
+      "shape": "image",
+      "description": "2016 yapımı 'Rogue One: Bir Star Wars Hikayesi', orijinal üçlemenin hemen öncesinde geçen, destansı bir yan hikayedir. Film, asi bir savaşçı olan Jyn Erso'nun, İmparatorluğun galaksiyi kontrol etmek için inşa ettiği gezegen yok edici süper silah olan Ölüm Yıldızı'nın planlarını çalmak için bir araya gelen bir grup beklenmedik kahramanı konu alır. Jyn'in babası Galen Erso, Ölüm Yıldızı'nın tasarımını yapan bilim adamlarından biridir ve gizlice bu süper silaha bir zayıflık noktası yerleştirmiştir. Jyn ve ekibi, bu zayıflığı ortaya çıkaracak planları ele geçirmek için ölümcül bir göreve atılırlar. Filmin en önemli özelliği, ana filmlerde gördüğümüz 'yıldız' karakterlerden çok, galaksinin kaderini değiştiren sıradan insanların hikayesine odaklanmasıdır. 'Rogue One', umutsuzluğa karşı verilen direnişin, fedakarlığın ve ortak bir amaç uğruna birleşmenin hikayesidir. Film, 'Yeni Bir Umut' filminin başlangıç sahnesine doğrudan bağlanarak, kayıp planların nasıl isyancıların eline geçtiğini kronolojik olarak doldurur. Filmdeki her karakter, kendi geçmişi ve motivasyonlarıyla öne çıkar. Cassian Andor'un ahlaki açıdan gri karakteri, Chirrut Îmwe'nin manevi inancı ve K-2SO'nun alaycı yapay zekası, ekibi zenginleştirir. 'Rogue One', serinin en karanlık ve en gerçekçi yapımlarından biri olarak kabul edilir ve savaşın acımasızlığını, kahramanlığın bedelini ve umudun asla kaybolmaması gerektiğini vurgular. Film, son sahnelerdeki Vader'ın gücünü sergilediği sahne ve Jyn'in planları alıcılarına göndermesiyle hafızalara kazınmıştır. Film, hem görsel hem de hikaye anlatımı açısından Star Wars evrenine derinlik katmıştır.",
+      "refers_to": "'Rogue One: Bir Star Wars Hikayesi', Star Wars evrenindeki en önemli 'geçiş' filmlerinden biridir ve **Star Wars: Bölüm IV - Yeni Bir Umut**'un açılış sahnelerindeki olaylara doğrudan bağlanır. Filmin tamamı, İmparatorluğun 'Ölüm Yıldızı' süper silahının planlarının nasıl çalındığını anlatarak, **Yeni Bir Umut**'ta Prenses Leia'nın R2-D2'ya planları teslim etmesiyle sonuçlanan olay örgüsünü tamamlar. Filmdeki Cassian Andor'un hikayesi, daha sonra kendi adını taşıyan dizi olan **Andor (dizi)**'ye zemin hazırlar ve bu karakterin asi saflara nasıl katıldığını detaylandırır. **Andor** dizisi, 'Rogue One'ın olaylarından önceki yıllarda Cassian'ın gelişimini ele alır. Film, Darth Vader'ın gücünü ve acımasızlığını gösteren son sahnelerle, orijinal üçlemedeki Vader karakterinin tehditkar duruşuna bir kez daha vurgu yapar. Jyn Erso'nun babasının, Ölüm Yıldızı'nın zayıf noktasını gizlemesi, **Yeni Bir Umut**'ta Luke Skywalker'ın yaptığı kritik vuruşun neden mümkün olduğunu açıklar. `Rogue One`, **Yıldız Savaşları Asiler (dizi)**'ndeki karakterlerin ve olayların, isyanın genel gidişatıyla nasıl birleştiğini de gösterir. Filmin sonunda, planları ele geçirmek için verilen tüm fedakarlıklar, direnişin ne kadar zorlu ve bedeli ağır bir mücadele olduğunu vurgular. 'Rogue One', hem hikaye anlatımı hem de görsel estetik açısından orijinal üçlemeyle modern Star Wars evreni arasında sağlam bir köprü kurar. Bu film, 'Yeni Bir Umut'un açılış metninde bahsedilen 'gizli planların' gerçek hikayesini ortaya koyarak, evrenin kronolojisindeki boşlukları ustalıkla doldurur.",
+      "canonical_level": "canon",
+      "sources": {
+        "Kaynaklar": [
+          {
+            "name": "Box Office Türkiye",
+            "url": "https://boxofficeturkiye.com/film/rogue-one-bir-star-wars-hikayesi--2013063"
+          },
+          {
+            "name": "Star Wars Official Site",
+            "url": "https://www.starwars.com/films/rogue-one"
+          },
+          {
+            "name": "IMDb",
+            "url": "https://www.imdb.com/title/tt3748528/"
+          }
+        ],
+        "Görsel": [
+          {
+            "name": "Wikipedia",
+            "url": "https://upload.wikimedia.org/wikipedia/tr/e/ea/Rogue_One_-_Bir_Star_Wars_Hikayesi.jpg"
+          }
+        ],
+        "Platform": [
+          {
+            "name": "Disney+",
+            "url": "https://www.disneyplus.com/tr-tr/browse/entity-5ec74210-f970-42b7-a39f-8653c0a9eab8"
+          }
+        ]
+      },
+      "lang": "tr"
     },
     {
-      "id": "film/starwars/1977_a_new_hope",
-      "label": "Star Wars: Bölüm IV – Yeni Bir Umut (1977)",
-      "title": "Star Wars: Episode IV – A New Hope",
+      "id": "film/star_wars/1977_episode_iv",
+      "label": "Yeni Bir Umut (1977)",
+      "title": "Star Wars: Bölüm IV - Yeni Bir Umut",
       "type": "film",
       "release_date": "1977-05-25",
       "end_date": null,
-      "image": "assets/images/starwars.jpg",
-      "shape": "image",
-      "description": "Galaksinin ücra bir köşesinde yaşayan genç bir çiftçi, iki droid aracılığıyla büyük bir çatışmanın içine çekilir ve meraktan sorumluluk duygusuna uzanan hızlı bir dönüşüm yaşar. Küçük bir ekiple çıktığı yolculukta kaçak bir kaptan, sadık bir yardımcı ve bilge bir rehber ona eşlik eder; ezici bir imparatorluk gücüne karşı cesaret ve yaratıcılık tek sığınaklarıdır. Efsane anlatısının arketiplerini kullanan film, mizah ve macera unsurlarını umut temasını öne çıkaracak şekilde dengeler. Görsel tasarım çorak gezegenler, uzay istasyonları ve isyancı üsleri üzerinden çeşitlilik sunar; müzik ve tempo, kahramanın içsel yolculuğuyla uyumlu bir yükseliş izler. Anlatı, bireysel kararların kolektif sonuçlar doğurabileceğini gösterirken fedakârlık ve arkadaşlık vurgusunu da diri tutar. İlk kez izleyenler için başlı başına tatmin edici bir macera sunarken daha geniş bir destanın giriş kapısı olma işlevini de yerine getirir. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir.",
-      "refers_to": "Orijinal üçlemenin açılış filmi olarak eser, evrenin kurallarını ve ana çatışmanın doğasını izleyiciye açık biçimde tanıtır. Karakter kadrosu, ilerleyen bölümlerde gelişecek dostluklar ve gerilimler için sağlam bir temel sağlar; böylece dramatik seçimlerin duygusal etkisi güçlenir. İzleme bağlamında film, hem bağımsız bir serüven olarak çalışır hem de daha geniş anlatının ilk adımıdır. Tematik düzeyde umut ve sorumluluk kavramları belirgindir; kahramanın kendi potansiyelini keşfetmesi, kolektif amaca bağlanmanın ne anlama geldiğini açıklar. Bu konum, sonraki iki bölümde artacak gerilimin ve nihai yüzleşmenin anlaşılmasına doğrudan katkıda bulunur. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir.",
-      "canonical_level": "canon",
-      "sources": [
-        {
-          "name": "Official",
-          "url": "https://www.starwars.com/films"
-        },
-        {
-          "name": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Star_Wars_(film)"
-        }
+      "image": "https://upload.wikimedia.org/wikipedia/tr/4/49/Episode4_Turkish_Poster.jpeg",
+      "imdb_rating": 8.6,
+      "yönetmen": [
+        "George Lucas"
       ],
-      "lang": "tr",
-      "level": 3
+      "oyuncular": [
+        "Mark Hamill",
+        "Harrison Ford",
+        "Carrie Fisher",
+        "Alec Guinness"
+      ],
+      "tür": [
+        "Bilim Kurgu",
+        "Aksiyon",
+        "Macera"
+      ],
+      "shape": "image",
+      "description": "1977 yapımı 'Star Wars: Bölüm IV - Yeni Bir Umut', galaksiyi sonsuza dek değiştiren bir fenomene dönüşen orijinal Star Wars efsanesinin ilk filmidir. Film, barışçıl ve demokratik Galaktik Cumhuriyet'in yerini alan acımasız Galaktik İmparatorluk'un hükümdarlığı altında geçer. Hikaye, İmparatorluğun gezegenleri yok edebilen süper silahı olan Ölüm Yıldızı'nın planlarını çalan isyancı Prenses Leia'nın, bu planları güvenli bir şekilde gizlemesiyle başlar. Leia, planları R2-D2 adlı bir astromech droidin içine saklar ve onu, Obi-Wan Kenobi'den yardım istemesi için Tatooine gezegenine gönderir. R2-D2, genç bir çiftçi olan Luke Skywalker ve kaçakçı Han Solo ile yolu kesişince, Luke kendini isyancıların umudunu temsil eden bir maceranın içinde bulur. Luke, Obi-Wan'ın rehberliğinde Güç'ün yollarını öğrenmeye başlar ve Prenses Leia'yı kurtarmak için Han Solo ile yola çıkar. Film, bir yandan uzayın derinliklerindeki destansı maceraları anlatırken, diğer yandan 'iyi' ile 'kötü' arasındaki evrensel savaşı ele alır. Ölüm Yıldızı'nın yok edilmesi, isyancılara karşı duyulan umudu yeniden canlandırır ve galaksiye yeni bir ışık getirir. 'Yeni Bir Umut', modern sinema tarihinde bir dönüm noktası olarak kabul edilir. George Lucas'ın yarattığı zengin evren, unutulmaz karakterler ve devrim niteliğindeki görsel efektler, filmi kült bir klasiğe dönüştürmüştür. Luke'un Jedi olma yolculuğu, Han Solo'nun kahramanlık yolculuğu ve Leia'nın direnişin sembolü haline gelmesi, filmin ana çekirdeğini oluşturur. Film, tüm evren için bir başlangıç noktası ve sonraki filmlerin temelini atan, destansı bir hikaye anlatıcılığı örneğidir.",
+      "refers_to": "'Star Wars: Bölüm IV - Yeni Bir Umut', tüm Star Wars evreninin kronolojik olarak merkezinde yer alan bir filmdir ve kendisinden önceki ve sonraki tüm yapımlara referans verir. Filmin açılışındaki olaylar, **Rogue One: Bir Star Wars Hikayesi**'nin doğrudan devamıdır ve Ölüm Yıldızı planlarının isyancıların eline nasıl geçtiğini gösterir. Obi-Wan Kenobi'nin Luke'u bulması, **Obi-Wan Kenobi (dizi)**'deki olaylara ve Obi-Wan'ın sürgün yıllarına atıfta bulunur. Bu filmin en önemli atıflarından biri, Obi-Wan'ın Luke'a babası Anakin Skywalker'dan bahsetmesidir ve onun 'dönüşümünü' ima eden sözleri, **Star Wars: Bölüm III - Sith'in İntikamı**'ndaki olaylarla açıklığa kavuşur. Film, Luke'un Jedi eğitimine başlamasıyla, **İmparatorluk Geri Dönüyor** ve **Jedi'ın Dönüşü** filmlerindeki kahramanlık yolculuğunun temelini atar. Han Solo'nun karakteri, **Han Solo: Bir Star Wars Hikayesi**'ndeki köken hikayesiyle daha derin bir anlam kazanır. Leia'nın direnişin lideri olması, **Andor (dizi)** ve **Star Wars Asiler (dizi)**'de görülen isyan hareketlerinin birleştiği son noktayı temsil eder. `Yeni Bir Umut`, 'Güç'ün mistik doğası, 'Jedi'ların kaderi ve 'İmparatorluk'un tehdidi gibi evrenin en temel unsurlarını belirler. Film, Darth Vader'ın 'Emir 66'dan sağ kalan bir Jedi olarak, İmparator'un hizmetindeki rolünü de pekiştirir. Filmin sonunda Ölüm Yıldızı'nın yok edilmesi, **İmparatorluk Geri Dönüyor**'da İmparatorluğun misilleme yapacağı ve isyancıların yeni tehditlerle yüzleşeceği bir ortam yaratır. Film, tüm Star Wars evreninin ana motivasyonunu ve kahramanlarının neden savaştığını belirleyen temel bir eserdir.",
+      "canonical_level": "canon",
+      "sources": {
+        "Kaynaklar": [
+          {
+            "name": "Box Office Türkiye",
+            "url": "https://boxofficeturkiye.com/film/star-wars-bolum-iv-yeni-bir-umut--2008436"
+          },
+          {
+            "name": "Star Wars Official Site",
+            "url": "https://www.starwars.com/films/star-wars-episode-iv-a-new-hope"
+          },
+          {
+            "name": "IMDb",
+            "url": "https://www.imdb.com/title/tt0076759/"
+          }
+        ],
+        "Görsel": [
+          {
+            "name": "Wikipedia",
+            "url": "https://upload.wikimedia.org/wikipedia/tr/4/49/Episode4_Turkish_Poster.jpeg"
+          }
+        ],
+        "Platform": [
+          {
+            "name": "Disney+",
+            "url": "https://www.disneyplus.com/tr-tr/browse/entity-9a280e53-fcc0-4e17-a02c-b1f40913eb0b"
+          }
+        ]
+      },
+      "lang": "tr"
     },
     {
-      "id": "film/starwars/1980_empire_strikes_back",
-      "label": "Star Wars: Bölüm V – İmparator'un Dönüşü (1980)",
-      "title": "Star Wars: Episode V – The Empire Strikes Back",
+      "id": "film/star_wars/1980_episode_v",
+      "label": "İmparatorluk Geri Dönüyor (1980)",
+      "title": "Star Wars: Bölüm V - İmparatorluk Geri Dönüyor",
       "type": "film",
       "release_date": "1980-05-21",
       "end_date": null,
-      "image": "assets/images/starwars.jpg",
-      "shape": "image",
-      "description": "Mücadele, kahramanların dağınık ve kırılgan hâlini açığa çıkaran bir dizi başarısızlıkla sürer. Ezici düşman, stratejik üstünlüğünü soğukkanlı bir kararlılıkla uygular; küçük hatalar büyük sonuçlara yol açar. Genç kahraman uzak bir dünyada bilge bir usta ile yoğun bir eğitimden geçerken, diğerleri kaçış ve dayanışma arasında gidip gelen zor kararlarla yüzleşir. Dostluk bağları farklı sınavlardan geçer; güven kırılganlaşır, sorumluluk ağırlaşır. Görsel ve anlatısal tasarım, gerilimi yükseltmek için mekân ve tempo çeşitliliği kullanır; her adım bir bedel doğurur. Film, umut duygusunu tamamen söndürmeden belirsizlik ve tehlike atmosferini kalıcı kılar; böylece final bölümüne taşınacak duygusal yük güçlenir. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir.",
-      "refers_to": "Orijinal üçlemenin orta halkası olarak eser, kahramanın olgunlaşma sürecini ve ekibin kırılganlığını aynı anda görünür kılar. Dramaturjik açıdan hazırlık ve yüzleşme temaları öne çıkar; anlatı, klasik macera şemasını tersyüz ederek sürprizli bir yön izler. Mekân çeşitliliği ve riskli kaçış sahneleri, karakter ilişkilerine yeni gerilimler ekler; izleyici, nihai çözüme giden yolda kaybetmenin nasıl eğitici olabileceğini deneyimler. Bu film, finalin duygusal ve stratejik zemininin kurulması bakımından vazgeçilmezdir. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir.",
-      "canonical_level": "canon",
-      "sources": [
-        {
-          "name": "Official",
-          "url": "https://www.starwars.com/films"
-        },
-        {
-          "name": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/The_Empire_Strikes_Back"
-        }
+      "image": "https://upload.wikimedia.org/wikipedia/tr/a/ac/386px-Empire20strikes20back_old.jpg",
+      "imdb_rating": 8.7,
+      "yönetmen": [
+        "Irvin Kershner"
       ],
-      "lang": "tr",
-      "level": 3
+      "oyuncular": [
+        "Mark Hamill",
+        "Harrison Ford",
+        "Carrie Fisher",
+        "Billy Dee Williams"
+      ],
+      "tür": [
+        "Bilim Kurgu",
+        "Aksiyon",
+        "Macera"
+      ],
+      "shape": "image",
+      "description": "1980 yapımı 'Star Wars: Bölüm V - İmparatorluk Geri Dönüyor', Star Wars efsanesinin ikinci filmi ve en karanlık bölümlerinden biri olarak kabul edilir. Film, 'Yeni Bir Umut'taki Ölüm Yıldızı'nın yok edilmesinden üç yıl sonra, İmparatorluğun isyancılara karşı misilleme yapmasıyla başlar. İmparatorluk güçleri, isyancıların gizli üssü Hoth gezegeninde onları kuşatır ve isyancılar galaksinin dört bir yanına dağılmak zorunda kalır. Luke Skywalker, güç vizyonlarının rehberliğinde Jedi ustası Yoda'yı bulmak için bataklık gezegeni Dagobah'a gider. Orada, Yoda'nın zorlu ve mistik eğitiminden geçerken, Han Solo ve Prenses Leia, peşlerindeki İmparatorluk filolarından ve ödül avcısı Boba Fett'ten kaçmaya çalışır. Film, bir yandan Luke'un Jedi eğitimini, diğer yandan Han ve Leia arasındaki romantik gerilimi işler. 'İmparatorluk Geri Dönüyor', serinin ana temasını, yani 'iyi' tarafın bile zorlu sınavlardan geçebileceğini ve fedakarlıkların kaçınılmaz olduğunu gösterir. Film, finaldeki Darth Vader ve Luke arasındaki ikonik ışın kılıcı düellosu ve 'Ben senin babanım' repliğiyle sinema tarihinin en büyük sürprizlerinden birini sunar. Bu sürpriz, tüm karakterlerin kaderini ve evrenin dinamiklerini kökten değiştirir. Film, izleyiciyi umutsuzluğun ve kayıpların gölgesinde bir maceraya sürüklerken, aynı zamanda Jedi ve Sith arasındaki ezeli çatışmanın derinliklerini gözler önüne serer. Yoda'nın 'yap ya da yapma, denemek diye bir şey yoktur' felsefesi, Luke'un Jedi olma yolundaki kararlılığını vurgular. Film, Star Wars evrenine derinlik katan, karakter gelişimlerini zenginleştiren ve sonraki filmlere yönelik gerilimi artıran bir başyapıttır.",
+      "refers_to": "'Star Wars: Bölüm V - İmparatorluk Geri Dönüyor', serinin en kritik atıflarını içeren bir filmdir ve kendisinden önceki ve sonraki yapımlara doğrudan bağlanır. Filmin en çarpıcı atıfı, Darth Vader'ın Luke Skywalker'a 'Ben senin babanım' itirafıdır. Bu, **Star Wars: Bölüm III - Sith'in İntikamı**'ndaki Anakin'in Darth Vader'a dönüşümünü ve ikizlerin farklı gezegenlerde saklanmasının nedenini açıklar. Luke'un Yoda'dan aldığı eğitim, **Obi-Wan Kenobi (dizi)**'de Force Ghost (Güç Hayaleti) olarak görünerek, Jedi'ların öldükten sonraki varoluşuyla ilgili bilgileri pekiştirir. Han Solo'nun karbonitte dondurulması ve ödül avcısı Boba Fett tarafından Jabba the Hutt'a götürülmesi, **Star Wars: Bölüm VI - Jedi'ın Dönüşü**'ndeki olayların ana motivasyonunu oluşturur ve Han'ı kurtarma görevi filmin açılışını başlatır. Boba Fett'in karakteri ve zırhı, daha sonra **The Mandalorian** ve **Boba Fett'in Kitabı (dizi)**'de daha detaylı bir şekilde işlenir. Lando Calrissian'ın Cloud City'de Han ve Leia'ya ihanet etmesi, daha sonra isyancılara katılmasına ve **Jedi'ın Dönüşü**'nde kahramanlık yapmasına zemin hazırlar. `İmparatorluk Geri Dönüyor`, Jedi-Sith çatışmasının kişisel bir aile dramına dönüştüğünü göstererek, evrenin ana hikayesine benzersiz bir derinlik katar. İmparator Palpatine'in ilk kez holografik olarak görünmesi, onun Darth Vader'ın üstündeki otoritesini ve tüm evrendeki en büyük tehdit figürü olduğunu vurgular. Bu film, **Jedi'ın Dönüşü**'ndeki nihai hesaplaşmaya giden yolun temelini atmıştır.",
+      "canonical_level": "canon",
+      "sources": {
+        "Kaynaklar": [
+          {
+            "name": "Box Office Türkiye",
+            "url": "https://boxofficeturkiye.com/film/star-wars-bolum-v-imparatorluk-geri-donuyor--2008437"
+          },
+          {
+            "name": "Star Wars Official Site",
+            "url": "https://www.starwars.com/films/star-wars-episode-v-the-empire-strikes-back"
+          },
+          {
+            "name": "IMDb",
+            "url": "https://www.imdb.com/title/tt0080684/"
+          }
+        ],
+        "Görsel": [
+          {
+            "name": "Wikipedia",
+            "url": "https://upload.wikimedia.org/wikipedia/tr/a/ac/386px-Empire20strikes20back_old.jpg"
+          }
+        ],
+        "Platform": [
+          {
+            "name": "Disney+",
+            "url": "https://www.disneyplus.com/tr-tr/browse/entity-0f5c5223-f4f6-46ef-ba8a-69cb0e17d8d3"
+          }
+        ]
+      },
+      "lang": "tr"
     },
     {
-      "id": "film/starwars/1983_return_of_the_jedi",
-      "label": "Star Wars: Bölüm VI – Jedi'nin Dönüşü (1983)",
-      "title": "Star Wars: Episode VI – Return of the Jedi",
+      "id": "film/star_wars/1983_episode_vi",
+      "label": "Jedi'ın Dönüşü (1983)",
+      "title": "Star Wars: Bölüm VI - Jedi'ın Dönüşü",
       "type": "film",
       "release_date": "1983-05-25",
       "end_date": null,
-      "image": "assets/images/starwars.jpg",
-      "shape": "image",
-      "description": "Kurtarma girişimleri, stratejik saldırılar ve kişisel yüzleşmeler aynı çizgide ilerlerken, kahramanlarımız bir dönemi kapatacak bir dizi karar vermek zorunda kalır. Önceki hatalardan çıkarılan dersler somut eylemlere dönüşür; dayanışma, riskli hamlelerin başarısında belirleyici olur. Düşmanın sembolik gücü, beklenmedik işbirlikleri ve yerel toplulukların desteğiyle kırılma noktasına getirilir. Eylemler yalnızca aksiyon değil, önceki seçimlerin etik sonuçlarını görünür kılar; umut ve bağışlanma temaları dramatik düzlemde güç kazanır. Görsel anlatım, orman gezegenlerinden devasa yapısal tesislere uzanır; ritim, finale yaklaşmanın ağırlığıyla yoğunlaşır. Film, bireysel yolculukların siyasi ve askeri sonuçlarla nasıl bütünleşebildiğini göstererek dönemi kapatan bir katharsis sunar. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir.",
-      "refers_to": "Orijinal üçlemenin kapanış halkası olarak eser, başlatılmış tematik ve anlatısal çizgileri bir araya getirir. Başlangıçtaki macera duygusu sorumluluğa; kişisel arayış, toplumsal sonuçlara bağlanır. Önceden hazırlanmış çatışmalar, izleyicinin beklediği ölçekte bir çözümle kapanır; bu esnada karakterlerin gelişim çizgileri dengeli biçimde tamamlanır. İzleme bağlamında film, yeni döneme geçişi mümkün kılacak bir duygusal dinginlik sağlar; böylece daha sonra anlatının bıraktığı yerden Devam eden hikâyeler için uygun bir zemin hazırlanır. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir.",
-      "canonical_level": "canon",
-      "sources": [
-        {
-          "name": "Official",
-          "url": "https://www.starwars.com/films"
-        },
-        {
-          "name": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Return_of_the_Jedi"
-        }
+      "image": "https://upload.wikimedia.org/wikipedia/tr/e/e2/ReturnOfTheJediTurkishPoster.webp",
+      "imdb_rating": 8.3,
+      "yönetmen": [
+        "Richard Marquand"
       ],
-      "lang": "tr",
-      "level": 3
+      "oyuncular": [
+        "Mark Hamill",
+        "Harrison Ford",
+        "Carrie Fisher",
+        "Billy Dee Williams"
+      ],
+      "tür": [
+        "Bilim Kurgu",
+        "Aksiyon",
+        "Macera"
+      ],
+      "shape": "image",
+      "description": "1983 yapımı 'Star Wars: Bölüm VI - Jedi'ın Dönüşü', orijinal üçlemenin ve Anakin Skywalker'ın trajik hikayesinin sonunu getiren destansı bir final filmidir. Film, İmparatorluğun Hoth'ta isyancılara saldırmasından bir yıl sonra, Luke Skywalker'ın arkadaşı Han Solo'yu gangster Jabba the Hutt'ın elinden kurtarma göreviyle başlar. Kurtarma operasyonunun ardından Luke, Yoda'dan son eğitimini almak için Dagobah'a döner ve burada Darth Vader'ın gerçekten babası olduğunu öğrenir. Aynı zamanda, İmparatorluğun yeni ve daha güçlü bir Ölüm Yıldızı inşa ettiğini öğrenen isyancılar, bu süper silahı yok etmek için son bir saldırı planlarlar. Film, Luke'un Vader ve İmparator Palpatine ile yüzleşmesiyle doruk noktasına ulaşır. Bu yüzleşme, sadece bir savaş değil, aynı zamanda babasının içindeki iyiliği geri getirme umudunu taşıyan bir oğulun mücadelesidir. Luke'un babasını kurtarması ve Palpatine'i yenmesi, 'Seçilmiş Kişi' kehanetinin gerçek anlamda yerine gelmesini sağlar. 'Jedi'ın Dönüşü', umut, sevgi, fedakarlık ve kefaret temalarını ustalıkla işler. Ewok'ların orman ayında İmparatorluk güçlerine karşı direnişi, filmin eğlenceli ve ikonik anlarındandır. Han Solo'nun kahramanlık yolculuğu ve Leia'nın ikiz kardeşinin kimliğini öğrenmesi, karakterler arasındaki bağları daha da güçlendirir. Film, hem galaksiyi kurtaran destansı bir savaşı hem de bir ailenin dramatik hikayesini anlatarak, Star Wars efsanesini unutulmaz bir şekilde noktalar. Darth Vader'ın maskesini çıkarıp, babası Anakin olarak oğlunun önünde ölmesi, tüm serinin en duygusal ve en güçlü anlarından biridir. Film, galaksiye yeniden barışın gelmesini ve İmparatorluğun çöküşünü simgelerken, aynı zamanda yeni bir dönemin başlangıcını işaret eder.",
+      "refers_to": "'Star Wars: Bölüm VI - Jedi'ın Dönüşü', orijinal üçlemenin son filmi olarak, hem kendisinden önceki olaylara hem de sonraki evrenin gelişimine sayısız atıfta bulunur. Filmin en temel atıfı, 'Seçilmiş Kişi' kehanetinin, yani Anakin Skywalker'ın Güç'e dengeyi getirmesinin gerçekleşmesidir. Anakin'in Darth Vader kimliğinden kurtulup, Palpatine'i öldürmesi, **Star Wars: Bölüm I - Gizli Tehlike**'de başlayan bu kehanet hikayesini tamamlar. Luke'un Leia'nın kız kardeşi olduğunu öğrenmesi, **Sith'in İntikamı**'ndaki ikizlerin gizlenmesi hikayesini tamamlayıcı bir şekilde anlatır. Han Solo'nun Jabba the Hutt'ın elinden kurtarılması, **İmparatorluk Geri Dönüyor**'daki olayların doğrudan sonucudur. Filmin sonunda İmparatorluk'un çökmesi, galaksinin kaosa sürüklendiği bir dönemin başlangıcıdır. Bu dönemdeki olaylar, **The Mandalorian** gibi dizilere ve yeni üçlemenin başlangıcı olan **Güç Uyanıyor**'a zemin hazırlar. Filmin sonundaki kutlama sahneleri, tüm galaksinin baskıdan kurtuluşunu simgelerken, daha sonra **Star Wars: Bölüm VII - Güç Uyanıyor**'daki İlk Düzen'in yükselişi gibi olaylara yol açan siyasi boşluğun da bir göstergesidir. `Jedi'ın Dönüşü`, Jedi Düzeni'nin restorasyonunun ve Sith'in sonunun başlangıcını işaret ederek, Star Wars evreninin ana akımını şekillendiren temel bir eserdir. Anakin'in Güç Hayaleti olarak görünmesi, onun affedilmiş bir kahraman olarak evrene geri döndüğünü sembolize eder. Film, 'iyi'nin 'kötü'yü yenmesiyle sona ererken, bu galaktik barışın ne kadar kısa süreceğini de ima eder.",
+      "canonical_level": "canon",
+      "sources": {
+        "Kaynaklar": [
+          {
+            "name": "Box Office Türkiye",
+            "url": "https://boxofficeturkiye.com/film/star-wars-bolum-vi-jedinin-donusu--2008438"
+          },
+          {
+            "name": "Star Wars Official Site",
+            "url": "https://www.starwars.com/films/star-wars-episode-vi-return-of-the-jedi"
+          },
+          {
+            "name": "IMDb",
+            "url": "https://www.imdb.com/title/tt0086190/"
+          }
+        ],
+        "Görsel": [
+          {
+            "name": "Wikipedia",
+            "url": "https://upload.wikimedia.org/wikipedia/tr/e/e2/ReturnOfTheJediTurkishPoster.webp"
+          }
+        ],
+        "Platform": [
+          {
+            "name": "Disney+",
+            "url": "https://www.disneyplus.com/tr-tr/browse/entity-4b6e7cda-daa5-4f2d-9b61-35bbe562c69c"
+          }
+        ]
+      },
+      "lang": "tr"
     },
     {
-      "id": "film/starwars/2015_force_awakens",
-      "label": "Star Wars: Bölüm VII – Güç Uyanıyor (2015)",
-      "title": "Star Wars: Episode VII – The Force Awakens",
+      "id": "film/star_wars/2015_episode_vii",
+      "label": "Güç Uyanıyor (2015)",
+      "title": "Star Wars: Bölüm VII - Güç Uyanıyor",
       "type": "film",
       "release_date": "2015-12-18",
       "end_date": null,
-      "image": "assets/images/starwars.jpg",
-      "shape": "image",
-      "description": "Yeni bir güç odağının yükselişi, barışın kırılganlığını hatırlatır ve geçmişten gelen sembollerle meşruiyet kurmaya çalışan yapıları ön plana çıkarır. Genç bir toplayıcı ve vicdani bir kaçak, tesadüflerle başladıkları kaçışta birbirlerine ve yeni dostlara tutunur; eski kahramanların mirası, yeni kuşağın kimlik arayışıyla kesişir. Kayıp, aidiyet ve umut temaları yolculuğa yön verirken, farklı gezegenler ve kültürler arasındaki geçişler anlatıya genişlik katar. Ekip, önce hayatta kalmayı sonra da kaybolmuş bir rehberi bulmayı hedefler; küçük başarılar büyük karşılaşmalara zemin hazırlar. Film, klasik serüven duygusunu çağdaş bir ritimle birleştirir; mizah ve gerilim dengesi, tanıdık ikonografiyi yeniliklerle harmanlar. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir.",
-      "refers_to": "Devam üçlemesinin açılış halkası olarak eser, anlatısal mirası devralır ve yeni başkarakterleri sahneye yerleştirir. Tanıdık simgelerin kullanımı süreklilik hissini güçlendirirken, yeni motivasyonlar taze bir yön sunar. Tematik olarak kimlik, aidiyet ve mitin gücü öne çıkar; karakterler geçmişten devraldıkları hikâyelerin gölgesinde kendi yollarını arar. Teknolojik ve estetik güncellemeler seriyi çağdaş izleyiciye yaklaştırır; anlatı, eski ile yeni arasında duygusal bir köprü kurar. Böylece sonraki iki bölümde doruğa çıkacak çatışmalar için hem kişisel hem yapısal zemin hazırlanır. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir.",
-      "canonical_level": "canon",
-      "sources": [
-        {
-          "name": "Official",
-          "url": "https://www.starwars.com/films"
-        },
-        {
-          "name": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Star_Wars:_Episode_VII_%E2%80%93_The_Force_Awakens"
-        }
+      "image": "https://upload.wikimedia.org/wikipedia/tr/2/2f/Star_Wars_G%C3%BC%C3%A7_Uyan%C4%B1yor_afi%C5%9F.jpg",
+      "imdb_rating": 7.7,
+      "yönetmen": [
+        "J.J. Abrams"
       ],
-      "lang": "tr",
-      "level": 3
+      "oyuncular": [
+        "Daisy Ridley",
+        "John Boyega",
+        "Oscar Isaac",
+        "Harrison Ford",
+        "Carrie Fisher",
+        "Mark Hamill"
+      ],
+      "tür": [
+        "Bilim Kurgu",
+        "Aksiyon",
+        "Macera"
+      ],
+      "shape": "image",
+      "description": "2015 yapımı 'Star Wars: Bölüm VII - Güç Uyanıyor', orijinal üçlemedeki olaylardan yaklaşık 30 yıl sonra geçen bir devam filmidir ve yeni bir üçlemenin başlangıcını oluşturur. Film, Galaktik İmparatorluk'un kalıntılarından doğan acımasız bir rejim olan İlk Düzen'in galaksiye yeniden terör estirmesiyle başlar. Direniş'in lideri General Leia Organa, kayıp kardeşi Luke Skywalker'ı bulmak için bir arayış başlatır. Bu arayış, tesadüfler zinciriyle bir çöl gezegeni olan Jakku'dan gelen, Güç'e karşı olağanüstü yetenekleri olan genç hurda toplayıcısı Rey'i, İlk Düzen'den kaçan eski bir Stormtrooper olan Finn'i ve cesur pilot Poe Dameron'ı bir araya getirir. Film, bir yandan eski kahramanların geri dönüşünü kutlarken, diğer yandan yeni nesil karakterleri tanıtır. İlk Düzen'in tehdidi, Luke Skywalker'ın kayboluşu ve Kylo Ren adlı gizemli bir maskeli figürün yükselişi, filmin ana gerilimini oluşturur. 'Güç Uyanıyor', Star Wars efsanesinin ruhunu yakalarken, modern görsel efektler ve hızlı tempolu aksiyon sahneleriyle izleyiciye yeni bir deneyim sunar. Filmin ana teması, yeni bir umudun doğuşudur ve bu umut, galaksinin en karanlık anında ortaya çıkan genç karakterlerle somutlaşır. Han Solo ve Chewbacca'nın yeniden ortaya çıkışı, filmin nostaljik yanını güçlendirir. Film, Rey'in Güç ile olan bağlantısının ortaya çıkmasıyla, 'Jedi'ın Dönüşü' sonrası galaksinin geleceği hakkında sorular ortaya atar ve sonraki filmlere yönelik büyük bir beklenti yaratır. Han Solo'nun Kylo Ren tarafından öldürülmesi, serinin en dramatik anlarından biridir ve yeni üçlemenin tonunu belirler. Film, galaksideki 'iyi' ile 'kötü' arasındaki savaşın asla bitmediğini ve her neslin kendi kahramanlarını yaratması gerektiğini vurgular.",
+      "refers_to": "'Star Wars: Bölüm VII - Güç Uyanıyor', orijinal üçleme ile yeni üçleme arasında bir köprü görevi görür ve her iki tarafa da atıfta bulunur. Filmin en açık atıfları, orijinal üçlemenin kahramanları olan Han Solo, Leia Organa ve Chewbacca'nın geri dönüşüdür. Bu karakterlerin hikayeleri, **Star Wars: Bölüm VI - Jedi'ın Dönüşü**'ndeki olayların ardından nasıl bir yol izlediklerini gösterir. Filmdeki Kylo Ren karakterinin, Darth Vader'ın torunu ve Han Solo ile Leia'nın oğlu olduğu gerçeği, prequel üçlemedeki Skywalker ailesi dramını devam ettirir ve **Bölüm VIII - Son Jedi**'daki Kylo'nun iç çatışmalarına zemin hazırlar. Filmde bahsedilen ve kayıp olan Luke Skywalker'ın hikayesi, tüm serinin ana gizemlerinden biridir ve **Son Jedi**'daki ana hikaye örgüsünü oluşturur. İlk Düzen'in yükselişi, **Jedi'ın Dönüşü**'nde çöken İmparatorluğun küllerinden nasıl yeniden doğduğunu gösterir ve bu, galaksi için yeni bir tehdit oluşturur. 'Güç Uyanıyor'daki Ölüm Yıldızı benzeri Starkiller Base'in yok edilmesi, **Yeni Bir Umut**'taki olayları yansıtan bir tekrar gibi görünse de, bu durum yeni tehdidin ne kadar güçlü olduğunu gösterir. Filmdeki Rey'in Güç'e olan yatkınlığı, Luke'un ona mentorluk yapacağı **Son Jedi**'ın temelini atar. `Güç Uyanıyor`, Star Wars evrenini yeni bir nesile tanıtırken, eski hayranları da memnun eden sayısız gönderme ve atıfla doludur. Filmin sonunda Luke'un Rey'e doğru dönmesi, efsanevi Jedi'ın geri dönüşünü ve yeni bir umudun başladığını simgeler.",
+      "canonical_level": "canon",
+      "sources": {
+        "Kaynaklar": [
+          {
+            "name": "Box Office Türkiye",
+            "url": "https://boxofficeturkiye.com/film/star-wars-bolum-vii-guc-uyaniyor--2012920"
+          },
+          {
+            "name": "Star Wars Official Site",
+            "url": "https://www.starwars.com/films/star-wars-episode-vii-the-force-awakens"
+          },
+          {
+            "name": "IMDb",
+            "url": "https://www.imdb.com/title/tt2488496/"
+          }
+        ],
+        "Görsel": [
+          {
+            "name": "Wikipedia",
+            "url": "https://upload.wikimedia.org/wikipedia/tr/2/2f/Star_Wars_G%C3%BC%C3%A7_Uyan%C4%B1yor_afi%C5%9F.jpg"
+          }
+        ],
+        "Platform": [
+          {
+            "name": "Disney+",
+            "url": "https://www.disneyplus.com/tr-tr/browse/entity-2854a94d-3702-40bd-97a4-12d55a809188"
+          }
+        ]
+      },
+      "lang": "tr"
     },
     {
-      "id": "film/starwars/2017_the_last_jedi",
-      "label": "Star Wars: Bölüm VIII – Son Jedi (2017)",
-      "title": "Star Wars: Episode VIII – The Last Jedi",
+      "id": "film/star_wars/2017_episode_viii",
+      "label": "Son Jedi (2017)",
+      "title": "Star Wars: Bölüm VIII - Son Jedi",
       "type": "film",
       "release_date": "2017-12-15",
       "end_date": null,
-      "image": "assets/images/starwars.jpg",
-      "shape": "image",
-      "description": "Küçük bir direniş gücü ezici bir düşman tarafından aralıksız takip edilirken, farklı cephelerde alınan kararlar birlikte hayatta kalmanın koşullarını belirler. Genç kahraman, inzivaya çekilmiş efsanevi bir figürden rehberlik arar; ancak rehber, geçmişin hatalarıyla hesaplaşmadan yol gösteremeyeceğini görür. Komuta düzeyindeki ayrışmalar, cesur bireysel eylemler ve planlı fedakârlıklar aynı anda tartışılır. Umut, başarısızlıkların eğitici niteliği üzerinden yeniden tanımlanır; güç ve liderlik anlayışı sorgulanır. Görsel anlatım, geniş boşluklar ile yoğun takip sahneleri arasında ritmik bir denge kurar; karakter merkezli anlar, büyük ölçekli set parçalarıyla dönüşümlü ilerler. Film, beklenmedik yönleri ve risk alan tercihleriyle tartışma yaratırken anlatının duygusal ağırlığını artırır. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir.",
-      "refers_to": "Devam üçlemesinin ikinci halkası olarak yapım, klasik beklentileri geciktirir ve çözümü erteler. Tematik odak; hatadan öğrenme, başarısızlığın öğreticiliği ve liderliğin etik sorumluluğudur. Karakterler yeni kavrayışlar geliştirir; bu kavrayışlar final bölümünde alacakları kararların arka planını oluşturur. İzleme bağlamında film, tartışmalı ama verimli bir ara durak olarak işlev görür; hikâyeyi derinleştirir ve kişisel çatışmaları keskinleştirir. Böylece kapanışa giden yol daha yoğun bir duygusal gerilimle örülür. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir.",
-      "canonical_level": "canon",
-      "sources": [
-        {
-          "name": "Official",
-          "url": "https://www.starwars.com/films"
-        },
-        {
-          "name": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Star_Wars:_The_Last_Jedi"
-        }
+      "image": "https://upload.wikimedia.org/wikipedia/tr/thumb/5/55/Star_Wars_Son_Jedi_afi%C5%9F.jpg/250px-Star_Wars_Son_Jedi_afi%C5%9F.jpg",
+      "imdb_rating": 6.9,
+      "yönetmen": [
+        "Rian Johnson"
       ],
-      "lang": "tr",
-      "level": 3
+      "oyuncular": [
+        "Daisy Ridley",
+        "John Boyega",
+        "Adam Driver",
+        "Mark Hamill",
+        "Carrie Fisher"
+      ],
+      "tür": [
+        "Bilim Kurgu",
+        "Aksiyon",
+        "Macera"
+      ],
+      "shape": "image",
+      "description": "2017 yapımı 'Star Wars: Bölüm VIII - Son Jedi', 'Güç Uyanıyor' filminin hemen sonrasında başlar ve yeni üçlemenin orta bölümü olarak, karakterlerin kendilerini keşfettiği bir yolculuğu anlatır. Film, Direniş'in İlk Düzen'in saldırısından kaçmasıyla başlar. Rey, kayıp Jedi ustası Luke Skywalker'ı bulmuştur ve onun Güç'ün yollarını öğretmesini ister. Ancak, hayal kırıklığına uğramış ve kendini sürgüne mahkum etmiş olan Luke, Güç'ün ve Jedi Düzeni'nin son bulması gerektiğine inanmaktadır. Bu arada, Direniş'in hayatta kalma mücadelesi ve İlk Düzen'in acımasız takibi, Poe Dameron ve Finn gibi karakterleri zorlu kararlar almaya iter. Film, özellikle Rey ve Kylo Ren arasındaki telepatik bağa odaklanır ve her iki karakterin de 'iyi' ve 'kötü' arasındaki ince çizgide nasıl yürüdüğünü gösterir. 'Son Jedi', Star Wars evrenine alışılmadık bir bakış açısı getirir. Geçmişin yükünden kurtulmayı ve geleceği yaratmayı vurgular. Luke'un Yoda ile olan karşılaşması ve Direniş'in umutsuzluk içinde bile bir kıvılcımı nasıl koruduğu, filmin ana felsefesini oluşturur. Filmin finalindeki destansı Crait gezegeni savaşı ve Luke'un bir Güç Hayaleti olarak kendini feda etmesi, Direniş'e yeni bir umut verir. Bu film, riskli ve tartışmalı hikaye seçimleriyle, hem eleştirmenleri hem de hayranları ikiye bölmüştür. Ancak, karakterlerin içsel yolculuklarını ve evrenin geleneksel yapısını sorgulayan cesur bir yapım olarak öne çıkar. Film, bir yandan eski efsanelerin mirasını taşırken, diğer yandan yeni kahramanların kendi kaderlerini nasıl şekillendirmesi gerektiğini gösterir. Leia'nın liderlik becerileri ve Direniş'in direniş ruhu, filmin en güçlü yanlarındandır. 'Son Jedi', bir neslin mirasını devralan yeni bir neslin hikayesini cesurca anlatır.",
+      "refers_to": "'Star Wars: Bölüm VIII - Son Jedi', bir önceki filmin olaylarını doğrudan devam ettirir ve gelecek filme yönelik yeni sorular ortaya atar. Filmin en önemli atıfı, Rey'in Jedi ustası Luke Skywalker'ı bulmasıdır. Bu olay, **Star Wars: Bölüm VII - Güç Uyanıyor**'un sonunda kurulan köprüyü tamamlar. Film, Luke'un Jedi eğitimini sonlandırma kararıyla, Jedi'ların tarihine ve başarısızlıklarına atıfta bulunur ve Yoda'nın bir Güç Hayaleti olarak görünmesiyle bu geçmişin yükünden kurtulması gerektiğini vurgular. Kylo Ren'in Snoke'u öldürmesi ve İlk Düzen'in Yüce Lideri olması, **Skywalker'ın Yükselişi**'ndeki ana tehdidin ve Kylo'nun karakter gelişiminin temelini oluşturur. Rey ve Kylo arasındaki telepatik bağ, **Skywalker'ın Yükselişi**'ndeki 'ikili' (dyad) konseptine atıfta bulunur. Bu ilişki, Palpatine'in planında önemli bir rol oynayacaktır. Finn ve Rose'un görevi, Direniş'in sadece büyük kahramanlardan değil, aynı zamanda sıradan insanlardan da oluştuğunu vurgular. `Son Jedi`, Luke Skywalker'ın bir efsane olarak mirasını nasıl tamamladığını gösterir ve bir Güç Hayaleti olarak ölmesiyle, **Jedi'ın Dönüşü**'ndeki Jedi mirasının devam ettiğini kanıtlar. Leia'nın Güç'ü kullanarak uzayda uçması, onun da bir Skywalker olduğunu ve Güç'ün onda da güçlü olduğunu gösterir. Film, Direniş'in yeni bir umutla yola devam etmesini sağlayarak, **Skywalker'ın Yükselişi**'nin başlangıç noktasına zemin hazırlar. Filmin sonunda, Direniş'in ne kadar az sayıda insanla bile olsa ayakta kalmaya devam etmesi, **Andor** ve **Yıldız Savaşları Asiler** gibi yapımlarda gördüğümüz direniş ruhunun devam ettiğini gösterir.",
+      "canonical_level": "canon",
+      "sources": {
+        "Kaynaklar": [
+          {
+            "name": "Box Office Türkiye",
+            "url": "https://boxofficeturkiye.com/film/star-wars-bolum-viii-son-jedi--2013064"
+          },
+          {
+            "name": "Star Wars Official Site",
+            "url": "https://www.starwars.com/films/star-wars-the-last-jedi"
+          },
+          {
+            "name": "IMDb",
+            "url": "https://www.imdb.com/title/tt2527338/"
+          }
+        ],
+        "Görsel": [
+          {
+            "name": "Wikipedia",
+            "url": "https://upload.wikimedia.org/wikipedia/tr/thumb/5/55/Star_Wars_Son_Jedi_afi%C5%9F.jpg/250px-Star_Wars_Son_Jedi_afi%C5%9F.jpg"
+          }
+        ],
+        "Platform": [
+          {
+            "name": "Disney+",
+            "url": "https://www.disneyplus.com/tr-tr/browse/entity-50c1aff5-3051-4839-9ebf-e332c635e216"
+          }
+        ]
+      },
+      "lang": "tr"
     },
     {
-      "id": "film/starwars/2019_rise_of_skywalker",
-      "label": "Star Wars: Bölüm IX – Skywalker’ın Yükselişi (2019)",
-      "title": "Star Wars: Episode IX – The Rise of Skywalker",
+      "id": "film/star_wars/2019_episode_ix",
+      "label": "Skywalker'ın Yükselişi (2019)",
+      "title": "Star Wars: Bölüm IX - Skywalker'ın Yükselişi",
       "type": "film",
       "release_date": "2019-12-20",
       "end_date": null,
-      "image": "assets/images/starwars.jpg",
-      "shape": "image",
-      "description": "Sürmekte olan mücadele, dağınık ittifakların yeniden bir araya gelmesini ve geçmişten gelen bazı sırların yüzeye çıkmasını kaçınılmaz kılar. Kahramanlar farklı rotalara ayrılarak birbirini tamamlayan görevler üstlenir; kişisel sınavlar, kolektif amaca katkı sağladığında gerilim artar. Umut ile korku arasındaki salınım anlatının ritmini belirler; kayıpların anısı yeni kararların ağırlığını derinleştirir. Simgesel karşılaşmalar ve miras teması, sona yaklaşan bir destanın duygusal dokusunu güçlendirir. Yapım, yüksek tempolu eylem anlarını karakter merkezli duraklamalarla dengelemeye çalışır; sonuçta ortaya çıkan tablo, farklı nesillerin aynı hedef doğrultusunda kurduğu bir dayanışmayı vurgular. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir.",
-      "refers_to": "Devam üçlemesinin kapanış halkası olarak film, karakter yaylarını ve tematik çizgileri tamamlamayı amaçlar. İzleme bağlamında önceki iki bölümde biriken sorulara yanıt arar; serinin mitolojik mirasını çağdaş bir dille yeniden yorumlar. Çeşitli görev hatları, kahramanların yetkinliklerini ve işbirliği becerilerini sergiler; bu yapı finaldeki toplu çözümün inandırıcılığını destekler. Umut, dayanışma ve öz-kimlik temaları yoğun şekilde işlenir; kapanış, geleceğe yönelik olasılıklara kapı aralarken destanın uzun erimli etkisini vurgular. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir. Bu açıklama tarafsız ve bilgilendirici bir özet olması için ayrıntılı ifadelerle genişletilmiştir; izleyiciye filmin bağlamını, anlatısal konumunu ve temalarını açık ve anlaşılır bir dille aktarır. Metnin amacı spoiler vermeden ana kavramları vurgulamak, önemli karakter ilişkilerini ve destan içindeki işlevini açıklamaktır. Biçem ansiklopediktir; gereksiz süslemelerden kaçınılır ve tarafsız bir ton tercih edilir. Okuyucu, bu paragraf sayesinde eserin nerede konumlandığını, hangi dönemi temsil ettiğini ve genel hikâye akışına nasıl katkıda bulunduğunu rahatça takip edebilir.",
-      "canonical_level": "canon",
-      "sources": [
-        {
-          "name": "Official",
-          "url": "https://www.starwars.com/films"
-        },
-        {
-          "name": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Star_Wars:_The_Rise_of_Skywalker"
-        }
+      "image": "https://upload.wikimedia.org/wikipedia/tr/7/79/Skywalker%C4%B1n_Y%C3%BCkseli%C5%9Fi_afi%C5%9F.jpg",
+      "imdb_rating": 6.4,
+      "yönetmen": [
+        "J.J. Abrams"
       ],
-      "lang": "tr",
-      "level": 3
+      "oyuncular": [
+        "Daisy Ridley",
+        "Adam Driver",
+        "John Boyega",
+        "Oscar Isaac",
+        "Carrie Fisher"
+      ],
+      "tür": [
+        "Bilim Kurgu",
+        "Aksiyon",
+        "Macera"
+      ],
+      "shape": "image",
+      "description": "2019 yapımı 'Star Wars: Bölüm IX - Skywalker'ın Yükselişi', efsanenin dokuz bölümlük ana hikayesini ve Skywalker destanını sona erdiren filmdir. Film, 'Son Jedi'ın olaylarından bir yıl sonra başlar ve Direniş'in, galaksiyi tehdit eden yeni ve daha güçlü bir tehditle karşı karşıya kalmasını anlatır: Geri dönen İmparator Palpatine. Palpatine'in geri dönüşü, İlk Düzen'in lideri Kylo Ren'i sarsar ve Kylo, Palpatine'i bulmak için bir arayışa çıkar. Rey ise bir yandan Jedi eğitimini tamamlarken, bir yandan da Kylo Ren ile olan Güç bağı aracılığıyla Palpatine'in varlığını hisseder. Film, Rey'in gerçek kimliği ve geçmişiyle yüzleşmesi, Kylo Ren'in aydınlık tarafa dönme mücadelesi ve Direniş'in son kez bir araya gelerek galaksiyi kurtarmaya çalışması etrafında döner. 'Skywalker'ın Yükselişi', serinin tüm ana karakterlerinin hikayelerini birleştirerek, iyilik ve kötülük arasındaki son savaşı resmeder. Lando Calrissian gibi eski kahramanların geri dönüşü ve galaksiyi kurtarmak için toplanan büyük bir filo, filmin finaline destansı bir boyut katar. Film, bir yandan Skywalker destanına saygı duruşunda bulunurken, diğer yandan yeni karakterlerin geleceğe olan umudunu vurgular. Kylo Ren'in Ben Solo'ya dönüşmesi ve Rey ile birlikte Palpatine'e karşı savaşması, filmin en duygusal ve önemli anlarındandır. Rey'in Palpatine'in soyundan geldiğinin ortaya çıkması, onun 'Seçilmiş Kişi' olmasının ne anlama geldiğini sorgulatır ve filmin ana temasını, yani kan bağının değil, seçimlerin ve bağlılığın önemli olduğunu vurgular. 'Skywalker'ın Yükselişi', tüm serinin finali olarak, geçmiş, bugün ve geleceğin birleştiği, aksiyon dolu ve duygusal bir son sunar.",
+      "refers_to": "'Star Wars: Bölüm IX - Skywalker'ın Yükselişi', tüm Star Wars filmlerine ve hatta bazı dizilere atıfta bulunan, evrenin en kapsamlı yapımlarından biridir. Filmin en önemli atıfı, İmparator Palpatine'in geri dönüşüdür. Bu, **Bölüm VI - Jedi'ın Dönüşü**'nde Palpatine'in ölmediğini ve tüm yeni üçlemenin arkasındaki asıl kötü karakter olduğunu gösterir. Rey'in Palpatine'in torunu olması, onun Güç'e olan olağanüstü yeteneklerini ve Kylo Ren ile olan 'ikili' bağını açıklar. Kylo Ren'in Ben Solo'ya dönüşmesi, Darth Vader'ın **Jedi'ın Dönüşü**'ndeki kurtuluşunu yansıtan bir eylemle, Skywalker ailesi soyunun aydınlık tarafa döndüğünü gösterir. Filmdeki Direniş'in galaksiden topladığı filo, **Star Wars Asiler (dizi)**'de ve diğer yan hikayelerde görülen isyan hareketlerinin birleşerek büyük bir ordu oluşturduğunu simgeler. 'Skywalker'ın Yükselişi', Luke Skywalker ve Leia Organa gibi eski karakterlerin, genç nesil kahramanlara rehberlik ederek mirasını nasıl devam ettirdiklerini gösterir. Luke'un Güç Hayaleti olarak görünmesi, Rey'e yardım etmesi, **Jedi'ın Dönüşü**'nde ve **Son Jedi**'daki Güç'ün ölümsüzlüğü temasını güçlendirir. `Skywalker'ın Yükselişi`, tüm ana hikayeyi bir araya getirerek, **'Seçilmiş Kişi' kehanetini** farklı bir bakış açısıyla yorumlar ve 'iyi' ile 'kötü' arasındaki çatışmanın nesiller boyu devam ettiğini vurgular. Filmin sonunda Rey'in Tatooine'e giderek kendisini 'Rey Skywalker' olarak tanıtması, kan bağından daha çok, bir ailenin değerlerini benimsemenin önemini vurgular.",
+      "canonical_level": "canon",
+      "sources": {
+        "Kaynaklar": [
+          {
+            "name": "Box Office Türkiye",
+            "url": "https://boxofficeturkiye.com/film/star-wars-bolum-ix-skywalkerin-yukselisi--2014022"
+          },
+          {
+            "name": "Star Wars Official Site",
+            "url": "https://www.starwars.com/films/star-wars-the-rise-of-skywalker"
+          },
+          {
+            "name": "IMDb",
+            "url": "https://www.imdb.com/title/tt2527338/"
+          }
+        ],
+        "Görsel": [
+          {
+            "name": "Wikipedia",
+            "url": "https://upload.wikimedia.org/wikipedia/tr/7/79/Skywalker%C4%B1n_Y%C3%BCkseli%C5%9Fi_afi%C5%9F.jpg"
+          }
+        ],
+        "Platform": [
+          {
+            "name": "Disney+",
+            "url": "https://www.disneyplus.com/tr-tr/browse/entity-43f9c275-e7e8-4ab3-802d-00d06a8ad841"
+          }
+        ]
+      },
+      "lang": "tr"
+    },
+    {
+      "id": "animasyon/star_wars/2008_klon_savaslari_film",
+      "label": "Klon Savaşları (2008)",
+      "title": "Star Wars: Klon Savaşları (Animasyon Filmi)",
+      "type": "animasyon_film",
+      "release_date": "2008-08-15",
+      "end_date": null,
+      "image": "https://upload.wikimedia.org/wikipedia/tr/f/f8/Star_wars_the_clone_wars_film_posteri.jpg",
+      "imdb_rating": 6.0,
+      "yönetmen": [
+        "Dave Filoni"
+      ],
+      "oyuncular": [
+        "Matt Lanter",
+        "Ashley Eckstein",
+        "James Arnold Taylor",
+        "Tom Kane"
+      ],
+      "tür": [
+        "Animasyon",
+        "Bilim Kurgu",
+        "Aksiyon"
+      ],
+      "shape": "image",
+      "description": "2008 yapımı 'Star Wars: Klon Savaşları' animasyon filmi, **Bölüm II - Klonların Saldırısı** ve **Bölüm III - Sith'in İntikamı** filmleri arasında geçen Klon Savaşları dönemine bir giriş niteliğindedir. Film, genç Jedi Padawan'ı Ahsoka Tano'nun, Anakin Skywalker'ın öğrencisi olarak atanmasıyla başlar. Anakin ve Ahsoka, Jabba the Hutt'ın kaçırılan oğlu Rotta'yı kurtarmak için bir göreve gönderilirler. Bu görev, Klon Savaşları'nın cephelerinde geçen savaşları, siyasi entrikaları ve Jedi'ların zorlu sınavlarını gösterir. Film, 'Klon Savaşları' dizisinin başlangıcıdır ve galaksi genelindeki bu büyük çatışmanın ne kadar yaygın ve acımasız olduğunu gözler önüne serer. Anakin'in Ahsoka ile olan usta-padawan ilişkisi, filmin ana temasını oluşturur. Başlangıçta gergin ve zıt görünen bu ikili, görev sırasında birbirlerine güvenmeyi öğrenir ve yakın bir bağ kurarlar. Bu ilişki, Anakin'in gelecekteki kararları üzerinde büyük bir etkiye sahip olacaktır. Filmin hikayesi, Yoda'nın gizemli bir Güç vizyonu görmesiyle derinleşir ve Jedi Düzeni'nin geleceğinin belirsiz olduğunu ima eder. `Klon Savaşları` filmi, özellikle izleyicileri uzun soluklu bir animasyon dizisine hazırlamak için tasarlanmıştır ve animasyon kalitesiyle dikkat çeker. Film, Star Wars evrenine yeni ve sevilen karakterler katarak, o döneme daha yakından bakmamızı sağlar. Anakin'in liderlik vasıfları ve Jedi Konseyi'ne karşı olan güvensizliği, onun yavaş yavaş karanlık tarafa doğru olan yolculuğunu gösterir. Filmin sonunda, Anakin ve Ahsoka'nın başarılı bir şekilde görevlerini tamamlaması, onların efsanevi bir ikili olarak ün kazanmasına yol açar. Bu film, Klon Savaşları'nın karmaşıklığını ve Jedi'ların bu çatışmada ne kadar zorlandığını gösteren önemli bir başlangıç noktasıdır.",
+      "refers_to": "Star Wars: Klon Savaşları' animasyon filmi, kendi adını taşıyan dizinin başlangıcıdır ve prequel üçlemedeki olaylara doğrudan bağlanır. Film, **Star Wars: Bölüm II - Klonların Saldırısı** ile **Star Wars: Bölüm III - Sith'in İntikamı** arasındaki dönemi doldurur. Ahsoka Tano karakteri, bu filmde tanıtılır ve daha sonra **Yıldız Savaşları Asiler** ve **Ahsoka (dizi)**'de de önemli bir rol oynar. Ahsoka'nın Anakin Skywalker'ın padawan'ı olması, Anakin'in karakter gelişimine ve duygusal çatışmalarına daha derin bir bağlam kazandırır. Bu ilişki, Anakin'in karanlık tarafa geçişinin nedenlerini daha iyi anlamamızı sağlar. Filmdeki ana düşman figürleri, Klon Savaşları dizisinde ve prequel üçlemede gördüğümüz General Grievous ve Kont Dooku'dur. Jabba the Hutt'ın ve Hutt suç ailesinin bu filmde yer alması, galaksideki suç dünyasının yaygınlığını gösterir ve **Han Solo: Bir Star Wars Hikayesi**'ndeki suç temalarına atıfta bulunur. `Klon Savaşları`, aynı zamanda, Palpatine'in gizli planlarının ve Darth Sidious olarak yürüttüğü entrikaların arka planını daha geniş bir şekilde ele alır. Film, Klon Savaşları dizisinin olaylarını başlatır ve dizinin tüm hikaye örgüsü, bu filmin üzerine inşa edilir. Bu animasyon filmi, Star Wars evreninin kronolojisindeki kritik bir boşluğu dolduran ve yeni karakterlerin kaderini belirleyen bir yapım olarak öne çıkar.",
+      "canonical_level": "canon",
+      "sources": {
+        "Kaynaklar": [
+          {
+            "name": "Box Office Türkiye",
+            "url": "https://boxofficeturkiye.com/film/star-wars-klon-savaslari--2008122"
+          },
+          {
+            "name": "Star Wars Official Site",
+            "url": "https://www.starwars.com/films/star-wars-the-clone-wars"
+          },
+          {
+            "name": "IMDb",
+            "url": "https://www.imdb.com/title/tt1185834/"
+          }
+        ],
+        "Görsel": [
+          {
+            "name": "Wikipedia",
+            "url": "https://upload.wikimedia.org/wikipedia/tr/f/f8/Star_wars_the_clone_wars_film_posteri.jpg"
+          }
+        ],
+        "Platform": [
+          {
+            "name": "Disney+",
+            "url": "https://www.disneyplus.com/tr-tr/browse/entity-24a03eff-e68a-4743-828d-32ba9ffc0c7f"
+          }
+        ]
+      },
+      "lang": "tr"
+    },
+    {
+      "id": "dizi/star_wars/2008_klon_savaslari_dizi",
+      "label": "Klon Savaşları (2008-2020)",
+      "title": "Star Wars: Klon Savaşları (Dizi)",
+      "type": "dizi",
+      "release_date": "2008-10-03",
+      "end_date": "2020-05-04",
+      "image": "https://www.sinefil.com/cdn-a1-p/tv/0015/94/thumb_1493526_tv_default.jpeg",
+      "imdb_rating": 8.4,
+      "yönetmen": [
+        "Dave Filoni"
+      ],
+      "oyuncular": [
+        "Matt Lanter",
+        "Ashley Eckstein",
+        "James Arnold Taylor",
+        "Dee Bradley Baker"
+      ],
+      "tür": [
+        "Animasyon",
+        "Bilim Kurgu",
+        "Aksiyon"
+      ],
+      "shape": "image",
+      "description": "2008-2020 yılları arasında yayınlanan 'Star Wars: Klon Savaşları' dizisi, Star Wars evrenindeki en kritik dönemlerden biri olan Klon Savaşları'nı detaylı bir şekilde ele alır. Film ile başlayan hikaye, bu dizide genişleyerek Anakin Skywalker, Obi-Wan Kenobi ve yeni karakter Ahsoka Tano'nun galaksinin dört bir yanındaki maceralarını takip eder. Dizi, Cumhuriyet'in ve Jedi Düzeni'nin, ayrılıkçı güçlere karşı verdiği savaşın sadece cephelerde değil, aynı zamanda siyasi ve ahlaki açıdan da ne kadar karmaşık olduğunu gösterir. Anakin'in genç padawan'ı Ahsoka ile olan usta-çırak ilişkisi, Anakin'in karanlık tarafa olan yatkınlığını ve onu Palpatine'in manipülasyonlarına karşı savunmasız kılan duygusal bağlarını derinlemesine inceler. Dizi, Darth Maul'un geri dönüşü, Yoda'nın Güç'ün doğasına dair keşifleri ve galaksinin en karanlık güçlerinin perde arkasındaki entrikaları gibi birçok önemli hikaye örgüsüne ev sahipliği yapar. 'Klon Savaşları', sadece Jedi'ların değil, aynı zamanda klon askerlerinin de hikayesine odaklanarak, onların bireysel kimliklerini ve insani yönlerini ortaya koyar. Klon askerlerinin 'Emir 66'ya programlandığı gerçeği, izleyiciyi bu karaktere karşı empati kurmaya iter. Dizi, prequel üçlemedeki olayların arka planını zenginleştirir ve 'Sith'in İntikamı'nda yaşanan dönüşümlerin nedenlerini daha iyi anlamamızı sağlar. Animasyon kalitesi ve hikaye anlatımı, zamanla gelişerek Star Wars evreninin en sevilen yapımlarından biri haline gelmiştir. Son sezonu, 'Sith'in İntikamı' filmiyle paralel bir şekilde, Anakin'in Darth Vader'a dönüşümünü ve Ahsoka'nın Jedi Düzeni'nden ayrılışını trajik bir şekilde göstererek, evrenin en karanlık dönemine güçlü bir final yapar.",
+      "refers_to": "'Star Wars: Klon Savaşları' dizisi, Star Wars evrenindeki en önemli referans noktalarından biridir ve birçok film ve diziye doğrudan bağlanır. Dizi, **Star Wars: Bölüm II - Klonların Saldırısı** ile **Star Wars: Bölüm III - Sith'in İntikamı** arasındaki dönemi tamamen doldurur ve bu filmlerdeki olayların arka planını ve detaylarını açıklar. Ahsoka Tano'nun Jedi Düzeni'nden ayrılışı, **Yıldız Savaşları Asiler**'deki hikayesine zemin hazırlar ve bu dizide de önemli bir karakter olarak yer alır. Darth Maul'un geri dönüşü, onun Obi-Wan Kenobi ile olan ezeli mücadelesini devam ettirir ve daha sonra **Yıldız Savaşları Asiler** ve **Han Solo: Bir Star Wars Hikayesi**'ndeki olaylara doğrudan bağlanır. Klon askerlerinin bireysel kimlikleri ve 'Emir 66'ya programlanmaları, daha sonra **Star Wars: Bad Batch** dizisinin ana konusunu oluşturur. Dizi, Jedi Düzeni'nin yavaş yavaş yozlaşmasını ve Palpatine'in gizli planlarını başarıyla nasıl yürüttüğünü detaylandırarak, **Sith'in İntikamı**'ndaki olaylara derinlik katar. `Klon Savaşları`, ayrıca Obi-Wan'ın daha sonra **Obi-Wan Kenobi (dizi)**'de göreceğimiz yalnız ve sürgün hayatının sebeplerini açıklar. Dizi, Anakin'in Darth Vader'a dönüşümünü hızlandıran duygusal travmalarını ve Palpatine'in bu zaafları nasıl kullandığını gösteren temel bir yapıdır. 'Klon Savaşları', Star Wars evrenini zenginleştiren ve ana hikayedeki boşlukları dolduran vazgeçilmez bir eserdir.",
+      "canonical_level": "canon",
+      "sources": {
+        "Kaynaklar": [
+          {
+            "name": "Box Office Türkiye",
+            "url": "https://boxofficeturkiye.com/dizi/star-wars-klon-savaslari--2008453"
+          },
+          {
+            "name": "Star Wars Official Site",
+            "url": "https://www.starwars.com/tv-shows/star-wars-the-clone-wars"
+          },
+          {
+            "name": "IMDb",
+            "url": "https://www.imdb.com/title/tt0458290/"
+          }
+        ],
+        "Görsel": [
+          {
+            "name": "Sinefil",
+            "url": "https://www.sinefil.com/cdn-a1-p/tv/0015/94/thumb_1493526_tv_default.jpeg"
+          }
+        ],
+        "Platform": [
+          {
+            "name": "Disney+",
+            "url": "https://www.disneyplus.com/tr-tr/browse/entity-314f14b4-b70a-4ec6-b634-2559f0b1f77e"
+          }
+        ]
+      },
+      "lang": "tr"
+    },
+    {
+      "id": "dizi/star_wars/2014_asiler",
+      "label": "Star Wars Asiler (2014-2018)",
+      "title": "Star Wars Asiler",
+      "type": "dizi",
+      "release_date": "2014-10-03",
+      "end_date": "2018-03-05",
+      "image": "https://m.media-amazon.com/images/M/MV5BZDc5YjgxNWUtYTE2Ni00NTI3LTkzZDctYzNjN2QxMzNiZmM2XkEyXkFqcGc@._V1_.jpg",
+      "imdb_rating": 8.1,
+      "yönetmen": [
+        "Dave Filoni"
+      ],
+      "oyuncular": [
+        "Taylor Gray",
+        "Freddie Prinze Jr.",
+        "Vanessa Marshall",
+        "Steve Blum"
+      ],
+      "tür": [
+        "Animasyon",
+        "Bilim Kurgu",
+        "Aksiyon"
+      ],
+      "shape": "image",
+      "description": "2014-2018 yılları arasında yayınlanan 'Star Wars Asiler' dizisi, prequel üçlemesi ile orijinal üçleme arasındaki karanlık dönemi, Galaktik İmparatorluk'un yükselişini ve Asi İttifakı'nın kuruluşunu konu alır. Dizi, Ghost adını verdikleri gemide yaşayan ve Lothal gezegeninde İmparatorluğa karşı gizli bir direniş gösteren bir grup asi kahramanın hikayesini takip eder. Ekip, eski bir Jedi olan Kanan Jarrus, padawan'ı Ezra Bridger, pilot Hera Syndulla, Mandalorian savaşçısı Sabine Wren ve Lasat savaşçısı Zeb Orrelios gibi farklı karakterlerden oluşur. 'Star Wars Asiler', bir yandan genç Ezra'nın Jedi eğitimini ve Güç'e olan yolculuğunu anlatırken, diğer yandan galaksinin dört bir yanındaki isyan gruplarının nasıl bir araya gelerek 'Asi İttifakı'nı kurduğunu gösterir. Dizi, Darth Vader, Grand Admiral Thrawn ve Darth Maul gibi ikonik karakterleri de hikayesine dahil ederek, evrenin kronolojisindeki boşlukları doldurur. Kanan ve Ezra'nın Klon Savaşları'ndan kalan Ahsoka Tano ile karşılaşması, dizinin en önemli anlarındandır. Dizi, umut, aile, fedakarlık ve direniş temalarını ustalıkla işler. 'Asiler', hem çocuklara hem de yetişkinlere hitap eden bir tonla, Star Wars evreninin en karanlık dönemini aydınlatır. Ezra'nın Jedi olma yolculuğu, Kanan'ın ustalık yolculuğu ve ekibin bir aile gibi birleşmesi, dizinin duygusal çekirdeğini oluşturur. Filmin finali, karakterlerin kaderini belirlerken, aynı zamanda 'Yeni Bir Umut' ve 'Rogue One' filmlerine giden yolu hazırlar. 'Star Wars Asiler', hem yeni hayranları hem de eski hayranları memnun eden, zengin ve derin bir hikaye anlatımıyla öne çıkar.",
+      "refers_to": "'Star Wars Asiler' dizisi, Star Wars evreninin kronolojisindeki en kritik noktalardan birini işler ve birçok film ve diziye önemli atıflarda bulunur. Dizi, **Star Wars: Bölüm III - Sith'in İntikamı**'ndan sonra, **Rogue One: Bir Star Wars Hikayesi**'nden önce geçen olayları ele alır. Ahsoka Tano'nun geri dönüşü, **Star Wars: Klon Savaşları (dizi)**'ndeki hikayesinin devamıdır ve onun kaderini daha da derinleştirir. Darth Maul'un hayatta kalması ve Obi-Wan Kenobi ile olan son yüzleşmesi, **Klon Savaşları**'nda başlayan hikayeyi tamamlar. Kanan Jarrus'un 'Emir 66'dan sağ kalan bir Jedi olduğu hikayesi, **Sith'in İntikamı**'ndaki olaylara doğrudan bağlanır. Grand Admiral Thrawn karakterinin tanıtımı, daha sonra **Ahsoka (dizi)**'de ana düşman figürü olarak geri döneceğini gösterir. Dizinin sonunda, Ezra Bridger'ın kaybolması, **Ahsoka** dizisinin ana arayışını oluşturur. `Star Wars Asiler`, isyanın nasıl başladığını ve farklı grupların nasıl bir araya gelerek Asi İttifakı'nı kurduğunu göstererek, **Rogue One** ve **Yeni Bir Umut** filmlerine doğrudan bir köprü kurar. Filmlerde gördüğümüz Mon Mothma gibi karakterlerin asi gruplarını bir araya getirmesi, dizideki olaylarla daha iyi anlaşılır. 'Asiler', ana filmlerde sadece bahsedilen olayları ve karakterleri genişleterek, Star Wars evrenine derinlik katan bir yapımdır.",
+      "canonical_level": "canon",
+      "sources": {
+        "Kaynaklar": [
+          {
+            "name": "Box Office Türkiye",
+            "url": null
+          },
+          {
+            "name": "Star Wars Official Site",
+            "url": "https://www.starwars.com/tv-shows/star-wars-rebels"
+          },
+          {
+            "name": "IMDb",
+            "url": "https://www.imdb.com/title/tt2930604/"
+          }
+        ],
+        "Görsel": [
+          {
+            "name": "IMDb",
+            "url": "https://m.media-amazon.com/images/M/MV5BZDc5YjgxNWUtYTE2Ni00NTI3LTkzZDctYzNjN2QxMzNiZmM2XkEyXkFqcGc@._V1_.jpg"
+          }
+        ],
+        "Platform": [
+          {
+            "name": "Disney+",
+            "url": "https://www.disneyplus.com/tr-tr/browse/entity-08249c74-0178-4861-a1e4-dfc7b168dce5"
+          }
+        ]
+      },
+      "lang": "tr"
+    },
+    {
+      "id": "dizi/star_wars/2022_andor",
+      "label": "Andor (2022)",
+      "title": "Andor",
+      "type": "dizi",
+      "release_date": "2022-09-21",
+      "end_date": "2024-11-20",
+      "image": "https://m.media-amazon.com/images/M/MV5BNGI2MTJjMjUtMTJhOC00YTY2LTg1NjUtMTdmMjg4YTk2YjM5XkEyXkFqcGc@._V1_.jpg",
+      "imdb_rating": 8.6,
+      "yönetmen": [
+        "Tony Gilroy"
+      ],
+      "oyuncular": [
+        "Diego Luna",
+        "Stellan Skarsgård",
+        "Adria Arjona",
+        "Genevieve O'Reilly"
+      ],
+      "tür": [
+        "Bilim Kurgu",
+        "Casusluk",
+        "Gerilim"
+      ],
+      "shape": "image",
+      "description": "2022 yapımı 'Andor' dizisi, 'Rogue One: Bir Star Wars Hikayesi' filminde tanıştığımız Cassian Andor karakterinin, masum bir hırsızdan, Asi İttifakı'nın en önemli casuslarından birine dönüşme hikayesini anlatır. Dizi, Galaktik İmparatorluk'un giderek artan baskıcı rejimine ve bu rejime karşı uyanan direnişin ilk kıvılcımlarına odaklanır. Andor, galaksideki en tehlikeli ve acımasız suç örgütlerinin, casusların ve siyasi entrikaların içine çekilir. Dizi, Star Wars evrenine alışılmadık bir şekilde, 'savaşın' arka planında, 'sıradan' insanların hayatını ve onların nasıl birer isyancıya dönüştüğünü gösterir. 'Andor', casusluk, gerilim ve politik drama türlerini bir araya getirerek, evrenin en gerçekçi ve karanlık yapımlarından biri olarak öne çıkar. Film, Cassian Andor'un bireysel olarak adalet arayışının, nasıl galaktik bir direnişe dönüştüğünü gösterir. Dizi, Mon Mothma gibi siyasi liderlerin, İmparatorluk'a karşı gizli bir şekilde nasıl bir cephe kurduğunu da detaylandırır. 'Andor', umutsuzluk ve baskı altında bile direnişin ruhunun nasıl canlı tutulduğunu gösterir. Karakterlerin moral açıdan gri olması ve verdikleri zor kararlar, diziyi daha gerçekçi ve olgun bir yapım haline getirir. Film, Star Wars evrenindeki siyasi ve sosyal dinamikleri derinlemesine inceler ve izleyiciye, 'direniş'in nasıl bir felsefe olduğunu anlatır. Dizinin ilk sezonu, Cassian'ın bir 'isyan'a nasıl dahil olduğunu ve onun karakterinin gelişimini temelden işler. 'Andor', sadece bir yan hikayeden daha fazlası olarak, Star Wars evreninin kronolojisi ve derinliği için vazgeçilmez bir eserdir.",
+      "refers_to": "'Andor' dizisi, **Rogue One: Bir Star Wars Hikayesi**'nin doğrudan prequel'idir ve Cassian Andor'un bu filmdeki halinin kökenini anlatır. Dizi, 'Rogue One' filminde gördüğümüz Cassian'ın soğuk ve hesapçı kişiliğinin nasıl oluştuğunu gösterir. Mon Mothma'nın gizli bir şekilde isyanı finanse etme çabaları, **Bölüm VI - Jedi'ın Dönüşü**'ndeki Asi İttifakı'nın lideri rolüne atıfta bulunur. Dizideki İmparatorluk Güvenlik Bürosu (ISB) gibi kurumlar, İmparatorluk'un giderek nasıl totaliter bir rejim haline geldiğini gösterir ve bu, **Rogue One** ve **Yeni Bir Umut**'taki baskıcı ortamı açıklar. 'Andor', **Yıldız Savaşları Asiler (dizi)**'de görülen isyan hareketlerinin başlangıç noktalarını ve farklı gezegenlerdeki direnişin nasıl filizlendiğini gösterir. Bu dizi, Star Wars evreninin kronolojik akışında, İmparatorluk'un en güçlü olduğu ve isyanın en gizli olduğu dönemlerden birini doldurur. `Andor`, özellikle galaksideki yozlaşma ve siyasi entrikalar hakkında derin bir arka plan sunarak, ana filmlerde sadece hissedilen baskıyı somut bir şekilde gözler önüne serer. Dizi, izleyicinin bir isyancının neden ve nasıl bir yola çıktığını anlamasını sağlayarak, **Rogue One**'daki final fedakarlığına daha fazla anlam katar. 'Andor', aynı zamanda, 'Boba Fett'in Kitabı'nda ve diğer yapımlarda görülen suç dünyası temalarına da atıfta bulunur.",
+      "canonical_level": "canon",
+      "sources": {
+        "Kaynaklar": [
+          {
+            "name": "Box Office Türkiye",
+            "url": null
+          },
+          {
+            "name": "Star Wars Official Site",
+            "url": "https://www.starwars.com/tv-shows/andor"
+          },
+          {
+            "name": "IMDb",
+            "url": "https://www.imdb.com/title/tt9253284/"
+          }
+        ],
+        "Görsel": [
+          {
+            "name": "IMDb",
+            "url": "https://m.media-amazon.com/images/M/MV5BNGI2MTJjMjUtMTJhOC00YTY2LTg1NjUtMTdmMjg4YTk2YjM5XkEyXkFqcGc@._V1_.jpg"
+          }
+        ],
+        "Platform": [
+          {
+            "name": "Disney+",
+            "url": "https://www.disneyplus.com/tr-tr/browse/entity-faba988a-a9f5-45f2-a074-0775a7d6f67a"
+          }
+        ]
+      },
+      "lang": "tr"
+    },
+    {
+      "id": "dizi/star_wars/2022_obi_wan_kenobi",
+      "label": "Obi-Wan Kenobi (2022)",
+      "title": "Obi-Wan Kenobi",
+      "type": "dizi",
+      "release_date": "2022-05-27",
+      "end_date": "2022-06-22",
+      "image": "https://m.media-amazon.com/images/M/MV5BOGU4ODlmNmMtMDM0OS00NTMxLWFlODUtZGFkMjU5NDdhMjgyXkEyXkFqcGc@._V1_.jpg",
+      "imdb_rating": 7.0,
+      "yönetmen": [
+        "Deborah Chow"
+      ],
+      "oyuncular": [
+        "Ewan McGregor",
+        "Hayden Christensen",
+        "Moses Ingram",
+        "Joel Edgerton"
+      ],
+      "tür": [
+        "Bilim Kurgu",
+        "Aksiyon",
+        "Dram"
+      ],
+      "shape": "image",
+      "description": "2022 yapımı 'Obi-Wan Kenobi' dizisi, prequel üçlemesi ve orijinal üçleme arasındaki on yıllık süreci konu alır. Film, Obi-Wan'ın Jedi Düzeni'nin yıkılışından sonra Tatooine gezegenine sürgün edilerek genç Luke Skywalker'ı korumasıyla başlar. 'Emir 66'dan ve Mustafar'daki trajik düellodan sonra ruhsal ve duygusal olarak çökmüş olan Obi-Wan, Jedi kimliğini gizleyerek münzevi bir hayat sürer. Dizi, Prenses Leia'nın kaçırılmasıyla Obi-Wan'ın sürgün hayatından çıkmak zorunda kalmasıyla ana hikayesini başlatır. Leia'yı kurtarmaya çalışırken, Obi-Wan'ın en büyük düşmanıyla, yani eski öğrencisi Darth Vader ile yüzleşmesi kaçınılmaz hale gelir. Dizi, Obi-Wan'ın içsel mücadelesini, eski dostunu kaybetmenin acısını ve Jedi olarak tekrar ayağa kalkma çabalarını derinlemesine işler. 'Obi-Wan Kenobi', Ewan McGregor'ın ikonik rolüne geri dönüşünü kutlarken, aynı zamanda Hayden Christensen'ın Darth Vader olarak yeniden canlanmasını sağlar. Dizi, bir yandan Obi-Wan'ın travmalarını ve hayatta kalma mücadelesini anlatırken, diğer yandan Palpatine'in Galaktik İmparatorluk'u nasıl pekiştirdiğini ve Inquisitor'ların (Engizisyoncular) Jedi kalıntılarını nasıl avladığını gösterir. Filmin sonunda, Obi-Wan ve Darth Vader arasındaki duygusal ve fiziksel yüzleşme, 'Yeni Bir Umut'taki karşılaşmalarının neden bu kadar kişisel ve dramatik olduğunu açıklar. `Obi-Wan Kenobi`, kayıp, kefaret ve umut temalarını işler. Dizi, Obi-Wan'ın nasıl tekrar bir Jedi ustası haline geldiğini gösterirken, aynı zamanda Luke ve Leia'nın gelecekteki rolleri için zemin hazırlar. Dizi, Star Wars evrenine derinlik katan ve kronolojideki önemli bir boşluğu dolduran, duygusal ve aksiyon dolu bir yapım olarak öne çıkar.",
+      "refers_to": "'Obi-Wan Kenobi' dizisi, Star Wars evreninin kronolojik akışında, **Star Wars: Bölüm III - Sith'in İntikamı**'ndan sonra ve **Star Wars: Bölüm IV - Yeni Bir Umut**'tan önce gerçekleşen olayları konu alır. Dizinin ana atıfları, Obi-Wan'ın Anakin Skywalker'ı Darth Vader'a dönüştüren Mustafar düellosunun travması ve 'Emir 66'nın sonuçlarıdır. Bu, **Sith'in İntikamı**'ndaki olaylara doğrudan bağlanır. Dizi, Prenses Leia'nın gençliğini göstererek, onun daha sonra **Yeni Bir Umut**'ta gördüğümüz asi ruhunun kökenlerini açıklar. Obi-Wan'ın Darth Vader ile olan son yüzleşmesi, **Yeni Bir Umut**'taki 'Güçten daha güçlü bir şey olamaz' repliğiyle son bulan düellolarına daha kişisel ve duygusal bir anlam katar. Filmdeki Inquisitor'ların varlığı, **Yıldız Savaşları Asiler (dizi)**'de de görülen Jedi avcılarını tanıtır ve İmparatorluk'un Jedi'ları nasıl sistematik olarak yok etmeye çalıştığını gösterir. `Obi-Wan Kenobi`, Obi-Wan'ın Qui-Gon Jinn'in Güç Hayaleti'yle iletişim kurma çabalarını da göstererek, prequel üçlemedeki Jedi'ların manevi yolculuklarına atıfta bulunur. Dizi, aynı zamanda Darth Vader'ın içindeki Anakin'in bir parçasının hala var olduğunu ima ederek, **Jedi'ın Dönüşü**'ndeki kefaret hikayesinin tohumlarını eker. Bu dizi, ana karakterlerin kaderini şekillendiren olayları derinlemesine inceleyen kritik bir ara dönem yapımıdır.",
+      "canonical_level": "canon",
+      "sources": {
+        "Kaynaklar": [
+          {
+            "name": "Box Office Türkiye",
+            "url": null
+          },
+          {
+            "name": "Star Wars Official Site",
+            "url": "https://www.starwars.com/tv-shows/obi-wan-kenobi"
+          },
+          {
+            "name": "IMDb",
+            "url": "https://www.imdb.com/title/tt8466564/"
+          }
+        ],
+        "Görsel": [
+          {
+            "name": "IMDb",
+            "url": "https://m.media-amazon.com/images/M/MV5BOGU4ODlmNmMtMDM0OS00NTMxLWFlODUtZGFkMjU5NDdhMjgyXkEyXkFqcGc@._V1_.jpg"
+          }
+        ],
+        "Platform": [
+          {
+            "name": "Disney+",
+            "url": "https://www.disneyplus.com/tr-tr/browse/entity-e28eab5e-5cff-4ef2-b018-d2267c750364"
+          }
+        ]
+      },
+      "lang": "tr"
+    },
+    {
+      "id": "dizi/star_wars/2019_mandalorian",
+      "label": "Mandalorian (2019-2023)",
+      "title": "Mandalorian",
+      "type": "dizi",
+      "release_date": "2019-11-12",
+      "end_date": "2023-04-19",
+      "image": "https://m.media-amazon.com/images/M/MV5BNjgxZGM0OWUtZGY1MS00MWRmLTk2N2ItYjQyZTI1OThlZDliXkEyXkFqcGc@._V1_.jpg",
+      "imdb_rating": 8.6,
+      "yönetmen": [
+        "Jon Favreau",
+        "Dave Filoni"
+      ],
+      "oyuncular": [
+        "Pedro Pascal",
+        "Carl Weathers",
+        "Giancarlo Esposito",
+        "Gina Carano"
+      ],
+      "tür": [
+        "Bilim Kurgu",
+        "Aksiyon",
+        "Macera"
+      ],
+      "shape": "image",
+      "description": "2019 yapımı 'The Mandalorian' dizisi, 'Jedi'ın Dönüşü' filmindeki olaylardan sonraki dönemde geçen, Star Wars evreninin en popüler yapımlarından biridir. Dizi, Galaktik İmparatorluk'un çöküşünden sonra galaksideki kanunsuz dönemde, kimliğini daima gizleyen ve yalnız bir kelle avcısı olan Din Djarin'in hikayesini anlatır. Din, 'Çocuk' olarak bilinen Grogu adlı, Güç'e karşı olağanüstü yetenekleri olan genç bir yaratıkla karşılaşır. Dizi, Din Djarin'in Grogu'yu korumak ve onu kendi türüne geri götürmek için çıktığı tehlikeli yolculuğu takip eder. Bu yolculuk, onları galaksinin en ücra köşelerine ve suç örgütlerinin acımasız dünyasına götürür. 'The Mandalorian', western ve samuray filmlerinden ilham alan bir estetikle, Star Wars evrenine taze bir soluk getirir. Dizi, 'Kaskımı asla çıkarmam' felsefesiyle yaşayan Mandalorian kültürünü, dinini ve tarihini derinlemesine işler. 'The Mandalorian', sadece aksiyon dolu bir macera sunmakla kalmaz, aynı zamanda Din Djarin ile Grogu arasındaki baba-oğul ilişkisini de duygusal bir şekilde ele alır. Dizi, Boba Fett, Ahsoka Tano ve Luke Skywalker gibi ikonik karakterleri de hikayesine dahil ederek, Star Wars evreninin kronolojisi ve karakterleri arasında sağlam bağlar kurar. Filmin ana temasını, onur, sadakat ve beklenmedik bir aile kurmanın anlamı oluşturur. Din Djarin'in Grogu'yu koruma misyonu, onun bir kelle avcısından, bir kahramana dönüşümünü simgeler. 'The Mandalorian', Star Wars evrenini genişleten, yeni bir nesil hayranlar için kapı açan ve aynı zamanda eski hayranları da memnun eden, benzersiz bir yapımdır.",
+      "refers_to": "'The Mandalorian' dizisi, Star Wars evreninin yeni döneminde geçen ve eski filmlere sayısız atıfta bulunan bir anahtar yapımdır. Dizi, **Star Wars: Bölüm VI - Jedi'ın Dönüşü**'nden sonra ve yeni üçlemeden önce geçen olayları ele alır. Dizi, Mandaloryan kültürüne, özellikle de **Star Wars: Klon Savaşları (dizi)** ve **Yıldız Savaşları Asiler (dizi)**'de görülen Mandalor gezegeninin trajik geçmişine atıfta bulunur. Dizi, Boba Fett karakterini canlandırarak, onun **Jedi'ın Dönüşü**'ndeki ölümünden sonra nasıl hayatta kaldığını gösterir. Bu, daha sonra **Boba Fett'in Kitabı** dizisinin ana konusunu oluşturur. Ahsoka Tano'nun dizide yer alması, onun **Klon Savaşları** ve **Yıldız Savaşları Asiler**'deki hikayesinin devamını sağlar ve Grogu'yu Luke Skywalker'a götürme göreviyle, **Jedi'ın Dönüşü**'ndeki Jedi mirasına doğrudan bağlanır. Grogu'nun Luke Skywalker ile olan ilişkisi, Luke'un **Bölüm VIII - Son Jedi**'da görülen Jedi Tapınağı'nı kurma çabalarının başlangıcını ima eder. Moff Gideon'un liderliğindeki İmparatorluk kalıntıları, **Güç Uyanıyor**'da yükselen İlk Düzen'e giden yolu hazırlar. `The Mandalorian`, Star Wars evrenini genişleten, eski ve yeni hikayeleri birbirine bağlayan ve ana filmlerde sadece hissedilen atmosferi somutlaştıran bir dizi olarak öne çıkar. Dizi, aynı zamanda, 'Seçilmiş Kişi' kehanetinin ve Jedi-Sith çatışmasının bitmediğini, sadece farklı şekillerde devam ettiğini gösterir.",
+      "canonical_level": "canon",
+      "sources": {
+        "Kaynaklar": [
+          {
+            "name": "Box Office Türkiye",
+            "url": "https://boxofficeturkiye.com/dizi/the-mandalorian--2017378"
+          },
+          {
+            "name": "Star Wars Official Site",
+            "url": "https://www.starwars.com/tv-shows/the-mandalorian"
+          },
+          {
+            "name": "IMDb",
+            "url": "https://www.imdb.com/title/tt8111088/"
+          }
+        ],
+        "Görsel": [
+          {
+            "name": "IMDb",
+            "url": "https://m.media-amazon.com/images/M/MV5BNjgxZGM0OWUtZGY1MS00MWRmLTk2N2ItYjQyZTI1OThlZDliXkEyXkFqcGc@._V1_.jpg"
+          }
+        ],
+        "Platform": [
+          {
+            "name": "Disney+",
+            "url": "https://www.disneyplus.com/tr-tr/browse/entity-422f6dcc-226f-44e7-98d4-22de69b31cf3"
+          }
+        ]
+      },
+      "lang": "tr"
+    },
+    {
+      "id": "dizi/star_wars/2021_boba_fettin_kitabi",
+      "label": "Boba Fett'in Kitabı (2021)",
+      "title": "Boba Fett'in Kitabı",
+      "type": "dizi",
+      "release_date": "2021-12-29",
+      "end_date": "2022-02-09",
+      "image": "https://m.media-amazon.com/images/M/MV5BY2JlY2NkOWItYjAyZS00Yzc5LWE4ZWEtMGY2NzBlZDkzNjYzXkEyXkFqcGc@._V1_.jpg",
+      "imdb_rating": 7.1,
+      "yönetmen": [
+        "Jon Favreau",
+        "Robert Rodriguez"
+      ],
+      "oyuncular": [
+        "Temuera Morrison",
+        "Ming-Na Wen",
+        "Pedro Pascal"
+      ],
+      "tür": [
+        "Bilim Kurgu",
+        "Aksiyon",
+        "Macera"
+      ],
+      "shape": "image",
+      "description": "2021 yapımı 'Boba Fett'in Kitabı' dizisi, Star Wars evreninin en ikonik kelle avcılarından biri olan Boba Fett'in hikayesine odaklanır. Dizi, **Star Wars: Bölüm VI - Jedi'ın Dönüşü**'ndeki olaylardan sonra, Sarlacc çukurundan kurtulan Boba Fett'in Tatooine'e geri dönmesini konu alır. Fett, Jabba the Hutt'ın ölümünden sonra boşalan suç imparatorluğunun başına geçerek gezegenin yeni 'suç lordu' olmaya karar verir. Ancak, bu süreçte, eski rakiplerle ve yeni düşmanlarla mücadele etmek zorunda kalır. Dizi, bir yandan Boba Fett'in geçmişine, Tusken Akıncıları'yla yaşadığı tecrübelere ve Sarlacc'tan nasıl kurtulduğuna dair flashback'ler sunarken, diğer yandan onun Fennec Shand ile olan ortaklığını ve Tatooine'deki suç dünyasını ele geçirmenin zorluklarını gösterir. 'Boba Fett'in Kitabı', onur, güç ve intikam temalarını işler. Boba Fett'in bir kelle avcısından, liderlik vasıflarına sahip bir suç lorduna dönüşümünü gösterir. Dizi, 'The Mandalorian' ile yakından bağlantılıdır ve bu iki dizinin hikayeleri birbirine geçer. Din Djarin'in dizide yer alması, The Mandalorian'ın hikayesini devam ettirir ve Boba Fett'in karakter gelişimini pekiştirir. 'Boba Fett'in Kitabı', Star Wars evreninin en eski ve en sevilen karakterlerinden birine daha derin bir arka plan sunarak, ona yeni bir boyut kazandırır. Dizi, Tatooine'in suç dünyasını, Jabba the Hutt'ın mirasını ve galaksideki kanunsuzluğun nasıl yayıldığını detaylı bir şekilde işler. Boba Fett'in, eski bir klon askerinin oğlu olarak kimlik arayışı, dizinin duygusal çekirdeğini oluşturur.",
+      "refers_to": "'Boba Fett'in Kitabı' dizisi, Star Wars evreninin kronolojik akışında, **Star Wars: Bölüm VI - Jedi'ın Dönüşü**'nden sonra ve **Star Wars: Bölüm VII - Güç Uyanıyor**'dan önce geçer. Dizi, Boba Fett'in **Jedi'ın Dönüşü**'ndeki ölümünden sonra hayatta kaldığını göstererek, bu filmin olaylarına doğrudan bağlanır. Fett'in geçmişi ve babası Jango Fett'in hikayesi, prequel üçlemedeki **Star Wars: Bölüm II - Klonların Saldırısı**'ndaki olaylara atıfta bulunur. Dizi, 'The Mandalorian' ile çok yakından bağlantılıdır ve Din Djarin'in hikayesini devam ettirir. Grogu'nun Jedi eğitimine başlaması, Luke Skywalker'ın Jedi Tapınağı'nı kurma çabalarının başlangıcını ima eder. Fennec Shand karakterinin dizideki rolü, onun 'The Mandalorian'da nasıl ortaya çıktığını ve Boba Fett'le nasıl bir ortaklık kurduğunu açıklar. Dizi, Tatooine'in suç dünyasını detaylandırarak, **Han Solo: Bir Star Wars Hikayesi**'ndeki suç örgütleri temasına atıfta bulunur. `Boba Fett'in Kitabı`, Mandaloryan ve klon kültürü arasındaki bağları da işler ve Boba Fett'in kimlik arayışını derinleştirir. Bu dizi, ana filmlerde sadece kısa bir süre görünen ikonik bir karakterin hikayesini tamamlayarak, Star Wars evrenine zengin bir yan hikaye sunar.",
+      "canonical_level": "canon",
+      "sources": {
+        "Kaynaklar": [
+          {
+            "name": "Box Office Türkiye",
+            "url": null
+          },
+          {
+            "name": "Star Wars Official Site",
+            "url": "https://www.starwars.com/tv-shows/the-book-of-boba-fett"
+          },
+          {
+            "name": "IMDb",
+            "url": "https://www.imdb.com/title/tt13662242/"
+          }
+        ],
+        "Görsel": [
+          {
+            "name": "IMDb",
+            "url": "https://m.media-amazon.com/images/M/MV5BY2JlY2NkOWItYjAyZS00Yzc5LWE4ZWEtMGY2NzBlZDkzNjYzXkEyXkFqcGc@._V1_.jpg"
+          }
+        ],
+        "Platform": [
+          {
+            "name": "Disney+",
+            "url": "https://www.disneyplus.com/tr-tr/browse/entity-3749c03e-8204-46c5-b102-0410e6d51758"
+          }
+        ]
+      },
+      "lang": "tr"
+    },
+    {
+      "id": "dizi/star_wars/2023_ahsoka",
+      "label": "Ahsoka (2023)",
+      "title": "Ahsoka",
+      "type": "dizi",
+      "release_date": "2023-08-23",
+      "end_date": "2023-10-03",
+      "image": "https://m.media-amazon.com/images/M/MV5BYWQ3NmQxZTEtNDc2MS00ODExLWE3ZDEtZTU2N2Y2NjAyNmY5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "imdb_rating": 7.4,
+      "yönetmen": [
+        "Dave Filoni"
+      ],
+      "oyuncular": [
+        "Rosario Dawson",
+        "Natasha Liu Bordizzo",
+        "Mary Elizabeth Winstead",
+        "Ray Stevenson"
+      ],
+      "tür": [
+        "Bilim Kurgu",
+        "Aksiyon",
+        "Macera"
+      ],
+      "shape": "image",
+      "description": "2023 yapımı 'Ahsoka' dizisi, Star Wars evreninin en sevilen karakterlerinden Ahsoka Tano'nun, 'Jedi'ın Dönüşü' sonrası galaksideki yolculuğunu konu alır. Dizi, 'Yıldız Savaşları Asiler' dizisinin devamı niteliğindedir ve Ahsoka'nın, uzun zamandır kayıp olan dostu Ezra Bridger ve acımasız İmparatorluk Komutanı Büyük Amiral Thrawn'ı aramasını anlatır. Ahsoka, bu arayışında, genç Jedi Padawan'ı Sabine Wren ile yeniden bir araya gelir. Birlikte, galaksinin bilinmeyen bölgelerine doğru tehlikeli bir yolculuğa çıkarlar. Dizi, bir yandan Ahsoka'nın bir Jedi olarak geçmişiyle yüzleşmesini ve kendi yolunu bulmasını gösterirken, diğer yandan Thrawn'ın dönüşüyle galakside yeni bir tehdidin ortaya çıktığını işaret eder. `Ahsoka`, Güç'ün ve Jedi felsefesinin farklı yönlerini keşfederken, karakterlerin kendi kaderlerini nasıl şekillendirdiğini de vurgular. Dizi, aynı zamanda ana filmlerde görülmeyen yeni karakterleri ve galaksiyi daha da zenginleştiren yeni gezegenleri tanıtır. Anakin Skywalker'ın bir Güç Hayaleti olarak Ahsoka'ya görünmesi ve ona son bir ders vermesi, dizinin en duygusal ve önemli anlarındandır. 'Ahsoka', 'Mandalorian' gibi dizilerle bağlantılıdır ve bu yapımların hikaye akışını birleştirir. Dizi, umut, arkadaşlık, kefaret ve kayıp temalarını işler. Ahsoka'nın Ezra'yı bulma misyonu ve Thrawn'ın İmparatorluk için ne kadar büyük bir tehdit olduğu, dizinin ana gerilimini oluşturur. 'Ahsoka', hem animasyon dizilerini izlemiş olan hayranları hem de yeni izleyicileri memnun eden, kapsamlı ve destansı bir hikaye anlatımıyla öne çıkar.",
+      "refers_to": "'Ahsoka' dizisi, Star Wars evreninin en çok atıfta bulunan yapımlarından biridir ve kronolojik olarak **Star Wars: Bölüm VI - Jedi'ın Dönüşü**'nden sonra ve yeni üçlemeden önce geçer. Dizinin ana atıfları, **Yıldız Savaşları Asiler**'de kaybolan Ezra Bridger ve Büyük Amiral Thrawn'ın hikayeleridir. Dizinin hikayesi, 'Asiler'deki final sahnesinin doğrudan devamıdır. Ahsoka Tano'nun karakteri, **Star Wars: Klon Savaşları (dizi)**'nda tanıtılır ve bu dizideki karakter gelişiminin bir devamıdır. Anakin Skywalker'ın bir Güç Hayaleti olarak görünmesi, onun **Jedi'ın Dönüşü**'ndeki kefaret hikayesine bağlanır ve Ahsoka ile olan usta-padawan ilişkisinin sonunu getirir. Dizide bahsedilen 'Büyük Amiral Thrawn', Star Wars evreninin 'Genişletilmiş Evren' kısmından gelen ve sonrasında 'canon'a dahil edilen önemli bir karakterdir. Thrawn'ın dönüşü, İlk Düzen'in yükselişine giden yolu hazırlar ve **Star Wars: Bölüm IX - Skywalker'ın Yükselişi**'ndeki olaylara atıfta bulunur. `Ahsoka`, 'Mandalorian' dizisindeki bazı olayları da açıklar ve Ahsoka'nın Din Djarin'e Grogu'yu Luke Skywalker'a götürmesini neden söylediğini gösterir. Bu dizi, farklı zaman dilimlerinde geçen hikayeleri bir araya getirerek, Star Wars evrenine bütüncül bir bakış sunar ve gelecekteki yapımlara zemin hazırlar. Sabine Wren'in Jedi eğitimine başlaması, yeni bir nesil Güç kullanıcılarının ortaya çıktığını simgeler.",
+      "canonical_level": "canon",
+      "sources": {
+        "Kaynaklar": [
+          {
+            "name": "Box Office Türkiye",
+            "url": null
+          },
+          {
+            "name": "Star Wars Official Site",
+            "url": "https://www.starwars.com/tv-shows/ahsoka"
+          },
+          {
+            "name": "IMDb",
+            "url": "https://www.imdb.com/title/tt13622086/"
+          }
+        ],
+        "Görsel": [
+          {
+            "name": "IMDb",
+            "url": "https://m.media-amazon.com/images/M/MV5BYWQ3NmQxZTEtNDc2MS00ODExLWE3ZDEtZTU2N2Y2NjAyNmY5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+          }
+        ],
+        "Platform": [
+          {
+            "name": "Disney+",
+            "url": "https://www.disneyplus.com/tr-tr/browse/entity-e64c22fc-fc7c-4ada-bbec-ab8351b8db97"
+          }
+        ]
+      },
+      "lang": "tr"
+    },
+    {
+      "id": "dizi/star_wars/2021_visions",
+      "label": "Star Wars: Visions (2021)",
+      "title": "Star Wars: Visions",
+      "type": "dizi",
+      "release_date": "2021-09-22",
+      "end_date": "2021-09-22",
+      "image": "https://m.media-amazon.com/images/M/MV5BYWM4NTVjNDMtZmJmMy00M2RkLTkyZjQtNTljYzMyMjVmY2Y3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "imdb_rating": 7.0,
+      "yönetmen": [
+        "Çoklu Yönetmen"
+      ],
+      "oyuncular": [
+        "Farklı Oyuncular"
+      ],
+      "tür": [
+        "Animasyon",
+        "Fantastik",
+        "Aksiyon"
+      ],
+      "shape": "image",
+      "description": "2021 yapımı 'Star Wars: Visions' dizisi, Star Wars evrenine farklı bir yaklaşım getiren, anime tarzında bir antoloji serisidir. Dizi, dokuz bağımsız kısa filmden oluşur ve her biri, farklı Japon animasyon stüdyoları tarafından yaratılmıştır. Her bölüm, Star Wars temalarını ve mitolojisini, benzersiz bir sanat stili ve hikaye anlatımıyla yeniden yorumlar. 'Visions', klasik Star Wars hikaye kalıplarının dışına çıkarak, Güç'ün farklı yönlerini, Jedi-Sith çatışmasını ve galaksinin ücra köşelerindeki maceraları keşfeder. Dizinin ana teması, Star Wars evreninin ne kadar geniş ve yaratıcılığa açık bir platform olduğu fikridir. Her bölüm, farklı bir yönetmenin vizyonunu ve sanatsal yorumunu yansıtır. 'Visions'ın 'Lop & Ocho' bölümünde, bir kız ve robot dostuyla İmparatorluk'a karşı savaşan bir karakterin hikayesi, 'The Duel'de ise siyah-beyaz samuray estetiğiyle bir Jedi-Sith düellosu anlatılır. 'Visions', diğer Star Wars yapımlarından farklı olarak, ana hikaye örgüsüne doğrudan bağlı değildir ve 'canon' statüsü tartışmalıdır. Ancak, evrenin temel felsefesini ve ruhunu yakalayarak, izleyiciye benzersiz ve sanatsal bir deneyim sunar. Dizi, Star Wars hayranlarının evrene farklı bir pencereden bakmasını sağlar ve yaratıcı bir özgürlük sunar. Her bölüm, kendi başına bir hikaye olsa da, hepsinin ortak noktası, umut, kayıp, onur ve fedakarlık gibi Star Wars'un temel değerlerini yansıtmasıdır. `Visions`, Star Wars evreninin dinamik ve çok yönlü yapısını vurgulayan, deneysel ve cesur bir yapımdır.",
+      "refers_to": "'Star Wars: Visions' dizisi, Star Wars evrenindeki ana hikayeye doğrudan bağlanmaz ve 'canon' olarak kabul edilmez. Ancak, dizinin her bölümü, ana filmlerde ve dizilerde görülen temel temalara, karakter tiplerine ve olaylara atıfta bulunur. Dizideki 'The Duel' bölümü, samuray film estetiğiyle, Jedi-Sith çatışmasını ve 'ronin' figürünü işleyerek, **Yeni Bir Umut**'taki Obi-Wan Kenobi'nin sürgün hayatına bir gönderme yapar. Dizideki ışın kılıcı dövüşleri ve Güç kullanımı, klasik Star Wars filmlerinin estetiğini anime tarzıyla birleştirir. `Visions`, 'Seçilmiş Kişi' kehanetini ve Jedi Düzeni'nin felsefesini farklı şekillerde yorumlar. Her kısa film, farklı bir döneme veya olay örgüsüne atıfta bulunabilir. Örneğin, bir bölüm prequel üçlemedeki Jedi'ların dönemini işlerken, bir diğeri İmparatorluk dönemini ele alır. Dizi, Star Wars evreninin mitolojisine ve felsefesine farklı bir bakış açısı getirerek, ana hikayenin dışında kalan ama evrenin ruhunu taşıyan hikayeler anlatır. 'Visions', Star Wars evreninin geniş ve yaratıcı potansiyelini gösteren bir yan hikaye koleksiyonudur.",
+      "canonical_level": "non_canon",
+      "sources": {
+        "Kaynaklar": [
+          {
+            "name": "Box Office Türkiye",
+            "url": "https://boxofficeturkiye.com/dizi/star-wars-visions--1015116"
+          },
+          {
+            "name": "Star Wars Official Site",
+            "url": "https://www.starwars.com/tv-shows/star-wars-visions"
+          },
+          {
+            "name": "IMDb",
+            "url": "https://www.imdb.com/title/tt13417740/"
+          }
+        ],
+        "Görsel": [
+          {
+            "name": "IMDb",
+            "url": "https://m.media-amazon.com/images/M/MV5BYWM4NTVjNDMtZmJmMy00M2RkLTkyZjQtNTljYzMyMjVmY2Y3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+          }
+        ],
+        "Platform": [
+          {
+            "name": "Disney+",
+            "url": "https://www.disneyplus.com/tr-tr/browse/entity-38cebadb-e808-47aa-8223-181fc1416ec1"
+          }
+        ]
+      },
+      "lang": "tr"
+    },
+    {
+      "id": "dizi/star_wars/2021_bad_batch",
+      "label": "Star Wars: Bad Batch (2021-2024)",
+      "title": "Star Wars: Bad Batch",
+      "type": "dizi",
+      "release_date": "2021-05-04",
+      "end_date": "2024-05-01",
+      "image": "https://m.media-amazon.com/images/M/MV5BYmQzN2ViOTYtMWUxMy00YzdlLWEzZjktOWVjY2YzN2RiN2Q5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "imdb_rating": 7.8,
+      "yönetmen": [
+        "Brad Rau",
+        "Steward Lee",
+        "Nathaniel Villanueva"
+      ],
+      "oyuncular": [
+        "Dee Bradley Baker",
+        "Michelle Ang",
+        "Ben Diskin",
+        "Noshir Dalal"
+      ],
+      "tür": [
+        "Animasyon",
+        "Bilim Kurgu",
+        "Aksiyon"
+      ],
+      "shape": "image",
+      "description": "2021 yapımı 'Star Wars: Bad Batch' dizisi, 'Star Wars: Klon Savaşları' dizisinin sonu ve Galaktik İmparatorluk'un yükselişi arasındaki dönemi konu alır. Dizi, 'Emir 66'dan etkilenmeyen, genetik mutasyonlara sahip özel bir klon asker ekibinin, yeni kurulan İmparatorluk'tan kaçış hikayesini anlatır. 'Kötü Parti' (Bad Batch) olarak bilinen bu ekip, Wrecker, Hunter, Tech, Crosshair ve Echo gibi yetenekli klonlardan oluşur. Onlar, 'Emir 66'nın sonuçlarını yaşarken, galaksideki düzenin nasıl değiştiğini ve İmparatorluk'un nasıl acımasız bir rejim kurduğunu bizzat deneyimlerler. Dizi, klon askerlerinin kaderini, onların bireysel kimlik arayışını ve hayatta kalma mücadelelerini derinlemesine işler. 'Bad Batch', bir yandan aksiyon dolu maceralar sunarken, diğer yandan 'Klon Savaşları' dizisinde kurulan temaları devam ettirir. Dizi, klon askerlerinin nasıl teker teker emekli edildiğini veya İmparatorluk için hizmet etmeye zorlandığını gösterir. 'Bad Batch' ekibinin, genç ve Güç'e karşı hassas bir klon kızı olan Omega'yı koruma görevi, onların kahramanlık yolculuğunun duygusal çekirdeğini oluşturur. Dizi, eski Jedi ustası Depa Billaba ve öğrencisi Caleb Dume (daha sonra Kanan Jarrus) gibi karakterlerin 'Emir 66'dan nasıl kaçtığını göstererek, 'Yıldız Savaşları Asiler' dizisine doğrudan bir bağlantı kurar. `Bad Batch`, Star Wars evrenindeki bu karanlık ve geçiş dönemini detaylandırarak, ana filmlerde sadece bahsedilen olayları somutlaştırır. Dizi, İmparatorluk'un yükselişinin galaksi için ne anlama geldiğini gösteren, önemli bir yapım olarak öne çıkar.",
+      "refers_to": "'Star Wars: Bad Batch' dizisi, Star Wars evrenindeki kronolojide, **Star Wars: Bölüm III - Sith'in İntikamı**'nın hemen sonrasında ve **Yıldız Savaşları Asiler (dizi)**'nin öncesinde yer alır. Dizinin ana atıfları, **Sith'in İntikamı**'nda başlayan 'Emir 66'nın sonuçları ve Jedi Düzeni'nin çöküşüdür. Dizi, klon askerlerinin ve klon ordusunun kaderini detaylandırarak, **Star Wars: Klon Savaşları (dizi)**'ndeki olayların devamını sağlar. Kanan Jarrus'un genç halini ve 'Emir 66'dan nasıl kurtulduğunu göstererek, **Yıldız Savaşları Asiler**'deki hikayesine doğrudan bir bağlantı kurar. `Bad Batch`, Palpatine'in Galaktik İmparatorluk'u kurduğunu ve klon askerlerini artık 'Stormtrooper'lar ile değiştirdiğini gösterir. Bu, **Bölüm IV - Yeni Bir Umut**'ta gördüğümüz Stormtrooper ordusunun kökenini açıklar. Dizide yer alan Ahsoka Tano ve diğer karakterler, Star Wars evreninin farklı yapımlarından gelerek hikayeyi zenginleştirir. Dizi, İmparatorluk'un baskıcı rejiminin nasıl yayıldığını ve isyanın ilk tohumlarının nasıl atıldığını gösteren bir geçiş hikayesidir. 'Bad Batch', 'iyi' ile 'kötü' arasındaki savaşın, sadece Jedi ve Sith arasında olmadığını, aynı zamanda sıradan insanların da bu savaşta nasıl taraf seçmek zorunda kaldığını vurgular.",
+      "canonical_level": "canon",
+      "sources": {
+        "Kaynaklar": [
+          {
+            "name": "Box Office Türkiye",
+            "url": "https://boxofficeturkiye.com/dizi/star-wars-the-bad-batch--1015116"
+          },
+          {
+            "name": "Star Wars Official Site",
+            "url": "https://www.starwars.com/tv-shows/the-bad-batch"
+          },
+          {
+            "name": "IMDb",
+            "url": "https://www.imdb.com/title/tt10168312/"
+          }
+        ],
+        "Görsel": [
+          {
+            "name": "IMDb",
+            "url": "https://m.media-amazon.com/images/M/MV5BYmQzN2ViOTYtMWUxMy00YzdlLWEzZjktOWVjY2YzN2RiN2Q5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+          }
+        ],
+        "Platform": [
+          {
+            "name": "Disney+",
+            "url": "https://www.disneyplus.com/tr-tr/browse/entity-c93113fb-94ec-43b6-9d38-308825f7cd94"
+          }
+        ]
+      },
+      "lang": "tr"
     }
   ],
   "edges": [
     {
-      "from": "film/starwars/1999_phantom_menace",
-      "to": "film/starwars/2002_attack_of_the_clones",
+      "from": "film/star_wars/1999_episode_i",
+      "to": "film/star_wars/2002_episode_ii",
       "type": "Devam",
       "weight": 1,
-      "sources": [
-        {
-          "name": "Official",
-          "url": "https://www.starwars.com/films"
-        }
-      ],
-      "notes": ""
+      "notes": "Anakin'in ve galaksinin kaderi, Klon Savaşları öncesi dönemde şekilleniyor."
     },
     {
-      "from": "film/starwars/2002_attack_of_the_clones",
-      "to": "film/starwars/2005_revenge_of_the_sith",
+      "from": "film/star_wars/2002_episode_ii",
+      "to": "film/star_wars/2005_episode_iii",
       "type": "Devam",
       "weight": 1,
-      "sources": [
-        {
-          "name": "Official",
-          "url": "https://www.starwars.com/films"
-        }
-      ],
-      "notes": ""
+      "notes": "Anakin'in trajik dönüşümü, Klon Savaşları'nın sonuyla birlikte gerçekleşir."
     },
     {
-      "from": "film/starwars/2018_solo",
-      "to": "film/starwars/2016_rogue_one",
-      "type": "Öncesi",
-      "weight": 1,
-      "sources": [
-        {
-          "name": "Official",
-          "url": "https://www.starwars.com/films"
-        }
-      ],
-      "notes": "Kronolojik olarak önce."
-    },
-    {
-      "from": "film/starwars/2016_rogue_one",
-      "to": "film/starwars/1977_a_new_hope",
-      "type": "Öncesi",
-      "weight": 1,
-      "sources": [
-        {
-          "name": "Official",
-          "url": "https://www.starwars.com/films"
-        }
-      ],
-      "notes": "Doğrudan bağlanır."
-    },
-    {
-      "from": "film/starwars/1977_a_new_hope",
-      "to": "film/starwars/1980_empire_strikes_back",
+      "from": "film/star_wars/2005_episode_iii",
+      "to": "film/star_wars/1977_episode_iv",
       "type": "Devam",
       "weight": 1,
-      "sources": [
-        {
-          "name": "Official",
-          "url": "https://www.starwars.com/films"
-        }
-      ],
-      "notes": ""
+      "notes": "Bu film, Anakin'in trajik dönüşümünden sonraki dönemi anlatır."
     },
     {
-      "from": "film/starwars/1980_empire_strikes_back",
-      "to": "film/starwars/1983_return_of_the_jedi",
+      "from": "film/star_wars/1977_episode_iv",
+      "to": "film/star_wars/1980_episode_v",
       "type": "Devam",
       "weight": 1,
-      "sources": [
-        {
-          "name": "Official",
-          "url": "https://www.starwars.com/films"
-        }
-      ],
-      "notes": ""
+      "notes": "Luke'un Jedi eğitimi ve direnişin en zorlu sınavı başlar."
     },
     {
-      "from": "film/starwars/1983_return_of_the_jedi",
-      "to": "film/starwars/2015_force_awakens",
+      "from": "film/star_wars/1980_episode_v",
+      "to": "film/star_wars/1983_episode_vi",
       "type": "Devam",
       "weight": 1,
-      "sources": [
-        {
-          "name": "Official",
-          "url": "https://www.starwars.com/films"
-        }
-      ],
-      "notes": "Zaman atlaması sonrası saga Devam eder."
+      "notes": "Luke, Vader'la yüzleşir ve galaksi için son bir savaş başlar."
     },
     {
-      "from": "film/starwars/2015_force_awakens",
-      "to": "film/starwars/2017_the_last_jedi",
-      "type": "Devam",
+      "from": "film/star_wars/1983_episode_vi",
+      "to": "film/star_wars/2015_episode_vii",
+      "type": "Sonrası Etki",
       "weight": 1,
-      "sources": [
-        {
-          "name": "Official",
-          "url": "https://www.starwars.com/films"
-        }
-      ],
-      "notes": ""
+      "notes": "Jedi'ın Dönüşü'nden 30 yıl sonraki galaksiyi ve yeni tehditleri gösterir."
     },
     {
-      "from": "film/starwars/2017_the_last_jedi",
-      "to": "film/starwars/2019_rise_of_skywalker",
+      "from": "film/star_wars/2015_episode_vii",
+      "to": "film/star_wars/2017_episode_viii",
       "type": "Devam",
       "weight": 1,
-      "sources": [
-        {
-          "name": "Official",
-          "url": "https://www.starwars.com/films"
-        }
-      ],
-      "notes": ""
+      "notes": "Rey'in Jedi eğitimi ve Direniş'in zorlu hayatta kalma mücadelesi devam eder."
+    },
+    {
+      "from": "film/star_wars/2017_episode_viii",
+      "to": "film/star_wars/2019_episode_ix",
+      "type": "Devam",
+      "weight": 1,
+      "notes": "Skywalker destanının sonu ve Direniş'in son savaşı gerçekleşiyor."
+    },
+    {
+      "from": "film/star_wars/1999_episode_i",
+      "to": "animasyon/star_wars/2008_klon_savaslari_film",
+      "type": "Hikaye Öncesi",
+      "weight": 1,
+      "notes": "Bu film, Klon Savaşları filminin öncesini ve Anakin'in çocukluğunu gösteriyor."
+    },
+    {
+      "from": "film/star_wars/2002_episode_ii",
+      "to": "animasyon/star_wars/2008_klon_savaslari_film",
+      "type": "Hikaye Öncesi",
+      "weight": 1,
+      "notes": "Klon Savaşları'nın başlangıcını ve Anakin'in Padawan'ını tanıtıyor."
+    },
+    {
+      "from": "animasyon/star_wars/2008_klon_savaslari_film",
+      "to": "dizi/star_wars/2008_klon_savaslari_dizi",
+      "type": "Devam",
+      "weight": 1,
+      "notes": "Bu animasyon filmi, dizinin ana hikayesine bir giriş niteliğindedir."
+    },
+    {
+      "from": "dizi/star_wars/2008_klon_savaslari_dizi",
+      "to": "film/star_wars/2005_episode_iii",
+      "type": "Doğrudan Devam",
+      "weight": 1,
+      "notes": "Dizi, Bölüm 3'ün olaylarına doğrudan bağlanır ve Anakin'in dönüşümünü açıklar."
+    },
+    {
+      "from": "film/star_wars/2005_episode_iii",
+      "to": "dizi/star_wars/2014_asiler",
+      "type": "Hikaye Öncesi",
+      "weight": 1,
+      "notes": "Asiler, İmparatorluk'un yükselişini ve 'Emir 66'dan sonraki olayları anlatıyor."
+    },
+    {
+      "from": "dizi/star_wars/2014_asiler",
+      "to": "film/star_wars/2016_rogue_one",
+      "type": "Doğrudan Devam",
+      "weight": 1,
+      "notes": "Asiler'deki isyan hareketi, Rogue One filmindeki ana olaylara bağlanıyor."
+    },
+    {
+      "from": "film/star_wars/2016_rogue_one",
+      "to": "film/star_wars/1977_episode_iv",
+      "type": "Doğrudan Devam",
+      "weight": 1,
+      "notes": "Bu film, Yeni Bir Umut'taki açılış sahnesinin hemen öncesini anlatıyor."
+    },
+    {
+      "from": "dizi/star_wars/2014_asiler",
+      "to": "dizi/star_wars/2023_ahsoka",
+      "type": "Karakter Geçişi",
+      "weight": 1,
+      "notes": "Ahsoka dizisi, Asiler'deki Ezra ve Thrawn'ın kayboluşunun devamını anlatır."
+    },
+    {
+      "from": "film/star_wars/2005_episode_iii",
+      "to": "dizi/star_wars/2022_obi_wan_kenobi",
+      "type": "Hikaye Öncesi",
+      "weight": 1,
+      "notes": "Obi-Wan Kenobi dizisi, Sith'in İntikamı'ndan sonraki olayları ele alıyor."
+    },
+    {
+      "from": "dizi/star_wars/2022_obi_wan_kenobi",
+      "to": "film/star_wars/1977_episode_iv",
+      "type": "Hikaye Öncesi",
+      "weight": 1,
+      "notes": "Bu dizi, Obi-Wan'ın Yeni Bir Umut'taki halini daha iyi anlamamızı sağlıyor."
+    },
+    {
+      "from": "film/star_wars/1983_episode_vi",
+      "to": "dizi/star_wars/2019_mandalorian",
+      "type": "Hikaye Sonrası",
+      "weight": 1,
+      "notes": "Mandalorian, Jedi'ın Dönüşü'nden sonraki kanunsuz dönemi anlatıyor."
+    },
+    {
+      "from": "dizi/star_wars/2019_mandalorian",
+      "to": "dizi/star_wars/2021_boba_fettin_kitabi",
+      "type": "Karakter Geçişi",
+      "weight": 1,
+      "notes": "Mandalorian dizisindeki Boba Fett, bu dizide kendi hikayesine başlıyor."
+    },
+    {
+      "from": "dizi/star_wars/2021_boba_fettin_kitabi",
+      "to": "dizi/star_wars/2019_mandalorian",
+      "type": "Karakter Bağlantısı",
+      "weight": 1,
+      "notes": "Mandalorian, Boba Fett'in Kitabı'ndaki bazı olaylara doğrudan bağlanır."
+    },
+    {
+      "from": "film/star_wars/2018_han_solo",
+      "to": "film/star_wars/1977_episode_iv",
+      "type": "Hikaye Öncesi",
+      "weight": 1,
+      "notes": "Han Solo'nun kökenlerini, Yeni Bir Umut'taki halinden önce anlatır."
+    },
+    {
+      "from": "film/star_wars/2018_han_solo",
+      "to": "dizi/star_wars/2014_asiler",
+      "type": "Karakter Bağlantısı",
+      "weight": 1,
+      "notes": "Han Solo'daki Kızıl Şafak örgütü, Asiler'deki Darth Maul hikayesine bağlanıyor."
+    },
+    {
+      "from": "film/star_wars/2005_episode_iii",
+      "to": "dizi/star_wars/2021_bad_batch",
+      "type": "Doğrudan Devam",
+      "weight": 1,
+      "notes": "Bad Batch, 'Emir 66'dan sonraki dönemde İmparatorluk'un yükselişini anlatır."
+    },
+    {
+      "from": "dizi/star_wars/2021_bad_batch",
+      "to": "dizi/star_wars/2014_asiler",
+      "type": "Hikaye Öncesi",
+      "weight": 1,
+      "notes": "Bad Batch'in hikayesi, Asiler'deki isyanın filizlendiği dönemi gösterir."
+    },
+    {
+      "from": "dizi/star_wars/2019_mandalorian",
+      "to": "dizi/star_wars/2023_ahsoka",
+      "type": "Karakter Geçişi",
+      "weight": 1,
+      "notes": "Ahsoka ve Grogu'nun hikayeleri, Mandalorian'dan sonra devam ediyor."
     }
   ]
 }
