@@ -442,7 +442,7 @@
 </aside>
 <div id="network" x-show="selectedUniverse" x-transition x-show="showGraph" x-transition></div>
 
-<div @click.outside="if (!window.Shepherd?.activeTour) modalOpen=false; resetPrettyUrl && resetPrettyUrl()" @keydown.escape.window="modalOpen=false; resetPrettyUrl && resetPrettyUrl()" aria-labelledby="modalTitle" aria-modal="true" class="fixed inset-0 modal-bg flex items-center justify-center mt-[-38vh] z-50 p-4" role="dialog" id="modal_container" x-show="modalOpen" x-transition="">
+<div @click.outside="if (!window.Shepherd?.activeTour) modalOpen=false; resetPrettyUrl && resetPrettyUrl()" @keydown.escape.window="modalOpen=false; resetPrettyUrl && resetPrettyUrl()" aria-labelledby="modalTitle" aria-modal="true" class="fixed inset-0 modal-bg flex items-center justify-center z-50 p-4" role="dialog" id="modal_container" x-show="modalOpen" x-transition="">
 <div @click.stop="" class="modal-content" style="overflow-y: visible;">
 <div class="relative rounded-xl overflow-hidden backdrop-blur-md bg-black/50 text-white max-h-[90vh] overflow-y-visible">
 <!-- Üst blur görsel alanı -->
