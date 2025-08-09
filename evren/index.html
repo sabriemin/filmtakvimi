@@ -2226,7 +2226,7 @@ document.addEventListener('keydown', function(e){
     lang: navigator.language || '',
     w: screen.width, h: screen.height
   };
-  fetch('/api/analytics/collect', {
+  fetch('https://evren-analytics.no-reply-bf4.workers.dev/api/analytics/collect', {
     method: 'POST',
     headers: {'Content-Type':'application/json'},
     body: JSON.stringify(payload),
@@ -2234,6 +2234,7 @@ document.addEventListener('keydown', function(e){
   }).catch(()=>{});
 }();
 </script>
+
 
 </body>
 
