@@ -753,7 +753,7 @@
         async loadAllFromDataFolder(){
           for (const u of this.universes) {
             try {
-              const r = await fetch(`evren/assets/data/${u}.json`, { cache: 'no-store' });
+              const r = await fetch(`./assets/data/${u}.json`, { cache: 'no-store' });
               if (r.ok){
                 const j = await r.json();
                 (j.nodes||[]).forEach(n => { n.sourcesText = n.sources ? JSON.stringify(n.sources, null, 2) : (n.sourcesText || ''); });
@@ -1553,6 +1553,7 @@ window.__evrenStats = (function(){
 
 </body>
 </html>
+
 
 
 
