@@ -2313,32 +2313,7 @@ document.addEventListener('keydown', function(e){
 }, {capture:true});
 </script> 
 
-<script>
-(function(){
-  let warned = false;
-  function devtoolsLikelyOpen(){
-    // pencere çerçevesi kalınlık farkı yöntemi (yanlış pozitif olabilir)
-    const threshold = 160;
-    const wDiff = Math.abs(window.outerWidth - window.innerWidth);
-    const hDiff = Math.abs(window.outerHeight - window.innerHeight);
-    return (wDiff > threshold || hDiff > threshold);
-  }
-  function check(){
-    if (!warned && devtoolsLikelyOpen()){
-      warned = true;
-      // Basit bir kilit/örtü
-      const div = document.createElement('div');
-      div.style.cssText = `
-        position:fixed;inset:0;background:#000c;color:#fff;z-index:99999;
-        display:grid;place-items:center;font:600 16px/1.4 system-ui`;
-      div.textContent = 'Güvenlik nedeniyle sayfa geçici olarak kilitlendi.';
-      document.body.appendChild(div);
-      // İstersen buraya yönlendirme koy: location.href = '/';
-    }
-  }
-  setInterval(check, 800);
-})();
-</script>
+
 
 <!-- Hidden admin redirect snippet: begin -->
 <script>
