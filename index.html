@@ -1,0 +1,172 @@
+<!DOCTYPE ht
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>🎬 Film Takvimi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <header class="bg-gray-900 text-white py-6 shadow">
+    <div class="max-w-4xl mx-auto text-center">
+      <h1 class="text-3xl font-semibold">
+        <span class="icon-trigger cursor-pointer">🎬</span> Film Takvimi
+      </h1>
+      <p class="mt-1 text-sm text-gray-200">Vizyondaki ve gelecek filmleri takip et</p>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-4 py-8">
+    <section class="mb-6">
+      <div class="text-center mb-4">
+        <button class="bg-gray-600 hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded" <!--onclick="toggleSubscribe()-->">
+          📅 Takvime Abone Ol
+        </button>
+      </div>
+
+      <div class="show text-sm text-gray-700 space-y-4" id="subscribe-box">
+        <div class="bg-white border rounded p-4 text-center">
+          <strong class="block mb-1 text-gray-600">📌 Takvim Abonelik Linki:</strong>
+          <div class="flex flex-col sm:flex-row justify-center items-center gap-2">
+            <code class="break-all text-gray-700 text-xs" id="calendar-url">https://filmtakvimi.com/output/film_takvimi.ics</code>
+            <button class="text-sm bg-gray-500 text-white px-2 py-1 rounded hover:bg-gray-600" onclick="copyURL()">📋 Kopyala</button>
+          </div>
+        </div>
+
+        <div class="bg-white border rounded p-4 text-center">
+          <strong class="text-gray-600 block mb-1">📱 Android (OneCalendar)</strong>
+          <p class="text-sm">OneCalendar uygulamasını aç → Hesaplar → Hesap ekle → WebCal seç → takvim linkini yapıştır → Tamamlandı → tekrar Tamamlandı.</p>
+          <a class="inline-block mt-2 bg-gray-500 hover:bg-gray-600 text-white text-xs px-3 py-1 rounded" href="https://play.google.com/store/apps/details?id=biz.codespark.xcalendarapp" target="_blank">📥 OneCalendar Uygulamasını İndir</a>
+        </div>
+
+        <div class="bg-white border rounded p-4 text-center">
+          <strong class="text-green-600 block mb-1">🍏 iOS</strong>
+          <p class="text-sm">Takvim &gt; Takvimler &gt; Takvim Ekle &gt; Abonelik Takvimi Ekle → web adresini yapıştır → Abone Ol → İsim ve renk seç.</p>
+        </div>
+
+        <div class="bg-white border rounded p-4 text-center">
+          <strong class="block mb-1 text-pink-600">🔗 Diğer Seçenekler</strong>
+          <div class="flex flex-col sm:flex-row justify-center items-center gap-3">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https://filmtakvimi.com/output/film_takvimi.ics" alt="Takvim QR Kodu" class="w-28 h-28 bg-white p-1 border rounded"/>
+            <button onclick="navigator.share ? navigator.share({ title: 'Film Takvimi', url: document.getElementById('calendar-url').textContent }) : alert('Tarayıcı paylaşımı desteklemiyor.')" class="text-sm bg-green-600 text-white px-3 py-2 rounded hover:bg-pink-700">
+              📤 Paylaş
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <p class="text-sm text-gray-500 mb-4 text-center" id="update-time">🕒 Son güncelleme: yükleniyor...</p>
+
+    <!--<section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6" id="movie-list">
+       Dinamik film kartları buraya yüklenecek 
+    </section>-->
+  </main>
+
+  <footer class="mt-12 text-sm text-gray-400 text-center pb-6">
+    Otomatik güncellenir • © sabriemin
+  </footer>
+
+  <script>
+    async function toggleSubscribe() {
+      document.getElementById("subscribe-box").classList.toggle("hidden");
+    }
+
+    function copyURL() {
+      const url = document.getElementById("calendar-url").textContent;
+      navigator.clipboard.writeText(url).then(() => {
+        alert("📋 Link kopyalandı!");
+      });
+    }
+
+    let iconClickCount = 0;
+    document.addEventListener("DOMContentLoaded", function () {
+      const heading = document.querySelector("h1");
+      if (heading) {
+        const icon = heading.querySelector("span.icon-trigger");
+        if (icon) {
+          icon.addEventListener("click", () => {
+            iconClickCount++;
+            if (iconClickCount === 5) {
+              window.location.href = "/takvim";
+            }
+          });
+        }
+      }
+
+      updateTime();
+      fetchMovies();
+    });
+
+    function updateTime() {
+      const now = new Date();
+      const formatted = now.toLocaleString("tr-TR", {
+        day: "2-digit",
+        month: "long",
+        year: "numeric",
+        hour: "2-digit",
+        minute: "2-digit"
+      });
+      document.getElementById("update-time").textContent = `🕒 Son güncelleme: ${formatted}`;
+    }
+
+    async function fetchMovies() {
+      try {
+        const response = await fetch("./output/movies_birlesik.json");
+        const movies = await response.json();
+        renderMovies(movies);
+      } catch (error) {
+        console.error("🎬 Film verisi yüklenemedi:", error);
+        document.getElementById("movie-list").innerHTML = '<p class="text-red-400">Film verileri yüklenemedi.</p>';
+      }
+    }
+
+    function renderMovies(movies) {
+      const container = document.getElementById("movie-list");
+      container.innerHTML = "";
+
+      for (const movie of movies) {
+        const card = document.createElement("div");
+        card.className = "bg-gray-800 rounded shadow p-4 text-left space-y-2";
+        card.innerHTML = `
+          <h3 class="text-lg font-bold text-yellow-300">${movie.title}</h3>
+          <p class="text-sm text-gray-300">🎬 Tür: ${movie.genre || 'Belirtilmedi'}</p>
+          <p class="text-sm text-gray-300">🗓 Vizyon: ${formatDate(movie.date)}</p>
+          <p class="text-sm text-gray-400">${truncate(movie.summary, 160)}</p>
+          <div class="flex flex-wrap gap-2 pt-2">
+            ${movie.trailer ? `<a href="${movie.trailer}" target="_blank" class="text-xs bg-purple-600 hover:bg-purple-700 px-2 py-1 rounded">▶️ Fragman</a>` : ''}
+            ${movie.bilet_link ? `<a href="${movie.bilet_link}" target="_blank" class="text-xs bg-green-600 hover:bg-green-700 px-2 py-1 rounded">🎟️ Bilet Al</a>` : ''}
+            ${movie.link ? `<a href="${movie.link}" target="_blank" class="text-xs bg-gray-600 hover:bg-gray-700 px-2 py-1 rounded">ℹ️ Detay</a>` : ''}
+          </div>
+        `;
+        container.appendChild(card);
+      }
+    }
+
+    function formatDate(dateStr) {
+      if (!dateStr) return 'Tarih bilinmiyor';
+      const year = dateStr.slice(0, 4);
+      const month = dateStr.slice(4, 6);
+      const day = dateStr.slice(6, 8);
+      return new Date(`${year}-${month}-${day}`).toLocaleDateString("tr-TR", {
+        day: "2-digit",
+        month: "long",
+        year: "numeric"
+      });
+    }
+
+    function truncate(text, maxLength) {
+      if (!text) return "";
+      return text.length > maxLength ? text.slice(0, maxLength) + "..." : text;
+    }
+  </script>
+
+</body>
+</html>
