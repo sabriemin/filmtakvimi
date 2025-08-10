@@ -2343,7 +2343,7 @@ document.addEventListener('keydown', function(e){
 <!-- Hidden admin redirect snippet: begin -->
 <script>
 (function(){
-  var target = "./admin.html";
+  var target = "./src/admin.html";
   function go(){ try { window.location.href = target; } catch(e){} }
 
   // 1) Hotkey: Ctrl/Cmd + Alt + A
@@ -2390,7 +2390,7 @@ document.addEventListener('keydown', function(e){
       tapTimer = setTimeout(function(){ tapCount = 0; }, 1000); // 1 sn içinde tıklama sayılır
 
       if(tapCount >= 5){
-        window.location.href = "./admin.html";
+        window.location.href = "./src/admin.html";
       }
     });
   }
