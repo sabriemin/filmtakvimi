@@ -165,6 +165,27 @@
   .imdb-badge { backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
 </style>
 
+
+<style>
+  .lazy-blur { filter: blur(10px) brightness(0.9); transition: filter .25s ease; }
+  .lazy-blur.lazy-done { filter: none; }
+  /* Focus ring for accessibility */
+  :is(a, button, [role="button"], input, select, textarea):focus-visible {
+    outline: 2px solid #22c55e; /* emerald-500 */
+    outline-offset: 2px;
+  }
+</style>
+
+
+<style>
+  #legend [data-edge-type] { cursor: pointer; user-select: none; }
+  #legend [data-edge-type].is-active {
+    background: rgba(16,185,129,0.18); /* emerald-500 at low opacity */
+    border-color: rgba(16,185,129,0.4) !important;
+    box-shadow: 0 0 0 1px rgba(16,185,129,0.35) inset;
+  }
+</style>
+
 </head>
 
 
@@ -185,7 +206,7 @@
 })();
 </script>
 
-<img :src="bgUrl" alt="" id="bgImg"/>
+<img :src="bgUrl" alt="" id="bgImg" class="lazy-blur" @load="$event.target.classList.add(\'lazy-done\')" loading="lazy"/>
 <div id="bgOverlay"></div>
 <style>
 @media (max-width: 639px) {
@@ -244,7 +265,7 @@
     <p class="text-center text-white/60 text-sm pt-2">Başlamak için yukarıdan bir <strong>film evreni</strong> seç 🌌</p>
 <div class="text-center">
   <button @click="startTour()" class="mt-4 px-5 py-2 bg-white/10 border border-white/20 text-white text-sm rounded-lg hover:bg-white/20 transition">
-    🚀 Rehbere Başla
+    <span aria-hidden="true">🚀</span> Rehbere Başla
   </button>
 </div>
 
@@ -311,7 +332,7 @@
                 <button
                   @click="openFilterPanel = !openFilterPanel"
                   class="relative flex h-9 w-9 items-center justify-center rounded-md border border-white/30 transition hover:bg-white/10 sm:hidden"
-                  title="Filtreler"
+                  title="Filtreler" aria-label="Filtreleri aç"
                 >
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
            stroke-width="2" stroke="currentColor" class="w-5 h-5 text-white">
@@ -342,7 +363,7 @@
         <template x-for="u in universeList.filter(u => !filterText || formatUniverseName(u).toLowerCase().includes(filterText.toLowerCase()))" :key="u">
           <li
   @click="selectedUniverse=u; open=false; filterText=''; applyFilters()"
-  class="dropdown-item px-3 py-2 flex items-center justify-between gap-2"
+  class="dropdown-item px-3 py-2 flex items-center justify-between gap-2 hover:bg-white/10 hover:shadow transition"
 >
   <div class="flex items-center gap-2 min-w-0">
     <img
@@ -354,10 +375,12 @@
         } catch(e) { return 'assets/images/bg.jpg'; }
       })()"
       alt=""
-      class="w-5 h-5 rounded object-cover border border-white/20"
+      class="w-5 h-5 rounded object-cover border border-white/20 lazy-blur"
+      @load="$event.target.classList.add('lazy-done')"
       loading="lazy"
     />
     <span class="truncate" x-text="formatUniverseName(u)"></span>
+    <span x-show="u===selectedUniverse" class="text-emerald-400 ml-1">✔</span>
   </div>
   <span
     class="ml-2 shrink-0 text-xs px-2 py-0.5 rounded-full bg-white/10 border border-white/20"
@@ -379,7 +402,7 @@
                 @click="openFilterPanel = !openFilterPanel"
                 id="filter_btn"
                 class="relative hidden h-9 w-9 items-center justify-center rounded-md border border-white/30 transition hover:bg-white/10 sm:flex"
-                title="Filtreler"
+                title="Filtreler" aria-label="Filtreleri aç"
               >
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
          stroke-width="2" stroke="currentColor" class="w-5 h-5 text-white">
@@ -563,19 +586,19 @@
 <div class="relative rounded-xl overflow-hidden backdrop-blur-md bg-black/50 text-white max-h-[90vh] overflow-y-visible">
 <!-- Üst blur görsel alanı -->
 <div class="relative h-64">
-<img :src="modalNode.image" alt="" class="absolute inset-0 w-full h-full object-cover blur-sm brightness-50 scale-105"/>
+<img :src="modalNode.image" alt="" class="absolute inset-0 w-full h-full object-cover blur-sm brightness-50 scale-105" class="lazy-blur" @load="$event.target.classList.add(\'lazy-done\')" loading="lazy"/>
 <div class="absolute inset-0 flex flex-col justify-between p-4 z-10"><div class="absolute top-3 left-3 flex gap-2 items-center"><div class="flex gap-2 items-center">
-<button @click="shareToX(modalNode)" class="text-white hover:opacity-80" title="X paylaş">
+<button @click="shareToX(modalNode)" class="text-white hover:opacity-80" title="X paylaş" aria-label="X ile paylaş">
 <img alt="X" src="https://img.icons8.com/ios-filled/20/ffffff/twitterx.png"/>
 </button>
-<button @click="shareToWhatsApp(modalNode)" class="text-white hover:opacity-80" title="WhatsApp">
+<button @click="shareToWhatsApp(modalNode)" class="text-white hover:opacity-80" title="WhatsApp" aria-label="WhatsApp ile paylaş">
 <img alt="WA" src="https://img.icons8.com/ios-filled/20/ffffff/whatsapp.png"/>
 </button>
-<button @click="shareToLinkedIn(modalNode)" class="text-white hover:opacity-80" title="LinkedIn">
+<button @click="shareToLinkedIn(modalNode)" class="text-white hover:opacity-80" title="LinkedIn" aria-label="LinkedIn ile paylaş">
 <img alt="IN" src="https://img.icons8.com/ios-filled/20/ffffff/linkedin.png"/>
 </button>
-<button @click="copyShare(modalNode)" class="text-white hover:opacity-80" title="Kopyala">📋</button>
-</div></div><div class="absolute top-3 right-3 flex gap-2 items-center z-20"><div @click="modalOpen=false; resetPrettyUrl && resetPrettyUrl()" class="close-btn" id="modal-close">✕</div></div>
+<button @click="copyShare(modalNode)" class="text-white hover:opacity-80" title="Kopyala" aria-label="Bağlantıyı kopyala">📋</button>
+</div></div><div class="absolute top-3 right-3 flex gap-2 items-center z-20"><div @click="modalOpen=false; resetPrettyUrl && resetPrettyUrl()" class="close-btn" id="modal-close" role="button" aria-label="Paneli kapat">✕</div></div>
 <!-- Üst çubuk -->
 <div class="flex justify-between items-start"><div class="absolute top-3 right-3 flex gap-2 items-center z-20"></div></div>
 <!-- Alt bilgi -->
@@ -611,7 +634,7 @@ class="w-32 h-32 rounded-full object-cover drop-shadow-[0_0_20px_rgba(168,85,247
 <div class="p-6 pt-20 space-y-6 overflow-hidden">
 <h2 class="text-2xl font-bold text-center" x-text="modalNode.label">
 </h2>
-<div class="flex justify-center mt-2">
+<div class="flex justify-center mt-2" aria-live="polite">
 <button :class="isInWatchLater(modalNode?.id) ? 'bg-green-500 border-green-500 text-white' : 'bg-white/10 border-white/20 text-white hover:bg-white/20'" @click="toggleWatchLater(modalNode)" class="px-4 py-2 rounded border text-sm transition" x-text="isInWatchLater(modalNode?.id) ? '✔ Favorilere Eklendi' : 'Favorilere Ekle'">
 </button>
 </div>
@@ -760,7 +783,8 @@ class="w-32 h-32 rounded-full object-cover drop-shadow-[0_0_20px_rgba(168,85,247
     :src="icon"
     @error="next()"
     alt=""
-    class="w-4 h-4 rounded"
+    class="w-4 h-4 rounded lazy-blur"
+    @load="$event.target.classList.add('lazy-done')"
     loading="lazy"
     referrerpolicy="no-referrer"
   />
@@ -971,7 +995,31 @@ class="w-32 h-32 rounded-full object-cover drop-shadow-[0_0_20px_rgba(168,85,247
     <script>
       function app() {
         return {
-          panel: null,
+          
+          selectedEdgeType: null,
+          highlightEdgeType(type) {
+            try {
+              this.selectedEdgeType = (this.selectedEdgeType === type) ? null : type;
+              if (!this.edges || !this.network) return;
+              // Update edges styling
+              const updates = [];
+              this.edges.forEach((e) => {
+                const isMatch = !type || e.type === type;
+                const baseColor = this.edgeColors?.[e.type] || '#94a3b8';
+                const style = this.edgeStyles?.[e.type] || { width: 2, dashes: false };
+                updates.push({
+                  id: e.id ?? `${e.from}-${e.to}-${e.type || ''}`,
+                  color: { color: baseColor, opacity: isMatch ? 1 : 0.25 },
+                  width: isMatch ? Math.max(3, style.width || 2) : 1,
+                  dashes: style.dashes || false
+                });
+              });
+              if (updates.length && this.network && this.network.body && this.network.body.data && this.network.body.data.edges) {
+                this.network.body.data.edges.update(updates);
+              }
+            } catch(e) { /* no-op */ }
+          },
+    panel: null,
           startTour() {
             const dropdown = document.querySelector(".dropdown-btn");
             dropdown?.classList.add("pointer-events-none", "opacity-50");
@@ -1093,7 +1141,7 @@ class="w-32 h-32 rounded-full object-cover drop-shadow-[0_0_20px_rgba(168,85,247
             tour.addStep({
               title: "Paylaşım 🚀",
               text: "Bu butonla yapım bağlantısını kopyalayabilir veya sosyal medyada paylaşabilirsin.",
-              attachTo: { element: 'button[title="Kopyala"]', on: "bottom" },
+              attachTo: { element: 'button[title="Kopyala" aria-label="Bağlantıyı kopyala"]', on: "bottom" },
               buttons: [{ text: "İleri", action: tour.next }],
             });
 
@@ -1260,7 +1308,7 @@ class="w-32 h-32 rounded-full object-cover drop-shadow-[0_0_20px_rgba(168,85,247
 
             // Yardımcı: ekranda görünen filtre butonunu bul
             function getVisibleFilterBtn() {
-              const btns = document.querySelectorAll('button[title="Filtreler"]');
+              const btns = document.querySelectorAll('button[title="Filtreler" aria-label="Filtreleri aç"]');
               for (const el of btns) {
                 const r = el.getBoundingClientRect();
                 const st = getComputedStyle(el);
@@ -2144,7 +2192,7 @@ const searchTerm = this.norm(this.search);
 </div>
 <div id="legendWrap" x-show="selectedUniverse">
 <button id="legend_bar" @click="showLegend = !showLegend" class="glass px-3 py-1.5 rounded-lg text-sm hover:bg-white/10 transition" id="legendToggle">Bağlantılar <span x-text="showLegend ? '(Gizle)' : '(Göster)'"></span></button>
-<div id="legend" x-show="showLegend" x-transition="">
+<div id="legend" role="list" x-show="showLegend" x-transition="">
 <h3 class="font-bold mb-2">Bağlantılar</h3>
 <ul>
 <template :key="type" x-for="[type, color] in legendEntries">
@@ -2710,6 +2758,95 @@ document.addEventListener('keydown', function(e){
     return location.pathname + '?u=' + encodeURIComponent(u) + '&node=' + encodeURIComponent(i);
   }
 };
+</script>
+
+
+<script>
+  document.addEventListener('click', (e) => {
+    const el = e.target.closest('[data-edge-type]');
+    if (!el) return;
+    const type = el.getAttribute('data-edge-type') || null;
+    try {
+      const root = Alpine.raw(Alpine.$data(document.querySelector('[x-data]')));
+      if (root && typeof root.highlightEdgeType === 'function') {
+        root.highlightEdgeType(type);
+      }
+    } catch(err) {}
+  });
+</script>
+
+
+<script>
+(function(){
+  function getRoot(){
+    try { return Alpine && Alpine.raw(Alpine.$data(document.querySelector('[x-data]'))); }
+    catch(e){ return null; }
+  }
+
+  function autowireLegend(){
+    const root = getRoot();
+    const legend = document.getElementById('legend');
+    if (!legend || !root) return;
+
+    // Known edge type keys from app (edgeColors or edgeStyles)
+    const keys = Object.keys(root.edgeColors || {}).concat(Object.keys(root.edgeStyles || {}));
+    const uniq = Array.from(new Set(keys.filter(Boolean)));
+
+    // Scan all child elements; if innerText equals one of the keys, attach data-edge-type
+    const all = legend.querySelectorAll('*:not([data-edge-type])');
+    all.forEach(el => {
+      const t = (el.textContent || '').trim();
+      if (!t) return;
+      // exact match first
+      if (uniq.includes(t)) {
+        el.setAttribute('data-edge-type', t);
+        el.setAttribute('role', 'button');
+        el.setAttribute('aria-pressed', 'false');
+      }
+    });
+  }
+
+  // Visual active toggle + call highlighter (document-level listener already installed)
+  document.addEventListener('click', (e) => {
+    const el = e.target.closest('#legend [data-edge-type]');
+    if (!el) return;
+    const legend = document.getElementById('legend');
+    const type = el.getAttribute('data-edge-type') || '';
+    const root = getRoot();
+    if (!root) return;
+
+    // Toggle UI class
+    const isActive = el.classList.contains('is-active');
+    legend.querySelectorAll('[data-edge-type].is-active').forEach(x => {
+      x.classList.remove('is-active');
+      x.setAttribute('aria-pressed', 'false');
+    });
+    if (!isActive) {
+      el.classList.add('is-active');
+      el.setAttribute('aria-pressed', 'true');
+    }
+
+    // Call highlighter
+    if (typeof root.highlightEdgeType === 'function') {
+      root.highlightEdgeType(isActive ? null : type);
+    }
+  });
+
+  // Run when DOM ready and whenever legend content changes
+  const init = () => {
+    autowireLegend();
+    const legend = document.getElementById('legend');
+    if (!legend) return;
+    const mo = new MutationObserver(() => autowireLegend());
+    mo.observe(legend, { childList: true, subtree: true, characterData: true });
+  };
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
 </script>
 
 </body>
