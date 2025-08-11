@@ -1,298 +1,1231 @@
 {
   "nodes": [
     {
-      "id": "ManOfSteel",
+      "id": "film/dceu/2013_man_of_steel",
       "label": "Man of Steel (2013)",
       "title": "Man of Steel",
-      "image": "assets/images/dc.jpg",
-      "shape": "image",
-      "description": "'Man of Steel' yapımı, DC evreninde zamanın ve gerçekliğin parçalanması teması etrafında şekillenir. Kahramanların kişisel yolculukları, ahlaki ikilemleri ve güçle kurdukları ilişkiler film boyunca güçlü bir anlatımla sunulur. Görsel atmosfer ve anlatı derinliği öne çıkar.",
-      "refers_to": "Man of Steel’da The Flash ve Birds of Prey ile kurulan bağlar, evrenin kronolojik gelişimine katkı sağlar. Karakterler arası ilişkiler, karar anları ve tematik paralellikler bu filmde açıkça hissedilir.",
       "type": "film",
       "release_date": "2013-06-14",
-      "level": 0,
-      "universe": "DC"
+      "end_date": null,
+      "image": "https://upload.wikimedia.org/wikipedia/tr/8/85/ManofSteelFinalPoster.jpg",
+      "imdb_rating": 7.1,
+      "yönetmen": [
+        "Zack Snyder"
+      ],
+      "oyuncular": [
+        "Henry Cavill",
+        "Amy Adams",
+        "Michael Shannon",
+        "Diane Lane",
+        "Russell Crowe"
+      ],
+      "tür": [
+        "Aksiyon",
+        "Bilim Kurgu",
+        "Macera"
+      ],
+      "shape": "image",
+      "description": "2013 yapımı 'Man of Steel', DC Genişletilmiş Evreni'nin (DCEU) başlangıcını işaret eden ve Superman karakterine modern bir bakış açısı getiren bir filmidir. Film, Krypton gezegeninin yok olmasından kısa bir süre önce, Jor-El ve Lara'nın bebekleri Kal-El'i Dünya'ya göndermesiyle başlar. Kal-El, Kansas'ta çiftçi ailesi Kent'ler tarafından bulunur ve Clark Kent adıyla büyür. Sıradışı güçlerinin farkına varan Clark, kimliğinin getirdiği yalnızlıkla ve dünyadaki yerini bulma arayışıyla mücadele eder. Çiftçilikten gazeteciliğe uzanan hayatında, güçlerini kontrol etmeyi ve insanlığın arasına karışmayı öğrenmeye çalışır. Film, geleneksel Superman anlatısının aksine, karakterin psikolojik derinliğine ve kimlik krizine odaklanır. Kryptonlu General Zod'un Dünya'ya gelmesiyle birlikte, Clark'ın hem kendi ırkından gelen bir tehditle hem de insanlığı koruma göreviyle yüzleşmesi gerekir. Zod'un amacı, Dünya'yı yeni bir Krypton'a dönüştürmektir ve bu, Clark'ı ilk kez tam anlamıyla 'Süpermen' kimliğine bürünmeye zorlar. Filmin aksiyon sahneleri ve görsel efektleri, özellikle Zod ile olan mücadelesi, oldukça etkileyicidir. Bu epik çatışma, filmin en tartışmalı yanlarından biri olmuştur, çünkü Superman'in şehre verdiği zararın boyutu ve Zod'u öldürmesi, karakterin klasik 'öldürmeyen kahraman' imajını sarsmıştır. 'Man of Steel', Superman'in bir süper kahraman olarak doğuşunu ve evrenin ilk kahramanını merkeze alarak, DCEU'nun temelini atmıştır. Film, sadece bir karakterin köken hikayesini anlatmakla kalmaz, aynı zamanda insanlığın bilinmeyene karşı duyduğu korkuyu ve bir mesih figürüne duyulan ihtiyacı da irdeler. Clark'ın zorlu yolculuğu, bir süper kahramanın gücünün ve sorumluluklarının ağırlığını hissettirir. Film, Zod'un yenilgisiyle sona erer, ancak bu zaferin bedeli, Metropolis'in büyük bir yıkıma uğramasıdır. Bu yıkım, sonraki filmlerin ana temalarından biri haline gelir ve Batman'in Superman'e karşı duyduğu şüphelerin temelini oluşturur. 'Man of Steel', Superman'in yalnız bir kahraman olmaktan çıkıp, insanlığın sembolü olma yolundaki ilk adımlarını cesur ve gerçekçi bir şekilde anlatır.",
+      "refers_to": "'Man of Steel', DC Genişletilmiş Evreni'nin (DCEU) başlangıcı olarak, evrenin geleceğini şekillendiren kritik referanslar ve olaylar içerir. Filmin en önemli atıflarından biri, General Zod ile Superman'in Metropolis'te yaptığı yıkıcı savaşın, **Batman v Superman: Dawn of Justice (2016)** filminin temel motivasyonunu oluşturmasıdır. Bruce Wayne, bu savaş sırasında Metropolis'te bulunur ve yıkımın bizzat tanığı olur. Bu olay, Wayne'in Superman'e karşı duyduğu derin öfke ve paranoyanın kaynağıdır ve onu, Superman'in potansiyel bir tehdit olduğunu düşünmeye iter. Zod'un gemisinden çıkan dünya dışı teknoloji, Lex Luthor'un eline geçer ve **Batman v Superman: Dawn of Justice** filminde kullanılan Doomsday'in yaratım sürecinde kilit bir rol oynar. Filmin sonunda, Krypton teknolojisi ve Zod'un cesedi, LexCorp tarafından incelenir ve bu sayede Lex, Superman'i durdurabilecek bir güç yaratma fırsatı bulur. 'Man of Steel', ayrıca S.T.A.R. Labs ve Wayne Enterprises gibi DCEU'nun geleceğinde önemli rol oynayacak kurumların varlığına da işaret eder. Filmdeki çatışma sırasında S.T.A.R. Labs'a ait bir uydunun zarar görmesi, sonrasında Cyborg karakterinin hikayesi için bir zemin hazırlar. Filmin en önemli referanslarından biri, filmin genelinde kullanılan dini sembolizm ve Superman'in bir mesih figürü olarak tasvir edilmesidir. Bu tema, **Batman v Superman**'de daha da belirginleşir ve Superman'in tanrısal bir figür olarak görülüp görülmemesi, evrenin ana çatışmalarından biri haline gelir. Film, sadece Superman'in kökenini anlatmakla kalmaz, aynı zamanda Dünya'nın diğer süper güçlü varlıklarla karşılaşmasının sonuçlarını da göstererek, Justice League'in neden bir araya gelmesi gerektiğini dolaylı olarak açıklar. Bu film, bir kahramanın doğuşunu ele alırken, aynı zamanda evrenin en büyük tehditlerinden birinin tohumlarını eker ve bu tehditlere karşı koymak için daha büyük bir ittifaka duyulan ihtiyacı vurgular. Krypton'dan gelen gemi ve içerisindeki Codex, Superman'in kimliğinin ve güçlerinin kaynağını oluştururken, bu teknoloji, diğer film karakterlerinin de hayatına etki edecek önemli bir unsur haline gelir. 'Man of Steel', DCEU'nun hikaye akışında bir başlangıç noktası olmanın ötesinde, sonraki filmlerin temel çatışmalarının ve karakter motivasyonlarının kaynağını oluşturur.",
+      "canonical_level": "canon",
+      "sources": {
+        "Kaynaklar": [
+          {
+            "name": "Box Office Türkiye",
+            "url": "https://boxofficeturkiye.com/film/man-of-steel--2013180"
+          },
+          {
+            "name": "DC Movies Official Site",
+            "url": "https://www.dc.com/movies/man-of-steel"
+          },
+          {
+            "name": "IMDb",
+            "url": "https://www.imdb.com/title/tt0797371/"
+          }
+        ],
+        "Görsel": [
+          {
+            "name": "Wikipedia",
+            "url": "https://upload.wikimedia.org/wikipedia/tr/8/85/ManofSteelFinalPoster.jpg"
+          }
+        ],
+        "Platform": [
+          {
+            "name": "Prime Video",
+            "url": "https://www.primevideo.com/dp/amzn1.dv.gti.86a9f766-23bb-aeab-3ef7-f596218cd0c6?autoplay=0&ref_=atv_cf_strg_wb"
+          }
+        ]
+      },
+      "lang": "tr"
     },
     {
-      "id": "BvS",
+      "id": "film/dceu/2016_batman_v_superman_dawn_of_justice",
       "label": "Batman v Superman: Dawn of Justice (2016)",
       "title": "Batman v Superman: Dawn of Justice",
-      "image": "assets/images/dc.jpg",
-      "shape": "image",
-      "description": "'Batman v Superman: Dawn of Justice' yapımı, DC evreninde birlik olmanın bedeli ve kimliklerin çatışması teması etrafında şekillenir. Kahramanların kişisel yolculukları, ahlaki ikilemleri ve güçle kurdukları ilişkiler film boyunca güçlü bir anlatımla sunulur. Görsel atmosfer ve anlatı derinliği öne çıkar.",
-      "refers_to": "Suicide Squad (2016) ve Black Adam ile olan bağlantılar, Batman v Superman: Dawn of Justice içindeki semboller, görsel ipuçları ve diyaloglarda gizlidir. Evrenin bütünlüğü bu detaylarla pekiştirilir ve sadık izleyici için ek anlam katmanları sunar.",
       "type": "film",
       "release_date": "2016-03-25",
-      "level": 1,
-      "universe": "DC"
-    },
-    {
-      "id": "BatmanvSupermanDawnofJustice",
-      "label": "Batman v Superman: Dawn of Justice (Extended)",
-      "title": "Batman v Superman: Dawn of Justice (Extended)",
-      "image": "assets/images/dc.jpg",
+      "end_date": null,
+      "image": "https://m.media-amazon.com/images/M/MV5BZTJkYjdmYjYtOGMyNC00ZGU1LThkY2ItYTc1OTVlMmE2YWY1XkEyXkFqcGc@._V1_.jpg",
+      "imdb_rating": 6.4,
+      "yönetmen": [
+        "Zack Snyder"
+      ],
+      "oyuncular": [
+        "Ben Affleck",
+        "Henry Cavill",
+        "Amy Adams",
+        "Gal Gadot",
+        "Jesse Eisenberg"
+      ],
+      "tür": [
+        "Aksiyon",
+        "Bilim Kurgu",
+        "Fantastik"
+      ],
       "shape": "image",
-      "description": "'Batman v Superman: Dawn of Justice (Extended)' yapımı, DC evreninde kötülüğe karşı fedakârlığın ve inancın zaferi teması etrafında şekillenir. Kahramanların kişisel yolculukları, ahlaki ikilemleri ve güçle kurdukları ilişkiler film boyunca güçlü bir anlatımla sunulur. Görsel atmosfer ve anlatı derinliği öne çıkar.",
-      "refers_to": "Bu filmdeki olay örgüsü, Man of Steel ve Birds of Prey yapımlarında anlatılan gelişmelerin Devamı niteliğindedir. Geçmişte yaşananlar, karakter seçimleri ve çatışma dinamikleri bu bağlamda yeniden işlenir.",
-      "type": "film",
-      "release_date": "2016-03-25",
-      "level": 1,
-      "universe": "DC"
+      "description": "2016 yapımı 'Batman v Superman: Dawn of Justice', DC Genişletilmiş Evreni'nin (DCEU) en kritik filmlerinden biridir ve **Man of Steel (2013)** olaylarının doğrudan devamı niteliğindedir. Film, Superman'in Metropolis'i General Zod'un yıkımından kurtardığı savaşın yankılarıyla başlar. Bu savaşta yüzlerce masum sivilin ölmesi, Batman'in (Ben Affleck) Superman'e (Henry Cavill) karşı derin bir güvensizlik duymasına neden olur. Batman, sınırsız güce sahip bir varlığın kontrolsüzlüğünün insanlık için nihai bir tehdit oluşturduğuna inanır ve onu durdurmaya kararlıdır. Diğer yandan, Lex Luthor (Jesse Eisenberg), Superman'in gücünden ve potansiyel tehlikesinden faydalanarak, hem kamuoyunu hem de devleti ona karşı kışkırtmaya çalışır. Bu üç ana karakter, farklı motivasyonlarla birbiriyle çatışırken, film aynı zamanda DC evreninin diğer önemli figürlerini de sahneye çıkarır. Gizemli bir antika tüccarı olarak tanıtılan Wonder Woman (Gal Gadot), hikayeye dahil olur ve hem Batman hem de Superman'in savaşını yakından takip eder. Filmin temel çatışması, iki ikonik kahramanın ideolojik farklılıkları üzerinden şekillenir. Batman, adaletin somut ve sınırlı kurallarını temsil ederken, Superman umudu ve insanlığın en iyisine olan inancı simgeler. Ancak bu ideolojik savaş, Lex Luthor'un manipülasyonlarıyla tehlikeli bir noktaya ulaşır. Lex, Krypton teknolojisini kullanarak yarattığı Doomsday ile kahramanları bir araya gelmeye zorlar. Bu beklenmedik tehdit, Batman, Superman ve Wonder Woman'ı ilk kez bir takım olarak, Justice League'in çekirdeğini oluşturacak şekilde bir araya getirir. Film, Superman'in Doomsday ile olan mücadelesinde kendi hayatını feda etmesiyle doruk noktasına ulaşır. Bu fedakarlık, hem Batman'in Superman'e karşı olan önyargılarını yıkmasına hem de onun arkasında bıraktığı umut mirasının bir kanıtı olmasına yol açar. 'Batman v Superman', sadece iki kahramanın epik bir mücadelesini sunmakla kalmaz, aynı zamanda DCEU'nun daha karanlık, gerçekçi ve felsefi bir tonla ilerleyeceğinin de sinyallerini verir. Filmin sonunda, Superman'in ölümüyle birlikte, Dünya'nın yeni bir tehdide karşı savunmasız kalacağı hissi yaratılır ve bu, Justice League'in toplanması için gerekli motivasyonu sağlar. Film, süper kahraman filmleri için cesur bir adım atarak, kahramanların eylemlerinin sonuçlarını ve bu eylemlerin toplum üzerindeki etkisini sorgular. Bu, onu sadece bir aksiyon filmi olmaktan öte, derin temalar barındıran bir yapım haline getirir. Filmin en tartışmalı yanlarından biri, hikayenin karmaşıklığı ve izleyiciye sunulan birçok yan hikaye olmuştur.",
+      "refers_to": "'Batman v Superman: Dawn of Justice', DCEU'nun ana hikaye akışını ve geleceğini şekillendiren en önemli köşe taşlarından biridir ve bir dizi kritik referans ve bağlantı içerir. Filmin en belirgin bağlantısı, **Man of Steel (2013)** filmindeki Metropolis savaşının doğrudan sonuçlarını işlemesidir. Bruce Wayne, bu savaş sırasında bizzat yıkıma tanık olduğu için Superman'den nefret eder ve onu durdurmayı kendine görev edinir. Bu, iki kahramanın neden savaştığını açıklayan ana motiftir. Filmin bir diğer önemli atıfı, Lex Luthor'un ele geçirdiği Krypton teknolojisi ve General Zod'un cesedidir. Lex, bu teknolojiyi kullanarak, Superman'in en büyük düşmanlarından biri olan Doomsday'i yaratır. Doomsday, sadece bu filmdeki çatışmanın ana kaynağı olmakla kalmaz, aynı zamanda Superman'in fedakarlıkla sonuçlanan ölümüne de neden olur. Bu ölüm, **Justice League (2017)** filminin temel hikaye çizgisi için bir başlangıç noktasıdır. Superman'in ölümüyle birlikte, Dünya yeni tehditlere karşı savunmasız kalır ve Batman, bu tehditlere karşı koymak için bir ekip kurmaya karar verir. Film, bu amaca yönelik olarak, Wonder Woman'ın (Gal Gadot) hikayeye tam anlamıyla girmesini sağlar ve gelecekteki Justice League üyeleri olan Flash, Aquaman ve Cyborg'un varlığını da ima eden kısa klipler ve belgeler sunar. Bu sahneler, izleyiciyi evrenin daha büyük bir yapıya doğru genişlediği konusunda bilgilendirir. Wonder Woman'ın filmin sonunda ortaya çıkması, sadece bir karakter geçişi değil, aynı zamanda DC evreninin mitolojik ve tanrısal unsurlarına yapılan bir göndermedir. Wonder Woman'ın geçmişi, kendi filmi olan **Wonder Woman (2017)**'a zemin hazırlar. Ayrıca filmdeki Batman'in kabus sahnesi, gelecekteki tehditlerden biri olan Darkseid'e ve onun paralı askerlerine (Parademons) yapılan bir referanstır. Bu sahne, daha sonra **Zack Snyder's Justice League (2021)** filminde detaylı bir şekilde işlenir ve Darkseid'in Dünya'yı fethetme planının ipuçlarını verir. 'Batman v Superman', Justice League'in toplanması için gerekli olan motivasyonu sağlayarak, DCEU'nun çoklu karakterli bir evrene dönüşmesini sağlayan bir köprü görevi görür.",
+      "canonical_level": "canon",
+      "sources": {
+        "Kaynaklar": [
+          {
+            "name": "Box Office Türkiye",
+            "url": "https://boxofficeturkiye.com/film/batman-v-superman-adaletin-safagi--2014169"
+          },
+          {
+            "name": "DC Movies Official Site",
+            "url": "https://www.dc.com/movies/batman-v-superman-dawn-of-justice"
+          },
+          {
+            "name": "IMDb",
+            "url": "https://www.imdb.com/title/tt2975590/"
+          }
+        ],
+        "Görsel": [
+          {
+            "name": "IMDb",
+            "url": "https://m.media-amazon.com/images/M/MV5BZTJkYjdmYjYtOGMyNC00ZGU1LThkY2ItYTc1OTVlMmE2YWY1XkEyXkFqcGc@._V1_.jpg"
+          }
+        ],
+        "Platform": [
+          {
+            "name": "Prime Video",
+            "url": "https://www.primevideo.com/dp/amzn1.dv.gti.aea9f76d-6bbb-f969-c319-7a9b2351c0ed?autoplay=0&ref_=atv_cf_strg_wb"
+          }
+        ]
+      },
+      "lang": "tr"
     },
     {
-      "id": "SuicideSquad2016",
+      "id": "film/dceu/2016_suicide_squad",
       "label": "Suicide Squad (2016)",
-      "title": "Suicide Squad (2016)",
-      "image": "assets/images/dc.jpg",
-      "shape": "image",
-      "description": "'Suicide Squad (2016)' yapımı, DC evreninde adalet ve intikam arasındaki ince çizgi teması etrafında şekillenir. Kahramanların kişisel yolculukları, ahlaki ikilemleri ve güçle kurdukları ilişkiler film boyunca güçlü bir anlatımla sunulur. Görsel atmosfer ve anlatı derinliği öne çıkar.",
-      "refers_to": "Suicide Squad (2016)’da Justice League (Theatrical) ve Justice League (Snyder's Cut) ile kurulan bağlar, evrenin kronolojik gelişimine katkı sağlar. Karakterler arası ilişkiler, karar anları ve tematik paralellikler bu filmde açıkça hissedilir.",
+      "title": "Suicide Squad",
       "type": "film",
       "release_date": "2016-08-05",
-      "level": 1,
-      "universe": "DC"
-    },
-    {
-      "id": "TheSuicideSquad2021",
-      "label": "The Suicide Squad (2021)",
-      "title": "The Suicide Squad (2021)",
-      "image": "assets/images/dc.jpg",
+      "end_date": null,
+      "image": "https://upload.wikimedia.org/wikipedia/en/5/5c/Suicide_Squad_%282016_film%29_poster.png",
+      "imdb_rating": 5.9,
+      "yönetmen": [
+        "David Ayer"
+      ],
+      "oyuncular": [
+        "Will Smith",
+        "Jared Leto",
+        "Margot Robbie",
+        "Joel Kinnaman",
+        "Viola Davis"
+      ],
+      "tür": [
+        "Aksiyon",
+        "Macera",
+        "Fantastik"
+      ],
       "shape": "image",
-      "description": "'The Suicide Squad (2021)' yapımı, DC evreninde kahramanların karanlık geçmişleriyle yüzleşmesi teması etrafında şekillenir. Kahramanların kişisel yolculukları, ahlaki ikilemleri ve güçle kurdukları ilişkiler film boyunca güçlü bir anlatımla sunulur. Görsel atmosfer ve anlatı derinliği öne çıkar.",
-      "refers_to": "The Suicide Squad (2021), Blue Beetle ve Batman v Superman: Dawn of Justice (Extended) yapımlarıyla karakterler arası çatışmalar, evrenin sürekliliği ve geçmiş olaylara yapılan göndermelerle örülü bir bağ kurar. Bu bağlantılar izleyicinin karakter motivasyonlarını daha iyi anlamasını sağlar.",
-      "type": "film",
-      "release_date": "2021-08-05",
-      "level": 1,
-      "universe": "DC"
+      "description": "2016 yapımı 'Suicide Squad', DC Genişletilmiş Evreni'nde (DCEU) geçen ve süper kötülerin bir araya gelmesini konu alan bir filmidir. **Batman v Superman: Dawn of Justice (2016)** filmindeki Superman'in ölümünün ardından, gizli devlet kurumu yöneticisi Amanda Waller, dünyayı yeni bir meta-insan tehdidine karşı korumak için 'Task Force X' adı verilen gizli bir operasyon başlatır. Bu operasyonun amacı, en tehlikeli, hapiste olan süper kötüleri bir araya getirmek ve intihar görevlerine göndermektir. Ekip, Harley Quinn (Margot Robbie), Deadshot (Will Smith), Captain Boomerang (Jai Courtney), Killer Croc (Adewale Akinnuoye-Agbaje) ve El Diablo (Jay Hernandez) gibi birbirinden farklı ve tehlikeli karakterlerden oluşur. Onları kontrol altında tutmak için boyunlarına patlayıcı yerleştirilmiştir; görevden kaçmaları veya kuralları çiğnemeleri durumunda patlatılacaktır. İlk görevleri, güçlü bir antik cadı olan Enchantress'ı durdurmaktır. Enchantress, Waller'ın ekibi tarafından esir tutulurken kaçmış ve kardeşi Incubus ile birlikte dünyayı yok etmeye kararlı hale gelmiştir. Filmin tonu, diğer DCEU filmlerine göre daha renkli, kaotik ve punk rock estetiğine sahiptir. Karakterlerin kendi aralarındaki dinamikler ve filmdeki mizah unsurları öne çıkar. Özellikle Margot Robbie'nin canlandırdığı Harley Quinn karakteri, filmin en popüler figürlerinden biri haline gelir. Film, kötü karakterlerin beklenmedik bir şekilde kahramanlık yapmasını ve kendi içlerindeki insanlık kırıntılarını bulmasını ele alır. Deadshot, kızı için iyi bir baba olmaya çalışan bir suikastçı olarak öne çıkarken, El Diablo geçmişteki hatalarından pişmanlık duyar. Bu karakter derinliği, filmin ana hikayesiyle birleşerek onlara daha insani bir boyut kazandırır. Ancak film, Joker'in (Jared Leto) hikayesi ve Harley Quinn ile olan ilişkisine ayrılan kısımlar nedeniyle eleştiriler almıştır. 'Suicide Squad', ana hikayeden bağımsız gibi görünse de, DCEU'nun genişleyen yapısını ve süper kahramanlar dışında kalan diğer meta-insanların varlığını gözler önüne serer. Film, kötülerin de kendi çaplarında birer kahraman olabileceği fikrini işlerken, aynı zamanda devletin bu tehlikeli varlıkları nasıl manipüle ettiğini de gösterir. Film, genel olarak izleyiciyi eğlendiren, hızlı tempolu bir aksiyon filmi olarak öne çıkar ve özellikle Harley Quinn'in hikayesinin devamını getirecek filmlere zemin hazırlar. Finalde, ekip Enchantress'ı yenmeyi başarır ve bazı üyeler özgür kalır, bazıları ise hapse geri döner. Bu durum, gelecekteki hikayeler için açık kapı bırakır.",
+      "refers_to": "'Suicide Squad', DCEU'nun ana hikayesinden nispeten bağımsız bir yan hikayeyi anlatmasına rağmen, evrenin geneline yönelik önemli atıflar içerir. Filmin en temel bağlantısı, **Batman v Superman: Dawn of Justice (2016)** filminde Superman'in ölümü sonrası yaşanan olaylardır. Superman'in yokluğu, dünyayı yeni meta-insan tehditlerine karşı savunmasız bırakır ve Amanda Waller'ı 'Task Force X'i kurmaya iter. Bu durum, Superman'in varlığının evrenin dengesi için ne kadar önemli olduğunu gösterir. Filmde, Ben Affleck'in canlandırdığı Batman, kısa bir cameo ile görünür ve hem Deadshot'ı hem de Harley Quinn'i hapse atan kişinin kendisi olduğunu gösterir. Bu, Batman'in Gotham'ın suçlularıyla olan mücadelesinin, DCEU'nun ana hikayesinin dışında da devam ettiğini vurgular. Ayrıca film, Joker ve Harley Quinn arasındaki toksik ilişkiyi de tanıtır, bu ilişki daha sonra **Birds of Prey (2020)** filminin ana motivasyonu haline gelecektir. 'Suicide Squad', aynı zamanda Enchantress gibi sihir ve mitolojiye dayalı güçlere sahip karakterlerin varlığını da gösterir, bu durum da **Wonder Woman (2017)** filminin işlediği mitolojik temalara dolaylı bir atıftır. Filmin sonunda, post-jenerik sahnede Bruce Wayne ve Amanda Waller'ın bir araya geldiği görülür. Bu sahnede Waller, Bruce'a meta-insanların dosyalarını verir ve Bruce, Waller'a Task Force X'i kapatmasını söyler. Bruce, bu dosyalar sayesinde **Justice League (2017)**'i kurma sürecine başlamak için gerekli bilgilere sahip olur. Bu, filmin, evrenin geleceğini nasıl şekillendirdiğini ve bir takım kurma sürecine nasıl zemin hazırladığını açıkça gösterir. Film, aynı zamanda ARGUS ve Task Force X gibi gizli devlet kurumlarının varlığını da gözler önüne serer, bu da hükümetlerin süper güçlere karşı nasıl önlemler aldığını gösterir. `Suicide Squad`, DCEU'nun sadece süper kahramanlardan ibaret olmadığını, aynı zamanda kötülerin ve devletin de bu büyük hikayenin bir parçası olduğunu kanıtlayan önemli bir halkadır. Bu film, bir takımın nasıl bir araya geldiğini, kötülerin de içinde bir umut taşıyabileceğini ve evrenin daha karmaşık, ahlaki gri alanlar içeren bir yapıya sahip olduğunu anlatır. Filmdeki aksiyon ve mizah, DCEU'nun daha sonraki yapımlarında da kendini gösterecek olan bir ton geçişinin işaretlerini verir. Bu film, Harley Quinn'in karakter gelişiminin başlangıç noktası olarak da kabul edilebilir.",
+      "canonical_level": "canon",
+      "sources": {
+        "Kaynaklar": [
+          {
+            "name": "Box Office Türkiye",
+            "url": "https://boxofficeturkiye.com/film/suicide-squad-gercek-kotuler--2015509"
+          },
+          {
+            "name": "DC Movies Official Site",
+            "url": "https://www.dc.com/movies/suicide-squad"
+          },
+          {
+            "name": "IMDb",
+            "url": "https://www.imdb.com/title/tt1386697/"
+          }
+        ],
+        "Görsel": [
+          {
+            "name": "Wikipedia",
+            "url": "https://upload.wikimedia.org/wikipedia/en/5/5c/Suicide_Squad_%282016_film%29_poster.png"
+          }
+        ],
+        "Platform": [
+          {
+            "name": "Prime Video",
+            "url": "https://www.primevideo.com/dp/amzn1.dv.gti.a8ab1895-678a-a99c-07b3-d43a42d684ab?autoplay=0&ref_=atv_cf_strg_wb"
+          }
+        ]
+      },
+      "lang": "tr"
     },
     {
-      "id": "WonderWoman",
+      "id": "film/dceu/2017_wonder_woman",
       "label": "Wonder Woman (2017)",
-      "title": "Wonder Woman (2017)",
-      "image": "assets/images/dc.jpg",
-      "shape": "image",
-      "description": "'Wonder Woman (2017)' yapımı, DC evreninde adalet ve intikam arasındaki ince çizgi teması etrafında şekillenir. Kahramanların kişisel yolculukları, ahlaki ikilemleri ve güçle kurdukları ilişkiler film boyunca güçlü bir anlatımla sunulur. Görsel atmosfer ve anlatı derinliği öne çıkar.",
-      "refers_to": "Wonder Woman (2017)’da Justice League (Theatrical) ve Wonder Woman 1984 ile kurulan bağlar, evrenin kronolojik gelişimine katkı sağlar. Karakterler arası ilişkiler, karar anları ve tematik paralellikler bu filmde açıkça hissedilir.",
+      "title": "Wonder Woman",
       "type": "film",
       "release_date": "2017-06-02",
-      "level": 2,
-      "universe": "DC"
+      "end_date": null,
+      "image": "https://static.boxofficeturkiye.com/movie/poster/full/95/2013095-924901419.jpg",
+      "imdb_rating": 7.3,
+      "yönetmen": [
+        "Patty Jenkins"
+      ],
+      "oyuncular": [
+        "Gal Gadot",
+        "Chris Pine",
+        "Connie Nielsen",
+        "Robin Wright",
+        "Danny Huston"
+      ],
+      "tür": [
+        "Aksiyon",
+        "Fantastik",
+        "Macera"
+      ],
+      "shape": "image",
+      "description": "2017 yapımı 'Wonder Woman', DCEU'nun kritik filmlerinden biridir ve Wonder Woman'ın köken hikayesini merkeze alır. Film, Amazon prensesi Diana'nın, tanrılar ve efsanelerle dolu gizemli adası Themyscira'da savaşçı olarak yetiştirilmesiyle başlar. Diana, barış içinde ve izole bir yaşam sürerken, adanın dış dünyası hakkında hiçbir fikri yoktur. Hayatı, Birinci Dünya Savaşı sırasında adaya düşen Amerikalı casus Steve Trevor'ın gelişiyle tamamen değişir. Trevor, insanlığın kendisini yok etmeye yaklaştığını ve savaşın tanrısı Ares'in insanları manipüle ettiğini söyler. İnsanlığın masumiyetine inanan Diana, Ares'i bulup savaşı sona erdirmek için Themyscira'yı terk etmeye karar verir. Film, Diana'nın saf ve idealist bakış açısının, Birinci Dünya Savaşı'nın korkunç gerçekliğiyle nasıl yüzleştiğini gösterir. Londra'ya geldikten sonra, Diana, insanlığın iyiliğine olan inancını sorgulamaya başlar, ancak bu inancını tamamen yitirmez. Steve Trevor'la birlikte, Alman güçlerinin ürettiği tehlikeli bir gazı durdurmak için bir grup askerle cepheye gider. Film, Diana'nın karakter gelişimine odaklanırken, aynı zamanda onun aşk, kayıp ve fedakarlık temalarını da işlemesine olanak tanır. Diana, savaşın sadece Ares'in işi olmadığını, insanlığın doğasında da şiddet ve kötülüğün olduğunu keşfeder. Ancak, bu keşif onu umutsuzluğa sürüklemez; aksine, insanlığa yardım etme kararlılığını pekiştirir. Filmin sonunda Diana, Ares ile yüzleşir ve onu yener. Bu zafer, onun sadece bir savaşçı değil, aynı zamanda bir umut sembolü olduğunu kanıtlar. Ancak bu zaferin bedeli, Steve Trevor'ın kendini feda etmesiyle gelir. Bu kayıp, Diana'nın dünyadan uzun bir süre uzaklaşmasına ve insanlığa olan inancının bir kısmını yitirmesine neden olur. 'Wonder Woman', sadece bir süper kahraman filmi olmanın ötesinde, kadın gücünü ve feminizmi ön plana çıkaran, duygusal derinliği yüksek bir yapımdır. Patty Jenkins'in yönetmenliği, filmin hem aksiyon hem de karakter odaklı anlarını başarıyla birleştirir. Film, DCEU'nun başlangıçtaki karanlık tonundan uzaklaşarak daha umut dolu ve klasik bir kahramanlık hikayesi anlatır. Bu, DCEU için önemli bir ton değişikliğidir ve evrenin geleceği için yeni bir yön belirler. 'Wonder Woman', eleştirel ve ticari anlamda büyük bir başarı elde ederek, Gal Gadot'un ikonik performansını pekiştirir ve karakterin sinematik dünyadaki yerini sağlamlaştırır. Film, bir kadının hem savaşçı hem de barış elçisi olabileceğini gösteren güçlü bir mesaj verir.",
+      "refers_to": "'Wonder Woman', DCEU evreninin mitolojik ve tarihsel kökenlerini derinlemesine inceleyerek, diğer filmlerle doğrudan ve dolaylı bağlantılar kurar. Film, **Batman v Superman: Dawn of Justice (2016)** filminde Diana'nın modern zamanda nasıl bir figür haline geldiğini açıklar. Filmin açılışında, Diana'ya Bruce Wayne tarafından gönderilen, Birinci Dünya Savaşı dönemine ait fotoğraf karesi, filmde anlatılan hikayenin başlangıç noktasıdır. Bu fotoğraf, Diana'nın 1918'den beri dünyada var olduğunu ve süper kahraman olarak hareket ettiğini kanıtlar. Filmin ana antagonisti olan Ares, DCEU'nun mitolojik ve tanrısal güçlerini tanıtır. Ares'in varlığı ve güçleri, evrenin sadece bilim kurgu ve teknolojiye dayalı tehditlerle sınırlı olmadığını, aynı zamanda eski mitlerin de bir parçası olduğunu gösterir. Bu durum, daha sonra **Justice League (2017)** filminde Darkseid ve Steppenwolf gibi New Gods karakterlerinin hikayeye dahil olması için zemin hazırlar. Diana'nın, Steve Trevor'ın ölümüyle yaşadığı travma ve insanlığa olan inancını kaybetmesi, onun neden **Batman v Superman** ve **Justice League** filmlerinde daha içine kapanık ve mesafeli bir karakter olduğunu açıklar. Yüzyıllar boyunca insanlığın savaşlarına ve zulmüne tanıklık etmesi, onun başlangıçtaki idealizmini törpülemiştir. 'Wonder Woman', ayrıca Themyscira'nın varlığını ve Amazon savaşçılarının hikayesini de tanıtır, bu da sonraki filmlerdeki olası geri dönüşler veya yeni hikayeler için potansiyel oluşturur. 'Wonder Woman' filminin en kritik bağlantısı, karakterin Justice League'in kurucu üyelerinden biri olarak rolünü pekiştirmesidir. Diana'nın insanlığı koruma kararı, onun **Justice League**'de Batman'e ve diğer kahramanlara katılma motivasyonunun temelini oluşturur. Diana, Justice League'in kalbi ve vicdanı haline gelir. Filmin tarihi fonu, DCEU'nun sadece günümüzle sınırlı kalmayıp, farklı zaman dilimlerinde de hikayeler anlatabileceğini kanıtlar. Film, Amazonların, Darkseid ve Steppenwolf'un ilk işgaline karşı koyanlardan biri olduğunu ima eder. Bu durum, daha sonra **Justice League**'in ana hikayesi için de önemli bir tarihsel bağlam oluşturur. 'Wonder Woman', DCEU'nun ana yapısının sadece süper kahramanların güçlerinden değil, aynı zamanda onların inançlarından ve ideallerinden de beslendiğini gösterir.",
+      "canonical_level": "canon",
+      "sources": {
+        "Kaynaklar": [
+          {
+            "name": "Box Office Türkiye",
+            "url": "https://boxofficeturkiye.com/film/wonder-woman--2017105"
+          },
+          {
+            "name": "DC Movies Official Site",
+            "url": "https://www.dc.com/movies/wonder-woman"
+          },
+          {
+            "name": "IMDb",
+            "url": "https://www.imdb.com/title/tt0451279/"
+          }
+        ],
+        "Görsel": [
+          {
+            "name": "Box Office Türkiye",
+            "url": "https://static.boxofficeturkiye.com/movie/poster/full/95/2013095-924901419.jpg"
+          }
+        ],
+        "Platform": [
+          {
+            "name": "Prime Video",
+            "url": "https://www.primevideo.com/dp/amzn1.dv.gti.20ba67f5-40a6-93b9-db8b-8e55e26a9f0f?autoplay=0&ref_=atv_cf_strg_wb"
+          }
+        ]
+      },
+      "lang": "tr"
     },
     {
-      "id": "WonderWoman1984",
-      "label": "Wonder Woman 1984",
-      "title": "Wonder Woman 1984",
-      "image": "assets/images/dc.jpg",
-      "shape": "image",
-      "description": "'Wonder Woman 1984' yapımı, DC evreninde tanrısal güçlerin insani zayıflıklarla çatışması teması etrafında şekillenir. Kahramanların kişisel yolculukları, ahlaki ikilemleri ve güçle kurdukları ilişkiler film boyunca güçlü bir anlatımla sunulur. Görsel atmosfer ve anlatı derinliği öne çıkar.",
-      "refers_to": "Wonder Woman 1984, Batman v Superman: Dawn of Justice ve Justice League (Snyder's Cut) yapımlarıyla karakterler arası çatışmalar, evrenin sürekliliği ve geçmiş olaylara yapılan göndermelerle örülü bir bağ kurar. Bu bağlantılar izleyicinin karakter motivasyonlarını daha iyi anlamasını sağlar.",
-      "type": "film",
-      "release_date": "2020-12-25",
-      "level": 2,
-      "universe": "DC"
-    },
-    {
-      "id": "JusticeLeague",
-      "label": "Justice League (Theatrical)",
-      "title": "Justice League (Theatrical)",
-      "image": "assets/images/dc.jpg",
-      "shape": "image",
-      "description": "'Justice League (Theatrical)' yapımı, DC evreninde kahramanların karanlık geçmişleriyle yüzleşmesi teması etrafında şekillenir. Kahramanların kişisel yolculukları, ahlaki ikilemleri ve güçle kurdukları ilişkiler film boyunca güçlü bir anlatımla sunulur. Görsel atmosfer ve anlatı derinliği öne çıkar.",
-      "refers_to": "Justice League (Theatrical), Suicide Squad (2016) ve The Flash ile aynı evreni paylaşırken olaylar zinciri, düşmanlar ve kahramanların bir araya gelme süreci üzerinden güçlü göndermeler içerir. Özellikle adalet anlayışındaki farklar dikkat çeker.",
+      "id": "film/dceu/2017_justice_league",
+      "label": "Justice League (2017)",
+      "title": "Justice League",
       "type": "film",
       "release_date": "2017-11-17",
-      "level": 2,
-      "universe": "DC"
-    },
-    {
-      "id": "ZackCut",
-      "label": "Justice League (Zack Cut)",
-      "title": "Justice League (Zack Cut)",
-      "image": "assets/images/dc.jpg",
+      "end_date": null,
+      "image": "https://m.media-amazon.com/images/M/MV5BMjM5YmQxM2YtZjI2Yy00YjhhLTg5N2MtMTEyMzdlZDU3OTVhXkEyXkFqcGc@._V1_QL75_UX190_CR0,0,190,281_.jpg",
+      "imdb_rating": 6.0,
+      "yönetmen": [
+        "Joss Whedon"
+      ],
+      "oyuncular": [
+        "Ben Affleck",
+        "Henry Cavill",
+        "Amy Adams",
+        "Gal Gadot",
+        "Ezra Miller",
+        "Jason Momoa",
+        "Ray Fisher"
+      ],
+      "tür": [
+        "Aksiyon",
+        "Fantastik",
+        "Bilim Kurgu"
+      ],
       "shape": "image",
-      "description": "'Justice League (Zack Cut)' yapımı, DC evreninde kahramanların karanlık geçmişleriyle yüzleşmesi teması etrafında şekillenir. Kahramanların kişisel yolculukları, ahlaki ikilemleri ve güçle kurdukları ilişkiler film boyunca güçlü bir anlatımla sunulur. Görsel atmosfer ve anlatı derinliği öne çıkar.",
-      "refers_to": "Bu filmdeki olay örgüsü, Birds of Prey ve Aquaman and the Lost Kingdom yapımlarında anlatılan gelişmelerin Devamı niteliğindedir. Geçmişte yaşananlar, karakter seçimleri ve çatışma dinamikleri bu bağlamda yeniden işlenir.",
-      "type": "film",
-      "release_date": "2021-03-18",
-      "level": 2,
-      "universe": "DC"
+      "description": "2017 yapımı 'Justice League', DCEU'nun en büyük kahramanlarını bir araya getiren ve evrenin geleceğini şekillendiren bir dönüm noktasıdır. **Batman v Superman: Dawn of Justice (2016)** filminde Superman'in ölümünden sonra, dünyada büyük bir umutsuzluk ve korku hakim olur. Batman (Ben Affleck), Superman'in fedakarlığından ilham alarak, yaklaşan kozmik bir tehdide karşı koymak için güçlü meta-insanlardan oluşan bir ekip kurmaya karar verir. Bu tehdit, New Gods ırkından gelen Steppenwolf'tur. Steppenwolf, yeryüzüne inerek üç adet Ana Kutusu'nu (Mother Box) ele geçirmeyi amaçlamaktadır. Bu kutular, zaman ve uzayda kontrol edilemez bir yıkım gücü barındıran, neredeyse sonsuz enerji kaynaklarıdır. Batman, Wonder Woman'ın (Gal Gadot) yardımıyla, The Flash (Ezra Miller), Aquaman (Jason Momoa) ve Cyborg'u (Ray Fisher) ekibe dahil etmek için yola çıkar. Filmin ana hikayesi, bu altı kahramanın, hem kendi kişisel farklılıklarıyla hem de Steppenwolf'un paralı askerleriyle (Parademons) mücadelesi üzerine kuruludur. Flash, çekingen ve sosyal becerileri zayıf bir karakterken, Aquaman yalnız bir kraldır ve Cyborg, bedeni teknolojiyle birleşmiş, kimliğini kaybetmiş bir gençtir. Bu karakterler, Batman ve Wonder Woman'ın liderliğinde, bir ekip olmayı öğrenmek zorunda kalırlar. Film, aynı zamanda Superman'i hayata döndürme çabalarını da konu alır. Ekip, Ana Kutusu'nun gücünü kullanarak Superman'i (Henry Cavill) diriltmeye çalışır. Superman'in dönüşü, hem ekibin moralini yükseltir hem de Steppenwolf'un yenilmesi için hayati önem taşır. Ancak dirilen Superman, kısa bir süreliğine hafıza kaybı yaşar ve ekip için bir tehdit haline gelir. Filmin sonu, Justice League'in bir araya gelerek Steppenwolf'u yenmesiyle sonuçlanır. Bu zafer, hem dünyayı büyük bir tehlikeden kurtarır hem de Superman'in geri dönüşünü simgeler. 'Justice League', DCEU'nun karanlık tonundan daha çok, umut ve takım çalışması temalarına odaklanır. Ancak, filmin prodüksiyon süreci oldukça sorunlu geçmiştir; orijinal yönetmen Zack Snyder'ın kişisel nedenlerle ayrılması ve yerine Joss Whedon'ın getirilmesi, filmin tonunda ve hikaye akışında ciddi değişikliklere yol açmıştır. Bu durum, filmin izleyiciler ve eleştirmenler tarafından karışık yorumlar almasına neden olmuştur. Film, karakterlerin tanışma ve bir araya gelme sürecini işlerken, evrenin geleceği için yeni kapılar açar ve bu kahramanların daha sonra kendi solo maceralarına atılacakları sinyalini verir.",
+      "refers_to": "'Justice League', DCEU'nun ana hikayesini bir araya getiren ve geleceğe yönelik pek çok bağlantı kuran merkezi bir yapıdır. Film, **Batman v Superman: Dawn of Justice (2016)** filminin bıraktığı yerden devam eder ve Superman'in ölümünün dünya üzerindeki etkilerini gösterir. Superman'in yokluğu, dünyayı hem fiziksel hem de psikolojik olarak savunmasız bırakır ve Steppenwolf'un işgali için bir fırsat yaratır. Filmin ana motivasyonu, bu boşluğu doldurmak için Justice League'in kurulmasıdır. Film, Batman'in (Ben Affleck) **Batman v Superman** filminin sonunda Amanda Waller'dan aldığı meta-insan dosyalarını kullanarak Flash, Aquaman ve Cyborg'u bulmasını sağlar. Bu karakterlerin her biri, bu filmle birlikte DCEU'ya tam anlamıyla katılır ve daha sonra kendi solo filmlerinin hikayeleri için zemin hazırlanır. Cyborg'un (Ray Fisher) köken hikayesi, babasının S.T.A.R. Labs'ta Ana Kutusu'nu (Mother Box) kullanarak onu hayata döndürmesiyle açıklanır. Bu, **Man of Steel** filmindeki Krypton teknolojisiyle olan bağlantıyı da pekiştirir. Aquaman'in (Jason Momoa) Atlantislilerle olan bağları ve kraliyet mirası, **Aquaman (2018)** filminin ana hikayesine doğrudan bir referanstır. Filmdeki Ana Kutuları (Mother Box) ve Steppenwolf'un hikayesi, New Gods ve Apokolips gezegenine yapılan ilk büyük atıflardır. Bu, evrenin kozmik genişlemesini ve Darkseid'in nihai tehdidini ortaya koyar. Filmin açılışında gösterilen, İnsanlar, Amazonlar ve Atlantisliler'in Darkseid'in ilk işgaline karşı birleştiği savaş, DCEU'nun tarihsel derinliğini artırır. **Wonder Woman (2017)** filmindeki Amazonlar ve **Aquaman (2018)** filmindeki Atlantisliler, bu savaşta önemli rol oynayarak karakterlerin köken hikayelerini evrenin ana mitolojisiyle bütünleştirir. Film, ayrıca Steppenwolf'un yenilmesiyle sona erer, ancak post-jenerik sahnede Lex Luthor'un hapisten kaçtığı ve Deathstroke ile bir araya gelerek kendi 'İnzibat' (Legion of Doom) takımını kurmayı planladığı görülür. Bu sahne, gelecekteki olası tehditlere ve yeni bir kötü takımının oluşumuna işaret eder. 'Justice League', DCEU'nun tekil kahraman hikayelerinden birleşik bir evren hikayesine geçişini sağlayan temel bir adımdır ve sonraki filmlerin motivasyonunu ve yönünü belirler.",
+      "canonical_level": "canon",
+      "sources": {
+        "Kaynaklar": [
+          {
+            "name": "Box Office Türkiye",
+            "url": "https://boxofficeturkiye.com/film/justice-league--2017366"
+          },
+          {
+            "name": "DC Movies Official Site",
+            "url": "https://www.dc.com/movies/justice-league"
+          },
+          {
+            "name": "IMDb",
+            "url": "https://www.imdb.com/title/tt0974015/"
+          }
+        ],
+        "Görsel": [
+          {
+            "name": "IMDb",
+            "url": "https://m.media-amazon.com/images/M/MV5BMjM5YmQxM2YtZjI2Yy00YjhhLTg5N2MtMTEyMzdlZDU3OTVhXkEyXkFqcGc@._V1_QL75_UX190_CR0,0,190,281_.jpg"
+          }
+        ],
+        "Platform": [
+          {
+            "name": "Prime Video",
+            "url": "https://www.primevideo.com/dp/amzn1.dv.gti.3bae105b-aead-4236-ba78-5b45abf4bd81?autoplay=0&ref_=atv_cf_strg_wb"
+          }
+        ]
+      },
+      "lang": "tr"
     },
     {
-      "id": "ZackSnydersJusticeLeague",
-      "label": "Justice League (Snyder's Cut)",
-      "title": "Justice League (Snyder's Cut)",
-      "image": "assets/images/dc.jpg",
-      "shape": "image",
-      "description": "'Justice League (Snyder's Cut)' yapımı, DC evreninde birlik olmanın bedeli ve kimliklerin çatışması teması etrafında şekillenir. Kahramanların kişisel yolculukları, ahlaki ikilemleri ve güçle kurdukları ilişkiler film boyunca güçlü bir anlatımla sunulur. Görsel atmosfer ve anlatı derinliği öne çıkar.",
-      "refers_to": "Batman v Superman: Dawn of Justice (Extended) ve Peacemaker ile olan bağlantılar, Justice League (Snyder's Cut) içindeki semboller, görsel ipuçları ve diyaloglarda gizlidir. Evrenin bütünlüğü bu detaylarla pekiştirilir ve sadık izleyici için ek anlam katmanları sunar.",
-      "type": "film",
-      "release_date": "2021-03-18",
-      "level": 2,
-      "universe": "DC"
-    },
-    {
-      "id": "Aquaman",
+      "id": "film/dceu/2018_aquaman",
       "label": "Aquaman (2018)",
-      "title": "Aquaman (2018)",
-      "image": "assets/images/dc.jpg",
-      "shape": "image",
-      "description": "'Aquaman (2018)' yapımı, DC evreninde adalet ve intikam arasındaki ince çizgi teması etrafında şekillenir. Kahramanların kişisel yolculukları, ahlaki ikilemleri ve güçle kurdukları ilişkiler film boyunca güçlü bir anlatımla sunulur. Görsel atmosfer ve anlatı derinliği öne çıkar.",
-      "refers_to": "Aquaman (2018), Justice League (Zack Cut) ve Birds of Prey yapımlarıyla karakterler arası çatışmalar, evrenin sürekliliği ve geçmiş olaylara yapılan göndermelerle örülü bir bağ kurar. Bu bağlantılar izleyicinin karakter motivasyonlarını daha iyi anlamasını sağlar.",
+      "title": "Aquaman",
       "type": "film",
       "release_date": "2018-12-21",
-      "level": 3,
-      "universe": "DC"
-    },
-    {
-      "id": "AquamanandtheLostKingdom",
-      "label": "Aquaman and the Lost Kingdom",
-      "title": "Aquaman and the Lost Kingdom",
-      "image": "assets/images/dc.jpg",
+      "end_date": null,
+      "image": "https://static.boxofficeturkiye.com/movie/poster/full/2/2013202-747838226.jpg",
+      "imdb_rating": 6.8,
+      "yönetmen": [
+        "James Wan"
+      ],
+      "oyuncular": [
+        "Jason Momoa",
+        "Amber Heard",
+        "Willem Dafoe",
+        "Patrick Wilson",
+        "Nicole Kidman"
+      ],
+      "tür": [
+        "Aksiyon",
+        "Fantastik",
+        "Macera"
+      ],
       "shape": "image",
-      "description": "'Aquaman and the Lost Kingdom' yapımı, DC evreninde kötülüğe karşı fedakârlığın ve inancın zaferi teması etrafında şekillenir. Kahramanların kişisel yolculukları, ahlaki ikilemleri ve güçle kurdukları ilişkiler film boyunca güçlü bir anlatımla sunulur. Görsel atmosfer ve anlatı derinliği öne çıkar.",
-      "refers_to": "Aquaman and the Lost Kingdom’da Peacemaker ve Justice League (Zack Cut) ile kurulan bağlar, evrenin kronolojik gelişimine katkı sağlar. Karakterler arası ilişkiler, karar anları ve tematik paralellikler bu filmde açıkça hissedilir.",
-      "type": "film",
-      "release_date": "2023-12-22",
-      "level": 3,
-      "universe": "DC"
+      "description": "2018 yapımı 'Aquaman', DC Genişletilmiş Evreni'nde (DCEU) geçen ve Atlantis'in kayıp kralının hikayesini anlatan bir filmdir. Film, bir deniz feneri bekçisi olan Thomas Curry ile Atlantis'in kraliçesi Atlanna'nın aşkından doğan Arthur Curry'nin (Jason Momoa) hikayesine odaklanır. Arthur, hem insan hem de Atlantisli kanı taşıdığı için iki dünya arasında kalmış ve kendisini hiçbir yere ait hissetmeyen bir karakterdir. **Justice League (2017)** olaylarından sonra, Arthur, Atlantis'in yeraltı dünyasına ve kraliyet tahtına karşı daha isteksiz bir duruş sergiler. Ancak Atlantis'in yeni kralı olan üvey kardeşi Orm'un (Patrick Wilson) yedi deniz krallığını birleştirerek yüzey dünyasına savaş açma planları, Arthur'u kaçınılmaz bir şekilde kendi kaderiyle yüzleşmeye zorlar. Aquaman, Mera'nın (Amber Heard) yardımıyla, Atlantis'in tek gerçek varisi olduğunu kanıtlamak ve savaşı durdurmak için efsanevi 'Atlantis'in Altın Üç Dişli Mızrağı'nı aramaya çıkar. Bu macera, onları dünyanın dört bir yanına, derin okyanus çukurlarına, gizemli deniz altı krallıklarına ve tehlikeli düşmanlarla dolu unutulmuş bölgelere götürür. Film, aksiyon ve görsel efektlerin yanı sıra, aile bağları, kimlik arayışı ve liderlik temalarını da işler. Arthur'un, babasına olan sevgisi ve annesiyle olan trajik hikayesi, onu hem bir kahraman hem de bir insan olarak derinleştirir. James Wan'ın yönetmenliği, su altı dünyasının görsel olarak zengin ve canlı bir şekilde tasvir edilmesini sağlar. Filmin tonu, daha önceki DCEU filmlerine göre daha hafif, renkli ve eğlencelidir. Aquaman'in Black Manta (Yahya Abdul-Mateen II) gibi kişisel düşmanlarla olan çatışması, hikayeye kişisel bir intikam unsuru ekler. Filmin sonunda Arthur, Atlantis'in gerçek kralı olduğunu kanıtlar ve hem yedi denizin hem de yüzey dünyasının barış içinde yaşamasını sağlamak için yeni bir rol üstlenir. Bu, onun sadece bir meta-insan değil, aynı zamanda Atlantislilerin lideri olduğu anlamına gelir. 'Aquaman', ticari anlamda büyük bir başarı elde ederek DCEU'nun en yüksek gişe hasılatı yapan filmlerinden biri haline gelmiştir. Bu başarı, karakterin popülaritesini artırmış ve serinin devam filmleri için sağlam bir temel oluşturmuştur. Film, bir yandan epik bir macera sunarken, diğer yandan da Arthur'un kişisel yolculuğunu ve kimliğini bulma çabasını anlatır.",
+      "refers_to": "'Aquaman', DCEU'nun mitolojik ve kozmik unsurlara daha fazla odaklanmasını sağlayan, genişletilmiş bir evren hikayesidir ve diğer filmlerle birçok bağ kurar. Filmin hikayesi, **Justice League (2017)** filminin doğrudan devamı niteliğindedir. Bu filmde, Arthur Curry'nin Justice League'e katılması ve Superman'in dirilişine yardımcı olması gibi olaylar yaşanmıştır. Aquaman, bu filmde kendisine ait olan krallıkla yüzleşmek ve yedi denizin kralı olmak için harekete geçer. Filmin açılışında, genç Arthur'un deniz canlılarıyla konuşma yeteneğini keşfettiği sahne, onun genetik mirasının ve süper güçlerinin kökenine ışık tutar. Film, aynı zamanda Atlantis'in tarihi hakkında daha fazla bilgi vererek, binlerce yıl önce nasıl battığını ve yedi krallığa bölündüğünü anlatır. Bu, **Justice League**'in başında gösterilen, Darkseid'in ilk işgaline karşı koyan Amazonlar, İnsanlar ve Atlantisliler ittifakını daha da anlamlandırır. Orm'un yüzey dünyasına savaş açma planı, insanlık için yeni bir tehdit oluşturur ve Justice League'in neden bir takım olarak var olması gerektiğini yeniden vurgular. Arthur'un, Aquaman olarak yeni rolü, DCEU'nun ana kahramanlar ekibinin bir üyesi olarak konumunu sağlamlaştırır. Film, ayrıca Black Manta karakterini de tanıtır, bu karakter daha sonraki filmlerde Aquaman'in sürekli düşmanı olarak karşımıza çıkar ve **Aquaman and the Lost Kingdom (2023)** filminin ana antagonisti haline gelir. Filmin bir diğer önemli atıfı, Atlantis'in kayıp krallıklarından olan Trench (Çukur) Krallığı'dır. Bu krallık, James Wan'ın bir sonraki projesi olan ve Aquaman evrenini genişletmeyi amaçlayan 'The Trench' adlı spin-off filmine (proje iptal edilmiştir) zemin hazırlamıştır. 'Aquaman', DCEU'nun hikayesini, sadece kahramanlık ve tehditlerle sınırlı kalmayıp, aynı zamanda fantastik ve mitolojik unsurlarla zenginleştirdiğini gösteren önemli bir örnektir. Film, bir yandan ana hikayeyi ileri taşırken, diğer yandan da evrenin geçmişine ve mitolojisine dair yeni bilgiler sunarak izleyiciyi daha derin bir dünyaya davet eder. Bu film, Justice League ekibinin her bir üyesinin kendi hikayesine sahip olduğunu ve bu hikayelerin evrenin bütünü için ne kadar önemli olduğunu gösterir.",
+      "canonical_level": "canon",
+      "sources": {
+        "Kaynaklar": [
+          {
+            "name": "Box Office Türkiye",
+            "url": "https://boxofficeturkiye.com/film/aquaman--2018318"
+          },
+          {
+            "name": "DC Movies Official Site",
+            "url": "https://www.dc.com/movies/aquaman"
+          },
+          {
+            "name": "IMDb",
+            "url": "https://www.imdb.com/title/tt1477834/"
+          }
+        ],
+        "Görsel": [
+          {
+            "name": "Box Office Türkiye",
+            "url": "https://static.boxofficeturkiye.com/movie/poster/full/2/2013202-747838226.jpg"
+          }
+        ],
+        "Platform": [
+          {
+            "name": "Prime Video",
+            "url": "https://www.primevideo.com/dp/amzn1.dv.gti.6abbf101-cb31-7daa-d84b-e1867e20361f?autoplay=0&ref_=atv_cf_strg_wb"
+          }
+        ]
+      },
+      "lang": "tr"
     },
     {
-      "id": "Shazam",
+      "id": "film/dceu/2019_shazam",
       "label": "Shazam! (2019)",
-      "title": "Shazam! (2019)",
-      "image": "assets/images/dc.jpg",
-      "shape": "image",
-      "description": "'Shazam! (2019)' yapımı, DC evreninde adalet ve intikam arasındaki ince çizgi teması etrafında şekillenir. Kahramanların kişisel yolculukları, ahlaki ikilemleri ve güçle kurdukları ilişkiler film boyunca güçlü bir anlatımla sunulur. Görsel atmosfer ve anlatı derinliği öne çıkar.",
-      "refers_to": "Shazam! (2019)’da Shazam! Fury of the Gods ve Batman v Superman: Dawn of Justice (Extended) ile kurulan bağlar, evrenin kronolojik gelişimine katkı sağlar. Karakterler arası ilişkiler, karar anları ve tematik paralellikler bu filmde açıkça hissedilir.",
+      "title": "Shazam!",
       "type": "film",
       "release_date": "2019-04-05",
-      "level": 4,
-      "universe": "DC"
-    },
-    {
-      "id": "ShazamFuryoftheGods",
-      "label": "Shazam! Fury of the Gods",
-      "title": "Shazam! Fury of the Gods",
-      "image": "assets/images/dc.jpg",
+      "end_date": null,
+      "image": "https://m.media-amazon.com/images/M/MV5BZGFiZjc4YTAtYzI3YS00NDM2LTllYWUtMTI0MzQ0OTAwOWJhXkEyXkFqcGc@._V1_.jpg",
+      "imdb_rating": 7.0,
+      "yönetmen": [
+        "David F. Sandberg"
+      ],
+      "oyuncular": [
+        "Zachary Levi",
+        "Mark Strong",
+        "Asher Angel",
+        "Jack Dylan Grazer",
+        "Djimon Hounsou"
+      ],
+      "tür": [
+        "Aksiyon",
+        "Fantastik",
+        "Komedi"
+      ],
       "shape": "image",
-      "description": "'Shazam! Fury of the Gods' yapımı, DC evreninde kötülüğe karşı fedakârlığın ve inancın zaferi teması etrafında şekillenir. Kahramanların kişisel yolculukları, ahlaki ikilemleri ve güçle kurdukları ilişkiler film boyunca güçlü bir anlatımla sunulur. Görsel atmosfer ve anlatı derinliği öne çıkar.",
-      "refers_to": "Batman v Superman: Dawn of Justice (Extended) ve Wonder Woman 1984 ile olan bağlantılar, Shazam! Fury of the Gods içindeki semboller, görsel ipuçları ve diyaloglarda gizlidir. Evrenin bütünlüğü bu detaylarla pekiştirilir ve sadık izleyici için ek anlam katmanları sunar.",
-      "type": "film",
-      "release_date": "2023-03-17",
-      "level": 4,
-      "universe": "DC"
+      "description": "2019 yapımı 'Shazam!', DCEU'ya yeni bir soluk getiren, komedi ve aile temalarına odaklanan bir süper kahraman filmidir. Film, çocukluk yıllarında annesinden ayrı kalan ve onu bulma umuduyla sayısız koruyucu ailede yaşamış olan 14 yaşındaki Billy Batson'ın (Asher Angel) hikayesini anlatır. Billy, hem isyankar hem de yalnız bir gençtir ve Philadelphia sokaklarında hayatını sürdürmeye çalışır. Bir gün metroda seyahat ederken, gizemli bir büyücü (Djimon Hounsou) tarafından efsanevi Sonsuzluk Kayası'na çağrılır. Büyücü, dünyayı Yedi Ölümcül Günah'tan koruyacak 'kalbi saf' bir varis aramaktadır ve Billy'yi seçer. Billy'nin 'SHAZAM!' kelimesini söylemesiyle birlikte, güçlü ve yetişkin bir süper kahramana (Zachary Levi) dönüşür. Yeni bulduğu bu güçleriyle, Billy, engelli koruyucu kardeşi Freddy Freeman (Jack Dylan Grazer) ile birlikte, bir süper kahramanın ne anlama geldiğini ve güçlerini nasıl kullanacağını keşfeder. Film, bir çocuğun süper güçlere sahip olmasının getirdiği sevinci, komik anları ve aynı zamanda büyük sorumlulukları ele alır. Billy'nin düşmanı ise, çocukken büyücü tarafından reddedilen ve Yedi Ölümcül Günah'ın gücünü ele geçiren Dr. Thaddeus Sivana'dır (Mark Strong). Sivana, Shazam'ın güçlerini ele geçirmek ve dünyayı kendi kontrolü altına almak ister. Film, Billy'nin asıl ailesini bulma arayışının, koruyucu ailesini ve kardeşlerini kabul etme yolculuğuna dönüşmesini işler. Aile, filmin en güçlü temalarından biridir ve Billy, biyolojik ailesi yerine, onu seven ve destekleyen koruyucu ailesinin gerçek ailesi olduğunu anlar. Filmin sonunda Billy, Sihirli Kaya'daki gücü kardeşleriyle paylaşarak, onları da birer süper kahramana dönüştürür. Bu, filmin 'aile' ve 'takım çalışması' mesajını pekiştirir. 'Shazam!' sadece bir süper kahraman filmi değil, aynı zamanda büyümek, sorumluluk almak ve aile bağlarının önemine dair dokunaklı bir hikaye anlatır. Filmin daha hafif ve mizah dolu tonu, DCEU'nun genel tonundan ayrışarak izleyicilerden olumlu tepkiler almıştır. Zachary Levi'nin çocuk ruhlu bir süper kahramanı canlandırması, filmin en başarılı unsurlarından biri olarak kabul edilir. Film, daha sonra gelecek olan **Shazam! Fury of the Gods (2023)** ve **Black Adam (2022)** gibi yapımların temelini atar.",
+      "refers_to": "'Shazam!', DCEU'nun fantastik ve mistik yönlerini derinleştirerek evrenin ana hikayesine yeni bir boyut getirir. Film, genel DCEU evreni ile doğrudan bağlantılar içerir, ancak daha çok kendi hikayesine odaklanır. Filmin başlangıcında, Billy Batson ve koruyucu kardeşi Freddy Freeman'ın, **Justice League (2017)** filmlerinden kalan haberleri ve Süpermen ile Batman'in varlığını gösteren gazeteleri okuması, filmin aynı evrende geçtiğini doğrular. Freddy, süper kahramanlara karşı olan tutkusuyla, Shazam'ın güçlerini test etmesine yardımcı olurken, bu durum filmdeki komik anların da kaynağı olur. Filmin ana antagonisti olan Dr. Sivana, Yedi Ölümcül Günah'ın gücünü ele geçirir. Bu, DCEU'nun sadece teknolojik ve uzaylı tehditlerle sınırlı kalmayıp, aynı zamanda sihir ve mitolojik güçlerle de zenginleştiğini gösterir. Bu mistik unsurlar, daha sonra **Wonder Woman** serisinde de işlenen tanrısal temalara dolaylı bir göndermedir. Filmin en önemli bağlantısı, Shazam'ın güçlerinin kaynağı olan büyücü ve Sonsuzluk Kayası'dır. Aynı zamanda, Shazam'ın güçlerini kullanması, gelecekteki **Black Adam (2022)** filmine doğrudan bir zemin hazırlar. Büyücü, Black Adam'ın binlerce yıl önce Sonsuzluk Kayası'ndan güç aldığını ve bu gücü kötüye kullandığını ima eder. Bu durum, Shazam ile Black Adam arasında gelecekte kaçınılmaz bir çatışma olacağının sinyalini verir. Filmin sonunda, Billy'nin koruyucu ailesinin de süper kahraman güçleri kazanması, 'Shazam Ailesi'nin oluşumunu sağlar ve **Shazam! Fury of the Gods (2023)** filmindeki takım dinamiği için temel bir hazırlık oluşturur. Post-jenerik sahnede ise, Dr. Sivana'nın hücrede Mr. Mind adındaki süper kötü bir tırtıl ile tanışması, bu karakterin de gelecekteki bir tehdit olacağının sinyallerini verir. Bu atıflar, **Shazam!**'ın hem kendi bağımsız hikayesini anlatıp hem de DCEU'nun ana hikaye akışına entegre olduğunu gösterir. Film, ayrıca DCEU'nun daha hafif ve aile dostu bir tona da sahip olabileceğini kanıtlamıştır. Bu ton değişikliği, evrenin gelecekteki çeşitliliği için önemli bir adımdır.",
+      "canonical_level": "canon",
+      "sources": {
+        "Kaynaklar": [
+          {
+            "name": "Box Office Türkiye",
+            "url": "https://boxofficeturkiye.com/film/shazam--2019126"
+          },
+          {
+            "name": "DC Movies Official Site",
+            "url": "https://www.dc.com/movies/shazam"
+          },
+          {
+            "name": "IMDb",
+            "url": "https://www.imdb.com/title/tt0448115/"
+          }
+        ],
+        "Görsel": [
+          {
+            "name": "IMDb",
+            "url": "https://m.media-amazon.com/images/M/MV5BZGFiZjc4YTAtYzI3YS00NDM2LTllYWUtMTI0MzQ0OTAwOWJhXkEyXkFqcGc@._V1_.jpg"
+          }
+        ],
+        "Platform": [
+          {
+            "name": "Netflix",
+            "url": "https://www.netflix.com/watch/81030627?source=35"
+          }
+        ]
+      },
+      "lang": "tr"
     },
     {
-      "id": "BirdsofPrey",
+      "id": "film/dceu/2020_birds_of_prey",
       "label": "Birds of Prey (2020)",
       "title": "Birds of Prey",
-      "image": "assets/images/dc.jpg",
-      "shape": "image",
-      "description": "'Birds of Prey' yapımı, DC evreninde birlik olmanın bedeli ve kimliklerin çatışması teması etrafında şekillenir. Kahramanların kişisel yolculukları, ahlaki ikilemleri ve güçle kurdukları ilişkiler film boyunca güçlü bir anlatımla sunulur. Görsel atmosfer ve anlatı derinliği öne çıkar.",
-      "refers_to": "Bu filmdeki olay örgüsü, Suicide Squad (2016) ve Justice League (Snyder's Cut) yapımlarında anlatılan gelişmelerin Devamı niteliğindedir. Geçmişte yaşananlar, karakter seçimleri ve çatışma dinamikleri bu bağlamda yeniden işlenir.",
       "type": "film",
       "release_date": "2020-02-07",
-      "level": 5,
-      "universe": "DC"
+      "end_date": null,
+      "image": "https://m.media-amazon.com/images/M/MV5BNTgwNWEwOWMtNGIxMy00YzU5LTk2MzgtMjAzMmM1MjZiY2RiXkEyXkFqcGc@._V1_.jpg",
+      "imdb_rating": 6.1,
+      "yönetmen": [
+        "Cathy Yan"
+      ],
+      "oyuncular": [
+        "Margot Robbie",
+        "Mary Elizabeth Winstead",
+        "Jurnee Smollett-Bell",
+        "Rosie Perez",
+        "Ewan McGregor"
+      ],
+      "tür": [
+        "Aksiyon",
+        "Suç",
+        "Macera"
+      ],
+      "shape": "image",
+      "description": "2020 yapımı 'Birds of Prey', DCEU'nun ana hikayesinden ayrılan, renkli ve sıra dışı bir filmidir. Film, Harley Quinn'in (Margot Robbie) **Suicide Squad (2016)** filminden sonra Joker ile olan ilişkisini bitirmesiyle başlar. Harley, bu ayrılıkla birlikte kendi kimliğini bulmaya ve kendi başına ayakta durmaya çalışır. Ancak, Joker'in koruması olmadan, Gotham'daki pek çok suçlu Harley'den intikam almak ister. Bu düşmanlardan en tehlikelisi, Gotham'ın narsist ve sadist suç lordu Roman Sionis, nam-ı diğer Black Mask'tir (Ewan McGregor). Black Mask, Harley'nin peşine düşerken, Harley de genç bir hırsız olan Cassandra Cain'in (Ella Jay Basco) peşine düşer. Cassandra, Black Mask'e ait çok değerli bir elması çalmıştır ve şimdi hem Black Mask'in hem de Harley'nin hedefi haline gelmiştir. Harley, hayatta kalmak için Black Mask'ten kaçarken, yolları Huntress (Mary Elizabeth Winstead), Black Canary (Jurnee Smollett-Bell) ve Gotham polisi dedektifi Renee Montoya (Rosie Perez) ile kesişir. Her biri kendi nedenleriyle Black Mask'ten intikam almak veya onu durdurmak isteyen bu dört kadın, beklenmedik bir şekilde bir araya gelerek 'Birds of Prey' adlı bir ekip oluşturur. Film, Harley'nin bakış açısıyla anlatıldığı için canlı, enerjik ve yer yer kaotik bir tonu vardır. Aksiyon sahneleri yaratıcı ve akılda kalıcıdır. Film, kadın dayanışması, kendini keşfetme ve toksik ilişkilerden kurtulma temalarını işler. Harley'nin Joker'den bağımsız bir karakter olarak gelişimi, filmin en güçlü yönlerinden biridir. Film, aynı zamanda, Gotham'ın yeraltı dünyasını ve polis teşkilatının yozlaşmış yapısını da gözler önüne serer. 'Birds of Prey', tipik süper kahraman filmi kalıplarının dışına çıkarak, daha çok bir suç komedisi ve aksiyon filmi olarak öne çıkar. Film, sadece eğlenceye odaklanmakla kalmaz, aynı zamanda zorba bir erkek karakterin tehdidi altında bir araya gelen ve güçlenen kadınların hikayesini anlatır. Filmin sonunda ekip, Black Mask'i alt eder ve Cassandra'yı kurtarır. Harley, artık kendi suç ekibini kurmuş, bağımsız ve özgür bir karakterdir. Bu durum, DCEU'nun daha niş karakter hikayelerine odaklanabileceğini gösterir ve Harley Quinn karakterinin popülaritesini pekiştirir. Film, aynı zamanda bir spin-off ve devam filmi olan **The Suicide Squad (2021)** filmi için bir zemin hazırlamış olur.",
+      "refers_to": "'Birds of Prey', DCEU'nun temel filmlerinden ayrılan ancak evrenle güçlü bağlantıları olan bir yan hikayedir. Film, doğrudan **Suicide Squad (2016)** filmindeki olaylardan sonra başlar ve Harley Quinn'in (Margot Robbie) Joker ile olan ilişkisini bitirmesini konu alır. Bu ayrılık, Harley'nin bağımsız bir karakter olarak gelişimi için temel motivasyonu oluşturur. Film, aynı zamanda Batman'in Gotham'da hala aktif olduğunu ima eden göndermeler içerir. Harley, Joker'den ayrılmadan önce Batman'in bir fotoğrafına bakarak geçmişiyle yüzleşir ve Joker'in koruması olmadan Batman'in kendisini hapise atabileceğini söyler. Bu durum, Batman'in gölge varlığının Gotham'daki suç dünyası üzerindeki etkisini vurgular. Filmin ana karakterlerinden biri olan Black Canary (Jurnee Smollett-Bell), Justice League üyesi Green Arrow ile olan çizgi roman bağlantıları nedeniyle, evrenin gelecekteki karakterlerini tanıtmaya yönelik bir adım olarak da görülebilir. Black Canary'nin güçleri ve şarkıcı kimliği, onun Justice League evreninde nasıl bir rol oynayabileceğine dair ipuçları verir. Filmde, Cassandra Cain'in çalmış olduğu elmas, aslında bir mafya ailesinin çok değerli bir mülküdür. Bu durum, Gotham'ın suç dünyasının karmaşık ve tehlikeli yapısını gözler önüne serer. 'Birds of Prey', DCEU'nun sadece büyük felaketlere karşı savaşan kahramanlarla sınırlı kalmayıp, aynı zamanda Gotham'ın suçla dolu sokaklarında geçen daha kişisel ve karakter odaklı hikayeleri de anlatabileceğini gösterir. Filmin sonunda, Harley Quinn'in kendi suç ekibini kurması, **The Suicide Squad (2021)** filmindeki 'Task Force X' görevine katılma motivasyonuna zemin hazırlar. Harley, artık Joker'in gölgesinden çıkmış, kendi kararlarını veren ve kendi yolunu çizen bir karakterdir. Bu film, bir yandan bağımsız bir hikaye anlatırken, diğer yandan da DCEU'nun genişleyen karakter kadrosuna derinlik katar ve bu karakterlerin gelecekteki hikayelerde nasıl bir rol oynayabileceği konusunda beklentiler oluşturur. 'Birds of Prey', DCEU'nun ana akım süper kahraman filmlerinden farklı bir tonda, daha çok kadın odaklı bir hikaye anlatarak, evrenin çeşitliliğini artırır.",
+      "canonical_level": "canon",
+      "sources": {
+        "Kaynaklar": [
+          {
+            "name": "Box Office Türkiye",
+            "url": "https://boxofficeturkiye.com/film/yirtici-kuslar--2019446"
+          },
+          {
+            "name": "DC Movies Official Site",
+            "url": "https://www.dc.com/movies/birds-of-prey"
+          },
+          {
+            "name": "IMDb",
+            "url": "https://www.imdb.com/title/tt7713068/"
+          }
+        ],
+        "Görsel": [
+          {
+            "name": "IMDb",
+            "url": "https://m.media-amazon.com/images/M/MV5BNTgwNWEwOWMtNGIxMy00YzU5LTk2MzgtMjAzMmM1MjZiY2RiXkEyXkFqcGc@._V1_.jpg"
+          }
+        ],
+        "Platform": [
+          {
+            "name": "HBO Max",
+            "url": "https://play.hbomax.com/movie/3a216cd4-a65f-437f-aae0-3628ae316536?utm_source=universal_search"
+          }
+        ]
+      },
+      "lang": "tr"
     },
     {
-      "id": "Peacemaker",
+      "id": "film/dceu/2020_wonder_woman_1984",
+      "label": "Wonder Woman 1984 (2020)",
+      "title": "Wonder Woman 1984",
+      "type": "film",
+      "release_date": "2020-12-25",
+      "end_date": null,
+      "image": "https://upload.wikimedia.org/wikipedia/tr/b/b8/Wonder_Woman_1984.jpg",
+      "imdb_rating": 5.3,
+      "yönetmen": [
+        "Patty Jenkins"
+      ],
+      "oyuncular": [
+        "Gal Gadot",
+        "Chris Pine",
+        "Kristen Wiig",
+        "Pedro Pascal"
+      ],
+      "tür": [
+        "Aksiyon",
+        "Macera",
+        "Fantastik"
+      ],
+      "shape": "image",
+      "description": "2020 yapımı 'Wonder Woman 1984', DCEU'nun mitolojik temellerini genişleten ve karakter odaklı bir hikaye sunan filmidir. Hikaye, 1984 yılında, **Wonder Woman (2017)** filmindeki olaylardan yaklaşık 66 yıl sonra geçer. Diana Prince (Gal Gadot), Washington DC'de bir müzede antika uzmanı olarak çalışmakta ve gizlice süper kahramanlık görevlerini sürdürmektedir. Hala **Wonder Woman** filminde kaybettiği büyük aşkı Steve Trevor'ın (Chris Pine) yasını tutmaktadır ve insanlık dünyasına olan inancını korumaya çalışır. Film, dilekleri gerçekleştiren bir efsanevi eser olan 'Dreamstone'un keşfedilmesiyle başlar. Bu taş, ona dokunan herkesin en büyük arzusunu gerçekleştirir. Diana, bu taşın tehlikeli gücünü fark etmez ve farkında olmadan, kaybettiği Steve Trevor'ın geri dönmesini diler. Steve, başka bir bedende dirilir ve Diana ile yeniden bir araya gelirler. Ancak bu dilek, onu yavaş yavaş güçlerinden ve insanlığından uzaklaştırmaktadır. Aynı zamanda, Diana'nın iş arkadaşı Barbara Ann Minerva (Kristen Wiig), Dreamstone sayesinde daha güçlü ve kendine güvenen birine dönüşmeyi diler, ancak bu durum onu, sonunda Cheetah'ya dönüşecek olan bir canavara çevirir. Filmin ana antagonisti, başarısız bir iş insanı olan Max Lord'dur (Pedro Pascal). Max, Dreamstone'un gücünü ele geçirerek tüm dünyayı dileklerinin bir parçası haline getirmeyi ve mutlak bir güç elde etmeyi planlar. Filmin ana çatışması, dileklerin tehlikeli doğası ve gerçek gücün dışsal nesnelerde değil, içsel değerlerde olduğu teması etrafında döner. Diana, hem Steve'i kaybetme riskiyle hem de dünyanın kurtarılması arasında zor bir seçim yapmak zorunda kalır. Filmin sonunda Diana, tüm dünyanın dileklerini geri çekmesini sağlar ve Max Lord'u alt eder. Ancak bu zaferin bedeli, Steve Trevor'ı tekrar kaybetmektir. Diana, bu filmle birlikte, gerçek gücün sevgi ve fedakarlıkta yattığını anlar ve daha da güçlü bir karaktere dönüşür. 'Wonder Woman 1984', özellikle pandemi sırasında yayınlanması ve tonunun DCEU'nun ilk filmlerine göre daha hafif olması nedeniyle eleştirilerle karşılaşmıştır. Film, bir yandan nostaljik bir 80'ler atmosferi yaratırken, diğer yandan da Wonder Woman'ın karakter gelişimine derinlik katan bir hikaye sunar. Bu film, Wonder Woman'ın, insanlığın iyi yanlarına olan inancını nasıl koruduğunu ve bir kahraman olarak sorumluluklarını nasıl anladığını gösterir.",
+      "refers_to": "'Wonder Woman 1984', DCEU'nun tarihsel yapısını genişleterek, **Wonder Woman (2017)** ve **Justice League (2017)** filmleri arasındaki boşluğu dolduran önemli bir köprü görevi görür. Film, Diana'nın (Gal Gadot) Birinci Dünya Savaşı sonrası yaşadığı kayıpların, özellikle Steve Trevor'ın ölümünün, onun karakteri üzerindeki etkisini derinlemesine işler. Diana'nın **Batman v Superman: Dawn of Justice (2016)** filminde neden bu kadar izole ve yalnız bir karakter olduğu, bu filmde daha iyi anlaşılır hale gelir. Filmdeki Dreamstone'un, bir tanrı tarafından yaratıldığı ve dileklerin sonuçları üzerine kurulu bir güç olduğu bilgisi, DCEU'nun mitolojik temalarını pekiştirir. Bu, Ares'in varlığıyla kurulan mitolojik bağın bir devamıdır ve evrenin kökenlerinin sadece bilim kurguya dayanmadığını gösterir. Filmin ana antagonisti olan Max Lord, 'Dreamstone'un gücünü kullanarak dünyayı kaosa sürüklemeye çalışır. Bu durum, hükümetlerin süper güçlere karşı duyduğu korku ve endişe temasını yeniden gündeme getirir. Bu, **Batman v Superman**'deki çatışmanın temelini oluşturan, süper güçlü varlıkların kontrol altına alınması gerektiği fikriyle paraleldir. 'Wonder Woman 1984'teki Wonder Woman'ın kıyafetinin güncellenmesi ve yeni yeteneklerinin gösterilmesi, onun **Justice League**'deki daha tecrübeli ve güçlü haline evrildiğini kanıtlar. Filmdeki post-jenerik sahnede, **Wonder Woman** filmindeki Steve Trevor'ın kaza yaptığı bir uçağın pilotuna benzeyen bir karakterin gözükmesi, bu filmdeki karakterlerin gelecekteki olası rollerine dair bir ipucu verir. Filmin sonunda Diana, artık çok daha olgun ve insanlığa daha çok bağlı bir karakterdir. Bu durum, **Justice League**'in başında, Batman'in teklifini kabul etmesinin temel nedenlerinden biridir. 'Wonder Woman 1984', DCEU'nun zaman çizelgesini genişleterek, Wonder Woman'ın yüzyıllar boyunca insanlığın arasında nasıl yaşadığını ve ne gibi deneyimler kazandığını gösterir. Film, aynı zamanda, DCEU'nun ana hikayesine yeni karakterler (Cheetah ve Max Lord) kazandırır ve bu karakterlerin gelecekteki olası hikayelerde tekrar ortaya çıkma potansiyelini artırır. Film, DCEU'nun daha renkli ve farklı tonlarda hikayeler anlatma yeteneğini sergileyen bir yapımdır.",
+      "canonical_level": "canon",
+      "sources": {
+        "Kaynaklar": [
+          {
+            "name": "Box Office Türkiye",
+            "url": "https://boxofficeturkiye.com/film/wonder-woman-1984--2019777"
+          },
+          {
+            "name": "DC Movies Official Site",
+            "url": "https://www.dc.com/movies/wonder-woman-1984"
+          },
+          {
+            "name": "IMDb",
+            "url": "https://www.imdb.com/title/tt7126948/"
+          }
+        ],
+        "Görsel": [
+          {
+            "name": "Wikipedia",
+            "url": "https://upload.wikimedia.org/wikipedia/tr/b/b8/Wonder_Woman_1984.jpg"
+          }
+        ],
+        "Platform": [
+          {
+            "name": "Prime Video",
+            "url": "https://www.primevideo.com/dp/amzn1.dv.gti.f1b65247-0b98-4a4b-a21e-0d02cae1fc66?autoplay=0&ref_=atv_cf_strg_wb"
+          }
+        ]
+      },
+      "lang": "tr"
+    },
+    {
+      "id": "film/dceu/2021_zack_snyders_justice_league",
+      "label": "Zack Snyder's Justice League (2021)",
+      "title": "Zack Snyder's Justice League",
+      "type": "film",
+      "release_date": "2021-03-18",
+      "end_date": null,
+      "image": "https://m.media-amazon.com/images/M/MV5BNDA0MzM5YTctZTU2My00NGQ5LWE2NTEtNDM0MjZmMDBkOTZkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "imdb_rating": 7.9,
+      "yönetmen": [
+        "Zack Snyder"
+      ],
+      "oyuncular": [
+        "Ben Affleck",
+        "Henry Cavill",
+        "Amy Adams",
+        "Gal Gadot",
+        "Ezra Miller",
+        "Jason Momoa",
+        "Ray Fisher"
+      ],
+      "tür": [
+        "Aksiyon",
+        "Fantastik",
+        "Bilim Kurgu"
+      ],
+      "shape": "image",
+      "description": "2021 yapımı 'Zack Snyder's Justice League', 2017 yılında vizyona giren filmin, yönetmen Zack Snyder'ın orijinal vizyonuna sadık kalan, yeniden kurgulanmış ve genişletilmiş versiyonudur. Film, **Batman v Superman: Dawn of Justice (2016)** filminde Superman'in ölümünden sonraki olayları daha detaylı bir şekilde ele alır. Superman'in fedakarlığı, dünyada büyük bir yas ve umutsuzluk dalgası yaratırken, bu boşluk, Yeni Tanrıların (New Gods) zalim lideri Darkseid'in teğmeni Steppenwolf'un (Ciarán Hinds) dikkatini çeker. Steppenwolf, Apokolips gezegeninin nihai silahı olan üç adet Ana Kutusu'nu (Mother Box) ele geçirmek için Dünya'yı işgal etmeye karar verir. Bu kutular, zaman ve uzayda kontrolsüz bir yıkım gücü barındıran, neredeyse sonsuz enerji kaynaklarıdır. Bruce Wayne (Ben Affleck), yaklaşan bu tehlikeyi önceden hissetmiş ve Wonder Woman (Gal Gadot) ile birlikte, bu tehdide karşı koyabilecek süper güçlere sahip bireyleri bir araya getirmeye karar vermiştir. Film, her bir kahramanın (The Flash, Aquaman, Cyborg) hikayesini ve ekibe katılma motivasyonlarını 2017 versiyonundan çok daha derinlemesine işler. Cyborg'un (Ray Fisher) köken hikayesi, babasının S.T.A.R. Labs'ta Ana Kutusu'nu kullanarak onu hayata döndürmesiyle daha duygusal ve detaylı bir şekilde anlatılır. Flash'ın (Ezra Miller) güçlerinin sınırlarını keşfetme yolculuğu, Aquaman'in (Jason Momoa) Atlantis'ten ve ailesinden gelen mirasıyla yüzleşmesi de filmin odak noktalarındandır. Ekip, Steppenwolf'u durdurmak için Superman'i (Henry Cavill) diriltme kararı alır. Superman'in dönüşü, ekibin dengesini değiştirir ve sonunda Steppenwolf'u yenmelerini sağlar. Film, orijinal versiyona göre daha karanlık bir tona sahiptir ve Batman'in kabus sahnelerinde Darkseid'in gelecekteki tehdidine dair daha net ipuçları verir. 'Snyder Cut', sadece bir ekip kurma filmi olmaktan öte, kahramanların psikolojik derinliğini, kayıp, umut ve fedakarlık temalarını daha yoğun bir şekilde işler. Filmin sonu, Steppenwolf'un yenilgisiyle bitmekle kalmaz, aynı zamanda Joker'in (Jared Leto) hikayesi ve Bruce Wayne'in, gelecekteki Darkseid tehdidine karşı hazırlıklarına dair sahnelerle de devam eder. Bu versiyon, DCEU'nun ana hikayesine daha bütünlüklü ve sanatsal bir bakış açısı sunar ve izleyiciler tarafından çok daha olumlu karşılanmıştır. 'Snyder Cut', yönetmenin evrene olan vizyonunu tam anlamıyla yansıtarak, kahramanların bir araya gelme hikayesini epik ve dokunaklı bir şekilde anlatır.",
+      "refers_to": "'Zack Snyder's Justice League', DCEU'nun temel filmlerini daha tutarlı ve kapsamlı bir şekilde birbirine bağlayan, bir nevi 'yönetmen kurgusu' niteliğindedir. Film, öncelikle **Man of Steel (2013)** ve **Batman v Superman: Dawn of Justice (2016)** filmlerinin hikayelerini ve Superman'in ölümünün yarattığı boşluğu daha derinlemesine işler. Superman'in yokluğu, Steppenwolf'un (Darkseid'in komutanı) dünyaya olan ilgisini artırır ve bu durum, Justice League'in kurulmasını zorunlu kılar. Film, 2017 versiyonunda kesilen veya değiştirilen sahnelerle birlikte, her bir karakterin motivasyonunu ve hikayesini daha iyi açıklar. Cyborg'un (Ray Fisher) hikayesi, babası Silas Stone ile olan ilişkisi ve Ana Kutusu'nun (Mother Box) gücüyle nasıl birleştiği daha detaylı anlatılır. Bu, S.T.A.R. Labs'ın rolünü ve bu teknolojinin evrendeki yerini daha anlaşılır kılar. Film, aynı zamanda Aquaman'in (Jason Momoa) Atlantis'e olan isteksizliğini ve Flash'ın (Ezra Miller) hız gücünün sınırlarını zorlama çabasını da daha iyi işler. Filmin en önemli atıflarından biri, Darkseid'in (Ray Porter) hikayeye tam olarak dahil olmasıdır. Steppenwolf, Darkseid'in komutanı olarak gösterilir ve Darkseid'in geçmişte Dünya'yı işgal etme girişimi, **Wonder Woman (2017)** filminin Amazonlar, İnsanlar ve Atlantisliler'in ittifakı hikayesiyle doğrudan bağlantılıdır. Film, bu olayları daha geniş bir perspektifle ele alır ve Apokolips gezegeninin ve Yeni Tanrıların varlığını net bir şekilde ortaya koyar. 'Snyder Cut'ın belki de en önemli katkısı, 'Knightmare' (Kabus) sekansında Bruce Wayne'in (Ben Affleck) gelecekte Darkseid tarafından ele geçirilmiş bir dünyada yaşadığı kabus sahnesinin genişletilmiş versiyonudur. Bu sahnede, Superman'in düşüşü, Darkseid'in dünyaya gelişi ve Joker'in (Jared Leto) hikayeye dahil oluşu gibi olaylar gösterilir. Bu, gelecekteki hikayelere yönelik güçlü ipuçları ve potansiyel çatışma alanları sunar. Filmin sonunda, Martian Manhunter karakterinin de hikayeye dahil olması ve Darkseid'in tehdidiyle yüzleşmeye hazırlık yapılması, DCEU'nun devam etmesi planlanan hikayeleri için sağlam bir zemin oluşturur. 'Zack Snyder's Justice League', DCEU'nun ana hikaye akışını daha bütünlüklü, karanlık ve epik bir tonla birleştirir, ve evrenin mitolojik yapısını güçlendirir.",
+      "canonical_level": "canon",
+      "sources": {
+        "Kaynaklar": [
+          {
+            "name": "Box Office Türkiye",
+            "url": "https://boxofficeturkiye.com/film/zack-snyder-s-justice-league--2021074"
+          },
+          {
+            "name": "DC Movies Official Site",
+            "url": "https://www.dc.com/movies/zack-snyders-justice-league"
+          },
+          {
+            "name": "IMDb",
+            "url": "https://www.imdb.com/title/tt12361974/"
+          }
+        ],
+        "Görsel": [
+          {
+            "name": "IMDb",
+            "url": "https://m.media-amazon.com/images/M/MV5BNDA0MzM5YTctZTU2My00NGQ5LWE2NTEtNDM0MjZmMDBkOTZkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+          }
+        ],
+        "Platform": [
+          {
+            "name": "Prime Video",
+            "url": "https://www.primevideo.com/-/tr/detail/Zack-Snyders-Justice-League/0TVQFZG0Q8654KYCAU9936TNOI"
+          }
+        ]
+      },
+      "lang": "tr"
+    },
+    {
+      "id": "film/dceu/2021_the_suicide_squad",
+      "label": "The Suicide Squad (2021)",
+      "title": "The Suicide Squad",
+      "type": "film",
+      "release_date": "2021-08-06",
+      "end_date": null,
+      "image": "https://m.media-amazon.com/images/M/MV5BMWU3Y2NlZmEtMjJjNS00ZWMxLWE1MzctYWYyMjMzMDdkNTE4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "imdb_rating": 7.2,
+      "yönetmen": [
+        "James Gunn"
+      ],
+      "oyuncular": [
+        "Margot Robbie",
+        "Idris Elba",
+        "John Cena",
+        "Sylvester Stallone",
+        "Viola Davis"
+      ],
+      "tür": [
+        "Aksiyon",
+        "Komedi",
+        "Fantastik"
+      ],
+      "shape": "image",
+      "description": "2021 yapımı 'The Suicide Squad', DCEU'da geçen ve **Suicide Squad (2016)** filminin tonundan ve hikayesinden oldukça farklı bir yaklaşımla, James Gunn'ın özgün yönetmenliğinde çekilmiş bir filmdir. Film, gizli devlet kurumu yöneticisi Amanda Waller'ın (Viola Davis) 'Task Force X' adlı süper kötü ekibini yeniden bir araya getirmesiyle başlar. Bu ekip, Güney Amerika'daki Corto Maltese adasına gönderilir. Görevleri, adadaki yeni diktatörlük rejiminin eline geçmiş olan ve dünyayı tehdit eden 'Project Starfish' adlı bir sırrı yok etmektir. Ekipte, **Suicide Squad** filminden geri dönen Harley Quinn (Margot Robbie) ve Captain Boomerang (Jai Courtney) gibi karakterler, yeni üyeler olan Bloodsport (Idris Elba), Peacemaker (John Cena), King Shark (Sylvester Stallone), Ratcatcher 2 (Daniela Melchior) ve Polka-Dot Man (David Dastmalchian) ile bir araya gelir. Filmin en dikkat çekici yönü, James Gunn'ın özgün mizah anlayışı, abartılı şiddet sahneleri ve sıra dışı karakterleridir. Film, bir takımın başarısız olma ihtimalinin yüksek olduğu 'intihar görevlerini' daha gerçekçi ve kaotik bir şekilde ele alır. İlk ekip adaya iner inmez neredeyse tamamı yok edilir, bu da Waller'ın görevleri ve karakterleri ne kadar umursamadığını gösterir. Hikayenin ilerleyişi, ekibin hem kendi içindeki çatışmaları hem de Corto Maltese'deki politik durumla olan mücadelelerini anlatır. Bloodsport ve Peacemaker arasındaki liderlik ve ideolojik çatışma, filmin ana dinamiklerinden biridir. Filmin tonu, ilk filme göre daha koyu bir komediye ve aksiyona sahiptir. Film, karakterlerin beklenmedik fedakarlıklar yapmasını ve aralarında bağ kurmasını işler. Ekibin 'Project Starfish'ı araştırırken karşılaştıkları şeyin, devasa bir uzaylı yaratık olan Starro olduğunu keşfetmesi, filmi daha epik bir hale getirir. Film, ayrıca Waller'ın manipülasyonlarını ve devletin bu kötü karakterleri nasıl kullandığını da eleştirir. 'The Suicide Squad', eleştirel anlamda büyük bir başarı elde ederek, DCEU'nun en iyi filmlerinden biri olarak kabul edilir. Film, sadece eğlenceye odaklanmakla kalmaz, aynı zamanda arkadaşlık, sadakat ve fedakarlık gibi temaları da işler. Filmin sonunda Starro'yu yendikten sonra, hayatta kalan karakterler, Waller'ı tehdit ederek görevden ayrılırlar. Bu durum, gelecekteki olası hikayeler için açık kapı bırakır ve özellikle Peacemaker karakterinin hikayesinin devamını getirecek bir diziye zemin hazırlar.",
+      "refers_to": "'The Suicide Squad', DCEU'nun ana hikaye akışına doğrudan bağlı olmayan, ancak evrendeki karakterlerin ve olayların varlığını kabul eden bir filmidir. Film, doğrudan **Suicide Squad (2016)** filmindeki Harley Quinn'in hikayesini devam ettirir. Harley, bu filmde Joker'den bağımsız, daha güçlü ve kendi kararlarını veren bir karakter olarak geri döner. Film, ayrıca Batman'in ve Superman'in varlığına da göndermeler yapar. Bloodsport'un (Idris Elba) hapiste olmasının nedeni, Süperman'i bir kryptonite mermisiyle hastanelik etmesidir. Bu durum, Superman'in evrendeki varlığının ve gücünün ne kadar etkili olduğunu gösterir. Filmdeki Peacemaker karakteri (John Cena), görevdeki acımasız ve vatansever duruşuyla, daha sonra kendi adını taşıyan dizi **Peacemaker (2022)** için doğrudan bir zemin hazırlar. Filmin sonunda hayatta kalan Peacemaker, Waller'ın emriyle gizli bir görev için hastaneye götürülür, bu da dizinin başlangıç noktasını oluşturur. 'The Suicide Squad', ayrıca Corto Maltese'de geçen hikayesiyle, DCEU'nun küresel ölçeğini ve politik atmosferini genişletir. Waller'ın, kötü karakterleri manipüle etme ve onları intihar görevlerine gönderme motivasyonu, evrenin daha ahlaki gri alanlar içeren yönlerini ortaya koyar. Filmde yer alan Polka-Dot Man'in hikayesi, daha önceki filmlerde de adı geçen S.T.A.R. Labs'ın bilimsel deneylerinin, insanları nasıl meta-insanlara dönüştürdüğüne dair bir ipucu verir. Film, bu detaylarla, ana akım süper kahraman hikayelerinden ayrılarak, evrenin daha geniş ve karmaşık bir yapısını gözler önüne serer. 'The Suicide Squad', DCEU'nun devam etmesi planlanan hikayelerine, yeni karakterler ve potansiyel çatışma alanları sunarak katkıda bulunur. Bu film, **Birds of Prey** gibi, DCEU'nun daha bağımsız ve yönetmen odaklı projelere de yer verebileceğini kanıtlar. Bu, evrenin gelecekteki yönü için önemli bir adımdır ve DC'nin hikaye anlatımında daha cesur adımlar atacağını gösterir.",
+      "canonical_level": "canon",
+      "sources": {
+        "Kaynaklar": [
+          {
+            "name": "Box Office Türkiye",
+            "url": "https://boxofficeturkiye.com/film/the-suicide-squad--2021571"
+          },
+          {
+            "name": "DC Movies Official Site",
+            "url": "https://www.dc.com/movies/the-suicide-squad"
+          },
+          {
+            "name": "IMDb",
+            "url": "https://www.imdb.com/title/tt6334354/"
+          }
+        ],
+        "Görsel": [
+          {
+            "name": "IMDb",
+            "url": "https://m.media-amazon.com/images/M/MV5BMWU3Y2NlZmEtMjJjNS00ZWMxLWE1MzctYWYyMjMzMDdkNTE4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+          }
+        ],
+        "Platform": [
+          {
+            "name": "HBO Max",
+            "url": "https://play.hbomax.com/movie/a894672e-d064-4e92-806a-543e5c7075c0"
+          }
+        ]
+      },
+      "lang": "tr"
+    },
+    {
+      "id": "dizi/dceu/2022_peacemaker",
       "label": "Peacemaker (2022)",
       "title": "Peacemaker",
-      "image": "assets/images/dc.jpg",
-      "shape": "image",
-      "description": "'Peacemaker' yapımı, DC evreninde adalet ve intikam arasındaki ince çizgi teması etrafında şekillenir. Kahramanların kişisel yolculukları, ahlaki ikilemleri ve güçle kurdukları ilişkiler film boyunca güçlü bir anlatımla sunulur. Görsel atmosfer ve anlatı derinliği öne çıkar.",
-      "refers_to": "Peacemaker’da Justice League (Snyder's Cut) ve Wonder Woman 1984 ile kurulan bağlar, evrenin kronolojik gelişimine katkı sağlar. Karakterler arası ilişkiler, karar anları ve tematik paralellikler bu filmde açıkça hissedilir.",
-      "type": "film",
+      "type": "dizi",
       "release_date": "2022-01-13",
-      "level": 6,
-      "universe": "DC"
+      "end_date": "2022-02-17",
+      "image": "https://m.media-amazon.com/images/M/MV5BZDIyMGU2NTktOTM3YS00OTRjLWJiMmItNDEyNjVhZTZiZGUxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "imdb_rating": 8.3,
+      "yönetmen": [
+        "James Gunn"
+      ],
+      "oyuncular": [
+        "John Cena",
+        "Danielle Brooks",
+        "Freddie Stroma",
+        "Chukwudi Iwuji",
+        "Robert Patrick"
+      ],
+      "tür": [
+        "Aksiyon",
+        "Komedi",
+        "Fantastik"
+      ],
+      "shape": "image",
+      "description": "2022 yapımı 'Peacemaker', James Gunn tarafından yazılan ve yönetilen, DCEU'nun ilk dizisi olma özelliğini taşır. Dizi, **The Suicide Squad (2021)** filminin post-jenerik sahnesinden hemen sonra başlar ve Christopher Smith, nam-ı diğer Peacemaker'ın (John Cena) hikayesini anlatır. Filmde ağır bir şekilde yaralanan Peacemaker, hastaneden taburcu edilir edilmez, Amanda Waller'ın (Viola Davis) yönettiği yeni bir gizli görevle karşı karşıya kalır. 'Project Butterfly' adlı bu görevin amacı, insan bedenlerini ele geçiren uzaylı 'kelebekleri' durdurmaktır. Peacemaker'ın ekibinde, Waller'ın kızı Leota Adebayo (Danielle Brooks), Clemson Murn (Chukwudi Iwuji), John Economos (Steve Agee) ve Emilia Harcourt (Jennifer Holland) gibi karakterler bulunur. Dizi, Peacemaker'ın 'barış için ne gerekiyorsa yapacağım' felsefesiyle, görevi icra ederken yaşadığı ahlaki ve etik ikilemleri, komik ve şiddet dolu bir dille işler. Peacemaker, bir yandan görevi tamamlamaya çalışırken, diğer yandan da babası White Dragon'ın (Robert Patrick) ve geçmişinin gölgeleriyle yüzleşmek zorunda kalır. Dizi, Peacemaker'ın çocukluğundan gelen travmalarını ve bu travmaların onu nasıl birine dönüştürdüğünü derinlemesine inceler. James Gunn'ın özgün mizahı, absürt diyalogları ve dikkat çekici müzik kullanımı, diziyi DCEU'nun diğer yapımlarından ayırır. Dizi, sadece bir aksiyon komedisi olmaktan öte, aynı zamanda aile içi şiddet, vatanseverlik ve manipülasyon gibi ciddi temalara da değinir. Leota Adebayo karakterinin hikayesi, Amanda Waller'ın manipülatif ve acımasız doğasını daha da gözler önüne serer. Peacemaker, görevin ilerleyişinde ekibine güvenmeye başlar ve kendi ideallerini sorgular. Dizi, Peacemaker'ın karakter gelişimini ve insanlığını yeniden bulma yolculuğunu işler. Finalde Peacemaker, kelebekleri yener ve babasını öldürür. Dizi, Justice League üyelerinin son anda yardıma gelmesiyle sona erer, bu da Peacemaker'ın evrenin daha büyük bir parçası olduğunu kanıtlar. 'Peacemaker', DCEU'nun daha küçük, karakter odaklı hikayeler anlatma potansiyelini gösteren başarılı bir yapım olmuştur ve eleştirel anlamda büyük övgü toplamıştır. Bu dizi, DCEU'nun gelecekteki yönü için önemli bir sinyal niteliğindedir.",
+      "refers_to": "'Peacemaker', doğrudan **The Suicide Squad (2021)** filminin olaylarından sonra başlar ve filmde yaşanan olayların sonuçlarını detaylandırır. Dizi, Peacemaker'ın (John Cena) filmde maruz kaldığı ağır yaralanmanın ardından nasıl hayatta kaldığını ve Amanda Waller'ın (Viola Davis) onu yeni bir göreve nasıl zorladığını gösterir. Bu, filmle dizi arasındaki doğrudan ve güçlü bir bağlantıdır. Dizi, aynı zamanda Amanda Waller'ın manipülatif ve acımasız doğasını daha da gözler önüne serer, Waller'ın kızı Leota Adebayo'yu (Danielle Brooks) kullanarak Peacemaker'ı kontrol etmeye çalışması, karakterin DCEU'daki rolünün ne kadar kritik olduğunu gösterir. 'Peacemaker', DCEU'nun ana kahramanları olan **Justice League** üyelerine de atıflar yapar. Dizinin sonunda, Superman, Wonder Woman, Flash ve Aquaman'ın yardıma gelmesi, bu karakterlerin evrendeki varlığını ve ekip olarak ne kadar güçlü olduklarını kanıtlar. Ancak, bu kahramanların dizi boyunca yokluğu, Peacemaker'ın kendi başına mücadele etmesini gerektirir. Dizi, aynı zamanda 'Project Butterfly' adlı göreviyle, DCEU'nun uzaylı tehditlerinin sadece Steppenwolf veya Kryptonlularla sınırlı kalmadığını, daha küçük ölçekli ve gizli istilaların da olabileceğini gösterir. Dizi, Peacemaker'ın çocukluğuna ve babası White Dragon ile olan travmatik ilişkisine odaklanarak, karakterin neden bu kadar sert ve ahlaki açıdan karmaşık olduğunu açıklar. White Dragon karakteri, DCEU'nun suç ve ırkçılık gibi daha karanlık temalarını işlemesine olanak tanır. 'Peacemaker', DCEU'nun dizi formatına başarılı bir geçiş yaptığını gösterir ve evrenin gelecekte daha fazla yan hikaye ve karakter odaklı içeriklerle genişleyeceğinin sinyalini verir. Dizi, karakterlerin geçmişini ve motivasyonlarını derinleştirerek, onları daha insani ve anlaşılır hale getirir. Bu, DCEU'nun karakter gelişimine daha fazla önem vereceğini gösterir. Dizi, ayrıca Bloodsport ve Peacemaker arasındaki rekabetin, evrenin gelecekteki karakter dinamikleri için ne kadar önemli olabileceğini de ima eder. 'Peacemaker', James Gunn'ın DCEU evrenine getirdiği özgün tonu ve hikaye anlatımını pekiştirir ve gelecekteki projeleri için bir temel oluşturur.",
+      "canonical_level": "canon",
+      "sources": {
+        "Kaynaklar": [
+          {
+            "name": "Box Office Türkiye",
+            "url": "https://boxofficeturkiye.com/dizi/peacemaker-1002"
+          },
+          {
+            "name": "DC Movies Official Site",
+            "url": "https://www.dc.com/tv/peacemaker"
+          },
+          {
+            "name": "IMDb",
+            "url": "https://www.imdb.com/title/tt13146488/"
+          }
+        ],
+        "Görsel": [
+          {
+            "name": "IMDb",
+            "url": "https://m.media-amazon.com/images/M/MV5BZDIyMGU2NTktOTM3YS00OTRjLWJiMmItNDEyNjVhZTZiZGUxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+          }
+        ],
+        "Platform": [
+          {
+            "name": "Prime Video",
+            "url": "https://www.primevideo.com/-/tr/detail/Peacemaker/0JMK4E9VROZ9YEZ91KM73DR079"
+          }
+        ]
+      },
+      "lang": "tr"
     },
     {
-      "id": "BlackAdam",
+      "id": "film/dceu/2022_black_adam",
       "label": "Black Adam (2022)",
       "title": "Black Adam",
-      "image": "assets/images/dc.jpg",
-      "shape": "image",
-      "description": "'Black Adam' yapımı, DC evreninde kötülüğe karşı fedakârlığın ve inancın zaferi teması etrafında şekillenir. Kahramanların kişisel yolculukları, ahlaki ikilemleri ve güçle kurdukları ilişkiler film boyunca güçlü bir anlatımla sunulur. Görsel atmosfer ve anlatı derinliği öne çıkar.",
-      "refers_to": "Black Adam, Shazam! (2019) ve Aquaman (2018) yapımlarıyla karakterler arası çatışmalar, evrenin sürekliliği ve geçmiş olaylara yapılan göndermelerle örülü bir bağ kurar. Bu bağlantılar izleyicinin karakter motivasyonlarını daha iyi anlamasını sağlar.",
       "type": "film",
       "release_date": "2022-10-21",
-      "level": 6,
-      "universe": "DC"
+      "end_date": null,
+      "image": "https://upload.wikimedia.org/wikipedia/tr/thumb/4/4a/Black_Adam_film_afi%C5%9Fi.jpg/250px-Black_Adam_film_afi%C5%9Fi.jpg",
+      "imdb_rating": 6.2,
+      "yönetmen": [
+        "Jaume Collet-Serra"
+      ],
+      "oyuncular": [
+        "Dwayne Johnson",
+        "Aldis Hodge",
+        "Noah Centineo",
+        "Sarah Shahi",
+        "Pierce Brosnan"
+      ],
+      "tür": [
+        "Aksiyon",
+        "Fantastik",
+        "Bilim Kurgu"
+      ],
+      "shape": "image",
+      "description": "2022 yapımı 'Black Adam', DCEU'ya anti-kahraman Black Adam'ın (Dwayne Johnson) hikayesini getiren bir filmidir. Film, antik Kahndaq şehrinde, tiran bir kralın zulmüne karşı direnen Teth-Adam'ın 5000 yıl önce Shazam büyücüsü tarafından güçlendirilmesiyle başlar. Ancak, Teth-Adam gücünü kötüye kullanır ve intikam peşinde koştuğu için Sonsuzluk Kayası'nda hapsedilir. Filmin ana hikayesi günümüzde, Kahndaq'ın işgal altında olduğu bir zamanda geçer. Bir arkeolog olan Adrianna Tomaz (Sarah Shahi), efsanevi bir taç ararken, yanlışlıkla Teth-Adam'ı uykusundan uyandırır. Serbest kalan Teth-Adam, gücünü kullanarak Kahndaq'ı işgalcilerden kurtarmaya başlar, ancak bunu yaparken acımasız ve ölümcül yöntemler kullanır. Bu durum, onu kahramanlık ve kötülük arasındaki gri alanda konumlandırır. Onun eylemleri, Justice Society of America (JSA) adlı süper kahraman takımının dikkatini çeker. JSA, Hawkman (Aldis Hodge), Dr. Fate (Pierce Brosnan), Atom Smasher (Noah Centineo) ve Cyclone (Quintessa Swindell) gibi üyelerden oluşur ve Black Adam'ı durdurmak için Kahndaq'a gelir. JSA, Black Adam'ın acımasız yöntemlerini kabul edemez ve onu hapse atmaya çalışır. Film, bir yandan Teth-Adam'ın geçmişini ve oğlunu kaybetmesinin getirdiği travmayı anlatırken, diğer yandan da JSA ile olan çatışmasını işler. Film, 'kahramanlığın' ne anlama geldiğini ve adaletin sınırlarının neler olduğunu sorgular. Black Adam, JSA'nın kurallarını umursamaz ve Kahndaq halkı için bir kahraman, ancak dış dünya için bir tehdit olarak görülür. Film, aksiyon sahneleri, görsel efektleri ve özellikle Dwayne Johnson'ın karizmatik performansı ile öne çıkar. Pierce Brosnan'ın Dr. Fate performansı da büyük beğeni toplar. Film, Black Adam'ın anti-kahraman kimliğini pekiştirir ve onu DCEU'nun en güçlü figürlerinden biri olarak konumlandırır. Filmin sonunda Black Adam, JSA ile bir araya gelerek, tiran bir iblisi yener ve Kahndaq'ın koruyucusu olur. Ancak, JSA ile olan ilişkileri belirsiz bir şekilde sona erer. Filmin en önemli sürprizi, post-jenerik sahnede Superman'in (Henry Cavill) görünmesidir. Bu sahne, Black Adam ve Superman arasında olası bir çatışmanın sinyallerini verir ve DCEU'nun geleceği için büyük beklentiler oluşturur.",
+      "refers_to": "'Black Adam', DCEU'nun ana hikayesine yeni karakterler ve takımlar ekleyerek evrenin genişlemesini sağlayan bir filmdir. Filmin en önemli bağlantısı, **Shazam! (2019)** filmiyle olan tarihi bağdır. Black Adam, binlerce yıl önce Shazam büyücüsü tarafından güçlendirilen ve gücü kötüye kullandığı için hapsedilen ilk şampiyondur. Film, bu tarihi arka planı derinleştirerek, Shazam ve Black Adam arasındaki gelecekteki kaçınılmaz çatışmanın temelini atar. Film, aynı zamanda Justice Society of America (JSA) adlı süper kahraman takımını da DCEU'ya tanıtır. JSA'nın varlığı, Justice League'den önce de dünyayı koruyan bir takımın olduğunu gösterir. Bu, DCEU'nun geçmişine dair yeni bilgiler sunar ve evrenin daha geniş bir mitolojiye sahip olduğunu kanıtlar. JSA'nın üyelerinden Dr. Fate'in (Pierce Brosnan) güçleri ve evrenin mistik yönleri, **Wonder Woman** ve **Shazam!** gibi filmlerde işlenen mitolojik ve sihirsel temaları pekiştirir. Filmin en kritik atıfı, post-jenerik sahnede Superman'in (Henry Cavill) beklenmedik dönüşüdür. Superman, Black Adam'a Kahndaq'ın koruyucusu olarak dünyada bir denge unsuru olması gerektiğini söyler ve bu da iki güç merkezi arasında olası bir çatışmanın kapısını aralar. Bu sahne, DCEU'nun geleceği için büyük bir beklenti yaratır ve Superman'in evrendeki rolünü yeniden tanımlar. 'Black Adam', bu sahnelerle, Justice League'in ötesinde daha büyük çatışmaların ve ittifakların olabileceğinin sinyalini verir. Film, Kahndaq'ın bir ulus olarak özgürleşmesi temasını işlerken, aynı zamanda süper güçlerin uluslararası politikadaki yerini de sorgular. Black Adam'ın acımasız adalet anlayışı, Batman'in kontrol altına alınması gerektiğine inandığı süper güçlü varlıklar temasıyla da paralellikler gösterir. Bu film, DCEU'nun daha geniş bir dünyaya açıldığını ve sadece Amerika merkezli kahraman hikayelerinden ibaret olmadığını gösterir. 'Black Adam', DCEU'nun gelecekteki yönü için önemli bir adım olarak kabul edilir, ancak sonrasında gelen DCU yeniden yapılanmasıyla bu planlar değişmiştir.",
+      "canonical_level": "canon",
+      "sources": {
+        "Kaynaklar": [
+          {
+            "name": "Box Office Türkiye",
+            "url": "https://boxofficeturkiye.com/film/black-adam--2022432"
+          },
+          {
+            "name": "DC Movies Official Site",
+            "url": "https://www.dc.com/movies/black-adam"
+          },
+          {
+            "name": "IMDb",
+            "url": "https://www.imdb.com/title/tt6468080/"
+          }
+        ],
+        "Görsel": [
+          {
+            "name": "Wikipedia",
+            "url": "https://upload.wikimedia.org/wikipedia/tr/thumb/4/4a/Black_Adam_film_afi%C5%9Fi.jpg/250px-Black_Adam_film_afi%C5%9Fi.jpg"
+          }
+        ],
+        "Platform": [
+          {
+            "name": "HBO Max",
+            "url": "https://play.hbomax.com/movie/0c730836-253b-4338-a3d1-a6a44a3384e0?utm_source=universal_search"
+          }
+        ]
+      },
+      "lang": "tr"
     },
     {
-      "id": "TheFlash",
+      "id": "film/dceu/2023_shazam_fury_of_the_gods",
+      "label": "Shazam! Fury of the Gods (2023)",
+      "title": "Shazam! Fury of the Gods",
+      "type": "film",
+      "release_date": "2023-03-17",
+      "end_date": null,
+      "image": "https://m.media-amazon.com/images/M/MV5BMjdlYzAwYTMtMWJlOC00OTQ5LWJhMmYtMDhjNGY4M2RhMGU4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "imdb_rating": 5.9,
+      "yönetmen": [
+        "David F. Sandberg"
+      ],
+      "oyuncular": [
+        "Zachary Levi",
+        "Asher Angel",
+        "Jack Dylan Grazer",
+        "Helen Mirren",
+        "Lucy Liu",
+        "Rachel Zegler"
+      ],
+      "tür": [
+        "Aksiyon",
+        "Fantastik",
+        "Komedi"
+      ],
+      "shape": "image",
+      "description": "2023 yapımı 'Shazam! Fury of the Gods', **Shazam! (2019)** filminin devamı niteliğindedir ve Billy Batson (Asher Angel) ile Shazam Ailesi'nin hikayesini anlatır. Film, genç kahramanların, güçlerini kullanırken yaptıkları hatalar ve bunların getirdiği sonuçlar üzerine odaklanır. Shazam Ailesi, Philadelphia'yı korumaya çalışırken, yaptıkları bir hatayla kamuoyunun ve medyanın eleştirilerine maruz kalır. Billy, hem bir yetişkin süper kahraman olarak hem de kendi kimliğini bulmaya çalışan bir genç olarak kimlik krizi yaşar. Bu sırada, Zeus'un kızları olan Hespera (Helen Mirren), Kalypso (Lucy Liu) ve Anthea (Rachel Zegler), güçlerinin çalındığına inanarak Sonsuzluk Kayası'na gelir ve büyücünün asasını ele geçirir. Bu durum, Shazam'ın ve ailesinin güçlerini kaybetme tehlikesiyle karşı karşıya kalmasına neden olur. Hespera ve Kalypso, babalarının intikamını almak ve dünyayı yok etmek için güçlü bir ejderha yaratır. Shazam Ailesi, Philadelphia'yı ve tüm dünyayı bu mitolojik tehditten korumak için bir araya gelir. Film, aile bağları ve takım çalışması temalarını daha da pekiştirir. Shazam, ailesinin desteği olmadan bu yeni tehditle başa çıkamayacağını anlar ve her bir üye, kendi yeteneklerini kullanarak savaşa katılır. Filmin tonu, ilk filme göre daha koyu ve aksiyon odaklıdır, ancak yine de mizah ve aile draması unsurlarını korur. Rachel Zegler'ın canlandırdığı Anthea karakteri, Shazam Ailesi'ne beklenmedik bir şekilde katılarak hikayeye yeni bir dinamik katar. 'Shazam! Fury of the Gods', sadece bir süper kahraman filmi olmanın ötesinde, genç kahramanların büyümek ve sorumluluk almak zorunda kalmasını işleyen bir hikayedir. Billy, filmin sonunda kendisini feda ederek dünyayı kurtarır, ancak bu fedakarlık, Wonder Woman'ın (Gal Gadot) yardımıyla tersine döner ve Shazam yeniden hayata döner. Bu durum, Shazam'ın gelecekte Justice League gibi takımların bir parçası olabileceğini gösterir. Film, eleştirel anlamda karışık yorumlar alsa da, serinin hikayesini ileriye taşır ve karakterlerin gelişimine önemli katkılar sağlar. Bu film, Shazam Ailesi'nin evrendeki yerini sağlamlaştırır ve potansiyel gelecek hikayeler için açık kapı bırakır.",
+      "refers_to": "'Shazam! Fury of the Gods', DCEU'nun mitolojik ve tanrısal unsurlarına odaklanarak, evrenin farklı köşelerini birbirine bağlar. Filmin hikayesi, doğrudan **Shazam! (2019)** filminin devamıdır ve Billy Batson ile Shazam Ailesi'nin güçlerini nasıl kullandığını ve onlarla nasıl yaşadığını gösterir. Film, ayrıca **Wonder Woman (2017)** filminde işlenen Yunan mitolojisi temalarını daha da ileriye taşır. Filmin antagonistleri olan Hespera, Kalypso ve Anthea, Zeus'un kızları olarak tanıtılır ve bu durum, Wonder Woman'ın Amazon kökenleri ve tanrısal bağlantılarıyla paralellikler gösterir. Film, aynı zamanda, Wonder Woman'ın (Gal Gadot) son sahnede Shazam'ın dirilmesine yardım etmesiyle, bu iki karakter arasında güçlü bir bağlantı kurar. Wonder Woman'ın tanrısal bir varlık olarak, Shazam'a yardım etme yeteneği, onun evrendeki rolünün ne kadar önemli olduğunu vurgular. 'Shazam! Fury of the Gods', ayrıca Justice League üyelerine yönelik mizahi göndermeler de içerir. Billy, kendi kimliğini ve yerini bulmaya çalışırken, diğer süper kahramanlarla (özellikle Aquaman ve Superman) karşılaştırmalar yapar. Bu, filmin DCEU'nun ana akımından çok uzaklaşmadığını ve evrenin diğer kahramanlarının varlığını kabul ettiğini gösterir. Filmdeki bir post-jenerik sahne, **Peacemaker (2022)** dizisine doğrudan bir atıftır. Peacemaker'ın ekibinden Ajan John Economos ve Emilia Harcourt, Shazam'ı Justice Society of America'ya davet etmeye çalışır. Ancak Shazam, bu teklifi, Justice League'in de katıldığı takım olduğunu düşünerek reddeder. Bu sahne, DCEU'nun film ve dizi evrenlerinin birbiriyle ne kadar iç içe geçtiğini gösteren önemli bir referanstır. Film, bir yandan kendi bağımsız hikayesini anlatırken, diğer yandan da evrenin mitolojisini ve karakter ilişkilerini derinleştirerek, DCEU'nun karmaşık yapısına katkıda bulunur. 'Shazam! Fury of the Gods', DCEU'nun çoklu evren yapısına da bir zemin hazırlar ve DC'nin gelecekteki projeleri için açık kapı bırakır.",
+      "canonical_level": "canon",
+      "sources": {
+        "Kaynaklar": [
+          {
+            "name": "Box Office Türkiye",
+            "url": "https://boxofficeturkiye.com/film/shazam-tanrilarin-ofkesi--2022441"
+          },
+          {
+            "name": "DC Movies Official Site",
+            "url": "https://www.dc.com/movies/shazam-fury-of-the-gods"
+          },
+          {
+            "name": "IMDb",
+            "url": "https://www.imdb.com/title/tt10151854/"
+          }
+        ],
+        "Görsel": [
+          {
+            "name": "IMDb",
+            "url": "https://m.media-amazon.com/images/M/MV5BMjdlYzAwYTMtMWJlOC00OTQ5LWJhMmYtMDhjNGY4M2RhMGU4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+          }
+        ],
+        "Platform": [
+          {
+            "name": "Netflix",
+            "url": "https://www.netflix.com/watch/81602831?source=35"
+          }
+        ]
+      },
+      "lang": "tr"
+    },
+    {
+      "id": "film/dceu/2023_the_flash",
       "label": "The Flash (2023)",
       "title": "The Flash",
-      "image": "assets/images/dc.jpg",
-      "shape": "image",
-      "description": "'The Flash' yapımı, DC evreninde adalet ve intikam arasındaki ince çizgi teması etrafında şekillenir. Kahramanların kişisel yolculukları, ahlaki ikilemleri ve güçle kurdukları ilişkiler film boyunca güçlü bir anlatımla sunulur. Görsel atmosfer ve anlatı derinliği öne çıkar.",
-      "refers_to": "Justice League (Snyder's Cut) ve Shazam! (2019) ile olan bağlantılar, The Flash içindeki semboller, görsel ipuçları ve diyaloglarda gizlidir. Evrenin bütünlüğü bu detaylarla pekiştirilir ve sadık izleyici için ek anlam katmanları sunar.",
       "type": "film",
       "release_date": "2023-06-16",
-      "level": 7,
-      "universe": "DC"
+      "end_date": null,
+      "image": "https://m.media-amazon.com/images/M/MV5BYmE2NzBjNGUtNTJiMy00N2UxLWEyYzMtYzFjODFhMGZlOTgzXkEyXkFqcGc@._V1_.jpg",
+      "imdb_rating": 6.6,
+      "yönetmen": [
+        "Andy Muschietti"
+      ],
+      "oyuncular": [
+        "Ezra Miller",
+        "Ben Affleck",
+        "Michael Keaton",
+        "Sasha Calle",
+        "Michael Shannon"
+      ],
+      "tür": [
+        "Aksiyon",
+        "Fantastik",
+        "Bilim Kurgu"
+      ],
+      "shape": "image",
+      "description": "2023 yapımı 'The Flash', DCEU'nun zaman yolculuğu ve çoklu evren konseptlerini derinlemesine işleyen, ana akış için bir dönüm noktası niteliğindeki filmidir. Film, Barry Allen'ın (Ezra Miller), annesinin ölümünü engellemek ve babasının masumiyetini kanıtlamak için zamanın akışını değiştirmesiyle başlar. Barry, bu tehlikeli kararıyla, 'Speed Force'u kullanarak geçmişe döner. Ancak, annesini kurtardığı bu eylem, tüm evreni ve zaman çizgisini kaosa sürükler. Barry, kendini hiç tanımadığı bir dünyada bulur; bu dünyada annesi hayattadır, ancak Flash, Justice League veya Superman gibi kahramanlar yoktur. Bu yeni zamanda, genç ve deneyimsiz bir Barry Allen ile karşılaşır. İki Flash, General Zod'un (Michael Shannon) 2013'teki gelişini durdurmak için bir araya gelirler. Ancak bu dünyada, Süpermen'in yerini Supergirl (Sasha Calle) almıştır ve Batman (Michael Keaton), emekli olmuştur. Film, farklı evrenlerden gelen karakterleri bir araya getirerek, DC'nin geniş çoklu evrenini keşfeder. Barry, annesinin ölümünü engellemek için yaptığı fedakarlığın, sadece kendisinin değil, tüm evrenin dengesini bozduğunu fark eder. Kendi geçmişiyle yüzleşirken, aynı zamanda kendisinin ve ailesinin geleceğini de sorgular. Film, kayıp, yas ve aile temalarını işlerken, aynı zamanda aksiyon, komedi ve nostaljiyi bir araya getirir. Michael Keaton'ın 1989 yapımı Batman rolüne geri dönüşü, filmin en önemli sürprizlerinden biridir ve eski hayranları coşturur. Filmin ana çatışması, Barry'nin hatasını telafi etme çabası ve zamanın akışını eski haline getirme mücadelesi üzerine kuruludur. Ancak bu süreçte, çoklu evrenin tehlikeli ve karmaşık yapısıyla yüzleşmek zorunda kalır. Filmin sonunda Barry, annesinin ölümünü kabul ederek zaman çizgisini düzeltmeye çalışır, ancak bu eylem, DCEU'nun geleceği için beklenmedik sonuçlar doğurur. 'The Flash', DCEU'nun resmi olarak sona ermesinin ve yeni bir DCU'nun başlangıcının habercisi niteliğindedir. Film, farklı evrenlerden gelen kahramanları bir araya getirerek, DC çizgi romanlarının çoklu evren hikayesini sinematik bir şekilde işler. Bu film, bir yandan izleyiciye nostaljik bir yolculuk sunarken, diğer yandan da DC evreninin geleceği için önemli ipuçları verir.",
+      "refers_to": "'The Flash', DCEU'nun ana hikaye akışında, zaman yolculuğu ve çoklu evren konseptini tanıtarak bir köprü görevi görür ve DC evreninin geleceğini doğrudan etkileyen bir filmdir. Film, Barry Allen'ın (Ezra Miller) **Justice League (2017)** filminin sonunda gördüğümüz versiyonundan, daha olgun ve kendi trajedisiyle yüzleşmeye çalışan bir karakter olarak sunulur. Barry'nin annesinin ölümünü engelleme girişimi, **Man of Steel (2013)** filminin olaylarının yaşandığı günlere geri dönmesini sağlar ve bu olayları farklı bir perspektiften yeniden yaşamamıza neden olur. Film, **Man of Steel**'deki General Zod'un (Michael Shannon) Dünya'ya gelişi ve yaratılan yıkım temasını yeniden ele alır. Ancak bu sefer, Superman'in yerine Supergirl (Sasha Calle) ile karşılaşırız. Supergirl'in varlığı, DCEU'nun Superman karakterinden bağımsız olarak farklı bir Kryptonlu kahramanın da var olabileceğini gösterir. Filmin en önemli atıflarından biri, Michael Keaton'ın 1989 yapımı **Batman** filmindeki rolüne geri dönüşüdür. Bu, DCEU'nun çoklu evren yapısını, eski DC filmlerini de kapsayacak şekilde genişletir. Keaton'ın Batman'i, genç Barry'ye mentorluk yaparak, zamanın akışıyla oynamanın tehlikelerini anlatır. Film, ayrıca çeşitli çoklu evren versiyonlarından gelen kahramanların (eski Superman'ler, Batman'ler ve hatta Nicolas Cage'in Superman'i) kısa cameo'larına yer vererek, DC'nin sinematik geçmişine bir saygı duruşunda bulunur. 'The Flash', DCEU'nun ana karakteri Barry Allen'ın, annesinin ölümünü kabul etmesiyle, zaman çizgisini yeniden düzenlemeye çalışmasıyla sona erer. Ancak, bu çaba, evrenin geleceği için beklenmedik sonuçlar doğurur. Filmin finalinde Barry, babasının masumiyetini kanıtlar, ancak eve döndüğünde, Batman'in (George Clooney) farklı bir versiyonuyla karşılaşır. Bu son sahne, DCEU'nun resmen sona erdiğini ve yeni bir evrenin (DCU) başlangıcını ima eder. 'The Flash', DC'nin sinematik evreninde bir kapanış ve yeni bir başlangıç için bir katalizör görevi görür.",
+      "canonical_level": "canon",
+      "sources": {
+        "Kaynaklar": [
+          {
+            "name": "Box Office Türkiye",
+            "url": "https://boxofficeturkiye.com/film/the-flash--2023067"
+          },
+          {
+            "name": "DC Movies Official Site",
+            "url": "https://www.dc.com/movies/the-flash"
+          },
+          {
+            "name": "IMDb",
+            "url": "https://www.imdb.com/title/tt0439572/"
+          }
+        ],
+        "Görsel": [
+          {
+            "name": "IMDb",
+            "url": "https://m.media-amazon.com/images/M/MV5BYmE2NzBjNGUtNTJiMy00N2UxLWEyYzMtYzFjODFhMGZlOTgzXkEyXkFqcGc@._V1_.jpg"
+          }
+        ],
+        "Platform": [
+          {
+            "name": "Netflix",
+            "url": "https://www.netflix.com/watch/81251375?source=35"
+          }
+        ]
+      },
+      "lang": "tr"
     },
     {
-      "id": "BlueBeetle",
+      "id": "film/dceu/2023_blue_beetle",
       "label": "Blue Beetle (2023)",
       "title": "Blue Beetle",
-      "image": "assets/images/dc.jpg",
-      "shape": "image",
-      "description": "'Blue Beetle' yapımı, DC evreninde toplumun kahramanlara olan güven sınavı teması etrafında şekillenir. Kahramanların kişisel yolculukları, ahlaki ikilemleri ve güçle kurdukları ilişkiler film boyunca güçlü bir anlatımla sunulur. Görsel atmosfer ve anlatı derinliği öne çıkar.",
-      "refers_to": "Blue Beetle’da Peacemaker ve Justice League (Zack Cut) ile kurulan bağlar, evrenin kronolojik gelişimine katkı sağlar. Karakterler arası ilişkiler, karar anları ve tematik paralellikler bu filmde açıkça hissedilir.",
       "type": "film",
       "release_date": "2023-08-18",
-      "level": 7,
-      "universe": "DC"
+      "end_date": null,
+      "image": "https://static.boxofficeturkiye.com/movie/poster/300x429/4/2015804-61974472.jpg",
+      "imdb_rating": 5.9,
+      "yönetmen": [
+        "Angel Manuel Soto"
+      ],
+      "oyuncular": [
+        "Xolo Maridueña",
+        "Bruna Marquezine",
+        "Belissa Escobedo",
+        "George Lopez",
+        "Susan Sarandon"
+      ],
+      "tür": [
+        "Aksiyon",
+        "Fantastik",
+        "Macera"
+      ],
+      "shape": "image",
+      "description": "2023 yapımı 'Blue Beetle', DCEU'nun ana akışından bağımsız bir şekilde başlayan ve Latin kökenli bir süper kahramanın hikayesini merkeze alan filmidir. Film, kolejden yeni mezun olan ve ailesine yardım etmek için eve dönen Jaime Reyes'in (Xolo Maridueña) hikayesini anlatır. Ancak, ailesinin evden çıkarılma tehdidiyle karşı karşıya kalmasıyla hayatı alt üst olur. Bir iş bulma arayışındayken, dürüst ve idealist bir genç olan Jaime, milyarder Victoria Kord'un (Susan Sarandon) peşinde olduğu gizemli bir uzaylı eseri olan Scarab'ı (Skarabe) istemeden de olsa ele geçirir. Skarabe, Jaime'nin bedenine yapışır ve ona, gelişmiş bir teknolojiye sahip zırhlı bir süper kahraman olan Blue Beetle'a dönüşme gücü verir. Jaime, ailesinin desteğiyle, Skarabe'nin güçlerini kontrol etmeyi ve bu yeni kimliğiyle yaşama ayak uydurmayı öğrenir. Ancak Victoria Kord, bu gücün peşindedir ve Jaime ile ailesini tehdit etmeye başlar. Film, sadece bir süper kahramanın doğuş hikayesini anlatmakla kalmaz, aynı zamanda aile bağlarının gücünü ve kültürel mirasın önemini de vurgular. Jaime'nin ailesi, onun yeni kimliğini keşfetmesinde ve düşmanlarıyla savaşmasında önemli bir rol oynar. Filmin tonu, DCEU'nun diğer filmlerine göre daha hafif, komik ve aile odaklıdır. Blue Beetle'ın aksiyon sahneleri ve görsel efektleri, özellikle de Skarabe'nin teknolojisinin işleyişi, oldukça yaratıcı bir şekilde sunulur. Jaime, bir kahraman olarak sorumluluklarını kabul ederken, aynı zamanda ailesinin onunla gurur duymasını sağlar. 'Blue Beetle', DCEU'nun ana kahramanlarından bağımsız olarak, farklı karakterlerin de kendi hikayelerini anlatabileceğini gösterir. Filmin sonunda Jaime, Blue Beetle olarak yeni kimliğini kabul eder ve ailesiyle birlikte yeni bir hayat kurar. 'Blue Beetle', DC'nin sinematik evreninde, Latin Amerikalı bir süper kahramanı merkeze alarak, çeşitliliğin önemini vurgulayan bir yapımdır. Bu film, potansiyel bir serinin başlangıcını işaret eder ve Jaime Reyes karakterinin gelecekteki olası rollerine dair beklentiler oluşturur.",
+      "refers_to": "'Blue Beetle', DCEU'nun ana hikaye akışına doğrudan bağlı olmayan, ancak evrenin genel yapısını kabul eden bir filmdir. Film, Batman ve Superman gibi karakterlerin varlığına mizahi ve dolaylı göndermelerle atıfta bulunur. Filmde, Jaime Reyes'in (Xolo Maridueña) ailesi, onun ilk defa zırhını giydiğinde, 'Bu Batman'e benziyor!' gibi ifadeler kullanır. Bu tür göndermeler, filmin DCEU içinde geçtiğini gösterir. Filmin en önemli bağlantılarından biri, Blue Beetle'ın mirasıdır. Skarabe'nin, Ted Kord adlı önceki Blue Beetle'dan Jaime'ye geçtiği bilgisi, filmin post-jenerik sahnesinde daha net bir şekilde ortaya konur. Post-jenerik sahnede, Ted Kord'un, hayatta olduğuna dair bir mesaj gönderdiği görülür. Bu, Blue Beetle karakterinin daha geniş bir hikayeye ve geçmişe sahip olduğunu kanıtlar ve gelecekteki olası hikayeler için zemin hazırlar. Filmin ana antagonisti olan Victoria Kord'un, Ted Kord'un ablası olması, bu bağlantıyı daha da güçlendirir. Film, aynı zamanda, O.M.A.C. gibi DC evrenindeki bilindik konseptlere de atıfta bulunur, bu da evrenin daha derin ve karmaşık bir yapısı olduğunu gösterir. 'Blue Beetle', DCEU'nun ana akımından ayrılarak, daha çok bir karakterin köken hikayesine odaklanır. Filmin sonunda, Jaime Reyes'in Blue Beetle olarak yeni kimliğini kabul etmesi ve ailesinin desteğiyle yeni bir hayata başlaması, DCEU'nun geleceğinde yeni kahramanların da yer alabileceğini gösterir. 'Blue Beetle', evrenin son dönem yapımlarından biri olmasına rağmen, yeni DCU'nun bir parçası olarak devam edebilme potansiyeli taşıdığı söylentileri de ortaya çıkmıştır. Film, bir yandan kendi bağımsız hikayesini anlatırken, diğer yandan da DC'nin geniş evrenine yeni ve önemli bir karakter kazandırır. Bu film, DCEU'nun son dönemi için hem bir final hem de bir başlangıç sinyali verir.",
+      "canonical_level": "canon",
+      "sources": {
+        "Kaynaklar": [
+          {
+            "name": "Box Office Türkiye",
+            "url": "https://boxofficeturkiye.com/film/blue-beetle--2023605"
+          },
+          {
+            "name": "DC Movies Official Site",
+            "url": "https://www.dc.com/movies/blue-beetle"
+          },
+          {
+            "name": "IMDb",
+            "url": "https://www.imdb.com/title/tt9362930/"
+          }
+        ],
+        "Görsel": [
+          {
+            "name": "Box Office Türkiye",
+            "url": "https://static.boxofficeturkiye.com/movie/poster/300x429/4/2015804-61974472.jpg"
+          }
+        ],
+        "Platform": [
+          {
+            "name": "Netflix",
+            "url": "https://www.netflix.com/watch/81674659?source=35"
+          }
+        ]
+      },
+      "lang": "tr"
+    },
+    {
+      "id": "film/dceu/2023_aquaman_and_the_lost_kingdom",
+      "label": "Aquaman and the Lost Kingdom (2023)",
+      "title": "Aquaman and the Lost Kingdom",
+      "type": "film",
+      "release_date": "2023-12-22",
+      "end_date": null,
+      "image": "https://m.media-amazon.com/images/M/MV5BYjQ1ZTUzMWMtY2VkNS00ZDRjLWEwODYtYmFkMWJiNTQxMDUzXkEyXkFqcGc@._V1_.jpg",
+      "imdb_rating": 5.6,
+      "yönetmen": [
+        "James Wan"
+      ],
+      "oyuncular": [
+        "Jason Momoa",
+        "Patrick Wilson",
+        "Amber Heard",
+        "Yahya Abdul-Mateen II",
+        "Nicole Kidman"
+      ],
+      "tür": [
+        "Aksiyon",
+        "Fantastik",
+        "Macera"
+      ],
+      "shape": "image",
+      "description": "2023 yapımı 'Aquaman and the Lost Kingdom', DCEU'nun son filmi olarak, **Aquaman (2018)** filminin doğrudan devamı niteliğindedir. Film, Atlantis Kralı Arthur Curry'nin (Jason Momoa), hem yedi denizin lideri olarak krallığı yönetme hem de karısı Mera (Amber Heard) ve oğluyla bir aile babası olma sorumluluklarını dengeleme çabalarını anlatır. Aquaman, Black Manta'nın (Yahya Abdul-Mateen II) intikam planlarıyla karşı karşıya kalır. Black Manta, ilk filmde yaşadığı yenilginin ve babasını kaybetmesinin ardından, intikam hırsıyla doludur ve Black Trident (Kara Üç Dişli Mızrak) adı verilen mistik bir silahı ele geçirerek inanılmaz bir güç kazanır. Bu silah, onun, kayıp Atlantis krallıklarından birinin gücünü kontrol etmesine olanak tanır. Black Manta, bu güçle hem Atlantis'i hem de yüzey dünyasını tehdit eden ekolojik bir felaketi tetikler. Bu yeni tehdidi durdurmak için Aquaman, hapiste olan üvey kardeşi Orm'dan (Patrick Wilson) yardım istemek zorunda kalır. Orm, bir zamanlar Arthur'un en büyük düşmanıydı, ancak bu filmde iki kardeş, dünyayı kurtarmak için geçici bir ittifak kurar. Film, kardeşler arasındaki dinamikleri ve onların geçmişteki anlaşmazlıklarını işlerken, aynı zamanda aile, kayıp ve fedakarlık temalarını da vurgular. 'Aquaman and the Lost Kingdom', su altı dünyasının görsel olarak zengin tasvirini devam ettirir ve James Wan'ın özgün yönetmenlik tarzını korur. Aksiyon sahneleri ve görsel efektler yine filmin en güçlü yönlerinden biridir. Film, Black Manta'nın intikam arayışını, Arthur'un liderlik sınavını ve Orm'un karakter gelişimini bir araya getirir. Orm'un, bir düşmandan bir müttefike dönüşmesi, filmin ana hikayesinin duygusal derinliğini artırır. Filmin sonunda Aquaman ve Orm, Black Manta'yı yener ve dünyayı kurtarır. Orm, hapisten kaçar ve kayıp krallıklardan birine sığınarak, gelecekteki olası hikayeler için bir açık kapı bırakır. 'Aquaman and the Lost Kingdom', DCEU'nun son filmi olarak, evrenin mevcut yapısını kapatan ve gelecekteki olası bir yeniden başlatma için zemin hazırlayan bir yapımdır. Film, bir yandan karakterlerin hikayelerini sonuçlandırırken, diğer yandan da yeni DCU'ya geçiş için bir köprü görevi görür.",
+      "refers_to": "'Aquaman and the Lost Kingdom', DCEU'nun ana hikayesine bir veda niteliği taşıyan ve evrenin son filmi olarak önceki yapımlarla bağlantı kurar. Filmin ana hikayesi, doğrudan **Aquaman (2018)** filminin devamı niteliğindedir ve Arthur Curry'nin (Jason Momoa) Atlantis kralı olarak yaşadığı zorlukları ele alır. Film, ilk filmde Aquaman'in düşmanı olan Black Manta'nın (Yahya Abdul-Mateen II) intikam motivasyonunu derinleştirir ve onun babasının ölümünün getirdiği acıyı işler. Bu, karakterin neden bu kadar tehlikeli bir düşmana dönüştüğünü açıklar. Filmin en önemli atıflarından biri, Arthur'un üvey kardeşi Orm (Patrick Wilson) ile olan ilişkisidir. Orm, **Aquaman** filminde ana antagonistken, bu filmde bir müttefik haline gelir. İki kardeşin, Black Manta'ya karşı kurduğu ittifak, DCEU'nun karakter dinamiklerinin nasıl değişebileceğini gösteren bir örnektir. Film, ayrıca Atlantislilerin tarihini ve kayıp krallıklarından biri olan Necrus'un (Kayıp Krallık) hikayesini de işler. Black Trident'in (Kara Üç Dişli Mızrak) gücü, DCEU'nun mitolojik ve sihirsel unsurlarına yapılan güçlü bir göndermedir. **Justice League (2017)** filminde, Aquaman'in bir meta-insan olarak dünyayı koruma görevi, bu filmde, hem yedi denizin hem de yüzey dünyasının bir lideri olarak daha geniş bir sorumlulukla yer değiştirir. Filmin sonunda, Arthur'un oğluna olan sevgisi ve ailesine olan bağlılığı, onun sadece bir kahraman değil, aynı zamanda bir insan olarak gelişimini tamamladığını gösterir. 'Aquaman and the Lost Kingdom', DCEU'nun son filmi olarak, evrenin mevcut yapısını sonlandırır ve James Gunn ile Peter Safran'ın liderliğindeki yeni DCU'nun geleceği için bir başlangıç noktası olarak işlev görür. Filmin sonu, karakterlerin hikayelerini bir şekilde sonuçlandırırken, aynı zamanda yeni bir dönemin kapılarını aralar. Film, bu anlamda, hem bir kapanış hem de yeni bir başlangıç sinyali verir. Filmdeki karakterlerin yolculuğu, DCEU'nun temel temalarını ve karakter dinamiklerini bir araya getirerek, evrenin sonu için bir final niteliği taşır.",
+      "canonical_level": "canon",
+      "sources": {
+        "Kaynaklar": [
+          {
+            "name": "Box Office Türkiye",
+            "url": "https://boxofficeturkiye.com/film/aquaman-ve-kayip-krallik--2023594"
+          },
+          {
+            "name": "DC Movies Official Site",
+            "url": "https://www.dc.com/movies/aquaman-and-the-lost-kingdom"
+          },
+          {
+            "name": "IMDb",
+            "url": "https://www.imdb.com/title/tt9663764/"
+          }
+        ],
+        "Görsel": [
+          {
+            "name": "IMDb",
+            "url": "https://m.media-amazon.com/images/M/MV5BYjQ1ZTUzMWMtY2VkNS00ZDRjLWEwODYtYmFkMWJiNTQxMDUzXkEyXkFqcGc@._V1_.jpg"
+          }
+        ],
+        "Platform": [
+          {
+            "name": "HBO Max",
+            "url": "https://play.hbomax.com/movie/024657af-9462-478a-a043-92e00a4b1952?utm_source=universal_search"
+          }
+        ]
+      },
+      "lang": "tr"
+    },
+    {
+      "id": "dizi/dcu/2024_creature_commandos",
+      "label": "Creature Commandos (2024)",
+      "title": "Creature Commandos",
+      "type": "dizi",
+      "release_date": "2024-12-05",
+      "end_date": null,
+      "image": "https://m.media-amazon.com/images/M/MV5BODVmMmM0MzUtODlhMC00Y2QwLWI0MTktZmNmY2JjYjM0OTI4XkEyXkFqcGc@._V1_.jpg",
+      "imdb_rating": 7.8,
+      "yönetmen": [
+        "James Gunn"
+      ],
+      "oyuncular": [
+        "Frank Grillo",
+        "Maria Bakalova",
+        "David Harbour",
+        "Indira Varma",
+        "Zoë Chao"
+      ],
+      "tür": [
+        "Animasyon",
+        "Aksiyon",
+        "Komedi"
+      ],
+      "shape": "image",
+      "description": "2024 yılında yayınlanması beklenen 'Creature Commandos', yeni DCU'nun (DC Evreni) başlangıcını işaret eden animasyon dizisidir. Dizi, James Gunn'ın liderliğindeki yeni DC evreninin ilk projesi olma özelliğini taşır. Hikaye, Amanda Waller'ın (Viola Davis) yönettiği gizli bir askeri operasyon ekibine odaklanır. Ekip, 'meta-insan' olarak adlandırılan ve çoğunlukla canavar benzeri güçlere sahip olan karakterlerden oluşur. Ekibin üyeleri, Rick Flag Sr. (Frank Grillo), G.I. Robot (Sean Gunn), Frankenstein'ın Gelini (Indira Varma), Weasel (Sean Gunn) ve Doctor Phosphorus (Alan Tudyk) gibi birbirinden ilginç figürlerdir. Dizinin tonu, James Gunn'ın **The Suicide Squad (2021)** filmindeki mizah anlayışını ve absürt şiddetini yansıtır. Her bir karakterin kendi trajedisi ve geçmişi vardır, ancak hepsi Waller'ın acımasız ve manipülatif liderliği altında görev yapmak zorundadır. Dizi, bir yandan ekibin görevlerini yerine getirmesini konu alırken, diğer yandan da karakterlerin kendi aralarındaki dinamikleri ve aralarında kurdukları beklenmedik bağları işler. 'Creature Commandos', DCEU'nun son bulmasından sonra, yeni DCU'nun ana hikaye akışını ve karakterlerini tanıtan bir başlangıç noktasıdır. Dizi, sadece bir animasyon dizisi olmaktan öte, DCU'nun genel tonunu, mizahını ve hikaye anlatım tarzını belirleyen bir yapımdır. James Gunn'ın projeye olan kişisel katılımı, dizinin kalitesini ve evrenle olan bağını güçlendirir. Dizi, aynı zamanda Amanda Waller'ın karakterini yeni bir perspektiften ele alır ve onun DCEU'da olduğu gibi acımasız ve kontrolcü bir figür olduğunu gösterir. Bu durum, DCU'nun da ahlaki gri alanları ve karmaşık karakterleri işleyeceğinin sinyallerini verir. 'Creature Commandos', sadece bir animasyon dizisi olarak kalmayıp, aynı zamanda yeni DCU'nun filmleriyle de bağlantılı olacak önemli bir yapımdır. Dizi, yeni evrenin hikayesini başlatarak, izleyicilere taptaze bir DC deneyimi sunar ve gelecekteki projeler için bir temel oluşturur.",
+      "refers_to": "'Creature Commandos', yeni başlayan DCU'nun (DC Evreni) ilk yapımı olarak, evrenin geleceğini şekillendiren kritik bir başlangıç noktasıdır. Dizi, Amanda Waller'ın (Viola Davis) varlığını ve manipülatif rolünü **The Suicide Squad (2021)** ve **Peacemaker (2022)** dizisinden sonra devam ettirir. Ancak bu yeni evrende, Waller'ın karakteri ve motivasyonları yeni bir bakış açısıyla ele alınır. Dizi, DCEU'dan farklı olarak, yeni bir hikaye çizgisi ve karakterler sunar. Dizi, Rick Flag Sr.'ın, **The Suicide Squad** filminde ölen Rick Flag'in babası olduğunu ve karakterler arasındaki aile bağlarını işler. Bu, yeni DCU'nun da eski evrenle bir tür tarihi bağ kuracağını, ancak tamamen yeni bir hikaye anlatacağını gösterir. 'Creature Commandos', Doctor Phosphorus, G.I. Robot ve Frankenstein'ın Gelini gibi çizgi romanlarda yer alan, ancak sinematik evrende daha önce görülmemiş karakterleri tanıtır. Bu, DCU'nun ana akım kahramanlar dışında kalan daha niş ve farklı karakterlere de odaklanacağını gösterir. Dizi, aynı zamanda, James Gunn'ın yönettiği yeni DCU'nun genel tonunu ve mizah anlayışını belirler. **The Suicide Squad**'daki absürt komedi ve şiddet, bu animasyon dizisinde de kendini gösterir. Dizi, ileride yayınlanacak olan **Superman (2025)** filmiyle de bağlantılı olacak ve bu iki yapım, yeni DCU'nun ilk fazını (Gods and Monsters) başlatacaktır. 'Creature Commandos', sadece bir animasyon dizisi olarak kalmayıp, aynı zamanda yeni evrenin ana hikaye akışına doğrudan entegre olacak önemli bir projedir. Bu dizi, DCU'nun geniş, çeşitli ve birbiriyle bağlantılı bir evren olacağının sinyalini verir. Dizi, yeni evrenin temelini atarken, aynı zamanda DC'nin hikaye anlatımında daha cesur ve farklı yollar deneyeceğinin de bir göstergesidir. 'Creature Commandos', DCEU'nun bitmesinden sonra DC evrenini yeniden inşa eden bir köprü görevi görür ve izleyicilere yeni bir başlangıç sunar.",
+      "canonical_level": "canon",
+      "sources": {
+        "Kaynaklar": [
+          {
+            "name": "DC Movies Official Site",
+            "url": "https://www.dc.com/tv/creature-commandos"
+          },
+          {
+            "name": "IMDb",
+            "url": "https://www.imdb.com/title/tt22079032/"
+          },
+          {
+            "name": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Creature_Commandos"
+          }
+        ],
+        "Görsel": [
+          {
+            "name": "IMDb",
+            "url": "https://m.media-amazon.com/images/M/MV5BODVmMmM0MzUtODlhMC00Y2QwLWI0MTktZmNmY2JjYjM0OTI4XkEyXkFqcGc@._V1_.jpg"
+          }
+        ],
+        "Platform": [
+          {
+            "name": "Prime Video",
+            "url": "https://www.primevideo.com/-/tr/detail/Creature-Commandos/0MYWUAU3SEGYVJD8K6SU3Z8HGQ"
+          }
+        ]
+      },
+      "lang": "tr"
+    },
+    {
+      "id": "film/dcu/2025_superman",
+      "label": "Superman (2025)",
+      "title": "Superman",
+      "type": "film",
+      "release_date": "2025-07-11",
+      "end_date": null,
+      "image": "https://m.media-amazon.com/images/M/MV5BOGMwZGJiM2EtMzEwZC00YTYzLWIxNzYtMmJmZWNlZjgxZTMwXkEyXkFqcGc@._V1_.jpg",
+      "imdb_rating": 7.5,
+      "yönetmen": [
+        "James Gunn"
+      ],
+      "oyuncular": [
+        "David Corenswet",
+        "Rachel Brosnahan",
+        "Nicholas Hoult",
+        "Isabela Merced",
+        "Nathan Fillion"
+      ],
+      "tür": [
+        "Aksiyon",
+        "Fantastik",
+        "Bilim Kurgu"
+      ],
+      "shape": "image",
+      "description": "2025 yılında vizyona girmesi beklenen 'Superman' (eski adıyla 'Superman: Legacy'), yeni DCU'nun (DC Evreni) beyaz perdeye taşınan ilk filmi olma özelliğini taşıyor. James Gunn tarafından yazılan ve yönetilen film, Superman'in (David Corenswet) köken hikayesini yeniden anlatmak yerine, karakterin genç bir gazeteci olarak Metropolis'te kariyerine başladığı ve süper kahraman kimliğini şekillendirdiği bir döneme odaklanacak. Film, Superman'in hem Krypton mirasıyla hem de Kansas'taki insan yetiştirilme tarzıyla olan bağlarını dengeleme çabasını işler. Clark Kent, Daily Planet'te Lois Lane (Rachel Brosnahan) ve Jimmy Olsen (Skyler Gisondo) gibi karakterlerle çalışırken, aynı zamanda dünyayı tehdit eden güçlerle de mücadele etmek zorundadır. Bu yeni versiyonda, Superman'in umut, iyilik ve dürüstlük sembolü olarak daha parlak ve geleneksel bir tonla ele alınacağı belirtilmiştir. Filmin ana antagonisti henüz tam olarak açıklanmamış olsa da, Lex Luthor (Nicholas Hoult) ve The Engineer (María Gabriela de Faría) gibi karakterlerin filmde yer alacağı bilinmektedir. Film, aynı zamanda, Mister Terrific (Edi Gathegi), Guy Gardner'ın Green Lantern'i (Nathan Fillion) ve Metamorpho (Anthony Carrigan) gibi diğer DC karakterlerini de bünyesinde barındıracak. Bu durum, yeni DCU'nun ilk filminden itibaren geniş bir karakter kadrosuna sahip olacağının sinyalini verir. 'Superman', sadece bir karakterin hikayesini anlatmakla kalmayıp, aynı zamanda yeni DCU'nun 'Gods and Monsters' adlı ilk fazının temelini atacak ve evrenin genel tonunu ve yönünü belirleyecektir. Film, bir yandan Superman'in bir kahraman olarak yolculuğunu işlerken, diğer yandan da insanlığın, onun gibi güçlü bir varlığa karşı duyduğu umudu ve endişeyi sorgular. James Gunn'ın filmi, DCEU'nun karanlık ve tartışmalı tonundan uzaklaşarak, daha çok umut ve neşe dolu bir anlatıya odaklanacaktır. Bu film, Superman'i yeniden bir kültürel simge olarak konumlandırmayı hedefleyen ve yeni bir sinematik evren için güçlü bir başlangıç yapmayı amaçlayan iddialı bir projedir.",
+      "refers_to": "'Superman' (2025), DCEU'nun son bulmasından sonra başlayan yeni DCU'nun (DC Evreni) ana filmidir ve bu yeni evrenin temelini atar. Film, **Man of Steel (2013)**'in aksine, Superman'in köken hikayesini baştan anlatmak yerine, onun artık bir süper kahraman olarak var olduğu bir dünyaya odaklanır. Bu durum, yeni DCU'nun da halihazırda var olan kahramanları ve olayları kabul ettiğini, ancak kendi hikaye çizgisini takip edeceğini gösterir. Filmin yönetmeni ve senaristi James Gunn, filmin 'Creature Commandos' animasyon dizisiyle bağlantılı olacağını ve bu iki projenin yeni evrenin ilk fazını (Gods and Monsters) başlatacağını belirtmiştir. Bu, DCU'nun filmleri ve dizileri arasında daha sıkı bir entegrasyon olacağının sinyalini verir. Film, aynı zamanda Mister Terrific, The Engineer ve Guy Gardner'ın Green Lantern'i gibi daha önce sinematik evrende görülmemiş karakterleri tanıtır. Bu, yeni DCU'nun geniş bir karakter kadrosuna sahip olacağını ve bu karakterlerin hikayesinin ana hikaye akışıyla iç içe geçeceğini gösterir. 'Superman', yeni evrenin genel tonunu ve atmosferini belirler. James Gunn'ın vizyonu, DCEU'nun karanlık tonundan uzaklaşarak, daha umut dolu ve iyimser bir anlatıya odaklanacaktır. Film, Superman'in, insanlık için bir ilham kaynağı ve umut sembolü olarak rolünü yeniden tanımlayacaktır. Filmin ana antagonisti, her ne kadar Lex Luthor olarak belirtilse de, filmdeki diğer karakterlerin varlığı, gelecekteki olası tehditlere ve takım çalışmalarına yönelik ipuçları verir. Örneğin, Green Lantern'in varlığı, evrenin kozmik genişlemesine ve daha sonraki olası Green Lantern Corps projelerine yönelik bir atıftır. 'Superman', yeni DCU'nun başlangıcı olarak, hem eski hayranları hem de yeni izleyicileri cezbetmeyi hedefleyen iddialı bir projedir. Film, DC'nin sinematik evreninde yeni bir sayfa açarak, gelecekteki pek çok filmin ve dizinin temelini atar ve bu evrenin ne kadar büyük bir potansiyele sahip olduğunu gösterir.",
+      "canonical_level": "canon",
+      "sources": {
+        "Kaynaklar": [
+          {
+            "name": "Paribu Cineverse",
+            "url": "https://www.paribucineverse.com/fantastik-filmleri/superman-filmi-izle"
+          },
+          {
+            "name": "DC Movies Official Site",
+            "url": "https://www.dc.com/movies/superman"
+          },
+          {
+            "name": "IMDb",
+            "url": "https://www.imdb.com/title/tt15707768/"
+          }
+        ],
+        "Görsel": [
+          {
+            "name": "IMDb",
+            "url": "https://m.media-amazon.com/images/M/MV5BOGMwZGJiM2EtMzEwZC00YTYzLWIxNzYtMmJmZWNlZjgxZTMwXkEyXkFqcGc@._V1_.jpg"
+          }
+        ],
+        "Platform": [
+          {
+            "name": "Paribu Cineverse",
+            "url": "https://www.paribucineverse.com/fantastik-filmleri/superman-filmi-izle"
+          }
+        ]
+      },
+      "lang": "tr"
     }
   ],
   "edges": [
     {
-      "from": "ManOfSteel",
-      "to": "BvS",
-      "type": "Devam"
+      "from": "film/dceu/2013_man_of_steel",
+      "to": "film/dceu/2016_batman_v_superman_dawn_of_justice",
+      "type": "Doğrudan Devam",
+      "weight": 1,
+      "notes": "Man of Steel'in olayları ve yarattığı yıkım, Batman v Superman'in ana motivasyonunu oluşturur."
     },
     {
-      "from": "BvS",
-      "to": "JusticeLeague",
-      "type": "Devam"
+      "from": "film/dceu/2013_man_of_steel",
+      "to": "film/dceu/2016_suicide_squad",
+      "type": "Sonrası Etki",
+      "weight": 1,
+      "notes": "Superman'in ölümü sonrası, dünyayı korumak için yeni meta-insan takımı kurulur."
     },
     {
-      "from": "JusticeLeague",
-      "to": "ZackCut",
-      "type": "yan-hikaye"
+      "from": "film/dceu/2016_batman_v_superman_dawn_of_justice",
+      "to": "film/dceu/2017_justice_league",
+      "type": "Doğrudan Devam",
+      "weight": 1,
+      "notes": "Superman'in ölümü, Batman'i yaklaşan tehdide karşı Justice League'i kurmaya iter."
     },
     {
-      "from": "SuicideSquad2016",
-      "to": "TheSuicideSquad2021",
-      "type": "Devam"
+      "from": "film/dceu/2016_batman_v_superman_dawn_of_justice",
+      "to": "film/dceu/2017_wonder_woman",
+      "type": "Karakter Geçişi",
+      "weight": 1,
+      "notes": "Wonder Woman'ın fotoğrafının bulunması, onun geçmiş hikayesine yolculuğu başlatır."
     },
     {
-      "from": "WonderWoman",
-      "to": "WonderWoman1984",
-      "type": "Devam"
+      "from": "film/dceu/2016_suicide_squad",
+      "to": "film/dceu/2020_birds_of_prey",
+      "type": "Karakter Devamı",
+      "weight": 1,
+      "notes": "Harley Quinn'in Joker'den ayrılmasıyla başlayan yeni macerasını konu alır."
     },
     {
-      "from": "Aquaman",
-      "to": "AquamanandtheLostKingdom",
-      "type": "Devam"
+      "from": "film/dceu/2017_wonder_woman",
+      "to": "film/dceu/2020_wonder_woman_1984",
+      "type": "Hikaye Devamı",
+      "weight": 1,
+      "notes": "Wonder Woman'ın, Steve Trevor'ın ölümünden sonraki hayatına ve yeni tehditlere odaklanır."
     },
     {
-      "from": "Shazam",
-      "to": "ShazamFuryoftheGods",
-      "type": "Devam"
+      "from": "film/dceu/2017_justice_league",
+      "to": "film/dceu/2018_aquaman",
+      "type": "Karakter Geçişi",
+      "weight": 1,
+      "notes": "Justice League'de edindiği deneyimlerden sonra Aquaman'in krallıkla yüzleşmesini anlatır."
     },
     {
-      "from": "BirdsofPrey",
-      "to": "Peacemaker",
-      "type": "evren-geçişi"
+      "from": "film/dceu/2017_justice_league",
+      "to": "film/dceu/2021_zack_snyders_justice_league",
+      "type": "Paralel Olay",
+      "weight": 1,
+      "notes": "Justice League'in hikayesini, yönetmenin orijinal vizyonuyla yeniden anlatır ve genişletir."
     },
     {
-      "from": "BlackAdam",
-      "to": "Shazam",
-      "type": "yan-hikaye"
+      "from": "film/dceu/2016_suicide_squad",
+      "to": "film/dceu/2021_the_suicide_squad",
+      "type": "Türsel Bağlantı",
+      "weight": 1,
+      "notes": "Suicide Squad'ın farklı bir ekiple ve daha cesur bir tonla yeniden çekilen versiyonudur."
+    },
+    {
+      "from": "film/dceu/2021_the_suicide_squad",
+      "to": "dizi/dceu/2022_peacemaker",
+      "type": "Karakter Devamı",
+      "weight": 1,
+      "notes": "Peacemaker'ın filmde aldığı yaralardan sonra yeni bir görevle yüzleşmesini işler."
+    },
+    {
+      "from": "film/dceu/2019_shazam",
+      "to": "film/dceu/2022_black_adam",
+      "type": "Tarihsel Bağlantı",
+      "weight": 1,
+      "notes": "Black Adam, Shazam'ın güçlerinin ilk taşıyıcısı ve eski bir şampiyon olarak tanıtılır."
+    },
+    {
+      "from": "film/dceu/2019_shazam",
+      "to": "film/dceu/2023_shazam_fury_of_the_gods",
+      "type": "Doğrudan Devam",
+      "weight": 1,
+      "notes": "Shazam Ailesi'nin güçleriyle mücadele etmesini ve yeni tanrısal tehditlerle yüzleşmesini anlatır."
+    },
+    {
+      "from": "film/dceu/2023_shazam_fury_of_the_gods",
+      "to": "film/dceu/2023_the_flash",
+      "type": "Evrensel Bağlantı",
+      "weight": 1,
+      "notes": "Shazam'ın filmdeki ölümü, çoklu evrenin ve zaman çizgisinin akışını etkiler."
+    },
+    {
+      "from": "film/dceu/2023_the_flash",
+      "to": "film/dceu/2023_blue_beetle",
+      "type": "Sonrası Etki",
+      "weight": 1,
+      "notes": "The Flash'in evrenleri birleştirmesi, farklı kahramanların varlığını meşrulaştırır."
+    },
+    {
+      "from": "film/dceu/2018_aquaman",
+      "to": "film/dceu/2023_aquaman_and_the_lost_kingdom",
+      "type": "Doğrudan Devam",
+      "weight": 1,
+      "notes": "Aquaman'in krallığını koruma görevine, Black Manta'nın intikam planlarıyla devam edilir."
+    },
+    {
+      "from": "film/dceu/2023_the_flash",
+      "to": "film/dceu/2023_aquaman_and_the_lost_kingdom",
+      "type": "Evrensel Gelişme",
+      "weight": 1,
+      "notes": "The Flash'in olayları, DCEU'nun mevcut akışını sonlandırarak bu filmin finalini etkiler."
+    },
+    {
+      "from": "dizi/dcu/2024_creature_commandos",
+      "to": "film/dcu/2025_superman",
+      "type": "Ana Hikaye Bağlantısı",
+      "weight": 1,
+      "notes": "Creature Commandos dizisi, yeni DCU'nun temelini atarak Superman filmine zemin hazırlar."
     }
   ]
 }
