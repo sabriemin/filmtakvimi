@@ -622,7 +622,7 @@
 <div class="relative h-64">
 <img :src="modalNode.image" alt="" class="absolute inset-0 w-full h-full object-cover blur-sm brightness-50 scale-105" class="lazy-blur" @load="$event.target.classList.add(\'lazy-done\')" loading="lazy"/>
 <div class="absolute inset-0 flex flex-col justify-between p-4 z-10"><div class="absolute top-3 left-3 flex gap-2 items-center">
-  <button @click="openShare(modalNode)" class="share-btn" title="Paylaşım seçenekleri" aria-label="Paylaşım seçenekleri">
+  <button @click="openShare(modalNode)" id="share-btn" class="share-btn" title="Paylaşım seçenekleri" aria-label="Paylaşım seçenekleri">
     <span aria-hidden="true">🔗</span><span class="hidden sm:inline">Paylaş</span>
   </button>
 </div><div class="absolute top-3 right-3 flex gap-2 items-center z-20"><div @click="modalOpen=false; resetPrettyUrl && resetPrettyUrl()" class="close-btn" id="modal-close" role="button" aria-label="Paneli kapat">✕</div></div>
@@ -1522,7 +1522,7 @@ selectedEdgeType: null,
             tour.addStep({
               title: "Paylaşım 🚀",
               text: "Bu butonla yapım bağlantısını kopyalayabilir veya sosyal medyada paylaşabilirsin.",
-              attachTo: { element: 'button[title="Kopyala" aria-label="Bağlantıyı kopyala"]', on: "bottom" },
+              attachTo: { element: "#share-btn", on: "bottom" },
               buttons: [{ text: "İleri", action: tour.next }],
             });
 
