@@ -1,274 +1,723 @@
 {
   "nodes": [
     {
-      "id": "film/harrypotter/2001_philosophers_stone",
-      "label": "Harry Potter ve Felsefe Taşı (2001)",
-      "title": "Harry Potter and the Philosopher's Stone",
-      "type": "film",
-      "release_date": "2001-11-16",
-      "image": "assets/images/harrypotter.jpg",
-      "shape": "image",
-      "description": "Harry Potter ve Felsefe Taşı, genç büyücü Harry Potter'ın Hogwarts Cadılık ve Büyücülük Okulu'na kabul edilmesi ve sihirli dünyaya ilk adımlarını atmasını anlatır. Film, dostluk, cesaret, kimlik ve iyilik ile kötülük arasındaki mücadeleyi derinlemesine işler. Harry, Hermione ve Ron’un birlikte yaşadıkları maceralar, gizemli Felsefe Taşı'nın peşindeki karanlık güçlerle yüzleşmeleri üzerine kuruludur. J.K. Rowling’in yarattığı evrenin büyüleyici atmosferi, detaylı sihirli sistem ve karakter gelişimleri film boyunca etkileyici bir şekilde işlenir. Film, büyülü dünyaya giriş kapısı olmanın yanı sıra, kişisel gelişim ve fedakarlık temalarını da ön plana çıkarır.",
-      "refers_to": "Harry Potter and the Philosopher's Stone, Hogwarts ve sihirli dünyanın kapılarını aralayan temel yapıttır. Film, Harry'nin geçmişi ve ailesi hakkında önemli bilgiler verirken, dostluğun ve cesaretin gücünü vurgular. Voldemort'un geri dönme planları ilk kez bu filmde ortaya çıkar. Harry Potter serisinin geri kalanına ışık tutar ve temel olayların başlangıcını oluşturur.",
-      "canonical_level": "canon",
-      "sources": [
-        {"name": "IMDb", "url": "https://www.imdb.com/title/tt0241527/"},
-        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Harry_Potter_and_the_Philosopher%27s_Stone_(film)"}
-      ],
-      "lang": "tr",
-      "level": 3
-    },
-    {
-      "id": "film/harrypotter/2002_chamber_of_secrets",
-      "label": "Harry Potter ve Sırlar Odası (2002)",
-      "title": "Harry Potter and the Chamber of Secrets",
-      "type": "film",
-      "release_date": "2002-11-13",
-      "image": "assets/images/harrypotter.jpg",
-      "shape": "image",
-      "description": "Harry Potter ve Sırlar Odası, Hogwarts'taki gizemli olayları ve tehlikeleri ortaya çıkarırken, Harry’nin cesareti ve kararlılığı ön plana çıkar. Okulda bir seri saldırı yaşanır ve öğrenciler tehlikeye girer. Harry, Ron ve Hermione, Sırlar Odası’nın sırrını çözmek ve tehdit oluşturan karanlık yaratığı durdurmak için zorlu bir maceraya atılır. Film, büyülü yaratıklar, eski efsaneler ve dostluk bağları üzerine zengin bir anlatı sunar. Harry’nin karanlık geçmişi ve Voldemort’la bağları daha da derinleşir.",
-      "refers_to": "Chamber of Secrets, Hogwarts’ın sırlarını ve karanlık geçmişini ortaya çıkarır. Harry’nin cesareti ve sadakati okulunu korumasını sağlar. Tom Riddle’in geçmişi ve Voldemort’un güç kazanma yolları bu filmde detaylandırılır. Serinin Devamı için önemli ipuçları içerir ve Hogwarts’ın büyülü dünyasını genişletir.",
-      "canonical_level": "canon",
-      "sources": [
-        {"name": "IMDb", "url": "https://www.imdb.com/title/tt0295297/"},
-        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Harry_Potter_and_the_Chamber_of_Secrets_(film)"}
-      ],
-      "lang": "tr",
-      "level": 3
-    },
-    {
-      "id": "film/harrypotter/2004_prisoner_of_azkaban",
-      "label": "Harry Potter ve Azkaban Tutsağı (2004)",
-      "title": "Harry Potter and the Prisoner of Azkaban",
-      "type": "film",
-      "release_date": "2004-06-04",
-      "image": "assets/images/harrypotter.jpg",
-      "shape": "image",
-      "description": "Harry Potter ve Azkaban Tutsağı, Harry’nin Hogwarts’taki üçüncü yılına odaklanır ve Azkaban hapishanesinden kaçan Sirius Black’in peşine düşmesiyle heyecan artar. Film, geçmişin karanlık sırlarını, ihanet ve sadakat temalarını derinleştirir. Harry, yeni öğretmenleri Remus Lupin’den önemli destek alır ve Patronus büyüsünü öğrenir. Karanlık geçmişi ve gerçek dostluk kavramları hikayenin merkezindedir.",
-      "refers_to": "Azkaban Tutsağı, Harry’nin ailesine dair gizemlerin ve Sirius Black’in hikayesinin açığa çıktığı film olarak önem taşır. Lupin ve Black karakterleriyle büyülü dostluklar ve ihanetler anlatılır. Film, serinin karanlık ve olgunlaşan havasına geçiş noktasıdır ve Harry’nin kişisel gelişimini hızlandırır.",
-      "canonical_level": "canon",
-      "sources": [
-        {"name": "IMDb", "url": "https://www.imdb.com/title/tt0304141/"},
-        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Harry_Potter_and_the_Prisoner_of_Azkaban_(film)"}
-      ],
-      "lang": "tr",
-      "level": 3
-    },
-    {
-      "id": "film/harrypotter/2005_goblet_of_fire",
-      "label": "Harry Potter ve Ateş Kadehi (2005)",
-      "title": "Harry Potter and the Goblet of Fire",
-      "type": "film",
-      "release_date": "2005-11-18",
-      "image": "assets/images/harrypotter.jpg",
-      "shape": "image",
-      "description": "Harry Potter ve Ateş Kadehi, Hogwarts’ta düzenlenen Üç Büyücü Turnuvası’nın heyecanını ve tehlikelerini konu alır. Harry beklenmedik şekilde turnuvaya katılır ve zorlu görevlerle karşılaşır. Film, büyücülük dünyasındaki siyasi entrikalar, Voldemort’un güç kazanması ve karanlık büyülerin yükselişi temasını işler. Arkadaşlık, cesaret ve ihanet hikayesi derinleşir.",
-      "refers_to": "Ateş Kadehi, Voldemort’un geri dönüşü ve büyücülük dünyasında artan tehlikelerle ilgili dönüm noktasıdır. Turnuva boyunca Harry’nin karşılaştığı zorluklar, onun cesaretini ve liderlik yeteneklerini ortaya koyar. Film, serinin karanlık tonunu artırır ve olayların genişlemesini sağlar.",
-      "canonical_level": "canon",
-      "sources": [
-        {"name": "IMDb", "url": "https://www.imdb.com/title/tt0330373/"},
-        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Harry_Potter_and_the_Goblet_of_Fire_(film)"}
-      ],
-      "lang": "tr",
-      "level": 3
-    },
-     {
-      "id": "film/harrypotter/2007_order_of_phoenix",
-      "label": "Harry Potter ve Zümrüdüanka Yoldaşlığı (2007)",
-      "title": "Harry Potter and the Order of the Phoenix",
-      "type": "film",
-      "release_date": "2007-07-11",
-      "image": "assets/images/harrypotter.jpg",
-      "shape": "image",
-      "description": "Harry Potter ve Zümrüdüanka Yoldaşlığı, Harry’nin Voldemort’un geri dönüşünü dünyaya kanıtlamak için verdiği mücadeleyi ve Hogwarts’ta yeni tehditlerle yüzleşmesini anlatır. Dumbledore’un gizemli Zümrüdüanka Yoldaşlığı örgütü ile beraber çalışan Harry ve arkadaşları, karanlık güçlere karşı direnişi örgütler. Film, siyasi entrikalar, gençlik isyanı, dostluk ve fedakarlık temalarını derinlemesine işler.",
-      "refers_to": "Zümrüdüanka Yoldaşlığı, Harry’nin ve sihir dünyasının Voldemort’a karşı örgütlenmesini gösterir. Film, Hogwarts’ta artan baskı ve gizli savaş atmosferini işler. Harry’nin liderlik rolü ve arkadaşlık bağları güçlenir. Serinin karanlık ve karmaşık döneminin başlangıcıdır.",
-      "canonical_level": "canon",
-      "sources": [
-        {"name": "IMDb", "url": "https://www.imdb.com/title/tt0373889/"},
-        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Harry_Potter_and_the_Order_of_the_Phoenix_(film)"}
-      ],
-      "lang": "tr",
-      "level": 3
-    },
-    {
-      "id": "film/harrypotter/2009_half_blood_prince",
-      "label": "Harry Potter ve Melez Prens (2009)",
-      "title": "Harry Potter and the Half-Blood Prince",
-      "type": "film",
-      "release_date": "2009-07-15",
-      "image": "assets/images/harrypotter.jpg",
-      "shape": "image",
-      "description": "Harry Potter ve Melez Prens, Voldemort’un geçmişini ve zayıflıklarını keşfetmeye çalışan Harry’nin hikayesini anlatır. Dumbledore ile birlikte karanlık lordun sırlarını öğrenen Harry, ölüm yadigarlarını bulma görevine hazırlanır. Film, aşk, ihanet, karanlık güçlerin yükselişi ve fedakarlık temalarını yoğun şekilde işler.",
-      "refers_to": "Melez Prens, Voldemort’un geçmişi ve büyü dünyasındaki karmaşık ilişkileri detaylandırır. Harry’nin kişisel gelişimi ve karanlıkla yüzleşmesi derinleşir. Film, serinin finaline doğru gidilen yolda önemli bir köprü görevi görür.",
-      "canonical_level": "canon",
-      "sources": [
-        {"name": "IMDb", "url": "https://www.imdb.com/title/tt0417741/"},
-        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Harry_Potter_and_the_Half-Blood_Prince_(film)"}
-      ],
-      "lang": "tr",
-      "level": 3
-    },
-     {
-      "id": "film/harrypotter/2010_deathly_hallows_part1",
-      "label": "Harry Potter ve Ölüm Yadigarları Bölüm 1 (2010)",
-      "title": "Harry Potter and the Deathly Hallows – Part 1",
-      "type": "film",
-      "release_date": "2010-11-19",
-      "image": "assets/images/harrypotter.jpg",
-      "shape": "image",
-      "description": "Ölüm Yadigarları Bölüm 1, Harry, Ron ve Hermione’nin Voldemort’u yenmek için sihirli nesnelerin peşine düştükleri tehlikeli yolculuğu başlatır. Film, karanlık temalar, dostluk ve fedakarlıkla örülü bir mücadeleyi derinleştirir. Hogwarts dışındaki tehlikeler, büyü dünyasının değişen dengelerini yansıtır ve karakterlerin kişisel sınavlarını öne çıkarır.",
-      "refers_to": "Serinin bu ilk final bölümünde, Harry ve arkadaşları Voldemort’a karşı verilen mücadelenin zorluklarıyla yüzleşir. Ölüm Yadigarları’nın anlamı ve gücü daha çok ortaya çıkar. Film, serinin sonuna doğru karanlık ve dramatik havayı perçinler.",
-      "canonical_level": "canon",
-      "sources": [
-        {"name": "IMDb", "url": "https://www.imdb.com/title/tt0926084/"},
-        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Harry_Potter_and_the_Deathly_Hallows_%E2%80%93_Part_1"}
-      ],
-      "lang": "tr",
-      "level": 3
-    },
-    {
-      "id": "film/harrypotter/2011_deathly_hallows_part2",
-      "label": "Harry Potter ve Ölüm Yadigarları Bölüm 2 (2011)",
-      "title": "Harry Potter and the Deathly Hallows – Part 2",
-      "type": "film",
-      "release_date": "2011-07-15",
-      "image": "assets/images/harrypotter.jpg",
-      "shape": "image",
-      "description": "Ölüm Yadigarları Bölüm 2, Harry ve arkadaşlarının Hogwarts’da son savaşa hazırlandıkları ve Voldemort’u nihai olarak yenmek için karşı karşıya geldikleri epik finaldir. Film, dostluk, cesaret, fedakarlık ve kader temalarını zirveye taşır. Büyücülük dünyasının kaderi, kahramanların kararlılığıyla şekillenir. Serinin tüm karakterlerinin hikayeleri doruk noktasına ulaşır.",
-      "refers_to": "Serinin son bölümü, Hogwarts Savaşı’nı ve karakterlerin kaderini anlatır. Harry’nin karanlıkla yüzleşmesi ve tüm evrenin geleceği için verdiği mücadele, sinema tarihinin önemli final anlarından biridir. Film, serinin tüm temalarını anlamlı bir şekilde tamamlar.",
-      "canonical_level": "canon",
-      "sources": [
-        {"name": "IMDb", "url": "https://www.imdb.com/title/tt1201607/"},
-        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Harry_Potter_and_the_Deathly_Hallows_%E2%80%93_Part_2"}
-      ],
-      "lang": "tr",
-      "level": 3
-    },
-     {
-      "id": "film/harrypotter/fantastic_beasts_and_where_to_find_them",
-      "label": "Fantastik Canavarlar Nelerdir, Nerede Bulunurlar? (2016)",
-      "title": "Fantastic Beasts and Where to Find Them",
+      "id": "film/hp/2016_fantastic_beasts_and_where_to_find_them",
+      "label": "Fantastik Canavarlar: Nelerdir, Nerede Bulunurlar? (2016)",
+      "title": "Fantastik Canavarlar: Nelerdir, Nerede Bulunurlar?",
       "type": "film",
       "release_date": "2016-11-18",
-      "image": "assets/images/harrypotter.jpg",
-      "shape": "image",
-      "description": "Fantastik Canavarlar Nelerdir, Nerede Bulunurlar?, Newt Scamander'ın 1920'lerde New York'ta büyücü ve sihirli yaratıklar dünyasındaki maceralarını anlatır. Film, büyücü dünyasının tarih Öncesi ve farklı coğrafyalardaki zenginliğini gözler önüne serer. Newt’un yarattığı sihirli yaratıklar ve karanlık güçlerle mücadele, büyücülük evreninin derinliklerine dair yeni katmanlar sunar.",
-      "refers_to": "Film, Harry Potter evreninden önceki dönemi ve sihirli yaratıkların tarihçesini konu alır. Newt Scamander'ın maceraları, büyücülük dünyasındaki güç dengelerini ve karanlık büyücü Grindelwald'ın yükselişini açıklar. Harry Potter evrenine bağlanan önemli olaylar ve karakterler içerir.",
-      "canonical_level": "canon",
-      "sources": [
-        {"name": "IMDb", "url": "https://www.imdb.com/title/tt3183660/"},
-        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Fantastic_Beasts_and_Where_to_Find_Them_(film)"}
+      "end_date": null,
+      "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTe0GO4grxSTaFUX60YF9GEtXsxdIVqsbxMsiIekEeJbTol0Y7dWKBCFdaz8rgsWaVDpNPNolAF3MWv-EAWUas8ciCD0uscNVm2j3f-sNk",
+      "imdb_rating": 7.2,
+      "yönetmen": [
+        "David Yates"
       ],
-      "lang": "tr",
-      "level": 3
+      "oyuncular": [
+        "Eddie Redmayne",
+        "Katherine Waterston",
+        "Dan Fogler",
+        "Alison Sudol",
+        "Ezra Miller",
+        "Colin Farrell"
+      ],
+      "tür": [
+        "Fantastik",
+        "Macera",
+        "Aile"
+      ],
+      "shape": "image",
+      "description": "2016 yapımı 'Fantastik Canavarlar: Nelerdir, Nerede Bulunurlar?', Harry Potter evreninin genişletilmiş bir bölümünü oluşturur ve New York'ta geçen büyüleyici bir hikayeyi anlatır. Film, büyücü Newt Scamander'ın 1926 yılında, sihirli yaratıkları araştırmak ve korumak için çıktığı dünya turunun başlangıcına odaklanır. Newt, taşıdığı sihirli yaratıklarla dolu büyülü bavuluyla New York'a gelir. Ancak, bavulun yanlışlıkla bir Muggle (büyücü olmayan) olan Jacob Kowalski'nin bavuluyla karışması, bazı tehlikeli yaratıkların serbest kalmasına neden olur. Bu olay, Amerika'daki büyücü dünyasının katı kurallarıyla çatışmasına ve büyücüleri ifşa etmeye çalışan No-Maj'ler (Amerikalı Muggle'lar) arasında bir krize yol açar. Newt, sihirli yaratıkları yakalamak ve düzeni yeniden sağlamak için Jacob, yetenekli bir büyücü olan Tina Goldstein ve onun Legilimens (zihin okuyucu) kız kardeşi Queenie Goldstein ile iş birliği yapar. Bu süreçte, New York'taki büyücü yönetiminin, yani MACUSA'nın, Obscurus adı verilen gizemli ve yıkıcı bir gücün peşinde olduğunu öğrenirler. Obscurus, bastırılmış büyülerden doğan ve kontrol edilemeyen bir güçtür ve bu gücün, büyücülere karşıt bir grup tarafından kullanılma potansiyeli vardır. Film, Newt'in sevimli ve tuhaf karakteriyle, hem eğlenceli hem de gerilimli anları bir arada sunar. Newt'in koruma içgüdüsü, onun, büyücü toplumunun tehlikeli gördüğü yaratıklara karşı duyduğu şefkati ve bu yaratıkların aslında birer kurban olduğunu göstermesini sağlar. Yönetmen David Yates, filmi görsel olarak zengin ve sürükleyici bir şekilde hayata geçirirken, J.K. Rowling'in senaryosu, Harry Potter evreninin bilinen tonunu koruyarak yeni ve karanlık temaları keşfeder. Film, Grindelwald gibi güçlü bir karanlık büyücünün yükselişinin sinyallerini verir ve büyücü dünyasının gelecekteki çatışmalarına zemin hazırlar. Son sahne, Grindelwald'ın gerçek kimliğinin ortaya çıkışıyla izleyiciyi şaşırtır ve serinin sonraki filmleri için heyecan verici bir başlangıç yapar. Newt'in yolculuğu, sadece fantastik canavarları keşfetmekten öte, aynı zamanda kendi vicdanıyla yüzleşmek ve doğru olanı yapmak için cesaret bulmakla ilgilidir. Büyücü dünyasındaki ayrımcılık ve dışlanma temaları, hem Newt'in yaratıklara olan sevgisiyle hem de Obscurus'un trajik hikayesiyle güçlü bir şekilde işlenir. Film, izleyiciye, Harry Potter serisinin tanıdık hissini verirken, farklı bir dönemin, farklı bir kültürün ve yeni bir kahramanın hikayesini sunar. Sihirli bavulun içine gizlenmiş olan dünya, Newt'in kalbinin ve karakterinin derinliğini gösteren bir metafor haline gelir. Film, büyücülük ve muggle/no-maj dünyaları arasındaki gerilimi, hem komik hem de dokunaklı anlarla başarıyla harmanlar.",
+      "refers_to": "'Fantastik Canavarlar: Nelerdir, Nerede Bulunurlar?', Harry Potter evrenine, ana serinin olaylarından yaklaşık 70 yıl öncesine giderek, bu evrenin temellerini atan ve gelecek olaylara dair kritik ipuçları barındıran bir yapıttır. Filmin en önemli atıflarından biri, baş kötü karakterin kimliğinin ortaya çıkmasıdır. Filmin sonlarına doğru, Newt Scamander'ın yakaladığı gizemli büyücü Graves'in aslında genç Gellert Grindelwald olduğu ortaya çıkar. Johnny Depp tarafından canlandırılan Grindelwald karakteri, filmin finalinde izleyiciye gösterilir ve onun, Harry Potter serisinin ana kötü karakteri olan Lord Voldemort'dan önceki en tehlikeli büyücü olduğunu vurgular. Bu durum, serinin gelecekteki filmlerinin ana çatışmasını belirler ve **Fantastik Canavarlar: Grindelwald'ın Suçları** filmine doğrudan bir bağlantı kurar. Film, aynı zamanda, Albus Dumbledore'a yapılan ince göndermelerle de doludur. Newt'in Hogwarts'tan atılmasına karşı çıkan tek kişinin Dumbledore olması, onların arasındaki derin ve özel bağı gözler önüne serer. Bu bağ, serinin sonraki filmlerinde daha detaylı bir şekilde işlenecek olan Dumbledore ve Grindelwald arasındaki tarihi düelloya zemin hazırlar. Obscurus adlı gizemli gücün varlığı, Harry Potter serisinde yer alan ve büyücü toplumunun tarihiyle ilgili birçok olaya ışık tutar. Obscurus, büyü güçlerini baskılayan çocuklarda ortaya çıkan yıkıcı bir güçtür. Bu durum, Harry Potter serisinde yer alan ve büyücülerin toplum içindeki konumları, büyücülük dünyasındaki gizlilik gibi konulara dair daha geniş bir bakış açısı sağlar. Film, aynı zamanda, Harry Potter serisinde bahsedilen bazı aile isimlerine de atıfta bulunur. Leta Lestrange'ın adı, Newt'in eski sevgilisi olarak geçer ve bu, daha sonra **Fantastik Canavarlar: Grindelwald'ın Suçları** filminde Lestrange ailesinin geçmişini ve kaderini daha iyi anlamamızı sağlar. Filmin büyücü dünyasının ABD'deki versiyonu olan MACUSA'yı (Amerika Birleşik Devletleri Sihir Kongresi) tanıtması, evrenin coğrafi ve politik yapısını genişletir. Bu yeni kurum, Harry Potter serisinde bahsedilen Birleşik Krallık'taki Sihir Bakanlığı'ndan farklı kurallara ve dinamiklere sahip olduğunu gösterir. Film, genel olarak, Harry Potter serisinin derinliğini ve karmaşıklığını artırarak, izleyiciye tanıdık gelen temalarla yeni bir hikaye anlatmayı başarır. Filmin temelini oluşturan Grindelwald tehdidi, Harry Potter serisindeki Voldemort tehdidinin öncülü olarak işlenir ve bu iki karanlık büyücü arasındaki benzerlikler ve farklılıklar üzerine düşünmemizi sağlar. Bu film, Harry Potter evrenini sadece bir kitap serisinden ibaret olmaktan çıkarıp, çok katmanlı ve geniş bir evrene dönüştürmede kilit bir rol oynar.",
+      "canonical_level": "canon",
+      "sources": {
+        "Kaynaklar": [
+          {
+            "name": "Box Office Türkiye",
+            "url": "https://boxofficeturkiye.com/film/fantastik-canavarlar-nelerdir-nerede-bulunurlar--2013110"
+          },
+          {
+            "name": "Wizarding World Official Site",
+            "url": "https://www.wizardingworld.com/films/fantastic-beasts-and-where-to-find-them"
+          },
+          {
+            "name": "IMDb",
+            "url": "https://www.imdb.com/title/tt3183660/"
+          }
+        ],
+        "Görsel": [
+          {
+            "name": "Google Images",
+            "url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTe0GO4grxSTaFUX60YF9GEtXsxdIVqsbxMsiIekEeJbTol0Y7dWKBCFdaz8rgsWaVDpNPNolAF3MWv-EAWUas8ciCD0uscNVm2j3f-sNk"
+          }
+        ],
+        "Platform": [
+          {
+            "name": "HBO Max",
+            "url": "https://play.hbomax.com/movie/d627b35d-31a0-4e62-af14-6ec2fd8fdaef"
+          }
+        ]
+      },
+      "lang": "tr"
     },
     {
-      "id": "film/harrypotter/fantastic_beasts_the_crimes_of_grindelwald",
+      "id": "film/hp/2018_fantastic_beasts_the_crimes_of_grindelwald",
       "label": "Fantastik Canavarlar: Grindelwald'ın Suçları (2018)",
-      "title": "Fantastic Beasts: The Crimes of Grindelwald",
+      "title": "Fantastik Canavarlar: Grindelwald'ın Suçları",
       "type": "film",
       "release_date": "2018-11-16",
-      "image": "assets/images/harrypotter.jpg",
-      "shape": "image",
-      "description": "Fantastik Canavarlar: Grindelwald'ın Suçları, karanlık büyücü Grindelwald’ın yükselişi ve büyücülük dünyasında yarattığı kaosu anlatır. Newt Scamander ve müttefikleri, büyücülük dünyasını korumak için mücadele eder. Film, Harry Potter evrenine giden yolu hazırlayan politik ve kişisel çatışmaları derinleştirir.",
-      "refers_to": "Film, Grindelwald’ın güç kazanma çabaları ve onun etkisi altındaki büyücülük dünyasının bölünmesini ele alır. Albus Dumbledore ve diğer karakterlerin rollerini detaylandırır. Harry Potter Öncesi dönemin önemli olaylarını ortaya koyar.",
-      "canonical_level": "canon",
-      "sources": [
-        {"name": "IMDb", "url": "https://www.imdb.com/title/tt4123430/"},
-        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Fantastic_Beasts:_The_Crimes_of_Grindelwald"}
+      "end_date": null,
+      "image": "https://upload.wikimedia.org/wikipedia/tr/6/6e/Fantastik_Canavarlar_-_Grindelwald%27%C4%B1n_Su%C3%A7lar%C4%B1_afi%C5%9F.jpg",
+      "imdb_rating": 6.5,
+      "yönetmen": [
+        "David Yates"
       ],
-      "lang": "tr",
-      "level": 3
+      "oyuncular": [
+        "Eddie Redmayne",
+        "Katherine Waterston",
+        "Dan Fogler",
+        "Alison Sudol",
+        "Ezra Miller",
+        "Jude Law",
+        "Johnny Depp"
+      ],
+      "tür": [
+        "Fantastik",
+        "Macera",
+        "Aile"
+      ],
+      "shape": "image",
+      "description": "2018 yapımı 'Fantastik Canavarlar: Grindelwald'ın Suçları', serinin ilk filminin hemen sonrasında, büyücü dünyasının karanlık bir döneme girdiğini gözler önüne seriyor. Film, ilk filmin sonunda yakalanan güçlü ve karanlık büyücü Gellert Grindelwald'ın, tutulduğu hapisten kaçışını ve amacını gerçekleştirmek için yandaş toplamaya başlamasını konu alıyor. Grindelwald, büyücülerin safkanlığını savunarak büyücülerin muggle'lar üzerinde üstünlük kurması gerektiğine inanmaktadır. Onun bu tehlikeli ideolojisi, büyücü dünyasını ikiye bölmeye başlar. Bu sırada, Albus Dumbledore, eski dostu ve şimdi baş düşmanı olan Grindelwald'ı durdurmak için öğrencisi Newt Scamander'dan yardım ister. Dumbledore'un neden Grindelwald'a karşı doğrudan mücadele edemediği, film boyunca gizemini korur ve bu durum, hikayenin merkezine yerleşir. Newt, Dumbledore'un talebi üzerine Paris'e gider. Burada, ilk filmdeki yol arkadaşları Jacob, Tina ve Queenie ile yeniden bir araya gelir. Ancak, ekip bu kez daha karmaşık ve tehlikeli olaylarla karşı karşıyadır. Grindelwald'ın peşinde olduğu Obscurus Credence Barebone'un gerçek kimliğini bulmaya çalışan ekip, büyücü dünyasının derin sırları ve aile bağları ile yüzleşir. Film, Lestrange ailesinin trajik geçmişini ve Credence'ın bu aileyle olan beklenmedik bağlantısını ortaya çıkarır. Bu süreçte, Queenie'nin Grindelwald'ın tarafına geçme kararı, hikayenin duygusal ağırlığını artırır ve karakterler arasındaki ilişkileri sarsar. Yönetmen David Yates, filmin görsel atmosferini daha karanlık ve gerilimli bir hale getirirken, J.K. Rowling'in senaryosu, karakterlerin motivasyonlarını ve geçmişlerini daha derinlemesine inceler. Jude Law'ın canlandırdığı genç Dumbledore karakteri, karizmatik ve gizemli bir figür olarak öne çıkar. Dumbledore'un, Grindelwald'ın yükselişi karşısındaki karmaşık durumu, onun karakterinin derinliğini ve etik ikilemlerini vurgular. Film, son sahnesinde Credence'ın gerçek kimliğinin ortaya çıkmasıyla izleyiciyi şok eder ve serinin devamı için merak uyandırır. 'Grindelwald'ın Suçları', sadece bir aksiyon ve macera filmi olmakla kalmaz, aynı zamanda siyasi ve ideolojik çatışmaları da işleyerek, büyücü dünyasının karmaşıklığını ve kırılganlığını gösterir. Film, nefret, ayrımcılık ve gücün kötüye kullanımı gibi evrensel temaları ele alır ve büyücü topluluğunun bu tehditler karşısındaki tepkilerini inceler. Grindelwald'ın büyücüleri bir araya getirme çabası, Harry Potter serisinde Voldemort'un taktiklerine benzerlikler taşır ve bu iki karanlık büyücü arasındaki tarihi bağı pekiştirir. Filmin, büyücü dünyasının farklı ülkelerdeki yönetimlerini ve kültürlerini göstermesi, evrenin coğrafi ve politik genişliğini daha da vurgular. ",
+      "refers_to": "'Fantastik Canavarlar: Grindelwald'ın Suçları', Harry Potter evreninin en karanlık dönemlerinden birine ışık tutarak, ana serideki birçok olaya ve karaktere dair kritik atıflar içerir. Filmin en önemli atıflarından biri, Albus Dumbledore'un gençliğini ve Gellert Grindelwald ile olan karmaşık ilişkisini detaylandırmasıdır. Dumbledore'un, Grindelwald'ı durdurmak için neden bizzat mücadele edemediği, kan kardeşlik yeminiyle açıklanır. Bu yemin, Dumbledore'un Grindelwald'a karşı kişisel bir mücadele vermesini engeller ve bu durum, **Harry Potter ve Ölüm Yadigârları**'nda anlatılan Dumbledore-Grindelwald düellosunun arka planını aydınlatır. Film, Dumbledore'un kardeşi Ariana'nın trajik ölümünün de bu ikilinin geçmişindeki yadsınamaz bir etkisi olduğunu gösterir. Bu olay, Harry Potter serisinde sadece ima edilen bir hikaye parçasının daha derinlemesine anlaşılmasını sağlar. Credence Barebone'un gerçek kimliği, filmin ana gizemlerinden birini oluşturur. Filmin finalinde Credence'ın, Dumbledore ailesine ait olduğu ve Albus'un kardeşi olduğu ortaya çıkar. Bu şok edici bilgi, **Fantastik Canavarlar: Dumbledore'un Sırları** filminin ana konusunu oluşturur ve Dumbledore'un ailesi hakkındaki bilinenleri kökten değiştirir. Film, aynı zamanda, Harry Potter serisinde yer alan Lestrange ailesine de atıfta bulunur. Leta Lestrange'ın, Newt Scamander'ın eski sevgilisi olarak hikayede önemli bir rol oynaması, Bellatrix Lestrange ve diğer Lestrange'ların aile geçmişleri hakkında daha geniş bir bakış açısı sunar. `Grindelwald'ın Suçları`, Harry Potter serisinde de önemli bir yer tutan 'Ölüm Yadigârları' (Deathly Hallows) temasına da derinlemesine bir atıfta bulunur. Grindelwald'ın ana sembolü, Ölüm Yadigârları'nı temsil eden üçgen ve daire figüründen oluşur. Bu sembol, Grindelwald'ın sadece büyücülerin üstünlüğünü değil, aynı zamanda büyülü nesnelerin gücünü de aradığını gösterir. Bu durum, Harry Potter'ın kendi yolculuğunda da Ölüm Yadigârları'nın peşine düşmesiyle paralellik gösterir. Film, Harry Potter serisinde de bahsedilen ünlü büyücü Nicolas Flamel'i tanıtarak, evrenin tarihsel yapısını daha da zenginleştirir. Flamel'in, Grindelwald'ın planlarını durdurmaya yardımcı olması, Harry Potter'ın Felsefe Taşı'nı koruma hikayesine bir gönderme niteliği taşır. Film, Grindelwald'ın büyücüleri topladığı Paris'teki mezarlık sahnesiyle, Harry Potter serisindeki Voldemort'un takipçilerini topladığı sahneleri çağrıştırır. Bu durum, iki karanlık büyücünün de benzer taktikleri kullanarak güç kazandığını ve Harry Potter'dan önceki büyücü dünyasının ne kadar tehlikeli bir dönemden geçtiğini gösterir.",
+      "canonical_level": "canon",
+      "sources": {
+        "Kaynaklar": [
+          {
+            "name": "Box Office Türkiye",
+            "url": "https://boxofficeturkiye.com/film/fantastik-canavarlar-grindelwaldin-suclari--2015507"
+          },
+          {
+            "name": "Wizarding World Official Site",
+            "url": "https://www.wizardingworld.com/films/fantastic-beasts-the-crimes-of-grindelwald"
+          },
+          {
+            "name": "IMDb",
+            "url": "https://www.imdb.com/title/tt4123430/"
+          }
+        ],
+        "Görsel": [
+          {
+            "name": "Wikimedia",
+            "url": "https://upload.wikimedia.org/wikipedia/tr/6/6e/Fantastik_Canavarlar_-_Grindelwald%27%C4%B1n_Su%C3%A7lar%C4%B1_afi%C5%9F.jpg"
+          }
+        ],
+        "Platform": [
+          {
+            "name": "HBO Max",
+            "url": "https://play.hbomax.com/movie/8c884d7f-cf56-469d-ab2f-38129155757f?utm_source=universal_search"
+          }
+        ]
+      },
+      "lang": "tr"
     },
-     {
-      "id": "dizi/harrypotter/hogwarts_legacy",
-      "label": "Hogwarts Legacy (2023)",
-      "title": "Hogwarts Legacy (Video Oyunu Tabanlı Dizi)",
-      "type": "dizi",
-      "release_date": "2023-01-01",
-      "image": "assets/images/harrypotter.jpg",
-      "shape": "image",
-      "description": "Hogwarts Legacy, 1800’lerde geçen ve Hogwarts’da öğrencilik hayatını anlatan aksiyon ve macera temalı dizi/oyun uyarlamasıdır. Dizi, büyücülük dünyasının derinliklerine inmeyi ve sihirli yeteneklerin keşfini hedefler. Orijinal Harry Potter hikayelerinden farklı ama evrenle bağlantılı yan öyküler sunar.",
-      "refers_to": "Hogwarts Legacy, Harry Potter evreninde 19. yüzyılda geçen alternatif bir zaman diliminde geçer. Dizi, oyuncuların ve izleyicilerin büyü dünyasının tarihini ve mitolojisini keşfetmesine olanak sağlar. Warner Bros’un desteklediği resmi yan ürünlerden biridir.",
-      "canonical_level": "canon",
-      "sources": [
-        {"name": "Official", "url": "https://www.hogwartslegacy.com/"},
-        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Hogwarts_Legacy"}
+    {
+      "id": "film/hp/2022_fantastic_beasts_the_secrets_of_dumbledore",
+      "label": "Fantastik Canavarlar: Dumbledore'un Sırları (2022)",
+      "title": "Fantastik Canavarlar: Dumbledore'un Sırları",
+      "type": "film",
+      "release_date": "2022-04-15",
+      "end_date": null,
+      "image": "https://static.boxofficeturkiye.com/movie/poster/300x429/52/2014752-53811978.jpg",
+      "imdb_rating": 6.2,
+      "yönetmen": [
+        "David Yates"
       ],
-      "lang": "tr",
-      "level": 3
+      "oyuncular": [
+        "Eddie Redmayne",
+        "Jude Law",
+        "Ezra Miller",
+        "Dan Fogler",
+        "Alison Sudol",
+        "Mads Mikkelsen"
+      ],
+      "tür": [
+        "Fantastik",
+        "Macera",
+        "Aksiyon"
+      ],
+      "shape": "image",
+      "description": "2022 yapımı 'Fantastik Canavarlar: Dumbledore'un Sırları', büyücü dünyasının Gellert Grindelwald'ın yükselen gücü karşısında yaşadığı kaosu ve Albus Dumbledore'un bu karanlık tehdide karşı mücadelesini derinlemesine ele alıyor. Serinin üçüncü filmi, Dumbledore'un, Grindelwald'la yüzleşmekte yaşadığı etik ikilemleri ve kişisel geçmişinin yükünü gözler önüne seriyor. Dumbledore, Grindelwald'la yaptığı kan yemini nedeniyle ona doğrudan saldıramaz. Bu yüzden, büyücülük dünyasının geleceğini korumak için, Newt Scamander'ın liderliğindeki cesur bir ekibi, Grindelwald'ın büyüyen ordusuna karşı koymakla görevlendirir. Ekip, eski dostlardan ve beklenmedik kahramanlardan oluşur: Newt'in kardeşi Theseus Scamander, sadık arkadaşı Jacob Kowalski, yetenekli büyücü Eulalie 'Lally' Hicks ve Newt'in asistanı Bunty. Grindelwald'ın, dünyayı büyücülerin yönetmesi gerektiği yönündeki faşist ideolojisi, hem büyücü hem de muggle dünyasını tehlikeye atar. Grindelwald, Uluslararası Büyücü Konfederasyonu'nun başına geçmek ve dünyayı kontrol altına almak için bir seçim süreci manipüle etmeye çalışır. Bu süreç, Credence Barebone'un (Grindelwald'ın kendi ailesi tarafından dışlanmış ve şimdi onun tarafında yer alan) trajik hikayesiyle iç içe geçer. Dumbledore, ekibini Grindelwald'ın bu hain planını engellemek için stratejik olarak görevlendirirken, Newt Scamander'ın sihirli hayvanlara olan eşsiz bilgisi ve bu hayvanlarla olan özel bağı, ekibin en büyük kozlarından biri haline gelir. Film, hikayeyi Almanya ve Bhutan gibi farklı coğrafyalara taşıyarak, evrenin kültürel ve politik çeşitliliğini vurgular. Jude Law'ın canlandırdığı Dumbledore karakteri, bu filmde daha belirgin bir rol oynayarak, hem büyücü dünyasının en güçlü figürlerinden biri olduğunu hem de kişisel hatalarının bedeliyle yüzleşen, karmaşık ve vicdanlı bir adam olduğunu gösterir. Mads Mikkelsen'in canlandırdığı Grindelwald, karizmatik ve manipülatif bir kötü karakter olarak öne çıkar. Film, nihayetinde Dumbledore ve Grindelwald'ın kan yeminini kırmalarıyla doruk noktasına ulaşır ve iki eski dost arasındaki çatışmanın kaçınılmaz olduğunu gösterir. 'Dumbledore'un Sırları', sadece bir macera filmi olmakla kalmaz, aynı zamanda sadakat, aile bağları ve ahlaki seçimler gibi derin temaları işleyerek, Harry Potter evreninin zenginliğini ve derinliğini artırır. Film, büyücü toplumunun, nefret ve ayrımcılık gibi ideolojiler karşısında nasıl tepki verdiğini incelerken, umudun ve birlikteliğin önemini vurgular.",
+      "refers_to": "'Fantastik Canavarlar: Dumbledore'un Sırları', Harry Potter evreninin ana hikayesine ve karakterlerine dair birçok önemli atıfta bulunur. Filmin en merkezî teması, Albus Dumbledore ve Gellert Grindelwald arasındaki tarihi çatışmanın arka planını derinleştirmektir. Film, Dumbledore'un Grindelwald'a karşı doğrudan mücadele edememe nedeninin, gençliklerinde yaptıkları kan yemini olduğunu daha net bir şekilde ortaya koyar. Bu yemin, **Harry Potter ve Ölüm Yadigârları**'nda anlatılan ve Dumbledore'un Grindelwald'ı yenilgiye uğrattığı meşhur düellonun nasıl gerçekleştiğini anlamamız için kritik bir detaydır. Film, bu yemin nihayet kırıldığında, Dumbledore'un ne kadar güçlü ve aynı zamanda duygusal olarak ne kadar yaralı bir karakter olduğunu gösterir. Credence Barebone'un aslında Albus Dumbledore'un kardeşi Aurelius Dumbledore olduğu gerçeği, **Fantastik Canavarlar: Grindelwald'ın Suçları** filminde ima edilen bir gizemin açıklığa kavuşmasıdır. Bu bilgi, Dumbledore ailesinin trajik geçmişini ve Albus'un ailesini koruma arzusunu daha iyi anlamamızı sağlar. Harry Potter serisinde sadece adı geçen Ariana Dumbledore'un hikayesi, Aurelius'un ortaya çıkışıyla daha da karmaşıklaşır. Film, büyücü dünyasının siyasi yapısına da atıfta bulunur. Grindelwald'ın Uluslararası Büyücü Konfederasyonu'nun başına geçme çabası, **Harry Potter ve Zümrüdüanka Yoldaşlığı**'nda Fudge'ın Sihir Bakanlığı'nı yönetme biçimiyle paralellikler taşır. Her iki durumda da, güçlü bir lider, manipülasyon ve korku yoluyla iktidarı ele geçirmeye çalışır. Film, Dumbledore'un, Harry Potter'ın da karşılaştığı, yetkililerin tehlikeyi görmezden gelmesiyle mücadele etmesini gösterir. 'Dumbledore'un Sırları', aynı zamanda ikonik Hogwarts'a da atıfta bulunur. Dumbledore'un Hogwarts'taki gençlik yıllarından kesitler sunması ve Hogwarts'ın, büyücü dünyasının kalesi olarak önemini vurgulaması, Harry Potter serisinin ana mekanına duygusal bir bağ kurmamızı sağlar. Filmdeki, Quidditch benzeri oyunlar, büyücü sporlarının nasıl evrimleştiğini gösterirken, Hogsmeade köyünün sahneleri, Harry Potter'ın da sıkça ziyaret ettiği tanıdık mekanlara geri dönülmesini sağlar. Newt Scamander'ın sihirli hayvanlara olan sevgisi ve bilgisi, Harry Potter serisinde yer alan fantastik yaratıklara dair daha geniş bir bakış açısı sunar. Newt'in Qilin (Kilin) adlı yaratıkla olan özel bağı, Harry Potter evrenindeki nadir ve güçlü yaratıkların önemini vurgular. Film, genel olarak, Harry Potter serisinin ana çatışması olan iyi ve kötü arasındaki mücadeleye dair tarihi bir arka plan sunar. Grindelwald'ın yükselişi, Voldemort'un yükselişinin bir öncülü olarak işlenir ve bu iki karanlık çağın birbiriyle olan bağını güçlendirir. Bu film, Dumbledore'un, Harry Potter'ın akıl hocası olarak nasıl bu kadar bilge ve güçlü bir karaktere dönüştüğünü anlamamız için hayati önem taşır.",
+      "canonical_level": "canon",
+      "sources": {
+        "Kaynaklar": [
+          {
+            "name": "Box Office Türkiye",
+            "url": "https://boxofficeturkiye.com/film/fantastik-canavarlar-dumbledoreun-sirlari--2014752"
+          },
+          {
+            "name": "Wizarding World Official Site",
+            "url": "https://www.wizardingworld.com/films/fantastic-beasts-the-secrets-of-dumbledore"
+          },
+          {
+            "name": "IMDb",
+            "url": "https://www.imdb.com/title/tt4123432/"
+          }
+        ],
+        "Görsel": [
+          {
+            "name": "Box Office Türkiye",
+            "url": "https://static.boxofficeturkiye.com/movie/poster/300x429/52/2014752-53811978.jpg"
+          }
+        ],
+        "Platform": [
+          {
+            "name": "HBO Max",
+            "url": "https://play.hbomax.com/movie/3cfe3099-e685-40fe-b858-a5013692e030"
+          }
+        ]
+      },
+      "lang": "tr"
+    },
+    {
+      "id": "film/hp/2001_harry_potter_and_the_philosophers_stone",
+      "label": "Harry Potter ve Felsefe Taşı (2001)",
+      "title": "Harry Potter ve Felsefe Taşı",
+      "type": "film",
+      "release_date": "2001-11-23",
+      "end_date": null,
+      "image": "https://static.boxofficeturkiye.com/movie/poster/300x429/15/2002015-793402240.jpg",
+      "imdb_rating": 7.7,
+      "yönetmen": [
+        "Chris Columbus"
+      ],
+      "oyuncular": [
+        "Daniel Radcliffe",
+        "Rupert Grint",
+        "Emma Watson",
+        "Richard Harris",
+        "Alan Rickman",
+        "Maggie Smith"
+      ],
+      "tür": [
+        "Fantastik",
+        "Macera",
+        "Gizem"
+      ],
+      "shape": "image",
+      "description": "2001 yapımı 'Harry Potter ve Felsefe Taşı', tüm dünyayı büyüleyen bir sinematik yolculuğun başlangıcını işaret eder. Film, anne ve babası bebekken öldürülen, zorba Dursley ailesiyle sefil bir hayat yaşayan Harry Potter'ın, on birinci yaş gününde kendisinin bir büyücü olduğunu öğrenmesiyle başlar. Hagrid adında dev bir bekçi tarafından kurtarılan Harry, büyücülük ve cadılık okulu Hogwarts'a davet edilir. Harry, büyücülük dünyasına adım attığında, adının çoktan efsaneleştiğini ve kötü büyücü Lord Voldemort'un lanetinden sağ kurtulan tek kişi olduğunu öğrenir. Hogwarts'ta yeni hayatına başlayan Harry, en iyi arkadaşları Ron Weasley ve Hermione Granger ile tanışır. Birlikte, Hogwarts'ın koridorlarında büyülü maceralar yaşarlar, Büyücülük dünyasının kurallarını öğrenirler ve ilk derslerini alırlar. Ancak, Harry'nin hayatı, okulun bir yerinde saklanan ve ölümsüzlük vaat eden gizemli bir nesne olan Felsefe Taşı'nın varlığını öğrenmesiyle karmaşıklaşır. Harry ve arkadaşları, taşı korumak için tasarlanmış tehlikeli engellerle dolu bir yolculuğa çıkarlar. Bu süreçte, Harry'nin Felsefe Taşı'nın peşinde olan kötü niyetli bir büyücüyle yüzleşmesi gerekir. Film, Harry'nin kendisini keşfettiği ve ait olduğu yeri bulduğu bu sihirli dünyayı, izleyiciye sıcak ve samimi bir atmosferle sunar. Chris Columbus'un yönetmenliği, J.K. Rowling'in kitabına sadık kalırken, filmin sihirli ve fantastik unsurlarını başarıyla beyaz perdeye aktarır. Daniel Radcliffe'in canlandırdığı Harry, Rupert Grint'in canlandırdığı Ron ve Emma Watson'ın canlandırdığı Hermione karakterleri, izleyicinin kalbinde özel bir yer edinir. Filmin en can alıcı noktalarından biri, Harry'nin annesi Lily'nin onu korumak için yaptığı fedakarlıktır; bu, film boyunca Harry'nin gücünün kaynağını oluşturan en önemli temalardan biridir. 'Felsefe Taşı', sadece bir çocuk hikayesi değil, aynı zamanda dostluk, cesaret ve iyiliğin kötülüğe karşı mücadelesini işleyen bir destanın başlangıcıdır. Filmin finalinde, Felsefe Taşı'nın aslında bir kurbanın arkasında yatan gizemli güç olmadığını, asıl gücün sevgi olduğunu gösteren mesajı, Harry Potter evreninin ana temasını belirler. Hogwarts'ın gizemli şatosu, hareketli merdivenleri, yaşayan resimleri ve sihirli dersleriyle, izleyiciyi bu büyülü dünyaya davet eder. Harry'nin, kendisine ait olmayan bir dünyada yaşarken, aslında kendisini bekleyen bir dünyaya ait olduğunu keşfetmesi, filmin duygusal çekirdeğini oluşturur. Bu film, Harry'nin, sıradan bir çocuktan, tüm büyücü dünyasının umut bağladığı bir kahramana dönüşümünün ilk adımıdır.",
+      "refers_to": "'Harry Potter ve Felsefe Taşı', Harry Potter evreninin temelini atan ve sonraki filmlerde işlenecek birçok ana temaya ve karaktere atıfta bulunan kritik bir yapımdır. Filmin en önemli atfı, Harry'nin alnındaki yara izidir. Bu yara izi, Lord Voldemort'un ona yaptığı lanetten kurtulduğu anı temsil eder ve tüm seri boyunca Harry'nin Voldemort'la olan kaçınılmaz bağının bir sembolü haline gelir. Filmin sonunda, Voldemort'un ruhunun bir parçasının Profesör Quirrell'in vücuduna tutunmuş olması, Voldemort'un geri döneceğini ve tamamen yok edilemeyeceğini ima eder. Bu durum, **Harry Potter ve Sırlar Odası**'nda Tom Riddle'ın günlüğüyle ve **Harry Potter ve Ateş Kadehi**'nde Voldemort'un fiziksel olarak geri dönüşüyle daha da belirgin hale gelir. Film, Albus Dumbledore karakterini tanıtarak, onun evrenin en güçlü ve en bilge büyücülerinden biri olduğunu gösterir. Dumbledore'un Felsefe Taşı'nı koruma konusundaki rolü, onun daha sonra Harry'nin akıl hocası ve Voldemort'a karşı mücadelenin ana stratejisti olacağının sinyallerini verir. Filmin sonunda, Dumbledore'un Harry'ye annesi Lily'nin fedakarlığı sayesinde hayatta kaldığını açıklaması, sevginin en güçlü büyü olduğu temasını belirler. Bu tema, serinin tüm filmlerinde, özellikle de **Harry Potter ve Ölüm Yadigârları: Bölüm 2**'de Harry'nin annesinin fedakarlığını anlamasıyla doruk noktasına ulaşır. 'Felsefe Taşı', Hermione Granger'ın zekasını ve Ron Weasley'nin sadakatini de ilk kez tanıtır. Harry, Ron ve Hermione'nin üçlüsü, film boyunca zorlukların üstesinden gelmek için bir araya gelerek, serinin en önemli dostluk bağını oluşturur. Bu dostluk, **Harry Potter ve Ölüm Yadigârları: Bölüm 1**'de aralarındaki gerilimlere rağmen sonunda birbirlerine olan bağlılıklarını yeniden kanıtlamalarıyla derinleşir. Filmin, Harry'nin ailesinin trajik geçmişini ima etmesi, Voldemort'un neden Harry'nin anne ve babasını öldürdüğünü ve Harry'ye karşı duyduğu nefreti anlamamız için zemin hazırlar. Filmdeki ilk Ölüm Yadigârı olan Görünmezlik Pelerini'nin Harry'nin babası James'ten miras kalması, Potter ailesinin büyücülük dünyasındaki yerini ve önemini vurgular. Bu durum, daha sonra **Harry Potter ve Ölüm Yadigârları**'nda pelerinin gerçek kökeninin açıklanmasıyla daha da anlam kazanır. Filmin, Draco Malfoy ve Severus Snape gibi karakterleri tanıtması, Harry'nin hayatındaki temel çatışmaları ve düşmanlıkları belirler. Snape'in Harry'ye karşı gösterdiği soğuk tavrın altında yatan karmaşık motivasyonlar, **Harry Potter ve Melez Prens** ve **Harry Potter ve Ölüm Yadigârları: Bölüm 2**'de tamamen açığa çıkacaktır. Bu film, büyücülük dünyasının temellerini atarak, izleyiciyi hem sihirli hem de karanlık bir dünyanın içine çeker ve tüm serinin tonunu ve ana çatışmalarını belirler.",
+      "canonical_level": "canon",
+      "sources": {
+        "Kaynaklar": [
+          {
+            "name": "Box Office Türkiye",
+            "url": "https://boxofficeturkiye.com/film/harry-potter-ve-felsefe-tasi--2002015"
+          },
+          {
+            "name": "Wizarding World Official Site",
+            "url": "https://www.wizardingworld.com/films/harry-potter-and-the-philosophers-stone"
+          },
+          {
+            "name": "IMDb",
+            "url": "https://www.imdb.com/title/tt0241527/"
+          }
+        ],
+        "Görsel": [
+          {
+            "name": "Box Office Türkiye",
+            "url": "https://static.boxofficeturkiye.com/movie/poster/300x429/15/2002015-793402240.jpg"
+          }
+        ],
+        "Platform": [
+          {
+            "name": "HBO Max",
+            "url": "https://play.hbomax.com/movie/4b990c5d-38ab-4daf-8092-2617cbc6d062?utm_source=universal_search"
+          }
+        ]
+      },
+      "lang": "tr"
+    },
+    {
+      "id": "film/hp/2002_harry_potter_and_the_chamber_of_secrets",
+      "label": "Harry Potter ve Sırlar Odası (2002)",
+      "title": "Harry Potter ve Sırlar Odası",
+      "type": "film",
+      "release_date": "2002-11-15",
+      "end_date": null,
+      "image": "https://static.boxofficeturkiye.com/movie/poster/full/56/2002156-105614273.jpg",
+      "imdb_rating": 7.5,
+      "yönetmen": [
+        "Chris Columbus"
+      ],
+      "oyuncular": [
+        "Daniel Radcliffe",
+        "Rupert Grint",
+        "Emma Watson",
+        "Richard Harris",
+        "Kenneth Branagh",
+        "Jason Isaacs"
+      ],
+      "tür": [
+        "Fantastik",
+        "Macera",
+        "Gizem"
+      ],
+      "shape": "image",
+      "description": "2002 yapımı 'Harry Potter ve Sırlar Odası', Harry'nin Hogwarts'taki ikinci yılını ve daha da karanlık bir tehditle yüzleşmesini konu alır. Dursley ailesiyle geçirdiği sefil bir yazın ardından, Harry'ye gelen esrarengiz uyarılar, onun Hogwarts'a dönmesini engellemeye çalışır. Ancak, Harry ve Ron, sihirli bir araba kullanarak okula ulaşmayı başarır. Hogwarts'a döndüklerinde, okulda Sırlar Odası'nın yeniden açıldığına dair korkutucu mesajlar ve öğrencilerin taşa dönüştürüldüğüne dair olaylar meydana gelmeye başlar. Harry, Ron ve Hermione, Hogwarts'ın kurucularından Salazar Slytherin'in, safkan olmayan büyücüleri temizlemek için Sırlar Odası'na bir canavar bıraktığı efsanesini araştırır. Harry'nin, bir yılanla konuşma yeteneği olduğunu keşfetmesi (Çataldili), okulda herkesin ondan şüphelenmesine neden olur. Bu süreçte, Harry, eski bir anı günlüğünün içine çekilir ve bu günlük, Lord Voldemort'un gençliği olan Tom Riddle'a aittir. Tom Riddle'ın günlüğü, Harry'ye okulun gizemli geçmişini gösterirken, aslında kendisinin kim olduğunu ve Sırlar Odası'nın sırrını anlamasına yardımcı olur. Harry, sonunda, Ron'un kız kardeşi Ginny'nin de günlük tarafından manipüle edildiğini ve Sırlar Odası'nı açan kişi olduğunu öğrenir. Harry, Ron'la birlikte, Sırlar Odası'nın derinliklerine iner. Burada, Tom Riddle'ın bir anısıyla yüzleşir ve Sırlar Odası'nın canavarı olan devasa bir Basilisk'le mücadele etmek zorunda kalır. Harry, Dumbledore'un anka kuşu Fawkes ve Seçmen Şapka'nın yardımıyla Basilisk'i yener ve Tom Riddle'ın günlüğünü yok eder. Bu zafer, Harry'nin gücünün ve cesaretinin ne kadar büyüdüğünü gösterir. Film, ayrıca, Dumbledore'un Harry'ye, onun Voldemort'tan farklı bir seçim yapma yeteneğine sahip olduğunu söyleyerek, Harry'nin kaderini kendi elleriyle şekillendirebileceği mesajını verir. 'Sırlar Odası', Harry Potter evreninin daha karanlık ve olgun bir yola girdiğini işaret eder. Chris Columbus'un yönetmenliği, ilk filmin masalsı tonunu korurken, hikayenin gerilimini ve karmaşıklığını artırır. Film, Harry'nin bir kahraman olarak kimliğini sağlamlaştırırken, dostluk ve sadakat gibi ana temaları da güçlendirir. Film, aynı zamanda, Lucius Malfoy ve Dobby gibi yeni karakterleri tanıtarak evrenin karakter kadrosunu genişletir. Sırlar Odası'nın açılışı, büyücü dünyasında safkan-muggle doğumlu büyücü ayrımının ne kadar derin ve eski bir sorun olduğunu gösterir. Bu tema, serinin ilerleyen filmlerinde de önemli bir yer tutacaktır.",
+      "refers_to": "'Harry Potter ve Sırlar Odası', Harry Potter evreninin ana hikayesine dair pek çok önemli atıfta bulunur ve serinin gidişatını etkileyen kritik olayları içerir. Filmin en önemli atfı, Lord Voldemort'un gençliği olan Tom Riddle'ın günlüğünün ortaya çıkmasıdır. Bu günlük, Voldemort'un geri dönüşünün bir aracı olarak işlev görür ve onun ruhunun bir parçasını içerir. Günlüğün yok edilmesi, Harry Potter'ın gelecekteki görevini, yani Voldemort'un Hortkuluklarını (ruhunun parçalarını) bulup yok etme arayışını ilk kez başlatır. Bu durum, **Harry Potter ve Melez Prens**'te Dumbledore'un Harry'ye bu görevi vermesiyle ve **Harry Potter ve Ölüm Yadigârları**'nda bu görevin ana hikaye haline gelmesiyle doruk noktasına ulaşır. Film, Harry'nin bir yılanla konuşma yeteneği olan Çataldili'ne sahip olduğunu ortaya çıkarır. Bu yetenek, Harry'nin Voldemort'la paylaştığı özel bir bağın kanıtıdır ve daha sonra **Harry Potter ve Ateş Kadehi**'nde ve **Harry Potter ve Zümrüdüanka Yoldaşlığı**'nda bu bağın Harry için hem bir avantaj hem de bir lanet olduğunu gösterir. Harry'nin bu yeteneği, onun Voldemort'un zihnine girmesini ve onun düşüncelerini okumasını sağlar. Dobby adlı ev cini karakteri, bu filmde ilk kez ortaya çıkar. Dobby'nin, Harry'ye yardım etme çabaları ve sonunda özgürlüğüne kavuşması, serinin ilerleyen filmlerinde Dobby'nin Harry'ye olan sadakatini ve onun ölüm yadigarları arayışındaki rolünü güçlendirir. Özellikle **Harry Potter ve Ölüm Yadigârları: Bölüm 1**'de Dobby'nin fedakarlığı, bu karakterin önemini ve Harry'nin hayatındaki yerini gösterir. `Sırlar Odası`, aynı zamanda, Harry'nin bir Yılan Soylu olduğunu düşündüren birçok yanlış anlaşılmaya neden olur. Bu durum, Harry Potter'ın kendi kimliğini ve ailesini daha iyi anlamaya çalıştığı bir yolculuk başlatır. Film, Tom Riddle'ın günlüğünün aslında Lucius Malfoy tarafından Ginny Weasley'ye verildiğini ortaya çıkararak, Malfoy ailesinin Karanlık Sanatlarla olan bağını ve Voldemort'a olan sadakatini pekiştirir. Bu durum, **Harry Potter ve Azkaban Tutsağı**'nda Azkaban'dan kaçan Sirius Black gibi karakterlerle, Voldemort'un takipçilerinin hâlâ aktif olduğunu ve tehdidin devam ettiğini gösterir. Film, Dumbledore'un Harry'ye, seçimlerinin yeteneklerinden daha önemli olduğunu söylemesiyle, serinin ana ahlaki temasını vurgular. Bu mesaj, Harry'nin Voldemort'tan farklı bir karakter olduğunu gösterir ve Harry'nin tüm serideki en önemli kararlarını şekillendirir. Son olarak, `Sırlar Odası`, Harry'nin Voldemort'la olan mücadelesinin, sadece basit bir iyi-kötü çatışması değil, aynı zamanda büyücü dünyasının tarihi ve safkanlık tartışmaları gibi derin meselelerle de ilişkili olduğunu gösterir.",
+      "canonical_level": "canon",
+      "sources": {
+        "Kaynaklar": [
+          {
+            "name": "Box Office Türkiye",
+            "url": "https://boxofficeturkiye.com/film/harry-potter-ve-sirlar-odasi--2002156"
+          },
+          {
+            "name": "Wizarding World Official Site",
+            "url": "https://www.wizardingworld.com/films/harry-potter-and-the-chamber-of-secrets"
+          },
+          {
+            "name": "IMDb",
+            "url": "https://www.imdb.com/title/tt0295297/"
+          }
+        ],
+        "Görsel": [
+          {
+            "name": "Box Office Türkiye",
+            "url": "https://static.boxofficeturkiye.com/movie/poster/full/56/2002156-105614273.jpg"
+          }
+        ],
+        "Platform": [
+          {
+            "name": "HBO Max",
+            "url": "https://play.hbomax.com/movie/48674b82-9076-4080-a40c-379efad5eb89"
+          }
+        ]
+      },
+      "lang": "tr"
+    },
+    {
+      "id": "film/hp/2004_harry_potter_and_the_prisoner_of_azkaban",
+      "label": "Harry Potter ve Azkaban Tutsağı (2004)",
+      "title": "Harry Potter ve Azkaban Tutsağı",
+      "type": "film",
+      "release_date": "2004-06-04",
+      "end_date": null,
+      "image": "https://images.justwatch.com/poster/264900182/s718/harry-potter-ve-azkaban-tutsagi.jpg",
+      "imdb_rating": 7.9,
+      "yönetmen": [
+        "Alfonso Cuarón"
+      ],
+      "oyuncular": [
+        "Daniel Radcliffe",
+        "Rupert Grint",
+        "Emma Watson",
+        "Gary Oldman",
+        "David Thewlis",
+        "Michael Gambon"
+      ],
+      "tür": [
+        "Fantastik",
+        "Macera",
+        "Gizem"
+      ],
+      "shape": "image",
+      "description": "2004 yapımı 'Harry Potter ve Azkaban Tutsağı', Harry'nin Hogwarts'taki üçüncü yılını ve serinin en büyük dönüm noktalarından birini işaret eder. Film, Harry'nin, kendisine ait olmayan bir dünyada yaşarken, aslında kendisini bekleyen bir dünyaya ait olduğunu keşfetmesi, filmin duygusal çekirdeğini oluşturur. Bu film, Harry'nin, sıradan bir çocuktan, tüm büyücü dünyasının umut bağladığı bir kahramana dönüşümünün ilk adımıdır. Filmin hikayesi, Azkaban'ın tehlikeli mahkumu Sirius Black'in hapishaneden kaçtığı haberiyle başlar. Büyücü dünyası, Sirius Black'in, Harry'nin anne ve babasının ölümünden sorumlu olduğuna ve şimdi Harry'yi öldürmek için peşinde olduğuna inanmaktadır. Hogwarts, Azkaban'ın korkunç gardiyanları olan Ruh Emiciler tarafından korunur, ancak bu yaratıklar Harry'nin üzerinde yıkıcı bir etki bırakır. Harry, Ruh Emicilerle başa çıkmak için yeni Savunma Sanatları öğretmeni Remus Lupin'den yardım ister ve Patronus Büyüsü'nü öğrenir. Bu süreçte, Harry, Ron ve Hermione, Sirius Black'in masumiyetini kanıtlamak için karmaşık bir gizemi çözmeye çalışırlar. Gizem, Hogwarts'ın geçmişi, Harry'nin ailesinin arkadaşları ve bir dönemin sırları ile iç içedir. Harry, Sirius'un aslında babasının en iyi arkadaşı olduğunu ve onu korumak için kaçtığını keşfeder. Filmin finalinde, Harry, Hermione'nin Zaman Döndürücü'sünü kullanarak, Sirius'u Ruh Emicilerin elinden kurtarır. Bu olay, Harry'nin hayatında yeni bir sayfa açar ve ona, ailesine dair bilmediği gerçekleri ve bir zamanlar babasının en iyi arkadaşı olan bir karakteri yeniden kazandırır. Yönetmen Alfonso Cuarón'un filmi, serinin tonunu daha karanlık ve yetişkin bir hale getirir. Film, görsel olarak daha cesur ve hikaye anlatımı olarak daha karmaşıktır. 'Azkaban Tutsağı', Harry'nin kimliğini ve ailesini sorgulamaya başladığı bir filmdir. Harry, babasının ve arkadaşlarının geçmişini öğrenerek kendi kimliğini daha iyi anlamaya başlar. Film, dostluk, sadakat ve intikam gibi temaları derinlemesine işlerken, aynı zamanda affetmenin ve gerçeği aramanın önemini vurgular. 'Azkaban Tutsağı', Harry Potter serisinde sadece bir devam filmi değil, aynı zamanda karakter gelişiminin ve hikayenin olgunlaşmasının bir sembolüdür. Film, Harry'nin ailesine dair daha önce bilmediği gerçeklerle yüzleşmesi ve kendi kaderini şekillendirmeye başlamasıyla, izleyiciyi daha karanlık ve karmaşık bir dünyaya hazırlar.",
+      "refers_to": "'Harry Potter ve Azkaban Tutsağı', serinin gidişatını temelden değiştiren ve Harry Potter evrenine yeni derinlikler katan önemli atıflar içerir. Filmin en belirgin atfı, Harry'nin vaftiz babası olan Sirius Black'in tanıtılmasıdır. Sirius, Harry'nin anne ve babasının en iyi arkadaşı olması ve Voldemort'a karşı mücadeledeki rolüyle, Harry'nin ailesinin geçmişini daha iyi anlamasını sağlar. Sirius'un, Harry'nin babası James Potter'ın en yakın arkadaşı olması, Harry'nin ailesine dair bilmediği gerçekleri öğrenmesine ve ailesini yeniden kazanmasına yardımcı olur. Bu durum, Sirius'un daha sonra **Harry Potter ve Zümrüdüanka Yoldaşlığı**'nda Harry için bir akıl hocası ve aile figürü haline gelmesine zemin hazırlar. Film, aynı zamanda, Hogwarts'taki yeni Savunma Sanatları öğretmeni Remus Lupin'i tanıtır. Lupin'in, Harry'nin babasının en iyi arkadaşlarından biri olması, Harry'ye patronus büyüsünü öğretmesi ve kurt adam olması, hem karakterin derinliğini artırır hem de büyücülük dünyasındaki ayrımcılık temasına yeni bir boyut katar. Lupin'in varlığı, **Harry Potter ve Ölüm Yadigârları**'nda Lupin'in ve ailesinin rolünü anlamamız için kritik bir önem taşır. 'Azkaban Tutsağı', Hogwarts'ın tarihiyle ilgili önemli bir nesne olan Çapulcu Haritası'nı da ilk kez tanıtır. Bu harita, Harry'nin babası James Potter, Sirius Black, Remus Lupin ve Peter Pettigrew tarafından yaratılmıştır ve serinin ilerleyen filmlerinde Harry'ye önemli bir avantaj sağlar. Haritanın hikayesi, bu dört arkadaşın geçmişini ve aralarındaki bağları gözler önüne serer. Film, Peter Pettigrew'un (Scabbers) gerçek kimliğini ortaya çıkararak, Voldemort'un geri dönüşüne giden yolu açar. Pettigrew'un, Harry'nin anne ve babasına ihanet eden kişi olması ve Voldemort'a kaçması, **Harry Potter ve Ateş Kadehi**'nde Voldemort'un yeniden dirilmesi için gerekli olan büyüyü gerçekleştirmesini sağlar. Bu durum, Pettigrew'un Harry Potter evrenindeki en önemli ihanetlerden birini gerçekleştirdiğini gösterir. Son olarak, filmdeki Zaman Döndürücü'nün kullanılması, zaman yolculuğu temasını evrene dahil eder. Bu nesne, Hermione'nin geçmişe giderek birden fazla derse katılmasını sağlar ve filmin sonunda Sirius'u kurtarmak için kullanılır. Zaman Döndürücü, **Harry Potter ve Lanetli Çocuk** oyununda da önemli bir rol oynayarak, Harry Potter evreninin zamanın doğasıyla olan ilişkisini daha da karmaşık hale getirir. 'Azkaban Tutsağı', Harry'nin bir çocuktan, kendi geçmişiyle yüzleşen ve kendi kaderini şekillendiren bir gence dönüşümünün başlangıcıdır.",
+      "canonical_level": "canon",
+      "sources": {
+        "Kaynaklar": [
+          {
+            "name": "Box Office Türkiye",
+            "url": "https://boxofficeturkiye.com/film/harry-potter-ve-azkaban-tutsagi--2004207"
+          },
+          {
+            "name": "Wizarding World Official Site",
+            "url": "https://www.wizardingworld.com/films/harry-potter-and-the-prisoner-of-azkaban"
+          },
+          {
+            "name": "IMDb",
+            "url": "https://www.imdb.com/title/tt0304141/"
+          }
+        ],
+        "Görsel": [
+          {
+            "name": "JustWatch",
+            "url": "https://images.justwatch.com/poster/264900182/s718/harry-potter-ve-azkaban-tutsagi.jpg"
+          }
+        ],
+        "Platform": [
+          {
+            "name": "HBO Max",
+            "url": "https://play.hbomax.com/movie/73553a76-1658-45f6-9e26-1b9c4443b0d6"
+          }
+        ]
+      },
+      "lang": "tr"
+    },
+    {
+      "id": "film/hp/2005_harry_potter_and_the_goblet_of_fire",
+      "label": "Harry Potter ve Ateş Kadehi (2005)",
+      "title": "Harry Potter ve Ateş Kadehi",
+      "type": "film",
+      "release_date": "2005-11-18",
+      "end_date": null,
+      "image": "https://images.justwatch.com/poster/264902120/s718/harry-potter-ve-ates-kadehi.jpg",
+      "imdb_rating": 7.7,
+      "yönetmen": [
+        "Mike Newell"
+      ],
+      "oyuncular": [
+        "Daniel Radcliffe",
+        "Rupert Grint",
+        "Emma Watson",
+        "Ralph Fiennes",
+        "Brendan Gleeson"
+      ],
+      "tür": [
+        "Fantastik",
+        "Macera",
+        "Gizem"
+      ],
+      "shape": "image",
+      "description": "2005 yapımı 'Harry Potter ve Ateş Kadehi', Harry'nin Hogwarts'taki dördüncü yılını ve Karanlık Lord Lord Voldemort'un geri dönüşünü konu alan, serinin en önemli filmlerinden biridir. Film, Harry, Ron ve Hermione'nin Quidditch Dünya Kupası'nı izlemesiyle başlar. Ancak, bu keyifli anlar, Karanlık İşaret'in gökyüzünde belirmesiyle bir anda kesilir. Hogwarts'ta ise üç büyük büyücülük okulu arasında düzenlenen efsanevi Üç Büyücü Turnuvası'na ev sahipliği yapılacaktır. Yarışmaya sadece 17 yaş üstü öğrencilerin katılmasına izin verilirken, Ateş Kadehi, Harry'nin adını dördüncü bir şampiyon olarak seçer. Harry, rızası dışında girdiği bu turnuvada, üç zorlu görevle yüzleşmek zorunda kalır: bir ejderhayla mücadele etmek, gölün derinliklerinde hayatta kalmak ve bir labirentin içindeki kupaya ulaşmak. Film, Harry'nin sadece turnuvadaki tehlikelerle değil, aynı zamanda turnuvadaki diğer şampiyonlarla (Viktor Krum, Fleur Delacour ve Cedric Diggory) olan rekabetiyle ve arkadaşlarının şüpheciliğiyle de mücadele ettiğini gösterir. Bu süreçte, Harry'nin turnuvaya girmesinin arkasında yatan karanlık bir plan olduğunu anlarız. Filmin finalinde, Harry ve Cedric Diggory, Üç Büyücü Kupası'na aynı anda dokunduklarında, bir Porthole (portkey) ile bir mezarlığa ışınlanırlar. Burada, Peter Pettigrew tarafından öldürülen Cedric'in önünde, Voldemort'un yeniden dirilme ritüeli gerçekleştirilir. Lord Voldemort, on üç yıl sonra ilk kez fiziksel formuna geri döner ve Harry'yle, mürver asasından güç alan bir düelloya girer. Bu düello, Harry'nin anne ve babasının ruhlarının ona yardım etmesiyle sonuçlanır. Harry, Voldemort'un elinden kurtulmayı başarır ve Hogwarts'a geri döner. Film, Mike Newell'in yönetmenliğiyle, serinin tonunu daha da karanlık bir seviyeye taşır. Harry'nin artık bir çocuk değil, Voldemort'la yüzleşmek zorunda kalan genç bir kahraman olduğunu vurgular. 'Ateş Kadehi', Harry Potter evreninde, Voldemort'un geri dönüşünün tüm büyücü dünyasını nasıl değiştireceğini gösterir. Harry'nin bu olaya tanıklık etmesi, onun gelecekteki mücadelesi için bir dönüm noktası olur. Film, aynı zamanda, Hogwarts'ın dışındaki diğer büyücülük okullarını ve evrenin uluslararası boyutunu da tanıtır. Film, Harry'nin ve arkadaşlarının artık masumiyetlerini kaybettiğini ve tehlikeli bir dünyanın içinde büyümeye başladıklarını gösterir.",
+      "refers_to": "'Harry Potter ve Ateş Kadehi', serinin en kritik filmlerinden biridir ve Harry Potter evreninin gidişatını tamamen değiştirir. Filmin en önemli atfı, Lord Voldemort'un on üç yıl aradan sonra fiziksel formuna geri dönmesidir. Bu olay, büyücü dünyasının inkar ettiği bir gerçeği gözler önüne serer ve **Harry Potter ve Zümrüdüanka Yoldaşlığı**'nda Sihir Bakanlığı'nın bu gerçeği örtbas etme çabalarının ana nedenini oluşturur. Voldemort'un geri dönüşü, Harry Potter'ın ana düşmanıyla ilk kez doğrudan yüzleşmesini sağlar. Film, Voldemort'un Hortkulukları ve büyücülük dünyasındaki Karanlık Büyücülüğün tarihi hakkında daha fazla ipucu verir. Filmdeki 'Priori Incantatem! olayı, Harry'nin asası ile Voldemort'un asasının birbiriyle eşleşmesi, bu ikilinin arasındaki özel bağı ve kaderi daha da güçlendirir. Bu olay, Harry'nin ve Voldemort'un birbiriyle bağlantılı olduğunu gösterir ve **Harry Potter ve Ölüm Yadigârları: Bölüm 2**'de bu asaların kaderinin nasıl birleştiğini anlamamız için önemli bir ipucudur. 'Ateş Kadehi', aynı zamanda, Albus Dumbledore'un, Harry'yi bir sonraki Voldemort'a karşı mücadeleye hazırlama sürecinin başlangıcını işaret eder. Dumbledore'un Harry'yi turnuva boyunca desteklemesi ve ona yol göstermesi, Dumbledore'un Harry'nin akıl hocası rolünün ne kadar önemli olduğunu gösterir. Film, aynı zamanda, Peter Pettigrew'un Voldemort'un yanında olduğunu ve onun geri dönüşüne yardım ettiğini kesinleştirir. Pettigrew'un bu ihaneti, Harry'nin ailesinin trajik ölümünün ardındaki gerçeği daha da aydınlatır. Barty Crouch Jr.'ın, Deli Göz Moody kılığına girerek Harry'yi turnuvaya sokması ve Voldemort'a götürmesi, Voldemort'un takipçilerinin ne kadar tehlikeli ve zeki olabileceğini gösterir. Bu durum, **Harry Potter ve Melez Prens**'te Draco Malfoy'un Voldemort için gizli görevler yapmasıyla paralellik gösterir. Film, aynı zamanda, Harry'nin hayatındaki ilk kayıplardan biri olan Cedric Diggory'nin ölümüyle sonuçlanır. Cedric'in ölümü, serinin tonunu daha da karanlık bir hale getirir ve Harry'nin, Voldemort'un sadece kendisinin değil, sevdiklerinin de hayatını tehlikeye attığını anlamasına neden olur. Bu trajik olay, Harry'nin, Voldemort'la olan mücadelesinin kişisel bir intikam meselesi haline geldiğini gösterir. 'Ateş Kadehi', serinin uluslararası boyutunu da genişletir. Beauxbatons ve Durmstrang gibi farklı büyücülük okullarının tanıtılması, evrenin ne kadar geniş ve çeşitli olduğunu gösterir. Bu durum, Voldemort'un tehdidinin sadece Birleşik Krallık ile sınırlı olmadığını, tüm dünyayı tehdit ettiğini gösterir. Film, Harry'nin artık bir çocuk olmadığını ve kaderinin tüm büyücü dünyasının kaderini belirleyeceğini gösterir. Bu film, serinin sonuna doğru giden yolda bir dönüm noktasıdır.",
+      "canonical_level": "canon",
+      "sources": {
+        "Kaynaklar": [
+          {
+            "name": "Box Office Türkiye",
+            "url": "https://boxofficeturkiye.com/film/harry-potter-ve-ates-kadehi--2005216"
+          },
+          {
+            "name": "Wizarding World Official Site",
+            "url": "https://www.wizardingworld.com/films/harry-potter-and-the-goblet-of-fire"
+          },
+          {
+            "name": "IMDb",
+            "url": "https://www.imdb.com/title/tt0330373/"
+          }
+        ],
+        "Görsel": [
+          {
+            "name": "JustWatch",
+            "url": "https://images.justwatch.com/poster/264902120/s718/harry-potter-ve-ates-kadehi.jpg"
+          }
+        ],
+        "Platform": [
+          {
+            "name": "HBO Max",
+            "url": "https://play.hbomax.com/movie/d2e9ff29-e71d-4eae-9a4b-7cd0e00236ea"
+          }
+        ]
+      },
+      "lang": "tr"
+    },
+    {
+      "id": "film/hp/2007_harry_potter_and_the_order_of_the_phoenix",
+      "label": "Harry Potter ve Zümrüdüanka Yoldaşlığı (2007)",
+      "title": "Harry Potter ve Zümrüdüanka Yoldaşlığı",
+      "type": "film",
+      "release_date": "2007-07-13",
+      "end_date": null,
+      "image": "https://upload.wikimedia.org/wikipedia/tr/6/6a/Harry_Potter_and_the_Order_of_the_Phoenix_%28film%2C_2007%29.jpg",
+      "imdb_rating": 7.4,
+      "yönetmen": [
+        "David Yates"
+      ],
+      "oyuncular": [
+        "Daniel Radcliffe",
+        "Rupert Grint",
+        "Emma Watson",
+        "Imelda Staunton",
+        "Gary Oldman"
+      ],
+      "tür": [
+        "Fantastik",
+        "Macera",
+        "Gizem"
+      ],
+      "shape": "image",
+      "description": "2007 yapımı 'Harry Potter ve Zümrüdüanka Yoldaşlığı', Harry'nin Hogwarts'taki beşinci yılını, büyücü dünyasının siyasi karmaşasını ve Harry'nin ergenlik sorunlarını bir araya getiren, serinin en politik filmlerinden biridir. Film, Voldemort'un geri döndüğüne dair Harry ve Dumbledore'un uyarılarını inkar eden Sihir Bakanlığı'nın, bu gerçeği halktan gizlemeye çalışmasıyla başlar. Bakanlık, Hogwarts'ı kontrol altına almak için Okul Yüksek Müfettişi olarak Dolores Umbridge'i görevlendirir. Umbridge'in baskıcı ve otoriter yönetimi, Hogwarts'ta öğrencilerin ve öğretmenlerin hayatını kabusa çevirir. Savunma Sanatları derslerinde sadece teorik bilgilere odaklanan Umbridge, öğrencilerin kendilerini savunmalarını engeller. Bu durum üzerine, Harry, Ron ve Hermione, Dumbledore'un Ordusu adında gizli bir grup kurar. Bu grupta, Harry, öğrencilere Karanlık Sanatlara Karşı Savunma dersleri vermeye başlar. Dumbledore'un Ordusu, Harry'nin bir lider olarak yeteneklerini keşfettiği ve büyülü dünyaya karşı sorumluluk hissinin arttığı bir platform haline gelir. Film, Harry'nin, Voldemort'la olan zihinsel bağının daha da güçlendiğini ve Voldemort'un düşüncelerini görmeye başladığını gösterir. Bu durum, Harry'nin Voldemort'un hedefleri ve planları hakkında önemli ipuçları elde etmesine yardımcı olur. Ancak, bu zihinsel bağlantı, Harry'nin akıl sağlığını da tehlikeye atar. Film, Dumbledore'un Harry'ye, bu zihinsel bağlantının bir lanet olabileceğini ancak aynı zamanda ona Voldemort'un zayıf noktalarını gösterebileceğini söyler. Filmin finalinde, Harry, Voldemort'un Sirius'u işkence ettiğini gördüğü bir rüyanın peşinden gider ve Sihir Bakanlığı'nın gizemli bir odasına doğru yola çıkar. Harry ve Dumbledore'un Ordusu üyeleri, Bakanlık'ta Ölüm Yiyenler'le karşı karşıya gelirler. Bu çatışmada, Harry'nin vaftiz babası Sirius Black, Bellatrix Lestrange tarafından öldürülür. Sirius'un ölümü, Harry'nin hayatında büyük bir travmaya neden olur ve onu, Voldemort'la olan mücadelesinin kişisel bir boyuta ulaştığını anlamasına iter. Film, David Yates'in yönetmenliğinde, siyasi entrikaların, psikolojik gerilimin ve aksiyonun dengeli bir harmanını sunar. 'Zümrüdüanka Yoldaşlığı', Harry'nin bir kahraman olarak büyümesini, liderlik yeteneklerini ve aynı zamanda, yaşadığı kayıplarla nasıl başa çıktığını gösterir. Film, büyücü toplumunun, bir tehdit karşısında nasıl tepki verdiğini ve gerçeği inkar etmenin sonuçlarını ele alarak, serinin en önemli temalarından birini işler.",
+      "refers_to": "'Harry Potter ve Zümrüdüanka Yoldaşlığı', Harry Potter evreninde, ana serinin gidişatını belirleyen ve sonraki filmlere yönelik birçok önemli atıf ve bağlamı içeren bir dönüm noktasıdır. Filmin en önemli atfı, Harry ve Lord Voldemort arasındaki zihinsel bağın daha da güçlenmesidir. Harry'nin, Voldemort'un duygularını ve düşüncelerini görmesi, ona gelecekteki olaylara dair önemli ipuçları verir. Bu durum, Harry'nin **Harry Potter ve Melez Prens**'te Dumbledore'un ona verdiği görevi, yani Hortkulukları bulma görevini daha iyi anlamasına yardımcı olur. Voldemort'un Harry'nin zihnine sızma çabaları, Harry'nin Voldemort'un zayıf noktalarını bulmasını ve ona karşı daha iyi mücadele etmesini sağlar. Film, aynı zamanda, Harry'nin vaftiz babası Sirius Black'in trajik ölümünü içerir. Sirius'un ölümü, Harry'nin ailesine dair en yakın bağını kaybetmesine neden olur ve bu durum, Harry'nin **Harry Potter ve Melez Prens**'te Dumbledore'dan aldığı görevde daha kararlı olmasına yol açar. Sirius'un ölümü, Harry'nin, Voldemort'un sadece kendisinin değil, sevdiklerinin de hayatını tehlikeye attığını anlamasına neden olur ve bu, onun Voldemort'la olan mücadelesini kişisel bir intikam meselesi haline getirir. 'Zümrüdüanka Yoldaşlığı', Albus Dumbledore'un, Harry'yi Voldemort'a karşı mücadeleye hazırlama sürecinin en önemli adımlarından biridir. Dumbledore'un, Harry'ye Dumbledore'un Ordusu'nu kurması için destek vermesi ve ona yol göstermesi, Harry'nin bir lider olarak potansiyelini ortaya çıkarır. Bu durum, Harry'nin **Harry Potter ve Ölüm Yadigârları**'nda yoldaşlarına liderlik etme yeteneğini geliştirir. Film, aynı zamanda, Sihir Bakanlığı'nın, Voldemort'un geri dönüşünü inkar etmesi ve Dolores Umbridge'in baskıcı yönetimiyle, büyücü dünyasının siyasi yozlaşmasını gözler önüne serer. Bu durum, **Harry Potter ve Ölüm Yadigârları**'nda Bakanlığın, Voldemort tarafından ele geçirilmesini ve düzenin tamamen bozulmasını öngörür. Umbridge'in, Harry'ye uyguladığı işkence, Harry'nin içinde biriken öfkeyi ve mücadele arzusunu artırır. Filmdeki kehanet, Harry ve Voldemort'un kaderlerinin birbirine bağlı olduğunu ve birinin hayatta kalması için diğerinin ölmesi gerektiğini açıkça ortaya koyar. Bu kehanet, **Harry Potter ve Melez Prens**'te Dumbledore'un Harry'ye açıkladığı Hortkulukların sırrı ile birlikte, Harry'nin Voldemort'u yenmek için ne yapması gerektiğini anlamasını sağlar. Film, Harry'nin ailesine dair bilmediği gerçekleri öğrenmesi, arkadaşlarını kaybetmesi ve kendi kimliğini sorgulamasıyla, serinin en karanlık ve en duygusal filmlerinden biri olarak öne çıkar. Harry'nin, Dumbledore'un Ordusu'nu kurması, onun bir lider olarak potansiyelini ortaya çıkarır. Bu durum, **Harry Potter ve Ölüm Yadigârları**'nda Harry'nin yoldaşlarına liderlik etme yeteneğini geliştirir.",
+      "canonical_level": "canon",
+      "sources": {
+        "Kaynaklar": [
+          {
+            "name": "Box Office Türkiye",
+            "url": "https://boxofficeturkiye.com/film/harry-potter-ve-zumruduanka-yoldasligi--2007204"
+          },
+          {
+            "name": "Wizarding World Official Site",
+            "url": "https://www.wizardingworld.com/films/harry-potter-and-the-order-of-the-phoenix"
+          },
+          {
+            "name": "IMDb",
+            "url": "https://www.imdb.com/title/tt0373889/"
+          }
+        ],
+        "Görsel": [
+          {
+            "name": "Wikimedia",
+            "url": "https://upload.wikimedia.org/wikipedia/tr/6/6a/Harry_Potter_and_the_Order_of_the_Phoenix_%28film%2C_2007%29.jpg"
+          }
+        ],
+        "Platform": [
+          {
+            "name": "HBO Max",
+            "url": "https://play.hbomax.com/movie/25768909-39b8-4cb2-a39f-e059460f7add"
+          }
+        ]
+      },
+      "lang": "tr"
+    },
+    {
+      "id": "film/hp/2009_harry_potter_and_the_half_blood_prince",
+      "label": "Harry Potter ve Melez Prens (2009)",
+      "title": "Harry Potter ve Melez Prens",
+      "type": "film",
+      "release_date": "2009-07-15",
+      "end_date": null,
+      "image": "https://images.justwatch.com/poster/264900088/s718/harry-potter-ve-melez-prens.jpg",
+      "imdb_rating": 7.6,
+      "yönetmen": [
+        "David Yates"
+      ],
+      "oyuncular": [
+        "Daniel Radcliffe",
+        "Rupert Grint",
+        "Emma Watson",
+        "Michael Gambon",
+        "Alan Rickman",
+        "Tom Felton"
+      ],
+      "tür": [
+        "Fantastik",
+        "Macera",
+        "Gizem"
+      ],
+      "shape": "image",
+      "description": "2009 yapımı 'Harry Potter ve Melez Prens', Harry'nin Hogwarts'taki altıncı yılını ve Lord Voldemort'un geçmişine dair kritik sırların ortaya çıktığı bir dönemi anlatır. Film, Voldemort'un artık açıkça yükselişe geçtiği, büyücü ve muggle dünyasının tehdit altında olduğu bir dönemde başlar. Dumbledore, Harry'yi Voldemort'a karşı son savaşa hazırlamak için ona özel dersler vermeye başlar. Bu derslerde Dumbledore, Harry'ye, Voldemort'un ölümsüzlüğü nasıl elde ettiğini ve ruhunun parçalarını Hortkuluk adı verilen büyülü nesnelere nasıl sakladığını gösterir. Harry'nin görevi, Dumbledore'la birlikte bu Hortkulukları bulmak ve yok etmektir. Hogwarts'a döndüğünde, Harry, eski bir iksir kitabının kenarındaki notlarla dolu bir kitabı keşfeder. Bu notlar, Harry'ye iksir derslerinde büyük bir avantaj sağlar ve kitabın sahibi olan 'Melez Prens'in kim olduğunu merak etmesine neden olur. Harry, Draco Malfoy'un Voldemort'un bir Ölüm Yiyeni olduğunu ve Dumbledore'u öldürmekle görevlendirildiğini öğrenir. Ancak, Harry'nin bu iddiaları, Hogwarts'taki diğer öğretmenler tarafından ciddiye alınmaz. Bu film, Harry'nin Dumbledore'la olan ilişkisinin derinleşmesini ve onun, Voldemort'la olan mücadelesindeki en önemli müttefiki olduğunu gösterir. Dumbledore'un Harry'ye olan inancı ve ona olan güveni, Harry'nin bir kahraman olarak büyümesinde kritik bir rol oynar. Film, aynı zamanda, Harry'nin Ron ve Hermione'yle olan dostluğunun ve romantik ilişkilerinin de olgunlaştığını gösterir. Ron'un Hermione'ye olan kıskançlığı ve Harry'nin Ginny Weasley'ye olan aşkının ortaya çıkması, karakterler arasındaki dinamikleri değiştirir. Filmin finalinde, Dumbledore ve Harry, bir Hortkuluk'u aramak için bir mağaraya giderler. Dumbledore, bu yolculuk sırasında zayıflar ve Hogwarts'a döndüklerinde, Draco Malfoy tarafından etkisiz hale getirilir. Dumbledore, Snape tarafından öldürülür ve Harry, en yakın akıl hocasını ve dostunu kaybetmenin acısıyla yüzleşir. Snape'in bu ihaneti, izleyicinin aklında büyük bir soru işareti bırakır. Film, David Yates'in yönetmenliğinde, serinin en karanlık ve en duygusal filmlerinden biri olarak öne çıkar. 'Melez Prens', Harry Potter evreninde, Voldemort'un yükselişinin artık geri döndürülemez bir boyuta ulaştığını ve son savaşın kaçınılmaz olduğunu gösterir. Film, aynı zamanda, Hortkuluklar ve Voldemort'un ölümsüzlük arayışı gibi ana temaları derinlemesine ele alır.",
+      "refers_to": "'Harry Potter ve Melez Prens', serinin en kilit filmlerinden biridir ve Harry Potter evreninin sonunu hazırlayan pek çok kritik olaya ve atfa sahiptir. Filmin en önemli atfı, Lord Voldemort'un ölümsüzlüğünün kaynağı olan Hortkuluklar'ın sırrının ortaya çıkmasıdır. Dumbledore'un, Harry'ye Voldemort'un geçmişini gösteren anılarla ders vermesi, Harry'nin Voldemort'u yenmek için Hortkulukları bulup yok etmesi gerektiğini anlamasını sağlar. Bu görev, **Harry Potter ve Ölüm Yadigârları: Bölüm 1** ve **Bölüm 2**'nin ana konusunu oluşturur. Film, Voldemort'un geçmişiyle ilgili, özellikle de onun yetimhanedeki çocukluğu ve Hogwarts'taki öğrencilik yıllarıyla ilgili önemli detaylar sunar. Bu durum, Voldemort'un neden bu kadar kötü bir büyücü olduğunu ve onun korkusuzluğunu anlamamıza yardımcı olur. Film, aynı zamanda, Severus Snape'in gerçek kimliğinin ve motivasyonlarının ne kadar karmaşık olduğunu gösterir. Snape'in 'Melez Prens' olduğu gerçeği, **Harry Potter ve Ölüm Yadigârları: Bölüm 2**'de onun Harry'nin annesi Lily'ye olan aşkını ve Dumbledore'a olan sadakatini anlatan anılarla tamamen açığa çıkar. Snape'in Dumbledore'u öldürmesi, serinin en şok edici anlarından biri olsa da, aslında Dumbledore ile Snape arasında önceden yapılmış bir planın parçası olduğu ortaya çıkar. Dumbledore'un ölümü, Harry'yi Voldemort'a karşı tek başına mücadele etmeye iter ve Harry'nin bir lider olarak kendi kararlarını vermesi gerektiğini gösterir. Bu durum, Harry'nin **Harry Potter ve Ölüm Yadigârları: Bölüm 1**'de Hortkuluk avına çıkmasını ve yoldaşlarına liderlik etmesini sağlar. Film, Draco Malfoy'un Voldemort'un bir Ölüm Yiyeni olarak görevlendirildiğini ve onun Dumbledore'u öldürme görevini yerine getirmekte zorlandığını gösterir. Malfoy'un trajik hikayesi, genç yaşta Voldemort'un baskısı altında kalan bir karakterin dramını anlatır ve bu, Harry Potter serisindeki gri tonların ne kadar önemli olduğunu gösterir. Film, aynı zamanda, Harry'nin Ginny Weasley'ye olan aşkının ortaya çıkmasıyla, Harry'nin kişisel hayatının da olgunlaştığını gösterir. Bu ilişki, Harry'nin, sevdiklerini koruma arzusunu artırır ve onu, Voldemort'a karşı daha kararlı bir şekilde mücadele etmeye iter. 'Melez Prens', Harry Potter serisinin en karanlık filmlerinden biri olsa da, aynı zamanda, karakterlerin olgunlaştığını, ilişkilerin derinleştiğini ve son savaşın kaçınılmaz olduğunu gösteren bir dönüm noktasıdır. Bu film, Harry'nin, Voldemort'u yenmek için sadece güç değil, aynı zamanda bilgi ve stratejiye de ihtiyacı olduğunu anlamasını sağlar. Film, serinin sonuna doğru giden yolda bir köprü görevi görür.",
+      "canonical_level": "canon",
+      "sources": {
+        "Kaynaklar": [
+          {
+            "name": "Box Office Türkiye",
+            "url": "https://boxofficeturkiye.com/film/harry-potter-ve-melez-prens--2009226"
+          },
+          {
+            "name": "Wizarding World Official Site",
+            "url": "https://www.wizardingworld.com/films/harry-potter-and-the-half-blood-prince"
+          },
+          {
+            "name": "IMDb",
+            "url": "https://www.imdb.com/title/tt0417741/"
+          }
+        ],
+        "Görsel": [
+          {
+            "name": "JustWatch",
+            "url": "https://images.justwatch.com/poster/264900088/s718/harry-potter-ve-melez-prens.jpg"
+          }
+        ],
+        "Platform": [
+          {
+            "name": "HBO Max",
+            "url": "https://play.hbomax.com/movie/cba1d85a-5ef4-4ba3-b537-1d24554fe85c"
+          }
+        ]
+      },
+      "lang": "tr"
+    },
+    {
+      "id": "film/hp/2010_harry_potter_and_the_deathly_hallows_part_1",
+      "label": "Harry Potter ve Ölüm Yadigârları: Bölüm 1 (2010)",
+      "title": "Harry Potter ve Ölüm Yadigârları: Bölüm 1",
+      "type": "film",
+      "release_date": "2010-11-19",
+      "end_date": null,
+      "image": "https://images.justwatch.com/poster/264900069/s718/harry-potter-ve-olum-yadigarlari-bolum-1.jpg",
+      "imdb_rating": 7.7,
+      "yönetmen": [
+        "David Yates"
+      ],
+      "oyuncular": [
+        "Daniel Radcliffe",
+        "Rupert Grint",
+        "Emma Watson",
+        "Ralph Fiennes",
+        "Helena Bonham Carter"
+      ],
+      "tür": [
+        "Fantastik",
+        "Macera",
+        "Gizem"
+      ],
+      "shape": "image",
+      "description": "2010 yapımı 'Harry Potter ve Ölüm Yadigârları: Bölüm 1', Harry Potter evreninin son ve en karanlık bölümünün başlangıcını işaret eder. Artık Hogwarts'tan uzakta, Harry, Ron ve Hermione, Dumbledore'un onlara bıraktığı görevi yerine getirmek için tehlikeli bir yolculuğa çıkarlar: Lord Voldemort'un ruhunu sakladığı Hortkulukları bulup yok etmek. Voldemort, Sihir Bakanlığı'nı ele geçirmiştir ve tüm büyücü dünyası artık onun kontrolü altındadır. Harry, Ron ve Hermione, Voldemort'un Ölüm Yiyenleri tarafından aranan kaçaklar haline gelirler. Yalnız başlarına, kamp kurarak ve sürekli yer değiştirerek Hortkulukların peşine düşerler. Bu yolculuk, hem fiziksel hem de psikolojik olarak zorlu bir mücadeledir. Yalnızlık, paranoya ve Hortkulukların yaydığı kötü enerji, üçlü arasındaki dostluk bağını sınar. Özellikle Ron, Hortkuluk'un etkisi altında kalır ve Harry ile Hermione'den uzaklaşır. Bu durum, filmdeki en duygusal ve gerilimli anlardan birini oluşturur. Film, aynı zamanda, Ölüm Yadigârları'nın efsanevi hikayesini de anlatır: Mürver Asa, Diriliş Taşı ve Görünmezlik Pelerini. Harry, Ron ve Hermione, bu yadigârların ne olduğunu ve neden Voldemort'un da peşinde olduğunu öğrenirler. Bu yadigârların hikayesi, Harry'nin babası ve Peverell ailesinin geçmişiyle bağlantılıdır. Film, Dobby'nin Harry'ye olan sadakatini ve onun trajik ölümünü de içerir. Dobby'nin, üçlüyü Malfoy Malikanesi'nden kurtarmak için yaptığı fedakarlık, Harry'nin hayatında bir kez daha bir dostunu kaybetmesine neden olur. 'Ölüm Yadigârları: Bölüm 1', Harry Potter serisinin en gerilimli ve atmosferik filmlerinden biridir. David Yates'in yönetmenliği, filmin tonunu daha çok bir hayatta kalma gerilimine dönüştürür. Film, savaşın eşiğindeki bir dünyanın, karakterlerin kayıplarının ve fedakarlıklarının bir portresini çizer. Harry, Ron ve Hermione'nin, yalnız başlarına ve tüm dünyaya karşı verdikleri mücadele, onların sadece birer öğrenci değil, aynı zamanda savaşın kahramanları olduğunu gösterir. Filmin finalinde, Dobby'nin mezarının başında duran Harry, Voldemort'a karşı olan savaşta artık geri dönüşün olmadığını anlar ve sonuna kadar savaşmaya karar verir. Bu film, serinin sonuna giden yolda bir köprü görevi görür ve izleyiciyi, kaçınılmaz büyük savaşın atmosferine hazırlar.",
+      "refers_to": "'Harry Potter ve Ölüm Yadigârları: Bölüm 1', Harry Potter evreninin finaline giden yolda en kritik olayları ve atıfları barındıran bir filmdir. Filmin en önemli atfı, Voldemort'un ruhunun parçaları olan Hortkuluklar'ın aranması ve yok edilmesidir. Bu arayış, **Harry Potter ve Melez Prens**'te Dumbledore'un Harry'ye verdiği görevin doğrudan bir devamıdır. Harry, Ron ve Hermione'nin yolculuğu, daha önce Harry'nin Voldemort'un geçmişini anlamak için gördüğü anılarla bağlantılıdır. Film, Harry'nin, Dumbledore'un ona bıraktığı görevin ne kadar önemli olduğunu ve bu görevi tek başına tamamlaması gerektiğini anladığı bir dönemi anlatır. Film, aynı zamanda, Ölüm Yadigârları'nın efsanesini ilk kez tam olarak açıklar. Üç kardeşin hikayesi, Mürver Asa, Diriliş Taşı ve Görünmezlik Pelerini'nin kökenlerini ortaya koyar. Bu yadigârların varlığı, **Harry Potter ve Ölüm Yadigârları: Bölüm 2**'de Harry'nin Voldemort'la olan son mücadelesindeki anahtar rolünü oynar. Harry'nin, babasından miras kalan Görünmezlik Pelerini'nin aslında bir Ölüm Yadigârı olduğunu öğrenmesi, Potter ailesinin büyücülük dünyasındaki yerini ve önemini daha da vurgular. Film, aynı zamanda, Harry'nin Ron ve Hermione ile olan dostluğunun en zor sınavını verir. Hortkulukların yaydığı negatif enerjinin etkisi altında kalan Ron, Harry ve Hermione'den uzaklaşır. Bu durum, onların dostluklarının ne kadar güçlü olduğunu ve sonunda birbirlerine olan bağlılıklarının ne kadar derin olduğunu gösterir. Film, aynı zamanda, Dobby'nin trajik ölümünü içerir. Dobby'nin, Harry'yi kurtarmak için kendini feda etmesi, Harry'nin hayatında bir kez daha bir dostunu kaybetmesine neden olur. Dobby'nin fedakarlığı, Harry'nin Voldemort'a karşı olan mücadelesinde daha kararlı olmasına yol açar. 'Ölüm Yadigârları: Bölüm 1', Voldemort'un Sihir Bakanlığı'nı ele geçirmesini ve büyücü dünyasının totaliter bir rejimin etkisi altına girmesini gösterir. Bu durum, **Harry Potter ve Zümrüdüanka Yoldaşlığı**'nda Bakanlığın yozlaşmış yönetiminin bir sonucudur. Film, Voldemort'un gücünün ve kontrolünün ne kadar yaygın olduğunu ve son savaşın kaçınılmaz olduğunu gösterir. Film, ayrıca, Snape'in Dumbledore'u öldürdüğü sahnenin arkasındaki gerçeği ima eder. Snape'in, Harry'yi korumak için Dumbledore'la işbirliği yaptığı, ancak bu durumun yanlış anlaşıldığı ortaya çıkar. Film, Harry'nin, Voldemort'u yenmek için Hortkulukları bulma ve yok etme görevine odaklanarak, serinin sonuna doğru giden yolda bir köprü görevi görür ve izleyiciyi, büyük finalin atmosferine hazırlar.",
+      "canonical_level": "canon",
+      "sources": {
+        "Kaynaklar": [
+          {
+            "name": "Box Office Türkiye",
+            "url": "https://boxofficeturkiye.com/film/harry-potter-ve-olum-yadigarlari-bolum-1--2010214"
+          },
+          {
+            "name": "Wizarding World Official Site",
+            "url": "https://www.wizardingworld.com/films/harry-potter-and-the-deathly-hallows-part-1"
+          },
+          {
+            "name": "IMDb",
+            "url": "https://www.imdb.com/title/tt0926084/"
+          }
+        ],
+        "Görsel": [
+          {
+            "name": "JustWatch",
+            "url": "https://images.justwatch.com/poster/264900069/s718/harry-potter-ve-olum-yadigarlari-bolum-1.jpg"
+          }
+        ],
+        "Platform": [
+          {
+            "name": "HBO Max",
+            "url": "https://play.hbomax.com/movie/2c394a2d-7d1d-481d-a420-76ee1bee01a7"
+          }
+        ]
+      },
+      "lang": "tr"
+    },
+    {
+      "id": "film/hp/2011_harry_potter_and_the_deathly_hallows_part_2",
+      "label": "Harry Potter ve Ölüm Yadigârları: Bölüm 2 (2011)",
+      "title": "Harry Potter ve Ölüm Yadigârları: Bölüm 2",
+      "type": "film",
+      "release_date": "2011-07-15",
+      "end_date": null,
+      "image": "https://images.justwatch.com/poster/165771182/s718/harry-potter-ve-olum-yadigarlari-bolum-2.jpg",
+      "imdb_rating": 8.1,
+      "yönetmen": [
+        "David Yates"
+      ],
+      "oyuncular": [
+        "Daniel Radcliffe",
+        "Rupert Grint",
+        "Emma Watson",
+        "Ralph Fiennes",
+        "Alan Rickman",
+        "Michael Gambon"
+      ],
+      "tür": [
+        "Fantastik",
+        "Macera",
+        "Aksiyon"
+      ],
+      "shape": "image",
+      "description": "2011 yapımı 'Harry Potter ve Ölüm Yadigârları: Bölüm 2', Harry Potter evreninin sonunu ve Lord Voldemort'la olan son savaşı anlatan, nefes kesici bir final filmidir. Harry, Ron ve Hermione'nin görevi, Voldemort'un ruhunun son parçalarını sakladığı Hortkulukları bulup yok etmektir. Üçlünün bu görevi, Gringotts Bankası'na sızmalarıyla başlar ve Voldemort'un en değerli nesnelerinden birini ele geçirmeyi başarırlar. Bu olay, Voldemort'un geri kalan Hortkuluklarının yerini öğrenmelerini sağlar. Hogwarts'a dönen Harry, Ron ve Hermione, Voldemort'un saldırısı altında olan okulu bulurlar. Hogwarts Savaşı başlar ve Harry, Voldemort'la yüzleşmek için son Hortkuluğu bulup yok etmek zorundadır. Bu süreçte, Harry, Voldemort'un Hortkuluklarını bulmak için Dumbledore'un ona bıraktığı ipuçlarını kullanır ve Snape'in gerçek motivasyonlarını öğrenir. Snape'in, Harry'nin annesi Lily'ye olan aşkını ve Dumbledore'a olan sadakatini anlatan anıları, Harry'nin tüm hikayesinin yeni bir anlam kazanmasını sağlar. Harry, Snape'in aslında bir kahraman olduğunu ve onu korumak için çalıştığını anlar. Film, Harry'nin Voldemort'la olan son yüzleşmesiyle doruk noktasına ulaşır. Harry, kendi hayatını feda etmesi gerektiğini anlar ve Voldemort'la olan kaderine doğru ilerler. Harry'nin fedakarlığı, annesi Lily'nin yaptığı fedakarlığa benzer bir koruyucu büyü yaratır ve Voldemort'un gücünü zayıflatır. Harry'nin Hortkuluk olarak vücudunda taşıdığı Voldemort'un ruh parçası yok edilir ve Harry hayatta kalır. Final düellosunda, Harry, Voldemort'un Mürver Asa'yı kontrol edemediğini ve asanın gerçek sahibinin kendisi olduğunu gösterir. Voldemort, asasını Harry'ye karşı kullanamaz ve Harry'nin Expelliarmus büyüsüyle asasını kaybeder. Voldemort, kendi lanetinin geri dönmesiyle yok olur ve büyücü dünyası, on yıldan fazla süren karanlık bir dönemin ardından özgürlüğüne kavuşur. Film, on dokuz yıl sonraki bir sahneyle sona erer. Harry, Ginny, Ron ve Hermione'nin çocuklarını Hogwarts Ekspresi'ne gönderdikleri bir sahneyle, tüm serinin mutlu bir şekilde sona erdiğini gösterir. David Yates'in yönetmenliği, serinin en duygusal ve en aksiyon dolu finalini sunar. 'Ölüm Yadigârları: Bölüm 2', sadece bir filmin sonu değil, aynı zamanda, on yıl süren bir destanın, dostluğun, sevginin ve cesaretin zaferiyle sonuçlandığı bir hikayenin finalidir. Film, Harry'nin, bir çocuktan, tüm büyücü dünyasının kahramanına dönüşümünü tamamlar ve izleyiciye unutulmaz bir veda sunar.",
+      "refers_to": "'Harry Potter ve Ölüm Yadigârları: Bölüm 2', serinin tüm filmlerinin atıflarını ve hikaye çizgilerini bir araya getiren nihai bir finaldir. Filmin en önemli atfı, Severus Snape'in gerçek hikayesinin ve motivasyonlarının ortaya çıkmasıdır. Snape'in anıları, onun Harry'nin annesi Lily'ye olan aşkını, Dumbledore'a olan sadakatini ve Harry'yi korumak için verdiği gizli mücadeleyi gösterir. Bu durum, **Harry Potter ve Melez Prens**'te Dumbledore'u öldürmesinin ardındaki gerçeği ortaya çıkarır ve Snape'in serinin en karmaşık ve en trajik karakterlerinden biri olduğunu kanıtlar. Bu atıf, Snape'in Harry'ye karşı olan davranışlarının nedenini açıklar ve Harry'nin, Snape'in fedakarlığını onurlandırmasına neden olur. Film, Hortkuluklar'ın sonlarının geldiği bir filmler dizisinin son halkasıdır. Harry, Ron ve Hermione'nin Hortkulukları bulup yok etme arayışı, **Harry Potter ve Melez Prens**'te başlayan bir görevin finalidir. Filmde, Hortkulukların Voldemort'un ruhunun bir parçasını sakladığı ve onların yok edilmesiyle Voldemort'un ölümsüzlüğünün sona ereceği ortaya çıkar. Harry'nin kendi içinde taşıdığı Hortkuluk'un yok edilmesi, Harry'nin Voldemort'la olan zihinsel bağının sona erdiğini gösterir. Bu durum, **Harry Potter ve Zümrüdüanka Yoldaşlığı**'nda Harry'nin yaşadığı zihinsel çatışmaların nedenini açıklar. Film, Ölüm Yadigârları'nın efsanesinin, Mürver Asa'nın son sahibinin kim olduğunu belirlemedeki rolünü ortaya koyar. Harry'nin Draco Malfoy'u silahsızlandırması, asanın sahibinin değişmesine neden olur ve bu durum, Harry'nin Voldemort'la olan final düellosunda asanın gerçek sahibinin kendisi olduğunu gösterir. Harry'nin babasından miras kalan Görünmezlik Pelerini ve Dumbledore'un ona bıraktığı Diriliş Taşı, Harry'nin final mücadelesinde önemli bir rol oynar. Film, **Harry Potter ve Felsefe Taşı**'nda başlayan Felsefe Taşı'nın ve Voldemort'un ölümsüzlük arayışının finalini sunar. Harry'nin annesi Lily'nin fedakarlığı sayesinde hayatta kalması, serinin başından beri vurgulanan sevginin gücü temasını doruk noktasına ulaştırır. Film, Harry'nin Dumbledore'un Ordusu'ndan arkadaşlarıyla birlikte Hogwarts Savaşı'nda savaşmasını gösterir. Bu durum, Harry'nin **Harry Potter ve Zümrüdüanka Yoldaşlığı**'nda kurduğu ordunun, son savaşta ne kadar önemli olduğunu kanıtlar. Harry'nin Voldemort'u yenmesi ve tüm büyücü dünyasını özgürleştirmesi, onun bir çocuktan bir kahramana dönüşümünün son adımıdır. 'Ölüm Yadigârları: Bölüm 2', tüm evrenin, dostluğun, sevginin ve fedakarlığın zaferiyle sona erdiğini gösteren, duygusal ve unutulmaz bir finaldir.",
+      "canonical_level": "canon",
+      "sources": {
+        "Kaynaklar": [
+          {
+            "name": "Box Office Türkiye",
+            "url": "https://boxofficeturkiye.com/film/harry-potter-ve-olum-yadigarlari-bolum-2--2011211"
+          },
+          {
+            "name": "Wizarding World Official Site",
+            "url": "https://www.wizardingworld.com/films/harry-potter-and-the-deathly-hallows-part-2"
+          },
+          {
+            "name": "IMDb",
+            "url": "https://www.imdb.com/title/tt1201607/"
+          }
+        ],
+        "Görsel": [
+          {
+            "name": "JustWatch",
+            "url": "https://images.justwatch.com/poster/165771182/s718/harry-potter-ve-olum-yadigarlari-bolum-2.jpg"
+          }
+        ],
+        "Platform": [
+          {
+            "name": "HBO Max",
+            "url": "https://play.hbomax.com/movie/1890c8c5-2f40-4140-a363-064428201826"
+          }
+        ]
+      },
+      "lang": "tr"
     }
   ],
   "edges": [
     {
-      "from": "film/harrypotter/2002_chamber_of_secrets",
-      "to": "film/harrypotter/2001_philosophers_stone",
-      "type": "Devam",
+      "from": "film/hp/2016_fantastic_beasts_and_where_to_find_them",
+      "to": "film/hp/2018_fantastic_beasts_the_crimes_of_grindelwald",
+      "type": "Doğrudan Devam",
       "weight": 1,
-      "notes": "Harry Potter ve Sırlar Odası, Felsefe Taşı filminin Devamıdır ve hikayeyi derinleştirir."
+      "notes": "Grindelwald'ın kaçışıyla devam eden bu film, serinin ana hikayesini daha da derinleştiriyor."
     },
     {
-      "from": "film/harrypotter/2004_prisoner_of_azkaban",
-      "to": "film/harrypotter/2002_chamber_of_secrets",
-      "type": "Devam",
+      "from": "film/hp/2018_fantastic_beasts_the_crimes_of_grindelwald",
+      "to": "film/hp/2022_fantastic_beasts_the_secrets_of_dumbledore",
+      "type": "Doğrudan Devam",
       "weight": 1,
-      "notes": "Azkaban Tutsağı, Sırlar Odası filminin Devamı olup karakterlerin ve hikayenin gelişimini sağlar."
+      "notes": "Dumbledore'un gençliği ve Grindelwald ile olan karmaşık ilişkisi bu filmde daha çok işleniyor."
     },
     {
-      "from": "film/harrypotter/2005_goblet_of_fire",
-      "to": "film/harrypotter/2004_prisoner_of_azkaban",
-      "type": "Devam",
+      "from": "film/hp/2001_harry_potter_and_the_philosophers_stone",
+      "to": "film/hp/2002_harry_potter_and_the_chamber_of_secrets",
+      "type": "Doğrudan Devam",
       "weight": 1,
-      "notes": "Ateş Kadehi, Azkaban Tutsağı filminin Devamı ve serinin hikayesinin karanlıklaşmaya başladığı önemli bir dönüm noktasıdır."
-    },
-     {
-      "from": "film/harrypotter/2007_order_of_phoenix",
-      "to": "film/harrypotter/2005_goblet_of_fire",
-      "type": "Devam",
-      "weight": 1,
-      "notes": "Zümrüdüanka Yoldaşlığı, Ateş Kadehi’nin Devamı olup Voldemort tehdidinin büyüdüğü dönemi anlatır."
+      "notes": "Harry'nin ikinci yılında, Hogwarts'ın geçmişi ve Voldemort'un gençliğiyle yüzleşmesini konu alır."
     },
     {
-      "from": "film/harrypotter/2009_half_blood_prince",
-      "to": "film/harrypotter/2007_order_of_phoenix",
-      "type": "Devam",
+      "from": "film/hp/2002_harry_potter_and_the_chamber_of_secrets",
+      "to": "film/hp/2004_harry_potter_and_the_prisoner_of_azkaban",
+      "type": "Doğrudan Devam",
       "weight": 1,
-      "notes": "Melez Prens, Zümrüdüanka Yoldaşlığı filminin Devamı olarak Voldemort’un geçmişinin derinlemesine keşfedildiği yapımdır."
-    },
-     {
-      "from": "film/harrypotter/2010_deathly_hallows_part1",
-      "to": "film/harrypotter/2009_half_blood_prince",
-      "type": "Devam",
-      "weight": 1,
-      "notes": "Ölüm Yadigarları Bölüm 1, Melez Prens filminin Devamı ve Voldemort’a karşı verilen son mücadelenin başlangıcıdır."
+      "notes": "Harry, vaftiz babası Sirius Black'in masumiyetini kanıtlamak için zamanda yolculuk yapar."
     },
     {
-      "from": "film/harrypotter/2011_deathly_hallows_part2",
-      "to": "film/harrypotter/2010_deathly_hallows_part1",
-      "type": "Devam",
+      "from": "film/hp/2004_harry_potter_and_the_prisoner_of_azkaban",
+      "to": "film/hp/2005_harry_potter_and_the_goblet_of_fire",
+      "type": "Doğrudan Devam",
       "weight": 1,
-      "notes": "Ölüm Yadigarları Bölüm 2, serinin finali olup Hogwarts Savaşı ve Harry’nin zaferini konu alır."
-    },
-     {
-      "from": "film/harrypotter/fantastic_beasts_the_crimes_of_grindelwald",
-      "to": "film/harrypotter/fantastic_beasts_and_where_to_find_them",
-      "type": "Devam",
-      "weight": 1,
-      "notes": "Grindelwald'ın Suçları, Fantastik Canavarlar filminin Devamı ve karanlık büyücünün yükselişini anlatır."
+      "notes": "Harry, Üç Büyücü Turnuvası'na katılırken, Voldemort'un fiziksel olarak geri dönüşüne tanıklık eder."
     },
     {
-      "from": "film/harrypotter/fantastic_beasts_and_where_to_find_them",
-      "to": "film/harrypotter/2001_philosophers_stone",
-      "type": "Öncesi",
-      "weight": 0.8,
-      "notes": "Fantastik Canavarlar, Harry Potter evreninde geçen olaylardan yaklaşık 70 yıl Öncesini anlatır."
+      "from": "film/hp/2005_harry_potter_and_the_goblet_of_fire",
+      "to": "film/hp/2007_harry_potter_and_the_order_of_the_phoenix",
+      "type": "Doğrudan Devam",
+      "weight": 1,
+      "notes": "Voldemort'un geri dönüşünü inkar eden Sihir Bakanlığı'na karşı Harry'nin mücadelesini anlatır."
     },
- {
-      "from": "dizi/harrypotter/hogwarts_legacy",
-      "to": "film/harrypotter/2001_philosophers_stone",
-      "type": "Aynı Evren",
-      "weight": 0.7,
-      "notes": "Hogwarts Legacy, Harry Potter evreninde geçer ancak farklı bir zaman dilimini ve yeni karakterleri anlatır."
+    {
+      "from": "film/hp/2007_harry_potter_and_the_order_of_the_phoenix",
+      "to": "film/hp/2009_harry_potter_and_the_half_blood_prince",
+      "type": "Doğrudan Devam",
+      "weight": 1,
+      "notes": "Harry, Dumbledore ile Voldemort'un Hortkuluklarını ararken, Snape'in gizemli geçmişini öğrenir."
+    },
+    {
+      "from": "film/hp/2009_harry_potter_and_the_half_blood_prince",
+      "to": "film/hp/2010_harry_potter_and_the_deathly_hallows_part_1",
+      "type": "Doğrudan Devam",
+      "weight": 1,
+      "notes": "Hogwarts'tan kaçan Harry, Ron ve Hermione, Voldemort'un Hortkuluklarını bulmak için tehlikeli bir yolculuğa çıkar."
+    },
+    {
+      "from": "film/hp/2010_harry_potter_and_the_deathly_hallows_part_1",
+      "to": "film/hp/2011_harry_potter_and_the_deathly_hallows_part_2",
+      "type": "Doğrudan Devam",
+      "weight": 1,
+      "notes": "Harry, Voldemort'un son Hortkuluklarını yok etmek ve onunla son bir kez yüzleşmek için Hogwarts'a geri döner."
+    },
+    {
+      "from": "film/hp/2022_fantastic_beasts_the_secrets_of_dumbledore",
+      "to": "film/hp/2001_harry_potter_and_the_philosophers_stone",
+      "type": "Geçmiş Hikayesi",
+      "weight": 1,
+      "notes": "Fantastik Canavarlar serisi, Harry Potter filmlerinde anlatılan olayların tarihsel arka planını oluşturur."
     }
   ]
 }
