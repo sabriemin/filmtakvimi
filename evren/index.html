@@ -186,6 +186,40 @@
   }
 </style>
 
+
+<style>
+  .share-sheet-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.5); backdrop-filter: blur(2px); z-index: 9999; }
+  .share-sheet { position: fixed; left: 50%; top: 50%; transform: translate(-50%,-50%); width: 92vw; max-width: 520px;
+                 background: rgba(17,24,39,0.98); border: 1px solid rgba(255,255,255,0.12); border-radius: 16px;
+                 box-shadow: 0 20px 40px rgba(0,0,0,0.5); padding: 16px; color: #fff; z-index: 10000; }
+  .share-grid { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 8px; }
+  .share-tile { display:flex; flex-direction:column; align-items:center; gap:6px; padding:10px; border-radius:12px;
+                background: rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.1); cursor:pointer; }
+  .share-tile:hover { background: rgba(255,255,255,0.12); }
+  .share-input { width:100%; padding:8px 10px; border-radius:10px; background: rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.15); color:#fff; }
+  .share-actions { display:flex; gap:8px; justify-content:flex-end; margin-top:10px; }
+</style>
+
+
+<style>
+  /* share-brand icon sizing */
+  .share-tile img.share-icon { width: 22px; height: 22px; border-radius: 4px; }
+  .share-tile svg.share-icon { width: 22px; height: 22px; }
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+
+<style>
+  .share-opt { display:flex; align-items:center; gap:.5rem; }
+  .share-opt input[type="checkbox"] { width: 14px; height: 14px; }
+  .share-row { display:grid; grid-template-columns: 1fr auto; gap:.5rem; align-items:center; }
+  .share-textarea { width:100%; min-height:72px; max-height:160px; resize:vertical;
+    padding:10px;border-radius:10px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.15);color:#fff; }
+  .counter { font-size:11px; opacity:.75; }
+  .chip-mini { font-size:11px; padding:2px 8px; border-radius:999px; border:1px solid rgba(255,255,255,.2); background: rgba(255,255,255,.08); cursor:pointer; }
+  .chip-mini:hover { background: rgba(255,255,255,.15); }
+</style>
+
 </head>
 
 
@@ -587,18 +621,11 @@
 <!-- Üst blur görsel alanı -->
 <div class="relative h-64">
 <img :src="modalNode.image" alt="" class="absolute inset-0 w-full h-full object-cover blur-sm brightness-50 scale-105" class="lazy-blur" @load="$event.target.classList.add(\'lazy-done\')" loading="lazy"/>
-<div class="absolute inset-0 flex flex-col justify-between p-4 z-10"><div class="absolute top-3 left-3 flex gap-2 items-center"><div class="flex gap-2 items-center">
-<button @click="shareToX(modalNode)" class="text-white hover:opacity-80" title="X paylaş" aria-label="X ile paylaş">
-<img alt="X" src="https://img.icons8.com/ios-filled/20/ffffff/twitterx.png"/>
-</button>
-<button @click="shareToWhatsApp(modalNode)" class="text-white hover:opacity-80" title="WhatsApp" aria-label="WhatsApp ile paylaş">
-<img alt="WA" src="https://img.icons8.com/ios-filled/20/ffffff/whatsapp.png"/>
-</button>
-<button @click="shareToLinkedIn(modalNode)" class="text-white hover:opacity-80" title="LinkedIn" aria-label="LinkedIn ile paylaş">
-<img alt="IN" src="https://img.icons8.com/ios-filled/20/ffffff/linkedin.png"/>
-</button>
-<button @click="copyShare(modalNode)" class="text-white hover:opacity-80" title="Kopyala" aria-label="Bağlantıyı kopyala">📋</button>
-</div></div><div class="absolute top-3 right-3 flex gap-2 items-center z-20"><div @click="modalOpen=false; resetPrettyUrl && resetPrettyUrl()" class="close-btn" id="modal-close" role="button" aria-label="Paneli kapat">✕</div></div>
+<div class="absolute inset-0 flex flex-col justify-between p-4 z-10"><div class="absolute top-3 left-3 flex gap-2 items-center">
+  <button @click="openShare(modalNode)" class="share-btn" title="Paylaşım seçenekleri" aria-label="Paylaşım seçenekleri">
+    <span aria-hidden="true">🔗</span><span class="hidden sm:inline">Paylaş</span>
+  </button>
+</div><div class="absolute top-3 right-3 flex gap-2 items-center z-20"><div @click="modalOpen=false; resetPrettyUrl && resetPrettyUrl()" class="close-btn" id="modal-close" role="button" aria-label="Paneli kapat">✕</div></div>
 <!-- Üst çubuk -->
 <div class="flex justify-between items-start"><div class="absolute top-3 right-3 flex gap-2 items-center z-20"></div></div>
 <!-- Alt bilgi -->
@@ -966,6 +993,104 @@ class="w-32 h-32 rounded-full object-cover drop-shadow-[0_0_20px_rgba(168,85,247
 <div class="flex gap-2 mt-2">
 <input class="w-full px-3 py-2 rounded bg-white/10 text-white" placeholder="Not ekle... #etiket" x-model="newNote"/>
 <button @click="addNote(modalNode.id)" class="px-3 py-2 text-sm border border-white/20 rounded hover:bg-white/20">Ekle</button>
+
+<!-- Advanced Share Sheet -->
+<template x-if="shareOpen">
+  <div @keydown.escape.window="shareOpen=false">
+    <div class="share-sheet-overlay" @click="shareOpen=false"></div>
+    <div class="share-sheet" role="dialog" aria-modal="true" aria-label="Paylaşım seçenekleri">
+      <div class="flex items-center justify-between mb-3">
+        <div class="text-lg font-semibold">Paylaş</div>
+        <button class="w-8 h-8 rounded-full bg-white/10 border border-white/20" @click="shareOpen=false" aria-label="Paylaşımı kapat">✕</button>
+      </div>
+
+      <div class="mb-3 text-sm opacity-80">
+        <div class="mb-1">Bağlantı</div>
+        <input class="share-input" type="text" readonly :value="buildShareUrl(modalNode, true)">
+      </div>
+
+      <div class="grid share-grid mb-3">
+  <div class="share-tile" @click="shareNative(modalNode)" title="Cihazla Paylaş" aria-label="Cihazla Paylaş">
+    <svg class="share-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M14 3l7 7-1.41 1.41L15 8.83V17a4 4 0 01-4 4H5v-2h6a2 2 0 002-2V8.83l-4.59 2.58L7 10l7-7z"/>
+    </svg>
+    <span class="text-xs">Cihazla Paylaş</span>
+  </div>
+
+  <div class="share-tile" @click="shareToX(modalNode)" title="X" aria-label="X">
+    <img class="share-icon" src="https://www.google.com/s2/favicons?sz=32&domain=x.com" alt="X">
+    <span class="text-xs">X (Twitter)</span>
+  </div>
+
+  <div class="share-tile" @click="shareToWhatsApp(modalNode)" title="WhatsApp" aria-label="WhatsApp">
+    <img class="share-icon" src="https://www.google.com/s2/favicons?sz=32&domain=whatsapp.com" alt="WhatsApp">
+    <span class="text-xs">WhatsApp</span>
+  </div>
+
+  <div class="share-tile" @click="shareToLinkedIn(modalNode)" title="LinkedIn" aria-label="LinkedIn">
+    <img class="share-icon" src="https://www.google.com/s2/favicons?sz=32&domain=linkedin.com" alt="LinkedIn">
+    <span class="text-xs">LinkedIn</span>
+  </div>
+
+  <div class="share-tile" @click="shareToTelegram(modalNode)" title="Telegram" aria-label="Telegram">
+    <img class="share-icon" src="https://www.google.com/s2/favicons?sz=32&domain=telegram.org" alt="Telegram">
+    <span class="text-xs">Telegram</span>
+  </div>
+
+  <div class="share-tile" @click="shareToReddit(modalNode)" title="Reddit" aria-label="Reddit">
+    <img class="share-icon" src="https://www.google.com/s2/favicons?sz=32&domain=reddit.com" alt="Reddit">
+    <span class="text-xs">Reddit</span>
+  </div>
+
+  <div class="share-tile" @click="copyShare(modalNode)" title="Bağlantıyı Kopyala" aria-label="Bağlantıyı Kopyala">
+    <svg class="share-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M16 1H4a2 2 0 00-2 2v12h2V3h12V1zm3 4H8a2 2 0 00-2 2v14a2 2 0 002 2h11a2 2 0 002-2V7a2 2 0 00-2-2zm0 16H8V7h11v14z"/>
+    </svg>
+    <span class="text-xs">Kopyala</span>
+  </div>
+
+  <div class="share-tile" @click="copyMarkdown(modalNode)" title="Markdown Olarak Kopyala" aria-label="Markdown Olarak Kopyala">
+    <svg class="share-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M2 5a2 2 0 012-2h16a2 2 0 012 2v14H2V5zm2 0v12h16V5H4zm3 3h2l2 3 2-3h2v6h-2V9l-2 3-2-3v6H7V8z"/>
+    </svg>
+    <span class="text-xs">Markdown</span>
+  </div>
+</div>
+        <div class="share-tile" @click="shareToX(modalNode)">
+          <span>𝕏</span><span class="text-xs">X (Twitter)</span>
+        </div>
+        <div class="share-tile" @click="shareToWhatsApp(modalNode)">
+          <span>🟢</span><span class="text-xs">WhatsApp</span>
+        </div>
+        <div class="share-tile" @click="shareToLinkedIn(modalNode)">
+          <span>in</span><span class="text-xs">LinkedIn</span>
+        </div>
+        <div class="share-tile" @click="shareToTelegram(modalNode)">
+          <span>✈️</span><span class="text-xs">Telegram</span>
+        </div>
+        <div class="share-tile" @click="shareToReddit(modalNode)">
+          <span>👽</span><span class="text-xs">Reddit</span>
+        </div>
+        <div class="share-tile" @click="copyShare(modalNode)">
+          <span>📋</span><span class="text-xs">Bağlantıyı Kopyala</span>
+        </div>
+        <div class="share-tile" @click="copyMarkdown(modalNode)">
+          <span>📝</span><span class="text-xs">Markdown</span>
+        </div>
+      </div>
+
+      <div class="mb-2 text-sm opacity-80">QR Kod</div>
+      <div class="flex items-center justify-center">
+        <img :src="'https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=' + encodeURIComponent(buildShareUrl(modalNode, true))"
+             alt="QR" width="180" height="180" class="rounded border border-white/10"/>
+      </div>
+
+      <div class="share-actions">
+        <button class="px-3 py-1.5 rounded bg-white/10 border border-white/20 hover:bg-white/20 text-sm" @click="shareOpen=false">Kapat</button>
+      </div>
+    </div>
+  </div>
+</template>
 </div>
 </div>
 </div>
@@ -996,7 +1121,264 @@ class="w-32 h-32 rounded-full object-cover drop-shadow-[0_0_20px_rgba(168,85,247
       function app() {
         return {
           
-          selectedEdgeType: null,
+          openShare(node){
+            try{
+              this.shareCustomText = this.formatShareDefault(node || this.modalNode);
+              this.shareOpen = true;
+              this.$nextTick(() => {
+                try {
+                  const ta = document.querySelector('.share-textarea');
+                  ta && ta.focus();
+                } catch(e){}
+              });
+            } catch(e){
+              this.shareOpen = true;
+            }
+          },
+init(){
+            try{
+              // Prefill when panel opens
+              this.$watch('shareOpen', (v) => {
+                if(v){ this.shareCustomText = this.formatShareDefault(this.modalNode); }
+              });
+              // Prefill when modalNode changes
+              this.$watch('modalNode', (n) => {
+                if(n){ this.shareCustomText = this.formatShareDefault(n); }
+              });
+              // Persist share prefs
+              this.$watch('sharePrefs.useUtm', () => this.saveSharePrefs());
+              this.$watch('sharePrefs.includeHashtags', () => this.saveSharePrefs());
+              this.$watch('sharePrefs.includeSummary', () => this.saveSharePrefs());
+            }catch(e){ /* no-op */ }
+          },
+    
+          
+          
+          
+          
+          
+          // --- Structured default share text helpers ---
+          formatShareDefault(node){
+            try {
+              const title = node?.label || 'Bir yapım';
+              const sum = this.takeSummary(node?.description, 140);
+              const ref = this.takeReference(node?.refers_to, 100);
+              const link = this.buildShareUrl(node, this.sharePrefs?.useUtm ?? true);
+              const bye = this.randomFarewell();
+              const lines = [title];
+              if (sum) lines.push(sum);
+              if (ref) lines.push('Gönderme: ' + ref);
+              lines.push(link);
+              lines.push(bye);
+              return lines.filter(Boolean).join('\n');
+            } catch(e){ return this.getShareText(node) + '\n' + this.buildShareUrl(node, true); }
+          },
+          takeSummary(t, maxLen=140){
+            return this._shorten(t, maxLen);
+          },
+          takeReference(t, maxLen=100){
+            if (!t) return '';
+            let s = String(t);
+            // strip markdown ** and any html tags
+            s = s.replace(/\*\*/g, '').replace(/<[^>]*>/g, '');
+            return this._shorten(s, maxLen);
+          },
+          _shorten(t, maxLen=140){
+            if (!t) return '';
+            const clean = String(t).replace(/\s+/g, ' ').trim();
+            if (!clean) return '';
+            let first = clean.split(/[.!?]/)[0] || clean;
+            if (first.length > maxLen) first = first.slice(0, maxLen-1) + '…';
+            return first;
+          },
+          randomFarewell(){
+            const list = [
+              'İyi seyirler! 🎬',
+              'Sence nasıl? Yorumunu yaz.',
+              'Listene eklemeyi unutma! ⭐',
+              'Bir göz at derim!'
+            ];
+            return list[0];
+          },
+// Share prefs & helpers
+          sharePrefs: JSON.parse(localStorage.getItem('sharePrefs') || '{"useUtm":true,"includeHashtags":true,"includeSummary":false}'),
+          shareCustomText: '',
+          saveSharePrefs(){ try{ localStorage.setItem('sharePrefs', JSON.stringify(this.sharePrefs)); }catch(e){} },
+          $watch: {
+            'modalNode'(n){ if(n){ this.shareCustomText = this.formatShareDefault(n); } },
+            'shareOpen'(v){ if(v){ if(!this.shareCustomText){ this.shareCustomText = this.formatShareDefault(this.modalNode); } } },  'sharePrefs.useUtm'(){ this.saveSharePrefs(); },
+            'sharePrefs.includeHashtags'(){ this.saveSharePrefs(); },
+            'sharePrefs.includeSummary'(){ this.saveSharePrefs(); },
+          },
+          shareSuggestedTags(node){
+            const tags = [];
+            const uni = this.formatUniverseName?.(node?.universe) || node?.universe || '';
+            if (uni) tags.push('#' + String(uni).replace(/\s+/g,''));
+            const genres = (node?.tür || '').toString().split(/,|\/|•/).map(s=>s.trim()).filter(Boolean);
+            genres.slice(0,3).forEach(g => tags.push('#' + g.replace(/\s+/g,'')));
+            return Array.from(new Set(tags));
+          },
+          appendToShare(s){ this.shareCustomText = (this.shareCustomText + ' ' + s).trim(); },
+          buildShareText(node){
+            const base = (this.shareCustomText && this.shareCustomText.trim())
+              ? this.shareCustomText
+              : this.formatShareDefault(node);
+            return base;
+          },
+          xRemaining(node){
+            const limit = 280;
+            const txt = this.buildShareText(node);
+            return (limit - txt.length);
+          },
+          shareToEmail(node){
+            const subject = encodeURIComponent(node?.label || 'Öneri');
+            const body = encodeURIComponent(this.buildShareText(node));
+            window.location.href = `mailto:?subject=${subject}&body=${body}`;
+          },
+          async captureShareImage(){
+            try {
+              const modal = document.querySelector('.modal-content');
+              if (!modal) return alert('Poster bulunamadı');
+              const target = modal.querySelector('img[alt=""]') || modal;
+              const canvas = await html2canvas(target, {useCORS:true, backgroundColor:null, scale: 2});
+              const data = canvas.toDataURL('image/png');
+              const a = document.createElement('a');
+              a.href = data; a.download = (this.modalNode?.label || 'poster') + '.png'; a.click();
+              // Clipboard (best-effort)
+              if (navigator.clipboard && window.ClipboardItem) {
+                const res = await fetch(data); const blob = await res.blob();
+                await navigator.clipboard.write([new ClipboardItem({[blob.type]: blob})]);
+                this.showFavMsg = true; setTimeout(()=> this.showFavMsg=false,1200);
+              }
+            } catch(e){ console.error(e); alert('Görsel oluşturulamadı'); }
+          },
+          // Overwrite social share builders to use composed text
+          shareToX(node){
+            const url = encodeURIComponent(this.buildShareUrl(node, this.sharePrefs.useUtm));
+            const text = encodeURIComponent(this.buildShareText(node));
+            window.open(`https://x.com/intent/tweet?text=${text}`,'_blank','noopener,noreferrer');
+          },
+          shareToWhatsApp(node){
+            const text = encodeURIComponent(this.buildShareText(node));
+            window.open(`https://wa.me/?text=${text}`,'_blank','noopener,noreferrer');
+          },
+          shareToLinkedIn(node){
+            const url = encodeURIComponent(this.buildShareUrl(node, this.sharePrefs?.useUtm ?? true));
+            const title = encodeURIComponent(node?.label || 'Paylaş');
+            const summary = encodeURIComponent(this.buildShareText(node));
+            // Prefer shareArticle to include text
+            window.open(`https://www.linkedin.com/shareArticle?mini=true&url=${url}&title=${title}&summary=${summary}`,'_blank','noopener,noreferrer');
+          },
+          shareToTelegram(node){
+            const url = encodeURIComponent(this.buildShareUrl(node, this.sharePrefs.useUtm));
+            const text = encodeURIComponent(this.buildShareText(node));
+            window.open(`https://t.me/share/url?url=${url}&text=${text}`,'_blank','noopener,noreferrer');
+          },
+          shareToReddit(node){
+            const url = encodeURIComponent(this.buildShareUrl(node, this.sharePrefs.useUtm));
+            const title = encodeURIComponent(this.getShareText(node));
+            window.open(`https://www.reddit.com/submit?url=${url}&title=${title}`,'_blank','noopener,noreferrer');
+          },
+shareOpen: false,
+          buildShareUrl(node, withUtm=false){
+            try{
+              const url = new URL(window.location.href);
+              if (node?.id != null) url.searchParams.set('work', node.id);
+              if (withUtm){
+                url.searchParams.set('utm_source','film-evreni');
+                url.searchParams.set('utm_medium','share');
+                url.searchParams.set('utm_campaign', String(node?.universe || 'genel'));
+              }
+              return url.toString();
+            }catch(e){ return window.location.href; }
+          },
+          getShareText(node){
+            const title = node?.label || 'Bunu bir gör!';
+            const uni = this.formatUniverseName?.(node?.universe) || node?.universe || '';
+            const genres = (node?.tür || '').toString();
+            const tags = [uni, genres].filter(Boolean).map(s => '#' + s.replace(/\s+/g,'')).slice(0,3).join(' ');
+            return `${title} ${tags}`.trim();
+          },
+          async shareNative(node){
+            const url = this.buildShareUrl(node, this.sharePrefs?.useUtm ?? true);
+            const text = this.buildShareText(node);
+            try {
+              if (navigator.share) {
+                await navigator.share({ title: node?.label || 'Paylaş', text, url });
+              } else {
+                await navigator.clipboard.writeText(text + '\n' + url);
+                alert('Cihaz paylaşımı desteklemiyor. Metin + bağlantı kopyalandı.');
+              }
+            } catch(e){ /* kullanıcı iptal edebilir */ }
+          },
+          shareToTelegram(node){
+            const url = encodeURIComponent(this.buildShareUrl(node, true));
+            const text = encodeURIComponent(this.getShareText(node));
+            window.open(`https://t.me/share/url?url=${url}&text=${text}`,'_blank','noopener,noreferrer');
+          },
+          shareToReddit(node){
+            const url = encodeURIComponent(this.buildShareUrl(node, true));
+            const title = encodeURIComponent(this.getShareText(node));
+            window.open(`https://www.reddit.com/submit?url=${url}&title=${title}`,'_blank','noopener,noreferrer');
+          },
+          async copyMarkdown(node){
+            try{
+              const url = this.buildShareUrl(node, true);
+              const md = `[${node?.label || 'Bağlantı'}](${url})`;
+              await navigator.clipboard.writeText(md);
+              this.showFavMsg = true; setTimeout(()=> this.showFavMsg=false,1200);
+            }catch(e){ alert('Kopyalanamadı'); }
+          },
+// --- Share helpers ---
+          getShareUrl(node){
+            try {
+              const url = new URL(window.location.href);
+              // keep existing params, add/replace 'work' with node.id
+              if (node?.id != null) url.searchParams.set('work', node.id);
+              return url.toString();
+            } catch(e){
+              return window.location.href;
+            }
+          },
+          shareToX(node){
+            try{
+              const url = encodeURIComponent(this.getShareUrl(node));
+              const text = encodeURIComponent(`${node?.label || 'Bunu bir gör!'} 🎬`);
+              const share = `https://x.com/intent/tweet?text=${text}&url=${url}`;
+              window.open(share, '_blank', 'noopener,noreferrer');
+            }catch(e){ console.error(e); }
+          },
+          shareToWhatsApp(node){
+            try{
+              const url = encodeURIComponent(this.getShareUrl(node));
+              const text = encodeURIComponent(`${node?.label || ''} ${decodeURIComponent(url)}`.trim());
+              const share = `https://wa.me/?text=${text}`;
+              window.open(share, '_blank', 'noopener,noreferrer');
+            }catch(e){ console.error(e); }
+          },
+          shareToLinkedIn(node){
+            const url = encodeURIComponent(this.buildShareUrl(node, this.sharePrefs?.useUtm ?? true));
+            const title = encodeURIComponent(node?.label || 'Paylaş');
+            const summary = encodeURIComponent(this.buildShareText(node));
+            // Prefer shareArticle to include text
+            window.open(`https://www.linkedin.com/shareArticle?mini=true&url=${url}&title=${title}&summary=${summary}`,'_blank','noopener,noreferrer');
+          },
+          async copyShare(node){
+            try {
+              const link = this.getShareUrl(node);
+              if (navigator?.clipboard?.writeText) {
+                await navigator.clipboard.writeText(link);
+              } else {
+                const ta = document.createElement('textarea');
+                ta.value = link; document.body.appendChild(ta);
+                ta.select(); document.execCommand('copy'); document.body.removeChild(ta);
+              }
+              // ufak bir bildirim
+              this.showFavMsg = true;
+              setTimeout(()=> this.showFavMsg=false, 1200);
+            } catch(e){ console.error(e); alert('Bağlantı kopyalanamadı'); }
+          },
+selectedEdgeType: null,
           highlightEdgeType(type) {
             try {
               this.selectedEdgeType = (this.selectedEdgeType === type) ? null : type;
@@ -2847,6 +3229,244 @@ document.addEventListener('keydown', function(e){
     init();
   }
 })();
+</script>
+
+
+
+<!-- Global Advanced Share Sheet (always available) -->
+<template x-if="shareOpen">
+  <div class="share-sheet-overlay" @click="shareOpen=false" @keydown.escape.window="shareOpen=false">
+    <div class="share-sheet" role="dialog" aria-modal="true" aria-label="Paylaşım seçenekleri" @click.stop>
+      <div class="flex items-center justify-between mb-3">
+        <div class="text-lg font-semibold">Paylaş</div>
+        <button class="w-8 h-8 rounded-full bg-white/10 border border-white/20" @click="shareOpen=false" aria-label="Paylaşımı kapat">✕</button>
+      </div>
+
+      <!-- Link satırı -->
+      <div class="mb-2 text-sm opacity-80">
+        <div class="mb-1">Bağlantı</div>
+        <div class="share-row">
+          <input class="share-input" type="text" readonly :value="buildShareUrl(modalNode, sharePrefs.useUtm)">
+          <div class="flex gap-2">
+            <button class="px-2 py-1 rounded bg-white/10 border border-white/20 hover:bg-white/20 text-xs"
+                    @click="copyShare(modalNode)">Kopyala</button>
+            <button class="px-2 py-1 rounded bg-white/10 border border-white/20 hover:bg-white/20 text-xs"
+                    @click="copyMarkdown(modalNode)">Markdown</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Metin düzenleyici -->
+      <div class="mb-2">
+        <div class="flex items-center justify-between mb-1"><div class="flex items-center gap-2"><div class="text-sm opacity-80">Mesaj</div><button class="px-2 py-0.5 rounded border border-white/20 bg-white/5 hover:bg-white/10 text-[11px]" @click="shareCustomText = formatShareDefault(modalNode)">Varsayılanı Doldur</button></div><div class="counter"><span>𝕏: </span><span x-text="xRemaining(modalNode)"></span></div></div>
+        <textarea class="share-textarea"
+                  x-model="shareCustomText"
+                  :placeholder="getShareText(modalNode)"></textarea>
+        <div class="mt-1 flex flex-wrap gap-2">
+          <template x-for="tag in shareSuggestedTags(modalNode)" :key="tag">
+            <button class="chip-mini" @click="appendToShare(tag)">+ <span x-text="tag"></span></button>
+          </template>
+        </div>
+      </div>
+
+      <!-- Seçenekler -->
+      <div class="mb-3 grid grid-cols-1 sm:grid-cols-3 gap-2">
+        <label class="share-opt">
+          <input type="checkbox" x-model="sharePrefs.useUtm">
+          <span class="text-sm">UTM ekle</span>
+        </label>
+        <label class="share-opt">
+          <input type="checkbox" x-model="sharePrefs.includeHashtags">
+          <span class="text-sm">Hashtag ekle</span>
+        </label>
+        <label class="share-opt">
+          <input type="checkbox" x-model="sharePrefs.includeSummary">
+          <span class="text-sm">Kısa özet ekle</span>
+        </label>
+      </div>
+
+      <!-- Platformlar -->
+      <div class="grid share-grid mb-3">
+        <div class="share-tile" @click="shareNative(modalNode)" title="Cihazla Paylaş" aria-label="Cihazla Paylaş">
+          <svg class="share-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M14 3l7 7-1.41 1.41L15 8.83V17a4 4 0 01-4 4H5v-2h6a2 2 0 002-2V8.83l-4.59 2.58L7 10l7-7z"/>
+          </svg>
+          <span class="text-xs">Cihazla Paylaş</span>
+        </div>
+
+        <div class="share-tile" @click="shareToX(modalNode)" title="X" aria-label="X">
+          <img class="share-icon" src="https://www.google.com/s2/favicons?sz=32&domain=x.com" alt="X">
+          <span class="text-xs">X (Twitter)</span>
+        </div>
+        <div class="share-tile" @click="shareToWhatsApp(modalNode)" title="WhatsApp" aria-label="WhatsApp">
+          <img class="share-icon" src="https://www.google.com/s2/favicons?sz=32&domain=whatsapp.com" alt="WhatsApp">
+          <span class="text-xs">WhatsApp</span>
+        </div>
+        <div class="share-tile" @click="shareToLinkedIn(modalNode)" title="LinkedIn" aria-label="LinkedIn">
+          <img class="share-icon" src="https://www.google.com/s2/favicons?sz=32&domain=linkedin.com" alt="LinkedIn">
+          <span class="text-xs">LinkedIn</span>
+        </div>
+        <div class="share-tile" @click="shareToTelegram(modalNode)" title="Telegram" aria-label="Telegram">
+          <img class="share-icon" src="https://www.google.com/s2/favicons?sz=32&domain=telegram.org" alt="Telegram">
+          <span class="text-xs">Telegram</span>
+        </div>
+        <div class="share-tile" @click="shareToReddit(modalNode)" title="Reddit" aria-label="Reddit">
+          <img class="share-icon" src="https://www.google.com/s2/favicons?sz=32&domain=reddit.com" alt="Reddit">
+          <span class="text-xs">Reddit</span>
+        </div>
+        <div class="share-tile" @click="shareToEmail(modalNode)" title="E-Posta" aria-label="E-Posta">
+          <svg class="share-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          <span class="text-xs">E-Posta</span>
+        </div>
+        <div class="share-tile" @click="captureShareImage()" title="Poster Görseli" aria-label="Poster Görseli">
+          <svg class="share-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M21 19V5a2 2 0 00-2-2H5a2 2 0 00-2 2v14l4-4h12l2 2zM8 11l2.5 3.01L13 12l3 4H7l1-1.99z"/></svg>
+          <span class="text-xs">Poster Görseli</span>
+        </div>
+      </div>
+
+      <!-- QR Kod -->
+      <div class="mb-2 text-sm opacity-80">QR Kod</div>
+      <div class="flex items-center justify-center">
+        <img :src="'https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=' + encodeURIComponent(buildShareUrl(modalNode, sharePrefs.useUtm))"
+             alt="QR" width="180" height="180" class="rounded border border-white/10"/>
+      </div>
+    </div>
+  </div>
+</template>
+
+
+
+<script>
+  document.addEventListener('keydown', (e) => {
+    if ((e.key === 'p' || e.key === 'P')) {
+      try {
+        const root = Alpine && Alpine.raw(Alpine.$data(document.querySelector('[x-data]')));
+        if (root?.modalOpen) { e.preventDefault(); root.shareOpen = true; }
+      } catch(err) {}
+    }
+  });
+</script>
+
+
+<!-- Injected: Force %0A newlines on all platforms -->
+<script>
+window.addEventListener('load', () => {
+  try {
+    const comp = document.querySelector('[x-data]');
+    if (!comp || !window.Alpine) return;
+    const root = Alpine.raw(Alpine.$data(comp));
+    if (!root) return;
+
+    // Uyumlu emoji seti
+    const E = { film:"🎥", cal:"📅", memo:"📝", target:"🎯", link:"🔗", popcorn:"🍿", point:"👉" };
+
+    // Kısa özet
+    root._snippet = function(s, limit=160){
+      try{
+        const text = String(s || '').replace(/\s+/g, ' ').trim();
+        if (!text) return '';
+        if (text.length <= limit) return text;
+        let cut = text.slice(0, limit);
+        const lastSpace = cut.lastIndexOf(' ');
+        if (lastSpace > 40) cut = cut.slice(0, lastSpace);
+        return cut.replace(/[.,;:!\-–—\s]+$/, '') + '…';
+      }catch(e){ return ''; }
+    };
+
+    // Alt alta metin
+    root.formatShareDefault = function(node){
+      try {
+        const n = node || this.modalNode || {};
+        const year = (n.release_date || '').slice(0,4);
+        let titleText = n.label || '';
+if (year && !titleText.includes(`(${year})`)) {
+  titleText += ` (${year})`;
+}
+const title = `${E.film} ${titleText}`.trim();
+
+        const date = n.release_date ? `${E.cal} ${this.toTRDate ? this.toTRDate(n.release_date) : n.release_date}` : '';
+        const summaryRaw = n.description ? String(n.description) : '';
+        const summary = summaryRaw ? `${E.memo} Film Özeti: ${this._snippet(summaryRaw, 160)}` : '';
+        const hint = `${E.target} Göndermeler & atıflar için siteyi ziyaret et:`;
+        const link = `${E.link} ${this.buildShareUrl ? this.buildShareUrl(n, true) : (location.href)}`;
+        const outro = `Sinemayla kalın. ${E.popcorn}`;
+        return [title, date, summary, hint, link, '', outro].filter(Boolean).join('\n');
+      } catch(e){ return ''; }
+    };
+
+    // Tek metin
+    root._getShareTextOnly = function(node){
+      const n = node || this.modalNode;
+      const custom = (this.shareCustomText && String(this.shareCustomText).trim()) || null;
+      const text = custom || (this.formatShareDefault ? this.formatShareDefault(n) : '');
+      return { text };
+    };
+
+    // Encoder: tüm satır sonlarını %0A'ya çevir (CRLF/LF/CR hepsi)
+    function encAll(text){
+      return encodeURIComponent(text).replace(/%0D%0A|%0A|%0D/g, '%0A');
+    }
+
+    // Platformlar (hepsinde %0A zorluyoruz)
+    root.shareNative = function(node){
+      const { text } = this._getShareTextOnly(node);
+      if (navigator.share) {
+        navigator.share({ title: (node?.label)||'Paylaş', text }).catch(()=>{});
+      } else {
+        navigator.clipboard && navigator.clipboard.writeText(text);
+        alert('Metin panoya kopyalandı.');
+      }
+    };
+
+    root.shareToWhatsApp = function(node){
+      const { text } = this._getShareTextOnly(node);
+      window.open(`https://api.whatsapp.com/send?text=${encAll(text)}`, '_blank');
+    };
+
+    root.shareToTelegram = function(node){
+      const { text } = this._getShareTextOnly(node);
+      window.open(`https://t.me/share/url?text=${encAll(text)}`, '_blank');
+    };
+
+    root.shareToX = function(node){
+      const { text } = this._getShareTextOnly(node);
+      window.open(`https://x.com/intent/tweet?text=${encAll(text)}`, '_blank');
+    };
+
+    root.shareToReddit = function(node){
+      const { text } = this._getShareTextOnly(node);
+      // Reddit başlıkta yeni satırı render etmez ama %0A gönderiyoruz
+      window.open(`https://www.reddit.com/submit?title=${encAll(text)}`, '_blank');
+    };
+
+    root.shareToLinkedIn = function(node){
+      const { text } = this._getShareTextOnly(node);
+      window.open(`https://www.linkedin.com/sharing/share-offsite/?mini=true&summary=${encAll(text)}`, '_blank');
+    };
+
+    root.copyShare = function(node){
+      const { text } = this._getShareTextOnly(node);
+      if (navigator.clipboard?.writeText) {
+        navigator.clipboard.writeText(text);
+        alert('Metin panoya kopyalandı.');
+      } else {
+        prompt('Kopyalamak için Ctrl/Cmd+C:', text);
+      }
+    };
+
+    root.copyMarkdown = function(node){
+      const { text } = this._getShareTextOnly(node);
+      if (navigator.clipboard?.writeText) {
+        navigator.clipboard.writeText(text);
+        alert('Metin panoya kopyalandı.');
+      } else {
+        prompt('Kopyalamak için Ctrl/Cmd+C:', text);
+      }
+    };
+  } catch(e) {
+    console.warn('Emoji/share (force %0A) override failed:', e);
+  }
+});
 </script>
 
 </body>
