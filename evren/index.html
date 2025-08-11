@@ -154,6 +154,17 @@
 <style>
   .tl-scroll { -webkit-overflow-scrolling: touch; overscroll-behavior-inline: contain; }
 </style>
+
+<style>
+  /* IMDb slider custom look */
+  .imdb-range { -webkit-appearance: none; appearance: none; height: 6px; border-radius: 999px; background: #334155; outline: none; }
+  .imdb-range::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 18px; height: 18px; border-radius: 999px; background: white; border: 2px solid rgba(234,179,8,0.9); box-shadow: 0 0 0 4px rgba(234,179,8,0.15); cursor: pointer; }
+  .imdb-range::-moz-range-thumb { width: 18px; height: 18px; border-radius: 999px; background: white; border: 2px solid rgba(234,179,8,0.9); box-shadow: 0 0 0 4px rgba(234,179,8,0.15); cursor: pointer; }
+  .imdb-range::-webkit-slider-runnable-track { height: 6px; border-radius: 999px; background: transparent; }
+  .imdb-range::-moz-range-track { height: 6px; border-radius: 999px; background: transparent; }
+  .imdb-badge { backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
+</style>
+
 </head>
 
 
@@ -329,8 +340,36 @@
       </div>
       <ul class="max-h-64 overflow-y-auto">
         <template x-for="u in universeList.filter(u => !filterText || formatUniverseName(u).toLowerCase().includes(filterText.toLowerCase()))" :key="u">
-          <li @click="selectedUniverse=u; open=false; filterText=''; applyFilters()"
-              class="dropdown-item px-3 py-2" x-text="formatUniverseName(u)"></li>
+          <li
+  @click="selectedUniverse=u; open=false; filterText=''; applyFilters()"
+  class="dropdown-item px-3 py-2 flex items-center justify-between gap-2"
+>
+  <div class="flex items-center gap-2 min-w-0">
+    <img
+      :src="(() => {
+        try {
+          const root = Alpine.raw(Alpine.$data(document.querySelector('[x-data]')));
+          const m = root?.bgMap || {};
+          return m[u] || 'assets/images/bg.jpg';
+        } catch(e) { return 'assets/images/bg.jpg'; }
+      })()"
+      alt=""
+      class="w-5 h-5 rounded object-cover border border-white/20"
+      loading="lazy"
+    />
+    <span class="truncate" x-text="formatUniverseName(u)"></span>
+  </div>
+  <span
+    class="ml-2 shrink-0 text-xs px-2 py-0.5 rounded-full bg-white/10 border border-white/20"
+    x-text="(() => {
+      try {
+        const root = Alpine.raw(Alpine.$data(document.querySelector('[x-data]')));
+        const nodes = root?.allNodes || [];
+        return nodes.filter(n => n && n.universe === u).length || 0;
+      } catch(e) { return 0; }
+    })()"
+  ></span>
+</li>
         </template>
       </ul>
     </div>
@@ -371,6 +410,7 @@
 <aside
   x-show="openFilterPanel"
   @keydown.escape.window="openFilterPanel=false"
+  x-data="{preset:null}"
   class="fixed right-0 top-0 bottom-0 w-[92vw] sm:w-[360px] z-[80] glass border-l border-white/20 p-4 overflow-y-auto"
   x-transition:enter="transition ease-out duration-200"
   x-transition:enter-start="translate-x-full"
@@ -417,11 +457,11 @@
   <div class="mb-4 grid grid-cols-2 gap-2">
     <div>
       <div class="text-sm font-medium mb-1">Yıl (min)</div>
-      <input type="number" class="w-full px-3 py-2 rounded bg-white/10 border border-white/20" placeholder="2008" x-model.number="filters.yearMin">
+      <input type="number" class="w-full px-3 py-2 rounded bg-white/10 border border-white/20" placeholder="2008" x-model.number="filters.yearMin" @input="preset=null">
     </div>
     <div>
       <div class="text-sm font-medium mb-1">Yıl (max)</div>
-      <input type="number" class="w-full px-3 py-2 rounded bg-white/10 border border-white/20" placeholder="2025" x-model.number="filters.yearMax">
+      <input type="number" class="w-full px-3 py-2 rounded bg-white/10 border border-white/20" placeholder="2025" x-model.number="filters.yearMax" @input="preset=null">
     </div>
   </div>
 
@@ -430,28 +470,90 @@
   <div class="mb-4">
     <div class="text-sm font-medium mb-2">Hazır Yıl Filtreleri</div>
     <div class="flex flex-wrap gap-2">
-      <button @click="filters.yearMin = new Date().getFullYear() - 1; filters.yearMax = new Date().getFullYear(); applyFilters()" class="px-2 py-1 rounded bg-white/10 hover:bg-white/20 text-xs">Son 1 Yıl</button>
-      <button @click="filters.yearMin = new Date().getFullYear() - 5; filters.yearMax = new Date().getFullYear(); applyFilters()" class="px-2 py-1 rounded bg-white/10 hover:bg-white/20 text-xs">Son 5 Yıl</button>
-      <button @click="filters.yearMin = 2010; filters.yearMax = 2019; applyFilters()" class="px-2 py-1 rounded bg-white/10 hover:bg-white/20 text-xs">2010–2019</button>
-      <button @click="filters.yearMin = 2000; filters.yearMax = 2009; applyFilters()" class="px-2 py-1 rounded bg-white/10 hover:bg-white/20 text-xs">2000–2009</button>
-      <button @click="filters.yearMin = null; filters.yearMax = 1999; applyFilters()" class="px-2 py-1 rounded bg-white/10 hover:bg-white/20 text-xs">2000 Öncesi</button>
+      <button
+        @click="filters.yearMin = new Date().getFullYear() - 1; filters.yearMax = new Date().getFullYear(); preset='last1'; applyFilters()"
+        class="px-2 py-1 rounded text-xs border"
+        :class="preset==='last1' ? 'bg-emerald-600 border-emerald-600 text-black' : 'bg-white/10 hover:bg-white/20 border-white/20'"
+      >Son 1 Yıl</button>
+
+      <button
+        @click="filters.yearMin = new Date().getFullYear() - 5; filters.yearMax = new Date().getFullYear(); preset='last5'; applyFilters()"
+        class="px-2 py-1 rounded text-xs border"
+        :class="preset==='last5' ? 'bg-emerald-600 border-emerald-600 text-black' : 'bg-white/10 hover:bg-white/20 border-white/20'"
+      >Son 5 Yıl</button>
+
+      <button
+        @click="filters.yearMin = 2010; filters.yearMax = 2019; preset='2010s'; applyFilters()"
+        class="px-2 py-1 rounded text-xs border"
+        :class="preset==='2010s' ? 'bg-emerald-600 border-emerald-600 text-black' : 'bg-white/10 hover:bg-white/20 border-white/20'"
+      >2010–2019</button>
+
+      <button
+        @click="filters.yearMin = 2000; filters.yearMax = 2009; preset='2000s'; applyFilters()"
+        class="px-2 py-1 rounded text-xs border"
+        :class="preset==='2000s' ? 'bg-emerald-600 border-emerald-600 text-black' : 'bg-white/10 hover:bg-white/20 border-white/20'"
+      >2000–2009</button>
+
+      <button
+        @click="filters.yearMin = null; filters.yearMax = 1999; preset='pre2000'; applyFilters()"
+        class="px-2 py-1 rounded text-xs border"
+        :class="preset==='pre2000' ? 'bg-emerald-600 border-emerald-600 text-black' : 'bg-white/10 hover:bg-white/20 border-white/20'"
+      >2000 Öncesi</button>
     </div>
   </div>
 
   <!-- IMDb -->
-  <div class="mb-6">
-    <div class="flex items-center justify-between mb-1">
+  <div class="mb-6"
+     x-data="{
+       get val(){ return (filters.imdbMin ?? 0); },
+       get pct(){ const v=this.val; const p=Math.max(0, Math.min(10, +v))/10*100; return p; },
+       get grad(){
+         const p=this.pct;
+         // left gold -> right slate
+         return `linear-gradient(90deg, rgba(234,179,8,0.9) ${p}%, rgba(51,65,85,0.6) ${p}%)`;
+       }
+     }">
+  <div class="flex items-center justify-between mb-2">
+    <div class="flex items-center gap-2">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4"
+           :class="(filters.imdbMin ?? 0) >= 7 ? 'text-yellow-400' : 'text-slate-300'"
+           fill="currentColor" viewBox="0 0 24 24">
+        <path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+      </svg>
       <div class="text-sm font-medium">IMDb (en az)</div>
-      <div class="text-xs opacity-80" x-text="filters.imdbMin ?? '-'"></div>
     </div>
-    <input type="range" min="0" max="10" step="0.1" x-model.number="filters.imdbMin" class="w-full">
-    <div class="text-xs opacity-70 mt-1">0 – 10</div>
+    <div class="imdb-badge text-xs px-2 py-0.5 rounded-full border border-white/20 bg-white/10">
+      <span x-text="(filters.imdbMin ?? 0).toFixed(1)"></span>
+    </div>
   </div>
+
+  <input type="range" min="0" max="10" step="0.1"
+         x-model.number="filters.imdbMin"
+         class="w-full imdb-range"
+         :style="{ background: grad }"
+         :title="`IMDb en az ${ (filters.imdbMin ?? 0).toFixed(1) }`"
+  >
+
+  <div class="mt-2 flex items-center justify-between text-[11px] opacity-70">
+    <span>0</span>
+    <div class="flex items-center gap-2">
+      <button class="px-2 py-1 rounded border border-white/20 bg-white/5 hover:bg-white/10"
+              @click="filters.imdbMin = 7.0">7+</button>
+      <button class="px-2 py-1 rounded border border-white/20 bg-white/5 hover:bg-white/10"
+              @click="filters.imdbMin = 8.0">8+</button>
+      <button class="px-2 py-1 rounded border border-white/20 bg-white/5 hover:bg-white/10"
+              @click="filters.imdbMin = 9.0">9+</button>
+      <button class="px-2 py-1 rounded border border-white/30 bg-white/10 hover:bg-white/20"
+              @click="filters.imdbMin = null">Sıfırla</button>
+    </div>
+    <span>10</span>
+  </div>
+</div>
 
   <!-- Aksiyonlar -->
   <div class="flex gap-2">
     <button @click="applyFilters(); openFilterPanel=false" class="px-3 py-2 rounded bg-emerald-600 hover:bg-emerald-700 text-white text-sm">Uygula</button>
-    <button @click="resetFilters()" class="px-3 py-2 rounded bg-white/10 border border-white/20 text-sm">Sıfırla</button>
+    <button @click="preset=null; resetFilters()" class="px-3 py-2 rounded bg-white/10 border border-white/20 text-sm">Sıfırla</button>
   </div>
 </aside>
 <div id="network" x-show="selectedUniverse" x-transition x-show="showGraph" x-transition></div>
@@ -555,12 +657,118 @@ class="w-32 h-32 rounded-full object-cover drop-shadow-[0_0_20px_rgba(168,85,247
       </h4>
       <ul class="list-disc list-inside text-sm space-y-0.5">
         <template x-for="src in g.items" :key="src.url || src.name">
-          <li>
-            <a href="#"
-               @click.prevent="confirmExternal(src.url)"
-               class="text-emerald-400 hover:underline"
-               x-text="src.name || src.url"></a>
-          </li>
+          <li class="flex items-center gap-2"
+    x-data="{
+      idx: 0,
+      list: [],
+      // Normalize to lower, strip diacritics
+      nrm(s) {
+        try {
+          return String(s || '')
+            .toLocaleLowerCase('tr')
+            .normalize('NFD')
+            .replace(/\p{Diacritic}/gu, '')
+            .trim();
+        } catch(e) { return String(s || '').toLowerCase().trim(); }
+      },
+      // Known brand names -> canonical domains
+      brandDomain(name) {
+        const k = this.nrm(name);
+        const map = {
+          'imdb': 'imdb.com',
+          'internet movie database': 'imdb.com',
+          'wikipedia': 'wikipedia.org',
+          'box office turkiye': 'boxofficeturkiye.com',
+          'box office turchiye': 'boxofficeturkiye.com',
+          'box office turkey': 'boxofficeturkiye.com',
+          'marvel studios official site': 'marvel.com',
+          'marvel studios': 'marvel.com',
+          'disney+': 'disneyplus.com',
+          'disney plus': 'disneyplus.com',
+          'disneyplus': 'disneyplus.com',
+          'x': 'x.com',
+          'twitter': 'x.com',
+          'linkedin': 'linkedin.com'
+        };
+        return map[k] || null;
+      },
+      // Map CDN or sub-brands to canonical domains
+      canonHost(hostname) {
+        if (!hostname) return null;
+        const h = hostname.toLowerCase();
+        const canon = {
+          'm.media-amazon.com': 'imdb.com',
+          'media-amazon.com': 'imdb.com',
+          'upload.wikimedia.org': 'wikipedia.org',
+          'en.wikipedia.org': 'wikipedia.org',
+          'tr.wikipedia.org': 'wikipedia.org',
+          'images.boxofficeturkiye.com': 'boxofficeturkiye.com',
+          'boxofficeturkiye.com': 'boxofficeturkiye.com',
+          'disneyplus.com': 'disneyplus.com',
+          'www.disneyplus.com': 'disneyplus.com',
+        };
+        return canon[h] || null;
+      },
+      root(d) {
+        if (!d) return d;
+        const parts = d.split('.').filter(Boolean);
+        if (parts.length >= 2) return parts.slice(-2).join('.');
+        return d;
+      },
+      makeList(u, n) {
+        // Priority: explicit iconDomain on item -> brandDomain(name) -> URL host (canonicalized/rooted) -> guess from name
+        const domains = [];
+        try {
+          const url = new URL(u || '');
+          const canon = this.canonHost(url.hostname) || this.root(url.hostname);
+          if (canon) domains.push(canon);
+        } catch(e) {}
+
+        const fromBrand = this.brandDomain(n);
+        if (fromBrand) domains.unshift(fromBrand);
+
+        const guess = this.root(String(n || '')
+          .replace(/^https?:\/\/(www\.)?/i,'')
+          .split('/')[0]
+          .trim());
+        if (guess) domains.push(guess);
+
+        const uniq = Array.from(new Set(domains.filter(Boolean)));
+
+        const providers = (d) => [
+          `https://icons.duckduckgo.com/ip3/${d}.ico`,
+          `https://www.google.com/s2/favicons?sz=32&domain=${d}`,
+          `https://favicone.com/${d}`,
+        ];
+
+        const list = [];
+        uniq.forEach(d => list.push(...providers(d)));
+
+        // final fallback: simple inline SVG
+        const svg = encodeURIComponent(`<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'>
+          <rect x='2' y='2' width='20' height='20' rx='6' ry='6' fill='rgba(255,255,255,0.08)'/>
+          <path d='M7 12h10' stroke='rgba(255,255,255,0.9)' stroke-width='2' stroke-linecap='round'/>
+        </svg>`);
+        list.push('data:image/svg+xml;utf8,' + svg);
+        return list;
+      },
+      init() { this.list = this.makeList(src?.url, src?.name); },
+      get icon() { return this.list[this.idx] || this.list[this.list.length - 1]; },
+      next() { if (this.idx < this.list.length - 1) this.idx++; }
+    }">
+  <img
+    :src="icon"
+    @error="next()"
+    alt=""
+    class="w-4 h-4 rounded"
+    loading="lazy"
+    referrerpolicy="no-referrer"
+  />
+  <a href="#"
+     @click.prevent="confirmExternal(src.url)"
+     class="text-emerald-400 hover:underline"
+     x-text="src.name || src.url"></a>
+</li>
         </template>
       </ul>
     </div>
