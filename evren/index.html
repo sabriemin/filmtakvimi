@@ -6,11 +6,14 @@
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>🎬 Film Evreni Ağı</title>
 <script src="app.obf.js"></script>
-<script defer="" src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.5/dist/cdn.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.5/dist/cdn.min.js" defer></script>
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/shepherd.js@8.4.1/dist/js/shepherd.min.js"></script>
 <script src="assets/js/shepherd.min.js"></script>
+
+
 <style>
     :root { color-scheme: dark; }
     html, body { height: 100%; margin: 0; color: #d1d5db; font-family: 'Segoe UI', system-ui, -apple-system, Roboto, 'Helvetica Neue', Arial, sans-serif; background: transparent; }
@@ -48,6 +51,7 @@
     .no-scrollbar::-webkit-scrollbar{ display:none; }
     .no-scrollbar{ -ms-overflow-style:none; scrollbar-width:none; }
   </style>
+
 <style>
   #network {
     position: fixed;
@@ -59,9 +63,13 @@
     z-index: 0;
   }
 </style>
+
+
 <!-- Shepherd.js CSS ve JS -->
-<link href="https://cdn.jsdelivr.net/npm/shepherd.js/dist/css/shepherd.css" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shepherd.js/dist/css/shepherd.css"/>
 <script src="https://cdn.jsdelivr.net/npm/shepherd.js@8.4.1/dist/js/shepherd.min.js"></script>
+
+
 <style>
   
   .shepherd-cancel-icon {
@@ -74,6 +82,8 @@
     color: #fff !important;
   }
 </style>
+
+
 <style>
 .shepherd-element {
   max-width: 85vw;
@@ -127,6 +137,8 @@
     color: white !important;
   }
 </style>
+
+
 <style>
   .tl-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.65); backdrop-filter: blur(4px); z-index: 70; }
   .tl-panel { position: fixed; left: 0; right: 0; bottom: 0; background: rgba(17,24,39,0.98); border-top: 1px solid rgba(255,255,255,0.1); z-index: 80; max-height: 70vh; }
@@ -137,9 +149,12 @@
   .tl-poster { width: 52px; height: 72px; border-radius: 8px; object-fit: cover; background: #0b1220; border: 1px solid rgba(255,255,255,0.08); }
   .tl-badge { font-size: 10px; padding: 2px 8px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.14); background: rgba(255,255,255,0.06); }
 </style>
+
+
 <style>
   .tl-scroll { -webkit-overflow-scrolling: touch; overscroll-behavior-inline: contain; }
 </style>
+
 <style>
   /* IMDb slider custom look */
   .imdb-range { -webkit-appearance: none; appearance: none; height: 6px; border-radius: 999px; background: #334155; outline: none; }
@@ -149,6 +164,8 @@
   .imdb-range::-moz-range-track { height: 6px; border-radius: 999px; background: transparent; }
   .imdb-badge { backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
 </style>
+
+
 <style>
   .lazy-blur { filter: blur(10px) brightness(0.9); transition: filter .25s ease; }
   .lazy-blur.lazy-done { filter: none; }
@@ -158,6 +175,8 @@
     outline-offset: 2px;
   }
 </style>
+
+
 <style>
   #legend [data-edge-type] { cursor: pointer; user-select: none; }
   #legend [data-edge-type].is-active {
@@ -166,6 +185,8 @@
     box-shadow: 0 0 0 1px rgba(16,185,129,0.35) inset;
   }
 </style>
+
+
 <style>
   .share-sheet-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.5); backdrop-filter: blur(2px); z-index: 9999; }
   .share-sheet { position: fixed; left: 50%; top: 50%; transform: translate(-50%,-50%); width: 92vw; max-width: 520px;
@@ -178,12 +199,16 @@
   .share-input { width:100%; padding:8px 10px; border-radius:10px; background: rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.15); color:#fff; }
   .share-actions { display:flex; gap:8px; justify-content:flex-end; margin-top:10px; }
 </style>
+
+
 <style>
   /* share-brand icon sizing */
   .share-tile img.share-icon { width: 22px; height: 22px; border-radius: 4px; }
   .share-tile svg.share-icon { width: 22px; height: 22px; }
 </style>
+
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+
 <style>
   .share-opt { display:flex; align-items:center; gap:.5rem; }
   .share-opt input[type="checkbox"] { width: 14px; height: 14px; }
@@ -194,8 +219,13 @@
   .chip-mini { font-size:11px; padding:2px 8px; border-radius:999px; border:1px solid rgba(255,255,255,.2); background: rgba(255,255,255,.08); cursor:pointer; }
   .chip-mini:hover { background: rgba(255,255,255,.15); }
 </style>
+
 </head>
+
+
+
 <body :class="{ 'overflow-hidden': modalOpen }" class="dark flex-col min-h-[100dvh] flex">
+
 <!-- GH Pages SPA redirect consumer -->
 <script>
 (function(){
@@ -209,7 +239,8 @@
   } catch(e) { /* ignore */ }
 })();
 </script>
-<img :src="bgUrl" @load="$event.target.classList.add(\'lazy-done\')" alt="" class="lazy-blur" id="bgImg" loading="lazy"/>
+
+<img :src="bgUrl" alt="" id="bgImg" class="lazy-blur" @load="$event.target.classList.add(\'lazy-done\')" loading="lazy"/>
 <div id="bgOverlay"></div>
 <style>
 @media (max-width: 639px) {
@@ -240,242 +271,365 @@
 
 
 </style>
+
 <!-- Hoş Geldin Bilgilendirmesi -->
-<div class="fixed inset-0 flex items-center justify-center z-50" x-show="!selectedUniverse &amp;&amp; !panel">
-<div class="mobile-centered bg-black/85 text-white border border-white/10 rounded-2xl shadow-2xl p-6 text-sm w-[90%] max-w-2xl backdrop-blur-md space-y-4" style="max-height: 70vh; overflow-y: auto; ">
-<h2 class="text-xl sm:text-2xl font-bold text-center">🎬 Film Evreni Ağı'na Hoş Geldin!</h2>
-<p class="text-base text-center text-white/80">Bu platform, farklı sinematik evrenler arasında bağ kurmanı ve yapımları daha derinlemesine keşfetmeni sağlar.</p>
-<div class="grid grid-cols-1 gap-2 text-xs mt-1 sm:grid-cols-2 sm:gap-4 sm:text-sm">
-<div class="bg-white/10 rounded-lg p-4 border border-white/10">
-<h3 class="font-semibold mb-2">🗺️ Etkileşimli Harita</h3>
-<p>Seçtiğin evrene ait yapımlar arasındaki bağlantıları grafik olarak görebilirsin.</p>
-</div>
-<div class="bg-white/10 rounded-lg p-4 border border-white/10">
-<h3 class="font-semibold mb-2">🎞️ Yapım Detayları</h3>
-<p>Her film veya diziye tıklayarak özet, oyuncular, göndermeler ve notları görüntüleyebilirsin.</p>
-</div>
-<div class="bg-white/10 rounded-lg p-4 border border-white/10">
-<h3 class="font-semibold mb-2">📝 Kendi Notlarını Ekle</h3>
-<p>Yapımlara kişisel notlar ekleyebilir, düzenleyebilir veya silebilirsin.</p>
-</div>
-<div class="bg-white/10 rounded-lg p-4 border border-white/10">
-<h3 class="font-semibold mb-2">⭐ Favorilerine Ekle</h3>
-<p>İzlemek istediğin veya beğendiğin yapımları favori listene ekleyebilirsin.</p>
-</div>
-</div>
-<p class="text-center text-white/60 text-sm pt-2">Başlamak için yukarıdan bir <strong>film evreni</strong> seç 🌌</p>
+<div x-show="!selectedUniverse && !panel"
+     class="fixed inset-0 flex items-center justify-center z-50">
+  <div style="max-height: 70vh; overflow-y: auto; " class="mobile-centered bg-black/85 text-white border border-white/10 rounded-2xl shadow-2xl p-6 text-sm w-[90%] max-w-2xl backdrop-blur-md space-y-4">
+    <h2 class="text-xl sm:text-2xl font-bold text-center">🎬 Film Evreni Ağı'na Hoş Geldin!</h2>
+    <p class="text-base text-center text-white/80">Bu platform, farklı sinematik evrenler arasında bağ kurmanı ve yapımları daha derinlemesine keşfetmeni sağlar.</p>
+    <div class="grid grid-cols-1 gap-2 text-xs mt-1 sm:grid-cols-2 sm:gap-4 sm:text-sm">
+      <div class="bg-white/10 rounded-lg p-4 border border-white/10">
+        <h3 class="font-semibold mb-2">🗺️ Etkileşimli Harita</h3>
+        <p>Seçtiğin evrene ait yapımlar arasındaki bağlantıları grafik olarak görebilirsin.</p>
+      </div>
+      <div class="bg-white/10 rounded-lg p-4 border border-white/10">
+        <h3 class="font-semibold mb-2">🎞️ Yapım Detayları</h3>
+        <p>Her film veya diziye tıklayarak özet, oyuncular, göndermeler ve notları görüntüleyebilirsin.</p>
+      </div>
+      <div class="bg-white/10 rounded-lg p-4 border border-white/10">
+        <h3 class="font-semibold mb-2">📝 Kendi Notlarını Ekle</h3>
+        <p>Yapımlara kişisel notlar ekleyebilir, düzenleyebilir veya silebilirsin.</p>
+      </div>
+      <div class="bg-white/10 rounded-lg p-4 border border-white/10">
+        <h3 class="font-semibold mb-2">⭐ Favorilerine Ekle</h3>
+        <p>İzlemek istediğin veya beğendiğin yapımları favori listene ekleyebilirsin.</p>
+      </div>
+    </div>
+    <p class="text-center text-white/60 text-sm pt-2">Başlamak için yukarıdan bir <strong>film evreni</strong> seç 🌌</p>
 <div class="text-center">
-<button @click="startTour()" class="mt-4 px-5 py-2 bg-white/10 border border-white/20 text-white text-sm rounded-lg hover:bg-white/20 transition">
-<span aria-hidden="true">🚀</span> Rehbere Başla
+  <button @click="startTour()" class="mt-4 px-5 py-2 bg-white/10 border border-white/20 text-white text-sm rounded-lg hover:bg-white/20 transition">
+    <span aria-hidden="true">🚀</span> Rehbere Başla
   </button>
 </div>
+
+  </div>
 </div>
-</div>
+
 <header class="fixed top-4 left-0 right-0 z-50">
 <div class="w-full sm:max-w-md lg:max-w-lg mx-auto px-3">
 <div class="glass rounded-xl px-3 py-2">
-<div class="flex flex-col gap-2">
-<div class="flex items-center justify-center">
-<h1 class="text-base sm:text-lg font-bold text-center" id="secretAdminTap">🎬 Film Evreni Ağı</h1>
-</div>
-<!-- Mobilde arama ve anasayfa yanyana, dropdown altta olacak sekilde yeniden yapılandırıldı -->
+  <div class="flex flex-col gap-2">
+    <div class="flex items-center justify-center">
+<h1 id="secretAdminTap" class="text-base sm:text-lg font-bold text-center">🎬 Film Evreni Ağı</h1>
+
+    </div>
+
+    <!-- Mobilde arama ve anasayfa yanyana, dropdown altta olacak sekilde yeniden yapılandırıldı -->
 <div class="flex flex-col sm:flex-row gap-2">
-<!-- Mobil/masaüstü: Anasayfa + Arama + Mobil Filtre aynı satır -->
-<div class="flex flex-row items-center gap-2 w-full sm:flex-1 sm:basis-0 sm:min-w-0">
-<!-- Anasayfa -->
-<a "="" class="text-white border border-white/30 hover:bg-white/10 rounded-md p-2 transition w-9 h-9 flex items-center justify-center" href="./" title="Anasayfa">
-<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-<path d="M4 10v10h6v-6h4v6h6V10L12 3z" stroke-linecap="round" stroke-linejoin="round"></path>
-</svg>
-</a>
+
+  <!-- Mobil/masaüstü: Anasayfa + Arama + Mobil Filtre aynı satır -->
+  <div class="flex flex-row items-center gap-2 w-full sm:flex-1 sm:basis-0 sm:min-w-0">
+
+    <!-- Anasayfa -->
+    <a href="./" title="Anasayfa"
+       class="text-white border border-white/30 hover:bg-white/10 rounded-md p-2 transition w-9 h-9 flex items-center justify-center"">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+           stroke-width="2" stroke="currentColor" class="w-5 h-5">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 10v10h6v-6h4v6h6V10L12 3z"/>
+      </svg>
+    </a>
 <a class="text-white border border-white/30 hover:bg-white/10 rounded-md p-2 transition w-9 h-9 flex items-center justify-center"  id="quizBtn"  title="Bulmaca">
   <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
     <path stroke-linecap="round" stroke-linejoin="round" d="M19 13v-2a3 3 0 00-3-3h-1V6a2 2 0 10-4 0v2H8a3 3 0 00-3 3v1H3a2 2 0 100 4h2v1a3 3 0 003 3h1v2a2 2 0 104 0v-2h1a3 3 0 003-3v-1h2a2 2 0 100-4h-2z" />
   </svg>
 </a>
+    <!-- Arama -->
+    <div class="relative flex-1 min-w-0">
+      <input
+        @blur="setTimeout(() => acOpen = false, 120)"
+        @focus="acOpen = true"
+        class="border rounded-lg px-3 py-1.5 w-full pr-10"
+        placeholder="Ara..."
+        type="search"
+        x-model="search"
+      />
+      <button
+        @click="search=''; suggestions=[]; applyFilters()"
+        @mousedown.prevent
+        aria-label="Temizle"
+        class="absolute inset-y-0 right-2 my-auto h-6 w-6 rounded-full grid place-items-center opacity-80 hover:opacity-100 hover:bg-white/10"
+        x-show="search"
+        style="display:none;">
+        <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M18.3 5.71a1 1 0 0 0-1.41 0L12 10.59 7.11 5.7A1 1 0 0 0 5.7 7.11L10.59 12l-4.9 4.89a1 1 0 1 0 1.41 1.41L12 13.41l4.89 4.9a1 1 0 0 0 1.41-1.41L13.41 12l4.9-4.89a1 1 0 0 0-.01-1.4Z"/>
+        </svg>
+      </button>
+      <!-- AC panel -->
+      <div class="ac-panel absolute z-50 w-full mt-1 rounded-lg overflow-hidden max-h-56 overflow-y-auto"
+           x-show="acOpen && search && suggestions.length" style="display:none;">
+        <template x-for="(s, idx) in suggestions" :key="s">
+          <div @click="search = s; acOpen=false; applyFilters();" @mousedown.prevent class="ac-item px-3 py-1.5">
+            <span x-text="s"></span>
+          </div>
+        </template>
+      </div>
+    </div>
 
-<!-- Arama -->
-<div class="relative flex-1 min-w-0">
-<input @blur="setTimeout(() =&gt; acOpen = false, 120)" @focus="acOpen = true" class="border rounded-lg px-3 py-1.5 w-full pr-10" placeholder="Ara..." type="search" x-model="search"/>
-<button @click="search=''; suggestions=[]; applyFilters()" @mousedown.prevent="" aria-label="Temizle" class="absolute inset-y-0 right-2 my-auto h-6 w-6 rounded-full grid place-items-center opacity-80 hover:opacity-100 hover:bg-white/10" style="display:none;" x-show="search">
-<svg class="h-4 w-4" fill="currentColor" viewbox="0 0 24 24">
-<path d="M18.3 5.71a1 1 0 0 0-1.41 0L12 10.59 7.11 5.7A1 1 0 0 0 5.7 7.11L10.59 12l-4.9 4.89a1 1 0 1 0 1.41 1.41L12 13.41l4.89 4.9a1 1 0 0 0 1.41-1.41L13.41 12l4.9-4.89a1 1 0 0 0-.01-1.4Z"></path>
-</svg>
-</button>
-<!-- AC panel -->
-<div class="ac-panel absolute z-50 w-full mt-1 rounded-lg overflow-hidden max-h-56 overflow-y-auto" style="display:none;" x-show="acOpen &amp;&amp; search &amp;&amp; suggestions.length">
-<template :key="s" x-for="(s, idx) in suggestions">
-<div @click="search = s; acOpen=false; applyFilters();" @mousedown.prevent="" class="ac-item px-3 py-1.5">
-<span x-text="s"></span>
-</div>
-</template>
-</div>
-</div>
-<!-- Filtre butonu: mobil -->
-<button @click="openFilterPanel = !openFilterPanel" aria-label="Filtreleri aç" class="relative flex h-9 w-9 items-center justify-center rounded-md border border-white/30 transition hover:bg-white/10 sm:hidden" title="Filtreler">
-<svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-<path d="M3 4h18v2l-6 6v4.6l-4 2V12L3 6z" stroke-linecap="round" stroke-linejoin="round"></path>
-</svg>
-<span class="absolute -top-1 -right-1 text-[10px] px-1.5 py-[1px] rounded-full bg-emerald-500 text-black font-semibold" x-show="activeFilterCount">
-<span x-text="activeFilterCount"></span>
-</span>
-</button>
-</div>
-<!-- Evren Seçimi -->
-<div class="relative flex-1 basis-0 min-w-0" x-data="{ open:false, filterText:'' }">
-<div :aria-expanded="open" @click="open=!open" class="dropdown-btn border rounded-lg px-3 py-1.5 w-full flex items-center justify-between select-none">
-<span class="truncate" x-text="selectedUniverse ? formatUniverseName(selectedUniverse) : 'Tüm Evrenler'">Tüm Evrenler</span>
-<svg class="h-4 w-4 opacity-80 ml-2" fill="currentColor" viewbox="0 0 20 20">
-<path clip-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" fill-rule="evenodd"></path>
-</svg>
-</div>
-<div class="dropdown-panel absolute mt-2 left-0 right-0 rounded-xl overflow-hidden" style="z-index:60; display:none;" x-show="open" x-transition="">
-<div class="p-2 border-b border-white/10">
-<input class="w-full px-3 py-2 rounded-lg border" placeholder="Evren ara..." x-model="filterText"/>
-</div>
-<ul class="max-h-64 overflow-y-auto">
-<template :key="u" x-for="u in universeList.filter(u =&gt; !filterText || formatUniverseName(u).toLowerCase().includes(filterText.toLowerCase()))">
-<li @click="selectedUniverse=u; open=false; filterText=''; applyFilters()" class="dropdown-item px-3 py-2 flex items-center justify-between gap-2 hover:bg-white/10 hover:shadow transition">
-<div class="flex items-center gap-2 min-w-0">
-<img :src="(() =&gt; {
+                <!-- Filtre butonu: mobil -->
+                <button
+                  @click="openFilterPanel = !openFilterPanel"
+                  class="relative flex h-9 w-9 items-center justify-center rounded-md border border-white/30 transition hover:bg-white/10 sm:hidden"
+                  title="Filtreler" aria-label="Filtreleri aç"
+                >
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+           stroke-width="2" stroke="currentColor" class="w-5 h-5 text-white">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3 4h18v2l-6 6v4.6l-4 2V12L3 6z"/>
+      </svg>
+      <span x-show="activeFilterCount" class="absolute -top-1 -right-1 text-[10px] px-1.5 py-[1px] rounded-full bg-emerald-500 text-black font-semibold">
+        <span x-text="activeFilterCount"></span>
+      </span>
+    </button>
+  </div>
+
+  <!-- Evren Seçimi -->
+  <div class="relative flex-1 basis-0 min-w-0" x-data="{ open:false, filterText:'' }">
+    <div :aria-expanded="open" @click="open=!open"
+         class="dropdown-btn border rounded-lg px-3 py-1.5 w-full flex items-center justify-between select-none">
+      <span class="truncate" x-text="selectedUniverse ? formatUniverseName(selectedUniverse) : 'Tüm Evrenler'">Tüm Evrenler</span>
+      <svg class="h-4 w-4 opacity-80 ml-2" fill="currentColor" viewBox="0 0 20 20">
+        <path clip-rule="evenodd" fill-rule="evenodd"
+              d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z"/>
+      </svg>
+    </div>
+    <div class="dropdown-panel absolute mt-2 left-0 right-0 rounded-xl overflow-hidden"
+         style="z-index:60; display:none;" x-show="open" x-transition>
+      <div class="p-2 border-b border-white/10">
+        <input class="w-full px-3 py-2 rounded-lg border" placeholder="Evren ara..." x-model="filterText">
+      </div>
+      <ul class="max-h-64 overflow-y-auto">
+        <template x-for="u in universeList.filter(u => !filterText || formatUniverseName(u).toLowerCase().includes(filterText.toLowerCase()))" :key="u">
+          <li
+  @click="selectedUniverse=u; open=false; filterText=''; applyFilters()"
+  class="dropdown-item px-3 py-2 flex items-center justify-between gap-2 hover:bg-white/10 hover:shadow transition"
+>
+  <div class="flex items-center gap-2 min-w-0">
+    <img
+      :src="(() => {
         try {
           const root = Alpine.raw(Alpine.$data(document.querySelector('[x-data]')));
           const m = root?.bgMap || {};
           return m[u] || 'assets/images/bg.jpg';
         } catch(e) { return 'assets/images/bg.jpg'; }
-      })()" @load="$event.target.classList.add('lazy-done')" alt="" class="w-5 h-5 rounded object-cover border border-white/20 lazy-blur" loading="lazy"/>
-<span class="truncate" x-text="formatUniverseName(u)"></span>
-<span class="text-emerald-400 ml-1" x-show="u===selectedUniverse">✔</span>
-</div>
-<span class="ml-2 shrink-0 text-xs px-2 py-0.5 rounded-full bg-white/10 border border-white/20" x-text="(() =&gt; {
+      })()"
+      alt=""
+      class="w-5 h-5 rounded object-cover border border-white/20 lazy-blur"
+      @load="$event.target.classList.add('lazy-done')"
+      loading="lazy"
+    />
+    <span class="truncate" x-text="formatUniverseName(u)"></span>
+    <span x-show="u===selectedUniverse" class="text-emerald-400 ml-1">✔</span>
+  </div>
+  <span
+    class="ml-2 shrink-0 text-xs px-2 py-0.5 rounded-full bg-white/10 border border-white/20"
+    x-text="(() => {
       try {
         const root = Alpine.raw(Alpine.$data(document.querySelector('[x-data]')));
         const nodes = root?.allNodes || [];
-        return nodes.filter(n =&gt; n &amp;&amp; n.universe === u).length || 0;
+        return nodes.filter(n => n && n.universe === u).length || 0;
       } catch(e) { return 0; }
-    })()"></span>
+    })()"
+  ></span>
 </li>
-</template>
-</ul>
+        </template>
+      </ul>
+    </div>
+  </div>
+
+              <button
+                @click="openFilterPanel = !openFilterPanel"
+                id="filter_btn"
+                class="relative hidden h-9 w-9 items-center justify-center rounded-md border border-white/30 transition hover:bg-white/10 sm:flex"
+                title="Filtreler" aria-label="Filtreleri aç"
+              >
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+         stroke-width="2" stroke="currentColor" class="w-5 h-5 text-white">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M3 4h18v2l-6 6v4.6l-4 2V12L3 6z"/>
+    </svg>
+    <span x-show="activeFilterCount" class="absolute -top-1 -right-1 text-[10px] px-1.5 py-[1px] rounded-full bg-emerald-500 text-black font-semibold">
+      <span x-text="activeFilterCount"></span>
+    </span>
+  </button>
+
 </div>
-</div>
-<button @click="openFilterPanel = !openFilterPanel" aria-label="Filtreleri aç" class="relative hidden h-9 w-9 items-center justify-center rounded-md border border-white/30 transition hover:bg-white/10 sm:flex" id="filter_btn" title="Filtreler">
-<svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-<path d="M3 4h18v2l-6 6v4.6l-4 2V12L3 6z" stroke-linecap="round" stroke-linejoin="round"></path>
-</svg>
-<span class="absolute -top-1 -right-1 text-[10px] px-1.5 py-[1px] rounded-full bg-emerald-500 text-black font-semibold" x-show="activeFilterCount">
-<span x-text="activeFilterCount"></span>
-</span>
-</button>
-</div>
-</div>
+
+
+
+  </div>
 </div>
 </div>
 </header>
 <!-- Overlay -->
-<div @click="openFilterPanel = false" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-[70]" x-show="openFilterPanel" x-transition.opacity=""></div>
+<div
+  x-show="openFilterPanel"
+  @click="openFilterPanel = false"
+  class="fixed inset-0 bg-black/50 backdrop-blur-sm z-[70]"
+  x-transition.opacity
+></div>
+
 <!-- Drawer (Filtre Paneli) -->
-<aside @keydown.escape.window="openFilterPanel=false" class="fixed right-0 top-0 bottom-0 w-[92vw] sm:w-[360px] z-[80] glass border-l border-white/20 p-4 overflow-y-auto" x-data="{preset:null}" x-show="openFilterPanel" x-transition:enter="transition ease-out duration-200" x-transition:enter-end="translate-x-0" x-transition:enter-start="translate-x-full" x-transition:leave="transition ease-in duration-150" x-transition:leave-end="translate-x-full" x-transition:leave-start="translate-x-0">
-<div class="flex items-center justify-between mb-3">
-<h3 class="text-lg font-semibold">Filtreler</h3>
-<button @click="openFilterPanel=false" class="w-8 h-8 rounded-full bg-white/10 border border-white/20">✕</button>
-</div>
-<!-- Yapım Tipi -->
-<div class="mb-4">
-<div class="text-sm font-medium mb-2">Yapım Tipi</div>
-<div class="inline-flex rounded-lg overflow-hidden border border-white/20">
-<button :class="filters.type==='all'  ? 'bg-white/20' : 'bg-white/5'" @click="filters.type='all'" class="px-3 py-1.5 text-sm">Hepsi</button>
-<button :class="filters.type==='film' ? 'bg-white/20' : 'bg-white/5'" @click="filters.type='film'" class="px-3 py-1.5 text-sm">Film</button>
-<button :class="filters.type==='dizi' ? 'bg-white/20' : 'bg-white/5'" @click="filters.type='dizi'" class="px-3 py-1.5 text-sm">Dizi</button>
-</div>
-</div>
+<aside
+  x-show="openFilterPanel"
+  @keydown.escape.window="openFilterPanel=false"
+  x-data="{preset:null}"
+  class="fixed right-0 top-0 bottom-0 w-[92vw] sm:w-[360px] z-[80] glass border-l border-white/20 p-4 overflow-y-auto"
+  x-transition:enter="transition ease-out duration-200"
+  x-transition:enter-start="translate-x-full"
+  x-transition:enter-end="translate-x-0"
+  x-transition:leave="transition ease-in duration-150"
+  x-transition:leave-start="translate-x-0"
+  x-transition:leave-end="translate-x-full"
+>
+  <div class="flex items-center justify-between mb-3">
+    <h3 class="text-lg font-semibold">Filtreler</h3>
+    <button @click="openFilterPanel=false" class="w-8 h-8 rounded-full bg-white/10 border border-white/20">✕</button>
+  </div>
+
+  <!-- Yapım Tipi -->
+  <div class="mb-4">
+    <div class="text-sm font-medium mb-2">Yapım Tipi</div>
+    <div class="inline-flex rounded-lg overflow-hidden border border-white/20">
+      <button @click="filters.type='all'"  :class="filters.type==='all'  ? 'bg-white/20' : 'bg-white/5'" class="px-3 py-1.5 text-sm">Hepsi</button>
+      <button @click="filters.type='film'" :class="filters.type==='film' ? 'bg-white/20' : 'bg-white/5'" class="px-3 py-1.5 text-sm">Film</button>
+      <button @click="filters.type='dizi'" :class="filters.type==='dizi' ? 'bg-white/20' : 'bg-white/5'" class="px-3 py-1.5 text-sm">Dizi</button>
+    </div>
+  </div>
+
 <!-- Tür (Genre) -->
 <div class="mb-4">
-<div class="text-sm font-medium mb-2">Tür</div>
-<div class="flex flex-wrap gap-2">
-<template :key="g" x-for="g in availableGenres">
-<label :class="filters.genres.includes(g)
+  <div class="text-sm font-medium mb-2">Tür</div>
+  <div class="flex flex-wrap gap-2">
+    <template x-for="g in availableGenres" :key="g">
+      <label
+        class="px-2 py-1 rounded-full border cursor-pointer select-none text-xs transition"
+        :class="filters.genres.includes(g)
           ? 'bg-emerald-500 border-emerald-500 text-black'
-          : 'bg-white/5 border-white/20 text-white hover:bg-white/10'" class="px-2 py-1 rounded-full border cursor-pointer select-none text-xs transition">
-<input :value="g" class="hidden" type="checkbox" x-model="filters.genres"/>
-<span x-text="g"></span>
-</label>
-</template>
+          : 'bg-white/5 border-white/20 text-white hover:bg-white/10'">
+        
+        <input type="checkbox" class="hidden" :value="g" x-model="filters.genres">
+        <span x-text="g"></span>
+      </label>
+    </template>
+  </div>
 </div>
-</div>
-<!-- Yıl aralığı -->
-<div class="mb-4 grid grid-cols-2 gap-2">
-<div>
-<div class="text-sm font-medium mb-1">Yıl (min)</div>
-<input @input="preset=null" class="w-full px-3 py-2 rounded bg-white/10 border border-white/20" placeholder="2008" type="number" x-model.number="filters.yearMin"/>
-</div>
-<div>
-<div class="text-sm font-medium mb-1">Yıl (max)</div>
-<input @input="preset=null" class="w-full px-3 py-2 rounded bg-white/10 border border-white/20" placeholder="2025" type="number" x-model.number="filters.yearMax"/>
-</div>
-</div>
-<!-- Hazır Yıl Aralıkları -->
-<div class="mb-4">
-<div class="text-sm font-medium mb-2">Hazır Yıl Filtreleri</div>
-<div class="flex flex-wrap gap-2">
-<button :class="preset==='last1' ? 'bg-emerald-600 border-emerald-600 text-black' : 'bg-white/10 hover:bg-white/20 border-white/20'" @click="filters.yearMin = new Date().getFullYear() - 1; filters.yearMax = new Date().getFullYear(); preset='last1'; applyFilters()" class="px-2 py-1 rounded text-xs border">Son 1 Yıl</button>
-<button :class="preset==='last5' ? 'bg-emerald-600 border-emerald-600 text-black' : 'bg-white/10 hover:bg-white/20 border-white/20'" @click="filters.yearMin = new Date().getFullYear() - 5; filters.yearMax = new Date().getFullYear(); preset='last5'; applyFilters()" class="px-2 py-1 rounded text-xs border">Son 5 Yıl</button>
-<button :class="preset==='2010s' ? 'bg-emerald-600 border-emerald-600 text-black' : 'bg-white/10 hover:bg-white/20 border-white/20'" @click="filters.yearMin = 2010; filters.yearMax = 2019; preset='2010s'; applyFilters()" class="px-2 py-1 rounded text-xs border">2010–2019</button>
-<button :class="preset==='2000s' ? 'bg-emerald-600 border-emerald-600 text-black' : 'bg-white/10 hover:bg-white/20 border-white/20'" @click="filters.yearMin = 2000; filters.yearMax = 2009; preset='2000s'; applyFilters()" class="px-2 py-1 rounded text-xs border">2000–2009</button>
-<button :class="preset==='pre2000' ? 'bg-emerald-600 border-emerald-600 text-black' : 'bg-white/10 hover:bg-white/20 border-white/20'" @click="filters.yearMin = null; filters.yearMax = 1999; preset='pre2000'; applyFilters()" class="px-2 py-1 rounded text-xs border">2000 Öncesi</button>
-</div>
-</div>
-<!-- IMDb -->
-<div class="mb-6" x-data="{
+
+
+  <!-- Yıl aralığı -->
+  <div class="mb-4 grid grid-cols-2 gap-2">
+    <div>
+      <div class="text-sm font-medium mb-1">Yıl (min)</div>
+      <input type="number" class="w-full px-3 py-2 rounded bg-white/10 border border-white/20" placeholder="2008" x-model.number="filters.yearMin" @input="preset=null">
+    </div>
+    <div>
+      <div class="text-sm font-medium mb-1">Yıl (max)</div>
+      <input type="number" class="w-full px-3 py-2 rounded bg-white/10 border border-white/20" placeholder="2025" x-model.number="filters.yearMax" @input="preset=null">
+    </div>
+  </div>
+
+  
+  <!-- Hazır Yıl Aralıkları -->
+  <div class="mb-4">
+    <div class="text-sm font-medium mb-2">Hazır Yıl Filtreleri</div>
+    <div class="flex flex-wrap gap-2">
+      <button
+        @click="filters.yearMin = new Date().getFullYear() - 1; filters.yearMax = new Date().getFullYear(); preset='last1'; applyFilters()"
+        class="px-2 py-1 rounded text-xs border"
+        :class="preset==='last1' ? 'bg-emerald-600 border-emerald-600 text-black' : 'bg-white/10 hover:bg-white/20 border-white/20'"
+      >Son 1 Yıl</button>
+
+      <button
+        @click="filters.yearMin = new Date().getFullYear() - 5; filters.yearMax = new Date().getFullYear(); preset='last5'; applyFilters()"
+        class="px-2 py-1 rounded text-xs border"
+        :class="preset==='last5' ? 'bg-emerald-600 border-emerald-600 text-black' : 'bg-white/10 hover:bg-white/20 border-white/20'"
+      >Son 5 Yıl</button>
+
+      <button
+        @click="filters.yearMin = 2010; filters.yearMax = 2019; preset='2010s'; applyFilters()"
+        class="px-2 py-1 rounded text-xs border"
+        :class="preset==='2010s' ? 'bg-emerald-600 border-emerald-600 text-black' : 'bg-white/10 hover:bg-white/20 border-white/20'"
+      >2010–2019</button>
+
+      <button
+        @click="filters.yearMin = 2000; filters.yearMax = 2009; preset='2000s'; applyFilters()"
+        class="px-2 py-1 rounded text-xs border"
+        :class="preset==='2000s' ? 'bg-emerald-600 border-emerald-600 text-black' : 'bg-white/10 hover:bg-white/20 border-white/20'"
+      >2000–2009</button>
+
+      <button
+        @click="filters.yearMin = null; filters.yearMax = 1999; preset='pre2000'; applyFilters()"
+        class="px-2 py-1 rounded text-xs border"
+        :class="preset==='pre2000' ? 'bg-emerald-600 border-emerald-600 text-black' : 'bg-white/10 hover:bg-white/20 border-white/20'"
+      >2000 Öncesi</button>
+    </div>
+  </div>
+
+  <!-- IMDb -->
+  <div class="mb-6"
+     x-data="{
        get val(){ return (filters.imdbMin ?? 0); },
        get pct(){ const v=this.val; const p=Math.max(0, Math.min(10, +v))/10*100; return p; },
        get grad(){
          const p=this.pct;
-         // left gold -&gt; right slate
+         // left gold -> right slate
          return `linear-gradient(90deg, rgba(234,179,8,0.9) ${p}%, rgba(51,65,85,0.6) ${p}%)`;
        }
      }">
-<div class="flex items-center justify-between mb-2">
-<div class="flex items-center gap-2">
-<svg :class="(filters.imdbMin ?? 0) &gt;= 7 ? 'text-yellow-400' : 'text-slate-300'" class="w-4 h-4" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-<path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
-</svg>
-<div class="text-sm font-medium">IMDb (en az)</div>
+  <div class="flex items-center justify-between mb-2">
+    <div class="flex items-center gap-2">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4"
+           :class="(filters.imdbMin ?? 0) >= 7 ? 'text-yellow-400' : 'text-slate-300'"
+           fill="currentColor" viewBox="0 0 24 24">
+        <path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+      </svg>
+      <div class="text-sm font-medium">IMDb (en az)</div>
+    </div>
+    <div class="imdb-badge text-xs px-2 py-0.5 rounded-full border border-white/20 bg-white/10">
+      <span x-text="(filters.imdbMin ?? 0).toFixed(1)"></span>
+    </div>
+  </div>
+
+  <input type="range" min="0" max="10" step="0.1"
+         x-model.number="filters.imdbMin"
+         class="w-full imdb-range"
+         :style="{ background: grad }"
+         :title="`IMDb en az ${ (filters.imdbMin ?? 0).toFixed(1) }`"
+  >
+
+  <div class="mt-2 flex items-center justify-between text-[11px] opacity-70">
+    <span>0</span>
+    <div class="flex items-center gap-2">
+      <button class="px-2 py-1 rounded border border-white/20 bg-white/5 hover:bg-white/10"
+              @click="filters.imdbMin = 7.0">7+</button>
+      <button class="px-2 py-1 rounded border border-white/20 bg-white/5 hover:bg-white/10"
+              @click="filters.imdbMin = 8.0">8+</button>
+      <button class="px-2 py-1 rounded border border-white/20 bg-white/5 hover:bg-white/10"
+              @click="filters.imdbMin = 9.0">9+</button>
+      <button class="px-2 py-1 rounded border border-white/30 bg-white/10 hover:bg-white/20"
+              @click="filters.imdbMin = null">Sıfırla</button>
+    </div>
+    <span>10</span>
+  </div>
 </div>
-<div class="imdb-badge text-xs px-2 py-0.5 rounded-full border border-white/20 bg-white/10">
-<span x-text="(filters.imdbMin ?? 0).toFixed(1)"></span>
-</div>
-</div>
-<input :style="{ background: grad }" :title="`IMDb en az ${ (filters.imdbMin ?? 0).toFixed(1) }`" class="w-full imdb-range" max="10" min="0" step="0.1" type="range" x-model.number="filters.imdbMin"/>
-<div class="mt-2 flex items-center justify-between text-[11px] opacity-70">
-<span>0</span>
-<div class="flex items-center gap-2">
-<button @click="filters.imdbMin = 7.0" class="px-2 py-1 rounded border border-white/20 bg-white/5 hover:bg-white/10">7+</button>
-<button @click="filters.imdbMin = 8.0" class="px-2 py-1 rounded border border-white/20 bg-white/5 hover:bg-white/10">8+</button>
-<button @click="filters.imdbMin = 9.0" class="px-2 py-1 rounded border border-white/20 bg-white/5 hover:bg-white/10">9+</button>
-<button @click="filters.imdbMin = null" class="px-2 py-1 rounded border border-white/30 bg-white/10 hover:bg-white/20">Sıfırla</button>
-</div>
-<span>10</span>
-</div>
-</div>
-<!-- Aksiyonlar -->
-<div class="flex gap-2">
-<button @click="applyFilters(); openFilterPanel=false" class="px-3 py-2 rounded bg-emerald-600 hover:bg-emerald-700 text-white text-sm">Uygula</button>
-<button @click="preset=null; resetFilters()" class="px-3 py-2 rounded bg-white/10 border border-white/20 text-sm">Sıfırla</button>
-</div>
+
+  <!-- Aksiyonlar -->
+  <div class="flex gap-2">
+    <button @click="applyFilters(); openFilterPanel=false" class="px-3 py-2 rounded bg-emerald-600 hover:bg-emerald-700 text-white text-sm">Uygula</button>
+    <button @click="preset=null; resetFilters()" class="px-3 py-2 rounded bg-white/10 border border-white/20 text-sm">Sıfırla</button>
+  </div>
 </aside>
-<div id="network" x-show="showGraph" x-transition=""></div>
-<div @click.outside="if (!window.Shepherd?.activeTour) modalOpen=false; resetPrettyUrl &amp;&amp; resetPrettyUrl()" @keydown.escape.window="modalOpen=false; resetPrettyUrl &amp;&amp; resetPrettyUrl()" aria-labelledby="modalTitle" aria-modal="true" class="fixed inset-0 modal-bg flex items-center justify-center z-50 p-4" id="modal_container" role="dialog" x-show="modalOpen" x-transition="">
+<div id="network" x-show="selectedUniverse" x-transition x-show="showGraph" x-transition></div>
+
+<div @click.outside="if (!window.Shepherd?.activeTour) modalOpen=false; resetPrettyUrl && resetPrettyUrl()" @keydown.escape.window="modalOpen=false; resetPrettyUrl && resetPrettyUrl()" aria-labelledby="modalTitle" aria-modal="true" class="fixed inset-0 modal-bg flex items-center justify-center z-50 p-4" role="dialog" id="modal_container" x-show="modalOpen" x-transition="">
 <div @click.stop="" class="modal-content" style="overflow-y: visible;">
 <div class="relative rounded-xl overflow-hidden backdrop-blur-md bg-black/50 text-white max-h-[90vh] overflow-y-visible">
 <!-- Üst blur görsel alanı -->
 <div class="relative h-64">
-<img :src="modalNode.image" @load="$event.target.classList.add(\'lazy-done\')" alt="" class="lazy-blur" loading="lazy"/>
+<img :src="modalNode.image" alt="" class="absolute inset-0 w-full h-full object-cover blur-sm brightness-50 scale-105" class="lazy-blur" @load="$event.target.classList.add(\'lazy-done\')" loading="lazy"/>
 <div class="absolute inset-0 flex flex-col justify-between p-4 z-10"><div class="absolute top-3 left-3 flex gap-2 items-center">
-<button @click="openShare(modalNode)" aria-label="Paylaşım seçenekleri" class="share-btn" id="share-btn" title="Paylaşım seçenekleri">
-<span aria-hidden="true">🔗</span><span class="hidden sm:inline">Paylaş</span>
-</button>
-</div><div class="absolute top-3 right-3 flex gap-2 items-center z-20"><div @click="modalOpen=false; resetPrettyUrl &amp;&amp; resetPrettyUrl()" aria-label="Paneli kapat" class="close-btn" id="modal-close" role="button">✕</div></div>
+  <button @click="openShare(modalNode)" id="share-btn" class="share-btn" title="Paylaşım seçenekleri" aria-label="Paylaşım seçenekleri">
+    <span aria-hidden="true">🔗</span><span class="hidden sm:inline">Paylaş</span>
+  </button>
+</div><div class="absolute top-3 right-3 flex gap-2 items-center z-20"><div @click="modalOpen=false; resetPrettyUrl && resetPrettyUrl()" class="close-btn" id="modal-close" role="button" aria-label="Paneli kapat">✕</div></div>
 <!-- Üst çubuk -->
 <div class="flex justify-between items-start"><div class="absolute top-3 right-3 flex gap-2 items-center z-20"></div></div>
 <!-- Alt bilgi -->
@@ -493,7 +647,7 @@
 </div>
 <template x-if="showPosterDialog">
 <div @click.self="showPosterDialog = false" class="fixed inset-0 z-\[9999\] z-\[999\] z-50 bg-black/70 backdrop-blur-md z-50 flex items-center justify-center">
-<div class="p-4 rounded-xl shadow-2xl max-w-[90vw] max-h-[85vh]" style="z-index:60;">
+<div class="p-4 rounded-xl shadow-2xl max-w-[90vw] max-h-[85vh]" style="z-index:10000;" style="z-index:1000;" style="z-index:60;">
 <button @click="showPosterDialog = false" class="absolute top-2 right-2 w-8 h-8 rounded-full bg-white/10 border border-white/20 text-white text-sm">✕</button>
 <img :src="modalNode.image" class="max-w-[75vw] max-h-[70vh] rounded-xl shadow-lg object-cover"/>
 </div>
@@ -502,7 +656,8 @@
 <!-- Poster -->
 <div class="absolute left-1/2 top-full -translate-x-1/2 -translate-y-1/2 z-20"><div @click="showPosterDialog = true" class="cursor-pointer">
 <div @click="showPosterDialog = true" class="cursor-pointer">
-<div @click="showPosterDialog = true" class="cursor-pointer"><img :src="modalNode.image" alt="" class="w-32 h-32 rounded-full object-cover drop-shadow-[0_0_20px_rgba(168,85,247,0.5)] ring-2 ring-purple-400/30"/></div></div>
+<div @click="showPosterDialog = true" class="cursor-pointer"><img :src="modalNode.image" alt=""
+class="w-32 h-32 rounded-full object-cover drop-shadow-[0_0_20px_rgba(168,85,247,0.5)] ring-2 ring-purple-400/30"/></div></div>
 </div>
 </div>
 </div>
@@ -510,7 +665,7 @@
 <div class="p-6 pt-20 space-y-6 overflow-hidden">
 <h2 class="text-2xl font-bold text-center" x-text="modalNode.label">
 </h2>
-<div aria-live="polite" class="flex justify-center mt-2">
+<div class="flex justify-center mt-2" aria-live="polite">
 <button :class="isInWatchLater(modalNode?.id) ? 'bg-green-500 border-green-500 text-white' : 'bg-white/10 border-white/20 text-white hover:bg-white/20'" @click="toggleWatchLater(modalNode)" class="px-4 py-2 rounded border text-sm transition" x-text="isInWatchLater(modalNode?.id) ? '✔ Favorilere Eklendi' : 'Favorilere Ekle'">
 </button>
 </div>
@@ -522,9 +677,14 @@
 <div class="bg-white/5 p-4 rounded-lg border border-white/10 space-y-1">
 <div><strong>Evren:</strong> <span x-text="formatUniverseName(modalNode.universe)"></span></div>
 <template x-if="Array.isArray(modalNode.sources) ? modalNode.sources.length : Object.keys(modalNode.sources || {}).length">
+
+
 <!-- Kaynaklar -->
-<div class="mt-4" x-data="{ groups: [] }" x-effect="
-    (() =&gt; {
+<div
+  class="mt-4"
+  x-data="{ groups: [] }"
+  x-effect="
+    (() => {
       const raw =
         modalNode?.sources
         || modalNode?.source
@@ -535,19 +695,24 @@
       const order = ['Kaynaklar','Görsel','Platform'];
 
       groups = order
-        .map(cat =&gt; ({ cat, items: (normalized?.[cat] || []) }))
-        .filter(g =&gt; g.items.length);
+        .map(cat => ({ cat, items: (normalized?.[cat] || []) }))
+        .filter(g => g.items.length);
     })()
-  " x-show="groups.length">
-<template :key="g.cat" x-for="g in groups">
-<div class="mb-3">
-<h4 class="text-sm font-medium mb-1 inline-flex items-center gap-1">
-<span x-text="getSourceIcon(g.cat)"></span>
-<span x-text="g.cat"></span>
-</h4>
-<ul class="list-disc list-inside text-sm space-y-0.5">
-<template :key="src.url || src.name" x-for="src in g.items">
-<li class="flex items-center gap-2" x-data="{
+  "
+  x-show="groups.length"
+>
+
+
+  <template x-for="g in groups" :key="g.cat">
+    <div class="mb-3">
+      <h4 class="text-sm font-medium mb-1 inline-flex items-center gap-1">
+        <span x-text="getSourceIcon(g.cat)"></span>
+        <span x-text="g.cat"></span>
+      </h4>
+      <ul class="list-disc list-inside text-sm space-y-0.5">
+        <template x-for="src in g.items" :key="src.url || src.name">
+          <li class="flex items-center gap-2"
+    x-data="{
       idx: 0,
       list: [],
       // Normalize to lower, strip diacritics
@@ -560,7 +725,7 @@
             .trim();
         } catch(e) { return String(s || '').toLowerCase().trim(); }
       },
-      // Known brand names -&gt; canonical domains
+      // Known brand names -> canonical domains
       brandDomain(name) {
         const k = this.nrm(name);
         const map = {
@@ -601,11 +766,11 @@
       root(d) {
         if (!d) return d;
         const parts = d.split('.').filter(Boolean);
-        if (parts.length &gt;= 2) return parts.slice(-2).join('.');
+        if (parts.length >= 2) return parts.slice(-2).join('.');
         return d;
       },
       makeList(u, n) {
-        // Priority: explicit iconDomain on item -&gt; brandDomain(name) -&gt; URL host (canonicalized/rooted) -&gt; guess from name
+        // Priority: explicit iconDomain on item -> brandDomain(name) -> URL host (canonicalized/rooted) -> guess from name
         const domains = [];
         try {
           const url = new URL(u || '');
@@ -624,45 +789,61 @@
 
         const uniq = Array.from(new Set(domains.filter(Boolean)));
 
-        const providers = (d) =&gt; [
+        const providers = (d) => [
           `https://icons.duckduckgo.com/ip3/${d}.ico`,
-          `https://www.google.com/s2/favicons?sz=32&amp;domain=${d}`,
+          `https://www.google.com/s2/favicons?sz=32&domain=${d}`,
           `https://favicone.com/${d}`,
         ];
 
         const list = [];
-        uniq.forEach(d =&gt; list.push(...providers(d)));
+        uniq.forEach(d => list.push(...providers(d)));
 
         // final fallback: simple inline SVG
-        const svg = encodeURIComponent(`&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'&gt;
-          &lt;rect x='2' y='2' width='20' height='20' rx='6' ry='6' fill='rgba(255,255,255,0.08)'/&gt;
-          &lt;path d='M7 12h10' stroke='rgba(255,255,255,0.9)' stroke-width='2' stroke-linecap='round'/&gt;
-        &lt;/svg&gt;`);
+        const svg = encodeURIComponent(`<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'>
+          <rect x='2' y='2' width='20' height='20' rx='6' ry='6' fill='rgba(255,255,255,0.08)'/>
+          <path d='M7 12h10' stroke='rgba(255,255,255,0.9)' stroke-width='2' stroke-linecap='round'/>
+        </svg>`);
         list.push('data:image/svg+xml;utf8,' + svg);
         return list;
       },
       init() { this.list = this.makeList(src?.url, src?.name); },
       get icon() { return this.list[this.idx] || this.list[this.list.length - 1]; },
-      next() { if (this.idx &lt; this.list.length - 1) this.idx++; }
+      next() { if (this.idx < this.list.length - 1) this.idx++; }
     }">
-<img :src="icon" @error="next()" @load="$event.target.classList.add('lazy-done')" alt="" class="w-4 h-4 rounded lazy-blur" loading="lazy" referrerpolicy="no-referrer"/>
-<a @click.prevent="confirmExternal(src.url)" class="text-emerald-400 hover:underline" href="#" x-text="src.name || src.url"></a>
+  <img
+    :src="icon"
+    @error="next()"
+    alt=""
+    class="w-4 h-4 rounded lazy-blur"
+    @load="$event.target.classList.add('lazy-done')"
+    loading="lazy"
+    referrerpolicy="no-referrer"
+  />
+  <a href="#"
+     @click.prevent="confirmExternal(src.url)"
+     class="text-emerald-400 hover:underline"
+     x-text="src.name || src.url"></a>
 </li>
-</template>
-</ul>
+        </template>
+      </ul>
+    </div>
+  </template>
 </div>
-</template>
-</div>
+
 <!-- Hiç kaynak yoksa nazik mesaj -->
 <div class="mt-4 text-sm text-white/70" x-show="!groups?.length">
   Bu yapım için kayıtlı bir kaynak bulunamadı.
 </div>
+
+
+
+
 </template>
 </div>
 </div>
 <!-- Özet -->
 <div>
-<h3 @click="summaryOpen = !summaryOpen" class="text-lg font-semibold mb-2 cursor-pointer flex justify-between items-center border-b border-white/10 pb-1 mb-4" id="content-summary">İçerik Özeti
+<h3 @click="summaryOpen = !summaryOpen" id="content-summary" class="text-lg font-semibold mb-2 cursor-pointer flex justify-between items-center border-b border-white/10 pb-1 mb-4">İçerik Özeti
 <svg class="w-4 h-4 inline-block ml-2" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!summaryOpen"></path>
 <path d="M5 15l7-7 7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="summaryOpen"></path>
@@ -672,43 +853,57 @@
 </div>
 <!-- Göndermeler -->
 <template x-if="modalNode.refers_to">
-<div>
-<h3 @click="refersOpen = !refersOpen" class="text-lg font-semibold mb-2 cursor-pointer flex justify-between items-center border-b border-white/10 pb-1 mb-4" id="göndermeler">
+  <div>
+    <h3 @click="refersOpen = !refersOpen" id="göndermeler"
+        class="text-lg font-semibold mb-2 cursor-pointer flex justify-between items-center border-b border-white/10 pb-1 mb-4">
       Göndermeler
-      <svg class="w-4 h-4 inline-block ml-2" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!refersOpen"></path>
-<path d="M5 15l7-7 7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="refersOpen"></path>
-</svg>
-</h3>
-<div class="text-sm text-red-400 italic mb-2" x-show="refersOpen">
+      <svg class="w-4 h-4 inline-block ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+           xmlns="http://www.w3.org/2000/svg">
+        <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              x-show="!refersOpen"></path>
+        <path d="M5 15l7-7 7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              x-show="refersOpen"></path>
+      </svg>
+    </h3>
+
+    <div class="text-sm text-red-400 italic mb-2" x-show="refersOpen">
       ⚠ Bu alan spoiler içerebilir.
     </div>
-<div class="bg-white/5 p-4 rounded-lg border border-white/10 italic text-sm" x-html="(() =&gt; {
+
+    <div class="bg-white/5 p-4 rounded-lg border border-white/10 italic text-sm"
+         x-show="refersOpen"
+         x-html="(() => {
            const t = modalNode.refers_to == null ? '' : String(modalNode.refers_to);
 
            // Güvenlik: HTML escape
            const esc = t
-             .replace(/&amp;/g,'&amp;')
-             .replace(/&lt;/g,'&lt;')
-             .replace(/&gt;/g,'&gt;');
+             .replace(/&/g,'&amp;')
+             .replace(/</g,'&lt;')
+             .replace(/>/g,'&gt;');
 
-           // **Kalın** -&gt; renkli span
+           // **Kalın** -> renkli span
            let out = esc.replace(/\*\*(.+?)\*\*/g,
-             '&lt;span class=&quot;text-sky-300 font-semibold underline decoration-dotted&quot;&gt;$1&lt;/span&gt;'
+             '<span class=&quot;text-sky-300 font-semibold underline decoration-dotted&quot;>$1</span>'
            );
            return out;
-         })()" x-show="refersOpen">
-</div>
-</div>
+         })()">
+    </div>
+  </div>
 </template>
+
+
+
 <!-- Bağlantılı Yapımlar -->
-<h3 @click="linkedOpen = !linkedOpen" class="text-lg font-semibold mb-2 cursor-pointer flex justify-between items-center border-b border-white/10 pb-1 mb-4" id="related-works">Bağlantılı Yapımlar
+
+
+<h3 @click="linkedOpen = !linkedOpen" id="related-works" class="text-lg font-semibold mb-2 cursor-pointer flex justify-between items-center border-b border-white/10 pb-1 mb-4">Bağlantılı Yapımlar
 <svg class="w-4 h-4 inline-block ml-2" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="!linkedOpen"></path>
 <path d="M5 15l7-7 7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x-show="linkedOpen"></path>
 </svg>
 </h3>
-<div class="bg-white/5 p-4 rounded-lg border border-white/10" x-show="linkedOpen">
+<div x-show="linkedOpen" class="bg-white/5 p-4 rounded-lg border border-white/10">
+
 <template x-if="edgeList.length">
 <div class="flex flex-wrap gap-2" x-show="linkedOpen">
 <template :key="e.otherNodeId" x-for="e in edgeList">
@@ -771,124 +966,145 @@
 <template x-if="!notes[modalNode.id] || !notes[modalNode.id].length">
 <p class="text-sm opacity-70">Henüz not eklenmemiş.</p>
 </template>
+
 <template :key="i" x-for="(c, i) in (notes[modalNode.id] || [])">
-<div class="bg-white/10 p-2 rounded mb-2">
-<div class="text-xs opacity-70 mb-1">
-<span x-text="new Date(c.ts).toLocaleDateString()"></span>
-</div>
-<template x-if="editingNoteIndex === i">
-<div class="flex flex-col gap-2">
-<textarea class="w-full p-2 rounded bg-black/20 text-sm text-white border border-white/20" x-model="editedNoteText"></textarea>
-<div class="flex justify-end gap-2 text-xs">
-<button @click="saveEditedNote(modalNode.id, i)" class="px-2 py-1 rounded bg-green-600 hover:bg-green-700 text-white">Kaydet</button>
-<button @click="cancelEditNote()" class="px-2 py-1 rounded bg-white/20 text-white">Vazgeç</button>
-</div>
-</div>
+  <div class="bg-white/10 p-2 rounded mb-2">
+    <div class="text-xs opacity-70 mb-1">
+      <span x-text="new Date(c.ts).toLocaleDateString()"></span>
+    </div>
+    <template x-if="editingNoteIndex === i">
+      <div class="flex flex-col gap-2">
+        <textarea x-model="editedNoteText" class="w-full p-2 rounded bg-black/20 text-sm text-white border border-white/20"></textarea>
+        <div class="flex justify-end gap-2 text-xs">
+          <button @click="saveEditedNote(modalNode.id, i)" class="px-2 py-1 rounded bg-green-600 hover:bg-green-700 text-white">Kaydet</button>
+          <button @click="cancelEditNote()" class="px-2 py-1 rounded bg-white/20 text-white">Vazgeç</button>
+        </div>
+      </div>
+    </template>
+    <template x-if="editingNoteIndex !== i">
+      <div>
+        <div class="whitespace-pre-wrap text-sm" x-text="c.text"></div>
+        <div class="flex justify-end gap-2 mt-1 text-xs opacity-80">
+          <button @click="startEditNote(i, c.text)">✏️</button>
+          <button @click="deleteNote(modalNode.id, i)">🗑️</button>
+        </div>
+      </div>
+    </template>
+  </div>
 </template>
-<template x-if="editingNoteIndex !== i">
-<div>
-<div class="whitespace-pre-wrap text-sm" x-text="c.text"></div>
-<div class="flex justify-end gap-2 mt-1 text-xs opacity-80">
-<button @click="startEditNote(i, c.text)">✏️</button>
-<button @click="deleteNote(modalNode.id, i)">🗑️</button>
-</div>
-</div>
-</template>
-</div>
-</template>
+
 <div class="flex gap-2 mt-2">
 <input class="w-full px-3 py-2 rounded bg-white/10 text-white" placeholder="Not ekle... #etiket" x-model="newNote"/>
 <button @click="addNote(modalNode.id)" class="px-3 py-2 text-sm border border-white/20 rounded hover:bg-white/20">Ekle</button>
+
 <!-- Advanced Share Sheet -->
 <template x-if="shareOpen">
-<div @keydown.escape.window="shareOpen=false">
-<div @click="shareOpen=false" class="share-sheet-overlay"></div>
-<div aria-label="Paylaşım seçenekleri" aria-modal="true" class="share-sheet" role="dialog">
-<div class="flex items-center justify-between mb-3">
-<div class="text-lg font-semibold">Paylaş</div>
-<button @click="shareOpen=false" aria-label="Paylaşımı kapat" class="w-8 h-8 rounded-full bg-white/10 border border-white/20">✕</button>
+  <div @keydown.escape.window="shareOpen=false">
+    <div class="share-sheet-overlay" @click="shareOpen=false"></div>
+    <div class="share-sheet" role="dialog" aria-modal="true" aria-label="Paylaşım seçenekleri">
+      <div class="flex items-center justify-between mb-3">
+        <div class="text-lg font-semibold">Paylaş</div>
+        <button class="w-8 h-8 rounded-full bg-white/10 border border-white/20" @click="shareOpen=false" aria-label="Paylaşımı kapat">✕</button>
+      </div>
+
+      <div class="mb-3 text-sm opacity-80">
+        <div class="mb-1">Bağlantı</div>
+        <input class="share-input" type="text" readonly :value="buildShareUrl(modalNode, true)">
+      </div>
+
+      <div class="grid share-grid mb-3">
+  <div class="share-tile" @click="shareNative(modalNode)" title="Cihazla Paylaş" aria-label="Cihazla Paylaş">
+    <svg class="share-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M14 3l7 7-1.41 1.41L15 8.83V17a4 4 0 01-4 4H5v-2h6a2 2 0 002-2V8.83l-4.59 2.58L7 10l7-7z"/>
+    </svg>
+    <span class="text-xs">Cihazla Paylaş</span>
+  </div>
+
+  <div class="share-tile" @click="shareToX(modalNode)" title="X" aria-label="X">
+    <img class="share-icon" src="https://www.google.com/s2/favicons?sz=32&domain=x.com" alt="X">
+    <span class="text-xs">X (Twitter)</span>
+  </div>
+
+  <div class="share-tile" @click="shareToWhatsApp(modalNode)" title="WhatsApp" aria-label="WhatsApp">
+    <img class="share-icon" src="https://www.google.com/s2/favicons?sz=32&domain=whatsapp.com" alt="WhatsApp">
+    <span class="text-xs">WhatsApp</span>
+  </div>
+
+  <div class="share-tile" @click="shareToLinkedIn(modalNode)" title="LinkedIn" aria-label="LinkedIn">
+    <img class="share-icon" src="https://www.google.com/s2/favicons?sz=32&domain=linkedin.com" alt="LinkedIn">
+    <span class="text-xs">LinkedIn</span>
+  </div>
+
+  <div class="share-tile" @click="shareToTelegram(modalNode)" title="Telegram" aria-label="Telegram">
+    <img class="share-icon" src="https://www.google.com/s2/favicons?sz=32&domain=telegram.org" alt="Telegram">
+    <span class="text-xs">Telegram</span>
+  </div>
+
+  <div class="share-tile" @click="shareToReddit(modalNode)" title="Reddit" aria-label="Reddit">
+    <img class="share-icon" src="https://www.google.com/s2/favicons?sz=32&domain=reddit.com" alt="Reddit">
+    <span class="text-xs">Reddit</span>
+  </div>
+
+  <div class="share-tile" @click="copyShare(modalNode)" title="Bağlantıyı Kopyala" aria-label="Bağlantıyı Kopyala">
+    <svg class="share-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M16 1H4a2 2 0 00-2 2v12h2V3h12V1zm3 4H8a2 2 0 00-2 2v14a2 2 0 002 2h11a2 2 0 002-2V7a2 2 0 00-2-2zm0 16H8V7h11v14z"/>
+    </svg>
+    <span class="text-xs">Kopyala</span>
+  </div>
+
+  <div class="share-tile" @click="copyMarkdown(modalNode)" title="Markdown Olarak Kopyala" aria-label="Markdown Olarak Kopyala">
+    <svg class="share-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M2 5a2 2 0 012-2h16a2 2 0 012 2v14H2V5zm2 0v12h16V5H4zm3 3h2l2 3 2-3h2v6h-2V9l-2 3-2-3v6H7V8z"/>
+    </svg>
+    <span class="text-xs">Markdown</span>
+  </div>
 </div>
-<div class="mb-3 text-sm opacity-80">
-<div class="mb-1">Bağlantı</div>
-<input :value="buildShareUrl(modalNode, true)" class="share-input" readonly="" type="text">
-</input></div>
-<div class="grid share-grid mb-3">
-<div @click="shareNative(modalNode)" aria-label="Cihazla Paylaş" class="share-tile" title="Cihazla Paylaş">
-<svg aria-hidden="true" class="share-icon" fill="currentColor" viewbox="0 0 24 24">
-<path d="M14 3l7 7-1.41 1.41L15 8.83V17a4 4 0 01-4 4H5v-2h6a2 2 0 002-2V8.83l-4.59 2.58L7 10l7-7z"></path>
-</svg>
-<span class="text-xs">Cihazla Paylaş</span>
-</div>
-<div @click="shareToX(modalNode)" aria-label="X" class="share-tile" title="X">
-<img alt="X" class="share-icon" src="https://www.google.com/s2/favicons?sz=32&amp;domain=x.com"/>
-<span class="text-xs">X (Twitter)</span>
-</div>
-<div @click="shareToWhatsApp(modalNode)" aria-label="WhatsApp" class="share-tile" title="WhatsApp">
-<img alt="WhatsApp" class="share-icon" src="https://www.google.com/s2/favicons?sz=32&amp;domain=whatsapp.com"/>
-<span class="text-xs">WhatsApp</span>
-</div>
-<div @click="shareToLinkedIn(modalNode)" aria-label="LinkedIn" class="share-tile" title="LinkedIn">
-<img alt="LinkedIn" class="share-icon" src="https://www.google.com/s2/favicons?sz=32&amp;domain=linkedin.com"/>
-<span class="text-xs">LinkedIn</span>
-</div>
-<div @click="shareToTelegram(modalNode)" aria-label="Telegram" class="share-tile" title="Telegram">
-<img alt="Telegram" class="share-icon" src="https://www.google.com/s2/favicons?sz=32&amp;domain=telegram.org"/>
-<span class="text-xs">Telegram</span>
-</div>
-<div @click="shareToReddit(modalNode)" aria-label="Reddit" class="share-tile" title="Reddit">
-<img alt="Reddit" class="share-icon" src="https://www.google.com/s2/favicons?sz=32&amp;domain=reddit.com"/>
-<span class="text-xs">Reddit</span>
-</div>
-<div @click="copyShare(modalNode)" aria-label="Bağlantıyı Kopyala" class="share-tile" title="Bağlantıyı Kopyala">
-<svg aria-hidden="true" class="share-icon" fill="currentColor" viewbox="0 0 24 24">
-<path d="M16 1H4a2 2 0 00-2 2v12h2V3h12V1zm3 4H8a2 2 0 00-2 2v14a2 2 0 002 2h11a2 2 0 002-2V7a2 2 0 00-2-2zm0 16H8V7h11v14z"></path>
-</svg>
-<span class="text-xs">Kopyala</span>
-</div>
-<div @click="copyMarkdown(modalNode)" aria-label="Markdown Olarak Kopyala" class="share-tile" title="Markdown Olarak Kopyala">
-<svg aria-hidden="true" class="share-icon" fill="currentColor" viewbox="0 0 24 24">
-<path d="M2 5a2 2 0 012-2h16a2 2 0 012 2v14H2V5zm2 0v12h16V5H4zm3 3h2l2 3 2-3h2v6h-2V9l-2 3-2-3v6H7V8z"></path>
-</svg>
-<span class="text-xs">Markdown</span>
-</div>
-</div>
-<div @click="shareToX(modalNode)" class="share-tile">
-<span>𝕏</span><span class="text-xs">X (Twitter)</span>
-</div>
-<div @click="shareToWhatsApp(modalNode)" class="share-tile">
-<span>🟢</span><span class="text-xs">WhatsApp</span>
-</div>
-<div @click="shareToLinkedIn(modalNode)" class="share-tile">
-<span>in</span><span class="text-xs">LinkedIn</span>
-</div>
-<div @click="shareToTelegram(modalNode)" class="share-tile">
-<span>✈️</span><span class="text-xs">Telegram</span>
-</div>
-<div @click="shareToReddit(modalNode)" class="share-tile">
-<span>👽</span><span class="text-xs">Reddit</span>
-</div>
-<div @click="copyShare(modalNode)" class="share-tile">
-<span>📋</span><span class="text-xs">Bağlantıyı Kopyala</span>
-</div>
-<div @click="copyMarkdown(modalNode)" class="share-tile">
-<span>📝</span><span class="text-xs">Markdown</span>
-</div>
-</div>
-<div class="mb-2 text-sm opacity-80">QR Kod</div>
-<div class="flex items-center justify-center">
-<img :src="'https://api.qrserver.com/v1/create-qr-code/?size=180x180&amp;data=' + encodeURIComponent(buildShareUrl(modalNode, true))" alt="QR" class="rounded border border-white/10" height="180" width="180"/>
-</div>
-<div class="share-actions">
-<button @click="shareOpen=false" class="px-3 py-1.5 rounded bg-white/10 border border-white/20 hover:bg-white/20 text-sm">Kapat</button>
-</div>
-</div>
-</template></div>
+        <div class="share-tile" @click="shareToX(modalNode)">
+          <span>𝕏</span><span class="text-xs">X (Twitter)</span>
+        </div>
+        <div class="share-tile" @click="shareToWhatsApp(modalNode)">
+          <span>🟢</span><span class="text-xs">WhatsApp</span>
+        </div>
+        <div class="share-tile" @click="shareToLinkedIn(modalNode)">
+          <span>in</span><span class="text-xs">LinkedIn</span>
+        </div>
+        <div class="share-tile" @click="shareToTelegram(modalNode)">
+          <span>✈️</span><span class="text-xs">Telegram</span>
+        </div>
+        <div class="share-tile" @click="shareToReddit(modalNode)">
+          <span>👽</span><span class="text-xs">Reddit</span>
+        </div>
+        <div class="share-tile" @click="copyShare(modalNode)">
+          <span>📋</span><span class="text-xs">Bağlantıyı Kopyala</span>
+        </div>
+        <div class="share-tile" @click="copyMarkdown(modalNode)">
+          <span>📝</span><span class="text-xs">Markdown</span>
+        </div>
+      </div>
+
+      <div class="mb-2 text-sm opacity-80">QR Kod</div>
+      <div class="flex items-center justify-center">
+        <img :src="'https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=' + encodeURIComponent(buildShareUrl(modalNode, true))"
+             alt="QR" width="180" height="180" class="rounded border border-white/10"/>
+      </div>
+
+      <div class="share-actions">
+        <button class="px-3 py-1.5 rounded bg-white/10 border border-white/20 hover:bg-white/20 text-sm" @click="shareOpen=false">Kapat</button>
+      </div>
+    </div>
+  </div>
+</template>
 </div>
 </div>
 </div>
 </div>
 </div>
+</div>
+
 <div x-show="selectedUniverse">
+</div>
+
+
 </div>
 <script>
   document.addEventListener('DOMContentLoaded', () => {
@@ -902,7 +1118,9 @@
     }
   });
 </script>
-<script>
+
+
+    <script>
       function app() {
         return {
           
@@ -2355,8 +2573,10 @@ const searchTerm = this.norm(this.search);
 <script>
     window.toTRDate = function(value) { if (!value) return ''; const s = String(value).trim(); const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(s); if (m) return `${m[3]}/${m[2]}/${m[1]}`; const d = new Date(s); if (isNaN(d)) return s; const dd = String(d.getDate()).padStart(2, '0'); const mm = String(d.getMonth() + 1).padStart(2, '0'); const yyyy = d.getFullYear(); return `${dd}/${mm}/${yyyy}`; };
   </script>
+
+</div>
 <div id="legendWrap" x-show="selectedUniverse">
-<button @click="showLegend = !showLegend" class="glass px-3 py-1.5 rounded-lg text-sm hover:bg-white/10 transition" id="legendToggle">Bağlantılar <span x-text="showLegend ? '(Gizle)' : '(Göster)'"></span></button>
+<button id="legend_bar" @click="showLegend = !showLegend" class="glass px-3 py-1.5 rounded-lg text-sm hover:bg-white/10 transition" id="legendToggle">Bağlantılar <span x-text="showLegend ? '(Gizle)' : '(Göster)'"></span></button>
 <div id="legend" role="list" x-show="showLegend" x-transition="">
 <h3 class="font-bold mb-2">Bağlantılar</h3>
 <ul>
@@ -2365,257 +2585,311 @@ const searchTerm = this.norm(this.search);
 </template>
 </ul>
 </div>
+
+
+
+
+
+
 <!-- Timeline button above Notes & Favorites -->
-<button @click="timelineOpen = !timelineOpen" class="fixed right-4 bottom-[8rem] z-[50] glass rounded-full w-12 h-12 grid place-items-center hover:bg-white/10 pointer-events-auto" id="timeline_bar" title="Zaman Çizelgesi">
-<svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-<path d="M7 2a1 1 0 0 1 1 1v1h8V3a1 1 0 1 1 2 0v1h1a2 2 0 0 1 2 2v3H2V6a2 2 0 0 1 2-2h1V3a1 1 0 1 1 2 0v1z"></path>
-<path d="M2 10h20v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-8zm6 3a1 1 0 1 0 0 2h5a1 1 0 1 0 0-2H8z"></path>
-</svg>
+<button
+  id="timeline_bar"
+  @click="timelineOpen = !timelineOpen"
+  class="fixed right-4 bottom-[8rem] z-[50] glass rounded-full w-12 h-12 grid place-items-center hover:bg-white/10 pointer-events-auto"
+  title="Zaman Çizelgesi"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+    <path d="M7 2a1 1 0 0 1 1 1v1h8V3a1 1 0 1 1 2 0v1h1a2 2 0 0 1 2 2v3H2V6a2 2 0 0 1 2-2h1V3a1 1 0 1 1 2 0v1z"/>
+    <path d="M2 10h20v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-8zm6 3a1 1 0 1 0 0 2h5a1 1 0 1 0 0-2H8z"/>
+  </svg>
 </button>
+
 <!-- Yeni panel açma butonu -->
-<button @click="panelOpen = !panelOpen" class="fixed right-4 bottom-[4.5rem] z-50 glass rounded-full w-12 h-12 grid place-items-center hover:bg-white/10" id="panel_bar" title="Notlar ve Favoriler">📁</button>
+<button @click="panelOpen = !panelOpen" id="panel_bar" class="fixed right-4 bottom-[4.5rem] z-50 glass rounded-full w-12 h-12 grid place-items-center hover:bg-white/10" title="Notlar ve Favoriler">📁</button>
+
+
 <!-- Notlar & Favoriler Paneli -->
-<div class="fixed right-4 bottom-[9rem] z-[60] glass rounded-xl p-4 w-[22rem] max-h-[45vh] overflow-y-auto text-white text-sm space-y-4" x-show="panelOpen" x-transition="">
-<!-- Sekmeler -->
-<div class="flex gap-2 mb-1">
-<button :class="activeTab === 'watch' ? 'bg-white/20 px-3 py-1 rounded' : 'px-3 py-1 rounded hover:bg-white/10'" @click="activeTab = 'watch'" id="fav_bar">⭐ Favoriler</button>
-<button :class="activeTab === 'notes' ? 'bg-white/20 px-3 py-1 rounded' : 'px-3 py-1 rounded hover:bg-white/10'" @click="activeTab = 'notes'" id="notlar_bar">📝 Notlar</button>
+<div class="fixed right-4 bottom-[9rem] z-[60] glass rounded-xl p-4 w-[22rem] max-h-[45vh] overflow-y-auto text-white text-sm space-y-4"
+     x-show="panelOpen" x-transition>
+
+  <!-- Sekmeler -->
+  <div class="flex gap-2 mb-1">
+    <button id="fav_bar" @click="activeTab = 'watch'" :class="activeTab === 'watch' ? 'bg-white/20 px-3 py-1 rounded' : 'px-3 py-1 rounded hover:bg-white/10'">⭐ Favoriler</button>
+    <button id="notlar_bar" @click="activeTab = 'notes'" :class="activeTab === 'notes' ? 'bg-white/20 px-3 py-1 rounded' : 'px-3 py-1 rounded hover:bg-white/10'">📝 Notlar</button>
+  </div>
+
+  <!-- Favoriler Sekmesi -->
+  <div x-show="activeTab === 'watch'" class="space-y-3">
+    <template x-if="!watchLater.length">
+      <p class="text-sm opacity-70">Henüz favori yok.</p>
+    </template>
+
+    <template x-for="item in watchLater" :key="item.id">
+      <div class="border border-white/10 rounded-lg overflow-hidden">
+        <div class="flex justify-between items-center px-3 py-2 bg-white/10">
+          <span class="font-semibold truncate" x-text="item.label || item.id"></span>
+          <button @click="removeWatchLater(item.id)" class="text-red-400 hover:text-red-600 text-xs">Sil</button>
+        </div>
+      </div>
+    </template>
+  </div>
+
+  <!-- Notlar Sekmesi -->
+  <div x-show="activeTab === 'notes'" class="space-y-3">
+    <template x-if="!Object.keys(notes).some(k => notes[k]?.length)">
+      <p class="text-sm opacity-70">Not bulunamadı.</p>
+    </template>
+
+    <template x-for="(entries, nodeId) in Object.fromEntries(Object.entries(notes).filter(([k, arr]) => arr.length))" :key="nodeId">
+      <div class="border border-white/10 rounded-lg overflow-hidden">
+        <button @click="notesOpen = notesOpen === nodeId ? null : nodeId" class="w-full text-left px-3 py-2 bg-white/10 hover:bg-white/20 font-semibold">
+          <span x-text="nodes.get(nodeId)?.label || nodeId"></span>
+        </button>
+
+        <div x-show="notesOpen === nodeId" x-transition class="p-3 space-y-2 max-h-[45vh] overflow-y-auto">
+          <template x-for="(n, i) in entries" :key="i">
+            <div class="bg-white/10 p-2 rounded">
+              <div class="text-xs opacity-70 mb-1" x-text="new Date(n.ts).toLocaleDateString()"></div>
+
+              <template x-if="editingNoteIndex === `${nodeId}_${i}`">
+                <div class="flex flex-col gap-2">
+                  <textarea x-model="editedNoteText" class="w-full p-2 rounded bg-black/20 text-sm text-white border border-white/20"></textarea>
+                  <div class="flex justify-end gap-2 text-xs">
+                    <button @click="saveEditedNote(nodeId, i)" class="px-2 py-1 rounded bg-green-600 hover:bg-green-700 text-white">Kaydet</button>
+                    <button @click="cancelEditNote()" class="px-2 py-1 rounded bg-white/20 text-white">Vazgeç</button>
+                  </div>
+                </div>
+              </template>
+
+              <template x-if="editingNoteIndex !== `${nodeId}_${i}`">
+                <div>
+                  <div class="whitespace-pre-wrap text-sm mb-1" x-text="n.text"></div>
+                  <div class="flex justify-end gap-2 text-xs opacity-80">
+                    <button @click="startEditNote(`${nodeId}_${i}`, n.text)">✏️</button>
+                    <button @click="deleteNote(nodeId, i)">🗑️</button>
+                  </div>
+                </div>
+              </template>
+            </div>
+          </template>
+        </div>
+      </div>
+    </template>
+  </div>
 </div>
-<!-- Favoriler Sekmesi -->
-<div class="space-y-3" x-show="activeTab === 'watch'">
-<template x-if="!watchLater.length">
-<p class="text-sm opacity-70">Henüz favori yok.</p>
-</template>
-<template :key="item.id" x-for="item in watchLater">
-<div class="border border-white/10 rounded-lg overflow-hidden">
-<div class="flex justify-between items-center px-3 py-2 bg-white/10">
-<span class="font-semibold truncate" x-text="item.label || item.id"></span>
-<button @click="removeWatchLater(item.id)" class="text-red-400 hover:text-red-600 text-xs">Sil</button>
+        </template>
+      </div>
+    </template>
+  </div>
 </div>
-</div>
-</template>
-</div>
-<!-- Notlar Sekmesi -->
-<div class="space-y-3" x-show="activeTab === 'notes'">
-<template x-if="!Object.keys(notes).some(k =&gt; notes[k]?.length)">
-<p class="text-sm opacity-70">Not bulunamadı.</p>
-</template>
-<template :key="nodeId" x-for="(entries, nodeId) in Object.fromEntries(Object.entries(notes).filter(([k, arr]) =&gt; arr.length))">
-<div class="border border-white/10 rounded-lg overflow-hidden">
-<button @click="notesOpen = notesOpen === nodeId ? null : nodeId" class="w-full text-left px-3 py-2 bg-white/10 hover:bg-white/20 font-semibold">
-<span x-text="nodes.get(nodeId)?.label || nodeId"></span>
-</button>
-<div class="p-3 space-y-2 max-h-[45vh] overflow-y-auto" x-show="notesOpen === nodeId" x-transition="">
-<template :key="i" x-for="(n, i) in entries">
-<div class="bg-white/10 p-2 rounded">
-<div class="text-xs opacity-70 mb-1" x-text="new Date(n.ts).toLocaleDateString()"></div>
-<template x-if="editingNoteIndex === `${nodeId}_${i}`">
-<div class="flex flex-col gap-2">
-<textarea class="w-full p-2 rounded bg-black/20 text-sm text-white border border-white/20" x-model="editedNoteText"></textarea>
-<div class="flex justify-end gap-2 text-xs">
-<button @click="saveEditedNote(nodeId, i)" class="px-2 py-1 rounded bg-green-600 hover:bg-green-700 text-white">Kaydet</button>
-<button @click="cancelEditNote()" class="px-2 py-1 rounded bg-white/20 text-white">Vazgeç</button>
-</div>
-</div>
-</template>
-<template x-if="editingNoteIndex !== `${nodeId}_${i}`">
-<div>
-<div class="whitespace-pre-wrap text-sm mb-1" x-text="n.text"></div>
-<div class="flex justify-end gap-2 text-xs opacity-80">
-<button @click="startEditNote(`${nodeId}_${i}`, n.text)">✏️</button>
-<button @click="deleteNote(nodeId, i)">🗑️</button>
-</div>
-</div>
-</template>
-</div>
-</template>
-</div>
-</div>
-</template>
-</div>
-</div>
-</div>
+
 <!-- Bilgi Panelleri -->
-<div class="fixed inset-0 flex items-center justify-center z-50" x-show="panel === 'hakkimizda'">
-<div class="mobile-centered bg-black/85 text-white border border-white/10 rounded-2xl shadow-2xl p-6 text-sm w-[90%] max-w-2xl backdrop-blur-md space-y-4">
-<h2 class="text-2xl font-bold text-center">ℹ️ Hakkımızda</h2>
+<div x-show="panel === 'hakkimizda'" class="fixed inset-0 flex items-center justify-center z-50">
+  <div class="mobile-centered bg-black/85 text-white border border-white/10 rounded-2xl shadow-2xl p-6 text-sm w-[90%] max-w-2xl backdrop-blur-md space-y-4">
+    <h2 class="text-2xl font-bold text-center">ℹ️ Hakkımızda</h2>
 <div class="text-base text-white/80 space-y-3 text-left">
-<p><strong>Film Evreni Ağı</strong>, sinema ve dizi evrenlerini etkileşimli ve görsel bir biçimde keşfetmek isteyenler için tasarlanmış bir bilgi platformudur.</p>
-<p>Amacımız, sinema tutkunlarının evrenler arası ilişkileri kolayca anlamasını sağlamak ve her yapımın birbirine nasıl bağlandığını sezgisel olarak sunmaktır.</p>
-<ul class="list-disc list-inside space-y-1">
-<li>Farklı sinematik evrenleri merkezden uca, zaman çizgisi ya da karakter bağlantılarıyla görselleştirir.</li>
-<li>Kullanıcılara kişisel notlar alma, favori yapımlarını işaretleme imkanı tanır.</li>
-<li>Yapım bilgileri, karakter ilişkileri ve göndermeler gibi içerikleri zenginleştirir.</li>
-<li>Kullanıcıların yorum yazmasına değil, bilgiye odaklanmasına olanak sağlar.</li>
-<li>Hafif, reklamsız ve üyelik gerektirmeyen bir deneyim sunar.</li>
-</ul>
-<p>Film Evreni Ağı bağımsız bir girişimdir ve herhangi bir stüdyo veya yayıncıyla bağlantısı yoktur.</p>
+  <p><strong>Film Evreni Ağı</strong>, sinema ve dizi evrenlerini etkileşimli ve görsel bir biçimde keşfetmek isteyenler için tasarlanmış bir bilgi platformudur.</p>
+  <p>Amacımız, sinema tutkunlarının evrenler arası ilişkileri kolayca anlamasını sağlamak ve her yapımın birbirine nasıl bağlandığını sezgisel olarak sunmaktır.</p>
+  <ul class="list-disc list-inside space-y-1">
+    <li>Farklı sinematik evrenleri merkezden uca, zaman çizgisi ya da karakter bağlantılarıyla görselleştirir.</li>
+    <li>Kullanıcılara kişisel notlar alma, favori yapımlarını işaretleme imkanı tanır.</li>
+    <li>Yapım bilgileri, karakter ilişkileri ve göndermeler gibi içerikleri zenginleştirir.</li>
+    <li>Kullanıcıların yorum yazmasına değil, bilgiye odaklanmasına olanak sağlar.</li>
+    <li>Hafif, reklamsız ve üyelik gerektirmeyen bir deneyim sunar.</li>
+  </ul>
+  <p>Film Evreni Ağı bağımsız bir girişimdir ve herhangi bir stüdyo veya yayıncıyla bağlantısı yoktur.</p>
 </div>
-<div class="text-center">
-<button @click="panel = null" class="mt-4 px-5 py-2 bg-white/10 border border-white/20 text-white text-sm rounded-lg hover:bg-white/20 transition">Geri Dön</button>
+    <div class="text-center">
+      <button @click="panel = null" class="mt-4 px-5 py-2 bg-white/10 border border-white/20 text-white text-sm rounded-lg hover:bg-white/20 transition">Geri Dön</button>
+    </div>
+  </div>
 </div>
-</div>
-</div>
-<div class="fixed inset-0 flex items-center justify-center z-50" x-show="panel === 'gizlilik'">
-<div class="mobile-centered bg-black/85 text-white border border-white/10 rounded-2xl shadow-2xl p-6 text-sm w-[90%] max-w-2xl backdrop-blur-md space-y-4">
-<h2 class="text-2xl font-bold text-center">🔐 Gizlilik Politikası</h2>
+
+<div x-show="panel === 'gizlilik'" class="fixed inset-0 flex items-center justify-center z-50">
+  <div class="mobile-centered bg-black/85 text-white border border-white/10 rounded-2xl shadow-2xl p-6 text-sm w-[90%] max-w-2xl backdrop-blur-md space-y-4">
+    <h2 class="text-2xl font-bold text-center">🔐 Gizlilik Politikası</h2>
 <div class="text-base text-white/80 space-y-3 text-left">
-<p>Film Evreni Ağı olarak gizliliğinizi ciddiye alıyoruz. Platformumuz, anonim kullanıcı deneyimi sunar ve size ait verileri ifşa etmez.</p>
-<h3 class="font-semibold mt-4 mb-1">Toplanan Bilgiler</h3>
-<ul class="list-disc list-inside space-y-1">
-<li>Kullanıcıdan aktif olarak <strong>hiçbir kişisel bilgi</strong> talep edilmez.</li>
-<li>Ad, e-posta, üyelik, şifre vb. sistemde <strong>tutulmaz</strong>.</li>
-<li>Favoriler ve notlar yalnızca tarayıcı (localStorage) üzerinde saklanır.</li>
-</ul>
-<h3 class="font-semibold mt-4 mb-1">Veri Kullanımı</h3>
-<ul class="list-disc list-inside space-y-1">
-<li>Veriler yalnızca size görünür şekilde cihazınızda tutulur.</li>
-<li>Kullanıcı davranışı izlenmez, analiz yapılmaz.</li>
-</ul>
-<h3 class="font-semibold mt-4 mb-1">3. Taraflar ve İzleme</h3>
-<ul class="list-disc list-inside space-y-1">
-<li>Google Analytics, Facebook Pixel gibi izleme araçları <strong>kullanılmaz</strong>.</li>
-<li>Reklam, takip veya sponsor sistemleri entegre edilmemiştir.</li>
-</ul>
-<h3 class="font-semibold mt-4 mb-1">Veri Paylaşımı</h3>
-<ul class="list-disc list-inside space-y-1">
-<li>Hiçbir veri 3. şahıslarla <strong>paylaşılmaz</strong>.</li>
-<li>Yasal bir zorunluluk olmadıkça veri kaydı yoktur.</li>
-</ul>
-<div class="text-center mt-4">
-<button @click="panel = 'iletisim'" class="px-4 py-2 bg-white/10 border border-white/20 text-white text-sm rounded hover:bg-white/20">
+  <p>Film Evreni Ağı olarak gizliliğinizi ciddiye alıyoruz. Platformumuz, anonim kullanıcı deneyimi sunar ve size ait verileri ifşa etmez.</p>
+
+  <h3 class="font-semibold mt-4 mb-1">Toplanan Bilgiler</h3>
+  <ul class="list-disc list-inside space-y-1">
+    <li>Kullanıcıdan aktif olarak <strong>hiçbir kişisel bilgi</strong> talep edilmez.</li>
+    <li>Ad, e-posta, üyelik, şifre vb. sistemde <strong>tutulmaz</strong>.</li>
+    <li>Favoriler ve notlar yalnızca tarayıcı (localStorage) üzerinde saklanır.</li>
+  </ul>
+
+  <h3 class="font-semibold mt-4 mb-1">Veri Kullanımı</h3>
+  <ul class="list-disc list-inside space-y-1">
+    <li>Veriler yalnızca size görünür şekilde cihazınızda tutulur.</li>
+    <li>Kullanıcı davranışı izlenmez, analiz yapılmaz.</li>
+  </ul>
+
+  <h3 class="font-semibold mt-4 mb-1">3. Taraflar ve İzleme</h3>
+  <ul class="list-disc list-inside space-y-1">
+    <li>Google Analytics, Facebook Pixel gibi izleme araçları <strong>kullanılmaz</strong>.</li>
+    <li>Reklam, takip veya sponsor sistemleri entegre edilmemiştir.</li>
+  </ul>
+
+  <h3 class="font-semibold mt-4 mb-1">Veri Paylaşımı</h3>
+  <ul class="list-disc list-inside space-y-1">
+    <li>Hiçbir veri 3. şahıslarla <strong>paylaşılmaz</strong>.</li>
+    <li>Yasal bir zorunluluk olmadıkça veri kaydı yoktur.</li>
+  </ul>
+
+ <div class="text-center mt-4">
+  <button @click="panel = 'iletisim'" class="px-4 py-2 bg-white/10 border border-white/20 text-white text-sm rounded hover:bg-white/20">
     İletişim Formunu Aç
   </button>
 </div>
 </div>
-<div class="text-center">
-<button @click="panel = null" class="mt-4 px-5 py-2 bg-white/10 border border-white/20 text-white text-sm rounded-lg hover:bg-white/20 transition">Geri Dön</button>
+    <div class="text-center">
+      <button @click="panel = null" class="mt-4 px-5 py-2 bg-white/10 border border-white/20 text-white text-sm rounded-lg hover:bg-white/20 transition">Geri Dön</button>
+    </div>
+  </div>
 </div>
-</div>
-</div>
-<div class="fixed inset-0 flex items-center justify-center z-50" x-show="panel === 'cerez'">
-<div class="mobile-centered bg-black/85 text-white border border-white/10 rounded-2xl shadow-2xl p-6 text-sm w-[90%] max-w-2xl backdrop-blur-md space-y-4">
-<h2 class="text-2xl font-bold text-center">🍪 Çerez Politikası</h2>
+
+<div x-show="panel === 'cerez'" class="fixed inset-0 flex items-center justify-center z-50">
+  <div class="mobile-centered bg-black/85 text-white border border-white/10 rounded-2xl shadow-2xl p-6 text-sm w-[90%] max-w-2xl backdrop-blur-md space-y-4">
+    <h2 class="text-2xl font-bold text-center">🍪 Çerez Politikası</h2>
 <div class="text-base text-white/80 space-y-3 text-left">
-<p>Web sitemiz yalnızca <strong>zorunlu ve deneyimi iyileştiren çerezler</strong> kullanır.</p>
-<h3 class="font-semibold mt-4 mb-1">Kullandığımız Çerez Türleri</h3>
-<ul class="list-disc list-inside space-y-1">
-<li><strong>Oturum Çerezleri:</strong> Geçici olarak tutulur, oturum kapandığında silinir.</li>
-<li><strong>Tercih Çerezleri:</strong> Tema ayarları, notlar, favoriler gibi verileri saklar.</li>
-</ul>
-<h3 class="font-semibold mt-4 mb-1">Kullanım Amaçları</h3>
-<ul class="list-disc list-inside space-y-1">
-<li>Karanlık/aydınlık tema tercihini hatırlama</li>
-<li>Son seçilen evreni veya yapımı hatırlama</li>
-<li>Kişisel not ve favori listesini koruma</li>
-</ul>
-<h3 class="font-semibold mt-4 mb-1">Toplamadığımız Veriler</h3>
-<ul class="list-disc list-inside space-y-1">
-<li>Davranış analizi, IP adresi, konum, geçmiş gibi veriler toplanmaz.</li>
-<li>Reklam çerezi veya sosyal medya takibi <strong>yoktur</strong>.</li>
-</ul>
-<p class="mt-4">Çerezleri tarayıcınızdan temizleyebilir veya engelleyebilirsiniz. Bu durumda bazı özellikler çalışmayabilir.</p>
+  <p>Web sitemiz yalnızca <strong>zorunlu ve deneyimi iyileştiren çerezler</strong> kullanır.</p>
+
+  <h3 class="font-semibold mt-4 mb-1">Kullandığımız Çerez Türleri</h3>
+  <ul class="list-disc list-inside space-y-1">
+    <li><strong>Oturum Çerezleri:</strong> Geçici olarak tutulur, oturum kapandığında silinir.</li>
+    <li><strong>Tercih Çerezleri:</strong> Tema ayarları, notlar, favoriler gibi verileri saklar.</li>
+  </ul>
+
+  <h3 class="font-semibold mt-4 mb-1">Kullanım Amaçları</h3>
+  <ul class="list-disc list-inside space-y-1">
+    <li>Karanlık/aydınlık tema tercihini hatırlama</li>
+    <li>Son seçilen evreni veya yapımı hatırlama</li>
+    <li>Kişisel not ve favori listesini koruma</li>
+  </ul>
+
+  <h3 class="font-semibold mt-4 mb-1">Toplamadığımız Veriler</h3>
+  <ul class="list-disc list-inside space-y-1">
+    <li>Davranış analizi, IP adresi, konum, geçmiş gibi veriler toplanmaz.</li>
+    <li>Reklam çerezi veya sosyal medya takibi <strong>yoktur</strong>.</li>
+  </ul>
+
+  <p class="mt-4">Çerezleri tarayıcınızdan temizleyebilir veya engelleyebilirsiniz. Bu durumda bazı özellikler çalışmayabilir.</p>
 </div>
-<div class="text-center">
-<button @click="panel = null" class="mt-4 px-5 py-2 bg-white/10 border border-white/20 text-white text-sm rounded-lg hover:bg-white/20 transition">Geri Dön</button>
+    <div class="text-center">
+      <button @click="panel = null" class="mt-4 px-5 py-2 bg-white/10 border border-white/20 text-white text-sm rounded-lg hover:bg-white/20 transition">Geri Dön</button>
+    </div>
+  </div>
 </div>
-</div>
-</div>
-<div class="fixed inset-0 flex items-center justify-center z-50" x-show="panel === 'kullanim'">
-<div class="mobile-centered bg-black/85 text-white border border-white/10 rounded-2xl shadow-2xl p-6 text-sm w-[90%] max-w-2xl backdrop-blur-md space-y-4">
-<h2 class="text-2xl font-bold text-center">📜 Kullanım Koşulları</h2>
+
+<div x-show="panel === 'kullanim'" class="fixed inset-0 flex items-center justify-center z-50">
+  <div class="mobile-centered bg-black/85 text-white border border-white/10 rounded-2xl shadow-2xl p-6 text-sm w-[90%] max-w-2xl backdrop-blur-md space-y-4">
+    <h2 class="text-2xl font-bold text-center">📜 Kullanım Koşulları</h2>
 <div class="text-base text-white/80 space-y-3 text-left">
-<p>Platformu kullanarak aşağıdaki koşulları kabul etmiş sayılırsınız:</p>
-<h3 class="font-semibold mt-4 mb-1">Kullanım Amacı</h3>
-<ul class="list-disc list-inside space-y-1">
-<li>Yalnızca <strong>kişisel ve eğitsel</strong> kullanım içindir.</li>
-<li>Herhangi bir ticari faaliyet amacıyla kullanılamaz.</li>
-</ul>
-<h3 class="font-semibold mt-4 mb-1">İçerik ve Sorumluluk</h3>
-<ul class="list-disc list-inside space-y-1">
-<li>Bilgiler kamuya açık kaynaklardan derlenmiştir.</li>
-<li>İçerik doğruluğu garanti edilmez; referans amaçlıdır.</li>
-<li>Telifli materyallerin sahibi yapım şirketleridir.</li>
-</ul>
-<h3 class="font-semibold mt-4 mb-1">Kısıtlamalar</h3>
-<ul class="list-disc list-inside space-y-1">
-<li>İçerik izinsiz kopyalanamaz, dağıtılamaz, satılamaz.</li>
-<li>Kod yapısı ve veri yapıları izinsiz çoğaltılamaz.</li>
-</ul>
-<p class="mt-4">Kuralları ihlal eden kullanıcıların erişimi engellenebilir.</p>
+  <p>Platformu kullanarak aşağıdaki koşulları kabul etmiş sayılırsınız:</p>
+
+  <h3 class="font-semibold mt-4 mb-1">Kullanım Amacı</h3>
+  <ul class="list-disc list-inside space-y-1">
+    <li>Yalnızca <strong>kişisel ve eğitsel</strong> kullanım içindir.</li>
+    <li>Herhangi bir ticari faaliyet amacıyla kullanılamaz.</li>
+  </ul>
+
+  <h3 class="font-semibold mt-4 mb-1">İçerik ve Sorumluluk</h3>
+  <ul class="list-disc list-inside space-y-1">
+    <li>Bilgiler kamuya açık kaynaklardan derlenmiştir.</li>
+    <li>İçerik doğruluğu garanti edilmez; referans amaçlıdır.</li>
+    <li>Telifli materyallerin sahibi yapım şirketleridir.</li>
+  </ul>
+
+  <h3 class="font-semibold mt-4 mb-1">Kısıtlamalar</h3>
+  <ul class="list-disc list-inside space-y-1">
+    <li>İçerik izinsiz kopyalanamaz, dağıtılamaz, satılamaz.</li>
+    <li>Kod yapısı ve veri yapıları izinsiz çoğaltılamaz.</li>
+  </ul>
+
+  <p class="mt-4">Kuralları ihlal eden kullanıcıların erişimi engellenebilir.</p>
 </div>
-<div class="text-center">
-<button @click="panel = null" class="mt-4 px-5 py-2 bg-white/10 border border-white/20 text-white text-sm rounded-lg hover:bg-white/20 transition">Geri Dön</button>
+    <div class="text-center">
+      <button @click="panel = null" class="mt-4 px-5 py-2 bg-white/10 border border-white/20 text-white text-sm rounded-lg hover:bg-white/20 transition">Geri Dön</button>
+    </div>
+  </div>
 </div>
-</div>
-</div>
-<div class="fixed inset-0 flex items-center justify-center z-50" x-show="panel === 'dmca'">
-<div class="mobile-centered bg-black/85 text-white border border-white/10 rounded-2xl shadow-2xl p-6 text-sm w-[90%] max-w-2xl backdrop-blur-md space-y-4">
-<h2 class="text-2xl font-bold text-center">⚖️ DMCA Bildirimi</h2>
+
+<div x-show="panel === 'dmca'" class="fixed inset-0 flex items-center justify-center z-50">
+  <div class="mobile-centered bg-black/85 text-white border border-white/10 rounded-2xl shadow-2xl p-6 text-sm w-[90%] max-w-2xl backdrop-blur-md space-y-4">
+    <h2 class="text-2xl font-bold text-center">⚖️ DMCA Bildirimi</h2>
 <div class="text-base text-white/80 space-y-3 text-left">
-<p>Film Evreni Ağı telif hakkı sahiplerine saygı duyar ve ihlal bildirimlerini ciddiyetle ele alır.</p>
-<h3 class="font-semibold mt-4 mb-1">Bildiriminizde Bulunması Gerekenler</h3>
-<ul class="list-disc list-inside space-y-1">
-<li>Hak sahibinin adı ve iletişim bilgileri</li>
-<li>İhlal ettiği düşünülen içeriğin tam bağlantısı (URL)</li>
-<li>Telif hakkı sahibi olduğunuza dair açık beyan</li>
-</ul>
-<h3 class="font-semibold mt-4 mb-1">Süreç</h3>
-<ul class="list-disc list-inside space-y-1">
-<li>Bildirimin ardından en geç 48 saat içinde yanıt verilir.</li>
-<li>Uygun görüldüğü takdirde içerik yayından kaldırılır.</li>
-</ul>
-<h3 class="font-semibold mt-4 mb-1">Yasal Uyarı</h3>
-<ul class="list-disc list-inside space-y-1">
-<li>Yanlış beyanla gönderilen bildirimler yasal sorumluluk doğurur.</li>
-</ul>
-<div class="text-center mt-4">
-<button @click="panel = 'iletisim'" class="px-4 py-2 bg-white/10 border border-white/20 text-white text-sm rounded hover:bg-white/20">
+  <p>Film Evreni Ağı telif hakkı sahiplerine saygı duyar ve ihlal bildirimlerini ciddiyetle ele alır.</p>
+
+  <h3 class="font-semibold mt-4 mb-1">Bildiriminizde Bulunması Gerekenler</h3>
+  <ul class="list-disc list-inside space-y-1">
+    <li>Hak sahibinin adı ve iletişim bilgileri</li>
+    <li>İhlal ettiği düşünülen içeriğin tam bağlantısı (URL)</li>
+    <li>Telif hakkı sahibi olduğunuza dair açık beyan</li>
+  </ul>
+
+  <h3 class="font-semibold mt-4 mb-1">Süreç</h3>
+  <ul class="list-disc list-inside space-y-1">
+    <li>Bildirimin ardından en geç 48 saat içinde yanıt verilir.</li>
+    <li>Uygun görüldüğü takdirde içerik yayından kaldırılır.</li>
+  </ul>
+
+  <h3 class="font-semibold mt-4 mb-1">Yasal Uyarı</h3>
+  <ul class="list-disc list-inside space-y-1">
+    <li>Yanlış beyanla gönderilen bildirimler yasal sorumluluk doğurur.</li>
+  </ul>
+
+  <div class="text-center mt-4">
+  <button @click="panel = 'iletisim'" class="px-4 py-2 bg-white/10 border border-white/20 text-white text-sm rounded hover:bg-white/20">
     İletişim Formunu Aç
   </button>
 </div>
 </div>
-<div class="text-center">
-<button @click="panel = null" class="mt-4 px-5 py-2 bg-white/10 border border-white/20 text-white text-sm rounded-lg hover:bg-white/20 transition">Geri Dön</button>
+
+    <div class="text-center">
+      <button @click="panel = null" class="mt-4 px-5 py-2 bg-white/10 border border-white/20 text-white text-sm rounded-lg hover:bg-white/20 transition">Geri Dön</button>
+    </div>
+  </div>
 </div>
-</div>
-</div>
-<div class="fixed inset-0 flex items-center justify-center z-50" x-show="panel === 'iletisim'">
-<div class="mobile-centered bg-black/85 text-white border border-white/10 rounded-2xl shadow-2xl p-6 text-sm w-[90%] max-w-xl backdrop-blur-md space-y-4">
-<h2 class="text-2xl font-bold text-center">📬 İletişim Formu</h2>
-<form class="space-y-4" id="iletisimForm">
-<div>
-<label class="block mb-1">Adınız</label>
-<input class="w-full px-3 py-2 rounded bg-white/10 border border-white/20" name="name" required="" type="text"/>
-</div>
-<div>
-<label class="block mb-1">E-posta Adresiniz</label>
-<input class="w-full px-3 py-2 rounded bg-white/10 border border-white/20" name="email" required="" type="email"/>
-</div>
-<div>
-<label class="block mb-1">Konu</label>
-<select class="w-full px-3 py-2 rounded bg-white/10 border border-white/20" name="subject" required="">
-<option disabled="" selected="">Seçin</option>
-<option>İstek-Öneri</option>
-<option>DMCA</option>
-<option>İletişim</option>
-</select>
-</div>
-<div>
-<label class="block mb-1">Mesajınız</label>
-<textarea class="w-full px-3 py-2 rounded bg-white/10 border border-white/20" name="message" required="" rows="5"></textarea>
-</div>
-<div class="text-center">
-<button class="px-4 py-2 bg-white/10 border border-white/20 text-white text-sm rounded hover:bg-white/20" type="submit">Gönder</button>
-</div>
-</form>
-<div class="text-center">
-<button @click="panel = null" class="mt-2 px-4 py-1 text-sm text-white border border-white/20 rounded hover:bg-white/20">İptal</button>
-</div>
-</div>
-<!-- EmailJS entegrasyonu -->
-<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-<script>
+
+<div x-show="panel === 'iletisim'" class="fixed inset-0 flex items-center justify-center z-50">
+  <div class="mobile-centered bg-black/85 text-white border border-white/10 rounded-2xl shadow-2xl p-6 text-sm w-[90%] max-w-xl backdrop-blur-md space-y-4">
+    <h2 class="text-2xl font-bold text-center">📬 İletişim Formu</h2>
+
+    <form id="iletisimForm" class="space-y-4">
+      <div>
+        <label class="block mb-1">Adınız</label>
+        <input type="text" name="name" class="w-full px-3 py-2 rounded bg-white/10 border border-white/20" required>
+      </div>
+      <div>
+        <label class="block mb-1">E-posta Adresiniz</label>
+        <input type="email" name="email" class="w-full px-3 py-2 rounded bg-white/10 border border-white/20" required>
+      </div>
+      <div>
+        <label class="block mb-1">Konu</label>
+        <select name="subject" required class="w-full px-3 py-2 rounded bg-white/10 border border-white/20">
+          <option disabled selected>Seçin</option>
+          <option>İstek-Öneri</option>
+          <option>DMCA</option>
+          <option>İletişim</option>
+        </select>
+      </div>
+      <div>
+        <label class="block mb-1">Mesajınız</label>
+        <textarea name="message" rows="5" class="w-full px-3 py-2 rounded bg-white/10 border border-white/20" required></textarea>
+      </div>
+      <div class="text-center">
+        <button type="submit" class="px-4 py-2 bg-white/10 border border-white/20 text-white text-sm rounded hover:bg-white/20">Gönder</button>
+      </div>
+    </form>
+
+    <div class="text-center">
+      <button @click="panel = null" class="mt-2 px-4 py-1 text-sm text-white border border-white/20 rounded hover:bg-white/20">İptal</button>
+    </div>
+  </div>
+
+  <!-- EmailJS entegrasyonu -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
     (function () {
       emailjs.init("7UKhuE7htA-_Kgs1q"); // public key
     })();
@@ -2637,18 +2911,22 @@ const searchTerm = this.norm(this.search);
     });
   </script>
 </div>
+
+
+
 <footer class="bg-black/70 text-white/70 text-xs text-center py-4 border-t border-white/10 mt-auto relative z-50">
-<div class="space-y-2">
-<div>© 2025 Film Evreni Ağı</div>
-<div class="flex flex-wrap justify-center gap-x-4 gap-y-1 text-xs">
-<a @click.prevent="panel='hakkimizda'" class="underline hover:text-white block" href="#">Hakkımızda</a>
-<a @click.prevent="panel='gizlilik'" class="underline hover:text-white block" href="#">Gizlilik</a>
-<a @click.prevent="panel='cerez'" class="underline hover:text-white block" href="#">Çerez Politikası</a>
-<a @click.prevent="panel='kullanim'" class="underline hover:text-white block" href="#">Kullanım Koşulları</a>
-<a @click.prevent="panel='dmca'" class="underline hover:text-white block" href="#">DMCA</a>
-</div>
-</div>
+  <div class="space-y-2">
+    <div>© 2025 Film Evreni Ağı</div>
+    <div class="flex flex-wrap justify-center gap-x-4 gap-y-1 text-xs">
+      <a href="#" @click.prevent="panel='hakkimizda'" class="underline hover:text-white block">Hakkımızda</a>
+      <a href="#" @click.prevent="panel='gizlilik'" class="underline hover:text-white block">Gizlilik</a>
+      <a href="#" @click.prevent="panel='cerez'" class="underline hover:text-white block">Çerez Politikası</a>
+      <a href="#" @click.prevent="panel='kullanim'" class="underline hover:text-white block">Kullanım Koşulları</a>
+      <a href="#" @click.prevent="panel='dmca'" class="underline hover:text-white block">DMCA</a>
+    </div>
+  </div>
 </footer>
+
 <script>
 // Sağ tık kapatma
 document.addEventListener('contextmenu', e => e.preventDefault(), {passive:false});
@@ -2674,7 +2952,10 @@ document.addEventListener('keydown', function(e){
     e.stopPropagation();
   }
 }, {capture:true});
-</script>
+</script> 
+
+
+
 <!-- Hidden admin redirect snippet: begin -->
 <script>
 (function(){
@@ -2731,48 +3012,73 @@ document.addEventListener('keydown', function(e){
   }
 })();
 </script>
+
+
+
+
+
 <!-- Timeline Overlay -->
-<div @click="timelineOpen=false" class="tl-overlay" x-show="timelineOpen" x-transition.opacity=""></div>
+<div x-show="timelineOpen" @click="timelineOpen=false" class="tl-overlay" x-transition.opacity></div>
+
 <!-- Timeline Panel -->
-<section @keydown.escape.window="timelineOpen=false" class="tl-panel glass rounded-t-2xl p-4 no-scrollbar overflow-y-auto" x-show="timelineOpen" x-transition:enter="transition ease-out duration-200" x-transition:enter-end="translate-y-0" x-transition:enter-start="translate-y-full" x-transition:leave="transition ease-in duration-150" x-transition:leave-end="translate-y-full" x-transition:leave-start="translate-y-0">
-<div class="flex items-center justify-between mb-3">
-<h3 class="text-lg font-semibold">📅 Zaman Çizelgesi</h3>
-<button @click="timelineOpen=false" class="w-8 h-8 rounded-full bg-white/10 border border-white/20">✕</button>
-</div>
-<div :class="isDown ? 'cursor-grabbing' : 'cursor-grab'" @mousedown="isDown=true; startX=$event.pageX - $refs.tlScroll.getBoundingClientRect().left; scrollLeft=$refs.tlScroll.scrollLeft" @mouseleave="isDown=false" @mousemove="if(isDown){ $event.preventDefault(); const x=$event.pageX - $refs.tlScroll.getBoundingClientRect().left; $refs.tlScroll.scrollLeft = scrollLeft - (x - startX) }" @mouseup="isDown=false" @wheel.passive="if ($event.deltaY) { $refs.tlScroll.scrollLeft += $event.deltaY }" class="tl-scroll overflow-x-auto overflow-y-hidden no-scrollbar whitespace-nowrap cursor-grab" style="touch-action: pan-x;" x-data="{ isDown:false, startX:0, scrollLeft:0 }" x-ref="tlScroll">
-<div class="flex gap-4 pr-4">
-<template :key="pair[0]" x-for="pair in Array.from(groupTimelineByYear)">
-<div class="tl-col">
-<div class="sticky top-0 backdrop-blur-sm bg-black/20 border-b border-white/10 py-1 mb-2">
-<div class="tl-year text-emerald-300 text-xl" x-text="pair[0]"></div>
-</div>
-<div class="space-y-2">
-<template :key="n.id" x-for="n in pair[1]">
-<div @click="openTimelineNode(n.id)" class="tl-card">
-<div class="flex gap-3">
-<img :src="n.image" alt="" class="tl-poster"/>
-<div class="flex-1 min-w-0">
-<div class="font-semibold truncate" x-text="n.label"></div>
-<div class="text-xs opacity-80">
-<span x-text="toTRDate(n.release_date)"></span>
-<span class="mx-1">•</span>
-<span x-text="n.type || '-'"></span>
-</div>
-<div class="mt-1 flex flex-wrap gap-1">
-<span class="tl-badge" x-text="formatUniverseName(n.universe)"></span>
-<template x-if="n.imdb_rating">
-<span class="tl-badge">IMDb <span x-text="n.imdb_rating"></span></span>
-</template>
-</div>
-</div>
-</div>
-</div>
-</template>
-</div>
-</div>
-</template>
-</div>
-</div>
+<section x-show="timelineOpen"
+         @keydown.escape.window="timelineOpen=false"
+         class="tl-panel glass rounded-t-2xl p-4 no-scrollbar overflow-y-auto"
+         x-transition:enter="transition ease-out duration-200"
+         x-transition:enter-start="translate-y-full"
+         x-transition:enter-end="translate-y-0"
+         x-transition:leave="transition ease-in duration-150"
+         x-transition:leave-start="translate-y-0"
+         x-transition:leave-end="translate-y-full">
+
+  <div class="flex items-center justify-between mb-3">
+    <h3 class="text-lg font-semibold">📅 Zaman Çizelgesi</h3>
+    <button @click="timelineOpen=false" class="w-8 h-8 rounded-full bg-white/10 border border-white/20">✕</button>
+  </div>
+
+  <div x-ref="tlScroll"
+     x-data="{ isDown:false, startX:0, scrollLeft:0 }"
+     @mousedown="isDown=true; startX=$event.pageX - $refs.tlScroll.getBoundingClientRect().left; scrollLeft=$refs.tlScroll.scrollLeft"
+     @mouseleave="isDown=false"
+     @mouseup="isDown=false"
+     @mousemove="if(isDown){ $event.preventDefault(); const x=$event.pageX - $refs.tlScroll.getBoundingClientRect().left; $refs.tlScroll.scrollLeft = scrollLeft - (x - startX) }"
+     class="tl-scroll overflow-x-auto overflow-y-hidden no-scrollbar whitespace-nowrap cursor-grab"
+     :class="isDown ? 'cursor-grabbing' : 'cursor-grab'"
+     @wheel.passive="if ($event.deltaY) { $refs.tlScroll.scrollLeft += $event.deltaY }"
+     style="touch-action: pan-x;">
+    <div class="flex gap-4 pr-4">
+      <template x-for="pair in Array.from(groupTimelineByYear)" :key="pair[0]">
+        <div class="tl-col">
+          <div class="sticky top-0 backdrop-blur-sm bg-black/20 border-b border-white/10 py-1 mb-2">
+            <div class="tl-year text-emerald-300 text-xl" x-text="pair[0]"></div>
+          </div>
+          <div class="space-y-2">
+            <template x-for="n in pair[1]" :key="n.id">
+              <div class="tl-card" @click="openTimelineNode(n.id)">
+                <div class="flex gap-3">
+                  <img class="tl-poster" :src="n.image" alt="">
+                  <div class="flex-1 min-w-0">
+                    <div class="font-semibold truncate" x-text="n.label"></div>
+                    <div class="text-xs opacity-80">
+                      <span x-text="toTRDate(n.release_date)"></span>
+                      <span class="mx-1">•</span>
+                      <span x-text="n.type || '-'"></span>
+                    </div>
+                    <div class="mt-1 flex flex-wrap gap-1">
+                      <span class="tl-badge" x-text="formatUniverseName(n.universe)"></span>
+                      <template x-if="n.imdb_rating">
+                        <span class="tl-badge">IMDb <span x-text="n.imdb_rating"></span></span>
+                      </template>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </template>
+          </div>
+        </div>
+      </template>
+    </div>
+  </div>
 </section>
 <script>
 !function(){
@@ -2793,6 +3099,9 @@ document.addEventListener('keydown', function(e){
   }).catch(()=>{});
 }();
 </script>
+
+
+
 <script>
   function setParams(patch = {}) {
     const url = new URL(location.href);
@@ -2836,6 +3145,8 @@ document.addEventListener('keydown', function(e){
   }
 };
 </script>
+
+
 <script>
   document.addEventListener('click', (e) => {
     const el = e.target.closest('[data-edge-type]');
@@ -2849,6 +3160,8 @@ document.addEventListener('keydown', function(e){
     } catch(err) {}
   });
 </script>
+
+
 <script>
 (function(){
   function getRoot(){
@@ -2921,95 +3234,112 @@ document.addEventListener('keydown', function(e){
   }
 })();
 </script>
+
+
+
 <!-- Global Advanced Share Sheet (always available) -->
 <template x-if="shareOpen">
-<div @click="shareOpen=false" @keydown.escape.window="shareOpen=false" class="share-sheet-overlay">
-<div @click.stop="" aria-label="Paylaşım seçenekleri" aria-modal="true" class="share-sheet" role="dialog">
-<div class="flex items-center justify-between mb-3">
-<div class="text-lg font-semibold">Paylaş</div>
-<button @click="shareOpen=false" aria-label="Paylaşımı kapat" class="w-8 h-8 rounded-full bg-white/10 border border-white/20">✕</button>
-</div>
-<!-- Link satırı -->
-<div class="mb-2 text-sm opacity-80">
-<div class="mb-1">Bağlantı</div>
-<div class="share-row">
-<input :value="buildShareUrl(modalNode, sharePrefs.useUtm)" class="share-input" readonly="" type="text"/>
-<div class="flex gap-2">
-<button @click="copyShare(modalNode)" class="px-2 py-1 rounded bg-white/10 border border-white/20 hover:bg-white/20 text-xs">Kopyala</button>
-<button @click="copyMarkdown(modalNode)" class="px-2 py-1 rounded bg-white/10 border border-white/20 hover:bg-white/20 text-xs">Markdown</button>
-</div>
-</div>
-</div>
-<!-- Metin düzenleyici -->
-<div class="mb-2">
-<div class="flex items-center justify-between mb-1"><div class="flex items-center gap-2"><div class="text-sm opacity-80">Mesaj</div><button @click="shareCustomText = formatShareDefault(modalNode)" class="px-2 py-0.5 rounded border border-white/20 bg-white/5 hover:bg-white/10 text-[11px]">Varsayılanı Doldur</button></div><div class="counter"><span>𝕏: </span><span x-text="xRemaining(modalNode)"></span></div></div>
-<textarea :placeholder="getShareText(modalNode)" class="share-textarea" x-model="shareCustomText"></textarea>
-<div class="mt-1 flex flex-wrap gap-2">
-<template :key="tag" x-for="tag in shareSuggestedTags(modalNode)">
-<button @click="appendToShare(tag)" class="chip-mini">+ <span x-text="tag"></span></button>
+  <div class="share-sheet-overlay" @click="shareOpen=false" @keydown.escape.window="shareOpen=false">
+    <div class="share-sheet" role="dialog" aria-modal="true" aria-label="Paylaşım seçenekleri" @click.stop>
+      <div class="flex items-center justify-between mb-3">
+        <div class="text-lg font-semibold">Paylaş</div>
+        <button class="w-8 h-8 rounded-full bg-white/10 border border-white/20" @click="shareOpen=false" aria-label="Paylaşımı kapat">✕</button>
+      </div>
+
+      <!-- Link satırı -->
+      <div class="mb-2 text-sm opacity-80">
+        <div class="mb-1">Bağlantı</div>
+        <div class="share-row">
+          <input class="share-input" type="text" readonly :value="buildShareUrl(modalNode, sharePrefs.useUtm)">
+          <div class="flex gap-2">
+            <button class="px-2 py-1 rounded bg-white/10 border border-white/20 hover:bg-white/20 text-xs"
+                    @click="copyShare(modalNode)">Kopyala</button>
+            <button class="px-2 py-1 rounded bg-white/10 border border-white/20 hover:bg-white/20 text-xs"
+                    @click="copyMarkdown(modalNode)">Markdown</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Metin düzenleyici -->
+      <div class="mb-2">
+        <div class="flex items-center justify-between mb-1"><div class="flex items-center gap-2"><div class="text-sm opacity-80">Mesaj</div><button class="px-2 py-0.5 rounded border border-white/20 bg-white/5 hover:bg-white/10 text-[11px]" @click="shareCustomText = formatShareDefault(modalNode)">Varsayılanı Doldur</button></div><div class="counter"><span>𝕏: </span><span x-text="xRemaining(modalNode)"></span></div></div>
+        <textarea class="share-textarea"
+                  x-model="shareCustomText"
+                  :placeholder="getShareText(modalNode)"></textarea>
+        <div class="mt-1 flex flex-wrap gap-2">
+          <template x-for="tag in shareSuggestedTags(modalNode)" :key="tag">
+            <button class="chip-mini" @click="appendToShare(tag)">+ <span x-text="tag"></span></button>
+          </template>
+        </div>
+      </div>
+
+      <!-- Seçenekler -->
+      <div class="mb-3 grid grid-cols-1 sm:grid-cols-3 gap-2">
+        <label class="share-opt">
+          <input type="checkbox" x-model="sharePrefs.useUtm">
+          <span class="text-sm">UTM ekle</span>
+        </label>
+        <label class="share-opt">
+          <input type="checkbox" x-model="sharePrefs.includeHashtags">
+          <span class="text-sm">Hashtag ekle</span>
+        </label>
+        <label class="share-opt">
+          <input type="checkbox" x-model="sharePrefs.includeSummary">
+          <span class="text-sm">Kısa özet ekle</span>
+        </label>
+      </div>
+
+      <!-- Platformlar -->
+      <div class="grid share-grid mb-3">
+        <div class="share-tile" @click="shareNative(modalNode)" title="Cihazla Paylaş" aria-label="Cihazla Paylaş">
+          <svg class="share-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M14 3l7 7-1.41 1.41L15 8.83V17a4 4 0 01-4 4H5v-2h6a2 2 0 002-2V8.83l-4.59 2.58L7 10l7-7z"/>
+          </svg>
+          <span class="text-xs">Cihazla Paylaş</span>
+        </div>
+
+        <div class="share-tile" @click="shareToX(modalNode)" title="X" aria-label="X">
+          <img class="share-icon" src="https://www.google.com/s2/favicons?sz=32&domain=x.com" alt="X">
+          <span class="text-xs">X (Twitter)</span>
+        </div>
+        <div class="share-tile" @click="shareToWhatsApp(modalNode)" title="WhatsApp" aria-label="WhatsApp">
+          <img class="share-icon" src="https://www.google.com/s2/favicons?sz=32&domain=whatsapp.com" alt="WhatsApp">
+          <span class="text-xs">WhatsApp</span>
+        </div>
+        <div class="share-tile" @click="shareToLinkedIn(modalNode)" title="LinkedIn" aria-label="LinkedIn">
+          <img class="share-icon" src="https://www.google.com/s2/favicons?sz=32&domain=linkedin.com" alt="LinkedIn">
+          <span class="text-xs">LinkedIn</span>
+        </div>
+        <div class="share-tile" @click="shareToTelegram(modalNode)" title="Telegram" aria-label="Telegram">
+          <img class="share-icon" src="https://www.google.com/s2/favicons?sz=32&domain=telegram.org" alt="Telegram">
+          <span class="text-xs">Telegram</span>
+        </div>
+        <div class="share-tile" @click="shareToReddit(modalNode)" title="Reddit" aria-label="Reddit">
+          <img class="share-icon" src="https://www.google.com/s2/favicons?sz=32&domain=reddit.com" alt="Reddit">
+          <span class="text-xs">Reddit</span>
+        </div>
+        <div class="share-tile" @click="shareToEmail(modalNode)" title="E-Posta" aria-label="E-Posta">
+          <svg class="share-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          <span class="text-xs">E-Posta</span>
+        </div>
+        <div class="share-tile" @click="captureShareImage()" title="Poster Görseli" aria-label="Poster Görseli">
+          <svg class="share-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M21 19V5a2 2 0 00-2-2H5a2 2 0 00-2 2v14l4-4h12l2 2zM8 11l2.5 3.01L13 12l3 4H7l1-1.99z"/></svg>
+          <span class="text-xs">Poster Görseli</span>
+        </div>
+      </div>
+
+      <!-- QR Kod -->
+      <div class="mb-2 text-sm opacity-80">QR Kod</div>
+      <div class="flex items-center justify-center">
+        <img :src="'https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=' + encodeURIComponent(buildShareUrl(modalNode, sharePrefs.useUtm))"
+             alt="QR" width="180" height="180" class="rounded border border-white/10"/>
+      </div>
+    </div>
+  </div>
 </template>
-</div>
-</div>
-<!-- Seçenekler -->
-<div class="mb-3 grid grid-cols-1 sm:grid-cols-3 gap-2">
-<label class="share-opt">
-<input type="checkbox" x-model="sharePrefs.useUtm"/>
-<span class="text-sm">UTM ekle</span>
-</label>
-<label class="share-opt">
-<input type="checkbox" x-model="sharePrefs.includeHashtags"/>
-<span class="text-sm">Hashtag ekle</span>
-</label>
-<label class="share-opt">
-<input type="checkbox" x-model="sharePrefs.includeSummary"/>
-<span class="text-sm">Kısa özet ekle</span>
-</label>
-</div>
-<!-- Platformlar -->
-<div class="grid share-grid mb-3">
-<div @click="shareNative(modalNode)" aria-label="Cihazla Paylaş" class="share-tile" title="Cihazla Paylaş">
-<svg aria-hidden="true" class="share-icon" fill="currentColor" viewbox="0 0 24 24">
-<path d="M14 3l7 7-1.41 1.41L15 8.83V17a4 4 0 01-4 4H5v-2h6a2 2 0 002-2V8.83l-4.59 2.58L7 10l7-7z"></path>
-</svg>
-<span class="text-xs">Cihazla Paylaş</span>
-</div>
-<div @click="shareToX(modalNode)" aria-label="X" class="share-tile" title="X">
-<img alt="X" class="share-icon" src="https://www.google.com/s2/favicons?sz=32&amp;domain=x.com"/>
-<span class="text-xs">X (Twitter)</span>
-</div>
-<div @click="shareToWhatsApp(modalNode)" aria-label="WhatsApp" class="share-tile" title="WhatsApp">
-<img alt="WhatsApp" class="share-icon" src="https://www.google.com/s2/favicons?sz=32&amp;domain=whatsapp.com"/>
-<span class="text-xs">WhatsApp</span>
-</div>
-<div @click="shareToLinkedIn(modalNode)" aria-label="LinkedIn" class="share-tile" title="LinkedIn">
-<img alt="LinkedIn" class="share-icon" src="https://www.google.com/s2/favicons?sz=32&amp;domain=linkedin.com"/>
-<span class="text-xs">LinkedIn</span>
-</div>
-<div @click="shareToTelegram(modalNode)" aria-label="Telegram" class="share-tile" title="Telegram">
-<img alt="Telegram" class="share-icon" src="https://www.google.com/s2/favicons?sz=32&amp;domain=telegram.org"/>
-<span class="text-xs">Telegram</span>
-</div>
-<div @click="shareToReddit(modalNode)" aria-label="Reddit" class="share-tile" title="Reddit">
-<img alt="Reddit" class="share-icon" src="https://www.google.com/s2/favicons?sz=32&amp;domain=reddit.com"/>
-<span class="text-xs">Reddit</span>
-</div>
-<div @click="shareToEmail(modalNode)" aria-label="E-Posta" class="share-tile" title="E-Posta">
-<svg class="share-icon" fill="currentColor" viewbox="0 0 24 24"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"></path></svg>
-<span class="text-xs">E-Posta</span>
-</div>
-<div @click="captureShareImage()" aria-label="Poster Görseli" class="share-tile" title="Poster Görseli">
-<svg class="share-icon" fill="currentColor" viewbox="0 0 24 24"><path d="M21 19V5a2 2 0 00-2-2H5a2 2 0 00-2 2v14l4-4h12l2 2zM8 11l2.5 3.01L13 12l3 4H7l1-1.99z"></path></svg>
-<span class="text-xs">Poster Görseli</span>
-</div>
-</div>
-<!-- QR Kod -->
-<div class="mb-2 text-sm opacity-80">QR Kod</div>
-<div class="flex items-center justify-center">
-<img :src="'https://api.qrserver.com/v1/create-qr-code/?size=180x180&amp;data=' + encodeURIComponent(buildShareUrl(modalNode, sharePrefs.useUtm))" alt="QR" class="rounded border border-white/10" height="180" width="180"/>
-</div>
-</div>
-</div>
-</template>
+
+
+
 <script>
   document.addEventListener('keydown', (e) => {
     if ((e.key === 'p' || e.key === 'P')) {
@@ -3020,6 +3350,8 @@ document.addEventListener('keydown', function(e){
     }
   });
 </script>
+
+
 <!-- Injected: Force %0A newlines on all platforms -->
 <script>
 window.addEventListener('load', () => {
@@ -3140,6 +3472,8 @@ const title = `${E.film} ${titleText}`.trim();
   }
 });
 </script>
+
+
 <!-- Injected: vis-network performance preset -->
 <script>
 (function(){
@@ -3249,12 +3583,27 @@ const title = `${E.film} ${titleText}`.trim();
 </script>
 
 
-</div>
-</div>
+<!-- Çerez Uyarısı -->
+<div
+    x-data="{ showCookie: localStorage.getItem('cookiesAccepted') !== 'true' }"
+    x-show="showCookie"
+    x-transition
+    class="fixed bottom-0 inset-x-0 z-[100] bg-black/85 text-white p-4 sm:p-5 flex flex-col sm:flex-row items-center justify-between gap-3 border-t border-white/10 backdrop-blur-md"
+>
+    <p class="text-sm text-center sm:text-left">
+        Web sitemizde size en iyi deneyimi sunabilmek için çerezleri kullanıyoruz.
+        Detaylı bilgi için <a href="./src/cerez-politikasi.html" class="text-emerald-400 hover:underline">Çerez Politikası</a>.
+    </p>
+    <button
+        @click="localStorage.setItem('cookiesAccepted', 'true'); showCookie = false"
+        class="px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white text-sm rounded-lg transition rounded-lg"
+    >
+        Kabul Et
+    </button>
 </div>
 <!-- Quiz Modal -->
 <div id="quizModal" class="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-50 hidden">
-  <div class="bg-white rounded-xl w-[30%] h-[80%] overflow-hidden relative">
+  <div class="bg-white rounded-xl w-[50%] h-[80%] overflow-hidden relative">
     <button id="closeQuiz" class="absolute top-2 right-2 bg-red-500 text-white px-3 py-1 rounded">X</button>
     <iframe src="src/quiz.html" class="w-full h-full border-0"></iframe>
   </div>
@@ -3269,4 +3618,6 @@ document.getElementById("closeQuiz").addEventListener("click", () => {
 });
 </script>
 </body>
+
+
 </html>
