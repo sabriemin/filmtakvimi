@@ -3617,7 +3617,298 @@ document.getElementById("closeQuiz").addEventListener("click", () => {
     document.getElementById("quizModal").classList.add("hidden");
 });
 </script>
+
+<!-- Sync node cover images with the modal poster -->
+<script>
+document.addEventListener('alpine:init', () => {
+  // Run an Alpine reactive effect that keeps node images in sync with modal poster
+  Alpine.effect(() => {
+    try {
+      const rootEl = document.querySelector('[x-data]');
+      if (!rootEl) return;
+      const root = Alpine.$data(rootEl);
+      if (!root) return;
+
+      const ds = root.nodes;           // vis.DataSet for nodes (used elsewhere in template)
+      const current = root.modalNode;  // currently open node in modal
+
+      // 1) When a modal is open, enforce the same image on the graph node
+      if (ds && current && current.id && current.image && typeof ds.update === 'function') {
+        try { ds.update({ id: current.id, image: current.image }); } catch (e) {}
+      }
+
+      // 2) On first runs, normalize all nodes so that their image matches their poster field (if any)
+      if (Array.isArray(root.allNodes) && ds && typeof ds.update === 'function') {
+        const batch = [];
+        for (const n of root.allNodes) {
+          if (!n || !n.id) continue;
+          const poster =
+            n.image || n.poster || n.poster_url || n.kapak || n.cover || n.thumbnail;
+          if (poster && n.image !== poster) {
+            batch.push({ id: n.id, image: poster });
+          }
+        }
+        if (batch.length) {
+          try { ds.update(batch); } catch (e) {}
+        }
+      }
+    } catch (err) { /* noop */ }
+  });
+});
+</script>
+
 </body>
 
 
 </html>
+
+<!-- TMDB Auto-Enrichment -->
+<script>
+(() => {
+  const TMDB_KEY = "2a083ff9dbe83ec7c2b33f3a1bac4b01";
+  const IMG_BASE = "https://image.tmdb.org/t/p/w500";
+
+  const sleep = (ms) => new Promise(r => setTimeout(r, ms));
+  const safeLower = (s) => (s||"").toLowerCase();
+
+  function cleanTitle(raw) {
+    if (!raw) return "";
+    return String(raw).replace(/\(\d{4}\)$/, '').trim();
+  }
+
+  function yearFrom(node) {
+    const rd = node.release_date || "";
+    return rd ? rd.slice(0,4) : "";
+  }
+
+  function isTV(node) {
+    const t = safeLower(node.type || "");
+    return t.includes("dizi") || t.includes("tv") || t.includes("series");
+  }
+
+  async function tmdbSearch(node) {
+    const tv = isTV(node);
+    const ep = tv ? "search/tv" : "search/movie";
+    const title = cleanTitle(node.title || node.label || "");
+    if (!title) return null;
+    const year = yearFrom(node);
+    const params = new URLSearchParams({ api_key: TMDB_KEY, language: "tr-TR", query: title });
+    if (year) params.set(tv ? "first_air_date_year" : "year", year);
+    const url = `https://api.themoviedb.org/3/${ep}?` + params.toString();
+    const res = await fetch(url);
+    if (!res.ok) return null;
+    const data = await res.json();
+    if (!data.results || !data.results.length) return null;
+    return { type: tv ? "tv" : "movie", id: data.results[0].id };
+  }
+
+  async function tmdbDetails(type, id) {
+    const params = new URLSearchParams({ api_key: TMDB_KEY, language: "tr-TR", append_to_response: "external_ids" });
+    const url = `https://api.themoviedb.org/3/${type}/${id}?` + params.toString();
+    const res = await fetch(url);
+    if (!res.ok) return null;
+    return res.json();
+  }
+
+  function mergeSources(oldSources, additions) {
+    const out = { Kaynaklar: [], Görsel: [], Platform: [] };
+    const norm = (arr) => Array.isArray(arr) ? arr : arr ? [arr] : [];
+    for (const [k,v] of Object.entries(oldSources || {})) {
+      const cat = /görsel/i.test(k) ? "Görsel" : /platform/i.test(k) ? "Platform" : "Kaynaklar";
+      norm(v).forEach(item => {
+        if (item && item.url && !out[cat].some(o => o.url === item.url)) out[cat].push(item);
+      });
+    }
+    for (const [k,v] of Object.entries(additions || {})) {
+      const cat = /görsel/i.test(k) ? "Görsel" : /platform/i.test(k) ? "Platform" : "Kaynaklar";
+      norm(v).forEach(item => {
+        if (item && item.url && !out[cat].some(o => o.url === item.url)) out[cat].push(item);
+      });
+    }
+    return out;
+  }
+
+  async function enrichNode(node) {
+    if (!node || node.__tmdb_done) return;
+    node.__tmdb_done = true;
+    const hit = await tmdbSearch(node);
+    if (!hit) return;
+    const det = await tmdbDetails(hit.type, hit.id);
+    if (!det) return;
+    if (det.poster_path) node.image = IMG_BASE + det.poster_path;
+    if (node.imdb_rating == null && det.vote_average != null) {
+      node.imdb_rating = Math.round(det.vote_average * 10) / 10;
+    }
+    const imdbUrl = det.external_ids?.imdb_id ? { name: "IMDb", url: `https://www.imdb.com/title/${det.external_ids.imdb_id}/` } : null;
+    const tmdbUrl = { name: "TMDB", url: `https://www.themoviedb.org/${hit.type}/${hit.id}` };
+    const home = det.homepage ? { name: "Resmi Site", url: det.homepage } : null;
+    node.sources = mergeSources(node.sources, { Kaynaklar: [imdbUrl, tmdbUrl, home].filter(Boolean), Görsel: det.poster_path ? [{ name: "TMDB Poster", url: IMG_BASE + det.poster_path }] : [] });
+  }
+
+  function getRoot() {
+    try {
+      return Alpine && Alpine.raw(Alpine.$data(document.querySelector("[x-data]")));
+    } catch(e) { return null; }
+  }
+
+  const interval = setInterval(() => {
+    const root = getRoot();
+    if (!root) return;
+    clearInterval(interval);
+    if (typeof root.$watch === "function") {
+      root.$watch("modalNode", (n) => { if (n) enrichNode(n); });
+    }
+    if (Array.isArray(root.filteredNodes)) {
+      root.filteredNodes.slice(0,10).forEach(n => enrichNode(n));
+    }
+  }, 500);
+})();
+</script>
+
+
+<!-- Sync node cover images with the modal poster -->
+<script>
+document.addEventListener('alpine:init', () => {
+  // Run an Alpine reactive effect that keeps node images in sync with modal poster
+  Alpine.effect(() => {
+    try {
+      const rootEl = document.querySelector('[x-data]');
+      if (!rootEl) return;
+      const root = Alpine.$data(rootEl);
+      if (!root) return;
+
+      const ds = root.nodes;           // vis.DataSet for nodes (used elsewhere in template)
+      const current = root.modalNode;  // currently open node in modal
+
+      // 1) When a modal is open, enforce the same image on the graph node
+      if (ds && current && current.id && current.image && typeof ds.update === 'function') {
+        try { ds.update({ id: current.id, image: current.image }); } catch (e) {}
+      }
+
+      // 2) On first runs, normalize all nodes so that their image matches their poster field (if any)
+      if (Array.isArray(root.allNodes) && ds && typeof ds.update === 'function') {
+        const batch = [];
+        for (const n of root.allNodes) {
+          if (!n || !n.id) continue;
+          const poster =
+            n.image || n.poster || n.poster_url || n.kapak || n.cover || n.thumbnail;
+          if (poster && n.image !== poster) {
+            batch.push({ id: n.id, image: poster });
+          }
+        }
+        if (batch.length) {
+          try { ds.update(batch); } catch (e) {}
+        }
+      }
+    } catch (err) { /* noop */ }
+  });
+});
+</script>
+
+</body>
+
+
+
+
+<!-- Sync TMDB poster back to graph nodes (v5: label-wide update, single redraw) -->
+<script>
+(function(){
+  function getRoot(){
+    try {
+      const el = document.querySelector('[x-data]');
+      if (!el || !window.Alpine || !Alpine.$data) return null;
+      const data = Alpine.$data(el);
+      return Alpine.raw ? Alpine.raw(data) : data;
+    } catch(e){ return null; }
+  }
+  function getNodesDS(){
+    try {
+      if (window.nodes && typeof window.nodes.update === 'function') return window.nodes;
+      const root = getRoot();
+      if (root && root.nodes && typeof root.nodes.update === 'function') return root.nodes;
+      if (window.network && window.network.body && window.network.body.data && window.network.body.data.nodes) {
+        const ds = window.network.body.data.nodes;
+        if (typeof ds.update === 'function') return ds;
+      }
+    } catch(e){}
+    return null;
+  }
+  function fresh(u){ return u + (u.includes('?') ? '&' : '?') + 'cb=' + Date.now(); }
+
+  // Strong sync that updates by id and by label, and redraws once
+  window.forcePosterSync = function(modalNodeLike, tmdbUrl){
+    const ds = getNodesDS();
+    if (!ds || !tmdbUrl) { console.warn('[poster-sync] DataSet or URL missing'); return; }
+    const root = getRoot();
+    const label = (modalNodeLike && (modalNodeLike.label || modalNodeLike.name)) || (root && root.modalNode && root.modalNode.label) || null;
+    const idRaw = (modalNodeLike && modalNodeLike.id) || (root && root.modalNode && root.modalNode.id);
+
+    const candidates = [];
+    if (idRaw !== undefined) {
+      candidates.push(idRaw);
+      try { const n = Number(idRaw); if (!Number.isNaN(n)) candidates.push(n); } catch(e){}
+      const s = String(idRaw); if (s !== idRaw) candidates.push(s);
+    }
+
+    // Collect targets
+    const targets = new Map();
+    candidates.forEach(c => {
+      try {
+        const n = ds.get(c);
+        if (n) targets.set(n.id, n);
+      } catch(e){}
+    });
+
+    // Fallback by label (exact)
+    if (targets.size === 0 && label) {
+      try {
+        const same = ds.get({ filter: n => n && n.label === label });
+        same.forEach(n => targets.set(n.id, n));
+      } catch(e){}
+    }
+
+    const url = fresh(tmdbUrl);
+    let updated = 0;
+    targets.forEach((n, id) => {
+      ds.update({
+        id,
+        image: url,
+        shape: 'circularImage',
+        brokenImage: 'assets/images/poster-fallback.jpg',
+        shadow: false,
+        chosen: false
+      });
+      // persist to allNodes if exists
+      if (root && Array.isArray(root.allNodes)) {
+        const idx = root.allNodes.findIndex(x => x && (x.id === id || String(x.id) === String(id)));
+        if (idx > -1) root.allNodes[idx].image = url;
+      }
+      updated++;
+    });
+
+    if (updated === 0) {
+      console.warn('[poster-sync] No node updated. Label:', label, 'Ids tried:', candidates);
+    } else {
+      if (window.network && typeof window.network.redraw === 'function') window.network.redraw();
+      console.log('[poster-sync] Updated nodes:', Array.from(targets.keys()));
+    }
+  };
+
+  // Hook TMDB success if available (idempotent)
+  // If your TMDB fetch success path sets modalNode.image, we can also try observing it:
+  (function startObserver(){
+    const container = document.getElementById('modal_container');
+    if (!container || !window.MutationObserver) return;
+    const obs = new MutationObserver(function(){
+      const root = getRoot();
+      if (!root || !root.modalNode) return;
+      const url = root.modalNode.image || '';
+      if (/image\.tmdb\.org\/t\/p\//.test(String(url))){
+        window.forcePosterSync(root.modalNode, url);
+      }
+    });
+    obs.observe(container, { subtree:true, attributes:true, attributeFilter:['src'] });
+  })();
+
+})();
+</script>
