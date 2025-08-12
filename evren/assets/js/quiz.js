@@ -57,8 +57,6 @@ function getStageQuestions(stageNum) {
 
 function showQuestion() {
     const q = currentQuestions[currentIndex];
-    console.log("Doğru cevap index:", q.answerIndex, "Doğru cevap:", q.options[Number(q.answerIndex)]); // Test için
-
     questionText.textContent = q.question;
     stageInfo.textContent = `Aşama ${stage} - Soru ${currentIndex + 1} / ${currentQuestions.length}`;
 
@@ -113,7 +111,7 @@ function selectAnswer(i) {
     clearInterval(timer);
 
     const q = currentQuestions[currentIndex];
-    const correctIndex = Number(q.answerIndex); // JSON'daki doğru cevap alanı
+    const correctIndex = Number(q.answerIndex);
 
     const buttons = optionsContainer.querySelectorAll("button");
 
@@ -122,11 +120,11 @@ function selectAnswer(i) {
         btn.classList.remove("bg-gray-700", "hover:bg-gray-600", "bg-red-600", "bg-green-600");
 
         if (idx === correctIndex) {
-            btn.classList.add("bg-green-600", "text-white"); // Doğru şık
+            btn.classList.add("bg-green-600", "text-white");
         } else if (idx === i && idx !== correctIndex) {
-            btn.classList.add("bg-red-600", "text-white", "shake"); // Yanlış seçilen şık
+            btn.classList.add("bg-red-600", "text-white", "shake");
         } else {
-            btn.classList.add("bg-gray-700"); // Diğerleri nötr gri
+            btn.classList.add("bg-gray-700");
         }
     });
 
@@ -183,29 +181,3 @@ function endGame() {
 function shuffleArray(arr) {
     return arr.sort(() => Math.random() - 0.5);
 }
-// Paylaş butonu
-document.getElementById("shareBtn").addEventListener("click", async () => {
-    const resultCard = document.getElementById("resultCard");
-
-    const canvas = await html2canvas(resultCard, { backgroundColor: null });
-    const dataUrl = canvas.toDataURL("image/png");
-
-    if (navigator.share && navigator.canShare && navigator.canShare({ files: [new File([], "")] })) {
-        try {
-            const blob = await (await fetch(dataUrl)).blob();
-            const file = new File([blob], "quiz-sonuc.png", { type: "image/png" });
-            await navigator.share({
-                files: [file],
-                title: "Quiz Sonucum",
-                text: "İşte quiz sonucum! 🔥"
-            });
-        } catch (err) {
-            console.error("Paylaşım hatası:", err);
-        }
-    } else {
-        const link = document.createElement("a");
-        link.href = dataUrl;
-        link.download = "quiz-sonucum.png";
-        link.click();
-    }
-});
