@@ -1128,7 +1128,7 @@ class="w-32 h-32 rounded-full object-cover drop-shadow-[0_0_20px_rgba(168,85,247
 
 <template x-if="edgeList.length">
 <div class="flex flex-wrap gap-2" x-show="linkedOpen">
-<template :key="e.otherNodeId" x-for="e in edgeList">
+<template :key="(e.id || (e.from + '-' + e.to + '-' + (e.type || '')))" x-for="e in edgeList">
 <div :class="{
 'bg-blue-900/40 border-blue-500/30': e.type === 'Devam',
 'bg-emerald-900/30 border-emerald-500/20': e.type === 'Takım Kurulumu',
@@ -1161,6 +1161,8 @@ class="w-32 h-32 rounded-full object-cover drop-shadow-[0_0_20px_rgba(168,85,247
 'bg-fuchsia-900/30 border-fuchsia-500/20': e.type === 'Crossover',
 'bg-gray-700/30 border-gray-400/20': e.type === 'Tarihsel Bağlantı',
 'bg-purple-800/30 border-purple-300/20': e.type === 'Türsel Bağlantı',
+'bg-lime-900/30 border-lime-500/20': e.type === 'Yeniden Yapım',
+
 
 'bg-white/10 border-white/20': !e.type
 
@@ -2158,7 +2160,8 @@ edgeColors: {
   "Türsel Bağlantı": "#8e44ad",
   "Yeni Tehdit": "#c0392b",
   "Çoklu Evren": "#00bcd4",
-  "Önemli Olay": "#e67e22"
+  "Önemli Olay": "#e67e22",
+  "Yeniden Yapım": "#a3e635" // lime ton
 },
 
 edgeStyles: {
@@ -2192,9 +2195,10 @@ edgeStyles: {
   "Türsel Bağlantı": { width: 2.5, dashes: [4,6] },
   "Yeni Tehdit": { width: 2.5, dashes: [4,4] },
   "Çoklu Evren": { width: 2.8, dashes: [6,3] },
-  "Önemli Olay": { width: 3, dashes: [2,6] }
-},
-
+  "Önemli Olay": { width: 3, dashes: [2,6] },
+  "Yeniden Yapım": { width: 2.6, dashes: [5,5] } // hafif kesikli çizgi
+}
+,
 // ---- yardımcılar (return {...} içine) ----
 normUrl(u) { try { return new URL(u).href; } catch { return u || ''; } },
 hostName(u) { try { return new URL(u).hostname.replace(/^www\./,''); } catch { return u || ''; } },
