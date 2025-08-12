@@ -5,8 +5,7 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>🎬 Film Evreni Ağı</title>
-<script src="app.obf.js"></script>
-
+<script src="assets/js/easter-eggs-ids.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.5/dist/cdn.min.js" defer></script>
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
@@ -219,6 +218,229 @@
   .chip-mini { font-size:11px; padding:2px 8px; border-radius:999px; border:1px solid rgba(255,255,255,.2); background: rgba(255,255,255,.08); cursor:pointer; }
   .chip-mini:hover { background: rgba(255,255,255,.15); }
 </style>
+
+
+<script>
+// TMDB-first image resolver
+window.getNodeImage = function(node) {
+  try {
+    if (!node) return 'assets/images/default.jpg';
+    // explicit tmdb_image field has top priority
+    if (node.tmdb_image && typeof node.tmdb_image === 'string' && node.tmdb_image.trim()) {
+      return node.tmdb_image;
+    }
+    // if generic image points to TMDB, keep as-is
+    if (node.image && typeof node.image === 'string' && node.image.includes('image.tmdb.org')) {
+      return node.image;
+    }
+    // optional poster_path from TMDB payloads (if present)
+    if (node.poster_path && typeof node.poster_path === 'string' && node.poster_path.trim()) {
+      // allow both full and relative paths
+      if (node.poster_path.startsWith('http')) return node.poster_path;
+      // default TMDB base for w342 size (balanced quality/weight)
+      return 'https://image.tmdb.org/t/p/w342' + (node.poster_path.startswith('/') ? node.poster_path : '/' + node.poster_path);
+    }
+    // fallback to local image or a default placeholder
+    return node.image || 'assets/images/default.jpg';
+  } catch (e) {
+    return (node && node.image) || 'assets/images/default.jpg';
+  }
+};
+
+// At runtime, if Alpine app exposes node lists, normalize their image fields
+document.addEventListener('alpine:init', () => {
+  queueMicrotask(() => {
+    try {
+      const rootEl = document.querySelector('[x-data]');
+      if (!rootEl || !window.Alpine) return;
+      const root = Alpine.$data(rootEl);
+      // If nodes already loaded, rewrite image URLs to TMDB-first
+      const rewrite = (n) => ({ ...n, image: window.getNodeImage(n) });
+      if (Array.isArray(root?.allNodes)) {
+        root.allNodes = root.allNodes.map(rewrite);
+      }
+      if (Array.isArray(root?.nodesRaw)) {
+        root.nodesRaw = root.nodesRaw.map(rewrite);
+      }
+      // If there is a method that rebuilds the graph, try to call it
+      if (typeof root?.applyFilters === 'function') {
+        try { root.applyFilters(); } catch {}
+      } else if (typeof root?.renderGraph === 'function') {
+        try { root.renderGraph(); } catch {}
+      }
+    } catch (e) { /* silent */ }
+  });
+});
+</script>
+
+
+<script>
+// Ensure vis-network node images are also TMDB-first
+(function () {
+  function rewriteNode(n) {
+    if (!n || typeof n !== 'object') return n;
+    // Only touch if looks like a node
+    if ('image' in n || 'tmdb_image' in n || 'poster_path' in n) {
+      n = { ...n, image: (window.getNodeImage ? window.getNodeImage(n) : n.image) };
+      // If the graph relies on a specific shape for images, enforce it (non-destructive)
+      if (!n.shape) n.shape = 'circularImage';
+      if (!n.brokenImage) n.brokenImage = 'assets/images/default.jpg';
+    }
+    return n;
+  }
+
+  function patchDataSet() {
+    try {
+      if (!window.vis || !window.vis.DataSet) return false;
+      const DS = window.vis.DataSet;
+      const pa = DS.prototype.add;
+      const pu = DS.prototype.update;
+
+      if (!DS.__tmdb_patched) {
+        DS.prototype.add = function (data, id) {
+          if (Array.isArray(data)) data = data.map(rewriteNode);
+          else data = rewriteNode(data);
+          return pa.call(this, data, id);
+        };
+        DS.prototype.update = function (data, id) {
+          if (Array.isArray(data)) data = data.map(rewriteNode);
+          else data = rewriteNode(data);
+          return pu.call(this, data, id);
+        };
+        DS.__tmdb_patched = true;
+      }
+      return true;
+    } catch (e) { return false; }
+  }
+
+  function retrofitExisting() {
+    // Try common locations used by apps to store the nodes DataSet
+    const candidates = [
+      window.nodes,
+      window.networkNodes,
+      window.graphNodes,
+      (window.Alpine && (function() {
+        try {
+          const el = document.querySelector('[x-data]');
+          return el ? Alpine.$data(el).nodes : null;
+        } catch(e){ return null; }
+      })())
+    ].filter(Boolean);
+
+    candidates.forEach(ds => {
+      try {
+        if (typeof ds.getIds === 'function' && typeof ds.update === 'function' && typeof ds.get === 'function') {
+          const all = ds.get();
+          const fixed = all.map(rewriteNode);
+          ds.update(fixed);
+        }
+      } catch (e) {}
+    });
+  }
+
+  // Try immediately, then again on DOM ready, then after a short delay
+  (function spinTries(tries) {
+    if (patchDataSet()) {
+      retrofitExisting();
+      return;
+    }
+    if (tries <= 0) return;
+    setTimeout(() => spinTries(tries - 1), 200);
+  })(15);
+
+  document.addEventListener('DOMContentLoaded', () => {
+    patchDataSet();
+    setTimeout(retrofitExisting, 400);
+  });
+})();
+</script>
+
+
+<script>
+// Sync modal's resolved poster back into the graph + lazy upgrade on hover
+(function () {
+  // Modal -> graph sync (whenever modalNode changes and modal is open)
+  document.addEventListener('alpine:init', () => {
+    queueMicrotask(() => {
+      try {
+        const rootEl = document.querySelector('[x-data]');
+        if (!rootEl || !window.Alpine) return;
+        const root = Alpine.$data(rootEl);
+
+        // Watcher using MutationObserver fallback for robustness
+        let lastId = null;
+        const syncFromModal = () => {
+          try {
+            if (!root.modalOpen || !root.modalNode) return;
+            const node = root.modalNode;
+            if (!node.id) return;
+            if (!window.nodes || typeof window.nodes.update !== 'function') return;
+
+            // Prefer whatever the modal currently shows; fallback to helper
+            let prefer = null;
+            try {
+              const posterEl = document.querySelector('#modal_container img[src]');
+              if (posterEl && posterEl.src) prefer = posterEl.src;
+            } catch(e) {}
+            if (!prefer && window.getNodeImage) prefer = window.getNodeImage(node);
+            if (!prefer && node.image) prefer = node.image;
+
+            if (prefer && node.id !== lastId) {
+              lastId = node.id;
+            }
+            if (prefer) {
+              window.nodes.update({
+                id: node.id,
+                image: prefer,
+                shape: 'circularImage',
+                brokenImage: 'assets/images/default.jpg'
+              });
+            }
+          } catch (e) {}
+        };
+
+        // Alpine $watch if available
+        try {
+          root.$watch('modalOpen', syncFromModal);
+          root.$watch('modalNode', syncFromModal);
+        } catch (e) {
+          // Fallback: poll briefly
+          setInterval(syncFromModal, 400);
+        }
+
+        // Also run once shortly after init
+        setTimeout(syncFromModal, 600);
+      } catch (e) {}
+    });
+  });
+
+  // Hover-based lazy upgrade
+  (function waitNet(tries) {
+    if (window.network && window.nodes && typeof window.nodes.get === 'function') {
+      try {
+        window.network.on('hoverNode', function (params) {
+          try {
+            const n = window.nodes.get(params.node);
+            if (!n) return;
+            const better = (window.getNodeImage ? window.getNodeImage(n) : n.image);
+            if (better && better !== n.image) {
+              window.nodes.update({
+                id: n.id,
+                image: better,
+                shape: n.shape || 'circularImage',
+                brokenImage: n.brokenImage || 'assets/images/default.jpg'
+              });
+            }
+          } catch (e) {}
+        });
+      } catch (e) {}
+      return;
+    }
+    if (tries <= 0) return;
+    setTimeout(() => waitNet(tries - 1), 250);
+  })(20);
+})();
+</script>
 
 </head>
 
@@ -624,7 +846,7 @@
 <div class="relative rounded-xl overflow-hidden backdrop-blur-md bg-black/50 text-white max-h-[90vh] overflow-y-visible">
 <!-- Üst blur görsel alanı -->
 <div class="relative h-64">
-<img :src="modalNode.image" alt="" class="absolute inset-0 w-full h-full object-cover blur-sm brightness-50 scale-105" class="lazy-blur" @load="$event.target.classList.add(\'lazy-done\')" loading="lazy"/>
+<img :src="getNodeImage(modalNode)" alt="" class="absolute inset-0 w-full h-full object-cover blur-sm brightness-50 scale-105" class="lazy-blur" @load="$event.target.classList.add(\'lazy-done\')" loading="lazy"/>
 <div class="absolute inset-0 flex flex-col justify-between p-4 z-10"><div class="absolute top-3 left-3 flex gap-2 items-center">
   <button @click="openShare(modalNode)" id="share-btn" class="share-btn" title="Paylaşım seçenekleri" aria-label="Paylaşım seçenekleri">
     <span aria-hidden="true">🔗</span><span class="hidden sm:inline">Paylaş</span>
@@ -649,14 +871,14 @@
 <div @click.self="showPosterDialog = false" class="fixed inset-0 z-\[9999\] z-\[999\] z-50 bg-black/70 backdrop-blur-md z-50 flex items-center justify-center">
 <div class="p-4 rounded-xl shadow-2xl max-w-[90vw] max-h-[85vh]" style="z-index:10000;" style="z-index:1000;" style="z-index:60;">
 <button @click="showPosterDialog = false" class="absolute top-2 right-2 w-8 h-8 rounded-full bg-white/10 border border-white/20 text-white text-sm">✕</button>
-<img :src="modalNode.image" class="max-w-[75vw] max-h-[70vh] rounded-xl shadow-lg object-cover"/>
+<img :src="getNodeImage(modalNode)" class="max-w-[75vw] max-h-[70vh] rounded-xl shadow-lg object-cover"/>
 </div>
 </div>
 </template>
 <!-- Poster -->
 <div class="absolute left-1/2 top-full -translate-x-1/2 -translate-y-1/2 z-20"><div @click="showPosterDialog = true" class="cursor-pointer">
 <div @click="showPosterDialog = true" class="cursor-pointer">
-<div @click="showPosterDialog = true" class="cursor-pointer"><img :src="modalNode.image" alt=""
+<div @click="showPosterDialog = true" class="cursor-pointer"><img :src="getNodeImage(modalNode)" alt=""
 class="w-32 h-32 rounded-full object-cover drop-shadow-[0_0_20px_rgba(168,85,247,0.5)] ring-2 ring-purple-400/30"/></div></div>
 </div>
 </div>
@@ -3056,7 +3278,7 @@ document.addEventListener('keydown', function(e){
             <template x-for="n in pair[1]" :key="n.id">
               <div class="tl-card" @click="openTimelineNode(n.id)">
                 <div class="flex gap-3">
-                  <img class="tl-poster" :src="n.image" alt="">
+                  <img class="tl-poster" :src="getNodeImage(n)" alt="">
                   <div class="flex-1 min-w-0">
                     <div class="font-semibold truncate" x-text="n.label"></div>
                     <div class="text-xs opacity-80">
@@ -3806,109 +4028,3 @@ document.addEventListener('alpine:init', () => {
 </script>
 
 </body>
-
-
-
-
-<!-- Sync TMDB poster back to graph nodes (v5: label-wide update, single redraw) -->
-<script>
-(function(){
-  function getRoot(){
-    try {
-      const el = document.querySelector('[x-data]');
-      if (!el || !window.Alpine || !Alpine.$data) return null;
-      const data = Alpine.$data(el);
-      return Alpine.raw ? Alpine.raw(data) : data;
-    } catch(e){ return null; }
-  }
-  function getNodesDS(){
-    try {
-      if (window.nodes && typeof window.nodes.update === 'function') return window.nodes;
-      const root = getRoot();
-      if (root && root.nodes && typeof root.nodes.update === 'function') return root.nodes;
-      if (window.network && window.network.body && window.network.body.data && window.network.body.data.nodes) {
-        const ds = window.network.body.data.nodes;
-        if (typeof ds.update === 'function') return ds;
-      }
-    } catch(e){}
-    return null;
-  }
-  function fresh(u){ return u + (u.includes('?') ? '&' : '?') + 'cb=' + Date.now(); }
-
-  // Strong sync that updates by id and by label, and redraws once
-  window.forcePosterSync = function(modalNodeLike, tmdbUrl){
-    const ds = getNodesDS();
-    if (!ds || !tmdbUrl) { console.warn('[poster-sync] DataSet or URL missing'); return; }
-    const root = getRoot();
-    const label = (modalNodeLike && (modalNodeLike.label || modalNodeLike.name)) || (root && root.modalNode && root.modalNode.label) || null;
-    const idRaw = (modalNodeLike && modalNodeLike.id) || (root && root.modalNode && root.modalNode.id);
-
-    const candidates = [];
-    if (idRaw !== undefined) {
-      candidates.push(idRaw);
-      try { const n = Number(idRaw); if (!Number.isNaN(n)) candidates.push(n); } catch(e){}
-      const s = String(idRaw); if (s !== idRaw) candidates.push(s);
-    }
-
-    // Collect targets
-    const targets = new Map();
-    candidates.forEach(c => {
-      try {
-        const n = ds.get(c);
-        if (n) targets.set(n.id, n);
-      } catch(e){}
-    });
-
-    // Fallback by label (exact)
-    if (targets.size === 0 && label) {
-      try {
-        const same = ds.get({ filter: n => n && n.label === label });
-        same.forEach(n => targets.set(n.id, n));
-      } catch(e){}
-    }
-
-    const url = fresh(tmdbUrl);
-    let updated = 0;
-    targets.forEach((n, id) => {
-      ds.update({
-        id,
-        image: url,
-        shape: 'circularImage',
-        brokenImage: 'assets/images/poster-fallback.jpg',
-        shadow: false,
-        chosen: false
-      });
-      // persist to allNodes if exists
-      if (root && Array.isArray(root.allNodes)) {
-        const idx = root.allNodes.findIndex(x => x && (x.id === id || String(x.id) === String(id)));
-        if (idx > -1) root.allNodes[idx].image = url;
-      }
-      updated++;
-    });
-
-    if (updated === 0) {
-      console.warn('[poster-sync] No node updated. Label:', label, 'Ids tried:', candidates);
-    } else {
-      if (window.network && typeof window.network.redraw === 'function') window.network.redraw();
-      console.log('[poster-sync] Updated nodes:', Array.from(targets.keys()));
-    }
-  };
-
-  // Hook TMDB success if available (idempotent)
-  // If your TMDB fetch success path sets modalNode.image, we can also try observing it:
-  (function startObserver(){
-    const container = document.getElementById('modal_container');
-    if (!container || !window.MutationObserver) return;
-    const obs = new MutationObserver(function(){
-      const root = getRoot();
-      if (!root || !root.modalNode) return;
-      const url = root.modalNode.image || '';
-      if (/image\.tmdb\.org\/t\/p\//.test(String(url))){
-        window.forcePosterSync(root.modalNode, url);
-      }
-    });
-    obs.observe(container, { subtree:true, attributes:true, attributeFilter:['src'] });
-  })();
-
-})();
-</script>
