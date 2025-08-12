@@ -3712,4 +3712,52 @@
       },
       "lang": "tr"
     }
-  ]}
+  ],
+
+ "edges": [
+    { "from": "toy_story_1995", "to": "toy_story_2_1999", "type": "Doğrudan Devam", "weight": 1, "notes": "Woody ve Buzz dostluğu büyür; Jessie ve Al ile kurtarma macerası serinin duygusal ve mizahi dengesini genişletir." },
+    { "from": "toy_story_2_1999", "to": "toy_story_3_2010", "type": "Doğrudan Devam", "weight": 1, "notes": "Andy’nin vedaya yaklaşması; Sunnyside deneyimi aidiyet ve terk edilme temalarını daha karanlık tonla derinleştirir." },
+    { "from": "toy_story_3_2010", "to": "toy_story_4_2019", "type": "Hikaye Devamı", "weight": 1, "notes": "Bonnie döneminde Woody kimliğini sorgular; Bo Peep ve Forky üzerinden kişisel seçimler yeni bir başlangıcı işaret eder." },
+    { "from": "toy_story_1995", "to": "lightyear_2022", "type": "Türsel Bağlantı", "weight": 1, "notes": "Buzz oyuncağına ilham olan film-içinde-film; meta köken anlatısı olarak evren içi ilham kaynağını görünür kılar." },
+
+    { "from": "monsters_university_2013", "to": "monsters_inc_2001", "type": "Hikaye Öncesi", "weight": 1, "notes": "Mike ve Sulley’nin rekabetten dostluğa evrilen kökeni; şirketteki ortak çalışmalarına doğrudan zemin oluşturur." },
+
+    { "from": "finding_nemo_2003", "to": "finding_dory_2016", "type": "Karakter Devamı", "weight": 1, "notes": "Odak Dory’ye kayar; bellek, aile ve cesaret temaları yeni mekânlar ve karakterlerle büyüyerek Nemo mirasını sürdürür." },
+
+    { "from": "the_incredibles_2004", "to": "incredibles_2_2018", "type": "Doğrudan Devam", "weight": 1, "notes": "Elastigirl’in öne çıktığı yeni tehdit; aile içi roller, kamuoyu ve kahramanlık etiği arasında gerilim sürer." },
+
+    { "from": "cars_2006", "to": "cars_2_2011", "type": "Doğrudan Devam", "weight": 1, "notes": "Mater merkezli casusluk serüveni; dostluk farklı türsel tonla sınanırken dünya ölçeğinde macera hissi artar." },
+    { "from": "cars_2_2011", "to": "cars_3_2017", "type": "Doğrudan Devam", "weight": 1, "notes": "Şimşek inişe geçer; mentorluk, miras ve yenilenme temaları kariyer döngüsünü olgun bir kapanışa taşır." },
+
+    { "from": "inside_out_2015", "to": "inside_out_2_2024", "type": "Doğrudan Devam", "weight": 1, "notes": "Riley ergenliğe geçer; yeni duygular, benlik oluşumu ve kaygı çatışmaları ilk filmin duygusal altyapısında büyür." },
+
+    { "from": "film/disney/2013_frozen", "to": "film/disney/2019_frozen_2", "type": "Doğrudan Devam", "weight": 1, "notes": "Elsa’nın kökeni ve Ahtohallan; Arendelle’in tarihi ve sorumluluk duygusu kozmik ölçekte yeniden tanımlanır." },
+    { "from": "film/disney/2012_wreck_it_ralph", "to": "film/disney/2018_ralph_breaks_the_internet", "type": "Doğrudan Devam", "weight": 1, "notes": "Arcade’den internete açılan macera; Vanellope’nin kimlik arayışı ilişkilerini ve hedeflerini dönüştürür." },
+    { "from": "film/disney/2016_moana", "to": "film/disney/2024_moana_2", "type": "Doğrudan Devam", "weight": 1, "notes": "Okyanus çağrısı sürer; yeni adalar ve halklarla liderlik, topluluk ve keşif temaları pekişir." },
+
+    { "from": "film/disney/1991_beauty_and_the_beast", "to": "film/disney/2017_beauty_and_the_beast", "type": "Paralel Olay", "weight": 1, "notes": "Canlı aksiyon yeniden anlatım; aynı çekirdek hikâye modern estetik ve karakter nüanslarıyla yeniden kurulur." },
+    { "from": "film/disney/1992_aladdin", "to": "film/disney/2019_aladdin", "type": "Paralel Olay", "weight": 1, "notes": "1992 klasik öykünün çağdaş yorumu; şarkılar ve karakter yayları farklı görsel dilde tazelenir." },
+    { "from": "film/disney/1994_the_lion_king", "to": "film/disney/2019_lion_king", "type": "Paralel Olay", "weight": 1, "notes": "Foto-gerçekçi yeniden yapım; aynı çekirdek hikâyeyi yeni teknoloji ve tonla tekrar sunar." },
+    { "from": "film/disney/1998_mulan", "to": "film/disney/2020_mulan", "type": "Paralel Olay", "weight": 1, "notes": "1998 animasyonun canlı aksiyon uyarlaması; büyü öğeleri azaltılıp tarihsel-ton ve aksiyon vurgulanır." },
+
+    { "from": "toy_story_1995", "to": "cars_2006", "type": "Mekan Bağlantısı", "weight": 1, "notes": "Dinoco ve Route 66 göndermeleri; markalar ve mekân motifleri dünyalar arasında süreklilik hissi kurar." },
+    { "from": "wall_e_2008", "to": "toy_story_3_2010", "type": "Evrensel Bağlantı", "weight": 1, "notes": "Buy n Large ve tüketim eleştirisi; arka plan dokuları tek evren duygusunu besleyen ortak referanslar sunar." },
+    { "from": "brave_2012", "to": "coco_2017", "type": "Kozmik Katılım", "weight": 1, "notes": "Ruhlar, ritüeller ve büyü; farklı kültürlerde ortak metafizik temalar üzerinden köprü kurar." },
+    { "from": "soul_2020", "to": "coco_2017", "type": "Kozmik Katılım", "weight": 1, "notes": "Öte-alem ve yaşam kıvılcımı; bilinç, anı ve kimlik meseleleri iki film arasında yankılanır." },
+    { "from": "onward_2020", "to": "brave_2012", "type": "Türsel Bağlantı", "weight": 1, "notes": "Modern dünyada büyünün kalıntıları; ortaçağ-fantezi kökleriyle akraba sihir sistemleri işlenir." },
+
+    { "from": "brave_2012", "to": "the_good_dinosaur_2015", "type": "Tarihsel Bağlantı", "weight": 1, "notes": "Pixar teorisi: Sihir ve alternatif tarih tohumları; türlerin evrim çizgisi farklı bir rotaya sapar." },
+    { "from": "the_good_dinosaur_2015", "to": "luca_2021", "type": "Evrensel Gelişme", "weight": 1, "notes": "Pixar teorisi: İnsan-dışı varlıkların toplumla etkileşimi; deniz-canavarlarının normalleşmesi basamağına uzanır." },
+    { "from": "luca_2021", "to": "finding_nemo_2003", "type": "Türsel Bağlantı", "weight": 1, "notes": "Pixar teorisi: Deniz halklarının görünürlükten çekilmesi; okyanustaki zekâ teması Nemo evrenine evrilir." },
+    { "from": "ratatouille_2007", "to": "finding_nemo_2003", "type": "Türsel Bağlantı", "weight": 1, "notes": "Pixar teorisi: Hayvan zekâsının artışı; karadaki fare örüntüsünden denizdeki topluluklara tematik geçiş önerir." },
+    { "from": "finding_nemo_2003", "to": "wall_e_2008", "type": "Siyasi Etki", "weight": 1, "notes": "Pixar teorisi: Kirlilik ve israfın sonuçları; ekolojik kriz insanlığın gezegeni terk edişine zemin hazırlar." },
+    { "from": "cars_3_2017", "to": "wall_e_2008", "type": "Ana Hikaye Bağlantısı", "weight": 1, "notes": "Pixar teorisi: Makinelerin egemenliği zirveden çöküşe; terk edilmiş Dünya dönemine açılan kapı niteliğinde." },
+    { "from": "wall_e_2008", "to": "a_bugs_life_1998", "type": "Tarihsel Bağlantı", "weight": 1, "notes": "Pixar teorisi: İnsanların dönüşü sonrası ekosistem canlanır; böcek toplumları gelişip yeni düzene uyum sağlar." },
+    { "from": "a_bugs_life_1998", "to": "monsters_inc_2001", "type": "Evrensel Gelişme", "weight": 1, "notes": "Pixar teorisi: Türlerin evrimi ve enerji arayışı; kahkaha-enerji paradigmasına uzanan uzun süreli hat önerir." },
+    { "from": "inside_out_2015", "to": "soul_2020", "type": "Kozmik Katılım", "weight": 1, "notes": "Pixar teorisi: Zihin-dünya ile ruh-düzlemi arasında nedensel bağ; kişilik kıvılcımları ortak bir çerçeve sunar." },
+    { "from": "up_2009", "to": "cars_2006", "type": "Evrensel Bağlantı", "weight": 1, "notes": "Pixar teorisi: İnsan nüfusu azalırken makinelerin toplumsal rolleri artar; geçiş eşiği olarak okunur." },
+    { "from": "elemental_2023", "to": "inside_out_2_2024", "type": "Evrensel Bağlantı", "weight": 1, "notes": "Pixar teorisi: Soyut kavramların kişileştirilmesi; element toplumundan içsel duygu ekosistemine tematik yankı." },
+
+    { "from": "coco_2017", "to": "film/disney/2021_encanto", "type": "Türsel Bağlantı", "weight": 1, "notes": "Aile, gelenek ve armağan temasının büyü ile iç içe anlatımı; kuşaklararası bağların iyileştirici gücü öne çıkar." }
+  ]
+}
