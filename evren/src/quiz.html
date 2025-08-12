@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz Oyunu</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+  <style>
+    .shake { animation: shake 0.4s; }
+    @keyframes shake {
+      0% { transform: translateX(0); }
+      25% { transform: translateX(-4px); }
+      50% { transform: translateX(4px); }
+      75% { transform: translateX(-4px); }
+      100% { transform: translateX(0); }
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-gray-900 via-purple-900 to-black min-h-screen flex flex-col text-white">
+
+  <!-- Başlangıç Ekranı -->
+  <div id="startScreen" class="flex flex-col items-center justify-center flex-1 text-center gap-6 p-4">
+    <h1 class="text-4xl font-bold mb-2">🎯 Quiz Oyunu</h1>
+    <p class="text-gray-300 max-w-md">Bilgini test et! 3 aşamayı başarıyla geç ve en yüksek puanı topla.</p>
+
+    <div class="bg-white/10 p-6 rounded-xl shadow-lg max-w-sm w-full">
+      <p class="mb-4">Bu modda <strong>kolaydan zora</strong> doğru aşamalar ilerler. Başarı oranı arttıkça yeni aşamaya geçersin.</p>
+      <ul class="text-sm text-gray-300 mb-4 text-left list-disc list-inside">
+        <li>Aşama 1: Kolay + Orta sorular, min %50 başarı</li>
+        <li>Aşama 2: Orta + Zor sorular, min %60 başarı</li>
+        <li>Aşama 3: Zor sorular, min %70 başarı</li>
+      </ul>
+      <button id="startBtn" class="mt-4 w-full bg-green-500 hover:bg-green-600 px-6 py-3 rounded-lg text-lg font-bold">Başla 🚀</button>
+    </div>
+  </div>
+
+  <!-- Quiz Ekranı -->
+  <div id="quizScreen" class="hidden flex-col flex-1">
+    <div class="w-full bg-gray-700 h-2">
+      <div id="progressBar" class="bg-green-500 h-2 transition-all"></div>
+    </div>
+
+    <div class="flex flex-col items-center p-6 flex-1">
+      <h2 id="stageInfo" class="text-sm text-gray-300 mb-2"></h2>
+      <h2 id="questionText" class="text-xl font-semibold text-center mb-4"></h2>
+      <img id="questionImage" class="max-h-64 mb-4 rounded-lg quiz-image transition-all" />
+      <div id="optionsContainer" class="grid gap-3 w-full max-w-md"></div>
+      <p id="streakInfo" class="mt-4 text-yellow-400 font-semibold"></p>
+    </div>
+  </div>
+
+  <!-- Sonuç Ekranı -->
+  <div id="resultScreen" class="hidden flex flex-col items-center justify-center flex-1 gap-4 p-4">
+    <h2 class="text-3xl font-bold">🎉 Oyun Bitti!</h2>
+    <div id="resultCard" class="bg-white/10 p-6 rounded-xl shadow-lg text-center">
+      <p id="scoreText" class="text-lg mb-2"></p>
+      <p id="stagesText" class="mb-1"></p>
+      <p id="bonusText" class="text-yellow-400 mb-3"></p>
+    </div>
+    <div class="flex gap-4 flex-wrap justify-center">
+      <button id="retryBtn" class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg">Tekrar Oyna</button>
+      <a href="../index.html" class="bg-gray-600 hover:bg-gray-700 px-6 py-3 rounded-lg">Ana Menü</a>
+      <button id="shareBtn" class="bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-lg">📤 Paylaş</button>
+    </div>
+  </div>
+
+  <script src="../assets/js/quiz.js"></script>
+</body>
+</html>

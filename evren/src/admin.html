@@ -1,18 +1,29 @@
 <!DOCTYPE html>
+
 <html lang="tr" x-data="adminApp()" x-init="init()">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>🎛️ Admin Panel · Film Evreni Ağı — v2</title>
-
-  <!-- Alpine & Tailwind -->
-  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.5/dist/cdn.min.js" defer></script>
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- JSZip (future: zip import/export) -->
-  <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js" defer></script>
-
-  <style>
+<script>
+(function(){
+  let data = {};
+  window.__defineSetter__('__evrenStats', function(val) {
+    if (typeof val !== 'object' || val === null) val = {};
+    val.avgImdb = val.avgImdb || function(){ return null; };
+    data = val;
+  });
+  window.__defineGetter__('__evrenStats', function() {
+    return data;
+  });
+})();
+</script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>🎛️ Admin Panel · Film Evreni Ağı — v2</title>
+<!-- Alpine & Tailwind -->
+<script defer="" src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.5/dist/cdn.min.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- JSZip (future: zip import/export) -->
+<script defer="" src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+<style>
     :root { color-scheme: dark; }
     body { background: #0b1220; color: #e5e7eb; }
     .glass { background: rgba(31,41,55,0.5); border: 1px solid rgba(255,255,255,0.12); backdrop-filter: blur(12px); }
@@ -65,8 +76,8 @@
   @media (min-width:1280px){ .chart-box{ height:240px; } }
   .chart-box > canvas{ width:100% !important; height:100% !important; }
 </style>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" defer></script>
-<script>
+<script defer="" src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script>/*
 // --- Cookie-based Auth Guard + Idle Logout + Fetch 401 handling ---
 (function(){
   const CFG = {
@@ -124,397 +135,466 @@
     try { delCookie(CFG.COOKIE_NAME); } catch {}
     redirect('manual-logout');
   };
-})();
+})(); */
 </script>
-</head>
+<script>
+document.addEventListener('alpine:init', () => {
+  Alpine.store('ui', { sidebar: false, theme: 'dark', userMenu:false });
+});
+</script><style>
+/* --- Modern Admin Enhancements --- */
+:root { color-scheme: dark; }
+body { background: #0b1220; color:#e5e7eb; }
+.glass { background: rgba(31,41,55,0.5); border:1px solid rgba(255,255,255,0.12); backdrop-filter: blur(14px); }
+.topbar { position: sticky; top:0; z-index:70; }
+.topbar .brand { font-weight:700; }
+.sidebar-drawer { transition: transform .2s ease; }
+.sidebar-overlay { background: rgba(0,0,0,.5); backdrop-filter: blur(2px); }
+.header-actions .btn { border:1px solid rgba(255,255,255,.18); background:rgba(255,255,255,.06); border-radius:.6rem; padding:.45rem .7rem; }
+.header-actions .btn:hover { background: rgba(255,255,255,.12); }
+.dropdown-panel { background: rgba(31,41,55,0.95); border: 1px solid rgba(255,255,255,0.14); box-shadow: 0 16px 40px rgba(0,0,0,0.45); }
+</style>
+<script>
+document.addEventListener('alpine:init', () => {
+  // UI store (extend if exists)
+  try {
+    const ui = Alpine.store('ui') || {};
+    Alpine.store('ui', Object.assign({ sidebar:false, theme:'dark', userMenu:false, cardMode:false }, ui));
+  } catch(e) {
+    Alpine.store('ui', { sidebar:false, theme:'dark', userMenu:false, cardMode:false });
+  }
 
+  // JSON edit modal store
+  Alpine.store('edit', {
+    open:false,
+    text:'',
+    apply:null,
+    title:'Kaynaklar (JSON)'
+  });
+
+  // Toast store
+  Alpine.store('toast', {
+    items: [],
+    push(msg, ttl=2500){
+      const id = Date.now() + Math.random();
+      this.items.push({ id, msg });
+      setTimeout(() => {
+        this.items = this.items.filter(t => t.id !== id);
+      }, ttl);
+    }
+  });
+});
+</script>
+<style>
+/* Modal */
+.modal-mask{ position:fixed; inset:0; background:rgba(0,0,0,.6); backdrop-filter: blur(2px); z-index:1000; display:flex; align-items:center; justify-content:center; }
+.modal-card{ width:92vw; max-width:720px; background:#0f172a; color:#e5e7eb; border:1px solid rgba(255,255,255,.12); border-radius:16px; overflow:hidden; }
+.modal-head{ padding:12px 16px; border-bottom:1px solid rgba(255,255,255,.08); display:flex; align-items:center; justify-content:space-between; }
+.modal-body{ padding:12px 16px; }
+.modal-actions{ padding:12px 16px; border-top:1px solid rgba(255,255,255,.08); display:flex; gap:8px; justify-content:flex-end; }
+
+/* Toasts */
+.toast-wrap{ position: fixed; right: 12px; bottom: 12px; z-index: 1100; display: grid; gap: 8px; width: min(92vw, 360px); }
+.toast{ background: rgba(31,41,55,0.9); border:1px solid rgba(255,255,255,.15); padding:10px 12px; border-radius: 12px; }
+
+/* Bulk bar */
+.bulkbar{ position: fixed; left: 50%; transform: translateX(-50%); bottom: 10px; z-index: 100; background: rgba(17,24,39,.95); border:1px solid rgba(255,255,255,.14); border-radius: 12px; padding: 8px; display:flex; gap:8px; align-items:center; }
+</style><style>
+/* --- Sidebar fixes --- */
+@media (min-width: 1024px){
+  .sidebar-drawer{
+    position: sticky !important;
+    top: 72px; /* below header */
+    height: calc(100vh - 84px);
+    transform: none !important;
+    translate: none !important;
+    width: auto !important;
+  }
+}
+.sidebar-drawer{
+  width: 92vw;
+  max-width: 360px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  box-sizing: border-box;
+}
+.sidebar-overlay-fixed{
+  position: fixed; inset: 0; background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(2px); z-index: 75;
+}
+</style><style>
+/* --- Clean & Mobile-first pass --- */
+:root { --pad: 0.6rem; }
+.compact *:is(input,select,textarea,button){ font-size: .92rem; }
+.compact .btn-sm{ padding: .35rem .6rem; border-radius: .55rem; }
+.nodes-table th:nth-child(5), .nodes-table td:nth-child(5){ display: table-cell; }
+@media (max-width: 1024px){
+  /* Hide less-crucial columns at md- */
+  .nodes-table th:nth-child(5), .nodes-table td:nth-child(5){ display: none; } /* Tür */
+  .nodes-table th:nth-child(8), .nodes-table td:nth-child(8){ display: none; } /* Görsel */
+  .nodes-table th:nth-child(9), .nodes-table td:nth-child(9){ display: none; } /* Kaynaklar */
+  .nodes-table th:nth-child(10), .nodes-table td:nth-child(10){ position: sticky; right: 0; background: rgba(2,6,23,0.85); }
+}
+.card-grid .card{ background: rgba(31,41,55,0.45); border:1px solid rgba(255,255,255,.12); border-radius: 14px; padding: .75rem; }
+.card .meta{ font-size: .78rem; opacity: .85; }
+.sidebar-section{ border: 1px solid rgba(255,255,255,.12); border-radius: 12px; background: rgba(31,41,55,0.45); }
+.sidebar-title{ display:flex; align-items:center; justify-content:space-between; padding:.6rem .8rem; }
+.sidebar-body{ padding: .6rem .8rem; }
+</style><script>
+document.addEventListener('alpine:init', () => {
+  try {
+    const mq = window.matchMedia('(max-width: 1024px)');
+    const set = () => { if (mq.matches) Alpine.store('ui').cardMode = true; };
+    set();
+    mq.addEventListener ? mq.addEventListener('change', set) : mq.addListener(set);
+  } catch(e) {}
+});
+</script><script>
+document.addEventListener('alpine:init', () => {
+  try { (Alpine.store('ui') || Alpine.store('ui', {})); Alpine.store('ui').cardMode = true; } catch(e){}
+});
+</script><script>
+document.addEventListener('alpine:init', () => {
+  Alpine.store('form', {
+    open: false,
+    node: null,
+    title: 'Yapımı Düzenle',
+    tmp: {},
+    addTmp: { platform: '', url: '' },
+
+    edit(n) {
+      this.node = n;
+      this.tmp = {
+        id: n?.id ?? '',
+        label: n?.label ?? '',
+        release_date: n?.release_date ?? '',
+        tür: n?.tür ?? '',
+        imdb_rating: n?.imdb_rating ?? '',
+        type: n?.type ?? 'movie',
+        image: n?.image ?? '',
+        sourcesText: n?.sourcesText ?? '',
+        sources: Array.isArray(n?.sources) ? [...n.sources] : (Array.isArray(n?.sourcesParsed) ? [...n.sourcesParsed] : (Array.isArray(n?.sources_list) ? [...n.sources_list] : (Array.isArray(n?.sources) ? [...n.sources] : (Array.isArray(n?.Kaynaklar) ? [...n.Kaynaklar] : []))))
+      };
+      this.open = true;
+    },
+
+    save() {
+      if (!this.node) return;
+      const t = this.tmp || {};
+      this.node.id = t.id;
+      this.node.label = t.label;
+      this.node.release_date = t.release_date;
+      this.node.tür = t.tür;
+      this.node.imdb_rating = t.imdb_rating ? +t.imdb_rating : null;
+      this.node.type = t.type;
+      this.node.image = t.image;
+      this.node.sourcesText = t.sourcesText;
+      // Optionally reflect sources array back if needed by your app:
+      if (Array.isArray(t.sources)) this.node.sources = t.sources;
+      this.open = false;
+      try { Alpine.store('toast')?.push('Yapım güncellendi'); } catch(e) {}
+    },
+
+    addSourceSave() {
+      const t = this.addTmp || { platform: '', url: '' };
+      if (!t.platform || !t.url) return;
+      if (!Array.isArray(this.tmp.sources)) this.tmp.sources = [];
+      this.tmp.sources.push({ platform: t.platform, url: t.url });
+      this.addTmp = { platform: '', url: '' };
+      try { Alpine.store('toast')?.push('Bağlantı eklendi'); } catch(e) {}
+    },
+
+    addSourceCancel() {
+      this.addTmp = { platform: '', url: '' };
+    },
+
+    editSource(idx) {
+      if (!Array.isArray(this.tmp.sources)) return;
+      const item = this.tmp.sources[idx];
+      if (!item) return;
+      const np = prompt('Platform adı:', item.platform ?? '');
+      const nu = prompt('URL:', item.url ?? '');
+      if (np && nu) {
+        this.tmp.sources[idx] = { platform: np, url: nu };
+      }
+    },
+
+    deleteSource(idx) {
+      if (!Array.isArray(this.tmp.sources)) return;
+      this.tmp.sources.splice(idx, 1);
+    }
+  });
+});
+</script><script>
+document.addEventListener('alpine:init', () => {
+  Alpine.store('edgeNew', {
+    open:false,
+    tmp:{ universe:'', side:'to', other:'', type:'', notes:'' },
+    reset(){ this.tmp = { universe:'', side:'to', other:'', type:'', notes:'' }; },
+    save(){
+      try{
+        const id = Alpine.store('form')?.node?.id;
+        if(!id) return;
+        const t = this.tmp || {};
+        if(!t.other) return;
+        const edge = { from: t.side==='to' ? id : t.other, to: t.side==='to' ? t.other : id, type: t.type || '', notes: t.notes || '' };
+        current.edges.push(edge);
+        this.open=false; this.reset();
+        try { Alpine.store('toast')?.push('Bağlantı eklendi'); } catch(e){}
+      }catch(e){}
+    }
+  });
+});
+</script></head>
 <noscript><div style="padding:8px;margin:8px;border:1px solid #fca5a5;color:#fecaca;background:#7f1d1d">Bu panel JavaScript olmadan çalışmaz.</div></noscript>
-<body class="min-h-screen selection:bg-sky-600/30">
-  <!-- Header -->
-  <header class="sticky top-0 z-50 glass">
-    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center gap-3">
-      <a href="/evren" class="px-3 py-1.5 rounded-lg font-medium transition border bg-white/5 hover:bg-white/10 border-white/20 text-white">⟵ Siteye Dön</a>
-      <div class="flex items-center gap-2">
-        <h1 class="text-lg font-bold">🎛️ Admin Panel</h1>
-        <span x-show="_dirty" class="text-xs px-2 py-0.5 rounded-full border border-amber-400/40 text-amber-300 bg-amber-500/10">Kaydedilmemiş</span>
-      </div>
-      <div class="ml-auto flex flex-wrap items-center gap-2 text-sm">
-        <button class="px-3 py-1.5 rounded-lg font-medium transition border bg-sky-600 hover:bg-sky-700 border-sky-500/40 text-white shadow" @click="newDraft()">Yeni Taslak</button>
-        <button class="px-3 py-1.5 rounded-lg font-medium transition border bg-white/5 hover:bg-white/10 border-white/20 text-white" @click="importAll()">İçe Aktar</button>
-        <button class="px-3 py-1.5 rounded-lg font-medium transition border bg-emerald-600 hover:bg-emerald-700 border-emerald-500/40 text-white" @click="exportAll()">Dışa Aktar</button>
-        <button class="px-3 py-1.5 rounded-lg font-medium transition border bg-white/5 hover:bg-white/10 border-white/20 text-white" @click="validateAll()">Doğrula</button>
-        <button class="px-3 py-1.5 rounded-lg font-medium transition border bg-white/5 hover:bg-white/10 border-white/20 text-white" @click="zipAll()">Tümünü Zip</button>
-        <button class="px-3 py-1.5 rounded-lg font-medium transition border bg-amber-600 hover:bg-amber-700 border-amber-500/40 text-white" @click="openLinkTester()">Linkleri Test Et</button>
-      
-        <button id="logoutBtn" class="px-3 py-1.5 rounded-lg font-medium transition border bg-rose-600 hover:bg-rose-700 border-rose-500/40 text-white" onclick="window.__adminLogout?.()">Çıkış</button>
+<body :class="{ 'overflow-hidden': ($store?.edgeNew?.open || $store?.form?.open || (typeof sourceEdit!=='undefined' &amp;&amp; sourceEdit?.open)) }" class="min-h-screen selection:bg-sky-600/30"><div @click="$store.ui.sidebar=false" class="sidebar-overlay-fixed lg:hidden" x-show="$store.ui.sidebar" x-transition.opacity=""></div>
+<!-- Header -->
+<header class="topbar glass">
+<div class="max-w-7xl mx-auto px-3 py-2">
+<div class="flex items-center gap-2">
+<button @click="$store.ui.sidebar = true" aria-label="Menüyü aç" class="w-9 h-9 rounded-md border border-white/20 grid place-items-center hover:bg-white/10" title="Menüyü aç">☰</button>
+<div class="brand text-base sm:text-lg">🎛️ Admin Panel</div>
+<div class="ml-auto header-actions flex items-center gap-2">
+<!-- actions will be placed here -->
+<div @keydown.escape.window="open=false" class="relative" x-data="{open:false}">
+<button @click="open=!open" class="btn px-3 py-1.5 b t n - s m">Aksiyonlar ⌄</button>
+<div class="dropdown-panel absolute right-0 mt-2 w-64 rounded-xl overflow-hidden" x-show="open" x-transition="">
+<div class="p-2 space-y-1 actions-slot"><div></div><div><button @click="importAll()" class="px-3 py-1.5 rounded-lg font-medium transition border bg-white/5 hover:bg-white/10 border-white/20 text-white w-full text-left px-2 py-1 rounded hover:bg-white/10">İçe Aktar</button></div><div><button @click="exportAll()" class="px-3 py-1.5 rounded-lg font-medium transition border bg-emerald-600 hover:bg-emerald-700 border-emerald-500/40 text-white w-full text-left px-2 py-1 rounded hover:bg-white/10">Dışa Aktar</button></div><div><button @click="validateAll()" class="px-3 py-1.5 rounded-lg font-medium transition border bg-white/5 hover:bg-white/10 border-white/20 text-white w-full text-left px-2 py-1 rounded hover:bg-white/10">Doğrula</button></div><div><button @click="zipAll()" class="px-3 py-1.5 rounded-lg font-medium transition border bg-white/5 hover:bg-white/10 border-white/20 text-white w-full text-left px-2 py-1 rounded hover:bg-white/10">Tümünü Zip</button></div><div><button @click="openLinkTester()" class="px-3 py-1.5 rounded-lg font-medium transition border bg-amber-600 hover:bg-amber-700 border-amber-500/40 text-white w-full text-left px-2 py-1 rounded hover:bg-white/10">Linkleri Test Et</button></div><div><button class="px-3 py-1.5 rounded-lg font-medium transition border bg-rose-600 hover:bg-rose-700 border-rose-500/40 text-white w-full text-left px-2 py-1 rounded hover:bg-white/10" id="logoutBtn" onclick="window.__adminLogout?.()">Çıkış</button></div></div>
 </div>
-    </div>
-  </header>
+</div>
+<div @click.outside="open=false" class="relative" x-data="{open:false}">
+<button @click="open=!open" class="w-9 h-9 rounded-full border border-white/20 grid place-items-center">👤</button>
+<div class="dropdown-panel absolute right-0 mt-2 w-44 rounded-xl overflow-hidden" x-show="open">
+<a class="block px-3 py-2 hover:bg-white/10" href="#">Profil</a>
+<a class="block px-3 py-2 hover:bg-white/10" href="#">Ayarlar</a>
+<button class="w-full text-left px-3 py-2 hover:bg-white/10 text-rose-300" id="logoutBtn" onclick="window.__adminLogout?.()">Çıkış</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<!-- Main -->
+<main class="max-w-7xl mx-auto px-4 py-6 grid grid-cols-12 gap-4"><div @click="$store.ui.sidebar=false" class="sidebar-overlay fixed inset-0 z-[75] hidden lg:hidden" x-show="$store.ui.sidebar" x-transition.opacity=""></div>
+<!-- Sidebar -->
+<aside class="left-0 transition-transform -translate-x-full z-[80] top-0 bottom-0 lg:col-span-3 lg:translate-x-0 fixed sidebar-drawer col-span-12 glass w-[92vw] space-y-4 sm:w-[360px] lg:relative p-4 transform" x-bind:class="{ '-translate-x-full': !$store.ui.sidebar, 'translate-x-0': $store.ui.sidebar }">
+<div class="flex justify-end lg:hidden">
+<button @click="$store.ui.sidebar=false" class="mb-2 w-9 h-9 rounded-md border border-white/20 grid place-items-center hover:bg-white/10" title="Kapat">✕</button>
+</div>
+<div class="sidebar-section" x-data="{open:true}"><div class="sidebar-title"><div>Evrenler</div>
+<button :aria-expanded="open" @click="open=!open" class="w-8 h-8 rounded-md border border-white/20 hover:bg-white/10">⌄</button>
+</div><div class="sidebar-body" x-show="open">
+<div class="flex gap-2 mb-3">
+<button @click="addUniverse()" class="px-3 py-1.5 rounded-lg font-medium transition border bg-white/5 hover:bg-white/10 border-white/20 text-white">+ Ekle</button>
+<button @click="removeUniverse()" class="px-3 py-1.5 rounded-lg font-medium transition border bg-white/5 hover:bg-white/10 border-white/20 text-white">– Sil</button>
+</div>
+<select class="w-full rounded px-2 py-2" x-model="currentUniverse">
+<template :key="u" x-for="u in universes">
+<option :value="u" x-text="formatUniverse(u)"></option>
+</template>
+</select>
+</div></div>
+<div class="sidebar-section" x-data="{open:true}"><div class="sidebar-title"><div>Arama / Filtre</div>
+<button :aria-expanded="open" @click="open=!open" class="w-8 h-8 rounded-md border border-white/20 hover:bg-white/10">⌄</button>
+</div><div class="sidebar-body" x-show="open">
+<input class="w-full rounded px-3 py-2" placeholder="Yapım ara..." x-model.trim.debounce.250ms="q"/>
+<div class="grid grid-cols-2 gap-2 text-sm">
+<div>
+<label class="block mb-1 opacity-80">Yıl (min)</label>
+<input class="w-full rounded px-2 py-1.5" type="number" x-model.number="filters.yearMin"/>
+</div>
+<div>
+<label class="block mb-1 opacity-80">Yıl (max)</label>
+<input class="w-full rounded px-2 py-1.5" type="number" x-model.number="filters.yearMax"/>
+</div>
+</div>
+<div>
+<label class="block mb-1 opacity-80">IMDb (min)</label>
+<input class="w-full rounded px-2 py-1.5" step="0.1" type="number" x-model.number="filters.imdbMin"/>
+</div>
+<div class="flex gap-2 items-center">
+<button @click="resetFilters()" class="px-3 py-1.5 rounded-lg font-medium transition border bg-white/5 hover:bg-white/10 border-white/20 text-white">Sıfırla</button>
+<div class="text-xs opacity-70">Aktif: <span x-text="activeFilterCount"></span></div>
+</div>
+</div></div>
+<div class="sidebar-section" x-data="{open:true}"><div class="sidebar-title"><div>Yardım</div>
+<button :aria-expanded="open" @click="open=!open" class="w-8 h-8 rounded-md border border-white/20 hover:bg-white/10">⌄</button>
+</div><div class="sidebar-body" x-show="open">
+<ul class="text-sm list-disc list-inside space-y-1 opacity-80">
+<li><span class="kbd">Ctrl</span> + <span class="kbd">S</span> taslağı kaydeder.</li>
+<li>JSON düzenleyicilerinde <em>geçerli</em> JSON zorunludur.</li>
+<li>İçe Aktar → zip veya tek JSON kabul eder.</li>
+</ul>
+</div></div>
+</aside>
+<!-- Content -->
+<section class="col-span-12 space-y-4 lg:col-span-9">
+<!-- Universe Stats -->
 
-  <!-- Main -->
-  <main class="max-w-7xl mx-auto px-4 py-6 grid grid-cols-12 gap-4">
-    <!-- Sidebar -->
-    <aside class="col-span-12 lg:col-span-3 space-y-4">
-      <div class="glass rounded-xl p-4">
-        <h2 class="font-semibold mb-3">Evrenler</h2>
-        <div class="flex gap-2 mb-3">
-          <button class="px-3 py-1.5 rounded-lg font-medium transition border bg-white/5 hover:bg-white/10 border-white/20 text-white" @click="addUniverse()">+ Ekle</button>
-          <button class="px-3 py-1.5 rounded-lg font-medium transition border bg-white/5 hover:bg-white/10 border-white/20 text-white" @click="removeUniverse()">– Sil</button>
-        </div>
-        <select x-model="currentUniverse" class="w-full rounded px-2 py-2">
-          <template x-for="u in universes" :key="u">
-            <option :value="u" x-text="formatUniverse(u)"></option>
-          </template>
-        </select>
-      </div>
-
-      <div class="glass rounded-xl p-4 space-y-3">
-        <h2 class="font-semibold">Arama / Filtre</h2>
-        <input x-model.trim.debounce.250ms="q" class="w-full rounded px-3 py-2" placeholder="Yapım ara..." />
-        <div class="grid grid-cols-2 gap-2 text-sm">
-          <div>
-            <label class="block mb-1 opacity-80">Yıl (min)</label>
-            <input type="number" x-model.number="filters.yearMin" class="w-full rounded px-2 py-1.5" />
-          </div>
-          <div>
-            <label class="block mb-1 opacity-80">Yıl (max)</label>
-            <input type="number" x-model.number="filters.yearMax" class="w-full rounded px-2 py-1.5" />
-          </div>
-        </div>
-        <div>
-          <label class="block mb-1 opacity-80">IMDb (min)</label>
-          <input type="number" step="0.1" x-model.number="filters.imdbMin" class="w-full rounded px-2 py-1.5" />
-        </div>
-        <div class="flex gap-2 items-center">
-          <button class="px-3 py-1.5 rounded-lg font-medium transition border bg-white/5 hover:bg-white/10 border-white/20 text-white" @click="resetFilters()">Sıfırla</button>
-          <div class="text-xs opacity-70">Aktif: <span x-text="activeFilterCount"></span></div>
-        </div>
-      </div>
-
-      <div class="glass rounded-xl p-4">
-        <h2 class="font-semibold mb-2">Yardım</h2>
-        <ul class="text-sm list-disc list-inside space-y-1 opacity-80">
-          <li><span class="kbd">Ctrl</span> + <span class="kbd">S</span> taslağı kaydeder.</li>
-          <li>JSON düzenleyicilerinde <em>geçerli</em> JSON zorunludur.</li>
-          <li>İçe Aktar → zip veya tek JSON kabul eder.</li>
-        </ul>
-      </div>
-    </aside>
-
-    <!-- Content -->
-    <section class="col-span-12 lg:col-span-9 space-y-4">
-      <!-- Universe Stats -->
-      <div class="glass rounded-xl p-4 grid sm:grid-cols-3 gap-3 text-sm">
-        <div>🎬 Yapım: <b x-text="stats.nodes"></b></div>
-        <div>🔗 Bağlantı: <b x-text="stats.edges"></b></div>
-        <div>🗂️ Kaynaklı Yapım: <b x-text="stats.withSources"></b></div>
-      </div>
-
-      <!-- Tabs -->
-      
+<!-- Tabs -->
 <div class="flex gap-2 border-b border-white/10">
-  <button
-    :class="tab==='nodes' 
+<button :class="tab==='nodes' 
       ? 'px-3 py-2 -mb-px rounded-t-lg border bg-white/10 border-white/20 relative after:content-[\'\'] after:absolute after:left-[10px] after:right-[10px] after:bottom-[-1px] after:h-[2px] after:bg-sky-400 after:rounded' 
-      : 'px-3 py-2 -mb-px rounded-t-lg border border-transparent hover:bg-white/5'"
-    @click="tab='nodes'">
+      : 'px-3 py-2 -mb-px rounded-t-lg border border-transparent hover:bg-white/5'" @click="tab='nodes'">
     Yapımlar
   </button>
-  <button
-    :class="tab==='edges' 
+
+<button :class="tab==='preview' 
       ? 'px-3 py-2 -mb-px rounded-t-lg border bg-white/10 border-white/20 relative after:content-[\'\'] after:absolute after:left-[10px] after:right-[10px] after:bottom-[-1px] after:h-[2px] after:bg-sky-400 after:rounded' 
-      : 'px-3 py-2 -mb-px rounded-t-lg border border-transparent hover:bg-white/5'"
-    @click="tab='edges'">
-    Bağlantılar
-  </button>
-  <button
-    :class="tab==='preview' 
-      ? 'px-3 py-2 -mb-px rounded-t-lg border bg-white/10 border-white/20 relative after:content-[\'\'] after:absolute after:left-[10px] after:right-[10px] after:bottom-[-1px] after:h-[2px] after:bg-sky-400 after:rounded' 
-      : 'px-3 py-2 -mb-px rounded-t-lg border border-transparent hover:bg-white/5'"
-    @click="tab='preview'">
+      : 'px-3 py-2 -mb-px rounded-t-lg border border-transparent hover:bg-white/5'" @click="tab='preview'">
     Ön İzleme
   </button>
-
-  <button
-    :class="tab==='stats' 
+<button :class="tab==='stats' 
       ? 'px-3 py-2 -mb-px rounded-t-lg border bg-white/10 border-white/20 relative after:content-[\'\'] after:absolute after:left-[10px] after:right-[10px] after:bottom-[-1px] after:h-[2px] after:bg-sky-400 after:rounded' 
-      : 'px-3 py-2 -mb-px rounded-t-lg border border-transparent hover:bg-white/5'"
-    @click="tab='stats'">
+      : 'px-3 py-2 -mb-px rounded-t-lg border border-transparent hover:bg-white/5'" @click="tab='stats'">
     İstatistikler
   </button>
+</div>
+<!-- Nodes Table -->
+<div class="glass rounded-xl p-4" x-data="{ page: 1, pageSize: 20 }" x-show="tab==='nodes'">
+<div class="flex items-center justify-between mb-3"><div class="text-lg font-semibold">🎬 Yapımlar</div><div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded-lg border border-white/20 bg-white/5 hover:bg-white/10" title="Kart görünümüne geç">
+<span>🗂️ Kart Görünümü</span>
+
+</button>
+</div></div><div class="flex gap-2 mb-3 flex-wrap c o m p a c t">
+<button @click="addNode()" class="px-3 py-1.5 rounded-lg font-medium transition border bg-sky-600 hover:bg-sky-700 border-sky-500/40 text-white shadow">+ Yapım</button>
+<button :disabled="!selectedNodeIds.size" @click="deleteSelectedNodes()" class="px-3 py-1.5 rounded-lg font-medium transition border bg-rose-600 hover:bg-rose-700 border-rose-500/40 text-white">Sil (<span x-text="selectedNodeIds.size"></span>)</button>
+<div class="ml-auto flex gap-2">
+<button @click="bulkFillSources()" class="px-3 py-1.5 rounded-lg font-medium transition border bg-white/5 hover:bg-white/10 border-white/20 text-white">Seçilene Kaynak Şablonu</button>
+<button @click="saveDraft()" class="px-3 py-1.5 rounded-lg font-medium transition border bg-emerald-600 hover:bg-emerald-700 border-emerald-500/40 text-white">Taslağı Kaydet</button>
+</div>
+<div class="flex items-center gap-2 ml-auto">
+<select class="px-2 py-1 rounded border border-white/20 bg-white/5" x-model.number="pageSize">
+<option :value="10">10</option>
+<option :value="20">20</option>
+<option :value="50">50</option>
+</select>
+<div class="text-sm opacity-80">
+<span x-text="Math.min((page-1)*pageSize+1, filteredNodes.length)"></span>–
+        <span x-text="Math.min(page*pageSize, filteredNodes.length)"></span> /
+        <span x-text="filteredNodes.length"></span>
+</div>
+<button @click="page = Math.max(1, page-1)" class="btn-sm border border-white/20 bg-white/5 hover:bg-white/10 rounded px-2">◀</button>
+<button @click="page = Math.min(Math.ceil((filteredNodes?.length||0)/pageSize)||1, page+1)" class="btn-sm border border-white/20 bg-white/5 hover:bg-white/10 rounded px-2">▶</button>
+</div>
+</div>
+<div class="max-h-[70vh] overflow-y-auto overflow-x-auto">
 
 </div>
-
-
-      <!-- Nodes Table -->
-      <div x-show="tab==='nodes'" class="glass rounded-xl p-4">
-        <div class="flex gap-2 mb-3 flex-wrap">
-          <button class="px-3 py-1.5 rounded-lg font-medium transition border bg-sky-600 hover:bg-sky-700 border-sky-500/40 text-white shadow" @click="addNode()">+ Yapım</button>
-          <button class="px-3 py-1.5 rounded-lg font-medium transition border bg-rose-600 hover:bg-rose-700 border-rose-500/40 text-white" @click="deleteSelectedNodes()" :disabled="!selectedNodeIds.size">Sil (<span x-text="selectedNodeIds.size"></span>)</button>
-          <div class="ml-auto flex gap-2">
-            <button class="px-3 py-1.5 rounded-lg font-medium transition border bg-white/5 hover:bg-white/10 border-white/20 text-white" @click="bulkFillSources()">Seçilene Kaynak Şablonu</button>
-            <button class="px-3 py-1.5 rounded-lg font-medium transition border bg-emerald-600 hover:bg-emerald-700 border-emerald-500/40 text-white" @click="saveDraft()">Taslağı Kaydet</button>
-          </div>
-        </div>
-
-        <div class="max-h-[70vh] overflow-y-auto overflow-x-auto">
-          <table class="w-full text-sm nodes-table">
-            <thead class="text-left opacity-80 sticky-head">
-              <tr>
-                <th class="py-2 pr-2"><input type="checkbox" @change="toggleSelectAll($event, 'nodes')"/></th>
-                <th class="py-2 pr-2">ID</th>
-                <th class="py-2 pr-2">Başlık</th>
-                <th class="py-2 pr-2">Tarih</th>
-                <th class="py-2 pr-2">Tür</th>
-                <th class="py-2 pr-2">IMDb</th>
-                <th class="py-2 pr-2">Tip</th>
-                <th class="py-2 pr-2">Görsel</th>
-                <th class="py-2 pr-2">Kaynaklar (JSON)</th>
-                <th class="py-2 pr-2">İşlem</th>
-              </tr>
-            </thead>
-            <tbody>
-              <template x-for="(n, idx) in filteredNodes" :key="n.id">
-                <tr class="border-t border-white/10">
-                  <td class="py-2 pr-2"><input type="checkbox" :checked="selectedNodeIds.has(n.id)" @change="toggleSelect(n.id)"/></td>
-                  <td class="py-2 pr-2 w-24"><textarea x-model="n.id" @change="touch()" /></textarea></td>
-                  <td class="py-2 pr-2 min-w-52"><textarea x-model="n.label" @change="touch()" /></textarea></td>
-                  <td class="py-2 pr-2 w-36"><input type="date" x-model="n.release_date" @change="touch()" /></td>
-                  <td class="py-2 pr-2 w-56"><textarea x-model="n.tür" placeholder="Aksiyon, Bilim Kurgu" @change="touch()" /></textarea></td>
-                  <td class="py-2 pr-2 w-24"><input type="number" step="0.1" x-model.number="n.imdb_rating" @change="touch()" /></td>
-                  <td class="py-2 pr-2 w-28">
-                    <select x-model="n.type" @change="touch()">
-                      <option value="movie">Film</option>
-                      <option value="series">Dizi</option>
-                    </select>
-                  </td>
-                  <td class="py-2 pr-2 w-52"><textarea x-model="n.image" placeholder="Poster URL" @change="touch()" /></textarea></td>
-                  <td class="py-2 pr-2 w-[420px]">
-                    <div class="flex gap-2 mb-1">
-                      <button class="px-3 py-1.5 rounded-lg font-medium transition border bg-white/5 hover:bg-white/10 border-white/20 text-white text-xs" @click="formatJSON(n)">Biçimlendir</button>
-                      <button class="px-3 py-1.5 rounded-lg font-medium transition border bg-emerald-600 hover:bg-emerald-700 border-emerald-500/40 text-white text-xs" @click="openSourceEditor(n)">Güncelle</button>
-                    </div>
-                    <textarea class="h-28" x-model="n.sourcesText" @change="touch()" placeholder='{"Kaynaklar":[{"name":"...","url":"..."}],"Görsel":[...],"Platform":[...]}'></textarea>
-                    <div class="text-xs mt-1">
-                      <span :class="isValidJSON(n.sourcesText) ? 'text-emerald-400' : 'text-rose-400'" x-text="isValidJSON(n.sourcesText) ? '✔ Geçerli JSON' : '✖ Geçersiz JSON'"></span>
-                    </div>
-                  </td>
-                  <td class="py-2 pr-2 w-36">
-                    <div class="flex flex-col gap-1">
-                      <button class="px-3 py-1.5 rounded-lg font-medium transition border bg-white/5 hover:bg-white/10 border-white/20 text-white text-xs" @click="previewNode(n)">Ön İzleme</button>
-                      <div class="relative" x-data="{open:false}">
-                        <button class="px-3 py-1.5 rounded-lg font-medium transition border bg-white/5 hover:bg-white/10 border-white/20 text-white text-xs w-full" @click="open=!open">⋯ Aksiyonlar</button>
-                        <div x-show="open" @click.outside="open=false" class="absolute right-0 mt-1 w-44 glass rounded-lg p-2 space-y-1 border border-white/10">
-                          <button class="w-full text-left px-2 py-1 rounded hover:bg-white/10" @click="duplicateNode(n); open=false">Kopyala</button>
-                          <button class="w-full text-left px-2 py-1 rounded hover:bg-white/10" @click="clearSources(n); open=false">Kaynakları Temizle</button>
-                          <button class="w-full text-left px-2 py-1 rounded hover:bg-white/10 text-rose-300" @click="removeNode(idx); open=false">Sil</button>
-                        </div>
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-              </template>
-            </tbody>
-          </table>
-        </div>
-      </div>
-
-      <!-- Edges Table -->
-      <div x-show="tab==='edges'" class="glass rounded-xl p-4">
-        <div class="flex gap-2 mb-3">
-          <button class="px-3 py-1.5 rounded-lg font-medium transition border bg-sky-600 hover:bg-sky-700 border-sky-500/40 text-white shadow" @click="addEdge()">+ Bağlantı</button>
-          <button class="px-3 py-1.5 rounded-lg font-medium transition border bg-rose-600 hover:bg-rose-700 border-rose-500/40 text-white" @click="deleteSelectedEdges()" :disabled="!selectedEdgeIdx.size">Sil (<span x-text="selectedEdgeIdx.size"></span>)</button>
-        </div>
-
-        <div class="overflow-x-auto">
-          <table class="w-full text-sm">
-            <thead class="text-left opacity-80 sticky-head">
-              <tr>
-                <th class="py-2 pr-2"><input type="checkbox" @change="toggleSelectAll($event, 'edges')"/></th>
-                <th class="py-2 pr-2">From</th>
-                <th class="py-2 pr-2">To</th>
-                <th class="py-2 pr-2">Tür</th>
-                <th class="py-2 pr-2">Not</th>
-                <th class="py-2 pr-2">İşlem</th>
-              </tr>
-            </thead>
-            <tbody>
-              <template x-for="(e, i) in current.edges" :key="i">
-                <tr class="border-t border-white/10 align-top">
-                  <td class="py-2 pr-2"><input type="checkbox" :checked="selectedEdgeIdx.has(i)" @change="toggleSelectEdge(i)"/></td>
-                  <td class="py-2 pr-2 w-44">
-                    <select x-model="e.from" @change="touch()">
-                      <template x-for="n in current.nodes" :key="n.id">
-                        <option :value="n.id" x-text="n.label"></option>
-                      </template>
-                    </select>
-                  </td>
-                  <td class="py-2 pr-2 w-44">
-                    <select x-model="e.to" @change="touch()">
-                      <template x-for="n in current.nodes" :key="n.id">
-                        <option :value="n.id" x-text="n.label"></option>
-                      </template>
-                    </select>
-                  </td>
-                  <td class="py-2 pr-2 w-56">
-                    <input x-model="e.type" list="edgeTypes" placeholder="Devam, Crossover, ..." @change="touch()"/>
-                  </td>
-                  <td class="py-2 pr-2 w-[420px]"><textarea class="w-full rounded px-2 py-1 h-20" x-model="e.notes" @change="touch()"></textarea></td>
-                  <td class="py-2 pr-2 w-28">
-                    <button class="px-3 py-1.5 rounded-lg font-medium transition border bg-rose-600 hover:bg-rose-700 border-rose-500/40 text-white text-xs w-full" @click="removeEdge(i)">Sil</button>
-                  </td>
-                </tr>
-              </template>
-            </tbody>
-          </table>
-        </div>
-
-        <datalist id="edgeTypes">
-          <option value="Devam"></option>
-          <option value="Doğrudan Devam"></option>
-          <option value="Crossover"></option>
-          <option value="Ana Hikaye Bağlantısı"></option>
-          <option value="Ana Tehdit"></option>
-          <option value="Sonsuzluk Taşı"></option>
-          <option value="Çoklu Evren"></option>
-        </datalist>
-      </div>
-
-      <!-- Preview -->
-      <div x-show="tab==='preview'" class="glass rounded-xl p-4">
-        <h3 class="font-semibold mb-3">Seçili Yapım Önizleme</h3>
-        <template x-if="preview">
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <div class="sm:col-span-1 space-y-2">
-              <img :src="preview.image" class="w-full rounded-xl border border-white/10 object-cover aspect-[2/3]" />
-              <div class="text-xs opacity-80">Poster URL: <span class="break-all" x-text="preview.image"></span></div>
-              <div class="flex items-center gap-2 text-xs">
-                <button class="px-3 py-1.5 rounded-lg font-medium transition border bg-white/5 hover:bg-white/10 border-white/20 text-white text-xs" @click="checkPoster()">Posteri Kontrol Et</button>
-                <span>Durum:</span>
-                <span :class="previewPoster.ok===true ? 'text-emerald-400' : (previewPoster.ok===false ? 'text-rose-400' : 'text-amber-300')" x-text="previewPoster.running ? 'Kontrol ediliyor…' : (previewPoster.text || '-')"></span>
-              </div>
-            </div>
-            <div class="sm:col-span-2 space-y-2 text-sm">
-              <div class="text-2xl font-bold" x-text="preview.label"></div>
-              <div>
-                <b>Vizyon:</b> <span x-text="preview.release_date"></span>
-                <span class="px-2">•</span>
-                <b>IMDb:</b> <span x-text="preview.imdb_rating"></span>
-              </div>
-              <div><b>Tür:</b> <span x-text="preview.tür"></span></div>
-              <div><b>Tip:</b> <span x-text="preview.type"></span></div>
-              <div>
-                <b>Kaynaklar:</b>
-                <div class="mt-2 grid sm:grid-cols-2 gap-3">
-                  <template x-for="(arr, k) in normalizeSources(preview.sources)" :key="k">
-                    <div class="border border-white/10 rounded-lg p-2">
-                      <div class="text-xs font-semibold mb-1 flex items-center gap-1">
-                        <span x-text="k"></span>
-                        <span class="opacity-60">(<span x-text="arr.length"></span>)</span>
-                      </div>
-                      <ul class="space-y-1">
-                        <template x-for="src in arr" :key="src.url || src.name">
-                          <li class="flex items-center gap-2 text-xs">
-                            <img :src="favicon(src.url)" class="w-4 h-4 rounded" alt=""/>
-                            <a href="#" @click.prevent="window.open(src.url, '_blank','noopener')" class="hover:underline" x-text="src.name || src.url"></a>
-                          </li>
-                        </template>
-                      </ul>
-                    </div>
-                  </template>
-                </div>
-              </div>
-            </div>
-          </div>
-        </template>
-        <template x-if="!preview">
-          <div class="text-sm opacity-70">Tablodan bir yapımı "Ön İzleme" ile aç.</div>
-        </template>
-      </div>
-    
-      <!-- Stats / Analytics -->
-      <div x-show="tab==='stats'" class="glass rounded-xl p-4 space-y-4">
-        <div class="flex items-center gap-2">
-          <h3 class="font-semibold text-lg">İstatistikler</h3>
-          <span class="text-xs opacity-70">(Veri + Ziyaretçi)</span>
-          <div class="ml-auto flex items-center gap-2 text-sm">
-            <select id="analyticsRange" class="rounded px-2 py-1.5">
-              <option value="7d">7g</option>
-              <option value="30d" selected>30g</option>
-              <option value="90d">90g</option>
-            </select>
-            <button class="px-3 py-1.5 rounded-lg font-medium transition border bg-white/5 hover:bg-white/10 border-white/20 text-white"
-              @click="window.__evrenStats?.renderAll($root)">Yenile</button>
-            <button id="exportCsvBtn" class="px-3 py-1.5 rounded-lg font-medium transition border bg-white/5 hover:bg-white/10 border-white/20 text-white">CSV</button>
-            <button id="exportJsonBtn" class="px-3 py-1.5 rounded-lg font-medium transition border bg-white/5 hover:bg-white/10 border-white/20 text-white">JSON</button>
-            <button class="px-3 py-1.5 rounded-lg font-medium transition border bg-amber-600 hover:bg-amber-700 border-amber-500/40 text-white"
-              @click="document.getElementById('trackingModal').showModal()">Takip Kodu</button>
-          </div>
-        </div>
-
-        <!-- Top KPIs -->
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 text-sm">
-          <div class="glass rounded-xl p-3 border border-white/10">
-            <div class="opacity-70">Yapım</div>
-            <div class="text-2xl font-bold" x-text="stats.nodes"></div>
-          </div>
-          <div class="glass rounded-xl p-3 border border-white/10">
-            <div class="opacity-70">Bağlantı</div>
-            <div class="text-2xl font-bold" x-text="stats.edges"></div>
-          </div>
-          <div class="glass rounded-xl p-3 border border-white/10">
-            <div class="opacity-70">Kaynaklı Yapım</div>
-            <div class="text-2xl font-bold" x-text="stats.withSources"></div>
-          </div>
-          <div class="glass rounded-xl p-3 border border-white/10">
-            <div class="opacity-70">IMDb Ort.</div>
-            <div class="text-2xl font-bold" x-text="window.__evrenStats?.avgImdb($root) ?? '-'"></div>
-          </div>
-        </div>
-
-        <!-- Charts: Modern Grid -->
-<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 auto-rows-fr">
-  <div class="glass rounded-xl p-3 border border-white/10">
-    <div class="font-semibold mb-2 text-sm">Film / Dizi</div>
-    <div class="chart-box"><canvas id="chartTypeDonut"></canvas></div>
-  </div>
-  <div class="glass rounded-xl p-3 border border-white/10">
-    <div class="font-semibold mb-2 text-sm">Yıllara Göre Yapım</div>
-    <div class="chart-box"><canvas id="chartByYearArea"></canvas></div>
-  </div>
-  <div class="glass rounded-xl p-3 border border-white/10">
-    <div class="font-semibold mb-2 text-sm">IMDb Dağılımı</div>
-    <div class="chart-box"><canvas id="chartImdbBars"></canvas></div>
-  </div>
-  <div class="glass rounded-xl p-3 border border-white/10">
-    <div class="font-semibold mb-2 text-sm">Ziyaret (Günlük)</div>
-    <div class="chart-box"><canvas id="chartVisitsLine"></canvas></div>
-  </div>
-  <div class="glass rounded-xl p-3 border border-white/10">
-    <div class="font-semibold mb-2 text-sm">Cihazlar</div>
-    <div class="chart-box"><canvas id="chartDevicesDonut"></canvas></div>
-  </div>
-  <div class="glass rounded-xl p-3 border border-white/10">
-    <div class="font-semibold mb-2 text-sm">En Çok Görüntülenen Sayfalar</div>
-    <div class="chart-box"><canvas id="chartTopPagesBarH"></canvas></div>
-  </div>
+<div class="card-grid grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-3">
+<template :key="n.id" x-for="(n, idx) in filteredNodes.slice((page-1)*pageSize, page*pageSize)">
+<div class="card">
+<div class="flex items-center justify-between mb-2">
+<input :checked="selected.includes(n.id)" @change="toggleSelect(n.id)" class="accent-emerald-500 w-4 h-4 rounded" type="checkbox"/>
+<button @click="removeNode(n)" class="text-red-500 text-sm hover:text-red-700">🗑 Sil</button>
+</div>
+<div class="flex gap-3">
+<img :src="n.image" alt="" class="w-16 h-20 rounded-lg object-cover border border-white/10"/>
+<div class="min-w-0">
+<div class="font-semibold truncate" x-text="n.label"></div>
+<div class="meta mt-1 flex items-center gap-2">
+<span x-text="toTRDate(n.release_date)"></span> •
+            <span x-text="n.type"></span> •
+            <span>IMDb <b x-text="n.imdb_rating"></b></span>
+</div>
+<div class="text-xs opacity-70 truncate" x-text="n.tür"></div>
+</div>
+</div>
+<div class="flex gap-2 mt-3">
+<button @click="previewNode(n)" class="px-2 py-1.5 rounded border border-white/20 bg-white/5 hover:bg-white/10 text-xs">Ön İzleme</button>
+<button class="px-2 py-1.5 rounded border border-white/20 bg-white/5 hover:bg-white/10 text-xs">
+          JSON Düzenle
+        </button>
+<button @click="$store.form.edit(n)" class="px-2 py-1.5 rounded border border-white/20 bg-white/5 hover:bg-white/10 text-xs">
+          Düzenle
+        </button>
+</div>
+</div>
+</template>
+</div>
+</div>
+<!-- Edges Table -->
+<div class="glass rounded-xl p-4">
+<div class="flex gap-2 mb-3">
+<button @click="addEdge()" class="px-3 py-1.5 rounded-lg font-medium transition border bg-sky-600 hover:bg-sky-700 border-sky-500/40 text-white shadow">+ Bağlantı</button>
+<button :disabled="!selectedEdgeIdx.size" @click="deleteSelectedEdges()" class="px-3 py-1.5 rounded-lg font-medium transition border bg-rose-600 hover:bg-rose-700 border-rose-500/40 text-white">Sil (<span x-text="selectedEdgeIdx.size"></span>)</button>
+</div>
+<div class="overflow-x-auto">
 
 </div>
-<div class="text-xs opacity-70">
-          Ziyaretçi verileri <code>(__ANALYTICS_BASE||'') + '/api/analytics/summary?range=7d|30d|90d'</code> uç noktasından çekilir. 
-          Eğer ulaşılamazsa demo verisi kullanılır.
-        </div>
-      </div></div>
+<datalist id="edgeTypes">
+<option value="Devam"></option>
+<option value="Doğrudan Devam"></option>
+<option value="Crossover"></option>
+<option value="Ana Hikaye Bağlantısı"></option>
+<option value="Ana Tehdit"></option>
+<option value="Sonsuzluk Taşı"></option>
+<option value="Çoklu Evren"></option>
+</datalist>
+</div>
+<!-- Preview -->
+<div class="glass rounded-xl p-4" x-show="tab==='preview'">
+<h3 class="font-semibold mb-3">Seçili Yapım Önizleme</h3>
+<template x-if="preview">
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+<div class="sm:col-span-1 space-y-2">
+<img :src="preview.image" class="w-full rounded-xl border border-white/10 object-cover aspect-[2/3]"/>
+<div class="text-xs opacity-80">Poster URL: <span class="break-all" x-text="preview.image"></span></div>
+<div class="flex items-center gap-2 text-xs">
+<button @click="checkPoster()" class="px-3 py-1.5 rounded-lg font-medium transition border bg-white/5 hover:bg-white/10 border-white/20 text-white text-xs">Posteri Kontrol Et</button>
+<span>Durum:</span>
+<span :class="previewPoster.ok===true ? 'text-emerald-400' : (previewPoster.ok===false ? 'text-rose-400' : 'text-amber-300')" x-text="previewPoster.running ? 'Kontrol ediliyor…' : (previewPoster.text || '-')"></span>
+</div>
+</div>
+<div class="sm:col-span-2 space-y-2 text-sm">
+<div class="text-2xl font-bold" x-text="preview.label"></div>
+<div>
+<b>Vizyon:</b> <span x-text="preview.release_date"></span>
+<span class="px-2">•</span>
+<b>IMDb:</b> <span x-text="preview.imdb_rating"></span>
+</div>
+<div><b>Tür:</b> <span x-text="preview.tür"></span></div>
+<div><b>Tip:</b> <span x-text="preview.type"></span></div>
+<div>
+<b>Kaynaklar:</b>
+<div class="mt-2 grid sm:grid-cols-2 gap-3">
+<template :key="k" x-for="(arr, k) in normalizeSources(preview.sources)">
+<div class="border border-white/10 rounded-lg p-2">
+<div class="text-xs font-semibold mb-1 flex items-center gap-1">
+<span x-text="k"></span>
+<span class="opacity-60">(<span x-text="arr.length"></span>)</span>
+</div>
+<ul class="space-y-1">
+<template :key="src.url || src.name" x-for="src in arr">
+<li class="flex items-center gap-2 text-xs">
+<img :src="favicon(src.url)" alt="" class="w-4 h-4 rounded"/>
+<a @click.prevent="window.open(src.url, '_blank','noopener')" class="hover:underline" href="#" x-text="src.name || src.url"></a>
+</li>
+</template>
+</ul>
+</div>
+</template>
+</div>
+</div>
+</div>
+</div>
+</template>
+<template x-if="!preview">
+<div class="text-sm opacity-70">Tablodan bir yapımı "Ön İzleme" ile aç.</div>
+</template>
+</div>
+<!-- Stats / Analytics -->
 
-      <!-- Tracking Code Modal -->
-      <dialog id="trackingModal" class="rounded-xl w-[92vw] max-w-2xl p-0">
-        <form method="dialog" class="glass border border-white/20 rounded-xl p-4">
-          <div class="flex items-center justify-between mb-2">
-            <div class="font-semibold">Takip Kodu</div>
-            <button class="px-3 py-1.5 rounded-lg font-medium transition border bg-white/5 hover:bg-white/10 border-white/20 text-white text-xs">Kapat</button>
-          </div>
-          <div class="text-sm opacity-80 mb-2">Bunu kamuya açık sayfalara ekleyin (</> body kapanışından önce):</div>
-          <pre class="text-xs bg-black/40 p-3 rounded border border-white/10 overflow-x-auto"><code>&lt;script&gt;
+<!-- Tracking Code Modal -->
+<dialog class="rounded-xl w-[92vw] max-w-2xl p-0" id="trackingModal">
+<form class="glass border border-white/20 rounded-xl p-4" method="dialog">
+<div class="flex items-center justify-between mb-2">
+<div class="font-semibold">Takip Kodu</div>
+<button class="px-3 py-1.5 rounded-lg font-medium transition border bg-white/5 hover:bg-white/10 border-white/20 text-white text-xs">Kapat</button>
+</div>
+<div class="text-sm opacity-80 mb-2">Bunu kamuya açık sayfalara ekleyin ( body kapanışından önce):</div>
+<pre class="text-xs bg-black/40 p-3 rounded border border-white/10 overflow-x-auto"><code>&lt;script&gt;
 !function(){
   const payload = {
     ts: Date.now(),
@@ -529,162 +609,128 @@
     headers: {'Content-Type':'application/json'},
     body: JSON.stringify(payload),
     keepalive: true
-  }).catch(()=>{});
+  }).catch(()=&gt;{});
 }();
 &lt;/script&gt;</code></pre>
-          <div class="text-xs opacity-70">Sunucu tarafında <code>POST /api/analytics/collect</code> isteğini veritabanına yazmanız gerekir. 
-            Admin paneli <code>/api/analytics/summary</code> ile özet çeker.</div>
-        </form>
-      </dialog>
-
-    </section>
-  </main>
-
-  <!-- Source Helper Modal -->
-
+<div class="text-xs opacity-70">Sunucu tarafında <code>POST /api/analytics/collect</code> isteğini veritabanına yazmanız gerekir. 
+            Admin paneli <code>/api/analytics/report</code> ile özet çeker.</div>
+</form>
+</dialog>
+</section>
+</main>
+<!-- Source Helper Modal -->
 <!-- Source Editor Modal -->
-<div x-show="sourceEdit.open" class="fixed inset-0 z-[60] flex items-center justify-center bg-black/60">
-  <div class="glass rounded-xl p-4 w-[96vw] max-w-3xl border border-white/20">
-    <div class="flex items-center justify-between mb-3">
-      <h3 class="font-semibold">Kaynak Düzenleyici</h3>
-      <div class="flex gap-2">
-        <button class="px-3 py-1.5 rounded-lg font-medium transition border bg-emerald-600 hover:bg-emerald-700 border-emerald-500/40 text-white text-xs" @click="saveSourceEditor()">Kaydet</button>
-        <button class="px-3 py-1.5 rounded-lg font-medium transition border bg-white/5 hover:bg-white/10 border-white/20 text-white text-xs" @click="closeSourceEditor()">Kapat</button>
-      </div>
-    </div>
-    <template x-if="sourceEdit.node">
-      <div class="space-y-4 text-sm">
-        <template x-for="cat in ['Kaynaklar','Görsel','Platform']" :key="cat">
-          <div class="border border-white/10 rounded-lg p-3">
-            <div class="flex items-center justify-between mb-2">
-              <div class="font-semibold" x-text="cat"></div>
-              <button class="px-2 py-1 rounded border border-white/20 hover:bg-white/10 text-xs" @click="addSourceRow(cat)">+ Satır</button>
-            </div>
-            <div class="grid grid-cols-1 sm:grid-cols-12 gap-2">
-              <div class="sm:col-span-5 text-xs opacity-70">Ad</div>
-              <div class="sm:col-span-6 text-xs opacity-70">URL</div>
-              <div class="sm:col-span-1"></div>
-              <template x-for="(row, i) in sourceEdit.data[cat]" :key="cat + i">
-                <div class="contents">
-                  <div class="sm:col-span-5">
-                    <input class="w-full rounded px-2 py-1.5" x-model="row.name" placeholder="IMDb / Disney+" />
-                  </div>
-                  <div class="sm:col-span-6">
-                    <input class="w-full rounded px-2 py-1.5" x-model="row.url" placeholder="https://..." />
-                  </div>
-                  <div class="sm:col-span-1 flex justify-end">
-                    <button class="px-2 py-1 rounded border border-rose-400/40 text-rose-300 hover:bg-rose-500/10 text-xs" @click="removeSourceRow(cat, i)">Sil</button>
-                  </div>
-                </div>
-              </template>
-              <template x-if="!sourceEdit.data[cat]?.length">
-                <div class="sm:col-span-12 text-xs opacity-60">Bu kategoride kayıt yok.</div>
-              </template>
-            </div>
-          </div>
-        </template>
-      </div>
-    </template>
-  </div>
+<div class="fixed inset-0 z-[60] flex items-center justify-center bg-black/60" style="z-index:10050;" x-show="sourceEdit.open">
+<div class="glass rounded-xl p-4 w-[96vw] max-w-3xl border border-white/20">
+<div class="flex items-center justify-between mb-3">
+<h3 class="font-semibold">Kaynak Düzenleyici</h3>
+<div class="flex gap-2">
+<button @click="saveSourceEditor()" class="px-3 py-1.5 rounded-lg font-medium transition border bg-emerald-600 hover:bg-emerald-700 border-emerald-500/40 text-white text-xs">Kaydet</button>
+<button @click="closeSourceEditor()" class="px-3 py-1.5 rounded-lg font-medium transition border bg-white/5 hover:bg-white/10 border-white/20 text-white text-xs">Kapat</button>
 </div>
+</div>
+<template x-if="sourceEdit.node">
+<div class="space-y-4 text-sm">
+<template :key="cat" x-for="cat in ['Kaynaklar','Görsel','Platform']">
+<div class="border border-white/10 rounded-lg p-3">
+<div class="flex items-center justify-between mb-2">
+<div class="font-semibold" x-text="cat"></div>
+<button @click="addSourceRow(cat)" class="px-2 py-1 rounded border border-white/20 hover:bg-white/10 text-xs">+ Satır</button>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-12 gap-2">
+<div class="sm:col-span-5 text-xs opacity-70">Ad</div>
+<div class="sm:col-span-6 text-xs opacity-70">URL</div>
+<div class="sm:col-span-1"></div>
+<template :key="cat + i" x-for="(row, i) in sourceEdit.data[cat]">
+<div class="contents">
+<div class="sm:col-span-5">
+<input class="w-full rounded px-2 py-1.5" placeholder="IMDb / Disney+" x-model="row.name"/>
+</div>
+<div class="sm:col-span-6">
+<input class="w-full rounded px-2 py-1.5" placeholder="https://..." x-model="row.url"/>
+</div>
+<div class="sm:col-span-1 flex justify-end">
+<button @click="removeSourceRow(cat, i)" class="px-2 py-1 rounded border border-rose-400/40 text-rose-300 hover:bg-rose-500/10 text-xs">Sil</button>
+</div>
+</div>
+</template>
+<template x-if="!sourceEdit.data[cat]?.length">
+<div class="sm:col-span-12 text-xs opacity-60">Bu kategoride kayıt yok.</div>
+</template>
+</div>
+</div>
+</template>
+</div>
+</template>
+</div>
+</div>
+<div class="fixed inset-0 z-50 flex items-center justify-center bg-black/60" x-show="showSourceHelper">
+<div class="glass rounded-xl p-4 w-[92vw] max-w-xl">
+<div class="flex items-center justify-between mb-3">
+<h3 class="font-semibold">Kaynak Yardımcısı</h3>
+<button @click="showSourceHelper=false" class="px-3 py-1.5 rounded-lg font-medium transition border bg-white/5 hover:bg-white/10 border-white/20 text-white">Kapat</button>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+<div>
+<label class="block mb-1">Kategori</label>
+<select class="w-full rounded px-2 py-1.5" x-model="sourceHelper.category">
+<option>Kaynaklar</option>
+<option>Görsel</option>
+<option>Platform</option>
+</select>
+</div>
+<div class="sm:col-span-2">
+<label class="block mb-1">Ad</label>
+<input class="w-full rounded px-2 py-1.5" placeholder="IMDb / Disney+ / Box Office Türkiye" x-model="sourceHelper.name"/>
+</div>
+<div class="sm:col-span-2">
+<label class="block mb-1">URL</label>
+<input class="w-full rounded px-2 py-1.5" placeholder="https://..." x-model="sourceHelper.url"/>
+<div class="text-xs opacity-70 mt-1 flex items-center gap-2" x-show="sourceHelper.url">
+<img :src="favicon(sourceHelper.url)" alt="" class="w-4 h-4 rounded"/>
+<span x-text="hostName(sourceHelper.url)"></span>
+</div>
+</div>
+</div>
+<div class="flex justify-end gap-2 mt-4">
+<button @click="addSourceEntry()" class="px-3 py-1.5 rounded-lg font-medium transition border bg-sky-600 hover:bg-sky-700 border-sky-500/40 text-white shadow">Ekle</button>
+</div>
+</div>
+</div>
+<!-- Link Test Modal -->
+<div class="fixed inset-0 z-50 flex items-center justify-center bg-black/60" x-show="linkTest.open">
+<div class="glass rounded-xl p-4 w-[96vw] max-w-3xl">
+<div class="flex items-center justify-between mb-3">
+<h3 class="font-semibold">Link Testi</h3>
+<button @click="closeLinkTester()" class="px-3 py-1.5 rounded-lg font-medium transition border bg-white/5 hover:bg-white/10 border-white/20 text-white">Kapat</button>
+</div>
+<div class="text-sm mb-2">
+<div class="flex flex-wrap gap-2 items-center">
+<div>Toplam URL: <b x-text="linkTest.total"></b></div>
+<div>Tamamlanan: <b x-text="linkTest.checked"></b></div>
+<div class="text-amber-300" x-show="linkTest.running">Çalışıyor…</div>
+</div>
+</div>
+<div class="max-h-[60vh] overflow-y-auto">
 
-  <div x-show="showSourceHelper" class="fixed inset-0 z-50 flex items-center justify-center bg-black/60">
-    <div class="glass rounded-xl p-4 w-[92vw] max-w-xl">
-      <div class="flex items-center justify-between mb-3">
-        <h3 class="font-semibold">Kaynak Yardımcısı</h3>
-        <button class="px-3 py-1.5 rounded-lg font-medium transition border bg-white/5 hover:bg-white/10 border-white/20 text-white" @click="showSourceHelper=false">Kapat</button>
-      </div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
-        <div>
-          <label class="block mb-1">Kategori</label>
-          <select class="w-full rounded px-2 py-1.5" x-model="sourceHelper.category">
-            <option>Kaynaklar</option>
-            <option>Görsel</option>
-            <option>Platform</option>
-          </select>
-        </div>
-        <div class="sm:col-span-2">
-          <label class="block mb-1">Ad</label>
-          <input class="w-full rounded px-2 py-1.5" x-model="sourceHelper.name" placeholder="IMDb / Disney+ / Box Office Türkiye" />
-        </div>
-        <div class="sm:col-span-2">
-          <label class="block mb-1">URL</label>
-          <input class="w-full rounded px-2 py-1.5" x-model="sourceHelper.url" placeholder="https://..." />
-          <div class="text-xs opacity-70 mt-1 flex items-center gap-2" x-show="sourceHelper.url">
-            <img :src="favicon(sourceHelper.url)" class="w-4 h-4 rounded" alt=""/>
-            <span x-text="hostName(sourceHelper.url)"></span>
-          </div>
-        </div>
-      </div>
-      <div class="flex justify-end gap-2 mt-4">
-        <button class="px-3 py-1.5 rounded-lg font-medium transition border bg-sky-600 hover:bg-sky-700 border-sky-500/40 text-white shadow" @click="addSourceEntry()">Ekle</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- Link Test Modal -->
-  <div x-show="linkTest.open" class="fixed inset-0 z-50 flex items-center justify-center bg-black/60">
-    <div class="glass rounded-xl p-4 w-[96vw] max-w-3xl">
-      <div class="flex items-center justify-between mb-3">
-        <h3 class="font-semibold">Link Testi</h3>
-        <button class="px-3 py-1.5 rounded-lg font-medium transition border bg-white/5 hover:bg-white/10 border-white/20 text-white" @click="closeLinkTester()">Kapat</button>
-      </div>
-      <div class="text-sm mb-2">
-        <div class="flex flex-wrap gap-2 items-center">
-          <div>Toplam URL: <b x-text="linkTest.total"></b></div>
-          <div>Tamamlanan: <b x-text="linkTest.checked"></b></div>
-          <div x-show="linkTest.running" class="text-amber-300">Çalışıyor…</div>
-        </div>
-      </div>
-      <div class="max-h-[60vh] overflow-y-auto">
-        <table class="w-full text-xs">
-          <thead class="text-left opacity-80 sticky-head">
-            <tr>
-              <th class="py-2 pr-2">Yapım</th>
-              <th class="py-2 pr-2">Kategori</th>
-              <th class="py-2 pr-2">Ad</th>
-              <th class="py-2 pr-2">URL</th>
-              <th class="py-2 pr-2">Durum</th>
-            </tr>
-          </thead>
-          <tbody>
-            <template x-for="row in linkTest.results" :key="row.nodeId + row.url">
-              <tr class="border-t border-white/10">
-                <td class="py-1 pr-2" x-text="row.label"></td>
-                <td class="py-1 pr-2" x-text="row.category"></td>
-                <td class="py-1 pr-2" x-text="row.name"></td>
-                <td class="py-1 pr-2 break-all">
-                  <a href="#" @click.prevent="window.open(row.url, '_blank','noopener')" class="hover:underline" x-text="row.url"></a>
-                </td>
-                <td class="py-1 pr-2">
-                  <span :class="row.ok === true ? 'text-emerald-400' : (row.ok === false ? 'text-rose-400' : 'text-amber-300')" x-text="row.statusText || '-'"></span>
-                </td>
-              </tr>
-            </template>
-          </tbody>
-        </table>
-      </div>
-      <div class="flex justify-end gap-2 mt-3 text-sm">
-        <button class="px-3 py-1.5 rounded-lg font-medium transition border bg-white/5 hover:bg-white/10 border-white/20 text-white" :disabled="linkTest.running" @click="runLinkTests()">Seçilene Ait Linkleri Test Et</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- Hidden file input -->
-  <input type="file" id="fileInput" class="hidden" multiple />
-
-  <!-- Toasts -->
-  <div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-[100] space-y-2 w-[92vw] max-w-md">
-    <template x-for="t in toasts" :key="t.id">
-      <div class="glass rounded-lg px-3 py-2 text-sm border"
-           :class="t.type==='success' ? 'border-emerald-400/40 text-emerald-300' : (t.type==='error' ? 'border-rose-400/40 text-rose-300' : 'border-white/20 text-white')">
-        <span x-text="t.message"></span>
-      </div>
-    </template>
-  </div>
-
-  <!-- Scripts -->
-  <script>
+</div>
+<div class="flex justify-end gap-2 mt-3 text-sm">
+<button :disabled="linkTest.running" @click="runLinkTests()" class="px-3 py-1.5 rounded-lg font-medium transition border bg-white/5 hover:bg-white/10 border-white/20 text-white">Seçilene Ait Linkleri Test Et</button>
+</div>
+</div>
+</div>
+<!-- Hidden file input -->
+<input class="hidden" id="fileInput" multiple="" type="file"/>
+<!-- Toasts -->
+<div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-[100] space-y-2 w-[92vw] max-w-md">
+<template :key="t.id" x-for="t in toasts">
+<div :class="t.type==='success' ? 'border-emerald-400/40 text-emerald-300' : (t.type==='error' ? 'border-rose-400/40 text-rose-300' : 'border-white/20 text-white')" class="glass rounded-lg px-3 py-2 text-sm border">
+<span x-text="t.message"></span>
+</div>
+</template>
+</div>
+<!-- Scripts -->
+<script>
     function adminApp(){
       return {
         // Toasts
@@ -761,6 +807,21 @@
               }
             } catch (e) { console.warn('Yüklenemedi:', u, e); }
           }
+          // İlk açılışta istatistikleri çiz
+          try {
+            const fire = () => window.__evrenStats?.renderAll(this.$root);
+            // Range değişince yeniden çiz
+            this.$nextTick(() => {
+              const sel = document.getElementById('analyticsRange');
+              if (sel && !sel.__evrenBound) {
+                sel.addEventListener('change', fire);
+                sel.__evrenBound = true;
+              }
+            });
+            // Veriler yüklendikten hemen sonra bir kez çalıştır
+            this.$nextTick(() => setTimeout(fire, 0));
+          } catch(e){ console.warn('renderAll init error', e); }
+
         },
 
         // filters
@@ -1159,12 +1220,10 @@
       window.hostName = function(url){ return safeHostname(url); };
     })();
   </script>
-
-  <script>
+<script>
     // Optional: set this when API is on another origin (e.g. workers.dev)
     window.__ANALYTICS_BASE = 'https://evren-analytics.no-reply-bf4.workers.dev';
   </script>
-  
 <script>
 window.__evrenStats = (function(){
   const charts = {};
@@ -1188,18 +1247,11 @@ window.__evrenStats = (function(){
     const nodes = getNodes(app);
     const typeCounts = { movie:0, series:0 };
     const yearMap = new Map();
-    const genresMap = new Map();
     const imdbBuckets = { '<5':0, '5-5.9':0, '6-6.9':0, '7-7.9':0, '8-8.9':0, '9-10':0 };
     for (const n of nodes){
       if (n.type==='series') typeCounts.series++; else typeCounts.movie++;
       const y = n.release_date ? new Date(n.release_date).getFullYear() : null;
       if (y) yearMap.set(y, (yearMap.get(y)||0)+1);
-      const türStr = String(n.tür || '')
-      .split(',')
-      .map(s => s.trim())
-      .filter(Boolean);
-      const uniqueGenres = [...new Set(türStr)];
-      uniqueGenres.forEach(g => genresMap.set(g, (genresMap.get(g)||0)+1));
       const r = Number(n.imdb_rating);
       if (!isNaN(r)){
         if (r<5) imdbBuckets['<5']++; else if (r<6) imdbBuckets['5-5.9']++;
@@ -1230,27 +1282,24 @@ window.__evrenStats = (function(){
   }
 
   function colors(n){
-    // pleasant default palette
     const palette = [
-      'rgba(59,130,246,0.7)',  // blue-500
-      'rgba(16,185,129,0.7)',  // emerald-500
-      'rgba(236,72,153,0.7)',  // pink-500
-      'rgba(234,179,8,0.7)',   // amber-500
-      'rgba(168,85,247,0.7)',  // purple-500
-      'rgba(244,114,182,0.7)', // pink-400
-      'rgba(34,197,94,0.7)',   // green-500
-      'rgba(14,165,233,0.7)',  // sky-500
+      'rgba(59,130,246,0.7)',
+      'rgba(16,185,129,0.7)',
+      'rgba(236,72,153,0.7)',
+      'rgba(234,179,8,0.7)',
+      'rgba(168,85,247,0.7)',
+      'rgba(244,114,182,0.7)',
+      'rgba(34,197,94,0.7)',
+      'rgba(14,165,233,0.7)',
     ];
     return Array.from({length:n}, (_,i)=>palette[i % palette.length]);
   }
 
-  // ---------- analytics ----------
   function rangeDays(range){ return ({'7d':7,'30d':30,'90d':90})[range]||30; }
   function today(){ const d=new Date(); d.setHours(0,0,0,0); return d; }
   function formatDate(d){ return d.toISOString().slice(0,10); }
 
   function genDemo(range){
-    function rangeDays(r){ return ({'7d':7,'30d':30,'90d':90})[r]||30; }
     const days = rangeDays(range||'30d');
     const base = new Date(); base.setHours(0,0,0,0);
     const out = [];
@@ -1267,13 +1316,6 @@ window.__evrenStats = (function(){
       { device:'mobile',  count: Math.floor(pageviews*0.38) },
       { device:'tablet',  count: Math.max(1, Math.floor(pageviews*0.07)) },
     ];
-    const sources = [
-      { source:'direct',   count: Math.floor(visits*0.42) },
-      { source:'google',   count: Math.floor(visits*0.35) },
-      { source:'twitter',  count: Math.floor(visits*0.08) },
-      { source:'facebook', count: Math.floor(visits*0.06) },
-      { source:'other',    count: Math.max(1, visits - (Math.floor(visits*0.42)+Math.floor(visits*0.35)+Math.floor(visits*0.08)+Math.floor(visits*0.06))) },
-    ];
     const pages = [
       { path:'/evren',         views: Math.floor(pageviews*0.22) },
       { path:'/evren/marvel',  views: Math.floor(pageviews*0.18) },
@@ -1282,274 +1324,497 @@ window.__evrenStats = (function(){
       { path:'/hakkimizda',    views: Math.floor(pageviews*0.06) },
     ];
     return { totals: { visits, visitors: Math.floor(visits*0.82), pageviews, bounce_rate: 0.48, avg_session_duration: 73 },
-             timeseries: out, devices, sources, pages };
+             timeseries: out, devices, pages };
+  }
+
+  function normalizeAPI(j, range){
+    // Try to coerce various shapes into our expected {timeseries, devices, pages}
+    const timeseries = j.timeseries || j.daily || j.data || [];
+    const ts = timeseries.map(d => ({
+      date: d.date || d.day || d[0] || formatDate(new Date()),
+      visits: d.visits ?? d.sessions ?? d.count ?? d[1] ?? 0,
+      pageviews: d.pageviews ?? d.pv ?? d[2] ?? d.visits ?? 0
+    }));
+    const devices = j.devices || j.by_device || [];
+    const dev = devices.map(x => ({
+      device: x.device || x.name || x[0] || 'other',
+      count: x.count ?? x.value ?? x[1] ?? 0
+    }));
+    const pages = j.pages || j.popular_pages || [];
+    const pg = pages.map(p => ({
+      path: p.path || p.url || p[0] || '/',
+      views: p.views ?? p.unique_visits ?? p.count ?? p[1] ?? 0
+    }));
+    if (!ts.length) return genDemo(range);
+    return { totals: j.totals || {}, timeseries: ts, devices: dev, pages: pg };
   }
 
   async function fetchAnalytics(range){
-    try{
-      const base = (window.__ANALYTICS_BASE || '');
-      const url = (base ? (base + '/api/analytics/summary?range=') : '/api/analytics/summary?range=') + (range||'30d');
-      const r = await fetch(url, { cache: 'no-store' });
-      if (!r.ok) throw new Error('not ok');
-      const raw = await r.json();
-      return normalizeAnalytics(raw, range||'30d');
+    const base = window.__ANALYTICS_BASE || '';
+    const url = (base||'') + '/api/analytics/report?range=' + encodeURIComponent(range || '30d');
+    try {
+      const res = await fetch(url, { cache:'no-store' });
+      if (!res.ok) throw new Error('bad status');
+      const j = await res.json();
+      return normalizeAPI(j, range);
     } catch(e){
-      return normalizeAnalytics(genDemo(range||'30d'), range||'30d');
+      return genDemo(range);
     }
   }
 
-  function normalizeAnalytics(raw, range){
-    try{
-      const root = (raw && typeof raw === 'object' && Array.isArray(raw.data)) ? { ...raw, ...raw.data } : raw;
-      const obj = (raw && typeof raw === 'object' && raw.result) ? raw.result : raw;
-      const pick = (o, keys) => {
-        if (!o || typeof o !== 'object') return undefined;
-        for (const k of keys){ if (k in o && o[k]!=null) return o[k]; }
-        return undefined;
-      };
-      const pickArray = (o, keys) => {
-        if (!o || typeof o !== 'object') return [];
-        for (const k of keys){ if (Array.isArray(o[k])) return o[k]; }
-        return [];
-      };
+  let lastAnalytics = null;
 
-      // timeseries
-      let ts = pickArray(obj, ['timeseries','time_series','series','timeline','daily','days','history','data']);
-      // some APIs nest timeseries under obj.metrics.timeseries etc.
-      if (!ts.length && typeof obj === 'object'){
-        for (const v of Object.values(obj)){
-          if (Array.isArray(v) && v.length && typeof v[0] === 'object' && ('date' in v[0] || 'day' in v[0] || 'ts' in v[0])) { ts = v; break; }
-          if (v && typeof v === 'object'){
-            const candidate = pickArray(v, ['timeseries','series','timeline','daily','data']); 
-            if (candidate.length){ ts = candidate; break; }
-          }
-        }
-      }
-      const mapDate = (it) => (it.date || it.day || it.d || (it.ts ? new Date(it.ts).toISOString().slice(0,10) : undefined) || '');
-      const mapVisits = (it) => (it.visits ?? it.sessions ?? it.count ?? it.users ?? it.value ?? it.total ?? 0);
-      const mapViews  = (it) => (it.pageviews ?? it.views ?? it.pv ?? it.hits ?? 0);
-      const timeseries = (ts||[]).map(it => ({
-        date: mapDate(it),
-        visits: Number(mapVisits(it)) || 0,
-        pageviews: Number(mapViews(it)) || 0
-      })).filter(x => x.date);
+  function drawDataCharts(app){
+    const { typeCounts, years, yearCounts, imdbLabels, imdbCounts } = computeData(app);
 
-      // devices
-      let devArr = pickArray(obj, ['devices','by_device','device','platforms','clients']);
-      if (!devArr.length && obj.metrics && typeof obj.metrics==='object'){ devArr = pickArray(obj.metrics, ['devices','by_device']); }
-      const devices = (devArr||[]).map(d => ({
-        device: d.device || d.name || d.label || d.key || 'other',
-        count: Number(d.count ?? d.value ?? d.visits ?? d.views ?? 0) || 0
-      }));
-
-      // sources
-      let srcArr = pickArray(obj, ['sources','referrers','by_source','channels']);
-      const sources = (srcArr||[]).map(s => ({
-        source: s.source || s.name || s.label || s.key || 'other',
-        count: Number(s.count ?? s.value ?? s.visits ?? s.views ?? 0) || 0
-      }));
-
-      // pages
-      let pgArr = pickArray(obj, ['pages','top_pages','paths','by_path','urls']);
-      const pages = (pgArr||[]).map(p => ({
-        path: p.path || p.url || p.page || p.name || p.key || '/',
-        views: Number(p.views ?? p.pageviews ?? p.count ?? p.value ?? 0) || 0
-      }));
-
-      // totals
-      let totals = pick(obj, ['totals','summary','metrics']);
-      if (!totals || typeof totals !== 'object'){
-        // compute from timeseries
-        const visits = timeseries.reduce((a,b)=>a+b.visits,0);
-        const pageviews = timeseries.reduce((a,b)=>a+b.pageviews,0);
-        totals = { visits, pageviews, visitors: Math.round(visits*0.82), bounce_rate: 0.48, avg_session_duration: 73 };
-      }
-
-      // if still empty, generate demo to avoid blank graphs
-      if (!timeseries.length){
-        const demo = genDemo(range||'30d');
-        return demo;
-      }
-
-      return { totals, timeseries, devices, sources, pages };
-    } catch(e){
-      return genDemo(range||'30d');
-    }
-  }
-
-  // ---------- render charts ----------
-  function renderDataCharts(app){
-    const d = computeData(app);
-
-    // Film/Dizi donut
-    (function(){
-      const ctx = C('chartTypeDonut'); if (!ctx) return;
-      charts['chartTypeDonut'] = new Chart(ctx, {
+    const ctx0 = C('chartTypeDonut');
+    if (ctx0){
+      charts['chartTypeDonut'] = new Chart(ctx0, {
         type: 'doughnut',
-        data: {
-          labels: ['Film','Dizi'],
-          datasets: [{ data: [d.typeCounts.movie, d.typeCounts.series], backgroundColor: colors(2) }]
-        },
-        options: { responsive:true, maintainAspectRatio:false, plugins:{ legend:{ position:'bottom' } } }
+        data: { labels: ['Film', 'Dizi'], datasets: [{ data: [typeCounts.movie, typeCounts.series], backgroundColor: colors(2) }] },
+        options: baseOpts({legend:true})
       });
-    })();
+    }
 
-    // Years area
-    (function(){
-      const ctx = C('chartByYearArea'); if (!ctx) return;
-      charts['chartByYearArea'] = new Chart(ctx, {
+    const ctx1 = C('chartByYearArea');
+    if (ctx1){
+      charts['chartByYearArea'] = new Chart(ctx1, {
+        type: 'line',
+        data: { labels: years, datasets: [{ label: 'Yapım', data: yearCounts, fill:true, backgroundColor: 'rgba(59,130,246,0.25)', borderColor:'rgba(59,130,246,0.7)' }] },
+        options: baseOpts({legend:false, yTitle:'Adet', xTitle:'Yıl'})
+      });
+    }
+
+    const ctx2 = C('chartImdbBars');
+    if (ctx2){
+      charts['chartImdbBars'] = new Chart(ctx2, {
+        type: 'bar',
+        data: { labels: imdbLabels, datasets: [{ data: imdbCounts, backgroundColor: colors(imdbLabels.length) }] },
+        options: baseOpts({legend:false, yTitle:'Adet'})
+      });
+    }
+  }
+
+  function drawAnalyticsCharts(a){
+    const visits = a.timeseries || [];
+    const ctx3 = C('chartVisitsLine');
+    if (ctx3){
+      charts['chartVisitsLine'] = new Chart(ctx3, {
         type: 'line',
         data: {
-          labels: d.years,
-          datasets: [{ label:'Yapım', data: d.yearCounts, fill:true, tension:0.3, backgroundColor:'rgba(59,130,246,0.25)', borderColor:'rgba(59,130,246,0.9)', pointRadius: 0 }]
+          labels: visits.map(d=>d.date),
+          datasets: [
+            { label:'Ziyaret', data: visits.map(d=>d.visits), tension:0.3, fill:false, borderColor:'rgba(16,185,129,0.8)' },
+            { label:'Sayfa Gör.', data: visits.map(d=>d.pageviews), tension:0.3, fill:false, borderColor:'rgba(59,130,246,0.8)' }
+          ]
         },
-        options: baseOpts({ legend:false, yTitle:'Adet', xTitle:'Yıl' })
+        options: baseOpts({legend:true, yTitle:'Adet', xTitle:'Tarih'})
       });
-    })();
+    }
 
-    // IMDb bars
-    (function(){
-      const ctx = C('chartImdbBars'); if (!ctx) return;
-      charts['chartImdbBars'] = new Chart(ctx, {
-        type: 'bar',
-        data: {
-          labels: d.imdbLabels,
-          datasets: [{ label:'Yapım', data: d.imdbCounts, backgroundColor: colors(d.imdbLabels.length) }]
-        },
-        options: baseOpts({ legend:false, yTitle:'Adet' })
-      });
-    })();
-  }
-
-  async function renderAnalyticsCharts(range){
-    let a = await fetchAnalytics(range);
-    if (!a || !Array.isArray(a.timeseries) || a.timeseries.length === 0) { a = genDemo(range); }
-
-    // Visits line
-    (function(){
-      const ctx = C('chartVisitsLine'); if (!ctx) return;
-      charts['chartVisitsLine'] = new Chart(ctx, {
-        type: 'line',
-        data: {
-          labels: (a.timeseries||[]).map(t=>t.date),
-          datasets: [{
-            label:'Ziyaret',
-            data: (a.timeseries||[]).map(t=>t.visits),
-            fill:true, tension:0.35, pointRadius:0,
-            backgroundColor:'rgba(16,185,129,0.22)',
-            borderColor:'rgba(16,185,129,0.95)'
-          }]
-        },
-        options: baseOpts({ legend:false, yTitle:'Ziyaret' })
-      });
-    })();
-
-    // Devices donut
-    (function(){
-      const ctx = C('chartDevicesDonut'); if (!ctx) return;
-      const labels = (a.devices||[]).map(d=>d.device);
-      const data = (a.devices||[]).map(d=>d.count);
-      charts['chartDevicesDonut'] = new Chart(ctx, {
+    const dev = a.devices || [];
+    const ctx4 = C('chartDevicesDonut');
+    if (ctx4){
+      charts['chartDevicesDonut'] = new Chart(ctx4, {
         type: 'doughnut',
-        data: { labels, datasets: [{ data, backgroundColor: colors(labels.length) }] },
-        options: { responsive:true, maintainAspectRatio:false, plugins:{ legend:{ position:'bottom' } } }
+        data: { labels: dev.map(d=>d.device), datasets: [{ data: dev.map(d=>d.count), backgroundColor: colors(Math.max(3,dev.length||3)) }] },
+        options: baseOpts({legend:true})
       });
-    })();
+    }
 
-    // Top pages horizontal bar (max 5)
-    (function(){
-      const ctx = C('chartTopPagesBarH'); if (!ctx) return;
-      const top = (a.pages||[]).slice(0,5);
-      charts['chartTopPagesBarH'] = new Chart(ctx, {
+    const pages = (a.pages || []).slice(0,7);
+    const ctx5 = C('chartTopPagesBarH');
+    if (ctx5){
+      charts['chartTopPagesBarH'] = new Chart(ctx5, {
         type: 'bar',
-        data: {
-          labels: top.map(p=>p.path),
-          datasets: [{ label:'Görüntüleme', data: top.map(p=>p.views), backgroundColor: colors(top.length) }]
-        },
-        options: baseOpts({ legend:false, xTitle:'Görüntüleme', indexAxis:'y' })
+        data: { labels: pages.map(p=>p.path), datasets: [{ data: pages.map(p=>p.views), backgroundColor: colors(pages.length||5) }] },
+        options: baseOpts({legend:false, yTitle:'Görünüm', indexAxis:'y'})
       });
-    })();
-  }
-
-  // Export (optional; keeps previous capability)
-  function buildPayload(app, a){
-    const d = computeData(app);
-    return { content: { totals: { movies:d.typeCounts.movie, series:d.typeCounts.series, imdbAvg:avgImdb(app) },
-                        years: d.years.map((y,i)=>({year:y,count:d.yearCounts[i]})),
-                        imdb: d.imdbLabels.map((b,i)=>({bucket:b,count:d.imdbCounts[i]})) },
-             analytics: a || null };
-  }
-  function toCSV(p){
-    const L = ['Section,Key,Value'];
-    L.push(`Content Totals,Movies,${p.content.totals.movies}`);
-    L.push(`Content Totals,Series,${p.content.totals.series}`);
-    L.push(`Content Totals,IMDb Avg,${p.content.totals.imdbAvg??''}`);
-    p.content.years.forEach(y=>L.push(`Years,${y.year},${y.count}`));
-    p.content.imdb.forEach(b=>L.push(`IMDb,${b.bucket},${b.count}`));
-    if (p.analytics?.totals){
-      Object.entries(p.analytics.totals).forEach(([k,v])=>L.push(`Analytics Totals,${k},${v}`));
-    }
-    return L.join('\n');
-  }
-  function download(name, data, mime){
-    const blob = new Blob([data], { type: mime });
-    const a = document.createElement('a');
-    a.href = URL.createObjectURL(blob);
-    a.download = name;
-    document.body.appendChild(a);
-    a.click(); a.remove();
-    setTimeout(()=>URL.revokeObjectURL(a.href), 500);
-  }
-  async function exportAll(app, fmt){
-    const sel = document.getElementById('analyticsRange');
-    const range = sel ? sel.value : '30d';
-    const a = await fetchAnalytics(range);
-    const payload = buildPayload(app, a);
-    if (fmt==='json') download('istatistikler.json', JSON.stringify(payload,null,2), 'application/json');
-    else download('istatistikler.csv', toCSV(payload), 'text/csv');
-  }
-
-  // main
-  async function renderAll(app){
-    renderDataCharts(app);
-    const sel = document.getElementById('analyticsRange');
-    const range = sel ? sel.value : '30d';
-    await renderAnalyticsCharts(range);
-    // force visits chart redraw
-    if (typeof charts['chartVisitsLine'] === 'undefined') {
-      await renderAnalyticsCharts(range);
     }
   }
 
-  // Wire buttons & tab switch
-  document.addEventListener('DOMContentLoaded', ()=>{
-    const root = document.querySelector('html');
-    const getApp = () => (window.Alpine ? Alpine.$data(root) : null);
-    const btnCsv  = document.getElementById('exportCsvBtn');
+  function attachExports(){
+    const btnCsv = document.getElementById('exportCsvBtn');
     const btnJson = document.getElementById('exportJsonBtn');
-    if (btnCsv)  btnCsv.addEventListener('click',  ()=>{ const app=getApp(); if(app) exportAll(app,'csv'); });
-    if (btnJson) btnJson.addEventListener('click', ()=>{ const app=getApp(); if(app) exportAll(app,'json'); });
-  });
-  document.addEventListener('alpine:init', () => {
-    let lastTab = null;
-    setInterval(() => {
-      try {
-        const app = Alpine.$data(document.querySelector('html'));
-        const t = app?.tab;
-        if (t !== lastTab){
-          lastTab = t;
-          if (t === 'stats') {
-            setTimeout(()=>renderAll(app), 50);
-          }
-        }
-      } catch{}
-    }, 350);
-  });
+    if (btnCsv){
+      btnCsv.onclick = () => {
+        const a = lastAnalytics || genDemo('30d');
+        
+        // Build CSV string
+        const lines = ['date,visits,pageviews', ...(a.timeseries||[]).map(d => `${d.date},${d.visits},${d.pageviews}`)];
+        const blob = new Blob([lines.join('\n')], {type:'text/csv;charset=utf-8'});
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.href = url; link.download = 'analytics_timeseries.csv'; link.click();
+        setTimeout(()=>URL.revokeObjectURL(url), 500);
+      };
+    }
+    if (btnJson){
+      btnJson.onclick = () => {
+        const a = lastAnalytics || genDemo('30d');
+        const blob = new Blob([JSON.stringify(a, null, 2)], {type:'application/json;charset=utf-8'});
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.href = url; link.download = 'analytics_export.json'; link.click();
+        setTimeout(()=>URL.revokeObjectURL(url), 500);
+      };
+    }
+  }
 
-  return { renderAll, avgImdb };
+  async function renderAll(appRoot){
+    // Data (nodes) charts
+    drawDataCharts(appRoot);
+    // Analytics (server) charts
+    const range = document.getElementById('analyticsRange')?.value || '30d';
+    lastAnalytics = await fetchAnalytics(range);
+    drawAnalyticsCharts(lastAnalytics);
+    // KPI text
+    try {
+      const kpiImdb = document.querySelector('[x-text="window.__evrenStats?.avgImdb($root) ?? \'-\'"]');
+      if (kpiImdb && typeof Alpine !== 'undefined'){ Alpine.mutateDom(()=>{}); } // no-op, keep Alpine happy
+    } catch {}
+    // export buttons
+    attachExports();
+  }
+
+  return {
+    avgImdb,
+    renderAll
+  };
 })();
 </script>
-
-
+<div @keydown.escape.window="$store.edit.open=false" class="modal-mask" style="display:none; z-index:10030;" x-show="$store.edit.open" x-transition.opacity="">
+<div class="modal-card">
+<div class="modal-head">
+<div class="font-semibold" x-text="$store.edit.title">JSON</div>
+<button @click="$store.edit.open=false" class="w-8 h-8 rounded-full border border-white/20">✕</button>
+</div>
+<div class="modal-body">
+<textarea class="w-full h-64 rounded-lg border border-white/20 bg-white/5 p-2 font-mono text-sm" placeholder='{"Kaynaklar":[...],"Görsel":[...],"Platform":[...]}' x-model="$store.edit.text"></textarea>
+</div>
+<div class="modal-actions">
+<button @click="$store.edit.open=false" class="px-3 py-1.5 rounded border border-white/20 bg-white/5 hover:bg-white/10">Vazgeç</button>
+<button @click="$store.edit.apply &amp;&amp; $store.edit.apply()" class="px-3 py-1.5 rounded border border-emerald-500/40 bg-emerald-600 hover:bg-emerald-700 text-white">Kaydet</button>
+</div>
+</div>
+</div>
+<div aria-live="polite" class="toast-wrap">
+<template :key="t.id" x-for="t in $store.toast.items">
+<div class="toast">
+<div x-text="t.msg"></div>
+</div>
+</template>
+</div>
+<div class="bulkbar" style="display:none" x-show="selectedNodeIds &amp;&amp; selectedNodeIds.size" x-transition="">
+<div class="text-sm">Seçili: <b x-text="selectedNodeIds.size"></b></div>
+<button @click="bulkFillSources()" class="px-2 py-1.5 rounded border border-white/20 bg-white/5 hover:bg-white/10 text-sm">Kaynak Şablonu</button>
+<button @click="saveDraft(); $store.toast.push('Taslak kaydedildi')" class="px-2 py-1.5 rounded border border-white/20 bg-white/5 hover:bg-white/10 text-sm">Kaydet</button>
+<button @click="deleteSelectedNodes(); $store.toast.push('Seçili yapımlar silindi')" class="px-2 py-1.5 rounded border border-rose-500/40 bg-rose-600 hover:bg-rose-700 text-white text-sm">Sil</button>
+</div>
+<div @keydown.escape.window="$store.form.open=false" class="modal-mask" style="display:none;z-index:10030;" x-show="$store.form.open" x-transition.opacity="">
+<div @click.stop="" class="modal-card">
+<div class="modal-head">
+<div class="font-semibold" x-text="$store.form.title">Yapımı Düzenle</div>
+<button @click="$store.form.open=false" class="w-8 h-8 rounded-full border border-white/20">✕</button>
+</div>
+<div class="modal-body">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+<div>
+<div class="text-xs mb-1 opacity-80">ID</div>
+<textarea class="w-full h-10 rounded border border-white/20 bg-white/5 p-2 font-mono text-sm" x-model="$store.form.tmp.id"></textarea>
+</div>
+<div>
+<div class="text-xs mb-1 opacity-80">Başlık</div>
+<input class="w-full rounded border border-white/20 bg-white/5 p-2" x-model="$store.form.tmp.label"/>
+</div>
+<div>
+<div class="text-xs mb-1 opacity-80">Tarih</div>
+<input class="w-full rounded border border-white/20 bg-white/5 p-2" type="date" x-model="$store.form.tmp.release_date"/>
+</div>
+<div>
+<div class="text-xs mb-1 opacity-80">IMDb</div>
+<input class="w-full rounded border border-white/20 bg-white/5 p-2" step="0.1" type="number" x-model="$store.form.tmp.imdb_rating"/>
+</div>
+<div class="sm:col-span-2">
+<div class="text-xs mb-1 opacity-80">Tür</div>
+<textarea class="w-full h-16 rounded border border-white/20 bg-white/5 p-2" x-model="$store.form.tmp.tür"></textarea>
+</div>
+<div>
+<div class="text-xs mb-1 opacity-80">Tip</div>
+<select class="w-full rounded border border-white/20 bg-white/5 p-2" x-model="$store.form.tmp.type">
+<option value="movie">Film</option>
+<option value="series">Dizi</option>
+</select>
+</div>
+<div>
+<div class="text-xs mb-1 opacity-80">Görsel (URL)</div>
+<textarea class="w-full h-16 rounded border border-white/20 bg-white/5 p-2" x-model="$store.form.tmp.image"></textarea>
+</div>
+<div class="text-xs mb-1 opacity-80 flex items-center justify-between gap-2">
+<span>Kaynaklar (JSON)</span>
+<button @click="openSourceEditor($store.form.node)" class="px-2 py-1 rounded border border-white/20 bg-white/5 hover:bg-white/10 text-[11px]" title="Gelişmiş JSON düzenleyiciyi aç">
+            Kaynak Düzenleyici
+          </button>
+</div>
+</div>
+<hr class="my-4 border-white/10"/>
+<hr class="my-4 border-white/10"/>
+<hr class="my-4 border-white/10"/>
+<div class="space-y-2" x-data="{
+       // styling map for edge types
+       typeClasses: {
+         'Devam': 'bg-blue-900/40 border-blue-500/30',
+         'Takım Kurulumu': 'bg-emerald-900/30 border-emerald-500/20',
+         'Karakter Geçişi': 'bg-slate-900/30 border-slate-500/20',
+         'Gizli Bağlantı': 'bg-purple-900/30 border-purple-500/20',
+         'Psikolojik Etki': 'bg-red-900/30 border-red-500/20',
+         'Karakter Bağlantısı': 'bg-violet-900/30 border-violet-500/20',
+         'Yeni Tehdit': 'bg-rose-900/30 border-rose-500/20',
+         'Sonsuzluk Taşı': 'bg-amber-900/30 border-amber-400/20',
+         'Siyasi Çözülme': 'bg-orange-900/30 border-orange-500/20',
+         'Kozmik Katılım': 'bg-teal-900/30 border-teal-500/20',
+         'Anahtar Karakter': 'bg-pink-900/30 border-pink-500/20',
+         'Önemli Olay': 'bg-orange-800/30 border-orange-400/20',
+         'Mekan Bağlantısı': 'bg-yellow-900/30 border-yellow-500/20',
+         'Paralel Olay': 'bg-gray-800/30 border-gray-500/20',
+         'Anahtar Olay': 'bg-amber-800/30 border-amber-500/20',
+         'Sonrası Etki': 'bg-violet-800/30 border-violet-400/20',
+         'Kozmik Genişleme': 'bg-teal-800/30 border-teal-400/20',
+         'Çoklu Evren': 'bg-cyan-900/30 border-cyan-500/20',
+         'Evrensel Gelişme': 'bg-red-800/30 border-red-400/20',
+         'Ana Hikaye Bağlantısı': 'bg-indigo-900/30 border-indigo-500/20',
+         'Ana Tehdit': 'bg-red-950/30 border-red-600/20',
+         'Doğrudan Devam': 'bg-sky-900/30 border-sky-500/20',
+         'Evrensel Bağlantı': 'bg-emerald-950/30 border-emerald-600/20',
+         'Geçmiş Hikayesi': 'bg-stone-900/30 border-stone-500/20',
+         'Hikaye Devamı': 'bg-green-900/30 border-green-500/20',
+         'Hikaye Öncesi': 'bg-cyan-800/30 border-cyan-400/20',
+         'Karakter Devamı': 'bg-slate-800/30 border-slate-400/20',
+         'Siyasi Etki': 'bg-orange-700/30 border-orange-300/20',
+         'Crossover': 'bg-fuchsia-900/30 border-fuchsia-500/20',
+         'Tarihsel Bağlantı': 'bg-gray-700/30 border-gray-400/20',
+         'Türsel Bağlantı': 'bg-purple-800/30 border-purple-300/20'
+       },
+       get allEdges(){ try { return (current?.edges||[]); } catch(e){ return []; } },
+       get edges(){
+         try {
+           const id = $store.form?.node?.id;
+           return (this.allEdges||[]).filter(e =&gt; e &amp;&amp; (e.from===id || e.to===id));
+         } catch(e){ return []; }
+       },
+       // Search helpers
+       uSearch:'', nSearch:'', tSearch:'',
+       // New edge model
+       newEdge: { universe:'', side:'to', other:'', type:'', notes:'' },
+       add(){
+         try{
+           const id = $store.form?.node?.id;
+           if(!id) return;
+           const side = this.newEdge.side || 'to';
+           const other = this.newEdge.other;
+           const type = this.newEdge.type || '';
+           if(!other) return;
+           const e = { from: side==='to' ? id : other, to: side==='to' ? other : id, type: type, notes: this.newEdge.notes || '' };
+           current.edges.push(e);
+           this.newEdge = { universe:this.newEdge.universe, side:'to', other:'', type:'', notes:'' };
+           try { Alpine.store('toast')?.push('Bağlantı eklendi'); } catch(err){}
+         }catch(e){}
+       },
+       // utils
+       typeLabel(t){ return t || 'Tür seç'; },
+       typeClass(t){ return this.typeClasses[t] || 'bg-white/10 border-white/20'; },
+       universeName(u){
+         try {
+           const lst = (universes||[]);
+           const hit = lst.find(x =&gt; x===u || (x?.id===u));
+           if(typeof hit==='string') return hit;
+           return hit?.name || u || 'Evren seç';
+         }catch(e){ return u || 'Evren seç'; }
+       },
+       nodeLabel(id){
+         try {
+           const n = (current?.nodes||[]).find(x =&gt; x.id===id);
+           return n ? (n.label + ' (' + n.id + ')') : (id || 'Diğer yapım seç');
+         }catch(e){ return id || 'Diğer yapım seç'; }
+       }
+     }">
+<div class="text-sm font-semibold">Bağlantılar</div>
+<div class="flex justify-end mb-2">
+<button @click="$store.edgeNew.open=true" class="px-3 py-1.5 rounded border border-white/20 bg-white/10 hover:bg-white/20 text-sm">
+    + Yeni Bağlantı
+  </button>
+</div>
+<!-- Edge list -->
+<div class="space-y-2">
+<template :key="i" x-for="(e, i) in edges">
+<div :class="typeClass(e.type)" class="rounded p-2 text-sm flex items-start justify-between gap-2 border">
+<div class="min-w-0">
+<div class="font-medium">
+<span x-text="e.from"></span>
+<span>→</span>
+<span x-text="e.to"></span>
+</div>
+<div class="text-xs opacity-90 mt-0.5 flex flex-wrap items-center gap-2">
+<span class="px-1 py-0.5 rounded bg-white/10 border border-white/20" x-text="e.type || '-'"></span>
+<span x-text="e.notes ? ' • ' + e.notes : ''"></span>
+</div>
+</div>
+<div class="shrink-0 flex gap-2">
+<button @click="
+            (() =&gt; {
+              const t = prompt('Tür', e.type || '');
+              const n = prompt('Not', e.notes || '');
+              if (t!==null) e.type=t;
+              if (n!==null) e.notes=n;
+              try { Alpine.store('toast')?.push('Bağlantı güncellendi'); } catch(err){}
+            })()
+          " class="text-xs px-2 py-1 rounded border border-white/20 bg-white/10 hover:bg-white/20">✏️</button>
+<button @click="remove(i)" class="text-xs px-2 py-1 rounded border border-rose-500/40 bg-rose-600 hover:bg-rose-700 text-white">🗑</button>
+</div>
+</div>
+</template>
+<div class="text-xs opacity-70" x-show="!edges.length">Bu yapımla ilişkili bağlantı yok.</div>
+</div>
+<!-- Add new edge with searchable dropdowns -->
+</div>
+</div>
+<div class="modal-actions">
+<button @click="$store.form.open=false" class="px-3 py-1.5 rounded border border-white/20 bg-white/5 hover:bg-white/10">Vazgeç</button>
+<button @click="$store.form.save()" class="px-3 py-1.5 rounded border border-emerald-500/40 bg-emerald-600 hover:bg-emerald-700 text-white">Kaydet</button>
+</div>
+</div>
+</div>
+<div class="fixed inset-0 flex items-center justify-center bg-black/60 z-[10100]" style="display:none;z-index:10100;" x-show="$store.edgeNew.open" x-transition.opacity="">
+<div @click.stop="" class="modal-card w-[92vw] max-w-[640px]">
+<div class="modal-head">
+<div class="font-semibold">Yeni Bağlantı</div>
+<button @click="$store.edgeNew.open=false" class="w-8 h-8 rounded-full border border-white/20">✕</button>
+</div>
+<div class="modal-body">
+<div class="space-y-3" x-data="{
+             typeClasses: {
+               'Devam': 'bg-blue-900/40 border-blue-500/30',
+               'Takım Kurulumu': 'bg-emerald-900/30 border-emerald-500/20',
+               'Karakter Geçişi': 'bg-slate-900/30 border-slate-500/20',
+               'Gizli Bağlantı': 'bg-purple-900/30 border-purple-500/20',
+               'Psikolojik Etki': 'bg-red-900/30 border-red-500/20',
+               'Karakter Bağlantısı': 'bg-violet-900/30 border-violet-500/20',
+               'Yeni Tehdit': 'bg-rose-900/30 border-rose-500/20',
+               'Sonsuzluk Taşı': 'bg-amber-900/30 border-amber-400/20',
+               'Siyasi Çözülme': 'bg-orange-900/30 border-orange-500/20',
+               'Kozmik Katılım': 'bg-teal-900/30 border-teal-500/20',
+               'Anahtar Karakter': 'bg-pink-900/30 border-pink-500/20',
+               'Önemli Olay': 'bg-orange-800/30 border-orange-400/20',
+               'Mekan Bağlantısı': 'bg-yellow-900/30 border-yellow-500/20',
+               'Paralel Olay': 'bg-gray-800/30 border-gray-500/20',
+               'Anahtar Olay': 'bg-amber-800/30 border-amber-500/20',
+               'Sonrası Etki': 'bg-violet-800/30 border-violet-400/20',
+               'Kozmik Genişleme': 'bg-teal-800/30 border-teal-400/20',
+               'Çoklu Evren': 'bg-cyan-900/30 border-cyan-500/20',
+               'Evrensel Gelişme': 'bg-red-800/30 border-red-400/20',
+               'Ana Hikaye Bağlantısı': 'bg-indigo-900/30 border-indigo-500/20',
+               'Ana Tehdit': 'bg-red-950/30 border-red-600/20',
+               'Doğrudan Devam': 'bg-sky-900/30 border-sky-500/20',
+               'Evrensel Bağlantı': 'bg-emerald-950/30 border-emerald-600/20',
+               'Geçmiş Hikayesi': 'bg-stone-900/30 border-stone-500/20',
+               'Hikaye Devamı': 'bg-green-900/30 border-green-500/20',
+               'Hikaye Öncesi': 'bg-cyan-800/30 border-cyan-400/20',
+               'Karakter Devamı': 'bg-slate-800/30 border-slate-400/20',
+               'Siyasi Etki': 'bg-orange-700/30 border-orange-300/20',
+               'Crossover': 'bg-fuchsia-900/30 border-fuchsia-500/20',
+               'Tarihsel Bağlantı': 'bg-gray-700/30 border-gray-400/20',
+               'Türsel Bağlantı': 'bg-purple-800/30 border-purple-300/20'
+             },
+             uSearch:'', nSearch:'', tSearch:'',
+             typeLabel(t){ return t || 'Tür seç'; },
+             typeClass(t){ return this.typeClasses[t] || 'bg-white/10 border-white/20'; },
+             universeName(u){
+               try {
+                 const lst = (universes||[]);
+                 const hit = lst.find(x =&gt; x===u || (x?.id===u));
+                 if(typeof hit==='string') return hit;
+                 return hit?.name || u || 'Evren seç';
+               }catch(e){ return u || 'Evren seç'; }
+             },
+             nodeLabel(id){
+               try {
+                 const n = (current?.nodes||[]).find(x =&gt; x.id===id);
+                 return n ? (n.label + ' (' + n.id + ')') : (id || 'Diğer yapım seç');
+               }catch(e){ return id || 'Diğer yapım seç'; }
+             }
+           }">
+<!-- Universe -->
+<div class="relative" x-data="{ open:false }">
+<div class="text-xs mb-1 opacity-80">Evren</div>
+<button @click="open=!open" class="w-full text-left rounded border border-white/20 bg-white/5 p-2 text-sm flex items-center justify-between">
+<span x-text="$store.edgeNew.tmp.universe ? universeName($store.edgeNew.tmp.universe) : 'Evren seç'"></span>
+<span>▾</span>
+</button>
+<div @click.outside="open=false" class="absolute left-0 right-0 mt-1 rounded-lg border border-white/20 bg-slate-900/95 p-2 z-50 z-[10110]" style="overflow:auto; max-height:60vh; z-index:10110;" x-show="open" x-transition="">
+<input class="w-full mb-2 rounded border border-white/20 bg-white/5 p-2 text-sm" placeholder="Evren ara..." x-model="uSearch"/>
+<div class="max-h-48 overflow-y-auto">
+<template :key="u" x-for="u in (universes||[]).filter(x =&gt; universeName(x).toLowerCase().includes((uSearch||'').toLowerCase()))">
+<div @click="$store.edgeNew.tmp.universe = (typeof u==='string'?u:(u?.id||u?.name)); open=false" class="px-2 py-1 rounded hover:bg-white/10 cursor-pointer" x-text="universeName(u)"></div>
+</template>
+</div>
+</div>
+</div>
+<!-- Direction + other node -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-2">
+<div>
+<div class="text-xs mb-1 opacity-80">Yön</div>
+<select class="w-full rounded border border-white/20 bg-white/5 p-2 text-sm" x-model="$store.edgeNew.tmp.side">
+<option value="to">Bu yapımdan → Diğerine</option>
+<option value="from">Diğerinden → Bu yapım</option>
+</select>
+</div>
+<div class="sm:col-span-2 relative" x-data="{open:false}">
+<div class="text-xs mb-1 opacity-80">Diğer Yapım</div>
+<button @click="open=!open" class="w-full text-left rounded border border-white/20 bg-white/5 p-2 text-sm flex items-center justify-between">
+<span x-text="nodeLabel($store.edgeNew.tmp.other)"></span>
+<span>▾</span>
+</button>
+<div @click.outside="open=false" class="absolute left-0 right-0 mt-1 rounded-lg border border-white/20 bg-slate-900/95 p-2 z-50 z-[10110]" style="overflow:auto; max-height:60vh; z-index:10110;" x-show="open" x-transition="">
+<input class="w-full mb-2 rounded border border-white/20 bg-white/5 p-2 text-sm" placeholder="Yapım ara..." x-model="nSearch"/>
+<div class="max-h-60 overflow-y-auto">
+<template :key="n.id" x-for="n in (current?.nodes||[]).filter(nn =&gt; !nSearch || ( (nn.label||'').toLowerCase().includes(nSearch.toLowerCase()) || (nn.id||'').toLowerCase().includes(nSearch.toLowerCase()) ))">
+<div @click="$store.edgeNew.tmp.other = n.id; open=false" class="px-2 py-1 rounded hover:bg-white/10 cursor-pointer" x-text="n.label + ' (' + n.id + ')'"></div>
+</template>
+</div>
+</div>
+</div>
+</div>
+<!-- Type + notes -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-2">
+<div class="sm:col-span-1 relative" x-data="{open:false}">
+<div class="text-xs mb-1 opacity-80">Tür</div>
+<button @click="open=!open" class="w-full text-left rounded border border-white/20 bg-white/5 p-2 text-sm flex items-center justify-between">
+<span x-text="$store.edgeNew.tmp.type || 'Tür seç'"></span>
+<span>▾</span>
+</button>
+<div @click.outside="open=false" class="absolute left-0 right-0 mt-1 rounded-lg border border-white/20 bg-slate-900/95 p-2 z-50 z-[10110]" style="overflow:auto; max-height:60vh; z-index:10110;" x-show="open" x-transition="">
+<input class="w-full mb-2 rounded border border-white/20 bg-white/5 p-2 text-sm" placeholder="Tür ara..." x-model="tSearch"/>
+<div class="max-h-60 overflow-y-auto">
+<template :key="key" x-for="(cls, key) in Object.fromEntries(Object.entries(typeClasses).filter(([k]) =&gt; (k||'').toLowerCase().includes((tSearch||'').toLowerCase())))">
+<div :class="cls + ' hover:bg-white/10'" @click="$store.edgeNew.tmp.type = key; open=false" class="px-2 py-1 rounded cursor-pointer border">
+<span x-text="key"></span>
+</div>
+</template>
+</div>
+</div>
+</div>
+<div class="sm:col-span-2">
+<div class="text-xs mb-1 opacity-80">Not</div>
+<input class="w-full rounded border border-white/20 bg-white/5 p-2 text-sm" placeholder="Not (opsiyonel)" x-model="$store.edgeNew.tmp.notes"/>
+</div>
+</div>
+</div>
+</div>
+<div class="modal-actions">
+<button @click="$store.edgeNew.open=false" class="px-3 py-1.5 rounded border border-white/20 bg-white/5 hover:bg-white/10">Vazgeç</button>
+<button @click="$store.edgeNew.save()" class="px-3 py-1.5 rounded border border-emerald-500/40 bg-emerald-600 hover:bg-emerald-700 text-white">Ekle</button>
+</div>
+</div>
+</div>
 </body>
 </html>

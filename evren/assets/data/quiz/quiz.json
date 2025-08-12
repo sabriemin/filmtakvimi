@@ -1,0 +1,3733 @@
+[
+  {
+    "type": "multiple",
+    "question": "‘Captain America: The First Avenger’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "Joe Johnston",
+      "Joe Russo",
+      "Taika Waititi",
+      "Jon Watts"
+    ],
+    "answerIndex": 0,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘X-Men '97’ 2022 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://m.media-amazon.com/images/M/MV5BMGQxMDdiOWUtYjc1Ni00YzM1LWE2NjMtZTg3Y2JkMjEzMTJjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "options": [
+      "The Hobbit",
+      "The Lord of the Rings",
+      "The Hobbit: An Unexpected Journey",
+      "The Lord of the Rings: The Two Towers"
+    ],
+    "answerIndex": 3,
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple",
+    "question": "‘The Suicide Squad’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "Cathy Yan",
+      "James Gunn",
+      "Zack Snyder",
+      "Joss Whedon"
+    ],
+    "answerIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Star Wars: Bad Batch’ 2021 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Harry Potter ve Azkaban Tutsağı’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "Chris Columbus",
+      "David Yates",
+      "Alfonso Cuarón",
+      "David Yates"
+    ],
+    "answerIndex": 2,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘She-Hulk: Attorney at Law’ 2024 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Guardians of the Galaxy Vol. 2’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "Taika Waititi",
+      "Ryan Coogler",
+      "Jon Watts",
+      "James Gunn"
+    ],
+    "answerIndex": 3,
+    "difficulty": "medium"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://m.media-amazon.com/images/M/MV5BNDUwMDQxMjEtN2VlOS00YThiLWI1YTYtZTc4ZTllNzg5NTNiXkEyXkFqcGc@._V1_.jpg",
+    "options": [
+      "Daredevil",
+      "Werewolf by Night",
+      "Runaways",
+      "Inhumans"
+    ],
+    "answerIndex": 2,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Han Solo: Bir Star Wars Hikayesi’ 2018 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Secret Invasion’ 2023 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Thor: The Dark World’ 2013 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Star Wars: Bölüm VI - Jedi'ın Dönüşü’ 1983 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Blue Beetle’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "Zack Snyder",
+      "James Gunn",
+      "Zack Snyder",
+      "Angel Manuel Soto"
+    ],
+    "answerIndex": 3,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Rogue One: Bir Star Wars Hikayesi’ 2016 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Spider-Man: Homecoming’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "Shawn Levy",
+      "Jon Watts",
+      "Jake Schreier",
+      "Ryan Coogler"
+    ],
+    "answerIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Wonder Woman 1984’ 2020 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Spider-Man: Homecoming’ 2019 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://static.boxofficeturkiye.com/movie/poster/full/4/1004-52552621.jpg",
+    "options": [
+      "Agents of S.H.I.E.L.D.",
+      "Echo",
+      "Daredevil",
+      "What If...?"
+    ],
+    "answerIndex": 3,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘The Hobbit: The Desolation of Smaug’ 2013 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Iron Man 3’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "Jon Favreau",
+      "Joe Russo",
+      "Anthony Russo",
+      "Shane Black"
+    ],
+    "answerIndex": 3,
+    "difficulty": "medium"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://m.media-amazon.com/images/M/MV5BMjM5YmQxM2YtZjI2Yy00YjhhLTg5N2MtMTEyMzdlZDU3OTVhXkEyXkFqcGc@._V1_QL75_UX190_CR0,0,190,281_.jpg",
+    "options": [
+      "Shazam! Fury of the Gods",
+      "Zack Snyder's Justice League",
+      "Justice League",
+      "Wonder Woman 1984"
+    ],
+    "answerIndex": 2,
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Captain America: Civil War’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "Joe Russo",
+      "Anthony Russo",
+      "Jon Favreau",
+      "Ryan Fleck"
+    ],
+    "answerIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple",
+    "question": "‘The Fantastic Four: First Steps’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "Jon Watts",
+      "Alan Taylor",
+      "Matt Shakman",
+      "Joe Russo"
+    ],
+    "answerIndex": 2,
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Thor: Ragnarok’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "Scott Derrickson",
+      "Taika Waititi",
+      "Joe Russo",
+      "Cate Shortland"
+    ],
+    "answerIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Cloak & Dagger’ 2016 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://m.media-amazon.com/images/M/MV5BMDhhY2VlMWItMjM3Yi00MDc1LTlmYjctNjMzNDIxZjc5NGEwXkEyXkFqcGc@._V1_.jpg",
+    "options": [
+      "Jessica Jones",
+      "Ms. Marvel",
+      "X-Men '97",
+      "Luke Cage"
+    ],
+    "answerIndex": 0,
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Shazam!’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "Patty Jenkins",
+      "David F. Sandberg",
+      "James Wan",
+      "James Wan"
+    ],
+    "answerIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Ant-Man and the Wasp’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "Peyton Reed",
+      "Alan Taylor",
+      "Anthony Russo",
+      "Taika Waititi"
+    ],
+    "answerIndex": 0,
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Star Wars: Bölüm VI - Jedi'ın Dönüşü’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "Richard Marquand",
+      "Gareth Edwards",
+      "Rian Johnson",
+      "J.J. Abrams"
+    ],
+    "answerIndex": 0,
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple",
+    "question": "‘The Lord of the Rings: The Return of the King’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "Peter Jackson",
+      "Jules Bass",
+      "Arthur Rankin Jr.",
+      "Ralph Bakshi"
+    ],
+    "answerIndex": 0,
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Shang-Chi and the Legend of the Ten Rings’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "Joe Russo",
+      "Destin Daniel Cretton",
+      "Taika Waititi",
+      "James Gunn"
+    ],
+    "answerIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Avengers: Endgame’ 2018 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Iron Man 2’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "Jon Favreau",
+      "Cate Shortland",
+      "James Gunn",
+      "Anthony Russo"
+    ],
+    "answerIndex": 0,
+    "difficulty": "medium"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://m.media-amazon.com/images/M/MV5BNzU4NzE3ZDgtMTgyNi00NzgzLWE3OWUtMTI5Zjg0NzYyZjU1XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "options": [
+      "The Matrix Reloaded",
+      "The Matrix Revolutions",
+      "The Matrix Resurrections",
+      "The Animatrix"
+    ],
+    "answerIndex": 3,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Fantastik Canavarlar: Dumbledore'un Sırları’ 2023 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Black Adam’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "David F. Sandberg",
+      "Jaume Collet-Serra",
+      "David Ayer",
+      "Joss Whedon"
+    ],
+    "answerIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://static.boxofficeturkiye.com/movie/poster/full/38/1438-54835322.jpg",
+    "options": [
+      "Inhumans",
+      "The Punisher",
+      "Echo",
+      "Ms. Marvel"
+    ],
+    "answerIndex": 3,
+    "difficulty": "medium"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://m.media-amazon.com/images/M/MV5BODVmMmM0MzUtODlhMC00Y2QwLWI0MTktZmNmY2JjYjM0OTI4XkEyXkFqcGc@._V1_.jpg",
+    "options": [
+      "Creature Commandos",
+      "Peacemaker",
+      "Aquaman",
+      "Suicide Squad"
+    ],
+    "answerIndex": 0,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Harry Potter ve Azkaban Tutsağı’ 2005 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://m.media-amazon.com/images/M/MV5BYWQ3NmQxZTEtNDc2MS00ODExLWE3ZDEtZTU2N2Y2NjAyNmY5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "options": [
+      "Star Wars: Bad Batch",
+      "Star Wars: Bölüm VII - Güç Uyanıyor",
+      "Star Wars: Bölüm II - Klonların Saldırısı",
+      "Ahsoka"
+    ],
+    "answerIndex": 3,
+    "difficulty": "medium"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://m.media-amazon.com/images/M/MV5BZGFiZjc4YTAtYzI3YS00NDM2LTllYWUtMTI0MzQ0OTAwOWJhXkEyXkFqcGc@._V1_.jpg",
+    "options": [
+      "Peacemaker",
+      "Shazam!",
+      "The Flash",
+      "Wonder Woman 1984"
+    ],
+    "answerIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Birds of Prey’ 2022 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Eternals’ 2021 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘The Hobbit: An Unexpected Journey’ 2011 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://static.boxofficeturkiye.com/movie/poster/full/2/2013202-747838226.jpg",
+    "options": [
+      "Shazam!",
+      "The Flash",
+      "Aquaman",
+      "Black Adam"
+    ],
+    "answerIndex": 2,
+    "difficulty": "medium"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://upload.wikimedia.org/wikipedia/en/5/5c/Suicide_Squad_%282016_film%29_poster.png",
+    "options": [
+      "Peacemaker",
+      "Suicide Squad",
+      "Superman",
+      "Shazam! Fury of the Gods"
+    ],
+    "answerIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Deadpool & Wolverine’ 2023 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Batman v Superman: Dawn of Justice’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "David F. Sandberg",
+      "James Gunn",
+      "Andy Muschietti",
+      "Zack Snyder"
+    ],
+    "answerIndex": 3,
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Guardians of the Galaxy Vol. 3’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "Peyton Reed",
+      "James Gunn",
+      "Peyton Reed",
+      "Jon Watts"
+    ],
+    "answerIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘The Guardians of the Galaxy Holiday Special’ 2024 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Captain Marvel’ 2019 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Shazam! Fury of the Gods’ 2023 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://static.boxofficeturkiye.com/movie/poster/full/2/1002-47906330.jpg",
+    "options": [
+      "What If...?",
+      "The Falcon and the Winter Soldier",
+      "WandaVision",
+      "Agent Carter"
+    ],
+    "answerIndex": 2,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Avengers: Age of Ultron’ 2015 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Star Wars: Bölüm VII - Güç Uyanıyor’ 2013 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Guardians of the Galaxy Vol. 2’ 2017 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Creature Commandos’ 2024 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘The Lord of the Rings: The Two Towers’ 2002 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://static.boxofficeturkiye.com/movie/poster/full/31/1531-62606532.jpg",
+    "options": [
+      "Daredevil",
+      "Secret Invasion",
+      "Hawkeye",
+      "I Am Groot"
+    ],
+    "answerIndex": 3,
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple",
+    "question": "‘The Hobbit: The Desolation of Smaug’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "Ralph Bakshi",
+      "Arthur Rankin Jr.",
+      "Jules Bass",
+      "Peter Jackson"
+    ],
+    "answerIndex": 3,
+    "difficulty": "medium"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://static.boxofficeturkiye.com/movie/poster/full/32/2016332-58615670.jpg",
+    "options": [
+      "The Guardians of the Galaxy Holiday Special",
+      "Hawkeye",
+      "Moon Knight",
+      "Runaways"
+    ],
+    "answerIndex": 0,
+    "difficulty": "medium"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://m.media-amazon.com/images/M/MV5BNjc5YzQyZWItYzZkNS00NTI1LTljNTUtYjcwMDNmZmFhNTI4XkEyXkFqcGc@._V1_.jpg",
+    "options": [
+      "The Hobbit: An Unexpected Journey",
+      "The Return of the King",
+      "The Hobbit: The Battle of the Five Armies",
+      "The Hobbit"
+    ],
+    "answerIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://static.boxofficeturkiye.com/movie/poster/full/42/1342-53356249.jpg",
+    "options": [
+      "The Guardians of the Galaxy Holiday Special",
+      "Hawkeye",
+      "Moon Knight",
+      "Echo"
+    ],
+    "answerIndex": 2,
+    "difficulty": "medium"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://static.boxofficeturkiye.com/movie/poster/full/87/2016187-56763651.jpg",
+    "options": [
+      "Echo",
+      "I Am Groot",
+      "Werewolf by Night",
+      "Loki"
+    ],
+    "answerIndex": 2,
+    "difficulty": "medium"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://m.media-amazon.com/images/M/MV5BZTI2NDllMjgtOWEyYi00Y2YxLThhYjQtNTQ0NTgwNDE1YmYzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "options": [
+      "Werewolf by Night",
+      "Runaways",
+      "I Am Groot",
+      "The Punisher"
+    ],
+    "answerIndex": 3,
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Shazam! Fury of the Gods’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "James Wan",
+      "James Gunn",
+      "James Gunn",
+      "David F. Sandberg"
+    ],
+    "answerIndex": 3,
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple",
+    "question": "‘The Lord of the Rings’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "Ralph Bakshi",
+      "Peter Jackson",
+      "Peter Jackson",
+      "Peter Jackson"
+    ],
+    "answerIndex": 0,
+    "difficulty": "medium"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://m.media-amazon.com/images/M/MV5BMTZkMjBjNWMtZGI5OC00MGU0LTk4ZTItODg2NWM3NTVmNWQ4XkEyXkFqcGc@._V1_.jpg",
+    "options": [
+      "The Hobbit: The Desolation of Smaug",
+      "The Hobbit: The Battle of the Five Armies",
+      "The Hobbit",
+      "The Lord of the Rings: The Return of the King"
+    ],
+    "answerIndex": 3,
+    "difficulty": "medium"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://m.media-amazon.com/images/M/MV5BZDIyMGU2NTktOTM3YS00OTRjLWJiMmItNDEyNjVhZTZiZGUxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "options": [
+      "Shazam!",
+      "Peacemaker",
+      "Black Adam",
+      "Batman v Superman: Dawn of Justice"
+    ],
+    "answerIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Doctor Strange in the Multiverse of Madness’ 2023 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Star Wars: Bölüm IV - Yeni Bir Umut’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "George Lucas",
+      "J.J. Abrams",
+      "Rian Johnson",
+      "Gareth Edwards"
+    ],
+    "answerIndex": 0,
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple",
+    "question": "‘The Lord of the Rings: The Two Towers’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "Jules Bass",
+      "Jules Bass",
+      "Arthur Rankin Jr.",
+      "Peter Jackson"
+    ],
+    "answerIndex": 3,
+    "difficulty": "medium"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://images.justwatch.com/poster/264900069/s718/harry-potter-ve-olum-yadigarlari-bolum-1.jpg",
+    "options": [
+      "Fantastik Canavarlar: Dumbledore'un Sırları",
+      "Harry Potter ve Sırlar Odası",
+      "Harry Potter ve Ateş Kadehi",
+      "Harry Potter ve Ölüm Yadigârları: Bölüm 1"
+    ],
+    "answerIndex": 3,
+    "difficulty": "medium"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://upload.wikimedia.org/wikipedia/tr/7/7a/Ep1.jpg",
+    "options": [
+      "Obi-Wan Kenobi",
+      "Boba Fett'in Kitabı",
+      "Star Wars: Bölüm III - Sith'in İntikamı",
+      "Star Wars: Bölüm I - Gizli Tehlike"
+    ],
+    "answerIndex": 3,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Jessica Jones’ 2015 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://m.media-amazon.com/images/M/MV5BNzIxMDQ2YTctNDY4MC00ZTRhLTk4ODQtMTVlOWY4NTdiYmMwXkEyXkFqcGc@._V1_.jpg",
+    "options": [
+      "The Return of the King",
+      "The Lord of the Rings: The Return of the King",
+      "The Lord of the Rings",
+      "The Lord of the Rings: The Fellowship of the Ring"
+    ],
+    "answerIndex": 3,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Justice League’ 2017 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "multiple",
+    "question": "‘The Hobbit’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "Peter Jackson",
+      "Peter Jackson",
+      "Jules Bass",
+      "Arthur Rankin Jr."
+    ],
+    "answerIndex": 2,
+    "difficulty": "medium"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://www.sinefil.com/cdn-a1-p/tv/0015/94/thumb_1493526_tv_default.jpeg",
+    "options": [
+      "Star Wars: Klon Savaşları (Dizi)",
+      "Star Wars: Bölüm I - Gizli Tehlike",
+      "Han Solo: Bir Star Wars Hikayesi",
+      "Obi-Wan Kenobi"
+    ],
+    "answerIndex": 0,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘The Matrix Reloaded’ 2003 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Spider-Man: Far From Home’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "Nia DaCosta",
+      "Jon Watts",
+      "Joe Russo",
+      "Destin Daniel Cretton"
+    ],
+    "answerIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Harry Potter ve Ateş Kadehi’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "David Yates",
+      "Mike Newell",
+      "Chris Columbus",
+      "David Yates"
+    ],
+    "answerIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Daredevil’ 2015 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://m.media-amazon.com/images/M/MV5BZmI4ZmIxOGQtMGY2ZS00Y2Y5LTllMDItYzllOWFmMTNlMmY2XkEyXkFqcGc@._V1_.jpg",
+    "options": [
+      "The Hobbit: The Desolation of Smaug",
+      "The Hobbit: The Battle of the Five Armies",
+      "The Lord of the Rings",
+      "The Lord of the Rings: The Fellowship of the Ring"
+    ],
+    "answerIndex": 2,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘The Matrix Resurrections’ 2022 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://upload.wikimedia.org/wikipedia/tr/1/12/Avatar-Film-Posteri.jpg",
+    "options": [
+      "Avatar",
+      "The Legend of Korra",
+      "Avatar: The Last Airbender",
+      "Avatar: The Way of Water"
+    ],
+    "answerIndex": 0,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Iron Man 2’ 2010 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Obi-Wan Kenobi’ 2020 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Harry Potter ve Melez Prens’ 2009 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Thunderbolts*’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "Cate Shortland",
+      "Jake Schreier",
+      "Jon Favreau",
+      "Ryan Coogler"
+    ],
+    "answerIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Harry Potter ve Melez Prens’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "David Yates",
+      "Alfonso Cuarón",
+      "Chris Columbus",
+      "Chris Columbus"
+    ],
+    "answerIndex": 0,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Star Wars: Visions’ 2023 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://m.media-amazon.com/images/M/MV5BMzk0MzkxODMwOV5BMl5BanBnXkFtZTgwMjQzODE4NzE@._V1_FMjpg_UX1000_.jpg",
+    "options": [
+      "Ms. Marvel",
+      "Agent Carter",
+      "X-Men '97",
+      "The Defenders"
+    ],
+    "answerIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Andor’ 2022 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Mandalorian’ 2017 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://images.justwatch.com/poster/264900182/s718/harry-potter-ve-azkaban-tutsagi.jpg",
+    "options": [
+      "Harry Potter ve Azkaban Tutsağı",
+      "Harry Potter ve Zümrüdüanka Yoldaşlığı",
+      "Harry Potter ve Melez Prens",
+      "Harry Potter ve Ateş Kadehi"
+    ],
+    "answerIndex": 0,
+    "difficulty": "medium"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://m.media-amazon.com/images/M/MV5BZTJkYjdmYjYtOGMyNC00ZGU1LThkY2ItYTc1OTVlMmE2YWY1XkEyXkFqcGc@._V1_.jpg",
+    "options": [
+      "Birds of Prey",
+      "Shazam!",
+      "Batman v Superman: Dawn of Justice",
+      "Man of Steel"
+    ],
+    "answerIndex": 2,
+    "difficulty": "medium"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://m.media-amazon.com/images/M/MV5BMTcyMzc1MjI5MF5BMl5BanBnXkFtZTgwMzE4ODY2OTE@._V1_.jpg",
+    "options": [
+      "WandaVision",
+      "Runaways",
+      "Moon Knight",
+      "Luke Cage"
+    ],
+    "answerIndex": 3,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Black Widow’ 2020 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Wonder Woman’ 2019 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Avatar: The Last Airbender’ 2005 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Superman’ 2026 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘The Punisher’ 2017 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Ant-Man’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "Peyton Reed",
+      "Ryan Coogler",
+      "Taika Waititi",
+      "Louis Leterrier"
+    ],
+    "answerIndex": 0,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘The Lord of the Rings: The Return of the King’ 2001 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://m.media-amazon.com/images/M/MV5BMzU0NDY0NDEzNV5BMl5BanBnXkFtZTgwOTIxNDU1MDE@._V1_FMjpg_UX1000_.jpg",
+    "options": [
+      "The Lord of the Rings: The Two Towers",
+      "The Hobbit: The Desolation of Smaug",
+      "The Hobbit: An Unexpected Journey",
+      "The Hobbit"
+    ],
+    "answerIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Ahsoka’ 2023 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘The Animatrix’ 2002 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Ant-Man and the Wasp: Quantumania’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "Joe Russo",
+      "Matt Shakman",
+      "Joe Russo",
+      "Peyton Reed"
+    ],
+    "answerIndex": 3,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Peacemaker’ 2022 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Shazam!’ 2018 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Runaways’ 2017 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘The Matrix Revolutions’ 2005 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://static.boxofficeturkiye.com/movie/poster/full/1/2001-66537270.jpg",
+    "options": [
+      "X-Men '97",
+      "Moon Knight",
+      "Loki",
+      "She-Hulk: Attorney at Law"
+    ],
+    "answerIndex": 0,
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Man of Steel’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "Jaume Collet-Serra",
+      "Cathy Yan",
+      "David F. Sandberg",
+      "Zack Snyder"
+    ],
+    "answerIndex": 3,
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Fantastik Canavarlar: Grindelwald'ın Suçları’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "Chris Columbus",
+      "Alfonso Cuarón",
+      "Mike Newell",
+      "David Yates"
+    ],
+    "answerIndex": 3,
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Thor’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "Jon Watts",
+      "Kenneth Branagh",
+      "James Gunn",
+      "Julius Onah"
+    ],
+    "answerIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://m.media-amazon.com/images/M/MV5BOGU4ODlmNmMtMDM0OS00NTMxLWFlODUtZGFkMjU5NDdhMjgyXkEyXkFqcGc@._V1_.jpg",
+    "options": [
+      "Star Wars: Bölüm II - Klonların Saldırısı",
+      "Star Wars: Bölüm IX - Skywalker'ın Yükselişi",
+      "Obi-Wan Kenobi",
+      "Star Wars: Bölüm VII - Güç Uyanıyor"
+    ],
+    "answerIndex": 2,
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple",
+    "question": "‘The Marvels’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "Anthony Russo",
+      "Nia DaCosta",
+      "Joss Whedon",
+      "Scott Derrickson"
+    ],
+    "answerIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Hawkeye’ 2021 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Spider-Man: No Way Home’ 2021 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://static.boxofficeturkiye.com/movie/poster/300x429/15/2002015-793402240.jpg",
+    "options": [
+      "Harry Potter ve Ateş Kadehi",
+      "Harry Potter ve Melez Prens",
+      "Harry Potter ve Felsefe Taşı",
+      "Fantastik Canavarlar: Grindelwald'ın Suçları"
+    ],
+    "answerIndex": 2,
+    "difficulty": "medium"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://sm.ign.com/ign_tr/cover/t/the-legend/the-legend-of-korra_8exk.jpg",
+    "options": [
+      "Avatar",
+      "Avatar: The Last Airbender",
+      "Avatar: The Way of Water",
+      "The Legend of Korra"
+    ],
+    "answerIndex": 3,
+    "difficulty": "medium"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://images.justwatch.com/poster/165771182/s718/harry-potter-ve-olum-yadigarlari-bolum-2.jpg",
+    "options": [
+      "Harry Potter ve Ateş Kadehi",
+      "Harry Potter ve Ölüm Yadigârları: Bölüm 2",
+      "Harry Potter ve Ölüm Yadigârları: Bölüm 1",
+      "Harry Potter ve Azkaban Tutsağı"
+    ],
+    "answerIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://m.media-amazon.com/images/M/MV5BNWIzN2QxNjYtYWIwNi00NDBkLWE1M2MtYmEwZjc3ZDlmMmM5XkEyXkFqcGc@._V1_.jpg",
+    "options": [
+      "Jessica Jones",
+      "Inhumans",
+      "Ms. Marvel",
+      "Secret Invasion"
+    ],
+    "answerIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Star Wars: Bölüm VII - Güç Uyanıyor’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "George Lucas",
+      "Ron Howard",
+      "J.J. Abrams",
+      "George Lucas"
+    ],
+    "answerIndex": 2,
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple",
+    "question": "‘The Incredible Hulk’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "Louis Leterrier",
+      "Shane Black",
+      "Joe Russo",
+      "Joe Russo"
+    ],
+    "answerIndex": 0,
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Thor: The Dark World’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "Taika Waititi",
+      "Jon Watts",
+      "Alan Taylor",
+      "Jon Favreau"
+    ],
+    "answerIndex": 2,
+    "difficulty": "medium"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://m.media-amazon.com/images/M/MV5BYWM4NTVjNDMtZmJmMy00M2RkLTkyZjQtNTljYzMyMjVmY2Y3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "options": [
+      "Star Wars: Bölüm VII - Güç Uyanıyor",
+      "Star Wars: Visions",
+      "Han Solo: Bir Star Wars Hikayesi",
+      "Ahsoka"
+    ],
+    "answerIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Inhumans’ 2017 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://m.media-amazon.com/images/M/MV5BYTJhODI1YjMtYjc0Ni00YTcyLTgxNjYtMzYzNDllZWI1ZTI0XkEyXkFqcGc@._V1_.jpg",
+    "options": [
+      "The Lord of the Rings: The Fellowship of the Ring",
+      "The Hobbit: The Battle of the Five Armies",
+      "The Hobbit",
+      "The Return of the King"
+    ],
+    "answerIndex": 2,
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Deadpool & Wolverine’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "Jon Watts",
+      "Scott Derrickson",
+      "Shawn Levy",
+      "Julius Onah"
+    ],
+    "answerIndex": 2,
+    "difficulty": "medium"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://static.boxofficeturkiye.com/movie/poster/full/28/1428-62054668.jpg",
+    "options": [
+      "Echo",
+      "Secret Invasion",
+      "Agents of S.H.I.E.L.D.",
+      "Hawkeye"
+    ],
+    "answerIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘The Incredible Hulk’ 2008 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘The Flash’ 2023 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Star Wars Asiler’ 2013 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Captain America: Brave New World’ 2027 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Doctor Strange’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "Jake Schreier",
+      "Joss Whedon",
+      "Jon Watts",
+      "Scott Derrickson"
+    ],
+    "answerIndex": 3,
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Avengers: Infinity War’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "Anna Boden",
+      "Matt Shakman",
+      "Anthony Russo",
+      "James Gunn"
+    ],
+    "answerIndex": 2,
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Han Solo: Bir Star Wars Hikayesi’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "Irvin Kershner",
+      "J.J. Abrams",
+      "Ron Howard",
+      "George Lucas"
+    ],
+    "answerIndex": 2,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Harry Potter ve Ölüm Yadigârları: Bölüm 1’ 2011 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Agents of S.H.I.E.L.D.’ 2013 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Captain America: Brave New World’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "Joe Johnston",
+      "Cate Shortland",
+      "Ryan Coogler",
+      "Julius Onah"
+    ],
+    "answerIndex": 3,
+    "difficulty": "medium"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://upload.wikimedia.org/wikipedia/tr/6/6a/Harry_Potter_and_the_Order_of_the_Phoenix_%28film%2C_2007%29.jpg",
+    "options": [
+      "Harry Potter ve Zümrüdüanka Yoldaşlığı",
+      "Harry Potter ve Azkaban Tutsağı",
+      "Fantastik Canavarlar: Grindelwald'ın Suçları",
+      "Harry Potter ve Melez Prens"
+    ],
+    "answerIndex": 0,
+    "difficulty": "medium"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://m.media-amazon.com/images/M/MV5BNGI2MTJjMjUtMTJhOC00YTY2LTg1NjUtMTdmMjg4YTk2YjM5XkEyXkFqcGc@._V1_.jpg",
+    "options": [
+      "Star Wars: Klon Savaşları (Dizi)",
+      "Andor",
+      "Star Wars: Bölüm V - İmparatorluk Geri Dönüyor",
+      "Rogue One: Bir Star Wars Hikayesi"
+    ],
+    "answerIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘The Matrix’ 1999 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Avengers: Infinity War’ 2018 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://static.boxofficeturkiye.com/movie/poster/full/71/2003071-365489198.jpg",
+    "options": [
+      "The Matrix Reloaded",
+      "The Matrix Resurrections",
+      "The Animatrix",
+      "The Matrix Revolutions"
+    ],
+    "answerIndex": 0,
+    "difficulty": "medium"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://static.boxofficeturkiye.com/movie/poster/full/60/1260-51091678.jpg",
+    "options": [
+      "Secret Invasion",
+      "Runaways",
+      "Echo",
+      "Hawkeye"
+    ],
+    "answerIndex": 3,
+    "difficulty": "medium"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://upload.wikimedia.org/wikipedia/tr/a/a3/MatrixRevolutions-DVDKapa%C4%9F%C4%B1.jpg",
+    "options": [
+      "The Matrix Reloaded",
+      "The Matrix Revolutions",
+      "The Animatrix",
+      "The Matrix Resurrections"
+    ],
+    "answerIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Suicide Squad’ 2016 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Fantastik Canavarlar: Nelerdir, Nerede Bulunurlar?’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "Alfonso Cuarón",
+      "David Yates",
+      "Chris Columbus",
+      "Chris Columbus"
+    ],
+    "answerIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘The Hobbit’ 1979 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://upload.wikimedia.org/wikipedia/tr/4/49/Episode4_Turkish_Poster.jpeg",
+    "options": [
+      "Star Wars: Bölüm VIII - Son Jedi",
+      "Star Wars: Bölüm IV - Yeni Bir Umut",
+      "Ahsoka",
+      "Boba Fett'in Kitabı"
+    ],
+    "answerIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://static.boxofficeturkiye.com/movie/poster/full/22/1422-56324209.png",
+    "options": [
+      "Inhumans",
+      "She-Hulk: Attorney at Law",
+      "Agent Carter",
+      "Agents of S.H.I.E.L.D."
+    ],
+    "answerIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Ant-Man and the Wasp: Quantumania’ 2023 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Wonder Woman 1984’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "David Ayer",
+      "Patty Jenkins",
+      "David F. Sandberg",
+      "Jaume Collet-Serra"
+    ],
+    "answerIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://static.boxofficeturkiye.com/movie/poster/full/95/2013095-924901419.jpg",
+    "options": [
+      "Shazam! Fury of the Gods",
+      "The Flash",
+      "Wonder Woman",
+      "Peacemaker"
+    ],
+    "answerIndex": 2,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘The Avengers’ 2011 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://m.media-amazon.com/images/M/MV5BMTUwMjA5NTg4MF5BMl5BanBnXkFtZTgwODUyODkwMzI@._V1_.jpg",
+    "options": [
+      "The Defenders",
+      "Inhumans",
+      "The Punisher",
+      "Echo"
+    ],
+    "answerIndex": 0,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Iron Fist’ 2017 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Guardians of the Galaxy Vol. 3’ 2022 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘The Hobbit: The Battle of the Five Armies’ 2014 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://upload.wikimedia.org/wikipedia/tr/7/79/Skywalker%C4%B1n_Y%C3%BCkseli%C5%9Fi_afi%C5%9F.jpg",
+    "options": [
+      "Star Wars: Bad Batch",
+      "Star Wars: Bölüm IX - Skywalker'ın Yükselişi",
+      "Star Wars: Bölüm II - Klonların Saldırısı",
+      "Star Wars: Bölüm VIII - Son Jedi"
+    ],
+    "answerIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘The Lord of the Rings: The Fellowship of the Ring’ 2002 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Iron Man’ 2008 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Iron Man’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "Jon Favreau",
+      "Joe Johnston",
+      "Alan Taylor",
+      "Ryan Coogler"
+    ],
+    "answerIndex": 0,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Star Wars: Bölüm III - Sith'in İntikamı’ 2005 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Captain America: Civil War’ 2016 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘The Marvels’ 2022 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Rogue One: Bir Star Wars Hikayesi’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "George Lucas",
+      "Rian Johnson",
+      "Gareth Edwards",
+      "J.J. Abrams"
+    ],
+    "answerIndex": 2,
+    "difficulty": "medium"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://upload.wikimedia.org/wikipedia/tr/c/cd/Y%C4%B1ld%C4%B1z_Sava%C5%9Flar%C4%B1-_B%C3%B6l%C3%BCm_III_-_Sith%27in_%C4%B0ntikam%C4%B1_Film_Posteri.jpg",
+    "options": [
+      "Star Wars: Bölüm V - İmparatorluk Geri Dönüyor",
+      "Star Wars: Bölüm III - Sith'in İntikamı",
+      "Star Wars: Klon Savaşları (Dizi)",
+      "Star Wars Asiler"
+    ],
+    "answerIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://static.boxofficeturkiye.com/movie/poster/full/6/1999106-259580909.jpg",
+    "options": [
+      "The Animatrix",
+      "The Matrix",
+      "The Matrix Revolutions",
+      "The Matrix Resurrections"
+    ],
+    "answerIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple",
+    "question": "‘The Return of the King’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "Jules Bass",
+      "Peter Jackson",
+      "Peter Jackson",
+      "Arthur Rankin Jr."
+    ],
+    "answerIndex": 0,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Harry Potter ve Zümrüdüanka Yoldaşlığı’ 2007 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘The Falcon and the Winter Soldier’ 2021 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Zack Snyder's Justice League’ 2021 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://static.boxofficeturkiye.com/movie/poster/full/55/2055-72783482.jpg",
+    "options": [
+      "The Punisher",
+      "Daredevil",
+      "The Guardians of the Galaxy Holiday Special",
+      "Hawkeye"
+    ],
+    "answerIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://m.media-amazon.com/images/M/MV5BNDA0MzM5YTctZTU2My00NGQ5LWE2NTEtNDM0MjZmMDBkOTZkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "options": [
+      "Wonder Woman 1984",
+      "Zack Snyder's Justice League",
+      "Suicide Squad",
+      "Aquaman"
+    ],
+    "answerIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Star Wars: Bölüm III - Sith'in İntikamı’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "Gareth Edwards",
+      "George Lucas",
+      "Richard Marquand",
+      "J.J. Abrams"
+    ],
+    "answerIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘The Lord of the Rings’ 1978 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Fantastik Canavarlar: Nelerdir, Nerede Bulunurlar?’ 2016 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Aquaman and the Lost Kingdom’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "David F. Sandberg",
+      "Jaume Collet-Serra",
+      "James Wan",
+      "Zack Snyder"
+    ],
+    "answerIndex": 2,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Black Panther: Wakanda Forever’ 2022 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘The Defenders’ 2017 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Harry Potter ve Zümrüdüanka Yoldaşlığı’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "Alfonso Cuarón",
+      "Mike Newell",
+      "David Yates",
+      "Chris Columbus"
+    ],
+    "answerIndex": 2,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Star Wars: Bölüm VIII - Son Jedi’ 2017 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Moon Knight’ 2021 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://m.media-amazon.com/images/M/MV5BYjQ1ZTUzMWMtY2VkNS00ZDRjLWEwODYtYmFkMWJiNTQxMDUzXkEyXkFqcGc@._V1_.jpg",
+    "options": [
+      "The Flash",
+      "Batman v Superman: Dawn of Justice",
+      "Wonder Woman",
+      "Aquaman and the Lost Kingdom"
+    ],
+    "answerIndex": 3,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘The Return of the King’ 1981 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://m.media-amazon.com/images/M/MV5BZDc5YjgxNWUtYTE2Ni00NTI3LTkzZDctYzNjN2QxMzNiZmM2XkEyXkFqcGc@._V1_.jpg",
+    "options": [
+      "Star Wars: Bölüm VI - Jedi'ın Dönüşü",
+      "Star Wars: Bölüm VII - Güç Uyanıyor",
+      "Star Wars Asiler",
+      "Star Wars: Klon Savaşları (Dizi)"
+    ],
+    "answerIndex": 2,
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple",
+    "question": "‘The Lord of the Rings: The Fellowship of the Ring’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "Jules Bass",
+      "Jules Bass",
+      "Ralph Bakshi",
+      "Peter Jackson"
+    ],
+    "answerIndex": 3,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Boba Fett'in Kitabı’ 2021 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Captain Marvel’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "Anthony Russo",
+      "Alan Taylor",
+      "Jon Watts",
+      "Anna Boden"
+    ],
+    "answerIndex": 3,
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Superman’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "James Wan",
+      "Zack Snyder",
+      "James Gunn",
+      "Zack Snyder"
+    ],
+    "answerIndex": 2,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Loki’ 2022 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://m.media-amazon.com/images/M/MV5BMjdlYzAwYTMtMWJlOC00OTQ5LWJhMmYtMDhjNGY4M2RhMGU4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "options": [
+      "Shazam!",
+      "Shazam! Fury of the Gods",
+      "Zack Snyder's Justice League",
+      "Peacemaker"
+    ],
+    "answerIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Spider-Man: Far From Home’ 2020 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Aquaman’ 2018 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Werewolf by Night’ 2021 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://m.media-amazon.com/images/M/MV5BNmQxNjZlZTctMWJiMC00NGMxLWJjNTctNTFiNjA1Njk3ZDQ5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "options": [
+      "Avatar",
+      "Avatar: The Last Airbender",
+      "Avatar: The Way of Water",
+      "The Legend of Korra"
+    ],
+    "answerIndex": 2,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Harry Potter ve Felsefe Taşı’ 2001 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Doctor Strange’ 2016 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Blue Beetle’ 2022 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://m.media-amazon.com/images/M/MV5BMTcwNTE4MTUxMl5BMl5BanBnXkFtZTcwMDIyODM4OA@@._V1_FMjpg_UX1000_.jpg",
+    "options": [
+      "The Lord of the Rings",
+      "The Lord of the Rings: The Fellowship of the Ring",
+      "The Lord of the Rings: The Return of the King",
+      "The Hobbit: An Unexpected Journey"
+    ],
+    "answerIndex": 3,
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Star Wars: Bölüm VIII - Son Jedi’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "Gareth Edwards",
+      "Ron Howard",
+      "J.J. Abrams",
+      "Rian Johnson"
+    ],
+    "answerIndex": 3,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘The Suicide Squad’ 2021 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘I Am Groot’ 2021 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Ant-Man’ 2017 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Guardians of the Galaxy’ 2014 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Star Wars: Bölüm II - Klonların Saldırısı’ 2002 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Spider-Man: No Way Home’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "Jon Watts",
+      "Louis Leterrier",
+      "Jon Favreau",
+      "Joss Whedon"
+    ],
+    "answerIndex": 0,
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Star Wars: Bölüm I - Gizli Tehlike’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "Ron Howard",
+      "Rian Johnson",
+      "Irvin Kershner",
+      "George Lucas"
+    ],
+    "answerIndex": 3,
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Justice League’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "David Ayer",
+      "Joss Whedon",
+      "James Gunn",
+      "Patty Jenkins"
+    ],
+    "answerIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Avengers: Age of Ultron’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "Destin Daniel Cretton",
+      "Joss Whedon",
+      "Peyton Reed",
+      "Ryan Coogler"
+    ],
+    "answerIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Black Widow’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "Shawn Levy",
+      "Scott Derrickson",
+      "Cate Shortland",
+      "Jon Watts"
+    ],
+    "answerIndex": 2,
+    "difficulty": "medium"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://upload.wikimedia.org/wikipedia/tr/e/ea/Rogue_One_-_Bir_Star_Wars_Hikayesi.jpg",
+    "options": [
+      "Obi-Wan Kenobi",
+      "Star Wars: Bölüm I - Gizli Tehlike",
+      "Star Wars: Bölüm III - Sith'in İntikamı",
+      "Rogue One: Bir Star Wars Hikayesi"
+    ],
+    "answerIndex": 3,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Captain America: The Winter Soldier’ 2012 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Wonder Woman’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "Patty Jenkins",
+      "Jaume Collet-Serra",
+      "David Ayer",
+      "Joss Whedon"
+    ],
+    "answerIndex": 0,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Star Wars: Bölüm IX - Skywalker'ın Yükselişi’ 2020 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Fantastik Canavarlar: Grindelwald'ın Suçları’ 2018 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Echo’ 2024 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Thunderbolts*’ 2027 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Harry Potter ve Sırlar Odası’ 2001 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Fantastik Canavarlar: Dumbledore'un Sırları’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "David Yates",
+      "Chris Columbus",
+      "Chris Columbus",
+      "Mike Newell"
+    ],
+    "answerIndex": 0,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Avatar: The Way of Water’ 2022 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Thor: Love and Thunder’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "Taika Waititi",
+      "Sam Raimi",
+      "Louis Leterrier",
+      "Joe Russo"
+    ],
+    "answerIndex": 0,
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Doctor Strange in the Multiverse of Madness’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "James Gunn",
+      "Peyton Reed",
+      "Jon Watts",
+      "Sam Raimi"
+    ],
+    "answerIndex": 3,
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple",
+    "question": "‘The Hobbit: The Battle of the Five Armies’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "Arthur Rankin Jr.",
+      "Ralph Bakshi",
+      "Peter Jackson",
+      "Arthur Rankin Jr."
+    ],
+    "answerIndex": 2,
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Zack Snyder's Justice League’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "Zack Snyder",
+      "Angel Manuel Soto",
+      "James Wan",
+      "David F. Sandberg"
+    ],
+    "answerIndex": 0,
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple",
+    "question": "‘The Hobbit: An Unexpected Journey’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "Arthur Rankin Jr.",
+      "Peter Jackson",
+      "Ralph Bakshi",
+      "Jules Bass"
+    ],
+    "answerIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Ms. Marvel’ 2020 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://m.media-amazon.com/images/M/MV5BOGMwZGJiM2EtMzEwZC00YTYzLWIxNzYtMmJmZWNlZjgxZTMwXkEyXkFqcGc@._V1_.jpg",
+    "options": [
+      "Man of Steel",
+      "Aquaman",
+      "Wonder Woman",
+      "Superman"
+    ],
+    "answerIndex": 3,
+    "difficulty": "medium"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://static.boxofficeturkiye.com/movie/poster/full/40/2015040-52472877.jpg",
+    "options": [
+      "The Matrix Revolutions",
+      "The Matrix Reloaded",
+      "The Matrix Resurrections",
+      "The Animatrix"
+    ],
+    "answerIndex": 2,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Agent Carter’ 2016 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘The Fantastic Four: First Steps’ 2025 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://upload.wikimedia.org/wikipedia/tr/b/b8/Wonder_Woman_1984.jpg",
+    "options": [
+      "Shazam! Fury of the Gods",
+      "Batman v Superman: Dawn of Justice",
+      "Zack Snyder's Justice League",
+      "Wonder Woman 1984"
+    ],
+    "answerIndex": 3,
+    "difficulty": "medium"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://m.media-amazon.com/images/M/MV5BNjgxZGM0OWUtZGY1MS00MWRmLTk2N2ItYjQyZTI1OThlZDliXkEyXkFqcGc@._V1_.jpg",
+    "options": [
+      "Star Wars: Bölüm IX - Skywalker'ın Yükselişi",
+      "Star Wars: Bölüm I - Gizli Tehlike",
+      "Star Wars: Bölüm II - Klonların Saldırısı",
+      "Mandalorian"
+    ],
+    "answerIndex": 3,
+    "difficulty": "medium"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://static.boxofficeturkiye.com/movie/poster/300x429/52/2014752-53811978.jpg",
+    "options": [
+      "Fantastik Canavarlar: Dumbledore'un Sırları",
+      "Harry Potter ve Ölüm Yadigârları: Bölüm 2",
+      "Fantastik Canavarlar: Grindelwald'ın Suçları",
+      "Harry Potter ve Azkaban Tutsağı"
+    ],
+    "answerIndex": 0,
+    "difficulty": "medium"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://m.media-amazon.com/images/M/MV5BNTgwNWEwOWMtNGIxMy00YzU5LTk2MzgtMjAzMmM1MjZiY2RiXkEyXkFqcGc@._V1_.jpg",
+    "options": [
+      "Birds of Prey",
+      "Justice League",
+      "Aquaman",
+      "Blue Beetle"
+    ],
+    "answerIndex": 0,
+    "difficulty": "medium"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://static.boxofficeturkiye.com/movie/poster/full/56/2002156-105614273.jpg",
+    "options": [
+      "Harry Potter ve Sırlar Odası",
+      "Harry Potter ve Azkaban Tutsağı",
+      "Harry Potter ve Ölüm Yadigârları: Bölüm 2",
+      "Harry Potter ve Melez Prens"
+    ],
+    "answerIndex": 0,
+    "difficulty": "medium"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://upload.wikimedia.org/wikipedia/tr/0/03/450px-Star_Wars_Attack_of_the_Clones_poster.jpg",
+    "options": [
+      "Star Wars: Bölüm I - Gizli Tehlike",
+      "Star Wars Asiler",
+      "Star Wars: Bölüm II - Klonların Saldırısı",
+      "Star Wars: Bölüm VIII - Son Jedi"
+    ],
+    "answerIndex": 2,
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Captain America: The Winter Soldier’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "Taika Waititi",
+      "Joss Whedon",
+      "Nia DaCosta",
+      "Anthony Russo"
+    ],
+    "answerIndex": 3,
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Star Wars: Bölüm IX - Skywalker'ın Yükselişi’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "Richard Marquand",
+      "Gareth Edwards",
+      "Irvin Kershner",
+      "J.J. Abrams"
+    ],
+    "answerIndex": 3,
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Aquaman’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "Patty Jenkins",
+      "Angel Manuel Soto",
+      "James Wan",
+      "Zack Snyder"
+    ],
+    "answerIndex": 2,
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Harry Potter ve Sırlar Odası’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "David Yates",
+      "David Yates",
+      "David Yates",
+      "Chris Columbus"
+    ],
+    "answerIndex": 3,
+    "difficulty": "medium"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://static.boxofficeturkiye.com/movie/poster/300x429/4/2015804-61974472.jpg",
+    "options": [
+      "Aquaman and the Lost Kingdom",
+      "Batman v Superman: Dawn of Justice",
+      "Justice League",
+      "Blue Beetle"
+    ],
+    "answerIndex": 3,
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple",
+    "question": "‘The Matrix Resurrections’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "Lilly Wachowski",
+      "Lilly Wachowski",
+      "Lilly Wachowski",
+      "Lana Wachowski"
+    ],
+    "answerIndex": 3,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Captain America: The First Avenger’ 2012 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Thor: Love and Thunder’ 2022 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://m.media-amazon.com/images/M/MV5BNTU4NzU2OTc5NF5BMl5BanBnXkFtZTgwMDg3MzA0NzM@._V1_.jpg",
+    "options": [
+      "Echo",
+      "The Punisher",
+      "Cloak & Dagger",
+      "The Guardians of the Galaxy Holiday Special"
+    ],
+    "answerIndex": 2,
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple",
+    "question": "‘The Flash’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "James Wan",
+      "Andy Muschietti",
+      "James Gunn",
+      "Zack Snyder"
+    ],
+    "answerIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://upload.wikimedia.org/wikipedia/tr/thumb/5/55/Star_Wars_Son_Jedi_afi%C5%9F.jpg/250px-Star_Wars_Son_Jedi_afi%C5%9F.jpg",
+    "options": [
+      "Star Wars: Bölüm VIII - Son Jedi",
+      "Han Solo: Bir Star Wars Hikayesi",
+      "Star Wars: Bölüm V - İmparatorluk Geri Dönüyor",
+      "Star Wars: Visions"
+    ],
+    "answerIndex": 0,
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Black Panther’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "Kenneth Branagh",
+      "Taika Waititi",
+      "James Gunn",
+      "Ryan Coogler"
+    ],
+    "answerIndex": 3,
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Star Wars: Bölüm II - Klonların Saldırısı’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "Irvin Kershner",
+      "Rian Johnson",
+      "J.J. Abrams",
+      "George Lucas"
+    ],
+    "answerIndex": 3,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Star Wars: Bölüm V - İmparatorluk Geri Dönüyor’ 1982 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://m.media-amazon.com/images/M/MV5BMWU3Y2NlZmEtMjJjNS00ZWMxLWE1MzctYWYyMjMzMDdkNTE4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "options": [
+      "Shazam! Fury of the Gods",
+      "The Suicide Squad",
+      "Justice League",
+      "The Flash"
+    ],
+    "answerIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Harry Potter ve Ölüm Yadigârları: Bölüm 2’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "David Yates",
+      "Chris Columbus",
+      "Mike Newell",
+      "Alfonso Cuarón"
+    ],
+    "answerIndex": 0,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Black Panther’ 2020 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Batman v Superman: Dawn of Justice’ 2016 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Luke Cage’ 2017 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://static.boxofficeturkiye.com/movie/poster/full/3/1003-47975466.jpg",
+    "options": [
+      "The Punisher",
+      "She-Hulk: Attorney at Law",
+      "The Falcon and the Winter Soldier",
+      "Daredevil"
+    ],
+    "answerIndex": 2,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Ant-Man and the Wasp’ 2018 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Suicide Squad’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "James Wan",
+      "David Ayer",
+      "Patty Jenkins",
+      "Zack Snyder"
+    ],
+    "answerIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Avatar’ 2008 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Star Wars: Bölüm V - İmparatorluk Geri Dönüyor’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "Gareth Edwards",
+      "Irvin Kershner",
+      "Richard Marquand",
+      "George Lucas"
+    ],
+    "answerIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Thor: Ragnarok’ 2017 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://m.media-amazon.com/images/M/MV5BMTkwODYyMjgzOV5BMl5BanBnXkFtZTgwODAzMTE5MjE@._V1_.jpg",
+    "options": [
+      "WandaVision",
+      "Secret Invasion",
+      "The Falcon and the Winter Soldier",
+      "Agents of S.H.I.E.L.D."
+    ],
+    "answerIndex": 3,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Star Wars: Bölüm I - Gizli Tehlike’ 1999 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Harry Potter ve Felsefe Taşı’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "David Yates",
+      "David Yates",
+      "David Yates",
+      "Chris Columbus"
+    ],
+    "answerIndex": 3,
+    "difficulty": "medium"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://m.media-amazon.com/images/M/MV5BMTYzNDE3OTQ3MF5BMl5BanBnXkFtZTgwODczMTg4MjE@._V1_.jpg",
+    "options": [
+      "The Hobbit: The Battle of the Five Armies",
+      "The Lord of the Rings: The Two Towers",
+      "The Lord of the Rings: The Return of the King",
+      "The Lord of the Rings"
+    ],
+    "answerIndex": 0,
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Avengers: Endgame’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "Anthony Russo",
+      "Jon Watts",
+      "Peyton Reed",
+      "Matt Shakman"
+    ],
+    "answerIndex": 0,
+    "difficulty": "medium"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://upload.wikimedia.org/wikipedia/tr/8/85/ManofSteelFinalPoster.jpg",
+    "options": [
+      "Creature Commandos",
+      "Wonder Woman",
+      "Blue Beetle",
+      "Man of Steel"
+    ],
+    "answerIndex": 3,
+    "difficulty": "medium"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://m.media-amazon.com/images/M/MV5BY2JlY2NkOWItYjAyZS00Yzc5LWE4ZWEtMGY2NzBlZDkzNjYzXkEyXkFqcGc@._V1_.jpg",
+    "options": [
+      "Mandalorian",
+      "Han Solo: Bir Star Wars Hikayesi",
+      "Obi-Wan Kenobi",
+      "Boba Fett'in Kitabı"
+    ],
+    "answerIndex": 3,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Harry Potter ve Ateş Kadehi’ 2005 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://static.boxofficeturkiye.com/movie/poster/full/55/1955-64932282.jpg",
+    "options": [
+      "I Am Groot",
+      "Secret Invasion",
+      "Echo",
+      "Werewolf by Night"
+    ],
+    "answerIndex": 2,
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Harry Potter ve Ölüm Yadigârları: Bölüm 1’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "Mike Newell",
+      "Alfonso Cuarón",
+      "David Yates",
+      "Chris Columbus"
+    ],
+    "answerIndex": 2,
+    "difficulty": "medium"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://m.media-amazon.com/images/M/MV5BMDMwMThjYWYtY2Q2OS00OGM2LTlkODQtNDJlZTZmMjAyYmFhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "options": [
+      "Avatar: The Last Airbender",
+      "Avatar",
+      "The Legend of Korra",
+      "Avatar: The Way of Water"
+    ],
+    "answerIndex": 0,
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Black Panther: Wakanda Forever’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "Anthony Russo",
+      "Nia DaCosta",
+      "Cate Shortland",
+      "Ryan Coogler"
+    ],
+    "answerIndex": 3,
+    "difficulty": "medium"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://upload.wikimedia.org/wikipedia/tr/6/6e/Fantastik_Canavarlar_-_Grindelwald%27%C4%B1n_Su%C3%A7lar%C4%B1_afi%C5%9F.jpg",
+    "options": [
+      "Harry Potter ve Ölüm Yadigârları: Bölüm 2",
+      "Harry Potter ve Ateş Kadehi",
+      "Fantastik Canavarlar: Grindelwald'ın Suçları",
+      "Harry Potter ve Azkaban Tutsağı"
+    ],
+    "answerIndex": 2,
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple",
+    "question": "‘The Avengers’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "Joe Russo",
+      "Joss Whedon",
+      "Louis Leterrier",
+      "Ryan Coogler"
+    ],
+    "answerIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘What If...?’ 2021 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://upload.wikimedia.org/wikipedia/tr/thumb/4/4a/Black_Adam_film_afi%C5%9Fi.jpg/250px-Black_Adam_film_afi%C5%9Fi.jpg",
+    "options": [
+      "Zack Snyder's Justice League",
+      "Aquaman and the Lost Kingdom",
+      "Peacemaker",
+      "Black Adam"
+    ],
+    "answerIndex": 3,
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Birds of Prey’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "David F. Sandberg",
+      "Zack Snyder",
+      "Cathy Yan",
+      "Patty Jenkins"
+    ],
+    "answerIndex": 2,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Black Adam’ 2024 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Eternals’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "Alan Taylor",
+      "Cate Shortland",
+      "Joe Russo",
+      "Chloé Zhao"
+    ],
+    "answerIndex": 3,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Star Wars: Bölüm IV - Yeni Bir Umut’ 1977 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "multiple",
+    "question": "‘Guardians of the Galaxy’ filminin yönetmeni kimdir?",
+    "image": null,
+    "options": [
+      "Jon Favreau",
+      "Jon Watts",
+      "Anthony Russo",
+      "James Gunn"
+    ],
+    "answerIndex": 3,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘The Legend of Korra’ 2013 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://images.justwatch.com/poster/264900088/s718/harry-potter-ve-melez-prens.jpg",
+    "options": [
+      "Fantastik Canavarlar: Grindelwald'ın Suçları",
+      "Harry Potter ve Melez Prens",
+      "Harry Potter ve Ölüm Yadigârları: Bölüm 2",
+      "Harry Potter ve Ölüm Yadigârları: Bölüm 1"
+    ],
+    "answerIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://m.media-amazon.com/images/M/MV5BYmE2NzBjNGUtNTJiMy00N2UxLWEyYzMtYzFjODFhMGZlOTgzXkEyXkFqcGc@._V1_.jpg",
+    "options": [
+      "The Flash",
+      "Man of Steel",
+      "Birds of Prey",
+      "Wonder Woman"
+    ],
+    "answerIndex": 0,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Thor’ 2011 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Harry Potter ve Ölüm Yadigârları: Bölüm 2’ 2010 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://upload.wikimedia.org/wikipedia/tr/a/ac/386px-Empire20strikes20back_old.jpg",
+    "options": [
+      "Star Wars: Bölüm II - Klonların Saldırısı",
+      "Star Wars: Bölüm V - İmparatorluk Geri Dönüyor",
+      "Mandalorian",
+      "Star Wars Asiler"
+    ],
+    "answerIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://m.media-amazon.com/images/M/MV5BYmQzN2ViOTYtMWUxMy00YzdlLWEzZjktOWVjY2YzN2RiN2Q5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "options": [
+      "Andor",
+      "Star Wars: Bad Batch",
+      "Star Wars: Bölüm IX - Skywalker'ın Yükselişi",
+      "Obi-Wan Kenobi"
+    ],
+    "answerIndex": 1,
+    "difficulty": "medium"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://static.boxofficeturkiye.com/movie/poster/full/1/1001-49375793.jpg",
+    "options": [
+      "Loki",
+      "Daredevil",
+      "Echo",
+      "Luke Cage"
+    ],
+    "answerIndex": 0,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Iron Man 3’ 2013 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Star Wars: Klon Savaşları (Dizi)’ 2008 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://upload.wikimedia.org/wikipedia/tr/2/2f/Star_Wars_G%C3%BC%C3%A7_Uyan%C4%B1yor_afi%C5%9F.jpg",
+    "options": [
+      "Star Wars: Bölüm III - Sith'in İntikamı",
+      "Obi-Wan Kenobi",
+      "Star Wars: Bölüm VII - Güç Uyanıyor",
+      "Andor"
+    ],
+    "answerIndex": 2,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘WandaVision’ 2022 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Aquaman and the Lost Kingdom’ 2023 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://images.justwatch.com/poster/264902120/s718/harry-potter-ve-ates-kadehi.jpg",
+    "options": [
+      "Harry Potter ve Sırlar Odası",
+      "Harry Potter ve Ölüm Yadigârları: Bölüm 2",
+      "Fantastik Canavarlar: Dumbledore'un Sırları",
+      "Harry Potter ve Ateş Kadehi"
+    ],
+    "answerIndex": 3,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Man of Steel’ 2013 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 0,
+    "difficulty": "easy"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://static.boxofficeturkiye.com/movie/poster/300x429/10/2012910-440998772.jpg",
+    "options": [
+      "Andor",
+      "Ahsoka",
+      "Star Wars: Bölüm VI - Jedi'ın Dönüşü",
+      "Han Solo: Bir Star Wars Hikayesi"
+    ],
+    "answerIndex": 3,
+    "difficulty": "medium"
+  },
+  {
+    "type": "truefalse",
+    "question": "‘Shang-Chi and the Legend of the Ten Rings’ 2019 yılında vizyona girmiştir.",
+    "image": null,
+    "options": [
+      "Doğru",
+      "Yanlış"
+    ],
+    "answerIndex": 1,
+    "difficulty": "easy"
+  },
+  {
+    "type": "image",
+    "question": "Bu afiş hangi yapımın?",
+    "image": "https://upload.wikimedia.org/wikipedia/tr/e/e2/ReturnOfTheJediTurkishPoster.webp",
+    "options": [
+      "Star Wars: Bölüm V - İmparatorluk Geri Dönüyor",
+      "Star Wars: Bölüm VI - Jedi'ın Dönüşü",
+      "Star Wars: Visions",
+      "Star Wars: Bölüm IX - Skywalker'ın Yükselişi"
+    ],
+    "answerIndex": 1,
+    "difficulty": "medium"
+  }
+]
