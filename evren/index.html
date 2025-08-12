@@ -442,6 +442,12 @@ document.addEventListener('alpine:init', () => {
 })();
 </script>
 
+<!-- === AD: Styles === -->
+<style>
+  .ad-card a img { display:block; width:100%; height:auto; border-radius: 0.5rem; }
+  .ad-card .ad-tag { font-size:10px; padding:2px 6px; border-radius:999px; border:1px solid rgba(255,255,255,0.2); }
+</style>
+<!-- === /AD: Styles === -->
 </head>
 
 
@@ -681,6 +687,21 @@ document.addEventListener('alpine:init', () => {
 </div>
 </div>
 </header>
+<!-- === AD: Top Banner (responsive) === -->
+<div id="ad-top-banner" class="fixed top-[68px] left-0 right-0 z-[45] mx-auto w-[94%] sm:max-w-3xl">
+  <div class="ad-card backdrop-blur-md bg-black/60 border border-white/10 rounded-xl shadow-2xl overflow-hidden">
+    <div class="flex items-center justify-end p-3">
+      <button class="ad-close w-7 h-7 rounded-md bg-white/10 border border-white/20 hover:bg-white/20"
+              aria-label="Reklamı kapat" onclick="this.closest('#ad-top-banner').style.display='none'">✕</button>
+    </div>
+    <div class="p-2">
+      <div id="ad-top-banner-slot" class="w-full min-h-[90px] grid place-items-center">
+        <!-- Reklam buraya yerleşecek -->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- === /AD: Top Banner === -->
 <!-- Overlay -->
 <div
   x-show="openFilterPanel"
@@ -884,7 +905,13 @@ class="w-32 h-32 rounded-full object-cover drop-shadow-[0_0_20px_rgba(168,85,247
 </div>
 </div>
 <!-- İçerik alanı -->
-<div class="p-6 pt-20 space-y-6 overflow-hidden">
+\1
+<!-- === AD: Modal Slot === -->
+<div id="ad-modal-slot" class="mt-2">
+  <!-- Modal içi reklam buraya -->
+</div>
+<!-- === /AD: Modal Slot === -->
+
 <h2 class="text-2xl font-bold text-center" x-text="modalNode.label">
 </h2>
 <div class="flex justify-center mt-2" aria-live="polite">
@@ -3883,6 +3910,105 @@ document.addEventListener('alpine:init', () => {
 });
 </script>
 
+<!-- === AD: Loader & Config === -->
+<script>
+  // AdSense yapılandırması
+  window.AD_CONFIG = {
+    provider: 'adsense',
+    adsense: {
+      client: 'ca-pub-0000000000000000', // <-- kendi Client ID
+      slot:   '0000000000'               // <-- kendi Slot ID
+    }
+  };
+
+  (function(){
+    function createIns(cfg){
+      var ins = document.createElement('ins');
+      ins.className = 'adsbygoogle';
+      ins.style.display = 'block';
+      ins.setAttribute('data-ad-client', cfg.client);
+      ins.setAttribute('data-ad-slot', cfg.slot);
+      ins.setAttribute('data-ad-format', 'auto');
+      ins.setAttribute('data-full-width-responsive', 'true');
+      return ins;
+    }
+
+    function ensureScript(client){
+      var sel = 'script[src^="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"][src*="client="]';
+      var ok = document.querySelector(sel);
+      if(ok){ return Promise.resolve(); }
+      return new Promise(function(resolve){
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=' + encodeURIComponent(client);
+        s.crossOrigin = 'anonymous';
+        s.onload = function(){ resolve(); };
+        document.head.appendChild(s);
+      });
+    }
+
+    function render(slotId, cfg){
+      var slot = document.getElementById(slotId);
+      if(!slot){ return; }
+      slot.innerHTML = '';
+      slot.appendChild(createIns(cfg));
+      try { (window.adsbygoogle = window.adsbygoogle || []).push({}); } catch(e){}
+    }
+
+    function initAds(){
+      var cfg = (window.AD_CONFIG && window.AD_CONFIG.adsense) || null;
+      if(!cfg){ return; }
+      ensureScript(cfg.client).then(function(){
+        render('ad-top-banner-slot', cfg);
+        render('ad-floating-slot', cfg);
+        // modal slot, modal açıldığında tekrar render edilir
+        var modal = document.getElementById('ad-modal-slot');
+        if(modal){ render('ad-modal-slot', cfg); }
+      });
+    }
+
+    // İlk yüklemede çalıştır
+    if(document.readyState === 'loading'){
+      document.addEventListener('DOMContentLoaded', initAds);
+    } else {
+      initAds();
+    }
+
+    // Alpine modal açıldığında modal slotu yeniden render et
+    document.addEventListener('alpine:init', function(){
+      try {
+        var rootEl = document.querySelector('[x-data]');
+        if(rootEl && window.Alpine){
+          var root = Alpine.$data(rootEl);
+          try {
+            root.$watch('modalOpen', function(val){
+              if(val){
+                var cfg = (window.AD_CONFIG && window.AD_CONFIG.adsense) || null;
+                if(!cfg){ return; }
+                // küçük gecikme: modal DOM hazır olsun
+                setTimeout(function(){ render('ad-modal-slot', cfg); }, 200);
+              }
+            });
+          } catch(e){ /* ignore */ }
+        }
+      } catch(e){ /* ignore */ }
+    });
+  })();
+</script>
+<!-- === /AD: Loader & Config === -->
+<!-- === AD: Floating Box === -->
+<div id="ad-floating" class="hidden sm:block fixed bottom-4 right-4 z-[60]">
+  <div class="ad-card backdrop-blur-md bg-black/70 border border-white/10 rounded-2xl shadow-2xl p-3 w-[280px]">
+    <div class="flex items-center justify-between mb-2">
+      <button class="ad-close w-7 h-7 rounded-md bg-white/10 border border-white/20 hover:bg-white/20"
+              aria-label="Reklamı kapat" onclick="document.getElementById('ad-floating').style.display='none'">✕</button>
+    </div>
+    <div id="ad-floating-slot" class="w-full">
+      <!-- Reklam içeriği buraya gelecek -->
+    </div>
+  </div>
+</div>
+<!-- === /AD: Floating Box === -->
 </body>
 
 
@@ -4030,5 +4156,6 @@ document.addEventListener('alpine:init', () => {
   });
 });
 </script>
-
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9164245900945838"
+     crossorigin="anonymous"></script>
 </body>
