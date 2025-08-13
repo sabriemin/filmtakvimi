@@ -49,7 +49,13 @@
     .share-btn:hover { background: rgba(255,255,255,0.1); }
     .no-scrollbar::-webkit-scrollbar{ display:none; }
     .no-scrollbar{ -ms-overflow-style:none; scrollbar-width:none; }
-  </style>
+  
+#shareBanner:not(.show) { pointer-events: none !important; }
+
+</style>
+<style>/* FORCE-PE-AUTO-WRAPPER */
+[x-data="shareBanner()"]{pointer-events:auto !important;}
+</style>
 
 <style>
   #network {
@@ -442,12 +448,25 @@ document.addEventListener('alpine:init', () => {
 })();
 </script>
 
-<!-- === AD: Styles === -->
+
 <style>
-  .ad-card a img { display:block; width:100%; height:auto; border-radius: 0.5rem; }
-  .ad-card .ad-tag { font-size:10px; padding:2px 6px; border-radius:999px; border:1px solid rgba(255,255,255,0.2); }
+  /* Banner açıkken üst katmanlar tıklamayı çalmasın */
+  body.sb-open .modal-bg,
+  body.sb-open .tl-overlay,
+  body.sb-open .shepherd-modal-overlay-container,
+  body.sb-open .shepherd-modal-overlay,
+  body.sb-open [x-show="openFilterPanel"],
+  body.sb-open .share-sheet-overlay {
+    pointer-events: none !important;
+  }
 </style>
-<!-- === /AD: Styles === -->
+
+
+<style>
+  /* Banner açıkken vis-network tıklamayı almasın */
+  body.sb-open #network { pointer-events: none !important; }
+</style>
+
 </head>
 
 
@@ -526,7 +545,7 @@ document.addEventListener('alpine:init', () => {
     </div>
     <p class="text-center text-white/60 text-sm pt-2">Başlamak için yukarıdan bir <strong>film evreni</strong> seç 🌌</p>
 <div class="text-center">
-  <button @click="startTour()" class="mt-4 px-5 py-2 bg-white/10 border border-white/20 text-white text-sm rounded-lg hover:bg-white/20 transition">
+  <button @click="startTour()" class="mt-4 px-5 py-2 bg-white/10 border border-white/20 text-white text-sm rounded-lg hover:bg-white/20 transition pointer-events-auto">
     <span aria-hidden="true">🚀</span> Rehbere Başla
   </button>
 </div>
@@ -551,7 +570,7 @@ document.addEventListener('alpine:init', () => {
 
     <!-- Anasayfa -->
     <a href="./" title="Anasayfa"
-       class="text-white border border-white/30 hover:bg-white/10 rounded-md p-2 transition w-9 h-9 flex items-center justify-center"">
+       class="text-white border border-white/30 hover:bg-white/10 rounded-md p-2 transition w-9 h-9 flex items-center justify-center pointer-events-auto"">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
            stroke-width="2" stroke="currentColor" class="w-5 h-5">
         <path stroke-linecap="round" stroke-linejoin="round" d="M4 10v10h6v-6h4v6h6V10L12 3z"/>
@@ -576,7 +595,7 @@ document.addEventListener('alpine:init', () => {
         @click="search=''; suggestions=[]; applyFilters()"
         @mousedown.prevent
         aria-label="Temizle"
-        class="absolute inset-y-0 right-2 my-auto h-6 w-6 rounded-full grid place-items-center opacity-80 hover:opacity-100 hover:bg-white/10"
+        class="absolute inset-y-0 right-2 my-auto h-6 w-6 rounded-full grid place-items-center opacity-80 hover:opacity-100 hover:bg-white/10 pointer-events-auto"
         x-show="search"
         style="display:none;">
         <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
@@ -597,7 +616,7 @@ document.addEventListener('alpine:init', () => {
                 <!-- Filtre butonu: mobil -->
                 <button
                   @click="openFilterPanel = !openFilterPanel"
-                  class="relative flex h-9 w-9 items-center justify-center rounded-md border border-white/30 transition hover:bg-white/10 sm:hidden"
+                  class="relative flex h-9 w-9 items-center justify-center rounded-md border border-white/30 transition hover:bg-white/10 sm:hidden pointer-events-auto"
                   title="Filtreler" aria-label="Filtreleri aç"
                 >
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -667,7 +686,7 @@ document.addEventListener('alpine:init', () => {
               <button
                 @click="openFilterPanel = !openFilterPanel"
                 id="filter_btn"
-                class="relative hidden h-9 w-9 items-center justify-center rounded-md border border-white/30 transition hover:bg-white/10 sm:flex"
+                class="relative hidden h-9 w-9 items-center justify-center rounded-md border border-white/30 transition hover:bg-white/10 sm:flex pointer-events-auto"
                 title="Filtreler" aria-label="Filtreleri aç"
               >
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -687,21 +706,6 @@ document.addEventListener('alpine:init', () => {
 </div>
 </div>
 </header>
-<!-- === AD: Top Banner (responsive) === -->
-<div id="ad-top-banner" class="fixed top-[68px] left-0 right-0 z-[45] mx-auto w-[94%] sm:max-w-3xl">
-  <div class="ad-card backdrop-blur-md bg-black/60 border border-white/10 rounded-xl shadow-2xl overflow-hidden">
-    <div class="flex items-center justify-end p-3">
-      <button class="ad-close w-7 h-7 rounded-md bg-white/10 border border-white/20 hover:bg-white/20"
-              aria-label="Reklamı kapat" onclick="this.closest('#ad-top-banner').style.display='none'">✕</button>
-    </div>
-    <div class="p-2">
-      <div id="ad-top-banner-slot" class="w-full min-h-[90px] grid place-items-center">
-        <!-- Reklam buraya yerleşecek -->
-      </div>
-    </div>
-  </div>
-</div>
-<!-- === /AD: Top Banner === -->
 <!-- Overlay -->
 <div
   x-show="openFilterPanel"
@@ -725,16 +729,16 @@ document.addEventListener('alpine:init', () => {
 >
   <div class="flex items-center justify-between mb-3">
     <h3 class="text-lg font-semibold">Filtreler</h3>
-    <button @click="openFilterPanel=false" class="w-8 h-8 rounded-full bg-white/10 border border-white/20">✕</button>
+    <button @click="openFilterPanel=false" class="w-8 h-8 rounded-full bg-white/10 border border-white/20 pointer-events-auto">✕</button>
   </div>
 
   <!-- Yapım Tipi -->
   <div class="mb-4">
     <div class="text-sm font-medium mb-2">Yapım Tipi</div>
     <div class="inline-flex rounded-lg overflow-hidden border border-white/20">
-      <button @click="filters.type='all'"  :class="filters.type==='all'  ? 'bg-white/20' : 'bg-white/5'" class="px-3 py-1.5 text-sm">Hepsi</button>
-      <button @click="filters.type='film'" :class="filters.type==='film' ? 'bg-white/20' : 'bg-white/5'" class="px-3 py-1.5 text-sm">Film</button>
-      <button @click="filters.type='dizi'" :class="filters.type==='dizi' ? 'bg-white/20' : 'bg-white/5'" class="px-3 py-1.5 text-sm">Dizi</button>
+      <button @click="filters.type='all'"  :class="filters.type==='all'  ? 'bg-white/20' : 'bg-white/5'" class="px-3 py-1.5 text-sm pointer-events-auto">Hepsi</button>
+      <button @click="filters.type='film'" :class="filters.type==='film' ? 'bg-white/20' : 'bg-white/5'" class="px-3 py-1.5 text-sm pointer-events-auto">Film</button>
+      <button @click="filters.type='dizi'" :class="filters.type==='dizi' ? 'bg-white/20' : 'bg-white/5'" class="px-3 py-1.5 text-sm pointer-events-auto">Dizi</button>
     </div>
   </div>
 
@@ -777,31 +781,31 @@ document.addEventListener('alpine:init', () => {
       <button
         @click="filters.yearMin = new Date().getFullYear() - 1; filters.yearMax = new Date().getFullYear(); preset='last1'; applyFilters()"
         class="px-2 py-1 rounded text-xs border"
-        :class="preset==='last1' ? 'bg-emerald-600 border-emerald-600 text-black' : 'bg-white/10 hover:bg-white/20 border-white/20'"
+        :class="preset==='last1' ? 'bg-emerald-600 border-emerald-600 text-black' : 'bg-white/10 hover:bg-white/20 border-white/20' pointer-events-auto"
       >Son 1 Yıl</button>
 
       <button
         @click="filters.yearMin = new Date().getFullYear() - 5; filters.yearMax = new Date().getFullYear(); preset='last5'; applyFilters()"
         class="px-2 py-1 rounded text-xs border"
-        :class="preset==='last5' ? 'bg-emerald-600 border-emerald-600 text-black' : 'bg-white/10 hover:bg-white/20 border-white/20'"
+        :class="preset==='last5' ? 'bg-emerald-600 border-emerald-600 text-black' : 'bg-white/10 hover:bg-white/20 border-white/20' pointer-events-auto"
       >Son 5 Yıl</button>
 
       <button
         @click="filters.yearMin = 2010; filters.yearMax = 2019; preset='2010s'; applyFilters()"
         class="px-2 py-1 rounded text-xs border"
-        :class="preset==='2010s' ? 'bg-emerald-600 border-emerald-600 text-black' : 'bg-white/10 hover:bg-white/20 border-white/20'"
+        :class="preset==='2010s' ? 'bg-emerald-600 border-emerald-600 text-black' : 'bg-white/10 hover:bg-white/20 border-white/20' pointer-events-auto"
       >2010–2019</button>
 
       <button
         @click="filters.yearMin = 2000; filters.yearMax = 2009; preset='2000s'; applyFilters()"
         class="px-2 py-1 rounded text-xs border"
-        :class="preset==='2000s' ? 'bg-emerald-600 border-emerald-600 text-black' : 'bg-white/10 hover:bg-white/20 border-white/20'"
+        :class="preset==='2000s' ? 'bg-emerald-600 border-emerald-600 text-black' : 'bg-white/10 hover:bg-white/20 border-white/20' pointer-events-auto"
       >2000–2009</button>
 
       <button
         @click="filters.yearMin = null; filters.yearMax = 1999; preset='pre2000'; applyFilters()"
         class="px-2 py-1 rounded text-xs border"
-        :class="preset==='pre2000' ? 'bg-emerald-600 border-emerald-600 text-black' : 'bg-white/10 hover:bg-white/20 border-white/20'"
+        :class="preset==='pre2000' ? 'bg-emerald-600 border-emerald-600 text-black' : 'bg-white/10 hover:bg-white/20 border-white/20' pointer-events-auto"
       >2000 Öncesi</button>
     </div>
   </div>
@@ -856,8 +860,8 @@ document.addEventListener('alpine:init', () => {
 
   <!-- Aksiyonlar -->
   <div class="flex gap-2">
-    <button @click="applyFilters(); openFilterPanel=false" class="px-3 py-2 rounded bg-emerald-600 hover:bg-emerald-700 text-white text-sm">Uygula</button>
-    <button @click="preset=null; resetFilters()" class="px-3 py-2 rounded bg-white/10 border border-white/20 text-sm">Sıfırla</button>
+    <button @click="applyFilters(); openFilterPanel=false" class="px-3 py-2 rounded bg-emerald-600 hover:bg-emerald-700 text-white text-sm pointer-events-auto">Uygula</button>
+    <button @click="preset=null; resetFilters()" class="px-3 py-2 rounded bg-white/10 border border-white/20 text-sm pointer-events-auto">Sıfırla</button>
   </div>
 </aside>
 <div id="network" x-show="selectedUniverse" x-transition x-show="showGraph" x-transition></div>
@@ -869,7 +873,7 @@ document.addEventListener('alpine:init', () => {
 <div class="relative h-64">
 <img :src="getNodeImage(modalNode)" alt="" class="absolute inset-0 w-full h-full object-cover blur-sm brightness-50 scale-105" class="lazy-blur" @load="$event.target.classList.add(\'lazy-done\')" loading="lazy"/>
 <div class="absolute inset-0 flex flex-col justify-between p-4 z-10"><div class="absolute top-3 left-3 flex gap-2 items-center">
-  <button @click="openShare(modalNode)" id="share-btn" class="share-btn" title="Paylaşım seçenekleri" aria-label="Paylaşım seçenekleri">
+  <button @click="openShare(modalNode)" id="share-btn" class="share-btn pointer-events-auto" title="Paylaşım seçenekleri" aria-label="Paylaşım seçenekleri">
     <span aria-hidden="true">🔗</span><span class="hidden sm:inline">Paylaş</span>
   </button>
 </div><div class="absolute top-3 right-3 flex gap-2 items-center z-20"><div @click="modalOpen=false; resetPrettyUrl && resetPrettyUrl()" class="close-btn" id="modal-close" role="button" aria-label="Paneli kapat">✕</div></div>
@@ -891,7 +895,7 @@ document.addEventListener('alpine:init', () => {
 <template x-if="showPosterDialog">
 <div @click.self="showPosterDialog = false" class="fixed inset-0 z-\[9999\] z-\[999\] z-50 bg-black/70 backdrop-blur-md z-50 flex items-center justify-center">
 <div class="p-4 rounded-xl shadow-2xl max-w-[90vw] max-h-[85vh]" style="z-index:10000;" style="z-index:1000;" style="z-index:60;">
-<button @click="showPosterDialog = false" class="absolute top-2 right-2 w-8 h-8 rounded-full bg-white/10 border border-white/20 text-white text-sm">✕</button>
+<button @click="showPosterDialog = false" class="absolute top-2 right-2 w-8 h-8 rounded-full bg-white/10 border border-white/20 text-white text-sm pointer-events-auto">✕</button>
 <img :src="getNodeImage(modalNode)" class="max-w-[75vw] max-h-[70vh] rounded-xl shadow-lg object-cover"/>
 </div>
 </div>
@@ -905,17 +909,11 @@ class="w-32 h-32 rounded-full object-cover drop-shadow-[0_0_20px_rgba(168,85,247
 </div>
 </div>
 <!-- İçerik alanı -->
-\1
-<!-- === AD: Modal Slot === -->
-<div id="ad-modal-slot" class="mt-2">
-  <!-- Modal içi reklam buraya -->
-</div>
-<!-- === /AD: Modal Slot === -->
-
+<div class="p-6 pt-20 space-y-6 overflow-hidden">
 <h2 class="text-2xl font-bold text-center" x-text="modalNode.label">
 </h2>
 <div class="flex justify-center mt-2" aria-live="polite">
-<button :class="isInWatchLater(modalNode?.id) ? 'bg-green-500 border-green-500 text-white' : 'bg-white/10 border-white/20 text-white hover:bg-white/20'" @click="toggleWatchLater(modalNode)" class="px-4 py-2 rounded border text-sm transition" x-text="isInWatchLater(modalNode?.id) ? '✔ Favorilere Eklendi' : 'Favorilere Ekle'">
+<button :class="isInWatchLater(modalNode?.id) ? 'bg-green-500 border-green-500 text-white' : 'bg-white/10 border-white/20 text-white hover:bg-white/20'" @click="toggleWatchLater(modalNode)" class="px-4 py-2 rounded border text-sm transition pointer-events-auto" x-text="isInWatchLater(modalNode?.id) ? '✔ Favorilere Eklendi' : 'Favorilere Ekle'">
 </button>
 </div>
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
@@ -1070,7 +1068,7 @@ class="w-32 h-32 rounded-full object-cover drop-shadow-[0_0_20px_rgba(168,85,247
   />
   <a href="#"
      @click.prevent="confirmExternal(src.url)"
-     class="text-emerald-400 hover:underline"
+     class="text-emerald-400 hover:underline pointer-events-auto"
      x-text="src.name || src.url"></a>
 </li>
         </template>
@@ -1155,7 +1153,7 @@ class="w-32 h-32 rounded-full object-cover drop-shadow-[0_0_20px_rgba(168,85,247
 
 <template x-if="edgeList.length">
 <div class="flex flex-wrap gap-2" x-show="linkedOpen">
-<template :key="(e.id || (e.from + '-' + e.to + '-' + (e.type || '')))" x-for="e in edgeList">
+<template :key="e.id" x-for="e in edgeList">
 <div :class="{
 'bg-blue-900/40 border-blue-500/30': e.type === 'Devam',
 'bg-emerald-900/30 border-emerald-500/20': e.type === 'Takım Kurulumu',
@@ -1227,8 +1225,8 @@ class="w-32 h-32 rounded-full object-cover drop-shadow-[0_0_20px_rgba(168,85,247
       <div class="flex flex-col gap-2">
         <textarea x-model="editedNoteText" class="w-full p-2 rounded bg-black/20 text-sm text-white border border-white/20"></textarea>
         <div class="flex justify-end gap-2 text-xs">
-          <button @click="saveEditedNote(modalNode.id, i)" class="px-2 py-1 rounded bg-green-600 hover:bg-green-700 text-white">Kaydet</button>
-          <button @click="cancelEditNote()" class="px-2 py-1 rounded bg-white/20 text-white">Vazgeç</button>
+          <button @click="saveEditedNote(modalNode.id, i)" class="px-2 py-1 rounded bg-green-600 hover:bg-green-700 text-white pointer-events-auto">Kaydet</button>
+          <button @click="cancelEditNote()" class="px-2 py-1 rounded bg-white/20 text-white pointer-events-auto">Vazgeç</button>
         </div>
       </div>
     </template>
@@ -1246,7 +1244,7 @@ class="w-32 h-32 rounded-full object-cover drop-shadow-[0_0_20px_rgba(168,85,247
 
 <div class="flex gap-2 mt-2">
 <input class="w-full px-3 py-2 rounded bg-white/10 text-white" placeholder="Not ekle... #etiket" x-model="newNote"/>
-<button @click="addNote(modalNode.id)" class="px-3 py-2 text-sm border border-white/20 rounded hover:bg-white/20">Ekle</button>
+<button @click="addNote(modalNode.id)" class="px-3 py-2 text-sm border border-white/20 rounded hover:bg-white/20 pointer-events-auto">Ekle</button>
 
 <!-- Advanced Share Sheet -->
 <template x-if="shareOpen">
@@ -2151,11 +2149,15 @@ selectedEdgeType: null,
           "starwars": "assets/images/starwars.jpg"
         },
         get edgeList(){
-          if (!this.modalNode || !this.allEdges) return [];
-          return this.allEdges
-            .filter(e => e.from === this.modalNode.id || e.to === this.modalNode.id)
-            .map(e => ({ ...e, otherNodeId: e.from === this.modalNode.id ? e.to : e.from }));
-        },
+  if (!this.modalNode || !this.allEdges) return [];
+  return this.allEdges
+    .filter(e => e.from === this.modalNode.id || e.to === this.modalNode.id)
+    .map((e, idx) => ({
+      ...e,
+      otherNodeId: e.from === this.modalNode.id ? e.to : e.from,
+      id: e.id || `${e.from}-${e.to}-${e.type || ''}-${idx}`
+    }));
+},
 edgeColors: {
   "Ana Hikaye Bağlantısı": "#2c3e50",
   "Ana Tehdit": "#ff0000",
@@ -2829,7 +2831,7 @@ const searchTerm = this.norm(this.search);
 
 </div>
 <div id="legendWrap" x-show="selectedUniverse">
-<button id="legend_bar" @click="showLegend = !showLegend" class="glass px-3 py-1.5 rounded-lg text-sm hover:bg-white/10 transition" id="legendToggle">Bağlantılar <span x-text="showLegend ? '(Gizle)' : '(Göster)'"></span></button>
+<button id="legend_bar" @click="showLegend = !showLegend" class="glass px-3 py-1.5 rounded-lg text-sm hover:bg-white/10 transition pointer-events-auto" id="legendToggle">Bağlantılar <span x-text="showLegend ? '(Gizle)' : '(Göster)'"></span></button>
 <div id="legend" role="list" x-show="showLegend" x-transition="">
 <h3 class="font-bold mb-2">Bağlantılar</h3>
 <ul>
@@ -2848,7 +2850,7 @@ const searchTerm = this.norm(this.search);
 <button
   id="timeline_bar"
   @click="timelineOpen = !timelineOpen"
-  class="fixed right-4 bottom-[8rem] z-[50] glass rounded-full w-12 h-12 grid place-items-center hover:bg-white/10 pointer-events-auto"
+  class="fixed right-4 bottom-[8rem] z-[50] glass rounded-full w-12 h-12 grid place-items-center hover:bg-white/10 pointer-events-auto pointer-events-auto"
   title="Zaman Çizelgesi"
 >
   <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -2858,7 +2860,7 @@ const searchTerm = this.norm(this.search);
 </button>
 
 <!-- Yeni panel açma butonu -->
-<button @click="panelOpen = !panelOpen" id="panel_bar" class="fixed right-4 bottom-[4.5rem] z-50 glass rounded-full w-12 h-12 grid place-items-center hover:bg-white/10" title="Notlar ve Favoriler">📁</button>
+<button @click="panelOpen = !panelOpen" id="panel_bar" class="fixed right-4 bottom-[4.5rem] z-50 glass rounded-full w-12 h-12 grid place-items-center hover:bg-white/10 pointer-events-auto" title="Notlar ve Favoriler">📁</button>
 
 
 <!-- Notlar & Favoriler Paneli -->
@@ -2867,8 +2869,8 @@ const searchTerm = this.norm(this.search);
 
   <!-- Sekmeler -->
   <div class="flex gap-2 mb-1">
-    <button id="fav_bar" @click="activeTab = 'watch'" :class="activeTab === 'watch' ? 'bg-white/20 px-3 py-1 rounded' : 'px-3 py-1 rounded hover:bg-white/10'">⭐ Favoriler</button>
-    <button id="notlar_bar" @click="activeTab = 'notes'" :class="activeTab === 'notes' ? 'bg-white/20 px-3 py-1 rounded' : 'px-3 py-1 rounded hover:bg-white/10'">📝 Notlar</button>
+    <button id="fav_bar" @click="activeTab = 'watch'" :class="activeTab === 'watch' ? 'bg-white/20 px-3 py-1 rounded' : 'px-3 py-1 rounded hover:bg-white/10' pointer-events-auto">⭐ Favoriler</button>
+    <button id="notlar_bar" @click="activeTab = 'notes'" :class="activeTab === 'notes' ? 'bg-white/20 px-3 py-1 rounded' : 'px-3 py-1 rounded hover:bg-white/10' pointer-events-auto">📝 Notlar</button>
   </div>
 
   <!-- Favoriler Sekmesi -->
@@ -2881,7 +2883,7 @@ const searchTerm = this.norm(this.search);
       <div class="border border-white/10 rounded-lg overflow-hidden">
         <div class="flex justify-between items-center px-3 py-2 bg-white/10">
           <span class="font-semibold truncate" x-text="item.label || item.id"></span>
-          <button @click="removeWatchLater(item.id)" class="text-red-400 hover:text-red-600 text-xs">Sil</button>
+          <button @click="removeWatchLater(item.id)" class="text-red-400 hover:text-red-600 text-xs pointer-events-auto">Sil</button>
         </div>
       </div>
     </template>
@@ -2895,7 +2897,7 @@ const searchTerm = this.norm(this.search);
 
     <template x-for="(entries, nodeId) in Object.fromEntries(Object.entries(notes).filter(([k, arr]) => arr.length))" :key="nodeId">
       <div class="border border-white/10 rounded-lg overflow-hidden">
-        <button @click="notesOpen = notesOpen === nodeId ? null : nodeId" class="w-full text-left px-3 py-2 bg-white/10 hover:bg-white/20 font-semibold">
+        <button @click="notesOpen = notesOpen === nodeId ? null : nodeId" class="w-full text-left px-3 py-2 bg-white/10 hover:bg-white/20 font-semibold pointer-events-auto">
           <span x-text="nodes.get(nodeId)?.label || nodeId"></span>
         </button>
 
@@ -2908,8 +2910,8 @@ const searchTerm = this.norm(this.search);
                 <div class="flex flex-col gap-2">
                   <textarea x-model="editedNoteText" class="w-full p-2 rounded bg-black/20 text-sm text-white border border-white/20"></textarea>
                   <div class="flex justify-end gap-2 text-xs">
-                    <button @click="saveEditedNote(nodeId, i)" class="px-2 py-1 rounded bg-green-600 hover:bg-green-700 text-white">Kaydet</button>
-                    <button @click="cancelEditNote()" class="px-2 py-1 rounded bg-white/20 text-white">Vazgeç</button>
+                    <button @click="saveEditedNote(nodeId, i)" class="px-2 py-1 rounded bg-green-600 hover:bg-green-700 text-white pointer-events-auto">Kaydet</button>
+                    <button @click="cancelEditNote()" class="px-2 py-1 rounded bg-white/20 text-white pointer-events-auto">Vazgeç</button>
                   </div>
                 </div>
               </template>
@@ -2953,7 +2955,7 @@ const searchTerm = this.norm(this.search);
   <p>Film Evreni Ağı bağımsız bir girişimdir ve herhangi bir stüdyo veya yayıncıyla bağlantısı yoktur.</p>
 </div>
     <div class="text-center">
-      <button @click="panel = null" class="mt-4 px-5 py-2 bg-white/10 border border-white/20 text-white text-sm rounded-lg hover:bg-white/20 transition">Geri Dön</button>
+      <button @click="panel = null" class="mt-4 px-5 py-2 bg-white/10 border border-white/20 text-white text-sm rounded-lg hover:bg-white/20 transition pointer-events-auto">Geri Dön</button>
     </div>
   </div>
 </div>
@@ -2990,13 +2992,13 @@ const searchTerm = this.norm(this.search);
   </ul>
 
  <div class="text-center mt-4">
-  <button @click="panel = 'iletisim'" class="px-4 py-2 bg-white/10 border border-white/20 text-white text-sm rounded hover:bg-white/20">
+  <button @click="panel = 'iletisim'" class="px-4 py-2 bg-white/10 border border-white/20 text-white text-sm rounded hover:bg-white/20 pointer-events-auto">
     İletişim Formunu Aç
   </button>
 </div>
 </div>
     <div class="text-center">
-      <button @click="panel = null" class="mt-4 px-5 py-2 bg-white/10 border border-white/20 text-white text-sm rounded-lg hover:bg-white/20 transition">Geri Dön</button>
+      <button @click="panel = null" class="mt-4 px-5 py-2 bg-white/10 border border-white/20 text-white text-sm rounded-lg hover:bg-white/20 transition pointer-events-auto">Geri Dön</button>
     </div>
   </div>
 </div>
@@ -3029,7 +3031,7 @@ const searchTerm = this.norm(this.search);
   <p class="mt-4">Çerezleri tarayıcınızdan temizleyebilir veya engelleyebilirsiniz. Bu durumda bazı özellikler çalışmayabilir.</p>
 </div>
     <div class="text-center">
-      <button @click="panel = null" class="mt-4 px-5 py-2 bg-white/10 border border-white/20 text-white text-sm rounded-lg hover:bg-white/20 transition">Geri Dön</button>
+      <button @click="panel = null" class="mt-4 px-5 py-2 bg-white/10 border border-white/20 text-white text-sm rounded-lg hover:bg-white/20 transition pointer-events-auto">Geri Dön</button>
     </div>
   </div>
 </div>
@@ -3062,7 +3064,7 @@ const searchTerm = this.norm(this.search);
   <p class="mt-4">Kuralları ihlal eden kullanıcıların erişimi engellenebilir.</p>
 </div>
     <div class="text-center">
-      <button @click="panel = null" class="mt-4 px-5 py-2 bg-white/10 border border-white/20 text-white text-sm rounded-lg hover:bg-white/20 transition">Geri Dön</button>
+      <button @click="panel = null" class="mt-4 px-5 py-2 bg-white/10 border border-white/20 text-white text-sm rounded-lg hover:bg-white/20 transition pointer-events-auto">Geri Dön</button>
     </div>
   </div>
 </div>
@@ -3092,14 +3094,14 @@ const searchTerm = this.norm(this.search);
   </ul>
 
   <div class="text-center mt-4">
-  <button @click="panel = 'iletisim'" class="px-4 py-2 bg-white/10 border border-white/20 text-white text-sm rounded hover:bg-white/20">
+  <button @click="panel = 'iletisim'" class="px-4 py-2 bg-white/10 border border-white/20 text-white text-sm rounded hover:bg-white/20 pointer-events-auto">
     İletişim Formunu Aç
   </button>
 </div>
 </div>
 
     <div class="text-center">
-      <button @click="panel = null" class="mt-4 px-5 py-2 bg-white/10 border border-white/20 text-white text-sm rounded-lg hover:bg-white/20 transition">Geri Dön</button>
+      <button @click="panel = null" class="mt-4 px-5 py-2 bg-white/10 border border-white/20 text-white text-sm rounded-lg hover:bg-white/20 transition pointer-events-auto">Geri Dön</button>
     </div>
   </div>
 </div>
@@ -3131,12 +3133,12 @@ const searchTerm = this.norm(this.search);
         <textarea name="message" rows="5" class="w-full px-3 py-2 rounded bg-white/10 border border-white/20" required></textarea>
       </div>
       <div class="text-center">
-        <button type="submit" class="px-4 py-2 bg-white/10 border border-white/20 text-white text-sm rounded hover:bg-white/20">Gönder</button>
+        <button type="submit" class="px-4 py-2 bg-white/10 border border-white/20 text-white text-sm rounded hover:bg-white/20 pointer-events-auto">Gönder</button>
       </div>
     </form>
 
     <div class="text-center">
-      <button @click="panel = null" class="mt-2 px-4 py-1 text-sm text-white border border-white/20 rounded hover:bg-white/20">İptal</button>
+      <button @click="panel = null" class="mt-2 px-4 py-1 text-sm text-white border border-white/20 rounded hover:bg-white/20 pointer-events-auto">İptal</button>
     </div>
   </div>
 
@@ -3171,11 +3173,11 @@ const searchTerm = this.norm(this.search);
   <div class="space-y-2">
     <div>© 2025 Film Evreni Ağı</div>
     <div class="flex flex-wrap justify-center gap-x-4 gap-y-1 text-xs">
-      <a href="#" @click.prevent="panel='hakkimizda'" class="underline hover:text-white block">Hakkımızda</a>
-      <a href="#" @click.prevent="panel='gizlilik'" class="underline hover:text-white block">Gizlilik</a>
-      <a href="#" @click.prevent="panel='cerez'" class="underline hover:text-white block">Çerez Politikası</a>
-      <a href="#" @click.prevent="panel='kullanim'" class="underline hover:text-white block">Kullanım Koşulları</a>
-      <a href="#" @click.prevent="panel='dmca'" class="underline hover:text-white block">DMCA</a>
+      <a href="#" @click.prevent="panel='hakkimizda'" class="underline hover:text-white block pointer-events-auto">Hakkımızda</a>
+      <a href="#" @click.prevent="panel='gizlilik'" class="underline hover:text-white block pointer-events-auto">Gizlilik</a>
+      <a href="#" @click.prevent="panel='cerez'" class="underline hover:text-white block pointer-events-auto">Çerez Politikası</a>
+      <a href="#" @click.prevent="panel='kullanim'" class="underline hover:text-white block pointer-events-auto">Kullanım Koşulları</a>
+      <a href="#" @click.prevent="panel='dmca'" class="underline hover:text-white block pointer-events-auto">DMCA</a>
     </div>
   </div>
 </footer>
@@ -3286,7 +3288,7 @@ document.addEventListener('keydown', function(e){
 
   <div class="flex items-center justify-between mb-3">
     <h3 class="text-lg font-semibold">📅 Zaman Çizelgesi</h3>
-    <button @click="timelineOpen=false" class="w-8 h-8 rounded-full bg-white/10 border border-white/20">✕</button>
+    <button @click="timelineOpen=false" class="w-8 h-8 rounded-full bg-white/10 border border-white/20 pointer-events-auto">✕</button>
   </div>
 
   <div x-ref="tlScroll"
@@ -3845,11 +3847,11 @@ const title = `${E.film} ${titleText}`.trim();
 >
     <p class="text-sm text-center sm:text-left">
         Web sitemizde size en iyi deneyimi sunabilmek için çerezleri kullanıyoruz.
-        Detaylı bilgi için <a href="./src/cerez-politikasi.html" class="text-emerald-400 hover:underline">Çerez Politikası</a>.
+        Detaylı bilgi için <a href="./src/cerez-politikasi.html" class="text-emerald-400 hover:underline pointer-events-auto">Çerez Politikası</a>.
     </p>
     <button
         @click="localStorage.setItem('cookiesAccepted', 'true'); showCookie = false"
-        class="px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white text-sm rounded-lg transition rounded-lg"
+        class="px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white text-sm rounded-lg transition rounded-lg pointer-events-auto"
     >
         Kabul Et
     </button>
@@ -3857,7 +3859,7 @@ const title = `${E.film} ${titleText}`.trim();
 <!-- Quiz Modal -->
 <div id="quizModal" class="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-50 hidden">
   <div class="bg-white rounded-xl w-[50%] h-[80%] overflow-hidden relative">
-    <button id="closeQuiz" class="absolute top-2 right-2 bg-red-500 text-white px-3 py-1 rounded">X</button>
+    <button id="closeQuiz" class="absolute top-2 right-2 bg-red-500 text-white px-3 py-1 rounded pointer-events-auto">X</button>
     <iframe src="src/quiz.html" class="w-full h-full border-0"></iframe>
   </div>
 </div>
@@ -3910,105 +3912,211 @@ document.addEventListener('alpine:init', () => {
 });
 </script>
 
-<!-- === AD: Loader & Config === -->
-<script>
-  // AdSense yapılandırması
-  window.AD_CONFIG = {
-    provider: 'adsense',
-    adsense: {
-      client: 'ca-pub-0000000000000000', // <-- kendi Client ID
-      slot:   '0000000000'               // <-- kendi Slot ID
-    }
-  };
 
-  (function(){
-    function createIns(cfg){
-      var ins = document.createElement('ins');
-      ins.className = 'adsbygoogle';
-      ins.style.display = 'block';
-      ins.setAttribute('data-ad-client', cfg.client);
-      ins.setAttribute('data-ad-slot', cfg.slot);
-      ins.setAttribute('data-ad-format', 'auto');
-      ins.setAttribute('data-full-width-responsive', 'true');
-      return ins;
-    }
 
-    function ensureScript(client){
-      var sel = 'script[src^="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"][src*="client="]';
-      var ok = document.querySelector(sel);
-      if(ok){ return Promise.resolve(); }
-      return new Promise(function(resolve){
-        var s = document.createElement('script');
-        s.async = true;
-        s.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=' + encodeURIComponent(client);
-        s.crossOrigin = 'anonymous';
-        s.onload = function(){ resolve(); };
-        document.head.appendChild(s);
-      });
-    }
 
-    function render(slotId, cfg){
-      var slot = document.getElementById(slotId);
-      if(!slot){ return; }
-      slot.innerHTML = '';
-      slot.appendChild(createIns(cfg));
-      try { (window.adsbygoogle = window.adsbygoogle || []).push({}); } catch(e){}
-    }
 
-    function initAds(){
-      var cfg = (window.AD_CONFIG && window.AD_CONFIG.adsense) || null;
-      if(!cfg){ return; }
-      ensureScript(cfg.client).then(function(){
-        render('ad-top-banner-slot', cfg);
-        render('ad-floating-slot', cfg);
-        // modal slot, modal açıldığında tekrar render edilir
-        var modal = document.getElementById('ad-modal-slot');
-        if(modal){ render('ad-modal-slot', cfg); }
-      });
-    }
 
-    // İlk yüklemede çalıştır
-    if(document.readyState === 'loading'){
-      document.addEventListener('DOMContentLoaded', initAds);
-    } else {
-      initAds();
-    }
 
-    // Alpine modal açıldığında modal slotu yeniden render et
-    document.addEventListener('alpine:init', function(){
-      try {
-        var rootEl = document.querySelector('[x-data]');
-        if(rootEl && window.Alpine){
-          var root = Alpine.$data(rootEl);
-          try {
-            root.$watch('modalOpen', function(val){
-              if(val){
-                var cfg = (window.AD_CONFIG && window.AD_CONFIG.adsense) || null;
-                if(!cfg){ return; }
-                // küçük gecikme: modal DOM hazır olsun
-                setTimeout(function(){ render('ad-modal-slot', cfg); }, 200);
-              }
-            });
-          } catch(e){ /* ignore */ }
-        }
-      } catch(e){ /* ignore */ }
-    });
-  })();
-</script>
-<!-- === /AD: Loader & Config === -->
-<!-- === AD: Floating Box === -->
-<div id="ad-floating" class="hidden sm:block fixed bottom-4 right-4 z-[60]">
-  <div class="ad-card backdrop-blur-md bg-black/70 border border-white/10 rounded-2xl shadow-2xl p-3 w-[280px]">
-    <div class="flex items-center justify-between mb-2">
-      <button class="ad-close w-7 h-7 rounded-md bg-white/10 border border-white/20 hover:bg-white/20"
-              aria-label="Reklamı kapat" onclick="document.getElementById('ad-floating').style.display='none'">✕</button>
-    </div>
-    <div id="ad-floating-slot" class="w-full">
-      <!-- Reklam içeriği buraya gelecek -->
+
+
+<!-- === Share Banner (Top) === -->
+<style>
+  .share-slide { transform: translateY(-120%); transition: transform .4s ease, opacity .3s ease; opacity: 0;  pointer-events: none; }
+  .share-slide.show { transform: translateY(0%); opacity: 1;  pointer-events: auto; }
+  /* Force clicks to be captured by the banner and its children */
+  #shareBanner, #shareBanner * { pointer-events: auto !important; }
+  /* When banner open, disable typical overlays including vis-network */
+  body.sb-open #network,
+  body.sb-open .modal-bg,
+  body.sb-open .tl-overlay,
+  body.sb-open .shepherd-modal-overlay-container,
+  body.sb-open .shepherd-modal-overlay,
+  body.sb-open [x-show="openFilterPanel"],
+  body.sb-open .share-sheet-overlay { pointer-events: none !important; }
+</style>
+
+<div x-data="shareBanner()" x-init="init()" class="fixed left-0 right-0 top-0 z-[2147483647] pointer-events-none isolate">
+  <div class="mx-auto max-w-md sm:max-w-lg lg:max-w-xl">
+    <div
+      id="shareBanner"
+      class="share-slide relative z-[2147483647] pointer-events-auto m-2 rounded-xl border border-white/20 bg-black/70 backdrop-blur-xl text-white px-3 sm:px-4 py-2 sm:py-2.5 shadow-2xl"
+      role="region"
+      aria-live="polite"
+    >
+      <div class="flex items-center gap-2 sm:gap-3">
+        <span class="hidden sm:inline">🕳️</span>
+        <p class="text-xs sm:text-sm font-medium flex-1" x-text="currentPhrase"></p>
+
+        <!-- Native Share -->
+        <button
+          @click="nativeShare()"
+          class="hidden sm:inline-flex items-center gap-1 text-xs px-2.5 py-1 rounded-lg bg-emerald-600 hover:bg-emerald-700 border border-emerald-500/40 pointer-events-auto"
+          title="Paylaş"
+        >
+          <span>Paylaş</span>
+        </button>
+
+        <!-- Quick links with brand icons -->
+        <div class="flex items-center gap-1 sm:gap-2">
+          <a :href="waLink" target="_blank" rel="noopener"
+             class="inline-flex items-center justify-center w-8 h-8 sm:w-9 sm:h-9 rounded-lg bg-white/10 border border-white/20 hover:bg-white/20 pointer-events-auto"
+             title="WhatsApp" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+              <path fill="currentColor" d="M20.52 3.48A11.86 11.86 0 0 0 12.02 0C5.42 0 .06 5.36.06 11.97c0 2.11.55 4.15 1.6 5.96L0 24l6.24-1.64a12.02 12.02 0 0 0 5.78 1.47h.01c6.6 0 11.96-5.36 11.96-11.97 0-3.2-1.25-6.21-3.47-8.38ZM12.03 21.5h-.01a9.5 9.5 0 0 1-4.84-1.33l-.35-.2-3.7.97.99-3.6-.22-.37a9.44 9.44 0 0 1-1.44-5.01c0-5.25 4.27-9.52 9.52-9.52 2.54 0 4.93.99 6.72 2.78a9.47 9.47 0 0 1 2.78 6.73c0 5.25-4.27 9.52-9.52 9.52Zm5.36-7.14c-.29-.15-1.7-.84-1.96-.94-.26-.1-.45-.15-.63.15-.18.3-.73.94-.9 1.13-.17.2-.33.22-.62.07-.29-.15-1.23-.45-2.35-1.44a8.79 8.79 0 0 1-1.63-2.01c-.17-.3 0-.46.13-.61.13-.15.29-.37.44-.56.15-.2.2-.34.3-.56.1-.22.05-.41-.03-.56-.08-.15-.62-1.51-.85-2.08-.22-.54-.44-.47-.63-.48l-.54-.01c-.2 0-.5.07-.76.37-.26.3-1 1-.1 2.41.9 1.41 2.07 2.7 3.55 3.63 1.48.93 2.07 1 2.8.84.73-.15 1.7-.7 1.94-1.38.24-.68.24-1.26.17-1.38-.07-.12-.26-.2-.55-.34Z"/>
+            </svg>
+          </a>
+          <a :href="xLink" target="_blank" rel="noopener"
+             class="inline-flex items-center justify-center w-8 h-8 sm:w-9 sm:h-9 rounded-lg bg-white/10 border border-white/20 hover:bg-white/20 pointer-events-auto"
+             title="X" aria-label="X">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+              <path fill="currentColor" d="M18.244 2H21l-6.51 7.44L22.5 22h-6.873l-5.146-6.463L4.5 22H2l7.03-8.035L1.5 2h6.937l4.77 6.11L18.244 2Zm-1.2 18h1.862L7.02 3.99H5.07L17.044 20Z"/>
+            </svg>
+          </a>
+          <a :href="fbLink" target="_blank" rel="noopener"
+             class="inline-flex items-center justify-center w-8 h-8 sm:w-9 sm:h-9 rounded-lg bg-white/10 border border-white/20 hover:bg-white/20 pointer-events-auto"
+             title="Facebook" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+              <path fill="currentColor" d="M22 12.07C22 6.49 17.52 2 12 2S2 6.5 2 12.07C2 17.1 5.66 21.25 10.44 22v-7.03H7.9v-2.9h2.54V9.84c0-2.5 1.49-3.9 3.77-3.9 1.09 0 2.22.2 2.22.2v2.45h-1.25c-1.24 0-1.63.77-1.63 1.56v1.87h2.78l-.44 2.9h-2.34V22C18.34 21.25 22 17.1 22 12.07Z"/>
+            </svg>
+          </a>
+          <a :href="tgLink" target="_blank" rel="noopener"
+             class="inline-flex items-center justify-center w-8 h-8 sm:w-9 sm:h-9 rounded-lg bg-white/10 border border-white/20 hover:bg-white/20 pointer-events-auto"
+             title="Telegram" aria-label="Telegram">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+              <path fill="currentColor" d="M9.04 15.6 8.86 20c.4 0 .57-.17.77-.38l1.85-1.8 3.83 2.81c.7.38 1.2.18 1.38-.64l2.5-11.8c.25-1.13-.43-1.57-1.1-1.3L3.2 9.9C2.1 10.34 2.11 10.96 3 11.2l4.57 1.27 10.6-6.68c.5-.32.96-.14.58.18L9.04 15.6Z"/>
+            </svg>
+          </a>
+          <button @click="copyLink()"
+                  class="inline-flex items-center justify-center w-8 h-8 sm:w-9 sm:h-9 rounded-lg bg-white/10 border border-white/20 hover:bg-white/20 pointer-events-auto"
+                  title="Bağlantıyı kopyala" aria-label="Kopyala">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+              <path fill="currentColor" d="M16 1H6a2 2 0 0 0-2 2v10h2V3h10V1Zm3 4H10a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2Zm0 14H10V7h9v12Z"/>
+            </svg>
+          </button>
+        </div>
+
+        <button @click="hide(true)"
+                class="ml-1 sm:ml-2 w-8 h-8 grid place-items-center rounded-lg bg-white/10 border border-white/20 hover:bg-white/20 pointer-events-auto"
+                aria-label="Kapat" title="Kapat">✕</button>
+      </div>
     </div>
   </div>
 </div>
-<!-- === /AD: Floating Box === -->
+
+<script>
+function shareBanner(){
+  return {
+    currentPhrase: 'Pssst… meraklısına özel; bir arkadaşını getir.',
+    phrases: ['Pssst… meraklısına özel; bir arkadaşını getir 🚀', 'Gizli geçit açık — ekibi topla, birlikte keşfedelim 🌌', 'Koleksiyoncu modu: linki paylaşanlara +5 sinema karizması 🎬', 'Multiverse çağırıyor; bir kişiyi daha davet et 🚀', 'Haritada gizli yollar var; bilenlerle paylaş 👀', 'Sessiz çağrı: İlgisini çeken kişiye uçur 💬', 'Sır kapısı aralık: tek tıkla portalı büyüt 🚀', 'Spoilersız keşif kulübü — içeri alalım mı 🎬', 'Kainat geniş, ekip dar… meraklıları çağır 🌌', 'Gölge ajan raporu: bir link, yeni bir evren 🔍', 'Bu linki görünce “ooo” diyen arkadaşın kim 👀', 'Bir tıkla yeni rota açılıyor; yönlendirmeyi sen yap 🚀', 'Evren büyüyor… büyütmek ister misin 🌌', 'Seçilmişlere özel bir rota: paylaş ve aç 🎬', 'Merak eden kazansın: linki uçur, tartışma başlasın 💬'],
+    idx: -1,
+    showing: false,
+    intervalMs: 300000,
+    displayMs: 9000,
+    cooldownKey: 'shareBanner:lastShown',
+    waLink: '#', xLink: '#', fbLink: '#', tgLink: '#',
+
+    init(){
+      setTimeout(() => { this.show(); }, 1500);
+      setInterval(() => this.maybeShow(), this.intervalMs);
+      this.updateLinks();
+      window.addEventListener('popstate', () => this.updateLinks());
+      window.addEventListener('hashchange', () => this.updateLinks());
+
+      // Capture-phase click handler to force opening links even if page blocks
+      try {
+        const root = document.getElementById('shareBanner');
+        const openWin = (href) => { try { window.open(href, '_blank', 'noopener'); } catch(e) { location.href = href; } };
+        if (root) {
+          root.addEventListener('click', function(ev){
+            const a = ev.target && ev.target.closest && ev.target.closest('a[href]');
+            if (a && a.href) {
+              ev.stopImmediatePropagation(); ev.stopPropagation(); ev.preventDefault();
+              openWin(a.href);
+            }
+          }, true);
+        }
+      } catch(e) { }
+    },
+
+    updateLinks(){
+      const url = encodeURIComponent(window.location.href);
+      const text = encodeURIComponent(this.currentPhrase + ' 🎬 ');
+      this.waLink = `https://wa.me/?text=${text}%20${url}`;
+      this.xLink  = `https://x.com/intent/tweet?url=${url}&text=${text}`;
+      this.fbLink = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
+      this.tgLink = `https://t.me/share/url?url=${url}&text=${text}`;
+    },
+
+    rotatePhrase(){
+      let next;
+      do { next = Math.floor(Math.random() * this.phrases.length); }
+      while (next === this.idx && this.phrases.length > 1);
+      this.idx = next;
+      this.currentPhrase = this.phrases[this.idx];
+      this.updateLinks();
+    },
+
+    canShowNow(){
+      try { const last = parseInt(localStorage.getItem(this.cooldownKey) || '0', 10); const now = Date.now(); return (now - last) > this.intervalMs * 0.8; }
+      catch (e) { return true; }
+    },
+
+    markShown(){
+      try { localStorage.setItem(this.cooldownKey, String(Date.now())); } catch(e){}
+    },
+
+    maybeShow(){
+      if (this.canShowNow()) this.show();
+    },
+
+    show(){
+      this.rotatePhrase();
+      try { document.body.classList.add('sb-open'); } catch(e){}
+      const el = document.getElementById('shareBanner');
+      if (!el) return;
+      this.showing = true;
+      el.classList.add('show');
+      this.markShown();
+      clearTimeout(this._t);
+      this._t = setTimeout(() => this.hide(false), this.displayMs);
+    },
+
+    hide(userInitiated){
+      const el = document.getElementById('shareBanner');
+      if (!el) return;
+      el.classList.remove('show');
+      this.showing = false;
+      try { document.body.classList.remove('sb-open'); } catch(e){}
+      if (userInitiated) this.markShown();
+    },
+
+    async nativeShare(){
+      try {
+        if (navigator.share) {
+          await navigator.share({
+            title: document.title || 'Film Evreni Ağı',
+            text: this.currentPhrase,
+            url: window.location.href
+          });
+          this.hide(false);
+        } else { await this.copyLink(); }
+      } catch(e){}
+    },
+
+    async copyLink(){
+      try {
+        await navigator.clipboard.writeText(window.location.href);
+        this.currentPhrase = 'Bağlantı kopyalandı, uçur gitsin!';
+        this.updateLinks();
+        setTimeout(() => this.rotatePhrase(), 1500);
+      } catch(e){}
+    }
+  }
+}
+</script>
+<!-- === /Share Banner === -->
+
 </body>
 
 
@@ -4156,6 +4264,5 @@ document.addEventListener('alpine:init', () => {
   });
 });
 </script>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9164245900945838"
-     crossorigin="anonymous"></script>
+
 </body>
