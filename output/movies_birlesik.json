@@ -50,22 +50,22 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Duvara Karşı",
-    "link": "https://www.paribucineverse.com/dram-filmleri/duvara-karsi-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~bbfd91ee-9a6b-4bc5-89de-37fbed09edc3",
-    "trailer": "https://cdn.marsgate.com.tr/11228",
-    "genre": "Dram",
-    "summary": "Fatih Akın’ın Berlin Film Festivali’nden Altın Ayı ödülüyle dönen filmi Duvara Karşı’da, Cahit ve Sibel hayatlarının en mutsuz dönemlerinden geçerlerken bir hastane odasında tanışırlar. Geçmişin üzerine temiz birer sayfa çekmek isteyen ikili, birbirlerini hiçbir şeye zorlamayacakları bir mantık evliliğine imza atarlar. Ancak birlikte vakit geçirmeye başladıkça Cahit’in Sibel’e olan duyguları bir aşka dönüşecektir.",
-    "date": "20250808",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
     "title": "Kulyas 2: Zikr-i Ayin",
     "link": "https://www.paribucineverse.com/korku-filmleri/kulyas-2-zikr-i-ayin-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~185dfa73-78e5-44bc-ae12-954f90edb1a6",
     "trailer": "https://cdn.marsgate.com.tr/13071",
     "genre": "Korku",
     "summary": "Sevdiği adamı geri kazanmak için büyücüye giden Helen, yasaklı büyüler yapar. Ancak bilmediği kutsal bir soy bağı vardır ve bu büyüler, nesiller boyunca süregelen Kulyas Cinlerinin lanetini yeniden uyandırır. Artık cinlerin boyut kapısı açılmıştır. Sevdiği adam felaketlerle karşılaşırken, Helen kendisini korkunç olayların içinde bulur. Soyuna ve kendisine bulaşan lanetten kurtulmak için Kars’taki dergâha giden Helen, burada Mustafa Hoca ve Yavuz ile birlikte cinlerle mücadeleye girer. Yasak bir aşk, kanlı büyüler ve cin ayinleriyle karanlık sırlar açığa çıkar. Helen’in kurtuluşu ancak büyük bir bedelle mümkündür. Kars, İstanbul ve Amerika üçgeninde geçen bu hikaye, 18. yüzyıl Osmanlı İmparatorluğu'ndan günümüze uzanarak Kanlı Cin tarihini ortaya çıkarır.",
+    "date": "20250808",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Duvara Karşı",
+    "link": "https://www.paribucineverse.com/dram-filmleri/duvara-karsi-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~bbfd91ee-9a6b-4bc5-89de-37fbed09edc3",
+    "trailer": "https://cdn.marsgate.com.tr/11228",
+    "genre": "Dram",
+    "summary": "Fatih Akın’ın Berlin Film Festivali’nden Altın Ayı ödülüyle dönen filmi Duvara Karşı’da, Cahit ve Sibel hayatlarının en mutsuz dönemlerinden geçerlerken bir hastane odasında tanışırlar. Geçmişin üzerine temiz birer sayfa çekmek isteyen ikili, birbirlerini hiçbir şeye zorlamayacakları bir mantık evliliğine imza atarlar. Ancak birlikte vakit geçirmeye başladıkça Cahit’in Sibel’e olan duyguları bir aşka dönüşecektir.",
     "date": "20250808",
     "kaynak": "Vizyondaki Film"
   },
@@ -90,6 +90,16 @@
     "kaynak": "Vizyondaki Film"
   },
   {
+    "title": "Birlikte",
+    "link": "https://www.paribucineverse.com/korku-filmleri/birlikte-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~c1e28313-4426-4256-876f-667125ef5027",
+    "trailer": "https://cdn.marsgate.com.tr/13014",
+    "genre": "Korku",
+    "summary": "İlişkilerinin üzerinden yıllar geçen Tim ve Millie, taşraya taşındıklarında kendilerini bir yol ayrımında bulurlar. Gerginlikler çoktan alevlenmişken, doğal olmayan bir güçle karşılaşmaları hayatlarını, aşklarını ve bedenlerini yozlaştırmakla tehdit eder.",
+    "date": "20250801",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
     "title": "Kim Demiş Kötüyüz Diye? 2",
     "link": "https://www.paribucineverse.com/animasyon-filmleri/kim-demis-kotuyuz-diye-2-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~276c3731-5960-4932-9be0-a1d540009379",
@@ -107,16 +117,6 @@
     "genre": "Korku",
     "summary": "Bir erkek ve kız kardeş, yeni koruyucu annelerinin gözlerden uzak evinde korkunç bir ritüeli ortaya çıkarır.",
     "date": "20250801",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
-    "title": "Birlikte",
-    "link": "https://www.paribucineverse.com/korku-filmleri/birlikte-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~c1e28313-4426-4256-876f-667125ef5027",
-    "trailer": "",
-    "genre": "",
-    "summary": "",
-    "date": "20250813",
     "kaynak": "Vizyondaki Film"
   },
   {
@@ -260,6 +260,116 @@
     "kaynak": "Vizyondaki Film"
   },
   {
+    "title": "Baba",
+    "link": "https://www.paribucineverse.com/suc-filmleri/baba-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~b3f880ab-8cbe-45b7-9e87-4690385e972d",
+    "trailer": "https://cdn.marsgate.com.tr/12968",
+    "genre": "Suç",
+    "summary": "Sinema tarihinin en önemli yapımlarından biri olan filmde, gizli bir organize suç öetesinin başı olan Don Vito Corleone, artık tahtını oğlu Michael'a devretmeye çalışmaktadır.",
+    "date": "20250509",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Şirinler: Kayıp Köy",
+    "link": "https://www.paribucineverse.com/animasyon-filmleri/sirinler-kayip-koy-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~eb3c69f9-09e4-427f-9bc3-68ffd98a9ed2",
+    "trailer": "https://cdn.marsgate.com.tr/1042",
+    "genre": "Animasyon",
+    "summary": "Tamamıyla animasyon olan yepyeni bir ŞİRİNLER filmi geliyor; Gizemli bir harita, Şirine’yi ve onun en yakın arkadaşları Gözlüklü Şirin, Sakar Şirin ve Güçlü Şirin’i sihirli varlıklarla dolu yasak ormanda, gizemli kayıp köyü, kötü Büyücü Gargamel’den önce bulmak için heyecanlı ve esrarengiz bir yarışın içine sokar. Tümüyke aksiyon ve macera dolu ŞİRİNLER: KAYIP KÖY. Filminde, Şirinler, Şirin dünyasının gelmiş geçmiş en büyük sırrını keşfetmek için maceraya atılıyorlar.",
+    "date": "20240927",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Aya Sihirli Yolculuk",
+    "link": "https://www.paribucineverse.com/animasyon-filmleri/aya-sihirli-yolculuk-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~387e203b-9f2e-452e-b8c9-2bff36774974",
+    "trailer": "https://cdn.marsgate.com.tr/11823",
+    "genre": "Animasyon",
+    "summary": "Genç bir çocuk olan Peter, Ay’a doğru sihirli bir yolculuğa çıkmalıdır: Çünkü küçük kardeşi Anne, Ay Adamı tarafından kaçırılmıştır. Fantastik macerasında Peter, Yıldızlı Çayır’a iner ve Uyku Perisi ile tanışır. Uyku Perisi şunu çok iyi bilmektedir: Anne’in nerede olduğunu bulmanın tek yolu, Gece Perisi’nin bulutlar üzerinde bir kalede düzenlenen yemeğine katılmaktır, ancak masada herkese yetecek kadar yer yoktur. Bu yüzden Samanyolu’nda düzenlenen yarışa katılmaları gerekir ve rakipleri Doğa Ruhları; Fırtına Devi, Şimşek Cadısı, Dolu Heri, Yağmurlu Robin ve Ayaz Ana’dır…",
+    "date": "20221028",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Önemsiz Biri 2",
+    "date": "20250815",
+    "link": "https://www.paribucineverse.com/aksiyon-filmleri/onemsiz-biri-2-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~15208a06-4e38-41fc-8cfe-0f0d077c6c53",
+    "trailer": "https://cdn.marsgate.com.tr/13012",
+    "genre": "Aksiyon",
+    "summary": "Rus mafyasıyla istemeden giriştiği olayların üzerinden dört yıl geçmişken, Hutch hâlâ suç örgütüne 30 milyon dolar borçludur ve bu borcu uluslararası suçlulara karşı aralıksız gerçekleştirdiği suikastlarla ödemektedir. \"İşinin\" aksiyon kısmını sevse de, Hutch ve eşi Becca artık tükenmiş ve birbirlerinden uzaklaşmış durumdadır. Bu yüzden çocukları ile birlikte kısa bir tatile gitmeye karar verirler. Ancak tatil için gittikleri kasabanın serserileriyle yaşanan ufak bir tartışma, onları yozlaşmış bir lunapark işletmecisinin ve onun karanlık şerifinin hedefi hâline getirir. Ve böylece Hutch, hem kendisinin hem de başka kimsenin daha önce karşılaşmadığı kadar dengesiz ve kana susamış bir suç patronunun hedefi hâline gelir.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Baba 2",
+    "date": "20250815",
+    "link": "https://www.paribucineverse.com/dram-filmleri/baba-2-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~e5ded746-1e75-4e3b-b51a-da29ac096d36",
+    "trailer": "https://cdn.marsgate.com.tr/13072",
+    "genre": "Dram",
+    "summary": "Film, 1920'lerin New York şehrinde Vito Corleone'nin gençlik yıllarını ve suç dünyasındaki yükselişini ele alıyor. Aynı zamanda, Vito'nun oğlu Michael'ın ailenin suç örgütü üzerindeki hakimiyetini nasıl genişlettiği ve sağlamlaştırdığı da paralel bir hikaye olarak işleniyor. Film, babadan oğula geçen bu mirasın getirdiği güç ve acımasızlığı gözler önüne seriyor.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Geniş Aile 5",
+    "date": "20250815",
+    "link": "https://www.paribucineverse.com/komedi-filmleri/genis-aile-5-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~632e680b-5255-40cd-8654-7dd2cec65595",
+    "trailer": "https://cdn.marsgate.com.tr/13066",
+    "genre": "Komedi",
+    "summary": "Cevahir ve Ulvi, aşk ve para ikigeninde kıvranırken bir telefon çığlığıyla uyanırlar. Cevahir’in eski sevgilisi Sonat ünlü silah kaçakçısı Sırrı’ya bakmaktadır. Sonat, Sırrı’nın son isteğini yerine getirmek ister, Sırrı’nın hiç görmediği Uras adında bir oğlu vardır, Uras’ı getirip biraz para ödülü almalarını ve kendisini de oradan çıkartmalarını ister. Cevahir ve Ulvi; Uras’ı tam canına kıyarken bulurlar ve kurtarırlar. Uras’ı teslim etmek için yola koyulurlar. Cevahir hem para kazanmak hem de Sonat ile yeniden aşkını filizlendirmek ister. Fakat yolda Ulvi’nin yaptığı büyük bir hata tüm planların tepetaklak değişmesine neden olur. Cevahir ve Ulvi artık durumdan en az hasarla çıkmanın yollarını arar.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Aşk Sokakta",
+    "date": "20250815",
+    "link": "https://www.paribucineverse.com/romantik-komedi-filmleri/ask-sokakta-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~a0c4b8a3-0db2-4f29-8875-63324c2da749",
+    "trailer": "https://cdn.marsgate.com.tr/13080",
+    "genre": "Romantik Komedi",
+    "summary": "“Aşk Sokakta” filminde evleneceği gün İdil aldatıldığını öğrenir. Sinirlenip gelin arabası ile kaçarken yaptığı kaza sonucu hafızasını kaybeder. İdil’in yolu Rüzgar ile kesişir. Rüzgar ile İdil sokak sokak gezip İdil’in gerçekte kim olduğunu öğrenmeye çalışır.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Azem 5: Zair",
+    "date": "20250815",
+    "link": "https://www.paribucineverse.com/korku-filmleri/azem-5-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~a503fdab-d793-43e0-a591-3bfd473c3b62",
+    "trailer": "https://cdn.marsgate.com.tr/13073",
+    "genre": "Korku",
+    "summary": "Karadeniz’in terk edilmiş bir dağ köyünde geçen film, küçük yaşta kızlarını ani bir trafik kazasında kaybeden ailenin yas sürecine odaklanıyor. Annenin acısıyla beslenen ruhani varlıklar, ölmüş kızlarının formunda ortaya çıkarak aileyi ve kasaba halkını etkisi altına alıyor.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Bergen",
+    "date": "20250815",
+    "link": "https://www.paribucineverse.com/biyografi-filmleri/bergen-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~855ba417-329f-48f4-acb0-a24b254e6d1a",
+    "trailer": "https://cdn.marsgate.com.tr/13082",
+    "genre": "Biyografi",
+    "summary": "Arabeskin unutulmayan kadın seslerinden biri olan Bergen' in hayatını anlatan filmde, Bergen olarak bilinen Belgin'in Ankara'dan Adana'ya, oradan da yaşadığı aşkın ardından ebediyete uzanan öyküsünü anlatıyor. 1959 yılında Mersin’de yedi çocuklu bir ailenin en küçük çocuğu olarak dünyaya gelir Belgin. Anne ve babasının boşanması hayatını kökten bir biçimde değiştirir. Ankara'da yaşarken annesinden başka kimsesi yoktur, baba yoksunluğu içinde derin bir boşluk açar. Öte yandan, konservatuara girme başarısıyla katmerlenen gelecek umudu, ilk aşkı Abdullah'tan ayrılmasıyla yara alır. Ama onun en büyük gücü yeteneğidir. Ankara'nın prestijli mekânı Feyman Kulüp'te keşfedilmesiyle birlikte, parlayan genç bir yıldıza, Bergen'e dönüşür. Ancak zamanın koşullarında yapılan kontratlar sebebiyle Bergen bir süre çalışmak için annesiyle birlikte Adana'ya gider. Adana’da çalıştığı müzikholde sahne ve müzik tarzını değiştirmek zorunda kalır. Daha sonra evleneceği Halis Serbest ile karşılaşmasıyla, manipülatif olaylar dizisinin içinde bulur kendini. Halis Serbest'le yaptığı evlilik ise düşlediğinin tersine Bergen’i hayattan koparır. Şiddet dolu günlerde tümüyle yalnızdır. Kariyerinin en güzel yerinde Halis Serbest'in kezzap saldırısına uğrayan Bergen bir gözünü kaybeder. Bergen yaşadığı trajediye rağmen sahnelere döndüğünde, olağanüstü şarkıcılığıyla Türkiye çapında şöhretli bir şarkıcı olur. Halis'in tehdit, taciz ve şiddetle seyreden gerilimli ilişki, git-gellerle devam eder. Bergen hep korku içinde yaşar. Sonunda kesin bir biçimde Halis Serbest'ten kurtulduğunu düşündüğü bir yolculukta silahlı saldırıya uğrar. Annesinin ağır yaralandığı bu saldırıda Bergen hayatını kaybeder. Henüz 30 yaşındaki Bergen öldüğünde ise hem bir kurban hem de arabeskin kraliçesi olarak insanların kalplerine kazınmıştır",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Işık",
+    "date": "20250815",
+    "link": "https://www.paribucineverse.com/dram-filmleri/isik-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~40ccd454-b488-4832-92b1-f1a645241853",
+    "trailer": "Fragman bağlantısı yok",
+    "genre": "Dram",
+    "summary": "Bir aile, modern sorunlarla başa çıkmaya çalışırken çöküşle karşı karşıya kalır ve sorunlu bir dünyada yeni bir başlangıç arayışına girer.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Yaz Işığı",
+    "date": "20250815",
+    "link": "https://www.paribucineverse.com/dram-filmleri/yaz-isigi-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~18744483-da63-4bd4-8dbe-d03890c9b081",
+    "trailer": "Fragman bağlantısı yok",
+    "genre": "Dram",
+    "summary": "İstanbul’da yaşamını sürdüren genç ressam Erdem, doğup büyüdüğü Çanakkale’ye dönerek geçmişiyle yüzleşir. Eski dostu Arda’nın Bozcaada’daki sergisi, Erdem için yıllardır bastırdığı duyguları gün yüzüne çıkaran bir yolculuğa dönüşür. Kaybettiği aşk, ailesiyle kurmaya çalıştığı bağlar ve sanat yoluyla hayata yeniden tutunma çabası; onu insanın kendi kendini kandırma sınırlarına kadar sürükler.",
+    "kaynak": "Gelecek Film"
+  },
+  {
     "title": "Yeni Nesil Meddah",
     "date": "20250816",
     "link": "https://www.paribucineverse.com/aile-filmleri/yeni-nesil-meddah-filmi-izle",
@@ -280,90 +390,10 @@
     "kaynak": "Gelecek Film"
   },
   {
-    "title": "Aşk Sokakta",
-    "date": "20250815",
-    "link": "https://www.paribucineverse.com/romantik-komedi-filmleri/ask-sokakta-filmi-izle",
-    "bilet_link": null,
-    "trailer": "https://cdn.marsgate.com.tr/13080",
-    "genre": "Romantik Komedi",
-    "summary": "“Aşk Sokakta” filminde evleneceği gün İdil aldatıldığını öğrenir. Sinirlenip gelin arabası ile kaçarken yaptığı kaza sonucu hafızasını kaybeder. İdil’in yolu Rüzgar ile kesişir. Rüzgar ile İdil sokak sokak gezip İdil’in gerçekte kim olduğunu öğrenmeye çalışır.",
-    "kaynak": "Gelecek Film"
-  },
-  {
-    "title": "Azem 5: Zair",
-    "date": "20250815",
-    "link": "https://www.paribucineverse.com/korku-filmleri/azem-5-filmi-izle",
-    "bilet_link": null,
-    "trailer": "https://cdn.marsgate.com.tr/13073",
-    "genre": "Korku",
-    "summary": "Karadeniz’in terk edilmiş bir dağ köyünde geçen film, küçük yaşta kızlarını ani bir trafik kazasında kaybeden ailenin yas sürecine odaklanıyor. Annenin acısıyla beslenen ruhani varlıklar, ölmüş kızlarının formunda ortaya çıkarak aileyi ve kasaba halkını etkisi altına alıyor.",
-    "kaynak": "Gelecek Film"
-  },
-  {
-    "title": "Baba 2",
-    "date": "20250815",
-    "link": "https://www.paribucineverse.com/dram-filmleri/baba-2-filmi-izle",
-    "bilet_link": null,
-    "trailer": "https://cdn.marsgate.com.tr/13072",
-    "genre": "Dram",
-    "summary": "Film, 1920'lerin New York şehrinde Vito Corleone'nin gençlik yıllarını ve suç dünyasındaki yükselişini ele alıyor. Aynı zamanda, Vito'nun oğlu Michael'ın ailenin suç örgütü üzerindeki hakimiyetini nasıl genişlettiği ve sağlamlaştırdığı da paralel bir hikaye olarak işleniyor. Film, babadan oğula geçen bu mirasın getirdiği güç ve acımasızlığı gözler önüne seriyor.",
-    "kaynak": "Gelecek Film"
-  },
-  {
-    "title": "Bergen",
-    "date": "20250815",
-    "link": "https://www.paribucineverse.com/biyografi-filmleri/bergen-filmi-izle",
-    "bilet_link": null,
-    "trailer": "",
-    "genre": "",
-    "summary": "",
-    "kaynak": "Gelecek Film"
-  },
-  {
-    "title": "Geniş Aile 5",
-    "date": "20250815",
-    "link": "https://www.paribucineverse.com/komedi-filmleri/genis-aile-5-filmi-izle",
-    "bilet_link": null,
-    "trailer": "https://cdn.marsgate.com.tr/13066",
-    "genre": "Komedi",
-    "summary": "Cevahir ve Ulvi, aşk ve para ikigeninde kıvranırken bir telefon çığlığıyla uyanırlar. Cevahir’in eski sevgilisi Sonat ünlü silah kaçakçısı Sırrı’ya bakmaktadır. Sonat, Sırrı’nın son isteğini yerine getirmek ister, Sırrı’nın hiç görmediği Uras adında bir oğlu vardır, Uras’ı getirip biraz para ödülü almalarını ve kendisini de oradan çıkartmalarını ister. Cevahir ve Ulvi; Uras’ı tam canına kıyarken bulurlar ve kurtarırlar. Uras’ı teslim etmek için yola koyulurlar. Cevahir hem para kazanmak hem de Sonat ile yeniden aşkını filizlendirmek ister. Fakat yolda Ulvi’nin yaptığı büyük bir hata tüm planların tepetaklak değişmesine neden olur. Cevahir ve Ulvi artık durumdan en az hasarla çıkmanın yollarını arar.",
-    "kaynak": "Gelecek Film"
-  },
-  {
-    "title": "Işık",
-    "date": "20250815",
-    "link": "https://www.paribucineverse.com/dram-filmleri/isik-filmi-izle",
-    "bilet_link": null,
-    "trailer": "Fragman bağlantısı yok",
-    "genre": "Dram",
-    "summary": "Bir aile, modern sorunlarla başa çıkmaya çalışırken çöküşle karşı karşıya kalır ve sorunlu bir dünyada yeni bir başlangıç arayışına girer.",
-    "kaynak": "Gelecek Film"
-  },
-  {
-    "title": "Önemsiz Biri 2",
-    "date": "20250815",
-    "link": "https://www.paribucineverse.com/aksiyon-filmleri/onemsiz-biri-2-filmi-izle",
-    "bilet_link": null,
-    "trailer": "",
-    "genre": "",
-    "summary": "",
-    "kaynak": "Gelecek Film"
-  },
-  {
-    "title": "Yaz Işığı",
-    "date": "20250815",
-    "link": "https://www.paribucineverse.com/dram-filmleri/yaz-isigi-filmi-izle",
-    "bilet_link": null,
-    "trailer": "Fragman bağlantısı yok",
-    "genre": "Dram",
-    "summary": "İstanbul’da yaşamını sürdüren genç ressam Erdem, doğup büyüdüğü Çanakkale’ye dönerek geçmişiyle yüzleşir. Eski dostu Arda’nın Bozcaada’daki sergisi, Erdem için yıllardır bastırdığı duyguları gün yüzüne çıkaran bir yolculuğa dönüşür. Kaybettiği aşk, ailesiyle kurmaya çalıştığı bağlar ve sanat yoluyla hayata yeniden tutunma çabası; onu insanın kendi kendini kandırma sınırlarına kadar sürükler.",
-    "kaynak": "Gelecek Film"
-  },
-  {
     "title": "Dönme Dolap",
     "date": "20250820",
     "link": "https://www.paribucineverse.com/komedi-filmleri/donme-dolap-filmi-izle",
-    "bilet_link": null,
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~af9aa1ff-ece2-4df5-9587-f14300b00e21",
     "trailer": "Fragman bağlantısı yok",
     "genre": "Komedi",
     "summary": "Çayın demi sevgiyle tat verir, dumanı muhabbetle tüter ama konumuz bu değil... Pizzacı Tolga'nın hayali oyuncu olmaktır. Oyunculuk için her ajansa başvuru yapar . Bir ajans Tolga'yı beğenir ve başrol için deneme çekimi ister. Bu duruma heyecanlanan Tolga bu işi kendi başına beceremez ve yardım alması gerektiğini düşünür. Yolu mesleği bırakan eski yönetmen Muzaffer Hiçdurmaz ile kesişir . Ancak bu karşılaşma Tolga'nın yolunu daha da zorlaştıracaktır. Absürtlüğün uç noktalara çıktığı etkili bir komedi.",
