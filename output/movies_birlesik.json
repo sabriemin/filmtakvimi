@@ -1,9 +1,19 @@
 [
   {
+    "title": "Yeni Nesil Meddah",
+    "link": "https://www.paribucineverse.com/aile-filmleri/yeni-nesil-meddah-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~f324f94a-599a-46bf-9478-11ce042dc5f8",
+    "trailer": "Fragman bağlantısı yok",
+    "genre": "Aile",
+    "summary": "Yeni Nesil Meddah, tek bir oyuncunun farklı karakterlere ve rollere bürünmesiyle çocuklara eğlenceli eğitici ve öğretici bir deneyim sunmaktadır. Kuklası ile maceralara çıkar. Çok eğlenceli ve bir o kadar da komik olan yeni nesil meddahı çocuklar çok sevecek.",
+    "date": "20250816",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
     "title": "Önemsiz Biri 2",
     "link": "https://www.paribucineverse.com/aksiyon-filmleri/onemsiz-biri-2-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~15208a06-4e38-41fc-8cfe-0f0d077c6c53",
-    "trailer": "Fragman bağlantısı yok",
+    "trailer": "https://cdn.marsgate.com.tr/13012",
     "genre": "Aksiyon",
     "summary": "Rus mafyasıyla istemeden giriştiği olayların üzerinden dört yıl geçmişken, Hutch hâlâ suç örgütüne 30 milyon dolar borçludur ve bu borcu uluslararası suçlulara karşı aralıksız gerçekleştirdiği suikastlarla ödemektedir. \"İşinin\" aksiyon kısmını sevse de, Hutch ve eşi Becca artık tükenmiş ve birbirlerinden uzaklaşmış durumdadır. Bu yüzden çocukları ile birlikte kısa bir tatile gitmeye karar verirler. Ancak tatil için gittikleri kasabanın serserileriyle yaşanan ufak bir tartışma, onları yozlaşmış bir lunapark işletmecisinin ve onun karanlık şerifinin hedefi hâline getirir. Ve böylece Hutch, hem kendisinin hem de başka kimsenin daha önce karşılaşmadığı kadar dengesiz ve kana susamış bir suç patronunun hedefi hâline gelir.",
     "date": "20250815",
@@ -43,7 +53,7 @@
     "title": "Azem 5: Zair",
     "link": "https://www.paribucineverse.com/korku-filmleri/azem-5-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~a503fdab-d793-43e0-a591-3bfd473c3b62",
-    "trailer": "Fragman bağlantısı yok",
+    "trailer": "https://cdn.marsgate.com.tr/13073",
     "genre": "Korku",
     "summary": "Karadeniz’in terk edilmiş bir dağ köyünde geçen film, küçük yaşta kızlarını ani bir trafik kazasında kaybeden ailenin yas sürecine odaklanıyor. Annenin acısıyla beslenen ruhani varlıklar, ölmüş kızlarının formunda ortaya çıkarak aileyi ve kasaba halkını etkisi altına alıyor.",
     "date": "20250815",
@@ -133,7 +143,7 @@
     "title": "Ahmed ve Ahmed",
     "link": "https://www.paribucineverse.com/komedi-filmleri/ahmed-ve-ahmed-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~ed8ba74f-93b8-4320-9ae7-5f423113ecb3",
-    "trailer": "Fragman bağlantısı yok",
+    "trailer": "https://cdn.marsgate.com.tr/13065",
     "genre": "Komedi",
     "summary": "Ahmed, yerleşmek için Mısır'a geri döner, ancak amcasının garip bir kazada hafızasını kaybetmesi şok edici bir gerçeği ortaya çıkarır: O, tehlikeli bir suç imparatorluğunun başındadır.",
     "date": "20250801",
@@ -240,36 +250,6 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Baba",
-    "link": "https://www.paribucineverse.com/suc-filmleri/baba-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~b3f880ab-8cbe-45b7-9e87-4690385e972d",
-    "trailer": "https://cdn.marsgate.com.tr/12968",
-    "genre": "Suç",
-    "summary": "Sinema tarihinin en önemli yapımlarından biri olan filmde, gizli bir organize suç öetesinin başı olan Don Vito Corleone, artık tahtını oğlu Michael'a devretmeye çalışmaktadır.",
-    "date": "20250509",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
-    "title": "Şirinler: Kayıp Köy",
-    "link": "https://www.paribucineverse.com/animasyon-filmleri/sirinler-kayip-koy-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~eb3c69f9-09e4-427f-9bc3-68ffd98a9ed2",
-    "trailer": "https://cdn.marsgate.com.tr/1042",
-    "genre": "Animasyon",
-    "summary": "Tamamıyla animasyon olan yepyeni bir ŞİRİNLER filmi geliyor; Gizemli bir harita, Şirine’yi ve onun en yakın arkadaşları Gözlüklü Şirin, Sakar Şirin ve Güçlü Şirin’i sihirli varlıklarla dolu yasak ormanda, gizemli kayıp köyü, kötü Büyücü Gargamel’den önce bulmak için heyecanlı ve esrarengiz bir yarışın içine sokar. Tümüyke aksiyon ve macera dolu ŞİRİNLER: KAYIP KÖY. Filminde, Şirinler, Şirin dünyasının gelmiş geçmiş en büyük sırrını keşfetmek için maceraya atılıyorlar.",
-    "date": "20240927",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
-    "title": "Yeni Nesil Meddah",
-    "date": "20250816",
-    "link": "https://www.paribucineverse.com/aile-filmleri/yeni-nesil-meddah-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~f324f94a-599a-46bf-9478-11ce042dc5f8",
-    "trailer": "Fragman bağlantısı yok",
-    "genre": "Aile",
-    "summary": "Yeni Nesil Meddah, tek bir oyuncunun farklı karakterlere ve rollere bürünmesiyle çocuklara eğlenceli eğitici ve öğretici bir deneyim sunmaktadır. Kuklası ile maceralara çıkar. Çok eğlenceli ve bir o kadar da komik olan yeni nesil meddahı çocuklar çok sevecek.",
-    "kaynak": "Gelecek Film"
-  },
-  {
     "title": "Mimo’nun Mavi Balonu",
     "date": "20250817",
     "link": "https://www.paribucineverse.com/aile-filmleri/mimo%E2%80%99nun-mavi-balonu-filmi-izle",
@@ -330,6 +310,16 @@
     "kaynak": "Gelecek Film"
   },
   {
+    "title": "Johnny Puff: Buzda Macera",
+    "date": "20250822",
+    "link": "https://www.paribucineverse.com/animasyon-filmleri/johnny-puff-buzda-macera-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn.marsgate.com.tr/13085",
+    "genre": "Animasyon",
+    "summary": "Sessiz sakin bir kıyı kasabası olan Taigasville, kötü kalpli bilim insanı Otto von Walrus’un buzlarla kaplı bir distopyaya dönüştürülmek üzeredir. Ancak kasaba yalnız değildir! Süper güçlere sahip dört cesur Puffin kuşu ve liderleri Johnny Puff, dünyayı kurtarmak için gizli bir göreve atılır.",
+    "kaynak": "Gelecek Film"
+  },
+  {
     "title": "Kadıköy Boğası",
     "date": "20250822",
     "link": "https://www.paribucineverse.com/komedi-filmleri/kadikoy-bogasi-filmi-izle",
@@ -337,6 +327,16 @@
     "trailer": "https://cdn.marsgate.com.tr/13076",
     "genre": "Komedi",
     "summary": "Sosyal medyada kısa sürede milyonlarca takipçiye ulaşan, 7’den 70’e herkesin gönlünü kazanan halk kahramanı Kadıköy Boğası, şimdi sinema salonlarında! Kendine has tarzı, halk kahramanı tavırları, absürt mizahı ve sıcak hikâyesiyle Kadıköy Boğası; Çomar adlı köpeği, platonik aşkı Rabia ve sıra dışı maceralarıyla beyaz perdede izleyiciyle buluşuyor. Aşk, eğlence, kahkaha dolu gerçek bir hikâyeye hazır olun!",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Kahpe Bizans",
+    "date": "20250822",
+    "link": "https://www.paribucineverse.com/komedi-filmleri/kahpe-bizans-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn.marsgate.com.tr/13086",
+    "genre": "Komedi",
+    "summary": "Ünlü Bizans İmparatoru Illetyus, bir gece rüyasında küçük bir çocuk tarafından öldürüldüğünü görür. Bu rüya, çevresi tarafından imparatorun bir çocuk tarafından öldürüleceği şeklinde yorumlanınca, İmparator Illetyus, bu korkutucu tablo karşısında yeni doğan tüm bebeklerin öldürülmesini emreder. İmparatorun adamları tüm köyleri dolaşıp yeni doğan çocukları katletmeye başlarken, Süper Gazi adında bir adam, yeni doğan iki bebeğini koruma altına alarak karısından bebekleri güvenli bir yere bırakmasını ister. Kadın, bebeklerden birini bir sepete koyarak göle bırakır. Film, bu bebeğin bir şekilde hayatta kalmayı başarıp yıllar sonra imparatorun karşısına çıkıp çıkamayacağı sorusuna odaklanıyor.",
     "kaynak": "Gelecek Film"
   },
   {
