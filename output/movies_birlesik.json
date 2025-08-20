@@ -1,5 +1,15 @@
 [
   {
+    "title": "Dönme Dolap",
+    "link": "https://www.paribucineverse.com/komedi-filmleri/donme-dolap-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~af9aa1ff-ece2-4df5-9587-f14300b00e21",
+    "trailer": "Fragman bağlantısı yok",
+    "genre": "Komedi",
+    "summary": "Çayın demi sevgiyle tat verir, dumanı muhabbetle tüter ama konumuz bu değil... Pizzacı Tolga'nın hayali oyuncu olmaktır. Oyunculuk için her ajansa başvuru yapar . Bir ajans Tolga'yı beğenir ve başrol için deneme çekimi ister. Bu duruma heyecanlanan Tolga bu işi kendi başına beceremez ve yardım alması gerektiğini düşünür. Yolu mesleği bırakan eski yönetmen Muzaffer Hiçdurmaz ile kesişir . Ancak bu karşılaşma Tolga'nın yolunu daha da zorlaştıracaktır. Absürtlüğün uç noktalara çıktığı etkili bir komedi.",
+    "date": "20250820",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
     "title": "Önemsiz Biri 2",
     "link": "https://www.paribucineverse.com/aksiyon-filmleri/onemsiz-biri-2-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~15208a06-4e38-41fc-8cfe-0f0d077c6c53",
@@ -240,16 +250,6 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Dönme Dolap",
-    "date": "20250820",
-    "link": "https://www.paribucineverse.com/komedi-filmleri/donme-dolap-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~af9aa1ff-ece2-4df5-9587-f14300b00e21",
-    "trailer": "Fragman bağlantısı yok",
-    "genre": "Komedi",
-    "summary": "Çayın demi sevgiyle tat verir, dumanı muhabbetle tüter ama konumuz bu değil... Pizzacı Tolga'nın hayali oyuncu olmaktır. Oyunculuk için her ajansa başvuru yapar . Bir ajans Tolga'yı beğenir ve başrol için deneme çekimi ister. Bu duruma heyecanlanan Tolga bu işi kendi başına beceremez ve yardım alması gerektiğini düşünür. Yolu mesleği bırakan eski yönetmen Muzaffer Hiçdurmaz ile kesişir . Ancak bu karşılaşma Tolga'nın yolunu daha da zorlaştıracaktır. Absürtlüğün uç noktalara çıktığı etkili bir komedi.",
-    "kaynak": "Gelecek Film"
-  },
-  {
     "title": "Batman Başlıyor",
     "date": "20250822",
     "link": "https://www.paribucineverse.com/aksiyon-filmleri/batman-basliyor-filmi-izle",
@@ -360,6 +360,16 @@
     "kaynak": "Gelecek Film"
   },
   {
+    "title": "Büyük Yarış",
+    "date": "20250829",
+    "link": "https://www.paribucineverse.com/animasyon-filmleri/buyuk-yaris-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn.marsgate.com.tr/13088",
+    "genre": "Animasyon",
+    "summary": "Büyük hayalleri olan genç fare Edda, kahramanı Ed kılığına girerek Grand Prix'de yarışma fırsatını yakalar. Rakibinin sabotajını alt etmek ve en küçük yarışçının bile en büyük etkiyi yaratabileceğini kanıtlamak için bu zorlu göreve göğüs gerer.",
+    "kaynak": "Gelecek Film"
+  },
+  {
     "title": "Büyük Zafer",
     "date": "20250829",
     "link": "https://www.paribucineverse.com/animasyon-filmleri/buyuk-zafer-filmi-izle",
@@ -390,6 +400,26 @@
     "kaynak": "Gelecek Film"
   },
   {
+    "title": "İncir Reçeli 2",
+    "date": "20250829",
+    "link": "https://www.paribucineverse.com/dram-filmleri/incir-receli-2-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn.marsgate.com.tr/13090",
+    "genre": "Dram",
+    "summary": "İlk film İncir Reçeli’nde sevdiği kadını kaybeden Metin (Halil Sezai Paracıkoğlu) İncir Reçeli 2’de derin bir yalnızlığın içindedir. Bir barda şarkılar söyleyerek ve yitirdiklerinin yasını tutarak yaşamını sürdürürken beklemediği bir anda karşısına Gizem çıkar. Gizem Metin’e biri olmak gerektiğini anlatır, en azından biri için. Hem yalnızlıkları hem acıları benzeyen bu iki insan birbirine şifa olabilecek midir? Halil Sezai Paracıkoğlu’nun şarkılarıyla da zenginleşen İncir Reçeli 2 hem modern bir aşk hikayesi, hem de hayata yeniden tutunmanın öyküsü...",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Jaws",
+    "date": "20250829",
+    "link": "https://www.paribucineverse.com/korku-filmleri/jaws-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn.marsgate.com.tr/13092",
+    "genre": "Korku",
+    "summary": "Long Island açıklarında devasa bir katil köpek balığı bir sahil topluluğunda kaos yaratınca, yerel polis şefi Brody, bir deniz biyoloğu olan Hooper ve deneyimli denizci Quint, bu korkunç canavarı avlamak için bir araya gelirler. Üçlü, hem kendi korkularıyla hem de köpek balığının amansız saldırılarıyla yüzleşirken, yazlıkçıların güvenliğini sağlamak için zamana karşı bir mücadele verirler.",
+    "kaynak": "Gelecek Film"
+  },
+  {
     "title": "Kara Şövalye",
     "date": "20250829",
     "link": "https://www.paribucineverse.com/aksiyon-filmleri/kara-sovalye-filmi-izle",
@@ -397,6 +427,36 @@
     "trailer": "https://cdn.marsgate.com.tr/13010",
     "genre": "Aksiyon",
     "summary": "Gotham'a musallat olan Joker'i saf dışı bırakmak için, Batman, büyük bir mücadele vermek zorundadır.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Suçüstü",
+    "date": "20250829",
+    "link": "https://www.paribucineverse.com/gerilim-filmleri/sucustu-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn.marsgate.com.tr/13089",
+    "genre": "Gerilim",
+    "summary": "Bir zamanların beyzbol yıldızı Hank Thompson, sakin bir hayat sürerken, komşusunun kedisine bakmayı kabul etmesiyle kendini suçlularla dolu tehlikeli bir ağın ortasında bulur. Neden hedef alındığını bilmeden hayatta kalmaya çalışan Hank, geçmişin tozlu becerilerini gün yüzüne çıkarmak zorunda kalır.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Usta",
+    "date": "20250829",
+    "link": "https://www.paribucineverse.com/komedi-filmleri/usta-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn.marsgate.com.tr/13091",
+    "genre": "Komedi",
+    "summary": "Komedi ve aksiyonun harmanlandığı hikaye, ünlü yıldızlar için tehlikeli sahneleri canlandıran bir dublörün maceralarını anlatıyor. Mesleğinin doğası gereği, kendini sayısız sorun ve zorlukla karşı karşıya bulur.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Korku Seansı 4: Son Ayin",
+    "date": "20250905",
+    "link": "https://www.paribucineverse.com/korku-filmleri/korku-seansi-4-son-ayin-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn.marsgate.com.tr/13087",
+    "genre": "Korku",
+    "summary": "Gerçek olaylara dayanan The Conjuring evreninin son bölümü, ünlü paranormal araştırmacılar Ed ve Lorraine Warren'ın son ve güçlü bir vakayla yüzleşmelerini konu alıyor.Paranormal araştırmacılar Ed ve Lorraine Warren, kariyerlerindeki son ve en korkutucu davayı üstlenirler. Bu dava, onları daha önce hiç karşılaşmadıkları kadar gizemli ve dehşet verici varlıklarla yüzleşmeye zorlar. Çift, hem kendi hayatlarını hem de masum insanları bu kötücül güçlerden korumak için son bir mücadele verir.",
     "kaynak": "Gelecek Film"
   },
   {
