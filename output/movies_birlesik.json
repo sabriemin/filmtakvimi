@@ -1,12 +1,22 @@
 [
   {
-    "title": "Dönme Dolap",
-    "link": "https://www.paribucineverse.com/komedi-filmleri/donme-dolap-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~af9aa1ff-ece2-4df5-9587-f14300b00e21",
+    "title": "Mimo’nun Mavi Balonu",
+    "link": "https://www.paribucineverse.com/aile-filmleri/mimo%E2%80%99nun-mavi-balonu-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~a58d6903-1063-4ddb-97bc-c33c82a2295b",
     "trailer": "Fragman bağlantısı yok",
-    "genre": "Komedi",
-    "summary": "Çayın demi sevgiyle tat verir, dumanı muhabbetle tüter ama konumuz bu değil... Pizzacı Tolga'nın hayali oyuncu olmaktır. Oyunculuk için her ajansa başvuru yapar . Bir ajans Tolga'yı beğenir ve başrol için deneme çekimi ister. Bu duruma heyecanlanan Tolga bu işi kendi başına beceremez ve yardım alması gerektiğini düşünür. Yolu mesleği bırakan eski yönetmen Muzaffer Hiçdurmaz ile kesişir . Ancak bu karşılaşma Tolga'nın yolunu daha da zorlaştıracaktır. Absürtlüğün uç noktalara çıktığı etkili bir komedi.",
-    "date": "20250820",
+    "genre": "Aile",
+    "summary": "Mimo çok sevdiği balonu elinden kaçırıyor sonra kayıp balonun peşine düşüyor, balonu ararken karşısına engeller çıkıyor. Bakalım Mimo mavi balonunu bulabilecek mi? Bu pandomim gösterisinde çocuklar çok eğlenecek.",
+    "date": "20250817",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Yeni Nesil Meddah",
+    "link": "https://www.paribucineverse.com/aile-filmleri/yeni-nesil-meddah-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~f324f94a-599a-46bf-9478-11ce042dc5f8",
+    "trailer": "Fragman bağlantısı yok",
+    "genre": "Aile",
+    "summary": "Yeni Nesil Meddah, tek bir oyuncunun farklı karakterlere ve rollere bürünmesiyle çocuklara eğlenceli eğitici ve öğretici bir deneyim sunmaktadır. Kuklası ile maceralara çıkar. Çok eğlenceli ve bir o kadar da komik olan yeni nesil meddahı çocuklar çok sevecek.",
+    "date": "20250816",
     "kaynak": "Vizyondaki Film"
   },
   {
@@ -223,7 +233,7 @@
     "title": "Ölümcül Çağrı",
     "link": "https://www.paribucineverse.com/korku-filmleri/olumcul-cagri-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~28407e23-ca0e-4326-aa3b-0f2b8c8356f2",
-    "trailer": "Fragman bağlantısı yok",
+    "trailer": "https://cdn.marsgate.com.tr/13036",
     "genre": "Korku",
     "summary": "Yeni bir araç paylaşım uygulamasının genç kadın CEO'su, şirketini yok etmeden ve tüm teknoloji ekibini öldürmeden önce, uygulamayı kurbanlarını arabasına çekmek için kullanan bir seri katili durdurmakla karşı karşıyadır. Bu tehlikeli yarışta hem şirketinin geleceğini hem de ekibinin hayatını kurtarmak için zamana karşı bir mücadele verir.",
     "date": "20250704",
@@ -290,6 +300,16 @@
     "kaynak": "Gelecek Film"
   },
   {
+    "title": "Whiplash",
+    "date": "20250822",
+    "link": "https://www.paribucineverse.com/dram-filmleri/whiplash-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~f4d5a844-83e7-4f9c-86d0-2c9102b3cc8b",
+    "trailer": "https://cdn.marsgate.com.tr/13077",
+    "genre": "Dram",
+    "summary": "Bir tarafta öğrencilerinin korkulu rüyası, jazz öğretmeni Terrence Fletcher (J.K. Simmons), diğer tarafta ‘en iyi’ olmayı kafaya koymuş, aşırı hırslı genç öğrencisi Andrew Neyman (Miles Teller). İki taraf da baskın karakterinden taviz vermeyince, çok geçmeden mantık dışı olaylar gelişmeye başlar. Bu süreçte elleri çalışmaktan kanlar içinde kalan Neyman, küfürbaz Fletcher’ın hakaretle bezeli eğitim tekniklerine boyun eğmek zorunda kalır. Ama Neyman’ın da kendine göre numaraları vardır ve en sonunda, karşı karşıya kalacakları müzikal düellodan önce işler iyice çıkmaza girer. 2014 Cannes ve Sundance Film Festivalleri’nin gözdesi olan ve Oscar adaylığı kesin gözüyle bakılan filmi izlerken nefes nefese kalacağınız bir sinema deneyimi sizi bekliyor.",
+    "kaynak": "Gelecek Film"
+  },
+  {
     "title": "Gülizar Yol Ayrımı",
     "date": "20250822",
     "link": "https://www.paribucineverse.com/dram-filmleri/gulizar-yol-ayrimi-filmi-izle",
@@ -307,16 +327,6 @@
     "trailer": "https://cdn.marsgate.com.tr/13061",
     "genre": "Animasyon",
     "summary": "İsviçre Alpleri’nde büyükbabasıyla yaşayan 8 yaşındaki Heidi, doğayla iç içe, özgür bir hayat sürmektedir. Bir gün ormanda tuzağa yakalanmış bir dağ kedisi bulur. “Biber” adını verdiği yavruyu gizlice iyileştirirken, ormanı tehdit eden hırslı bir adamın planlarını da öğrenir.Heidi, en yakın arkadaşı Peter ve sadık köpekleri Joseph ile birlikte Biber’i ailesine kavuşturmak ve doğayı kurtarmak için zamana karşı yarıştıkları cesur bir yolculuğa çıkarlar.",
-    "kaynak": "Gelecek Film"
-  },
-  {
-    "title": "Whiplash",
-    "date": "20250822",
-    "link": "https://www.paribucineverse.com/dram-filmleri/whiplash-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~f4d5a844-83e7-4f9c-86d0-2c9102b3cc8b",
-    "trailer": "https://cdn.marsgate.com.tr/13077",
-    "genre": "Dram",
-    "summary": "Bir tarafta öğrencilerinin korkulu rüyası, jazz öğretmeni Terrence Fletcher (J.K. Simmons), diğer tarafta ‘en iyi’ olmayı kafaya koymuş, aşırı hırslı genç öğrencisi Andrew Neyman (Miles Teller). İki taraf da baskın karakterinden taviz vermeyince, çok geçmeden mantık dışı olaylar gelişmeye başlar. Bu süreçte elleri çalışmaktan kanlar içinde kalan Neyman, küfürbaz Fletcher’ın hakaretle bezeli eğitim tekniklerine boyun eğmek zorunda kalır. Ama Neyman’ın da kendine göre numaraları vardır ve en sonunda, karşı karşıya kalacakları müzikal düellodan önce işler iyice çıkmaza girer. 2014 Cannes ve Sundance Film Festivalleri’nin gözdesi olan ve Oscar adaylığı kesin gözüyle bakılan filmi izlerken nefes nefese kalacağınız bir sinema deneyimi sizi bekliyor.",
     "kaynak": "Gelecek Film"
   },
   {
