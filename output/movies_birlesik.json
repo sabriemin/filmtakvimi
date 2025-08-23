@@ -290,16 +290,6 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Baba",
-    "link": "https://www.paribucineverse.com/suc-filmleri/baba-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~b3f880ab-8cbe-45b7-9e87-4690385e972d",
-    "trailer": "https://cdn.marsgate.com.tr/12968",
-    "genre": "Suç",
-    "summary": "Sinema tarihinin en önemli yapımlarından biri olan filmde, gizli bir organize suç öetesinin başı olan Don Vito Corleone, artık tahtını oğlu Michael'a devretmeye çalışmaktadır.",
-    "date": "20250509",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
     "title": "Demon Slayer: Sonsuzluk Kalesi",
     "date": "20250912",
     "link": "https://www.paribucineverse.com/anime-filmleri/demon-slayer-sonsuzluk-kalesi-filmi-izle",
@@ -397,6 +387,16 @@
     "trailer": "https://cdn.marsgate.com.tr/13010",
     "genre": "Aksiyon",
     "summary": "Gotham'a musallat olan Joker'i saf dışı bırakmak için, Batman, büyük bir mücadele vermek zorundadır.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Son Osmanlı: Yandım Ali",
+    "date": "20250829",
+    "link": "https://www.paribucineverse.com/aksiyon-filmleri/son-osmanli-yandim-ali-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn.marsgate.com.tr/13093",
+    "genre": "Aksiyon",
+    "summary": "İstanbul'un işgal altında olduğu karanlık yıllarda, yedi düvelin Osmanlı'ya karşı bayrak açtığı Kurtuluş Savaşı'nın farklı cephelerinde geçen bu yapım, ayrı konumlarda bulunan iki insanın hayatını konu alıyor. Bu tarihi hikayede, İstanbul Boğazı'na demirlemiş düşman ordularını görünce \"Geldikleri gibi giderler\" diyen büyük komutan Gazi Mustafa Kemal Paşa ile evli sevgilisini kaçırıp Viyana'ya gitme planları yapan, donanmadan terhis edilmiş Yandım Ali'nin hayatları kesişir. Yolları bir gün kesiştiğinde, Yandım Ali için hayat, planladığından çok daha farklı bir yönde akmaya başlar; artık memleketin kurtuluşundan ümidi kesmiş bir külhanbeyi değil, bu kurtuluş için mücadele eden bir savaşçı halini almıştır.",
     "kaynak": "Gelecek Film"
   },
   {
