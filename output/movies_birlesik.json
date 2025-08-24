@@ -100,16 +100,6 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Yeni Nesil Meddah",
-    "link": "https://www.paribucineverse.com/aile-filmleri/yeni-nesil-meddah-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~f324f94a-599a-46bf-9478-11ce042dc5f8",
-    "trailer": "Fragman bağlantısı yok",
-    "genre": "Aile",
-    "summary": "Yeni Nesil Meddah, tek bir oyuncunun farklı karakterlere ve rollere bürünmesiyle çocuklara eğlenceli eğitici ve öğretici bir deneyim sunmaktadır. Kuklası ile maceralara çıkar. Çok eğlenceli ve bir o kadar da komik olan yeni nesil meddahı çocuklar çok sevecek.",
-    "date": "20250816",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
     "title": "Önemsiz Biri 2",
     "link": "https://www.paribucineverse.com/aksiyon-filmleri/onemsiz-biri-2-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~15208a06-4e38-41fc-8cfe-0f0d077c6c53",
@@ -183,10 +173,10 @@
     "title": "Kulyas 2: Zikr-i Ayin",
     "link": "https://www.paribucineverse.com/korku-filmleri/kulyas-2-zikr-i-ayin-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~185dfa73-78e5-44bc-ae12-954f90edb1a6",
-    "trailer": "https://cdn.marsgate.com.tr/13071",
-    "genre": "Korku",
-    "summary": "Sevdiği adamı geri kazanmak için büyücüye giden Helen, yasaklı büyüler yapar. Ancak bilmediği kutsal bir soy bağı vardır ve bu büyüler, nesiller boyunca süregelen Kulyas Cinlerinin lanetini yeniden uyandırır. Artık cinlerin boyut kapısı açılmıştır. Sevdiği adam felaketlerle karşılaşırken, Helen kendisini korkunç olayların içinde bulur. Soyuna ve kendisine bulaşan lanetten kurtulmak için Kars’taki dergâha giden Helen, burada Mustafa Hoca ve Yavuz ile birlikte cinlerle mücadeleye girer. Yasak bir aşk, kanlı büyüler ve cin ayinleriyle karanlık sırlar açığa çıkar. Helen’in kurtuluşu ancak büyük bir bedelle mümkündür. Kars, İstanbul ve Amerika üçgeninde geçen bu hikaye, 18. yüzyıl Osmanlı İmparatorluğu'ndan günümüze uzanarak Kanlı Cin tarihini ortaya çıkarır.",
-    "date": "20250808",
+    "trailer": "",
+    "genre": "",
+    "summary": "",
+    "date": "20250824",
     "kaynak": "Vizyondaki Film"
   },
   {
@@ -303,7 +293,7 @@
     "title": "Güvercinin Ölümü Nikola Tesla",
     "date": "20250827",
     "link": "https://www.paribucineverse.com/tarihi-filmleri/guvercinin-olumu-nikola-tesla-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~705898f7-74ec-4940-8ae1-4299a9f41849",
+    "bilet_link": null,
     "trailer": "Fragman bağlantısı yok",
     "genre": "Tarihi",
     "summary": "Herkes tarafından Merak edilen Dünya'nın en önemli mucitlerinden Nikola Tesla'nın çocukluğundan ölümüne, inişli çıkışlı olan hayatının merak uyandıran ve her anını işleyen sürükleyici tiyatro oyununa hepinizi bekliyoruz.",
