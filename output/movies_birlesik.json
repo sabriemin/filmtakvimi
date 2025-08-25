@@ -90,16 +90,6 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Mimo’nun Mavi Balonu",
-    "link": "https://www.paribucineverse.com/aile-filmleri/mimo%E2%80%99nun-mavi-balonu-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~a58d6903-1063-4ddb-97bc-c33c82a2295b",
-    "trailer": "Fragman bağlantısı yok",
-    "genre": "Aile",
-    "summary": "Mimo çok sevdiği balonu elinden kaçırıyor sonra kayıp balonun peşine düşüyor, balonu ararken karşısına engeller çıkıyor. Bakalım Mimo mavi balonunu bulabilecek mi? Bu pandomim gösterisinde çocuklar çok eğlenecek.",
-    "date": "20250817",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
     "title": "Önemsiz Biri 2",
     "link": "https://www.paribucineverse.com/aksiyon-filmleri/onemsiz-biri-2-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~15208a06-4e38-41fc-8cfe-0f0d077c6c53",
@@ -173,10 +163,10 @@
     "title": "Kulyas 2: Zikr-i Ayin",
     "link": "https://www.paribucineverse.com/korku-filmleri/kulyas-2-zikr-i-ayin-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~185dfa73-78e5-44bc-ae12-954f90edb1a6",
-    "trailer": "",
-    "genre": "",
-    "summary": "",
-    "date": "20250824",
+    "trailer": "https://cdn.marsgate.com.tr/13071",
+    "genre": "Korku",
+    "summary": "Sevdiği adamı geri kazanmak için büyücüye giden Helen, yasaklı büyüler yapar. Ancak bilmediği kutsal bir soy bağı vardır ve bu büyüler, nesiller boyunca süregelen Kulyas Cinlerinin lanetini yeniden uyandırır. Artık cinlerin boyut kapısı açılmıştır. Sevdiği adam felaketlerle karşılaşırken, Helen kendisini korkunç olayların içinde bulur. Soyuna ve kendisine bulaşan lanetten kurtulmak için Kars’taki dergâha giden Helen, burada Mustafa Hoca ve Yavuz ile birlikte cinlerle mücadeleye girer. Yasak bir aşk, kanlı büyüler ve cin ayinleriyle karanlık sırlar açığa çıkar. Helen’in kurtuluşu ancak büyük bir bedelle mümkündür. Kars, İstanbul ve Amerika üçgeninde geçen bu hikaye, 18. yüzyıl Osmanlı İmparatorluğu'ndan günümüze uzanarak Kanlı Cin tarihini ortaya çıkarır.",
+    "date": "20250808",
     "kaynak": "Vizyondaki Film"
   },
   {
@@ -293,7 +283,7 @@
     "title": "Güvercinin Ölümü Nikola Tesla",
     "date": "20250827",
     "link": "https://www.paribucineverse.com/tarihi-filmleri/guvercinin-olumu-nikola-tesla-filmi-izle",
-    "bilet_link": null,
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~705898f7-74ec-4940-8ae1-4299a9f41849",
     "trailer": "Fragman bağlantısı yok",
     "genre": "Tarihi",
     "summary": "Herkes tarafından Merak edilen Dünya'nın en önemli mucitlerinden Nikola Tesla'nın çocukluğundan ölümüne, inişli çıkışlı olan hayatının merak uyandıran ve her anını işleyen sürükleyici tiyatro oyununa hepinizi bekliyoruz.",
@@ -377,16 +367,6 @@
     "trailer": "https://cdn.marsgate.com.tr/13010",
     "genre": "Aksiyon",
     "summary": "Gotham'a musallat olan Joker'i saf dışı bırakmak için, Batman, büyük bir mücadele vermek zorundadır.",
-    "kaynak": "Gelecek Film"
-  },
-  {
-    "title": "Son Osmanlı: Yandım Ali",
-    "date": "20250829",
-    "link": "https://www.paribucineverse.com/aksiyon-filmleri/son-osmanli-yandim-ali-filmi-izle",
-    "bilet_link": null,
-    "trailer": "https://cdn.marsgate.com.tr/13093",
-    "genre": "Aksiyon",
-    "summary": "İstanbul'un işgal altında olduğu karanlık yıllarda, yedi düvelin Osmanlı'ya karşı bayrak açtığı Kurtuluş Savaşı'nın farklı cephelerinde geçen bu yapım, ayrı konumlarda bulunan iki insanın hayatını konu alıyor. Bu tarihi hikayede, İstanbul Boğazı'na demirlemiş düşman ordularını görünce \"Geldikleri gibi giderler\" diyen büyük komutan Gazi Mustafa Kemal Paşa ile evli sevgilisini kaçırıp Viyana'ya gitme planları yapan, donanmadan terhis edilmiş Yandım Ali'nin hayatları kesişir. Yolları bir gün kesiştiğinde, Yandım Ali için hayat, planladığından çok daha farklı bir yönde akmaya başlar; artık memleketin kurtuluşundan ümidi kesmiş bir külhanbeyi değil, bu kurtuluş için mücadele eden bir savaşçı halini almıştır.",
     "kaynak": "Gelecek Film"
   },
   {
