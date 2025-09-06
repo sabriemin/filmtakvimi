@@ -10,22 +10,22 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Çakallarla Dans",
-    "link": "https://www.paribucineverse.com/komedi-filmleri/cakallarla-dans-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~4b99eafe-de18-4539-96e2-940df06f5dcb",
-    "trailer": "Fragman bağlantısı yok",
-    "genre": "Komedi",
-    "summary": "Büyük bir şirketin muhasebecisi olan Servet, karısının etkisiyle, şirketin internet hesapları üzerinden yüklü miktarda bir parayı patronundan çalmak için bir plan yapar. Bu planın bir parçası da en yakın arkadaşı Gökhan'dır; Servet parayı Gökhan'ın hesabına aktarıp olası bir olumsuz durumda suçu onun üzerine yıkmayı hesaplar. Ancak en az kendisi kadar kurnaz ve saf olan arkadaşları yüzünden plan istendiği gibi gitmez ve dört kafadar, başlarına gelmedik bela kalmaz. Kısa yoldan para kazanmak uğruna giriştikleri bu iş, onları akıllarına bile gelmeyecek çılgın ve eğlenceli bir maceraya sürükler.",
-    "date": "20250905",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
     "title": "Hayaller",
     "link": "https://www.paribucineverse.com/dram-filmleri/hayaller-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~6563b138-fc1e-404e-ae98-b5fa8b19e385",
     "trailer": "https://cdn.marsgate.com.tr/13099",
     "genre": "Dram",
     "summary": "Johanne, Fransızca öğretmenine olan yoğun aşkını belgeliyor. Annesi ve büyükannesi bu samimi yazıları okurlar. Her ikisi de içeriğinden dehşete düşerler, ancak güçlü yazım tarzı ve hikayeden etkilenirler. Johanne, romantik idealler ile gerçeklik arasında gidip gelirken, kendini keşfetme, aşk ve cinsellik gibi duyguları keşfeder.",
+    "date": "20250905",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Çakallarla Dans",
+    "link": "https://www.paribucineverse.com/komedi-filmleri/cakallarla-dans-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~4b99eafe-de18-4539-96e2-940df06f5dcb",
+    "trailer": "Fragman bağlantısı yok",
+    "genre": "Komedi",
+    "summary": "Büyük bir şirketin muhasebecisi olan Servet, karısının etkisiyle, şirketin internet hesapları üzerinden yüklü miktarda bir parayı patronundan çalmak için bir plan yapar. Bu planın bir parçası da en yakın arkadaşı Gökhan'dır; Servet parayı Gökhan'ın hesabına aktarıp olası bir olumsuz durumda suçu onun üzerine yıkmayı hesaplar. Ancak en az kendisi kadar kurnaz ve saf olan arkadaşları yüzünden plan istendiği gibi gitmez ve dört kafadar, başlarına gelmedik bela kalmaz. Kısa yoldan para kazanmak uğruna giriştikleri bu iş, onları akıllarına bile gelmeyecek çılgın ve eğlenceli bir maceraya sürükler.",
     "date": "20250905",
     "kaynak": "Vizyondaki Film"
   },
@@ -80,6 +80,16 @@
     "kaynak": "Vizyondaki Film"
   },
   {
+    "title": "Kara Şövalye",
+    "link": "https://www.paribucineverse.com/aksiyon-filmleri/kara-sovalye-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~c3fd9773-6052-4259-9a36-73e9098e6583",
+    "trailer": "https://cdn.marsgate.com.tr/13010",
+    "genre": "Aksiyon",
+    "summary": "Gotham'a musallat olan Joker'i saf dışı bırakmak için, Batman, büyük bir mücadele vermek zorundadır.",
+    "date": "20250829",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
     "title": "Büyük Yarış",
     "link": "https://www.paribucineverse.com/animasyon-filmleri/buyuk-yaris-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~f19aa57a-d5f5-4225-8bb4-5fa47d40f984",
@@ -96,16 +106,6 @@
     "trailer": "https://cdn.marsgate.com.tr/13081",
     "genre": "Korku",
     "summary": "Bir adam, kendisini bir yeraltı geçidinde kaybolmuş bulur ve gizemli bir \"rehberin\" peşinden gider. Ancak geçidin derinliklerine indikçe, ardı ardına garip olaylar yaşamaya başlar ve gerçeklik ile yanılsama arasındaki çizgi bulanıklaşır. Adam, bu esrarengiz mekanda sıkışıp kaldığını fark ederken, geçitten kaçıp kurtulup kurtulamayacağı belirsizliğini korur.",
-    "date": "20250829",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
-    "title": "Kara Şövalye",
-    "link": "https://www.paribucineverse.com/aksiyon-filmleri/kara-sovalye-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~c3fd9773-6052-4259-9a36-73e9098e6583",
-    "trailer": "https://cdn.marsgate.com.tr/13010",
-    "genre": "Aksiyon",
-    "summary": "Gotham'a musallat olan Joker'i saf dışı bırakmak için, Batman, büyük bir mücadele vermek zorundadır.",
     "date": "20250829",
     "kaynak": "Vizyondaki Film"
   },
@@ -310,24 +310,24 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Çıkış Yok",
-    "link": "https://www.paribucineverse.com/macera-filmleri/cikis-yok-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~89bca2b7-ff49-477b-81f2-74a390c23066",
-    "trailer": "https://cdn.marsgate.com.tr/12307",
-    "genre": "Macera",
-    "summary": "Farklı geçmişlere sahip bir grup insan, seyahat ettikleri uçağın Pasifik Okyanusu'na düşmesiyle büyük bir tehlike ile karşı karşıya kalır. Hava kaynağının tükenmesi ve tehlikelerin her taraftan yaklaşmasıyla kabus gibi bir hayatta kalma mücadelesi başlar.",
-    "date": "20240126",
+    "title": "Back to Black",
+    "link": "https://www.paribucineverse.com/biyografi-filmleri/back-to-black-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~63362539-b100-449b-8c6e-3c18d50ca4a0",
+    "trailer": "https://cdn.marsgate.com.tr/12421",
+    "genre": "Biyografi",
+    "summary": "Amy Winehouse'un şöhrete erken yükselişinin ve çığır açan albümü Back to Black'in yapımının olağanüstü hikayesi. Amy'nin bakış açısından anlatılan ve onun son derece kişisel şarkı sözlerinden ilham alan film, olağanüstü olayların ardındaki dikkat çekici kadını ve tüm zamanların en efsanevi albümlerinden birinin merkezindeki çalkantılı ilişkiyi takip ediyor.",
+    "date": "20240503",
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Kara Şövalye Yükseliyor",
-    "date": "20250912",
-    "link": "https://www.paribucineverse.com/aksiyon-filmleri/kara-sovalye-yukseliyor-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~7a32275f-dfcf-4fec-b2f6-dacc9cc9b7f8",
-    "trailer": "https://cdn.marsgate.com.tr/13011",
+    "title": "Demon Slayer - To the Hashira Training",
+    "link": "https://www.paribucineverse.com/aksiyon-filmleri/demon-slayer-to-the-hashira-training-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~3742b9d7-cff3-448a-b1fb-b8c6ebf59b85",
+    "trailer": "https://cdn.marsgate.com.tr/12448",
     "genre": "Aksiyon",
-    "summary": "Heybetli bir terörist olan Bane, Gotham Şehri'ne saldırır ve sekiz yıldır süren barış dönemini bozar. Bu durum Bruce Wayne'i saklandığı yerden çıkmaya ve Batman pelerinini tekrar takmaya zorlar.",
-    "kaynak": "Gelecek Film"
+    "summary": "Ünlü manga serisinden uyarlanan Demon Slayer'ın yeni filmiyle Tanjiro ve Üst Dörtlü'nün, Hantengu ile aralarındaki şiddetli savaşın sonucu ve Nezuko'nun güneşe karşı zaferini içeren Swordsmith Village Arc'tan 11. Bölüm ilk kez sinemalarda gösterilecek.",
+    "date": "20240419",
+    "kaynak": "Vizyondaki Film"
   },
   {
     "title": "Demon Slayer: Sonsuzluk Kalesi",
@@ -343,10 +343,30 @@
     "title": "Geleceğe Dönüş",
     "date": "20250912",
     "link": "https://www.paribucineverse.com/bilim-kurgu-filmleri/gelecege-donus-filmi-izle",
-    "bilet_link": null,
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~dcd2ab65-1ee0-4128-8507-071b65862c4e",
     "trailer": "https://cdn.marsgate.com.tr/13097",
     "genre": "Bilim Kurgu",
     "summary": "Amerika'daki gösteriminin 40. yıl dönümü şerefine Geleceğe Dönüş, ülkemizde yıllar sonra yeniden sinemaseverlerle buluşuyor.Robert Zemeckis'in yönettiği ve Bob Gale ile birlikte yazdığı 1985 yapımı bilim kurgu filmi Geleceğe Dönüş, 1985 yılında geçiyor. Film, eksantrik bilim insanı arkadaşı Emmett \"Doc\" Brown tarafından inşa edilen zaman yolculuğu yapabilen bir DeLorean otomobiliyle yanlışlıkla 1955 yılına gönderilen genç Marty McFly'ın hikayesini anlatıyor. Marty, geçmişte yanlışlıkla gelecekteki anne ve babasının aşık olmasını engeller ve kendi varlığını tehlikeye atar. Bu durum karşısında, anne ve babasını bir araya getirmeli ve bir şekilde kendi zamanına geri dönmenin bir yolunu bulmalıdır.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Oyuncak Hikayesi",
+    "date": "20250912",
+    "link": "https://www.paribucineverse.com/animasyon-filmleri/oyuncak-hikayesi-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~869251b2-8c84-4dec-998a-57dfd070a62a",
+    "trailer": "Fragman bağlantısı yok",
+    "genre": "Animasyon",
+    "summary": "Bir kovboy oyuncak bebek, yeni bir uzay adamı oyuncak figürünün bir çocuğun yatak odasındaki en popüler oyuncak olarak onun yerini almasıyla derin bir kıskançlık duyar. Koşullar onları sahiplerinden ayırdığında, ikili aralarındaki farklılıkları bir kenara bırakıp ona geri dönmek zorundadır.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Alkarısı 2",
+    "date": "20250912",
+    "link": "https://www.paribucineverse.com/korku-filmleri/alkarisi-2-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn.marsgate.com.tr/13109",
+    "genre": "Korku",
+    "summary": "Bir arkadaş grubu yeni kitaplarını yazmak ve hikayeler araştırma yapmak için çok eski ve terkedilmiş bir köye gitmeye karar verir. Araştırma için bir otele yerleşirler. Ancak onlar için artık karanlığın kapısı açılmıştır. Gittikleri köy Alkarısı’nın lanetlediği bir köydür. Grubun sırları ölümü getirecektir.",
     "kaynak": "Gelecek Film"
   },
   {
@@ -360,6 +380,26 @@
     "kaynak": "Gelecek Film"
   },
   {
+    "title": "İntikam Gecesi",
+    "date": "20250912",
+    "link": "https://www.paribucineverse.com/korku-filmleri/intikam-gecesi-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn.marsgate.com.tr/13110",
+    "genre": "Korku",
+    "summary": "Modern zamanların en sevilen çizgi film karakterinin bu korkunç köken hikayesinde, Steamboat Willie'nin takıntılı bir hayranı, arkadaşlarını saf kötülüğün derilerini yüzmek istediği ölümcül bir fare kapanına sürükler.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Kara Şövalye Yükseliyor",
+    "date": "20250912",
+    "link": "https://www.paribucineverse.com/aksiyon-filmleri/kara-sovalye-yukseliyor-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn.marsgate.com.tr/13011",
+    "genre": "Aksiyon",
+    "summary": "Heybetli bir terörist olan Bane, Gotham Şehri'ne saldırır ve sekiz yıldır süren barış dönemini bozar. Bu durum Bruce Wayne'i saklandığı yerden çıkmaya ve Batman pelerinini tekrar takmaya zorlar.",
+    "kaynak": "Gelecek Film"
+  },
+  {
     "title": "Kül Kedisi",
     "date": "20250912",
     "link": "https://www.paribucineverse.com/animasyon-filmleri/kul-kedisi-filmi-izle",
@@ -367,16 +407,6 @@
     "trailer": "https://cdn.marsgate.com.tr/13100",
     "genre": "Animasyon",
     "summary": "Film, prensin evlilik teklifini reddederek kendi macerasını yaşayan Caterella'nın hikâyesini anlatıyor.",
-    "kaynak": "Gelecek Film"
-  },
-  {
-    "title": "Oyuncak Hikayesi",
-    "date": "20250912",
-    "link": "https://www.paribucineverse.com/animasyon-filmleri/oyuncak-hikayesi-filmi-izle",
-    "bilet_link": null,
-    "trailer": "Fragman bağlantısı yok",
-    "genre": "Animasyon",
-    "summary": "Bir kovboy oyuncak bebek, yeni bir uzay adamı oyuncak figürünün bir çocuğun yatak odasındaki en popüler oyuncak olarak onun yerini almasıyla derin bir kıskançlık duyar. Koşullar onları sahiplerinden ayırdığında, ikili aralarındaki farklılıkları bir kenara bırakıp ona geri dönmek zorundadır.",
     "kaynak": "Gelecek Film"
   },
   {
