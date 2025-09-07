@@ -80,16 +80,6 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Kara Şövalye",
-    "link": "https://www.paribucineverse.com/aksiyon-filmleri/kara-sovalye-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~c3fd9773-6052-4259-9a36-73e9098e6583",
-    "trailer": "https://cdn.marsgate.com.tr/13010",
-    "genre": "Aksiyon",
-    "summary": "Gotham'a musallat olan Joker'i saf dışı bırakmak için, Batman, büyük bir mücadele vermek zorundadır.",
-    "date": "20250829",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
     "title": "Büyük Yarış",
     "link": "https://www.paribucineverse.com/animasyon-filmleri/buyuk-yaris-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~f19aa57a-d5f5-4225-8bb4-5fa47d40f984",
@@ -110,12 +100,22 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Aşk Tesadüfleri Sever",
-    "link": "https://www.paribucineverse.com/romantik-komedi-filmleri/ask-tesadufleri-sever-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~ce52f2c8-0ad1-45db-96c5-a37a8d917ece",
-    "trailer": "https://cdn.marsgate.com.tr/13084",
-    "genre": "Romantik Komedi",
-    "summary": "Deniz ve Özgür, hep özledikleri Ankara’dan kopmuş; doğumlarından İstanbul’da karşılaştıkları güne dek birbirlerinin hayatlarına defalarca dokunmuş, aynı mahallede büyümüş, aynı şehirde aynı havayı solumuş iki yabancı tanıdıktır. Geçmişlerinin izinden gelen görünmez bir işaretle İstanbul’da tesadüfen karşılaşmaları, onları yıllar önce teğet geçtikleri bir aşka geri götürür. Çocukluklarının sıcaklığına, ilk gençliklerinde ıskaladıkları sevgiye tutunurlar. Birbirine tesadüflerle sarılan bu iki kalbin hikâyesi, hayatın sürprizlerine, kaderin ince oyunlarına ve sevmenin zamansızlığına dair unutulmaz bir masal anlatır.",
+    "title": "Jaws",
+    "link": "https://www.paribucineverse.com/korku-filmleri/jaws-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~9128dff1-f270-4688-b3ca-9b5c08c3dd0f",
+    "trailer": "https://cdn.marsgate.com.tr/13092",
+    "genre": "Korku",
+    "summary": "Long Island açıklarında devasa bir katil köpek balığı bir sahil topluluğunda kaos yaratınca, yerel polis şefi Brody, bir deniz biyoloğu olan Hooper ve deneyimli denizci Quint, bu korkunç canavarı avlamak için bir araya gelirler. Üçlü, hem kendi korkularıyla hem de köpek balığının amansız saldırılarıyla yüzleşirken, yazlıkçıların güvenliğini sağlamak için zamana karşı bir mücadele verirler.",
+    "date": "20250829",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Kara Şövalye",
+    "link": "https://www.paribucineverse.com/aksiyon-filmleri/kara-sovalye-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~c3fd9773-6052-4259-9a36-73e9098e6583",
+    "trailer": "https://cdn.marsgate.com.tr/13010",
+    "genre": "Aksiyon",
+    "summary": "Gotham'a musallat olan Joker'i saf dışı bırakmak için, Batman, büyük bir mücadele vermek zorundadır.",
     "date": "20250829",
     "kaynak": "Vizyondaki Film"
   },
@@ -130,22 +130,22 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Jaws",
-    "link": "https://www.paribucineverse.com/korku-filmleri/jaws-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~9128dff1-f270-4688-b3ca-9b5c08c3dd0f",
-    "trailer": "https://cdn.marsgate.com.tr/13092",
-    "genre": "Korku",
-    "summary": "Long Island açıklarında devasa bir katil köpek balığı bir sahil topluluğunda kaos yaratınca, yerel polis şefi Brody, bir deniz biyoloğu olan Hooper ve deneyimli denizci Quint, bu korkunç canavarı avlamak için bir araya gelirler. Üçlü, hem kendi korkularıyla hem de köpek balığının amansız saldırılarıyla yüzleşirken, yazlıkçıların güvenliğini sağlamak için zamana karşı bir mücadele verirler.",
-    "date": "20250829",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
     "title": "Suçüstü",
     "link": "https://www.paribucineverse.com/gerilim-filmleri/sucustu-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~2bc99c45-79ff-4c23-b5cb-e95696dce8ed",
     "trailer": "https://cdn.marsgate.com.tr/13089",
     "genre": "Gerilim",
     "summary": "Bir zamanların beyzbol yıldızı Hank Thompson, sakin bir hayat sürerken, komşusunun kedisine bakmayı kabul etmesiyle kendini suçlularla dolu tehlikeli bir ağın ortasında bulur. Neden hedef alındığını bilmeden hayatta kalmaya çalışan Hank, geçmişin tozlu becerilerini gün yüzüne çıkarmak zorunda kalır.",
+    "date": "20250829",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Aşk Tesadüfleri Sever",
+    "link": "https://www.paribucineverse.com/romantik-komedi-filmleri/ask-tesadufleri-sever-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~ce52f2c8-0ad1-45db-96c5-a37a8d917ece",
+    "trailer": "https://cdn.marsgate.com.tr/13084",
+    "genre": "Romantik Komedi",
+    "summary": "Deniz ve Özgür, hep özledikleri Ankara’dan kopmuş; doğumlarından İstanbul’da karşılaştıkları güne dek birbirlerinin hayatlarına defalarca dokunmuş, aynı mahallede büyümüş, aynı şehirde aynı havayı solumuş iki yabancı tanıdıktır. Geçmişlerinin izinden gelen görünmez bir işaretle İstanbul’da tesadüfen karşılaşmaları, onları yıllar önce teğet geçtikleri bir aşka geri götürür. Çocukluklarının sıcaklığına, ilk gençliklerinde ıskaladıkları sevgiye tutunurlar. Birbirine tesadüflerle sarılan bu iki kalbin hikâyesi, hayatın sürprizlerine, kaderin ince oyunlarına ve sevmenin zamansızlığına dair unutulmaz bir masal anlatır.",
     "date": "20250829",
     "kaynak": "Vizyondaki Film"
   },
@@ -170,22 +170,22 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Kadıköy Boğası",
-    "link": "https://www.paribucineverse.com/komedi-filmleri/kadikoy-bogasi-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~0cd878b5-8d56-4312-8f8d-9013a9eaffe3",
-    "trailer": "https://cdn.marsgate.com.tr/13076",
-    "genre": "Komedi",
-    "summary": "Sosyal medyada kısa sürede milyonlarca takipçiye ulaşan, 7’den 70’e herkesin gönlünü kazanan halk kahramanı Kadıköy Boğası, şimdi sinema salonlarında! Kendine has tarzı, halk kahramanı tavırları, absürt mizahı ve sıcak hikâyesiyle Kadıköy Boğası; Çomar adlı köpeği, platonik aşkı Rabia ve sıra dışı maceralarıyla beyaz perdede izleyiciyle buluşuyor. Aşk, eğlence, kahkaha dolu gerçek bir hikâyeye hazır olun!",
-    "date": "20250822",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
     "title": "Heidi",
     "link": "https://www.paribucineverse.com/animasyon-filmleri/heidi-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~7ffb2a78-ed43-492f-bf4b-9f76f25246bd",
     "trailer": "https://cdn.marsgate.com.tr/13061",
     "genre": "Animasyon",
     "summary": "İsviçre Alpleri’nde büyükbabasıyla yaşayan 8 yaşındaki Heidi, doğayla iç içe, özgür bir hayat sürmektedir. Bir gün ormanda tuzağa yakalanmış bir dağ kedisi bulur. “Biber” adını verdiği yavruyu gizlice iyileştirirken, ormanı tehdit eden hırslı bir adamın planlarını da öğrenir.Heidi, en yakın arkadaşı Peter ve sadık köpekleri Joseph ile birlikte Biber’i ailesine kavuşturmak ve doğayı kurtarmak için zamana karşı yarıştıkları cesur bir yolculuğa çıkarlar.",
+    "date": "20250822",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Kadıköy Boğası",
+    "link": "https://www.paribucineverse.com/komedi-filmleri/kadikoy-bogasi-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~0cd878b5-8d56-4312-8f8d-9013a9eaffe3",
+    "trailer": "https://cdn.marsgate.com.tr/13076",
+    "genre": "Komedi",
+    "summary": "Sosyal medyada kısa sürede milyonlarca takipçiye ulaşan, 7’den 70’e herkesin gönlünü kazanan halk kahramanı Kadıköy Boğası, şimdi sinema salonlarında! Kendine has tarzı, halk kahramanı tavırları, absürt mizahı ve sıcak hikâyesiyle Kadıköy Boğası; Çomar adlı köpeği, platonik aşkı Rabia ve sıra dışı maceralarıyla beyaz perdede izleyiciyle buluşuyor. Aşk, eğlence, kahkaha dolu gerçek bir hikâyeye hazır olun!",
     "date": "20250822",
     "kaynak": "Vizyondaki Film"
   },
@@ -317,16 +317,6 @@
     "genre": "Biyografi",
     "summary": "Amy Winehouse'un şöhrete erken yükselişinin ve çığır açan albümü Back to Black'in yapımının olağanüstü hikayesi. Amy'nin bakış açısından anlatılan ve onun son derece kişisel şarkı sözlerinden ilham alan film, olağanüstü olayların ardındaki dikkat çekici kadını ve tüm zamanların en efsanevi albümlerinden birinin merkezindeki çalkantılı ilişkiyi takip ediyor.",
     "date": "20240503",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
-    "title": "Demon Slayer - To the Hashira Training",
-    "link": "https://www.paribucineverse.com/aksiyon-filmleri/demon-slayer-to-the-hashira-training-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~3742b9d7-cff3-448a-b1fb-b8c6ebf59b85",
-    "trailer": "https://cdn.marsgate.com.tr/12448",
-    "genre": "Aksiyon",
-    "summary": "Ünlü manga serisinden uyarlanan Demon Slayer'ın yeni filmiyle Tanjiro ve Üst Dörtlü'nün, Hantengu ile aralarındaki şiddetli savaşın sonucu ve Nezuko'nun güneşe karşı zaferini içeren Swordsmith Village Arc'tan 11. Bölüm ilk kez sinemalarda gösterilecek.",
-    "date": "20240419",
     "kaynak": "Vizyondaki Film"
   },
   {
