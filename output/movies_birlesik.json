@@ -10,16 +10,6 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Takip",
-    "link": "https://www.paribucineverse.com/gerilim-filmleri/takip-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~0648382e-500a-4ceb-b030-835e539665cc",
-    "trailer": "https://cdn.marsgate.com.tr/13102",
-    "genre": "Gerilim",
-    "summary": "Tom, yozlaşmış şirketlerle sorun yaşayan muhbirlere kazançlı anlaşmalar sağlama konusunda uzmanlaşmış, dünya çapında bir arabulucudur. Saat gibi işleyen gizli planlamaları, onun çalışma yönteminin en kritik parçasıdır. Fakat Sarah adlı bir potansiyel müşteri, Tom’un hiçbir saniyesini şansa bırakmadığı titiz pazarlık sürecinde bazı açıklara sebep olur ve ikisinin de hayatını tehlikeye atar.",
-    "date": "20250912",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
     "title": "Kara Şövalye Yükseliyor",
     "link": "https://www.paribucineverse.com/aksiyon-filmleri/kara-sovalye-yukseliyor-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~7a32275f-dfcf-4fec-b2f6-dacc9cc9b7f8",
@@ -36,6 +26,16 @@
     "trailer": "Fragman bağlantısı yok",
     "genre": "Animasyon",
     "summary": "Bir kovboy oyuncak bebek, yeni bir uzay adamı oyuncak figürünün bir çocuğun yatak odasındaki en popüler oyuncak olarak onun yerini almasıyla derin bir kıskançlık duyar. Koşullar onları sahiplerinden ayırdığında, ikili aralarındaki farklılıkları bir kenara bırakıp ona geri dönmek zorundadır.",
+    "date": "20250912",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Takip",
+    "link": "https://www.paribucineverse.com/gerilim-filmleri/takip-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~0648382e-500a-4ceb-b030-835e539665cc",
+    "trailer": "https://cdn.marsgate.com.tr/13102",
+    "genre": "Gerilim",
+    "summary": "Tom, yozlaşmış şirketlerle sorun yaşayan muhbirlere kazançlı anlaşmalar sağlama konusunda uzmanlaşmış, dünya çapında bir arabulucudur. Saat gibi işleyen gizli planlamaları, onun çalışma yönteminin en kritik parçasıdır. Fakat Sarah adlı bir potansiyel müşteri, Tom’un hiçbir saniyesini şansa bırakmadığı titiz pazarlık sürecinde bazı açıklara sebep olur ve ikisinin de hayatını tehlikeye atar.",
     "date": "20250912",
     "kaynak": "Vizyondaki Film"
   },
@@ -70,22 +70,22 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Alkarısı 2",
-    "link": "https://www.paribucineverse.com/korku-filmleri/alkarisi-2-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~8f1e9319-f66a-4f74-8828-18c8a7c442e3",
-    "trailer": "https://cdn.marsgate.com.tr/13109",
-    "genre": "Korku",
-    "summary": "Bir arkadaş grubu yeni kitaplarını yazmak ve hikayeler araştırma yapmak için çok eski ve terkedilmiş bir köye gitmeye karar verir. Araştırma için bir otele yerleşirler. Ancak onlar için artık karanlığın kapısı açılmıştır. Gittikleri köy Alkarısı’nın lanetlediği bir köydür. Grubun sırları ölümü getirecektir.",
-    "date": "20250912",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
     "title": "Ayı Kardeşler: Macera Ormanı",
     "link": "https://www.paribucineverse.com/animasyon-filmleri/ayi-kardesler-macera-ormani-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~2de2fdef-ccbb-42df-80f4-ffa7c1dda977",
     "trailer": "Fragman bağlantısı yok",
     "genre": "Animasyon",
     "summary": "Film, Amazon'un yemyeşil ormanlarında yaşayan ayı Milagros'un, avcılar tarafından kaçırılan kardeşi Yana Yana'yı arkadaşı tilki Zorrito ile birlikte bulmaya çalışmasını anlatıyor.",
+    "date": "20250912",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Alkarısı 2",
+    "link": "https://www.paribucineverse.com/korku-filmleri/alkarisi-2-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~8f1e9319-f66a-4f74-8828-18c8a7c442e3",
+    "trailer": "https://cdn.marsgate.com.tr/13109",
+    "genre": "Korku",
+    "summary": "Bir arkadaş grubu yeni kitaplarını yazmak ve hikayeler araştırma yapmak için çok eski ve terkedilmiş bir köye gitmeye karar verir. Araştırma için bir otele yerleşirler. Ancak onlar için artık karanlığın kapısı açılmıştır. Gittikleri köy Alkarısı’nın lanetlediği bir köydür. Grubun sırları ölümü getirecektir.",
     "date": "20250912",
     "kaynak": "Vizyondaki Film"
   },
