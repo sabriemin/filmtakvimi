@@ -70,22 +70,22 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Ayı Kardeşler: Macera Ormanı",
-    "link": "https://www.paribucineverse.com/animasyon-filmleri/ayi-kardesler-macera-ormani-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~2de2fdef-ccbb-42df-80f4-ffa7c1dda977",
-    "trailer": "Fragman bağlantısı yok",
-    "genre": "Animasyon",
-    "summary": "Film, Amazon'un yemyeşil ormanlarında yaşayan ayı Milagros'un, avcılar tarafından kaçırılan kardeşi Yana Yana'yı arkadaşı tilki Zorrito ile birlikte bulmaya çalışmasını anlatıyor.",
-    "date": "20250912",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
     "title": "Alkarısı 2",
     "link": "https://www.paribucineverse.com/korku-filmleri/alkarisi-2-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~8f1e9319-f66a-4f74-8828-18c8a7c442e3",
     "trailer": "https://cdn.marsgate.com.tr/13109",
     "genre": "Korku",
     "summary": "Bir arkadaş grubu yeni kitaplarını yazmak ve hikayeler araştırma yapmak için çok eski ve terkedilmiş bir köye gitmeye karar verir. Araştırma için bir otele yerleşirler. Ancak onlar için artık karanlığın kapısı açılmıştır. Gittikleri köy Alkarısı’nın lanetlediği bir köydür. Grubun sırları ölümü getirecektir.",
+    "date": "20250912",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Ayı Kardeşler: Macera Ormanı",
+    "link": "https://www.paribucineverse.com/animasyon-filmleri/ayi-kardesler-macera-ormani-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~2de2fdef-ccbb-42df-80f4-ffa7c1dda977",
+    "trailer": "Fragman bağlantısı yok",
+    "genre": "Animasyon",
+    "summary": "Film, Amazon'un yemyeşil ormanlarında yaşayan ayı Milagros'un, avcılar tarafından kaçırılan kardeşi Yana Yana'yı arkadaşı tilki Zorrito ile birlikte bulmaya çalışmasını anlatıyor.",
     "date": "20250912",
     "kaynak": "Vizyondaki Film"
   },
@@ -330,6 +330,16 @@
     "kaynak": "Gelecek Film"
   },
   {
+    "title": "Ada",
+    "date": "20250919",
+    "link": "https://www.paribucineverse.com/gerilim-filmleri/ada-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn.marsgate.com.tr/13124",
+    "genre": "Gerilim",
+    "summary": "Tom, bir tatil adasına sürüklenen profesyonel bir tenisçidir. Şimdi bir otel resortunda koçluk yapıyor ve turistlere sayısız top atıyor. Belirli bir turist ailesiyle yolları kesiştiğinde, kendi kaçış yolunu bulmuş gibi görünüyor.",
+    "kaynak": "Gelecek Film"
+  },
+  {
     "title": "Beyaz Melek",
     "date": "20250919",
     "link": "https://www.paribucineverse.com/dram-filmleri/beyaz-melek-filmi-izle",
@@ -387,6 +397,16 @@
     "trailer": "https://cdn.marsgate.com.tr/13108",
     "genre": "Animasyon",
     "summary": "10 yaşındaki Willie, polis babasıyla birlikte şehri suçlulardan korumak, yani bir süper kahraman olmak ister. Kardeşi Charlie doğunca bu hayaline ulaşması artık mümkündür. Çünkü bebek Charlie o hep istediği süper güçlere sahiptir! Böylece abi-kardeş, şehri kurtarmak için boylarından büyük bir maceraya atılırlar.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Zincirkıran",
+    "date": "20250919",
+    "link": "https://www.paribucineverse.com/korku-filmleri/zincirkiran-filmi-izle",
+    "bilet_link": null,
+    "trailer": "Fragman bağlantısı yok",
+    "genre": "Korku",
+    "summary": "Eski zamanlarda Anadolu’nun bir köyünde insanları öldüren, seri cinayetler işleyen bir adam, köylüler tarafından zincirlenerek gömülür. Ölen adamın akrabası buna dayanamaz ve adam hakkında bir kitap yazar. Bu kitap, zemheri ayında adamı dünyaya geri getirerek insanları öldürmesini sağlar. Fakat Zincirkıran yalnızca kitabı bulan ve kitaptaki ritüeli yerine getiren dört kişiyi öldürmektedir. Günlerden bir gün tüm bunlardan habersiz gezen Derya, bir eskiciye girer ve kitap ile karşılaşır. Derya bu tarz şeylere her ne kadar inanmasa da kitap dikkatini çeker ve kitabı almak ister. Eskici hikayeyi her ne kadar anlatsa da Derya kitabı almaktan vazgeçmez. Biran önce arkadaşları ile birlikte ritüeli yerine getirmek ister.",
     "kaynak": "Gelecek Film"
   },
   {
