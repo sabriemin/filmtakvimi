@@ -40,22 +40,22 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "İntikam Gecesi",
-    "link": "https://www.paribucineverse.com/korku-filmleri/intikam-gecesi-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~0f5c8f85-87ea-414c-bd6f-6884daa0310d",
-    "trailer": "https://cdn.marsgate.com.tr/13110",
-    "genre": "Korku",
-    "summary": "Modern zamanların en sevilen çizgi film karakterinin bu korkunç köken hikayesinde, Steamboat Willie'nin takıntılı bir hayranı, arkadaşlarını saf kötülüğün derilerini yüzmek istediği ölümcül bir fare kapanına sürükler.",
-    "date": "20250912",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
     "title": "Geleceğe Dönüş",
     "link": "https://www.paribucineverse.com/bilim-kurgu-filmleri/gelecege-donus-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~dcd2ab65-1ee0-4128-8507-071b65862c4e",
     "trailer": "https://cdn.marsgate.com.tr/13097",
     "genre": "Bilim Kurgu",
     "summary": "Amerika'daki gösteriminin 40. yıl dönümü şerefine Geleceğe Dönüş, ülkemizde yıllar sonra yeniden sinemaseverlerle buluşuyor.Robert Zemeckis'in yönettiği ve Bob Gale ile birlikte yazdığı 1985 yapımı bilim kurgu filmi Geleceğe Dönüş, 1985 yılında geçiyor. Film, eksantrik bilim insanı arkadaşı Emmett \"Doc\" Brown tarafından inşa edilen zaman yolculuğu yapabilen bir DeLorean otomobiliyle yanlışlıkla 1955 yılına gönderilen genç Marty McFly'ın hikayesini anlatıyor. Marty, geçmişte yanlışlıkla gelecekteki anne ve babasının aşık olmasını engeller ve kendi varlığını tehlikeye atar. Bu durum karşısında, anne ve babasını bir araya getirmeli ve bir şekilde kendi zamanına geri dönmenin bir yolunu bulmalıdır.",
+    "date": "20250912",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "İntikam Gecesi",
+    "link": "https://www.paribucineverse.com/korku-filmleri/intikam-gecesi-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~0f5c8f85-87ea-414c-bd6f-6884daa0310d",
+    "trailer": "https://cdn.marsgate.com.tr/13110",
+    "genre": "Korku",
+    "summary": "Modern zamanların en sevilen çizgi film karakterinin bu korkunç köken hikayesinde, Steamboat Willie'nin takıntılı bir hayranı, arkadaşlarını saf kötülüğün derilerini yüzmek istediği ölümcül bir fare kapanına sürükler.",
     "date": "20250912",
     "kaynak": "Vizyondaki Film"
   },
@@ -190,16 +190,6 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Güvercinin Ölümü Nikola Tesla",
-    "link": "https://www.paribucineverse.com/tarihi-filmleri/guvercinin-olumu-nikola-tesla-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~705898f7-74ec-4940-8ae1-4299a9f41849",
-    "trailer": "Fragman bağlantısı yok",
-    "genre": "Tarihi",
-    "summary": "Herkes tarafından Merak edilen Dünya'nın en önemli mucitlerinden Nikola Tesla'nın çocukluğundan ölümüne, inişli çıkışlı olan hayatının merak uyandıran ve her anını işleyen sürükleyici tiyatro oyununa hepinizi bekliyoruz.",
-    "date": "20250827",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
     "title": "Heidi",
     "link": "https://www.paribucineverse.com/animasyon-filmleri/heidi-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~7ffb2a78-ed43-492f-bf4b-9f76f25246bd",
@@ -227,6 +217,16 @@
     "genre": "Komedi",
     "summary": "Sosyal medyada kısa sürede milyonlarca takipçiye ulaşan, 7’den 70’e herkesin gönlünü kazanan halk kahramanı Kadıköy Boğası, şimdi sinema salonlarında! Kendine has tarzı, halk kahramanı tavırları, absürt mizahı ve sıcak hikâyesiyle Kadıköy Boğası; Çomar adlı köpeği, platonik aşkı Rabia ve sıra dışı maceralarıyla beyaz perdede izleyiciyle buluşuyor. Aşk, eğlence, kahkaha dolu gerçek bir hikâyeye hazır olun!",
     "date": "20250822",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Yeni Nesil Meddah",
+    "link": "https://www.paribucineverse.com/aile-filmleri/yeni-nesil-meddah-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~f324f94a-599a-46bf-9478-11ce042dc5f8",
+    "trailer": "Fragman bağlantısı yok",
+    "genre": "Aile",
+    "summary": "Yeni Nesil Meddah, tek bir oyuncunun farklı karakterlere ve rollere bürünmesiyle çocuklara eğlenceli eğitici ve öğretici bir deneyim sunmaktadır. Kuklası ile maceralara çıkar. Çok eğlenceli ve bir o kadar da komik olan yeni nesil meddahı çocuklar çok sevecek.",
+    "date": "20250816",
     "kaynak": "Vizyondaki Film"
   },
   {
@@ -320,16 +320,6 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Ayı Paddington: Ormanda Macera",
-    "link": "https://www.paribucineverse.com/animasyon-filmleri/ayi-paddington-ormanda-macera-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~3f8d6d5a-9325-4bdd-8add-c426f03a101e",
-    "trailer": "https://cdn.marsgate.com.tr/12845",
-    "genre": "Animasyon",
-    "summary": "Paddington, sevgili Lucy teyzesinin Emekli Ayılar Evi'nden kaybolduğunu duyunca Brown ailesiyle beraber onu aramak için Peru'nun vahşi doğasına doğru yola çıkar. Ellerindeki tek ipucu gizemli haritada işaretlenmiş bir noktadır. Gizemi çözmeye kararlı olan Paddington, teyzesini bulmak için Amazon yağmur ormanları boyunca heyecan verici bir arayışa atılır. Bu arayış onu dünyanın en efsanevi hazinelerinden birine doğru sürükleyecektir.",
-    "date": "20250321",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
     "title": "Hobbit: Beklenmedik Yolculuk",
     "date": "20250919",
     "link": "https://www.paribucineverse.com/macera-filmleri/hobbit-beklenmedik-yolculuk-filmi-izle",
@@ -340,70 +330,70 @@
     "kaynak": "Gelecek Film"
   },
   {
-    "title": "Ada",
-    "date": "20250919",
-    "link": "https://www.paribucineverse.com/gerilim-filmleri/ada-filmi-izle",
-    "bilet_link": null,
-    "trailer": "https://cdn.marsgate.com.tr/13124",
-    "genre": "Gerilim",
-    "summary": "Tom, bir tatil adasına sürüklenen profesyonel bir tenisçidir. Şimdi bir otel resortunda koçluk yapıyor ve turistlere sayısız top atıyor. Belirli bir turist ailesiyle yolları kesiştiğinde, kendi kaçış yolunu bulmuş gibi görünüyor.",
-    "kaynak": "Gelecek Film"
-  },
-  {
-    "title": "Büyük, Cesur ve Güzel Bir Yolculuk",
-    "date": "20250919",
-    "link": "https://www.paribucineverse.com/romantik-filmleri/buyuk-cesur-ve-guzel-bir-yolculuk-filmi-izle",
-    "bilet_link": null,
-    "trailer": "https://cdn.marsgate.com.tr/13105",
-    "genre": "Romantik",
-    "summary": "Sarah ve David, ortak bir arkadaşlarının düğününde tanışan iki yabancıdır. Ancak kendilerini bir anda, geçmişte yaşadıkları belirleyici anları yeniden yaşayacakları sıra dışı bir yolculuğun içinde bulurlar. Bu deneyim, onları hem kendileriyle hem de birbirleriyle yüzleşmeye zorlayacaktır.",
-    "kaynak": "Gelecek Film"
-  },
-  {
-    "title": "Chuck'ın Hayatı",
-    "date": "20250919",
-    "link": "https://www.paribucineverse.com/bilim-kurgu-filmleri/chuckin-hayati-filmi-izle",
-    "bilet_link": null,
-    "trailer": "https://cdn.marsgate.com.tr/13104",
-    "genre": "Bilim Kurgu",
-    "summary": "Charles Krantz adında sıradan bir adamın hayatının üç bölümünü anlatan, yaşamı onaylayan, türleri aşan bir hikaye.",
-    "kaynak": "Gelecek Film"
-  },
-  {
     "title": "Jester 2",
     "date": "20250919",
     "link": "https://www.paribucineverse.com/korku-filmleri/jester-2-filmi-izle",
-    "bilet_link": null,
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~8b7230e7-1e6f-48bc-b4b7-8f9bcda5b74f",
     "trailer": "https://cdn.marsgate.com.tr/13074",
     "genre": "Korku",
     "summary": "Cadılar Bayramı gecesi, içine kapanık bir sihirbaz adayı, tuhaf ve karanlık bir varlıkla karşılaşır. Masum görünen bir oyun hızla ölümcül bir kabusa dönüşür. Her hareketin bir bedeli, her tercihin bir sonucu vardır.",
     "kaynak": "Gelecek Film"
   },
   {
-    "title": "Şair Puşkin",
+    "title": "Büyük, Cesur ve Güzel Bir Yolculuk",
     "date": "20250919",
-    "link": "https://www.paribucineverse.com/dram-filmleri/sair-puskin-filmi-izle",
-    "bilet_link": null,
-    "trailer": "https://cdn.marsgate.com.tr/13106",
-    "genre": "Dram",
-    "summary": "Puşkin gençtir, cesurdur ve toplumun gözdesidir: baloların parlayan yıldızı, hayranlarının omuzlarında taşınan bir idol, genç kızların kalbinde yer eden bir romantik kahramandır. Fakat ne güçlü himayeciler ne sadık dostlar ne de ün, onu kaderin amansız darbelerinden koruyamaz — sürgünler, düellolar, yoksulluk... Ta ki bir gün, hayatını aydınlatacak ve ruhunun sarsılmaz kaderi olacak o tek ve eşsiz kadını bulana dek...",
+    "link": "https://www.paribucineverse.com/romantik-filmleri/buyuk-cesur-ve-guzel-bir-yolculuk-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~4a6ae8fc-406b-489c-873d-0a3e61c3f445",
+    "trailer": "https://cdn.marsgate.com.tr/13105",
+    "genre": "Romantik",
+    "summary": "Sarah ve David, ortak bir arkadaşlarının düğününde tanışan iki yabancıdır. Ancak kendilerini bir anda, geçmişte yaşadıkları belirleyici anları yeniden yaşayacakları sıra dışı bir yolculuğun içinde bulurlar. Bu deneyim, onları hem kendileriyle hem de birbirleriyle yüzleşmeye zorlayacaktır.",
     "kaynak": "Gelecek Film"
   },
   {
     "title": "Super Charlie",
     "date": "20250919",
     "link": "https://www.paribucineverse.com/animasyon-filmleri/super-charlie-filmi-izle",
-    "bilet_link": null,
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~727be36b-217a-4f70-a994-86667f620c19",
     "trailer": "https://cdn.marsgate.com.tr/13108",
     "genre": "Animasyon",
     "summary": "10 yaşındaki Willie, polis babasıyla birlikte şehri suçlulardan korumak, yani bir süper kahraman olmak ister. Kardeşi Charlie doğunca bu hayaline ulaşması artık mümkündür. Çünkü bebek Charlie o hep istediği süper güçlere sahiptir! Böylece abi-kardeş, şehri kurtarmak için boylarından büyük bir maceraya atılırlar.",
     "kaynak": "Gelecek Film"
   },
   {
+    "title": "Chuck'ın Hayatı",
+    "date": "20250919",
+    "link": "https://www.paribucineverse.com/bilim-kurgu-filmleri/chuckin-hayati-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~0e8e233f-bf4a-46ca-8bd1-51033189f0e9",
+    "trailer": "https://cdn.marsgate.com.tr/13104",
+    "genre": "Bilim Kurgu",
+    "summary": "Charles Krantz adında sıradan bir adamın hayatının üç bölümünü anlatan, yaşamı onaylayan, türleri aşan bir hikaye.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Ada",
+    "date": "20250919",
+    "link": "https://www.paribucineverse.com/gerilim-filmleri/ada-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~d1d5a3b5-7576-40ef-a34c-6287b37b5b07",
+    "trailer": "https://cdn.marsgate.com.tr/13124",
+    "genre": "Gerilim",
+    "summary": "Tom, bir tatil adasına sürüklenen profesyonel bir tenisçidir. Şimdi bir otel resortunda koçluk yapıyor ve turistlere sayısız top atıyor. Belirli bir turist ailesiyle yolları kesiştiğinde, kendi kaçış yolunu bulmuş gibi görünüyor.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Şair Puşkin",
+    "date": "20250919",
+    "link": "https://www.paribucineverse.com/dram-filmleri/sair-puskin-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~ee85069d-6b75-495e-a4e9-e5de1806a47a",
+    "trailer": "https://cdn.marsgate.com.tr/13106",
+    "genre": "Dram",
+    "summary": "Puşkin gençtir, cesurdur ve toplumun gözdesidir: baloların parlayan yıldızı, hayranlarının omuzlarında taşınan bir idol, genç kızların kalbinde yer eden bir romantik kahramandır. Fakat ne güçlü himayeciler ne sadık dostlar ne de ün, onu kaderin amansız darbelerinden koruyamaz — sürgünler, düellolar, yoksulluk... Ta ki bir gün, hayatını aydınlatacak ve ruhunun sarsılmaz kaderi olacak o tek ve eşsiz kadını bulana dek...",
+    "kaynak": "Gelecek Film"
+  },
+  {
     "title": "Zincirkıran",
     "date": "20250919",
     "link": "https://www.paribucineverse.com/korku-filmleri/zincirkiran-filmi-izle",
-    "bilet_link": null,
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~d32f1fc8-430a-4e36-9f0e-aa28f92cd909",
     "trailer": "https://cdn.marsgate.com.tr/13125",
     "genre": "Korku",
     "summary": "Eski zamanlarda Anadolu’nun bir köyünde insanları öldüren, seri cinayetler işleyen bir adam, köylüler tarafından zincirlenerek gömülür. Ölen adamın akrabası buna dayanamaz ve adam hakkında bir kitap yazar. Bu kitap, zemheri ayında adamı dünyaya geri getirerek insanları öldürmesini sağlar. Fakat Zincirkıran yalnızca kitabı bulan ve kitaptaki ritüeli yerine getiren dört kişiyi öldürmektedir. Günlerden bir gün tüm bunlardan habersiz gezen Derya, bir eskiciye girer ve kitap ile karşılaşır. Derya bu tarz şeylere her ne kadar inanmasa da kitap dikkatini çeker ve kitabı almak ister. Eskici hikayeyi her ne kadar anlatsa da Derya kitabı almaktan vazgeçmez. Biran önce arkadaşları ile birlikte ritüeli yerine getirmek ister.",
@@ -447,6 +437,16 @@
     "trailer": "https://cdn.marsgate.com.tr/13113",
     "genre": "Komedi",
     "summary": "Karısı vefat ettiğinden beri bekar hayatı yaşayan Oflu Hoca'nın haline üzülen dostları hocayı evlendirmeye karar verirler. Fakat Oflu Hoca'ya uygun bir eş bulmak için yaptıkları her deneme ayrı bir maceraya dönüşür.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Sevince",
+    "date": "20250926",
+    "link": "https://www.paribucineverse.com/dram-filmleri/sevince-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn.marsgate.com.tr/13132",
+    "genre": "Dram",
+    "summary": "İzmir’den İstanbul’a konservatuvar eğitimi için gelen Elif, otistik spektrum bozukluğuna sahip olan Cem ile tanışır. Cem’ın annesi tarafından onun için yaratılan korunaklı dünyanın sınırları Elif sayesinde çatlamaya başlar. İki genç, aşkın ve sevginin farklılıkları aşarak hayatı nasıl değiştirdiğini keşfeder.",
     "kaynak": "Gelecek Film"
   },
   {
@@ -607,6 +607,16 @@
     "trailer": "https://cdn.marsgate.com.tr/13129",
     "genre": "Komedi",
     "summary": "",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Chainsaw Man - The Movie: Reze Arc",
+    "date": "20251031",
+    "link": "https://www.paribucineverse.com/anime-filmleri/chainsaw-man-the-movie-reze-arc-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn.marsgate.com.tr/13131",
+    "genre": "Anime",
+    "summary": "Bir zamanlar yakuzanın borçlarını kapatmaya çalışan Denji, ihanete uğrayıp öldürüldüğünde hayatı sonsuza dek değişir. Son anlarında, sevdiği şeytani köpeği Pochita onunla birleşir ve Denji, durdurulamaz Chainsaw Man’e dönüşür. Şimdi şeytanlar, avcılar ve gizli düşmanlarla örülü bir savaşın ortasında, gizemli bir kız olan Reze Denji’nin karşısına çıkar. Aşk ile hayatta kalma içgüdüsünün birbirine karıştığı bu yeni çatışma, Denji’nin en ölümcül sınavı olacaktır.",
     "kaynak": "Gelecek Film"
   },
   {
