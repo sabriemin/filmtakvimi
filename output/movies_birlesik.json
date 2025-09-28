@@ -80,16 +80,6 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Gabby'nin Hayal Evi: Film",
-    "link": "https://www.paribucineverse.com/aile-filmleri/gabbynin-hayal-evi-film-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~1b1467a5-9cbd-4ff4-8554-5af4394ba261",
-    "trailer": "https://cdn.marsgate.com.tr/13128",
-    "genre": "Aile",
-    "summary": "Gabby'nin Hayal Evi dizisinin film uyarlaması, Gabby'nin büyükannesi Gigi ile birlikte “Kedi Francisco” adlı şehirde çıktığı yolculuğu anlatıyor.",
-    "date": "20250926",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
     "title": "Rafadan Tayfa: Kapadokya",
     "link": "https://www.paribucineverse.com/animasyon-filmleri/rafadan-tayfa-kapadokya-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~5fd53540-0b9e-43a7-9dff-5a920eca2d37",
@@ -173,10 +163,10 @@
     "title": "Kamos",
     "link": "https://www.paribucineverse.com/korku-filmleri/kamos-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~cbca887a-9c80-45b4-b3c8-b3d44617000e",
-    "trailer": "Fragman bağlantısı yok",
-    "genre": "Tür belirtilmemiş",
-    "summary": "Özet bulunamadı",
-    "date": "20250927",
+    "trailer": "https://cdn.marsgate.com.tr/13115",
+    "genre": "Korku",
+    "summary": "Genç bir kadının yatağında ölü bulunmasıyla başlayan gizem, ardında açıklanamaz izler bırakır. Peş peşe gelen esrarengiz ölümler, bir grup araştırmacıyı insan zihninin derinliklerinde gizlenen \"Kamos\" adlı karanlık bir varlıkla yüzleşmeye zorlar. Efsanelere göre, rüyalar aracılığıyla avlanan bu varlıktan kaçış imkânsızdır ve gerçek ile kâbus arasındaki çizgi silinirken, bu korkunç varlığı durdurmanın bir yolu olup olmadığı sorgulanır.",
+    "date": "20250926",
     "kaynak": "Vizyondaki Film"
   },
   {
@@ -210,22 +200,22 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Super Charlie",
-    "link": "https://www.paribucineverse.com/animasyon-filmleri/super-charlie-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~727be36b-217a-4f70-a994-86667f620c19",
-    "trailer": "https://cdn.marsgate.com.tr/13108",
-    "genre": "Animasyon",
-    "summary": "10 yaşındaki Willie, polis babasıyla birlikte şehri suçlulardan korumak, yani bir süper kahraman olmak ister. Kardeşi Charlie doğunca bu hayaline ulaşması artık mümkündür. Çünkü bebek Charlie o hep istediği süper güçlere sahiptir! Böylece abi-kardeş, şehri kurtarmak için boylarından büyük bir maceraya atılırlar.",
-    "date": "20250919",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
     "title": "Büyük, Cesur ve Güzel Bir Yolculuk",
     "link": "https://www.paribucineverse.com/romantik-filmleri/buyuk-cesur-ve-guzel-bir-yolculuk-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~4a6ae8fc-406b-489c-873d-0a3e61c3f445",
     "trailer": "https://cdn.marsgate.com.tr/13105",
     "genre": "Romantik",
     "summary": "Sarah ve David, ortak bir arkadaşlarının düğününde tanışan iki yabancıdır. Ancak kendilerini bir anda, geçmişte yaşadıkları belirleyici anları yeniden yaşayacakları sıra dışı bir yolculuğun içinde bulurlar. Bu deneyim, onları hem kendileriyle hem de birbirleriyle yüzleşmeye zorlayacaktır.",
+    "date": "20250919",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Super Charlie",
+    "link": "https://www.paribucineverse.com/animasyon-filmleri/super-charlie-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~727be36b-217a-4f70-a994-86667f620c19",
+    "trailer": "https://cdn.marsgate.com.tr/13108",
+    "genre": "Animasyon",
+    "summary": "10 yaşındaki Willie, polis babasıyla birlikte şehri suçlulardan korumak, yani bir süper kahraman olmak ister. Kardeşi Charlie doğunca bu hayaline ulaşması artık mümkündür. Çünkü bebek Charlie o hep istediği süper güçlere sahiptir! Böylece abi-kardeş, şehri kurtarmak için boylarından büyük bir maceraya atılırlar.",
     "date": "20250919",
     "kaynak": "Vizyondaki Film"
   },
