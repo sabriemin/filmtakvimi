@@ -1,21 +1,21 @@
 [
   {
-    "title": "Avatar: Suyun Yolu",
-    "link": "https://www.paribucineverse.com/aksiyon-filmleri/avatar-suyun-yolu-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~2b08547f-93b9-4da9-95eb-e81d212f449d",
-    "trailer": "https://cdn.marsgate.com.tr/13117",
-    "genre": "Aksiyon",
-    "summary": "Avatar serisinin 2009 yılında küresel bir fenomen haline gelen devam halkası; bu defa James Cameron'un yaratmış olduğu öykü evreninin hem kökenlerine iniyor hem de sınırlarını genişletmeyi hedefliyor. Avatar'da yaşanan olaylardan birkaç yıl sonra Jake ve Neytiri Pandora'da kendi ailelerini kurmuştur. Ancak onlar evlerini terk etmek zorunda kalır. Bu yüzden Jake ve Neytiri, suyun yüzeri ve altı dahil olmak üzere Pandora'nın dışındaki yerleri keşfetmeye başlar.",
-    "date": "20251003",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
     "title": "Savaş Üstüne Savaş",
     "link": "https://www.paribucineverse.com/gerilim-filmleri/savas-ustune-savas-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~78e6dcdd-99e6-4336-b99c-df984e1cc82e",
     "trailer": "https://cdn.marsgate.com.tr/13123",
     "genre": "Gerilim",
     "summary": "Kötü düşmanları 16 yıl sonra yeniden ortaya çıkınca, bir grup eski devrimci içlerinden birinin kızını kurtarmak için yeniden bir araya gelir.",
+    "date": "20251003",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Avatar: Suyun Yolu",
+    "link": "https://www.paribucineverse.com/aksiyon-filmleri/avatar-suyun-yolu-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~2b08547f-93b9-4da9-95eb-e81d212f449d",
+    "trailer": "https://cdn.marsgate.com.tr/13117",
+    "genre": "Aksiyon",
+    "summary": "Avatar serisinin 2009 yılında küresel bir fenomen haline gelen devam halkası; bu defa James Cameron'un yaratmış olduğu öykü evreninin hem kökenlerine iniyor hem de sınırlarını genişletmeyi hedefliyor. Avatar'da yaşanan olaylardan birkaç yıl sonra Jake ve Neytiri Pandora'da kendi ailelerini kurmuştur. Ancak onlar evlerini terk etmek zorunda kalır. Bu yüzden Jake ve Neytiri, suyun yüzeri ve altı dahil olmak üzere Pandora'nın dışındaki yerleri keşfetmeye başlar.",
     "date": "20251003",
     "kaynak": "Vizyondaki Film"
   },
@@ -30,22 +30,22 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Tehlikeli Hayvanlar",
-    "link": "https://www.paribucineverse.com/korku-filmleri/tehlikeli-hayvanlar-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~ac62d8cc-9d1e-422f-9873-1b3a8e059be9",
-    "trailer": "Fragman bağlantısı yok",
-    "genre": "Korku",
-    "summary": "Zeki ve özgür ruhlu bir sörfçü olan Zephyr, köpekbalıklarına takıntılı bir seri katil tarafından kaçırılıp teknesinde esir tutulduğunda, katil aşağıdaki köpekbalıklarına ritüel bir besleme yapmadan önce kaçmanın bir yolunu bulmak zorundadır.",
-    "date": "20251003",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
     "title": "Gabby'nin Hayal Evi: Film",
     "link": "https://www.paribucineverse.com/aile-filmleri/gabbynin-hayal-evi-film-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~1b1467a5-9cbd-4ff4-8554-5af4394ba261",
     "trailer": "https://cdn.marsgate.com.tr/13128",
     "genre": "Aile",
     "summary": "Gabby'nin Hayal Evi dizisinin film uyarlaması, Gabby'nin büyükannesi Gigi ile birlikte “Kedi Francisco” adlı şehirde çıktığı yolculuğu anlatıyor.",
+    "date": "20251003",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Tehlikeli Hayvanlar",
+    "link": "https://www.paribucineverse.com/korku-filmleri/tehlikeli-hayvanlar-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~ac62d8cc-9d1e-422f-9873-1b3a8e059be9",
+    "trailer": "Fragman bağlantısı yok",
+    "genre": "Korku",
+    "summary": "Zeki ve özgür ruhlu bir sörfçü olan Zephyr, köpekbalıklarına takıntılı bir seri katil tarafından kaçırılıp teknesinde esir tutulduğunda, katil aşağıdaki köpekbalıklarına ritüel bir besleme yapmadan önce kaçmanın bir yolunu bulmak zorundadır.",
     "date": "20251003",
     "kaynak": "Vizyondaki Film"
   },
@@ -300,6 +300,16 @@
     "kaynak": "Vizyondaki Film"
   },
   {
+    "title": "Tron: Ares",
+    "date": "20251010",
+    "link": "https://www.paribucineverse.com/bilim-kurgu-filmleri/tron-ares-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~5ed3a0cf-26b5-4232-839b-4c518ca01d66",
+    "trailer": "https://cdn.marsgate.com.tr/13118",
+    "genre": "Bilim Kurgu",
+    "summary": "Film, dijital dünyadan gerçek dünyaya gönderilen son derece gelişmiş bir Program olan Ares’in tehlikeli görevini ve insanlığın yapay zeka varlıklarla ilk karşılaşmasını konu alıyor.",
+    "kaynak": "Gelecek Film"
+  },
+  {
     "title": "2025 VALORANT Champions Tour Finaller",
     "date": "20251005",
     "link": "https://www.paribucineverse.com/e-spor-filmleri/2025-valorant-champions-tour-finaller-filmi-izle",
@@ -357,16 +367,6 @@
     "trailer": "https://cdn.marsgate.com.tr/13119",
     "genre": "Animasyon",
     "summary": "Yavuz, Mine ve Nihat, Uluslararası Teknoloji Yarışması’nda Miniya adlı bir robotla Türkiye’yi temsil etmektedir. Dışarıdan bir müdahaleyle kontrolden çıkan ve kendine robotlardan bir ordu kuran Miniya; Yavuz ve arkadaşlarının peşine düşer. Robot ordusundan saklanmak isteyen ve onlarla mücadele edebilmek için bir lidere ihtiyaç duyan gençler zaman makinesiyle geçmişe ışınlanarak Mustafa Kemal’in Selanik Askeri Rüştiyesi’nden Trablusgarp Savaşı’na uzanan yolculuğuna tanık olur. Ondan aldıkları ilhamla liderlik özelliklerini geliştiren Yavuz ve arkadaşları kendi zamanlarına dönerek robot ordusunun karşısında mücadele vermeye hazırlanacaktır.",
-    "kaynak": "Gelecek Film"
-  },
-  {
-    "title": "Tron: Ares",
-    "date": "20251010",
-    "link": "https://www.paribucineverse.com/bilim-kurgu-filmleri/tron-ares-filmi-izle",
-    "bilet_link": null,
-    "trailer": "https://cdn.marsgate.com.tr/13118",
-    "genre": "Bilim Kurgu",
-    "summary": "Film, dijital dünyadan gerçek dünyaya gönderilen son derece gelişmiş bir Program olan Ares’in tehlikeli görevini ve insanlığın yapay zeka varlıklarla ilk karşılaşmasını konu alıyor.",
     "kaynak": "Gelecek Film"
   },
   {
