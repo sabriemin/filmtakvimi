@@ -280,16 +280,6 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Oflu Hoca 4",
-    "link": "https://www.paribucineverse.com/komedi-filmleri/oflu-hoca-4-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~4690860b-0499-4237-bba6-4f5702e8b96d",
-    "trailer": "https://cdn.marsgate.com.tr/12765",
-    "genre": "Komedi",
-    "summary": "Psikolojik sıkıntılar yaşayan Oflu Hoca, şifa bulmak için İstanbul'da bir yoga kampına katılır. Oflu Hoca, katıldığı kampta dolandırıcı olduğunu düşündüğü yoga gurularının foyasını ortaya çıkarmaya çalışacaktır.",
-    "date": "20241220",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
     "title": "Tron: Ares",
     "date": "20251010",
     "link": "https://www.paribucineverse.com/bilim-kurgu-filmleri/tron-ares-filmi-izle",
@@ -362,10 +352,10 @@
   {
     "title": "Sakin Ol",
     "date": "20251010",
-    "link": "https://www.paribucineverse.com/aksiyon-filmleri/sakin-ol-filmi-izle",
+    "link": "https://www.paribucineverse.com/romantik-komedi-filmleri/sakin-ol-filmi-izle",
     "bilet_link": null,
-    "trailer": "Fragman bağlantısı yok",
-    "genre": "Aksiyon",
+    "trailer": "https://cdn.marsgate.com.tr/13156",
+    "genre": "Romantik Komedi",
     "summary": "Dünyayı saran salgın hastalığının ilacının bulunması ve Türkiyede bir Ege kasabasının buna yardım ettiğini gizli servis aracılığıyla insanları takip ettiğini mizahi bir dille anlatıyor.",
     "kaynak": "Gelecek Film"
   },
@@ -557,6 +547,16 @@
     "trailer": "https://cdn.marsgate.com.tr/13147",
     "genre": "Gerilim",
     "summary": "Serinin üçüncü filmi, çok değerli bir elmas soygunu için yeniden bir araya gelen ve yanlarına genç illüzyonistleri alan Atlılar ekibinin yeni macerasını anlatıyor.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Senden Kalan",
+    "date": "20251117",
+    "link": "https://www.paribucineverse.com/dram-filmleri/senden-kalan-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn.marsgate.com.tr/13157",
+    "genre": "Dram",
+    "summary": "Film, podyumların en parlak yıldızlarından Bahar’ın sahnede aniden bayılmasıyla başlayan bir hikayeyi anlatıyor. Hastanede tanıştığı Ferhat sayesinde Bahar, kaybettiği umudu ve hayatın gerçek anlamını yeniden keşfeder; aşkı, yeni başlangıçları ve sahte parıltıların ardındaki gerçeği öğrenir.",
     "kaynak": "Gelecek Film"
   },
   {
