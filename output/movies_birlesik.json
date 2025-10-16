@@ -100,16 +100,6 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Tehlikeli Hayvanlar",
-    "link": "https://www.paribucineverse.com/korku-filmleri/tehlikeli-hayvanlar-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~ac62d8cc-9d1e-422f-9873-1b3a8e059be9",
-    "trailer": "Fragman bağlantısı yok",
-    "genre": "Korku",
-    "summary": "Zeki ve özgür ruhlu bir sörfçü olan Zephyr, köpekbalıklarına takıntılı bir seri katil tarafından kaçırılıp teknesinde esir tutulduğunda, katil aşağıdaki köpekbalıklarına ritüel bir besleme yapmadan önce kaçmanın bir yolunu bulmak zorundadır.",
-    "date": "20251003",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
     "title": "Cesur Kirpi",
     "link": "https://www.paribucineverse.com/animasyon-filmleri/cesur-kirpi-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~0236e7c9-8734-4c2c-a578-165f644af02e",
@@ -126,6 +116,16 @@
     "trailer": "https://cdn.marsgate.com.tr/13128",
     "genre": "Aile",
     "summary": "Gabby'nin Hayal Evi dizisinin film uyarlaması, Gabby'nin büyükannesi Gigi ile birlikte “Kedi Francisco” adlı şehirde çıktığı yolculuğu anlatıyor.",
+    "date": "20251003",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Tehlikeli Hayvanlar",
+    "link": "https://www.paribucineverse.com/korku-filmleri/tehlikeli-hayvanlar-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~ac62d8cc-9d1e-422f-9873-1b3a8e059be9",
+    "trailer": "Fragman bağlantısı yok",
+    "genre": "Korku",
+    "summary": "Zeki ve özgür ruhlu bir sörfçü olan Zephyr, köpekbalıklarına takıntılı bir seri katil tarafından kaçırılıp teknesinde esir tutulduğunda, katil aşağıdaki köpekbalıklarına ritüel bir besleme yapmadan önce kaçmanın bir yolunu bulmak zorundadır.",
     "date": "20251003",
     "kaynak": "Vizyondaki Film"
   },
@@ -220,16 +220,6 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Şair Puşkin",
-    "link": "https://www.paribucineverse.com/dram-filmleri/sair-puskin-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~ee85069d-6b75-495e-a4e9-e5de1806a47a",
-    "trailer": "https://cdn.marsgate.com.tr/13106",
-    "genre": "Dram",
-    "summary": "Puşkin gençtir, cesurdur ve toplumun gözdesidir: baloların parlayan yıldızı, hayranlarının omuzlarında taşınan bir idol, genç kızların kalbinde yer eden bir romantik kahramandır. Fakat ne güçlü himayeciler ne sadık dostlar ne de ün, onu kaderin amansız darbelerinden koruyamaz — sürgünler, düellolar, yoksulluk... Ta ki bir gün, hayatını aydınlatacak ve ruhunun sarsılmaz kaderi olacak o tek ve eşsiz kadını bulana dek...",
-    "date": "20250919",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
     "title": "Demon Slayer: Sonsuzluk Kalesi",
     "link": "https://www.paribucineverse.com/anime-filmleri/demon-slayer-sonsuzluk-kalesi-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~04e91323-5f4a-4fed-9854-e7dcd5e2e6ea",
@@ -273,7 +263,7 @@
     "title": "Buz Devri",
     "link": "https://www.paribucineverse.com/animasyon-filmleri/buz-devri-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~ae35093e-1719-40fd-bead-96a91ecb1ef8",
-    "trailer": "Fragman bağlantısı yok",
+    "trailer": "https://cdn.marsgate.com.tr/13024",
     "genre": "Animasyon",
     "summary": "Buzul Çağı yaklaşırken soğuklar etkisini iyice arttırmıştır. Tüm hayvanlar hayatta kalmak için bir yol bulmaya ve yaşadıkları yerleri terk etmeye başlar. Huysuz ama sevecen mamut Manfred ya da dostlarının söylediği gibi Manny, miskin tembel hayvanı Sid ve kılıç dişli kaplan Diego’nun yolları bu sırada kesişir. Birbirinden çok farklı olan bu hayvanlar, hem tesadüfen karşılarına çıkan bebeği insanlara götürmek, hem de hayatta kalmak için anlaşmak zorundadır.",
     "date": "20250704",
@@ -290,6 +280,16 @@
     "kaynak": "Vizyondaki Film"
   },
   {
+    "title": "Büyük Macera 2: Sürpriz Misafir",
+    "link": "https://www.paribucineverse.com/animasyon-filmleri/buyuk-macera-2-surpriz-misafir-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~0989334b-5f12-4193-a24d-8c6d6b12d884",
+    "trailer": "https://cdn.marsgate.com.tr/12302",
+    "genre": "Animasyon",
+    "summary": "Mic Mic, tavşan Oscar, panda ve leylek Karl ile birlikte, küçük bir ayı yavrusunu uzaklardaki bir ormanda ailesine teslim etmek için sürprizlerle dolu bir yolculuğa çıkarlar.",
+    "date": "20240927",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
     "title": "Dövüş Efsanesi",
     "date": "20251017",
     "link": "https://www.paribucineverse.com/dram-filmleri/dovus-efsanesi-filmi-izle",
@@ -297,6 +297,36 @@
     "trailer": "https://cdn.marsgate.com.tr/13126",
     "genre": "Dram",
     "summary": "İki kez UFC ağır sıklet turnuva şampiyonu ve World Vale Tudo Şampiyonu olan Mark Kerr, spor camiasında bir ikon olarak görülür. Kısa sürede kariyeri fırlama yaparken kişisel hayatında eşi ile olan inişli çıkışlı olan ilişkisi ve güreşçi olmanın getirdiği fiziksel zorluklarla hayatını bir arada tutmaya çalışan Kerr’in, zirvedeki yerini korumak için birçok şeyden fedakarlık etmesi gerekir.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Buz Devri 2: Erime Başlıyor",
+    "date": "20251017",
+    "link": "https://www.paribucineverse.com/animasyon-filmleri/buz-devri-2-erime-basliyor-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~6ccadcfb-8924-4d12-890e-9426fb2c95a5",
+    "trailer": "https://cdn.marsgate.com.tr/13134",
+    "genre": "Animasyon",
+    "summary": "Mamut Manny, tembel hayvan Sid ve kılıç dişli kaplan Diego, macera dolu yolculuklarının ardından Buz Devri’nin sona ermeye başladığını fark eder. Hayatta kalmak için diğer hayvanlara katılarak yüksek yerlere doğru göç etmek zorunda kalan üç arkadaş, bu yolculukları esnasında Manny’nin aslında son kalan mamut olmadığını öğrenirler.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Mevlana Mest-i Aşk",
+    "date": "20251017",
+    "link": "https://www.paribucineverse.com/tarihi-filmleri/mevlana-mest-i-ask-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~c4699ad2-d46f-4364-aa08-f30e98afa087",
+    "trailer": "https://cdn.marsgate.com.tr/13135",
+    "genre": "Tarihi",
+    "summary": "Mevlana’nın yakın dostu/gönül yoldaşı Şems-i Tebrizi’nin, geride hiçbir ipucu bırakmadan esrarengiz biçimde kayıplara karışması, başta Mevlana olmak üzere yakın çevresini oluşturan insanlarda yoğun bir endişeye yol açar. Talihsiz bir kaza mı gelmiştir Şems’in başına? Arada bir yaptığı gibi inzivaya mı çekmiştir kendini? Veya en kötüsü -sevenleri kadar hasımları da çok olduğundan- bir cinayete mi kurban gitmiştir?",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "O da Bir Şey mi",
+    "date": "20251017",
+    "link": "https://www.paribucineverse.com/dram-filmleri/o-da-bir-sey-mi-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~a1c91cbe-e405-4f41-8f68-61ca338aa747",
+    "trailer": "https://cdn.marsgate.com.tr/13136",
+    "genre": "Dram",
+    "summary": "Söke film festivalinin konuklarından İstanbullu ünlü yönetmen Levent, kaldığı otelde kat görevlisi olarak çalışan Aliye’den bütünüyle habersizdir. Oysa kendine yeni bir hayat hikâyesi edinmeye çalışan Aliye, Levent’i ve filmlerini çok iyi tanımaktadır. Aliye’nin çetrefilli hikâyesi, birbirinden tamamen farklı hayatlara sahip bu iki uzak insanı bir araya getirir. Şimdi gerçek ile kurgu arasında bir seçim yapmak zorundadırlar.",
     "kaynak": "Gelecek Film"
   },
   {
@@ -320,36 +350,6 @@
     "kaynak": "Gelecek Film"
   },
   {
-    "title": "Buz Devri 2: Erime Başlıyor",
-    "date": "20251017",
-    "link": "https://www.paribucineverse.com/animasyon-filmleri/buz-devri-2-erime-basliyor-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~6ccadcfb-8924-4d12-890e-9426fb2c95a5",
-    "trailer": "https://cdn.marsgate.com.tr/13134",
-    "genre": "Animasyon",
-    "summary": "Mamut Manny, tembel hayvan Sid ve kılıç dişli kaplan Diego, macera dolu yolculuklarının ardından Buz Devri’nin sona ermeye başladığını fark eder. Hayatta kalmak için diğer hayvanlara katılarak yüksek yerlere doğru göç etmek zorunda kalan üç arkadaş, bu yolculukları esnasında Manny’nin aslında son kalan mamut olmadığını öğrenirler.",
-    "kaynak": "Gelecek Film"
-  },
-  {
-    "title": "O da Bir Şey mi",
-    "date": "20251017",
-    "link": "https://www.paribucineverse.com/dram-filmleri/o-da-bir-sey-mi-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~a1c91cbe-e405-4f41-8f68-61ca338aa747",
-    "trailer": "https://cdn.marsgate.com.tr/13136",
-    "genre": "Dram",
-    "summary": "Söke film festivalinin konuklarından İstanbullu ünlü yönetmen Levent, kaldığı otelde kat görevlisi olarak çalışan Aliye’den bütünüyle habersizdir. Oysa kendine yeni bir hayat hikâyesi edinmeye çalışan Aliye, Levent’i ve filmlerini çok iyi tanımaktadır. Aliye’nin çetrefilli hikâyesi, birbirinden tamamen farklı hayatlara sahip bu iki uzak insanı bir araya getirir. Şimdi gerçek ile kurgu arasında bir seçim yapmak zorundadırlar.",
-    "kaynak": "Gelecek Film"
-  },
-  {
-    "title": "Mevlana Mest-i Aşk",
-    "date": "20251017",
-    "link": "https://www.paribucineverse.com/tarihi-filmleri/mevlana-mest-i-ask-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~c4699ad2-d46f-4364-aa08-f30e98afa087",
-    "trailer": "https://cdn.marsgate.com.tr/13135",
-    "genre": "Tarihi",
-    "summary": "Mevlana’nın yakın dostu/gönül yoldaşı Şems-i Tebrizi’nin, geride hiçbir ipucu bırakmadan esrarengiz biçimde kayıplara karışması, başta Mevlana olmak üzere yakın çevresini oluşturan insanlarda yoğun bir endişeye yol açar. Talihsiz bir kaza mı gelmiştir Şems’in başına? Arada bir yaptığı gibi inzivaya mı çekmiştir kendini? Veya en kötüsü -sevenleri kadar hasımları da çok olduğundan- bir cinayete mi kurban gitmiştir?",
-    "kaynak": "Gelecek Film"
-  },
-  {
     "title": "Senden Kalan",
     "date": "20251017",
     "link": "https://www.paribucineverse.com/dram-filmleri/senden-kalan-filmi-izle",
@@ -363,7 +363,7 @@
     "title": "Kafirun",
     "date": "20251017",
     "link": "https://www.paribucineverse.com/korku-filmleri/kafirun-filmi-izle",
-    "bilet_link": null,
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~a2bea2dd-be8e-46ec-96cb-7ce0c4614ee2",
     "trailer": "https://cdn.marsgate.com.tr/13164",
     "genre": "Korku",
     "summary": "Hasta annesi ve kız kardeşiyle yaşayan Ahmet, peşini bırakmayan kabuslar ve görünmeyen bir varlığın aklını karıştıran oyunlarıyla bir labirentin içine sürüklenir. Varlık, onu her adımda daha da derinlere çekerken, Ahmet her geçen gün içine kapanır ve gerçeklik ile korkularının sınırları bulanıklaşır. Zamanla her şey, içinden çıkılamaz bir kördüğüm haline gelir. Ahmet, ailesini korumak ve bu laneti çözmek için en büyük korkularıyla yüzleşmek zorunda kalır; bu yüzleşme, onun için bir sonun başlangıcı olacaktır.",
