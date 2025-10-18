@@ -30,6 +30,16 @@
     "kaynak": "Vizyondaki Film"
   },
   {
+    "title": "Siyah Telefon 2",
+    "link": "https://www.paribucineverse.com/korku-filmleri/siyah-telefon-2-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~114c81cd-4d75-4ad7-b14e-62f8981af968",
+    "trailer": "https://cdn.marsgate.com.tr/13120",
+    "genre": "Korku",
+    "summary": "17 yaşında olan Fin, esaretten sonraki hayatıyla mücadele ederken, 15 yaşındaki Gwen rüyalarında siyah telefondan çağrılar almaya ve Alpine Lake adlı bir kış kampında takip edilen üç oğlanla ilgili rahatsız edici görüntüler görmeye başlar. Hem kendisi hem de abisi için bu gizemi çözmeye ve işkenceye son vermeye kararlı olan Gwen, Fin'i bir kış fırtınasında kampa gitmeye ikna eder. Orada, The Grabber ile kendi ailelerinin geçmişi arasında sarsıcı bir bağlantı keşfederler ve ölümden sonra daha da güçlenen bir katille yüzleşmek zorunda kalırlar.",
+    "date": "20251017",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
     "title": "O da Bir Şey mi",
     "link": "https://www.paribucineverse.com/dram-filmleri/o-da-bir-sey-mi-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~a1c91cbe-e405-4f41-8f68-61ca338aa747",
@@ -46,16 +56,6 @@
     "trailer": "https://cdn.marsgate.com.tr/13169",
     "genre": "Korku",
     "summary": "Ekvador’un ücra bir bölgesinde yaşayan bir kadın, oğlu açıklanamayan bir şekilde hastalandığında onun doğaüstü bir güç tarafından ele geçirildiğini fark eder. Gerçeğe ulaşmak için yıllardır karşı karşıya geldiği bir yerli şamanla iş birliği yapmak zorunda kalır. Artık modern dualar ile şaman ayinleri yan yana gelir ama bazı varlıklar, ne dua ile ne de ritüelle geri gönderilebilir.",
-    "date": "20251017",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
-    "title": "Siyah Telefon 2",
-    "link": "https://www.paribucineverse.com/korku-filmleri/siyah-telefon-2-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~114c81cd-4d75-4ad7-b14e-62f8981af968",
-    "trailer": "https://cdn.marsgate.com.tr/13120",
-    "genre": "Korku",
-    "summary": "17 yaşında olan Fin, esaretten sonraki hayatıyla mücadele ederken, 15 yaşındaki Gwen rüyalarında siyah telefondan çağrılar almaya ve Alpine Lake adlı bir kış kampında takip edilen üç oğlanla ilgili rahatsız edici görüntüler görmeye başlar. Hem kendisi hem de abisi için bu gizemi çözmeye ve işkenceye son vermeye kararlı olan Gwen, Fin'i bir kış fırtınasında kampa gitmeye ikna eder. Orada, The Grabber ile kendi ailelerinin geçmişi arasında sarsıcı bir bağlantı keşfederler ve ölümden sonra daha da güçlenen bir katille yüzleşmek zorunda kalırlar.",
     "date": "20251017",
     "kaynak": "Vizyondaki Film"
   },
@@ -140,22 +140,22 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Cesur Kirpi",
-    "link": "https://www.paribucineverse.com/animasyon-filmleri/cesur-kirpi-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~0236e7c9-8734-4c2c-a578-165f644af02e",
-    "trailer": "https://cdn.marsgate.com.tr/13075",
-    "genre": "Animasyon",
-    "summary": "Hayalperest Kirpi Holly, büyük bir tavşan ailesinin parçası olmanın hayalini kurar. Bir gün komik bir tesadüf sonucu, komşusu Walter hafızasını kaybeder. Holly hemen bir macera uydurur: Artık Walter onun babasıdır! Ama Walter kendini bir çizgi roman şövalyesi sanınca, hayal ettikleri serüven çılgınca bir yolculuğa dönüşür. Gerçek aile olmanın yolu, yalanlardan değil, dostluk ve sevgiyle atılan adımlardan geçer.",
-    "date": "20251003",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
     "title": "Savaş Üstüne Savaş",
     "link": "https://www.paribucineverse.com/gerilim-filmleri/savas-ustune-savas-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~78e6dcdd-99e6-4336-b99c-df984e1cc82e",
     "trailer": "https://cdn.marsgate.com.tr/13123",
     "genre": "Gerilim",
     "summary": "Kötü düşmanları 16 yıl sonra yeniden ortaya çıkınca, bir grup eski devrimci içlerinden birinin kızını kurtarmak için yeniden bir araya gelir.",
+    "date": "20251003",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Cesur Kirpi",
+    "link": "https://www.paribucineverse.com/animasyon-filmleri/cesur-kirpi-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~0236e7c9-8734-4c2c-a578-165f644af02e",
+    "trailer": "https://cdn.marsgate.com.tr/13075",
+    "genre": "Animasyon",
+    "summary": "Hayalperest Kirpi Holly, büyük bir tavşan ailesinin parçası olmanın hayalini kurar. Bir gün komik bir tesadüf sonucu, komşusu Walter hafızasını kaybeder. Holly hemen bir macera uydurur: Artık Walter onun babasıdır! Ama Walter kendini bir çizgi roman şövalyesi sanınca, hayal ettikleri serüven çılgınca bir yolculuğa dönüşür. Gerçek aile olmanın yolu, yalanlardan değil, dostluk ve sevgiyle atılan adımlardan geçer.",
     "date": "20251003",
     "kaynak": "Vizyondaki Film"
   },
@@ -268,6 +268,16 @@
     "summary": "F1 filmi, Formula 1 takımı APXGP'ye ve onun çaylak sürücüsüne yol göstermek adına emeklilikten geri dönen eski bir yarış pilotunun hikâyesini anlatıyor.",
     "date": "20250627",
     "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "LOL Worlds25 Finalleri",
+    "date": "20251109",
+    "link": "https://www.paribucineverse.com/e-spor-filmleri/lol-worlds25-finalleri-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~b6fc7ef0-90c4-4ef4-8555-930aa58f1e39",
+    "trailer": "https://cdn.marsgate.com.tr/13172",
+    "genre": "E-Spor",
+    "summary": "2025 League of Legends Dünya Şampiyonası Finali sinemalara geliyor! Dünyanın dört bir yanından 17 takım, Dünya Şampiyonu unvanını kazanma şansı için yarışıyor. Oyunun sınırlarını zorlayan takımlar, nefes kesici hamleler ve mükemmel oynanan şampiyonlarla dolu destansı bir etkinliğe hazır ol. Bu aksiyonu ve heyecanı büyük ekranda, senin gibi taraftarlarla birlikte yaşa.",
+    "kaynak": "Gelecek Film"
   },
   {
     "title": "Derun",
@@ -437,16 +447,6 @@
     "trailer": "https://cdn.marsgate.com.tr/13146",
     "genre": "Gerilim",
     "summary": "Film, klanı tarafından dışlanan genç bir Predator'ın, Thia ile beklenmedik bir ittifak kururak en büyük rakibinin karşısına çıkmasını konu ediniyor.",
-    "kaynak": "Gelecek Film"
-  },
-  {
-    "title": "LOL Worlds25 Finalleri",
-    "date": "20251109",
-    "link": "https://www.paribucineverse.com/e-spor-filmleri/lol-worlds25-finalleri-filmi-izle",
-    "bilet_link": null,
-    "trailer": "Fragman bağlantısı yok",
-    "genre": "E-Spor",
-    "summary": "2025 League of Legends Dünya Şampiyonası Finali sinemalara geliyor! Dünyanın dört bir yanından 17 takım, Dünya Şampiyonu unvanını kazanma şansı için yarışıyor. Oyunun sınırlarını zorlayan takımlar, nefes kesici hamleler ve mükemmel oynanan şampiyonlarla dolu destansı bir etkinliğe hazır ol. Bu aksiyonu ve heyecanı büyük ekranda, senin gibi taraftarlarla birlikte yaşa.",
     "kaynak": "Gelecek Film"
   },
   {
