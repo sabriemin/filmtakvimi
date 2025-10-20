@@ -60,22 +60,22 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Kafirun",
-    "link": "https://www.paribucineverse.com/korku-filmleri/kafirun-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~a2bea2dd-be8e-46ec-96cb-7ce0c4614ee2",
-    "trailer": "https://cdn.marsgate.com.tr/13164",
-    "genre": "Korku",
-    "summary": "Hasta annesi ve kız kardeşiyle yaşayan Ahmet, peşini bırakmayan kabuslar ve görünmeyen bir varlığın aklını karıştıran oyunlarıyla bir labirentin içine sürüklenir. Varlık, onu her adımda daha da derinlere çekerken, Ahmet her geçen gün içine kapanır ve gerçeklik ile korkularının sınırları bulanıklaşır. Zamanla her şey, içinden çıkılamaz bir kördüğüm haline gelir. Ahmet, ailesini korumak ve bu laneti çözmek için en büyük korkularıyla yüzleşmek zorunda kalır; bu yüzleşme, onun için bir sonun başlangıcı olacaktır.",
-    "date": "20251017",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
     "title": "Senden Kalan",
     "link": "https://www.paribucineverse.com/dram-filmleri/senden-kalan-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~8edd10af-93f0-433c-aefd-81c0129604fe",
     "trailer": "https://cdn.marsgate.com.tr/13157",
     "genre": "Dram",
     "summary": "Film, podyumların en parlak yıldızlarından Bahar’ın sahnede aniden bayılmasıyla başlayan bir hikayeyi anlatıyor. Hastanede tanıştığı Ferhat sayesinde Bahar, kaybettiği umudu ve hayatın gerçek anlamını yeniden keşfeder; aşkı, yeni başlangıçları ve sahte parıltıların ardındaki gerçeği öğrenir.",
+    "date": "20251017",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Kafirun",
+    "link": "https://www.paribucineverse.com/korku-filmleri/kafirun-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~a2bea2dd-be8e-46ec-96cb-7ce0c4614ee2",
+    "trailer": "https://cdn.marsgate.com.tr/13164",
+    "genre": "Korku",
+    "summary": "Hasta annesi ve kız kardeşiyle yaşayan Ahmet, peşini bırakmayan kabuslar ve görünmeyen bir varlığın aklını karıştıran oyunlarıyla bir labirentin içine sürüklenir. Varlık, onu her adımda daha da derinlere çekerken, Ahmet her geçen gün içine kapanır ve gerçeklik ile korkularının sınırları bulanıklaşır. Zamanla her şey, içinden çıkılamaz bir kördüğüm haline gelir. Ahmet, ailesini korumak ve bu laneti çözmek için en büyük korkularıyla yüzleşmek zorunda kalır; bu yüzleşme, onun için bir sonun başlangıcı olacaktır.",
     "date": "20251017",
     "kaynak": "Vizyondaki Film"
   },
@@ -317,6 +317,16 @@
     "trailer": "https://cdn.marsgate.com.tr/13170",
     "genre": "Fantastik",
     "summary": "Gore Verbinski'nin yönettiği Karayip Korsanları: Siyah İnci'nin Laneti, efsanevi kaptan Jack Sparrow ile demirci Will Turner'ın maceralarını anlatıyor.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Kutup Köpekleri 3",
+    "date": "20251024",
+    "link": "https://www.paribucineverse.com/animasyon-filmleri/kutup-kopekleri-3-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn.marsgate.com.tr/13174",
+    "genre": "Animasyon",
+    "summary": "Buzlarla kaplı Taigasville kasabasında yaşayan yaramaz mors Otto, gizemli bir kitabı yanlışlıkla açınca kendini rüya dolu, fantastik bir dünyada bulur! Yanında her zamanki gibi akıllı ve cesur Jade, eğlenceli PB ve hızlı Swifty vardır. Bu dostlar, karlar altındaki büyülü sırrı çözmek için birlikte bir yolculuğa çıkar. Eve dönebilmek için Otto’nun dostluğun gücüne ve kalbinin sıcaklığına inanması gerekir.",
     "kaynak": "Gelecek Film"
   },
   {
