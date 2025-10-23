@@ -30,6 +30,16 @@
     "kaynak": "Vizyondaki Film"
   },
   {
+    "title": "Siyah Telefon 2",
+    "link": "https://www.paribucineverse.com/korku-filmleri/siyah-telefon-2-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~114c81cd-4d75-4ad7-b14e-62f8981af968",
+    "trailer": "https://cdn.marsgate.com.tr/13120",
+    "genre": "Korku",
+    "summary": "17 yaşında olan Fin, esaretten sonraki hayatıyla mücadele ederken, 15 yaşındaki Gwen rüyalarında siyah telefondan çağrılar almaya ve Alpine Lake adlı bir kış kampında takip edilen üç oğlanla ilgili rahatsız edici görüntüler görmeye başlar. Hem kendisi hem de abisi için bu gizemi çözmeye ve işkenceye son vermeye kararlı olan Gwen, Fin'i bir kış fırtınasında kampa gitmeye ikna eder. Orada, The Grabber ile kendi ailelerinin geçmişi arasında sarsıcı bir bağlantı keşfederler ve ölümden sonra daha da güçlenen bir katille yüzleşmek zorunda kalırlar.",
+    "date": "20251017",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
     "title": "O da Bir Şey mi",
     "link": "https://www.paribucineverse.com/dram-filmleri/o-da-bir-sey-mi-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~a1c91cbe-e405-4f41-8f68-61ca338aa747",
@@ -46,16 +56,6 @@
     "trailer": "https://cdn.marsgate.com.tr/13169",
     "genre": "Korku",
     "summary": "Ekvador’un ücra bir bölgesinde yaşayan bir kadın, oğlu açıklanamayan bir şekilde hastalandığında onun doğaüstü bir güç tarafından ele geçirildiğini fark eder. Gerçeğe ulaşmak için yıllardır karşı karşıya geldiği bir yerli şamanla iş birliği yapmak zorunda kalır. Artık modern dualar ile şaman ayinleri yan yana gelir ama bazı varlıklar, ne dua ile ne de ritüelle geri gönderilebilir.",
-    "date": "20251017",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
-    "title": "Siyah Telefon 2",
-    "link": "https://www.paribucineverse.com/korku-filmleri/siyah-telefon-2-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~114c81cd-4d75-4ad7-b14e-62f8981af968",
-    "trailer": "https://cdn.marsgate.com.tr/13120",
-    "genre": "Korku",
-    "summary": "17 yaşında olan Fin, esaretten sonraki hayatıyla mücadele ederken, 15 yaşındaki Gwen rüyalarında siyah telefondan çağrılar almaya ve Alpine Lake adlı bir kış kampında takip edilen üç oğlanla ilgili rahatsız edici görüntüler görmeye başlar. Hem kendisi hem de abisi için bu gizemi çözmeye ve işkenceye son vermeye kararlı olan Gwen, Fin'i bir kış fırtınasında kampa gitmeye ikna eder. Orada, The Grabber ile kendi ailelerinin geçmişi arasında sarsıcı bir bağlantı keşfederler ve ölümden sonra daha da güçlenen bir katille yüzleşmek zorunda kalırlar.",
     "date": "20251017",
     "kaynak": "Vizyondaki Film"
   },
@@ -190,22 +190,22 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Tafiti: Çölde Macera",
-    "link": "https://www.paribucineverse.com/animasyon-filmleri/tafiti-colde-macera-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~8dee4da5-179a-410c-82a1-1911f225986d",
-    "trailer": "https://cdn.marsgate.com.tr/13127",
-    "genre": "Animasyon",
-    "summary": "Genç bir mirket olan Tafiti, başlangıçta Bristles ile arkadaşlık kurmayı reddeder. Büyükbabası bir yılan tarafından ısırıldığında, Tafiti tedavisi için çiçek aramaya çıkar. Bristles, maceraların arkadaşlarla birlikte daha güzel olduğunu ona kanıtlamak ister.",
-    "date": "20250926",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
     "title": "Oflu Hoca 5",
     "link": "https://www.paribucineverse.com/komedi-filmleri/oflu-hoca-5-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~b141f223-4abe-4e37-86b1-0cf8d19225d5",
     "trailer": "https://cdn.marsgate.com.tr/13113",
     "genre": "Komedi",
     "summary": "Karısı vefat ettiğinden beri bekar hayatı yaşayan Oflu Hoca'nın haline üzülen dostları hocayı evlendirmeye karar verirler. Fakat Oflu Hoca'ya uygun bir eş bulmak için yaptıkları her deneme ayrı bir maceraya dönüşür.",
+    "date": "20250926",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Tafiti: Çölde Macera",
+    "link": "https://www.paribucineverse.com/animasyon-filmleri/tafiti-colde-macera-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~8dee4da5-179a-410c-82a1-1911f225986d",
+    "trailer": "https://cdn.marsgate.com.tr/13127",
+    "genre": "Animasyon",
+    "summary": "Genç bir mirket olan Tafiti, başlangıçta Bristles ile arkadaşlık kurmayı reddeder. Büyükbabası bir yılan tarafından ısırıldığında, Tafiti tedavisi için çiçek aramaya çıkar. Bristles, maceraların arkadaşlarla birlikte daha güzel olduğunu ona kanıtlamak ister.",
     "date": "20250926",
     "kaynak": "Vizyondaki Film"
   },
@@ -270,20 +270,50 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "LOL Worlds25 Finalleri",
-    "date": "20251109",
-    "link": "https://www.paribucineverse.com/e-spor-filmleri/lol-worlds25-finalleri-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~b6fc7ef0-90c4-4ef4-8555-930aa58f1e39",
-    "trailer": "https://cdn.marsgate.com.tr/13172",
-    "genre": "E-Spor",
-    "summary": "2025 League of Legends Dünya Şampiyonası Finali sinemalara geliyor! Dünyanın dört bir yanından 17 takım, Dünya Şampiyonu unvanını kazanma şansı için yarışıyor. Oyunun sınırlarını zorlayan takımlar, nefes kesici hamleler ve mükemmel oynanan şampiyonlarla dolu destansı bir etkinliğe hazır ol. Bu aksiyonu ve heyecanı büyük ekranda, senin gibi taraftarlarla birlikte yaşa.",
+    "title": "Gelin Takımı 2",
+    "date": "20251024",
+    "link": "https://www.paribucineverse.com/komedi-filmleri/gelin-takimi-2-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~30783069-2d9c-4100-91ee-781c964cf957",
+    "trailer": "https://cdn.marsgate.com.tr/13129",
+    "genre": "Komedi",
+    "summary": "Gelin Takımı, bekarlığa veda partisi yapmak için toplanan bir grup arkadaşın hikayesini konu ediyor.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Yapay Zeka",
+    "date": "20251024",
+    "link": "https://www.paribucineverse.com/gerilim-filmleri/yapay-zeka-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~f0397cd2-03c0-4014-9465-1ba861955af2",
+    "trailer": "https://cdn.marsgate.com.tr/13161",
+    "genre": "Gerilim",
+    "summary": "Tatiana de Rosnay’un çok satan Les Fleurs de l’ombre adlı romanından uyarlanan, teknolojinin görünmez gölgeleriyle örülü sarsıcı bir psikolojik gerilim filmi! Bir yazar, ilhamın kuraklaştığı bir dönemde prestijli bir sanatçı konukevi bursu kazanır. Burada, “Dalloway” adlı gelişmiş bir sanal asistanla tanışır — başlarda yalnızca yazma sürecine destek, bir arkadaş gibi görünür. Ancak zamanla, bu yardımsever teknolojik yol arkadaşı, gölgesini bile öteye taşıyacak şekilde hayatına sızar. İzleniyor mu, yoksa yalnızca paranoid bir düşünce mi? Etrafındakilerin uyarıları arttıkça, gerilim yükselir; gerçek mi sanrı mı olduğu belirsizleşir.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Uykucu",
+    "date": "20251029",
+    "link": "https://www.paribucineverse.com/dram-filmleri/uykucu-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~5a0299ff-2402-4f3c-a0a1-60934e2290bd",
+    "trailer": "https://cdn.marsgate.com.tr/13159",
+    "genre": "Dram",
+    "summary": "Ferman, “Masa” adlı gizli örgütün eski ajanları yok eden tetikçisidir. Bir infaz sırasında tanıştığı Saye’ye âşık olur. Onu öldürmek yerine Masa’ya dahil eder ve ikisinin hayatı geri dönülmez biçimde değişir.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Pişmanım Ama",
+    "date": "20251024",
+    "link": "https://www.paribucineverse.com/dram-filmleri/pismanim-ama-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~49f55abb-1b21-4efc-8cd3-eac873a69aa4",
+    "trailer": "https://cdn.marsgate.com.tr/13137",
+    "genre": "Dram",
+    "summary": "Colleen Hoover'ın aynı isimli çok satan kitabından uyarlanan film, yaşanan bir trajedinin içinde sırların olduğunu öğrenen bir ailenin fertlerinin yaşadıkları yas ve öfke sürecinde sevgiyi yeniden bulmaya çalışmalarını anlatıyor.",
     "kaynak": "Gelecek Film"
   },
   {
     "title": "Derun",
     "date": "20251024",
     "link": "https://www.paribucineverse.com/dram-filmleri/derun-filmi-izle",
-    "bilet_link": null,
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~7502126a-9809-40c3-a03e-3e4beae1b9c7",
     "trailer": "https://cdn.marsgate.com.tr/13166",
     "genre": "Dram",
     "summary": "Mevlana Celaleddin Rumi’ nin unutulmaz eseri Mesnevi’nin ilk hikâyesi olan ‘padişah-cariye’ kıssasından esinlenilen filmde, kendini insandan soyutlamış, Karadeniz’de tek başına yaşayan, 40 yıllık bir inzivanın kahramanı Marife’yi bu yalnızlığa hapseden, gençliğinde yaşadığı büyük aşkı ve hayal kırıklığı anlatılıyor.",
@@ -293,27 +323,17 @@
     "title": "Evcil Hayvanlar Yolda",
     "date": "20251024",
     "link": "https://www.paribucineverse.com/animasyon-filmleri/evcil-hayvanlar-yolda-filmi-izle",
-    "bilet_link": null,
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~2de2bbbd-689b-403b-8d20-9ea9338de85f",
     "trailer": "https://cdn.marsgate.com.tr/13142",
     "genre": "Animasyon",
     "summary": "Hayvan haydutlarından oluşan bir çete bir dolandırıcılık işine girişirler. Ancak kendilerini bir tren soygununun ortasında bulurlar. Bu yüksek hızlı trendeki hayvanları kurtarmak, küçük hırsız rakun Falcon ve dürüst polis köpeği Rex'e kalmıştır.",
     "kaynak": "Gelecek Film"
   },
   {
-    "title": "Gelin Takımı 2",
-    "date": "20251024",
-    "link": "https://www.paribucineverse.com/komedi-filmleri/gelin-takimi-2-filmi-izle",
-    "bilet_link": null,
-    "trailer": "https://cdn.marsgate.com.tr/13129",
-    "genre": "Komedi",
-    "summary": "Gelin Takımı, bekarlığa veda partisi yapmak için toplanan bir grup arkadaşın hikayesini konu ediyor.",
-    "kaynak": "Gelecek Film"
-  },
-  {
     "title": "Karayip Korsanları: Siyah İnci'nin Laneti",
     "date": "20251024",
     "link": "https://www.paribucineverse.com/fantastik-filmleri/karayip-korsanlari-siyah-incinin-laneti-filmi-izle",
-    "bilet_link": null,
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~1512a33d-c927-47cc-a0a2-e08e4c133329",
     "trailer": "https://cdn.marsgate.com.tr/13170",
     "genre": "Fantastik",
     "summary": "Gore Verbinski'nin yönettiği Karayip Korsanları: Siyah İnci'nin Laneti, efsanevi kaptan Jack Sparrow ile demirci Will Turner'ın maceralarını anlatıyor.",
@@ -323,7 +343,7 @@
     "title": "Kutup Köpekleri 3",
     "date": "20251024",
     "link": "https://www.paribucineverse.com/animasyon-filmleri/kutup-kopekleri-3-filmi-izle",
-    "bilet_link": null,
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~64da753c-6f0c-4bbc-869b-a5fbbf6496db",
     "trailer": "https://cdn.marsgate.com.tr/13174",
     "genre": "Animasyon",
     "summary": "Buzlarla kaplı Taigasville kasabasında yaşayan yaramaz mors Otto, gizemli bir kitabı yanlışlıkla açınca kendini rüya dolu, fantastik bir dünyada bulur! Yanında her zamanki gibi akıllı ve cesur Jade, eğlenceli PB ve hızlı Swifty vardır. Bu dostlar, karlar altındaki büyülü sırrı çözmek için birlikte bir yolculuğa çıkar. Eve dönebilmek için Otto’nun dostluğun gücüne ve kalbinin sıcaklığına inanması gerekir.",
@@ -333,60 +353,40 @@
     "title": "Öğretmen 2",
     "date": "20251024",
     "link": "https://www.paribucineverse.com/komedi-filmleri/ogretmen-2-filmi-izle",
-    "bilet_link": null,
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~c44ee27e-d2f4-48e4-a5ba-be0290d16a90",
     "trailer": "https://cdn.marsgate.com.tr/13163",
     "genre": "Komedi",
     "summary": "Film, koyu Fenerbahçe taraftarı bir öğretmenin Trabzon'a uyum sürecini anlatırken, Trabzon'un iki köklü ailesi Fındıkdikenler ve Mısırekenler arasındaki rekabeti konu ediniyor.",
     "kaynak": "Gelecek Film"
   },
   {
-    "title": "Pişmanım Ama",
-    "date": "20251024",
-    "link": "https://www.paribucineverse.com/dram-filmleri/pismanim-ama-filmi-izle",
-    "bilet_link": null,
-    "trailer": "https://cdn.marsgate.com.tr/13137",
-    "genre": "Dram",
-    "summary": "Colleen Hoover'ın aynı isimli çok satan kitabından uyarlanan film, yaşanan bir trajedinin içinde sırların olduğunu öğrenen bir ailenin fertlerinin yaşadıkları yas ve öfke sürecinde sevgiyi yeniden bulmaya çalışmalarını anlatıyor.",
-    "kaynak": "Gelecek Film"
-  },
-  {
     "title": "Springsteen: Hiçlikten Kurtar Beni",
     "date": "20251024",
     "link": "https://www.paribucineverse.com/biyografi-filmleri/springsteen-hiclikten-kurtar-beni-filmi-izle",
-    "bilet_link": null,
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~4e8587dd-0ec9-4d7f-8380-ee0248d2b44b",
     "trailer": "https://cdn.marsgate.com.tr/13138",
     "genre": "Biyografi",
     "summary": "Springsteen: Hiçlikten Kurtar Beni, Bruce Springsteen’in henüz dünya çapında bir süperstar olmadan önce, başarı baskısıyla geçmişinin hayaletleri arasında sıkışıp kaldığı dönemi anlatıyor. Albüm, Springsteen’in New Jersey’deki yatak odasında bir 4 kanallı kayıt cihazıyla kaydedildi ve onun kariyerinde önemli bir kırılma anına işaret ediyor. Kayıtlarda, inanacak bir neden arayan kayıp ruhların doldurduğu, ham ve melankolik bir akustik atmosfer hâkim.",
     "kaynak": "Gelecek Film"
   },
   {
-    "title": "Yapay Zeka",
-    "date": "20251024",
-    "link": "https://www.paribucineverse.com/gerilim-filmleri/yapay-zeka-filmi-izle",
-    "bilet_link": null,
-    "trailer": "https://cdn.marsgate.com.tr/13161",
-    "genre": "Gerilim",
-    "summary": "Tatiana de Rosnay’un çok satan Les Fleurs de l’ombre adlı romanından uyarlanan, teknolojinin görünmez gölgeleriyle örülü sarsıcı bir psikolojik gerilim filmi! Bir yazar, ilhamın kuraklaştığı bir dönemde prestijli bir sanatçı konukevi bursu kazanır. Burada, “Dalloway” adlı gelişmiş bir sanal asistanla tanışır — başlarda yalnızca yazma sürecine destek, bir arkadaş gibi görünür. Ancak zamanla, bu yardımsever teknolojik yol arkadaşı, gölgesini bile öteye taşıyacak şekilde hayatına sızar. İzleniyor mu, yoksa yalnızca paranoid bir düşünce mi? Etrafındakilerin uyarıları arttıkça, gerilim yükselir; gerçek mi sanrı mı olduğu belirsizleşir.",
-    "kaynak": "Gelecek Film"
-  },
-  {
     "title": "Pırıl: Saklı Robotlar",
     "date": "20251029",
     "link": "https://www.paribucineverse.com/animasyon-filmleri/piril-sakli-robotlar-filmi-izle",
-    "bilet_link": null,
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~ea770873-dd57-4b81-a65c-9ac36ce00ed0",
     "trailer": "https://cdn.marsgate.com.tr/13144",
     "genre": "Animasyon",
     "summary": "Filmde, Pırıl ve arkadaşları bu kez robotların ardındaki sırrı çözmek ve yapay zekanın tehlikeli planlarını durdurmak için matematiğin altın çağlarına uzanan bir yolculuğa çıkıyor.",
     "kaynak": "Gelecek Film"
   },
   {
-    "title": "Uykucu",
-    "date": "20251029",
-    "link": "https://www.paribucineverse.com/dram-filmleri/uykucu-filmi-izle",
-    "bilet_link": null,
-    "trailer": "https://cdn.marsgate.com.tr/13159",
-    "genre": "Dram",
-    "summary": "Ferman, “Masa” adlı gizli örgütün eski ajanları yok eden tetikçisidir. Bir infaz sırasında tanıştığı Saye’ye âşık olur. Onu öldürmek yerine Masa’ya dahil eder ve ikisinin hayatı geri dönülmez biçimde değişir.",
+    "title": "LOL Worlds25 Finalleri",
+    "date": "20251109",
+    "link": "https://www.paribucineverse.com/e-spor-filmleri/lol-worlds25-finalleri-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~b6fc7ef0-90c4-4ef4-8555-930aa58f1e39",
+    "trailer": "https://cdn.marsgate.com.tr/13172",
+    "genre": "E-Spor",
+    "summary": "2025 League of Legends Dünya Şampiyonası Finali sinemalara geliyor! Dünyanın dört bir yanından 17 takım, Dünya Şampiyonu unvanını kazanma şansı için yarışıyor. Oyunun sınırlarını zorlayan takımlar, nefes kesici hamleler ve mükemmel oynanan şampiyonlarla dolu destansı bir etkinliğe hazır ol. Bu aksiyonu ve heyecanı büyük ekranda, senin gibi taraftarlarla birlikte yaşa.",
     "kaynak": "Gelecek Film"
   },
   {
@@ -450,6 +450,16 @@
     "kaynak": "Gelecek Film"
   },
   {
+    "title": "Hiçbir Şey Normal Değil",
+    "date": "20251106",
+    "link": "https://www.paribucineverse.com/komedi-filmleri/hicbir-sey-normal-degil-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn.marsgate.com.tr/13180",
+    "genre": "Komedi",
+    "summary": "Hiçbir Şey Normal Değil, şaşalı günlerini geride bırakmış ve bugün artık kaderine terk edilmiş durumda olan 1990’ların en popüler tatil mekanlarından, siyasetçilerin uğrak noktası olmuş Naturland'ın absürt hikayesini anlatıyor.",
+    "kaynak": "Gelecek Film"
+  },
+  {
     "title": "Bi Umut",
     "date": "20251107",
     "link": "https://www.paribucineverse.com/aile-filmleri/bi-umut-filmi-izle",
@@ -464,7 +474,7 @@
     "date": "20251107",
     "link": "https://www.paribucineverse.com/animasyon-filmleri/canavarciklar-filmi-izle",
     "bilet_link": null,
-    "trailer": "Fragman bağlantısı yok",
+    "trailer": "https://cdn.marsgate.com.tr/13178",
     "genre": "Animasyon",
     "summary": "Stitch Head'i takip edin, bir kalede Çılgın Profesör tarafından uyandırılan küçük bir yaratık, profesörün diğer yaratıklarını Grubbers Nubbin kasabasının sakinlerinden korumak için.",
     "kaynak": "Gelecek Film"
@@ -487,6 +497,16 @@
     "trailer": "https://cdn.marsgate.com.tr/13146",
     "genre": "Gerilim",
     "summary": "Film, klanı tarafından dışlanan genç bir Predator'ın, Thia ile beklenmedik bir ittifak kururak en büyük rakibinin karşısına çıkmasını konu ediniyor.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Sahibinden Rahmet",
+    "date": "20251107",
+    "link": "https://www.paribucineverse.com/dram-filmleri/sahibinden-rahmet-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn.marsgate.com.tr/13179",
+    "genre": "Dram",
+    "summary": "Film, yoksul bir köye aniden gökten meteor parçaları düşmesiyle sonrası, zengin olma peşine düşen İrfan’ın açgözlülük ve iktidar sarhoşluğu içinde, elindeki asıl kıymetli şeyleri kaybetmekte olduğunu göremez hâle gelmesini konu alıyor.",
     "kaynak": "Gelecek Film"
   },
   {
