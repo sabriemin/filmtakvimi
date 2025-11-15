@@ -23,7 +23,7 @@
     "title": "Ne Var Bunda Yani?",
     "link": "https://www.paribucineverse.com/komedi-filmleri/ne-var-bunda-yani-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~c32a946b-5fb5-46a9-bac3-7ea52425ec09",
-    "trailer": "Fragman bağlantısı yok",
+    "trailer": "https://cdn.marsgate.com.tr/13189",
     "genre": "Komedi",
     "summary": "Kayıp aşkının anılarıyla boğuşan emekli bir muhasebeci, beklenmedik bir şekilde eski sevgilisiyle yeniden bir araya gelir. Yaşlılıklarında yolları tekrar kesiştiğinde, uzun süredir gömülü olan duygular yeniden yüzeye çıkar ve hayatlarını beklenmedik şekillerde değiştirir.",
     "date": "20251114",
@@ -190,11 +190,21 @@
     "kaynak": "Vizyondaki Film"
   },
   {
+    "title": "Bir Şair",
+    "date": "20251121",
+    "link": "https://www.paribucineverse.com/dram-filmleri/bir-sair-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn.marsgate.com.tr/13194",
+    "genre": "Dram",
+    "summary": "Yaşlanan bir şair, yetenekli bir genç olan Yurlady'ye akıl hocalığı yaparak bir amaç bulur, ancak onu şiir dünyasına sokmak pek akıllıca olmayabilir. Kendi şiirsel arayışları hiçbir sonuca varmamış ve onu klişeleşmiş, tanınmayan bir yazar haline getirmiştir.",
+    "kaynak": "Gelecek Film"
+  },
+  {
     "title": "Cin Mezarı",
     "date": "20251121",
     "link": "https://www.paribucineverse.com/korku-filmleri/cin-mezari-filmi-izle",
     "bilet_link": null,
-    "trailer": "Fragman bağlantısı yok",
+    "trailer": "https://cdn.marsgate.com.tr/13191",
     "genre": "Korku",
     "summary": "Şehir hayatından sıkılmış annesinin hayal ettiği köy evini almaya karar veren Yusuf başlarına geleceklerden habersiz Annesinin istediği evi bulur. Fakat bu ev bir ailenin sonunu getirir. Lanetli ev, lanetlenmiş insanlar ve kabus dolu gece hiç bitmeyecek.",
     "kaynak": "Gelecek Film"
@@ -214,7 +224,7 @@
     "date": "20251121",
     "link": "https://www.paribucineverse.com/komedi-filmleri/mitoloji-mafyasi-filmi-izle",
     "bilet_link": null,
-    "trailer": "Fragman bağlantısı yok",
+    "trailer": "https://cdn.marsgate.com.tr/13192",
     "genre": "Komedi",
     "summary": "İki beceriksiz hırsız olan Peker ile Ati, çaldıkları antik heykelin içinde binlerce yıldır mahsur kalan Priapos’u yanlışlıkla serbest bırakırlar. Priapos, Ati ve Peker’e kendisini ait olduğu yere götürmeleri karşılığında bir dileklerini gerçekleştireceğini söyler. Priapos’u geri götürmek için yola çıkan ikili kendilerini fantastik bir kovalamacanın içinde bulurlar. Peker ile Ati, bir taraftan dileklerini gerçekleştirmesi için Priapos’u evine götürmeye çalışırken, bir taraftan da Priapos’un peşindeki tarihi eser kaçakçısı Ahu Secimer, onun sağır ve kör iz sürücüleri Poz Recai ve Mono Rıza ve eski bir mafya babası olan Alkapon Kerim ile heykeli ait olduğu müzeye götürmeye kararlı Mavisu'yu atlatmaya çalışmaktadırlar.",
     "kaynak": "Gelecek Film"
@@ -237,6 +247,16 @@
     "trailer": "https://cdn.marsgate.com.tr/13149",
     "genre": "Macera",
     "summary": "Stephen King'in romanından uyarlanan film, distopik bir ABD'de, ihtiyacı olan parayı kazanmak için yarışmacıların 30 gün boyunca katiller tarafından öldürülmeye çalışıldığı bir televizyon programına katılan bir adamın hayatta kalma mücadelesini anlatıyor.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Senden Geriye Kalan",
+    "date": "20251121",
+    "link": "https://www.paribucineverse.com/dram-filmleri/senden-geriye-kalan-filmi-izle",
+    "bilet_link": null,
+    "trailer": "Fragman bağlantısı yok",
+    "genre": "Dram",
+    "summary": "Filistinli bir genç Batı Şeria'daki bir protestoya katıldığında, annesi bu kader anına yol açan umut, cesaret ve yılmaz mücadelenin aile hikâyesini anlatır.",
     "kaynak": "Gelecek Film"
   },
   {
