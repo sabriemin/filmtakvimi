@@ -110,22 +110,22 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Ziyaretçiler: Bölüm 2",
-    "link": "https://www.paribucineverse.com/korku-filmleri/ziyaretciler-bolum-2-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~e25cbd1d-2000-4c05-9c1d-010e59e5e250",
-    "trailer": "https://cdn.marsgate.com.tr/13121",
-    "genre": "Korku",
-    "summary": "Maskeli üç yabancı tarafından saldırıya uğrayan ve erkek arkadaşını kaybeden Maya, şans eseri hayatta kalır. Gözlerini hastanede açan Maya, kurtulduğunu düşünürken, bu üç psikopat onun peşinde, başladıkları işi bitirmeye geliyordur.",
-    "date": "20251031",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
     "title": "Bugonia",
     "link": "https://www.paribucineverse.com/komedi-filmleri/bugonia-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~49d930a2-0a1a-47b8-a538-b0c8b0377de2",
     "trailer": "https://cdn.marsgate.com.tr/13143",
     "genre": "Komedi",
     "summary": "Komplo teorilerine saplantılı iki genç adam, büyük bir şirketin güçlü CEO’sunu kaçırır. Onu, Dünya’yı yok etmeye kararlı bir uzaylı olduğuna inanarak durdurmak isterler.",
+    "date": "20251031",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Ziyaretçiler: Bölüm 2",
+    "link": "https://www.paribucineverse.com/korku-filmleri/ziyaretciler-bolum-2-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~e25cbd1d-2000-4c05-9c1d-010e59e5e250",
+    "trailer": "https://cdn.marsgate.com.tr/13121",
+    "genre": "Korku",
+    "summary": "Maskeli üç yabancı tarafından saldırıya uğrayan ve erkek arkadaşını kaybeden Maya, şans eseri hayatta kalır. Gözlerini hastanede açan Maya, kurtulduğunu düşünürken, bu üç psikopat onun peşinde, başladıkları işi bitirmeye geliyordur.",
     "date": "20251031",
     "kaynak": "Vizyondaki Film"
   },
@@ -270,6 +270,16 @@
     "kaynak": "Gelecek Film"
   },
   {
+    "title": "Yeni Şafak Solarken",
+    "date": "20251121",
+    "link": "https://www.paribucineverse.com/gerilim-filmleri/yeni-safak-solarken-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn.marsgate.com.tr/13197",
+    "genre": "Gerilim",
+    "summary": "Son birkaç yılını hastanelerde geçiren Akın, bu son taburcu oluşundan sonra eski hayatına dönmenin artık mümkün olmadığını anlamaya başlar. Aile evine geri döner ve dışarı çıktığı nadir zamanlarda İstanbul’daki anıtsal dini yapıları gezer, âlimlerin mezarlarında vakit geçirir. Başına gelenleri anlamaya çalışırken ilahi bir güce sığınmak ister ama tüm bu ilahi anıtlar zihninde tekinsiz bir vecd halini tetikler. O gerçek benliğiyle temasını kaybettikçe, zihni başka bir gerçekliğin istilası altında kalır.",
+    "kaynak": "Gelecek Film"
+  },
+  {
     "title": "DJ Ahmet",
     "date": "20251128",
     "link": "https://www.paribucineverse.com/dram-filmleri/dj-ahmet-filmi-izle",
@@ -300,6 +310,16 @@
     "kaynak": "Gelecek Film"
   },
   {
+    "title": "Sonsuza Dek",
+    "date": "20251128",
+    "link": "https://www.paribucineverse.com/komedi-filmleri/sonsuza-dek-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn.marsgate.com.tr/13198",
+    "genre": "Komedi",
+    "summary": "Ruhların sonsuzluğu nerede geçireceklerine karar vermek için bir haftaları vardır. Joan hayatının aşkıyla, genç yaşta ölen ilk aşkı arasında imkansız bir seçimle karşı karşıya kalır.",
+    "kaynak": "Gelecek Film"
+  },
+  {
     "title": "Zootropolis 2",
     "date": "20251128",
     "link": "https://www.paribucineverse.com/animasyon-filmleri/zootropolis-2-filmi-izle",
@@ -307,6 +327,26 @@
     "trailer": "https://cdn.marsgate.com.tr/13150",
     "genre": "Animasyon",
     "summary": "Judy ve Nick, Zootropolis’e gelişiyle şehri altüst eden Gary De’Snake’in ardından büyük bir gizemin peşine düşüyor. Bu sıradışı görevi çözebilmek için şehrin daha önce hiç keşfetmedikleri bölgelerine sızmak ve yepyeni kılıklara bürünmek zorundalar.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Adile Naşit",
+    "date": "20251205",
+    "link": "https://www.paribucineverse.com/dram-filmleri/adile-nasit-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn.marsgate.com.tr/13196",
+    "genre": "Dram",
+    "summary": "Çağan Irmak'ın yönettiği film, Yeşilçam efsanesi Adile Naşit'in hayatının farklı dönemlerini gözler önüne seriyor.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Aşık Veysel",
+    "date": "20251205",
+    "link": "https://www.paribucineverse.com/dram-filmleri/asik-veysel-filmi-izle",
+    "bilet_link": null,
+    "trailer": "Fragman bağlantısı yok",
+    "genre": "Dram",
+    "summary": "",
     "kaynak": "Gelecek Film"
   },
   {
@@ -327,6 +367,16 @@
     "trailer": "https://cdn.marsgate.com.tr/13187",
     "genre": "Anime",
     "summary": "Cadılar Bayramı kalabalığının ortasında, kalabalık Shibuya bölgesinin üzerine aniden bir perde iner ve sayısız sivil içeride mahsur kalır. Sonrasında, Japonya genelindeki on koloni lanet yuvalarına dönüşür.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Bak Postacı Geliyor",
+    "date": "20251212",
+    "link": "https://www.paribucineverse.com/dram-filmleri/bak-postaci-geliyor-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn.marsgate.com.tr/13195",
+    "genre": "Dram",
+    "summary": "Film, 1950’lerin sonunda, küçük bir Ege kasabasında yaşayan posta memuru Osman’ın, imkânsız aşkı Gülizar’a kavuşma çabasını konu ediniyor.",
     "kaynak": "Gelecek Film"
   },
   {
