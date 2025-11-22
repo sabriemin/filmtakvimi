@@ -33,10 +33,10 @@
     "title": "Oğul",
     "link": "https://www.paribucineverse.com/korku-filmleri/ogul-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~4d282708-cea3-4317-86b0-ff0d21d61da9",
-    "trailer": "Fragman bağlantısı yok",
+    "trailer": "https://cdn.marsgate.com.tr/13193",
     "genre": "Korku",
-    "summary": "Sapkın bir tarikattan henüz çocukken kaçan anne, 8 yaşındaki oğlu tarikatın kötü niyetli üyeleri tarafından kaçırılmaya çalışınca geçmişiyle yüzleşmek zorunda kalır. Küçük çocuk kaçırılma teşebbüsünden sonra gizemli bir hastalığa yakalanınca, annesi oğlunu kurtarmak için elinden geleni yapacaktır.",
-    "date": "20220114",
+    "summary": "Roma dönemi Mısır’ındaki uzak bir köy; bir marangoz, karısı ve çocukları doğaüstü güçlerin hedefi hâline geldiğinde ruhani bir savaşa sürüklenir. Joseph, Mary ve genç oğulları İsa yıllardır tehdit altında yaşamış, inançlarına ve geleneklerine sıkı sıkıya tutunmuşlardır. Ancak küçük bir yerleşim yerinde verdikleri kısa bir mola, gizemli bir yabancının genç İsa’yı dindar babasının kurallarını terk etmeye kışkırtmasıyla giderek büyüyen bir kaosu serbest bırakır. Her cazibe çağrısıyla birlikte oğul, yasak bir dünyanın içine çekilirken, dehşete kapılan Joseph, şeytani bir gücün iş başında olduğunu fark eder. Şiddet dolu ve doğaüstü olaylar açıklanamaz biçimde İsa’nın peşini bırakmaz; o da gitgide kabusa dönüşen gelecek vizyonları görmeye başlar. Sonunda, yeni oyun arkadaşının korkunç gerçeğini ve çocuğun asıl adını öğrenir: Şeytan.",
+    "date": "20251121",
     "kaynak": "Vizyondaki Film"
   },
   {
@@ -250,20 +250,20 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Kaçak Fil",
-    "link": "https://www.paribucineverse.com/animasyon-filmleri/kacak-fil-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~1c29eecb-1734-41c3-98b9-08da73f050db",
-    "trailer": "Fragman bağlantısı yok",
+    "title": "Zootropolis 2",
+    "date": "20251128",
+    "link": "https://www.paribucineverse.com/animasyon-filmleri/zootropolis-2-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~0f3ec118-a87c-42fd-8b68-82cea106fc70",
+    "trailer": "https://cdn.marsgate.com.tr/13150",
     "genre": "Animasyon",
-    "summary": "Ödül avcısı bir domuz, kendisini yakalamak istediği özgür ruhlu bir fille birlikte dünyayı dolaşırken bulur.",
-    "date": "20250509",
-    "kaynak": "Vizyondaki Film"
+    "summary": "Judy ve Nick, Zootropolis’e gelişiyle şehri altüst eden Gary De’Snake’in ardından büyük bir gizemin peşine düşüyor. Bu sıradışı görevi çözebilmek için şehrin daha önce hiç keşfetmedikleri bölgelerine sızmak ve yepyeni kılıklara bürünmek zorundalar.",
+    "kaynak": "Gelecek Film"
   },
   {
     "title": "Ayşe",
     "date": "20251128",
     "link": "https://www.paribucineverse.com/dram-filmleri/ayse-filmi-izle",
-    "bilet_link": null,
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~70fe8df6-7e9a-411e-b2b4-4a60cd8d01a5",
     "trailer": "https://cdn.marsgate.com.tr/13202",
     "genre": "Dram",
     "summary": "Ayşe, İstanbul’un sürekli büyüyen ve yüz değiştiren kenar mahallelerinde, Down sendromlu yetişkin kardeşi Rıdvan ile birlikte yaşamaktadır. Babaları, uzun süredir hastanede ölümün eşiğinde beklemektedir. Ayşe, çalıştığı benzin istasyonuna uğrayan uluslararası bir tır şoföründen evlilik teklifi aldığında, kaderiyle hayalleri arasında bir seçim yapmak zorunda kalır.",
@@ -347,16 +347,6 @@
     "trailer": "https://cdn.marsgate.com.tr/13198",
     "genre": "Komedi",
     "summary": "Ruhların sonsuzluğu nerede geçireceklerine karar vermek için bir haftaları vardır. Joan hayatının aşkıyla, genç yaşta ölen ilk aşkı arasında imkansız bir seçimle karşı karşıya kalır.",
-    "kaynak": "Gelecek Film"
-  },
-  {
-    "title": "Zootropolis 2",
-    "date": "20251128",
-    "link": "https://www.paribucineverse.com/animasyon-filmleri/zootropolis-2-filmi-izle",
-    "bilet_link": null,
-    "trailer": "https://cdn.marsgate.com.tr/13150",
-    "genre": "Animasyon",
-    "summary": "Judy ve Nick, Zootropolis’e gelişiyle şehri altüst eden Gary De’Snake’in ardından büyük bir gizemin peşine düşüyor. Bu sıradışı görevi çözebilmek için şehrin daha önce hiç keşfetmedikleri bölgelerine sızmak ve yepyeni kılıklara bürünmek zorundalar.",
     "kaynak": "Gelecek Film"
   },
   {
