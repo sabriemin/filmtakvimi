@@ -20,16 +20,6 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Keeper",
-    "link": "https://www.paribucineverse.com/korku-filmleri/keeper-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~31a15569-1514-4306-bffc-1f7968252e43",
-    "trailer": "https://cdn.marsgate.com.tr/13175",
-    "genre": "Korku",
-    "summary": "Keeper, romantik bir yıldönümü hafta sonu için tenha bir kulübeye kaçan bir çiftin hikayesini anlatıyor. Malcolm aniden şehre döndüğünde, Liz kendini yalnız ve kulübenin korkunç sırlarını ortaya çıkaran tarifsiz bir kötülüğün huzurunda bulur.",
-    "date": "20251121",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
     "title": "Oğul",
     "link": "https://www.paribucineverse.com/korku-filmleri/ogul-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~4d282708-cea3-4317-86b0-ff0d21d61da9",
@@ -40,12 +30,12 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Bir Şair",
-    "link": "https://www.paribucineverse.com/dram-filmleri/bir-sair-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~6c5f8129-a719-48d0-83bd-325c97a43193",
-    "trailer": "https://cdn.marsgate.com.tr/13194",
-    "genre": "Dram",
-    "summary": "Yaşlanan bir şair, yetenekli bir genç olan Yurlady'ye akıl hocalığı yaparak bir amaç bulur, ancak onu şiir dünyasına sokmak pek akıllıca olmayabilir. Kendi şiirsel arayışları hiçbir sonuca varmamış ve onu klişeleşmiş, tanınmayan bir yazar haline getirmiştir.",
+    "title": "Keeper",
+    "link": "https://www.paribucineverse.com/korku-filmleri/keeper-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~31a15569-1514-4306-bffc-1f7968252e43",
+    "trailer": "https://cdn.marsgate.com.tr/13175",
+    "genre": "Korku",
+    "summary": "Keeper, romantik bir yıldönümü hafta sonu için tenha bir kulübeye kaçan bir çiftin hikayesini anlatıyor. Malcolm aniden şehre döndüğünde, Liz kendini yalnız ve kulübenin korkunç sırlarını ortaya çıkaran tarifsiz bir kötülüğün huzurunda bulur.",
     "date": "20251121",
     "kaynak": "Vizyondaki Film"
   },
@@ -56,6 +46,16 @@
     "trailer": "Fragman bağlantısı yok",
     "genre": "Dram",
     "summary": "Filistinli bir genç Batı Şeria'daki bir protestoya katıldığında, annesi bu kader anına yol açan umut, cesaret ve yılmaz mücadelenin aile hikâyesini anlatır.",
+    "date": "20251121",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Bir Şair",
+    "link": "https://www.paribucineverse.com/dram-filmleri/bir-sair-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~6c5f8129-a719-48d0-83bd-325c97a43193",
+    "trailer": "https://cdn.marsgate.com.tr/13194",
+    "genre": "Dram",
+    "summary": "Yaşlanan bir şair, yetenekli bir genç olan Yurlady'ye akıl hocalığı yaparak bir amaç bulur, ancak onu şiir dünyasına sokmak pek akıllıca olmayabilir. Kendi şiirsel arayışları hiçbir sonuca varmamış ve onu klişeleşmiş, tanınmayan bir yazar haline getirmiştir.",
     "date": "20251121",
     "kaynak": "Vizyondaki Film"
   },
@@ -260,16 +260,6 @@
     "kaynak": "Gelecek Film"
   },
   {
-    "title": "Cinhar",
-    "date": "20251128",
-    "link": "https://www.paribucineverse.com/korku-filmleri/cinhar-filmi-izle",
-    "bilet_link": null,
-    "trailer": "https://cdn.marsgate.com.tr/13207",
-    "genre": "Korku",
-    "summary": "Sislerin hiç dağılmadığı, Sakarya’nın bir dağ köyünde yaşayan genç çift Narin ve Yusuf, bebeklerini kaybettiklerinde hayatları sonsuza dek değişir. Kardeşi Narin’in acısını paylaşmak için şehirden yanına gelen Çiçek, beraberinde sıradan bir teselli değil, karanlıkla mühürlenmiş bir muska getirir. Çocukluğundan beri büyüler ve ruhani varlıklarla uğraşan bu genç kız ruhunda annelerinden kalan bir sır taşımaktadır. Acının yerini giderek derinleşen bir dehşet alırken, açılan kapı artık kapanmaz. Ve o kapının ardında bekleyen şey, geri dönülmez bir hesaplaşmadır.",
-    "kaynak": "Gelecek Film"
-  },
-  {
     "title": "DJ Ahmet",
     "date": "20251128",
     "link": "https://www.paribucineverse.com/dram-filmleri/dj-ahmet-filmi-izle",
@@ -417,6 +407,16 @@
     "trailer": "https://cdn.marsgate.com.tr/12912",
     "genre": "Komedi",
     "summary": "Dinçer ve Koray, hayatın sillesini yemiş, borç batağında iki sıkı dosttur. Umutsuzluğun pençesinde kıvranırlarken, Dinçer'in banka hesabına gece yarısı beş milyon lira yatırılır! Bu, piyangodan büyük ikramiye çıkması gibi bir şeydir. Ancak bu para, göründüğü kadar masum değildir; \"Olay Para\"dır!",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "D.I.S.C.O.",
+    "date": "20260101",
+    "link": "https://www.paribucineverse.com/komedi-filmleri/disco-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn.marsgate.com.tr/13208",
+    "genre": "Komedi",
+    "summary": "D.I.S.C.O. istihbarat teşkilatının uzun zamandır gizlilikle yürüttüğü operasyon, Ajan Ertan yüzünden başarısız olur. Teşkilattan uzaklaştırma alan Ertan eşi Seda ile tatile gider. Burada yolu Bandırma Fön Birinci’si Zafer ve eşi Aynur ile kesişir. Ertan’ın mesleğini öğrenen Zafer’in susmak için tek şartı vardır. Ertan’ın yarım kalan operasyonunu birlikte bitirmek. Çünkü teşkilatın peşinde olduğu örgüt aynı oteldedir ve operasyonun kaderi Ertan’ın elindedir. Hayatında saha ajanlığı yapmamış olan Ertan, Zafer’i mecburen dahil ederek operasyona girişir. Seda ve Aynur’un beklenmedik desteği ise her şeyi değiştirecektir.",
     "kaynak": "Gelecek Film"
   }
 ]
