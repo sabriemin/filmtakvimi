@@ -20,16 +20,6 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Oğul",
-    "link": "https://www.paribucineverse.com/korku-filmleri/ogul-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~4d282708-cea3-4317-86b0-ff0d21d61da9",
-    "trailer": "https://cdn.marsgate.com.tr/13193",
-    "genre": "Korku",
-    "summary": "Roma dönemi Mısır’ındaki uzak bir köy; bir marangoz, karısı ve çocukları doğaüstü güçlerin hedefi hâline geldiğinde ruhani bir savaşa sürüklenir. Joseph, Mary ve genç oğulları İsa yıllardır tehdit altında yaşamış, inançlarına ve geleneklerine sıkı sıkıya tutunmuşlardır. Ancak küçük bir yerleşim yerinde verdikleri kısa bir mola, gizemli bir yabancının genç İsa’yı dindar babasının kurallarını terk etmeye kışkırtmasıyla giderek büyüyen bir kaosu serbest bırakır. Her cazibe çağrısıyla birlikte oğul, yasak bir dünyanın içine çekilirken, dehşete kapılan Joseph, şeytani bir gücün iş başında olduğunu fark eder. Şiddet dolu ve doğaüstü olaylar açıklanamaz biçimde İsa’nın peşini bırakmaz; o da gitgide kabusa dönüşen gelecek vizyonları görmeye başlar. Sonunda, yeni oyun arkadaşının korkunç gerçeğini ve çocuğun asıl adını öğrenir: Şeytan.",
-    "date": "20251121",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
     "title": "Keeper",
     "link": "https://www.paribucineverse.com/korku-filmleri/keeper-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~31a15569-1514-4306-bffc-1f7968252e43",
@@ -40,12 +30,12 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Senden Geriye Kalan",
-    "link": "https://www.paribucineverse.com/dram-filmleri/senden-geriye-kalan-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~190fa049-2ee5-4cbb-9048-95522d3ae0fb",
-    "trailer": "Fragman bağlantısı yok",
-    "genre": "Dram",
-    "summary": "Filistinli bir genç Batı Şeria'daki bir protestoya katıldığında, annesi bu kader anına yol açan umut, cesaret ve yılmaz mücadelenin aile hikâyesini anlatır.",
+    "title": "Oğul",
+    "link": "https://www.paribucineverse.com/korku-filmleri/ogul-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~4d282708-cea3-4317-86b0-ff0d21d61da9",
+    "trailer": "https://cdn.marsgate.com.tr/13193",
+    "genre": "Korku",
+    "summary": "Roma dönemi Mısır’ındaki uzak bir köy; bir marangoz, karısı ve çocukları doğaüstü güçlerin hedefi hâline geldiğinde ruhani bir savaşa sürüklenir. Joseph, Mary ve genç oğulları İsa yıllardır tehdit altında yaşamış, inançlarına ve geleneklerine sıkı sıkıya tutunmuşlardır. Ancak küçük bir yerleşim yerinde verdikleri kısa bir mola, gizemli bir yabancının genç İsa’yı dindar babasının kurallarını terk etmeye kışkırtmasıyla giderek büyüyen bir kaosu serbest bırakır. Her cazibe çağrısıyla birlikte oğul, yasak bir dünyanın içine çekilirken, dehşete kapılan Joseph, şeytani bir gücün iş başında olduğunu fark eder. Şiddet dolu ve doğaüstü olaylar açıklanamaz biçimde İsa’nın peşini bırakmaz; o da gitgide kabusa dönüşen gelecek vizyonları görmeye başlar. Sonunda, yeni oyun arkadaşının korkunç gerçeğini ve çocuğun asıl adını öğrenir: Şeytan.",
     "date": "20251121",
     "kaynak": "Vizyondaki Film"
   },
@@ -56,6 +46,16 @@
     "trailer": "https://cdn.marsgate.com.tr/13194",
     "genre": "Dram",
     "summary": "Yaşlanan bir şair, yetenekli bir genç olan Yurlady'ye akıl hocalığı yaparak bir amaç bulur, ancak onu şiir dünyasına sokmak pek akıllıca olmayabilir. Kendi şiirsel arayışları hiçbir sonuca varmamış ve onu klişeleşmiş, tanınmayan bir yazar haline getirmiştir.",
+    "date": "20251121",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Senden Geriye Kalan",
+    "link": "https://www.paribucineverse.com/dram-filmleri/senden-geriye-kalan-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~190fa049-2ee5-4cbb-9048-95522d3ae0fb",
+    "trailer": "Fragman bağlantısı yok",
+    "genre": "Dram",
+    "summary": "Filistinli bir genç Batı Şeria'daki bir protestoya katıldığında, annesi bu kader anına yol açan umut, cesaret ve yılmaz mücadelenin aile hikâyesini anlatır.",
     "date": "20251121",
     "kaynak": "Vizyondaki Film"
   },
@@ -250,20 +250,30 @@
     "kaynak": "Gelecek Film"
   },
   {
-    "title": "Ayşe",
+    "title": "Ölüm Evi",
     "date": "20251128",
-    "link": "https://www.paribucineverse.com/dram-filmleri/ayse-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~70fe8df6-7e9a-411e-b2b4-4a60cd8d01a5",
-    "trailer": "https://cdn.marsgate.com.tr/13202",
-    "genre": "Dram",
-    "summary": "Ayşe, İstanbul’un sürekli büyüyen ve yüz değiştiren kenar mahallelerinde, Down sendromlu yetişkin kardeşi Rıdvan ile birlikte yaşamaktadır. Babaları, uzun süredir hastanede ölümün eşiğinde beklemektedir. Ayşe, çalıştığı benzin istasyonuna uğrayan uluslararası bir tır şoföründen evlilik teklifi aldığında, kaderiyle hayalleri arasında bir seçim yapmak zorunda kalır.",
+    "link": "https://www.paribucineverse.com/korku-filmleri/olum-evi-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~5e0d3d2e-2834-4232-8037-259eef8f1ae2",
+    "trailer": "https://cdn.marsgate.com.tr/13204",
+    "genre": "Korku",
+    "summary": "Wall Street’in başarılı borsa simsarı Rosario (Emeraude Toubia), uzun süredir görüşmediği büyükannesi Griselda’nın ani ölümüyle hayatının en karanlık gecesine adım atar. Ambulansın ve babası Oscar’ın (José Zúñiga) gelmesini beklerken, dışarıda hızla büyüyen kar fırtınası onu büyükannesinin dairesine hapseder. Ancak soğuk duvarların ardında yalnız değildir. Sessiz apartman sakinleri arasında, özellikle Joe (David Dastmalchian) adındaki meraklı komşu, gecenin huzursuz sessizliğini bölmeye başlar. Fakat gerçek tehlike, Griselda’nın bedenini ele geçiren doğaüstü varlıkların karanlık uyanışıyla ortaya çıkar.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Nasipse Olur 2",
+    "date": "20251128",
+    "link": "https://www.paribucineverse.com/komedi-filmleri/nasipse-olur-2-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~9e91b9d2-fd23-4902-851f-37af20c7f36f",
+    "trailer": "https://cdn.marsgate.com.tr/13185",
+    "genre": "Komedi",
+    "summary": "Boyabat’ın dillere destan çifti Günfer ve Gökhan, evliliklerinin ardından büyük bir felakete sürüklenir: Hancıoğlu ailesi iflas eder, konağa haciz gelir ve tüm düzenleri altüst olur. Çaresizce İstanbul’a sığınan ikili, Rıza’nın evinde yeniden hayata tutunmaya çalışırken türlü maceralara atılır. Balıkçılıktan korsan taksiciliğe, pirinç ticaretinden sahneye çıkmaya kadar her işi deneyen Gökhan, bir türlü dikiş tutturamaz. Günfer ise ayakta kalma mücadelesini sürdürürken evliliğini, aşkını ve sabrını sınayan olaylarla yüzleşir. İstanbul’un kaosunda aşklarını korumak için verdikleri trajikomik mücadele hem güldüren hem de yürek burkan bir serüvene dönüşür.",
     "kaynak": "Gelecek Film"
   },
   {
     "title": "DJ Ahmet",
     "date": "20251128",
     "link": "https://www.paribucineverse.com/dram-filmleri/dj-ahmet-filmi-izle",
-    "bilet_link": null,
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~15520e91-e810-4a5e-aab9-78b6449909b5",
     "trailer": "https://cdn.marsgate.com.tr/13122",
     "genre": "Dram",
     "summary": "Kuzey Makedonya’nın küçük bir Yörük köyünde, küçük kardeşi, babası ve koyunlarıyla birlikte yaşayan 15 yaşındaki Ahmet’in hayattaki en büyük tutkusu müziktir. Annesini kaybettikten sonra evinin ve ailesinin tüm yükünü sırtlayan Ahmet, her şeye rağmen tutkusunu yaşayıp, sevdiği kıza kavuşabilecek midir?",
@@ -273,7 +283,7 @@
     "title": "Erken Kış",
     "date": "20251128",
     "link": "https://www.paribucineverse.com/dram-filmleri/erken-kis-filmi-izle",
-    "bilet_link": null,
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~7fceb3d5-d455-46db-87e9-9864072954c4",
     "trailer": "https://cdn.marsgate.com.tr/13205",
     "genre": "Dram",
     "summary": "Ferhat ve taşıyıcı anne Lia'nın, yasadışı anlaşmaları gereği Lia'yı Türkiye sınırından Gürcistan'a geri götürdüğü üç günlük zorlu yolculuğu konu alan Erken Kış, biyolojik bağların, sınıf farklarının ve insan ruhunun derinliklerinin izini sürüyor. İstanbul'dan Gürcistan sınırına doğru ilerlerken, Lia arkasında bıraktığı bebeği Ada'nın acısıyla boğuşurken, Ferhat ise eşi Handan ile gerginleşen ilişkisi ve iş hayatının baskısı arasında sıkışıp kalmıştır.",
@@ -283,7 +293,7 @@
     "title": "İbi: Uzay Görevi",
     "date": "20251128",
     "link": "https://www.paribucineverse.com/animasyon-filmleri/ibi-uzay-gorevi-filmi-izle",
-    "bilet_link": null,
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~ed540cac-8405-454b-89d2-080dfb084a0d",
     "trailer": "https://cdn.marsgate.com.tr/13186",
     "genre": "Animasyon",
     "summary": "Uzayda geçirdikleri bir kaza sonucunda yolları başka bir galaksiye düşen İbi ve arkadaşları, iki robot ırk arasındaki savaşı durdurmak için ne kadar uğraşsalar da buna engel olamazlar. Bu amansız savaşı sona erdirmeleri için yüzyıllardır kayıp olan \"Çok Önemli Parça\"yı bulmaları gerekmektedir.",
@@ -293,37 +303,17 @@
     "title": "İdea",
     "date": "20251128",
     "link": "https://www.paribucineverse.com/dram-filmleri/idea-filmi-izle",
-    "bilet_link": null,
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~3b712e56-0696-4c1a-993b-f94c29553682",
     "trailer": "https://cdn.marsgate.com.tr/13206",
     "genre": "Dram",
     "summary": "Kemal şehirden uzak ıssızlıkta, karanlık bir iş adamına ait boş bir villada bekçi olarak çalışmaktadır. Zaman zaman gittiği şehirden bir gece geç saatte dönerken, tek başına yolculuk yaptığı otobüse tuhaf bir adam biner, Kemal’in yakınına oturur. Adam bir süre sonra indiğinde Kemal adamın boşalttığı koltukta küçük bir kitap görür. Kapağında İDEA yazısı olan kitabı amaçsızca karıştırıp geri bırakır. Kemal’in hayatı o andan itibaren tam bir cehenneme döner. Açıklanmayan bir suçla itham edilir. Sonrasında gizli bir örgütün lideri muamelesi görerek tutuklanır. Kemal artık bir başkasıdır.",
     "kaynak": "Gelecek Film"
   },
   {
-    "title": "Nasipse Olur 2",
-    "date": "20251128",
-    "link": "https://www.paribucineverse.com/komedi-filmleri/nasipse-olur-2-filmi-izle",
-    "bilet_link": null,
-    "trailer": "https://cdn.marsgate.com.tr/13185",
-    "genre": "Komedi",
-    "summary": "Boyabat’ın dillere destan çifti Günfer ve Gökhan, evliliklerinin ardından büyük bir felakete sürüklenir: Hancıoğlu ailesi iflas eder, konağa haciz gelir ve tüm düzenleri altüst olur. Çaresizce İstanbul’a sığınan ikili, Rıza’nın evinde yeniden hayata tutunmaya çalışırken türlü maceralara atılır. Balıkçılıktan korsan taksiciliğe, pirinç ticaretinden sahneye çıkmaya kadar her işi deneyen Gökhan, bir türlü dikiş tutturamaz. Günfer ise ayakta kalma mücadelesini sürdürürken evliliğini, aşkını ve sabrını sınayan olaylarla yüzleşir. İstanbul’un kaosunda aşklarını korumak için verdikleri trajikomik mücadele hem güldüren hem de yürek burkan bir serüvene dönüşür.",
-    "kaynak": "Gelecek Film"
-  },
-  {
-    "title": "Ölüm Evi",
-    "date": "20251128",
-    "link": "https://www.paribucineverse.com/korku-filmleri/olum-evi-filmi-izle",
-    "bilet_link": null,
-    "trailer": "https://cdn.marsgate.com.tr/13204",
-    "genre": "Korku",
-    "summary": "Wall Street’in başarılı borsa simsarı Rosario (Emeraude Toubia), uzun süredir görüşmediği büyükannesi Griselda’nın ani ölümüyle hayatının en karanlık gecesine adım atar. Ambulansın ve babası Oscar’ın (José Zúñiga) gelmesini beklerken, dışarıda hızla büyüyen kar fırtınası onu büyükannesinin dairesine hapseder. Ancak soğuk duvarların ardında yalnız değildir. Sessiz apartman sakinleri arasında, özellikle Joe (David Dastmalchian) adındaki meraklı komşu, gecenin huzursuz sessizliğini bölmeye başlar. Fakat gerçek tehlike, Griselda’nın bedenini ele geçiren doğaüstü varlıkların karanlık uyanışıyla ortaya çıkar.",
-    "kaynak": "Gelecek Film"
-  },
-  {
     "title": "Sonsuza Dek",
     "date": "20251128",
     "link": "https://www.paribucineverse.com/komedi-filmleri/sonsuza-dek-filmi-izle",
-    "bilet_link": null,
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~6fcad110-8c00-40a2-bd40-50f022258e7b",
     "trailer": "https://cdn.marsgate.com.tr/13198",
     "genre": "Komedi",
     "summary": "Ruhların sonsuzluğu nerede geçireceklerine karar vermek için bir haftaları vardır. Joan hayatının aşkıyla, genç yaşta ölen ilk aşkı arasında imkansız bir seçimle karşı karşıya kalır.",
@@ -387,6 +377,16 @@
     "trailer": "https://cdn.marsgate.com.tr/13201",
     "genre": "Komedi",
     "summary": "Sağlıklı yaşam önerileriyle tanınan televizyon programcısı Ali Candemir, beyin sapında tümör teşhisi almasıyla hayatına başka bir yerden bakmak zorunda kalır. Tedavi sürecinde tanıştığı hemşire Güneş, ona yeniden umut ve neşe getirirken, Ali için hayat; kusursuz olmak değil, gerçekten bugünü yaşayabilmek üzerine yeniden şekillenir.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Tom ve Jerry: Kayıp Pusula",
+    "date": "20251212",
+    "link": "https://www.paribucineverse.com/animasyon-filmleri/tom-ve-jerry-kayip-pusula-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn.marsgate.com.tr/13209",
+    "genre": "Animasyon",
+    "summary": "Film, bir müzenin içinde yaşanan kovalamaca sırasında buldukları gizemli bir pusula tarafından başka bir çağa gönderilen Tom ve Jerry'nin maceralarını anlatıyor.",
     "kaynak": "Gelecek Film"
   },
   {
