@@ -90,16 +90,6 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "DJ Ahmet",
-    "link": "https://www.paribucineverse.com/dram-filmleri/dj-ahmet-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~15520e91-e810-4a5e-aab9-78b6449909b5",
-    "trailer": "https://cdn.marsgate.com.tr/13122",
-    "genre": "Dram",
-    "summary": "Kuzey Makedonya’nın küçük bir Yörük köyünde, küçük kardeşi, babası ve koyunlarıyla birlikte yaşayan 15 yaşındaki Ahmet’in hayattaki en büyük tutkusu müziktir. Annesini kaybettikten sonra evinin ve ailesinin tüm yükünü sırtlayan Ahmet, her şeye rağmen tutkusunu yaşayıp, sevdiği kıza kavuşabilecek midir?",
-    "date": "20251128",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
     "title": "İbi: Uzay Görevi",
     "link": "https://www.paribucineverse.com/animasyon-filmleri/ibi-uzay-gorevi-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~ed540cac-8405-454b-89d2-080dfb084a0d",
@@ -116,6 +106,16 @@
     "trailer": "https://cdn.marsgate.com.tr/13216",
     "genre": "Komedi",
     "summary": "Boyabat’ın dillere destan çifti Günfer ve Gökhan, evliliklerinin ardından büyük bir felakete sürüklenir: Hancıoğlu ailesi iflas eder, konağa haciz gelir ve tüm düzenleri altüst olur. Çaresizce İstanbul’a sığınan ikili, Rıza’nın evinde yeniden hayata tutunmaya çalışırken türlü maceralara atılır. Balıkçılıktan korsan taksiciliğe, pirinç ticaretinden sahneye çıkmaya kadar her işi deneyen Gökhan, bir türlü dikiş tutturamaz. Günfer ise ayakta kalma mücadelesini sürdürürken evliliğini, aşkını ve sabrını sınayan olaylarla yüzleşir. İstanbul’un kaosunda aşklarını korumak için verdikleri trajikomik mücadele hem güldüren hem de yürek burkan bir serüvene dönüşür.",
+    "date": "20251128",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "DJ Ahmet",
+    "link": "https://www.paribucineverse.com/dram-filmleri/dj-ahmet-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~15520e91-e810-4a5e-aab9-78b6449909b5",
+    "trailer": "https://cdn.marsgate.com.tr/13122",
+    "genre": "Dram",
+    "summary": "Kuzey Makedonya’nın küçük bir Yörük köyünde, küçük kardeşi, babası ve koyunlarıyla birlikte yaşayan 15 yaşındaki Ahmet’in hayattaki en büyük tutkusu müziktir. Annesini kaybettikten sonra evinin ve ailesinin tüm yükünü sırtlayan Ahmet, her şeye rağmen tutkusunu yaşayıp, sevdiği kıza kavuşabilecek midir?",
     "date": "20251128",
     "kaynak": "Vizyondaki Film"
   },
@@ -157,16 +157,6 @@
     "genre": "Gerilim",
     "summary": "Serinin üçüncü filmi, çok değerli bir elmas soygunu için yeniden bir araya gelen ve yanlarına genç illüzyonistleri alan Atlılar ekibinin yeni macerasını anlatıyor.",
     "date": "20251112",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
-    "title": "Bi Umut",
-    "link": "https://www.paribucineverse.com/aile-filmleri/bi-umut-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~c2656666-b08b-42cd-9ae3-ffd91ccc8a1d",
-    "trailer": "https://cdn.marsgate.com.tr/13145",
-    "genre": "Aile",
-    "summary": "Film; hastanede kimsesiz kalan bir gence on yıl boyunca annelik yapan Gülsüm Kabadayı’nın gerçek hikâyesini anlatıyor.",
-    "date": "20251107",
     "kaynak": "Vizyondaki Film"
   },
   {
@@ -274,9 +264,19 @@
     "date": "20251212",
     "link": "https://www.paribucineverse.com/romantik-filmleri/yildizlarin-altinda-filmi-izle",
     "bilet_link": null,
-    "trailer": "https://cdn.marsgate.com.tr/13234",
-    "genre": "Romantik",
-    "summary": "Tutkudan yoksun bir ilişkinin içinde sıkışıp kalmış bir aşk romanı yazarı ilham aramak için İtalya’ya gittiğinde, beklenmedik bir şekilde hayallerinin kadını ile tanışır.",
+    "trailer": "Fragman bağlantısı yok",
+    "genre": "Tür belirtilmemiş",
+    "summary": "Özet bulunamadı",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Yıldızların Altında",
+    "date": "20251212",
+    "link": "https://www.paribucineverse.com/romantik-filmleri/yildizlarin-altinda-filmi-izle",
+    "bilet_link": null,
+    "trailer": "Fragman bağlantısı yok",
+    "genre": "Tür belirtilmemiş",
+    "summary": "Özet bulunamadı",
     "kaynak": "Gelecek Film"
   },
   {
