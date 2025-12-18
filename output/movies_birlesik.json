@@ -1,15 +1,5 @@
 [
   {
-    "title": "Bugün Güzel",
-    "link": "https://www.paribucineverse.com/komedi-filmleri/bugun-guzel-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~a473d4b5-4815-474d-b954-4d74c20a25a6",
-    "trailer": "https://cdn.marsgate.com.tr/13201",
-    "genre": "Komedi",
-    "summary": "Sağlıklı yaşam önerileriyle tanınan televizyon programcısı Ali Candemir, beyin sapında tümör teşhisi almasıyla hayatına başka bir yerden bakmak zorunda kalır. Tedavi sürecinde tanıştığı hemşire Güneş, ona yeniden umut ve neşe getirirken, Ali için hayat; kusursuz olmak değil, gerçekten bugünü yaşayabilmek üzerine yeniden şekillenir.",
-    "date": "20251212",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
     "title": "Tom ve Jerry: Kayıp Pusula",
     "link": "https://www.paribucineverse.com/animasyon-filmleri/tom-ve-jerry-kayip-pusula-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~1bd13605-ae9f-4b59-852e-4fa541e910c0",
@@ -26,6 +16,16 @@
     "trailer": "https://cdn.marsgate.com.tr/13259",
     "genre": "Dram",
     "summary": "Film, 1950’lerin sonunda, küçük bir Ege kasabasında yaşayan posta memuru Osman’ın, imkânsız aşkı Gülizar’a kavuşma çabasını konu ediniyor.",
+    "date": "20251212",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Bugün Güzel",
+    "link": "https://www.paribucineverse.com/komedi-filmleri/bugun-guzel-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~a473d4b5-4815-474d-b954-4d74c20a25a6",
+    "trailer": "https://cdn.marsgate.com.tr/13201",
+    "genre": "Komedi",
+    "summary": "Sağlıklı yaşam önerileriyle tanınan televizyon programcısı Ali Candemir, beyin sapında tümör teşhisi almasıyla hayatına başka bir yerden bakmak zorunda kalır. Tedavi sürecinde tanıştığı hemşire Güneş, ona yeniden umut ve neşe getirirken, Ali için hayat; kusursuz olmak değil, gerçekten bugünü yaşayabilmek üzerine yeniden şekillenir.",
     "date": "20251212",
     "kaynak": "Vizyondaki Film"
   },
@@ -190,6 +190,16 @@
     "kaynak": "Gelecek Film"
   },
   {
+    "title": "Hind Rajab'ın Sesi",
+    "date": "20251219",
+    "link": "https://www.paribucineverse.com/dram-filmleri/hind-rajabin-sesi-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~133a09e1-3aae-4e3c-854a-a75d223d8bf1",
+    "trailer": "https://cdn.marsgate.com.tr/13257",
+    "genre": "Dram",
+    "summary": "29 Ocak 2024. Kızılay gönüllülerine acil bir çağrı ulaştı. Gazze’de, kurşunların altında, bir aracın içinde sıkışıp kalmış 6 yaşında bir kız çocuğu, kurtarılmak için yalvarıyordu. Kızı hatta tutmaya çalışırken, bir yandan da ambulansı ona ulaştırabilmek için ellerinden geleni yaptılar. Hind Rajab, bu çocuğun adıydı.",
+    "kaynak": "Gelecek Film"
+  },
+  {
     "title": "Manevi Değer",
     "date": "20251226",
     "link": "https://www.paribucineverse.com/dram-filmleri/manevi-deger-filmi-izle",
@@ -197,16 +207,6 @@
     "trailer": "https://cdn.marsgate.com.tr/13226",
     "genre": "Dram",
     "summary": "Aile, anılar ve sanatın uzlaştırıcı gücü üzerine samimi bir keşif.",
-    "kaynak": "Gelecek Film"
-  },
-  {
-    "title": "Hind Rajab'ın Sesi",
-    "date": "20251219",
-    "link": "https://www.paribucineverse.com/dram-filmleri/hind-rajabin-sesi-filmi-izle",
-    "bilet_link": null,
-    "trailer": "https://cdn.marsgate.com.tr/13257",
-    "genre": "Dram",
-    "summary": "29 Ocak 2024. Kızılay gönüllülerine acil bir çağrı ulaştı. Gazze’de, kurşunların altında, bir aracın içinde sıkışıp kalmış 6 yaşında bir kız çocuğu, kurtarılmak için yalvarıyordu. Kızı hatta tutmaya çalışırken, bir yandan da ambulansı ona ulaştırabilmek için ellerinden geleni yaptılar. Hind Rajab, bu çocuğun adıydı.",
     "kaynak": "Gelecek Film"
   },
   {
