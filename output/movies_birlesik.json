@@ -110,6 +110,36 @@
     "kaynak": "Vizyondaki Film"
   },
   {
+    "title": "Anakonda",
+    "date": "20251226",
+    "link": "https://www.paribucineverse.com/komedi-filmleri/anakonda-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~7698c03d-951e-4d9e-b79f-f20f9fd42ec2",
+    "trailer": "https://cdn.marsgate.com.tr/13214",
+    "genre": "Komedi",
+    "summary": "Film, yıllardır en sevdikleri film Anakonda'yı yeniden çekmenin hayalini kuran Doug ve Griff'in, orta yaş krizine girdikleri bir dönemde bu hayallerini gerçekleştirmek için atıldıkları macerayı konu ediniyor.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Good Boy",
+    "date": "20251226",
+    "link": "https://www.paribucineverse.com/korku-filmleri/good-boy-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~6786f157-bc5b-4fed-b862-3e1193091fb3",
+    "trailer": "https://cdn.marsgate.com.tr/13228",
+    "genre": "Korku",
+    "summary": "Todd ve köpeği Indy, Todd’un ailesinden kalma ormanın ortasındaki ıssız bir kulübeye yerleşir. Bir süre sonra Indy, evde karanlık ve rahatsız edici bir varlık olduğunu anlar. Todd ise yanı başındaki bu kötücül gücün daha da tehlikeli hale geldiğini fark etmez. Sadık dost Indy, hem sahibini hem de kendisini korumak için sadece kendisinin görebildiği bu tehlikeyle karşı karşıya gelecektir.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Adresi Olmayan Ev",
+    "date": "20251226",
+    "link": "https://www.paribucineverse.com/bilim-kurgu-filmleri/adresi-olmayan-ev-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~2c031156-34f7-4ddb-9c01-e86c4ad42afe",
+    "trailer": "https://cdn.marsgate.com.tr/13235",
+    "genre": "Bilim Kurgu",
+    "summary": "Filmde, distopik bir gelecekte, bireylerin işlediği açgözlülük, kibir, şehvet, öfke, kıskançlık, tembellik, savurganlık, ihanet ve şiddet gibi dokuz büyük suç nedeniyle “unutma yasası” kapsamında tamamen hayattan silindiği bir dünya tasvir ediliyor.",
+    "kaynak": "Gelecek Film"
+  },
+  {
     "title": "Manevi Değer",
     "date": "20251226",
     "link": "https://www.paribucineverse.com/dram-filmleri/manevi-deger-filmi-izle",
@@ -120,50 +150,20 @@
     "kaynak": "Gelecek Film"
   },
   {
-    "title": "Adresi Olmayan Ev",
-    "date": "20251226",
-    "link": "https://www.paribucineverse.com/bilim-kurgu-filmleri/adresi-olmayan-ev-filmi-izle",
-    "bilet_link": null,
-    "trailer": "https://cdn.marsgate.com.tr/13235",
-    "genre": "Bilim Kurgu",
-    "summary": "Filmde, distopik bir gelecekte, bireylerin işlediği açgözlülük, kibir, şehvet, öfke, kıskançlık, tembellik, savurganlık, ihanet ve şiddet gibi dokuz büyük suç nedeniyle “unutma yasası” kapsamında tamamen hayattan silindiği bir dünya tasvir ediliyor.",
-    "kaynak": "Gelecek Film"
-  },
-  {
-    "title": "Anakonda",
-    "date": "20251226",
-    "link": "https://www.paribucineverse.com/komedi-filmleri/anakonda-filmi-izle",
-    "bilet_link": null,
-    "trailer": "https://cdn.marsgate.com.tr/13214",
-    "genre": "Komedi",
-    "summary": "Film, yıllardır en sevdikleri film Anakonda'yı yeniden çekmenin hayalini kuran Doug ve Griff'in, orta yaş krizine girdikleri bir dönemde bu hayallerini gerçekleştirmek için atıldıkları macerayı konu ediniyor.",
-    "kaynak": "Gelecek Film"
-  },
-  {
     "title": "Astronot",
     "date": "20251226",
     "link": "https://www.paribucineverse.com/korku-filmleri/astronot-filmi-izle",
-    "bilet_link": null,
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~6395dbaf-2067-461b-8d53-fe03a1e45c68",
     "trailer": "https://cdn.marsgate.com.tr/13262",
     "genre": "Korku",
     "summary": "İlk uzay görevinden dönen astronot Sam Walker, rehabilitasyon ve tıbbi testler için NASA gözetiminde yüksek güvenlikli bir eve yerleştirilir. Ancak evde yaşanmaya başlayan açıklanamaz ve giderek rahatsız edici olaylar, Sam’i huzursuz eder. Zamanla, uzaydan yalnız dönmediğine ve dünya dışı bir varlığın onunla birlikte Dünya’ya gelmiş olabileceğine inanmaya başlar.",
     "kaynak": "Gelecek Film"
   },
   {
-    "title": "Good Boy",
-    "date": "20251226",
-    "link": "https://www.paribucineverse.com/korku-filmleri/good-boy-filmi-izle",
-    "bilet_link": null,
-    "trailer": "https://cdn.marsgate.com.tr/13228",
-    "genre": "Korku",
-    "summary": "Todd ve köpeği Indy, Todd’un ailesinden kalma ormanın ortasındaki ıssız bir kulübeye yerleşir. Bir süre sonra Indy, evde karanlık ve rahatsız edici bir varlık olduğunu anlar. Todd ise yanı başındaki bu kötücül gücün daha da tehlikeli hale geldiğini fark etmez. Sadık dost Indy, hem sahibini hem de kendisini korumak için sadece kendisinin görebildiği bu tehlikeyle karşı karşıya gelecektir.",
-    "kaynak": "Gelecek Film"
-  },
-  {
     "title": "Macera Takımı Kampta",
     "date": "20251226",
     "link": "https://www.paribucineverse.com/macera-filmleri/macera-takimi-kampta-filmi-izle",
-    "bilet_link": null,
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~c50817e7-39df-44c5-ac0e-5de9be54bc18",
     "trailer": "https://cdn.marsgate.com.tr/13263",
     "genre": "Macera",
     "summary": "Hayal gücü geniş ve yaramaz bir kız olan Maia ve çekingen arkadaşı Jan, sevdikleri yaz kampını inşaatçı Sebastián'ın pençelerinden kurtarmak için zamana karşı yarışmak zorundadır. Bunu yapmak için, vadide hala dolaştığına inandıkları, yıllardır kimsenin görmediği bir ayıyı amansızca aramaya başlarlar. Bu vahşi macerada onlara vadiyi ve vahşi yaşamı koruma görevlerinde beklenmedik bir kahramana dönüşen huysuz ama komik kokarca Fritz eşlik eder.",
@@ -173,7 +173,7 @@
     "title": "Uzaylı Dostum Flik",
     "date": "20251226",
     "link": "https://www.paribucineverse.com/animasyon-filmleri/uzayli-dostum-flik-filmi-izle",
-    "bilet_link": null,
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~c632a418-ca38-4a0c-99f5-48623c9634ab",
     "trailer": "https://cdn.marsgate.com.tr/13260",
     "genre": "Animasyon",
     "summary": "Thomas, kendini çoğu zaman kardeşlerinin gölgesinde hissettiği bir dönemde, başka bir gezegenden gelen sevimli ve tüylü Flik ile tanışır. Flik onu renkli, eğlenceli ve sürprizlerle dolu dünyasına götürür. Bu büyülü yolculuk sırasında Thomas’ın gölgesi yanlışlıkla komik ve yaramaz bir yaratığa dönüşür. Yaratık biraz ortalığı karıştırsa da Thomas ve kardeşleri güçlerini birleştirerek her şeyi tatlı bir şekilde yoluna koyarlar.",
@@ -187,6 +187,16 @@
     "trailer": "https://cdn.marsgate.com.tr/13251",
     "genre": "Komedi",
     "summary": "D.I.S.C.O. istihbarat teşkilatının uzun zamandır gizlilikle yürüttüğü operasyon, Ajan Ertan yüzünden başarısız olur. Teşkilattan uzaklaştırma alan Ertan eşi Seda ile tatile gider. Burada yolu Bandırma Fön Birinci’si Zafer ve eşi Aynur ile kesişir. Ertan’ın mesleğini öğrenen Zafer’in susmak için tek şartı vardır. Ertan’ın yarım kalan operasyonunu birlikte bitirmek. Çünkü teşkilatın peşinde olduğu örgüt aynı oteldedir ve operasyonun kaderi Ertan’ın elindedir. Hayatında saha ajanlığı yapmamış olan Ertan, Zafer’i mecburen dahil ederek operasyona girişir. Seda ve Aynur’un beklenmedik desteği ise her şeyi değiştirecektir.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Maşa ile Koca Ayıcıklar",
+    "date": "20260101",
+    "link": "https://www.paribucineverse.com/macera-filmleri/masa-ile-koca-ayiciklar-filmi-izle",
+    "bilet_link": null,
+    "trailer": "Fragman bağlantısı yok",
+    "genre": "Macera",
+    "summary": "Maşa’nın erkek kardeşi Vanya, ormanda bir sihir sonucu sevimli bir keçiye dönüşmüştür. Maşa, ormanın kötü kalpli cadısı Kikimora’nın yaptığı büyüyü bozup kardeşini kurtarmak için, çocukluğundan beri tanıdığı masal kahramanları olan üç ayı ile güçlerini birleştirir.",
     "kaynak": "Gelecek Film"
   },
   {
@@ -207,6 +217,26 @@
     "trailer": "https://cdn.marsgate.com.tr/13258",
     "genre": "Korku",
     "summary": "Bir çocuk, Noel Baba kostümü giymiş bir adam tarafından anne ve babasının öldürülmesine tanık olur. Yıllar sonra, yetişkin olduğunda kendisi de bir Noel Baba kostümü giyer ve çocukluğundaki travmatik olaydan sorumlu olanlara karşı intikam almak için şiddet dolu bir arayışa girişir.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Babil-i Cin 2",
+    "date": "20260102",
+    "link": "https://www.paribucineverse.com/korku-filmleri/babil-i-cin-2-filmi-izle",
+    "bilet_link": null,
+    "trailer": "Fragman bağlantısı yok",
+    "genre": "Korku",
+    "summary": "Film, yatalak babaannesi için tuttuğu bakıcının beraberinde getirdiği kötücül varlıklarla ölümcül bir mücadeleye giren Defne'nin hikâyesini anlatıyor.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Bay & Bayan Aslan",
+    "date": "20260102",
+    "link": "https://www.paribucineverse.com/komedi-filmleri/bay-bayan-aslan-filmi-izle",
+    "bilet_link": null,
+    "trailer": "Fragman bağlantısı yok",
+    "genre": "Komedi",
+    "summary": "Luna Aslan, meslektaşı Niels’in yardımıyla, nefes kesici bir görevin ardından azılı suçlu Barış’ı yakalayan gizli bir ajandır. Ancak Luna, evine döndüğünde çok daha büyük bir sorunla karşı karşıyadır: Kocası Emre. Emre, Luna’nın çifte hayatından habersizdir, fakat onun gizemli davranışlarını fark etmeye başlamıştır. Kuzeni Ferhat’ın kışkırtmaları sebebiyle, Emre Luna’nın kendisini aldattığına inanmaya başlar. Yanlış anlamalar üst üste gelirken ve Barış’ın hem Luna’nın hem de Emre’nin peşine düştüğü ortaya çıkınca, Bay ve Bayan Aslan hem hayatlarını hem de evliliklerini kurtarmak için her şeyi göze alırlar.",
     "kaynak": "Gelecek Film"
   },
   {
