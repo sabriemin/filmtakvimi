@@ -20,22 +20,22 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Hizmetçi",
-    "link": "https://www.paribucineverse.com/gerilim-filmleri/hizmetci-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~ba46f02e-11b3-4bbb-999b-b29bff8c64eb",
-    "trailer": "https://cdn.marsgate.com.tr/13237",
-    "genre": "Gerilim",
-    "summary": "Freida McFadden’ın çok satan romanından uyarlanan film, geçmişini geride bırakıp yeni bir hayat kurmaya çalışan Millie'nin, dışarıdan kusursuz gözüken zengin Winchester ailesinin yanında işe başlamasıyla yaşadığı garip olayları anlatıyor.",
-    "date": "20260109",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
     "title": "Ketenpere: Dalavere",
     "link": "https://www.paribucineverse.com/komedi-filmleri/ketenpere-dalavere-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~cb7d1f46-3201-4466-8aa0-7357441b1986",
     "trailer": "https://cdn.marsgate.com.tr/13256",
     "genre": "Komedi",
     "summary": "Film yapımcısı Kalender, Ünlü iş insanı Feza’nın eşi Aydan ile tanışır ve onlardan bir film yatırımı teklifi alır. Kalender ise Feza’nın evinde sakladığını söylediği altınlara ulaşmak için bu projeyi kabul eder. Kalender, Vefa ve Namık’la birlikte sahte bir film çekimi düzenleyerek oyuncuları eve gönderir, asıl amacı ve planı farklıdır. Ancak plan beklenmedik şekilde karışır ve Kalender ile Vefa planlarını başardıklarını zannederken, Feza ve Aydan’ın, tüm süreci yöneten bir tuzak kurduğu ortaya çıkar. Kalender, Vefa ve Namık planlarının işlemediğini ve asıl oyunun Ejder tarafından planlandığı anlaşılınca; büyük bir zararla karşılaşırlar. Hikâye, Kayhan’ın sürpriz bir karşılaşma yaşaması ve Kalender’in geçmişte haksızlık ettiği Erdi’nin intikam için geri dönmesiyle beklenmedik bir sona ulaşır.",
+    "date": "20260109",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Hizmetçi",
+    "link": "https://www.paribucineverse.com/gerilim-filmleri/hizmetci-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~ba46f02e-11b3-4bbb-999b-b29bff8c64eb",
+    "trailer": "https://cdn.marsgate.com.tr/13237",
+    "genre": "Gerilim",
+    "summary": "Freida McFadden’ın çok satan romanından uyarlanan film, geçmişini geride bırakıp yeni bir hayat kurmaya çalışan Millie'nin, dışarıdan kusursuz gözüken zengin Winchester ailesinin yanında işe başlamasıyla yaşadığı garip olayları anlatıyor.",
     "date": "20260109",
     "kaynak": "Vizyondaki Film"
   },
@@ -160,6 +160,16 @@
     "kaynak": "Vizyondaki Film"
   },
   {
+    "title": "SüngerBob: Korsan Macerası",
+    "date": "20260116",
+    "link": "https://www.paribucineverse.com/animasyon-filmleri/sungerbob-korsan-macerasi-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~55951425-2ddb-464c-9d6b-6b33c13a6f76",
+    "trailer": "https://cdn.marsgate.com.tr/13240",
+    "genre": "Animasyon",
+    "summary": "Büyük biri olmak için can atan SüngerBob, cesaretini Bay Yengeç'e kanıtlamak amacıyla, gizemli ve korsan ruhlu hayalet Uçan Hollandalı'nın peşine düşer. Bu deniz yolculuğu komedi-macerası, onu okyanusun en derin derinliklerine götürür. Daha önce hiçbir Sünger’in gitmediği yerlere!",
+    "kaynak": "Gelecek Film"
+  },
+  {
     "title": "28 Yıl Sonra: Kemik Tapınağı",
     "date": "20260116",
     "link": "https://www.paribucineverse.com/korku-filmleri/28-yil-sonra-kemik-taginagi-filmi-izle",
@@ -197,16 +207,6 @@
     "trailer": "https://cdn.marsgate.com.tr/13252",
     "genre": "Animasyon",
     "summary": "Maşa, Daşa ve Koca Ayı, eğlence ve sürprizlerle dolu bir gün için rotalarını “Mucize Parkı”na çeviriyor! Her birinin bu renkli dünyada farklı bir amacı vardır: Daşa parkın tüm görevlerini tamamlayıp büyük gösteride sahneye çıkmak için kararlıdır, Maşa en çok eğlendiği anı yakalamanın peşindedir, Koca Ayı ise yeni “akıllı” fotoğraf makinesini denemeye heveslidir. Ancak işler pek planlandığı gibi gitmez! Karşılarına çıkan beklenmedik olaylar, bu macerayı çok daha renkli ve unutulmaz bir hale getirir. Parkta Maşa, neşeli ama biraz çekingen bir palyaço ailesiyle tanışır. Maşa’nın cesareti ve iyiliği, içlerinden birinin en büyük hayalini gerçekleştirmesine yardımcı olur.",
-    "kaynak": "Gelecek Film"
-  },
-  {
-    "title": "SüngerBob: Korsan Macerası",
-    "date": "20260116",
-    "link": "https://www.paribucineverse.com/animasyon-filmleri/sungerbob-korsan-macerasi-filmi-izle",
-    "bilet_link": null,
-    "trailer": "https://cdn.marsgate.com.tr/13240",
-    "genre": "Animasyon",
-    "summary": "Büyük biri olmak için can atan SüngerBob, cesaretini Bay Yengeç'e kanıtlamak amacıyla, gizemli ve korsan ruhlu hayalet Uçan Hollandalı'nın peşine düşer. Bu deniz yolculuğu komedi-macerası, onu okyanusun en derin derinliklerine götürür. Daha önce hiçbir Sünger’in gitmediği yerlere!",
     "kaynak": "Gelecek Film"
   },
   {
