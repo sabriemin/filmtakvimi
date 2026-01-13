@@ -1,21 +1,21 @@
 [
   {
-    "title": "Kardeş Takımı 3",
-    "link": "https://www.paribucineverse.com/aile-filmleri/kardes-takimi-3-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~958b45fb-bad7-4387-9c85-e492c2674e0e",
-    "trailer": "https://cdn.marsgate.com.tr/13219",
-    "genre": "Aile",
-    "summary": "Serinin bu son filmi Kardeş Takımı 3’te, Aslı ve Serkan, bebek izinlerinden ayrılarak Yıldız Taşı görevini tamamlamak amacıyla tüm aile ile birlikte zamanda yolculuğa çıkar. Kahramanlar beklenmedik bir şekilde geçmişe dönerek tarihi dönemlere ait kostümler ve dekorlar eşliğinde, kendilerini zorlu durumların içinde bulur. Bu sürükleyici macerada ekip, takım ruhu, cesaret ve aile bağları gibi temaları merkeze alarak bugüne kadarki en zorlu sınavlarından birini verirken, film serinin final halkasını oluşturuyor.",
-    "date": "20260109",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
     "title": "Başka Yolu Yok",
     "link": "https://www.paribucineverse.com/gerilim-filmleri/baska-yolu-yok-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~37744f3f-2680-4867-8bda-5392a9e9918a",
     "trailer": "https://cdn.marsgate.com.tr/13221",
     "genre": "Gerilim",
     "summary": "Başka Yolu Yok, yıllarca yorulmadan çalıştığı kağıt şirketinden aniden işten çıkarılan Man-soo adlı bir adamın hikayesini anlatıyor. Yeni bir iş arayışında giderek daha da çaresizleşen Man-soo, sonunda toplumdaki rekabetle nasıl başa çıkacağına dair kesin bir karara varır.",
+    "date": "20260109",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Kardeş Takımı 3",
+    "link": "https://www.paribucineverse.com/aile-filmleri/kardes-takimi-3-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~958b45fb-bad7-4387-9c85-e492c2674e0e",
+    "trailer": "https://cdn.marsgate.com.tr/13219",
+    "genre": "Aile",
+    "summary": "Serinin bu son filmi Kardeş Takımı 3’te, Aslı ve Serkan, bebek izinlerinden ayrılarak Yıldız Taşı görevini tamamlamak amacıyla tüm aile ile birlikte zamanda yolculuğa çıkar. Kahramanlar beklenmedik bir şekilde geçmişe dönerek tarihi dönemlere ait kostümler ve dekorlar eşliğinde, kendilerini zorlu durumların içinde bulur. Bu sürükleyici macerada ekip, takım ruhu, cesaret ve aile bağları gibi temaları merkeze alarak bugüne kadarki en zorlu sınavlarından birini verirken, film serinin final halkasını oluşturuyor.",
     "date": "20260109",
     "kaynak": "Vizyondaki Film"
   },
@@ -160,16 +160,6 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "SüngerBob: Korsan Macerası",
-    "date": "20260116",
-    "link": "https://www.paribucineverse.com/animasyon-filmleri/sungerbob-korsan-macerasi-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~55951425-2ddb-464c-9d6b-6b33c13a6f76",
-    "trailer": "https://cdn.marsgate.com.tr/13240",
-    "genre": "Animasyon",
-    "summary": "Büyük biri olmak için can atan SüngerBob, cesaretini Bay Yengeç'e kanıtlamak amacıyla, gizemli ve korsan ruhlu hayalet Uçan Hollandalı'nın peşine düşer. Bu deniz yolculuğu komedi-macerası, onu okyanusun en derin derinliklerine götürür. Daha önce hiçbir Sünger’in gitmediği yerlere!",
-    "kaynak": "Gelecek Film"
-  },
-  {
     "title": "Efes'in Sırrı",
     "date": "20260116",
     "link": "https://www.paribucineverse.com/aile-filmleri/efesin-sirri-filmi-izle",
@@ -177,6 +167,16 @@
     "trailer": "https://cdn.marsgate.com.tr/13254",
     "genre": "Aile",
     "summary": "Efes’teki bir kazı sırasında ortaya çıkan gizemli harita ve sihirli bir mağara, yetişkin arkeologları Tuna ve okul arkadaşı Damla ile aynı yaşa indirir. Tuna’nın, kendisine zorbalık yapan Anıl’dan kurtulmak için bu ‘yeni arkadaşlara’ ihtiyaç duyması ve ajanların haritanın peşine düşmesi ise ekibi hızla birbirine yaklaştırır. Tuna, Damla ve artık çocuk haline dönen arkeologlar, bir yandan büyümenin sırrını çözmeye ve ajanlardan kaçmaya diğer yandan Efes’in kadim gizemini açığa çıkarmaya çalışacak.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "SüngerBob: Korsan Macerası",
+    "date": "20260116",
+    "link": "https://www.paribucineverse.com/animasyon-filmleri/sungerbob-korsan-macerasi-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~55951425-2ddb-464c-9d6b-6b33c13a6f76",
+    "trailer": "https://cdn.marsgate.com.tr/13240",
+    "genre": "Animasyon",
+    "summary": "Büyük biri olmak için can atan SüngerBob, cesaretini Bay Yengeç'e kanıtlamak amacıyla, gizemli ve korsan ruhlu hayalet Uçan Hollandalı'nın peşine düşer. Bu deniz yolculuğu komedi-macerası, onu okyanusun en derin derinliklerine götürür. Daha önce hiçbir Sünger’in gitmediği yerlere!",
     "kaynak": "Gelecek Film"
   },
   {
@@ -270,6 +270,46 @@
     "kaynak": "Gelecek Film"
   },
   {
+    "title": "Primat",
+    "date": "20260123",
+    "link": "https://www.paribucineverse.com/korku-filmleri/primat-filmi-izle",
+    "bilet_link": null,
+    "trailer": "Fragman bağlantısı yok",
+    "genre": "Korku",
+    "summary": "Bir grup arkadaşın tropikal tatili, korku ve hayatta kalma mücadelesinin anlatıldığı ürkütücü, ilkel bir hikayeye dönüşür.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Zir-i Cin 4: Nesep Bağı",
+    "date": "20260123",
+    "link": "https://www.paribucineverse.com/korku-filmleri/zir-i-cin-4-nesep-bagi-filmi-izle",
+    "bilet_link": null,
+    "trailer": "Fragman bağlantısı yok",
+    "genre": "Korku",
+    "summary": "İhanetle başlayan bir sır, cinayetle son bulurken, Hz. Süleyman tarafından lanetlenen Zir kabilesinin günahkar cinleri, kanında kötülük olan bir aileye musallat olur. Kocası Nevzat'ı öldüren Gülizar ve suça ortak olan Muhtar, bu büyük sırrı örtmek için çareyi kara büyü yapan bir muskacıda arar. Fakat işler beklendiği gibi gitmez; Zir kabilesi, günahlarının bedeli olarak onlardan bir nesli lanetleyecek korkunç bir \"Nesep Bağı\" talep eder. Kul hakkının ağırlığı altında ezilen Gülizar, kendi rahminden dünyaya ait olmayan bir varlığı doğurmaya zorlanırken, geçmişin unutulan gelenekleri ve laneti, masumları bile içine çeken bir felakete yol açar.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Gizli Ajan",
+    "date": "20260130",
+    "link": "https://www.paribucineverse.com/gerilim-filmleri/gizli-ajan-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn.marsgate.com.tr/13272",
+    "genre": "Gerilim",
+    "summary": "Teknoloji uzmanı Marcelo, siyasi baskılar nedeniyle kaçak olarak yaşadığı yılların ardından, karnaval coşkusunun yaşandığı Recife şehrine geri döner. Amacı, peşindeki hükümet ajanlarından sıyrılarak ayrı kaldığı oğluyla yeniden bağ kurmak ve kendine yeni bir hayat kurmaktır. Ancak şehrin karmaşası içinde izini kaybettirmeye çalışırken, askeri rejimin gölgesinin her an üzerinde olduğunu fark eder. Yönetmenliğini Kleber Mendonça Filho’nun üstlendiği yapım, bireysel bir kaçış öyküsünü dönemin politik atmosferiyle birleştiriyor.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Kalpten Söylenen Bir Şarkı",
+    "date": "20260130",
+    "link": "https://www.paribucineverse.com/biyografi-filmleri/kalpten-soylenen-bir-sarki-filmi-izle",
+    "bilet_link": null,
+    "trailer": "Fragman bağlantısı yok",
+    "genre": "Biyografi",
+    "summary": "Kalpten Söylenen Bir Şarkı, müzisyen bir çift olan Mike ve Claire Sardina’nın gerçek hikayesini konu ediyor. Şanssız müzisyenler, \"Lightning & Thunder” adlı bir Neil Diamond cover grubu kurduktan sonra ün kazanıyor ve birlikte aşkı ve başarıyı bulmanın asla geç olmadığını kanıtlıyor.",
+    "kaynak": "Gelecek Film"
+  },
+  {
     "title": "Noise: Lanetin Sesi",
     "date": "20260130",
     "link": "https://www.paribucineverse.com/korku-filmleri/noise-lanetin-sesi-filmi-izle",
@@ -277,6 +317,16 @@
     "trailer": "https://cdn.marsgate.com.tr/13264",
     "genre": "Korku",
     "summary": "İşitme engelli bir kadın olan Ju-young, küçük kız kardeşi Ju-hee'nin yeni taşındığı apartman dairesinden iz bırakmadan gizemli bir şekilde kaybolduğuna dair haberi aldığında olayı araştırmak için kız kardeşinin yaşadığı apartman dairesine gider. Apartman sakinlerine kız kardeşini sorduğunda, hepsinden histerik bir şekilde gürültüden bıktıkları ve sessizlik istedikleri tepkisini alır. Gecelerin ürkütücü sessizliği arka planda sürekli duyulan rahatsız edici bir sesle bozulmaktadır. Ju-young yapmış olduğu araştırmaların sonunda kız kardeşinin kaybolmasının ve açıklanamayan seslerin arkasında apartmana geçmişinden kaynaklı kötü niyetli bir varlığın musallat olması olduğunu fark eder...",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Nürnberg",
+    "date": "20260130",
+    "link": "https://www.paribucineverse.com/dram-filmleri/nurnberg-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn.marsgate.com.tr/13273",
+    "genre": "Dram",
+    "summary": "ack El-Hai’nin \"Nazi ve Psikiyatrist\" adlı kitabından uyarlanan yapım, psikiyatrist Douglas Kelley’nin, aralarında Hermann Göring’in de bulunduğu üst düzey Nazi yetkililerinin zihinsel durumlarını incelemekle görevlendirilmesini konu alıyor. Kelley, sanıkların yargılanma sürecinde onlarla kurduğu diyaloglar üzerinden suçun psikolojisini ve insan doğasının sınırlarını anlamaya çalışır. James Vanderbilt’in yönettiği film, tarihin en önemli davalarından birinin perde arkasında yaşanan psikolojik mücadeleyi nesnel bir bakış açısıyla beyazperdeye taşıyor.",
     "kaynak": "Gelecek Film"
   },
   {
