@@ -60,22 +60,22 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Ketenpere: Dalavere",
-    "link": "https://www.paribucineverse.com/komedi-filmleri/ketenpere-dalavere-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~cb7d1f46-3201-4466-8aa0-7357441b1986",
-    "trailer": "https://cdn.marsgate.com.tr/13256",
-    "genre": "Komedi",
-    "summary": "Film yapımcısı Kalender, Ünlü iş insanı Feza’nın eşi Aydan ile tanışır ve onlardan bir film yatırımı teklifi alır. Kalender ise Feza’nın evinde sakladığını söylediği altınlara ulaşmak için bu projeyi kabul eder. Kalender, Vefa ve Namık’la birlikte sahte bir film çekimi düzenleyerek oyuncuları eve gönderir, asıl amacı ve planı farklıdır. Ancak plan beklenmedik şekilde karışır ve Kalender ile Vefa planlarını başardıklarını zannederken, Feza ve Aydan’ın, tüm süreci yöneten bir tuzak kurduğu ortaya çıkar. Kalender, Vefa ve Namık planlarının işlemediğini ve asıl oyunun Ejder tarafından planlandığı anlaşılınca; büyük bir zararla karşılaşırlar. Hikâye, Kayhan’ın sürpriz bir karşılaşma yaşaması ve Kalender’in geçmişte haksızlık ettiği Erdi’nin intikam için geri dönmesiyle beklenmedik bir sona ulaşır.",
-    "date": "20260109",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
     "title": "Başka Yolu Yok",
     "link": "https://www.paribucineverse.com/gerilim-filmleri/baska-yolu-yok-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~37744f3f-2680-4867-8bda-5392a9e9918a",
     "trailer": "https://cdn.marsgate.com.tr/13221",
     "genre": "Gerilim",
     "summary": "Başka Yolu Yok, yıllarca yorulmadan çalıştığı kağıt şirketinden aniden işten çıkarılan Man-soo adlı bir adamın hikayesini anlatıyor. Yeni bir iş arayışında giderek daha da çaresizleşen Man-soo, sonunda toplumdaki rekabetle nasıl başa çıkacağına dair kesin bir karara varır.",
+    "date": "20260109",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Hizmetçi",
+    "link": "https://www.paribucineverse.com/gerilim-filmleri/hizmetci-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~ba46f02e-11b3-4bbb-999b-b29bff8c64eb",
+    "trailer": "https://cdn.marsgate.com.tr/13237",
+    "genre": "Gerilim",
+    "summary": "Freida McFadden’ın çok satan romanından uyarlanan film, geçmişini geride bırakıp yeni bir hayat kurmaya çalışan Millie'nin, dışarıdan kusursuz gözüken zengin Winchester ailesinin yanında işe başlamasıyla yaşadığı garip olayları anlatıyor.",
     "date": "20260109",
     "kaynak": "Vizyondaki Film"
   },
@@ -90,12 +90,12 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Hizmetçi",
-    "link": "https://www.paribucineverse.com/gerilim-filmleri/hizmetci-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~ba46f02e-11b3-4bbb-999b-b29bff8c64eb",
-    "trailer": "https://cdn.marsgate.com.tr/13237",
-    "genre": "Gerilim",
-    "summary": "Freida McFadden’ın çok satan romanından uyarlanan film, geçmişini geride bırakıp yeni bir hayat kurmaya çalışan Millie'nin, dışarıdan kusursuz gözüken zengin Winchester ailesinin yanında işe başlamasıyla yaşadığı garip olayları anlatıyor.",
+    "title": "Ketenpere: Dalavere",
+    "link": "https://www.paribucineverse.com/komedi-filmleri/ketenpere-dalavere-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~cb7d1f46-3201-4466-8aa0-7357441b1986",
+    "trailer": "https://cdn.marsgate.com.tr/13256",
+    "genre": "Komedi",
+    "summary": "Film yapımcısı Kalender, Ünlü iş insanı Feza’nın eşi Aydan ile tanışır ve onlardan bir film yatırımı teklifi alır. Kalender ise Feza’nın evinde sakladığını söylediği altınlara ulaşmak için bu projeyi kabul eder. Kalender, Vefa ve Namık’la birlikte sahte bir film çekimi düzenleyerek oyuncuları eve gönderir, asıl amacı ve planı farklıdır. Ancak plan beklenmedik şekilde karışır ve Kalender ile Vefa planlarını başardıklarını zannederken, Feza ve Aydan’ın, tüm süreci yöneten bir tuzak kurduğu ortaya çıkar. Kalender, Vefa ve Namık planlarının işlemediğini ve asıl oyunun Ejder tarafından planlandığı anlaşılınca; büyük bir zararla karşılaşırlar. Hikâye, Kayhan’ın sürpriz bir karşılaşma yaşaması ve Kalender’in geçmişte haksızlık ettiği Erdi’nin intikam için geri dönmesiyle beklenmedik bir sona ulaşır.",
     "date": "20260109",
     "kaynak": "Vizyondaki Film"
   },
@@ -136,16 +136,6 @@
     "trailer": "https://cdn.marsgate.com.tr/13152",
     "genre": "Bilim Kurgu",
     "summary": "Serinin üçüncü filmi, Jake ve Neytiri'nin ailesinin, yaşadıkları kaybın yasını tutarken, Pandora'da savaşın büyümesini ve ailenin agresif bir Na'vi kabilesi olan Kül insanlarıyla yolunun kesişmesini anlatıyor.",
-    "date": "20251219",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
-    "title": "Hind Rajab'ın Sesi",
-    "link": "https://www.paribucineverse.com/dram-filmleri/hind-rajabin-sesi-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~133a09e1-3aae-4e3c-854a-a75d223d8bf1",
-    "trailer": "https://cdn.marsgate.com.tr/13257",
-    "genre": "Dram",
-    "summary": "29 Ocak 2024. Kızılay gönüllülerine acil bir çağrı ulaştı. Gazze’de, kurşunların altında, bir aracın içinde sıkışıp kalmış 6 yaşında bir kız çocuğu, kurtarılmak için yalvarıyordu. Kızı hatta tutmaya çalışırken, bir yandan da ambulansı ona ulaştırabilmek için ellerinden geleni yaptılar. Hind Rajab, bu çocuğun adıydı.",
     "date": "20251219",
     "kaynak": "Vizyondaki Film"
   },
@@ -244,9 +234,19 @@
     "date": "20260123",
     "link": "https://www.paribucineverse.com/korku-filmleri/zir-i-cin-4-nesep-bagi-filmi-izle",
     "bilet_link": null,
-    "trailer": "Fragman bağlantısı yok",
+    "trailer": "https://cdn.marsgate.com.tr/13277",
     "genre": "Korku",
     "summary": "İhanetle başlayan bir sır, cinayetle son bulurken, Hz. Süleyman tarafından lanetlenen Zir kabilesinin günahkar cinleri, kanında kötülük olan bir aileye musallat olur. Kocası Nevzat'ı öldüren Gülizar ve suça ortak olan Muhtar, bu büyük sırrı örtmek için çareyi kara büyü yapan bir muskacıda arar. Fakat işler beklendiği gibi gitmez; Zir kabilesi, günahlarının bedeli olarak onlardan bir nesli lanetleyecek korkunç bir \"Nesep Bağı\" talep eder. Kul hakkının ağırlığı altında ezilen Gülizar, kendi rahminden dünyaya ait olmayan bir varlığı doğurmaya zorlanırken, geçmişin unutulan gelenekleri ve laneti, masumları bile içine çeken bir felakete yol açar.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Fırtına Kız",
+    "date": "20260130",
+    "link": "https://www.paribucineverse.com/dram-filmleri/firtina-kiz-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn.marsgate.com.tr/13279",
+    "genre": "Dram",
+    "summary": "Film, törelere ve aile baskısına rağmen futbolcu olma hayalinden vazgeçmeyen Zeynep'in hikâyesini anlatıyor.",
     "kaynak": "Gelecek Film"
   },
   {
