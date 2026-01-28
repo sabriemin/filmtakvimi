@@ -30,16 +30,6 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Müthiş Eleanor",
-    "link": "https://www.paribucineverse.com/dram-filmleri/muthis-eleanor-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~1eeaa74f-38be-4a00-a1ea-ce876de1440d",
-    "trailer": "https://cdn.marsgate.com.tr/13270",
-    "genre": "Dram",
-    "summary": "90 yaşındaki Eleanor Morgenstein, uzun yıllar Florida'da yaşadıktan sonra New York'a taşınmaya karar verir. Onun bu kararı almasında en yakın arkadaşını kaybetmiş olmasının etkisi vardır. Yaşadığı kayıpla başa çıkmaya çalışan Eleanor, yeniden birileriyle bağlantı kurmanın özlemini çeker. Bu süreçte Eleanor, 19 yaşındaki bir çocukla arkadaş olur.",
-    "date": "20260123",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
     "title": "Of-Pof Balık",
     "link": "https://www.paribucineverse.com/animasyon-filmleri/of-pof-balik-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~b9006fb9-bcb0-458f-9d18-27e3a12c7dc1",
@@ -56,6 +46,16 @@
     "trailer": "https://cdn.marsgate.com.tr/13276",
     "genre": "Dram",
     "summary": "Nagazaki, 1964. Yakuza çetesinin lideri olan babasının ölümünün ardından 14 yaşındaki Kikuo, ünlü bir Kabuki oyuncusunun himayesine alınır. Oyuncunun tek oğlu Shunsuke ile birlikte Kikuo, kendini bu geleneksel tiyatro biçimine adamaya karar verir. On yıllar boyunca, iki genç adam birlikte büyür ve gelişir; oyunculuk okulundan en görkemli sahnelere kadar, skandallar ve zaferler, kardeşlik ve ihanetler arasında, her biri yaşayan en büyük Kabuki ustası olma yolunda ilerler.",
+    "date": "20260123",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Müthiş Eleanor",
+    "link": "https://www.paribucineverse.com/dram-filmleri/muthis-eleanor-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~1eeaa74f-38be-4a00-a1ea-ce876de1440d",
+    "trailer": "https://cdn.marsgate.com.tr/13270",
+    "genre": "Dram",
+    "summary": "90 yaşındaki Eleanor Morgenstein, uzun yıllar Florida'da yaşadıktan sonra New York'a taşınmaya karar verir. Onun bu kararı almasında en yakın arkadaşını kaybetmiş olmasının etkisi vardır. Yaşadığı kayıpla başa çıkmaya çalışan Eleanor, yeniden birileriyle bağlantı kurmanın özlemini çeker. Bu süreçte Eleanor, 19 yaşındaki bir çocukla arkadaş olur.",
     "date": "20260123",
     "kaynak": "Vizyondaki Film"
   },
@@ -120,22 +120,22 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Başka Yolu Yok",
-    "link": "https://www.paribucineverse.com/gerilim-filmleri/baska-yolu-yok-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~37744f3f-2680-4867-8bda-5392a9e9918a",
-    "trailer": "https://cdn.marsgate.com.tr/13221",
-    "genre": "Gerilim",
-    "summary": "Başka Yolu Yok, yıllarca yorulmadan çalıştığı kağıt şirketinden aniden işten çıkarılan Man-soo adlı bir adamın hikayesini anlatıyor. Yeni bir iş arayışında giderek daha da çaresizleşen Man-soo, sonunda toplumdaki rekabetle nasıl başa çıkacağına dair kesin bir karara varır.",
-    "date": "20260109",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
     "title": "Kardeş Takımı 3",
     "link": "https://www.paribucineverse.com/aile-filmleri/kardes-takimi-3-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~958b45fb-bad7-4387-9c85-e492c2674e0e",
     "trailer": "https://cdn.marsgate.com.tr/13219",
     "genre": "Aile",
     "summary": "Serinin bu son filmi Kardeş Takımı 3’te, Aslı ve Serkan, bebek izinlerinden ayrılarak Yıldız Taşı görevini tamamlamak amacıyla tüm aile ile birlikte zamanda yolculuğa çıkar. Kahramanlar beklenmedik bir şekilde geçmişe dönerek tarihi dönemlere ait kostümler ve dekorlar eşliğinde, kendilerini zorlu durumların içinde bulur. Bu sürükleyici macerada ekip, takım ruhu, cesaret ve aile bağları gibi temaları merkeze alarak bugüne kadarki en zorlu sınavlarından birini verirken, film serinin final halkasını oluşturuyor.",
+    "date": "20260109",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Başka Yolu Yok",
+    "link": "https://www.paribucineverse.com/gerilim-filmleri/baska-yolu-yok-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~37744f3f-2680-4867-8bda-5392a9e9918a",
+    "trailer": "https://cdn.marsgate.com.tr/13221",
+    "genre": "Gerilim",
+    "summary": "Başka Yolu Yok, yıllarca yorulmadan çalıştığı kağıt şirketinden aniden işten çıkarılan Man-soo adlı bir adamın hikayesini anlatıyor. Yeni bir iş arayışında giderek daha da çaresizleşen Man-soo, sonunda toplumdaki rekabetle nasıl başa çıkacağına dair kesin bir karara varır.",
     "date": "20260109",
     "kaynak": "Vizyondaki Film"
   },
@@ -270,16 +270,6 @@
     "kaynak": "Gelecek Film"
   },
   {
-    "title": "Noise: Lanetin Sesi",
-    "date": "20260130",
-    "link": "https://www.paribucineverse.com/korku-filmleri/noise-lanetin-sesi-filmi-izle",
-    "bilet_link": null,
-    "trailer": "https://cdn.marsgate.com.tr/13264",
-    "genre": "Korku",
-    "summary": "İşitme engelli bir kadın olan Ju-young, küçük kız kardeşi Ju-hee'nin yeni taşındığı apartman dairesinden iz bırakmadan gizemli bir şekilde kaybolduğuna dair haberi aldığında olayı araştırmak için kız kardeşinin yaşadığı apartman dairesine gider. Apartman sakinlerine kız kardeşini sorduğunda, hepsinden histerik bir şekilde gürültüden bıktıkları ve sessizlik istedikleri tepkisini alır. Gecelerin ürkütücü sessizliği arka planda sürekli duyulan rahatsız edici bir sesle bozulmaktadır. Ju-young yapmış olduğu araştırmaların sonunda kız kardeşinin kaybolmasının ve açıklanamayan seslerin arkasında apartmana geçmişinden kaynaklı kötü niyetli bir varlığın musallat olması olduğunu fark eder...",
-    "kaynak": "Gelecek Film"
-  },
-  {
     "title": "Nürnberg",
     "date": "20260130",
     "link": "https://www.paribucineverse.com/dram-filmleri/nurnberg-filmi-izle",
@@ -300,6 +290,16 @@
     "kaynak": "Gelecek Film"
   },
   {
+    "title": "Süper Köpekler: Oyun Zamanı",
+    "date": "20260130",
+    "link": "https://www.paribucineverse.com/animasyon-filmleri/super-kopekler-oyun-zamani-filmi-izle",
+    "bilet_link": null,
+    "trailer": "Fragman bağlantısı yok",
+    "genre": "Animasyon",
+    "summary": "Okulların açılmasıyla birlikte Süper Köpekler, hem derslerine hem de mahallede onları bekleyen yepyeni maceralara geri döner. Fakat bu yıl, sıradan bir okul dönemi değildir! Yeni arkadaşlıklar, beklenmedik sürprizler ve bolca kahkaha onları beklemektedir.",
+    "kaynak": "Gelecek Film"
+  },
+  {
     "title": "Yardım Çağrısı",
     "date": "20260130",
     "link": "https://www.paribucineverse.com/korku-filmleri/yardim-cagrisi-filmi-izle",
@@ -307,6 +307,16 @@
     "trailer": "https://cdn.marsgate.com.tr/13242",
     "genre": "Korku",
     "summary": "iki meslektaşın, bir uçak kazasından sağ kurtulan tek kişiler olarak ıssız bir adada verdikleri hayatta kalma mücadelesi anlatılıyor. Patron ve çalışan, geçmişteki anlaşmazlıklarını geride bırakmak zorunda kalırken; hikâye, kısa sürede karanlık mizahla örülü bir irade ve zeka savaşına dönüşüyor.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Greenland: Kıyamet",
+    "date": "20260206",
+    "link": "https://www.paribucineverse.com/gerilim-filmleri/greenland-kiyamet-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn.marsgate.com.tr/13299",
+    "genre": "Gerilim",
+    "summary": "Film, dünyayı vuran büyük bir felaketler zincirinden Grönland sığınağına gitmeyi başararak kurtulan John Garrity ve ailesinin, güvenlik gerekçesiyle sığınaktan ayrılarak kendilerine yeni bir yaşam yeri bulmak için çıktıkları zorlu yolculuğu anlatıyor.",
     "kaynak": "Gelecek Film"
   },
   {
@@ -367,6 +377,26 @@
     "trailer": "https://cdn.marsgate.com.tr/13261",
     "genre": "Dram",
     "summary": "Linda, hasta çocuğunun bakımı için büyük gayret sarf eden ve bu esnada işini aksatmamaya çalışan bir annedir. Zaten güçlüklerle dolu olan hayatında bir krizle daha yüzleşmek zorunda kalır. Evlerindeki tesisat sorunu nedeniyle bir odanın tavanında devasa bir delik açılmıştır. Bunun üzerine, bir motelde kalmaya başlarlar. Her şey günden güne karışmakta ve güçleşmektedir.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Momo",
+    "date": "20260213",
+    "link": "https://www.paribucineverse.com/aile-filmleri/momo-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn.marsgate.com.tr/13303",
+    "genre": "Aile",
+    "summary": "Momo, Michael Ende’nin aynı adlı klasik romanından uyarlanarak, çevresindekileri dinleme yetisiyle tanınan Momo’nun \"Duman Adamlar\" olarak bilinen zaman hırsızlarına karşı macerasını merkezine alıyor. İnsanların modern yaşamın hızı ve verimlilik baskısı altında birbirlerine ayıracak vaktinin kalmadığı bir dünyada Momo, zamanın koruyucusu Hora Usta ve kaplumbağa Cassiopeia ile iş birliği yaparak bu düzene karşı çıkar.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Olay Para",
+    "date": "20260213",
+    "link": "https://www.paribucineverse.com/komedi-filmleri/olay-para-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn.marsgate.com.tr/13300",
+    "genre": "Komedi",
+    "summary": "Dinçer ve Koray, hayatın sillesini yemiş, borç batağında iki sıkı dosttur. Umutsuzluğun pençesinde kıvranırlarken, Dinçer'in banka hesabına gece yarısı beş milyon lira yatırılır! Bu, piyangodan büyük ikramiye çıkması gibi bir şeydir. Ancak bu para, göründüğü kadar masum değildir; \"Olay Para\"dır!",
     "kaynak": "Gelecek Film"
   },
   {
@@ -440,6 +470,16 @@
     "kaynak": "Gelecek Film"
   },
   {
+    "title": "Uzun Kuyruk Marsupilami",
+    "date": "20260227",
+    "link": "https://www.paribucineverse.com/macera-filmleri/uzun-kuyruk-marsupilami-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn.marsgate.com.tr/13301",
+    "genre": "Macera",
+    "summary": "Hayvanat bahçesindeki işini kurtarmak için David riskli bir planı kabul eder: Güney Amerika’dan gizemli bir paketi getirmelidir. Eski eşi, oğulları ve birazda sakar olan iş arkadaşı Stéphane ile aynı yolcu gemisine biner. David, paketi gizlice taşıması için Stéphane’ı kullanır. Ancak Stéphane paketi yanlışlıkla açınca sevimli yavru Marsupilami serbest kalır. Son derece nadir ve değerli bu tatlı hayvan, yolculuğu kısa sürede tam bir kaosa sürükler. Bu çılgın macera sırasında David ve ailesi, aile bağlarının gücünü yeniden keşfeder.",
+    "kaynak": "Gelecek Film"
+  },
+  {
     "title": "Gelin!",
     "date": "20260306",
     "link": "https://www.paribucineverse.com/korku-filmleri/gelin-filmi-izle",
@@ -457,6 +497,16 @@
     "trailer": "https://cdn.marsgate.com.tr/13287",
     "genre": "Animasyon",
     "summary": "Film; bilim insanlarının, insan bilincini gerçekçi robot hayvanlara aktarmanın bir yolunu keşfetmesi sonrası hayvansever Mabel’ın bilincini bir kunduza aktararak hayvanlar aleminde bir serüvene çıkmasını konu ediniyor.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Şarkıcı Balina",
+    "date": "20260313",
+    "link": "https://www.paribucineverse.com/animasyon-filmleri/sarkici-balina-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn.marsgate.com.tr/13302",
+    "genre": "Animasyon",
+    "summary": "Genç kambur balina Vincent, anne babasını kaybetmiş ve kendi yeteneklerinden şüphe eden bir balinadır. Dev bir deniz canavarının buzdağından kurtulup tüm denizleri tehdit etmesiyle, Vincent; sadık balık dadısı Walter ve sağır orka Darya ile birlikte, okyanusun derinliklerine doğru zorlu bir yolculuğa çıkar. Korkularıyla yüzleşmek ve okyanusları kurtarmak için kendi sihirli şarkısını bulmak zorundadır.",
     "kaynak": "Gelecek Film"
   },
   {
