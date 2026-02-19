@@ -40,22 +40,22 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Momo",
-    "link": "https://www.paribucineverse.com/aile-filmleri/momo-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~0155d94f-9fe0-4f6f-9181-be57bb1a47de",
-    "trailer": "https://cdn.marsgate.com.tr/13303",
-    "genre": "Aile",
-    "summary": "Momo, Michael Ende’nin aynı adlı klasik romanından uyarlanarak, çevresindekileri dinleme yetisiyle tanınan Momo’nun \"Duman Adamlar\" olarak bilinen zaman hırsızlarına karşı macerasını merkezine alıyor. İnsanların modern yaşamın hızı ve verimlilik baskısı altında birbirlerine ayıracak vaktinin kalmadığı bir dünyada Momo, zamanın koruyucusu Hora Usta ve kaplumbağa Cassiopeia ile iş birliği yaparak bu düzene karşı çıkar.",
-    "date": "20260213",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
     "title": "Kedi Yok",
     "link": "https://www.paribucineverse.com/komedi-filmleri/kedi-yok-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~599c0afc-4262-4f86-bb22-61349d4af101",
     "trailer": "https://cdn.marsgate.com.tr/13309",
     "genre": "Komedi",
     "summary": "Bir müzeden ünlü bir tablonun çalınması, çete üyeleri ve müze personeli arasında beklenmedik bir çatışmaya yol açar ve bu sırada alışılmadık bir romantik ilişki gelişir.",
+    "date": "20260213",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Momo",
+    "link": "https://www.paribucineverse.com/aile-filmleri/momo-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~0155d94f-9fe0-4f6f-9181-be57bb1a47de",
+    "trailer": "https://cdn.marsgate.com.tr/13303",
+    "genre": "Aile",
+    "summary": "Momo, Michael Ende’nin aynı adlı klasik romanından uyarlanarak, çevresindekileri dinleme yetisiyle tanınan Momo’nun \"Duman Adamlar\" olarak bilinen zaman hırsızlarına karşı macerasını merkezine alıyor. İnsanların modern yaşamın hızı ve verimlilik baskısı altında birbirlerine ayıracak vaktinin kalmadığı bir dünyada Momo, zamanın koruyucusu Hora Usta ve kaplumbağa Cassiopeia ile iş birliği yaparak bu düzene karşı çıkar.",
     "date": "20260213",
     "kaynak": "Vizyondaki Film"
   },
@@ -280,10 +280,40 @@
     "kaynak": "Vizyondaki Film"
   },
   {
+    "title": "Scarlet",
+    "date": "20260220",
+    "link": "https://www.paribucineverse.com/animasyon-filmleri/scarlet-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~2dc64098-7e7b-49e6-87de-512ff82801cc",
+    "trailer": "https://cdn.marsgate.com.tr/13286",
+    "genre": "Animasyon",
+    "summary": "Babasının intikamını almak için bir göreve çıkan ortaçağ prensesi, yaşam ve ölüm arasındaki bir alemde uyanır. Burada, ona acı ve öfkeden uzak bir geleceğin mümkün olduğunu gösteren, günümüzden gelen idealist bir gençle karşılaşır.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Sığınak",
+    "date": "20260220",
+    "link": "https://www.paribucineverse.com/aksiyon-filmleri/siginak-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~0b6c51e4-0695-420e-8db3-523bd75118c0",
+    "trailer": "https://cdn.marsgate.com.tr/13304",
+    "genre": "Aksiyon",
+    "summary": "İskoçya'da ıssız bir adada gizemli şekilde yaşamını sürdüren eski asker Mason, fırtınalı bir günde hiç tanımadığı genç bir kızın hayatını kurtarır. Tüm kaderini değiştirecek ve geçmişinden gelen karanlıkla yüzleşmesine sebep olacak bu olaydan sonra, hiçbir şey eskisi gibi olmayacaktır.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Sesim Geliyor Mu?",
+    "date": "20260220",
+    "link": "https://www.paribucineverse.com/dram-filmleri/sesim-geliyor-mu-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~9c645e7d-7faf-4c26-a13b-bd05a4ad9e68",
+    "trailer": "https://cdn.marsgate.com.tr/13330",
+    "genre": "Dram",
+    "summary": "Bradley Cooper imzalı film, orta yaş bunalımı ve boşanmayla karşı karşıya kalan Alex’in New York komedi sahnesinde yeni amacını aramaya başlamasını, Tess’in ise aileleri için yaptığı fedakarlıklarla yüzleşirken ortak ebeveynlik, kimlik ve aşkın yeni bir biçim alıp alamayacağı konularında bir yolculuğa çıkmasını konu alıyor.",
+    "kaynak": "Gelecek Film"
+  },
+  {
     "title": "Ben Bir Yabancıydım",
     "date": "20260220",
     "link": "https://www.paribucineverse.com/dram-filmleri/ben-bir-yabanciydim-filmi-izle",
-    "bilet_link": null,
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~1ccd07e0-c90e-491f-bfa9-1aee7cf052cb",
     "trailer": "https://cdn.marsgate.com.tr/13293",
     "genre": "Dram",
     "summary": "Suriyeli bir doktorun, küçük kızıyla birlikte Halep’ten kaçmak zorunda kaldığı sırada verdiği çaresiz bir karar, dört yabancının kaderini aynı noktada birleştirir. Oğlunu kurtarmaya çalışan bir kaçakçı, vicdanıyla mücadele eden bir asker, evini arayan bir şair, görev ve merhamet arasında kalan bir Yunan sahil güvenlik kaptanı… Bu dört yabancının yolları, hayatta kalmanın belirsiz olduğu bir gece Akdeniz’de kesişir.",
@@ -293,7 +323,7 @@
     "title": "Cam Sehpa",
     "date": "20260220",
     "link": "https://www.paribucineverse.com/gerilim-filmleri/cam-sehpa-filmi-izle",
-    "bilet_link": null,
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~f97381b2-9a5b-4b54-9545-ecb7e5606a7b",
     "trailer": "https://cdn.marsgate.com.tr/13315",
     "genre": "Gerilim",
     "summary": "Pısırık bir kocanın evliliği içinde aldığı ilk ciddi karar bir cam sehpa alışverişidir. Karısının itirazına rağmen aldığı cam sehpa, aile içi büyük bir trajediye sebep olacağı gibi, karakterleri de sonu hiç tahmin edilemeyecek bir kader yolculuğuna çıkaracaktır.",
@@ -303,7 +333,7 @@
     "title": "Chopin, Chopin!",
     "date": "20260220",
     "link": "https://www.paribucineverse.com/biyografi-filmleri/chopin-chopin-filmi-izle",
-    "bilet_link": null,
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~096a82dd-2f83-4720-889d-28caaf67cc2c",
     "trailer": "https://cdn.marsgate.com.tr/13320",
     "genre": "Biyografi",
     "summary": "Paris, 1835. Şaşaalı Paris gecelerinin en romantik ruhlu adamı olan ünlü besteci Frederic Chopin, hastalıklarla mücadele ederken bir yandan da yüksek sosyetede konserler ve ders vererek geçimini sağlamaya çalışır. Saatler hızla tükenirken Chopin müziğin özünde bir devrim yaratacaktır.",
@@ -313,7 +343,7 @@
     "title": "Gece Vardiyası",
     "date": "20260220",
     "link": "https://www.paribucineverse.com/dram-filmleri/gece-vardiyasi-filmi-izle",
-    "bilet_link": null,
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~3bd6828e-4496-4605-b074-0fa07a64221f",
     "trailer": "https://cdn.marsgate.com.tr/13322",
     "genre": "Dram",
     "summary": "İsviçre’de yetersiz personel bulunan bir acil serviste çalışan özverili hemşire Floria, zorlu gece vardiyasında ve sayısız hastasıyla başa çıkmaya çalışmaktadır. Baskıya rağmen, kritik durumda olan annesine, teşhis bekleyen yaşlı bir hastaya ve yüksek beklentili özel bir hastaya titizlikle bakar. Ancak, yaptığı ciddi bir hata onu çöküşün eşiğine getirir ve her şeyi alt üst etme tehdidi oluşturur.",
@@ -323,40 +353,10 @@
     "title": "Muamma: Cenin-i Cin",
     "date": "20260220",
     "link": "https://www.paribucineverse.com/korku-filmleri/muamma-cenin-i-cin-filmi-izle",
-    "bilet_link": null,
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~fa5a2679-512a-4d78-844b-c55149f4e177",
     "trailer": "https://cdn.marsgate.com.tr/13311",
     "genre": "Korku",
     "summary": "Bayram ile Gül, çocukları Ali ile birlikte köyde mütevazı evlerinde yaşamaktadırlar. Evde bir süreden sonra tuhaf olaylar yaşanmaya başlar. Her ne kadar anne ve baba bu olayı hocalarla çözmeye çalışsalar da, Ali böyle olaylara inanmaz ve oralı olmaz. Daha sonra olaylar işin içinden çıkılamayacak bir vaziyet alır.",
-    "kaynak": "Gelecek Film"
-  },
-  {
-    "title": "Scarlet",
-    "date": "20260220",
-    "link": "https://www.paribucineverse.com/animasyon-filmleri/scarlet-filmi-izle",
-    "bilet_link": null,
-    "trailer": "https://cdn.marsgate.com.tr/13286",
-    "genre": "Animasyon",
-    "summary": "Babasının intikamını almak için bir göreve çıkan ortaçağ prensesi, yaşam ve ölüm arasındaki bir alemde uyanır. Burada, ona acı ve öfkeden uzak bir geleceğin mümkün olduğunu gösteren, günümüzden gelen idealist bir gençle karşılaşır.",
-    "kaynak": "Gelecek Film"
-  },
-  {
-    "title": "Sesim Geliyor Mu?",
-    "date": "20260220",
-    "link": "https://www.paribucineverse.com/dram-filmleri/sesim-geliyor-mu-filmi-izle",
-    "bilet_link": null,
-    "trailer": "https://cdn.marsgate.com.tr/13330",
-    "genre": "Dram",
-    "summary": "Bradley Cooper imzalı film, orta yaş bunalımı ve boşanmayla karşı karşıya kalan Alex’in New York komedi sahnesinde yeni amacını aramaya başlamasını, Tess’in ise aileleri için yaptığı fedakarlıklarla yüzleşirken ortak ebeveynlik, kimlik ve aşkın yeni bir biçim alıp alamayacağı konularında bir yolculuğa çıkmasını konu alıyor.",
-    "kaynak": "Gelecek Film"
-  },
-  {
-    "title": "Sığınak",
-    "date": "20260220",
-    "link": "https://www.paribucineverse.com/aksiyon-filmleri/siginak-filmi-izle",
-    "bilet_link": null,
-    "trailer": "https://cdn.marsgate.com.tr/13304",
-    "genre": "Aksiyon",
-    "summary": "İskoçya'da ıssız bir adada gizemli şekilde yaşamını sürdüren eski asker Mason, fırtınalı bir günde hiç tanımadığı genç bir kızın hayatını kurtarır. Tüm kaderini değiştirecek ve geçmişinden gelen karanlıkla yüzleşmesine sebep olacak bu olaydan sonra, hiçbir şey eskisi gibi olmayacaktır.",
     "kaynak": "Gelecek Film"
   },
   {
@@ -410,16 +410,6 @@
     "kaynak": "Gelecek Film"
   },
   {
-    "title": "Hind Rajab'ın Sesi",
-    "date": "20260227",
-    "link": "https://www.paribucineverse.com/dram-filmleri/hind-rajabin-sesi-filmi-izle",
-    "bilet_link": null,
-    "trailer": "https://cdn.marsgate.com.tr/13257",
-    "genre": "Dram",
-    "summary": "29 Ocak 2024. Kızılay gönüllülerine acil bir çağrı ulaştı. Gazze’de, kurşunların altında, bir aracın içinde sıkışıp kalmış 6 yaşında bir kız çocuğu, kurtarılmak için yalvarıyordu. Kızı hatta tutmaya çalışırken, bir yandan da ambulansı ona ulaştırabilmek için ellerinden geleni yaptılar. Hind Rajab, bu çocuğun adıydı.",
-    "kaynak": "Gelecek Film"
-  },
-  {
     "title": "Kıbrıs Türküsü",
     "date": "20260227",
     "link": "https://www.paribucineverse.com/dram-filmleri/kibris-turkusu-filmi-izle",
@@ -447,16 +437,6 @@
     "trailer": "https://cdn.marsgate.com.tr/13328",
     "genre": "Komedi",
     "summary": "1975'te Amerikan ambargosunun Türkiye'yi sürüklediği ekonomik kriz, sinema sektörünü de dönüştürür. Yapımcılar düşük bütçeli erotik filmlerle yeni bir dönem başlatırken, Kral Lear' da başrol oynamaya hazırlanan tiyatro oyuncusu Aytekin bu furyadan uzak durmaya çalışır. Ancak hasta eşi ve siyasi olaylara karışan oğlunun sorumluluğu, onu istemeden de olsa bu dünyanın içine çeker. Erotik sinemadaki kariyeri beklenmedik bir yıldızlığa dönüşür, fakat ailesini koruma çabası tersine sonuçlanır.",
-    "kaynak": "Gelecek Film"
-  },
-  {
-    "title": "Senden Geriye Kalan",
-    "date": "20260227",
-    "link": "https://www.paribucineverse.com/dram-filmleri/senden-geriye-kalan-filmi-izle",
-    "bilet_link": null,
-    "trailer": "https://cdn.marsgate.com.tr/13296",
-    "genre": "Dram",
-    "summary": "Sevgilisiyle geçirdiği kusursuz bir günün ardından Kenna affedilemez bir hata yapar ve hapse girer. Yedi yıl sonra, Kenna Wyoming’deki kasabasına döner; hayatını yeniden kurmak ve hiç tanıyamadığı küçük kızı Diem ile yeniden bir araya gelme şansı kazanmak ister. Ancak Diem’in velayetini üstlenen büyükbabası ve büyükannesi, Kenna’nın kızını görme çabalarını kararlılıkla reddeder. Bunun üzerine Kenna, eski NFL oyuncusu ve yerel bar sahibi Ledger ile beklenmedik bir şefkat ve daha da derin bir bağ keşfeder. Aralarındaki gizli ilişki ilerledikçe, her ikisi için de tehlikeler büyür; Kenna’yı kalp kırıklığına ve sonunda ikinci bir şans umuduna götürür.",
     "kaynak": "Gelecek Film"
   },
   {
@@ -510,6 +490,16 @@
     "kaynak": "Gelecek Film"
   },
   {
+    "title": "Hind Rajab'ın Sesi",
+    "date": "20260306",
+    "link": "https://www.paribucineverse.com/dram-filmleri/hind-rajabin-sesi-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn.marsgate.com.tr/13257",
+    "genre": "Dram",
+    "summary": "29 Ocak 2024. Kızılay gönüllülerine acil bir çağrı ulaştı. Gazze’de, kurşunların altında, bir aracın içinde sıkışıp kalmış 6 yaşında bir kız çocuğu, kurtarılmak için yalvarıyordu. Kızı hatta tutmaya çalışırken, bir yandan da ambulansı ona ulaştırabilmek için ellerinden geleni yaptılar. Hind Rajab, bu çocuğun adıydı.",
+    "kaynak": "Gelecek Film"
+  },
+  {
     "title": "Hoplayanlar",
     "date": "20260306",
     "link": "https://www.paribucineverse.com/animasyon-filmleri/hoplayanlar-filmi-izle",
@@ -517,6 +507,36 @@
     "trailer": "https://cdn.marsgate.com.tr/13287",
     "genre": "Animasyon",
     "summary": "Film; bilim insanlarının, insan bilincini gerçekçi robot hayvanlara aktarmanın bir yolunu keşfetmesi sonrası hayvansever Mabel’ın bilincini bir kunduza aktararak hayvanlar aleminde bir serüvene çıkmasını konu ediniyor.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Senden Geriye Kalan",
+    "date": "20260306",
+    "link": "https://www.paribucineverse.com/dram-filmleri/senden-geriye-kalan-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn.marsgate.com.tr/13296",
+    "genre": "Dram",
+    "summary": "Sevgilisiyle geçirdiği kusursuz bir günün ardından Kenna affedilemez bir hata yapar ve hapse girer. Yedi yıl sonra, Kenna Wyoming’deki kasabasına döner; hayatını yeniden kurmak ve hiç tanıyamadığı küçük kızı Diem ile yeniden bir araya gelme şansı kazanmak ister. Ancak Diem’in velayetini üstlenen büyükbabası ve büyükannesi, Kenna’nın kızını görme çabalarını kararlılıkla reddeder. Bunun üzerine Kenna, eski NFL oyuncusu ve yerel bar sahibi Ledger ile beklenmedik bir şefkat ve daha da derin bir bağ keşfeder. Aralarındaki gizli ilişki ilerledikçe, her ikisi için de tehlikeler büyür; Kenna’yı kalp kırıklığına ve sonunda ikinci bir şans umuduna götürür.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Şeyatin-i Cin",
+    "date": "20260306",
+    "link": "https://www.paribucineverse.com/korku-filmleri/seyatin-i-cin-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn.marsgate.com.tr/13333",
+    "genre": "Korku",
+    "summary": "Halil ve Gökçe evli bir çifttir. Oyuncu ajansı işleten çiftin iki tane kız çocuğu vardır. Bir anda başlayan tuhaf olaylar psikolojilerini çok etkiler ve çocukları bayramda ailelerine bırakarak en yakın arkadaşları olan Sinem'in yazlığı Sapanca'ya kafa dinlemeye giderler. Ancak olaylar burada daha da büyümeye başlar. Musallat nefes kadar yakınlaşırken gizli gerçekler ortaya çıkacaktır. Ölüm ise kapıdadır.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Tavşan İmparatorluğu",
+    "date": "20260306",
+    "link": "https://www.paribucineverse.com/dram-filmleri/tavsan-imparatorlugu-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn.marsgate.com.tr/13334",
+    "genre": "Dram",
+    "summary": "12 yaşındaki Musa, kırsal bir köyde tavşan avcılığıyla geçinen babası Beko ile yaşamaktadır. Beko’nun, engelli çocukların ailelerine verilen devlet desteğini öğrenmesiyle Musa’nın hayatı altüst olur. Babasının baskısıyla engelli rolü yaparak özel bir okula gönderilen Musa, burada yaşıtı Nergis ile derin bir bağ kurar. Bu yeni dünyada çocukluk, arkadaşlık ve özgürlük arzusuyla tanışan Musa, çocukluğunu, tavşanları ve Nergis’i kurtarmak için sessiz bir isyan başlatır.",
     "kaynak": "Gelecek Film"
   },
   {
@@ -567,6 +587,16 @@
     "trailer": "https://cdn.marsgate.com.tr/13294",
     "genre": "Bilim Kurgu",
     "summary": "Film, dünyanın kurtuluşu için uzayda bir gizemi çözmesi gereken bir fen bilgisi öğretmeninin hikâyesini anlatıyor.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Saklambaç 2",
+    "date": "20260320",
+    "link": "https://www.paribucineverse.com/korku-filmleri/saklambac-2-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn.marsgate.com.tr/13335",
+    "genre": "Korku",
+    "summary": "Le Domas ailesinin ölümcül saldırısından sağ kurtulan Grace, kabus dolu oyunun henüz bitmediğini fark eder. Artık çok daha büyük ve tehlikeli bir mücadelenin içindedir. Bu kez yanında yıllardır görüşmediği kız kardeşi Faith vardır. Grace’in amacı yalnızca hayatta kalmak değildir; kız kardeşini korumak ve dünyayı kontrol eden Konsey’in “Yüksek Koltuğu”nu ele geçirmek zorundadır. Ancak taht için yarışan dört rakip aile, Grace’i avlamak üzere harekete geçmiştir. Bu ölümcül mücadelenin kazananı, her şeye hükmedecektir.",
     "kaynak": "Gelecek Film"
   },
   {
