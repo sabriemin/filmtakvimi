@@ -1,21 +1,21 @@
 [
   {
-    "title": "Sığınak",
-    "link": "https://www.paribucineverse.com/aksiyon-filmleri/siginak-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~0b6c51e4-0695-420e-8db3-523bd75118c0",
-    "trailer": "https://cdn.marsgate.com.tr/13304",
-    "genre": "Aksiyon",
-    "summary": "İskoçya'da ıssız bir adada gizemli şekilde yaşamını sürdüren eski asker Mason, fırtınalı bir günde hiç tanımadığı genç bir kızın hayatını kurtarır. Tüm kaderini değiştirecek ve geçmişinden gelen karanlıkla yüzleşmesine sebep olacak bu olaydan sonra, hiçbir şey eskisi gibi olmayacaktır.",
-    "date": "20260220",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
     "title": "Scarlet",
     "link": "https://www.paribucineverse.com/animasyon-filmleri/scarlet-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~2dc64098-7e7b-49e6-87de-512ff82801cc",
     "trailer": "https://cdn.marsgate.com.tr/13286",
     "genre": "Animasyon",
     "summary": "Babasının intikamını almak için bir göreve çıkan ortaçağ prensesi, yaşam ve ölüm arasındaki bir alemde uyanır. Burada, ona acı ve öfkeden uzak bir geleceğin mümkün olduğunu gösteren, günümüzden gelen idealist bir gençle karşılaşır.",
+    "date": "20260220",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Sığınak",
+    "link": "https://www.paribucineverse.com/aksiyon-filmleri/siginak-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~0b6c51e4-0695-420e-8db3-523bd75118c0",
+    "trailer": "https://cdn.marsgate.com.tr/13304",
+    "genre": "Aksiyon",
+    "summary": "İskoçya'da ıssız bir adada gizemli şekilde yaşamını sürdüren eski asker Mason, fırtınalı bir günde hiç tanımadığı genç bir kızın hayatını kurtarır. Tüm kaderini değiştirecek ve geçmişinden gelen karanlıkla yüzleşmesine sebep olacak bu olaydan sonra, hiçbir şey eskisi gibi olmayacaktır.",
     "date": "20260220",
     "kaynak": "Vizyondaki Film"
   },
@@ -100,22 +100,22 @@
     "kaynak": "Vizyondaki Film"
   },
   {
+    "title": "Kedi Yok",
+    "link": "https://www.paribucineverse.com/komedi-filmleri/kedi-yok-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~599c0afc-4262-4f86-bb22-61349d4af101",
+    "trailer": "https://cdn.marsgate.com.tr/13309",
+    "genre": "Komedi",
+    "summary": "Bir müzeden ünlü bir tablonun çalınması, çete üyeleri ve müze personeli arasında beklenmedik bir çatışmaya yol açar ve bu sırada alışılmadık bir romantik ilişki gelişir.",
+    "date": "20260213",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
     "title": "Kahraman Cüceler: Görev Başında",
     "link": "https://www.paribucineverse.com/animasyon-filmleri/kahraman-cuceler-gorev-basinda-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~c244ad23-59dd-4591-a232-592914af1eb0",
     "trailer": "https://cdn.marsgate.com.tr/13321",
     "genre": "Animasyon",
     "summary": "Sıradan yaşamlarının dışına çıkmak istemeyen topluluğun yaşlı üyeleri tarafından fikirleri pek de hoş karşılanmayan Elfie bir gün Bo ile tanışır. Hayatı tamamen değişecek ve farklı cücelerle eğlenceli bir maceraya çıkacaktır. Bo, eğlenmeyi çok seven, cesur ve teknolojik cihazlar konusunda çok yetenekli bir cücedir. Farklı bir topluluğun üyesi olan Bo’ nun arkadaşları da kendisi kadar alışılmadık yeteneklere sahiptir. Onların amaçları Elfie’ nin yapmaya çalıştığı gibi insanlara yardım etmek değildir. Aynı zamanda şehrin polis teşkilatında çalışan memur Lanski ve hırçın kedisi Polipette cüceleri yakalamaya kararlıdırlar. Elfi’ nin kısa sürede Bo ile kurduğu dostluk, 250 yılı aşkın süredir ayrı olan iki topluluğu karşı karşıya getirir.",
-    "date": "20260213",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
-    "title": "Kedi Yok",
-    "link": "https://www.paribucineverse.com/komedi-filmleri/kedi-yok-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/komedi-filmleri/kedi-yok-filmi-izle",
-    "trailer": "https://cdn.marsgate.com.tr/13309",
-    "genre": "Komedi",
-    "summary": "Bir müzeden ünlü bir tablonun çalınması, çete üyeleri ve müze personeli arasında beklenmedik bir çatışmaya yol açar ve bu sırada alışılmadık bir romantik ilişki gelişir.",
     "date": "20260213",
     "kaynak": "Vizyondaki Film"
   },
@@ -152,7 +152,7 @@
   {
     "title": "Ölümün Sesi",
     "link": "https://www.paribucineverse.com/korku-filmleri/olumun-sesi-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/korku-filmleri/olumun-sesi-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~91f6ed4e-0241-45e2-afc6-975742b4ff42",
     "trailer": "https://cdn.marsgate.com.tr/13290",
     "genre": "Korku",
     "summary": "Bir grup lise öğrencisi, farkında olmadan lanetli bir nesneye, eski bir Aztek Ölüm Düdüğü'ne rastlar. Düdüğü üflediklerinde çıkardığı korkunç sesin, gelecekteki ölümlerinin onları avlamasına neden olacağını keşfederler. Ölü sayısı arttıkça, başlattıkları korkunç olaylar zincirini durdurmak için umutsuzca bu lanetli eserin kökenini araştırmaya başlarlar.",
@@ -212,7 +212,7 @@
   {
     "title": "Maşa İle Koca Ayı: Mucize Parkı",
     "link": "https://www.paribucineverse.com/animasyon-filmleri/masa-ile-koca-ayi-mucize-parki-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/animasyon-filmleri/masa-ile-koca-ayi-mucize-parki-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~ebb742dd-ebe6-49b1-98d0-c71e580bbac9",
     "trailer": "https://cdn.marsgate.com.tr/13252",
     "genre": "Animasyon",
     "summary": "Maşa, Daşa ve Koca Ayı, eğlence ve sürprizlerle dolu bir gün için rotalarını “Mucize Parkı”na çeviriyor! Her birinin bu renkli dünyada farklı bir amacı vardır: Daşa parkın tüm görevlerini tamamlayıp büyük gösteride sahneye çıkmak için kararlıdır, Maşa en çok eğlendiği anı yakalamanın peşindedir, Koca Ayı ise yeni “akıllı” fotoğraf makinesini denemeye heveslidir. Ancak işler pek planlandığı gibi gitmez! Karşılarına çıkan beklenmedik olaylar, bu macerayı çok daha renkli ve unutulmaz bir hale getirir. Parkta Maşa, neşeli ama biraz çekingen bir palyaço ailesiyle tanışır. Maşa’nın cesareti ve iyiliği, içlerinden birinin en büyük hayalini gerçekleştirmesine yardımcı olur.",
@@ -554,7 +554,7 @@
     "date": "20260327",
     "link": "https://www.paribucineverse.com/korku-filmleri/otopsi-filmi-izle",
     "bilet_link": null,
-    "trailer": "Fragman bağlantısı yok",
+    "trailer": "https://cdn.marsgate.com.tr/13340",
     "genre": "Korku",
     "summary": "Morg bilimi bölümünden mezun olan Rebecca Owens, River Fields Morgu’nda gece vardiyasında bir işe başlar. Başlangıçta rutin görünen bu iş, kısa sürede onun dehşet verici doğaüstü güçlerle yüzleşmek zorunda kaldığı karanlık bir kâbusa dönüşür.",
     "kaynak": "Gelecek Film"
