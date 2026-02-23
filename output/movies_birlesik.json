@@ -1,10 +1,10 @@
 [
   {
     "title": "Scarlet",
-    "link": "https://www.paribucineverse.com/animasyon-filmleri/scarlet-filmi-izle",
+    "link": "https://www.paribucineverse.com/anime-filmleri/scarlet-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~2dc64098-7e7b-49e6-87de-512ff82801cc",
     "trailer": "https://cdn.marsgate.com.tr/13286",
-    "genre": "Animasyon",
+    "genre": "Anime",
     "summary": "Babasının intikamını almak için bir göreve çıkan ortaçağ prensesi, yaşam ve ölüm arasındaki bir alemde uyanır. Burada, ona acı ve öfkeden uzak bir geleceğin mümkün olduğunu gösteren, günümüzden gelen idealist bir gençle karşılaşır.",
     "date": "20260220",
     "kaynak": "Vizyondaki Film"
@@ -16,16 +16,6 @@
     "trailer": "https://cdn.marsgate.com.tr/13304",
     "genre": "Aksiyon",
     "summary": "İskoçya'da ıssız bir adada gizemli şekilde yaşamını sürdüren eski asker Mason, fırtınalı bir günde hiç tanımadığı genç bir kızın hayatını kurtarır. Tüm kaderini değiştirecek ve geçmişinden gelen karanlıkla yüzleşmesine sebep olacak bu olaydan sonra, hiçbir şey eskisi gibi olmayacaktır.",
-    "date": "20260220",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
-    "title": "Sesim Geliyor Mu?",
-    "link": "https://www.paribucineverse.com/dram-filmleri/sesim-geliyor-mu-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~9c645e7d-7faf-4c26-a13b-bd05a4ad9e68",
-    "trailer": "https://cdn.marsgate.com.tr/13330",
-    "genre": "Dram",
-    "summary": "Bradley Cooper imzalı film, orta yaş bunalımı ve boşanmayla karşı karşıya kalan Alex’in New York komedi sahnesinde yeni amacını aramaya başlamasını, Tess’in ise aileleri için yaptığı fedakarlıklarla yüzleşirken ortak ebeveynlik, kimlik ve aşkın yeni bir biçim alıp alamayacağı konularında bir yolculuğa çıkmasını konu alıyor.",
     "date": "20260220",
     "kaynak": "Vizyondaki Film"
   },
@@ -56,6 +46,16 @@
     "trailer": "https://cdn.marsgate.com.tr/13320",
     "genre": "Biyografi",
     "summary": "Paris, 1835. Şaşaalı Paris gecelerinin en romantik ruhlu adamı olan ünlü besteci Frederic Chopin, hastalıklarla mücadele ederken bir yandan da yüksek sosyetede konserler ve ders vererek geçimini sağlamaya çalışır. Saatler hızla tükenirken Chopin müziğin özünde bir devrim yaratacaktır.",
+    "date": "20260220",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Sesim Geliyor Mu?",
+    "link": "https://www.paribucineverse.com/dram-filmleri/sesim-geliyor-mu-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~9c645e7d-7faf-4c26-a13b-bd05a4ad9e68",
+    "trailer": "https://cdn.marsgate.com.tr/13330",
+    "genre": "Dram",
+    "summary": "Bradley Cooper imzalı film, orta yaş bunalımı ve boşanmayla karşı karşıya kalan Alex’in New York komedi sahnesinde yeni amacını aramaya başlamasını, Tess’in ise aileleri için yaptığı fedakarlıklarla yüzleşirken ortak ebeveynlik, kimlik ve aşkın yeni bir biçim alıp alamayacağı konularında bir yolculuğa çıkmasını konu alıyor.",
     "date": "20260220",
     "kaynak": "Vizyondaki Film"
   },
