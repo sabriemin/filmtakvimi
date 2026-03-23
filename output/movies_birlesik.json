@@ -80,16 +80,6 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Savaş Üstüne Savaş",
-    "link": "https://www.paribucineverse.com/gerilim-filmleri/savas-ustune-savas-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~78e6dcdd-99e6-4336-b99c-df984e1cc82e",
-    "trailer": "https://cdn.marsgate.com.tr/13123",
-    "genre": "Gerilim",
-    "summary": "Kötü düşmanları 16 yıl sonra yeniden ortaya çıkınca, bir grup eski devrimci içlerinden birinin kızını kurtarmak için yeniden bir araya gelir.",
-    "date": "20260313",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
     "title": "Cahim 2",
     "link": "https://www.paribucineverse.com/korku-filmleri/cahim-2-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~30c5c05a-91aa-4c41-b971-b48fd89b4377",
@@ -106,6 +96,16 @@
     "trailer": "https://cdn.marsgate.com.tr/13361",
     "genre": "Animasyon",
     "summary": "Teo henüz yavruyken gizemli bir şekilde ailesinden ayrılır ve onu bulan sıra dışı bir güreşçi kanguru ailesi tarafından evlat edinilir. Güçlü, disiplinli ve biraz da komik olan bu aile, Teo’yu kendi çocukları gibi büyütür. Onların dünyasında güçlü olmayı ve asla pes etmemeyi öğrenir. Büyüdüğünde ise kendi ailesini ve kökleri merak etmeye başlar. Teo, gerçek yuvasını bulmak ve tehlike altındaki anavatanını kurtarmak için zorlu bir maceraya atılır. Bu yolculuk boyunca dostluk, cesaret ve fedakârlığın gerçek anlamını keşfeder.",
+    "date": "20260313",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Savaş Üstüne Savaş",
+    "link": "https://www.paribucineverse.com/gerilim-filmleri/savas-ustune-savas-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~78e6dcdd-99e6-4336-b99c-df984e1cc82e",
+    "trailer": "https://cdn.marsgate.com.tr/13123",
+    "genre": "Gerilim",
+    "summary": "Kötü düşmanları 16 yıl sonra yeniden ortaya çıkınca, bir grup eski devrimci içlerinden birinin kızını kurtarmak için yeniden bir araya gelir.",
     "date": "20260313",
     "kaynak": "Vizyondaki Film"
   },
@@ -370,6 +370,16 @@
     "kaynak": "Gelecek Film"
   },
   {
+    "title": "Mitoloji Mafyası",
+    "date": "20260403",
+    "link": "https://www.paribucineverse.com/komedi-filmleri/mitoloji-mafyasi-filmi-izle",
+    "bilet_link": null,
+    "trailer": "Fragman bağlantısı yok",
+    "genre": "Komedi",
+    "summary": "İki beceriksiz hırsız olan Peker ile Ati, çaldıkları antik heykelin içinde binlerce yıldır mahsur kalan Priapos’u yanlışlıkla serbest bırakırlar. Priapos, Ati ve Peker’e kendisini ait olduğu yere götürmeleri karşılığında bir dileklerini gerçekleştireceğini söyler. Priapos’u geri götürmek için yola çıkan ikili kendilerini fantastik bir kovalamacanın içinde bulurlar. Peker ile Ati, bir taraftan dileklerini gerçekleştirmesi için Priapos’u evine götürmeye çalışırken, bir taraftan da Priapos’un peşindeki tarihi eser kaçakçısı Ahu Secimer, onun sağır ve kör iz sürücüleri Poz Recai ve Mono Rıza ve eski bir mafya babası olan Alkapon Kerim ile heykeli ait olduğu müzeye götürmeye kararlı Mavisu'yu atlatmaya çalışmaktadırlar.",
+    "kaynak": "Gelecek Film"
+  },
+  {
     "title": "Perde",
     "date": "20260403",
     "link": "https://www.paribucineverse.com/dram-filmleri/perde-filmi-izle",
@@ -514,7 +524,7 @@
     "date": "20260522",
     "link": "https://www.paribucineverse.com/animasyon-filmleri/super-1-takim-filmi-izle",
     "bilet_link": null,
-    "trailer": "Fragman bağlantısı yok",
+    "trailer": "https://cdn.marsgate.com.tr/13384",
     "genre": "Animasyon",
     "summary": "Küçük Birol, dedesinin çiftlikte yaşayan eski dostunun yanına tatile gönderilir. Başta onu; internetin çekmediği, doğayla iç içe ama fazlasıyla sakin bir köy beklemektedir. Tarla işleri, hayvanlar ve durağan bir hayat… Birol için her şey sıkıcı görünür. Ta ki köyde tanıştığı insanların aslında göründükleri gibi olmadığını fark edene kadar.",
     "kaynak": "Gelecek Film"

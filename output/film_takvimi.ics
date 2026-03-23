@@ -3,367 +3,374 @@ X-WR-CALNAME:Paribu Cineverse Film Takvimi
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260101
-CATEGORIES:Vizyondaki Film
-DESCRIPTION:🎬 Tür: Komedi\n📄 Özet: Hayalleri kimse tarafından ciddiye alınmayan genç Marty Mauser’ın\, “kazanmak” uğruna cehennemi andıran bir yolculuğa çıkışını merkezine alan Muhteşem Marty\, klasik bir başarı hikayesinin çok ötesine geçen bir komedi dram filmi. Uncut Gems filminin yönetmenlerinden Josh Safdie’nin son filminde bugüne kadar 2 Oscar adaylığı bulunan Timothée Chalamet’e Oscar ödüllü Gwyneth Paltrow ve müzik dünyasından tanınan Tyler\, the Creator eşlik ediyor.\n▶️ Fragman: https://cdn.marsgate.com.tr/13230\n🔗 Detay: https://www.paribucineverse.com/komedi-filmleri/muhtesem-marty-filmi-izle\n🎟 Bilet: https://www.paribucineverse.com/biletleme/~step~session~film~36920269-78b9-4c91-9234-1b316044ecfa
-SUMMARY:Muhteşem Marty
-UID:d5d7171c-0484-4d34-82d5-2f32d3fe5935@d5d7.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260410
-CATEGORIES:Gelecek Film
-DESCRIPTION:🎬 Tür: Gerilim\n📄 Özet: Yiğit sıradan hayatını sürdürmeye çalışan ama içten içe bastırdığı duygularla boğuşan bir adamdır. Bir gece\, yıllardır hayatında yer alan ama artık mesafeli olduğu çocukluk arkadaşı – aynı zamanda abisinin eski dostu – Fosfor’la yeniden karşılaşır. Bu tesadüfî buluşma\, geçmişin kapalı kalmış defterlerini aralarken\, Yiğit’i sürükleyici ve gerilim dolu bir gecenin içine çeker. O gece\, görünenin ardında saklanan duygular\, bastırılmış suçluluklar ve kaçınılmış yüzleşmeler birer birer su yüzüne çıkar. Yiğit için artık hiçbir şey eskisi gibi olmayacaktır.\n▶️ Fragman: https://cdn.marsgate.com.tr/13382\n🔗 Detay: https://www.paribucineverse.com/gerilim-filmleri/kul-dilemma-filmi-izle
-SUMMARY:KUL dilemma
-UID:b14f1780-e578-4077-9ab4-97bd06afcad5@b14f.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260401
-CATEGORIES:Gelecek Film
-DESCRIPTION:🎬 Tür: Macera\n📄 Özet: Mario ventures into space\, exploring cosmic worlds and tackling galactic challenges far from the familiar Mushroom Kingdom.\n▶️ Fragman: https://cdn.marsgate.com.tr/13317\n🔗 Detay: https://www.paribucineverse.com/macera-filmleri/super-mario-galaksi-filmi-filmi-izle\n🎟 Bilet: https://www.paribucineverse.com/biletleme/~step~session~film~9f0493e3-53ce-4e9c-8421-6b17333c48f8
-SUMMARY:Süper Mario Galaksi Filmi
-UID:62251d7f-cd78-4ba4-8f0c-d3ef759a7fc1@6225.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260501
-CATEGORIES:Gelecek Film
-DESCRIPTION:🎬 Tür: Korku\n📄 Özet: İçine kapanık bir yazar olan Ohm Bauman\, anne babasının küllerini serpmek için İrlanda kırsalındaki tenha bir otele gider. Ancak otel çalışanlarının\, balayına gelenleri lanetlediği söylenen kadim bir cadı hakkında anlattıkları hikayeler zihnini ele geçirmeye başlayınca giderek artan rahatsız edici görüntüler Bauman’ı delirmenin eşiğine sürükler.\n▶️ Fragman: https://cdn.marsgate.com.tr/13375\n🔗 Detay: https://www.paribucineverse.com/korku-filmleri/hokum-filmi-izle
-SUMMARY:Hokum
-UID:111bee17-9b22-484e-8775-ce3bae333348@111b.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260313
-CATEGORIES:Vizyondaki Film
-DESCRIPTION:🎬 Tür: Animasyon\n📄 Özet: Doktor olan baba\, bir zamanlar ünlü paleontoloji müzesini kurtarmakla meşguldür. Doktor'un oğlu Fil karşılıksız aşk acısı çekerken\, kızı Linda bilgisayar oyunları dünyasında kaybolmuş durumda. Ailenin gizli bir portal aracılığıyla tarih öncesi dünyaya adım attığı gün her şey değişir. Kendilerini en tatsız ve tehlikeli koşullarda bulan ikili\, bir şekilde hayatta kalmak ve birlikte hareket etmek zorunda kalır.\n▶️ Fragman: https://cdn.marsgate.com.tr/13359\n🔗 Detay: https://www.paribucineverse.com/animasyon-filmleri/dino-ailesi-filmi-izle\n🎟 Bilet: https://www.paribucineverse.com/biletleme/~step~session~film~b995c449-dfec-4ddc-afb1-4f2ebe5d286d
-SUMMARY:Dino Ailesi
-UID:cb9d06bb-98b4-41ff-86f4-83732a97c676@cb9d.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260227
-CATEGORIES:Vizyondaki Film
-DESCRIPTION:🎬 Tür: Korku\n📄 Özet: Sidney Prescott’un yeni bir hayat kurduğu sakin kasabada yeni bir Hayalet Maskeli katili ortaya çıktığında\, en karanlık korkuları gerçeğe dönüşür. Kızı bir sonraki hedef haline geldiğinde\, Sidney ailesini korumaya kararlıdır. Ancak bunu başarmak için geçmişinin dehşetleriyle yüzleşmeli ve kanlı döngüyü sonsuza dek bitirmelidir.\n▶️ Fragman: https://cdn.marsgate.com.tr/13271\n🔗 Detay: https://www.paribucineverse.com/korku-filmleri/ciglik-7-filmi-izle\n🎟 Bilet: https://www.paribucineverse.com/biletleme/~step~session~film~28dbe2ae-8519-452d-a8e5-2280a3651622
-SUMMARY:Çığlık 7
-UID:0652964b-a93c-4c77-b218-2b844da112a5@0652.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260227
-CATEGORIES:Vizyondaki Film
-DESCRIPTION:🎬 Tür: Korku\n📄 Özet: Sorunlu hayatlarını geride bırakmaya çalışan ikiz kardeşler yeniden başlamak için memleketlerine döner\, ancak daha büyük bir kötülüğün onları karşılamak için beklediğini keşfederler.\n▶️ Fragman: https://cdn.marsgate.com.tr/12896\n🔗 Detay: https://www.paribucineverse.com/korku-filmleri/gunahk%C3%A2rlar-filmi-izle\n🎟 Bilet: https://www.paribucineverse.com/biletleme/~step~session~film~361c1067-7ff0-4d8c-a567-8725fc8427de
-SUMMARY:Günahkârlar
-UID:695a0f19-a3e1-4a3f-bef4-4f5823972dce@695a.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260327
-CATEGORIES:Gelecek Film
-DESCRIPTION:🎬 Tür: Dram\n📄 Özet: Yeni oyunlarının prömiyer gecesi yaşananlar\, Ankara’nın tanınan sanatçı çifti Derya ve Aziz’in hayatında geri dönülemez bir kırılmaya yol açar. Bir gecede hedef gösterilerek işlerini ve evlerini kaybeden çift\, 13 yaşındaki kızları Ezgi ile birlikte İstanbul’a\, Aziz’in annesinin yanına yerleşmek zorunda kalır. Aziz\, bu geçici sığınakta bir yandan gündelik işlerle ayakta kalmaya çalışırken diğer yandan etik değerlerinden ödün vermemeye kararlıdır. Derya ise aileyi içinde bulundukları durumdan çıkaracak bir yol ararken\, kendisini zorlu kararların eşiğinde bulur. Bu belirsizliklerle dolu süreçte kızları Ezgi ile aralarındaki mesafe yavaş yavaş açılırken\; çift\, savundukları değerler ile ortak gelecekleri arasında bir seçim yapmak zorunda kalacaktır.\n▶️ Fragman: https://cdn.marsgate.com.tr/13373\n🔗 Detay: https://www.paribucineverse.com/dram-filmleri/sari-zarflar-filmi-izle
-SUMMARY:Sarı Zarflar
-UID:214959be-3b29-43cf-8fa5-311bd9ce1025@2149.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260417
-CATEGORIES:Gelecek Film
-DESCRIPTION:🎬 Tür: Korku\n📄 Özet: Gazeteci bir babanın küçük kızı\, çölde iz bırakmadan kaybolur. Olayın üzerinden sekiz yıl geçtikten sonra kızın aniden ortaya çıkıp ailesine dönmesi\, başlangıçta bir sevinç yaratsa da kısa sürede yerini sıra dışı ve açıklanamaz olaylara bırakır.\n▶️ Fragman: https://cdn.marsgate.com.tr/13365\n🔗 Detay: https://www.paribucineverse.com/korku-filmleri/lee-croninden-mumya-filmi-izle
-SUMMARY:Lee Cronin'den Mumya
-UID:b50a8201-b5c1-4d01-9c75-1544b0f6046b@b50a.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260423
-CATEGORIES:Gelecek Film
-DESCRIPTION:🎬 Tür: Animasyon\n📄 Özet: Bir kabile reisinin oğlu\, babasının avcılık yeteneklerine yetişmekte zorlanır. Kendini kanıtlamak için gizemli bir ormana doğru yola çıkar ve burada Tink adında\, büyülü ve dünya dışı bir kuşla karşılaşır. Birlikte\, kılıç dişli sincapların\, sevimli mirketlerin ve hatta dinozorların yaşadığı Taş Devri Ormanı’nda sıra dışı maceralara atılırlar.\n▶️ Fragman: https://cdn.marsgate.com.tr/13383\n🔗 Detay: https://www.paribucineverse.com/animasyon-filmleri/marakuda-tas-devri-efsanesi-filmi-izle
-SUMMARY:Marakuda: Taş Devri Efsanesi
-UID:18738914-590d-4ef5-8268-ff1f65fdedeb@1873.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260320
-CATEGORIES:Vizyondaki Film
-DESCRIPTION:🎬 Tür: Biyografi\n📄 Özet: Yıl 1980. 12 Eylül darbesinin hemen ertesi. Sağ ve sol görüşlü binlerce öğrenci\, parti mensubu\, işçi temsilcileri sistematik bir şekilde tutuklanmaktadır. Sağ hareketin genç liderlerinden Abdullah Çatlı da yurt dışına kaçar. Aynı tarihlerde ASALA terör örgütü Türk Dışişleri diplomatlarına ve sivillerine dünya genelinde saldırılar düzenlemektedir. Askeri darbenin yönetimindeki Türkiye bu saldırıları önlemekte sıkıntı yaşamaktadır. Abdullah Çatlı ve arkadaşlarıyla gizli bir iş birliği yapılır. Abdullah Çatlı ve arkadaşları devlet adına\, devlet adına çalıştığını kabul etmeden ASALA ile mücadele eder. Her hamlesi zekice ve ölümcüldür. "Reis" kod adıyla ASALA'nın korkulu rüyası olur.\n▶️ Fragman: https://cdn.marsgate.com.tr/13360\n🔗 Detay: https://www.paribucineverse.com/biyografi-filmleri/catli-filmi-izle\n🎟 Bilet: https://www.paribucineverse.com/biletleme/~step~session~film~19d42f6f-6b05-4338-b9fe-b2f6b8c376ab
-SUMMARY:Çatlı
-UID:9c28f7e1-ec24-41fe-818c-f9c12bf9b88d@9c28.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260313
-CATEGORIES:Vizyondaki Film
-DESCRIPTION:🎬 Tür: Gerilim\n📄 Özet: Kötü düşmanları 16 yıl sonra yeniden ortaya çıkınca\, bir grup eski devrimci içlerinden birinin kızını kurtarmak için yeniden bir araya gelir.\n▶️ Fragman: https://cdn.marsgate.com.tr/13123\n🔗 Detay: https://www.paribucineverse.com/gerilim-filmleri/savas-ustune-savas-filmi-izle\n🎟 Bilet: https://www.paribucineverse.com/biletleme/~step~session~film~78e6dcdd-99e6-4336-b99c-df984e1cc82e
-SUMMARY:Savaş Üstüne Savaş
-UID:7b339a5b-9894-4abc-9b49-e076642383c4@7b33.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20251114
-CATEGORIES:Vizyondaki Film
-DESCRIPTION:🎬 Tür: Komedi\n📄 Özet: Boyundan aşağısı felçli zengin bir aristokrat olan Refik ile\, İstanbul’un yoksul mahallelerinden birinde yaşayan\, geçmişi karışık\, enerjik ve hayat dolu bir genç olan Ferruh arasında gelişen sıra dışı dostluğu konu alır. Refik\, kendisine bakacak bir yardımcı ararken\, kaygısızca mülakata gelen Ferruh’un hayata karşı rahat ve umursamaz tavırlarından etkilenir ve onu işe alır. İkili arasında başlangıçta tuhaf bir ilişki başlasa da zamanla güçlü bir dostluk ve bu dostluğun hayatlarına yön verişine bizi tanık edecek olaylar örgüsü karşımıza çıkacaktır. Ferruh’un hayat enerjisi ve samimiyeti\, Refik’in yaşama bakışını değiştirirken\; Refik'in kültürel zenginliği ve zarafeti de Ferruh’un hayatla kurduğu bağı değiştirecek etkilere sebep olacaktır.\n▶️ Fragman: https://cdn.marsgate.com.tr/13168\n🔗 Detay: https://www.paribucineverse.com/komedi-filmleri/sdbda-veyahut-yan-yana-filmi-izle\n🎟 Bilet: https://www.paribucineverse.com/biletleme/~step~session~film~57159012-504b-47a1-8b80-04157d84d708
-SUMMARY:S.D.B.D.A. Veyahut Yan Yana
-UID:5efa7e81-584d-4398-ae26-5c8f30054ec8@5efa.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260403
-CATEGORIES:Gelecek Film
-DESCRIPTION:🎬 Tür: Korku\n📄 Özet: Başlarına gelen karanlık bir olayın ardından öksüz ve yetim kalan Selma\, Aysel ve Nurten adındaki üç genç kız kardeş\, çareyi adını kimilerinin korkuyla andığı Bitlisli Belkıs’ta arar. Belkıs\, cinni varlıklarla kurduğu bağ sayesinde köydeki insanlara\, özellikle de hamile kadınlara şifa dağıtmasıyla tanınan gizemli bir büyücüdür. Ancak halalarının sırt çevirmesiyle evsiz kalan kardeşler için asıl imtihan şimdi başlayacaktır. Sığınacak bir çatı bulsalar da peşlerindeki kötülüğü de beraberlerinde getirmişlerdir. Üstelik bu kez o kötülük yalnızca onları değil\, Bitlisli Belkıs’ı da sınayacaktır.\n▶️ Fragman: https://cdn.marsgate.com.tr/13350\n🔗 Detay: https://www.paribucineverse.com/korku-filmleri/kible-bitlisli-belkis-filmi-izle
-SUMMARY:Kıble: Bitlisli Belkıs
-UID:5aa5f891-a830-4482-9842-ff72091a5e67@5aa5.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260320
-CATEGORIES:Vizyondaki Film
-DESCRIPTION:🎬 Tür: Korku\n📄 Özet: Le Domas ailesinin ölümcül saldırısından sağ kurtulan Grace\, kabus dolu oyunun henüz bitmediğini fark eder. Artık çok daha büyük ve tehlikeli bir mücadelenin içindedir. Bu kez yanında yıllardır görüşmediği kız kardeşi Faith vardır. Grace’in amacı yalnızca hayatta kalmak değildir\; kız kardeşini korumak ve dünyayı kontrol eden Konsey’in “Yüksek Koltuğu”nu ele geçirmek zorundadır. Ancak taht için yarışan dört rakip aile\, Grace’i avlamak üzere harekete geçmiştir. Bu ölümcül mücadelenin kazananı\, her şeye hükmedecektir.\n▶️ Fragman: https://cdn.marsgate.com.tr/13335\n🔗 Detay: https://www.paribucineverse.com/korku-filmleri/saklambac-2-filmi-izle\n🎟 Bilet: https://www.paribucineverse.com/biletleme/~step~session~film~fc295797-05f0-42d3-ac03-609e70527ee1
-SUMMARY:Saklambaç 2
-UID:174a3518-07bc-46b1-a061-d9198578553d@174a.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260320
-CATEGORIES:Vizyondaki Film
-DESCRIPTION:🎬 Tür: Bilim Kurgu\n📄 Özet: Film\, dünyanın kurtuluşu için uzayda bir gizemi çözmesi gereken bir fen bilgisi öğretmeninin hikâyesini anlatıyor.\n▶️ Fragman: https://cdn.marsgate.com.tr/13294\n🔗 Detay: https://www.paribucineverse.com/bilim-kurgu-filmleri/kurtulus-projesi-filmi-izle\n🎟 Bilet: https://www.paribucineverse.com/biletleme/~step~session~film~30580475-a516-4ec7-995c-353bab33af60
-SUMMARY:Kurtuluş Projesi
-UID:aecd5de4-dc05-4e87-87e0-948b0f7aa6ca@aecd.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260410
-CATEGORIES:Gelecek Film
-DESCRIPTION:🎬 Tür: Gerilim\n📄 Özet: Becket Redfellow’un annesi bir zamanlar büyük bir servetin varisiyken\, Becket doğduğunda ailesi tarafından dışlanır ve yoksulluk içinde hayatını kaybeder. Annesinin kendi hakkı olduğunu söylediği mirası geri almak isteyen Becket\, önündeki yedi aile üyesini ortadan kaldırmaya yönelik ölümcül bir plan yapar. Varisler birer birer hayatını kaybederken\, Becket hem sevgi dolu kız arkadaşıyla ilişkisini hem de planını bilen ve pay isteyen eski sevgilisini idare etmek zorunda kalır.\n▶️ Fragman: https://cdn.marsgate.com.tr/13363\n🔗 Detay: https://www.paribucineverse.com/gerilim-filmleri/nasil-katil-olunur-filmi-izle
-SUMMARY:Nasıl Katil Olunur
-UID:7212f954-25dc-45d3-897d-b3b0dd2b6449@7212.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260313
-CATEGORIES:Vizyondaki Film
-DESCRIPTION:🎬 Tür: Korku\n📄 Özet: Issız bir dağ evinde bakıcılık yapan Deniz\, korumakla görevlendirildiği Ateş’in sıradan bir çocuk olmadığını çok geçmeden anlar. Evde başlayan kanlı alametler\, kaybolan çocuklar ve fısıldanan ayinler tek bir gerçeğe işaret eder: Deccal’in hakimiyeti yakındır.\n▶️ Fragman: https://cdn.marsgate.com.tr/13349\n🔗 Detay: https://www.paribucineverse.com/korku-filmleri/deccal-3-filmi-izle\n🎟 Bilet: https://www.paribucineverse.com/biletleme/~step~session~film~ef7e7813-ba77-41d1-affc-612538a28081
-SUMMARY:Deccal 3
-UID:d9557315-20b3-4a44-8d74-95962e7c774c@d955.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260306
-CATEGORIES:Vizyondaki Film
-DESCRIPTION:🎬 Tür: Dram\n📄 Özet: Film\, yıllar önce terk etmek zorunda kaldıkları köylerine geri dönen Bezariler ile bölgede hakimiyet kuran korucu Hazeran aşireti arasındaki toprak anlaşmazlığını ve tırmanan iktidar mücadelesini konu alıyor.\n▶️ Fragman: https://cdn.marsgate.com.tr/13345\n🔗 Detay: https://www.paribucineverse.com/dram-filmleri/kurtulus-filmi-izle\n🎟 Bilet: https://www.paribucineverse.com/biletleme/~step~session~film~be4d883c-668b-473e-bd09-36aef1f89c07
-SUMMARY:Kurtuluş
-UID:b1f67e23-51ad-46d7-9d1c-c744195a160f@b1f6.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260313
-CATEGORIES:Vizyondaki Film
-DESCRIPTION:🎬 Tür: Korku\n📄 Özet: Defne’nin 18. yaşından sonra tuhaf davranışları ve ailede görülmemiş derecede garip semptomlar sonrası Defne’nin annesi Kader kızının iyileşmesi için nörolog Nihat Karahan’a ulaşır. Nihat Karahan bu vakanın tahmin edilenden daha karanlık ve derin olduğunun farkındadır. Havas ilmi üzerinde ileri derecede bilgi sahibi olan geçmişte de tanıdığı Mustafa Faruk Akad’ın yanına gelerek ondan destek ister. Tüm araştırmalarını kamera kaydına alan Nihat Karahan\, yıllar önce yaşanan bu korkunç olayı ve tüm kötülükleri gözler önüne serer.\n▶️ Fragman: https://cdn.marsgate.com.tr/13316\n🔗 Detay: https://www.paribucineverse.com/korku-filmleri/cahim-2-filmi-izle\n🎟 Bilet: https://www.paribucineverse.com/biletleme/~step~session~film~30c5c05a-91aa-4c41-b971-b48fd89b4377
-SUMMARY:Cahim 2
-UID:c06fa868-7222-44ec-9b4e-599fc9069fa0@c06f.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260522
-CATEGORIES:Gelecek Film
-DESCRIPTION:🎬 Tür: Fantastik\n📄 Özet: Kötü İmparatorluk yıkılmış olsa da\, İmparatorluk’a bağlı savaş lordları galaksinin dört bir yanına dağılmış durumda. Yeni Cumhuriyet\, Asilerin uğruna savaştığı değerleri korumak için mücadele ederken\, efsanevi Mandalorlu ödül avcısı Din Djarin ve genç çırağı Grogu’nun yardımına başvuruyor.\n▶️ Fragman: https://cdn.marsgate.com.tr/13372\n🔗 Detay: https://www.paribucineverse.com/fantastik-filmleri/star-wars-mandalorian-ve-grogu-filmi-izle
-SUMMARY:Star Wars: Mandalorian ve Grogu
-UID:cc9f5c6c-e1ab-4744-b595-35fa5edf84ae@cc9f.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260313
-CATEGORIES:Vizyondaki Film
-DESCRIPTION:🎬 Tür: Animasyon\n📄 Özet: Dedektif Reptır ve güçlü ekibi yeni bir maceraya başlıyor. Kayıpları bulurlar\, olayları çözerler. Varsa bir problemin hemen ofise gel.\n▶️ Fragman: https://cdn.marsgate.com.tr/13376\n🔗 Detay: https://www.paribucineverse.com/animasyon-filmleri/dedektif-reptir-filmi-izle\n🎟 Bilet: https://www.paribucineverse.com/biletleme/~step~session~film~857b2f07-3af5-4a25-aacb-8769e3883f85
-SUMMARY:Dedektif Reptır
-UID:83cfd639-ec62-432a-b755-602b525d7ce8@83cf.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260313
-CATEGORIES:Vizyondaki Film
-DESCRIPTION:🎬 Tür: Animasyon\n📄 Özet: Genç kambur balina Vincent\, anne babasını kaybetmiş ve kendi yeteneklerinden şüphe eden bir balinadır. Dev bir deniz canavarının buzdağından kurtulup tüm denizleri tehdit etmesiyle\, Vincent\; sadık balık dadısı Walter ve sağır orka Darya ile birlikte\, okyanusun derinliklerine doğru zorlu bir yolculuğa çıkar. Korkularıyla yüzleşmek ve okyanusları kurtarmak için kendi sihirli şarkısını bulmak zorundadır.\n▶️ Fragman: https://cdn.marsgate.com.tr/13302\n🔗 Detay: https://www.paribucineverse.com/animasyon-filmleri/sarkici-balina-filmi-izle\n🎟 Bilet: https://www.paribucineverse.com/biletleme/~step~session~film~5627d60c-2c4c-4eb2-9cea-2e385ade38e8
-SUMMARY:Şarkıcı Balina
-UID:47fc6ed6-efe0-452c-8f3b-a0a84ec9c018@47fc.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260410
-CATEGORIES:Gelecek Film
-DESCRIPTION:🎬 Tür: Tarihi\n📄 Özet: Moğol İmparatorluğu çökerken\, savaş yaralarıyla dolu Timur Barlas\, peşini bırakmayan bir kaderle yüzleşmek ve İpek Yolu'nun kaderini korumak için bağlılıklarından vazgeçmek zorunda kalır.\n▶️ Fragman: https://cdn.marsgate.com.tr/13369\n🔗 Detay: https://www.paribucineverse.com/tarihi-filmleri/timur-bir-fatihin-yukselisi-filmi-izle
-SUMMARY:Timur: Bir Fatih'in Yükselişi
-UID:8ca60a6b-310f-4a3b-ad9d-dc35715f2ae0@8ca6.org
-END:VEVENT
-BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260320
 CATEGORIES:Vizyondaki Film
 DESCRIPTION:🎬 Tür: Animasyon\n📄 Özet: Film\, küçük bedeniyle büyük hayaller kuran keçi Will’in\, dünyadaki en hızlı ve vahşi hayvanlarla birlikte profesyonel kükrebol oynama hayalini ve bu uğurda verdiği sıra dışı mücadeleyi konu alıyor.\n▶️ Fragman: https://cdn.marsgate.com.tr/13292\n🔗 Detay: https://www.paribucineverse.com/animasyon-filmleri/sampiyon-keci-tum-zamanlarin-en-iyisi-filmi-izle\n🎟 Bilet: https://www.paribucineverse.com/biletleme/~step~session~film~2a7f6f1e-ef7d-437f-9385-2b4a55133ee1
 SUMMARY:Şampiyon Keçi
-UID:2938e5d7-6dc4-4906-8487-09044fa85dd0@2938.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260213
-CATEGORIES:Vizyondaki Film
-DESCRIPTION:🎬 Tür: Dram\n📄 Özet: Emily Brontë’nin aynı isimli ünlü romanından uyarlanan film\, Catherine ve Heathcliff arasındaki yoğun ve yıkıcı ilişkiyi konu alıyor.\n▶️ Fragman: https://cdn.marsgate.com.tr/13247\n🔗 Detay: https://www.paribucineverse.com/dram-filmleri/ugultulu-tepeler-filmi-izle\n🎟 Bilet: https://www.paribucineverse.com/biletleme/~step~session~film~f3132d07-16dc-46d8-8a54-a043e4ca35ae
-SUMMARY:Uğultulu Tepeler
-UID:cf964807-ed8e-46f2-8e1f-84054a55494d@cf96.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260327
-CATEGORIES:Gelecek Film
-DESCRIPTION:🎬 Tür: Komedi\n📄 Özet: Ünlü Influencer kedi Diva’ nın sahibi Monica ile köpeği Chichi’nin çaldığı bir yakutu yuttuğunu fark etmeyen uluslararası hırsız Jack\, evcil hayvanlarının pistte kaybolduğunu keşfeder. Bu durum karşısında\, sevdikleri dostlarını bulabilmek için iki zıt karakter beklenmedik bir şekilde iş birliği yapmak zorunda kalır. Ancak peşlerindeki kararlı polis Brandt’ ın tek amacı vardır: Ne pahasına olursa olsun o yakutu ele geçirmek.\n▶️ Fragman: https://cdn.marsgate.com.tr/13374\n🔗 Detay: https://www.paribucineverse.com/komedi-filmleri/kedi-ve-kopek-buyuk-macera-filmi-izle
-SUMMARY:Kedi ve Köpek: Büyük Macera
-UID:87c4aee1-ed85-4370-bc97-8114ef84fafc@87c4.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260327
-CATEGORIES:Gelecek Film
-DESCRIPTION:🎬 Tür: Belgesel\n📄 Özet: Dormen’in kariyer basamaklarını kronolojik bir akışla izlerken\; aynı zamanda onun öğrencileri ve çalışma arkadaşları üzerinden bir “etki haritası” çıkarıyor. Dormen’in ailesi\, yakın dostları ve meslektaşlarının röportajları ve sanatçının kendi anlatımlarını da içeren değerli tanıklıklar da yer alıyor. Her zorlukta yeniden ayağa kalkan\, her düşüşü yeni bir başlangıca dönüştüren Dormen’in hikâyesi\; sanatın bir meslek değil\, bir yaşam biçimi olduğunu hatırlatır.\n▶️ Fragman: https://cdn.marsgate.com.tr/13379\n🔗 Detay: https://www.paribucineverse.com/belgesel-filmleri/yaparsin-sekerim-filmi-izle
-SUMMARY:Yaparsın Şekerim
-UID:6b5beb23-d3a6-4235-9a7c-0b034c244485@6b5b.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260320
-CATEGORIES:Vizyondaki Film
-DESCRIPTION:🎬 Tür: Dram\n📄 Özet: Kırmızı ışıkta aniden yola çıkan bir yayaya çarpmamak için manevra yapan Tamer\, geçirdiği kaza sonucunda eşini ve kızını kaybederken kendisi de tekerlekli sandalyeye mahkûm olur. Hayata tutunma motivasyonunu yitiren Tamer’in yolu\, Asperger sendromlu ve çevresi tarafından "yarım akıllı" olarak nitelendirilen hamal Safa ile kesişir. Safa’nın ısrarlı takibi ve sürekli af dileme çabalarıyla başlayan bu süreç\, zamanla ikili arasında derin bir arkadaşlığa dönüşür.\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detay: https://www.paribucineverse.com/dram-filmleri/hammal-guvercin-terbiyecisi-filmi-izle\n🎟 Bilet: https://www.paribucineverse.com/biletleme/~step~session~film~b8ca7ecd-2964-4929-ae76-80e901748535
-SUMMARY:Hammal: Güvercin Terbiyecisi
-UID:762e5128-c04a-4553-aee5-449ee7f9e3fc@762e.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260220
-CATEGORIES:Vizyondaki Film
-DESCRIPTION:🎬 Tür: Aksiyon\n📄 Özet: İskoçya'da ıssız bir adada gizemli şekilde yaşamını sürdüren eski asker Mason\, fırtınalı bir günde hiç tanımadığı genç bir kızın hayatını kurtarır. Tüm kaderini değiştirecek ve geçmişinden gelen karanlıkla yüzleşmesine sebep olacak bu olaydan sonra\, hiçbir şey eskisi gibi olmayacaktır.\n▶️ Fragman: https://cdn.marsgate.com.tr/13341\n🔗 Detay: https://www.paribucineverse.com/aksiyon-filmleri/siginak-filmi-izle\n🎟 Bilet: https://www.paribucineverse.com/biletleme/~step~session~film~0b6c51e4-0695-420e-8db3-523bd75118c0
-SUMMARY:Sığınak
-UID:9786b1d6-ef96-45f1-b5b6-ab5402c94a81@9786.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260403
-CATEGORIES:Gelecek Film
-DESCRIPTION:🎬 Tür: Romantik\n📄 Özet: Mutlu bir nişanlı çift olan Emma Harwood ve Charlie Thompson\, evliliklerine günler kala beklenmedik bir gerçeğin ortaya çıkmasıyla ilişkilerinin en büyük sınavını vermek zorunda kalır. Sevgi\, güven ve bağlılık üzerine kurulu bu ilişki\; sarsıcı bir gerçekle yüzleşince romantik bir hikayeden duygusal bir keşfe dönüşür.\n▶️ Fragman: https://cdn.marsgate.com.tr/13366\n🔗 Detay: https://www.paribucineverse.com/romantik-filmleri/drama-filmi-izle
-SUMMARY:Drama
-UID:c301fdb5-cda7-4411-a835-7b4999c47826@c301.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260410
-CATEGORIES:Gelecek Film
-DESCRIPTION:🎬 Tür: Animasyon\n📄 Özet: Lina dedesiyle çıktığı Medine yolculuğunda Zübeyr bin Avvam ve Esma bint Ebubekir’le karşılaşır. Peygamber Efendimiz’i (s.a.s.) göreceği için çok heyecanlı olan küçük kız O’nun ashabından iki kişiyle tanışınca çok sevinir. Zübeyr ve Esma bir vesileyle başlayan sohbette İslam’ın doğuşuna ve gelişmesine tanıklık eden olayları anlatır. Mekke’de yaşanan baskılar\, müşriklerin müdahaleleri\, Bilal Habeşi’nin özgürlük mücadelesi ve imanla örülmüş nice hatıra Lina’nın yolculuğuna eşlik eder.\n▶️ Fragman: https://cdn.marsgate.com.tr/13368\n🔗 Detay: https://www.paribucineverse.com/animasyon-filmleri/571-rahmet-peygamberi-hz-muhammed-filmi-izle
-SUMMARY:571 Rahmet Peygamberi Hz. Muhammed
-UID:c8e9d000-aaaf-4005-8928-3a75b7e7c6fd@c8e9.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260306
-CATEGORIES:Vizyondaki Film
-DESCRIPTION:🎬 Tür: Animasyon\n📄 Özet: Film\; bilim insanlarının\, insan bilincini gerçekçi robot hayvanlara aktarmanın bir yolunu keşfetmesi sonrası hayvansever Mabel’ın bilincini bir kunduza aktararak hayvanlar aleminde bir serüvene çıkmasını konu ediniyor.\n▶️ Fragman: https://cdn.marsgate.com.tr/13287\n🔗 Detay: https://www.paribucineverse.com/animasyon-filmleri/hoplayanlar-filmi-izle\n🎟 Bilet: https://www.paribucineverse.com/biletleme/~step~session~film~0dfa9a93-37a9-4526-9fe8-0e77bbd1d93c
-SUMMARY:Hoplayanlar
-UID:8f4a8a59-0ffa-43a5-a24b-60426fdd82cb@8f4a.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260501
-CATEGORIES:Gelecek Film
-DESCRIPTION:🎬 Tür: Dram\n▶️ Fragman: https://cdn.marsgate.com.tr/13362\n🔗 Detay: https://www.paribucineverse.com/dram-filmleri/bir-adam-yaratmak-filmi-izle
-SUMMARY:Bir Adam Yaratmak
-UID:f2975f5f-6846-4bea-bd8b-9f088c4205c4@f297.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260501
-CATEGORIES:Gelecek Film
-DESCRIPTION:🎬 Tür: Komedi\n📄 Özet: Miranda Priestly'nin\, emekliliğine yaklaşırken basılı medyanın düşüşte olduğu bir dönemde\, eski asistanı ve rakibi olan Emily Charlton ile reklam gelirleri için verdiği mücadeleyi konu alıyor.\n▶️ Fragman: https://cdn.marsgate.com.tr/13354\n🔗 Detay: https://www.paribucineverse.com/komedi-filmleri/seytan-marka-giyer-2-filmi-izle
-SUMMARY:Şeytan Marka Giyer 2
-UID:62bfd85a-a698-4c1d-8089-5769bc970971@62bf.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260403
-CATEGORIES:Gelecek Film
-DESCRIPTION:🎬 Tür: Korku\n📄 Özet: Anadolu’daki unutulmuş bir mezar kazısı ile Los Angeles’ta yaşanan esrarengiz bir doğum\, kadim metinlerde yer alan kehanetleri tetikleyerek İslam ve Hristiyanlık dünyasını aynı gizemin merkezinde buluşturur. Mezopotamya kökenli Pazuzu’nun dünyaya geçiş yapabilmesi için gereken "Son Ayin" süreci\, iki kıta arasında görünmez bir kapının açılmasıyla aktif hale gelir. Kehanete göre iki ayrı noktadaki kapıların aynı anda açılması durumunda ritüel tamamlanacak ve yayılan lanet dünyayı ele geçirme aşamasına geçecektir.\n▶️ Fragman: https://cdn.marsgate.com.tr/13381\n🔗 Detay: https://www.paribucineverse.com/korku-filmleri/buyu-3-son-ayin-filmi-izle
-SUMMARY:Büyü 3: Son Ayin
-UID:8ee0c1b2-b892-4913-8813-e7da43c12ac6@8ee0.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260313
-CATEGORIES:Vizyondaki Film
-DESCRIPTION:🎬 Tür: Komedi\n📄 Özet: Evlenmek üzere olduğu İtalya’daki düğününde\, sevgilisi tarafından terk edilen Matt\, tek başına balayı gezisine çıkar. Roma’da yalnız kaldığı bu tatilde yeni insanlarla tanışır ve yaşadığı bu yolculuk\, onun hem kendini hem de aşkı yeniden keşfetmesini sağlar.\n▶️ Fragman: https://cdn.marsgate.com.tr/13358\n🔗 Detay: https://www.paribucineverse.com/komedi-filmleri/solo-mio-filmi-izle\n🎟 Bilet: https://www.paribucineverse.com/biletleme/~step~session~film~09c386ec-7ad8-4936-8aee-1b364646af3e
-SUMMARY:Solo Mio
-UID:eb9219e2-790c-4b4a-bf45-a9f7a92c8e8e@eb92.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260522
-CATEGORIES:Gelecek Film
-DESCRIPTION:🎬 Tür: Animasyon\n📄 Özet: Küçük Birol\, dedesinin çiftlikte yaşayan eski dostunun yanına tatile gönderilir. Başta onu\; internetin çekmediği\, doğayla iç içe ama fazlasıyla sakin bir köy beklemektedir. Tarla işleri\, hayvanlar ve durağan bir hayat… Birol için her şey sıkıcı görünür. Ta ki köyde tanıştığı insanların aslında göründükleri gibi olmadığını fark edene kadar.\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detay: https://www.paribucineverse.com/animasyon-filmleri/super-1-takim-filmi-izle
-SUMMARY:Süper 1 Takım
-UID:74781d1f-96d6-450c-b065-248a2ff8649a@7478.org
+UID:3150fb7e-40c5-4598-8f24-d29e1723ff9f@3150.org
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260306
 CATEGORIES:Vizyondaki Film
 DESCRIPTION:🎬 Tür: Korku\n📄 Özet: Yalnız bir Frankenstein\, 1930’ların Chicago’suna giderek\, çığır açan bilim insanı Dr. Euphronious’tan kendisine bir eş yaratmasını ister. İkili\, öldürülmüş genç bir kadını hayata döndürür ve Gelin doğar. Sonrasında yaşananlar\, ikisinin de hayal edebileceğinden öteye geçer: Cinayet\, ruh istilası\, delilik sınırında bir kültürel ayaklanma ve yasaklı aşıkların sarsıcı romantizmi…\n▶️ Fragman: https://cdn.marsgate.com.tr/13289\n🔗 Detay: https://www.paribucineverse.com/korku-filmleri/gelin-filmi-izle\n🎟 Bilet: https://www.paribucineverse.com/biletleme/~step~session~film~030995ff-6685-4764-ab94-12a81af72f19
 SUMMARY:Gelin!
-UID:e529cdde-1a6f-464a-9b58-7bb763aa78dd@e529.org
+UID:91e5f6bb-71fd-4782-a27e-7ebf12e894af@91e5.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260213
+CATEGORIES:Vizyondaki Film
+DESCRIPTION:🎬 Tür: Dram\n📄 Özet: Emily Brontë’nin aynı isimli ünlü romanından uyarlanan film\, Catherine ve Heathcliff arasındaki yoğun ve yıkıcı ilişkiyi konu alıyor.\n▶️ Fragman: https://cdn.marsgate.com.tr/13247\n🔗 Detay: https://www.paribucineverse.com/dram-filmleri/ugultulu-tepeler-filmi-izle\n🎟 Bilet: https://www.paribucineverse.com/biletleme/~step~session~film~f3132d07-16dc-46d8-8a54-a043e4ca35ae
+SUMMARY:Uğultulu Tepeler
+UID:2c5d55a0-fc1c-469d-9c41-5bef5bb01277@2c5d.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260501
+CATEGORIES:Gelecek Film
+DESCRIPTION:🎬 Tür: Komedi\n📄 Özet: Miranda Priestly'nin\, emekliliğine yaklaşırken basılı medyanın düşüşte olduğu bir dönemde\, eski asistanı ve rakibi olan Emily Charlton ile reklam gelirleri için verdiği mücadeleyi konu alıyor.\n▶️ Fragman: https://cdn.marsgate.com.tr/13354\n🔗 Detay: https://www.paribucineverse.com/komedi-filmleri/seytan-marka-giyer-2-filmi-izle
+SUMMARY:Şeytan Marka Giyer 2
+UID:05d26075-4841-4e3f-accc-fc8599f496d3@05d2.org
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260313
 CATEGORIES:Vizyondaki Film
-DESCRIPTION:🎬 Tür: Animasyon\n📄 Özet: Teo henüz yavruyken gizemli bir şekilde ailesinden ayrılır ve onu bulan sıra dışı bir güreşçi kanguru ailesi tarafından evlat edinilir. Güçlü\, disiplinli ve biraz da komik olan bu aile\, Teo’yu kendi çocukları gibi büyütür. Onların dünyasında güçlü olmayı ve asla pes etmemeyi öğrenir. Büyüdüğünde ise kendi ailesini ve kökleri merak etmeye başlar. Teo\, gerçek yuvasını bulmak ve tehlike altındaki anavatanını kurtarmak için zorlu bir maceraya atılır. Bu yolculuk boyunca dostluk\, cesaret ve fedakârlığın gerçek anlamını keşfeder.\n▶️ Fragman: https://cdn.marsgate.com.tr/13361\n🔗 Detay: https://www.paribucineverse.com/animasyon-filmleri/kayip-kaplan-filmi-izle\n🎟 Bilet: https://www.paribucineverse.com/biletleme/~step~session~film~f51c8b0b-26e6-4072-b1eb-4a52493dcbb7
-SUMMARY:Kayıp Kaplan
-UID:d41a98e5-8902-4295-82dd-cd19b38e576c@d41a.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260206
-CATEGORIES:Vizyondaki Film
-DESCRIPTION:🎬 Tür: Dram\n📄 Özet: William Shakespeare ve eşi Agnes\, on bir yaşındaki oğulları Hamnet'in ölümünün yasını tutar. Birlikte çocuklarının kaybıyla nasıl başa çıkabileceklerini bulmaya çalışırlar.\n▶️ Fragman: https://cdn.marsgate.com.tr/13246\n🔗 Detay: https://www.paribucineverse.com/dram-filmleri/hamnet-filmi-izle\n🎟 Bilet: https://www.paribucineverse.com/biletleme/~step~session~film~9db13f9a-1e06-4f9c-94e8-f19d957c1c15
-SUMMARY:Hamnet
-UID:2ac12989-097a-473b-90d3-657bcc222a33@2ac1.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260313
-CATEGORIES:Vizyondaki Film
-DESCRIPTION:🎬 Tür: Korku\n📄 Özet: Korkuluk maskesiyle şehre dehşet salan Benny\, geçmişten gelen hesaplaşmaların izini sürerken önüne çıkan herkesi acımasızca ortadan kaldırır. Ancak bu kez yaşananlar sıradan bir katliam değildir. Benny’ nin hedefinde belirli bir kişi vardır. Bu karşılaşma\, yıllardır gömülü kalan sırları gün yüzüne çıkaracak ve ölümcül bir yüzleşmeyi tetikleyecektir. Hayatta kalma mücadelesi\, nefes kesen bir kovalamacaya dönüşürken şehir kanla boyanır.\n▶️ Fragman: https://cdn.marsgate.com.tr/13348\n🔗 Detay: https://www.paribucineverse.com/korku-filmleri/cadilar-bayrami-katliami-filmi-izle\n🎟 Bilet: https://www.paribucineverse.com/biletleme/~step~session~film~97852954-c902-44fc-a2d3-ea74d5d223d2
-SUMMARY:Cadılar Bayramı Katliamı
-UID:0c955217-b4f3-4af9-a892-6e136ab0a46e@0c95.org
+DESCRIPTION:🎬 Tür: Korku\n📄 Özet: Issız bir dağ evinde bakıcılık yapan Deniz\, korumakla görevlendirildiği Ateş’in sıradan bir çocuk olmadığını çok geçmeden anlar. Evde başlayan kanlı alametler\, kaybolan çocuklar ve fısıldanan ayinler tek bir gerçeğe işaret eder: Deccal’in hakimiyeti yakındır.\n▶️ Fragman: https://cdn.marsgate.com.tr/13349\n🔗 Detay: https://www.paribucineverse.com/korku-filmleri/deccal-3-filmi-izle\n🎟 Bilet: https://www.paribucineverse.com/biletleme/~step~session~film~ef7e7813-ba77-41d1-affc-612538a28081
+SUMMARY:Deccal 3
+UID:859940b8-caff-4e06-a8a0-43ca01112d78@8599.org
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260410
 CATEGORIES:Gelecek Film
 DESCRIPTION:🎬 Tür: Animasyon\n📄 Özet: Wrangel Adası'ndaki kazılar sırasında\, insan yapımı bir kriyojenik lahit içinde uyuyan canlı bir yavru mamut keşfedilir. Keşif gezisine liderlik eden saplantılı bilim insanı\, bu keşfi halktan gizli tutmaya ve klonlama çalışmalarının sonucu olarak göstermeye karar verir. Yavru mamut\, klonlama ve araştırma için malzeme elde etmek amacıyla parçalara ayrılacaktır. Genç okul çocukları yavru mamuta yardım eder ve tesadüfen onun zeki olduğunu keşfederler. Yavru mamutun kaçmasına ve Wrangel Adası'na geri dönmesine yardım ederek kökeninin gizemini çözmeye çalışırlar.\n▶️ Fragman: https://cdn.marsgate.com.tr/13371\n🔗 Detay: https://www.paribucineverse.com/animasyon-filmleri/kutup-kahramanlari-filmi-izle
 SUMMARY:Kutup Kahramanları
-UID:f090842b-d539-47bc-a646-09bb52845930@f090.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260101
-CATEGORIES:Vizyondaki Film
-DESCRIPTION:🎬 Tür: Komedi\n📄 Özet: D.I.S.C.O. istihbarat teşkilatının uzun zamandır gizlilikle yürüttüğü operasyon\, Ajan Ertan yüzünden başarısız olur. Teşkilattan uzaklaştırma alan Ertan eşi Seda ile tatile gider. Burada yolu Bandırma Fön Birinci’si Zafer ve eşi Aynur ile kesişir. Ertan’ın mesleğini öğrenen Zafer’in susmak için tek şartı vardır. Ertan’ın yarım kalan operasyonunu birlikte bitirmek. Çünkü teşkilatın peşinde olduğu örgüt aynı oteldedir ve operasyonun kaderi Ertan’ın elindedir. Hayatında saha ajanlığı yapmamış olan Ertan\, Zafer’i mecburen dahil ederek operasyona girişir. Seda ve Aynur’un beklenmedik desteği ise her şeyi değiştirecektir.\n▶️ Fragman: https://cdn.marsgate.com.tr/13251\n🔗 Detay: https://www.paribucineverse.com/komedi-filmleri/disco-filmi-izle\n🎟 Bilet: https://www.paribucineverse.com/biletleme/~step~session~film~b570c906-343a-4b83-920f-d616b50e58f3
-SUMMARY:D.I.S.C.O.
-UID:4f590d7c-0b8c-42c2-b32d-3dc294a51231@4f59.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260403
-CATEGORIES:Gelecek Film
-DESCRIPTION:🎬 Tür: Dram\n📄 Özet: Samet'in genel müdürlüğe terfi kutlamasıyla başlayan gece\, bir anlık merak ve açık kalan bir perde yüzünden bambaşka bir kaosa sürükleniyor. Samet'in omuzlarına binen utanç ve suçluluk\, tüm davetlilerin dahil olduğu trajikomik bir vicdan muhasebesine dönüşüyor. Tek mekanda artan klostrofobik atmosfer\, karakterlerin gerçek yüzlerini ortaya çıkarırken seyirciyi de "Sen olsan ne yapardın?" sorusuyla baş başa bırakıyor.\n▶️ Fragman: https://cdn.marsgate.com.tr/13380\n🔗 Detay: https://www.paribucineverse.com/dram-filmleri/perde-filmi-izle
-SUMMARY:Perde
-UID:3386ef65-f34a-4e46-bef0-b6e62f54b895@3386.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260320
-CATEGORIES:Vizyondaki Film
-DESCRIPTION:🎬 Tür: Komedi\n📄 Özet: Başrollerinde Cem Gelinoğlu ve Doğu Demirkol’un yer aldığı Kardeşler Araştırma\, sıradan bir dosyanın ardından uluslararası bir krizin ortasında kalan iki kardeşin hikâyesini anlatıyor.\n▶️ Fragman: https://cdn.marsgate.com.tr/13343\n🔗 Detay: https://www.paribucineverse.com/komedi-filmleri/kardesler-arastirma-filmi-izle\n🎟 Bilet: https://www.paribucineverse.com/biletleme/~step~session~film~33386b5a-b9b1-4e68-ac55-622e1c7ff8ea
-SUMMARY:Kardeşler Araştırma
-UID:f2c89b53-d09e-4198-8c8a-ab2c3f477a72@f2c8.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260327
-CATEGORIES:Gelecek Film
-DESCRIPTION:🎬 Tür: Korku\n📄 Özet: "The Virgil" adlı lüks bir apartman kompleksinde çalışmaya başlayan genç bir kadın\, kısa süre içinde bina sakinlerinin karanlık bir tarikatla bağlantılı olduğunu fark eder. Şafak vaktine kadar sürecek bir ayinin hedefi haline gelen karakter\, binanın ölümcül tuzaklarla dolu labirentinde hayatta kalmaya çalışır.\n▶️ Fragman: https://cdn.marsgate.com.tr/13297\n🔗 Detay: https://www.paribucineverse.com/korku-filmleri/seni-oldurecekler-filmi-izle
-SUMMARY:Seni Öldürecekler
-UID:25ca8669-7122-417a-83f3-2274d9b73187@25ca.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260327
-CATEGORIES:Gelecek Film
-DESCRIPTION:🎬 Tür: Korku\n📄 Özet: Morg bilimi bölümünden mezun olan Rebecca Owens\, River Fields Morgu’nda gece vardiyasında bir işe başlar. Başlangıçta rutin görünen bu iş\, kısa sürede onun dehşet verici doğaüstü güçlerle yüzleşmek zorunda kaldığı karanlık bir kâbusa dönüşür.\n▶️ Fragman: https://cdn.marsgate.com.tr/13340\n🔗 Detay: https://www.paribucineverse.com/korku-filmleri/otopsi-filmi-izle
-SUMMARY:Otopsi
-UID:6177bc8e-fcdb-40a2-b5b4-8528b9e6bae1@6177.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260424
-CATEGORIES:Gelecek Film
-DESCRIPTION:🎬 Tür: Biyografi\n📄 Özet: Film\, Michael Jackson’ın müziğin ötesine geçen hayatını anlatıyor\; Jackson 5’ın solisti olarak keşfedilen olağanüstü yeteneğinden\, onu dünyanın en büyük eğlencesi haline getiren vizyoner sanatçılığa uzanan yolculuğunu takip ediyor.\n▶️ Fragman: https://cdn.marsgate.com.tr/13353\n🔗 Detay: https://www.paribucineverse.com/biyografi-filmleri/michael-filmi-izle
-SUMMARY:Michael
-UID:e934e97b-3348-49a6-898f-ec954fca4da4@e934.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260327
-CATEGORIES:Gelecek Film
-DESCRIPTION:🎬 Tür: Korku\n📄 Özet: 30 yaşındaki Yade\, çocukluğunu küçük bir kasabada Meva\, Yavuz ve Ozan’la geçirmiş\, Yavuz’la saf bir çocukluk aşkı yaşamıştır. Ancak 24 yaşlarında kimsenin çözemediği bir olay yüzünden Yade ve Yavuz aniden ayrılır. Yade şehri terk eder\, Yavuz ise sevmediği Sevil’le evlenmek zorunda kalır. Yıllar sonra emlak firmasında fotoğrafçı olarak çalışan Yade\, işi gereği gittiği terk edilmiş bir köyde açıklanamaz olaylarla karşılaşır. Köyden ayrıldıktan sonra bile tuhaflıkların peşini bırakmaması\, onu korku içinde doğduğu yer olan kasabasına geri döndürür. Ancak Yade bilmeden bir cin kabilesini uyandırmıştır. Eve döndüğünde bu lanet ona yaklaşır.\n▶️ Fragman: https://cdn.marsgate.com.tr/13337\n🔗 Detay: https://www.paribucineverse.com/korku-filmleri/mecruh-cin-muhru-filmi-izle
-SUMMARY:Mecruh: Cin Mührü
-UID:f1447bca-a595-481d-b705-ffb06ad61306@f144.org
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260327
-CATEGORIES:Gelecek Film
-DESCRIPTION:🎬 Tür: Korku\n📄 Özet: 15. yüzyılda karısının ölümü üzerine inancını yitiren ve ölümsüz bir vampire dönüşen Kont Dracula\, 400 yıl boyunca inzivaya çekilerek yaşamını sürdürür. Ancak günümüzde\, geçmişteki büyük aşkına tıpatıp benzeyen bir kadının varlığını keşfetmesiyle yeniden harekete geçer. Bu süreçte bir grup bilim insanı ve din görevlisi\, "canlı bir örnek" olarak nitelendirdikleri bu kadim varlığı ele geçirmek ve temsil ettiği karanlığı yok etmek için geniş çaplı bir araştırma başlatır.\n▶️ Fragman: https://cdn.marsgate.com.tr/13378\n🔗 Detay: https://www.paribucineverse.com/korku-filmleri/drakula-filmi-izle
-SUMMARY:Drakula
-UID:6a67abcd-5c8a-40ab-bcac-986c6136cf6d@6a67.org
+UID:a852391b-bafa-4c84-b9d7-ad4c667778dc@a852.org
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260508
 CATEGORIES:Gelecek Film
 DESCRIPTION:🎬 Tür: Macera\n📄 Özet: Film\, Johnny Cage’in de aralarına katılmasıyla bu kez Dünya Âlemi’nin\, varlığını tehdit eden Shao Kahn ile kuralsız ve kanlı bir savaşta karşı karşıya gelmesini konu ediniyor.\n▶️ Fragman: https://cdn.marsgate.com.tr/13356\n🔗 Detay: https://www.paribucineverse.com/macera-filmleri/mortal-kombat-ii-filmi-izle
 SUMMARY:Mortal Kombat II
-UID:1f5528d5-5298-4c54-8315-764d2c5901ec@1f55.org
+UID:15066bbd-bde2-4830-9ce9-79cfa9a2c60d@1506.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260501
+CATEGORIES:Gelecek Film
+DESCRIPTION:🎬 Tür: Korku\n📄 Özet: İçine kapanık bir yazar olan Ohm Bauman\, anne babasının küllerini serpmek için İrlanda kırsalındaki tenha bir otele gider. Ancak otel çalışanlarının\, balayına gelenleri lanetlediği söylenen kadim bir cadı hakkında anlattıkları hikayeler zihnini ele geçirmeye başlayınca giderek artan rahatsız edici görüntüler Bauman’ı delirmenin eşiğine sürükler.\n▶️ Fragman: https://cdn.marsgate.com.tr/13375\n🔗 Detay: https://www.paribucineverse.com/korku-filmleri/hokum-filmi-izle
+SUMMARY:Hokum
+UID:49ea885d-adaa-43ec-8002-a8470e7e6211@49ea.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260522
+CATEGORIES:Gelecek Film
+DESCRIPTION:🎬 Tür: Fantastik\n📄 Özet: Kötü İmparatorluk yıkılmış olsa da\, İmparatorluk’a bağlı savaş lordları galaksinin dört bir yanına dağılmış durumda. Yeni Cumhuriyet\, Asilerin uğruna savaştığı değerleri korumak için mücadele ederken\, efsanevi Mandalorlu ödül avcısı Din Djarin ve genç çırağı Grogu’nun yardımına başvuruyor.\n▶️ Fragman: https://cdn.marsgate.com.tr/13372\n🔗 Detay: https://www.paribucineverse.com/fantastik-filmleri/star-wars-mandalorian-ve-grogu-filmi-izle
+SUMMARY:Star Wars: Mandalorian ve Grogu
+UID:9a290730-737c-4fb5-8487-4121d20785cf@9a29.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260313
+CATEGORIES:Vizyondaki Film
+DESCRIPTION:🎬 Tür: Gerilim\n📄 Özet: Kötü düşmanları 16 yıl sonra yeniden ortaya çıkınca\, bir grup eski devrimci içlerinden birinin kızını kurtarmak için yeniden bir araya gelir.\n▶️ Fragman: https://cdn.marsgate.com.tr/13123\n🔗 Detay: https://www.paribucineverse.com/gerilim-filmleri/savas-ustune-savas-filmi-izle\n🎟 Bilet: https://www.paribucineverse.com/biletleme/~step~session~film~78e6dcdd-99e6-4336-b99c-df984e1cc82e
+SUMMARY:Savaş Üstüne Savaş
+UID:69297a91-9b94-4f7f-bacd-ed15044bc6a3@6929.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260410
+CATEGORIES:Gelecek Film
+DESCRIPTION:🎬 Tür: Gerilim\n📄 Özet: Becket Redfellow’un annesi bir zamanlar büyük bir servetin varisiyken\, Becket doğduğunda ailesi tarafından dışlanır ve yoksulluk içinde hayatını kaybeder. Annesinin kendi hakkı olduğunu söylediği mirası geri almak isteyen Becket\, önündeki yedi aile üyesini ortadan kaldırmaya yönelik ölümcül bir plan yapar. Varisler birer birer hayatını kaybederken\, Becket hem sevgi dolu kız arkadaşıyla ilişkisini hem de planını bilen ve pay isteyen eski sevgilisini idare etmek zorunda kalır.\n▶️ Fragman: https://cdn.marsgate.com.tr/13363\n🔗 Detay: https://www.paribucineverse.com/gerilim-filmleri/nasil-katil-olunur-filmi-izle
+SUMMARY:Nasıl Katil Olunur
+UID:1a14b138-a36b-408a-ade4-b52af71783db@1a14.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260410
+CATEGORIES:Gelecek Film
+DESCRIPTION:🎬 Tür: Animasyon\n📄 Özet: Lina dedesiyle çıktığı Medine yolculuğunda Zübeyr bin Avvam ve Esma bint Ebubekir’le karşılaşır. Peygamber Efendimiz’i (s.a.s.) göreceği için çok heyecanlı olan küçük kız O’nun ashabından iki kişiyle tanışınca çok sevinir. Zübeyr ve Esma bir vesileyle başlayan sohbette İslam’ın doğuşuna ve gelişmesine tanıklık eden olayları anlatır. Mekke’de yaşanan baskılar\, müşriklerin müdahaleleri\, Bilal Habeşi’nin özgürlük mücadelesi ve imanla örülmüş nice hatıra Lina’nın yolculuğuna eşlik eder.\n▶️ Fragman: https://cdn.marsgate.com.tr/13368\n🔗 Detay: https://www.paribucineverse.com/animasyon-filmleri/571-rahmet-peygamberi-hz-muhammed-filmi-izle
+SUMMARY:571 Rahmet Peygamberi Hz. Muhammed
+UID:b403e298-3ab9-48f3-ab79-9979d5b9c1ea@b403.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260313
+CATEGORIES:Vizyondaki Film
+DESCRIPTION:🎬 Tür: Animasyon\n📄 Özet: Doktor olan baba\, bir zamanlar ünlü paleontoloji müzesini kurtarmakla meşguldür. Doktor'un oğlu Fil karşılıksız aşk acısı çekerken\, kızı Linda bilgisayar oyunları dünyasında kaybolmuş durumda. Ailenin gizli bir portal aracılığıyla tarih öncesi dünyaya adım attığı gün her şey değişir. Kendilerini en tatsız ve tehlikeli koşullarda bulan ikili\, bir şekilde hayatta kalmak ve birlikte hareket etmek zorunda kalır.\n▶️ Fragman: https://cdn.marsgate.com.tr/13359\n🔗 Detay: https://www.paribucineverse.com/animasyon-filmleri/dino-ailesi-filmi-izle\n🎟 Bilet: https://www.paribucineverse.com/biletleme/~step~session~film~b995c449-dfec-4ddc-afb1-4f2ebe5d286d
+SUMMARY:Dino Ailesi
+UID:a777d433-08b2-489d-b0d3-3440fde669a5@a777.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260320
+CATEGORIES:Vizyondaki Film
+DESCRIPTION:🎬 Tür: Bilim Kurgu\n📄 Özet: Film\, dünyanın kurtuluşu için uzayda bir gizemi çözmesi gereken bir fen bilgisi öğretmeninin hikâyesini anlatıyor.\n▶️ Fragman: https://cdn.marsgate.com.tr/13294\n🔗 Detay: https://www.paribucineverse.com/bilim-kurgu-filmleri/kurtulus-projesi-filmi-izle\n🎟 Bilet: https://www.paribucineverse.com/biletleme/~step~session~film~30580475-a516-4ec7-995c-353bab33af60
+SUMMARY:Kurtuluş Projesi
+UID:97003526-6eb7-4495-9630-e84e1cd2ef6a@9700.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260403
+CATEGORIES:Gelecek Film
+DESCRIPTION:🎬 Tür: Dram\n📄 Özet: Samet'in genel müdürlüğe terfi kutlamasıyla başlayan gece\, bir anlık merak ve açık kalan bir perde yüzünden bambaşka bir kaosa sürükleniyor. Samet'in omuzlarına binen utanç ve suçluluk\, tüm davetlilerin dahil olduğu trajikomik bir vicdan muhasebesine dönüşüyor. Tek mekanda artan klostrofobik atmosfer\, karakterlerin gerçek yüzlerini ortaya çıkarırken seyirciyi de "Sen olsan ne yapardın?" sorusuyla baş başa bırakıyor.\n▶️ Fragman: https://cdn.marsgate.com.tr/13380\n🔗 Detay: https://www.paribucineverse.com/dram-filmleri/perde-filmi-izle
+SUMMARY:Perde
+UID:8d11a916-49ad-4d63-8e32-bf6e6e986d46@8d11.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260410
+CATEGORIES:Gelecek Film
+DESCRIPTION:🎬 Tür: Tarihi\n📄 Özet: Moğol İmparatorluğu çökerken\, savaş yaralarıyla dolu Timur Barlas\, peşini bırakmayan bir kaderle yüzleşmek ve İpek Yolu'nun kaderini korumak için bağlılıklarından vazgeçmek zorunda kalır.\n▶️ Fragman: https://cdn.marsgate.com.tr/13369\n🔗 Detay: https://www.paribucineverse.com/tarihi-filmleri/timur-bir-fatihin-yukselisi-filmi-izle
+SUMMARY:Timur: Bir Fatih'in Yükselişi
+UID:ab5eed25-b132-4835-a750-3e68411aa4e8@ab5e.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260423
+CATEGORIES:Gelecek Film
+DESCRIPTION:🎬 Tür: Animasyon\n📄 Özet: Bir kabile reisinin oğlu\, babasının avcılık yeteneklerine yetişmekte zorlanır. Kendini kanıtlamak için gizemli bir ormana doğru yola çıkar ve burada Tink adında\, büyülü ve dünya dışı bir kuşla karşılaşır. Birlikte\, kılıç dişli sincapların\, sevimli mirketlerin ve hatta dinozorların yaşadığı Taş Devri Ormanı’nda sıra dışı maceralara atılırlar.\n▶️ Fragman: https://cdn.marsgate.com.tr/13383\n🔗 Detay: https://www.paribucineverse.com/animasyon-filmleri/marakuda-tas-devri-efsanesi-filmi-izle
+SUMMARY:Marakuda: Taş Devri Efsanesi
+UID:0ce85840-8d29-4817-a8ff-8bc42a444703@0ce8.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260403
+CATEGORIES:Gelecek Film
+DESCRIPTION:🎬 Tür: Korku\n📄 Özet: Başlarına gelen karanlık bir olayın ardından öksüz ve yetim kalan Selma\, Aysel ve Nurten adındaki üç genç kız kardeş\, çareyi adını kimilerinin korkuyla andığı Bitlisli Belkıs’ta arar. Belkıs\, cinni varlıklarla kurduğu bağ sayesinde köydeki insanlara\, özellikle de hamile kadınlara şifa dağıtmasıyla tanınan gizemli bir büyücüdür. Ancak halalarının sırt çevirmesiyle evsiz kalan kardeşler için asıl imtihan şimdi başlayacaktır. Sığınacak bir çatı bulsalar da peşlerindeki kötülüğü de beraberlerinde getirmişlerdir. Üstelik bu kez o kötülük yalnızca onları değil\, Bitlisli Belkıs’ı da sınayacaktır.\n▶️ Fragman: https://cdn.marsgate.com.tr/13350\n🔗 Detay: https://www.paribucineverse.com/korku-filmleri/kible-bitlisli-belkis-filmi-izle
+SUMMARY:Kıble: Bitlisli Belkıs
+UID:28728fac-37c1-4eda-b365-3d9c7e3501da@2872.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260206
+CATEGORIES:Vizyondaki Film
+DESCRIPTION:🎬 Tür: Dram\n📄 Özet: William Shakespeare ve eşi Agnes\, on bir yaşındaki oğulları Hamnet'in ölümünün yasını tutar. Birlikte çocuklarının kaybıyla nasıl başa çıkabileceklerini bulmaya çalışırlar.\n▶️ Fragman: https://cdn.marsgate.com.tr/13246\n🔗 Detay: https://www.paribucineverse.com/dram-filmleri/hamnet-filmi-izle\n🎟 Bilet: https://www.paribucineverse.com/biletleme/~step~session~film~9db13f9a-1e06-4f9c-94e8-f19d957c1c15
+SUMMARY:Hamnet
+UID:d61f60b7-6a18-4ae8-9e3e-dcce50e93977@d61f.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260327
+CATEGORIES:Gelecek Film
+DESCRIPTION:🎬 Tür: Korku\n📄 Özet: "The Virgil" adlı lüks bir apartman kompleksinde çalışmaya başlayan genç bir kadın\, kısa süre içinde bina sakinlerinin karanlık bir tarikatla bağlantılı olduğunu fark eder. Şafak vaktine kadar sürecek bir ayinin hedefi haline gelen karakter\, binanın ölümcül tuzaklarla dolu labirentinde hayatta kalmaya çalışır.\n▶️ Fragman: https://cdn.marsgate.com.tr/13297\n🔗 Detay: https://www.paribucineverse.com/korku-filmleri/seni-oldurecekler-filmi-izle
+SUMMARY:Seni Öldürecekler
+UID:bf455ed9-813e-4eb6-a1b8-53c86165bff5@bf45.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260410
+CATEGORIES:Gelecek Film
+DESCRIPTION:🎬 Tür: Gerilim\n📄 Özet: Yiğit sıradan hayatını sürdürmeye çalışan ama içten içe bastırdığı duygularla boğuşan bir adamdır. Bir gece\, yıllardır hayatında yer alan ama artık mesafeli olduğu çocukluk arkadaşı – aynı zamanda abisinin eski dostu – Fosfor’la yeniden karşılaşır. Bu tesadüfî buluşma\, geçmişin kapalı kalmış defterlerini aralarken\, Yiğit’i sürükleyici ve gerilim dolu bir gecenin içine çeker. O gece\, görünenin ardında saklanan duygular\, bastırılmış suçluluklar ve kaçınılmış yüzleşmeler birer birer su yüzüne çıkar. Yiğit için artık hiçbir şey eskisi gibi olmayacaktır.\n▶️ Fragman: https://cdn.marsgate.com.tr/13382\n🔗 Detay: https://www.paribucineverse.com/gerilim-filmleri/kul-dilemma-filmi-izle
+SUMMARY:KUL dilemma
+UID:ccb67146-beea-45ad-98dd-25ca04b9b295@ccb6.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260403
+CATEGORIES:Gelecek Film
+DESCRIPTION:🎬 Tür: Komedi\n📄 Özet: İki beceriksiz hırsız olan Peker ile Ati\, çaldıkları antik heykelin içinde binlerce yıldır mahsur kalan Priapos’u yanlışlıkla serbest bırakırlar. Priapos\, Ati ve Peker’e kendisini ait olduğu yere götürmeleri karşılığında bir dileklerini gerçekleştireceğini söyler. Priapos’u geri götürmek için yola çıkan ikili kendilerini fantastik bir kovalamacanın içinde bulurlar. Peker ile Ati\, bir taraftan dileklerini gerçekleştirmesi için Priapos’u evine götürmeye çalışırken\, bir taraftan da Priapos’un peşindeki tarihi eser kaçakçısı Ahu Secimer\, onun sağır ve kör iz sürücüleri Poz Recai ve Mono Rıza ve eski bir mafya babası olan Alkapon Kerim ile heykeli ait olduğu müzeye götürmeye kararlı Mavisu'yu atlatmaya çalışmaktadırlar.\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detay: https://www.paribucineverse.com/komedi-filmleri/mitoloji-mafyasi-filmi-izle
+SUMMARY:Mitoloji Mafyası
+UID:15d0a7be-26d4-4e22-bd8d-a0b488131180@15d0.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260313
+CATEGORIES:Vizyondaki Film
+DESCRIPTION:🎬 Tür: Korku\n📄 Özet: Korkuluk maskesiyle şehre dehşet salan Benny\, geçmişten gelen hesaplaşmaların izini sürerken önüne çıkan herkesi acımasızca ortadan kaldırır. Ancak bu kez yaşananlar sıradan bir katliam değildir. Benny’ nin hedefinde belirli bir kişi vardır. Bu karşılaşma\, yıllardır gömülü kalan sırları gün yüzüne çıkaracak ve ölümcül bir yüzleşmeyi tetikleyecektir. Hayatta kalma mücadelesi\, nefes kesen bir kovalamacaya dönüşürken şehir kanla boyanır.\n▶️ Fragman: https://cdn.marsgate.com.tr/13348\n🔗 Detay: https://www.paribucineverse.com/korku-filmleri/cadilar-bayrami-katliami-filmi-izle\n🎟 Bilet: https://www.paribucineverse.com/biletleme/~step~session~film~97852954-c902-44fc-a2d3-ea74d5d223d2
+SUMMARY:Cadılar Bayramı Katliamı
+UID:b65282e1-62bb-43c2-941d-644c2af66cba@b652.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260313
+CATEGORIES:Vizyondaki Film
+DESCRIPTION:🎬 Tür: Komedi\n📄 Özet: Evlenmek üzere olduğu İtalya’daki düğününde\, sevgilisi tarafından terk edilen Matt\, tek başına balayı gezisine çıkar. Roma’da yalnız kaldığı bu tatilde yeni insanlarla tanışır ve yaşadığı bu yolculuk\, onun hem kendini hem de aşkı yeniden keşfetmesini sağlar.\n▶️ Fragman: https://cdn.marsgate.com.tr/13358\n🔗 Detay: https://www.paribucineverse.com/komedi-filmleri/solo-mio-filmi-izle\n🎟 Bilet: https://www.paribucineverse.com/biletleme/~step~session~film~09c386ec-7ad8-4936-8aee-1b364646af3e
+SUMMARY:Solo Mio
+UID:e96b6b85-232b-4e95-9b5f-1bb0320e7a9a@e96b.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260320
+CATEGORIES:Vizyondaki Film
+DESCRIPTION:🎬 Tür: Biyografi\n📄 Özet: Yıl 1980. 12 Eylül darbesinin hemen ertesi. Sağ ve sol görüşlü binlerce öğrenci\, parti mensubu\, işçi temsilcileri sistematik bir şekilde tutuklanmaktadır. Sağ hareketin genç liderlerinden Abdullah Çatlı da yurt dışına kaçar. Aynı tarihlerde ASALA terör örgütü Türk Dışişleri diplomatlarına ve sivillerine dünya genelinde saldırılar düzenlemektedir. Askeri darbenin yönetimindeki Türkiye bu saldırıları önlemekte sıkıntı yaşamaktadır. Abdullah Çatlı ve arkadaşlarıyla gizli bir iş birliği yapılır. Abdullah Çatlı ve arkadaşları devlet adına\, devlet adına çalıştığını kabul etmeden ASALA ile mücadele eder. Her hamlesi zekice ve ölümcüldür. "Reis" kod adıyla ASALA'nın korkulu rüyası olur.\n▶️ Fragman: https://cdn.marsgate.com.tr/13360\n🔗 Detay: https://www.paribucineverse.com/biyografi-filmleri/catli-filmi-izle\n🎟 Bilet: https://www.paribucineverse.com/biletleme/~step~session~film~19d42f6f-6b05-4338-b9fe-b2f6b8c376ab
+SUMMARY:Çatlı
+UID:f933737a-6f26-4495-ba89-b65f76871af2@f933.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20251114
+CATEGORIES:Vizyondaki Film
+DESCRIPTION:🎬 Tür: Komedi\n📄 Özet: Boyundan aşağısı felçli zengin bir aristokrat olan Refik ile\, İstanbul’un yoksul mahallelerinden birinde yaşayan\, geçmişi karışık\, enerjik ve hayat dolu bir genç olan Ferruh arasında gelişen sıra dışı dostluğu konu alır. Refik\, kendisine bakacak bir yardımcı ararken\, kaygısızca mülakata gelen Ferruh’un hayata karşı rahat ve umursamaz tavırlarından etkilenir ve onu işe alır. İkili arasında başlangıçta tuhaf bir ilişki başlasa da zamanla güçlü bir dostluk ve bu dostluğun hayatlarına yön verişine bizi tanık edecek olaylar örgüsü karşımıza çıkacaktır. Ferruh’un hayat enerjisi ve samimiyeti\, Refik’in yaşama bakışını değiştirirken\; Refik'in kültürel zenginliği ve zarafeti de Ferruh’un hayatla kurduğu bağı değiştirecek etkilere sebep olacaktır.\n▶️ Fragman: https://cdn.marsgate.com.tr/13168\n🔗 Detay: https://www.paribucineverse.com/komedi-filmleri/sdbda-veyahut-yan-yana-filmi-izle\n🎟 Bilet: https://www.paribucineverse.com/biletleme/~step~session~film~57159012-504b-47a1-8b80-04157d84d708
+SUMMARY:S.D.B.D.A. Veyahut Yan Yana
+UID:2fc41a27-9535-4739-aa2f-d122cc622673@2fc4.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260401
+CATEGORIES:Gelecek Film
+DESCRIPTION:🎬 Tür: Macera\n📄 Özet: Mario ventures into space\, exploring cosmic worlds and tackling galactic challenges far from the familiar Mushroom Kingdom.\n▶️ Fragman: https://cdn.marsgate.com.tr/13317\n🔗 Detay: https://www.paribucineverse.com/macera-filmleri/super-mario-galaksi-filmi-filmi-izle\n🎟 Bilet: https://www.paribucineverse.com/biletleme/~step~session~film~9f0493e3-53ce-4e9c-8421-6b17333c48f8
+SUMMARY:Süper Mario Galaksi Filmi
+UID:5f9eefe3-7b3f-4629-9604-6fb60cfc2c83@5f9e.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260327
+CATEGORIES:Gelecek Film
+DESCRIPTION:🎬 Tür: Korku\n📄 Özet: 15. yüzyılda karısının ölümü üzerine inancını yitiren ve ölümsüz bir vampire dönüşen Kont Dracula\, 400 yıl boyunca inzivaya çekilerek yaşamını sürdürür. Ancak günümüzde\, geçmişteki büyük aşkına tıpatıp benzeyen bir kadının varlığını keşfetmesiyle yeniden harekete geçer. Bu süreçte bir grup bilim insanı ve din görevlisi\, "canlı bir örnek" olarak nitelendirdikleri bu kadim varlığı ele geçirmek ve temsil ettiği karanlığı yok etmek için geniş çaplı bir araştırma başlatır.\n▶️ Fragman: https://cdn.marsgate.com.tr/13378\n🔗 Detay: https://www.paribucineverse.com/korku-filmleri/drakula-filmi-izle
+SUMMARY:Drakula
+UID:be705da3-5870-419c-9658-683321782b22@be70.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260227
+CATEGORIES:Vizyondaki Film
+DESCRIPTION:🎬 Tür: Korku\n📄 Özet: Sidney Prescott’un yeni bir hayat kurduğu sakin kasabada yeni bir Hayalet Maskeli katili ortaya çıktığında\, en karanlık korkuları gerçeğe dönüşür. Kızı bir sonraki hedef haline geldiğinde\, Sidney ailesini korumaya kararlıdır. Ancak bunu başarmak için geçmişinin dehşetleriyle yüzleşmeli ve kanlı döngüyü sonsuza dek bitirmelidir.\n▶️ Fragman: https://cdn.marsgate.com.tr/13271\n🔗 Detay: https://www.paribucineverse.com/korku-filmleri/ciglik-7-filmi-izle\n🎟 Bilet: https://www.paribucineverse.com/biletleme/~step~session~film~28dbe2ae-8519-452d-a8e5-2280a3651622
+SUMMARY:Çığlık 7
+UID:a01d3353-781d-4c24-9ecf-dc541532439d@a01d.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260424
+CATEGORIES:Gelecek Film
+DESCRIPTION:🎬 Tür: Biyografi\n📄 Özet: Film\, Michael Jackson’ın müziğin ötesine geçen hayatını anlatıyor\; Jackson 5’ın solisti olarak keşfedilen olağanüstü yeteneğinden\, onu dünyanın en büyük eğlencesi haline getiren vizyoner sanatçılığa uzanan yolculuğunu takip ediyor.\n▶️ Fragman: https://cdn.marsgate.com.tr/13353\n🔗 Detay: https://www.paribucineverse.com/biyografi-filmleri/michael-filmi-izle
+SUMMARY:Michael
+UID:1645f3f0-0543-4433-b729-413e9463aa65@1645.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260327
+CATEGORIES:Gelecek Film
+DESCRIPTION:🎬 Tür: Dram\n📄 Özet: Yeni oyunlarının prömiyer gecesi yaşananlar\, Ankara’nın tanınan sanatçı çifti Derya ve Aziz’in hayatında geri dönülemez bir kırılmaya yol açar. Bir gecede hedef gösterilerek işlerini ve evlerini kaybeden çift\, 13 yaşındaki kızları Ezgi ile birlikte İstanbul’a\, Aziz’in annesinin yanına yerleşmek zorunda kalır. Aziz\, bu geçici sığınakta bir yandan gündelik işlerle ayakta kalmaya çalışırken diğer yandan etik değerlerinden ödün vermemeye kararlıdır. Derya ise aileyi içinde bulundukları durumdan çıkaracak bir yol ararken\, kendisini zorlu kararların eşiğinde bulur. Bu belirsizliklerle dolu süreçte kızları Ezgi ile aralarındaki mesafe yavaş yavaş açılırken\; çift\, savundukları değerler ile ortak gelecekleri arasında bir seçim yapmak zorunda kalacaktır.\n▶️ Fragman: https://cdn.marsgate.com.tr/13373\n🔗 Detay: https://www.paribucineverse.com/dram-filmleri/sari-zarflar-filmi-izle
+SUMMARY:Sarı Zarflar
+UID:f3645adb-6f04-4511-b505-83cb733f57db@f364.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260306
+CATEGORIES:Vizyondaki Film
+DESCRIPTION:🎬 Tür: Animasyon\n📄 Özet: Film\; bilim insanlarının\, insan bilincini gerçekçi robot hayvanlara aktarmanın bir yolunu keşfetmesi sonrası hayvansever Mabel’ın bilincini bir kunduza aktararak hayvanlar aleminde bir serüvene çıkmasını konu ediniyor.\n▶️ Fragman: https://cdn.marsgate.com.tr/13287\n🔗 Detay: https://www.paribucineverse.com/animasyon-filmleri/hoplayanlar-filmi-izle\n🎟 Bilet: https://www.paribucineverse.com/biletleme/~step~session~film~0dfa9a93-37a9-4526-9fe8-0e77bbd1d93c
+SUMMARY:Hoplayanlar
+UID:cf9f4a34-d3e5-45fc-8e86-7fe5ed27753a@cf9f.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260327
+CATEGORIES:Gelecek Film
+DESCRIPTION:🎬 Tür: Korku\n📄 Özet: 30 yaşındaki Yade\, çocukluğunu küçük bir kasabada Meva\, Yavuz ve Ozan’la geçirmiş\, Yavuz’la saf bir çocukluk aşkı yaşamıştır. Ancak 24 yaşlarında kimsenin çözemediği bir olay yüzünden Yade ve Yavuz aniden ayrılır. Yade şehri terk eder\, Yavuz ise sevmediği Sevil’le evlenmek zorunda kalır. Yıllar sonra emlak firmasında fotoğrafçı olarak çalışan Yade\, işi gereği gittiği terk edilmiş bir köyde açıklanamaz olaylarla karşılaşır. Köyden ayrıldıktan sonra bile tuhaflıkların peşini bırakmaması\, onu korku içinde doğduğu yer olan kasabasına geri döndürür. Ancak Yade bilmeden bir cin kabilesini uyandırmıştır. Eve döndüğünde bu lanet ona yaklaşır.\n▶️ Fragman: https://cdn.marsgate.com.tr/13337\n🔗 Detay: https://www.paribucineverse.com/korku-filmleri/mecruh-cin-muhru-filmi-izle
+SUMMARY:Mecruh: Cin Mührü
+UID:74067f92-ab43-4347-9ba9-69f265f093fd@7406.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260417
+CATEGORIES:Gelecek Film
+DESCRIPTION:🎬 Tür: Korku\n📄 Özet: Gazeteci bir babanın küçük kızı\, çölde iz bırakmadan kaybolur. Olayın üzerinden sekiz yıl geçtikten sonra kızın aniden ortaya çıkıp ailesine dönmesi\, başlangıçta bir sevinç yaratsa da kısa sürede yerini sıra dışı ve açıklanamaz olaylara bırakır.\n▶️ Fragman: https://cdn.marsgate.com.tr/13365\n🔗 Detay: https://www.paribucineverse.com/korku-filmleri/lee-croninden-mumya-filmi-izle
+SUMMARY:Lee Cronin'den Mumya
+UID:b0b36ceb-2b50-45db-8541-291337bf0aad@b0b3.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260313
+CATEGORIES:Vizyondaki Film
+DESCRIPTION:🎬 Tür: Korku\n📄 Özet: Defne’nin 18. yaşından sonra tuhaf davranışları ve ailede görülmemiş derecede garip semptomlar sonrası Defne’nin annesi Kader kızının iyileşmesi için nörolog Nihat Karahan’a ulaşır. Nihat Karahan bu vakanın tahmin edilenden daha karanlık ve derin olduğunun farkındadır. Havas ilmi üzerinde ileri derecede bilgi sahibi olan geçmişte de tanıdığı Mustafa Faruk Akad’ın yanına gelerek ondan destek ister. Tüm araştırmalarını kamera kaydına alan Nihat Karahan\, yıllar önce yaşanan bu korkunç olayı ve tüm kötülükleri gözler önüne serer.\n▶️ Fragman: https://cdn.marsgate.com.tr/13316\n🔗 Detay: https://www.paribucineverse.com/korku-filmleri/cahim-2-filmi-izle\n🎟 Bilet: https://www.paribucineverse.com/biletleme/~step~session~film~30c5c05a-91aa-4c41-b971-b48fd89b4377
+SUMMARY:Cahim 2
+UID:b3e10989-4895-4708-be92-3ef824ec46a1@b3e1.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260101
+CATEGORIES:Vizyondaki Film
+DESCRIPTION:🎬 Tür: Komedi\n📄 Özet: Hayalleri kimse tarafından ciddiye alınmayan genç Marty Mauser’ın\, “kazanmak” uğruna cehennemi andıran bir yolculuğa çıkışını merkezine alan Muhteşem Marty\, klasik bir başarı hikayesinin çok ötesine geçen bir komedi dram filmi. Uncut Gems filminin yönetmenlerinden Josh Safdie’nin son filminde bugüne kadar 2 Oscar adaylığı bulunan Timothée Chalamet’e Oscar ödüllü Gwyneth Paltrow ve müzik dünyasından tanınan Tyler\, the Creator eşlik ediyor.\n▶️ Fragman: https://cdn.marsgate.com.tr/13230\n🔗 Detay: https://www.paribucineverse.com/komedi-filmleri/muhtesem-marty-filmi-izle\n🎟 Bilet: https://www.paribucineverse.com/biletleme/~step~session~film~36920269-78b9-4c91-9234-1b316044ecfa
+SUMMARY:Muhteşem Marty
+UID:300ff028-6498-4bb2-a9a1-67ed8d52cc62@300f.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260403
+CATEGORIES:Gelecek Film
+DESCRIPTION:🎬 Tür: Korku\n📄 Özet: Anadolu’daki unutulmuş bir mezar kazısı ile Los Angeles’ta yaşanan esrarengiz bir doğum\, kadim metinlerde yer alan kehanetleri tetikleyerek İslam ve Hristiyanlık dünyasını aynı gizemin merkezinde buluşturur. Mezopotamya kökenli Pazuzu’nun dünyaya geçiş yapabilmesi için gereken "Son Ayin" süreci\, iki kıta arasında görünmez bir kapının açılmasıyla aktif hale gelir. Kehanete göre iki ayrı noktadaki kapıların aynı anda açılması durumunda ritüel tamamlanacak ve yayılan lanet dünyayı ele geçirme aşamasına geçecektir.\n▶️ Fragman: https://cdn.marsgate.com.tr/13381\n🔗 Detay: https://www.paribucineverse.com/korku-filmleri/buyu-3-son-ayin-filmi-izle
+SUMMARY:Büyü 3: Son Ayin
+UID:90228dd9-cc11-4832-8744-c5183e6b5e81@9022.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260327
+CATEGORIES:Gelecek Film
+DESCRIPTION:🎬 Tür: Belgesel\n📄 Özet: Dormen’in kariyer basamaklarını kronolojik bir akışla izlerken\; aynı zamanda onun öğrencileri ve çalışma arkadaşları üzerinden bir “etki haritası” çıkarıyor. Dormen’in ailesi\, yakın dostları ve meslektaşlarının röportajları ve sanatçının kendi anlatımlarını da içeren değerli tanıklıklar da yer alıyor. Her zorlukta yeniden ayağa kalkan\, her düşüşü yeni bir başlangıca dönüştüren Dormen’in hikâyesi\; sanatın bir meslek değil\, bir yaşam biçimi olduğunu hatırlatır.\n▶️ Fragman: https://cdn.marsgate.com.tr/13379\n🔗 Detay: https://www.paribucineverse.com/belgesel-filmleri/yaparsin-sekerim-filmi-izle
+SUMMARY:Yaparsın Şekerim
+UID:aa5f2b18-4c91-44f8-ac46-d7c06ad5df71@aa5f.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260327
+CATEGORIES:Gelecek Film
+DESCRIPTION:🎬 Tür: Komedi\n📄 Özet: Ünlü Influencer kedi Diva’ nın sahibi Monica ile köpeği Chichi’nin çaldığı bir yakutu yuttuğunu fark etmeyen uluslararası hırsız Jack\, evcil hayvanlarının pistte kaybolduğunu keşfeder. Bu durum karşısında\, sevdikleri dostlarını bulabilmek için iki zıt karakter beklenmedik bir şekilde iş birliği yapmak zorunda kalır. Ancak peşlerindeki kararlı polis Brandt’ ın tek amacı vardır: Ne pahasına olursa olsun o yakutu ele geçirmek.\n▶️ Fragman: https://cdn.marsgate.com.tr/13374\n🔗 Detay: https://www.paribucineverse.com/komedi-filmleri/kedi-ve-kopek-buyuk-macera-filmi-izle
+SUMMARY:Kedi ve Köpek: Büyük Macera
+UID:9d640c37-4593-4faa-a875-5366f6aeaaaf@9d64.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260320
+CATEGORIES:Vizyondaki Film
+DESCRIPTION:🎬 Tür: Komedi\n📄 Özet: Başrollerinde Cem Gelinoğlu ve Doğu Demirkol’un yer aldığı Kardeşler Araştırma\, sıradan bir dosyanın ardından uluslararası bir krizin ortasında kalan iki kardeşin hikâyesini anlatıyor.\n▶️ Fragman: https://cdn.marsgate.com.tr/13343\n🔗 Detay: https://www.paribucineverse.com/komedi-filmleri/kardesler-arastirma-filmi-izle\n🎟 Bilet: https://www.paribucineverse.com/biletleme/~step~session~film~33386b5a-b9b1-4e68-ac55-622e1c7ff8ea
+SUMMARY:Kardeşler Araştırma
+UID:f8abe4bf-5210-464a-b6e7-a676cbfa4c68@f8ab.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260403
+CATEGORIES:Gelecek Film
+DESCRIPTION:🎬 Tür: Romantik\n📄 Özet: Mutlu bir nişanlı çift olan Emma Harwood ve Charlie Thompson\, evliliklerine günler kala beklenmedik bir gerçeğin ortaya çıkmasıyla ilişkilerinin en büyük sınavını vermek zorunda kalır. Sevgi\, güven ve bağlılık üzerine kurulu bu ilişki\; sarsıcı bir gerçekle yüzleşince romantik bir hikayeden duygusal bir keşfe dönüşür.\n▶️ Fragman: https://cdn.marsgate.com.tr/13366\n🔗 Detay: https://www.paribucineverse.com/romantik-filmleri/drama-filmi-izle
+SUMMARY:Drama
+UID:b55fcab0-6a82-4311-bfff-18a2c3e6a83c@b55f.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260327
+CATEGORIES:Gelecek Film
+DESCRIPTION:🎬 Tür: Korku\n📄 Özet: Morg bilimi bölümünden mezun olan Rebecca Owens\, River Fields Morgu’nda gece vardiyasında bir işe başlar. Başlangıçta rutin görünen bu iş\, kısa sürede onun dehşet verici doğaüstü güçlerle yüzleşmek zorunda kaldığı karanlık bir kâbusa dönüşür.\n▶️ Fragman: https://cdn.marsgate.com.tr/13340\n🔗 Detay: https://www.paribucineverse.com/korku-filmleri/otopsi-filmi-izle
+SUMMARY:Otopsi
+UID:37c4cc5b-5df3-42b1-8c68-0b82ecddf2c8@37c4.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260313
+CATEGORIES:Vizyondaki Film
+DESCRIPTION:🎬 Tür: Animasyon\n📄 Özet: Dedektif Reptır ve güçlü ekibi yeni bir maceraya başlıyor. Kayıpları bulurlar\, olayları çözerler. Varsa bir problemin hemen ofise gel.\n▶️ Fragman: https://cdn.marsgate.com.tr/13376\n🔗 Detay: https://www.paribucineverse.com/animasyon-filmleri/dedektif-reptir-filmi-izle\n🎟 Bilet: https://www.paribucineverse.com/biletleme/~step~session~film~857b2f07-3af5-4a25-aacb-8769e3883f85
+SUMMARY:Dedektif Reptır
+UID:8515fa04-ca6d-4499-8175-2507f4ff99b1@8515.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260306
+CATEGORIES:Vizyondaki Film
+DESCRIPTION:🎬 Tür: Dram\n📄 Özet: Film\, yıllar önce terk etmek zorunda kaldıkları köylerine geri dönen Bezariler ile bölgede hakimiyet kuran korucu Hazeran aşireti arasındaki toprak anlaşmazlığını ve tırmanan iktidar mücadelesini konu alıyor.\n▶️ Fragman: https://cdn.marsgate.com.tr/13345\n🔗 Detay: https://www.paribucineverse.com/dram-filmleri/kurtulus-filmi-izle\n🎟 Bilet: https://www.paribucineverse.com/biletleme/~step~session~film~be4d883c-668b-473e-bd09-36aef1f89c07
+SUMMARY:Kurtuluş
+UID:2d0b361b-d102-4f82-a38c-1e291f32e247@2d0b.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260501
+CATEGORIES:Gelecek Film
+DESCRIPTION:🎬 Tür: Dram\n▶️ Fragman: https://cdn.marsgate.com.tr/13362\n🔗 Detay: https://www.paribucineverse.com/dram-filmleri/bir-adam-yaratmak-filmi-izle
+SUMMARY:Bir Adam Yaratmak
+UID:1d7d6f59-d6a8-4bea-ae14-ec680ae03332@1d7d.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260227
+CATEGORIES:Vizyondaki Film
+DESCRIPTION:🎬 Tür: Korku\n📄 Özet: Sorunlu hayatlarını geride bırakmaya çalışan ikiz kardeşler yeniden başlamak için memleketlerine döner\, ancak daha büyük bir kötülüğün onları karşılamak için beklediğini keşfederler.\n▶️ Fragman: https://cdn.marsgate.com.tr/12896\n🔗 Detay: https://www.paribucineverse.com/korku-filmleri/gunahk%C3%A2rlar-filmi-izle\n🎟 Bilet: https://www.paribucineverse.com/biletleme/~step~session~film~361c1067-7ff0-4d8c-a567-8725fc8427de
+SUMMARY:Günahkârlar
+UID:5bb4ac89-6e52-4f11-8f55-9c4f5788b8ad@5bb4.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260220
+CATEGORIES:Vizyondaki Film
+DESCRIPTION:🎬 Tür: Aksiyon\n📄 Özet: İskoçya'da ıssız bir adada gizemli şekilde yaşamını sürdüren eski asker Mason\, fırtınalı bir günde hiç tanımadığı genç bir kızın hayatını kurtarır. Tüm kaderini değiştirecek ve geçmişinden gelen karanlıkla yüzleşmesine sebep olacak bu olaydan sonra\, hiçbir şey eskisi gibi olmayacaktır.\n▶️ Fragman: https://cdn.marsgate.com.tr/13341\n🔗 Detay: https://www.paribucineverse.com/aksiyon-filmleri/siginak-filmi-izle\n🎟 Bilet: https://www.paribucineverse.com/biletleme/~step~session~film~0b6c51e4-0695-420e-8db3-523bd75118c0
+SUMMARY:Sığınak
+UID:1b7167fb-4edc-4577-accc-f92105332142@1b71.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260522
+CATEGORIES:Gelecek Film
+DESCRIPTION:🎬 Tür: Animasyon\n📄 Özet: Küçük Birol\, dedesinin çiftlikte yaşayan eski dostunun yanına tatile gönderilir. Başta onu\; internetin çekmediği\, doğayla iç içe ama fazlasıyla sakin bir köy beklemektedir. Tarla işleri\, hayvanlar ve durağan bir hayat… Birol için her şey sıkıcı görünür. Ta ki köyde tanıştığı insanların aslında göründükleri gibi olmadığını fark edene kadar.\n▶️ Fragman: https://cdn.marsgate.com.tr/13384\n🔗 Detay: https://www.paribucineverse.com/animasyon-filmleri/super-1-takim-filmi-izle
+SUMMARY:Süper 1 Takım
+UID:5e3132e6-2cba-45e9-ac5b-7fffec184a2f@5e31.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260101
+CATEGORIES:Vizyondaki Film
+DESCRIPTION:🎬 Tür: Komedi\n📄 Özet: D.I.S.C.O. istihbarat teşkilatının uzun zamandır gizlilikle yürüttüğü operasyon\, Ajan Ertan yüzünden başarısız olur. Teşkilattan uzaklaştırma alan Ertan eşi Seda ile tatile gider. Burada yolu Bandırma Fön Birinci’si Zafer ve eşi Aynur ile kesişir. Ertan’ın mesleğini öğrenen Zafer’in susmak için tek şartı vardır. Ertan’ın yarım kalan operasyonunu birlikte bitirmek. Çünkü teşkilatın peşinde olduğu örgüt aynı oteldedir ve operasyonun kaderi Ertan’ın elindedir. Hayatında saha ajanlığı yapmamış olan Ertan\, Zafer’i mecburen dahil ederek operasyona girişir. Seda ve Aynur’un beklenmedik desteği ise her şeyi değiştirecektir.\n▶️ Fragman: https://cdn.marsgate.com.tr/13251\n🔗 Detay: https://www.paribucineverse.com/komedi-filmleri/disco-filmi-izle\n🎟 Bilet: https://www.paribucineverse.com/biletleme/~step~session~film~b570c906-343a-4b83-920f-d616b50e58f3
+SUMMARY:D.I.S.C.O.
+UID:b51d9f8c-73e8-4d5a-a570-348a8161778e@b51d.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260320
+CATEGORIES:Vizyondaki Film
+DESCRIPTION:🎬 Tür: Dram\n📄 Özet: Kırmızı ışıkta aniden yola çıkan bir yayaya çarpmamak için manevra yapan Tamer\, geçirdiği kaza sonucunda eşini ve kızını kaybederken kendisi de tekerlekli sandalyeye mahkûm olur. Hayata tutunma motivasyonunu yitiren Tamer’in yolu\, Asperger sendromlu ve çevresi tarafından "yarım akıllı" olarak nitelendirilen hamal Safa ile kesişir. Safa’nın ısrarlı takibi ve sürekli af dileme çabalarıyla başlayan bu süreç\, zamanla ikili arasında derin bir arkadaşlığa dönüşür.\n▶️ Fragman: Fragman bağlantısı yok\n🔗 Detay: https://www.paribucineverse.com/dram-filmleri/hammal-guvercin-terbiyecisi-filmi-izle\n🎟 Bilet: https://www.paribucineverse.com/biletleme/~step~session~film~b8ca7ecd-2964-4929-ae76-80e901748535
+SUMMARY:Hammal: Güvercin Terbiyecisi
+UID:d04cc67b-9047-41be-b761-7904b1a1f33a@d04c.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260313
+CATEGORIES:Vizyondaki Film
+DESCRIPTION:🎬 Tür: Animasyon\n📄 Özet: Teo henüz yavruyken gizemli bir şekilde ailesinden ayrılır ve onu bulan sıra dışı bir güreşçi kanguru ailesi tarafından evlat edinilir. Güçlü\, disiplinli ve biraz da komik olan bu aile\, Teo’yu kendi çocukları gibi büyütür. Onların dünyasında güçlü olmayı ve asla pes etmemeyi öğrenir. Büyüdüğünde ise kendi ailesini ve kökleri merak etmeye başlar. Teo\, gerçek yuvasını bulmak ve tehlike altındaki anavatanını kurtarmak için zorlu bir maceraya atılır. Bu yolculuk boyunca dostluk\, cesaret ve fedakârlığın gerçek anlamını keşfeder.\n▶️ Fragman: https://cdn.marsgate.com.tr/13361\n🔗 Detay: https://www.paribucineverse.com/animasyon-filmleri/kayip-kaplan-filmi-izle\n🎟 Bilet: https://www.paribucineverse.com/biletleme/~step~session~film~f51c8b0b-26e6-4072-b1eb-4a52493dcbb7
+SUMMARY:Kayıp Kaplan
+UID:cfd4f4ca-40ce-4eaf-a810-95d1f348baea@cfd4.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260320
+CATEGORIES:Vizyondaki Film
+DESCRIPTION:🎬 Tür: Korku\n📄 Özet: Le Domas ailesinin ölümcül saldırısından sağ kurtulan Grace\, kabus dolu oyunun henüz bitmediğini fark eder. Artık çok daha büyük ve tehlikeli bir mücadelenin içindedir. Bu kez yanında yıllardır görüşmediği kız kardeşi Faith vardır. Grace’in amacı yalnızca hayatta kalmak değildir\; kız kardeşini korumak ve dünyayı kontrol eden Konsey’in “Yüksek Koltuğu”nu ele geçirmek zorundadır. Ancak taht için yarışan dört rakip aile\, Grace’i avlamak üzere harekete geçmiştir. Bu ölümcül mücadelenin kazananı\, her şeye hükmedecektir.\n▶️ Fragman: https://cdn.marsgate.com.tr/13335\n🔗 Detay: https://www.paribucineverse.com/korku-filmleri/saklambac-2-filmi-izle\n🎟 Bilet: https://www.paribucineverse.com/biletleme/~step~session~film~fc295797-05f0-42d3-ac03-609e70527ee1
+SUMMARY:Saklambaç 2
+UID:8093ab6b-1ea9-41a8-b846-5c90262314cb@8093.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260313
+CATEGORIES:Vizyondaki Film
+DESCRIPTION:🎬 Tür: Animasyon\n📄 Özet: Genç kambur balina Vincent\, anne babasını kaybetmiş ve kendi yeteneklerinden şüphe eden bir balinadır. Dev bir deniz canavarının buzdağından kurtulup tüm denizleri tehdit etmesiyle\, Vincent\; sadık balık dadısı Walter ve sağır orka Darya ile birlikte\, okyanusun derinliklerine doğru zorlu bir yolculuğa çıkar. Korkularıyla yüzleşmek ve okyanusları kurtarmak için kendi sihirli şarkısını bulmak zorundadır.\n▶️ Fragman: https://cdn.marsgate.com.tr/13302\n🔗 Detay: https://www.paribucineverse.com/animasyon-filmleri/sarkici-balina-filmi-izle\n🎟 Bilet: https://www.paribucineverse.com/biletleme/~step~session~film~5627d60c-2c4c-4eb2-9cea-2e385ade38e8
+SUMMARY:Şarkıcı Balina
+UID:866cd644-9c8c-4004-a604-30074ff772f2@866c.org
 END:VEVENT
 END:VCALENDAR
