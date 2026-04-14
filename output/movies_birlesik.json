@@ -85,7 +85,7 @@
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~7b53eece-5d21-4098-83af-6004a841f17d",
     "trailer": "https://cdn.marsgate.com.tr/13366",
     "genre": "Romantik",
-    "summary": "Mutlu bir nişanlı çift olan Emma Harwood ve Charlie Thompson, evliliklerine günler kala beklenmedik bir gerçeğin ortaya çıkmasıyla ilişkilerinin en büyük sınavını vermek zorunda kalır. Sevgi, güven ve ba��lılık üzerine kurulu bu ilişki; sarsıcı bir gerçekle yüzleşince romantik bir hikayeden duygusal bir keşfe dönüşür.",
+    "summary": "Mutlu bir nişanlı çift olan Emma Harwood ve Charlie Thompson, evliliklerine günler kala beklenmedik bir gerçeğin ortaya çıkmasıyla ilişkilerinin en büyük sınavını vermek zorunda kalır. Sevgi, güven ve bağlılık üzerine kurulu bu ilişki; sarsıcı bir gerçekle yüzleşince romantik bir hikayeden duygusal bir keşfe dönüşür.",
     "date": "20260403",
     "kaynak": "Vizyondaki Film"
   },
@@ -111,10 +111,10 @@
   },
   {
     "title": "Süper Mario Galaksi Filmi",
-    "link": "https://www.paribucineverse.com/macera-filmleri/super-mario-galaksi-filmi-filmi-izle",
+    "link": "https://www.paribucineverse.com/animasyon-filmleri/super-mario-galaksi-filmi-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~9f0493e3-53ce-4e9c-8421-6b17333c48f8",
     "trailer": "https://cdn.marsgate.com.tr/13317",
-    "genre": "Macera",
+    "genre": "Animasyon",
     "summary": "Mario ventures into space, exploring cosmic worlds and tackling galactic challenges far from the familiar Mushroom Kingdom.",
     "date": "20260401",
     "kaynak": "Vizyondaki Film"
@@ -360,6 +360,16 @@
     "kaynak": "Gelecek Film"
   },
   {
+    "title": "Cinnet-i Sırra",
+    "date": "20260417",
+    "link": "https://www.paribucineverse.com/korku-filmleri/cinnet-i-sirra-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn.marsgate.com.tr/13413",
+    "genre": "Korku",
+    "summary": "Yoğun şehir hayatından uzaklaşmak isteyen dört eski dost, kısa bir kaçamak yapmak için Tunç’un ailesinden miras kalan tenha bir sahil villasına gider. Başlangıçta huzurlu bir tatil gibi görünen bu buluşma, evde bulunan gizemli bir aynaya dokunulmasıyla kabusa dönüşür. Yıllar önce Tunç’un ailesinin ölümüne yol açan karanlık lanet yeniden uyanır. Çok geçmeden villa, görünmeyen varlıkların ve giderek artan paranoyanın hüküm sürdüğü kapalı bir tuzağa dönüşür. Korku büyüdükçe arkadaşlar birbirlerinden şüphe etmeye başlar. Hayatta kalmanın tek yolu, laneti durdurabilecek gizli gerçeği ortaya çıkarmaktır. Ancak bilmedikleri bir şey vardır: İçlerinden biri, karanlık güçle çoktan tehlikeli bir anlaşma yapmıştır.",
+    "kaynak": "Gelecek Film"
+  },
+  {
     "title": "Largo Winch: Dünyanın Durduğu An",
     "date": "20260417",
     "link": "https://www.paribucineverse.com/aksiyon-filmleri/largo-winch-dunyanin-durdugu-an-filmi-izle",
@@ -577,6 +587,16 @@
     "trailer": "Fragman bağlantısı yok",
     "genre": "Korku",
     "summary": "Bir annenin çocuğunu koruma çabasıyla başvurduğu kadim ve yasaklı bir büyü, yıllar önce işlenmiş karanlık bir cinayetin sırlarıyla birleşerek geri dönülemez bir süreci başlatır. Olayın üzerinden uzun yıllar geçmesine rağmen, üzerinin örtüldüğü sanılan bu günah, esrarengiz bir ölümün ardından yeniden gün yüzüne çıkar. Hayatı boyunca babası Rıza’yı görmeden büyüyen Cemal, köklerini bulmak amacıyla baba evine geri döndüğünde, kendisini bekleyen karanlık bir mirasla karşılaşır. Cemal’in eve adım atmasıyla tetiklenen olaylar silsilesi, sadece bir aileyi değil, tüm kan bağını kapsayan ve doğaüstü güçlerle mühürlenmiş bir lanetin yıkıcı etkilerini ortaya çıkarır.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Sihirli Annem: Periler Okulu",
+    "date": "20260515",
+    "link": "https://www.paribucineverse.com/fantastik-filmleri/sihirli-annem-periler-okulu-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn.marsgate.com.tr/13414",
+    "genre": "Fantastik",
+    "summary": "Dünya bütün perilerin varlığından haberdar olmuştur. Yaşanan karışıklıklar yüzünden Periliçe sihir yaparak fanilerin hafızasını siler. Küçük perilerin eğitimi de artık Dünya’da değil, Periler alemindeki Periler Okulu’nda verilecektir. Dudu, Betüş, Perihan ve Pakize okulda görev alırlar. Fakat onları, okulda bekleyen başka sihirli güçler de vardır.",
     "kaynak": "Gelecek Film"
   },
   {
