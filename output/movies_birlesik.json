@@ -70,6 +70,16 @@
     "kaynak": "Vizyondaki Film"
   },
   {
+    "title": "Karabasan",
+    "link": "https://www.paribucineverse.com/korku-filmleri/karabasan-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~9650fea0-05bf-4a26-a76a-5ce1b4a56bcb",
+    "trailer": "Fragman bağlantısı yok",
+    "genre": "Korku",
+    "summary": "İki genç hacker, banka hesaplarından küçük miktarlarda para çalarak eğlenir. Peşlerine mafya düşünce, büyükbabalarından kalma ıssız bir köye kaçarlar. Büyü yüzünden terk edilmiş bu köyde tuhaf olaylar başlar. Mafya da köye gelince doğaüstü güçlerle karşılaşır ve cezalandırılır. İki hacker ise genç kızlarla birlikte köyden kaçmayı başarır.",
+    "date": "20260410",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
     "title": "KUL dilemma",
     "link": "https://www.paribucineverse.com/gerilim-filmleri/kul-dilemma-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~869b1a83-9102-4011-8772-85131410a182",
@@ -240,11 +250,21 @@
     "kaynak": "Vizyondaki Film"
   },
   {
+    "title": "Kardeş Takımı 3",
+    "link": "https://www.paribucineverse.com/aile-filmleri/kardes-takimi-3-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~958b45fb-bad7-4387-9c85-e492c2674e0e",
+    "trailer": "https://cdn.marsgate.com.tr/13219",
+    "genre": "Aile",
+    "summary": "Serinin bu son filmi Kardeş Takımı 3’te, Aslı ve Serkan, bebek izinlerinden ayrılarak Yıldız Taşı görevini tamamlamak amacıyla tüm aile ile birlikte zamanda yolculuğa çıkar. Kahramanlar beklenmedik bir şekilde geçmişe dönerek tarihi dönemlere ait kostümler ve dekorlar eşliğinde, kendilerini zorlu durumların içinde bulur. Bu sürükleyici macerada ekip, takım ruhu, cesaret ve aile bağları gibi temaları merkeze alarak bugüne kadarki en zorlu sınavlarından birini verirken, film serinin final halkasını oluşturuyor.",
+    "date": "20260109",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
     "title": "Michael",
     "date": "20260422",
     "link": "https://www.paribucineverse.com/biyografi-filmleri/michael-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~e82aa9e5-4d8d-4cbe-b211-ccca11214ed8",
-    "trailer": "https://cdn.marsgate.com.tr/13353",
+    "trailer": "https://cdn.marsgate.com.tr/13417",
     "genre": "Biyografi",
     "summary": "Film, Michael Jackson’ın müziğin ötesine geçen hayatını anlatıyor; Jackson 5’ın solisti olarak keşfedilen olağanüstü yeteneğinden, onu dünyanın en büyük eğlencesi haline getiren vizyoner sanatçılığa uzanan yolculuğunu takip ediyor.",
     "kaynak": "Gelecek Film"
@@ -370,6 +390,16 @@
     "kaynak": "Gelecek Film"
   },
   {
+    "title": "Hayvanlar Alemi",
+    "date": "20260417",
+    "link": "https://www.paribucineverse.com/animasyon-filmleri/hayvanlar-alemi-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn.marsgate.com.tr/13415",
+    "genre": "Animasyon",
+    "summary": "Softie ve arkadaşları, yaşadıkları çevreyi otomatik bir fabrikanın neden olduğu atık istilasından korumak için bir araya gelerek zorlu bir mücadeleye girişirler.",
+    "kaynak": "Gelecek Film"
+  },
+  {
     "title": "Largo Winch: Dünyanın Durduğu An",
     "date": "20260417",
     "link": "https://www.paribucineverse.com/aksiyon-filmleri/largo-winch-dunyanin-durdugu-an-filmi-izle",
@@ -484,17 +514,7 @@
     "date": "20260501",
     "link": "https://www.paribucineverse.com/komedi-filmleri/seytan-marka-giyer-2-filmi-izle",
     "bilet_link": null,
-    "trailer": "https://cdn.marsgate.com.tr/13354",
-    "genre": "Komedi",
-    "summary": "Miranda Priestly'nin, emekliliğine yaklaşırken basılı medyanın düşüşte olduğu bir dönemde, eski asistanı ve rakibi olan Emily Charlton ile reklam gelirleri için verdiği mücadeleyi konu alıyor.",
-    "kaynak": "Gelecek Film"
-  },
-  {
-    "title": "Şeytan Marka Giyer 2",
-    "date": "20260501",
-    "link": "https://www.paribucineverse.com/komedi-filmleri/seytan-marka-giyer-2-filmi-izle",
-    "bilet_link": null,
-    "trailer": "https://cdn.marsgate.com.tr/13354",
+    "trailer": "https://cdn.marsgate.com.tr/13416",
     "genre": "Komedi",
     "summary": "Miranda Priestly'nin, emekliliğine yaklaşırken basılı medyanın düşüşte olduğu bir dönemde, eski asistanı ve rakibi olan Emily Charlton ile reklam gelirleri için verdiği mücadeleyi konu alıyor.",
     "kaynak": "Gelecek Film"
