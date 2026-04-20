@@ -1,25 +1,5 @@
 [
   {
-    "title": "Hepsi Oğlumdu",
-    "link": "https://www.paribucineverse.com/dram-filmleri/hepsi-oglumdu-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~10d080f5-f936-4761-9ef6-ff5021e7dfbb",
-    "trailer": "Fragman bağlantısı yok",
-    "genre": "Dram",
-    "summary": "Savaş sırasında bir üretici mali açıdan büyük bir başarı elde eder, ancak bu başarı, iş ortağının yanlış bir şey yapması ve oğlunun kaybolmasıyla birlikte bir bedel ödemesine neden olur. Savaşın sona ermesiyle birlikte, aldığı kararların sonuçlarıyla yüzleşir.",
-    "date": "20260419",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
-    "title": "La Grazia",
-    "link": "https://www.paribucineverse.com/dram-filmleri/la-grazia-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~4e4badb4-8283-49e8-9769-7469d95cbf1b",
-    "trailer": "Fragman bağlantısı yok",
-    "genre": "Dram",
-    "summary": "Dul kalan İtalyan cumhurbaşkanı, görevdeki son aylarında, eşinin sadakatsizliğiyle boğuşurken, ötenazi yasası ve katillerin affedilmesi konularında ahlaki krizlerle karşı karşıya kalıyor.",
-    "date": "20260419",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
     "title": "Manevi Değer",
     "link": "https://www.paribucineverse.com/dram-filmleri/manevi-deger-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~397ab781-0695-4acf-bb23-f7f874130e69",
@@ -230,16 +210,6 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Şampiyon Keçi",
-    "link": "https://www.paribucineverse.com/animasyon-filmleri/sampiyon-keci-tum-zamanlarin-en-iyisi-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~2a7f6f1e-ef7d-437f-9385-2b4a55133ee1",
-    "trailer": "https://cdn.marsgate.com.tr/13292",
-    "genre": "Animasyon",
-    "summary": "Film, küçük bedeniyle büyük hayaller kuran keçi Will’in, dünyadaki en hızlı ve vahşi hayvanlarla birlikte profesyonel kükrebol oynama hayalini ve bu uğurda verdiği sıra dışı mücadeleyi konu alıyor.",
-    "date": "20260320",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
     "title": "Çatlı",
     "link": "https://www.paribucineverse.com/biyografi-filmleri/catli-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~19d42f6f-6b05-4338-b9fe-b2f6b8c376ab",
@@ -266,6 +236,16 @@
     "trailer": "https://cdn.marsgate.com.tr/13335",
     "genre": "Korku",
     "summary": "Le Domas ailesinin ölümcül saldırısından sağ kurtulan Grace, kabus dolu oyunun henüz bitmediğini fark eder. Artık çok daha büyük ve tehlikeli bir mücadelenin içindedir. Bu kez yanında yıllardır görüşmediği kız kardeşi Faith vardır. Grace’in amacı yalnızca hayatta kalmak değildir; kız kardeşini korumak ve dünyayı kontrol eden Konsey’in “Yüksek Koltuğu”nu ele geçirmek zorundadır. Ancak taht için yarışan dört rakip aile, Grace’i avlamak üzere harekete geçmiştir. Bu ölümcül mücadelenin kazananı, her şeye hükmedecektir.",
+    "date": "20260320",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Şampiyon Keçi",
+    "link": "https://www.paribucineverse.com/animasyon-filmleri/sampiyon-keci-tum-zamanlarin-en-iyisi-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~2a7f6f1e-ef7d-437f-9385-2b4a55133ee1",
+    "trailer": "https://cdn.marsgate.com.tr/13292",
+    "genre": "Animasyon",
+    "summary": "Film, küçük bedeniyle büyük hayaller kuran keçi Will’in, dünyadaki en hızlı ve vahşi hayvanlarla birlikte profesyonel kükrebol oynama hayalini ve bu uğurda verdiği sıra dışı mücadeleyi konu alıyor.",
     "date": "20260320",
     "kaynak": "Vizyondaki Film"
   },
