@@ -185,7 +185,7 @@
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~9f0493e3-53ce-4e9c-8421-6b17333c48f8",
     "trailer": "https://cdn.marsgate.com.tr/13317",
     "genre": "Animasyon",
-    "summary": "Mario ventures into space, exploring cosmic worlds and tackling galactic challenges far from the familiar Mushroom Kingdom.",
+    "summary": "Mario, Luigi ve arkadaşları, bu kez Mantar Krallığı’nın dışına çıkarak galaksiler arasında geçen bir yolculuğa katılır. Farklı gezegenlerde ilerleyen ekip, yeni karakterlerle karşılaşırken evrendeki dengeyi tehdit eden bir planla da yüzleşir. Bowser ve Bowser Jr.’ın kontrolü ele geçirme girişimi, Mario ve ekibini yıldızlar arası bir mücadeleye sürükler. Yol boyunca karşılarına çıkan engeller ve ittifaklar, bu kez çok daha büyük bir tehdide karşı birlikte hareket etmelerini gerektirir.",
     "date": "20260401",
     "kaynak": "Vizyondaki Film"
   },
@@ -206,6 +206,16 @@
     "trailer": "https://cdn.marsgate.com.tr/13294",
     "genre": "Bilim Kurgu",
     "summary": "Film, dünyanın kurtuluşu için uzayda bir gizemi çözmesi gereken bir fen bilgisi öğretmeninin hikâyesini anlatıyor.",
+    "date": "20260320",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Şampiyon Keçi",
+    "link": "https://www.paribucineverse.com/animasyon-filmleri/sampiyon-keci-tum-zamanlarin-en-iyisi-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~2a7f6f1e-ef7d-437f-9385-2b4a55133ee1",
+    "trailer": "https://cdn.marsgate.com.tr/13292",
+    "genre": "Animasyon",
+    "summary": "Film, küçük bedeniyle büyük hayaller kuran keçi Will’in, dünyadaki en hızlı ve vahşi hayvanlarla birlikte profesyonel kükrebol oynama hayalini ve bu uğurda verdiği sıra dışı mücadeleyi konu alıyor.",
     "date": "20260320",
     "kaynak": "Vizyondaki Film"
   },
@@ -240,16 +250,6 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Şampiyon Keçi",
-    "link": "https://www.paribucineverse.com/animasyon-filmleri/sampiyon-keci-tum-zamanlarin-en-iyisi-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~2a7f6f1e-ef7d-437f-9385-2b4a55133ee1",
-    "trailer": "https://cdn.marsgate.com.tr/13292",
-    "genre": "Animasyon",
-    "summary": "Film, küçük bedeniyle büyük hayaller kuran keçi Will’in, dünyadaki en hızlı ve vahşi hayvanlarla birlikte profesyonel kükrebol oynama hayalini ve bu uğurda verdiği sıra dışı mücadeleyi konu alıyor.",
-    "date": "20260320",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
     "title": "Hoplayanlar",
     "link": "https://www.paribucineverse.com/animasyon-filmleri/hoplayanlar-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~0dfa9a93-37a9-4526-9fe8-0e77bbd1d93c",
@@ -280,6 +280,16 @@
     "kaynak": "Gelecek Film"
   },
   {
+    "title": "Cesur Hayvanat Bahçesi Sakinleri",
+    "date": "20260423",
+    "link": "https://www.paribucineverse.com/animasyon-filmleri/cesur-hayvanat-bahcesi-sakinleri-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~46426498-7809-4862-a754-edec77b7d7ab",
+    "trailer": "https://cdn.marsgate.com.tr/13386",
+    "genre": "Animasyon",
+    "summary": "Gece saatlerinde sıradan bir hayvanat bahçesinde meydana gelen gizemli bir olay, tesis içindeki tüm hayvanların davranışlarını kökten değiştirerek onları kontrolsüz ve saldırgan bir yapıya büründürür. Kafeslerin açılması ve düzenin tamamen bozulmasıyla birlikte koca bir tesis büyük bir kaosun içine sürüklenir. Bu kargaşanın ortasında, normal şartlarda bir araya gelmesi beklenmeyen farklı türlerden bir grup hayvan, hem fiziksel tehlikelere karşı koymak hem de yaşanan bu felaketin arkasındaki gerçek sebebi bulmak adına zorunlu bir iş birliği yapar. Ekip, bir yandan vahşileşen diğer canlılarla mücadele ederken diğer yandan kendi içgüdüleri ve korkularıyla yüzleşmek zorunda kalır.",
+    "kaynak": "Gelecek Film"
+  },
+  {
     "title": "Şeytan Marka Giyer 2",
     "date": "20260501",
     "link": "https://www.paribucineverse.com/komedi-filmleri/seytan-marka-giyer-2-filmi-izle",
@@ -290,50 +300,80 @@
     "kaynak": "Gelecek Film"
   },
   {
-    "title": "1881 Atatürk: Bir Liderin Doğuşu",
-    "date": "20260423",
-    "link": "https://www.paribucineverse.com/animasyon-filmleri/1881-ataturk-bir-liderin-dogusu-filmi-izle",
-    "bilet_link": null,
-    "trailer": "https://cdn.marsgate.com.tr/13406",
-    "genre": "Animasyon",
-    "summary": "Selanik’te doğan Mustafa, çocuk yaşlardan itibaren zekâsı, adalet duygusu ve liderlik özellikleriyle dikkat çeker. Ailesinin etkisi, arkadaşlarıyla yaşadığı deneyimler ve eğitim hayatı, onun karakterini şekillendirir. Cumhuriyetimizin kurucusu Mustafa Kemal’in çocukluk yıllarından başlayarak ideallerine uzanan yolculuğunu ve bir liderin doğuşunu anlatıyor.",
-    "kaynak": "Gelecek Film"
-  },
-  {
-    "title": "Akıllı Tavşan Momo: Büyük Takip",
-    "date": "20260423",
-    "link": "https://www.paribucineverse.com/animasyon-filmleri/akilli-tavsan-momo-buyuk-takip-filmi-izle",
-    "bilet_link": null,
-    "trailer": "https://cdn.marsgate.com.tr/12843",
-    "genre": "Animasyon",
-    "summary": "Şarkılı Orman’daki sakin yaşam, Momo’nun Timtim’i kurtarma çabası ve ardından gelişen heyecan dolu bir kovalamaca ile kesintiye uğruyor. Ormana izinsiz giren iki kötü niyetli insan, sevimli keman virtüözü Yumi’yi kaçırarak onu satmaya çalışıyor. Momo ise sadık dostlarıyla birlikte Yumi’yi kurtarmak için bilmediği tehlikelerle dolu bir dünyaya adım atıyor.",
-    "kaynak": "Gelecek Film"
-  },
-  {
-    "title": "Cesur Hayvanat Bahçesi Sakinleri",
-    "date": "20260423",
-    "link": "https://www.paribucineverse.com/animasyon-filmleri/cesur-hayvanat-bahcesi-sakinleri-filmi-izle",
-    "bilet_link": null,
-    "trailer": "https://cdn.marsgate.com.tr/13386",
-    "genre": "Animasyon",
-    "summary": "Gece saatlerinde sıradan bir hayvanat bahçesinde meydana gelen gizemli bir olay, tesis içindeki tüm hayvanların davranışlarını kökten değiştirerek onları kontrolsüz ve saldırgan bir yapıya büründürür. Kafeslerin açılması ve düzenin tamamen bozulmasıyla birlikte koca bir tesis büyük bir kaosun içine sürüklenir. Bu kargaşanın ortasında, normal şartlarda bir araya gelmesi beklenmeyen farklı türlerden bir grup hayvan, hem fiziksel tehlikelere karşı koymak hem de yaşanan bu felaketin arkasındaki gerçek sebebi bulmak adına zorunlu bir iş birliği yapar. Ekip, bir yandan vahşileşen diğer canlılarla mücadele ederken diğer yandan kendi içgüdüleri ve korkularıyla yüzleşmek zorunda kalır.",
-    "kaynak": "Gelecek Film"
-  },
-  {
     "title": "Efes'in Sırrı",
     "date": "20260423",
     "link": "https://www.paribucineverse.com/aile-filmleri/efesin-sirri-filmi-izle",
-    "bilet_link": null,
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~b0073d96-f9b2-47a2-8440-b54db024bb24",
     "trailer": "https://cdn.marsgate.com.tr/13254",
     "genre": "Aile",
     "summary": "Efes’teki bir kazı sırasında ortaya çıkan gizemli harita ve sihirli bir mağara, yetişkin arkeologları Tuna ve okul arkadaşı Damla ile aynı yaşa indirir. Tuna’nın, kendisine zorbalık yapan Anıl’dan kurtulmak için bu ‘yeni arkadaşlara’ ihtiyaç duyması ve ajanların haritanın peşine düşmesi ise ekibi hızla birbirine yaklaştırır. Tuna, Damla ve artık çocuk haline dönen arkeologlar, bir yandan büyümenin sırrını çözmeye ve ajanlardan kaçmaya diğer yandan Efes’in kadim gizemini açığa çıkarmaya çalışacak.",
     "kaynak": "Gelecek Film"
   },
   {
+    "title": "1881 Atatürk: Bir Liderin Doğuşu",
+    "date": "20260423",
+    "link": "https://www.paribucineverse.com/animasyon-filmleri/1881-ataturk-bir-liderin-dogusu-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~fca17bb5-26ad-43b9-9425-32dd5531cef9",
+    "trailer": "https://cdn.marsgate.com.tr/13406",
+    "genre": "Animasyon",
+    "summary": "Selanik’te doğan Mustafa, çocuk yaşlardan itibaren zekâsı, adalet duygusu ve liderlik özellikleriyle dikkat çeker. Ailesinin etkisi, arkadaşlarıyla yaşadığı deneyimler ve eğitim hayatı, onun karakterini şekillendirir. Cumhuriyetimizin kurucusu Mustafa Kemal’in çocukluk yıllarından başlayarak ideallerine uzanan yolculuğunu ve bir liderin doğuşunu anlatıyor.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Marakuda: Taş Devri Efsanesi",
+    "date": "20260423",
+    "link": "https://www.paribucineverse.com/animasyon-filmleri/marakuda-tas-devri-efsanesi-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~c0bc46a0-3837-4582-82eb-5dabed43ce6b",
+    "trailer": "https://cdn.marsgate.com.tr/13383",
+    "genre": "Animasyon",
+    "summary": "Bir kabile reisinin oğlu, babasının avcılık yeteneklerine yetişmekte zorlanır. Kendini kanıtlamak için gizemli bir ormana doğru yola çıkar ve burada Tink adında, büyülü ve dünya dışı bir kuşla karşılaşır. Birlikte, kılıç dişli sincapların, sevimli mirketlerin ve hatta dinozorların yaşadığı Taş Devri Ormanı’nda sıra dışı maceralara atılırlar.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Geçmişin Kokusu",
+    "date": "20260424",
+    "link": "https://www.paribucineverse.com/dram-filmleri/gecmisin-kokusu-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~68328496-0341-4fb0-9ce4-d8110cc72a83",
+    "trailer": "https://cdn.marsgate.com.tr/13402",
+    "genre": "Dram",
+    "summary": "Yugoslavya’nın dağılma sürecinde Üsküp’te, 500 yıllık evinde yaşananlara tanıklık eden Salih, mahallesinde giderek artan değişime ve bireyselleşmeye karşı elinden geleni yapmaktadır. Ancak aynı mahallede birlikte büyüdüğü çocukluk arkadaşı Elina’nın, bir sivil toplum kuruluşunun temsilcisi olarak şehre geri dönmesiyle dengeler altüst olur. Artan huzursuzluk, komşuların birbirine düştüğü karanlık bir dönemin kapısını aralarken, Salih tüm bu olup bitenlere seyirci kalamayınca kendisini hem çocukluk aşkıyla hem de onun arkasındaki güçlerle büyük bir mücadelenin içinde bulur.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Kardeş Takımı 3",
+    "date": "20260423",
+    "link": "https://www.paribucineverse.com/aile-filmleri/kardes-takimi-3-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~958b45fb-bad7-4387-9c85-e492c2674e0e",
+    "trailer": "https://cdn.marsgate.com.tr/13219",
+    "genre": "Aile",
+    "summary": "Serinin bu son filmi Kardeş Takımı 3’te, Aslı ve Serkan, bebek izinlerinden ayrılarak Yıldız Taşı görevini tamamlamak amacıyla tüm aile ile birlikte zamanda yolculuğa çıkar. Kahramanlar beklenmedik bir şekilde geçmişe dönerek tarihi dönemlere ait kostümler ve dekorlar eşliğinde, kendilerini zorlu durumların içinde bulur. Bu sürükleyici macerada ekip, takım ruhu, cesaret ve aile bağları gibi temaları merkeze alarak bugüne kadarki en zorlu sınavlarından birini verirken, film serinin final halkasını oluşturuyor.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Nirvanna the Band the Show the Movie",
+    "date": "20260424",
+    "link": "https://www.paribucineverse.com/macera-filmleri/nirvanna-the-band-the-show-the-movie-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~6e8f92e2-f330-4584-959b-42a9628338a2",
+    "trailer": "https://cdn.marsgate.com.tr/13420",
+    "genre": "Macera",
+    "summary": "Rivoli'de bir gösteri ayarlama planları korkunç bir şekilde ters gidince, Matt ve Jay yanlışlıkla 2008 yılına geri dönerler.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Akıllı Tavşan Momo: Büyük Takip",
+    "date": "20260423",
+    "link": "https://www.paribucineverse.com/animasyon-filmleri/akilli-tavsan-momo-buyuk-takip-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~740fa86d-8493-4c54-ad30-a6d742fdae90",
+    "trailer": "https://cdn.marsgate.com.tr/12843",
+    "genre": "Animasyon",
+    "summary": "Şarkılı Orman’daki sakin yaşam, Momo’nun Timtim’i kurtarma çabası ve ardından gelişen heyecan dolu bir kovalamaca ile kesintiye uğruyor. Ormana izinsiz giren iki kötü niyetli insan, sevimli keman virtüözü Yumi’yi kaçırarak onu satmaya çalışıyor. Momo ise sadık dostlarıyla birlikte Yumi’yi kurtarmak için bilmediği tehlikelerle dolu bir dünyaya adım atıyor.",
+    "kaynak": "Gelecek Film"
+  },
+  {
     "title": "Hay Hak",
     "date": "20260423",
     "link": "https://www.paribucineverse.com/animasyon-filmleri/hay-hak-filmi-izle",
-    "bilet_link": null,
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~789cf1bd-ea0c-458e-84d7-79ec54cb0979",
     "trailer": "https://cdn.marsgate.com.tr/12928",
     "genre": "Animasyon",
     "summary": "Dört yıl boyunca kaybolduktan sonra köylerine geri dönen sakar ikili Hacivat ve Karagöz, artık nüfustan bile silindiklerini öğrenince, köylülerin sevgisini kazanmak için herkese yardım etmeye karar verir. Ancak iyi niyetle başladıkları her iş, köyde tam bir felakete dönüşerek büyük bir kaosa sebep olur. Kendilerini affettirmeye çalışırken köylüleri birbirine düşüren bu absürt kahramanlar, sonunda istemeden de olsa birlik ve dayanışmanın gerçek anlamını keşfederler.",
@@ -343,7 +383,7 @@
     "title": "İbi: Uzay Görevi",
     "date": "20260423",
     "link": "https://www.paribucineverse.com/animasyon-filmleri/ibi-uzay-gorevi-filmi-izle",
-    "bilet_link": null,
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~ed540cac-8405-454b-89d2-080dfb084a0d",
     "trailer": "https://cdn.marsgate.com.tr/13186",
     "genre": "Animasyon",
     "summary": "Uzayda geçirdikleri bir kaza sonucunda yolları başka bir galaksiye düşen İbi ve arkadaşları, iki robot ırk arasındaki savaşı durdurmak için ne kadar uğraşsalar da buna engel olamazlar. Bu amansız savaşı sona erdirmeleri için yüzyıllardır kayıp olan \"Çok Önemli Parça\"yı bulmaları gerekmektedir.",
@@ -353,50 +393,20 @@
     "title": "Kaptan Pengu ve Arkadaşları 5",
     "date": "20260423",
     "link": "https://www.paribucineverse.com/animasyon-filmleri/kaptan-pengu-ve-arkadaslari-5-filmi-izle",
-    "bilet_link": null,
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~022fa60e-9d5d-4154-9a59-d7983dfef0e7",
     "trailer": "https://cdn.marsgate.com.tr/13050",
     "genre": "Animasyon",
     "summary": "Film, Kaptan Pengu ve arkadaşlarının, Profesör Alfa adlı bir bilim insanı tarafından kaçırılan dostları Yozo'yu kurtarma serüvenini anlatıyor.",
     "kaynak": "Gelecek Film"
   },
   {
-    "title": "Kardeş Takımı 3",
-    "date": "20260423",
-    "link": "https://www.paribucineverse.com/aile-filmleri/kardes-takimi-3-filmi-izle",
-    "bilet_link": null,
-    "trailer": "https://cdn.marsgate.com.tr/13219",
-    "genre": "Aile",
-    "summary": "Serinin bu son filmi Kardeş Takımı 3’te, Aslı ve Serkan, bebek izinlerinden ayrılarak Yıldız Taşı görevini tamamlamak amacıyla tüm aile ile birlikte zamanda yolculuğa çıkar. Kahramanlar beklenmedik bir şekilde geçmişe dönerek tarihi dönemlere ait kostümler ve dekorlar eşliğinde, kendilerini zorlu durumların içinde bulur. Bu sürükleyici macerada ekip, takım ruhu, cesaret ve aile bağları gibi temaları merkeze alarak bugüne kadarki en zorlu sınavlarından birini verirken, film serinin final halkasını oluşturuyor.",
-    "kaynak": "Gelecek Film"
-  },
-  {
-    "title": "Marakuda: Taş Devri Efsanesi",
-    "date": "20260423",
-    "link": "https://www.paribucineverse.com/animasyon-filmleri/marakuda-tas-devri-efsanesi-filmi-izle",
-    "bilet_link": null,
-    "trailer": "https://cdn.marsgate.com.tr/13383",
-    "genre": "Animasyon",
-    "summary": "Bir kabile reisinin oğlu, babasının avcılık yeteneklerine yetişmekte zorlanır. Kendini kanıtlamak için gizemli bir ormana doğru yola çıkar ve burada Tink adında, büyülü ve dünya dışı bir kuşla karşılaşır. Birlikte, kılıç dişli sincapların, sevimli mirketlerin ve hatta dinozorların yaşadığı Taş Devri Ormanı’nda sıra dışı maceralara atılırlar.",
-    "kaynak": "Gelecek Film"
-  },
-  {
     "title": "Pırıl: Saklı Robotlar",
     "date": "20260423",
     "link": "https://www.paribucineverse.com/animasyon-filmleri/piril-sakli-robotlar-filmi-izle",
-    "bilet_link": null,
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~ea770873-dd57-4b81-a65c-9ac36ce00ed0",
     "trailer": "https://cdn.marsgate.com.tr/13144",
     "genre": "Animasyon",
     "summary": "Filmde, Pırıl ve arkadaşları bu kez robotların ardındaki sırrı çözmek ve yapay zekanın tehlikeli planlarını durdurmak için matematiğin altın çağlarına uzanan bir yolculuğa çıkıyor.",
-    "kaynak": "Gelecek Film"
-  },
-  {
-    "title": "Geçmişin Kokusu",
-    "date": "20260424",
-    "link": "https://www.paribucineverse.com/dram-filmleri/gecmisin-kokusu-filmi-izle",
-    "bilet_link": null,
-    "trailer": "https://cdn.marsgate.com.tr/13402",
-    "genre": "Dram",
-    "summary": "Yugoslavya’nın dağılma sürecinde Üsküp’te, 500 yıllık evinde yaşananlara tanıklık eden Salih, mahallesinde giderek artan değişime ve bireyselleşmeye karşı elinden geleni yapmaktadır. Ancak aynı mahallede birlikte büyüdüğü çocukluk arkadaşı Elina’nın, bir sivil toplum kuruluşunun temsilcisi olarak şehre geri dönmesiyle dengeler altüst olur. Artan huzursuzluk, komşuların birbirine düştüğü karanlık bir dönemin kapısını aralarken, Salih tüm bu olup bitenlere seyirci kalamayınca kendisini hem çocukluk aşkıyla hem de onun arkasındaki güçlerle büyük bir mücadelenin içinde bulur.",
     "kaynak": "Gelecek Film"
   },
   {
@@ -507,6 +517,16 @@
     "trailer": "https://cdn.marsgate.com.tr/13356",
     "genre": "Macera",
     "summary": "Film, Johnny Cage’in de aralarına katılmasıyla bu kez Dünya Âlemi’nin, varlığını tehdit eden Shao Kahn ile kuralsız ve kanlı bir savaşta karşı karşıya gelmesini konu ediniyor.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Portekiz Aşkı",
+    "date": "20260508",
+    "link": "https://www.paribucineverse.com/romantik-filmleri/portekiz-aski-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn.marsgate.com.tr/13419",
+    "genre": "Romantik",
+    "summary": "Kurumsal itibar yöneticisi olan Yasemin, nişan partisinin yapıldığı gece uzun süredir birlikte olduğu Yaman tarafından aldatıldığını keşfeder. Bu travmatik olayın ardından konforlu ancak sahte hayatını terk etmeye karar veren Yasemin, kendisini takip eden takıntılı nişanlısından kaçarken plansız bir şekilde Lizbon uçağına biner. Valizini ve finansal imkanlarını kaybederek Portekiz’in bir sahil kasabasında mahsur kalan genç kadın, arkadaşı Gönül’ün yardımıyla eski bir taş eve yerleşir. Ancak evi, José adında Portekizli bir adamla paylaşmak zorunda kalmasıyla işler karmaşık bir hal alır. İstanbul’daki kontrolcü ve mükemmeliyetçi alışkanlıklarından uzaklaşmak zorunda kalan Yasemin, zıt karakterdeki José ile kurduğu zorunlu ortaklık sayesinde hem geçmişindeki yaralarla yüzleşir hem de kaybettiği özgüvenini yeniden inşa etmeye başlar.",
     "kaynak": "Gelecek Film"
   },
   {
