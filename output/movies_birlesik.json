@@ -60,22 +60,22 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Babil'in Laneti",
-    "link": "https://www.paribucineverse.com/korku-filmleri/babilin-laneti-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~1f2a2b91-6f8b-4b55-9b83-137002e8b948",
-    "trailer": "https://cdn.marsgate.com.tr/13425",
-    "genre": "Korku",
-    "summary": "Mezopotamya’da, cinlerle yapılan yasak bir anlaşma sonucu yaratılan büyü kitabı, Dara Antik Kenti’yle birlikte yeraltına gömülür. Günümüzde arkeolog Aytaç ve ekibi, bu efsanevi kitabın izini sürerken hem kazı alanında hem de Aytaç’ın ailesinin hayatında korkunç paranormal olaylar başlar. Cinler, geçmişte yapılan günahın bedelini kanla ödetmeye gelir. Bilimin bittiği yerde insan, karanlıkla yüzleşmek zorunda kalır.",
-    "date": "20260508",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
     "title": "Kremlin'in Büyücüsü",
     "link": "https://www.paribucineverse.com/gerilim-filmleri/kremlinin-buyucusu-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~e04f29a9-8d54-41ab-bfe1-270891f74b6a",
     "trailer": "https://cdn.marsgate.com.tr/13398",
     "genre": "Gerilim",
     "summary": "1990’ların başında Rusya’da, tiyatrodan televizyonculuğa geçen kurnaz genç Vadim Baranov’un, yükselen KGB ajanı Vladimir Putin’in akıl hocası ve sağ koluna dönüşmesini izliyor. Bir dönem iktidarın tam da odağında yer alan Baranov, gerçekle yalan, inançla manipülasyon arasındaki sınırları bulandırarak yeni Rusya’nın şekillendirilmesinde ve otoriterliğin yükselişinde büyük rol oynuyor.",
+    "date": "20260508",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Babil'in Laneti",
+    "link": "https://www.paribucineverse.com/korku-filmleri/babilin-laneti-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~1f2a2b91-6f8b-4b55-9b83-137002e8b948",
+    "trailer": "https://cdn.marsgate.com.tr/13425",
+    "genre": "Korku",
+    "summary": "Mezopotamya’da, cinlerle yapılan yasak bir anlaşma sonucu yaratılan büyü kitabı, Dara Antik Kenti’yle birlikte yeraltına gömülür. Günümüzde arkeolog Aytaç ve ekibi, bu efsanevi kitabın izini sürerken hem kazı alanında hem de Aytaç’ın ailesinin hayatında korkunç paranormal olaylar başlar. Cinler, geçmişte yapılan günahın bedelini kanla ödetmeye gelir. Bilimin bittiği yerde insan, karanlıkla yüzleşmek zorunda kalır.",
     "date": "20260508",
     "kaynak": "Vizyondaki Film"
   },
@@ -260,6 +260,16 @@
     "kaynak": "Vizyondaki Film"
   },
   {
+    "title": "Star Wars: Mandalorian ve Grogu",
+    "date": "20260522",
+    "link": "https://www.paribucineverse.com/fantastik-filmleri/star-wars-mandalorian-ve-grogu-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~733faf0a-5f6f-4b26-9c59-c12520dda256",
+    "trailer": "https://cdn.marsgate.com.tr/13444",
+    "genre": "Fantastik",
+    "summary": "Kötü İmparatorluk yıkılmış olsa da, İmparatorluk’a bağlı savaş lordları galaksinin dört bir yanına dağılmış durumda. Yeni Cumhuriyet, Asilerin uğruna savaştığı değerleri korumak için mücadele ederken, efsanevi Mandalorlu ödül avcısı Din Djarin ve genç çırağı Grogu’nun yardımına başvuruyor.",
+    "kaynak": "Gelecek Film"
+  },
+  {
     "title": "Top Gun",
     "date": "20260513",
     "link": "https://www.paribucineverse.com/dram-filmleri/top-gun-filmi-izle",
@@ -320,6 +330,16 @@
     "kaynak": "Gelecek Film"
   },
   {
+    "title": "Patiler: O Zaman Dans",
+    "date": "20260515",
+    "link": "https://www.paribucineverse.com/animasyon-filmleri/patiler-o-zaman-dans-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn.marsgate.com.tr/13446",
+    "genre": "Animasyon",
+    "summary": "Patiler, internette ünlü olmanın hayalini kuran sevimli bir köpek ailesidir. Dans edip komik videolar çekerek popüler olmaya çalışırlar ancak hâlâ internetin yıldızı Kedi Cat’ e yetişemezler. Bir gün tesadüfen Kedi Cat’ le komşu olunca aralarında hem dostluk hem de tatlı bir rekabet başlar. Cat’ in akıl hocası ve menajeri ise bu neşeli aileyle başa çıkmanın sandıkları kadar kolay olmadığını kısa sürede anlar.",
+    "kaynak": "Gelecek Film"
+  },
+  {
     "title": "Saplantı",
     "date": "20260515",
     "link": "https://www.paribucineverse.com/korku-filmleri/saplanti-filmi-izle",
@@ -377,16 +397,6 @@
     "trailer": "https://cdn.marsgate.com.tr/13429",
     "genre": "Komedi",
     "summary": "Oflu Hoca, bu kez kapanmak üzere olan öğrenci yurdunu kurtarmak için çaresiz bir çözüm ararken, İdris’in eline geçen efsanevi Pontus hazinesinin haritasıyla kendini absürt bir define avının içinde bulur.",
-    "kaynak": "Gelecek Film"
-  },
-  {
-    "title": "Star Wars: Mandalorian ve Grogu",
-    "date": "20260522",
-    "link": "https://www.paribucineverse.com/fantastik-filmleri/star-wars-mandalorian-ve-grogu-filmi-izle",
-    "bilet_link": null,
-    "trailer": "https://cdn.marsgate.com.tr/13444",
-    "genre": "Fantastik",
-    "summary": "Kötü İmparatorluk yıkılmış olsa da, İmparatorluk’a bağlı savaş lordları galaksinin dört bir yanına dağılmış durumda. Yeni Cumhuriyet, Asilerin uğruna savaştığı değerleri korumak için mücadele ederken, efsanevi Mandalorlu ödül avcısı Din Djarin ve genç çırağı Grogu’nun yardımına başvuruyor.",
     "kaynak": "Gelecek Film"
   },
   {
@@ -524,7 +534,7 @@
     "date": "20260702",
     "link": "https://www.paribucineverse.com/animasyon-filmleri/minyonlar-ve-canavarlar-filmi-izle",
     "bilet_link": null,
-    "trailer": "https://cdn.marsgate.com.tr/13434",
+    "trailer": "https://cdn.marsgate.com.tr/13448",
     "genre": "Animasyon",
     "summary": "Minyonlar ve Canavarlar, Minyonların Hollywood’u nasıl ele geçirdiklerini, birer film yıldızına nasıl dönüştüklerini, sonra her şeyi nasıl berbat ettiklerini ve dünyaya canavarlar salarak kaosa sürüklediklerini anlatan gürültülü ve eğlence dolu bir serüven… Ama her büyük felaketin ardından bir kahramanlık gelir! Minyonlar, gezegeni kurtarmak için yeniden bir araya gelir ve bu kez hem kendi hatalarıyla hem de dünyayı tehdit eden karanlıkla yüzleşirler.",
     "kaynak": "Gelecek Film"
