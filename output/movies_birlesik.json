@@ -1,5 +1,25 @@
 [
   {
+    "title": "Top Gun",
+    "link": "https://www.paribucineverse.com/dram-filmleri/top-gun-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~9183f37e-6bf8-4869-9b24-6f862185825e",
+    "trailer": "https://cdn.marsgate.com.tr/13439",
+    "genre": "Dram",
+    "summary": "Top Gun bir onur ödülüdür. Bunu elde etmek için bu alanda mücadele veren herkes heyecan içindedir. Pete Mitchell, yüksek düzeyde eğitim görmek üzere Miramar Donanma Hava Üssü’nde bulunmaktadır ve bu ödülün peşindedir. Aynı zamanda kıdemli pilot Tom Kasansky de bu yola baş koymuştur. İkisi arasında bir rekabet söz konusudur.",
+    "date": "20260513",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Top Gun: Maverick",
+    "link": "https://www.paribucineverse.com/aksiyon-filmleri/top-gun-maverick-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~84c12efd-71f2-41c5-96f4-b6d873652dc1",
+    "trailer": "https://cdn.marsgate.com.tr/13439",
+    "genre": "Aksiyon",
+    "summary": "1986 yapımı Top Gun'ın devam hikâyesi olan Top Gun: Maverick, usta pilot Maverick'in bu kez eğitmen olarak hava kuvvetlerine geri dönüşü sonrası gelişen olayları anlatıyor. Donanmanın en iyi pilotlarından biri olan Pete “Maverick” Mitchell, 30 yıllık hizmetten sonra ait olduğu yerde, cesur bir test pilotu olarak sınırları zorlar ve kendisini yere bağlayacak olan terfiden kaçar. Kendisini Top Gun mezunlarından oluşan bir müfrezeyi o güne kadar hiçbir pilotun görmediği özel bir görev için eğitirken bulur. Belirsiz bir gelecekle ve geçmişinden gelen anılarla karşı karşıya kalan Maverick, en büyük korkularıyla yüzleşmek ve büyük bir fedakarlık yapmasını gerektiren bir göreve gitmek zorunda kalır.",
+    "date": "20260513",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
     "title": "Mortal Kombat II",
     "link": "https://www.paribucineverse.com/macera-filmleri/mortal-kombat-ii-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~8a36743c-05a1-4cff-9ddb-c3233ffcfbd4",
@@ -30,22 +50,22 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Portekiz Aşkı",
-    "link": "https://www.paribucineverse.com/romantik-filmleri/portekiz-aski-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~00ff1f00-5342-4b29-815b-30a58bd949aa",
-    "trailer": "https://cdn.marsgate.com.tr/13419",
-    "genre": "Romantik",
-    "summary": "Kurumsal itibar yöneticisi olan Yasemin, nişan partisinin yapıldığı gece uzun süredir birlikte olduğu Yaman tarafından aldatıldığını keşfeder. Bu travmatik olayın ardından konforlu ancak sahte hayatını terk etmeye karar veren Yasemin, kendisini takip eden takıntılı nişanlısından kaçarken plansız bir şekilde Lizbon uçağına biner. Valizini ve finansal imkanlarını kaybederek Portekiz’in bir sahil kasabasında mahsur kalan genç kadın, arkadaşı Gönül’ün yardımıyla eski bir taş eve yerleşir. Ancak evi, José adında Portekizli bir adamla paylaşmak zorunda kalmasıyla işler karmaşık bir hal alır. İstanbul’daki kontrolcü ve mükemmeliyetçi alışkanlıklarından uzaklaşmak zorunda kalan Yasemin, zıt karakterdeki José ile kurduğu zorunlu ortaklık sayesinde hem geçmişindeki yaralarla yüzleşir hem de kaybettiği özgüvenini yeniden inşa etmeye başlar.",
-    "date": "20260508",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
     "title": "Iron Maiden: Burning Ambition",
     "link": "https://www.paribucineverse.com/belgesel-filmleri/iron-maiden-burning-ambition-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~3aa6f465-08c1-434d-9c10-caf46ffead9d",
     "trailer": "https://cdn.marsgate.com.tr/13399",
     "genre": "Belgesel",
     "summary": "Iron Maiden’ın bir kültürel hareketin şekillenmesine nasıl katkı sağladığını; rock müziğe ve heavy metalin toplum ve kültür üzerindeki daha geniş etkilerine dair yerleşik bakış açılarını nasıl zorladığını inceliyor. Grup üyelerinin yanı sıra Javier Bardem, Lars Ulrich ve Chuck D gibi isimlerle yapılan röportajlara yer veren bu çarpıcı film, Iron Maiden’ın tavizsiz vizyonuna ve dünya çapındaki hayran ordusuyla kurduğu sarsılmaz bağa yakından bir bakış sunuyor.",
+    "date": "20260508",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Portekiz Aşkı",
+    "link": "https://www.paribucineverse.com/romantik-filmleri/portekiz-aski-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~00ff1f00-5342-4b29-815b-30a58bd949aa",
+    "trailer": "https://cdn.marsgate.com.tr/13419",
+    "genre": "Romantik",
+    "summary": "Kurumsal itibar yöneticisi olan Yasemin, nişan partisinin yapıldığı gece uzun süredir birlikte olduğu Yaman tarafından aldatıldığını keşfeder. Bu travmatik olayın ardından konforlu ancak sahte hayatını terk etmeye karar veren Yasemin, kendisini takip eden takıntılı nişanlısından kaçarken plansız bir şekilde Lizbon uçağına biner. Valizini ve finansal imkanlarını kaybederek Portekiz’in bir sahil kasabasında mahsur kalan genç kadın, arkadaşı Gönül’ün yardımıyla eski bir taş eve yerleşir. Ancak evi, José adında Portekizli bir adamla paylaşmak zorunda kalmasıyla işler karmaşık bir hal alır. İstanbul’daki kontrolcü ve mükemmeliyetçi alışkanlıklarından uzaklaşmak zorunda kalan Yasemin, zıt karakterdeki José ile kurduğu zorunlu ortaklık sayesinde hem geçmişindeki yaralarla yüzleşir hem de kaybettiği özgüvenini yeniden inşa etmeye başlar.",
     "date": "20260508",
     "kaynak": "Vizyondaki Film"
   },
@@ -270,26 +290,6 @@
     "kaynak": "Gelecek Film"
   },
   {
-    "title": "Top Gun",
-    "date": "20260513",
-    "link": "https://www.paribucineverse.com/dram-filmleri/top-gun-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~9183f37e-6bf8-4869-9b24-6f862185825e",
-    "trailer": "https://cdn.marsgate.com.tr/13439",
-    "genre": "Dram",
-    "summary": "Top Gun bir onur ödülüdür. Bunu elde etmek için bu alanda mücadele veren herkes heyecan içindedir. Pete Mitchell, yüksek düzeyde eğitim görmek üzere Miramar Donanma Hava Üssü’nde bulunmaktadır ve bu ödülün peşindedir. Aynı zamanda kıdemli pilot Tom Kasansky de bu yola baş koymuştur. İkisi arasında bir rekabet söz konusudur.",
-    "kaynak": "Gelecek Film"
-  },
-  {
-    "title": "Top Gun: Maverick",
-    "date": "20260513",
-    "link": "https://www.paribucineverse.com/aksiyon-filmleri/top-gun-maverick-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~84c12efd-71f2-41c5-96f4-b6d873652dc1",
-    "trailer": "https://cdn.marsgate.com.tr/13439",
-    "genre": "Aksiyon",
-    "summary": "1986 yapımı Top Gun'ın devam hikâyesi olan Top Gun: Maverick, usta pilot Maverick'in bu kez eğitmen olarak hava kuvvetlerine geri dönüşü sonrası gelişen olayları anlatıyor. Donanmanın en iyi pilotlarından biri olan Pete “Maverick” Mitchell, 30 yıllık hizmetten sonra ait olduğu yerde, cesur bir test pilotu olarak sınırları zorlar ve kendisini yere bağlayacak olan terfiden kaçar. Kendisini Top Gun mezunlarından oluşan bir müfrezeyi o güne kadar hiçbir pilotun görmediği özel bir görev için eğitirken bulur. Belirsiz bir gelecekle ve geçmişinden gelen anılarla karşı karşıya kalan Maverick, en büyük korkularıyla yüzleşmek ve büyük bir fedakarlık yapmasını gerektiren bir göreve gitmek zorunda kalır.",
-    "kaynak": "Gelecek Film"
-  },
-  {
     "title": "Sihirli Annem: Periler Okulu",
     "date": "20260515",
     "link": "https://www.paribucineverse.com/fantastik-filmleri/sihirli-annem-periler-okulu-filmi-izle",
@@ -317,6 +317,16 @@
     "trailer": "https://cdn.marsgate.com.tr/13440",
     "genre": "Belgesel",
     "summary": "YAŞAMAYA MECBURSUN!, \"Türkçe rock yapılmaz\" denilen bir dönemde yola çıkan Nejat Yavaşoğulları ve Bulutsuzluk Özlemi’nin 40 yıllık hikayesini anlatıyor. Taksim’deki küçük sahnelerden dev stadyum konserlerine uzanan bu yolculukta grup, kent yaşamına, çevreye ve özgürlüğe dair şarkılarıyla bir dönemin sesi oluyor. Müzisyenlerin ve tanıkların gözünden; zorluklara rağmen müziğin nasıl bir umut ışığına dönüştüğü ve gelecek nesillere nasıl ilham verdiği samimi bir dille aktarılıyor.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Lanet",
+    "date": "20260515",
+    "link": "https://www.paribucineverse.com/korku-filmleri/lanet-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn.marsgate.com.tr/13451",
+    "genre": "Korku",
+    "summary": "Seçkin bir kız okulunun bahçesinde ürkütücü bir Jack in The Box (oyuncak kutusu) bulunup açıldığında, altı cesur öğrenci serbest kalan iblisle amansız bir mücadeleye girişir.",
     "kaynak": "Gelecek Film"
   },
   {
@@ -490,6 +500,26 @@
     "kaynak": "Gelecek Film"
   },
   {
+    "title": "Korkunç Bir Film",
+    "date": "20260605",
+    "link": "https://www.paribucineverse.com/korku-filmleri/korkunc-bir-film-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn.marsgate.com.tr/13430",
+    "genre": "Korku",
+    "summary": "İki arkadaş, kendilerini bir kez daha katillerin, canavarların ve doğaüstü yaratıkların karıştığı bir kaosun içinde bulurlar.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "İfşa Günü",
+    "date": "20260610",
+    "link": "https://www.paribucineverse.com/bilim-kurgu-filmleri/ifsa-gunu-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn.marsgate.com.tr/13411",
+    "genre": "Bilim Kurgu",
+    "summary": "Eğer yalnız olmadığımızı öğrenseydiniz, biri size bunu gösterseydi, kanıtlasaydı, bu sizi korkutur muydu?",
+    "kaynak": "Gelecek Film"
+  },
+  {
     "title": "İfşa Günü",
     "date": "20260610",
     "link": "https://www.paribucineverse.com/bilim-kurgu-filmleri/ifsa-gunu-filmi-izle",
@@ -517,6 +547,16 @@
     "trailer": "https://cdn.marsgate.com.tr/13442",
     "genre": "Suç",
     "summary": "Küçük bir kasabada geçici olarak şeriflik yapan bir adamın, yerel bir banka soygununun ardından kasabadaki karanlık gizemleri gün yüzüne çıkarmasını konu alıyor.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Oyuncak Hikayesi 5",
+    "date": "20260619",
+    "link": "https://www.paribucineverse.com/animasyon-filmleri/oyuncak-hikayesi-5-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn.marsgate.com.tr/13431",
+    "genre": "Animasyon",
+    "summary": "Buzz Lightyear, Cowboy Woody ve bir zamanlar Andy'ye ait olan ve artık küçük arkadaşı Bonnie'ye devredilen diğer tüm oyuncaklar geri döndü ve yeni bir macera başlıyor.",
     "kaynak": "Gelecek Film"
   },
   {
