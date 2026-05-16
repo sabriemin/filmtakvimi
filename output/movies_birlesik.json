@@ -20,16 +20,6 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Saplantı",
-    "link": "https://www.paribucineverse.com/korku-filmleri/saplanti-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~c81dfb24-3715-4baa-8ba4-f1696bfcd137",
-    "trailer": "Fragman bağlantısı yok",
-    "genre": "Korku",
-    "summary": "Chloe hamile olduğunun farkına vardığında anne olmak istemez, fakat bunun için çok kalınmıştır. Doğum gerçekleşir ve anne olur. Bebeğinin sürekli ağlaması, gittikçe artan suçluluk duygusu ve paranoya, Chloe'yi depresyona ve karanlık günlere doğru çeker. Bu anneliği bir türlü kabul etmemesine rağmen oğlunu koruma içgüdüsü ile karşılaştığı her durumu tehlike olarak görür. Psikolojisi her geçen gün bozulmaktadır. Destek için gittiği aile psikologu Dr. Timothy Reed bu tedirgin edici düşüncelerini ve endişe duygularını, sadece hafif şiddetli bir postpartum depresyon (doğum sonrası depresyonu) vakasına bağlamıştır. Fakat Chloe'nin durumu gün geçtikçe daha da kötüleşir ve şiddetlenir. Chloe, çocukluğundaki ninninin sesini duymaya ve mırıldanmaya başlar ve tam o anda çocuğunun etrafında tuhaf bir varlığın parıltısını görür. Bu varlığın kötülüğüne inanan Chloe, oğlunu korumak için elinden gelen her şeyi yapar. Çevresindeki herkes Chole'ye bunların geçici olduğunu ve ilaçlarına devam etmesi söyler ve yaşadıklarına inanmazlar. Chloe'nin dünyası tamamen çökmüştür ve çocuğunun tehlikede olduğu açıktır.",
-    "date": "20180518",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
     "title": "Siccin 9",
     "link": "https://www.paribucineverse.com/korku-filmleri/siccin-9-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~49d86d14-b9da-498d-8e24-c6d529c2a6b1",
@@ -46,6 +36,16 @@
     "trailer": "https://cdn.marsgate.com.tr/13451",
     "genre": "Korku",
     "summary": "Seçkin bir kız okulunun bahçesinde ürkütücü bir Jack in The Box (oyuncak kutusu) bulunup açıldığında, altı cesur öğrenci serbest kalan iblisle amansız bir mücadeleye girişir.",
+    "date": "20260515",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Saplantı",
+    "link": "https://www.paribucineverse.com/korku-filmleri/saplanti-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~c81dfb24-3715-4baa-8ba4-f1696bfcd137",
+    "trailer": "https://cdn.marsgate.com.tr/13408",
+    "genre": "Korku",
+    "summary": "Umutsuz bir romantik, aşık olduğu kişinin kalbini kazanmak için gizemli \"Tek Dilek Söğüdü\"nü kırdıktan sonra tam da istediğini elde eder, ancak kısa süre sonra bazı arzuların karanlık ve uğursuz bir bedeli olduğunu keşfeder.",
     "date": "20260515",
     "kaynak": "Vizyondaki Film"
   },
@@ -113,7 +113,7 @@
     "title": "Kill Bill: Mevzunun Tamamı",
     "link": "https://www.paribucineverse.com/aksiyon-filmleri/kill-bill-mevzunun-tamami-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~e2ee714e-86ec-42b9-b6dd-d93915943d08",
-    "trailer": "Fragman bağlantısı yok",
+    "trailer": "https://cdn.marsgate.com.tr/13401",
     "genre": "Aksiyon",
     "summary": "Quentin Tarantino’nun KILL BILL: MEVZUNUN TAMAMI, Volume 1 ve Volume 2’yi tek bir akışta buluşturuyor; daha önce görülmemiş sahneleriyle, sansürsüz ve yönetmenin hayal ettiği haliyle tek parça! Eski patronu ve sevgilisi Bill'in, düğün provasını basıp onu başından vurması ve doğmamış çocuğunu çalmasının ardından ölüme terk edilen 'Gelin', intikamını almak için Bill ile yüzleşmeden önce Ölümcül Engerek Suikast Timi’nin kalan dört üyesini avlamak zorundadır.",
     "date": "20260508",
@@ -173,7 +173,7 @@
     "title": "Şehzade: Büyük Şenlik",
     "link": "https://www.paribucineverse.com/animasyon-filmleri/sehzade-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~8bd97354-f45d-419f-8c7a-c903c0ada2c5",
-    "trailer": "Fragman bağlantısı yok",
+    "trailer": "https://cdn.marsgate.com.tr/13423",
     "genre": "Animasyon",
     "summary": "Küçük yaşlardan itibaren sarayda anlatılan şenlik hikâyeleriyle büyüyen bir şehzadenin, kardeşinin sünneti için düzenlenen büyük kutlamaları halkın arasından deneyimlemek istemesiyle başlıyor. Saraydan kaçan şehzade, kendini renkli bir maceranın içinde buluyor. İstanbul’a gelen ve kimliğini gizleyerek bir gösteri grubuna katılan İtalyan bir prenses de önemli bir rol oynuyor. Şehzade ile yolları kesişen bu gizemli karakter, hikâyeye farklı bir boyut katarken, ikili kendilerini hem eğlenceli hem de tehlikeli bir kovalamacanın içinde buluyor.",
     "date": "20260501",
@@ -414,7 +414,7 @@
     "date": "20260605",
     "link": "https://www.paribucineverse.com/animasyon-filmleri/cesur-kedi-moxy-filmi-izle",
     "bilet_link": null,
-    "trailer": "Fragman bağlantısı yok",
+    "trailer": "https://cdn.marsgate.com.tr/13454",
     "genre": "Animasyon",
     "summary": "8 yaşındaki bir kız çocuğu, ailesi ve çok sevdiği kedisi Moxy ile birlikte Fransa’da bir çiftliğe tatile gider. Ancak Moxy, sıradan bir evcil hayvan değildir... Meraklı, cesur ve biraz da yaramaz olan bu sevimli kedi, aynı zamanda piyano çalmadaki olağanüstü yeteneğiyle herkesi şaşırtır. Moxy’nin bu özel yeteneğini fark eden çiftlik sahibi, onu ailesinden gizlice saklar. Aile, Moxy’yi kaybettiklerini düşünerek onsuz evlerine dönmek zorunda kalır. Ama Moxy pes etmez. Cesareti ve zekasıyla çiftlikten kaçmayı başaran Moxy, ailesine kavuşmak için uzun ve zorlu bir yolculuğa çıkar. Önünde yüzlerce kilometre, aşılması gereken sayısız engel ve yol boyunca karşılaşacağı beklenmedik dostluklar vardır.",
     "kaynak": "Gelecek Film"
@@ -454,7 +454,7 @@
     "date": "20260612",
     "link": "https://www.paribucineverse.com/suc-filmleri/normal-filmi-izle",
     "bilet_link": null,
-    "trailer": "https://cdn.marsgate.com.tr/13442",
+    "trailer": "https://cdn.marsgate.com.tr/13453",
     "genre": "Suç",
     "summary": "Küçük bir kasabada geçici olarak şeriflik yapan bir adamın, yerel bir banka soygununun ardından kasabadaki karanlık gizemleri gün yüzüne çıkarmasını konu alıyor.",
     "kaynak": "Gelecek Film"
