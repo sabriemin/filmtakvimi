@@ -1,10 +1,10 @@
 [
   {
     "title": "Sihirli Annem: Periler Okulu",
-    "link": "https://www.paribucineverse.com/fantastik-filmleri/sihirli-annem-periler-okulu-filmi-izle",
+    "link": "https://www.paribucineverse.com/aile-filmleri/sihirli-annem-periler-okulu-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~b35ce10a-4a2d-420b-bac4-c9ce59b3c91a",
     "trailer": "https://cdn.marsgate.com.tr/13441",
-    "genre": "Fantastik",
+    "genre": "Aile",
     "summary": "Dünya bütün perilerin varlığından haberdar olmuştur. Yaşanan karışıklıklar yüzünden Periliçe sihir yaparak fanilerin hafızasını siler. Küçük perilerin eğitimi de artık Dünya’da değil, Periler alemindeki Periler Okulu’nda verilecektir. Dudu, Betüş, Perihan ve Pakize okulda görev alırlar. Fakat onları, okulda bekleyen başka sihirli güçler de vardır.",
     "date": "20260515",
     "kaynak": "Vizyondaki Film"
@@ -170,16 +170,6 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Şehzade: Büyük Şenlik",
-    "link": "https://www.paribucineverse.com/animasyon-filmleri/sehzade-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~8bd97354-f45d-419f-8c7a-c903c0ada2c5",
-    "trailer": "https://cdn.marsgate.com.tr/13423",
-    "genre": "Animasyon",
-    "summary": "Küçük yaşlardan itibaren sarayda anlatılan şenlik hikâyeleriyle büyüyen bir şehzadenin, kardeşinin sünneti için düzenlenen büyük kutlamaları halkın arasından deneyimlemek istemesiyle başlıyor. Saraydan kaçan şehzade, kendini renkli bir maceranın içinde buluyor. İstanbul’a gelen ve kimliğini gizleyerek bir gösteri grubuna katılan İtalyan bir prenses de önemli bir rol oynuyor. Şehzade ile yolları kesişen bu gizemli karakter, hikâyeye farklı bir boyut katarken, ikili kendilerini hem eğlenceli hem de tehlikeli bir kovalamacanın içinde buluyor.",
-    "date": "20260501",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
     "title": "Yetimhane: Sahipsiz Cinler",
     "link": "https://www.paribucineverse.com/korku-filmleri/yetimhane-sahipsiz-cinler-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~7be08969-b288-4f61-8cc3-f5e6306d895d",
@@ -310,16 +300,6 @@
     "kaynak": "Gelecek Film"
   },
   {
-    "title": "Külkedisi: Üç Dilek",
-    "date": "20260522",
-    "link": "https://www.paribucineverse.com/animasyon-filmleri/kulkedisi-uc-dilek-filmi-izle",
-    "bilet_link": null,
-    "trailer": "https://cdn.marsgate.com.tr/13407",
-    "genre": "Animasyon",
-    "summary": "Süperstar Prens Merliflor’un hayranı olan Külkedisi, prensin müstakbel prensesiyle tanışması için düzenlenen baloya katılmayı heyecanla beklemektedir. Fakat kötü kalpli üvey annesinin verdiği işleri yapması gerektiği için evde mahsur kalır. Bu esnada Külkedisi’nin arkadaşı, tatlı ve mütevazı bir oduncu olan Severin, “ebedi ağaç” tarafından sevimli bir sincaba dönüştürülmüştür. Severin, sihirli fındıkların yardımıyla ev işlerini halleder ve Külkedisi’ni baloya gönderir. Külkedisi ve prens, baloda harika vakit geçirir ve gece, evlenme teklifiyle sonuçlanır.",
-    "kaynak": "Gelecek Film"
-  },
-  {
     "title": "Manyak",
     "date": "20260522",
     "link": "https://www.paribucineverse.com/korku-filmleri/manyak-filmi-izle",
@@ -447,6 +427,16 @@
     "trailer": "https://cdn.marsgate.com.tr/13447",
     "genre": "Aksiyon",
     "summary": "Eski bir özel kuvvet askeri, kayıp kızını kurtarmak için kuzey Myanmar'a sızar ve dolandırıcılık çeteleri ile organ kaçakçılarına karşı savaşarak suç patronuyla son bir hesaplaşmaya girer.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Külkedisi: Üç Dilek",
+    "date": "20260612",
+    "link": "https://www.paribucineverse.com/animasyon-filmleri/kulkedisi-uc-dilek-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn.marsgate.com.tr/13407",
+    "genre": "Animasyon",
+    "summary": "Süperstar Prens Merliflor’un hayranı olan Külkedisi, prensin müstakbel prensesiyle tanışması için düzenlenen baloya katılmayı heyecanla beklemektedir. Fakat kötü kalpli üvey annesinin verdiği işleri yapması gerektiği için evde mahsur kalır. Bu esnada Külkedisi’nin arkadaşı, tatlı ve mütevazı bir oduncu olan Severin, “ebedi ağaç” tarafından sevimli bir sincaba dönüştürülmüştür. Severin, sihirli fındıkların yardımıyla ev işlerini halleder ve Külkedisi’ni baloya gönderir. Külkedisi ve prens, baloda harika vakit geçirir ve gece, evlenme teklifiyle sonuçlanır.",
     "kaynak": "Gelecek Film"
   },
   {
