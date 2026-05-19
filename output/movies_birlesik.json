@@ -1,15 +1,5 @@
 [
   {
-    "title": "Sihirli Annem: Periler Okulu",
-    "link": "https://www.paribucineverse.com/aile-filmleri/sihirli-annem-periler-okulu-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~b35ce10a-4a2d-420b-bac4-c9ce59b3c91a",
-    "trailer": "https://cdn.marsgate.com.tr/13441",
-    "genre": "Aile",
-    "summary": "Dünya bütün perilerin varlığından haberdar olmuştur. Yaşanan karışıklıklar yüzünden Periliçe sihir yaparak fanilerin hafızasını siler. Küçük perilerin eğitimi de artık Dünya’da değil, Periler alemindeki Periler Okulu’nda verilecektir. Dudu, Betüş, Perihan ve Pakize okulda görev alırlar. Fakat onları, okulda bekleyen başka sihirli güçler de vardır.",
-    "date": "20260515",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
     "title": "Moda",
     "link": "https://www.paribucineverse.com/dram-filmleri/moda-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~fcaf6d09-fc96-4412-bb7c-9d6b05909f8b",
@@ -20,12 +10,12 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Lanet",
-    "link": "https://www.paribucineverse.com/korku-filmleri/lanet-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~b0b15698-5414-4dc5-aa16-4b2622963b18",
-    "trailer": "https://cdn.marsgate.com.tr/13451",
-    "genre": "Korku",
-    "summary": "Seçkin bir kız okulunun bahçesinde ürkütücü bir Jack in The Box (oyuncak kutusu) bulunup açıldığında, altı cesur öğrenci serbest kalan iblisle amansız bir mücadeleye girişir.",
+    "title": "Sihirli Annem: Periler Okulu",
+    "link": "https://www.paribucineverse.com/aile-filmleri/sihirli-annem-periler-okulu-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~b35ce10a-4a2d-420b-bac4-c9ce59b3c91a",
+    "trailer": "https://cdn.marsgate.com.tr/13441",
+    "genre": "Aile",
+    "summary": "Dünya bütün perilerin varlığından haberdar olmuştur. Yaşanan karışıklıklar yüzünden Periliçe sihir yaparak fanilerin hafızasını siler. Küçük perilerin eğitimi de artık Dünya’da değil, Periler alemindeki Periler Okulu’nda verilecektir. Dudu, Betüş, Perihan ve Pakize okulda görev alırlar. Fakat onları, okulda bekleyen başka sihirli güçler de vardır.",
     "date": "20260515",
     "kaynak": "Vizyondaki Film"
   },
@@ -36,6 +26,16 @@
     "trailer": "https://cdn.marsgate.com.tr/13408",
     "genre": "Korku",
     "summary": "Umutsuz bir romantik, aşık olduğu kişinin kalbini kazanmak için gizemli \"Tek Dilek Söğüdü\"nü kırdıktan sonra tam da istediğini elde eder, ancak kısa süre sonra bazı arzuların karanlık ve uğursuz bir bedeli olduğunu keşfeder.",
+    "date": "20260515",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Lanet",
+    "link": "https://www.paribucineverse.com/korku-filmleri/lanet-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~b0b15698-5414-4dc5-aa16-4b2622963b18",
+    "trailer": "https://cdn.marsgate.com.tr/13451",
+    "genre": "Korku",
+    "summary": "Seçkin bir kız okulunun bahçesinde ürkütücü bir Jack in The Box (oyuncak kutusu) bulunup açıldığında, altı cesur öğrenci serbest kalan iblisle amansız bir mücadeleye girişir.",
     "date": "20260515",
     "kaynak": "Vizyondaki Film"
   },
@@ -344,9 +344,9 @@
     "date": "20260522",
     "link": "https://www.paribucineverse.com/korku-filmleri/yolcu-filmi-izle",
     "bilet_link": null,
-    "trailer": "Fragman bağlantısı yok",
-    "genre": "Aksiyon",
-    "summary": "Michael McCauley her gün işten eve, evden işe bir hayat yaşayan bir iş adamıdır. Aynı zamanda aile babası olan Michael'ın oldukça sıradan bir hayatı vardır. Ancak eşi ile mutlulukla sürdürdükleri evlilik hayatları bir gün tepetaklak olur. Her gün işe giderken kullandığı trende son durağa gelmeden gizemli bir yabancının kimliğini ortaya çıkarmak zorunda kalır. Bir komplonun içine düştüğünü fark eden Michael, kendisini ve diğer yolcuların hayatını kurtarmak için zamana karşı mücadele etmek zorundadır.",
+    "trailer": "https://cdn.marsgate.com.tr/13449",
+    "genre": "Korku",
+    "summary": "Karavanlarıyla özgürce seyahat eden genç bir çift, ıssız bir yolda ilerlerken dehşet verici bir trafik kazasına tanık olur. Olay yerinden ayrıldıktan kısa bir süre sonra, kazadan sağ kurtulan tek şeyin kendileri olmadığını ve \"Yolcu\" olarak adlandırılan kötücül bir varlığın araçlarına sızdığını fark ederler. Bu görünmez ve durdurulamaz güç, çifti hem fiziksel hem de psikolojik bir kıskaca alarak kaçış yollarını kapatır. İkilinin hayatta kalma mücadelesi, başlangıçta planladıkları keyifli karavan yolculuğunu, her durakta ve her kilometrede peşlerini bırakmayan bir hayatta kalma savaşına dönüştürür.",
     "kaynak": "Gelecek Film"
   },
   {
@@ -386,7 +386,7 @@
     "bilet_link": null,
     "trailer": "https://cdn.marsgate.com.tr/13433",
     "genre": "Dram",
-    "summary": "Hafta sonu için gittiği kırsalda geçirdiği bir araba kazasından mucize eseri kurtulan Laura, fiziksel olarak yara almamış olsa da derinden sarsılır. Kazaya tanık olan ve ona anne şefkatiyle yaklaşan yerel bir kadının evine kabul edilir. Kadının kocası ve yetişkin oğlu da baştaki mesafelerini zamanla bir kenara bırakınca, dördü yavaş yavaş aileyi andıran bir düzen kurar ve birlikte birkaç mutlu gün geçirir. Ancak geçmişleriyle yüzleşme zamanı geldiğinde, Laura da kendi hayatıyla hesaplaşmak zorunda kalır",
+    "summary": "Hafta sonu için gittiği kırsalda geçirdiği bir araba kazasından mucize eseri kurtulan Laura, fiziksel olarak yara almamış olsa da derinden sarsılır. Kazaya tanık olan ve ona anne şefkatiyle yaklaşan yerel bir kadının evine kabul edilir. Kadının kocası ve yetişkin oğlu da baştaki mesafelerini zamanla bir kenara bırakınca, dördü yavaş yavaş aileyi andıran bir düzen kurar ve birlikte birkaç mutlu gün geçirir. Ancak geçmişleriyle yüzleşme zamanı geldiğinde, Laura da kendi hayatıyla hesaplaşmak zorunda kalır.",
     "kaynak": "Gelecek Film"
   },
   {
