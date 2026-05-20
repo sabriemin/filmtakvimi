@@ -20,22 +20,22 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Saplantı",
-    "link": "https://www.paribucineverse.com/korku-filmleri/saplanti-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~c81dfb24-3715-4baa-8ba4-f1696bfcd137",
-    "trailer": "https://cdn.marsgate.com.tr/13408",
-    "genre": "Korku",
-    "summary": "Umutsuz bir romantik, aşık olduğu kişinin kalbini kazanmak için gizemli \"Tek Dilek Söğüdü\"nü kırdıktan sonra tam da istediğini elde eder, ancak kısa süre sonra bazı arzuların karanlık ve uğursuz bir bedeli olduğunu keşfeder.",
-    "date": "20260515",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
     "title": "Lanet",
     "link": "https://www.paribucineverse.com/korku-filmleri/lanet-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~b0b15698-5414-4dc5-aa16-4b2622963b18",
     "trailer": "https://cdn.marsgate.com.tr/13451",
     "genre": "Korku",
     "summary": "Seçkin bir kız okulunun bahçesinde ürkütücü bir Jack in The Box (oyuncak kutusu) bulunup açıldığında, altı cesur öğrenci serbest kalan iblisle amansız bir mücadeleye girişir.",
+    "date": "20260515",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Saplantı",
+    "link": "https://www.paribucineverse.com/korku-filmleri/saplanti-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~c81dfb24-3715-4baa-8ba4-f1696bfcd137",
+    "trailer": "https://cdn.marsgate.com.tr/13408",
+    "genre": "Korku",
+    "summary": "Umutsuz bir romantik, aşık olduğu kişinin kalbini kazanmak için gizemli \"Tek Dilek Söğüdü\"nü kırdıktan sonra tam da istediğini elde eder, ancak kısa süre sonra bazı arzuların karanlık ve uğursuz bir bedeli olduğunu keşfeder.",
     "date": "20260515",
     "kaynak": "Vizyondaki Film"
   },
@@ -60,22 +60,22 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Top Gun",
-    "link": "https://www.paribucineverse.com/dram-filmleri/top-gun-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~9183f37e-6bf8-4869-9b24-6f862185825e",
-    "trailer": "https://cdn.marsgate.com.tr/13439",
-    "genre": "Dram",
-    "summary": "Top Gun bir onur ödülüdür. Bunu elde etmek için bu alanda mücadele veren herkes heyecan içindedir. Pete Mitchell, yüksek düzeyde eğitim görmek üzere Miramar Donanma Hava Üssü’nde bulunmaktadır ve bu ödülün peşindedir. Aynı zamanda kıdemli pilot Tom Kasansky de bu yola baş koymuştur. İkisi arasında bir rekabet söz konusudur.",
-    "date": "20260513",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
     "title": "Top Gun: Maverick",
     "link": "https://www.paribucineverse.com/aksiyon-filmleri/top-gun-maverick-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~84c12efd-71f2-41c5-96f4-b6d873652dc1",
     "trailer": "https://cdn.marsgate.com.tr/13439",
     "genre": "Aksiyon",
     "summary": "1986 yapımı Top Gun'ın devam hikâyesi olan Top Gun: Maverick, usta pilot Maverick'in bu kez eğitmen olarak hava kuvvetlerine geri dönüşü sonrası gelişen olayları anlatıyor. Donanmanın en iyi pilotlarından biri olan Pete “Maverick” Mitchell, 30 yıllık hizmetten sonra ait olduğu yerde, cesur bir test pilotu olarak sınırları zorlar ve kendisini yere bağlayacak olan terfiden kaçar. Kendisini Top Gun mezunlarından oluşan bir müfrezeyi o güne kadar hiçbir pilotun görmediği özel bir görev için eğitirken bulur. Belirsiz bir gelecekle ve geçmişinden gelen anılarla karşı karşıya kalan Maverick, en büyük korkularıyla yüzleşmek ve büyük bir fedakarlık yapmasını gerektiren bir göreve gitmek zorunda kalır.",
+    "date": "20260513",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Top Gun",
+    "link": "https://www.paribucineverse.com/dram-filmleri/top-gun-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~9183f37e-6bf8-4869-9b24-6f862185825e",
+    "trailer": "https://cdn.marsgate.com.tr/13439",
+    "genre": "Dram",
+    "summary": "Top Gun bir onur ödülüdür. Bunu elde etmek için bu alanda mücadele veren herkes heyecan içindedir. Pete Mitchell, yüksek düzeyde eğitim görmek üzere Miramar Donanma Hava Üssü’nde bulunmaktadır ve bu ödülün peşindedir. Aynı zamanda kıdemli pilot Tom Kasansky de bu yola baş koymuştur. İkisi arasında bir rekabet söz konusudur.",
     "date": "20260513",
     "kaynak": "Vizyondaki Film"
   },
@@ -220,6 +220,16 @@
     "kaynak": "Vizyondaki Film"
   },
   {
+    "title": "Başıbozuklar",
+    "link": "https://www.paribucineverse.com/komedi-filmleri/basibozuklar-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~37c162ce-3d55-496a-a4e2-d196ae2581b0",
+    "trailer": "https://cdn.marsgate.com.tr/13390",
+    "genre": "Komedi",
+    "summary": "Serenay, Hayati, Nevra, Vural, Saki ve Halime’den oluşan ve profesyonellikten uzak bir müzik grubu olan Başıbozuklar, Alaçatı’da sahne almak üzere bir yolculuğa çıkar. Ancak grup, yol karıştırmaları sonucu kendilerini sınırın ötesinde, Suriye’de yer alan bir Amerikan füze üssünde bulur. Bu koordinat hatası, ekibi askeri bir kaosun tam ortasına bırakır. Beceriksiz ama hayatta kalma motivasyonu yüksek olan grup üyeleri, içine düştükleri bu yabancı ortamda hem kendi canlarını kurtarmaya çalışır hem de istemeden tetikledikleri küresel ölçekteki bir felaketi engellemek için mücadele eder.",
+    "date": "20260417",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
     "title": "Drama",
     "link": "https://www.paribucineverse.com/romantik-filmleri/drama-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~7b53eece-5d21-4098-83af-6004a841f17d",
@@ -350,16 +360,6 @@
     "kaynak": "Gelecek Film"
   },
   {
-    "title": "Aşk ve Gurur",
-    "date": "20260529",
-    "link": "https://www.paribucineverse.com/romantik-filmleri/ask-ve-gurur-filmi-izle",
-    "bilet_link": null,
-    "trailer": "Fragman bağlantısı yok",
-    "genre": "Romantik",
-    "summary": "1800’lü yıllar İngiltere’sinde geçen filmde, evlilik beklentilerinin gölgesinde yaşayan Bennet ailesinin beş kızı, aşk ile toplumsal normlar arasında sıkışmış bir yaşam sürer. Ailenin en dikkat çekici üyelerinden biri olan Elizabeth Bennet, keskin zekâsı ve bağımsız karakteriyle öne çıkar. İlk karşılaşmalarında gururlu ve mesafeli bulduğu Bay Darcy’ye karşı önyargı geliştirir. Ancak süreç içinde ortaya çıkan yanlış anlaşılmalar ve sınıf farklarının yarattığı gerilim, her iki karakteri de kendi bakış açılarını yeniden değerlendirmeye iter. Elizabeth ile Darcy arasındaki ilişki, zamanla derin ve samimi bir bağa dönüşür.",
-    "kaynak": "Gelecek Film"
-  },
-  {
     "title": "Backrooms",
     "date": "20260529",
     "link": "https://www.paribucineverse.com/korku-filmleri/backrooms-filmi-izle",
@@ -367,16 +367,6 @@
     "trailer": "https://cdn.marsgate.com.tr/13393",
     "genre": "Korku",
     "summary": "İçerisi devasa… ve sonsuza kadar uzanıyor! Film, bir mobilya showroomunun bodrum katında keşfedilen gizemli kapının ardından başlayan karanlık bir yolculuğu merkezine alıyor. Bu kapı, karakterleri sonu görünmeyen, devasa ve yaşayan bir organizma gibi davranan odalar labirentine sürüklüyor.",
-    "kaynak": "Gelecek Film"
-  },
-  {
-    "title": "Şeytan Çıkarma",
-    "date": "20260529",
-    "link": "https://www.paribucineverse.com/korku-filmleri/seytan-cikarma-filmi-izle",
-    "bilet_link": null,
-    "trailer": "https://cdn.marsgate.com.tr/13410",
-    "genre": "Korku",
-    "summary": "Yıllar önce karanlık bir ritüel yüzünden tarikatından kovulan Elise, hayatını mahveden gizemli nöbetlerden kurtulmak için geçmişiyle yüzleşmeye karar verir. Terk edilmiş FLDS kasabasına dönüşü açıklanamayan bir gücün yeniden uyanmasına yol açar. Şifa arayışı kısa sürede, onu ele geçirmek isteyen kötücül bir varlıkla ölümcül bir mücadeleye dönüşür. Elise, hem ruhunu hem de gerçeği korumak zorundadır.",
     "kaynak": "Gelecek Film"
   },
   {
