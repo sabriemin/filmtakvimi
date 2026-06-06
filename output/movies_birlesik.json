@@ -30,22 +30,22 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Aynalar No. 3",
-    "link": "https://www.paribucineverse.com/dram-filmleri/aynalar-no-3-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~f116b18b-07cb-4090-a73c-230265f9e493",
-    "trailer": "https://cdn.marsgate.com.tr/13433",
-    "genre": "Dram",
-    "summary": "Hafta sonu için gittiği kırsalda geçirdiği bir araba kazasından mucize eseri kurtulan Laura, fiziksel olarak yara almamış olsa da derinden sarsılır. Kazaya tanık olan ve ona anne şefkatiyle yaklaşan yerel bir kadının evine kabul edilir. Kadının kocası ve yetişkin oğlu da baştaki mesafelerini zamanla bir kenara bırakınca, dördü yavaş yavaş aileyi andıran bir düzen kurar ve birlikte birkaç mutlu gün geçirir. Ancak geçmişleriyle yüzleşme zamanı geldiğinde, Laura da kendi hayatıyla hesaplaşmak zorunda kalır.",
-    "date": "20260605",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
     "title": "İkimizin Yerine",
     "link": "https://www.paribucineverse.com/romantik-filmleri/ikimizin-yerine-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~8ab36b61-9699-4e82-83f3-cb5091b924ce",
     "trailer": "https://cdn.marsgate.com.tr/13459",
     "genre": "Romantik",
     "summary": "Bir taşra kasabasında, ailesinin dayattığı hayata sıkışıp kalmış genç Çiçek, kasabaya yeni gelen gizemli edebiyat öğretmeni Doğan'a aşık olur. Doğan bu yasak aşka ne kadar dirense de, Çiçek'ten uzak duramaz. Gencecik bir kalbe ne kadar büyük bir aşk sığar? Peki o aşk yaralı bir adamın kalbini iyileştirebilir mi? Doğan ve Çiçek cevapları birbirlerinde ararlar. Oysa bu aşk sadece onların değil, bir ailenin de kaderini sonsuza kadar değiştirecektir.",
+    "date": "20260605",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Aynalar No. 3",
+    "link": "https://www.paribucineverse.com/dram-filmleri/aynalar-no-3-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~f116b18b-07cb-4090-a73c-230265f9e493",
+    "trailer": "https://cdn.marsgate.com.tr/13433",
+    "genre": "Dram",
+    "summary": "Hafta sonu için gittiği kırsalda geçirdiği bir araba kazasından mucize eseri kurtulan Laura, fiziksel olarak yara almamış olsa da derinden sarsılır. Kazaya tanık olan ve ona anne şefkatiyle yaklaşan yerel bir kadının evine kabul edilir. Kadının kocası ve yetişkin oğlu da baştaki mesafelerini zamanla bir kenara bırakınca, dördü yavaş yavaş aileyi andıran bir düzen kurar ve birlikte birkaç mutlu gün geçirir. Ancak geçmişleriyle yüzleşme zamanı geldiğinde, Laura da kendi hayatıyla hesaplaşmak zorunda kalır.",
     "date": "20260605",
     "kaynak": "Vizyondaki Film"
   },
@@ -220,6 +220,16 @@
     "kaynak": "Gelecek Film"
   },
   {
+    "title": "Açlık Oyunları: Alaycı Kuş Bölüm 1",
+    "date": "20260612",
+    "link": "https://www.paribucineverse.com/aksiyon-filmleri/aclik-oyunlari-alayci-kus-bolum-1-filmi-izle",
+    "bilet_link": null,
+    "trailer": "Fragman bağlantısı yok",
+    "genre": "Aksiyon",
+    "summary": "Açlık Oyunları: Alaycı Kuş – Bölüm 1'de Katniss Everdeen oyunları kelimenin tam anlamıyla yıktıktan sonra kendini 13. Bölgede bulur. Başkan Coin'in liderliğinde ve güvendiği arkadaşlarının yardımıyla Katniss, ulusu ve Peeta'yı kurtarmak adına savaşmaya devam eder.",
+    "kaynak": "Gelecek Film"
+  },
+  {
     "title": "Amansız",
     "date": "20260612",
     "link": "https://www.paribucineverse.com/aksiyon-filmleri/amansiz-filmi-izle",
@@ -227,16 +237,6 @@
     "trailer": "https://cdn.marsgate.com.tr/13447",
     "genre": "Aksiyon",
     "summary": "Eski bir özel kuvvet askeri, kayıp kızını kurtarmak için kuzey Myanmar'a sızar ve dolandırıcılık çeteleri ile organ kaçakçılarına karşı savaşarak suç patronuyla son bir hesaplaşmaya girer.",
-    "kaynak": "Gelecek Film"
-  },
-  {
-    "title": "Derin Kabus",
-    "date": "20260612",
-    "link": "https://www.paribucineverse.com/korku-filmleri/derin-kabus-filmi-izle",
-    "bilet_link": null,
-    "trailer": "https://cdn.marsgate.com.tr/13456",
-    "genre": "Korku",
-    "summary": "Los Angeles’tan Şanghay’a giden bir uçak, Pasifik Okyanusu’nda korkunç bir acil iniş yapmak zorunda kalır. Hayatta kalan yolcular, mercan resifine saplanan enkazın etrafını saran ölümcül köpekbalıklarıyla karşı karşıya kalır ve okyanusun ortasında hayatta kalmak için büyük bir mücadele başlar.",
     "kaynak": "Gelecek Film"
   },
   {
@@ -267,6 +267,16 @@
     "trailer": "https://cdn.marsgate.com.tr/13407",
     "genre": "Animasyon",
     "summary": "Süperstar Prens Merliflor’un hayranı olan Külkedisi, prensin müstakbel prensesiyle tanışması için düzenlenen baloya katılmayı heyecanla beklemektedir. Fakat kötü kalpli üvey annesinin verdiği işleri yapması gerektiği için evde mahsur kalır. Bu esnada Külkedisi’nin arkadaşı, tatlı ve mütevazı bir oduncu olan Severin, “ebedi ağaç” tarafından sevimli bir sincaba dönüştürülmüştür. Severin, sihirli fındıkların yardımıyla ev işlerini halleder ve Külkedisi’ni baloya gönderir. Külkedisi ve prens, baloda harika vakit geçirir ve gece, evlenme teklifiyle sonuçlanır.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Mavi Balıkçıl",
+    "date": "20260612",
+    "link": "https://www.paribucineverse.com/dram-filmleri/mavi-balikcil-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn.marsgate.com.tr/13464",
+    "genre": "Dram",
+    "summary": "Altı kişilik bir aile, Vancouver Adası’ndaki yeni evlerine yerleşirken, aile içindeki dinamikler en küçük çocuğun gözünden yavaş yavaş ortaya çıkar.",
     "kaynak": "Gelecek Film"
   },
   {
