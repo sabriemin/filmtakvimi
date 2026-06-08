@@ -220,16 +220,6 @@
     "kaynak": "Gelecek Film"
   },
   {
-    "title": "Açlık Oyunları: Alaycı Kuş Bölüm 1",
-    "date": "20260612",
-    "link": "https://www.paribucineverse.com/aksiyon-filmleri/aclik-oyunlari-alayci-kus-bolum-1-filmi-izle",
-    "bilet_link": null,
-    "trailer": "Fragman bağlantısı yok",
-    "genre": "Aksiyon",
-    "summary": "Açlık Oyunları: Alaycı Kuş – Bölüm 1'de Katniss Everdeen oyunları kelimenin tam anlamıyla yıktıktan sonra kendini 13. Bölgede bulur. Başkan Coin'in liderliğinde ve güvendiği arkadaşlarının yardımıyla Katniss, ulusu ve Peeta'yı kurtarmak adına savaşmaya devam eder.",
-    "kaynak": "Gelecek Film"
-  },
-  {
     "title": "Amansız",
     "date": "20260612",
     "link": "https://www.paribucineverse.com/aksiyon-filmleri/amansiz-filmi-izle",
@@ -264,7 +254,7 @@
     "date": "20260612",
     "link": "https://www.paribucineverse.com/animasyon-filmleri/kulkedisi-uc-dilek-filmi-izle",
     "bilet_link": null,
-    "trailer": "https://cdn.marsgate.com.tr/13407",
+    "trailer": "https://cdn.marsgate.com.tr/13465",
     "genre": "Animasyon",
     "summary": "Süperstar Prens Merliflor’un hayranı olan Külkedisi, prensin müstakbel prensesiyle tanışması için düzenlenen baloya katılmayı heyecanla beklemektedir. Fakat kötü kalpli üvey annesinin verdiği işleri yapması gerektiği için evde mahsur kalır. Bu esnada Külkedisi’nin arkadaşı, tatlı ve mütevazı bir oduncu olan Severin, “ebedi ağaç” tarafından sevimli bir sincaba dönüştürülmüştür. Severin, sihirli fındıkların yardımıyla ev işlerini halleder ve Külkedisi’ni baloya gönderir. Külkedisi ve prens, baloda harika vakit geçirir ve gece, evlenme teklifiyle sonuçlanır.",
     "kaynak": "Gelecek Film"
@@ -287,6 +277,16 @@
     "trailer": "https://cdn.marsgate.com.tr/13455",
     "genre": "Korku",
     "summary": "Evladını kaybetmenin yakıcı acısını taşıyan, ruhu parçalanmış bir annenin dramının, yastan çıkarak tüm aileyi kaosa sürükleyecek bir lanete dönüşmesini anlatıyor.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Cinhar",
+    "date": "20260619",
+    "link": "https://www.paribucineverse.com/korku-filmleri/cinhar-filmi-izle",
+    "bilet_link": null,
+    "trailer": "Fragman bağlantısı yok",
+    "genre": "Korku",
+    "summary": "Sislerin hiç dağılmadığı, Sakarya’nın bir dağ köyünde yaşayan genç çift Narin ve Yusuf, bebeklerini kaybettiklerinde hayatları sonsuza dek değişir. Kardeşi Narin’in acısını paylaşmak için şehirden yanına gelen Çiçek, beraberinde sıradan bir teselli değil, karanlıkla mühürlenmiş bir muska getirir. Çocukluğundan beri büyüler ve ruhani varlıklarla uğraşan bu genç kız ruhunda annelerinden kalan bir sır taşımaktadır. Acının yerini giderek derinleşen bir dehşet alırken, açılan kapı artık kapanmaz. Ve o kapının ardında bekleyen şey, geri dönülmez bir hesaplaşmadır.",
     "kaynak": "Gelecek Film"
   },
   {
@@ -377,6 +377,26 @@
     "trailer": "https://cdn.marsgate.com.tr/13435",
     "genre": "Macera",
     "summary": "Aynı isimli sevilen animasyonun canlı çekim yeniden uyarlaması, genç Moana'nın Okyanus’un çağrısına kulak vermesini ve kötü şöhretli yarı tanrı Maui ile birlikte Motunui adasının resiflerinin ötesine yelken açmasını anlatıyor.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Moana",
+    "date": "20260710",
+    "link": "https://www.paribucineverse.com/macera-filmleri/moana-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn.marsgate.com.tr/13435",
+    "genre": "Macera",
+    "summary": "Aynı isimli sevilen animasyonun canlı çekim yeniden uyarlaması, genç Moana'nın Okyanus’un çağrısına kulak vermesini ve kötü şöhretli yarı tanrı Maui ile birlikte Motunui adasının resiflerinin ötesine yelken açmasını anlatıyor.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "The Odyssey",
+    "date": "20260717",
+    "link": "https://www.paribucineverse.com/aksiyon-filmleri/the-odyssey-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn.marsgate.com.tr/13443",
+    "genre": "Aksiyon",
+    "summary": "Homeros'un ünlü destanından uyarlanan film, İthaka kralı Odisseus'un Truva Savaşı sonrası doğduğu topraklara dönüş yolunda yaşadığı maceraları konu ediniyor.",
     "kaynak": "Gelecek Film"
   },
   {
