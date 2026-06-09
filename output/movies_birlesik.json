@@ -100,22 +100,22 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Süper 1 Takım",
-    "link": "https://www.paribucineverse.com/animasyon-filmleri/super-1-takim-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~0ddb5cc0-82fd-4fbc-a1ab-b46d7c8b01c3",
-    "trailer": "https://cdn.marsgate.com.tr/13426",
-    "genre": "Animasyon",
-    "summary": "Varol Abi, icat ettiği çizgi film makinasıyla küçük bir kızın hayalindeki hikâyeyi gerçeğe dönüştürür. Bu hikâyede Birol, yaz tatili için bir çiftliğe gönderilir ve başta köy hayatını sıkıcı bulur. Ancak kısa sürede Ayı Dede, Birce ve Yapay Zekai’nin gizli süper kahramanlar olduğunu keşfeder. Gerçeğin ortaya çıkmasıyla Birol da ekibe katılır ve tatili beklenmedik bir maceraya dönüşür. İbret liderliğindeki kötü karakterler dünyayı tehdit ederken, Süper 1 takımı onları durdurmak için mücadele eder. Birol, bu süreçte cesaret ve dostluğun değerini öğrenir.",
-    "date": "20260522",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
     "title": "Oflu Hoca 6: Define",
     "link": "https://www.paribucineverse.com/komedi-filmleri/oflu-hoca-6-define-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~f69c87f7-e0e3-46e2-8389-227d47b5d940",
     "trailer": "https://cdn.marsgate.com.tr/13429",
     "genre": "Komedi",
     "summary": "Oflu Hoca, bu kez kapanmak üzere olan öğrenci yurdunu kurtarmak için çaresiz bir çözüm ararken, İdris’in eline geçen efsanevi Pontus hazinesinin haritasıyla kendini absürt bir define avının içinde bulur.",
+    "date": "20260522",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Süper 1 Takım",
+    "link": "https://www.paribucineverse.com/animasyon-filmleri/super-1-takim-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~0ddb5cc0-82fd-4fbc-a1ab-b46d7c8b01c3",
+    "trailer": "https://cdn.marsgate.com.tr/13426",
+    "genre": "Animasyon",
+    "summary": "Varol Abi, icat ettiği çizgi film makinasıyla küçük bir kızın hayalindeki hikâyeyi gerçeğe dönüştürür. Bu hikâyede Birol, yaz tatili için bir çiftliğe gönderilir ve başta köy hayatını sıkıcı bulur. Ancak kısa sürede Ayı Dede, Birce ve Yapay Zekai’nin gizli süper kahramanlar olduğunu keşfeder. Gerçeğin ortaya çıkmasıyla Birol da ekibe katılır ve tatili beklenmedik bir maceraya dönüşür. İbret liderliğindeki kötü karakterler dünyayı tehdit ederken, Süper 1 takımı onları durdurmak için mücadele eder. Birol, bu süreçte cesaret ve dostluğun değerini öğrenir.",
     "date": "20260522",
     "kaynak": "Vizyondaki Film"
   },
@@ -230,6 +230,16 @@
     "kaynak": "Gelecek Film"
   },
   {
+    "title": "Düşler Ülkesi",
+    "date": "20260612",
+    "link": "https://www.paribucineverse.com/animasyon-filmleri/dusler-ulkesi-filmi-izle",
+    "bilet_link": null,
+    "trailer": "Fragman bağlantısı yok",
+    "genre": "Dram",
+    "summary": "Margot Robbie (Suicide Squad, The Wolf of Wall Street, I, Tonya) ve Finn Cole (Hızlı ve Öfkeli 9, Peaky Blinders), duygu yüklü bir Bonnie and Clyde hikayesiyle karşımızda! 1930’ların Büyük Buhran dönemi Teksas’ında annesi ve üvey babasıyla bir çiftlik evinde yaşayan genç Eugene Evans, günlerini küçük suçlar işleyerek geçirmektedir. Kasabada gerçekleşen bir banka soygunu sonrası kaçan faillerden Allison Wells, Eugene’in oturduğu çiftliğin ambarına saklanır. Güzel kadının etkisinde kalan Eugene, Allison’ın saklanmasına yardım etmekten kendini alamaz. Zamanla birbirine aşık olan çift Meksika’ya kaçmaya karar verince, polisle aralarında amansız bir kovalamaca başlar. İlk filmi “As You Are” ile övgü alan Miles Joris-Peyrafitte’in yönettiği “DREAMLAND / DÜŞLER ÜLKESİ”nde Margot Robbie ve Finn Cole’a Travis Fimmel, Garrett Hedlund, Lola Kirke ve Kerry Condon'dan oluşan müthiş bir oyuncu kadrosu eşlik ediyor.",
+    "kaynak": "Gelecek Film"
+  },
+  {
     "title": "Gizemli Ağaç",
     "date": "20260612",
     "link": "https://www.paribucineverse.com/aile-filmleri/gizemli-agac-filmi-izle",
@@ -284,7 +294,7 @@
     "date": "20260619",
     "link": "https://www.paribucineverse.com/korku-filmleri/cinhar-filmi-izle",
     "bilet_link": null,
-    "trailer": "Fragman bağlantısı yok",
+    "trailer": "https://cdn.marsgate.com.tr/13466",
     "genre": "Korku",
     "summary": "Sislerin hiç dağılmadığı, Sakarya’nın bir dağ köyünde yaşayan genç çift Narin ve Yusuf, bebeklerini kaybettiklerinde hayatları sonsuza dek değişir. Kardeşi Narin’in acısını paylaşmak için şehirden yanına gelen Çiçek, beraberinde sıradan bir teselli değil, karanlıkla mühürlenmiş bir muska getirir. Çocukluğundan beri büyüler ve ruhani varlıklarla uğraşan bu genç kız ruhunda annelerinden kalan bir sır taşımaktadır. Acının yerini giderek derinleşen bir dehşet alırken, açılan kapı artık kapanmaz. Ve o kapının ardında bekleyen şey, geri dönülmez bir hesaplaşmadır.",
     "kaynak": "Gelecek Film"
@@ -327,6 +337,16 @@
     "trailer": "https://cdn.marsgate.com.tr/13452",
     "genre": "Macera",
     "summary": "Robin Hood, suç ve cinayetle dolu bir hayatın ardından geçmişiyle boğuşur. Artık o maceradan maceraya koşan bir halk kahramanı değil, kendisini ağır yaralanmış halde bulan ve ona kurtuluş şansı sunan gizemli bir kadının ellerinde hayatını gözden geçiren, savaşta yıpranmış yalnız bir adamdır.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Derin Kabus",
+    "date": "20260626",
+    "link": "https://www.paribucineverse.com/korku-filmleri/derin-kabus-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn.marsgate.com.tr/13468",
+    "genre": "Korku",
+    "summary": "Los Angeles’tan Şanghay’a giden bir uçak, Pasifik Okyanusu’nda korkunç bir acil iniş yapmak zorunda kalır. Hayatta kalan yolcular, mercan resifine saplanan enkazın etrafını saran ölümcül köpekbalıklarıyla karşı karşıya kalır ve okyanusun ortasında hayatta kalmak için büyük bir mücadele başlar.",
     "kaynak": "Gelecek Film"
   },
   {
@@ -377,26 +397,6 @@
     "trailer": "https://cdn.marsgate.com.tr/13435",
     "genre": "Macera",
     "summary": "Aynı isimli sevilen animasyonun canlı çekim yeniden uyarlaması, genç Moana'nın Okyanus’un çağrısına kulak vermesini ve kötü şöhretli yarı tanrı Maui ile birlikte Motunui adasının resiflerinin ötesine yelken açmasını anlatıyor.",
-    "kaynak": "Gelecek Film"
-  },
-  {
-    "title": "Moana",
-    "date": "20260710",
-    "link": "https://www.paribucineverse.com/macera-filmleri/moana-filmi-izle",
-    "bilet_link": null,
-    "trailer": "https://cdn.marsgate.com.tr/13435",
-    "genre": "Macera",
-    "summary": "Aynı isimli sevilen animasyonun canlı çekim yeniden uyarlaması, genç Moana'nın Okyanus’un çağrısına kulak vermesini ve kötü şöhretli yarı tanrı Maui ile birlikte Motunui adasının resiflerinin ötesine yelken açmasını anlatıyor.",
-    "kaynak": "Gelecek Film"
-  },
-  {
-    "title": "The Odyssey",
-    "date": "20260717",
-    "link": "https://www.paribucineverse.com/aksiyon-filmleri/the-odyssey-filmi-izle",
-    "bilet_link": null,
-    "trailer": "https://cdn.marsgate.com.tr/13443",
-    "genre": "Aksiyon",
-    "summary": "Homeros'un ünlü destanından uyarlanan film, İthaka kralı Odisseus'un Truva Savaşı sonrası doğduğu topraklara dönüş yolunda yaşadığı maceraları konu ediniyor.",
     "kaynak": "Gelecek Film"
   },
   {
