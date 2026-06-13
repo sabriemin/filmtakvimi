@@ -20,22 +20,22 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Gizemli Ağaç",
-    "link": "https://www.paribucineverse.com/aile-filmleri/gizemli-agac-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~4bc81347-4ea3-43fc-bc20-6408ce3a40ab",
-    "trailer": "https://cdn.marsgate.com.tr/13461",
-    "genre": "Aile",
-    "summary": "Modern bir aile kırsal bölgeye taşınır ve çocuklar burada tuhaf sakinleri olan büyülü bir ağaç keşfederler. Fantastik diyarlara yolculuk ederler ve maceralar sayesinde aile bağları yeniden güçlenir.",
-    "date": "20260612",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
     "title": "Mavi Balıkçıl",
     "link": "https://www.paribucineverse.com/dram-filmleri/mavi-balikcil-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~ad7e5f3d-6809-4d1d-b5e5-5e2cb33b54d1",
     "trailer": "https://cdn.marsgate.com.tr/13464",
     "genre": "Dram",
     "summary": "Altı kişilik bir aile, Vancouver Adası’ndaki yeni evlerine yerleşirken, aile içindeki dinamikler en küçük çocuğun gözünden yavaş yavaş ortaya çıkar.",
+    "date": "20260612",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Gizemli Ağaç",
+    "link": "https://www.paribucineverse.com/aile-filmleri/gizemli-agac-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~4bc81347-4ea3-43fc-bc20-6408ce3a40ab",
+    "trailer": "https://cdn.marsgate.com.tr/13461",
+    "genre": "Aile",
+    "summary": "Modern bir aile kırsal bölgeye taşınır ve çocuklar burada tuhaf sakinleri olan büyülü bir ağaç keşfederler. Fantastik diyarlara yolculuk ederler ve maceralar sayesinde aile bağları yeniden güçlenir.",
     "date": "20260612",
     "kaynak": "Vizyondaki Film"
   },
@@ -250,6 +250,16 @@
     "kaynak": "Vizyondaki Film"
   },
   {
+    "title": "Oyuncak Hikayesi 5",
+    "date": "20260619",
+    "link": "https://www.paribucineverse.com/animasyon-filmleri/oyuncak-hikayesi-5-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~b7962d5c-0488-4a04-b714-eafb76372b97",
+    "trailer": "https://cdn.marsgate.com.tr/13431",
+    "genre": "Animasyon",
+    "summary": "Buzz Lightyear, Cowboy Woody ve bir zamanlar Andy'ye ait olan ve artık küçük arkadaşı Bonnie'ye devredilen diğer tüm oyuncaklar geri döndü ve yeni bir macera başlıyor.",
+    "kaynak": "Gelecek Film"
+  },
+  {
     "title": "Cinhar",
     "date": "20260619",
     "link": "https://www.paribucineverse.com/korku-filmleri/cinhar-filmi-izle",
@@ -277,16 +287,6 @@
     "trailer": "https://cdn.marsgate.com.tr/13453",
     "genre": "Suç",
     "summary": "Küçük bir kasabada geçici olarak şeriflik yapan bir adamın, yerel bir banka soygununun ardından kasabadaki karanlık gizemleri gün yüzüne çıkarmasını konu alıyor.",
-    "kaynak": "Gelecek Film"
-  },
-  {
-    "title": "Oyuncak Hikayesi 5",
-    "date": "20260619",
-    "link": "https://www.paribucineverse.com/animasyon-filmleri/oyuncak-hikayesi-5-filmi-izle",
-    "bilet_link": null,
-    "trailer": "https://cdn.marsgate.com.tr/13431",
-    "genre": "Animasyon",
-    "summary": "Buzz Lightyear, Cowboy Woody ve bir zamanlar Andy'ye ait olan ve artık küçük arkadaşı Bonnie'ye devredilen diğer tüm oyuncaklar geri döndü ve yeni bir macera başlıyor.",
     "kaynak": "Gelecek Film"
   },
   {
