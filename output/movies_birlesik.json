@@ -20,16 +20,6 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Mavi Balıkçıl",
-    "link": "https://www.paribucineverse.com/dram-filmleri/mavi-balikcil-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~ad7e5f3d-6809-4d1d-b5e5-5e2cb33b54d1",
-    "trailer": "https://cdn.marsgate.com.tr/13464",
-    "genre": "Dram",
-    "summary": "Altı kişilik bir aile, Vancouver Adası’ndaki yeni evlerine yerleşirken, aile içindeki dinamikler en küçük çocuğun gözünden yavaş yavaş ortaya çıkar.",
-    "date": "20260612",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
     "title": "Gizemli Ağaç",
     "link": "https://www.paribucineverse.com/aile-filmleri/gizemli-agac-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~4bc81347-4ea3-43fc-bc20-6408ce3a40ab",
@@ -40,12 +30,12 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Kıyma: Hain Eşer Kendi Düşer",
-    "link": "https://www.paribucineverse.com/komedi-filmleri/kiyma-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~2db1c3d6-5554-4db8-b7b0-b9b077a52d75",
-    "trailer": "https://cdn.marsgate.com.tr/13458",
-    "genre": "Komedi",
-    "summary": "Mesut, yıllar sonra hapisten çıkıp babasının işlettiği otele döner. Babası Mehmet, oteli ona emanet etmek isterken Mesut hem oteli dört yıldızlı yapmak hem de yeni bir hayat kurmak için çabalar. Ancak otele misafir olarak gelen servet avcısı Gamze’ye aşık olması, Tufan ve Serdar’la arasındaki güç dengesini bozar. Eğitimler, denetimler ve sahnelenecek Hamlet oyunu için hazırlıklar devam ederken otelde kıskançlık, ihanet ve aile hesaplaşmaları büyür.",
+    "title": "Mavi Balıkçıl",
+    "link": "https://www.paribucineverse.com/dram-filmleri/mavi-balikcil-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~ad7e5f3d-6809-4d1d-b5e5-5e2cb33b54d1",
+    "trailer": "https://cdn.marsgate.com.tr/13464",
+    "genre": "Dram",
+    "summary": "Altı kişilik bir aile, Vancouver Adası’ndaki yeni evlerine yerleşirken, aile içindeki dinamikler en küçük çocuğun gözünden yavaş yavaş ortaya çıkar.",
     "date": "20260612",
     "kaynak": "Vizyondaki Film"
   },
@@ -56,6 +46,16 @@
     "trailer": "https://cdn.marsgate.com.tr/13467",
     "genre": "Animasyon",
     "summary": "Düşler Ülkesi, şehrini yaklaşan yıkımdan kurtarmaya karar veren Arda adlı bir çocuğun hikâyesidir. Ülkesini yıkımdan kurtarmak için ihtiyacı olan küreyi almak üzere macera dolu bir yolcuğuna çıkan Arda’ya, bu yolculukta komik ve sevimli arkadaşı Paşa ile hikâyenin zeki ve akıllı kızı Tamara eşlik eder. Bakalım Arda ve arkadaşları Düşler Ülkesi’ni yıkımdan kurtarabilecekler mi?",
+    "date": "20260612",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Kıyma: Hain Eşer Kendi Düşer",
+    "link": "https://www.paribucineverse.com/komedi-filmleri/kiyma-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~2db1c3d6-5554-4db8-b7b0-b9b077a52d75",
+    "trailer": "https://cdn.marsgate.com.tr/13458",
+    "genre": "Komedi",
+    "summary": "Mesut, yıllar sonra hapisten çıkıp babasının işlettiği otele döner. Babası Mehmet, oteli ona emanet etmek isterken Mesut hem oteli dört yıldızlı yapmak hem de yeni bir hayat kurmak için çabalar. Ancak otele misafir olarak gelen servet avcısı Gamze’ye aşık olması, Tufan ve Serdar’la arasındaki güç dengesini bozar. Eğitimler, denetimler ve sahnelenecek Hamlet oyunu için hazırlıklar devam ederken otelde kıskançlık, ihanet ve aile hesaplaşmaları büyür.",
     "date": "20260612",
     "kaynak": "Vizyondaki Film"
   },
@@ -270,6 +270,16 @@
     "kaynak": "Gelecek Film"
   },
   {
+    "title": "Dakhul",
+    "date": "20260619",
+    "link": "https://www.paribucineverse.com/korku-filmleri/dakhul-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn.marsgate.com.tr/13476",
+    "genre": "Korku",
+    "summary": "Film, komşusunun yaptığı kıskançlık büyüsüne maruz kalan Aslı'nın, bu lanetten kurtulmak için bir büyücüye başvurması sonrası başından geçenleri anlatıyor.",
+    "kaynak": "Gelecek Film"
+  },
+  {
     "title": "Koloni",
     "date": "20260619",
     "link": "https://www.paribucineverse.com/bilim-kurgu-filmleri/koloni-filmi-izle",
@@ -297,6 +307,16 @@
     "trailer": "https://cdn.marsgate.com.tr/13452",
     "genre": "Macera",
     "summary": "Robin Hood, suç ve cinayetle dolu bir hayatın ardından geçmişiyle boğuşur. Artık o maceradan maceraya koşan bir halk kahramanı değil, kendisini ağır yaralanmış halde bulan ve ona kurtuluş şansı sunan gizemli bir kadının ellerinde hayatını gözden geçiren, savaşta yıpranmış yalnız bir adamdır.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Romantik Kahraman",
+    "date": "20260619",
+    "link": "https://www.paribucineverse.com/aksiyon-filmleri/romantik-kahraman-filmi-izle",
+    "bilet_link": null,
+    "trailer": "Fragman bağlantısı yok",
+    "genre": "Aksiyon",
+    "summary": "Geçmişin hayaletleri ve merhum eşinin anılarıyla yaşayan eski Amerikan askeri Theo, rutin hayatındaki tek insani etkileşimi her perşembe günü bir hayat kadını olan Olga ile gerçekleştirmektedir. Olga'nın cinayete kurban gitmesiyle birlikte Theo, kaybettiği bağın bedelini ödetmek amacıyla kapsamlı bir intikam arayışına girer. Theo’nun arkasında bıraktığı şiddet dolu izleri, alkol sorunlarıyla boğuşan polis müfettişi Iborra ile soğukkanlı kiralık katil Herodes takip eder. Yıllar içinde şekillenen ve alışkanlığın ötesinde duygusal bir temele dayanan bu trajik süreç; karakterlerin yollarının kesişmesiyle birlikte, geçmişin hesaplarının kapandığı bir hesaplaşmaya dönüşür.",
     "kaynak": "Gelecek Film"
   },
   {
