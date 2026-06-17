@@ -30,6 +30,16 @@
     "kaynak": "Vizyondaki Film"
   },
   {
+    "title": "Kıyma: Hain Eşer Kendi Düşer",
+    "link": "https://www.paribucineverse.com/komedi-filmleri/kiyma-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~2db1c3d6-5554-4db8-b7b0-b9b077a52d75",
+    "trailer": "https://cdn.marsgate.com.tr/13458",
+    "genre": "Komedi",
+    "summary": "Mesut, yıllar sonra hapisten çıkıp babasının işlettiği otele döner. Babası Mehmet, oteli ona emanet etmek isterken Mesut hem oteli dört yıldızlı yapmak hem de yeni bir hayat kurmak için çabalar. Ancak otele misafir olarak gelen servet avcısı Gamze’ye aşık olması, Tufan ve Serdar’la arasındaki güç dengesini bozar. Eğitimler, denetimler ve sahnelenecek Hamlet oyunu için hazırlıklar devam ederken otelde kıskançlık, ihanet ve aile hesaplaşmaları büyür.",
+    "date": "20260612",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
     "title": "Mavi Balıkçıl",
     "link": "https://www.paribucineverse.com/dram-filmleri/mavi-balikcil-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~ad7e5f3d-6809-4d1d-b5e5-5e2cb33b54d1",
@@ -46,16 +56,6 @@
     "trailer": "https://cdn.marsgate.com.tr/13467",
     "genre": "Animasyon",
     "summary": "Düşler Ülkesi, şehrini yaklaşan yıkımdan kurtarmaya karar veren Arda adlı bir çocuğun hikâyesidir. Ülkesini yıkımdan kurtarmak için ihtiyacı olan küreyi almak üzere macera dolu bir yolcuğuna çıkan Arda’ya, bu yolculukta komik ve sevimli arkadaşı Paşa ile hikâyenin zeki ve akıllı kızı Tamara eşlik eder. Bakalım Arda ve arkadaşları Düşler Ülkesi’ni yıkımdan kurtarabilecekler mi?",
-    "date": "20260612",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
-    "title": "Kıyma: Hain Eşer Kendi Düşer",
-    "link": "https://www.paribucineverse.com/komedi-filmleri/kiyma-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~2db1c3d6-5554-4db8-b7b0-b9b077a52d75",
-    "trailer": "https://cdn.marsgate.com.tr/13458",
-    "genre": "Komedi",
-    "summary": "Mesut, yıllar sonra hapisten çıkıp babasının işlettiği otele döner. Babası Mehmet, oteli ona emanet etmek isterken Mesut hem oteli dört yıldızlı yapmak hem de yeni bir hayat kurmak için çabalar. Ancak otele misafir olarak gelen servet avcısı Gamze’ye aşık olması, Tufan ve Serdar’la arasındaki güç dengesini bozar. Eğitimler, denetimler ve sahnelenecek Hamlet oyunu için hazırlıklar devam ederken otelde kıskançlık, ihanet ve aile hesaplaşmaları büyür.",
     "date": "20260612",
     "kaynak": "Vizyondaki Film"
   },
@@ -223,7 +223,7 @@
     "title": "Geçmişin Kokusu",
     "link": "https://www.paribucineverse.com/dram-filmleri/gecmisin-kokusu-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~68328496-0341-4fb0-9ce4-d8110cc72a83",
-    "trailer": "Fragman bağlantısı yok",
+    "trailer": "https://cdn.marsgate.com.tr/13402",
     "genre": "Dram",
     "summary": "Yugoslavya’nın dağılma sürecinde Üsküp’te, 500 yıllık evinde yaşananlara tanıklık eden Salih, mahallesinde giderek artan değişime ve bireyselleşmeye karşı elinden geleni yapmaktadır. Ancak aynı mahallede birlikte büyüdüğü çocukluk arkadaşı Elina’nın, bir sivil toplum kuruluşunun temsilcisi olarak şehre geri dönmesiyle dengeler altüst olur. Artan huzursuzluk, komşuların birbirine düştüğü karanlık bir dönemin kapısını aralarken, Salih tüm bu olup bitenlere seyirci kalamayınca kendisini hem çocukluk aşkıyla hem de onun arkasındaki güçlerle büyük bir mücadelenin içinde bulur.",
     "date": "20260424",
@@ -267,6 +267,16 @@
     "trailer": "https://cdn.marsgate.com.tr/13431",
     "genre": "Animasyon",
     "summary": "Buzz Lightyear, Cowboy Woody ve bir zamanlar Andy'ye ait olan ve artık küçük arkadaşı Bonnie'ye devredilen diğer tüm oyuncaklar geri döndü ve yeni bir macera başlıyor.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "The Odyssey",
+    "date": "20260717",
+    "link": "https://www.paribucineverse.com/aksiyon-filmleri/the-odyssey-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~3f8609ac-3624-40cc-b715-2aab5ad4f799",
+    "trailer": "https://cdn.marsgate.com.tr/13443",
+    "genre": "Aksiyon",
+    "summary": "Homeros'un ünlü destanından uyarlanan film, İthaka kralı Odisseus'un Truva Savaşı sonrası doğduğu topraklara dönüş yolunda yaşadığı maceraları konu ediniyor.",
     "kaynak": "Gelecek Film"
   },
   {
@@ -354,7 +364,7 @@
     "date": "20260626",
     "link": "https://www.paribucineverse.com/aile-filmleri/sihirli-hayvanlar-okulu-filmi-izle",
     "bilet_link": null,
-    "trailer": "Peren",
+    "trailer": "https://cdn.marsgate.com.tr/13478",
     "genre": "Aile",
     "summary": "Miriam, birkaç aylığına en yakın arkadaşı Ida'nın yanına taşınır ve Winterstein Okulu'nda okumaya başlar. Ancak Miriam'ın bilmediği çok önemli bir sır vardır: Bu okulda konuşabilen sihirli hayvanlar yaşamaktadır! İlk gününde Fitzgeraldo adlı sevimli bir sihirli hayvanla eşleşen Miriam, kendini büyülü bir maceranın içinde bulur. Ancak okul kapanma tehlikesiyle karşı karşıyadır ve onu kurtarmanın tek yolu büyük okul yarışmasını kazanmaktır. Üstelik Miriam'ın eski okulu da yarışmadadır. Acaba Miriam hangi tarafı seçecek ve Winterstein Okulu kurtulabilecek mi?",
     "kaynak": "Gelecek Film"
@@ -407,16 +417,6 @@
     "trailer": "https://cdn.marsgate.com.tr/13435",
     "genre": "Macera",
     "summary": "Aynı isimli sevilen animasyonun canlı çekim yeniden uyarlaması, genç Moana'nın Okyanus’un çağrısına kulak vermesini ve kötü şöhretli yarı tanrı Maui ile birlikte Motunui adasının resiflerinin ötesine yelken açmasını anlatıyor.",
-    "kaynak": "Gelecek Film"
-  },
-  {
-    "title": "The Odyssey",
-    "date": "20260717",
-    "link": "https://www.paribucineverse.com/aksiyon-filmleri/the-odyssey-filmi-izle",
-    "bilet_link": null,
-    "trailer": "https://cdn.marsgate.com.tr/13443",
-    "genre": "Aksiyon",
-    "summary": "Homeros'un ünlü destanından uyarlanan film, İthaka kralı Odisseus'un Truva Savaşı sonrası doğduğu topraklara dönüş yolunda yaşadığı maceraları konu ediniyor.",
     "kaynak": "Gelecek Film"
   },
   {
