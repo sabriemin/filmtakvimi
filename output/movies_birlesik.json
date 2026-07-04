@@ -10,26 +10,6 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Dalga",
-    "link": "https://www.paribucineverse.com/muzikal-filmleri/dalga-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~64fc823e-ad02-4bda-9aeb-5008ca57bad6",
-    "trailer": "https://cdn.marsgate.com.tr/13490",
-    "genre": "Müzikal",
-    "summary": "Julia, kampüste yıllardır süregelen taciz ve şiddet olaylarına karşı yükselen feminist harekete katılır. Kendi geçmişindeki karmaşık ve rahatsız edici bir deneyimin izleriyle boğuşurken, giderek büyüyen kolektif bir isyanın tam ortasında kalır.",
-    "date": "20260703",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
-    "title": "Örümcek-Adam: Eve Dönüş Yok",
-    "link": "https://www.paribucineverse.com/aksiyon-filmleri/orumcek-adam-eve-donus-yok-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~37ab37e7-704b-41ea-b520-4472f165e36e",
-    "trailer": "https://cdn.marsgate.com.tr/11760",
-    "genre": "Aksiyon",
-    "summary": "Spider-Man: No Way Home, kimliği açığa çıkan Örümcek-Adam'ın, bu konuda Doctor Strange'den yardım istemesiyle gelişen çetrefilli olayları konu ediniyor. Örümcek-Adam’ın sinematik tarihinde ilk kez, mahallemizin sevimli kahramanı maskesiz ve normal hayatı ile Süper Kahraman olmanın yüksek risklerini birbirinden ayıramayacak durumda. Doktor Strange’den kendisine yardım etmesini istediğinde bu riskler daha da tehlikeli bir hal alır ve onu gerçekten Örümcek-Adam olmanın ne anlama geldiğini keşfetmeye zorlar.",
-    "date": "20260703",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
     "title": "Uyurgezer",
     "link": "https://www.paribucineverse.com/korku-filmleri/uyurgezer-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~3dc9bdd5-0bf6-4e17-bad6-27b3f09c9bd9",
@@ -46,6 +26,26 @@
     "trailer": "https://cdn.marsgate.com.tr/13488",
     "genre": "Dram",
     "summary": "Londra, 1910. Toplumun kadınlar için çizdiği dar kalıplara meydan okuyan Katharine Hilbery, ailesinin uygun gördüğü evlilik planlarını reddederek gözünü yıldızlara çevirir. Astronomi tutkusu uğruna mücadele ederken, süfrajet hareketinin yükselen sesleri ve Cambridge hayali ona yeni bir dünyanın kapılarını aralar. Ancak hayatı, annesinin biyografi çalışmasına yardım eden idealist editör Ralph Denham ile tanışmasıyla bambaşka bir yöne evrilir.",
+    "date": "20260703",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Dalga",
+    "link": "https://www.paribucineverse.com/muzikal-filmleri/dalga-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~64fc823e-ad02-4bda-9aeb-5008ca57bad6",
+    "trailer": "https://cdn.marsgate.com.tr/13490",
+    "genre": "Müzikal",
+    "summary": "Julia, kampüste yıllardır süregelen taciz ve şiddet olaylarına karşı yükselen feminist harekete katılır. Kendi geçmişindeki karmaşık ve rahatsız edici bir deneyimin izleriyle boğuşurken, giderek büyüyen kolektif bir isyanın tam ortasında kalır.",
+    "date": "20260703",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Örümcek-Adam: Eve Dönüş Yok",
+    "link": "https://www.paribucineverse.com/aksiyon-filmleri/orumcek-adam-eve-donus-yok-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~37ab37e7-704b-41ea-b520-4472f165e36e",
+    "trailer": "https://cdn.marsgate.com.tr/11760",
+    "genre": "Aksiyon",
+    "summary": "Spider-Man: No Way Home, kimliği açığa çıkan Örümcek-Adam'ın, bu konuda Doctor Strange'den yardım istemesiyle gelişen çetrefilli olayları konu ediniyor. Örümcek-Adam’ın sinematik tarihinde ilk kez, mahallemizin sevimli kahramanı maskesiz ve normal hayatı ile Süper Kahraman olmanın yüksek risklerini birbirinden ayıramayacak durumda. Doktor Strange’den kendisine yardım etmesini istediğinde bu riskler daha da tehlikeli bir hal alır ve onu gerçekten Örümcek-Adam olmanın ne anlama geldiğini keşfetmeye zorlar.",
     "date": "20260703",
     "kaynak": "Vizyondaki Film"
   },
@@ -287,6 +287,16 @@
     "trailer": "https://cdn.marsgate.com.tr/13435",
     "genre": "Macera",
     "summary": "Aynı isimli sevilen animasyonun canlı çekim yeniden uyarlaması, genç Moana'nın Okyanus’un çağrısına kulak vermesini ve kötü şöhretli yarı tanrı Maui ile birlikte Motunui adasının resiflerinin ötesine yelken açmasını anlatıyor.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Aşıklar Şehri",
+    "date": "20260708",
+    "link": "https://www.paribucineverse.com/muzikal-filmleri/asiklar-sehri-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~bf65633a-919c-43ec-9ca3-e6aa98bfce2e",
+    "trailer": "https://cdn.marsgate.com.tr/1054",
+    "genre": "Müzikal",
+    "summary": "Film her şeyin başladığı Los Angeles’da bir otobanda başlıyor. Trafiğin sıkışık olduğu bir gün, kibirli bir korna sonucunda, hayatlarında yön bulmaya çalışan Sebastian ve Mia tanışıyor. İkisi de imkânsıza yakın olan hayallerine odaklanmışlardır. Sebastian 21. Yüzyılda insanların geleneksel jazz müziğini umursamasını sağlamaya çalışmakta, Mia ise sadece kesintisiz bir oyuncu seçmesinde şansını denemek istemektedir. Ancak ikisi de yalnız bir şekilde bekledikleri sıçramayı yapacaklarını beklememektedir. Yapabildikleri asıl sıçrama birbirlerine karşı, sanatsal düşlerinin içine olur. Bu birleşim tabiatının gerektirdiği gibi bir sinematik dünya yaratarak, bizi ışık, renkler, ses, müzik ve sözler ile yakalamaya çalıştığımız mutluluğa ve asla aşamadığımız tutkuların kalp kırıklıklarına, hayran verici bir yolculuğa çıkarır. Sinema efsaneleri arasına girebilecek Aşıklar Şehri, yönetmen Chazelle’in beyaz perdeye aktardığı, insanın en özel bölgesine girerek, samimi ilişkilerin anlatıldığı, kişisel hayallerin ve kararların kaderle kesiştiği, gerçek ancak büyülü bir evren.",
     "kaynak": "Gelecek Film"
   },
   {
