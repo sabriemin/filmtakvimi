@@ -10,16 +10,6 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Dalga",
-    "link": "https://www.paribucineverse.com/muzikal-filmleri/dalga-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~64fc823e-ad02-4bda-9aeb-5008ca57bad6",
-    "trailer": "https://cdn.marsgate.com.tr/13490",
-    "genre": "Müzikal",
-    "summary": "Julia, kampüste yıllardır süregelen taciz ve şiddet olaylarına karşı yükselen feminist harekete katılır. Kendi geçmişindeki karmaşık ve rahatsız edici bir deneyimin izleriyle boğuşurken, giderek büyüyen kolektif bir isyanın tam ortasında kalır.",
-    "date": "20260703",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
     "title": "Uyurgezer",
     "link": "https://www.paribucineverse.com/korku-filmleri/uyurgezer-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~3dc9bdd5-0bf6-4e17-bad6-27b3f09c9bd9",
@@ -36,6 +26,16 @@
     "trailer": "https://cdn.marsgate.com.tr/13488",
     "genre": "Dram",
     "summary": "Londra, 1910. Toplumun kadınlar için çizdiği dar kalıplara meydan okuyan Katharine Hilbery, ailesinin uygun gördüğü evlilik planlarını reddederek gözünü yıldızlara çevirir. Astronomi tutkusu uğruna mücadele ederken, süfrajet hareketinin yükselen sesleri ve Cambridge hayali ona yeni bir dünyanın kapılarını aralar. Ancak hayatı, annesinin biyografi çalışmasına yardım eden idealist editör Ralph Denham ile tanışmasıyla bambaşka bir yöne evrilir.",
+    "date": "20260703",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Dalga",
+    "link": "https://www.paribucineverse.com/muzikal-filmleri/dalga-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~64fc823e-ad02-4bda-9aeb-5008ca57bad6",
+    "trailer": "https://cdn.marsgate.com.tr/13490",
+    "genre": "Müzikal",
+    "summary": "Julia, kampüste yıllardır süregelen taciz ve şiddet olaylarına karşı yükselen feminist harekete katılır. Kendi geçmişindeki karmaşık ve rahatsız edici bir deneyimin izleriyle boğuşurken, giderek büyüyen kolektif bir isyanın tam ortasında kalır.",
     "date": "20260703",
     "kaynak": "Vizyondaki Film"
   },
@@ -156,16 +156,6 @@
     "trailer": "https://cdn.marsgate.com.tr/13466",
     "genre": "Korku",
     "summary": "Sislerin hiç dağılmadığı, Sakarya’nın bir dağ köyünde yaşayan genç çift Narin ve Yusuf, bebeklerini kaybettiklerinde hayatları sonsuza dek değişir. Kardeşi Narin’in acısını paylaşmak için şehirden yanına gelen Çiçek, beraberinde sıradan bir teselli değil, karanlıkla mühürlenmiş bir muska getirir. Çocukluğundan beri büyüler ve ruhani varlıklarla uğraşan bu genç kız ruhunda annelerinden kalan bir sır taşımaktadır. Acının yerini giderek derinleşen bir dehşet alırken, açılan kapı artık kapanmaz. Ve o kapının ardında bekleyen şey, geri dönülmez bir hesaplaşmadır.",
-    "date": "20260619",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
-    "title": "Şehzade: Büyük Şenlik",
-    "link": "https://www.paribucineverse.com/animasyon-filmleri/sehzade-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~8bd97354-f45d-419f-8c7a-c903c0ada2c5",
-    "trailer": "https://cdn.marsgate.com.tr/13423",
-    "genre": "Animasyon",
-    "summary": "Küçük yaşlardan itibaren sarayda anlatılan şenlik hikâyeleriyle büyüyen bir şehzadenin, kardeşinin sünneti için düzenlenen büyük kutlamaları halkın arasından deneyimlemek istemesiyle başlıyor. Saraydan kaçan şehzade, kendini renkli bir maceranın içinde buluyor. İstanbul’a gelen ve kimliğini gizleyerek bir gösteri grubuna katılan İtalyan bir prenses de önemli bir rol oynuyor. Şehzade ile yolları kesişen bu gizemli karakter, hikâyeye farklı bir boyut katarken, ikili kendilerini hem eğlenceli hem de tehlikeli bir kovalamacanın içinde buluyor.",
     "date": "20260619",
     "kaynak": "Vizyondaki Film"
   },
@@ -317,6 +307,16 @@
     "trailer": "https://cdn.marsgate.com.tr/13496",
     "genre": "Dram",
     "summary": "Aristotle Onassis’e benzer bir Yunan milyarder olan Markos Timoleon, kızının 25. doğum gününü özel adasında kutlamaktadır. Ancak görkemli davet, gücünü tehdit eden ve hayatını altüst edecek beklenmedik olaylara sahne olur.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Hatırladığım Ağaçlar",
+    "date": "20260710",
+    "link": "https://www.paribucineverse.com/dram-filmleri/hatirladigim-agaclar-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn.marsgate.com.tr/13501",
+    "genre": "Dram",
+    "summary": "İstemediği bir gebeliğin psikolojik yükü ile mücadele edemeyen Bahar, intihar etmeye karar verir. Son yolculuğunun ilk durağı üniversite arkadaşı Mahir’dir. Katıldığı bir yürüyüşte uğradığı saldırı sonucu sakat kalan Mahir ve babası Cemal’in dünyası, Bahar’ın kararını sorgulamasına sebep olur.",
     "kaynak": "Gelecek Film"
   },
   {
