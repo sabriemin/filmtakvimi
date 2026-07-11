@@ -110,22 +110,22 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Derin Kabus",
-    "link": "https://www.paribucineverse.com/korku-filmleri/derin-kabus-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~1fe4dec6-a967-4754-95f1-0c6309df585e",
-    "trailer": "https://cdn.marsgate.com.tr/13468",
-    "genre": "Korku",
-    "summary": "Los Angeles’tan Şanghay’a giden bir uçak, Pasifik Okyanusu’nda korkunç bir acil iniş yapmak zorunda kalır. Hayatta kalan yolcular, mercan resifine saplanan enkazın etrafını saran ölümcül köpekbalıklarıyla karşı karşıya kalır ve okyanusun ortasında hayatta kalmak için büyük bir mücadele başlar.",
-    "date": "20260626",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
     "title": "7 Dogs",
     "link": "https://www.paribucineverse.com/aksiyon-filmleri/7-dogs-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~e8cbf1b0-f986-485e-b3d7-22b79071b39f",
     "trailer": "https://cdn.marsgate.com.tr/13482",
     "genre": "Aksiyon",
     "summary": "Orta Doğu'ya yayılması planlanan son derece tehlikeli yeni bir uyuşturucuyu durdurmak için güçlerini birleştirmek zorunda kalan iki düşman, kendilerini dünyanın farklı şehirlerine uzanan ölümcül bir operasyonun içinde bulur.",
+    "date": "20260626",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Derin Kabus",
+    "link": "https://www.paribucineverse.com/korku-filmleri/derin-kabus-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~1fe4dec6-a967-4754-95f1-0c6309df585e",
+    "trailer": "https://cdn.marsgate.com.tr/13468",
+    "genre": "Korku",
+    "summary": "Los Angeles’tan Şanghay’a giden bir uçak, Pasifik Okyanusu’nda korkunç bir acil iniş yapmak zorunda kalır. Hayatta kalan yolcular, mercan resifine saplanan enkazın etrafını saran ölümcül köpekbalıklarıyla karşı karşıya kalır ve okyanusun ortasında hayatta kalmak için büyük bir mücadele başlar.",
     "date": "20260626",
     "kaynak": "Vizyondaki Film"
   },
@@ -324,9 +324,29 @@
     "date": "20260724",
     "link": "https://www.paribucineverse.com/dram-filmleri/hayatimin-sarkisi-filmi-izle",
     "bilet_link": null,
-    "trailer": "Fragman bağlantısı yok",
+    "trailer": "https://cdn.marsgate.com.tr/13515",
     "genre": "Dram",
     "summary": "Rastlantı sonucu gerçekleşen bir karşılaşmanın ardından, düğün grubu solisti Rick, eski bir pop grubu yıldızı olan Danny ile sarhoşken bir şarkı yazar. Altı ay sonra Rick, birlikte söyledikleri doğaçlama şarkının dünya çapında bir üne kavuştuğunu öğrenince şaşırıp kalır, ancak şarkıyla ilgili tüm övgüyü Danny toplayıp, şan ve şöhrete uzanmıştır. Danny’nin solo kariyeri hızla yükselirken, Rick de hakkını almak için savaşır. Ancak Rick hep hayalini kurduğu rock yıldızı yaşamının peşinde koşarken, gerçek hazinesini, evde onu bekleyen eşi, kızı ve kıymetli dostlarını kaybetme riskiyle karşı karşıyadır.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Her Private Hell",
+    "date": "20260724",
+    "link": "https://www.paribucineverse.com/korku-filmleri/onun-sahsi-cehennemi-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn.marsgate.com.tr/13503",
+    "genre": "Korku",
+    "summary": "Garip bir sis fütüristik bir metropolü sarıp, ele geçirilmesi zor, ölümcül bir varlığı serbest bırakırken, sorunlu genç bir kadın babasını bulmak için yola koyulur. Bu arayış sırasında, kaderi, kızını cehennemden kurtarmak için umutsuz bir yolculuğa çıkan Amerikalı bir askerin kaderiyle kesişir.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "İzci Takımı: Şelalenin Peşinde",
+    "date": "20260724",
+    "link": "https://www.paribucineverse.com/animasyon-filmleri/izci-takimi-selalenin-pesinde-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn.marsgate.com.tr/13518",
+    "genre": "Animasyon",
+    "summary": "İzci Takımı: Şelalenin Peşinde, karne gününde başlayan bir doğa yolculuğunu merkezine alır. Utku, Ege, Elif, Deniz ve Eylül'den oluşan İzci Takımı, okulda katıldıkları deprem eğitimi ve okul müdürünün verdiği tavsiyelerin ardından hazırlıklarını tamamlar. Grup, Bülent Öğretmen'in öncülüğünde ormanın içindeki büyük şelaleye ulaşmak hedefiyle yola çıkarak doğanın içinde ilerledikleri bir sürece adım atar.",
     "kaynak": "Gelecek Film"
   },
   {
@@ -337,16 +357,6 @@
     "trailer": "https://cdn.marsgate.com.tr/13505",
     "genre": "Animasyon",
     "summary": "Nasreddin Hoca ve sevimli dostları kendilerini yine heyecan dolu bir zaman yolculuğunun içinde bulur. Geçmişten geleceğe uzanan bu macerada ekip, karşılarına çıkan gizemleri çözmek ve zamanın dengesini korumak için birlik, dostluk ve zekâlarını kullanır. Eğlence ve kahkaha dolu serüven, her yaştan izleyiciyi unutulmaz bir yolculuğa davet ediyor.",
-    "kaynak": "Gelecek Film"
-  },
-  {
-    "title": "Onun Şahsi Cehennemi",
-    "date": "20260724",
-    "link": "https://www.paribucineverse.com/korku-filmleri/onun-sahsi-cehennemi-filmi-izle",
-    "bilet_link": null,
-    "trailer": "https://cdn.marsgate.com.tr/13503",
-    "genre": "Korku",
-    "summary": "Garip bir sis fütüristik bir metropolü sarıp, ele geçirilmesi zor, ölümcül bir varlığı serbest bırakırken, sorunlu genç bir kadın babasını bulmak için yola koyulur. Bu arayış sırasında, kaderi, kızını cehennemden kurtarmak için umutsuz bir yolculuğa çıkan Amerikalı bir askerin kaderiyle kesişir.",
     "kaynak": "Gelecek Film"
   },
   {
@@ -390,11 +400,21 @@
     "kaynak": "Gelecek Film"
   },
   {
+    "title": "Eshar",
+    "date": "20260807",
+    "link": "https://www.paribucineverse.com/korku-filmleri/eshar-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn.marsgate.com.tr/13519",
+    "genre": "Korku",
+    "summary": "Yıllarca çocuk sahibi olabilmek için mücadele eden Murat ve Hatice, sonunda dünyaya gelen bebekleri Ali ile hayata yeniden tutunur. Ancak kırkıncı gecesinde Ali gizemli bir şekilde ortadan kaybolur. Günler sonra geri dönen bebek, artık aynı çocuk değildir. Köyü saran açıklanamaz olaylar ve kadim bir lanet, Murat ile Hatice’yi hem evlatlarını hem de kendi ruhlarını kurtarmak zorunda kalacakları karanlık bir mücadeleye sürükler.",
+    "kaynak": "Gelecek Film"
+  },
+  {
     "title": "Hayvan Çiftliği",
     "date": "20260807",
     "link": "https://www.paribucineverse.com/animasyon-filmleri/hayvan-ciftligi-filmi-izle",
     "bilet_link": null,
-    "trailer": "Fragman bağlantısı yok",
+    "trailer": "https://cdn.marsgate.com.tr/13514",
     "genre": "Animasyon",
     "summary": "Özgürlük hayaliyle ayaklanan hayvanların, kendi çiftliklerinde yeni bir düzen kurma mücadelesini konu alıyor. Eşitlik ve özgürlük umuduyla başlayan isyan, zamanla yeni bir düzene ve beklenmedik sonuçlara evrilir.",
     "kaynak": "Gelecek Film"
@@ -417,6 +437,16 @@
     "trailer": "https://cdn.marsgate.com.tr/13495",
     "genre": "Korku",
     "summary": "Serinin üçüncü ve final filminde; Maya'nın, onu hayatının kabusuna sürükleyen maskeli katillerle son kez yüzleşmesini anlatıyor.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Derin Dehşet",
+    "date": "20260814",
+    "link": "https://www.paribucineverse.com/aksiyon-filmleri/derin-dehset-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn.marsgate.com.tr/13517",
+    "genre": "Aksiyon",
+    "summary": "Partiler ve dalışla dolu rüya gibi bir tatil için yola çıkan arkadaş grubu, denizde suçluların saldırısına uğrayınca unutulmaz yolculukları dehşet dolu bir hayatta kalma mücadelesine dönüşür.",
     "kaynak": "Gelecek Film"
   },
   {
@@ -444,7 +474,7 @@
     "date": "20260814",
     "link": "https://www.paribucineverse.com/korku-filmleri/tarot-yeniden-dogus-filmi-izle",
     "bilet_link": null,
-    "trailer": "Fragman bağlantısı yok",
+    "trailer": "https://cdn.marsgate.com.tr/13512",
     "genre": "Korku",
     "summary": "Eski bir tarot destesinin etrafında şekillenen lanetli bir ritüel, bir grup arkadaşın hayatını kabusa çevirir. Kartlar açıldıkça geçmişin karanlık sırları gün yüzüne çıkacak ve 'Yeniden Doğuş' için dehşet dolu bir bedel ödenmesi gerekecektir.",
     "kaynak": "Gelecek Film"
@@ -517,6 +547,26 @@
     "trailer": "https://cdn.marsgate.com.tr/13502",
     "genre": "Gerilim",
     "summary": "Jax, önceki filmdeki olaylar sırasında kız kardeşi Shiloh Hunter'ın ölümüne yas tutar. Kız kardeşinin arkadaşı Luce'nin önerisiyle Shiloh'un hayatını kutlamak için Tayland'daki Kwan-in Dağı'nda cesur bir tahta yürüyüşü yapmaya karar veren ikili, kısa süre sonra bir kaya kayması ve tsunami sonrasında 3.000 fitten fazla yükseklikte mahsur kalır ve hayatta kalmak için birlikte çalışmak zorundadır.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Bir Banka Nasıl Soyulur",
+    "date": "20260904",
+    "link": "https://www.paribucineverse.com/aksiyon-filmleri/bir-banka-nasil-soyulur-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn.marsgate.com.tr/13520",
+    "genre": "Aksiyon",
+    "summary": "Sosyal medyayı ustalıkla kullanan bir grup banka soyguncusu, gerçekleştirdikleri planlı soygunları internet üzerinden canlı yayınlamaya başlar. Ancak giderek artan viral şöhretlerinin, onları deneyimli bir FBI ajanı ile yetenekli bir yazılım mühendisinin açık hedefi haline getirdiğinden habersizdirler. Bu beklenmedik ikilinin çemberi giderek daraltmasına rağmen, sınırları zorlamaktan vazgeçmeyen suç örgütü, hem kendi inançları hem de şimdiye kadarki en iddialı soygunları için her şeyi riske atacaktır.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Saldırı",
+    "date": "20260904",
+    "link": "https://www.paribucineverse.com/korku-filmleri/saldiri-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn.marsgate.com.tr/13521",
+    "genre": "Korku",
+    "summary": "Çölde genetik olarak tasarlanmış süper askerlerden oluşan bir çete serbest kalınca, sert bir Ordu keskin nişancısı genç kızını korumak için cehennemi serbest bırakmak zorunda kalır.",
     "kaynak": "Gelecek Film"
   }
 ]
