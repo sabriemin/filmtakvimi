@@ -490,6 +490,16 @@
     "kaynak": "Gelecek Film"
   },
   {
+    "title": "Tempus",
+    "date": "20260821",
+    "link": "https://www.paribucineverse.com/gerilim-filmleri/tempus-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn.marsgate.com.tr/13522",
+    "genre": "Gerilim",
+    "summary": "60 yaşındaki idealist akademisyen, kanser hastalığının son evresinde, çocukluğundan beri zihnini meşgul eden gizemli bir olayı aydınlatmaya karar verir. Hayatının son günlerini bu sırrın peşinde geçirmeyi seçen profesör, yıllar sonra Gaziantep’e gelir ancak bu ziyaret, göründüğü kadar masum değildir. Profesör, zamanın büküldüğüne inanılan kozmik bir geçidin yerini bilen tek kişidir ve bu bilgi, onu geri dönüşü olmayan bir arayışa sürükler. Amacına ulaşmak için bir doktoru, eski bir askeri ve asistanını bir araya getirir. Başlangıçta gerçeğin tamamından habersiz olan bu küçük ekip, zamanla profesörün peşinde olduğu sırrın yalnızca geçmişe ait olmadığını fark eder. Kayıp bir anahtar, saklı bir harita ve TEMPUS adıyla anılan gizemli kapı, ekibi insanlık tarihinin seyrini değiştirebilecek büyük bir gücün eşiğine taşır. Fakat kimse, bu kapının gerçekte neye açıldığını henüz bilmemektedir.",
+    "kaynak": "Gelecek Film"
+  },
+  {
     "title": "Coyote Acme'ye Karşı",
     "date": "20260828",
     "link": "https://www.paribucineverse.com/animasyon-filmleri/coyote-acmeye-karsi-filmi-izle",
@@ -567,6 +577,16 @@
     "trailer": "https://cdn.marsgate.com.tr/13521",
     "genre": "Korku",
     "summary": "Çölde genetik olarak tasarlanmış süper askerlerden oluşan bir çete serbest kalınca, sert bir Ordu keskin nişancısı genç kızını korumak için cehennemi serbest bırakmak zorunda kalır.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Resident Evil",
+    "date": "20260918",
+    "link": "https://www.paribucineverse.com/korku-filmleri/resident-evil-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn.marsgate.com.tr/13523",
+    "genre": "Korku",
+    "summary": "Uzak bir hastaneye paket teslim etmekle görevlendirilmiş talihsiz bir kurye kısa süre sonra kendini bir salgın ortasında bulur. Hayatta kalmak için mutasyona uğramış yaratık ordularıyla mücadele etmek zorunda kalacaktır.",
     "kaynak": "Gelecek Film"
   }
 ]
