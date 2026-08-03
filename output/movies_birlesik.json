@@ -103,7 +103,7 @@
     "title": "Merhamet Yok",
     "date": "20260805",
     "link": "https://www.paribucineverse.com/gerilim-filmleri/merhamet-yok-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~824db850-6cd1-4eeb-8822-953fa587c455",
+    "bilet_link": null,
     "trailer": "Fragman bağlantısı yok",
     "genre": "Gerilim",
     "summary": "Yakın gelecekte, LAPD cinayet masası dedektifi Chris Raven, kendini bir anda yüksek güvenlikli bir mahkeme salonunda, eşinin cinayetinden yargılanırken bulur. Bu kez karar, ‘Mercy’ adı verilen devrim niteliğindeki yeni yargı sistemine aittir. Yargıç Maddox liderliğindeki bu sistem, olay yeri verilerinden dijital kayıtlara kadar her detayı analiz ederek hüküm verir. Chris’in, Mercy mahkemesinin yüksek teknolojili imkanlarını kullanarak masumiyetini kanıtlaması için yalnızca doksan dakikası vardır.",
@@ -140,6 +140,16 @@
     "kaynak": "Gelecek Film"
   },
   {
+    "title": "Karanlıktan Gelen",
+    "date": "20260807",
+    "link": "https://www.paribucineverse.com/korku-filmleri/karanliktan-gelen-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn.marsgate.com.tr/13532",
+    "genre": "Korku",
+    "summary": "Kusursuz bir aile kurma hayaliyle Saga ve İngiliz eşi Jon, Saga’nın çocukluğunun büyük bir bölümünü geçirdiği, Finlandiya ormanlarının derinliklerindeki ıssız eve taşınır. Ancak bebekleri doğar doğmaz, çevresindekilerin tüm telkinlerine rağmen Saga, oğlunda korkunç bir terslik olduğunu hisseder. Evlilikleri çatırdamaya başlarken Jon, eşine destek olmaya çalışır; fakat yeni doğanlarıyla ilgili dehşet verici gerçeği yalnızca Saga sezmektedir.",
+    "kaynak": "Gelecek Film"
+  },
+  {
     "title": "Keloğlan ve Hayvan Dostları",
     "date": "20260807",
     "link": "https://www.paribucineverse.com/animasyon-filmleri/keloglan-ve-hayvan-dostlari-filmi-izle",
@@ -154,7 +164,7 @@
     "date": "20260807",
     "link": "https://www.paribucineverse.com/komedi-filmleri/kozalak-devri-filmi-izle",
     "bilet_link": null,
-    "trailer": "Fragman bağlantısı yok",
+    "trailer": "https://cdn.marsgate.com.tr/13534",
     "genre": "Komedi",
     "summary": "Kozalak Devri, köklü bir siyasi geçmişe sahip bir aileden geldiği yalanını uyduran İzzet'in, belediye başkanlığı hayaliyle yola çıkıp köy muhtarlığı seçimlerinde yaşadığı olayları konu almaktadır.",
     "kaynak": "Gelecek Film"
@@ -166,7 +176,17 @@
     "bilet_link": null,
     "trailer": "https://cdn.marsgate.com.tr/13526",
     "genre": "Korku",
-    "summary": "Perili evleri temizleyip satan bir emlakçı ve şeytan çıkarıcı olan Susan Price'ın kendi hayalindeki eve yerleşmek üzereyken, geçmişte evlerinden tahliye ettiği ruhların bir araya gelerek ondan intikam almaya çalışmasını konu edinir.",
+    "summary": "On yıldır Amerika'nın dört bir yanında perili evleri alıp satan Susan Price, hem başarılı bir emlakçı hem de sertifikalı bir şeytan çıkarıcı. Mesleğindeki asıl uzmanlığı, satışa çıkan ama kimsenin elinden çıkaramadığı \"lanetli\" evleri temizleyip müşterilere satmak. Yıllar boyunca sayısız ruhu evlerinden \"tahliye eden\" Susan, artık kendi hayalindeki evi bulma peşinde.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Şeytandan Satılık",
+    "date": "20260807",
+    "link": "https://www.paribucineverse.com/korku-filmleri/seytandan-satilik-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn.marsgate.com.tr/13526",
+    "genre": "Korku",
+    "summary": "On yıldır Amerika'nın dört bir yanında perili evleri alıp satan Susan Price, hem başarılı bir emlakçı hem de sertifikalı bir şeytan çıkarıcı. Mesleğindeki asıl uzmanlığı, satışa çıkan ama kimsenin elinden çıkaramadığı \"lanetli\" evleri temizleyip müşterilere satmak. Yıllar boyunca sayısız ruhu evlerinden \"tahliye eden\" Susan, artık kendi hayalindeki evi bulma peşinde.",
     "kaynak": "Gelecek Film"
   },
   {
