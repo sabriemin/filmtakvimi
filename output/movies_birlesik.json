@@ -140,60 +140,40 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Kurtuluş Projesi",
-    "date": "20260812",
-    "link": "https://www.paribucineverse.com/bilim-kurgu-filmleri/kurtulus-projesi-filmi-izle",
-    "bilet_link": null,
-    "trailer": "https://cdn.marsgate.com.tr/13294",
-    "genre": "Bilim Kurgu",
-    "summary": "Film, dünyanın kurtuluşu için uzayda bir gizemi çözmesi gereken bir fen bilgisi öğretmeninin hikâyesini anlatıyor.",
-    "kaynak": "Gelecek Film"
-  },
-  {
-    "title": "Derin Dehşet",
-    "date": "20260814",
-    "link": "https://www.paribucineverse.com/aksiyon-filmleri/derin-dehset-filmi-izle",
-    "bilet_link": null,
-    "trailer": "https://cdn-video.marsgate.tr/m3u/89",
-    "genre": "Aksiyon",
-    "summary": "Partiler ve dalışla dolu rüya gibi bir tatil için yola çıkan arkadaş grubu, denizde suçluların saldırısına uğrayınca unutulmaz yolculukları dehşet dolu bir hayatta kalma mücadelesine dönüşür.",
-    "kaynak": "Gelecek Film"
-  },
-  {
-    "title": "Fırtınadan Önce",
-    "date": "20260814",
-    "link": "https://www.paribucineverse.com/savas-filmleri/firtinadan-once-filmi-izle",
-    "bilet_link": null,
-    "trailer": "https://cdn.marsgate.com.tr/13535",
-    "genre": "Savaş",
-    "summary": "Normandiya Çıkarması’ndan 72 saat önce, özgür dünyanın kaderi pamuk ipliğine bağlıdır. General Dwight D. Eisenhower ile Yüzbaşı James Stagg, kritik bir kararın eşiğindedir: Ya tarihin en büyük ve en tehlikeli deniz harekâtını başlatacaklar ya da savaşı kaybetme riskini göze alacaklardır.",
-    "kaynak": "Gelecek Film"
-  },
-  {
-    "title": "Kuyumcu",
-    "date": "20260814",
-    "link": "https://www.paribucineverse.com/komedi-filmleri/kuyumcu-filmi-izle",
-    "bilet_link": null,
-    "trailer": "https://cdn.marsgate.com.tr/13536",
-    "genre": "Komedi",
-    "summary": "Kadınlara düşkünlüğüyle bilinen ünlü kuyumcu Seif, defalarca yakalandıktan sonra geleneksel erkeklik gururunu bir kenara bırakmak zorunda kalır. Güçlü iradeli karısı Yasmine, birlikte daha sağlıklı ve dengeli bir hayat kurmakta ısrar edince, çift bir ilişki danışmanına başvurur ve evliliklerini kurtarmak için alışılmadık bir terapi programına başlar. Ancak her adım onları birbirine yaklaştırmak yerine, komik bir kaos dalgası yaratır ve ilişkilerini düzeltme girişimlerini giderek artan bir felaketler dizisine dönüştürür.",
-    "kaynak": "Gelecek Film"
-  },
-  {
     "title": "Oak Caddesi'nin Sonu",
     "date": "20260814",
     "link": "https://www.paribucineverse.com/gerilim-filmleri/oak-caddesinin-sonu-filmi-izle",
-    "bilet_link": null,
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~ee729384-6245-4085-8284-f7a463775beb",
     "trailer": "https://cdn-video.marsgate.tr/m3u/109",
     "genre": "Gerilim",
     "summary": "Aniden meydana gelen gizemli bir kozmik olay, Oak Caddesi’ni sıradan banliyö yaşamından koparıp tamamen bilinmeyen bir yere taşır. Bu yeni düzende Platt ailesi, hayatta kalabilmenin tek yolunun birbirlerine sıkı sıkıya kenetlenmek olduğunu keşfeder. Tanınmaz hale gelen çevrelerinde yollarını bulmaya çalışırken, aile bağları onların en büyük gücü ve tek sığınağı olacaktır.",
     "kaynak": "Gelecek Film"
   },
   {
+    "title": "Fırtınadan Önce",
+    "date": "20260814",
+    "link": "https://www.paribucineverse.com/savas-filmleri/firtinadan-once-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~6c840d15-a616-44cb-af7b-02ee7658b7fe",
+    "trailer": "https://cdn.marsgate.com.tr/13535",
+    "genre": "Savaş",
+    "summary": "Normandiya Çıkarması’ndan 72 saat önce, özgür dünyanın kaderi pamuk ipliğine bağlıdır. General Dwight D. Eisenhower ile Yüzbaşı James Stagg, kritik bir kararın eşiğindedir: Ya tarihin en büyük ve en tehlikeli deniz harekâtını başlatacaklar ya da savaşı kaybetme riskini göze alacaklardır.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Derin Dehşet",
+    "date": "20260814",
+    "link": "https://www.paribucineverse.com/aksiyon-filmleri/derin-dehset-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~00b4ba24-ef82-4166-ac37-fe002b8cc07d",
+    "trailer": "https://cdn-video.marsgate.tr/m3u/89",
+    "genre": "Aksiyon",
+    "summary": "Partiler ve dalışla dolu rüya gibi bir tatil için yola çıkan arkadaş grubu, denizde suçluların saldırısına uğrayınca unutulmaz yolculukları dehşet dolu bir hayatta kalma mücadelesine dönüşür.",
+    "kaynak": "Gelecek Film"
+  },
+  {
     "title": "Paw Patrol: Dino Filmi",
     "date": "20260814",
     "link": "https://www.paribucineverse.com/animasyon-filmleri/paw-patrol-dino-filmi-filmi-izle",
-    "bilet_link": null,
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~3cb6fb5a-a495-49ac-8a8c-ac0e1d35b49b",
     "trailer": "https://cdn-video.marsgate.tr/m3u/114",
     "genre": "Animasyon",
     "summary": "Gemilerinin yakalandığı şiddetli bir fırtına sonrası bilinmeyen bir adaya sığınan Paw Patrol yavruları, burada dinozorlar konusunda uzman olan Rex ile bir araya gelir. Bu sırada adanın doğal kaynaklarını ele geçirmek isteyen Belediye Başkanı Humdinger, yaptığı kontrolsüz kazılarla uykudaki bir yanardağı aktif hale getirir. Ekip, adadaki yaşamı tehdit eden bu felaketi engellemek için kendi boyutlarını aşan riskli kurtarma operasyonlarına girişir.",
@@ -203,30 +183,30 @@
     "title": "Peter Pan Kabuslar Ülkesi",
     "date": "20260814",
     "link": "https://www.paribucineverse.com/korku-filmleri/peter-pan-kabuslar-ulkesi-filmi-izle",
-    "bilet_link": null,
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~1fdf33a0-641b-40d1-a0a8-84376e49bc45",
     "trailer": "https://cdn.marsgate.com.tr/13540",
     "genre": "Korku",
     "summary": "Küçük kardeşi Michael'ın acımasız Peter Pan tarafından kaçırılmasıyla Wendy Darling, kâbusu andıran bir kurtarma yolculuğuna sürüklenir. Neverland'in karanlık sırları arasında ilerlerken, karşısına çıkan her iz onu kana susamış bir dehşetin merkezine yaklaştırır. Wendy, hem kardeşini kurtarmak hem de Peter Pan'ın ölümcül oyununa son vermek için hayatta kalma mücadelesi vermek zorundadır.",
     "kaynak": "Gelecek Film"
   },
   {
-    "title": "Tarot: Yeniden Doğuş",
+    "title": "Kuyumcu",
     "date": "20260814",
-    "link": "https://www.paribucineverse.com/korku-filmleri/tarot-yeniden-dogus-filmi-izle",
-    "bilet_link": null,
-    "trailer": "https://cdn-video.marsgate.tr/m3u/122",
-    "genre": "Korku",
-    "summary": "Eski bir tarot destesinin etrafında şekillenen lanetli bir ritüel, bir grup arkadaşın hayatını kabusa çevirir. Kartlar açıldıkça geçmişin karanlık sırları gün yüzüne çıkacak ve 'Yeniden Doğuş' için dehşet dolu bir bedel ödenmesi gerekecektir.",
+    "link": "https://www.paribucineverse.com/komedi-filmleri/kuyumcu-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~7a86b0ea-b79b-49bd-bd70-4a9db894f172",
+    "trailer": "https://cdn.marsgate.com.tr/13536",
+    "genre": "Komedi",
+    "summary": "Kadınlara düşkünlüğüyle bilinen ünlü kuyumcu Seif, defalarca yakalandıktan sonra geleneksel erkeklik gururunu bir kenara bırakmak zorunda kalır. Güçlü iradeli karısı Yasmine, birlikte daha sağlıklı ve dengeli bir hayat kurmakta ısrar edince, çift bir ilişki danışmanına başvurur ve evliliklerini kurtarmak için alışılmadık bir terapi programına başlar. Ancak her adım onları birbirine yaklaştırmak yerine, komik bir kaos dalgası yaratır ve ilişkilerini düzeltme girişimlerini giderek artan bir felaketler dizisine dönüştürür.",
     "kaynak": "Gelecek Film"
   },
   {
-    "title": "Drama",
-    "date": "20260819",
-    "link": "https://www.paribucineverse.com/romantik-filmleri/drama-filmi-izle",
-    "bilet_link": null,
-    "trailer": "https://cdn.marsgate.com.tr/13366",
-    "genre": "Romantik",
-    "summary": "Mutlu bir nişanlı çift olan Emma Harwood ve Charlie Thompson, evliliklerine günler kala beklenmedik bir gerçeğin ortaya çıkmasıyla ilişkilerinin en büyük sınavını vermek zorunda kalır. Sevgi, güven ve bağlılık üzerine kurulu bu ilişki; sarsıcı bir gerçekle yüzleşince romantik bir hikayeden duygusal bir keşfe dönüşür.",
+    "title": "Tarot: Yeniden Doğuş",
+    "date": "20260814",
+    "link": "https://www.paribucineverse.com/korku-filmleri/tarot-yeniden-dogus-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~37be4049-0c84-4d18-be21-4fa57b7653b1",
+    "trailer": "https://cdn-video.marsgate.tr/m3u/122",
+    "genre": "Korku",
+    "summary": "Eski bir tarot destesinin etrafında şekillenen lanetli bir ritüel, bir grup arkadaşın hayatını kabusa çevirir. Kartlar açıldıkça geçmişin karanlık sırları gün yüzüne çıkacak ve 'Yeniden Doğuş' için dehşet dolu bir bedel ödenmesi gerekecektir.",
     "kaynak": "Gelecek Film"
   },
   {
@@ -340,6 +320,16 @@
     "kaynak": "Gelecek Film"
   },
   {
+    "title": "Harry Potter ve Felsefe Taşı",
+    "date": "20260828",
+    "link": "https://www.paribucineverse.com/macera-filmleri/harry-potter-ve-felsefe-tasi-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn-video.marsgate.tr/m3u/130",
+    "genre": "Macera",
+    "summary": "Harry, 11 yaşında Hogwarts'a kabul edilir ve yasaklı koridorda Felsefe Taşı’nı keşfeder. Voldemort da taşı ararken, Harry intikam almak ister. Ailesini küçük yaşta kaybeden Harry Potter, sıradan ve sevgisiz bir hayat sürerken 11. yaş gününde bir büyücü olduğunu öğrenir. Hogwarts Cadılık ve Büyücülük Okulu’na kabul edilen Harry, burada Ron Weasley ve Hermione Granger ile yakın dostluklar kurar. Okulda geçirdiği ilk yılda, büyücülük dünyasını tehdit eden karanlık güçlerle bağlantılı gizemli Sorcerer’s Stone’un peşine düşer. Harry, geçmişiyle ve karanlık bir kaderle yüzleşirken cesaretin, dostluğun ve seçimin gücünü keşfeder.",
+    "kaynak": "Gelecek Film"
+  },
+  {
     "title": "Köpek ve Yıldızlar",
     "date": "20260828",
     "link": "https://www.paribucineverse.com/bilim-kurgu-filmleri/ko%CC%88pek-ve-yildizlar-filmi-izle",
@@ -397,6 +387,16 @@
     "trailer": "https://cdn-video.marsgate.tr/m3u/126",
     "genre": "Korku",
     "summary": "Çölde genetik olarak tasarlanmış süper askerlerden oluşan bir çete serbest kalınca, sert bir Ordu keskin nişancısı genç kızını korumak için cehennemi serbest bırakmak zorunda kalır.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Aşkın Büyüsü 2",
+    "date": "20260911",
+    "link": "https://www.paribucineverse.com/romantik-filmleri/askin-buyusu-2-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn-video.marsgate.tr/m3u/132",
+    "genre": "Romantik",
+    "summary": "Owens kardeşler, ailelerini sonsuza dek parçalama tehdidi taşıyan karanlık lanetle yüzleşmek zorunda kalmaktadır.",
     "kaynak": "Gelecek Film"
   },
   {
