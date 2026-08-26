@@ -1,31 +1,161 @@
 [
   {
+    "title": "Davet",
+    "link": "https://www.paribucineverse.com/komedi-filmleri/davet-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~330e5194-c7fe-4d0d-8b32-05ea70f40c35",
+    "trailer": "https://cdn-video.marsgate.tr/m3u/88",
+    "genre": "Komedi",
+    "summary": "Joe ve Angela’nın evliliği kırılma noktasındadır. Gerginlik giderek artarken, üst katlarındaki gizemli komşularını akşam yemeğine davet ederler. Sıradan başlayan bu buluşma, gece ilerledikçe beklenmedik bir hâl alır.",
+    "date": "20260821",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Cesur Denizciler: Okyanus Macerası",
+    "link": "https://www.paribucineverse.com/animasyon-filmleri/cesur-denizciler-okyanus-macerasi-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~2d26ec35-8e95-4c38-a634-8af21c68b0e4",
+    "trailer": "https://cdn.marsgate.com.tr/13541",
+    "genre": "Animasyon",
+    "summary": "Cesur denizci Lydia, kaybolan kardeşini bulmak için uçan bir gemiyle unutulmaz bir yolculuğa çıkar. Bu büyük macerada, anılarından büyülü takımyıldızları oluşturabildiğini keşfeder. Genç denizci Lucas ve sevimli dostu Critter ile güçlerini birleştiren Lydia, dostluk, cesaret ve takım çalışmasının önemini öğrenirken okyanusun en heyecan dolu macerasına yelken açar.",
+    "date": "20260821",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Ruhlar Bölgesi: Aramızdalar",
+    "link": "https://www.paribucineverse.com/korku-filmleri/ruhlar-bo%CC%88lgesi-aramizdalar-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~93df325d-9147-4fc4-b258-cb9f339251f4",
+    "trailer": "https://cdn-video.marsgate.tr/m3u/117",
+    "genre": "Korku",
+    "summary": "Gemma, büyüdüğü evde kızını tek başına büyüten genç bir annedir. “The Further” adlı boyuta seyahat edebildiğini keşfeder ve burada yaşayan varlıkları gerçek dünyaya getirme yeteneğine sahip olduğunu fark eder.",
+    "date": "20260821",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Evcil Kahramanlar",
+    "link": "https://www.paribucineverse.com/animasyon-filmleri/evcil-kahramanlar-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~34926f5f-f85a-48a9-b0b8-d6ccb570d7a1",
+    "trailer": "https://cdn-video.marsgate.tr/m3u/93",
+    "genre": "Animasyon",
+    "summary": "Şımarık gösteri köpeği Gracie ile sokak kedisi Pedro, ailelerinin taşınması sırasında yollarını kaybedince kendilerini evlerinden kilometrelerce uzakta bulur. Eve dönebilmek için anlaşmayı öğrenmek zorunda kalan bu zıt ikili, birbirinden komik ve heyecan dolu bir maceraya atılır.",
+    "date": "20260821",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Gerçek Kayıtlar: Vaka 7",
+    "link": "https://www.paribucineverse.com/korku-filmleri/gercek-kayitlar-vaka-7-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~ac70b410-01d1-408e-9381-fffa9ecf0821",
+    "trailer": "https://cdn-video.marsgate.tr/m3u/96",
+    "genre": "Korku",
+    "summary": "Bu görüntüler, Dr. Meltem Taşkıran'dan geriye kalan son kayıtlardır... Cinlere değil kanıta inanan nöro-kriminoloji uzmanı, hastalarının kriz anlarında fısıldadığı tek bir kelimenin peşine düşer: \"Geldiler.\" Birbirini hiç tanımayan iki hasta, aynı kelime. Ve aynı gece gelen bir telefon; babaannesi de günlerdir aynı şeyi sayıklamaktadır. Meltem kamerasını alıp doğduğu köye döner. O geceden sonra hiçbir şey bildiği gibi değildir. Meltem her anı kaydeder. Çünkü ona kimse inanmamaktadır ve aklını kaybetmediğinin tek kanıtı, elindeki kameradır.",
+    "date": "20260821",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Fırtına Ekip Yollarda",
+    "link": "https://www.paribucineverse.com/animasyon-filmleri/firtina-ekip-yollarda-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~a624dcd7-cf20-436f-800d-1f0cdbca5d57",
+    "trailer": "https://cdn-video.marsgate.tr/m3u/95",
+    "genre": "Animasyon",
+    "summary": "Kayıp babaya ulaşmak için yollara düşen bu renkli ekip, yol boyunca kendilerini hiç beklemedikleri absürt tehlikelerin, komik ve heyecan dolu maceraların içinde bulur.",
+    "date": "20260821",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Tempus",
+    "link": "https://www.paribucineverse.com/gerilim-filmleri/tempus-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~434b8a83-6a63-405d-9155-5813d1d6f6f8",
+    "trailer": "https://cdn-video.marsgate.tr/m3u/123",
+    "genre": "Gerilim",
+    "summary": "60 yaşındaki idealist akademisyen, kanser hastalığının son evresinde, çocukluğundan beri zihnini meşgul eden gizemli bir olayı aydınlatmaya karar verir. Hayatının son günlerini bu sırrın peşinde geçirmeyi seçen profesör, yıllar sonra Gaziantep’e gelir ancak bu ziyaret, göründüğü kadar masum değildir. Profesör, zamanın büküldüğüne inanılan kozmik bir geçidin yerini bilen tek kişidir ve bu bilgi, onu geri dönüşü olmayan bir arayışa sürükler. Amacına ulaşmak için bir doktoru, eski bir askeri ve asistanını bir araya getirir. Başlangıçta gerçeğin tamamından habersiz olan bu küçük ekip, zamanla profesörün peşinde olduğu sırrın yalnızca geçmişe ait olmadığını fark eder. Kayıp bir anahtar, saklı bir harita ve TEMPUS adıyla anılan gizemli kapı, ekibi insanlık tarihinin seyrini değiştirebilecek büyük bir gücün eşiğine taşır. Fakat kimse, bu kapının gerçekte neye açıldığını henüz bilmemektedir.",
+    "date": "20260821",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Oak Caddesi'nin Sonu",
+    "link": "https://www.paribucineverse.com/gerilim-filmleri/oak-caddesinin-sonu-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~ee729384-6245-4085-8284-f7a463775beb",
+    "trailer": "https://cdn-video.marsgate.tr/m3u/109",
+    "genre": "Gerilim",
+    "summary": "Aniden meydana gelen gizemli bir kozmik olay, Oak Caddesi’ni sıradan banliyö yaşamından koparıp tamamen bilinmeyen bir yere taşır. Bu yeni düzende Platt ailesi, hayatta kalabilmenin tek yolunun birbirlerine sıkı sıkıya kenetlenmek olduğunu keşfeder. Tanınmaz hale gelen çevrelerinde yollarını bulmaya çalışırken, aile bağları onların en büyük gücü ve tek sığınağı olacaktır.",
+    "date": "20260814",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Paw Patrol: Dino Filmi",
+    "link": "https://www.paribucineverse.com/animasyon-filmleri/paw-patrol-dino-filmi-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~3cb6fb5a-a495-49ac-8a8c-ac0e1d35b49b",
+    "trailer": "https://cdn-video.marsgate.tr/m3u/114",
+    "genre": "Animasyon",
+    "summary": "Gemilerinin yakalandığı şiddetli bir fırtına sonrası bilinmeyen bir adaya sığınan Paw Patrol yavruları, burada dinozorlar konusunda uzman olan Rex ile bir araya gelir. Bu sırada adanın doğal kaynaklarını ele geçirmek isteyen Belediye Başkanı Humdinger, yaptığı kontrolsüz kazılarla uykudaki bir yanardağı aktif hale getirir. Ekip, adadaki yaşamı tehdit eden bu felaketi engellemek için kendi boyutlarını aşan riskli kurtarma operasyonlarına girişir.",
+    "date": "20260814",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Derin Dehşet",
+    "link": "https://www.paribucineverse.com/aksiyon-filmleri/derin-dehset-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~00b4ba24-ef82-4166-ac37-fe002b8cc07d",
+    "trailer": "https://cdn-video.marsgate.tr/m3u/89",
+    "genre": "Aksiyon",
+    "summary": "Partiler ve dalışla dolu rüya gibi bir tatil için yola çıkan arkadaş grubu, denizde suçluların saldırısına uğrayınca unutulmaz yolculukları dehşet dolu bir hayatta kalma mücadelesine dönüşür.",
+    "date": "20260814",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Fırtınadan Önce",
+    "link": "https://www.paribucineverse.com/savas-filmleri/firtinadan-once-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~6c840d15-a616-44cb-af7b-02ee7658b7fe",
+    "trailer": "https://cdn.marsgate.com.tr/13535",
+    "genre": "Savaş",
+    "summary": "Normandiya Çıkarması’ndan 72 saat önce, özgür dünyanın kaderi pamuk ipliğine bağlıdır. General Dwight D. Eisenhower ile Yüzbaşı James Stagg, kritik bir kararın eşiğindedir: Ya tarihin en büyük ve en tehlikeli deniz harekâtını başlatacaklar ya da savaşı kaybetme riskini göze alacaklardır.",
+    "date": "20260814",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Kuyumcu",
+    "link": "https://www.paribucineverse.com/komedi-filmleri/kuyumcu-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~7a86b0ea-b79b-49bd-bd70-4a9db894f172",
+    "trailer": "https://cdn.marsgate.com.tr/13536",
+    "genre": "Komedi",
+    "summary": "Kadınlara düşkünlüğüyle bilinen ünlü kuyumcu Seif, defalarca yakalandıktan sonra geleneksel erkeklik gururunu bir kenara bırakmak zorunda kalır. Güçlü iradeli karısı Yasmine, birlikte daha sağlıklı ve dengeli bir hayat kurmakta ısrar edince, çift bir ilişki danışmanına başvurur ve evliliklerini kurtarmak için alışılmadık bir terapi programına başlar. Ancak her adım onları birbirine yaklaştırmak yerine, komik bir kaos dalgası yaratır ve ilişkilerini düzeltme girişimlerini giderek artan bir felaketler dizisine dönüştürür.",
+    "date": "20260814",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Peter Pan Kabuslar Ülkesi",
+    "link": "https://www.paribucineverse.com/korku-filmleri/peter-pan-kabuslar-ulkesi-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~1fdf33a0-641b-40d1-a0a8-84376e49bc45",
+    "trailer": "https://cdn.marsgate.com.tr/13540",
+    "genre": "Korku",
+    "summary": "Küçük kardeşi Michael'ın acımasız Peter Pan tarafından kaçırılmasıyla Wendy Darling, kâbusu andıran bir kurtarma yolculuğuna sürüklenir. Neverland'in karanlık sırları arasında ilerlerken, karşısına çıkan her iz onu kana susamış bir dehşetin merkezine yaklaştırır. Wendy, hem kardeşini kurtarmak hem de Peter Pan'ın ölümcül oyununa son vermek için hayatta kalma mücadelesi vermek zorundadır.",
+    "date": "20260814",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Tarot: Yeniden Doğuş",
+    "link": "https://www.paribucineverse.com/korku-filmleri/tarot-yeniden-dogus-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~37be4049-0c84-4d18-be21-4fa57b7653b1",
+    "trailer": "https://cdn-video.marsgate.tr/m3u/122",
+    "genre": "Korku",
+    "summary": "Eski bir tarot destesinin etrafında şekillenen lanetli bir ritüel, bir grup arkadaşın hayatını kabusa çevirir. Kartlar açıldıkça geçmişin karanlık sırları gün yüzüne çıkacak ve 'Yeniden Doğuş' için dehşet dolu bir bedel ödenmesi gerekecektir.",
+    "date": "20260814",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Kurtuluş Projesi",
+    "link": "https://www.paribucineverse.com/bilim-kurgu-filmleri/kurtulus-projesi-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~49cc9f1b-e58b-4a15-b38b-32b6ee1d130a",
+    "trailer": "https://cdn.marsgate.com.tr/13294",
+    "genre": "Bilim Kurgu",
+    "summary": "Film, dünyanın kurtuluşu için uzayda bir gizemi çözmesi gereken bir fen bilgisi öğretmeninin hikâyesini anlatıyor.",
+    "date": "20260812",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
     "title": "Ziyaretçiler: Hesaplaşma",
     "link": "https://www.paribucineverse.com/korku-filmleri/ziyaretciler-hesaplasma-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~73376e6a-ceaf-4f25-83ab-1fc060fb5c1f",
     "trailer": "https://cdn-video.marsgate.tr/m3u/125",
     "genre": "Korku",
     "summary": "Serinin üçüncü ve final filminde; Maya'nın, onu hayatının kabusuna sürükleyen maskeli katillerle son kez yüzleşmesini anlatıyor.",
-    "date": "20260807",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
-    "title": "Karanlıktan Gelen",
-    "link": "https://www.paribucineverse.com/korku-filmleri/karanliktan-gelen-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~c3d802e7-59e8-4e20-878f-f31e081b46b6",
-    "trailer": "https://cdn-video.marsgate.tr/m3u/101",
-    "genre": "Korku",
-    "summary": "Kusursuz bir aile kurma hayaliyle Saga ve İngiliz eşi Jon, Saga’nın çocukluğunun büyük bir bölümünü geçirdiği, Finlandiya ormanlarının derinliklerindeki ıssız eve taşınır. Ancak bebekleri doğar doğmaz, çevresindekilerin tüm telkinlerine rağmen Saga, oğlunda korkunç bir terslik olduğunu hisseder. Evlilikleri çatırdamaya başlarken Jon, eşine destek olmaya çalışır; fakat yeni doğanlarıyla ilgili dehşet verici gerçeği yalnızca Saga sezmektedir.",
-    "date": "20260807",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
-    "title": "Şeytandan Satılık",
-    "link": "https://www.paribucineverse.com/korku-filmleri/seytandan-satilik-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~ae8c7b63-c7b4-4b19-8ef8-4c5b6e94c21b",
-    "trailer": "https://cdn-video.marsgate.tr/m3u/121",
-    "genre": "Korku",
-    "summary": "On yıldır Amerika'nın dört bir yanında perili evleri alıp satan Susan Price, hem başarılı bir emlakçı hem de sertifikalı bir şeytan çıkarıcı. Mesleğindeki asıl uzmanlığı, satışa çıkan ama kimsenin elinden çıkaramadığı \"lanetli\" evleri temizleyip müşterilere satmak. Yıllar boyunca sayısız ruhu evlerinden \"tahliye eden\" Susan, artık kendi hayalindeki evi bulma peşinde.",
     "date": "20260807",
     "kaynak": "Vizyondaki Film"
   },
@@ -40,6 +170,16 @@
     "kaynak": "Vizyondaki Film"
   },
   {
+    "title": "Karanlıktan Gelen",
+    "link": "https://www.paribucineverse.com/korku-filmleri/karanliktan-gelen-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~c3d802e7-59e8-4e20-878f-f31e081b46b6",
+    "trailer": "https://cdn-video.marsgate.tr/m3u/101",
+    "genre": "Korku",
+    "summary": "Kusursuz bir aile kurma hayaliyle Saga ve İngiliz eşi Jon, Saga’nın çocukluğunun büyük bir bölümünü geçirdiği, Finlandiya ormanlarının derinliklerindeki ıssız eve taşınır. Ancak bebekleri doğar doğmaz, çevresindekilerin tüm telkinlerine rağmen Saga, oğlunda korkunç bir terslik olduğunu hisseder. Evlilikleri çatırdamaya başlarken Jon, eşine destek olmaya çalışır; fakat yeni doğanlarıyla ilgili dehşet verici gerçeği yalnızca Saga sezmektedir.",
+    "date": "20260807",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
     "title": "Keloğlan ve Hayvan Dostları",
     "link": "https://www.paribucineverse.com/animasyon-filmleri/keloglan-ve-hayvan-dostlari-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~13fa84a6-3fe8-4e64-b6d7-6f49bc5877b8",
@@ -50,32 +190,12 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Kozalak Devri",
-    "link": "https://www.paribucineverse.com/komedi-filmleri/kozalak-devri-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~70b84ee6-1f95-4850-819f-5d839764e036",
-    "trailer": "https://cdn.marsgate.com.tr/13534",
-    "genre": "Komedi",
-    "summary": "Kozalak Devri, köklü bir siyasi geçmişe sahip bir aileden geldiği yalanını uyduran İzzet'in, belediye başkanlığı hayaliyle yola çıkıp köy muhtarlığı seçimlerinde yaşadığı olayları konu almaktadır.",
-    "date": "20260807",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
     "title": "Örümcek-Adam: Yepyeni Bir Gün",
     "link": "https://www.paribucineverse.com/fantastik-filmleri/orumcek-adam-yepyeni-bir-gun-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~3dc140fe-f011-4d4c-8c9d-0c468e786742",
     "trailer": "https://cdn-video.marsgate.tr/m3u/112",
     "genre": "Fantastik",
     "summary": "Sevdiklerinin hafızasından kendini gönüllü olarak silen Peter, artık tamamen yalnız yaşayan bir yetişkin olarak, adını bile bilmeyen bir New York sokaklarında suçla savaşmaktadır. Kendisini tamamen şehrini korumaya adamış ‘tam zamanlı’ bir Örümcek Adam olan Peter, üzerindeki baskının tetiklediği şaşırtıcı bir fiziksel evrimle boğuşurken ortaya çıkan gizemli suç dalgası onu bugüne kadar karşılaştığı en güçlü tehditlerden biriyle karşı karşıya getirecek.",
-    "date": "20260731",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
-    "title": "Özgür Kedi Scotty",
-    "link": "https://www.paribucineverse.com/animasyon-filmleri/ozgur-kedi-scotty-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~01dca691-77a8-4401-ba14-8385b4f8716c",
-    "trailer": "https://cdn-video.marsgate.tr/m3u/113",
-    "genre": "Animasyon",
-    "summary": "Özgür Kedi Scotty, sokak hayatının dinamiklerine hakim olan ve yalnızlığı tercih eden bir kedinin hikayesini merkezine alır. Scotty'nin kurduğu bu düzen, Katie isminde bir ev kedisinin beklenmedik bir şekilde hayatına dahil olmasıyla değişime uğrar. İkili, şehrin çeşitli bölgelerinde diğer sokak kedilerinin de karşılarına çıktığı bir yolculuğa adım atar. Yaşanan bu süreç, Scotty'nin yalnızca yeni çevreleri keşfetmesiyle sınırlı kalmaz; aynı zamanda yaşamında ilk kez nereye ait olduğunu sorguladığı bir döneme dönüşür.",
     "date": "20260731",
     "kaynak": "Vizyondaki Film"
   },
@@ -140,143 +260,13 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Oak Caddesi'nin Sonu",
-    "date": "20260814",
-    "link": "https://www.paribucineverse.com/gerilim-filmleri/oak-caddesinin-sonu-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~ee729384-6245-4085-8284-f7a463775beb",
-    "trailer": "https://cdn-video.marsgate.tr/m3u/109",
-    "genre": "Gerilim",
-    "summary": "Aniden meydana gelen gizemli bir kozmik olay, Oak Caddesi’ni sıradan banliyö yaşamından koparıp tamamen bilinmeyen bir yere taşır. Bu yeni düzende Platt ailesi, hayatta kalabilmenin tek yolunun birbirlerine sıkı sıkıya kenetlenmek olduğunu keşfeder. Tanınmaz hale gelen çevrelerinde yollarını bulmaya çalışırken, aile bağları onların en büyük gücü ve tek sığınağı olacaktır.",
-    "kaynak": "Gelecek Film"
-  },
-  {
-    "title": "Fırtınadan Önce",
-    "date": "20260814",
-    "link": "https://www.paribucineverse.com/savas-filmleri/firtinadan-once-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~6c840d15-a616-44cb-af7b-02ee7658b7fe",
-    "trailer": "https://cdn.marsgate.com.tr/13535",
-    "genre": "Savaş",
-    "summary": "Normandiya Çıkarması’ndan 72 saat önce, özgür dünyanın kaderi pamuk ipliğine bağlıdır. General Dwight D. Eisenhower ile Yüzbaşı James Stagg, kritik bir kararın eşiğindedir: Ya tarihin en büyük ve en tehlikeli deniz harekâtını başlatacaklar ya da savaşı kaybetme riskini göze alacaklardır.",
-    "kaynak": "Gelecek Film"
-  },
-  {
-    "title": "Derin Dehşet",
-    "date": "20260814",
-    "link": "https://www.paribucineverse.com/aksiyon-filmleri/derin-dehset-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~00b4ba24-ef82-4166-ac37-fe002b8cc07d",
-    "trailer": "https://cdn-video.marsgate.tr/m3u/89",
-    "genre": "Aksiyon",
-    "summary": "Partiler ve dalışla dolu rüya gibi bir tatil için yola çıkan arkadaş grubu, denizde suçluların saldırısına uğrayınca unutulmaz yolculukları dehşet dolu bir hayatta kalma mücadelesine dönüşür.",
-    "kaynak": "Gelecek Film"
-  },
-  {
-    "title": "Paw Patrol: Dino Filmi",
-    "date": "20260814",
-    "link": "https://www.paribucineverse.com/animasyon-filmleri/paw-patrol-dino-filmi-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~3cb6fb5a-a495-49ac-8a8c-ac0e1d35b49b",
-    "trailer": "https://cdn-video.marsgate.tr/m3u/114",
-    "genre": "Animasyon",
-    "summary": "Gemilerinin yakalandığı şiddetli bir fırtına sonrası bilinmeyen bir adaya sığınan Paw Patrol yavruları, burada dinozorlar konusunda uzman olan Rex ile bir araya gelir. Bu sırada adanın doğal kaynaklarını ele geçirmek isteyen Belediye Başkanı Humdinger, yaptığı kontrolsüz kazılarla uykudaki bir yanardağı aktif hale getirir. Ekip, adadaki yaşamı tehdit eden bu felaketi engellemek için kendi boyutlarını aşan riskli kurtarma operasyonlarına girişir.",
-    "kaynak": "Gelecek Film"
-  },
-  {
-    "title": "Peter Pan Kabuslar Ülkesi",
-    "date": "20260814",
-    "link": "https://www.paribucineverse.com/korku-filmleri/peter-pan-kabuslar-ulkesi-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~1fdf33a0-641b-40d1-a0a8-84376e49bc45",
-    "trailer": "https://cdn.marsgate.com.tr/13540",
-    "genre": "Korku",
-    "summary": "Küçük kardeşi Michael'ın acımasız Peter Pan tarafından kaçırılmasıyla Wendy Darling, kâbusu andıran bir kurtarma yolculuğuna sürüklenir. Neverland'in karanlık sırları arasında ilerlerken, karşısına çıkan her iz onu kana susamış bir dehşetin merkezine yaklaştırır. Wendy, hem kardeşini kurtarmak hem de Peter Pan'ın ölümcül oyununa son vermek için hayatta kalma mücadelesi vermek zorundadır.",
-    "kaynak": "Gelecek Film"
-  },
-  {
-    "title": "Kuyumcu",
-    "date": "20260814",
-    "link": "https://www.paribucineverse.com/komedi-filmleri/kuyumcu-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~7a86b0ea-b79b-49bd-bd70-4a9db894f172",
-    "trailer": "https://cdn.marsgate.com.tr/13536",
-    "genre": "Komedi",
-    "summary": "Kadınlara düşkünlüğüyle bilinen ünlü kuyumcu Seif, defalarca yakalandıktan sonra geleneksel erkeklik gururunu bir kenara bırakmak zorunda kalır. Güçlü iradeli karısı Yasmine, birlikte daha sağlıklı ve dengeli bir hayat kurmakta ısrar edince, çift bir ilişki danışmanına başvurur ve evliliklerini kurtarmak için alışılmadık bir terapi programına başlar. Ancak her adım onları birbirine yaklaştırmak yerine, komik bir kaos dalgası yaratır ve ilişkilerini düzeltme girişimlerini giderek artan bir felaketler dizisine dönüştürür.",
-    "kaynak": "Gelecek Film"
-  },
-  {
-    "title": "Tarot: Yeniden Doğuş",
-    "date": "20260814",
-    "link": "https://www.paribucineverse.com/korku-filmleri/tarot-yeniden-dogus-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~37be4049-0c84-4d18-be21-4fa57b7653b1",
-    "trailer": "https://cdn-video.marsgate.tr/m3u/122",
-    "genre": "Korku",
-    "summary": "Eski bir tarot destesinin etrafında şekillenen lanetli bir ritüel, bir grup arkadaşın hayatını kabusa çevirir. Kartlar açıldıkça geçmişin karanlık sırları gün yüzüne çıkacak ve 'Yeniden Doğuş' için dehşet dolu bir bedel ödenmesi gerekecektir.",
-    "kaynak": "Gelecek Film"
-  },
-  {
-    "title": "Cesur Denizciler: Okyanus Macerası",
-    "date": "20260821",
-    "link": "https://www.paribucineverse.com/animasyon-filmleri/cesur-denizciler-okyanus-macerasi-filmi-izle",
-    "bilet_link": null,
-    "trailer": "https://cdn.marsgate.com.tr/13541",
-    "genre": "Animasyon",
-    "summary": "Cesur denizci Lydia, kaybolan kardeşini bulmak için uçan bir gemiyle unutulmaz bir yolculuğa çıkar. Bu büyük macerada, anılarından büyülü takımyıldızları oluşturabildiğini keşfeder. Genç denizci Lucas ve sevimli dostu Critter ile güçlerini birleştiren Lydia, dostluk, cesaret ve takım çalışmasının önemini öğrenirken okyanusun en heyecan dolu macerasına yelken açar.",
-    "kaynak": "Gelecek Film"
-  },
-  {
-    "title": "Davet",
-    "date": "20260821",
-    "link": "https://www.paribucineverse.com/komedi-filmleri/davet-filmi-izle",
-    "bilet_link": null,
-    "trailer": "https://cdn-video.marsgate.tr/m3u/88",
-    "genre": "Komedi",
-    "summary": "Joe ve Angela’nın evliliği kırılma noktasındadır. Gerginlik giderek artarken, üst katlarındaki gizemli komşularını akşam yemeğine davet ederler. Sıradan başlayan bu buluşma, gece ilerledikçe beklenmedik bir hâl alır.",
-    "kaynak": "Gelecek Film"
-  },
-  {
-    "title": "Evcil Kahramanlar",
-    "date": "20260821",
-    "link": "https://www.paribucineverse.com/animasyon-filmleri/evcil-kahramanlar-filmi-izle",
-    "bilet_link": null,
-    "trailer": "https://cdn-video.marsgate.tr/m3u/93",
-    "genre": "Animasyon",
-    "summary": "Şımarık gösteri köpeği Gracie ile sokak kedisi Pedro, ailelerinin taşınması sırasında yollarını kaybedince kendilerini evlerinden kilometrelerce uzakta bulur. Eve dönebilmek için anlaşmayı öğrenmek zorunda kalan bu zıt ikili, birbirinden komik ve heyecan dolu bir maceraya atılır.",
-    "kaynak": "Gelecek Film"
-  },
-  {
-    "title": "Fırtına Ekip Yollarda",
-    "date": "20260821",
-    "link": "https://www.paribucineverse.com/animasyon-filmleri/firtina-ekip-yollarda-filmi-izle",
-    "bilet_link": null,
-    "trailer": "https://cdn-video.marsgate.tr/m3u/95",
-    "genre": "Animasyon",
-    "summary": "Kayıp babaya ulaşmak için yollara düşen bu renkli ekip, yol boyunca kendilerini hiç beklemedikleri absürt tehlikelerin, komik ve heyecan dolu maceraların içinde bulur.",
-    "kaynak": "Gelecek Film"
-  },
-  {
-    "title": "Gerçek Kayıtlar: Vaka 7",
-    "date": "20260821",
-    "link": "https://www.paribucineverse.com/korku-filmleri/gercek-kayitlar-vaka-7-filmi-izle",
-    "bilet_link": null,
-    "trailer": "https://cdn-video.marsgate.tr/m3u/96",
-    "genre": "Korku",
-    "summary": "Bu görüntüler, Dr. Meltem Taşkıran'dan geriye kalan son kayıtlardır... Cinlere değil kanıta inanan nöro-kriminoloji uzmanı, hastalarının kriz anlarında fısıldadığı tek bir kelimenin peşine düşer: \"Geldiler.\" Birbirini hiç tanımayan iki hasta, aynı kelime. Ve aynı gece gelen bir telefon; babaannesi de günlerdir aynı şeyi sayıklamaktadır. Meltem kamerasını alıp doğduğu köye döner. O geceden sonra hiçbir şey bildiği gibi değildir. Meltem her anı kaydeder. Çünkü ona kimse inanmamaktadır ve aklını kaybetmediğinin tek kanıtı, elindeki kameradır.",
-    "kaynak": "Gelecek Film"
-  },
-  {
-    "title": "Ruhlar Bölgesi: Aramızdalar",
-    "date": "20260821",
-    "link": "https://www.paribucineverse.com/korku-filmleri/ruhlar-bo%CC%88lgesi-aramizdalar-filmi-izle",
-    "bilet_link": null,
-    "trailer": "https://cdn-video.marsgate.tr/m3u/117",
-    "genre": "Korku",
-    "summary": "Çocukluğunu geçirdiği evde kızını büyüten genç bir anne olan Gemma, öteki dünyaya seyahat edebildiğini ve orada yaşayanları gerçek dünyaya geri getirebildiğini keşfeder.",
-    "kaynak": "Gelecek Film"
-  },
-  {
-    "title": "Tempus",
-    "date": "20260821",
-    "link": "https://www.paribucineverse.com/gerilim-filmleri/tempus-filmi-izle",
-    "bilet_link": null,
-    "trailer": "https://cdn-video.marsgate.tr/m3u/123",
-    "genre": "Gerilim",
-    "summary": "60 yaşındaki idealist akademisyen, kanser hastalığının son evresinde, çocukluğundan beri zihnini meşgul eden gizemli bir olayı aydınlatmaya karar verir. Hayatının son günlerini bu sırrın peşinde geçirmeyi seçen profesör, yıllar sonra Gaziantep’e gelir ancak bu ziyaret, göründüğü kadar masum değildir. Profesör, zamanın büküldüğüne inanılan kozmik bir geçidin yerini bilen tek kişidir ve bu bilgi, onu geri dönüşü olmayan bir arayışa sürükler. Amacına ulaşmak için bir doktoru, eski bir askeri ve asistanını bir araya getirir. Başlangıçta gerçeğin tamamından habersiz olan bu küçük ekip, zamanla profesörün peşinde olduğu sırrın yalnızca geçmişe ait olmadığını fark eder. Kayıp bir anahtar, saklı bir harita ve TEMPUS adıyla anılan gizemli kapı, ekibi insanlık tarihinin seyrini değiştirebilecek büyük bir gücün eşiğine taşır. Fakat kimse, bu kapının gerçekte neye açıldığını henüz bilmemektedir.",
+    "title": "Harry Potter ve Felsefe Taşı",
+    "date": "20260828",
+    "link": "https://www.paribucineverse.com/macera-filmleri/harry-potter-ve-felsefe-tasi-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~f9b8fa53-66bc-4b24-aec4-9c826bd7a480",
+    "trailer": "https://cdn-video.marsgate.tr/m3u/130",
+    "genre": "Macera",
+    "summary": "Harry, 11 yaşında Hogwarts'a kabul edilir ve yasaklı koridorda Felsefe Taşı’nı keşfeder. Voldemort da taşı ararken, Harry intikam almak ister. Ailesini küçük yaşta kaybeden Harry Potter, sıradan ve sevgisiz bir hayat sürerken 11. yaş gününde bir büyücü olduğunu öğrenir. Hogwarts Cadılık ve Büyücülük Okulu’na kabul edilen Harry, burada Ron Weasley ve Hermione Granger ile yakın dostluklar kurar. Okulda geçirdiği ilk yılda, büyücülük dünyasını tehdit eden karanlık güçlerle bağlantılı gizemli Sorcerer’s Stone’un peşine düşer. Harry, geçmişiyle ve karanlık bir kaderle yüzleşirken cesaretin, dostluğun ve seçimin gücünü keşfeder.",
     "kaynak": "Gelecek Film"
   },
   {
@@ -310,6 +300,16 @@
     "kaynak": "Gelecek Film"
   },
   {
+    "title": "Dışarıdakiler: Bir Zamanlar Almanya'da",
+    "date": "20260828",
+    "link": "https://www.paribucineverse.com/dram-filmleri/disaridakiler-bir-zamanlar-almanyada-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn-video.marsgate.tr/m3u/139",
+    "genre": "Dram",
+    "summary": "Zonguldak’tan Almanya’ya giden genç Rıfat için bu yolculuk yalnızca çalışıp para kazanmanın değil, hayatı keşfetmenin hikâyesidir. Yeni arkadaşlıklar, ilk aşklar, eğlence, rekabet ve hiç bilmediği bir dünyanın heyecanı arasında Rıfat ve arkadaşları, Almanya’da kendi hayatlarını kurmaya çalışır. Ancak gençlik hayallerinin peşinden koşarken hayat onları hiç beklemedikleri bir sınavla karşı karşıya bırakacaktır.",
+    "kaynak": "Gelecek Film"
+  },
+  {
     "title": "Dolly",
     "date": "20260828",
     "link": "https://www.paribucineverse.com/korku-filmleri/dolly-filmi-izle",
@@ -320,16 +320,6 @@
     "kaynak": "Gelecek Film"
   },
   {
-    "title": "Harry Potter ve Felsefe Taşı",
-    "date": "20260828",
-    "link": "https://www.paribucineverse.com/macera-filmleri/harry-potter-ve-felsefe-tasi-filmi-izle",
-    "bilet_link": null,
-    "trailer": "https://cdn-video.marsgate.tr/m3u/130",
-    "genre": "Macera",
-    "summary": "Harry, 11 yaşında Hogwarts'a kabul edilir ve yasaklı koridorda Felsefe Taşı’nı keşfeder. Voldemort da taşı ararken, Harry intikam almak ister. Ailesini küçük yaşta kaybeden Harry Potter, sıradan ve sevgisiz bir hayat sürerken 11. yaş gününde bir büyücü olduğunu öğrenir. Hogwarts Cadılık ve Büyücülük Okulu’na kabul edilen Harry, burada Ron Weasley ve Hermione Granger ile yakın dostluklar kurar. Okulda geçirdiği ilk yılda, büyücülük dünyasını tehdit eden karanlık güçlerle bağlantılı gizemli Sorcerer’s Stone’un peşine düşer. Harry, geçmişiyle ve karanlık bir kaderle yüzleşirken cesaretin, dostluğun ve seçimin gücünü keşfeder.",
-    "kaynak": "Gelecek Film"
-  },
-  {
     "title": "Köpek ve Yıldızlar",
     "date": "20260828",
     "link": "https://www.paribucineverse.com/bilim-kurgu-filmleri/ko%CC%88pek-ve-yildizlar-filmi-izle",
@@ -337,6 +327,16 @@
     "trailer": "https://cdn-video.marsgate.tr/m3u/103",
     "genre": "Bilim Kurgu",
     "summary": "Askeri hayatta kalma uzmanı Bangley ile birlikte kıyamet sonrası dünyasının acımasız atmosferinde işlevsel ancak izole bir yaşam alanı kuran genç pilot Hig'in hikâyesi.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Kuşatma Kayıtları",
+    "date": "20260828",
+    "link": "https://www.paribucineverse.com/dram-filmleri/kusatma-kayitlari-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn-video.marsgate.tr/m3u/151",
+    "genre": "Dram",
+    "summary": "Kuşatma Kayıtları, savaşın ortasında kalan ve her yönden kuşatılmış bir şehirde yaşayan insanların günlük hayatta kalma çabalarına odaklanmaktadır. Şehirdeki açlık ve yetersiz sağlık hizmetleri gibi fiziksel zorlukların yanı sıra psikolojik bir baskı altında da olan bireyler, yaşamlarını sürdürebilmek için oldukça zor kararlar almak durumunda kalır. Tüm bu yıkım ve belirsizlik ortamında hayatta kalanlar, bir yandan temel ihtiyaçlarını karşılamaya çabalarken diğer yandan dostluk, aşk ve küçük mutluluk anlarına tutunarak yollarına devam etmeye çalışırlar.",
     "kaynak": "Gelecek Film"
   },
   {
@@ -360,13 +360,23 @@
     "kaynak": "Gelecek Film"
   },
   {
-    "title": "Fall 2: Ölümcül Tırmanış",
-    "date": "20260902",
-    "link": "https://www.paribucineverse.com/gerilim-filmleri/fall-2-olumcul-tirmanis-filmi-izle",
+    "title": "Aşıklar Şehri",
+    "date": "20260904",
+    "link": "https://www.paribucineverse.com/muzikal-filmleri/asiklar-sehri-2026-filmi-izle",
     "bilet_link": null,
-    "trailer": "https://cdn-video.marsgate.tr/m3u/94",
-    "genre": "Gerilim",
-    "summary": "Jax, önceki filmdeki olaylar sırasında kız kardeşi Shiloh Hunter'ın ölümüne yas tutar. Kız kardeşinin arkadaşı Luce'nin önerisiyle Shiloh'un hayatını kutlamak için Tayland'daki Kwan-in Dağı'nda cesur bir tahta yürüyüşü yapmaya karar veren ikili, kısa süre sonra bir kaya kayması ve tsunami sonrasında 3.000 fitten fazla yükseklikte mahsur kalır ve hayatta kalmak için birlikte çalışmak zorundadır.",
+    "trailer": "https://cdn.marsgate.com.tr/1054",
+    "genre": "Müzikal",
+    "summary": "Film her şeyin başladığı Los Angeles’da bir otobanda başlıyor. Trafiğin sıkışık olduğu bir gün, kibirli bir korna sonucunda, hayatlarında yön bulmaya çalışan Sebastian ve Mia tanışıyor. İkisi de imkânsıza yakın olan hayallerine odaklanmışlardır. Sebastian 21. Yüzyılda insanların geleneksel jazz müziğini umursamasını sağlamaya çalışmakta, Mia ise sadece kesintisiz bir oyuncu seçmesinde şansını denemek istemektedir. Ancak ikisi de yalnız bir şekilde bekledikleri sıçramayı yapacaklarını beklememektedir. Yapabildikleri asıl sıçrama birbirlerine karşı, sanatsal düşlerinin içine olur. Bu birleşim tabiatının gerektirdiği gibi bir sinematik dünya yaratarak, bizi ışık, renkler, ses, müzik ve sözler ile yakalamaya çalıştığımız mutluluğa ve asla aşamadığımız tutkuların kalp kırıklıklarına, hayran verici bir yolculuğa çıkarır. Sinema efsaneleri arasına girebilecek Aşıklar Şehri, yönetmen Chazelle’in beyaz perdeye aktardığı, insanın en özel bölgesine girerek, samimi ilişkilerin anlatıldığı, kişisel hayallerin ve kararların kaderle kesiştiği, gerçek ancak büyülü bir evren.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Azem 6: Mühür",
+    "date": "20260904",
+    "link": "https://www.paribucineverse.com/korku-filmleri/azem-6-muhur-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn-video.marsgate.tr/m3u/144",
+    "genre": "Korku",
+    "summary": "Yıllardır Anadolu’nun sessiz köylerinde fısıltıyla anlatılan, nesilden nesile taşınan kadim korkular… AZEM serisi, bu toprakların sakladığı karanlık hikâyeleri beyazperdeye taşıdı. Geçmişinden kaçıp sakin bir hayat kurmaya çalışan Ceren, çocukluğunun geçtiği köye döndüğünde kendisini açıklanamayan olayların ortasında bulur. Ceren’in gelişiyle, köyün yıllardır susturduğu karanlık geçmiş yeniden canlanır. Ancak bilmediği gerçek şudur: O, yıllardır beklenen şeyin kendisidir. Bedeninde zuhur eden kadim mühür, kasabanın unutmaya çalıştığı lanete yeniden hayat verir ve Ceren’i geri dönüşü olmayan bir karanlığın içine çeker.",
     "kaynak": "Gelecek Film"
   },
   {
@@ -380,13 +390,43 @@
     "kaynak": "Gelecek Film"
   },
   {
+    "title": "Doraemon: Şeytanların Denizaltı Kalesi",
+    "date": "20260904",
+    "link": "https://www.paribucineverse.com/animasyon-filmleri/doraemon-seytanlarin-denizalti-kalesi-filmi-izle",
+    "bilet_link": null,
+    "trailer": "Fragman bağlantısı yok",
+    "genre": "Animasyon",
+    "summary": "Nobita ve arkadaşları, gizemler ve hazinelerle dolu gizli bir sualtı kalesi keşfederler. Doraemon’un son teknoloji ürünü aletleriyle, nefes kesici bir sualtı dünyasında mizah, takım çalışması ve hayal gücünün harmanlandığı bir okyanus macerasına dalarlar.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Fall 2: Ölümcül Tırmanış",
+    "date": "20260904",
+    "link": "https://www.paribucineverse.com/gerilim-filmleri/fall-2-olumcul-tirmanis-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn-video.marsgate.tr/m3u/150",
+    "genre": "Gerilim",
+    "summary": "Jax, önceki filmdeki olaylar sırasında kız kardeşi Shiloh Hunter'ın ölümüne yas tutar. Kız kardeşinin arkadaşı Luce'nin önerisiyle Shiloh'un hayatını kutlamak için Tayland'daki Kwan-in Dağı'nda cesur bir tahta yürüyüşü yapmaya karar veren ikili, kısa süre sonra bir kaya kayması ve tsunami sonrasında 3.000 fitten fazla yükseklikte mahsur kalır ve hayatta kalmak için birlikte çalışmak zorundadır.",
+    "kaynak": "Gelecek Film"
+  },
+  {
     "title": "Saldırı",
     "date": "20260904",
     "link": "https://www.paribucineverse.com/korku-filmleri/saldiri-filmi-izle",
     "bilet_link": null,
     "trailer": "https://cdn-video.marsgate.tr/m3u/126",
     "genre": "Korku",
-    "summary": "Çölde genetik olarak tasarlanmış süper askerlerden oluşan bir çete serbest kalınca, sert bir Ordu keskin nişancısı genç kızını korumak için cehennemi serbest bırakmak zorunda kalır.",
+    "summary": "Genetiği değiştirilmiş süper askerlerden oluşan asi bir birim çölde kontrolden çıktığında, sert bir ordu keskin nişancısı, küçük kızını korumak için cehennemi yaşatmak zorunda kalır",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "12 Savaşçı",
+    "date": "20260911",
+    "link": "https://www.paribucineverse.com/aksiyon-filmleri/12-savasci-2026-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn-video.marsgate.tr/m3u/140",
+    "genre": "Aksiyon",
+    "summary": "Film, dünya genelinde canlı izlenebilen ve üzerine bahis yapılabilen, bir bina içerisindeki 12 dövüşçü içerisinde hayatta kalanın büyük ödüle uzandığı bir kanlı oyunu konu ediniyor.",
     "kaynak": "Gelecek Film"
   },
   {
@@ -397,6 +437,16 @@
     "trailer": "https://cdn-video.marsgate.tr/m3u/132",
     "genre": "Romantik",
     "summary": "Owens kardeşler, ailelerini sonsuza dek parçalama tehdidi taşıyan karanlık lanetle yüzleşmek zorunda kalmaktadır.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Kanlı Körfez",
+    "date": "20260911",
+    "link": "https://www.paribucineverse.com/korku-filmleri/kanli-korfez-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn-video.marsgate.tr/m3u/135",
+    "genre": "Korku",
+    "summary": "Tayland'da bir düğüne katılmak için buluşan iki eski arkadaş, kaplan köpekbalıklarının yaşadığı gizli bir körfezi ziyaret etmek üzere çıktıkları tekne turunda büyük bir tehlikeyle yüz yüze gelir. Motoruna saldıran dev bir köpekbalığının yol açtığı hasar sonucu hızla batan teknenin ardından tek kişilik bir salda mahsur kalan Emma ve Lani, hem vahşi doğaya hem de birbirlerine karşı hayatta kalma savaşı vermek zorunda kalırlar.",
     "kaynak": "Gelecek Film"
   },
   {
@@ -420,13 +470,33 @@
     "kaynak": "Gelecek Film"
   },
   {
+    "title": "Sınırsız",
+    "date": "20260911",
+    "link": "https://www.paribucineverse.com/aksiyon-filmleri/sinirsiz-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn-video.marsgate.tr/m3u/138",
+    "genre": "Aksiyon",
+    "summary": "Eski bir asker olan Hank, hasta bir çocuğun hayatını kurtarabilecek kritik bir organı zamanında hastaneye ulaştırmak için görevlendirilir. Ancak taşıdığı organı ele geçirmek isteyen acımasız bir suç örgütünün hedefi haline gelince, görev basit bir teslimattan ölümcül bir kovalamacaya dönüşür. Hank, karşısına çıkan tehlikeleri aşarak hem hayatta kalmaya hem de küçük çocuğun hayatını kurtaracak teslimatı zamanında tamamlamaya çalışır.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Macera Diyarı: Gizemli Taşlar",
+    "date": "20260918",
+    "link": "https://www.paribucineverse.com/animasyon-filmleri/macera-diyari-gizemli-taslar-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn-video.marsgate.tr/m3u/149",
+    "genre": "Animasyon",
+    "summary": "Efe, arkadaşı olmadığı için yaz tatilinde sıkılan meraklı bir çocuktur. Ailesiyle gittikleri yazlıkta, sihirli eşyalar dükkânından aldığı gizemli bir kitap hayatını değiştirir: sayfalarında beliren harita, onu maceraların kaderini elinde tutan “seçilmiş savaşçı” ilan eder. Üç yüz yıldır kayıp altı macera taşının peşindeki kötü bir cadı, taşlara ulaşmak için Efe'yi büyülü diyarlara ışınlar. Kanyon, volkan, orman ve buzul diyarlarını dolaşan Efe, yol boyunca Luna'yla, bir ejderhayla, bir trolle ve bir anka kuşuyla dostluklar kurar. Ama taşların sırrı beklenmediktir: bu taşlar zorla değil, ancak iyilikle ortaya çıkmaktadır. Efe'nin kalbindeki iyilik, cadının bütün büyüsünden daha güçlü çıkacak mıdır?",
+    "kaynak": "Gelecek Film"
+  },
+  {
     "title": "Resident Evil",
     "date": "20260918",
     "link": "https://www.paribucineverse.com/korku-filmleri/resident-evil-filmi-izle",
     "bilet_link": null,
     "trailer": "https://cdn-video.marsgate.tr/m3u/116",
     "genre": "Korku",
-    "summary": "Uzak bir hastaneye paket teslim etmekle görevlendirilmiş talihsiz bir kurye kısa süre sonra kendini bir salgın ortasında bulur. Hayatta kalmak için mutasyona uğramış yaratık ordularıyla mücadele etmek zorunda kalacaktır.",
+    "summary": "Kabus dolu bir gece, soluksuz bir hayatta kalma mücadelesi. Tıbbi kurye Bryan, sıradan bir teslimat gecesinde kendisini kaderin acımasız bir oyununun ortasında bulur. Kontrolden çıkan olaylar zinciri hızla karanlık bir kabusa dönüşürken Bryan, giderek büyüyen kaosun içinde nefes kesici bir hayatta kalma mücadelesine sürüklenir. Artık Bryan için tek hedef hayatta kalmaktır.",
     "kaynak": "Gelecek Film"
   },
   {
@@ -437,6 +507,46 @@
     "trailer": "Fragman bağlantısı yok",
     "genre": "Gerilim",
     "summary": "Genç bir kadın olan Jessica, kocasının kaybı ile büyük yıkıma uğrar. Kocasının yokluğuna alışmakta zorlanan Jessica, acısının üstesinden gelebilmek için şehirden kaçmaya karar verir ve kendisine yeni bir hayat kurmaya çalışır. Yeni taşındığı şehirde gizemli bir adam tarafından kaçırılır. Kendisini doğanın ortasında izole bir kulübede kilitli bulan Jessica, buradan kaçmanın yolunu ararken aynı zamanda vahşi doğada hayatta kalmak için de mücadele verir.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Avengers: Endgame Encore",
+    "date": "20260925",
+    "link": "https://www.paribucineverse.com/aksiyon-filmleri/avengers-endgame-encore-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn-video.marsgate.tr/m3u/154",
+    "genre": "Aksiyon",
+    "summary": "Marvel Studios’un, sinema tarihinin rekorlar kıran efsanevi filmi “Avengers: Endgame - Encore”un yeniden gösterimine ait özel fragman ve afişi izleyiciyle buluştu. Film, 25 Eylül 2026 tarihinde sinemalarda gösterime girecek. Sinemaseverler, rekor kıran filmin \"Encore\" adıyla gerçekleşecek bu özel gösterimiyle kahramanların yeniden bir araya gelişine tanıklık edecek. Bu özel gösterimde, 18 Aralık 2026’da vizyona girecek olan Marvel Studios imzalı “Avengers: Doomsday” filmine çok özel bir bakış da izleyicilerle buluşacak.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Damat Mektebi",
+    "date": "20260925",
+    "link": "https://www.paribucineverse.com/komedi-filmleri/damat-mektebi-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn-video.marsgate.tr/m3u/153",
+    "genre": "Komedi",
+    "summary": "Köydeki annelerin kızlarını şehirli damatlarla evlendirmesi, genç erkeklerin giderek köyden uzaklaşmasına yol açarken Ferman Ağa bu düzen üzerinden etkisini artırır. Bir düğünde gelinin gizemli bir atlı tarafından kaçırılmasıyla yaşanan karışıklığın ardından köye dönen Miran, gençlerin kendilerini ifade edebilmesi için köy kahvesini Damat Mektebi’ne dönüştürür. Burada başlayan değişim, köydeki ilişkileri ve güç dengelerini de etkiler.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "İsyan",
+    "date": "20260925",
+    "link": "https://www.paribucineverse.com/aksiyon-filmleri/isyan-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn-video.marsgate.tr/m3u/143",
+    "genre": "Aksiyon",
+    "summary": "Ünlü iş adamı Tibu'nun ölümünden sorumlu tutulduktan sonra kaçak duruma düşen eski polis Cole Reed, Tibu'nun gerçek katillerini bulmak ve adını temize çıkarmak için tehlikeli bir yolculuğa çıkar. Bir kargo gemisinde illegal işler peşindeki bir şebekeyi ortaya çıkaran Cole, hiç beklemediği bir komployla karşı karşıya gelir. Tibu'nun intikamını almak ve adaleti sağlamak isteyen Cole, hem masumları kurtaracak hem de kendi geçmişiyle yüzleşecektir.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Prenses ve Şövalye: Yaşam İksiri",
+    "date": "20260925",
+    "link": "https://www.paribucineverse.com/animasyon-filmleri/prenses-ve-sovalye-yasam-iksiri-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn-video.marsgate.tr/m3u/133",
+    "genre": "Animasyon",
+    "summary": "Ölümsüz Drybone ile cesur savaşçı Barbara evlenmek üzeredir ancak Barbara’nın güçlü iradeli teyzesi Kraliçe Brungilda bu evliliği hiç onaylamaz. Düğünü engellemeye çalışırken yaptığı büyü ters gider ve Barbara derin bir uykuya dalar. Onu uyandırmanın tek yolu ise tehlikelerle dolu gizli bir yerde bulunan efsanevi Hayat İksiri’ni bulmaktır. Drybone, bu zorlu macerayı tek başına tamamlayamayacağını anlayınca cesur ama sakar ve biraz da korkak şövalye Elijah’dan yardım ister. Böylece ikili, Barbara’yı kurtarmak ve krallığa yeniden neşe getirmek için sihir, macera ve kahkahayla dolu eğlenceli bir yolculuğa çıkar. Dünyaca ünlü “Külkedisi” masalına sihirli, modern ve çok eğlenceli bir bakış…",
     "kaynak": "Gelecek Film"
   },
   {
@@ -460,6 +570,66 @@
     "kaynak": "Gelecek Film"
   },
   {
+    "title": "Unutulmuş Ada",
+    "date": "20261002",
+    "link": "https://www.paribucineverse.com/animasyon-filmleri/unutulmus-ada-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn-video.marsgate.tr/m3u/134",
+    "genre": "Animasyon",
+    "summary": "Son gecelerini kutlarken Jo ve Raissa, Filipinli ailelerinden yıllardır hikâyelerini duydukları sihirli ve mitolojik yaratıklarla dolu, Nakali isimli fantastik adaya açılan gizemli bir portal keşfederler. Bu figürlerin bazıları dost, bazıları ise düşman olacaktır. Şapşal ama iyi niyetli kurt köpek Raww ve küçük ama cesur bir arkadaş grubuyla güçlerini birleştiren Jo ve Raissa, adanın en korkulan yaratığı olan Dehşet Manananggal’la yüzleşmek zorundadır. Eve dönmenin bedelinin tüm anılarını kaybetmek olduğunu öğrendiklerinde ise birbirlerini sonsuza dek unutmalarına ramak kalmadan adadan ayrılmanın bir yolunu bulmak için zamana karşı yarışırlar.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Vahşinin Kalbi",
+    "date": "20261002",
+    "link": "https://www.paribucineverse.com/aksiyon-filmleri/vahsinin-kalbi-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn-video.marsgate.tr/m3u/148",
+    "genre": "Aksiyon",
+    "summary": "Özel Kuvvetler subayı James Belmont, içinde bulunduğu uçağın Alaska'nın zorlu coğrafyasına düşmesi sonucu hayatta kalmayı başarır. Yanında sadece eğitimli savaş köpeği Odin bulunan Belmont, dondurucu soğuklar, vahşi doğa şartları ve sınırlı kaynaklarla karşı karşıya kalır. Medeniyetten tamamen uzakta mahsur kalan ikili, bir yandan bölgenin çetin iklim koşullarına ve yırtıcılara karşı direnirken, diğer yandan da aralarındaki bağı ve askeri hayatta kalma becerilerini kullanarak kurtulmanın bir yolunu arar.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Verity: Gerçeğin Diğer Kıyısı",
+    "date": "20261002",
+    "link": "https://www.paribucineverse.com/gerilim-filmleri/verity-gercegin-diger-kiyisi-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn-video.marsgate.tr/m3u/136",
+    "genre": "Gerilim",
+    "summary": "Lowen Ashleigh, kariyerinde yaşadığı maddi sıkıntılar nedeniyle, geçirdiği kaza sonucu yazamaz hale gelen başarılı yazar Verity Crawford’un devam eden kitap serisini bitirme teklifini kabul eder. Bu süreçte Verity’nin eşi Jeremy Crawford ile tanışan Lowen, çalışmak için Crawford ailesinin evine yerleşir. Evdeki çalışmaları sırasında, Verity’ye ait gizli bir el yazması not defterini bulan Lowen, burada ailenin geçmişine dair daha önce hiç gün yüzüne çıkmamış gerçeklerle karşılaşır. Okuduğu notlar, Verity’nin kendi hayatına ve özellikle eşi Jeremy’ye dair yazdığı karmaşık itirafları içermektedir. Lowen, bir yandan teslim etmesi gereken kitap üzerinde çalışırken diğer yandan bu belgelerin içerdiği bilgilerin doğruluğunu sorgulamaya başlar. Evin içindeki gergin atmosferde, elindeki notların bir yazarın kurgusal dünyasına mı yoksa gerçek bir yaşanmışlığa mı ait olduğunu anlamaya çalışan Lowen, kısa sürede kendisini profesyonel sınırları aşan tehlikeli bir psikolojik karmaşanın ortasında bulur.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Sosyal Hesaplaşma",
+    "date": "20261009",
+    "link": "https://www.paribucineverse.com/dram-filmleri/sosyal-hesaplasma-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn-video.marsgate.tr/m3u/146",
+    "genre": "Dram",
+    "summary": "Sosyal Hesaplaşma (The Social Reckoning), Facebook Files olarak bilinen olaylardan esinlenerek büyük bir teknoloji şirketinin perde arkasında yaşanan gelişmeleri merkezine alır. Olay örgüsü, Facebook mühendisi Frances Haugen'in şirket içindeki bazı uygulamalara ve gizli belgelere dair bilgileri ortaya çıkarma kararı almasıyla şekillenir. Bu amaç doğrultusunda Wall Street Journal muhabiri Jeff Horwitz ile bir araya gelen Haugen, şirketin iç işleyişine dair detayları ve belgeleri gün yüzüne çıkarmak üzere harekete geçer. Film, ikilinin bu belgeleri ifşa etme aşamasında yürüttükleri çalışmaları ve karşılaştıkları zorlukları nesnel bir çerçevede konu edinir.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Dondurmam Gaymak: Gapital",
+    "date": "20261016",
+    "link": "https://www.paribucineverse.com/komedi-filmleri/dondurmam-gaymak-gapital-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn-video.marsgate.tr/m3u/152",
+    "genre": "Komedi",
+    "summary": "Amerika’da başarılı bir finans kariyeri sürdüren Kamil, oğlunun isteği ve merhum Ali Usta’nın vefat haberiyle çocukluğunun geçtiği Ula’ya dönmek zorunda kalır. Kasabaya adım attığında, Ali Usta’dan yadigâr kalan efsanevi ‘Nasip Dondurmaları’nın borç batağına saplandığını ve itibarını kaybettiğini görür. Amerika’nın soğuk dünyası ile çocukluğunun geçtiği Muğla arasında bir tercih yapmak zorunda kalan Kamil, arkadaşlarıyla el ele vererek hem Ali Usta’nın mirasını hem de kasabanın ruhunu dev markalara karşı korumak için kolları sıvar.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Clayface",
+    "date": "20261023",
+    "link": "https://www.paribucineverse.com/korku-filmleri/clayface-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn-video.marsgate.tr/m3u/137",
+    "genre": "Korku",
+    "summary": "Genç ve hırslı bir aktör olan Matt Hagen, Hollywood’un zirvesine tırmanırken yaşadığı trajik olaylar sonrası kendini geri dönülemez bir fiziksel ve ruhsal değişimin içinde bulur. Kendi kimliğini ve insanlığını adım adım yitiren Hagen’ın yolculuğu, bilimsel hırsın karanlık yüzüyle birleşerek dehşet verici bir intikam hikayesine dönüşür.",
+    "kaynak": "Gelecek Film"
+  },
+  {
     "title": "Gupi ve Gülmeyen Kral",
     "date": "20261023",
     "link": "https://www.paribucineverse.com/animasyon-filmleri/gupi-ve-gulmeyen-kral-filmi-izle",
@@ -467,6 +637,16 @@
     "trailer": "https://cdn-video.marsgate.tr/m3u/129",
     "genre": "Animasyon",
     "summary": "Yaşadıkları apartmandaki boş ve kimsesiz daireye pasta götürmek amacıyla giren Gupi ve arkadaşları, odadaki bir dolabın içinden geçerek kendilerini karanlık, mutsuz ve farklı bir boyutta bulurlar. Bu yeni dünya, hüznü tüm diyara yayılmış olan Gülmeyen Kral'ın sarayına ev sahipliği yapmaktadır. Kralın hiç gülmemesi nedeniyle o boyutta yaşayan tüm halkın da neşesini kaybettiğini fark eden karakterler, hükümdarı güldürebilmek ve krallığa tekrar mutluluk getirebilmek amacıyla çeşitli yöntemler denemeye başlarlar.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Kuzular Firarda: Gizemli Canavar",
+    "date": "20261023",
+    "link": "https://www.paribucineverse.com/animasyon-filmleri/kuzular-firarda-gizemli-canavar-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn-video.marsgate.tr/m3u/147",
+    "genre": "Animasyon",
+    "summary": "Mossy Bottom Çiftliği’nde, sakar Çiftçi’nin kabak tarlasını mahvetmesiyle heyecan, hayal kırıklığına dönüşür. Shaun, bilimsel deneylerle durumu düzeltmeye çalışır, ancak ormanda vahşi bir canavarın ortaya çıkmasıyla işler ters gider.",
     "kaynak": "Gelecek Film"
   }
 ]
