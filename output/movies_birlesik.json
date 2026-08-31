@@ -160,16 +160,6 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Kurtuluş Projesi",
-    "link": "https://www.paribucineverse.com/bilim-kurgu-filmleri/kurtulus-projesi-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~49cc9f1b-e58b-4a15-b38b-32b6ee1d130a",
-    "trailer": "https://cdn.marsgate.com.tr/13294",
-    "genre": "Bilim Kurgu",
-    "summary": "Film, dünyanın kurtuluşu için uzayda bir gizemi çözmesi gereken bir fen bilgisi öğretmeninin hikâyesini anlatıyor.",
-    "date": "20260812",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
     "title": "Örümcek-Adam: Yepyeni Bir Gün",
     "link": "https://www.paribucineverse.com/fantastik-filmleri/orumcek-adam-yepyeni-bir-gun-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~3dc140fe-f011-4d4c-8c9d-0c468e786742",
@@ -220,6 +210,16 @@
     "kaynak": "Vizyondaki Film"
   },
   {
+    "title": "Kurtuluş Projesi",
+    "date": "20260902",
+    "link": "https://www.paribucineverse.com/bilim-kurgu-filmleri/kurtulus-projesi-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~49cc9f1b-e58b-4a15-b38b-32b6ee1d130a",
+    "trailer": "https://cdn.marsgate.com.tr/13294",
+    "genre": "Bilim Kurgu",
+    "summary": "Film, dünyanın kurtuluşu için uzayda bir gizemi çözmesi gereken bir fen bilgisi öğretmeninin hikâyesini anlatıyor.",
+    "kaynak": "Gelecek Film"
+  },
+  {
     "title": "Aşıklar Şehri",
     "date": "20260904",
     "link": "https://www.paribucineverse.com/muzikal-filmleri/asiklar-sehri-2026-filmi-izle",
@@ -237,6 +237,16 @@
     "trailer": "https://cdn-video.marsgate.tr/m3u/144",
     "genre": "Korku",
     "summary": "Yıllardır Anadolu’nun sessiz köylerinde fısıltıyla anlatılan, nesilden nesile taşınan kadim korkular… AZEM serisi, bu toprakların sakladığı karanlık hikâyeleri beyazperdeye taşıdı. Geçmişinden kaçıp sakin bir hayat kurmaya çalışan Ceren, çocukluğunun geçtiği köye döndüğünde kendisini açıklanamayan olayların ortasında bulur. Ceren’in gelişiyle, köyün yıllardır susturduğu karanlık geçmiş yeniden canlanır. Ancak bilmediği gerçek şudur: O, yıllardır beklenen şeyin kendisidir. Bedeninde zuhur eden kadim mühür, kasabanın unutmaya çalıştığı lanete yeniden hayat verir ve Ceren’i geri dönüşü olmayan bir karanlığın içine çeker.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Çılgın Böcekler",
+    "date": "20260904",
+    "link": "https://www.paribucineverse.com/animasyon-filmleri/cilgin-bocekler-filmi-izle",
+    "bilet_link": null,
+    "trailer": "Fragman bağlantısı yok",
+    "genre": "Animasyon",
+    "summary": "İki üniversiteli kızın evine düşen dört hamamböceği, kızlar ve komşuları olan iki genç sayesinde kısa sürede kampüs hayatına karışır. Ancak içlerinden birinin böcekleri satmaya kalkışması grubun güvenini bozar. Üstelik varlıklarını ortaya çıkarabilecek bir videonun yayılma ihtimali, ayrı düşen arkadaşları yeniden birlikte hareket etmeye zorlar.",
     "kaynak": "Gelecek Film"
   },
   {
