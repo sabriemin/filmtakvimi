@@ -30,22 +30,22 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Cebran",
-    "link": "https://www.paribucineverse.com/korku-filmleri/cebran-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~430261d9-1b45-4760-89e2-2a34c44ce736",
-    "trailer": "https://cdn.marsgate.com.tr/13537",
-    "genre": "Korku",
-    "summary": "Çocuk sahibi olma mucizesini yaşayan Meryem ve İbrahim çifti, yıllar sonra oğulları Aras'ın etrafında gelişen esrarengiz olayların ardından geçmişteki trajik bir kazanın ve yüzyıllar öncesine dayanan ölümcül bir sırrın karanlığıyla yüzleşmek zorunda kalır.",
-    "date": "20260828",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
     "title": "Coyote Acme'ye Karşı",
     "link": "https://www.paribucineverse.com/animasyon-filmleri/coyote-acmeye-karsi-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~f1f4afbb-9fc7-458c-9681-a0a42df40f2d",
     "trailer": "https://cdn-video.marsgate.tr/m3u/76",
     "genre": "Animasyon",
     "summary": "Wile E. Coyote, Road Runner'ı yakalama girişimleri sırasında kullandığı ve sürekli bozularak kendisine zarar veren ürünler nedeniyle Acme Corporation şirketine karşı hukuki bir süreç başlatır. Coyote'un yasal mücadelesinde onu temsil eden avukat ile Acme'nin savunmasını yürüten şirket avukatı mahkemede karşı karşıya gelir. 1990 tarihli The New Yorker makalesinden temel alınarak kurgulanan hikaye, Bugs Bunny ve Daffy Duck gibi çeşitli animasyon karakterlerinin de bu yasal sürece tanık ve taraf olarak dahil olmasıyla gelişen olayları aktarmaktadır.",
+    "date": "20260828",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Cebran",
+    "link": "https://www.paribucineverse.com/korku-filmleri/cebran-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~430261d9-1b45-4760-89e2-2a34c44ce736",
+    "trailer": "https://cdn.marsgate.com.tr/13537",
+    "genre": "Korku",
+    "summary": "Çocuk sahibi olma mucizesini yaşayan Meryem ve İbrahim çifti, yıllar sonra oğulları Aras'ın etrafında gelişen esrarengiz olayların ardından geçmişteki trajik bir kazanın ve yüzyıllar öncesine dayanan ölümcül bir sırrın karanlığıyla yüzleşmek zorunda kalır.",
     "date": "20260828",
     "kaynak": "Vizyondaki Film"
   },
@@ -150,16 +150,6 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Kuyumcu",
-    "link": "https://www.paribucineverse.com/komedi-filmleri/kuyumcu-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~7a86b0ea-b79b-49bd-bd70-4a9db894f172",
-    "trailer": "https://cdn.marsgate.com.tr/13536",
-    "genre": "Komedi",
-    "summary": "Kadınlara düşkünlüğüyle bilinen ünlü kuyumcu Seif, defalarca yakalandıktan sonra geleneksel erkeklik gururunu bir kenara bırakmak zorunda kalır. Güçlü iradeli karısı Yasmine, birlikte daha sağlıklı ve dengeli bir hayat kurmakta ısrar edince, çift bir ilişki danışmanına başvurur ve evliliklerini kurtarmak için alışılmadık bir terapi programına başlar. Ancak her adım onları birbirine yaklaştırmak yerine, komik bir kaos dalgası yaratır ve ilişkilerini düzeltme girişimlerini giderek artan bir felaketler dizisine dönüştürür.",
-    "date": "20260814",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
     "title": "Örümcek-Adam: Yepyeni Bir Gün",
     "link": "https://www.paribucineverse.com/fantastik-filmleri/orumcek-adam-yepyeni-bir-gun-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~3dc140fe-f011-4d4c-8c9d-0c468e786742",
@@ -217,6 +207,16 @@
     "trailer": "https://cdn.marsgate.com.tr/13294",
     "genre": "Bilim Kurgu",
     "summary": "Film, dünyanın kurtuluşu için uzayda bir gizemi çözmesi gereken bir fen bilgisi öğretmeninin hikâyesini anlatıyor.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Kuyumcu",
+    "date": "20260911",
+    "link": "https://www.paribucineverse.com/komedi-filmleri/kuyumcu-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~7a86b0ea-b79b-49bd-bd70-4a9db894f172",
+    "trailer": "https://cdn.marsgate.com.tr/13536",
+    "genre": "Komedi",
+    "summary": "Kadınlara düşkünlüğüyle bilinen ünlü kuyumcu Seif, defalarca yakalandıktan sonra geleneksel erkeklik gururunu bir kenara bırakmak zorunda kalır. Güçlü iradeli karısı Yasmine, birlikte daha sağlıklı ve dengeli bir hayat kurmakta ısrar edince, çift bir ilişki danışmanına başvurur ve evliliklerini kurtarmak için alışılmadık bir terapi programına başlar. Ancak her adım onları birbirine yaklaştırmak yerine, komik bir kaos dalgası yaratır ve ilişkilerini düzeltme girişimlerini giderek artan bir felaketler dizisine dönüştürür.",
     "kaynak": "Gelecek Film"
   },
   {
@@ -310,6 +310,36 @@
     "kaynak": "Gelecek Film"
   },
   {
+    "title": "Ayağını Denk Al",
+    "date": "20260911",
+    "link": "https://www.paribucineverse.com/komedi-filmleri/ayagini-denk-al-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn-video.marsgate.tr/m3u/167",
+    "genre": "Komedi",
+    "summary": "Alaa, bağlanma korkusu nedeniyle romantik ilişkilerini çoğunlukla yüzeysel gerekçelerle ve kısa sürede bitiren bir radyo sunucusudur. Sıradan bir hayat süren Alaa'nın yaşantısı, tesadüfen tanıştığı Farida ile farklı bir yöne evrilir. Başlangıçta nazik, zarif ve ideal bir kadın izlenimi veren Farida ile olan ilişkisi ilerledikçe, Alaa onun gizli kimliğiyle yüzleşmek zorunda kalır. Farida'nın aslında büyük bir silah tüccarı olduğunun anlaşılması, Alaa'yı rutin hayatından kopararak alışık olmadığı tehlikeli bir durumun ortasında bırakır.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Baab: Cinler Alemi",
+    "date": "20260911",
+    "link": "https://www.paribucineverse.com/korku-filmleri/baab-cinler-alemi-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn-video.marsgate.tr/m3u/165",
+    "genre": "Korku",
+    "summary": "Yeşil bir kapının ardında saklı kasetleri bulan Wahida, ikiz kız kardeşinin ölümünün ardındaki gerçeği çözmeye başlar. Kulak çınlamasıyla boğuşan Wahida'nın dağlara yaptığı yolculuk, korkunç bir gerçeği ortaya çıkarır.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "İçimdeki Yabancı",
+    "date": "20260911",
+    "link": "https://www.paribucineverse.com/dram-filmleri/icimdeki-yabanci-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn-video.marsgate.tr/m3u/164",
+    "genre": "Dram",
+    "summary": "David Zimmerman, kırkına yaklaşmış, içine kapanık bir fotoğrafçıdır. Bir arkadaşı onu çılgın bir partiye götürdüğünde, kalabalığın arasında gördüğü gizemli bir kadından gözlerini alamayıp onu takip etmeye başlar. Birkaç saat sonra uyanıp gözlerini açtığında ise kendisini, tanımadığı bu kadının bedeninde bulacaktır.",
+    "kaynak": "Gelecek Film"
+  },
+  {
     "title": "Kanlı Körfez",
     "date": "20260911",
     "link": "https://www.paribucineverse.com/korku-filmleri/kanli-korfez-filmi-izle",
@@ -317,6 +347,16 @@
     "trailer": "https://cdn-video.marsgate.tr/m3u/135",
     "genre": "Korku",
     "summary": "Tayland'da bir düğüne katılmak için buluşan iki eski arkadaş, kaplan köpekbalıklarının yaşadığı gizli bir körfezi ziyaret etmek üzere çıktıkları tekne turunda büyük bir tehlikeyle yüz yüze gelir. Motoruna saldıran dev bir köpekbalığının yol açtığı hasar sonucu hızla batan teknenin ardından tek kişilik bir salda mahsur kalan Emma ve Lani, hem vahşi doğaya hem de birbirlerine karşı hayatta kalma savaşı vermek zorunda kalırlar.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Konu Ne?",
+    "date": "20260911",
+    "link": "https://www.paribucineverse.com/komedi-filmleri/konu-ne-filmi-izle",
+    "bilet_link": null,
+    "trailer": "Fragman bağlantısı yok",
+    "genre": "Komedi",
+    "summary": "Sosyal bir komedide, birbirinden çok farklı geçmişlere sahip dört çift düğün gecelerine adım atar ve her şey hızla raydan çıkar. Toplumun yargıları ve ani bir sorumluluk korkusu arasında kalan her çift, kendi komik felaketleriyle karşı karşıya kalır. Bu felaketler güçle mi, sevgiyle mi... yoksa sadece iyi bir kahkahayla mı çözülecek?",
     "kaynak": "Gelecek Film"
   },
   {
@@ -337,6 +377,16 @@
     "trailer": "https://cdn.marsgate.com.tr/13542",
     "genre": "Animasyon",
     "summary": "Vampir kimliğinden kurtulmak için Cadı Bella’nın tuzağına düşerek insanlığa geçiş yapan ancak ölümcül bir hastalığa sürüklenen genç Bred’ i kurtarmak için ailesi, sadık fareleri ve kamp arkadaşları bir araya gelir. Cadı Bella’nın kurduğu pusudan kurtulan bu sıra dışı ekip, laneti bozacak kadim sırları çözmek amacıyla Zerzevan Kalesi’ne doğru tehlikeli bir yolculuğa çıkar. Bu macera dolu serüvenleri boyunca kendilerini Mısır’ın gizemli topraklarında bulan kahramanlarımız, Keloğlan ve Tutankhamun ile beklenmedik bir iş birliğine girer. Bred’ in hayatını kurtarmak için zamana karşı yarışan grup hem kendi geçmişlerinin sırlarıyla hem de antik dünyanın karanlık güçleriyle yüzleşmek zorunda kalır.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Şahin ve Kanarya",
+    "date": "20260911",
+    "link": "https://www.paribucineverse.com/aksiyon-filmleri/sahin-ve-kanarya-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn-video.marsgate.tr/m3u/141",
+    "genre": "Aksiyon",
+    "summary": "Efsanevi bir paralı asker olan Saqr, tehlikeli çift hayatını geride bırakıp temiz bir sayfa açmaya karar verir. Ancak casusluk dünyasına takıntılı, başarısız bir yazar olan Belal ile beklenmedik bir şekilde karşılaşması tüm planlarını altüst eder. Bu sıra dışı ikili, kendilerini daha önce hiç deneyimlemedikleri, her şeyi değiştirecek bir maceranın içinde bulur.",
     "kaynak": "Gelecek Film"
   },
   {
@@ -427,16 +477,6 @@
     "trailer": "https://cdn-video.marsgate.tr/m3u/153",
     "genre": "Komedi",
     "summary": "Köydeki annelerin kızlarını şehirli damatlarla evlendirmesi, genç erkeklerin giderek köyden uzaklaşmasına yol açarken Ferman Ağa bu düzen üzerinden etkisini artırır. Bir düğünde gelinin gizemli bir atlı tarafından kaçırılmasıyla yaşanan karışıklığın ardından köye dönen Miran, gençlerin kendilerini ifade edebilmesi için köy kahvesini Damat Mektebi’ne dönüştürür. Burada başlayan değişim, köydeki ilişkileri ve güç dengelerini de etkiler.",
-    "kaynak": "Gelecek Film"
-  },
-  {
-    "title": "İsyan",
-    "date": "20260925",
-    "link": "https://www.paribucineverse.com/aksiyon-filmleri/isyan-filmi-izle",
-    "bilet_link": null,
-    "trailer": "https://cdn-video.marsgate.tr/m3u/143",
-    "genre": "Aksiyon",
-    "summary": "Ünlü iş adamı Tibu'nun ölümünden sorumlu tutulduktan sonra kaçak duruma düşen eski polis Cole Reed, Tibu'nun gerçek katillerini bulmak ve adını temize çıkarmak için tehlikeli bir yolculuğa çıkar. Bir kargo gemisinde illegal işler peşindeki bir şebekeyi ortaya çıkaran Cole, hiç beklemediği bir komployla karşı karşıya gelir. Tibu'nun intikamını almak ve adaleti sağlamak isteyen Cole, hem masumları kurtaracak hem de kendi geçmişiyle yüzleşecektir.",
     "kaynak": "Gelecek Film"
   },
   {
