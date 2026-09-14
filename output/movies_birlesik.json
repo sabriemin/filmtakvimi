@@ -10,16 +10,6 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Aşkın Büyüsü 2",
-    "link": "https://www.paribucineverse.com/romantik-filmleri/askin-buyusu-2-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~d9f74290-377b-4c0e-bda6-9474d0ce5974",
-    "trailer": "https://cdn-video.marsgate.tr/m3u/132",
-    "genre": "Romantik",
-    "summary": "Owens kardeşler, ailelerini sonsuza dek parçalama tehdidi taşıyan karanlık lanetle yüzleşmek zorunda kalmaktadır.",
-    "date": "20260911",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
     "title": "Kanlı Körfez",
     "link": "https://www.paribucineverse.com/korku-filmleri/kanli-korfez-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~0eabeed5-a8c8-4d48-89bc-b7706f63bfc2",
@@ -36,6 +26,16 @@
     "trailer": "https://cdn-video.marsgate.tr/m3u/131",
     "genre": "Animasyon",
     "summary": "Meraklı ve cesur Zoe'nin hayatı, gizemli bir olayın kendisi ile birbirinden sevimli evcil hayvanlarını beklenmedik bir şekilde değiştirmesiyle bambaşka bir maceraya dönüşür. Bir anda insanlar hayvanlara, hayvanlar insanlara dönüşmeye başlarken Zoe ve sıra dışı dostları, her şeyi eski haline getirebilmek için kahkaha dolu, heyecanlı ve unutulmaz bir yolculuğa çıkar.",
+    "date": "20260911",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Aşkın Büyüsü 2",
+    "link": "https://www.paribucineverse.com/romantik-filmleri/askin-buyusu-2-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~d9f74290-377b-4c0e-bda6-9474d0ce5974",
+    "trailer": "https://cdn-video.marsgate.tr/m3u/132",
+    "genre": "Romantik",
+    "summary": "Owens kardeşler, ailelerini sonsuza dek parçalama tehdidi taşıyan karanlık lanetle yüzleşmek zorunda kalmaktadır.",
     "date": "20260911",
     "kaynak": "Vizyondaki Film"
   },
@@ -407,6 +407,16 @@
     "trailer": "Fragman bağlantısı yok",
     "genre": "Gerilim",
     "summary": "Genç bir kadın olan Jessica, kocasının kaybı ile büyük yıkıma uğrar. Kocasının yokluğuna alışmakta zorlanan Jessica, acısının üstesinden gelebilmek için şehirden kaçmaya karar verir ve kendisine yeni bir hayat kurmaya çalışır. Yeni taşındığı şehirde gizemli bir adam tarafından kaçırılır. Kendisini doğanın ortasında izole bir kulübede kilitli bulan Jessica, buradan kaçmanın yolunu ararken aynı zamanda vahşi doğada hayatta kalmak için de mücadele verir.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Maria",
+    "date": "20260923",
+    "link": "https://www.paribucineverse.com/biyografi-filmleri/maria-2026-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn.marsgate.com.tr/12813",
+    "genre": "Biyografi",
+    "summary": "Dünyanın en büyük opera sanatçısı Maria Callas, kimliği ve hayatıyla yüzleşirken 1970'lerin Paris'inde hayatının son günlerini yaşıyor.",
     "kaynak": "Gelecek Film"
   },
   {
