@@ -100,16 +100,6 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Konuşan Hayvanlar",
-    "link": "https://www.paribucineverse.com/animasyon-filmleri/konusan-hayvanlar-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~4c0a04c1-bce8-40f3-b7d3-86b78e77324b",
-    "trailer": "https://cdn-video.marsgate.tr/m3u/131",
-    "genre": "Animasyon",
-    "summary": "Meraklı ve cesur Zoe'nin hayatı, gizemli bir olayın kendisi ile birbirinden sevimli evcil hayvanlarını beklenmedik bir şekilde değiştirmesiyle bambaşka bir maceraya dönüşür. Bir anda insanlar hayvanlara, hayvanlar insanlara dönüşmeye başlarken Zoe ve sıra dışı dostları, her şeyi eski haline getirebilmek için kahkaha dolu, heyecanlı ve unutulmaz bir yolculuğa çıkar.",
-    "date": "20260911",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
     "title": "Aşkın Büyüsü 2",
     "link": "https://www.paribucineverse.com/romantik-filmleri/askin-buyusu-2-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~d9f74290-377b-4c0e-bda6-9474d0ce5974",
@@ -126,6 +116,16 @@
     "trailer": "https://cdn-video.marsgate.tr/m3u/135",
     "genre": "Korku",
     "summary": "Tayland'da bir düğüne katılmak için buluşan iki eski arkadaş, kaplan köpekbalıklarının yaşadığı gizli bir körfezi ziyaret etmek üzere çıktıkları tekne turunda büyük bir tehlikeyle yüz yüze gelir. Motoruna saldıran dev bir köpekbalığının yol açtığı hasar sonucu hızla batan teknenin ardından tek kişilik bir salda mahsur kalan Emma ve Lani, hem vahşi doğaya hem de birbirlerine karşı hayatta kalma savaşı vermek zorunda kalırlar.",
+    "date": "20260911",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Konuşan Hayvanlar",
+    "link": "https://www.paribucineverse.com/animasyon-filmleri/konusan-hayvanlar-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~4c0a04c1-bce8-40f3-b7d3-86b78e77324b",
+    "trailer": "https://cdn-video.marsgate.tr/m3u/131",
+    "genre": "Animasyon",
+    "summary": "Meraklı ve cesur Zoe'nin hayatı, gizemli bir olayın kendisi ile birbirinden sevimli evcil hayvanlarını beklenmedik bir şekilde değiştirmesiyle bambaşka bir maceraya dönüşür. Bir anda insanlar hayvanlara, hayvanlar insanlara dönüşmeye başlarken Zoe ve sıra dışı dostları, her şeyi eski haline getirebilmek için kahkaha dolu, heyecanlı ve unutulmaz bir yolculuğa çıkar.",
     "date": "20260911",
     "kaynak": "Vizyondaki Film"
   },
@@ -217,16 +217,6 @@
     "genre": "Aksiyon",
     "summary": "Homeros'un ünlü destanından uyarlanan film, İthaka kralı Odisseus'un Truva Savaşı sonrası doğduğu topraklara dönüş yolunda yaşadığı maceraları konu ediniyor.",
     "date": "20260717",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
-    "title": "Oyuncak Hikayesi 5",
-    "link": "https://www.paribucineverse.com/animasyon-filmleri/oyuncak-hikayesi-5-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~b7962d5c-0488-4a04-b714-eafb76372b97",
-    "trailer": "https://cdn-video.marsgate.tr/m3u/111",
-    "genre": "Animasyon",
-    "summary": "Buzz Lightyear, Cowboy Woody ve bir zamanlar Andy'ye ait olan ve artık küçük arkadaşı Bonnie'ye devredilen diğer tüm oyuncaklar geri döndü ve yeni bir macera başlıyor.",
-    "date": "20260619",
     "kaynak": "Vizyondaki Film"
   },
   {
@@ -340,6 +330,16 @@
     "kaynak": "Gelecek Film"
   },
   {
+    "title": "Çılgın Hafta Sonu",
+    "date": "20261002",
+    "link": "https://www.paribucineverse.com/komedi-filmleri/cilgin-hafta-sonu-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn-video.marsgate.tr/m3u/200",
+    "genre": "Komedi",
+    "summary": "Hayatın stresinden uzaklaşmak isteyen üç kadın, lüks bir tesiste sakin bir hafta sonu geçirmeyi planlar. Ancak sorun çıkarmaya yatkın eski dostlarının da tatile katılmasıyla planları kısa sürede bozulur. Grup, peş peşe gelen kötü kararlar ve beklenmedik olaylar nedeniyle dinlenmek yerine giderek büyüyen bir karmaşanın içinde kalır.",
+    "kaynak": "Gelecek Film"
+  },
+  {
     "title": "Digger",
     "date": "20261002",
     "link": "https://www.paribucineverse.com/komedi-filmleri/digger-filmi-izle",
@@ -360,6 +360,16 @@
     "kaynak": "Gelecek Film"
   },
   {
+    "title": "Kraliçe Zor Durumda",
+    "date": "20261002",
+    "link": "https://www.paribucineverse.com/dram-filmleri/kralice-zor-durumda-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn-video.marsgate.tr/m3u/199",
+    "genre": "Dram",
+    "summary": "Amanda'nın iyice ilerlemiş seviyede demans hastası olan annesi, kendi kararlarını alabilmek için gerekli zihinsel yetkinliğe sahip midir? Ve eğer değilse, onun adına hayati kararları vermekten kim sorumludur: eşi mi, çocukları mı, yoksa bir kurum mu?",
+    "kaynak": "Gelecek Film"
+  },
+  {
     "title": "Robu 404",
     "date": "20261002",
     "link": "https://www.paribucineverse.com/animasyon-filmleri/robu-404-filmi-izle",
@@ -367,6 +377,16 @@
     "trailer": "https://cdn-video.marsgate.tr/m3u/161",
     "genre": "Animasyon",
     "summary": "Kendi ürettiği robot Robu 404 aracılığıyla teknoloji üzerinden kendini ifade etmeye çalışan dokuz yaşındaki Can'ın, Robu 404'ün yardımıyla kendisini keşfetmektedir.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Salmokji: Karanlık Sular",
+    "date": "20261002",
+    "link": "https://www.paribucineverse.com/korku-filmleri/salmokji-karanlik-sular-filmi-izle",
+    "bilet_link": null,
+    "trailer": "Fragman bağlantısı yok",
+    "genre": "Korku",
+    "summary": "Salmokji Baraj Gölü'nde çekilen görüntülerde gizemli bir silüetin ortaya çıkması üzerine Su-in ve ekibi, çekimleri yenilemek için bölgeye gider. Ancak ekip, açıklanamayan olaylarla karşılaşır ve gölden kaçmaya çalıştıkça kendilerini giderek büyüyen bir kâbusun içinde bulur.",
     "kaynak": "Gelecek Film"
   },
   {
