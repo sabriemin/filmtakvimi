@@ -20,22 +20,22 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Çılgın Hafta Sonu",
-    "link": "https://www.paribucineverse.com/komedi-filmleri/cilgin-hafta-sonu-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~47535e55-a1f3-4746-9cf4-6e8c5fa3592e",
-    "trailer": "https://cdn-video.marsgate.tr/m3u/216",
-    "genre": "Komedi",
-    "summary": "Hayatın stresinden uzaklaşmak isteyen üç kadın, lüks bir tesiste sakin bir hafta sonu geçirmeyi planlar. Ancak sorun çıkarmaya yatkın eski dostlarının da tatile katılmasıyla planları kısa sürede bozulur. Grup, peş peşe gelen kötü kararlar ve beklenmedik olaylar nedeniyle dinlenmek yerine giderek büyüyen bir karmaşanın içinde kalır.",
-    "date": "20261009",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
     "title": "Soy",
     "link": "https://www.paribucineverse.com/korku-filmleri/soy-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~b2ac4b4b-f491-47be-81f7-a9bdf19b17e3",
     "trailer": "https://cdn-video.marsgate.tr/m3u/184",
     "genre": "Korku",
     "summary": "Ölüm döşeğindeki dedesinin çağrısıyla İstanbul’daki gizemli bir konağa giden Can ve arkadaşları, kadim bir lanetin hedefi hâline gelir. Konağa adım attıkları anda yoğun bir sisle dış dünyadan kopan grup, lanetli bir resme bağlı doğaüstü gücün etkisi altına girer. Konağın geçmişindeki sırlar ve aralarındaki ihanetler açığa çıkarken gençler birer birer avlanmaya başlar. Hayatta kalmaya çalışan Başak ise kökeni eski Mısır’a uzanan laneti durdurabilecek bir seçimle karşı karşıya kalır.",
+    "date": "20261009",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Çılgın Hafta Sonu",
+    "link": "https://www.paribucineverse.com/komedi-filmleri/cilgin-hafta-sonu-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~47535e55-a1f3-4746-9cf4-6e8c5fa3592e",
+    "trailer": "https://cdn-video.marsgate.tr/m3u/216",
+    "genre": "Komedi",
+    "summary": "Hayatın stresinden uzaklaşmak isteyen üç kadın, lüks bir tesiste sakin bir hafta sonu geçirmeyi planlar. Ancak sorun çıkarmaya yatkın eski dostlarının da tatile katılmasıyla planları kısa sürede bozulur. Grup, peş peşe gelen kötü kararlar ve beklenmedik olaylar nedeniyle dinlenmek yerine giderek büyüyen bir karmaşanın içinde kalır.",
     "date": "20261009",
     "kaynak": "Vizyondaki Film"
   },
@@ -120,22 +120,22 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Efsaneler Takımı: Görev İstanbul",
-    "link": "https://www.paribucineverse.com/animasyon-filmleri/efsaneler-takimi-gorev-istanbul-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~a6411f9b-a23b-494f-956e-0be0c91753f3",
-    "trailer": "https://cdn-video.marsgate.tr/m3u/160",
-    "genre": "Animasyon",
-    "summary": "Efsaneler Takımı, Anadolu’nun eşsiz doğasından ilham alan hayvan karakterler ve onlara eşlik eden iki cesur çocuktan oluşan özel bir ekibin, Türkiye’nin dört bir yanındaki kötülüklerle mücadelesini konu alıyor. Bu büyük serüvenin ilk durağı ise gizem ve tarihin kalbi olan İstanbul'dur.",
-    "date": "20261002",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
     "title": "Robu 404",
     "link": "https://www.paribucineverse.com/animasyon-filmleri/robu-404-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~f0fd8d94-6452-4945-b0f0-767d0af8ea05",
     "trailer": "https://cdn-video.marsgate.tr/m3u/232",
     "genre": "Animasyon",
     "summary": "Kendi ürettiği robot Robu 404 aracılığıyla teknoloji üzerinden kendini ifade etmeye çalışan dokuz yaşındaki Can'ın, Robu 404'ün yardımıyla kendisini keşfetmektedir.",
+    "date": "20261002",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Efsaneler Takımı: Görev İstanbul",
+    "link": "https://www.paribucineverse.com/animasyon-filmleri/efsaneler-takimi-gorev-istanbul-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~a6411f9b-a23b-494f-956e-0be0c91753f3",
+    "trailer": "https://cdn-video.marsgate.tr/m3u/160",
+    "genre": "Animasyon",
+    "summary": "Efsaneler Takımı, Anadolu’nun eşsiz doğasından ilham alan hayvan karakterler ve onlara eşlik eden iki cesur çocuktan oluşan özel bir ekibin, Türkiye’nin dört bir yanındaki kötülüklerle mücadelesini konu alıyor. Bu büyük serüvenin ilk durağı ise gizem ve tarihin kalbi olan İstanbul'dur.",
     "date": "20261002",
     "kaynak": "Vizyondaki Film"
   },
@@ -156,6 +156,16 @@
     "trailer": "https://cdn-video.marsgate.tr/m3u/183",
     "genre": "Aksiyon",
     "summary": "Ünlü iş adamı Tibu'nun ölümünden sorumlu tutulduktan sonra kaçak duruma düşen eski polis Cole Reed, Tibu'nun gerçek katillerini bulmak ve adını temize çıkarmak için tehlikeli bir yolculuğa çıkar. Bir kargo gemisinde illegal işler peşindeki bir şebekeyi ortaya çıkaran Cole, hiç beklemediği bir komployla karşı karşıya gelir. Tibu'nun intikamını almak ve adaleti sağlamak isteyen Cole, hem masumları kurtaracak hem de kendi geçmişiyle yüzleşecektir.",
+    "date": "20260925",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Üç Harfliler: Mühür",
+    "link": "https://www.paribucineverse.com/korku-filmleri/uc-harfliler-muhur-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~8a3a4c0a-1802-4233-8285-845111ae7858",
+    "trailer": "https://cdn-video.marsgate.tr/m3u/172",
+    "genre": "Korku",
+    "summary": "Doğmamış bir bebeğin kaderine vurulan gizemli mühür, Falcı Müzeyyen’i hayatının en büyük sınavına sürükler. Köklü bir konakta yeni bir başlangıç yapmaya çalışan Fatma ve ailesi ise geçmişten gelen karanlık bir hesaplaşmanın ortasında kalır. Eve gelen beklenmedik bir misafirle birlikte, iradeleri ve birbirlerine duydukları güveni hedef alan görünmeyen bir kötülük serbest kalır. Yaşanan dehşetin ardındaki sırrı çözmeye çalışan Müzeyyen, üç harflilerin kurduğu ölümcül oyunun giderek daha derinlerine çekilirken, bazı kaderlerin insanlar tarafından değil, çok daha önceden mühürlendiği gerçeğiyle yüzleşmek zorunda kalacaktır.",
     "date": "20260925",
     "kaynak": "Vizyondaki Film"
   },
@@ -196,16 +206,6 @@
     "trailer": "https://cdn-video.marsgate.tr/m3u/176",
     "genre": "Animasyon",
     "summary": "Hermitage’ın kurtarılmasının ve Mona Lisa’nın çalınmasının üzerinden iki yıl geçmiştir. Fare Maurice yeni maceraların hayalini kurarken, Vincent ile Cleopatra da yanlarına katılan iki hareketli yavru kedinin etkisiyle yeniden heyecan aramaya başlar. Üçlünün macera isteği, onları bu kez yeni ve beklenmedik bir yolculuğa sürükler.",
-    "date": "20260925",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
-    "title": "Üç Harfliler: Mühür",
-    "link": "https://www.paribucineverse.com/korku-filmleri/uc-harfliler-muhur-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~8a3a4c0a-1802-4233-8285-845111ae7858",
-    "trailer": "https://cdn-video.marsgate.tr/m3u/172",
-    "genre": "Korku",
-    "summary": "Doğmamış bir bebeğin kaderine vurulan gizemli mühür, Falcı Müzeyyen’i hayatının en büyük sınavına sürükler. Köklü bir konakta yeni bir başlangıç yapmaya çalışan Fatma ve ailesi ise geçmişten gelen karanlık bir hesaplaşmanın ortasında kalır. Eve gelen beklenmedik bir misafirle birlikte, iradeleri ve birbirlerine duydukları güveni hedef alan görünmeyen bir kötülük serbest kalır. Yaşanan dehşetin ardındaki sırrı çözmeye çalışan Müzeyyen, üç harflilerin kurduğu ölümcül oyunun giderek daha derinlerine çekilirken, bazı kaderlerin insanlar tarafından değil, çok daha önceden mühürlendiği gerçeğiyle yüzleşmek zorunda kalacaktır.",
     "date": "20260925",
     "kaynak": "Vizyondaki Film"
   },
