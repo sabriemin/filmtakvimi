@@ -1,0 +1,104 @@
+{
+ "pages": [
+  {
+   "key": "hakkimizda",
+   "group": "Kurumsal",
+   "order": 1,
+   "title": "Hakkımızda",
+   "lead": "Film Evreni Ağı, sinema ve televizyonun büyük ortak evrenlerini tek bir yerde, birbirine bağlı bir harita olarak anlatmak için kuruldu. Bir filmi izlemeden önce neyi izlemeniz gerektiğini, bir karakterin hangi yapımlarda göründüğünü ya da bir jenerik sonrası sahnenin neye işaret ettiğini merak ettiğinizde aradığınız yanıtı burada bulmanızı istiyoruz.",
+   "body": "## Ne yapıyoruz?\nHer evreni yapımlar, karakterler, olaylar ve bunlar arasındaki bağlantılar olarak modelliyoruz. Bir yapım; devam filmi, bağlantılı hikâye, uyarlandığı kitap ya da yaptığı göndermelerle diğerlerine bağlanır. Bu veriden beş farklı görünüm üretiyoruz:\n\n- **Evren haritası:** Her alt serinin bir metro hattı gibi çizildiği, vizyon sırasına dizilmiş harita.\n- **Zaman çizelgesi:** Vizyon sırası ile evren içi kronoloji arasında geçiş yapabildiğiniz poster dizisi.\n- **İzleme rehberi:** Seçtiğiniz bir yapımdan önce izlemeniz gerekenleri ve önerilenleri hesaplayan liste.\n- **Karakterler:** Bir karakterin bütün yapımlardaki yolculuğu ve haritadaki rotası.\n- **Yakında ve teoriler:** Gelecek yapımlar hakkında resmî bilgileri ve açıkça etiketlenmiş varsayımları ayıran sayfa.\n\n## Nasıl çalışıyoruz?\nÖzetler, 'evrendeki yeri' yorumları ve bağlantı notları ekibimiz tarafından özgün olarak yazılır; başka sitelerden kopyalanmaz. Vizyon tarihleri, kadro ve teknik bilgiler stüdyo duyuruları ve sektör basınından derlenir; afiş ve görsel verileri için TMDB'den yararlanırız. Ayrıntılar için [Editoryal İlkeler](#editoryal) sayfamıza bakabilirsiniz.\n\n## Bağımsızlık\nFilm Evreni Ağı bağımsız bir hayran ve rehber projesidir. Adı geçen hiçbir stüdyo, yayıncı ya da yapım şirketiyle bağlantılı değildir ve onlar tarafından desteklenmez.\n\n## Bize ulaşın\nHata bildirimi, öneri ya da iş birliği için [İletişim](#iletisim) sayfasını kullanabilirsiniz.\n\n[[kimlik]]",
+   "updated": "2026-10-14",
+   "footer": true
+  },
+  {
+   "key": "editoryal",
+   "group": "Kurumsal",
+   "order": 2,
+   "title": "Editoryal İlkeler",
+   "lead": "Ortak evrenler hakkında yazmak, kesin bilgi ile tahmin arasındaki çizgiyi korumayı gerektirir. Aşağıdaki ilkeler, sitedeki her metnin nasıl hazırlandığını açıklar.",
+   "body": "## Bilgi düzeyleri\nGelecek yapımlarla ilgili her ifade dört düzeyden biriyle işaretlenir:\n\n- [[rozet:fact]] Stüdyo, yayıncı ya da yapımcıların resmî açıklamalarıyla doğrulanmış bilgi.\n- [[rozet:beklenti]] Kaynak eserden ya da resmî bilgilerden makul biçimde çıkarılan öngörü.\n- [[rozet:teori]] Hayran topluluğunda tartışılan, yoruma dayalı ve doğrulanmamış fikir.\n- [[rozet:söylenti]] Basında çıkmış ama resmî olarak doğrulanmamış haber.\n\nTeori ve söylentiler hiçbir zaman gerçek bilgi gibi sunulmaz.\n\n## Spoiler politikası\nÖzetler yapımın kurulumunu anlatır, sonunu açık etmemeye çalışır. 'Evrendeki yeri' bölümleri ise doğası gereği sonraki yapımlarla bağlantıyı anlatır ve spoiler içerebilir. Sitedeki **Spoiler kalkanı** ile izlediğiniz son yapımı seçtiğinizde, ondan sonraki her şey bulanıklaştırılır.\n\n## Tarihler\nVizyon tarihleri ABD/dünya prömiyer tarihini esas alır; Türkiye'deki vizyon tarihleri farklı olabilir. Kesinleşmemiş tarihler 'kesin değil' olarak işaretlenir.\n\n## Kaynaklar ve düzeltmeler\nKadro ve teknik bilgiler stüdyo duyuruları, resmî basın bültenleri ve güvenilir sektör yayınlarından derlenir; Türkçe vizyon adları ve görseller TMDB'den alınır. Bir hata fark ederseniz [bize bildirin](#iletisim); doğrulanan düzeltmeleri en kısa sürede yayına alırız.\n\n## Özgün içerik\nWiki ve hayran sitelerindeki metinleri kopyalamayız. Tüm özetler ve yorumlar özgün olarak yazılır.",
+   "updated": "2026-10-14",
+   "footer": true
+  },
+  {
+   "key": "iletisim",
+   "group": "Kurumsal",
+   "order": 3,
+   "title": "İletişim",
+   "lead": "Hata bildirimleri, içerik önerileri, iş birliği talepleri ve hukuki başvurular için bize aşağıdaki kanallardan ulaşabilirsiniz.",
+   "body": "[[iletisim]]\n\nTelif hakkı bildirimleri için lütfen [Telif Hakkı ve İçerik Kaldırma](#telif) sayfasındaki bilgileri ekleyin. KVKK kapsamındaki başvurular için [Aydınlatma Metni](#gizlilik)'ndeki başvuru yöntemlerini kullanabilirsiniz.",
+   "updated": "2026-10-14",
+   "footer": true
+  },
+  {
+   "key": "erisilebilirlik",
+   "group": "Kurumsal",
+   "order": 4,
+   "title": "Erişilebilirlik Beyanı",
+   "lead": "Film Evreni Ağı'nı herkesin kullanabilmesi için çalışıyoruz.",
+   "body": "## Uyguladıklarımız\n- Bütün etkileşimli öğeler klavyeyle kullanılabilir ve odak hâli görünürdür.\n- İşletim sisteminizde 'hareketi azalt' ayarı açıksa animasyonlar ve yıldız alanı devre dışı kalır.\n- Metin renkleri koyu zemin üzerinde okunabilir kontrastla seçilmiştir.\n- Görsel harita, aynı bilgiyi metin olarak sunan zaman çizelgesi ve izleme rehberi görünümleriyle desteklenir.\n\n## Bilinen sınırlamalar\nEtkileşimli evren haritası görsel bir araçtır ve ekran okuyucularla kullanımı sınırlıdır. Aynı bilgiye 'Zaman çizelgesi' ve 'İzleme rehberi' görünümlerinden erişebilirsiniz.\n\n## Geri bildirim\nBir erişilebilirlik sorunuyla karşılaşırsanız [bize yazın](#iletisim).",
+   "updated": "2026-10-14",
+   "footer": true
+  },
+  {
+   "key": "gizlilik",
+   "group": "Yasal",
+   "order": 1,
+   "title": "Gizlilik Politikası ve KVKK Aydınlatma Metni",
+   "lead": "Bu metin, 6698 sayılı Kişisel Verilerin Korunması Kanunu'nun ('KVKK') 10. maddesi uyarınca, {{domain}} alan adı altındaki Film Evreni Ağı'nı ziyaret ettiğinizde hangi kişisel verilerinizin, hangi amaçla ve hangi hukuki sebeple işlendiğini açıklamak için hazırlanmıştır. Avrupa Birliği'nden ziyaret eden kullanıcılarımız için Genel Veri Koruma Tüzüğü'ne (GDPR) ilişkin açıklamalar da aşağıdadır.",
+   "body": "## 1. Veri sorumlusu\n[[kimlik]]\n\n## 2. Hesap ve üyelik yok\nFilm Evreni Ağı'nı kullanmak için hesap açmanız gerekmez. Sitede üyelik, ödeme ya da ziyaretçi kimlik doğrulaması yoktur. Yönetim paneli yalnızca site yöneticileri içindir.\n\n## 3. İşlenen veriler, amaçlar ve hukuki sebepler\n| Veri | Amaç | Hukuki sebep | Saklama |\n|---|---|---|---|\n| Sunucu kayıtları: IP adresi, tarayıcı bilgisi, istek zamanı, istenen sayfa | Sitenin çalışması, güvenliği ve kötüye kullanımın önlenmesi | KVKK m.5/2-f (meşru menfaat); yer sağlayıcı açısından m.5/2-ç ve 5651 sayılı Kanun | Yer sağlayıcının saklama süresi kadar; en fazla 2 yıl |\n| İletişim formu veya e-posta: ad, e-posta adresi, mesaj içeriği | Talebinizi yanıtlamak, hata bildirimlerini değerlendirmek | KVKK m.5/2-f (meşru menfaat); hukuki başvurularda m.5/2-e | Talebin sonuçlanmasından itibaren 2 yıl |\n| Tarayıcınızdaki yerel depolama: evren tercihi, spoiler ayarı, çerez tercihi | Tercihlerinizi hatırlamak | Bu bilgiler cihazınızda kalır, bize gönderilmez | Siz silene kadar |\n| Uygulama önbelleği (PWA) | Siteyi hızlı ve çevrim dışı açabilmek | Bilgiler cihazınızda kalır | Siz silene ya da yeni sürüm gelene kadar |\n\n## 4. Üçüncü taraf hizmetler ve yurt dışına aktarım\nSayfanın görüntülenmesi için tarayıcınız aşağıdaki hizmetlerden dosya ister. Bu sırada IP adresiniz ve tarayıcı bilginiz ilgili sağlayıcıya iletilir. Bu sağlayıcıların sunucuları yurt dışında (ağırlıklı olarak ABD ve AB'de) bulunabilir:\n\n- **Google Fonts** (yazı tipleri) — Google LLC\n- **cdnjs / Cloudflare** (açık kaynak kod kütüphanesi) — Cloudflare, Inc.\n- **TMDB görüntü sunucusu** (afiş ve sahne görselleri) — The Movie Database\n- **Open Library** (kitap kapakları) — Internet Archive\n\nBu aktarımlar KVKK m.9 kapsamında değerlendirilir. Kişisel verilerinizin yurt dışına aktarılmasını sınırlamak için yazı tiplerini ve kütüphaneleri kendi sunucumuzdan sunmayı hedefliyoruz; bu durumda bu bölüm güncellenecektir. {{analitik}}\n\n## 5. Verilerin aktarıldığı taraflar\nKişisel verileriniz satılmaz ve pazarlama amacıyla paylaşılmaz. Veriler yalnızca hizmetin sunulması için gerekli olduğu ölçüde barındırma sağlayıcımızla ve yasal olarak yetkili kamu kurum ve kuruluşlarıyla, talep hâlinde paylaşılabilir.\n\n## 6. KVKK m.11 kapsamındaki haklarınız\nVeri sorumlusuna başvurarak şu haklarınızı kullanabilirsiniz: kişisel verilerinizin işlenip işlenmediğini öğrenme; işlenmişse buna ilişkin bilgi talep etme; işlenme amacını ve amaca uygun kullanılıp kullanılmadığını öğrenme; yurt içinde veya yurt dışında aktarıldığı üçüncü kişileri bilme; eksik veya yanlış işlenmişse düzeltilmesini isteme; KVKK m.7 çerçevesinde silinmesini veya yok edilmesini isteme; düzeltme ve silme işlemlerinin aktarılan üçüncü kişilere bildirilmesini isteme; münhasıran otomatik sistemlerle analiz edilmesi sonucu aleyhinize bir sonucun ortaya çıkmasına itiraz etme; kanuna aykırı işleme sebebiyle zarara uğramanız hâlinde zararın giderilmesini talep etme.\n\n## 7. Başvuru yöntemi\nBaşvurularınızı, Veri Sorumlusuna Başvuru Usul ve Esasları Hakkında Tebliğ'e uygun olarak yazılı şekilde {{address}} adresine; kayıtlı elektronik posta (KEP) ile {{kep}} adresine; ya da daha önce bize bildirdiğiniz ve sistemimizde kayıtlı e-posta adresinizden {{email}} adresine iletebilirsiniz. Başvurunuzda adınız, soyadınız, imzanız (yazılı başvuruda), T.C. kimlik numaranız (yabancıysanız uyruğunuz ve pasaport numaranız), tebligata esas adresiniz, varsa e-posta adresiniz ve talep konunuz bulunmalıdır. Başvurunuz en geç otuz gün içinde ücretsiz olarak sonuçlandırılır.\n\n## 8. Avrupa Birliği'ndeki kullanıcılar (GDPR)\nAB'den ziyaret ediyorsanız verileriniz GDPR m.6/1-f (meşru menfaat) kapsamında işlenir. Erişim, düzeltme, silme, işlemeyi kısıtlama, itiraz ve veri taşınabilirliği haklarınızı yukarıdaki iletişim kanallarından kullanabilir, ayrıca bulunduğunuz ülkedeki veri koruma otoritesine şikâyette bulunabilirsiniz.\n\n## 9. Çocuklar\nSite genel izleyiciye yöneliktir ve bilerek 13 yaşından küçük çocuklardan kişisel veri toplamaz. Böyle bir veri ilettiğimizi düşünüyorsanız bize yazın; veriyi sileriz.\n\n## 10. Değişiklikler\nBu metni gerektiğinde güncelleyebiliriz. Güncel sürüm her zaman bu sayfada yer alır.",
+   "updated": "2026-10-14",
+   "footer": true
+  },
+  {
+   "key": "cerez",
+   "group": "Yasal",
+   "order": 2,
+   "title": "Çerez ve Yerel Depolama Politikası",
+   "lead": "Film Evreni Ağı, çalışması için çerez gerektirmez. Yalnızca tercihlerinizi hatırlamak için tarayıcınızın yerel depolamasını kullanır. Bu bilgiler cihazınızda kalır ve sunucumuza gönderilmez.",
+   "body": "## Kullandığımız yerel depolama kayıtları\n| Anahtar | Amaç | Tür | Süre |\n|---|---|---|---|\n| `fea.prefs` | Son seçtiğiniz evren ve spoiler kalkanı ayarı | Zorunlu / işlevsel | Siz silene kadar |\n| `fea.consent` | Bu bandı tekrar göstermemek için tercihiniz | Zorunlu | 12 ay |\n| Uygulama önbelleği | Siteyi hızlı ve çevrim dışı açmak (PWA) | Zorunlu / işlevsel | Yeni sürüme kadar |\n\nYönetim panelini kullanan yöneticiler için ayrıca bir oturum çerezi (`fea_admin`) oluşturulur; bu çerez yalnızca giriş süresince geçerlidir.\n\n## Üçüncü taraf istekleri\nYazı tipleri (Google Fonts), kod kütüphanesi (cdnjs) ve afiş görselleri (TMDB) yüklenirken tarayıcınız bu sağlayıcılarla doğrudan bağlantı kurar. Bu sağlayıcılar kendi politikaları çerçevesinde teknik kayıt tutabilir. Biz bu isteklere çerez eklemeyiz.\n\n## Analitik ve reklam\n{{analitik}}\n\n## Tercihlerinizi yönetme\nTarayıcınızın ayarlarından site verilerini istediğiniz zaman silebilirsiniz.\n\n[[cerez-sifirla]]",
+   "updated": "2026-10-14",
+   "footer": true
+  },
+  {
+   "key": "kosullar",
+   "group": "Yasal",
+   "order": 3,
+   "title": "Kullanım Koşulları",
+   "lead": "Film Evreni Ağı'nı ({{domain}}) kullanarak aşağıdaki koşulları kabul etmiş sayılırsınız. Lütfen dikkatle okuyun.",
+   "body": "## 1. Hizmetin niteliği\nSite, film ve dizi evrenleri hakkında bilgilendirme ve eğlence amaçlı, ücretsiz bir rehberdir. İçerik genel bilgi niteliğindedir; profesyonel, hukuki ya da ticari tavsiye değildir.\n\n## 2. Bilgilerin doğruluğu\nBilgileri doğru ve güncel tutmak için özen gösteririz. Ancak vizyon tarihleri, kadrolar ve yapım bilgileri hak sahiplerince sık sık değiştirilir. Sitede yer alan bilgilerin eksiksiz, güncel veya hatasız olduğunu garanti etmeyiz. 'Beklenti', 'Teori' ve 'Söylenti' olarak işaretlenen içerikler doğrulanmamış görüş ve tahminlerdir; bunlara dayanarak verilen kararlardan sorumlu değiliz.\n\n## 3. Fikrî mülkiyet\nSitedeki özgün metinler, tasarım, veri modeli ve kod {{owner}} adına korunmaktadır. Özgün metinlerin hangi koşullarla yeniden kullanılabileceği [Yeniden Kullanım ve Lisanslar](#lisans) sayfasında açıklanmıştır. Film, dizi ve karakter adları, logolar, afişler ve görseller ilgili hak sahiplerine aittir.\n\n## 4. Kabul edilemez kullanım\n- Siteyi, sunuculara aşırı yük bindirecek şekilde otomatik araçlarla taramak veya kopyalamak,\n- Sitenin ve yönetim panelinin güvenliğini aşmaya, işleyişini bozmaya çalışmak,\n- İçeriği, kaynağını gizleyerek kendi içeriğiymiş gibi yayımlamak,\n- Siteyi yürürlükteki mevzuata aykırı herhangi bir amaçla kullanmak yasaktır.\n\n## 5. Üçüncü taraf bağlantıları\nSitede başka sitelere bağlantılar bulunabilir. Bu sitelerin içeriğinden ve gizlilik uygulamalarından sorumlu değiliz.\n\n## 6. Sorumluluğun sınırlandırılması\nYürürlükteki mevzuatın izin verdiği ölçüde, sitenin kullanımından veya kullanılamamasından doğabilecek doğrudan ya da dolaylı zararlardan sorumlu tutulamayız. Site 'olduğu gibi' sunulur.\n\n## 7. Değişiklikler\nBu koşulları önceden bildirimde bulunmaksızın güncelleyebiliriz. Güncel metin her zaman bu sayfada yer alır.\n\n## 8. Uygulanacak hukuk ve yetki\nBu koşullar Türkiye Cumhuriyeti hukukuna tabidir. Uyuşmazlıklarda {{court}} yetkilidir. Tüketici sıfatıyla hareket eden kullanıcıların kanuni hakları saklıdır.",
+   "updated": "2026-10-14",
+   "footer": true
+  },
+  {
+   "key": "yasal",
+   "group": "Yasal",
+   "order": 4,
+   "title": "Yasal Bilgilendirme ve Sorumluluk Reddi",
+   "lead": "",
+   "body": "## 5651 sayılı Kanun kapsamında içerik sağlayıcı bilgileri\n5651 sayılı İnternet Ortamında Yapılan Yayınların Düzenlenmesi ve Bu Yayınlar Yoluyla İşlenen Suçlarla Mücadele Edilmesi Hakkında Kanun'un 3. maddesi uyarınca tanıtıcı bilgilerimiz aşağıdadır:\n\n[[kimlik]]\n\n## Bağlantısızlık beyanı\nFilm Evreni Ağı bağımsız bir projedir. Marvel Studios, Lucasfilm, The Walt Disney Company, Pixar Animation Studios, Walt Disney Animation Studios, Warner Bros. Discovery, DC Studios, Legendary Entertainment, Universal Pictures, DreamWorks Animation, Illumination, Sony Pictures, Lionsgate, Paramount Pictures, 20th Century Studios, HBO, Amazon MGM Studios, Netflix, Apple TV+, New Line Cinema, Nintendo veya adı geçen herhangi bir stüdyo, yayıncı ya da hak sahibiyle bağlantılı değildir; bu kuruluşlar tarafından desteklenmez, onaylanmaz veya finanse edilmez.\n\n## Ticari markalar\nSitede geçen film, dizi, kitap ve karakter adları ile ilgili logolar ve markalar, sahiplerinin tescilli ticari markalarıdır. Bu adlar yalnızca eserleri tanımlamak ve hakkında bilgi vermek amacıyla, betimleyici biçimde kullanılmaktadır.\n\n## Görseller\nAfiş ve sahne görselleri The Movie Database (TMDB) üzerinden, kitap kapakları Open Library üzerinden gösterilir ve telif hakları ilgili stüdyolara, yayıncılara ve sanatçılara aittir. Görsellerin bulunmadığı yerlerde sitenin kendi ürettiği tipografik kapaklar kullanılır. *Bu ürün TMDB API'sini kullanır ancak TMDB tarafından onaylanmamış veya sertifikalandırılmamıştır.*\n\n## Spoiler uyarısı\nSitede yapımların olay örgüsüne dair ayrıntılar bulunur. Spoiler kalkanı bu riski azaltmak için tasarlanmıştır ancak bütün ayrıntıların gizlendiğini garanti etmez.\n\n## İçerik kaldırma ve kişilik hakları\nKişilik haklarınızın ihlal edildiğini düşünüyorsanız, 5651 sayılı Kanun'un 9. maddesi uyarınca bize başvurabilirsiniz. Başvurular en geç 24 saat içinde yanıtlanır. Telif hakkı başvuruları için [Telif Hakkı ve İçerik Kaldırma](#telif) sayfasına bakın.",
+   "updated": "2026-10-14",
+   "footer": true
+  },
+  {
+   "key": "telif",
+   "group": "Yasal",
+   "order": 5,
+   "title": "Telif Hakkı ve İçerik Kaldırma",
+   "lead": "Fikrî mülkiyet haklarına saygı gösteriyoruz. Sitede hakkınızı ihlal ettiğini düşündüğünüz bir içerik varsa, aşağıdaki bilgileri içeren bir bildirimi {{email}} adresine gönderin.",
+   "body": "## Bildirimde bulunması gerekenler\n1. Hak sahibinin veya yetkili temsilcisinin adı, unvanı ve iletişim bilgileri,\n2. İhlal edildiği düşünülen eserin tanımı,\n3. Sitedeki ilgili içeriğin tam adresi (URL) ve açık tarifi,\n4. Kullanımın hak sahibi tarafından izin verilmediğine dair iyi niyetli beyan,\n5. Bildirimdeki bilgilerin doğru olduğuna ve bildirimde bulunmaya yetkili olduğunuza dair beyan,\n6. Fiziksel veya elektronik imza.\n\n## Süreç\n5846 sayılı Fikir ve Sanat Eserleri Kanunu'nun Ek 4. maddesi uyarınca, eksiksiz bir bildirimin ardından ihlal iddiasına konu içerik en geç 3 gün içinde incelenir ve gerekli görülürse kaldırılır. ABD'deki hak sahipleri, Digital Millennium Copyright Act (DMCA) kapsamındaki bildirimlerini aynı adrese iletebilir.\n\n## İtiraz\nKaldırılan bir içeriğin hatalı biçimde kaldırıldığını düşünüyorsanız, gerekçesiyle birlikte aynı adrese itiraz edebilirsiniz.\n\n## Afişler ve görseller hakkında\nAfiş ve sahne görselleri sunucularımızda barındırılmaz; TMDB ve Open Library'nin görsel sunucularından gösterilir. Bir görselin kaldırılmasını istiyorsanız, ilgili platforma da başvurmanızı öneririz. Sitemizdeki bağlantıyı da bildiriminiz üzerine kaldırırız.",
+   "updated": "2026-10-14",
+   "footer": true
+  },
+  {
+   "key": "lisans",
+   "group": "Yasal",
+   "order": 6,
+   "title": "Yeniden Kullanım ve Lisanslar",
+   "lead": "Film Evreni Ağı'ndaki özgün içeriği belirli koşullarla yeniden kullanabilirsiniz. Bu sayfa neyi, hangi koşulla kullanabileceğinizi ve neyin bizim olmadığını açıklar.",
+   "body": "## 1. Özgün metinler ve bağlantı verisi\nEkibimizin yazdığı özetler, 'evrendeki yeri' yorumları, karakter ve olay açıklamaları, bağlantı notları ve evren bağlantı verisi (hangi yapımın hangisine nasıl bağlandığı), [Creative Commons Atıf-GayriTicari-AynıLisanslaPaylaş 4.0 Uluslararası (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.tr) lisansıyla sunulur. Buna göre:\n\n- **Atıf:** Kaynağı belirtmeniz ve bağlantı vermeniz gerekir.\n- **Gayriticari:** İçeriği ticari amaçla kullanamazsınız.\n- **Aynı lisansla paylaş:** İçeriği değiştirir veya üzerine inşa ederseniz, ortaya çıkan eseri aynı lisansla paylaşmalısınız.\n\nÖrnek atıf: `Kaynak: Film Evreni Ağı ({{domain}}), CC BY-NC-SA 4.0`\n\nTicari kullanım (yayınevi, uygulama, sunum, eğitim platformu vb.) için [bizimle iletişime geçin](#iletisim); ayrı bir yeniden kullanım sözleşmesi yapabiliriz.\n\n## 2. Bizim olmayan içerik\n- **Film, dizi, kitap ve karakter adları; logolar:** İlgili hak sahiplerinin markalarıdır.\n- **Afiş ve sahne görselleri:** Telif hakları stüdyolara aittir; TMDB üzerinden gösterilir. Bu lisans görselleri kapsamaz.\n- **TMDB verileri ve Türkçe vizyon adları:** TMDB'nin kullanım koşullarına tabidir.\n- **Kitap kapakları:** Yayıncılara aittir; Open Library üzerinden gösterilir.\n\n## 3. Yazılım ve yazı tipleri\n| Bileşen | Lisans |\n|---|---|\n| D3.js | ISC Lisansı |\n| Big Shoulders Display (yazı tipi) | SIL Open Font License 1.1 |\n| IBM Plex Sans ve IBM Plex Mono (yazı tipleri) | SIL Open Font License 1.1 |\n\n## 4. Bağlantı verme ve alıntı\nSitemizin herhangi bir sayfasına bağlantı vermek için izin almanız gerekmez. Kısa alıntılar için atıf yeterlidir.",
+   "updated": "2026-10-14",
+   "footer": true
+  }
+ ]
+}
