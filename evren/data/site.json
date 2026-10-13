@@ -1,0 +1,15 @@
+{
+  "name": "Film Evreni Ağı",
+  "domain": "filmtakvimi.com",
+  "baseUrl": "https://filmtakvimi.com/evren/",
+  "owner": "[Site sahibinin adı soyadı veya şirket unvanı]",
+  "address": "[Açık posta adresi]",
+  "email": "[iletisim@alanadiniz.com]",
+  "kep": "[KEP adresi — varsa]",
+  "taxId": "[Vergi kimlik no / MERSİS no — şirketse]",
+  "hosting": "[Barındırma (hosting) sağlayıcısının adı ve ülkesi]",
+  "court": "[İl] Mahkemeleri ve İcra Daireleri",
+  "analytics": false,
+  "dataUpdated": "2026-10-14",
+  "tmdbImageBase": "https://image.tmdb.org/t/p/"
+}
