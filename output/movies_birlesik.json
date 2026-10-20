@@ -20,6 +20,16 @@
     "kaynak": "Vizyondaki Film"
   },
   {
+    "title": "Aşk ve Yaşam",
+    "link": "https://www.paribucineverse.com/dram-filmleri/ask-ve-yasam-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~f5adfb68-7711-416f-b70f-6a7c855db262",
+    "trailer": "https://cdn-video.marsgate.tr/m3u/221",
+    "genre": "Dram",
+    "summary": "Elinor ve Marianne Dashwood kardeşler, Sussex'teki malikanelerini terk edip uzak bir akrabalarının yanına taşınmak zorunda kalır ve bunun sonucunda hem aşk hem de para sorunlarıyla karşı karşıya kalırlar.",
+    "date": "20261016",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
     "title": "Kanlı Gece",
     "link": "https://www.paribucineverse.com/korku-filmleri/kanli-gece-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~2cb666fb-4d3c-4761-95bd-1143957d6f9a",
@@ -36,16 +46,6 @@
     "trailer": "Fragman bağlantısı yok",
     "genre": "Belgesel",
     "summary": "Tel Aviv çatılarından gece çekilen bu araştırmacı belgesel, İsrail’in Gazze’deki askeri operasyonları sonucunda yaşanan sivil kayıpları ve Filistinlilerin hedef alınarak öldürülmesinin ardındaki sistemleri inceliyor.",
-    "date": "20261016",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
-    "title": "Aşk ve Yaşam",
-    "link": "https://www.paribucineverse.com/dram-filmleri/ask-ve-yasam-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~f5adfb68-7711-416f-b70f-6a7c855db262",
-    "trailer": "https://cdn-video.marsgate.tr/m3u/221",
-    "genre": "Dram",
-    "summary": "Elinor ve Marianne Dashwood kardeşler, Sussex'teki malikanelerini terk edip uzak bir akrabalarının yanına taşınmak zorunda kalır ve bunun sonucunda hem aşk hem de para sorunlarıyla karşı karşıya kalırlar.",
     "date": "20261016",
     "kaynak": "Vizyondaki Film"
   },
@@ -156,6 +156,16 @@
     "trailer": "https://cdn-video.marsgate.tr/m3u/234",
     "genre": "Animasyon",
     "summary": "Kendi ürettiği robot Robu 404 aracılığıyla teknoloji üzerinden kendini ifade etmeye çalışan dokuz yaşındaki Can'ın, Robu 404'ün yardımıyla kendisini keşfetmektedir.",
+    "date": "20261002",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Digger",
+    "link": "https://www.paribucineverse.com/komedi-filmleri/digger-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~112b02ed-8749-4ac8-b04d-0bc2b548640c",
+    "trailer": "https://cdn-video.marsgate.tr/m3u/90",
+    "genre": "Komedi",
+    "summary": "Dünyanın en güçlü adamı, kendi sebep olduğu bir felaketin her şeyi yok etmeden önce insanlığın kurtarıcısı olduğunu kanıtlamak için çılgın bir göreve atılıyor.",
     "date": "20261002",
     "kaynak": "Vizyondaki Film"
   },
@@ -284,7 +294,7 @@
     "date": "20261023",
     "link": "https://www.paribucineverse.com/komedi-filmleri/aile-tarafindan-araniyor-filmi-izle",
     "bilet_link": null,
-    "trailer": "Fragman bağlantısı yok",
+    "trailer": "https://cdn-video.marsgate.tr/m3u/246",
     "genre": "Komedi",
     "summary": "Faruk, kendisini işine adadığı için eşi Mai’ye ve çocuklarına yeterince vakit ayıramaz. Mai’nin kardeşi Galal’ın da aralarına katılması, aile yaşamını daha da karmaşık hâle getirir. Alıştığı düzenin değişmesiyle peş peşe sorunlarla karşılaşan Faruk, bir yandan işini sürdürürken bir yandan da evdeki karmaşayla baş etmeye çalışır.",
     "kaynak": "Gelecek Film"
@@ -324,7 +334,7 @@
     "date": "20261023",
     "link": "https://www.paribucineverse.com/animasyon-filmleri/patiler-buyuk-macera-filmi-izle",
     "bilet_link": null,
-    "trailer": "Fragman bağlantısı yok",
+    "trailer": "https://cdn-video.marsgate.tr/m3u/247",
     "genre": "Animasyon",
     "summary": "Birbirinden çok farklı hayalleri ve merakları olan Patileri yeni keşifler, gizemli olaylar, yaratıcı fikirler ve bitmek bilmeyen oyunlar her seferinde yeni bir sürprizle karşılaştırırken bazen hayal güçlerini kullanmaları, bazen birlikte hareket etmeleri, bazen de yaptıkları hataların sorumluluğunu üstlenmeleri gerekecektir.",
     "kaynak": "Gelecek Film"
@@ -354,9 +364,19 @@
     "date": "20261023",
     "link": "https://www.paribucineverse.com/dram-filmleri/yankilarin-izinde-filmi-izle",
     "bilet_link": null,
-    "trailer": "Fragman bağlantısı yok",
+    "trailer": "https://cdn-video.marsgate.tr/m3u/245",
     "genre": "Dram",
     "summary": "Nevzat, küçük bir Anadolu kasabasında çiftçilikle geçimini sağlayan ailenin en küçük oğludur. Geçmişte bıraktığını düşündüğü sanal kumar bağımlılığı, bahçe işleriyle uğraştığı bir yaz günü yeniden kendini gösterir. Her geçen gün, kumarda kaybettiği paralar ve içine düştüğü borçlar, Nevzat’ı çevresindeki insanlardan daha da uzaklaştırır. Zihninde ve ruhunda derinleşen bir çöküntü yaşarken, ailesiyle ilişkileri tamamen bozulur. Nevzat, bağımlılığını kimseye anlatamaz ve kendi iç dünyasında bu bağımlılıkla yüzleşmek zorunda kalır.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Bağlar, Kökler ve Tutkular",
+    "date": "20261030",
+    "link": "https://www.paribucineverse.com/dram-filmleri/baglar-kokler-ve-tutkular-filmi-izle",
+    "bilet_link": null,
+    "trailer": "Fragman bağlantısı yok",
+    "genre": "Dram",
+    "summary": "Bağlar, Kökler ve Tutkular, köklerinden ve bağlarından kurtulmaya çalışan, bir mülteci teknesi kazasından kurtulan Hazel, Hamza ve Khaled'in hikayesini konu ediyor.",
     "kaynak": "Gelecek Film"
   },
   {
@@ -400,6 +420,16 @@
     "kaynak": "Gelecek Film"
   },
   {
+    "title": "Kuzular Firarda: Gizemli Canavar",
+    "date": "20261030",
+    "link": "https://www.paribucineverse.com/animasyon-filmleri/kuzular-firarda-gizemli-canavar-filmi-izle",
+    "bilet_link": null,
+    "trailer": "https://cdn-video.marsgate.tr/m3u/248",
+    "genre": "Animasyon",
+    "summary": "Mossy Bottom Çiftliği’nde, sakar Çiftçi’nin kabak tarlasını mahvetmesiyle heyecan, hayal kırıklığına dönüşür. Shaun, bilimsel deneylerle durumu düzeltmeye çalışır, ancak ormanda vahşi bir canavarın ortaya çıkmasıyla işler ters gider.",
+    "kaynak": "Gelecek Film"
+  },
+  {
     "title": "Nöbet",
     "date": "20261030",
     "link": "https://www.paribucineverse.com/korku-filmleri/nobet-filmi-izle",
@@ -417,6 +447,16 @@
     "trailer": "https://cdn-video.marsgate.tr/m3u/214",
     "genre": "Korku",
     "summary": "Salmokji Baraj Gölü'nde çekilen görüntülerde gizemli bir silüetin ortaya çıkması üzerine Su-in ve ekibi, çekimleri yenilemek için bölgeye gider. Ancak ekip, açıklanamayan olaylarla karşılaşır ve gölden kaçmaya çalıştıkça kendilerini giderek büyüyen bir kâbusun içinde bulur.",
+    "kaynak": "Gelecek Film"
+  },
+  {
+    "title": "Zikr-i Cin",
+    "date": "20261030",
+    "link": "https://www.paribucineverse.com/korku-filmleri/zikr-i-cin-filmi-izle",
+    "bilet_link": null,
+    "trailer": "Fragman bağlantısı yok",
+    "genre": "Korku",
+    "summary": "Eski arkadaşlar, lüks bir villada bir araya geldikleri gece telefonlarına gelen “Öldür ya da öl” talimatlarıyla, geçmişlerindeki bir sırla bağlantılı ölümcül olayların hedefi olur. Villanın bulunduğu yerde, 13 yıl önce genç bir kız diri diri yanmıştır. Bu olayın ardındaki sır, gece boyunca yaşanan doğaüstü sanrılar ve cinayetlerle yeniden gündeme gelir. Açıklayamadıkları olaylarla karşılaşan grup için tehlikenin kaynağını anlamak giderek zorlaşırken, geçmişte yaşananlarla o gece olup bitenler arasındaki bağlantı, hepsini aynı tehdidin hedefi hâline getirir.",
     "kaynak": "Gelecek Film"
   },
   {
@@ -587,16 +627,6 @@
     "trailer": "https://cdn-video.marsgate.tr/m3u/242",
     "genre": "Gerilim",
     "summary": "1986 yılında New York’un Queens bölgesinde yaşayan Irwin Pearl, ailesine daha iyi bir gelecek sunma hayali kurarken ağabeyi Gary’nin önerdiği kazançlı bir iş fırsatına dahil olur. Ancak kardeşlerin Rus mafyasıyla ortaklık kurması, başlangıçta umut vadeden planı kısa sürede tehlikeli bir sürece dönüştürür. Yaşanan bir hata mafyanın dikkatini ailenin üzerine çekerken, giderek artan tehdit ve şiddet iki kardeş arasındaki güveni de sarsmaya başlar. Hayalini kurdukları fırsat, hem ailelerini hem de aralarındaki bağı sınayan bir mücadeleye dönüşür.",
-    "kaynak": "Gelecek Film"
-  },
-  {
-    "title": "Kuzular Firarda: Gizemli Canavar",
-    "date": "20261127",
-    "link": "https://www.paribucineverse.com/animasyon-filmleri/kuzular-firarda-gizemli-canavar-filmi-izle",
-    "bilet_link": null,
-    "trailer": "https://cdn-video.marsgate.tr/m3u/147",
-    "genre": "Animasyon",
-    "summary": "Mossy Bottom Çiftliği’nde, sakar Çiftçi’nin kabak tarlasını mahvetmesiyle heyecan, hayal kırıklığına dönüşür. Shaun, bilimsel deneylerle durumu düzeltmeye çalışır, ancak ormanda vahşi bir canavarın ortaya çıkmasıyla işler ters gider.",
     "kaynak": "Gelecek Film"
   },
   {
