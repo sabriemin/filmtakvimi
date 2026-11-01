@@ -20,16 +20,6 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "En Sevdiğim",
-    "link": "https://www.paribucineverse.com/dram-filmleri/en-sevdigim-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~23c66ef7-a273-4496-9b78-52db97d77088",
-    "trailer": "https://cdn-video.marsgate.tr/m3u/205",
-    "genre": "Dram",
-    "summary": "Son derece başarılı bir yönetmen olan Esteban’ın yolu yıllardır görüşmediği kızıyla yeniden kesişir. Oyunculuk kariyerinde istediği başarıyı yakalayamayan kızıyla yeni filmini çekmek üzere çalışmaya başlarlar. Ancak baba ve kızı yeniden birleştiren bu proje, ikisini de yıllardır görmezden geldikleri kırgınlıklar ve geçmişin yüküyle yüzleşmeye zorlayacaktır.",
-    "date": "20261030",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
     "title": "Küçük Mamut",
     "link": "https://www.paribucineverse.com/animasyon-filmleri/kucuk-mamut-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~b741311d-8bf2-4d48-b46d-07cb22cb564b",
@@ -50,22 +40,22 @@
     "kaynak": "Vizyondaki Film"
   },
   {
+    "title": "En Sevdiğim",
+    "link": "https://www.paribucineverse.com/dram-filmleri/en-sevdigim-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~23c66ef7-a273-4496-9b78-52db97d77088",
+    "trailer": "https://cdn-video.marsgate.tr/m3u/205",
+    "genre": "Dram",
+    "summary": "Son derece başarılı bir yönetmen olan Esteban’ın yolu yıllardır görüşmediği kızıyla yeniden kesişir. Oyunculuk kariyerinde istediği başarıyı yakalayamayan kızıyla yeni filmini çekmek üzere çalışmaya başlarlar. Ancak baba ve kızı yeniden birleştiren bu proje, ikisini de yıllardır görmezden geldikleri kırgınlıklar ve geçmişin yüküyle yüzleşmeye zorlayacaktır.",
+    "date": "20261030",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
     "title": "Kuzular Firarda: Gizemli Canavar",
     "link": "https://www.paribucineverse.com/animasyon-filmleri/kuzular-firarda-gizemli-canavar-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~92e5753c-403e-4d63-bc04-a0287c9b09ab",
     "trailer": "https://cdn-video.marsgate.tr/m3u/248",
     "genre": "Animasyon",
     "summary": "Mossy Bottom Çiftliği’nde, sakar Çiftçi’nin kabak tarlasını mahvetmesiyle heyecan, hayal kırıklığına dönüşür. Shaun, bilimsel deneylerle durumu düzeltmeye çalışır, ancak ormanda vahşi bir canavarın ortaya çıkmasıyla işler ters gider.",
-    "date": "20261030",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
-    "title": "Salmokji: Karanlık Sular",
-    "link": "https://www.paribucineverse.com/korku-filmleri/salmokji-karanlik-sular-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~e7b0850a-eb67-4711-95bb-5df70f6d9a00",
-    "trailer": "https://cdn-video.marsgate.tr/m3u/214",
-    "genre": "Korku",
-    "summary": "Salmokji Baraj Gölü'nde çekilen görüntülerde gizemli bir silüetin ortaya çıkması üzerine Su-in ve ekibi, çekimleri yenilemek için bölgeye gider. Ancak ekip, açıklanamayan olaylarla karşılaşır ve gölden kaçmaya çalıştıkça kendilerini giderek büyüyen bir kâbusun içinde bulur.",
     "date": "20261030",
     "kaynak": "Vizyondaki Film"
   },
@@ -80,6 +70,16 @@
     "kaynak": "Vizyondaki Film"
   },
   {
+    "title": "Salmokji: Karanlık Sular",
+    "link": "https://www.paribucineverse.com/korku-filmleri/salmokji-karanlik-sular-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~e7b0850a-eb67-4711-95bb-5df70f6d9a00",
+    "trailer": "https://cdn-video.marsgate.tr/m3u/214",
+    "genre": "Korku",
+    "summary": "Salmokji Baraj Gölü'nde çekilen görüntülerde gizemli bir silüetin ortaya çıkması üzerine Su-in ve ekibi, çekimleri yenilemek için bölgeye gider. Ancak ekip, açıklanamayan olaylarla karşılaşır ve gölden kaçmaya çalıştıkça kendilerini giderek büyüyen bir kâbusun içinde bulur.",
+    "date": "20261030",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
     "title": "Zikr-i Cin",
     "link": "https://www.paribucineverse.com/korku-filmleri/zikr-i-cin-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~89aff17b-210f-4988-a90c-5dda699e5f26",
@@ -90,22 +90,22 @@
     "kaynak": "Vizyondaki Film"
   },
   {
-    "title": "Gupi ve Gülmeyen Kral",
-    "link": "https://www.paribucineverse.com/animasyon-filmleri/gupi-ve-gulmeyen-kral-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~859ac752-d81b-4935-bf4a-c72a316f935e",
-    "trailer": "https://cdn-video.marsgate.tr/m3u/129",
-    "genre": "Animasyon",
-    "summary": "Yaşadıkları apartmandaki boş ve kimsesiz daireye pasta götürmek amacıyla giren Gupi ve arkadaşları, odadaki bir dolabın içinden geçerek kendilerini karanlık, mutsuz ve farklı bir boyutta bulurlar. Bu yeni dünya, hüznü tüm diyara yayılmış olan Gülmeyen Kral'ın sarayına ev sahipliği yapmaktadır. Kralın hiç gülmemesi nedeniyle o boyutta yaşayan tüm halkın da neşesini kaybettiğini fark eden karakterler, hükümdarı güldürebilmek ve krallığa tekrar mutluluk getirebilmek amacıyla çeşitli yöntemler denemeye başlarlar.",
-    "date": "20261023",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
     "title": "Clayface",
     "link": "https://www.paribucineverse.com/korku-filmleri/clayface-filmi-izle",
     "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~f2fb09ab-2606-49f6-b022-e35d13a739d4",
     "trailer": "https://cdn-video.marsgate.tr/m3u/137",
     "genre": "Korku",
     "summary": "Genç ve hırslı bir aktör olan Matt Hagen, Hollywood’un zirvesine tırmanırken yaşadığı trajik olaylar sonrası kendini geri dönülemez bir fiziksel ve ruhsal değişimin içinde bulur. Kendi kimliğini ve insanlığını adım adım yitiren Hagen’ın yolculuğu, bilimsel hırsın karanlık yüzüyle birleşerek dehşet verici bir intikam hikayesine dönüşür.",
+    "date": "20261023",
+    "kaynak": "Vizyondaki Film"
+  },
+  {
+    "title": "Gupi ve Gülmeyen Kral",
+    "link": "https://www.paribucineverse.com/animasyon-filmleri/gupi-ve-gulmeyen-kral-filmi-izle",
+    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~859ac752-d81b-4935-bf4a-c72a316f935e",
+    "trailer": "https://cdn-video.marsgate.tr/m3u/129",
+    "genre": "Animasyon",
+    "summary": "Yaşadıkları apartmandaki boş ve kimsesiz daireye pasta götürmek amacıyla giren Gupi ve arkadaşları, odadaki bir dolabın içinden geçerek kendilerini karanlık, mutsuz ve farklı bir boyutta bulurlar. Bu yeni dünya, hüznü tüm diyara yayılmış olan Gülmeyen Kral'ın sarayına ev sahipliği yapmaktadır. Kralın hiç gülmemesi nedeniyle o boyutta yaşayan tüm halkın da neşesini kaybettiğini fark eden karakterler, hükümdarı güldürebilmek ve krallığa tekrar mutluluk getirebilmek amacıyla çeşitli yöntemler denemeye başlarlar.",
     "date": "20261023",
     "kaynak": "Vizyondaki Film"
   },
@@ -126,16 +126,6 @@
     "trailer": "https://cdn-video.marsgate.tr/m3u/246",
     "genre": "Komedi",
     "summary": "Faruk, kendisini işine adadığı için eşi Mai’ye ve çocuklarına yeterince vakit ayıramaz. Mai’nin kardeşi Galal’ın da aralarına katılması, aile yaşamını daha da karmaşık hâle getirir. Alıştığı düzenin değişmesiyle peş peşe sorunlarla karşılaşan Faruk, bir yandan işini sürdürürken bir yandan da evdeki karmaşayla baş etmeye çalışır.",
-    "date": "20261023",
-    "kaynak": "Vizyondaki Film"
-  },
-  {
-    "title": "Milyonluk Hurdacı",
-    "link": "https://www.paribucineverse.com/komedi-filmleri/milyonluk-hurdaci-filmi-izle",
-    "bilet_link": "https://www.paribucineverse.com/biletleme/~step~session~film~ff92574f-541c-48d8-a6c9-6fd0031ca946",
-    "trailer": "https://cdn-video.marsgate.tr/m3u/235",
-    "genre": "Komedi",
-    "summary": "Hovarda geçmişi yüzünden dağılan ailesini toplamak isteyen yaşlı bir hurdacı, kaybettiği arkadaşından kalan kutsal bir emaneti satmak için çocuklarını absürt bir yolculuğa sürükler; ancak düğünlerden tabutlara sürüklenen bu kovalamaca, onlara paradan çok daha değerli bir şeyi hatırlatacaktır.",
     "date": "20261023",
     "kaynak": "Vizyondaki Film"
   },
